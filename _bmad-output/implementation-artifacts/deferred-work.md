@@ -20,3 +20,4 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-wp6-engineering-contracts-ci-evidence-governance.md`
   summary: 升级GitHub Pro或调整仓库可见性后，为main启用Ubuntu/Windows required checks。
   evidence: GitHub branch protection API对个人账户私有仓库返回403并明确要求升级Pro或改为公开；当前双平台门已执行但平台不提供强制合并保护。
+  resolution: 2026-07-24仓库改为public后已启用严格双平台required checks、管理员约束、线性历史、禁止强推和删除。
