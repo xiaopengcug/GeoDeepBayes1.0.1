@@ -38,6 +38,7 @@ _bmad-output/planning-artifacts/research/open-data/
 **/validation/wp6-governance/evidence-root.sigstore.json
 **/validation/wp6-governance/attestation-verification.json
 **/validation/wp6-governance/gc-audit*.json
+/wp6-evidence/
 
 # 通用大型二进制与临时文件
 *.zip
