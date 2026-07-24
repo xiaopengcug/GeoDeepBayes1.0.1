@@ -109,6 +109,8 @@ def protected_version_closure(
     research_root: Path,
     sources: dict[str, list[str]],
     required_types: Iterable[str],
+    *,
+    require_nonempty: bool = True,
 ) -> tuple[set[str], list[str]]:
     """从受控引用源及其JSON文件引用构建版本保护闭包。"""
     required = set(required_types)
@@ -137,23 +139,57 @@ def protected_version_closure(
             value = json.loads(text)
         except json.JSONDecodeError:
             continue
-        strings: list[str] = []
+        strings: list[tuple[str, str]] = []
 
-        def collect(item: object) -> None:
+        def collect(item: object, key: str = "") -> None:
             if isinstance(item, str):
-                strings.append(item)
+                strings.append((key, item))
             elif isinstance(item, list):
                 for child in item:
-                    collect(child)
+                    collect(child, key)
             elif isinstance(item, dict):
-                for child in item.values():
-                    collect(child)
+                for child_key, child in item.items():
+                    collect(child, str(child_key))
 
         collect(value)
-        for item in strings:
-            referenced = research_root / item
-            if not Path(item).is_absolute() and referenced.is_file():
+        for key, item in strings:
+            if "://" in item or VERSION_TOKEN_RE.search(item):
+                continue
+            local_reference = candidate.parent / item
+            root_reference = research_root / item
+            referenced = (
+                local_reference if local_reference.is_file() else root_reference
+            )
+            normalized_key = key.casefold()
+            reference_key = (
+                normalized_key
+                in {
+                    "path",
+                    "file",
+                    "manifest",
+                    "pointer",
+                    "source",
+                    "envelope",
+                    "attestation",
+                }
+                or normalized_key.endswith(("_path", "_file"))
+            )
+            path_like = (
+                reference_key
+                and (
+                    "/" in item
+                    or "\\" in item
+                    or Path(item).suffix.lower()
+                    in {".json", ".yaml", ".yml", ".md", ".sha256"}
+                    or item == "ACTIVE_MANIFEST"
+                )
+            )
+            if not Path(item).is_absolute() and path_like:
+                if not referenced.is_file():
+                    raise ValueError(f"保护闭包下游引用缺失: {item}")
                 queue.append(referenced)
+    if require_nonempty and not protected:
+        raise ValueError("保护闭包不得为空")
     return protected, sorted(examined)
 
 

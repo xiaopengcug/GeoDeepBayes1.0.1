@@ -12,6 +12,8 @@ import sys
 
 HERE = Path(__file__).resolve().parent
 CONTRACTS = HERE.parents[1] / "contracts"
+RESEARCH_ROOT = HERE.parents[1]
+PROTECTION_SOURCES = HERE / "protection-sources.json"
 spec = importlib.util.spec_from_file_location("wp6_gc_governance", CONTRACTS / "wp6_governance.py")
 module = importlib.util.module_from_spec(spec)
 if spec.loader is None:
@@ -23,15 +25,13 @@ spec.loader.exec_module(module)
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--versions-root", type=Path, required=True)
-    parser.add_argument("--research-root", type=Path, default=HERE.parents[1])
-    parser.add_argument("--sources", type=Path, default=HERE / "protection-sources.json")
     parser.add_argument("--audit", type=Path, required=True)
     parser.add_argument("--prune", action="store_true")
     args = parser.parse_args()
     policy = json.loads((HERE / "policy.json").read_text(encoding="utf-8"))
-    source_config = json.loads(args.sources.read_text(encoding="utf-8"))
+    source_config = json.loads(PROTECTION_SOURCES.read_text(encoding="utf-8"))
     protected, examined = module.protected_version_closure(
-        args.research_root,
+        RESEARCH_ROOT,
         source_config["sources"],
         policy["protected_reference_types"],
     )
@@ -42,7 +42,7 @@ def main() -> int:
             target = args.versions_root / item["path"]
             module.resolve_inside(args.versions_root, target)
             current_protected, _ = module.protected_version_closure(
-                args.research_root,
+                RESEARCH_ROOT,
                 source_config["sources"],
                 policy["protected_reference_types"],
             )
