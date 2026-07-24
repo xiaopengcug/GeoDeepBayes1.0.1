@@ -12,6 +12,7 @@ from typing import Iterable
 
 
 VERSION_RE = re.compile(r"^\d{8}T\d{9}Z-[0-9a-f]{32,40}$")
+VERSION_TOKEN_RE = re.compile(r"\d{8}T\d{9}Z-[0-9a-f]{32,40}")
 STAGE_RE = re.compile(r"^\.stage-[0-9a-f]{32}$")
 
 
@@ -102,6 +103,58 @@ def validate_legacy_index(research_root: Path, index_path: Path) -> list[str]:
         if item["migration_state"] not in {"v2-sidecar", "Legacy-frozen"}:
             errors.append(f"legacy索引状态非法: {path}")
     return errors
+
+
+def protected_version_closure(
+    research_root: Path,
+    sources: dict[str, list[str]],
+    required_types: Iterable[str],
+) -> tuple[set[str], list[str]]:
+    """从受控引用源及其JSON文件引用构建版本保护闭包。"""
+    required = set(required_types)
+    if set(sources) != required:
+        raise ValueError("保护源类型与策略不一致")
+    queue: list[Path] = []
+    for reference_type, paths in sources.items():
+        if not paths:
+            raise ValueError(f"保护源类型为空: {reference_type}")
+        queue.extend(research_root / path for path in paths)
+
+    protected: set[str] = set()
+    examined: list[str] = []
+    seen: set[Path] = set()
+    while queue:
+        candidate = resolve_inside(research_root, queue.pop(0))
+        if candidate in seen:
+            continue
+        if not candidate.is_file():
+            raise ValueError(f"保护源不是文件: {candidate}")
+        seen.add(candidate)
+        examined.append(candidate.relative_to(research_root.resolve()).as_posix())
+        text = candidate.read_text(encoding="utf-8")
+        protected.update(VERSION_TOKEN_RE.findall(text))
+        try:
+            value = json.loads(text)
+        except json.JSONDecodeError:
+            continue
+        strings: list[str] = []
+
+        def collect(item: object) -> None:
+            if isinstance(item, str):
+                strings.append(item)
+            elif isinstance(item, list):
+                for child in item:
+                    collect(child)
+            elif isinstance(item, dict):
+                for child in item.values():
+                    collect(child)
+
+        collect(value)
+        for item in strings:
+            referenced = research_root / item
+            if not Path(item).is_absolute() and referenced.is_file():
+                queue.append(referenced)
+    return protected, sorted(examined)
 
 
 @dataclass(frozen=True)
