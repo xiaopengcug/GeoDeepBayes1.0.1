@@ -2,7 +2,7 @@
 title: 'WP6工程契约、CI与证据治理'
 type: 'feature'
 created: '2026-07-24'
-status: 'done'
+status: 'in-review'
 baseline_commit: 'NO_VCS'
 review_loop_iteration: 0
 context:

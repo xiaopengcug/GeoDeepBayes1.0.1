@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "sources": {
+    "active-pointer": [
+      "ACTIVE_MANIFEST",
+      "validation/wp2-toy/active-output.json",
+      "validation/wp3-physics/active-output.json",
+      "validation/wp4-decision/active-output.json",
+      "validation/wp5-consistency/active-output.json"
+    ],
+    "manifest": [
+      "manifest.yaml",
+      "validation/wp1-toy/output/manifest.json"
+    ],
+    "claim": [
+      "validation/wp5-consistency/claim-ledger.json"
+    ],
+    "signoff": [
+      "validation/wp6-governance/signoff.json",
+      "WP1-地球物理独立代理签核.md",
+      "WP1-贝叶斯UQ独立代理签核.md",
+      "WP3-地球物理与岩石物理独立签核.md",
+      "WP4-UQ资源地质决策独立签核.md",
+      "WP5-主编技术编辑与专项交叉复核独立签核.md"
+    ],
+    "migration-envelope": [
+      "validation/wp6-governance/legacy-index.json",
+      "validation/wp5-consistency/ledger-lineage.json"
+    ],
+    "attestation": [
+      "validation/wp6-governance/remote-evidence-snapshot.json"
+    ]
+  }
+}

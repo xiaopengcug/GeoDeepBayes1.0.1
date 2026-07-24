@@ -23,18 +23,30 @@ spec.loader.exec_module(module)
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--versions-root", type=Path, required=True)
-    parser.add_argument("--protected", type=Path, required=True, help="JSON字符串数组文件")
+    parser.add_argument("--research-root", type=Path, default=HERE.parents[1])
+    parser.add_argument("--sources", type=Path, default=HERE / "protection-sources.json")
     parser.add_argument("--audit", type=Path, required=True)
     parser.add_argument("--prune", action="store_true")
     args = parser.parse_args()
-    protected = json.loads(args.protected.read_text(encoding="utf-8"))
+    policy = json.loads((HERE / "policy.json").read_text(encoding="utf-8"))
+    source_config = json.loads(args.sources.read_text(encoding="utf-8"))
+    protected, examined = module.protected_version_closure(
+        args.research_root,
+        source_config["sources"],
+        policy["protected_reference_types"],
+    )
     report = module.gc_report(args.versions_root, protected)
     deleted: list[str] = []
     if args.prune:
         for item in report["candidates"]:
             target = args.versions_root / item["path"]
             module.resolve_inside(args.versions_root, target)
-            if target.name in protected or target.is_symlink():
+            current_protected, _ = module.protected_version_closure(
+                args.research_root,
+                source_config["sources"],
+                policy["protected_reference_types"],
+            )
+            if target.name in current_protected or target.is_symlink():
                 raise RuntimeError(f"二次检查拒绝删除: {target}")
             shutil.rmtree(target)
             deleted.append(target.name)
@@ -43,6 +55,8 @@ def main() -> int:
         "mode": "Prune" if args.prune else "Report",
         "recorded_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "report": report,
+        "protection_sources_examined": examined,
+        "protected_versions": sorted(protected),
         "deleted": deleted,
     }
     args.audit.parent.mkdir(parents=True, exist_ok=True)

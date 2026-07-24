@@ -34,6 +34,10 @@ def _load_module(name: str, path: Path):
 
 contracts = _load_module("wp6_contract_validator", CONTRACTS / "validate_contracts.py")
 governance = _load_module("wp6_governance", CONTRACTS / "wp6_governance.py")
+release_gate = _load_module(
+    "wp6_release_gate",
+    RESEARCH_ROOT / "validation" / "wp6-governance" / "validate_wp6.py",
+)
 
 
 def test_contract_matrix_and_self_test_pass():
@@ -189,3 +193,114 @@ def test_evidence_root_detects_content_change(tmp_path):
     artifact.write_text("v2", encoding="utf-8")
     second = governance.build_evidence_root(tmp_path, ["artifact.txt"], commit_sha="a" * 40)
     assert first["root_sha256"] != second["root_sha256"]
+
+
+def test_protected_version_closure_is_derived_and_fails_closed(tmp_path):
+    version = "20260724T000000000Z-" + "a" * 32
+    pointer = tmp_path / "pointer.json"
+    referenced = tmp_path / "manifest.json"
+    referenced.write_text(json.dumps({"version": version}), encoding="utf-8")
+    pointer.write_text(json.dumps({"path": "manifest.json"}), encoding="utf-8")
+    protected, examined = governance.protected_version_closure(
+        tmp_path, {"active-pointer": ["pointer.json"]}, ["active-pointer"]
+    )
+    assert protected == {version}
+    assert examined == ["manifest.json", "pointer.json"]
+    with pytest.raises((FileNotFoundError, ValueError)):
+        governance.protected_version_closure(
+            tmp_path, {"active-pointer": ["missing.json"]}, ["active-pointer"]
+        )
+    with pytest.raises(ValueError, match="策略不一致"):
+        governance.protected_version_closure(
+            tmp_path, {"manifest": ["manifest.json"]}, ["active-pointer"]
+        )
+
+
+def test_release_evidence_rejects_forged_record_and_tampered_member(
+    tmp_path, monkeypatch
+):
+    artifact = tmp_path / "artifact.txt"
+    artifact.write_text("trusted", encoding="utf-8")
+    commit = "a" * 40
+    evidence = governance.build_evidence_root(
+        tmp_path, ["artifact.txt"], commit_sha=commit
+    )
+    evidence_path = tmp_path / "evidence-root.json"
+    evidence_path.write_text(json.dumps(evidence), encoding="utf-8")
+    bundle_path = tmp_path / "evidence-root.sigstore.json"
+    bundle_path.write_text(
+        json.dumps(
+            {"verificationMaterial": {"tlogEntries": [{"logIndex": "1"}]}}
+        ),
+        encoding="utf-8",
+    )
+    record_path = tmp_path / "attestation-verification.json"
+    record_path.write_text(
+        json.dumps(
+            {
+                "verified": True,
+                "provider": "sigstore-fulcio-rekor",
+                "commit_sha": commit,
+                "repository": "xiaopengcug/GeoDeepBayes1.0.1",
+                "certificate_identity": (
+                    "https://github.com/xiaopengcug/GeoDeepBayes1.0.1/"
+                    ".github/workflows/ci.yml@refs/heads/main"
+                ),
+                "certificate_oidc_issuer": (
+                    "https://token.actions.githubusercontent.com"
+                ),
+                "bundle_sha256": "0" * 64,
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    def fake_run(command, **kwargs):
+        if command[0] == "git":
+            return __import__("subprocess").CompletedProcess(
+                command, 0, stdout=commit + "\n", stderr=""
+            )
+        return __import__("subprocess").CompletedProcess(
+            command, 0, stdout="Verified OK", stderr=""
+        )
+
+    monkeypatch.setattr(release_gate.subprocess, "run", fake_run)
+    monkeypatch.setattr(release_gate.shutil, "which", lambda _: "cosign")
+    errors = release_gate.validate_release_evidence(
+        tmp_path, evidence_path, bundle_path, record_path
+    )
+    assert "attestation记录字段不匹配: bundle_sha256" in errors
+    record = json.loads(record_path.read_text(encoding="utf-8"))
+    record["bundle_sha256"] = governance.file_sha256(bundle_path)
+    record["commit_sha"] = "b" * 40
+    record["certificate_identity"] = "https://example.invalid/workflow"
+    record_path.write_text(json.dumps(record), encoding="utf-8")
+    errors = release_gate.validate_release_evidence(
+        tmp_path, evidence_path, bundle_path, record_path
+    )
+    assert "attestation记录字段不匹配: commit_sha" in errors
+    assert "attestation记录字段不匹配: certificate_identity" in errors
+    artifact.write_text("tampered", encoding="utf-8")
+    errors = release_gate.validate_release_evidence(
+        tmp_path, evidence_path, bundle_path, record_path
+    )
+    assert "evidence-root成员漂移: artifact.txt" in errors
+
+    def failed_cosign(command, **kwargs):
+        result = fake_run(command, **kwargs)
+        if command[0] != "git":
+            result.returncode = 1
+        return result
+
+    artifact.write_text("trusted", encoding="utf-8")
+    record["commit_sha"] = commit
+    record["certificate_identity"] = (
+        "https://github.com/xiaopengcug/GeoDeepBayes1.0.1/"
+        ".github/workflows/ci.yml@refs/heads/main"
+    )
+    record_path.write_text(json.dumps(record), encoding="utf-8")
+    monkeypatch.setattr(release_gate.subprocess, "run", failed_cosign)
+    errors = release_gate.validate_release_evidence(
+        tmp_path, evidence_path, bundle_path, record_path
+    )
+    assert "cosign密码学验证失败" in errors

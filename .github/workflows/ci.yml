@@ -127,6 +127,7 @@ jobs:
             --provider "sigstore-fulcio-rekor" \
             --certificate-identity "$CERTIFICATE_IDENTITY" \
             --bundle "$WP6_ROOT/validation/wp6-governance/evidence-root.sigstore.json" \
+            --verification-log "attestation-verification.txt" \
             --output "$WP6_ROOT/validation/wp6-governance/attestation-verification.json"
 
       - name: Stage complete evidence bundle

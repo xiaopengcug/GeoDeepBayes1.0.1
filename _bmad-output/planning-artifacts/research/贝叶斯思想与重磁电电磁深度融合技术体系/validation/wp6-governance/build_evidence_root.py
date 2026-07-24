@@ -34,9 +34,16 @@ def main() -> int:
         "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/contracts/data-contract.schema.json",
         "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/contracts/operator-capability.schema.json",
         "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/contracts/evidence-run.schema.json",
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/contracts/validate_contracts.py",
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/contracts/wp6_governance.py",
         "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/legacy-index.json",
         "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/governance-snapshots.json",
-        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/signoff.json"
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/signoff.json",
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/policy.json",
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/protection-sources.json",
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/gc_versions.py",
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/record_attestation.py",
+        "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp6-governance/validate_wp6.py"
     ]
     result = module.build_evidence_root(
         args.project_root.resolve(), paths, commit_sha=args.commit_sha
