@@ -61,7 +61,7 @@ context:
 - [x] 建立Ubuntu/Windows required matrix、merge_group门、main最终evidence-root和OIDC证明。
 - [x] 实施独立SID/UID stage边界、引用保护GC、30天/20GiB策略与故障注入。
 - [x] 修正58/59快照记录，生成WP6签核模板、执行日志和最终根哈希。
-- [ ] 初始化并推送私有GitHub仓库；配置可用的ruleset/required checks并保存真实Actions/attestation证据。
+- [x] 初始化并推送GitHub仓库；配置可用的ruleset/required checks并保存真实Actions/attestation证据。
 
 **Acceptance Criteria:**
 - Given Python 3.11.15空环境，when执行冻结安装和统一验证，then Ubuntu与Windows均通过。
