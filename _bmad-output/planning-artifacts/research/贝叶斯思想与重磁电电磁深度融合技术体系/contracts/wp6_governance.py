@@ -30,16 +30,31 @@ def canonical_sha256(value: object) -> str:
     return sha256(encoded).hexdigest()
 
 
+def canonical_file_bytes(path: Path) -> bytes:
+    """文本按Git跨平台语义冻结；二进制保持原字节。"""
+    content = path.read_bytes()
+    try:
+        text = content.decode("utf-8")
+    except UnicodeDecodeError:
+        return content
+    return text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+
+
 def resolve_inside(root: Path, candidate: Path) -> Path:
     root_resolved = root.resolve(strict=True)
+    candidate_absolute = candidate.absolute()
+    try:
+        lexical_relative = candidate_absolute.relative_to(root.absolute())
+    except ValueError as error:
+        raise ValueError("目标不在受控根目录内") from error
+    current = root.absolute()
+    for part in lexical_relative.parts:
+        current = current / part
+        if current.is_symlink():
+            raise ValueError("受控路径包含符号链接")
     candidate_resolved = candidate.resolve(strict=True)
     if candidate_resolved == root_resolved or root_resolved not in candidate_resolved.parents:
         raise ValueError("目标不在受控根目录内")
-    current = candidate_resolved
-    while current != root_resolved:
-        if current.is_symlink():
-            raise ValueError("受控路径包含符号链接")
-        current = current.parent
     return candidate_resolved
 
 
@@ -79,9 +94,10 @@ def validate_legacy_index(research_root: Path, index_path: Path) -> list[str]:
         if not candidate.is_file():
             errors.append(f"legacy索引文件不存在: {path}")
             continue
-        if candidate.stat().st_size != item["bytes"]:
+        canonical = canonical_file_bytes(candidate)
+        if len(canonical) != item["bytes"]:
             errors.append(f"legacy索引大小漂移: {path}")
-        if file_sha256(candidate) != item["sha256"]:
+        if sha256(canonical).hexdigest() != item["sha256"]:
             errors.append(f"legacy索引哈希漂移: {path}")
         if item["migration_state"] not in {"v2-sidecar", "Legacy-frozen"}:
             errors.append(f"legacy索引状态非法: {path}")

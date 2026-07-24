@@ -5,8 +5,8 @@
     {
       "work_package": "WP1",
       "path": "validation/wp1-toy/output/manifest.json",
-      "bytes": 1838,
-      "sha256": "897f87fac1aac6a65f962165a44fa2fde2a13095836fba402977dd58d67ee0f4",
+      "bytes": 1771,
+      "sha256": "2a97b60994623a86052d825375760d7cafefc7a58a02a6a671438b6aeda9ce97",
       "migration_state": "Legacy-frozen"
     },
     {
@@ -19,22 +19,22 @@
     {
       "work_package": "WP3",
       "path": "validation/wp3-physics/active-output.json",
-      "bytes": 292,
-      "sha256": "11f8180dc0f663bfde0b7e6b06feb68e47cf0c1c64ab5d10b94b681baa83c8f8",
+      "bytes": 287,
+      "sha256": "dad841fb5a18e98bf6d9781f3856bcad4daa982e04a8b79a49bab17056bc96c1",
       "migration_state": "Legacy-frozen"
     },
     {
       "work_package": "WP4",
       "path": "validation/wp4-decision/active-output.json",
-      "bytes": 294,
-      "sha256": "e99c7f5fbadaa865605e2bafa795e969305db5bc4fd30633df3542cf7f3b25a6",
+      "bytes": 288,
+      "sha256": "0fb2d7350f209999b3aca57b9c73411f1a2033321a22599aac052d7c992aa54b",
       "migration_state": "Legacy-frozen"
     },
     {
       "work_package": "WP5",
       "path": "validation/wp5-consistency/active-output.json",
-      "bytes": 293,
-      "sha256": "abf62815e68bc7d84245197eca13b8d846aecd7ccebe3537290d77962c96e788",
+      "bytes": 288,
+      "sha256": "77d077eabb247076ec30441d8456f94b0c0acf6fcc3fa8e53fa29bb83dbfe8c1",
       "migration_state": "Legacy-frozen"
     }
   ]
