@@ -9,12 +9,13 @@ stage="${versions}/.stage-$(printf '%032x' "$RANDOM")"
 
 cleanup() {
   sudo userdel "${worker}" >/dev/null 2>&1 || true
-  rm -rf -- "${test_root}"
+  sudo rm -rf -- "${test_root}"
 }
 trap cleanup EXIT
 
 sudo useradd --system --no-create-home --shell /usr/sbin/nologin "${worker}"
 mkdir -p "${stage}"
+chmod 0711 "${test_root}"
 chmod 0755 "${versions}"
 sudo chown "${worker}:${worker}" "${stage}"
 sudo chmod 0700 "${stage}"
