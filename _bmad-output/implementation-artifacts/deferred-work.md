@@ -17,3 +17,6 @@
 - source_spec: `_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md`
   summary: 在WP6运维治理中增加未被active pointer引用的孤儿版本保留期、配额和安全垃圾回收。
   evidence: 硬中断后活动指针始终有效，但可能遗留不可达版本目录并长期占用磁盘。
+- source_spec: `_bmad-output/implementation-artifacts/spec-wp6-engineering-contracts-ci-evidence-governance.md`
+  summary: 升级GitHub Pro或调整仓库可见性后，为main启用Ubuntu/Windows required checks。
+  evidence: GitHub branch protection API对个人账户私有仓库返回403并明确要求升级Pro或改为公开；当前双平台门已执行但平台不提供强制合并保护。

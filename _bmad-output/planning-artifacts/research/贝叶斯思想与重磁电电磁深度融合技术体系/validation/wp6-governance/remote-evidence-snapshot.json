@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "work_package": "WP6",
+  "recorded_at": "2026-07-24T08:44:00Z",
+  "repository": "xiaopengcug/GeoDeepBayes1.0.1",
+  "visibility": "private",
+  "commit_sha": "2be209d28faf9838fc7ac603e87150d77d4411f7",
+  "actions_run": {
+    "id": 30079846573,
+    "url": "https://github.com/xiaopengcug/GeoDeepBayes1.0.1/actions/runs/30079846573",
+    "conclusion": "success",
+    "required_gates": {
+      "ubuntu-latest": "success",
+      "windows-latest": "success"
+    },
+    "attest_final_evidence_root": "success"
+  },
+  "evidence": {
+    "root_sha256": "4e3867af0d817cc58bc2fdf738379188558e7d3703ec73797b54143186f8074b",
+    "bundle_sha256": "8dae3a6e1266775cababbc42f743d65a2b33d160a1bd43230433e67199593dd4",
+    "provider": "sigstore-fulcio-rekor",
+    "certificate_identity": "https://github.com/xiaopengcug/GeoDeepBayes1.0.1/.github/workflows/ci.yml@refs/heads/main",
+    "certificate_oidc_issuer": "https://token.actions.githubusercontent.com",
+    "rekor_log_index": "2232686448"
+  },
+  "artifact": {
+    "id": 8591366908,
+    "name": "wp6-evidence-2be209d28faf9838fc7ac603e87150d77d4411f7",
+    "expires_at": "2026-10-22T08:41:55Z",
+    "files_verified_nonempty": [
+      "evidence-root.json",
+      "evidence-root.sigstore.json",
+      "attestation-verification.json",
+      "attestation-verification.txt"
+    ]
+  },
+  "branch_protection": {
+    "configured": false,
+    "api_status": 403,
+    "reason": "GitHub要求升级Pro或将个人账户私有仓库改为公开后才能启用branch protection。"
+  },
+  "signoff_status": "Pending"
+}

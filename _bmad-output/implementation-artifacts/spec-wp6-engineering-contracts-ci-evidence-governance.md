@@ -60,7 +60,7 @@ context:
 - [x] 固定Python、uv和跨平台锁；统一README与CI安装测试命令。
 - [x] 建立Ubuntu/Windows required matrix、merge_group门、main最终evidence-root和OIDC证明。
 - [x] 实施独立SID/UID stage边界、引用保护GC、30天/20GiB策略与故障注入。
-- [ ] 修正58/59快照记录，生成WP6签核模板、执行日志和最终根哈希。
+- [x] 修正58/59快照记录，生成WP6签核模板、执行日志和最终根哈希。
 - [ ] 初始化并推送私有GitHub仓库；配置可用的ruleset/required checks并保存真实Actions/attestation证据。
 
 **Acceptance Criteria:**
@@ -73,6 +73,8 @@ context:
 - Given三个责任角色未全部批准或外部attestation未验证，when更新状态，then WP6不得标记Done。
 
 ## Spec Change Log
+
+- 2026-07-24：GitHub Free个人私有仓库拒绝原生artifact attestation，保持私有约束不变，外部锚改为GitHub OIDC + Sigstore Fulcio/Rekor；branch protection的403平台限制登记为延后项。
 
 ## Design Notes
 
