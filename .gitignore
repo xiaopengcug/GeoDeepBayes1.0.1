@@ -22,6 +22,8 @@ _bmad-output/planning-artifacts/research/open-data/
 **/validation/**/work/
 **/validation/**/source/
 **/validation/**/versions/
+!**/validation/wp7/versions/
+!**/validation/wp7/versions/**
 **/validation/**/attempts/
 **/validation/**/selftest-results/
 **/validation/**/partial-results/
@@ -47,6 +49,7 @@ _bmad-output/planning-artifacts/research/open-data/
 *.gz
 *.npy
 *.npz
+!**/validation/wp7/versions/**/*.npz
 *.h5
 *.hdf5
 *.tif

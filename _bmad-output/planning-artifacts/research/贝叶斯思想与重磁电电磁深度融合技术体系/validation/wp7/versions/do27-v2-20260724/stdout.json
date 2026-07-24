@@ -1,0 +1,36 @@
+{
+  "output": "H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\versions\\do27-v2-20260724",
+  "gravity": {
+    "alpha": 10.0,
+    "iterations": 136,
+    "stop_code": 2,
+    "solver_converged": true,
+    "normalized_rms": 0.3460506825659003,
+    "model_rmse": 0.13045788786258616,
+    "effective_df": 84.57347869873047,
+    "gcv": 1.32134055294507,
+    "solution_norm": 2.9162707925264075,
+    "residual_norm": 3.8065575082249037,
+    "elapsed_seconds": 0.02736830000003465,
+    "data_fit_accepted": false,
+    "model_recovery_accepted": true,
+    "accepted": false
+  },
+  "magnetic": {
+    "alpha": 1.0,
+    "iterations": 917,
+    "stop_code": 2,
+    "solver_converged": true,
+    "normalized_rms": 0.001329210247877,
+    "model_rmse": 0.007964446649808268,
+    "effective_df": 120.93307495117188,
+    "gcv": 5.775381921102096,
+    "solution_norm": 0.2687795243396206,
+    "residual_norm": 0.014621312726646999,
+    "elapsed_seconds": 0.15489809999962745,
+    "data_fit_accepted": false,
+    "model_recovery_accepted": false,
+    "accepted": false
+  },
+  "forward_seconds": 0.02462040000000343
+}

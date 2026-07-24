@@ -1,0 +1,12 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.15 (main, Jun 23 2026, 15:20:37) [MSC v.1944 64 bit (AMD64)]",
+  "simpeg": "0.25.2",
+  "discretize": "0.12.0",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "executable": "H:\\GeoDeepBayes1.0.1\\.venv\\Scripts\\python.exe",
+  "venv": "H:\\GeoDeepBayes1.0.1\\.venv",
+  "requirements_lock_sha256": "f854a4e87e1fb74e32b92fd595af33252d055842671b0ac5048f85906d0fdcc6",
+  "command": "H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\do27\\run_do27_validation.py --archive H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\open-data\\mining_geophysics\\Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic\\simpeg-research_Astic-2020-JointInversion-1.0.0.zip --output H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\versions\\do27-v2-20260724 --work H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\work\\do27-v2-20260724 --stride 8 --shape 12,12,8 --seed 20260724"
+}

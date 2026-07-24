@@ -1,6 +1,6 @@
 # 证据状态登记
 
-更新日期：2026-07-17。状态词仅允许：`Hypothesis`（假设/目标）、`Planned`（已预注册但未运行）、`Open-data-run`（仅有公开数据完整性/摄取/质量运行证据）、`Synthetic-run`（有可复算且全部验收检查通过的合成运行证据）、`Field-validated`（有现场留出验证证据）、`Blocked`或`Failed`。`Open-data-run`和失败运行不得自动升级或等同于后两者。
+更新日期：2026-07-24。状态词仅允许：`Hypothesis`（假设/目标）、`Planned`（已预注册但未运行）、`Open-data-run`（仅有公开数据完整性/摄取/质量运行证据）、`Synthetic-run`（有可复算且全部验收检查通过的合成运行证据）、`Field-validated`（有现场留出验证证据）、`Blocked`或`Failed`。`Open-data-run`和失败运行不得自动升级或等同于后两者。
 
 `evidence_id` 是稳定主键，不随章节改名而改变。`source/run` 在证据生成前写 `none`，生成后必须填写证据包相对路径及run ID；`owner/date` 必须由责任人和实际运行日期回写，不得以文档修订日期替代。
 
@@ -19,8 +19,8 @@
 | EVD-SBC-001 | 参数真值覆盖与推断校准 | SBC rank；经验覆盖率 %；z-score | Planned | none | UQ负责人 / 未运行 | 多次独立合成数据/SBC；不得用PPC替代 | 附录4、5验证报告 |
 | EVD-COMPUTE-001 | 云端时长、吞吐、加速比与成本；算力说明 | wall time s；samples/s；speedup；GPU-hours；CNY | Planned | none | 系统架构负责人 / 未运行 | 完整benchmark manifest、平台报价、原始日志与计费明细 | 算力说明Observed列；附录4 |
 | EVD-OPEN-001 | 本地公开地球物理数据完整性、格式与数值资产验证 | 文件数；SHA-256失败数；格式检查通过数；上游大小差异数 | Open-data-run | validation/runs/open-data-20260717-03 / open-data-20260717-03 | 数据治理负责人 / 2026-07-17 | 仅支持数据摄取与质量边界；不得升级为Field-validated或替代钻孔留出验证 | 整改落实报告01；开放数据验证run包 |
-| EVD-SYNTH-001 | DO-27同源重磁数据现代SimPEG降阶兼容验证 | 正演有限性；归一化RMS；模型RMSE；迭代数；停止码；耗时 | Synthetic-run | validation/runs/do27-simpeg-20260717-06 / do27-simpeg-20260717-06 | 待复核 / 2026-07-17 | 12×12×8网格、每方法121观测；重力与磁法**均收敛(stop_code=2)**，磁法经 iter_lim=2000+alpha 扩展后 882 次收敛(normalized_rms≈4e-5)；**仍非原2020 PGI notebook复现**（用 LSQR+Tikhonov，非 ProjectedGNCG+PGI） | 整改落实报告02；DO-27运行证据包 |
-| EVD-ALGO-002 | matrix-free 算子梯度、MCMC 诊断与端到端链路；src/geodeepbayes | adjoint dot rel_err；rank-R̂；bulk/tail ESS；MCSE；k-NN KL；MAP misfit | Synthetic-run | validation/runs/synthetic-block-20260717 / synthetic-block-20260717 | 数值推断负责人 / 2026-07-17 | gravity/magnetic 算子 Jv/Jᵀv 三类梯度测试通过(adjoint dot rel_err≈1e-16)；rank-R̂/bulk-tail-ESS/MCSE 与 k-NN KL 模块在已知分布验证通过；小块状模型端到端 MAP→POD→MH→诊断→IG 链路 R̂<1.05、ESS>100 | src/geodeepbayes/{forward,diagnostics,divergence,sampling,benchmarks}；tests/ |
+| EVD-SYNTH-001 | DO-27同源重磁数据现代SimPEG降阶单物理运行兼容验证 | GCV；加权RMS；模型RMSE；迭代数；停止码 | Synthetic-run | validation/wp7/versions/do27-v4-20260724 / do27-v4-20260724 | 数值推断负责人 / 2026-07-24 | v2失败包保持不可变；v4绑定归档/配置/代码并从原始矩阵独立重跑LSQR与GCV。重力/磁法低RMS均为overfit warning，磁法model recovery失败；仅支持现代API、降阶、双单物理运行/数据/GCV/LSQR兼容，非PGI、非联合、非贝叶斯、非原notebook复现 | WP7 DO-27-v2失败包与v4正式兼容运行包 |
+| EVD-ALGO-002 | 全维delayed acceptance、POD边界、MCMC诊断与解析覆盖率；src/geodeepbayes | rank/folded R̂；bulk/tail ESS；relative MCSE；跨模态访问；Wilson覆盖区间 | Synthetic-run | validation/wp7/versions/synthetic-block-v6-20260724 / synthetic-block-v6-20260724 | 数值推断负责人 / 2026-07-24 | 48维双模态目标4链：max R̂=1.00374、min bulk ESS=2496、min tail ESS=1964、max relative MCSE=0.0201；400次同目标复制的90%/95%全维覆盖率为0.895/0.945；POD由冻结快照重建，复制由冻结种子重建；仅支持指定小规模解析合成算法正确性 | src/geodeepbayes/sampling；src/geodeepbayes/benchmarks；tests/ |
 
 任何证据升级都必须同时记录证据包路径、生成日期、责任人、代码/数据SHA-256和审批记录。没有证据包的数字保持原状态。
 
@@ -41,5 +41,5 @@
 | EVD-SBC-001 | `附录5::5.1.2 验证指标体系` | 参数覆盖/SBC计划 |
 | EVD-COMPUTE-001 | `算力说明::零、唯一可复算benchmark矩阵` | B01—B05及Observed回写字段 |
 | EVD-OPEN-001 | `validation::open-data-20260717-03` | 公开数据主清单184文件、MT清单421文件及8类选定格式/资产检查 |
-| EVD-SYNTH-001 | `validation::do27-simpeg-20260717-06` | 原393660单元/961观测输入读取；降阶1152单元/121观测的两个单物理正演与正则化反演；磁法经修复后收敛(stop_code=2)；非PGI复现 |
-| EVD-ALGO-002 | `validation::synthetic-block-20260717`；`src::geodeepbayes.{forward,diagnostics,divergence,sampling,benchmarks}`；`tests::{forward,diagnostics,divergence,sampling}` | gravity/magnetic matrix-free Jv/Jᵀv 三类梯度测试；rank-R̂/bulk-tail-ESS/MCSE/k-NN KL 已知分布验证；小块状端到端链路(metrics.json: max_rhat=1.017, min_ess=344) |
+| EVD-SYNTH-001 | `validation::wp7/versions/do27-v2-20260724`；`validation::wp7/versions/do27-v4-20260724` | v2失败事实与v4有限兼容事实并列保留；v4只证明降阶双单物理现代API、GCV/LSQR和数据拟合上界兼容 |
+| EVD-ALGO-002 | `validation::wp7/versions/synthetic-block-v6-20260724`；`src::geodeepbayes.{sampling,benchmarks}`；`tests::{sampling,benchmarks}` | 48维全空间DA、冻结POD能力边界、4链诊断、跨模态访问和400次同目标解析预测覆盖率 |

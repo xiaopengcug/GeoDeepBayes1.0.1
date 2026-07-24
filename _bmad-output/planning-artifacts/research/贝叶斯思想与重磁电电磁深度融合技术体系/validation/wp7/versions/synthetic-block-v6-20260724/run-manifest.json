@@ -1,0 +1,28 @@
+{
+  "schema": "wp7-synthetic-producer-v1",
+  "run_id": "synthetic-block-v6-20260724",
+  "started_at": "2026-07-24T16:03:13.575266+00:00",
+  "completed_at": "2026-07-24T16:03:21.760169+00:00",
+  "status": "Synthetic-run",
+  "exit_code": 0,
+  "command": [
+    "H:\\GeoDeepBayes1.0.1\\src\\geodeepbayes\\benchmarks\\synthetic_block_v2.py",
+    "--output",
+    "_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\versions\\synthetic-block-v6-20260724",
+    "--seed",
+    "20260724",
+    "--warmup",
+    "2000",
+    "--draws",
+    "4000"
+  ],
+  "script": {
+    "path": "H:/GeoDeepBayes1.0.1/src/geodeepbayes/benchmarks/synthetic_block_v2.py",
+    "sha256": "a481cbe271035d655e67f6a69092fd2869f37b73dd541e14f1499de630ffa5ce"
+  },
+  "approval": {
+    "owner": "WP7三角色独立AI技术复核",
+    "date": "2026-07-24T16:06:33.053089+00:00",
+    "decision": "approved"
+  }
+}

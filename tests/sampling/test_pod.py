@@ -40,3 +40,21 @@ def test_pod_encode_reconstruct_roundtrip():
     assert alpha.shape == (pod.rank,)
     m_back = pod.reconstruct(alpha)
     assert m_back.shape == (15,)
+
+
+def test_pod_delayed_acceptance_honors_proposal_ratio():
+    pod = PODReducer(np.array([[-1.0, 1.0]]), max_rank=1)
+    proposals = iter([(np.array([1.0]), -100.0), (np.array([1.0]), 100.0)])
+
+    alpha, full, stage2 = pod.delayed_acceptance(
+        lambda model: -0.5 * float(model @ model),
+        lambda reduced: -2.0 * float(reduced @ reduced),
+        lambda _current, _rng: next(proposals),
+        n_steps=2,
+        rng=7,
+    )
+
+    assert stage2 == 1
+    assert alpha[0, 0] == 0.0
+    assert alpha[1, 0] == 1.0
+    assert full.shape == (2, 1)
