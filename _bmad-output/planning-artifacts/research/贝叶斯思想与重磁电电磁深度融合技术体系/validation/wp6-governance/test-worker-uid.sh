@@ -25,5 +25,5 @@ if sudo -u "${worker}" touch "${versions}/forbidden"; then
   exit 1
 fi
 sudo -u "${worker}" touch "${stage}/allowed"
-test -f "${stage}/allowed"
+sudo test -f "${stage}/allowed"
 echo "PASS Linux distinct-UID stage isolation"
