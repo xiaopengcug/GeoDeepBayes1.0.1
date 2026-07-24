@@ -7,6 +7,7 @@ import importlib.util
 import json
 import os
 from pathlib import Path
+import subprocess
 import sys
 
 import pytest
@@ -214,6 +215,39 @@ def test_protected_version_closure_is_derived_and_fails_closed(tmp_path):
         governance.protected_version_closure(
             tmp_path, {"manifest": ["manifest.json"]}, ["active-pointer"]
         )
+    empty = tmp_path / "empty.json"
+    empty.write_text("{}", encoding="utf-8")
+    with pytest.raises(ValueError, match="不得为空"):
+        governance.protected_version_closure(
+            tmp_path, {"active-pointer": ["empty.json"]}, ["active-pointer"]
+        )
+    pointer.write_text(json.dumps({"path": "missing.json"}), encoding="utf-8")
+    with pytest.raises(ValueError, match="下游引用缺失"):
+        governance.protected_version_closure(
+            tmp_path, {"active-pointer": ["pointer.json"]}, ["active-pointer"]
+        )
+
+
+def test_gc_cli_rejects_protection_trust_root_overrides(tmp_path):
+    script = (
+        RESEARCH_ROOT / "validation" / "wp6-governance" / "gc_versions.py"
+    )
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--versions-root",
+            str(tmp_path),
+            "--audit",
+            str(tmp_path / "audit.json"),
+            "--sources",
+            str(tmp_path / "attacker.json"),
+        ],
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode != 0
+    assert "unrecognized arguments: --sources" in result.stderr
 
 
 def test_release_evidence_rejects_forged_record_and_tampered_member(
