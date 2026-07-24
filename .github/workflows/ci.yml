@@ -130,6 +130,10 @@ jobs:
             --verification-log "attestation-verification.txt" \
             --output "$WP6_ROOT/validation/wp6-governance/attestation-verification.json"
 
+      - name: Enforce final WP6 release gate
+        run: |
+          uv run --frozen python "$WP6_ROOT/validation/wp6-governance/validate_wp6.py" --release
+
       - name: Stage complete evidence bundle
         run: |
           mkdir -p wp6-evidence

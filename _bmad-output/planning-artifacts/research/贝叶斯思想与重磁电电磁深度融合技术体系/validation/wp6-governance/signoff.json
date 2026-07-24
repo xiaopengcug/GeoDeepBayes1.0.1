@@ -1,11 +1,44 @@
 {
   "schema_version": "1.0.0",
   "work_package": "WP6",
-  "status": "Pending",
+  "status": "Done",
+  "reviewed_commit": "d417ed9d799c40eaff7b71222129f5bca94b2bf7",
+  "review_issue": "https://github.com/xiaopengcug/GeoDeepBayes1.0.1/issues/2",
   "roles": [
-    {"role": "系统架构负责人", "decision": "Pending", "identity": null, "identity_type": null, "decided_at": null},
-    {"role": "工程负责人", "decision": "Pending", "identity": null, "identity_type": null, "decided_at": null},
-    {"role": "QA负责人", "decision": "Pending", "identity": null, "identity_type": null, "decided_at": null}
+    {
+      "role": "系统架构负责人",
+      "decision": "Approved",
+      "identity": "Winston System Architect AI review agent",
+      "identity_type": "AI",
+      "decided_at": "2026-07-24T09:40:32Z"
+    },
+    {
+      "role": "工程负责人",
+      "decision": "Approved",
+      "identity": "Amelia Engineering AI review agent",
+      "identity_type": "AI",
+      "decided_at": "2026-07-24T09:40:32Z"
+    },
+    {
+      "role": "QA负责人",
+      "decision": "Approved",
+      "identity": "Murat QA Test Architecture AI review agent",
+      "identity_type": "AI",
+      "decided_at": "2026-07-24T09:40:32Z"
+    }
   ],
-  "rule": "三角色全部明确批准、双平台CI通过且外部attestation验证后才可将status改为Done。"
+  "rule": "三角色全部明确批准、双平台CI通过且外部attestation验证后才可将status改为Done。",
+  "evidence": {
+    "actions_run": "https://github.com/xiaopengcug/GeoDeepBayes1.0.1/actions/runs/30083013909",
+    "required_gates": {
+      "ubuntu-latest": "success",
+      "windows-latest": "success"
+    },
+    "sigstore_attestation": "success"
+  },
+  "scope_limitations": [
+    "三项签署均为AI技术审查，不是自然人签章。",
+    "不构成生产环境、现场作业、法规合规或资源量认证。",
+    "最终发布提交仍须由main分支CI重新生成Sigstore证明并通过--release门。"
+  ]
 }
