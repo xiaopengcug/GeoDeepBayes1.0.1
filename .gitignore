@@ -35,6 +35,7 @@ _bmad-output/planning-artifacts/research/open-data/
 
 # 本地生成的证明；CI中的最终证明通过GitHub attestation保存
 **/validation/wp6-governance/evidence-root.json
+**/validation/wp6-governance/evidence-root.sigstore.json
 **/validation/wp6-governance/attestation-verification.json
 **/validation/wp6-governance/gc-audit*.json
 

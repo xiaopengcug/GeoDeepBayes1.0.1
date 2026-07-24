@@ -87,7 +87,7 @@ v1从不原地迁移。可恢复全部必填事实时创建绑定原根的v2 sid
 - `uv run --frozen pytest -q` -- 全量单元测试通过。
 - `pwsh -NoProfile -File "<research-root>/validate-wp6.ps1" -SelfTest` -- 正例与故障注入全部通过。
 - `git diff --cached --check`及提交allowlist验证 -- 无大文件、凭据、绝对路径和排除目录。
-- `gh attestation verify evidence-root.json --repo xiaopengcug/GeoDeepBayes1.0.1` -- 最终远端证明通过。
+- `cosign verify-blob evidence-root.json --bundle evidence-root.sigstore.json --certificate-identity "<main-workflow-identity>" --certificate-oidc-issuer "https://token.actions.githubusercontent.com"` -- 私有个人仓库通过Fulcio/Rekor验证最终远端证明。
 
 ## Suggested Review Order
 

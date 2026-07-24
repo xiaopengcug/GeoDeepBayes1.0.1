@@ -77,8 +77,13 @@ def validate(*, self_test: bool, release: bool) -> dict[str, object]:
         for required in ("pull_request:", "merge_group:", "windows-latest", "ubuntu-latest"):
             if required not in text:
                 failures.append(f"CI缺少: {required}")
-        if "actions/attest" not in text:
-            failures.append("CI缺少最终evidence-root attestation")
+        for required in (
+            "cosign sign-blob",
+            "cosign verify-blob",
+            "https://token.actions.githubusercontent.com",
+        ):
+            if required not in text:
+                failures.append(f"CI缺少最终evidence-root外部证明: {required}")
 
     gitignore = project / ".gitignore"
     if not gitignore.is_file():
