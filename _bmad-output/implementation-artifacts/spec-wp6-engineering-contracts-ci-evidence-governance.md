@@ -2,7 +2,7 @@
 title: 'WP6工程契约、CI与证据治理'
 type: 'feature'
 created: '2026-07-24'
-status: 'in-review'
+status: 'done'
 baseline_commit: 'NO_VCS'
 review_loop_iteration: 0
 context:
@@ -75,6 +75,7 @@ context:
 ## Spec Change Log
 
 - 2026-07-24：GitHub Free个人私有仓库拒绝原生artifact attestation，保持私有约束不变，外部锚改为GitHub OIDC + Sigstore Fulcio/Rekor；branch protection的403平台限制登记为延后项。
+- 2026-07-24：仓库公开并启用main保护；架构、工程、QA三项明确标注为AI的独立技术复审均批准提交`d417ed9d799c40eaff7b71222129f5bca94b2bf7`。签署不冒充自然人，且不外推为生产、现场、法规或资源量认证。
 
 ## Design Notes
 
