@@ -1,0 +1,48 @@
+# GeoDeepBayes 项目配置
+# 贝叶斯重磁电电磁联合反演（TRL 3-4 研究框架）
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geodeepbayes"
+version = "0.1.0"
+description = "Bayesian joint inversion of gravity, magnetic, DC/IP and EM — research framework (TRL 3-4)"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "Proprietary" }
+dependencies = [
+    "simpeg>=0.25",
+    "discretize>=0.12",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.7",
+    "jsonschema>=4.0",
+]
+
+[project.optional-dependencies]
+# dev: 测试与覆盖率（本次阶段启用）
+dev = ["pytest>=7", "pytest-cov>=4"]
+# mcmc / gpu: 可选生态，当前环境尚未安装，属后续阶段
+mcmc = ["arviz>=0.16", "emcee>=3"]
+gpu = ["torch>=2.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["src"]
+
+[tool.uv]
+required-version = "==0.11.29"
+environments = [
+    "sys_platform == 'win32' and platform_machine == 'AMD64'",
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[tool.coverage.run]
+source = ["geodeepbayes"]
+omit = ["*/benchmarks/*"]

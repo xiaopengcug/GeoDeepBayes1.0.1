@@ -1,0 +1,20 @@
+{
+  "schema": "wp5-upstream-allowlist-v1",
+  "upstreams": {
+    "wp2-active": {
+      "run_instance_id": "20260718T003904155Z-8092b4983b45491da1a1ee3589c9cc4c",
+      "manifest_sha256": "e9fc2e28403c09019144a4198a90f7eb4543179c8b3e630d1584349495ea5e1e",
+      "source_root_sha256": "2588724d2771f650109702dc44c49f94708e447e06f48076af8b5e2e98538852"
+    },
+    "wp3-active": {
+      "run_instance_id": "20260718T103914410Z-d1ef8b18ed5d4cf2a761a62570f646db",
+      "manifest_sha256": "5ef4fa8be5c5ef9cd3bdc4e7d1cbeee9b7f38a53dfa504bb190c2ef2352d4cb7",
+      "source_root_sha256": "bb082a73f466140a835f431f98d4cebfa135b1c12b4ebfedc2e7711bb8274392"
+    },
+    "wp4-active": {
+      "run_instance_id": "20260719T021729206Z-e4ac5cf2c14843e4bfb4d86e23a12449",
+      "manifest_sha256": "0c20e09594f2736ef2ba029e344a0a5bf91cad50e3cf87eb5cb4f1e27362a1a6",
+      "source_root_sha256": "58339f3ead235f0bce8aacbc00eea83fb6a4d29aa555a1009dd1038156fd4169"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "snapshots": [
+    {
+      "label": "整改落实报告02记录快照",
+      "entries": 58,
+      "source": "整改落实报告02.md",
+      "source_sha256": "323734d659e8c67d880a6f3c677f5cd7abd6f5fd893f69e5c8c70f6a0e5dbb96",
+      "manifest_sha256": null,
+      "meaning": "该报告生成时的manifest条目数，不代表后续版本。"
+    },
+    {
+      "label": "审查意见03复核快照",
+      "entries": 59,
+      "source": "审查意见03.md",
+      "source_sha256": "28239ab1484b5d477054ba36a786fea36f2d50c36ba8663e579d36bc17aa5cfd",
+      "manifest_sha256": "3b2e0d195fd7706f30d9aea1dd14147a40f5580e1de6b5381fe3f3894549e08a",
+      "meaning": "后续治理验证实际输出，属于不同manifest快照。"
+    }
+  ],
+  "rule": "新记录的entries必须由对应manifest自动计算并同时绑定manifest SHA-256。"
+}

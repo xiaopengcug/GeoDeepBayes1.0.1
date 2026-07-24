@@ -1,0 +1,432 @@
+{
+  "schema": "wp5-ledger-reanchor-report-v1",
+  "input_sha256": "0b1f06ff9d2228c72a4c21226ed6cde34424438cf25dad884887ae153610cec3",
+  "migration_sha256": "8bbe5af05819c04b951f531889f98fd22764c7858f448c4670d95734db92e953",
+  "candidate_sha256": "46c1026a100e837a4613add41fb920c72bf1ae57aaf553e55959da915c4236c7",
+  "entry_count": 413,
+  "updated_unique_single_line_entries": 0,
+  "unresolved_count": 42,
+  "policy": "Only a unique current single-line SHA-256 match may move span_start/span_end; all other records remain unchanged in candidate and are reported.",
+  "unresolved": [
+    {
+      "id": "CLM-DOC-02-0003",
+      "kind": "claim",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "claim_type": "quantitative",
+      "original_span_start": 18,
+      "original_span_end": 18,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-02-0004",
+      "kind": "claim",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "claim_type": "quantitative",
+      "original_span_start": 19,
+      "original_span_end": 19,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-02-0006",
+      "kind": "claim",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "claim_type": "depth",
+      "original_span_start": 21,
+      "original_span_end": 21,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-02-0007",
+      "kind": "claim",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "claim_type": "depth",
+      "original_span_start": 22,
+      "original_span_end": 22,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0012",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 163,
+      "original_span_end": 163,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0014",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 245,
+      "original_span_end": 245,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0046",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 1081,
+      "original_span_end": 1081,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0048",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "pod",
+      "original_span_start": 1097,
+      "original_span_end": 1097,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0049",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 1098,
+      "original_span_end": 1098,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0050",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 1099,
+      "original_span_end": 1099,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0052",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 1107,
+      "original_span_end": 1107,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0053",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 1111,
+      "original_span_end": 1111,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0054",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 1114,
+      "original_span_end": 1114,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0055",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 1115,
+      "original_span_end": 1115,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-03-0001",
+      "kind": "code",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 873,
+      "original_span_end": 920,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-04-0002",
+      "kind": "claim",
+      "document": "04-分场景多方法融合适配方案.md",
+      "claim_type": "calibration",
+      "original_span_start": 6,
+      "original_span_end": 6,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-04-0005",
+      "kind": "claim",
+      "document": "04-分场景多方法融合适配方案.md",
+      "claim_type": "quantitative",
+      "original_span_start": 141,
+      "original_span_end": 141,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-04-0006",
+      "kind": "claim",
+      "document": "04-分场景多方法融合适配方案.md",
+      "claim_type": "quantitative",
+      "original_span_start": 142,
+      "original_span_end": 142,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0001",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 89,
+      "original_span_end": 93,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0002",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 97,
+      "original_span_end": 100,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0003",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 106,
+      "original_span_end": 109,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0004",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 205,
+      "original_span_end": 230,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0005",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 234,
+      "original_span_end": 254,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0006",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 260,
+      "original_span_end": 325,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0007",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 329,
+      "original_span_end": 387,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0008",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 391,
+      "original_span_end": 483,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0009",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 489,
+      "original_span_end": 540,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0010",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 544,
+      "original_span_end": 572,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0011",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 581,
+      "original_span_end": 594,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0012",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 619,
+      "original_span_end": 657,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0008",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 36,
+      "original_span_end": 36,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0013",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 100,
+      "original_span_end": 100,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0014",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 101,
+      "original_span_end": 101,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0015",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 102,
+      "original_span_end": 102,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0016",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 200,
+      "original_span_end": 200,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0017",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 201,
+      "original_span_end": 201,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0018",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 202,
+      "original_span_end": 202,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0024",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 291,
+      "original_span_end": 291,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0028",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 327,
+      "original_span_end": 327,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0029",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 328,
+      "original_span_end": 328,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0030",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 329,
+      "original_span_end": 329,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0031",
+      "kind": "claim",
+      "document": "贝叶斯三维反演测试算力需求说明.md",
+      "claim_type": "quantitative",
+      "original_span_start": 330,
+      "original_span_end": 330,
+      "match_count": 0,
+      "candidate_lines": []
+    }
+  ]
+}

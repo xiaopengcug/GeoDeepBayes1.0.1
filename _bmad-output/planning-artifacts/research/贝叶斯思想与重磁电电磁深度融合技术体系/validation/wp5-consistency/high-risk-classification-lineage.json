@@ -1,0 +1,55 @@
+{
+  "schema": "wp5-risk-registry-lineage-v1",
+  "generations": {
+    "loop28": {
+      "path": "high-risk-classification.loop28-anchor.json",
+      "sha256": "f9568b13862efea2198bd150c5dd995f7d8a437b5f83ea6300227c6f24fa3a31",
+      "rule_ids": [
+        "diagnostic",
+        "design-eig",
+        "realized-ig",
+        "lomo",
+        "pod",
+        "rjmcmc",
+        "calibration",
+        "depth",
+        "resource"
+      ]
+    },
+    "loop29-intermediate": {
+      "path": "high-risk-classification.loop29-intermediate-anchor.json",
+      "sha256": "7ea220daa97a5e7c362e8b40e61e30d26c0a8dd8361cb4853b5730883a3f4a8d",
+      "rule_ids": [
+        "pod",
+        "calibration",
+        "depth",
+        "resource"
+      ]
+    },
+    "loop29": {
+      "path": "high-risk-classification.loop29-anchor.json",
+      "sha256": "7ea220daa97a5e7c362e8b40e61e30d26c0a8dd8361cb4853b5730883a3f4a8d",
+      "rule_ids": [
+        "pod",
+        "calibration",
+        "depth",
+        "resource"
+      ]
+    },
+    "loop30": {
+      "path": "high-risk-classification.loop30-anchor.json",
+      "sha256": "f9fd4eab64ef02e77c2290bb6bf17b8ee898f311a0540806ef173f04506d8e3b",
+      "rule_ids": [
+        "pod",
+        "calibration",
+        "depth",
+        "resource",
+        "c02-gn-hessian",
+        "c03-rjmcmc-interface",
+        "a3-pod-hardware-boundary",
+        "a11-borehole-observation",
+        "a13-curie-source-contract"
+      ]
+    }
+  }
+}

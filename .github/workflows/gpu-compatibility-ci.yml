@@ -1,0 +1,393 @@
+# GeoDeepBayes GPU 兼容性测试 CI/CD 配置
+# Story 0.5 - FR-008, FR-009: 硬件兼容性矩阵和 CI/CD 集成
+
+name: GPU Compatibility Tests
+
+on:
+  # ⚠️ 后续阶段（审查意见02 / 整改落实报告02）：
+  # 本工作流引用的 geodeepbayes.gpu 模块与 tests/gpu/ 尚未实现，
+  # 自动 push/PR/schedule 触发已禁用，仅保留手动 workflow_dispatch 运行。
+  # 基础 CI 见 ci.yml。
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  # GPU 兼容性矩阵生成 (FR-008)
+  compatibility-matrix:
+    name: Generate Compatibility Matrix
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Generate compatibility matrix
+        run: |
+          python3 -c "
+          from geodeepbayes.gpu import (
+              CompatibilityMatrix,
+              GPUVendor,
+              CompatibilityStatus,
+              generate_ci_report,
+              should_skip_gpu_tests,
+              get_ci_environment,
+          )
+
+          # 创建兼容性矩阵
+          matrix = CompatibilityMatrix()
+          matrix.load_all_defaults()
+
+          # 生成报告
+          print('=' * 60)
+          print('GPU Hardware Compatibility Matrix')
+          print('=' * 60)
+          print()
+
+          # 获取 CI 环境信息
+          env = get_ci_environment()
+          print(f'CI Platform: {env[\"ci_platform\"]}')
+          print(f'Has GPU: {env[\"has_gpu\"]}')
+          print(f'GPU Count: {env[\"gpu_count\"]}')
+          print()
+
+          # 检查是否应该跳过 GPU 测试
+          if should_skip_gpu_tests():
+              print('Notice: GPU tests will be skipped (no GPU detected)')
+              print('This is expected behavior in CI environments without GPU')
+              print()
+
+          # 生成 Markdown 报告
+          report = matrix.generate_report(format='markdown')
+          print(report)
+          print()
+
+          # 生成 CI 报告
+          ci_report = generate_ci_report(matrix)
+          print(ci_report)
+          print()
+
+          # 保存报告
+          from pathlib import Path
+          Path('.benchmarks').mkdir(exist_ok=True)
+
+          with open('.benchmarks/gpu_compatibility_matrix.md', 'w') as f:
+              f.write(report)
+
+          with open('.benchmarks/gpu_compatibility_matrix.json', 'w') as f:
+              f.write(matrix.generate_report(format='json'))
+
+          print('Compatibility matrix reports saved to .benchmarks/')
+          "
+
+      - name: Upload compatibility matrix
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpu-compatibility-matrix
+          path: .benchmarks/gpu_compatibility_matrix.*
+
+      - name: Upload compatibility matrix to summary
+        if: always()
+        run: |
+          if [ -f ".benchmarks/gpu_compatibility_matrix.md" ]; then
+            cat .benchmarks/gpu_compatibility_matrix.md >> $GITHUB_STEP_SUMMARY
+          fi
+
+  # GPU 单元测试（自动跳过无 GPU 环境）(FR-009)
+  gpu-unit-tests:
+    name: GPU Unit Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run GPU compatibility matrix tests
+        run: |
+          python3 -m pytest tests/gpu/test_compatibility_matrix.py -v
+
+      - name: Run all GPU tests
+        run: |
+          python3 -m pytest tests/gpu/ -v --tb=short
+
+      - name: Generate coverage report
+        if: always()
+        run: |
+          python3 -m pytest tests/gpu/ --cov=geodeepbayes/gpu --cov-report=term-missing --cov-report=xml
+
+      - name: Upload coverage to Codecov
+        if: always()
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage.xml
+          flags: gpu
+          name: gpu-coverage
+
+  # NVIDIA GPU 测试（在 GPU runner 上）
+  nvidia-gpu-tests:
+    name: NVIDIA GPU Tests
+    runs-on: ubuntu-latest
+    # 仅在标签为 nvidia 的 runner 上运行
+    if: false  # 默认禁用，需要配置 GPU runner 后启用
+    timeout-minutes: 30
+    container:
+      image: nvidia/cuda:12.1.0-runtime-ubuntu22.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        run: |
+          apt-get update
+          apt-get install -y python3 python3-pip
+          python3 -m pip install --upgrade pip
+
+      - name: Install PyTorch with CUDA
+        run: |
+          pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+      - name: Install dependencies
+        run: |
+          pip3 install -e ".[dev]"
+
+      - name: Check GPU availability
+        run: |
+          python3 -c "
+          from geodeepbayes.gpu import is_gpu_available, get_gpu_count, detect_gpu_info
+          import sys
+
+          if not is_gpu_available():
+              print('Error: No GPU detected')
+              sys.exit(1)
+
+          count = get_gpu_count()
+          print(f'GPU Count: {count}')
+
+          for i in range(count):
+              gpu = detect_gpu_info(i)
+              print(f'GPU {i}: {gpu.name}')
+              print(f'  Memory: {gpu.memory.total_mb}MB')
+              print(f'  Compute: {gpu.compute_capability.major}.{gpu.compute_capability.minor}')
+          "
+
+      - name: Run GPU hardware tests
+        run: |
+          python3 -c "
+          from geodeepbayes.gpu import GPUHardwareTestSuite, detect_gpu_info
+
+          suite = GPUHardwareTestSuite(name='nvidia_gpu_tests')
+          results = suite.run_all()
+
+          for result in results:
+              status = 'PASS' if result.passed else 'FAIL'
+              print(f'[{status}] {result.name}: {result.runtime_ms:.2f}ms')
+              if result.error:
+                  print(f'  Error: {result.error}')
+
+          # 检查所有测试是否通过
+          if not all(r.passed for r in results):
+              import sys
+              sys.exit(1)
+          "
+
+      - name: Run compatibility check
+        run: |
+          python3 -c "
+          from geodeepbayes.gpu import (
+              CompatibilityMatrix,
+              auto_detect_current_gpu,
+              GPUVendor,
+              CompatibilityStatus,
+          )
+
+          matrix = CompatibilityMatrix()
+          matrix.load_nvidia_defaults()
+
+          # 检测当前 GPU
+          current = auto_detect_current_gpu(matrix)
+
+          if current:
+              print(f'Detected GPU: {current.model_name}')
+              print(f'Vendor: {current.vendor.value}')
+              print(f'Status: {current.status.value}')
+
+              if current.status == CompatibilityStatus.SUPPORTED:
+                  print('GPU is fully supported!')
+              elif current.status == CompatibilityStatus.CONDITIONAL:
+                  print('GPU is conditionally supported')
+                  if current.notes:
+                      print(f'Note: {current.notes}')
+              else:
+                  print('GPU is not supported')
+                  import sys
+                  sys.exit(1)
+          else:
+              print('Warning: GPU not found in compatibility matrix')
+          "
+
+  # 国产芯片测试（昇腾/DCU/MLU）
+  domestic-gpu-tests:
+    name: Domestic GPU Tests (Ascend/DCU/MLU)
+    runs-on: ubuntu-latest
+    if: false  # 默认禁用，需要在国产芯片 runner 上运行
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Generate domestic chip compatibility report
+        run: |
+          python -c "
+          from geodeepbayes.gpu import CompatibilityMatrix, generate_ci_report
+
+          matrix = CompatibilityMatrix()
+          matrix.load_domestic_defaults()
+
+          report = matrix.generate_report(format='markdown')
+          print(report)
+
+          ci_report = generate_ci_report(matrix)
+          print(ci_report)
+          "
+
+      - name: Check domestic GPU availability
+        run: |
+          python -c "
+          from geodeepbayes.gpu import is_gpu_available, get_gpu_count
+
+          if is_gpu_available():
+              count = get_gpu_count()
+              print(f'Domestic GPU Count: {count}')
+          else:
+              print('No domestic GPU detected (expected in non-domestic environments)')
+          "
+
+  # 多 GPU 并行测试 (FR-006)
+  multi-gpu-tests:
+    name: Multi-GPU Parallel Tests
+    runs-on: ubuntu-latest
+    if: false  # 需要多 GPU runner
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Check GPU count
+        run: |
+          python -c "
+          from geodeepbayes.gpu import get_gpu_count
+          import sys
+
+          count = get_gpu_count()
+          print(f'GPU Count: {count}')
+
+          if count < 2:
+              print('Multi-GPU tests require at least 2 GPUs')
+              sys.exit(1)
+          "
+
+      - name: Run multi-GPU tests
+        run: |
+          python -c "
+          from geodeepbayes.gpu import MultiGPUTest
+
+          test = MultiGPUTest(name='ci_multi_gpu')
+          result = test.run_parallel_workload()
+
+          print(f'Tasks: {result.tasks_completed}/{result.total_tasks}')
+          print(f'GPUs used: {result.gpus_used}')
+          print(f'Runtime: {result.total_runtime_ms:.2f}ms')
+
+          if result.tasks_completed < result.total_tasks:
+              import sys
+              sys.exit(1)
+          "
+
+  # 汇总报告
+  summary:
+    name: Generate Summary Report
+    runs-on: ubuntu-latest
+    needs: [compatibility-matrix, gpu-unit-tests]
+    if: always()
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: .benchmarks/all/
+
+      - name: Generate summary
+        run: |
+          echo "# GPU Compatibility Test Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Run Time**: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # 列出所有结果文件
+          if [ -d ".benchmarks/all" ]; then
+            echo "## Artifacts" >> $GITHUB_STEP_SUMMARY
+            find .benchmarks/all -type f -name "*.md" -o -name "*.json" | while read file; do
+              echo "- $(basename $file)" >> $GITHUB_STEP_SUMMARY
+            done
+          fi
+
+      - name: Display compatibility matrix
+        if: always()
+        run: |
+          if [ -f ".benchmarks/all/gpu-compatibility-matrix/gpu_compatibility_matrix.md" ]; then
+            cat .benchmarks/all/gpu-compatibility-matrix/gpu_compatibility_matrix.md
+          fi

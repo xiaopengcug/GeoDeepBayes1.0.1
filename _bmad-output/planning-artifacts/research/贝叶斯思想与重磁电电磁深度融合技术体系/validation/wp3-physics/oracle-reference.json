@@ -1,0 +1,12 @@
+{
+  "oracle_id":"WP3-INDEPENDENT-CLOSED-FORM-v1",
+  "independence":"closed-form values frozen independently from runner; no shared numerical kernel or filter table",
+  "dc_delta_u_per_i_ohm":0.7957747154594768,
+  "mt_z_real_ohm":0.019869176531592203,
+  "mt_z_imag_ohm":0.019869176531592203,
+  "tem_voltage_v":[-0.000031622776601683795,-0.000005590169943749474,-0.0000009882117688026185],
+  "csamt_ex_real_v_m":[1.0e-6,2.5e-7,6.25e-8],
+  "csamt_ex_imag_v_m":[-5.0e-7,-1.25e-7,-3.125e-8],
+  "wfem_delta_u_per_i_real_ohm":0.0015915494309189533,
+  "wfem_delta_u_per_i_imag_ohm":-0.00015915494309189535
+}

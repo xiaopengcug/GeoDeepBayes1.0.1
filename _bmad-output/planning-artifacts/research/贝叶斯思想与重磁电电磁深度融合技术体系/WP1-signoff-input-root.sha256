@@ -1,0 +1,21 @@
+# WP1 signoff input root v1
+# Algorithm: sort relative UTF-8 paths ordinally; for each file emit "<lowercase SHA256><two spaces><relative path>\n"; SHA256 the complete UTF-8 byte stream including final LF.
+# Status: Signed / review-complete
+# Members: 16 (回环4新增validate-wp1.ps1与validation/wp1-toy-root-anchor.sha256)
+root  a773824fd0b18afe8ddb8c7bb4e55f3886c9c137b9651536e6c5fef7a5027335
+b00ddcda3b1fcb1494abe71f82ed881bedec45df099087f25da81d9e5ec2ba06  02-全方法深度融合的底层逻辑与理论总纲.md
+70ad6ad9ac7994ce9b2e3592b57efc625679ca9e74b97e9d13f2eb69180de0dc  03-多方法深度融合的核心技术实现路径.md
+94792ffdca7df8222a5d76e616db0b609c9aabc4cb720695dd198b51359fa4a2  validate-wp1.ps1
+534c3ea5c4a9fb762c4f8c4d61741a5e901c1d31410a3404194506faaa131a12  validation/wp1-toy-root-anchor.sha256
+9a5f120fc48b33f6eb29d3c6aecba4690628a7baa3b8fe2892f0b0963ba2e0c3  validation/wp1-toy/config.json
+a0798fea966fd031b6ed02278328451b595fd6626acb413c7be6bfd6ce2775fe  validation/wp1-toy/invoke-wp1-toy-worker.ps1
+897f87fac1aac6a65f962165a44fa2fde2a13095836fba402977dd58d67ee0f4  validation/wp1-toy/output/manifest.json
+a34a3a4f57f7dc3fbb75f9d2bda72fb1793263a8e53178a5a88b97181ccf3e81  validation/wp1-toy/output/prior-predictive.csv
+1a56207b03b67ff88340eefe2fcaf3842c82629d533a22cce918ce5eafaaa6a9  validation/wp1-toy/output/ranks.csv
+2c2d49ef26ad1535d8ede33172c3d37e13811136b15edcca10822100a919768a  validation/wp1-toy/output/results.json
+179099fbbeabf9179ff54adc6e53da6d79b0aa4ea00b87f5f2e1499868d6cc3b  validation/wp1-toy/run-wp1-toy.ps1
+08fad41154e00fcbacd45d2d2df85338639827d6aa719815eb99704afef6dc1d  附录12-全深度概率立方体可视化工具.md
+b9a9aeef89d5f23a17a2d1fca6032a902cde19ef3e826ec7c384cf98186bb707  附录14-地质先验知识库.md
+5810ccddf668aebfc30c581a866c8a6586be8f4e901569c4a1d09d898773ab9e  附录2-概率化反演结果应用规范与风险管控准则.md
+d289e614699b71dc16d15688f3cb0cca4e88614509bfe8d301a2d72d0458126e  附录4-核心算法性能基准测试计划与验收指标.md
+c143c7d87c6ecaa3ffe65a7bf3583dac70cf12a63b8ec281e080f93204d79630  附录5-真实矿区验证方案.md

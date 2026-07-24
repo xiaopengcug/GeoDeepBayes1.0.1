@@ -1,0 +1,52 @@
+# Python与测试缓存
+.venv/
+.venv-*/
+**/.venv-*/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+coverage.xml
+
+# 本机与编辑器状态
+.claude/
+.cursor/
+.trae/
+.benchmarks/
+*.log
+
+# 开放数据、运行工作区及历史版本副本不进入Git
+_bmad-output/planning-artifacts/research/open-data/
+**/validation/**/work/
+**/validation/**/source/
+**/validation/**/versions/
+**/validation/**/attempts/
+**/validation/**/selftest-results/
+**/validation/**/partial-results/
+**/validation/runs/
+**/validation/**/output/
+!**/validation/wp1-toy/output/
+**/validation/wp1-toy/output/*
+!**/validation/wp1-toy/output/manifest.json
+**/validation/**/.stage-*/
+**/validation/**/journal*.tmp
+
+# 本地生成的证明；CI中的最终证明通过GitHub attestation保存
+**/validation/wp6-governance/evidence-root.json
+**/validation/wp6-governance/attestation-verification.json
+**/validation/wp6-governance/gc-audit*.json
+
+# 通用大型二进制与临时文件
+*.zip
+*.7z
+*.tar
+*.gz
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.tif
+*.tiff
+*.tmp

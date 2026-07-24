@@ -1,0 +1,59 @@
+{
+  "schema": "wp5-high-risk-classification-v1",
+  "rules": [
+    {
+      "id": "diagnostic",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "pattern": "^下列最小接口只保留联合核占位和外部诊断契约。生产实现必须直接调用2\\.3节联合对数密度、SPD参数化和固定目标采样核，不得从逐方法残差临时构造替代后验。ESS、MCSE、R-hat及发散/边界等几何诊断由独立诊断组件基于完整链记录计算，不得由参数短窗变化代替。$",
+      "claim_type": "diagnostic"
+    },
+    {
+      "id": "design-eig",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "pattern": "^\\*\\*Design-assumption示例（非运行结果）\\*\\*：设合成斑岩铜矿任务完成第一阶段1:5万重磁\\+MT区域普查，候选行动的事件概率、损失与观测模型均按WP4状态—行动合同预注册。下列内容只展示字段，不得作为性能、经济或行动建议：$",
+      "claim_type": "design_eig"
+    },
+    {
+      "id": "realized-ig",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "pattern": "^-\\ `realized_information_gain`：已观测\\ \\$y_\\{\\\\rm\\ obs}\\$\\ 后，$",
+      "claim_type": "realized_ig"
+    },
+    {
+      "id": "lomo",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "pattern": "^每条记录必须固定目标变量\\ \\$\\\\psi\\$、基线/条件集、KL方向、共同支撑、估计器、重复数和MCSE。反向LOMO须另记，不能混作同一量。不同方法的LOMO一般不可加、不可归一为贡献率，也不随笼统“数据质量”单调。$",
+      "claim_type": "lomo"
+    },
+    {
+      "id": "pod",
+      "document": "00-摘要.md",
+      "pattern": "^\\*\\*（1）算法层\\*\\*：构建统一贝叶斯数学框架，将各方法传统确定性反演算法（L-BFGS、Occam、共轭梯度法等）作为后验推断的锚点与提议构造工具。相对纯MCMC的“30—1000倍”仅为\\*\\*Planned假设\\*\\*，须以固定任务的time-to-accuracy和ESS/s/GPU实测；POD维度缩减比不等于端到端加速比。具体而言：$",
+      "claim_type": "pod"
+    },
+    {
+      "id": "rjmcmc",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "pattern": "^-\\ 离散岩性使用Gibbs/Metropolis块；变维RJMCMC的每个Green\\ move必须给出Jacobian、forward\\ density与reverse\\ density并满足维度匹配和可逆性；TV/L1非光滑先验使用变量分裂、平滑近似或相应专用核，不能仅因ESS低而直接切换算法$",
+      "claim_type": "rjmcmc"
+    },
+    {
+      "id": "calibration",
+      "document": "00-摘要.md",
+      "pattern": "^该量不是未经校准的“见矿概率”：事件定义、阈值和概率校准必须由留出钻孔或独立验证约束。仅当标量事件变量\\ \\$g\\(\\\\mathbf\\ m,\\\\mathbf\\ x\\)\\\\mid\\\\mathbf\\ d\\$\\ 可合理近似为\\ \\$\\\\mathcal\\ N\\(\\\\mu_g,\\\\sigma_g\\^2\\)\\$\\ 时，才有\\ \\$Risk=1-\\\\Phi\\(\\(\\\\mu_g-T\\)/\\\\sigma_g\\)\\$；多峰情形使用联合draw的事件频率并报告MCSE。$",
+      "claim_type": "calibration"
+    },
+    {
+      "id": "depth",
+      "document": "00-摘要.md",
+      "pattern": "^Risk\\(\\\\mathbf\\{x}\\\\mid\\\\mathbf\\ d,A\\)\\ =\\ 1\\ -\\ \\\\int\\ \\\\mathbb\\ I\\\\\\{g\\(\\\\mathbf\\ m,\\\\mathbf\\ x\\)>T\\\\}\\\\,p\\(\\\\mathbf\\ m\\|\\\\mathbf\\ d\\)\\\\,d\\\\mathbf\\ m$",
+      "claim_type": "depth"
+    },
+    {
+      "id": "resource",
+      "document": "00-摘要.md",
+      "pattern": "^>\\ \\*\\*WP4决策与合规边界。\\*\\*\\ 当前仅输出由完整联合后验draw逐样本计算的“物探约束靶体潜力情景”，不输出正式资源量、储量或可采资源量。体积、吨位、原位含量和回收金属量分列且保留单位；P90/P50/P10固定对应`q0\\.10/q0\\.50/q0\\.90`。投资建议只来自同一状态分布、行动集、现金流时点和货币口径下的ENPV/EVPI/EVSI合同，并保持`Synthetic-run`证据边界。$",
+      "claim_type": "resource"
+    }
+  ]
+}

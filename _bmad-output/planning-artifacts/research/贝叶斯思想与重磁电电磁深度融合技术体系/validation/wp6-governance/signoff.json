@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "work_package": "WP6",
+  "status": "Pending",
+  "roles": [
+    {"role": "系统架构负责人", "decision": "Pending", "identity": null, "identity_type": null, "decided_at": null},
+    {"role": "工程负责人", "decision": "Pending", "identity": null, "identity_type": null, "decided_at": null},
+    {"role": "QA负责人", "decision": "Pending", "identity": null, "identity_type": null, "decided_at": null}
+  ],
+  "rule": "三角色全部明确批准、双平台CI通过且外部attestation验证后才可将status改为Done。"
+}

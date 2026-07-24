@@ -1,0 +1,365 @@
+{
+  "schema": "wp5-scope-registry-v1",
+  "scopes": {
+    "COMPUTE-PLAN#SECTION-L1": {
+      "owner": "COMPUTE-PLAN",
+      "scope_type": "section",
+      "source": "贝叶斯三维反演测试算力需求说明.md#L1"
+    },
+    "COMPUTE-PLAN#SECTION-L12": {
+      "owner": "COMPUTE-PLAN",
+      "scope_type": "section",
+      "source": "贝叶斯三维反演测试算力需求说明.md#L12"
+    },
+    "COMPUTE-PLAN#SECTION-L287": {
+      "owner": "COMPUTE-PLAN",
+      "scope_type": "section",
+      "source": "贝叶斯三维反演测试算力需求说明.md#L287"
+    },
+    "COMPUTE-PLAN#SECTION-L96": {
+      "owner": "COMPUTE-PLAN",
+      "scope_type": "section",
+      "source": "贝叶斯三维反演测试算力需求说明.md#L96"
+    },
+    "DOC-00#SECTION-L1": {
+      "owner": "DOC-00",
+      "scope_type": "section",
+      "source": "00-摘要.md#L1"
+    },
+    "DOC-01#INTRO-HISTORICAL-DRILLING": {
+      "owner": "DOC-01",
+      "scope_type": "citation",
+      "source": "01-引言.md#references"
+    },
+    "DOC-01#SECTION-L139": {
+      "owner": "DOC-01",
+      "scope_type": "section",
+      "source": "01-引言.md#L139"
+    },
+    "DOC-01#SECTION-L262": {
+      "owner": "DOC-01",
+      "scope_type": "section",
+      "source": "01-引言.md#L262"
+    },
+    "DOC-02#SECTION-L1": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L1"
+    },
+    "DOC-02#SECTION-L10": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L10"
+    },
+    "DOC-02#SECTION-L1001": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L995"
+    },
+    "DOC-02#SECTION-L1069": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L1032"
+    },
+    "DOC-02#SECTION-L1106": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L1032"
+    },
+    "DOC-02#SECTION-L1349": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L1247"
+    },
+    "DOC-02#SECTION-L217": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L217"
+    },
+    "DOC-02#SECTION-L35": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L35"
+    },
+    "DOC-02#SECTION-L83": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L83"
+    },
+    "DOC-02#SECTION-L842": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L828"
+    },
+    "DOC-02#SECTION-L865": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L851"
+    },
+    "DOC-02#SECTION-L912": {
+      "owner": "DOC-02",
+      "scope_type": "section",
+      "source": "02-全方法深度融合的底层逻辑与理论总纲.md#L898"
+    },
+    "DOC-03#SECTION-L1": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L1"
+    },
+    "DOC-03#SECTION-L1022": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L843"
+    },
+    "DOC-03#SECTION-L1055": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L843"
+    },
+    "DOC-03#SECTION-L1108": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L915"
+    },
+    "DOC-03#SECTION-L471": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L493"
+    },
+    "DOC-03#SECTION-L50": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L50"
+    },
+    "DOC-03#SECTION-L507": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L499"
+    },
+    "DOC-03#SECTION-L570": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L568"
+    },
+    "DOC-03#SECTION-L596": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L609"
+    },
+    "DOC-03#SECTION-L637": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L619"
+    },
+    "DOC-03#SECTION-L679": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L673"
+    },
+    "DOC-03#SECTION-L701": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L673"
+    },
+    "DOC-03#SECTION-L763": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L944"
+    },
+    "DOC-03#SECTION-L781": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L965"
+    },
+    "DOC-03#SECTION-L813": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L993"
+    },
+    "DOC-03#SECTION-L899": {
+      "owner": "DOC-03",
+      "scope_type": "section",
+      "source": "03-多方法深度融合的核心技术实现路径.md#L1071"
+    },
+    "DOC-06#SECTION-L1": {
+      "owner": "DOC-06",
+      "scope_type": "section",
+      "source": "06-合成数据验证方案与验收设计.md#L1"
+    },
+    "DOC-06#SECTION-L10": {
+      "owner": "DOC-06",
+      "scope_type": "section",
+      "source": "06-合成数据验证方案与验收设计.md#L10"
+    },
+    "DOC-06#SECTION-L127": {
+      "owner": "DOC-06",
+      "scope_type": "section",
+      "source": "06-合成数据验证方案与验收设计.md#L128"
+    },
+    "DOC-06#SECTION-L24": {
+      "owner": "DOC-06",
+      "scope_type": "section",
+      "source": "06-合成数据验证方案与验收设计.md#L24"
+    },
+    "DOC-06#SECTION-L57": {
+      "owner": "DOC-06",
+      "scope_type": "section",
+      "source": "06-合成数据验证方案与验收设计.md#L58"
+    },
+    "DOC-06#SECTION-L601": {
+      "owner": "DOC-06",
+      "scope_type": "section",
+      "source": "06-合成数据验证方案与验收设计.md#L596"
+    },
+    "DOC-A1#SECTION-L1": {
+      "owner": "DOC-A1",
+      "scope_type": "section",
+      "source": "附录1-分矿种多方法融合定制化勘查模板.md#L1"
+    },
+    "DOC-A1#SECTION-L176": {
+      "owner": "DOC-A1",
+      "scope_type": "section",
+      "source": "附录1-分矿种多方法融合定制化勘查模板.md#L186"
+    },
+    "DOC-A1#SECTION-L22": {
+      "owner": "DOC-A1",
+      "scope_type": "section",
+      "source": "附录1-分矿种多方法融合定制化勘查模板.md#L24"
+    },
+    "DOC-A1#SECTION-L283": {
+      "owner": "DOC-A1",
+      "scope_type": "section",
+      "source": "附录1-分矿种多方法融合定制化勘查模板.md#L293"
+    },
+    "DOC-A1#SECTION-L377": {
+      "owner": "DOC-A1",
+      "scope_type": "section",
+      "source": "附录1-分矿种多方法融合定制化勘查模板.md#L387"
+    },
+    "DOC-A11#SECTION-L1": {
+      "owner": "DOC-A11",
+      "scope_type": "section",
+      "source": "附录11-分勘查阶段标准化操作手册.md#L1"
+    },
+    "DOC-A11#SECTION-L61": {
+      "owner": "DOC-A11",
+      "scope_type": "section",
+      "source": "附录11-分勘查阶段标准化操作手册.md#L61"
+    },
+    "DOC-A11#SECTION-L8": {
+      "owner": "DOC-A11",
+      "scope_type": "section",
+      "source": "附录11-分勘查阶段标准化操作手册.md#L8"
+    },
+    "DOC-A13#SECTION-L1": {
+      "owner": "DOC-A13",
+      "scope_type": "section",
+      "source": "附录13-岩性物性参数统计数据库.md#L1"
+    },
+    "DOC-A14#SECTION-L120": {
+      "owner": "DOC-A14",
+      "scope_type": "section",
+      "source": "附录14-地质先验知识库.md#L108"
+    },
+    "DOC-A14#SECTION-L199": {
+      "owner": "DOC-A14",
+      "scope_type": "section",
+      "source": "附录14-地质先验知识库.md#L182"
+    },
+    "DOC-A14#SECTION-L228": {
+      "owner": "DOC-A14",
+      "scope_type": "section",
+      "source": "附录14-地质先验知识库.md#L216"
+    },
+    "DOC-A14#SECTION-L288": {
+      "owner": "DOC-A14",
+      "scope_type": "section",
+      "source": "附录14-地质先验知识库.md#L128"
+    },
+    "DOC-A14#SECTION-L316": {
+      "owner": "DOC-A14",
+      "scope_type": "section",
+      "source": "附录14-地质先验知识库.md#L216"
+    },
+    "DOC-A14#SECTION-L77": {
+      "owner": "DOC-A14",
+      "scope_type": "section",
+      "source": "附录14-地质先验知识库.md#L72"
+    },
+    "DOC-A3#SECTION-L1": {
+      "owner": "DOC-A3",
+      "scope_type": "section",
+      "source": "附录3-算法选型与多方法组合决策树.md#L1"
+    },
+    "DOC-A3#SECTION-L336": {
+      "owner": "DOC-A3",
+      "scope_type": "section",
+      "source": "附录3-算法选型与多方法组合决策树.md#L350"
+    },
+    "DOC-A3#SECTION-L555": {
+      "owner": "DOC-A3",
+      "scope_type": "section",
+      "source": "附录3-算法选型与多方法组合决策树.md#L529"
+    },
+    "DOC-A3#SECTION-L56": {
+      "owner": "DOC-A3",
+      "scope_type": "section",
+      "source": "附录3-算法选型与多方法组合决策树.md#L52"
+    },
+    "DOC-A3#SECTION-L8": {
+      "owner": "DOC-A3",
+      "scope_type": "section",
+      "source": "附录3-算法选型与多方法组合决策树.md#L8"
+    },
+    "DOC-A4#SECTION-L1": {
+      "owner": "DOC-A4",
+      "scope_type": "section",
+      "source": "附录4-核心算法性能基准测试计划与验收指标.md#L1"
+    },
+    "DOC-A4#SECTION-L12": {
+      "owner": "DOC-A4",
+      "scope_type": "section",
+      "source": "附录4-核心算法性能基准测试计划与验收指标.md#L18"
+    },
+    "DOC-A4#SECTION-L203": {
+      "owner": "DOC-A4",
+      "scope_type": "section",
+      "source": "附录4-核心算法性能基准测试计划与验收指标.md#L193"
+    },
+    "DOC-A4#SECTION-L23": {
+      "owner": "DOC-A4",
+      "scope_type": "section",
+      "source": "附录4-核心算法性能基准测试计划与验收指标.md#L29"
+    },
+    "DOC-A4#SECTION-L266": {
+      "owner": "DOC-A4",
+      "scope_type": "section",
+      "source": "附录4-核心算法性能基准测试计划与验收指标.md#L256"
+    },
+    "DOC-A4#SECTION-L39": {
+      "owner": "DOC-A4",
+      "scope_type": "section",
+      "source": "附录4-核心算法性能基准测试计划与验收指标.md#L8"
+    },
+    "DOC-A5#SECTION-L1": {
+      "owner": "DOC-A5",
+      "scope_type": "section",
+      "source": "附录5-真实矿区验证方案.md#L1"
+    },
+    "DOC-A5#SECTION-L22": {
+      "owner": "DOC-A5",
+      "scope_type": "section",
+      "source": "附录5-真实矿区验证方案.md#L22"
+    },
+    "DOC-A5#SECTION-L68": {
+      "owner": "DOC-A5",
+      "scope_type": "section",
+      "source": "附录5-真实矿区验证方案.md#L68"
+    },
+    "DOC-A5#SECTION-L94": {
+      "owner": "DOC-A5",
+      "scope_type": "section",
+      "source": "附录5-真实矿区验证方案.md#L94"
+    }
+  }
+}

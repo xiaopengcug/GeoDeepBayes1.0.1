@@ -1,0 +1,558 @@
+{
+  "schema": "wp5-ledger-reanchor-report-v1",
+  "input_sha256": "de6f8e4547d4e6cd96e38cbf90f44243739279d927a2e7dc69de99db886d8242",
+  "migration_sha256": null,
+  "candidate_sha256": "4ab1dec218f3aedc1a5932ef86dcf179c6b9dde457416951eb5205d45586a255",
+  "entry_count": 399,
+  "updated_unique_single_line_entries": 83,
+  "unresolved_count": 46,
+  "policy": "Only a unique current single-line SHA-256 match may move span_start/span_end; all other records remain unchanged in candidate and are reported.",
+  "unresolved": [
+    {
+      "id": "CLM-DOC-02-0030",
+      "kind": "claim",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "claim_type": "quantitative",
+      "original_span_start": 971,
+      "original_span_end": 971,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-02-0031",
+      "kind": "claim",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "claim_type": "quantitative",
+      "original_span_start": 975,
+      "original_span_end": 975,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-02-0032",
+      "kind": "claim",
+      "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+      "claim_type": "quantitative",
+      "original_span_start": 976,
+      "original_span_end": 976,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-03-0025",
+      "kind": "claim",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "quantitative",
+      "original_span_start": 665,
+      "original_span_end": 665,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-03-0001",
+      "kind": "code",
+      "document": "03-多方法深度融合的核心技术实现路径.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 873,
+      "original_span_end": 920,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0001",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 89,
+      "original_span_end": 93,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0002",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 97,
+      "original_span_end": 100,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0003",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 106,
+      "original_span_end": 109,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0004",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 205,
+      "original_span_end": 230,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0005",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 234,
+      "original_span_end": 254,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0006",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 260,
+      "original_span_end": 325,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0007",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 329,
+      "original_span_end": 387,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0008",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 391,
+      "original_span_end": 483,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0009",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 489,
+      "original_span_end": 540,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0010",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 544,
+      "original_span_end": 566,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0011",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 581,
+      "original_span_end": 594,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CODE-DOC-06-0012",
+      "kind": "code",
+      "document": "06-合成数据验证方案与验收设计.md",
+      "claim_type": "interface-draft",
+      "original_span_start": 619,
+      "original_span_end": 657,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A1-0036",
+      "kind": "claim",
+      "document": "附录1-分矿种多方法融合定制化勘查模板.md",
+      "claim_type": "depth",
+      "original_span_start": 94,
+      "original_span_end": 94,
+      "match_count": 2,
+      "candidate_lines": [
+        94,
+        295
+      ]
+    },
+    {
+      "id": "CLM-DOC-A1-0040",
+      "kind": "claim",
+      "document": "附录1-分矿种多方法融合定制化勘查模板.md",
+      "claim_type": "quantitative",
+      "original_span_start": 101,
+      "original_span_end": 101,
+      "match_count": 9,
+      "candidate_lines": [
+        101,
+        165,
+        235,
+        302,
+        370,
+        438,
+        515,
+        582,
+        587
+      ]
+    },
+    {
+      "id": "CLM-DOC-A1-0073",
+      "kind": "claim",
+      "document": "附录1-分矿种多方法融合定制化勘查模板.md",
+      "claim_type": "depth",
+      "original_span_start": 225,
+      "original_span_end": 225,
+      "match_count": 5,
+      "candidate_lines": [
+        225,
+        360,
+        428,
+        505,
+        571
+      ]
+    },
+    {
+      "id": "CLM-DOC-A1-0092",
+      "kind": "claim",
+      "document": "附录1-分矿种多方法融合定制化勘查模板.md",
+      "claim_type": "quantitative",
+      "original_span_start": 295,
+      "original_span_end": 295,
+      "match_count": 2,
+      "candidate_lines": [
+        94,
+        295
+      ]
+    },
+    {
+      "id": "CLM-DOC-A1-0132",
+      "kind": "claim",
+      "document": "附录1-分矿种多方法融合定制化勘查模板.md",
+      "claim_type": "depth",
+      "original_span_start": 428,
+      "original_span_end": 428,
+      "match_count": 5,
+      "candidate_lines": [
+        225,
+        360,
+        428,
+        505,
+        571
+      ]
+    },
+    {
+      "id": "CLM-DOC-A11-0053",
+      "kind": "claim",
+      "document": "附录11-分勘查阶段标准化操作手册.md",
+      "claim_type": "depth",
+      "original_span_start": 69,
+      "original_span_end": 69,
+      "match_count": 10,
+      "candidate_lines": [
+        69,
+        126,
+        161,
+        196,
+        233,
+        252,
+        334,
+        406,
+        515,
+        618
+      ]
+    },
+    {
+      "id": "CLM-DOC-A11-0007",
+      "kind": "claim",
+      "document": "附录11-分勘查阶段标准化操作手册.md",
+      "claim_type": "quantitative",
+      "original_span_start": 96,
+      "original_span_end": 96,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A11-0008",
+      "kind": "claim",
+      "document": "附录11-分勘查阶段标准化操作手册.md",
+      "claim_type": "quantitative",
+      "original_span_start": 100,
+      "original_span_end": 100,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A11-0032",
+      "kind": "claim",
+      "document": "附录11-分勘查阶段标准化操作手册.md",
+      "claim_type": "quantitative",
+      "original_span_start": 402,
+      "original_span_end": 402,
+      "match_count": 3,
+      "candidate_lines": [
+        397,
+        506,
+        613
+      ]
+    },
+    {
+      "id": "CLM-DOC-A11-0033",
+      "kind": "claim",
+      "document": "附录11-分勘查阶段标准化操作手册.md",
+      "claim_type": "quantitative",
+      "original_span_start": 403,
+      "original_span_end": 403,
+      "match_count": 3,
+      "candidate_lines": [
+        398,
+        507,
+        614
+      ]
+    },
+    {
+      "id": "CLM-DOC-A11-0050",
+      "kind": "claim",
+      "document": "附录11-分勘查阶段标准化操作手册.md",
+      "claim_type": "quantitative",
+      "original_span_start": 407,
+      "original_span_end": 407,
+      "match_count": 2,
+      "candidate_lines": [
+        402,
+        511
+      ]
+    },
+    {
+      "id": "CLM-DOC-A13-0003",
+      "kind": "claim",
+      "document": "附录13-岩性物性参数统计数据库.md",
+      "claim_type": "quantitative",
+      "original_span_start": 192,
+      "original_span_end": 192,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A13-0005",
+      "kind": "claim",
+      "document": "附录13-岩性物性参数统计数据库.md",
+      "claim_type": "quantitative",
+      "original_span_start": 254,
+      "original_span_end": 254,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A13-0006",
+      "kind": "claim",
+      "document": "附录13-岩性物性参数统计数据库.md",
+      "claim_type": "quantitative",
+      "original_span_start": 266,
+      "original_span_end": 266,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A13-0007",
+      "kind": "claim",
+      "document": "附录13-岩性物性参数统计数据库.md",
+      "claim_type": "quantitative",
+      "original_span_start": 269,
+      "original_span_end": 269,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A13-0008",
+      "kind": "claim",
+      "document": "附录13-岩性物性参数统计数据库.md",
+      "claim_type": "quantitative",
+      "original_span_start": 280,
+      "original_span_end": 280,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A13-0009",
+      "kind": "claim",
+      "document": "附录13-岩性物性参数统计数据库.md",
+      "claim_type": "quantitative",
+      "original_span_start": 281,
+      "original_span_end": 281,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A13-0010",
+      "kind": "claim",
+      "document": "附录13-岩性物性参数统计数据库.md",
+      "claim_type": "quantitative",
+      "original_span_start": 282,
+      "original_span_end": 282,
+      "match_count": 0,
+      "candidate_lines": []
+    },
+    {
+      "id": "CLM-DOC-A3-0012",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 53,
+      "original_span_end": 53,
+      "match_count": 2,
+      "candidate_lines": [
+        53,
+        276
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0017",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 68,
+      "original_span_end": 68,
+      "match_count": 2,
+      "candidate_lines": [
+        68,
+        294
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0021",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 83,
+      "original_span_end": 83,
+      "match_count": 2,
+      "candidate_lines": [
+        83,
+        312
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0024",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 103,
+      "original_span_end": 103,
+      "match_count": 2,
+      "candidate_lines": [
+        103,
+        256
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0026",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 118,
+      "original_span_end": 118,
+      "match_count": 2,
+      "candidate_lines": [
+        118,
+        275
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0041",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 256,
+      "original_span_end": 256,
+      "match_count": 2,
+      "candidate_lines": [
+        103,
+        256
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0045",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 275,
+      "original_span_end": 275,
+      "match_count": 2,
+      "candidate_lines": [
+        118,
+        275
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0046",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 276,
+      "original_span_end": 276,
+      "match_count": 2,
+      "candidate_lines": [
+        53,
+        276
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0050",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 294,
+      "original_span_end": 294,
+      "match_count": 2,
+      "candidate_lines": [
+        68,
+        294
+      ]
+    },
+    {
+      "id": "CLM-DOC-A3-0054",
+      "kind": "claim",
+      "document": "附录3-算法选型与多方法组合决策树.md",
+      "claim_type": "quantitative",
+      "original_span_start": 312,
+      "original_span_end": 312,
+      "match_count": 2,
+      "candidate_lines": [
+        83,
+        312
+      ]
+    },
+    {
+      "id": "CLM-DOC-A5-0043",
+      "kind": "claim",
+      "document": "附录5-真实矿区验证方案.md",
+      "claim_type": "quantitative",
+      "original_span_start": 18,
+      "original_span_end": 18,
+      "match_count": 5,
+      "candidate_lines": [
+        18,
+        62,
+        106,
+        122,
+        138
+      ]
+    }
+  ]
+}

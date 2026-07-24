@@ -1,0 +1,7 @@
+{
+  "schema": "wp5-ledger-loop30-resolution-v1",
+  "source_ledger_sha256": "5d7f501b4864e5c36e98056c81f770e7c8e101749e1f53b99bd82c4e9b10161a",
+  "migration_sha256": "9f546ad734b4783472f063491bde886d5002ed9d0d883ea763c5e7fca1729c32",
+  "unresolved_count": 0,
+  "unresolved": []
+}

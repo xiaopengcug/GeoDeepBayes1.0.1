@@ -1,0 +1,133 @@
+name: WP6 Engineering Gate
+
+on:
+  pull_request:
+    branches: [main, develop]
+  merge_group:
+    types: [checks_requested]
+  push:
+    branches: [main, develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  PYTHON_VERSION: "3.11.15"
+  UV_VERSION: "0.11.29"
+  WP6_ROOT: "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系"
+
+jobs:
+  required-gates:
+    name: Required gates (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Checkout candidate commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Install pinned uv
+        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: ${{ env.UV_VERSION }}
+          enable-cache: true
+
+      - name: Install pinned Python
+        run: uv python install ${{ env.PYTHON_VERSION }}
+
+      - name: Verify lock and clean sync
+        shell: pwsh
+        run: |
+          uv lock --check
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          uv sync --frozen --extra dev
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Validate repository scope
+        run: uv run --frozen python tools/validate_repository_scope.py
+
+      - name: Run unit tests
+        run: uv run --frozen pytest -q
+
+      - name: Run contract and governance self-test
+        shell: pwsh
+        run: |
+          & pwsh -NoProfile -File "$env:WP6_ROOT/validate-wp6.ps1" -SelfTest -SkipTests
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Test Windows distinct-SID ACL isolation
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          & "$env:WP6_ROOT/validation/wp6-governance/test-worker-acl.ps1"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Test Linux distinct-UID isolation
+        if: runner.os == 'Linux'
+        shell: bash
+        run: bash "$WP6_ROOT/validation/wp6-governance/test-worker-uid.sh"
+
+  attest-evidence-root:
+    name: Attest final evidence root
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: required-gates
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+
+    steps:
+      - name: Checkout final commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Install pinned uv
+        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: ${{ env.UV_VERSION }}
+
+      - name: Install environment
+        run: |
+          uv python install "$PYTHON_VERSION"
+          uv sync --frozen --extra dev
+
+      - name: Build evidence root
+        run: |
+          uv run --frozen python "$WP6_ROOT/validation/wp6-governance/build_evidence_root.py" \
+            --project-root . \
+            --commit-sha "$GITHUB_SHA" \
+            --output "$WP6_ROOT/validation/wp6-governance/evidence-root.json"
+
+      - name: Attest evidence root
+        uses: actions/attest@36051bcae73b7c2a8a6945a48cbf80953c6baa35 # v4
+        with:
+          subject-path: "${{ env.WP6_ROOT }}/validation/wp6-governance/evidence-root.json"
+
+      - name: Verify attestation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh attestation verify "$WP6_ROOT/validation/wp6-governance/evidence-root.json" \
+            --repo "$GITHUB_REPOSITORY" | tee attestation-verification.txt
+          uv run --frozen python "$WP6_ROOT/validation/wp6-governance/record_attestation.py" \
+            --commit-sha "$GITHUB_SHA" \
+            --repository "$GITHUB_REPOSITORY" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+            --output "$WP6_ROOT/validation/wp6-governance/attestation-verification.json"
+
+      - name: Upload evidence bundle
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: wp6-evidence-${{ github.sha }}
+          path: |
+            ${{ env.WP6_ROOT }}/validation/wp6-governance/evidence-root.json
+            ${{ env.WP6_ROOT }}/validation/wp6-governance/attestation-verification.json
+            attestation-verification.txt
+          if-no-files-found: error
+          retention-days: 90

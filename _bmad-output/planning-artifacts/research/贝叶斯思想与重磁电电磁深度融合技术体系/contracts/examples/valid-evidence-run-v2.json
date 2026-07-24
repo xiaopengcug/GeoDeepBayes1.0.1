@@ -1,0 +1,42 @@
+{
+  "schema_version": "2.0.0",
+  "run_id": "wp6-fixture-success",
+  "evidence_id": "EVD-WP6-001",
+  "execution": {
+    "started_at": "2026-07-24T00:00:00Z",
+    "ended_at": "2026-07-24T00:00:01Z",
+    "outcome": "succeeded",
+    "exit_code": 0,
+    "failure_reason": null
+  },
+  "code": {
+    "algorithm": "sha256-canonical-manifest-v1",
+    "manifest": [{"path": "src/example.py", "bytes": 1, "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "locator": null}],
+    "sha256": "4112125af5ac4a0a68588a58c45b50de1ead9aef582f7a005a4077785e73a260"
+  },
+  "inputs": [{"path": "input.json", "bytes": 1, "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "locator": null}],
+  "configs": [{"path": "config.json", "bytes": 1, "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "locator": null}],
+  "outputs": [{"path": "result.json", "bytes": 1, "sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "locator": null}],
+  "environment": {
+    "os": "Windows",
+    "architecture": "AMD64",
+    "python_version": "3.11.15",
+    "python_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "uv_lock_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "randomness": {"stochastic": true, "seeds": [20260724]},
+  "approval": {
+    "identity": "wp6-qa-fixture",
+    "identity_type": "service",
+    "decided_at": "2026-07-24T00:00:02Z",
+    "decision": "approved"
+  },
+  "claims": [{"claim_id": "WP6-UNIT-GATE", "scope": "unit-behavior", "max_maturity": "Unit-verified"}],
+  "attestation": {
+    "required": false,
+    "subject_digest": null,
+    "workflow": null,
+    "commit_sha": null,
+    "verified": false
+  }
+}

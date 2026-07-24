@@ -1,0 +1,60 @@
+[
+  {
+    "schema_version": "2.0.0",
+    "operator_id": "gravity-matrix-free-v0",
+    "method": "gravity",
+    "maturity": "Unit-verified",
+    "implementation": {
+      "module": "geodeepbayes.forward.gravity",
+      "symbol": "GravityOperator"
+    },
+    "verification": {
+      "unit_tests": [
+        "tests/forward/test_adjoint_dot.py::test_gravity_adjoint_dot",
+        "tests/forward/test_taylor_remainder.py::test_gravity_taylor_second_order",
+        "tests/forward/test_finite_difference.py::test_gravity_finite_difference"
+      ],
+      "synthetic_runs": [],
+      "field_runs": []
+    },
+    "allowed_claims": ["design", "implemented", "unit-behavior"]
+  },
+  {
+    "schema_version": "2.0.0",
+    "operator_id": "magnetic-matrix-free-v0",
+    "method": "magnetic",
+    "maturity": "Unit-verified",
+    "implementation": {
+      "module": "geodeepbayes.forward.magnetic",
+      "symbol": "MagneticOperator"
+    },
+    "verification": {
+      "unit_tests": [
+        "tests/forward/test_adjoint_dot.py::test_magnetic_adjoint_dot",
+        "tests/forward/test_taylor_remainder.py::test_magnetic_taylor_second_order",
+        "tests/forward/test_finite_difference.py::test_magnetic_finite_difference"
+      ],
+      "synthetic_runs": [],
+      "field_runs": []
+    },
+    "allowed_claims": ["design", "implemented", "unit-behavior"]
+  },
+  {
+    "schema_version": "2.0.0",
+    "operator_id": "dc-placeholder-v0",
+    "method": "dc",
+    "maturity": "Planned",
+    "implementation": null,
+    "verification": {"unit_tests": [], "synthetic_runs": [], "field_runs": []},
+    "allowed_claims": ["design"]
+  },
+  {
+    "schema_version": "2.0.0",
+    "operator_id": "em-placeholder-v0",
+    "method": "tem",
+    "maturity": "Planned",
+    "implementation": null,
+    "verification": {"unit_tests": [], "synthetic_runs": [], "field_runs": []},
+    "allowed_claims": ["design"]
+  }
+]

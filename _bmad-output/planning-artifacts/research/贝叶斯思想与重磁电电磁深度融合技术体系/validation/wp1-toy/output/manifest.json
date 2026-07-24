@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "run_id": "WP1-TOY-20260717-R400-v1",
+  "status": "Synthetic-run",
+  "started_utc": "2026-07-17T20:56:44.2050210Z",
+  "finished_utc": "2026-07-17T20:56:53.9199787Z",
+  "command": "pwsh -NoProfile -File invoke-wp1-toy-worker.ps1 -Config <resolved-config> -Output <stage>",
+  "exit_code": 0,
+  "stdout": "OK run_id=WP1-TOY-20260717-R400-v1 rows=2000\r\n",
+  "stderr": null,
+  "environment": {
+    "pwsh": "7.6.3",
+    "dotnet": "10.0.9",
+    "os": "Microsoft Windows 10.0.26200"
+  },
+  "repetitions": 400,
+  "prior_predictive_n": 10000,
+  "posterior_draws": 1000,
+  "config_snapshot": {
+    "run_id": "WP1-TOY-20260717-R400-v1",
+    "repetitions": 400,
+    "prior_predictive_n": 10000,
+    "posterior_draws": 1000,
+    "rank_bins": 20,
+    "corr_t": {
+      "seed": 2026071701,
+      "nu": 5.0,
+      "sigma": [
+        [
+          1.0,
+          0.7
+        ],
+        [
+          0.7,
+          1.0
+        ]
+      ],
+      "grid_min": -6.0,
+      "grid_max": 6.0,
+      "grid_count": 1201
+    },
+    "shared_xi": {
+      "seed": 2026071702,
+      "a": [
+        1.0,
+        0.6
+      ],
+      "b": [
+        0.8,
+        -0.5
+      ],
+      "noise_sd": [
+        0.2,
+        0.25
+      ],
+      "xi_sd": 0.3
+    }
+  },
+  "sha256": {
+    "config": "9a5f120fc48b33f6eb29d3c6aecba4690628a7baa3b8fe2892f0b0963ba2e0c3",
+    "wrapper": "179099fbbeabf9179ff54adc6e53da6d79b0aa4ea00b87f5f2e1499868d6cc3b",
+    "worker": "a0798fea966fd031b6ed02278328451b595fd6626acb413c7be6bfd6ce2775fe",
+    "results": "2c2d49ef26ad1535d8ede33172c3d37e13811136b15edcca10822100a919768a",
+    "ranks": "1a56207b03b67ff88340eefe2fcaf3842c82629d533a22cce918ce5eafaaa6a9",
+    "prior_predictive": "a34a3a4f57f7dc3fbb75f9d2bda72fb1793263a8e53178a5a88b97181ccf3e81"
+  }
+}

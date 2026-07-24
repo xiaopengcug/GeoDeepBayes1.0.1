@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "retention_days": 30,
+  "quota_gib": 20,
+  "default_mode": "Report",
+  "protected_reference_types": [
+    "active-pointer",
+    "manifest",
+    "claim",
+    "signoff",
+    "migration-envelope",
+    "attestation"
+  ],
+  "production_worker": {
+    "require_distinct_identity": true,
+    "require_direct_stage_child": true,
+    "stage_pattern": "^\\.stage-[0-9a-f]{32}$",
+    "hosted_runner_evidence_scope": "mechanism-test-only"
+  }
+}

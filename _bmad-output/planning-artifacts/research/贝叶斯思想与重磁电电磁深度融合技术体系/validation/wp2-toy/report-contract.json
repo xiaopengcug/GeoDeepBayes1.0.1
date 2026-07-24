@@ -1,0 +1,24 @@
+{
+  "schema": "wp2-report-contract-v1",
+  "cost_required_fields": [
+    "stage", "value", "unit", "tolerance", "iterations", "calls",
+    "hardware", "evidence_status"
+  ],
+  "cost_stages": [
+    "assembly", "preconditioner", "forward", "adjoint",
+    "communication", "io", "diagnostics", "storage"
+  ],
+  "regularization_required_fields": [
+    "train_split", "validation_split", "test_split", "candidates",
+    "selection_rule", "boundary_policy", "sensitivity_analysis",
+    "omitted_uncertainty", "evidence_status"
+  ],
+  "allowed_units": ["s", "count", "byte"],
+  "stage_units": {
+    "assembly": "s", "preconditioner": "s", "forward": "s", "adjoint": "s",
+    "communication": "s", "io": "s", "diagnostics": "s", "storage": "byte"
+  },
+  "selection_rule_ids": ["validation_predictive_loss_stronger_tie_break"],
+  "allowed_evidence_status": ["Planned", "Synthetic-run", "Observed"],
+  "observed_requires_manifest": true
+}

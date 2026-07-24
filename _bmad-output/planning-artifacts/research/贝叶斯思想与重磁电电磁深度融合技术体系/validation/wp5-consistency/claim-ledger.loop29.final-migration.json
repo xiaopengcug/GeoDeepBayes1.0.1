@@ -1,0 +1,620 @@
+{
+  "schema": "wp5-ledger-text-migration-v1",
+  "source_ledger_sha256": "7a24adc19b5609167004dad3ebb9433081f532c2024cba2a656d397b0fb4d749",
+  "replacements": 12,
+  "tombstones": 22,
+  "entries": [
+    {
+      "id": "CLM-DOC-A3-0007",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0007",
+        "old_text_sha256": "67dd98182ecbac9400e7c01290b017f39516041a1f6bd94d656a58d058757465",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 37,
+        "span_end": 37
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0008",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0008",
+        "old_text_sha256": "562395d988e7578a440da2ab93862f63aa587390253d44020dacbcfd78f0e92b",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 38,
+        "span_end": 38
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0009",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0009",
+        "old_text_sha256": "caeeef011d2d0e6f70ac7136c8ee67b6dbb81756018c8036cb18d908a1585c2f",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 39,
+        "span_end": 39
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0011",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0011",
+        "old_text_sha256": "616b8c17d438a22f9584a8364700557b7e31bcd11aaadba50e2699fac9fd7e88",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 52,
+        "span_end": 52
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0013",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0013",
+        "old_text_sha256": "5949f01571afeee29c0d7b780d53830a7e4268ed62699f6c3de17e1769e766bc",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 54,
+        "span_end": 54
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0014",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0014",
+        "old_text_sha256": "a504e3cf095fcccf98cfe4d42169ad42c010dfadbceb45ff9069cf06c6af3a9a",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 59,
+        "span_end": 59
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0014",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 55,
+        "span_end": 55,
+        "text_sha256": "a504e3cf095fcccf98cfe4d42169ad42c010dfadbceb45ff9069cf06c6af3a9a",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3#SECTION-L56",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0016",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0016",
+        "old_text_sha256": "514898bd8e1885435426cc2ee950e140002a1f687473af851c3a181cc524b8aa",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 67,
+        "span_end": 67
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0018",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0018",
+        "old_text_sha256": "64fdc7c0ea6f1ba92842acbbf7821c781799078e8cd86f24b092ca2e94b07f0e",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 69,
+        "span_end": 69
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0020",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0020",
+        "old_text_sha256": "b1e40d40382765c512285d34525c3bae15177f06973d99f1fa28304a2b1e6bea",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 82,
+        "span_end": 82
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0022",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0022",
+        "old_text_sha256": "19e70c35082d7b9d1dab17198f7eec2515b787e2d5f238a5a64e8e07b24b2676",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 84,
+        "span_end": 84
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0023",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0023",
+        "old_text_sha256": "78a5c2a3f74c5e924982d0a323cf8ae310e0ca1f19c521ece860ae99ee2d9d91",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 102,
+        "span_end": 102
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0025",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0025",
+        "old_text_sha256": "adacac3f538538e1d143c7c2b9ea1e5f93cf2b79f84f5ea7f74f2dc5a9ad8c17",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 117,
+        "span_end": 117
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0027",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0027",
+        "old_text_sha256": "b0601848f7a4066fe98feb6375b3a90c167fb42cfc4c4b819ed8d72f7abbc18b",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 132,
+        "span_end": 132
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0028",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0028",
+        "old_text_sha256": "7c449809dac7ff9290f51a6fd7808b6e84de2a4661fade04337bc0b707893229",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 134,
+        "span_end": 134
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0029",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0029",
+        "old_text_sha256": "578b436a8525660aefae02d2a1398657d62fcefd5c19103983d2097946a2a307",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 148,
+        "span_end": 148
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0030",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0030",
+        "old_text_sha256": "890c332303bd5842e2587df7a4e1ce0ea17b296c655ebf116431e2cd6cc466ba",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 150,
+        "span_end": 150
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0035",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0035",
+        "old_text_sha256": "5c7b1752198a471ca15730effdf5dbdbee8bb1d164e13ff069ed273618412b33",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 162,
+        "span_end": 162
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0035",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 144,
+        "span_end": 144,
+        "text_sha256": "5c7b1752198a471ca15730effdf5dbdbee8bb1d164e13ff069ed273618412b33",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0036",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0036",
+        "old_text_sha256": "f7f77f325a5ad5ecf4f303e6a89da5f9dab658a346317ce40630875ff474fadc",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 168,
+        "span_end": 168
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0036",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 150,
+        "span_end": 150,
+        "text_sha256": "f7f77f325a5ad5ecf4f303e6a89da5f9dab658a346317ce40630875ff474fadc",
+        "claim_type": "pod",
+        "metric": "dimension_or_holdout_error",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP2-ACTIVE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0037",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0037",
+        "old_text_sha256": "284eb68462330894e0ba6e5eb2df4b2a2d3925da125f46e11ece88c5ed9fda02",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 182,
+        "span_end": 182
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0037",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 164,
+        "span_end": 164,
+        "text_sha256": "284eb68462330894e0ba6e5eb2df4b2a2d3925da125f46e11ece88c5ed9fda02",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0038",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0038",
+        "old_text_sha256": "86819a4814ea9e6f79fc8767ad4269befe7bc0ea9627b1b67d215f92f463435e",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 187,
+        "span_end": 187
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0038",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 169,
+        "span_end": 169,
+        "text_sha256": "86819a4814ea9e6f79fc8767ad4269befe7bc0ea9627b1b67d215f92f463435e",
+        "claim_type": "pod",
+        "metric": "dimension_or_holdout_error",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP2-ACTIVE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0040",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0040",
+        "old_text_sha256": "8785aa7b0a02d7ca230c2671fc096d717fe2536f1b6daf0ee7d5ebc17a35613d",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 251,
+        "span_end": 251
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0040",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 233,
+        "span_end": 233,
+        "text_sha256": "8785aa7b0a02d7ca230c2671fc096d717fe2536f1b6daf0ee7d5ebc17a35613d",
+        "claim_type": "pod",
+        "metric": "dimension_or_holdout_error",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP2-ACTIVE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0042",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0042",
+        "old_text_sha256": "3ba8271082495eae800bf134bc5a168cba1952688dff6315bb17ce8aed126a0f",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 257,
+        "span_end": 257
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0043",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0043",
+        "old_text_sha256": "b558b877b4cf0ed988a1d8935dbb77bf42334fe56b8778d875d406d48c1c92e5",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 258,
+        "span_end": 258
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0044",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0044",
+        "old_text_sha256": "a61c3052826bb2e9747689d3cfd60df086dbe5cacf40a599e8a1a4f57bc87367",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 270,
+        "span_end": 270
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0044",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 250,
+        "span_end": 250,
+        "text_sha256": "a61c3052826bb2e9747689d3cfd60df086dbe5cacf40a599e8a1a4f57bc87367",
+        "claim_type": "pod",
+        "metric": "dimension_or_holdout_error",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP2-ACTIVE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0047",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0047",
+        "old_text_sha256": "f413ef386bed08ca82c92c7cfd8a0310b3dd3a32279b974150a2d12de1e0295a",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 277,
+        "span_end": 277
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0048",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0048",
+        "old_text_sha256": "f0b0d1eef1859a1729d30424659d924e371e91154c08308fe59eeb9c42429556",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 289,
+        "span_end": 289
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0048",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 267,
+        "span_end": 267,
+        "text_sha256": "f0b0d1eef1859a1729d30424659d924e371e91154c08308fe59eeb9c42429556",
+        "claim_type": "pod",
+        "metric": "dimension_or_holdout_error",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP2-ACTIVE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0049",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0049",
+        "old_text_sha256": "40b52028fee96d23f916488156064577ec0dfce4e908998adaa7e932951d9d4d",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 293,
+        "span_end": 293
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0051",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0051",
+        "old_text_sha256": "ae952ee8511e2dd47f241c00f16620ba394715300fb0efaee12c7dc427cbd706",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 295,
+        "span_end": 295
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0052",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0052",
+        "old_text_sha256": "767495045dab60676b6b5b1b88ba4759d784642b0aaba728bf38807ed68e9d57",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 307,
+        "span_end": 307
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0052",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 283,
+        "span_end": 283,
+        "text_sha256": "767495045dab60676b6b5b1b88ba4759d784642b0aaba728bf38807ed68e9d57",
+        "claim_type": "pod",
+        "metric": "dimension_or_holdout_error",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP2-ACTIVE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0053",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0053",
+        "old_text_sha256": "3b8166d920962f7ccb1b711b43c6e96d6b7bdd563b4af9f0af7ce320f4e8d9b5",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 311,
+        "span_end": 311
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0055",
+      "disposition": "tombstone",
+      "old": {
+        "id": "CLM-DOC-A3-0055",
+        "old_text_sha256": "73a894454330b8e1fccf4d0a4912eaca80c6983e57a5879394f92d64b4e35d4f",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 313,
+        "span_end": 313
+      },
+      "reason": "removed from current document; no current SHA-256 match"
+    },
+    {
+      "id": "CLM-DOC-A3-0058",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0058",
+        "old_text_sha256": "bc7ed60ad42b2cc65ee28d0bc711060f684f45bb0f4e2545178244d2659e2c50",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 351,
+        "span_end": 351
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0058",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 325,
+        "span_end": 325,
+        "text_sha256": "bc7ed60ad42b2cc65ee28d0bc711060f684f45bb0f4e2545178244d2659e2c50",
+        "claim_type": "lomo",
+        "metric": "lomo_forward_kl",
+        "formula_id": "WP2-LOMO-KL",
+        "status": "Planned",
+        "scope": "DOC-A3#SECTION-L336",
+        "source": "WP2-ACTIVE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0087",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0087",
+        "old_text_sha256": "aef61e079b49538525ee60d4e0ff54a4152ea8566b482ca556eb28af178d2436",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 539,
+        "span_end": 539
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0087",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 513,
+        "span_end": 513,
+        "text_sha256": "aef61e079b49538525ee60d4e0ff54a4152ea8566b482ca556eb28af178d2436",
+        "claim_type": "calibration",
+        "metric": "typed_calibration",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3",
+        "source": "WP2-REPORT-CONTRACT",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    },
+    {
+      "id": "CLM-DOC-A3-0094",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A3-0094",
+        "old_text_sha256": "e238bff25d0658da453ef9df707fce5c86cc1053aef5f9276f5ef3767888b40f",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 557,
+        "span_end": 557
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A3-0094",
+        "kind": "claim",
+        "document": "附录3-算法选型与多方法组合决策树.md",
+        "span_start": 531,
+        "span_end": 531,
+        "text_sha256": "e238bff25d0658da453ef9df707fce5c86cc1053aef5f9276f5ef3767888b40f",
+        "claim_type": "quantitative",
+        "metric": "descriptive_quantity",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-A3#SECTION-L555",
+        "source": "EVD-WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "unique current single-line SHA-256 reanchor"
+    }
+  ]
+}

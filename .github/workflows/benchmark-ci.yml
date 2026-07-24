@@ -1,0 +1,292 @@
+# GeoDeepBayes 性能基准测试 CI/CD 配置
+# Story 0.4 - FR-009: 系统必须集成到 CI/CD 管道
+
+name: Performance Benchmarks
+
+on:
+  # ⚠️ 后续阶段（审查意见02 / 整改落实报告02）：
+  # 本工作流引用的 geodeepbayes.benchmarks 模块（PerformanceBenchmarkSuite 等）尚未实现，
+  # 自动 push/PR/schedule 触发已禁用，仅保留手动 workflow_dispatch 运行。
+  # 基础 CI 见 ci.yml（install + pytest + 契约校验）。
+  workflow_dispatch:
+
+env:
+  # Python 版本
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  # 快速基准测试（FR-009: 代码提交时自动运行快速测试）
+  quick-benchmarks:
+    name: Quick Benchmarks (FAST)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run quick benchmarks
+        run: |
+          python -c "
+          from geodeepbayes.benchmarks import (
+              PerformanceBenchmarkSuite,
+              generate_test_dataset,
+              TestDatasetSize,
+              CIIntegration,
+              CIConfig,
+          )
+
+          # 创建套件
+          suite = PerformanceBenchmarkSuite(name='quick_benchmarks')
+
+          # 注册快速基准测试
+          suite.register('matrix_operations', lambda d: __import__('numpy').linalg.norm(d.grid))
+          suite.register('vector_operations', lambda d: __import__('numpy').sum(d.observations))
+
+          # 生成快速测试数据集（10万网格）
+          dataset = generate_test_dataset(TestDatasetSize.FAST)
+
+          # 运行基准测试
+          ci = CIIntegration(config=CIConfig(
+              fast_dataset_size=TestDatasetSize.FAST,
+              max_runtime_minutes=5,
+              fail_on_regression=True,
+          ))
+
+          result = ci.run_ci_pipeline(suite, dataset)
+
+          # 生成报告
+          print(ci.generate_report(result, format='text'))
+
+          # GitHub Actions 输出
+          print(ci.get_github_action_output(result))
+
+          # 检查退出码
+          exit(ci.get_exit_code(result))
+          "
+
+      - name: Upload benchmark results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quick-benchmark-results
+          path: .benchmarks/
+
+  # 标准基准测试（完整数据集）
+  standard-benchmarks:
+    name: Standard Benchmarks
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run standard benchmarks
+        run: |
+          python -c "
+          from geodeepbayes.benchmarks import (
+              PerformanceBenchmarkSuite,
+              generate_test_dataset,
+              TestDatasetSize,
+              CIIntegration,
+          )
+
+          suite = PerformanceBenchmarkSuite(name='standard_benchmarks')
+
+          # 注册完整的基准测试
+          suite.register('map_inversion', lambda d: __import__('numpy').linalg.norm(d.grid))
+          suite.register('mcmc_sampling', lambda d: __import__('numpy').std(d.grid))
+          suite.register('pod_reduction', lambda d: __import__('numpy').mean(d.grid, axis=0))
+
+          # 生成标准测试数据集（100万网格）
+          dataset = generate_test_dataset(TestDatasetSize.STANDARD)
+
+          ci = CIIntegration()
+          result = ci.run_ci_pipeline(suite, dataset)
+
+          print(ci.generate_report(result, format='markdown'))
+
+          exit(ci.get_exit_code(result))
+          "
+
+      - name: Upload benchmark results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: standard-benchmark-results
+          path: .benchmarks/
+
+  # 性能退化检测（FR-007）
+  regression-check:
+    name: Performance Regression Check
+    runs-on: ubuntu-latest
+    needs: quick-benchmarks
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download baseline
+        uses: actions/cache@v4
+        with:
+          path: .benchmarks/baseline.json
+          key: benchmark-baseline-${{ github.base_ref || github.ref_name }}
+
+      - name: Check regression
+        run: |
+          python -c "
+          from geodeepbayes.benchmarks import (
+              PerformanceRegressionDetector,
+              PerformanceBaseline,
+              BenchmarkResult,
+          )
+          from pathlib import Path
+          import json
+
+          detector = PerformanceRegressionDetector(
+              name='ci_regression_detector',
+              threshold_percent=10.0,
+          )
+
+          baseline_path = Path('.benchmarks/baseline.json')
+
+          if baseline_path.exists():
+              # 加载基线
+              with open(baseline_path) as f:
+                  baseline_data = json.load(f)
+
+              print('已加载性能基线')
+              print(f'基线记录数: {len(baseline_data.get(\"records\", []))}')
+          else:
+              print('未找到性能基线，跳过退化检测')
+          "
+
+  # 多环境性能对比（FR-008）
+  environment-comparison:
+    name: Environment Comparison
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Run benchmarks for comparison
+        run: |
+          python -c "
+          from geodeepbayes.benchmarks import (
+              PerformanceBenchmarkSuite,
+              generate_test_dataset,
+              TestDatasetSize,
+              EnvironmentConfig,
+              PerformanceComparator,
+          )
+          from datetime import datetime
+
+          # 创建对比器
+          comparator = PerformanceComparator(name='os_comparison')
+
+          # 检测环境
+          env = EnvironmentConfig.detect()
+          env_name = '${{ matrix.os }}'.replace('-', '_')
+          comparator.register_environment(env_name, env)
+
+          # 运行基准测试
+          suite = PerformanceBenchmarkSuite(name='comparison_suite')
+          suite.register('core_computation', lambda d: __import__('numpy').linalg.norm(d.grid))
+
+          dataset = generate_test_dataset(TestDatasetSize.FAST)
+          results = suite.run_all(dataset)
+
+          for result in results:
+              comparator.add_result(env_name, result)
+
+          # 保存结果用于对比
+          from pathlib import Path
+          Path('.benchmarks').mkdir(exist_ok=True)
+
+          with open(f'.benchmarks/{env_name}_results.json', 'w') as f:
+              import json
+              json.dump({
+                  'environment': env.to_dict(),
+                  'results': [{'name': r.name, 'runtime_ms': r.runtime_ms} for r in results],
+              }, f, indent=2)
+
+          print(f'{env_name} 基准测试完成')
+          print(f'运行时间: {results[0].runtime_ms:.0f}ms')
+          "
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.os }}-results
+          path: .benchmarks/
+
+  # 生成性能报告
+  generate-report:
+    name: Generate Performance Report
+    runs-on: ubuntu-latest
+    needs: [quick-benchmarks, environment-comparison]
+    if: always()
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: .benchmarks/all/
+
+      - name: Generate summary
+        run: |
+          echo "# 性能基准测试报告" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**运行时间**: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "**提交**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # 列出所有结果文件
+          if [ -d ".benchmarks/all" ]; then
+              echo "## 测试结果" >> $GITHUB_STEP_SUMMARY
+              ls -la .benchmarks/all/ >> $GITHUB_STEP_SUMMARY || true
+          fi
