@@ -119,7 +119,7 @@ jobs:
             --bundle "$WP6_ROOT/validation/wp6-governance/evidence-root.sigstore.json" \
             --certificate-identity "$CERTIFICATE_IDENTITY" \
             --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
-            | tee attestation-verification.txt
+            2>&1 | tee attestation-verification.txt
           uv run --frozen python "$WP6_ROOT/validation/wp6-governance/record_attestation.py" \
             --commit-sha "$GITHUB_SHA" \
             --repository "$GITHUB_REPOSITORY" \
@@ -139,6 +139,7 @@ jobs:
           test -s wp6-evidence/evidence-root.json
           test -s wp6-evidence/evidence-root.sigstore.json
           test -s wp6-evidence/attestation-verification.json
+          test -s wp6-evidence/attestation-verification.txt
 
       - name: Upload evidence bundle
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
