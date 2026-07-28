@@ -124,7 +124,7 @@
     {
       "path": "evidence-manifest.json",
       "bytes": 32564,
-      "sha256": "dddfd7558c2e5b5486d0a4143c32b6efec018dbd2b7672d58ca9d26ff2d7c2df"
+      "sha256": "ca30db375ac8d7a0a1c1c482982f0193c8574633e7e13e012ca517533a190506"
     },
     {
       "path": "field-contract-audit.json",
@@ -858,13 +858,13 @@
     },
     {
       "path": "wp8-1-method-synthetic-validation-v1.json",
-      "bytes": 486997,
-      "sha256": "af98c08cb8de670146f5674ad0fae5c09eb8e7d99b45f9ed78247716ed6b5cab"
+      "bytes": 486986,
+      "sha256": "97e7fb8960f87586cb8180e36c50bf477d0c4cf4c32fb2a53392a6c572e4fe79"
     },
     {
       "path": "wp8-synthetic-completion-v1.json",
       "bytes": 4972,
-      "sha256": "559b7da725b6b480700e7ea0e0d4d73dfd74c5201ec0bd127292aaba0bc61fbc"
+      "sha256": "d728b644afd79515866b78c0946b1ff055b9ef6c38c0d5e8be101d7ad1e75463"
     },
     {
       "path": "zenodo-csamt-public-search-audit-v1.json",

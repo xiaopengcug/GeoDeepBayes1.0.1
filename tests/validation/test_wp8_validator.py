@@ -233,6 +233,32 @@ def test_semantic_replay_accepts_environment_and_solver_noise():
     assert MODULE._semantic_replay_equal(recorded, replayed)
 
 
+def test_semantic_replay_accepts_linux_windows_taylor_order_tail_drift():
+    recorded = {
+        "metrics": {
+            "observed_orders": [1.998555807894014, 1.9992859858380885],
+            "minimum_order": 1.8,
+        },
+        "status": "passed",
+    }
+    replayed = {
+        "metrics": {
+            "observed_orders": [1.9985559629963823, 1.9992876827202783],
+            "minimum_order": 1.8,
+        },
+        "status": "passed",
+    }
+    below_gate = {
+        "metrics": {
+            "observed_orders": [1.9985559629963823, 1.79],
+            "minimum_order": 1.8,
+        },
+        "status": "passed",
+    }
+    assert MODULE._semantic_replay_equal(recorded, replayed)
+    assert not MODULE._semantic_replay_equal(recorded, below_gate)
+
+
 def test_semantic_replay_rejects_decision_relevant_numeric_change():
     recorded = {
         "metrics": {"relative_error": 1e-8, "threshold": 1e-6},

@@ -3938,6 +3938,7 @@ _SEMANTIC_REPLAY_IGNORED_KEYS = {
     "machine",
     "logical_cpu_count",
 }
+_SEMANTIC_REPLAY_RTOL = 1e-6
 
 
 def _semantic_replay_equal(
@@ -3969,7 +3970,7 @@ def _semantic_replay_equal(
             and np.isclose(
                 float(recorded_threshold),
                 float(replayed_threshold),
-                rtol=5e-8,
+                rtol=_SEMANTIC_REPLAY_RTOL,
                 atol=1e-12,
             )
         ):
@@ -4004,7 +4005,7 @@ def _semantic_replay_equal(
             np.isclose(
                 float(recorded),
                 float(replayed),
-                rtol=5e-8,
+                rtol=_SEMANTIC_REPLAY_RTOL,
                 atol=absolute_tolerance,
             )
         )

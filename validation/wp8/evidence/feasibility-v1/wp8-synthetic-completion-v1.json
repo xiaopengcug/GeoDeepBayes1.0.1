@@ -159,7 +159,7 @@
   ],
   "bindings_sha256": {
     "authorization": "03e1de96f36c73afa2aa4089cc021246e7bc98158f84d0c599247b4cf679408a",
-    "method_validation": "af98c08cb8de670146f5674ad0fae5c09eb8e7d99b45f9ed78247716ed6b5cab",
+    "method_validation": "97e7fb8960f87586cb8180e36c50bf477d0c4cf4c32fb2a53392a6c572e4fe79",
     "supplement_manifest": "d132f46c4ad3db39447b80f6f083ac322908895962684b886cbd60a21e2af66a",
     "method_policy": "346603951998a4038781905a155a35f3822993bc036bcf7ae1b859b01ca179b5",
     "synthetic_readiness": "814563ea0cc3b0054f3d6a4106cd032d3556a7be67b46e83cde1015146a904b0"
