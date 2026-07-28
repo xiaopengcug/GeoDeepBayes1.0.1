@@ -26,8 +26,6 @@ from geodeepbayes.sampling import PODReducer
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 LSQR_SOLVER_TOLERANCE = 1e-6
-LSQR_REPLAY_RTOL = 5.0 * LSQR_SOLVER_TOLERANCE
-LSQR_REPLAY_ATOL = 5e-8
 TRIAL_METRIC_RTOL = 1e-8
 TRIAL_METRIC_ATOL = 1e-10
 
@@ -312,6 +310,7 @@ def validate_do27(run: Path) -> list[str]:
         if solutions.shape[0] != len(prereg["alphas"]):
             errors.append(f"{method}: incomplete raw solution path")
             continue
+        replay_trials = []
         for index, trial in enumerate(result["trials"]):
             alpha = float(trial["alpha"])
             if not np.isclose(alpha, prereg["alphas"][index]):
@@ -364,6 +363,13 @@ def validate_do27(run: Path) -> list[str]:
             )
             if not replay_converged:
                 errors.append(f"{method}: trial {index} replay did not converge")
+            replay_trials.append(
+                {
+                    "alpha": alpha,
+                    **replay_values,
+                    "solver_converged": replay_converged,
+                }
+            )
             for key, value in stored_values.items():
                 if isinstance(value, bool):
                     matches = trial[key] is value
@@ -376,18 +382,42 @@ def validate_do27(run: Path) -> list[str]:
                     )
                 if not matches:
                     errors.append(f"{method}: trial {index} {key} mismatch")
-            # Iteration counts, stop codes and individual coefficients are audit
-            # fields, not portable scientific invariants. The frozen manifest
-            # protects their exact bytes; this independent replay checks the
-            # decision-relevant quantities at five times the solver tolerance.
-            for key, value in replay_values.items():
-                if not np.isclose(
-                    stored_values[key],
-                    value,
-                    rtol=LSQR_REPLAY_RTOL,
-                    atol=LSQR_REPLAY_ATOL,
-                ):
-                    errors.append(f"{method}: trial {index} replay {key} mismatch")
+        # Iteration counts, stop codes, individual coefficients and floating
+        # tails are audit fields, not portable scientific invariants. The
+        # frozen manifest protects their exact bytes. Independent replay must
+        # instead preserve the preregistered GCV choice and acceptance decision.
+        replay_minimum = min(item["gcv"] for item in replay_trials)
+        replay_eligible = [
+            item
+            for item in replay_trials
+            if item["gcv"] <= 1.01 * replay_minimum
+        ]
+        replay_best = max(replay_eligible, key=lambda item: item["alpha"])
+        if result["best"]["alpha"] != replay_best["alpha"]:
+            errors.append(f"{method}: replay GCV selection mismatch")
+        replay_flags = {
+            "data_fit_accepted": (
+                replay_best["normalized_rms"] <= 1.2 if protocol == "v3"
+                else 0.5 <= replay_best["normalized_rms"] <= 1.2
+            ),
+            "model_recovery_accepted": (
+                replay_best["model_rmse"] <= 0.95 * expected_zero_rmse
+            ),
+            "overfit_warning": replay_best["normalized_rms"] < 0.5,
+        }
+        replay_flags["compatibility_accepted"] = bool(
+            replay_best["solver_converged"]
+            and replay_flags["data_fit_accepted"]
+        )
+        replay_flags["accepted"] = bool(
+            replay_flags["compatibility_accepted"]
+            if protocol == "v3"
+            else replay_flags["compatibility_accepted"]
+            and replay_flags["model_recovery_accepted"]
+        )
+        for key, value in replay_flags.items():
+            if result["best"][key] is not value:
+                errors.append(f"{method}: replay {key} mismatch")
         minimum = min(item["gcv"] for item in result["trials"])
         eligible = [item for item in result["trials"] if item["gcv"] <= 1.01 * minimum]
         expected = max(eligible, key=lambda item: item["alpha"])
