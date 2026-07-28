@@ -5,7 +5,7 @@
   "specialty": "工程架构、数据治理与可复现性",
   "registry_sha256": "e66f8008672de016d04024d99c045722b75f33b93b8b010f5e5db708573331c6",
   "wp8_completion_sha256": "26f8c6edbb9f529b7379affd9df07490a4158ca4bd8173679282ca8fab5bc2bd",
-  "specialty_evidence_sha256": "72c82cd7d326ff16ec57c84b51a153fe1d423b310f9c20783caf83166ed0deeb",
+  "specialty_evidence_sha256": "56188bde7667ace849537bd163c653b4e38f09ab462ea4b0beb1b143525e4b51",
   "covered_source_finding_ids": [
     "R03-F-37c55fd53a89",
     "R03-F-06d5e67b7ec8",
