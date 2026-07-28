@@ -8,6 +8,7 @@ from __future__ import annotations
 import numpy as np
 from simpeg.potential_fields import magnetics
 from simpeg import maps
+from .base import validate_vector
 
 
 class MagneticOperator:
@@ -80,6 +81,7 @@ class MagneticOperator:
         return self._simulation
 
     def _to_full(self, x):
+        x = validate_vector(x, self.n_param, "model/vector")
         x_full = np.zeros(self.mesh.n_cells)
         x_full[self.ind_active] = np.asarray(x, dtype=float)
         return x_full
@@ -87,12 +89,21 @@ class MagneticOperator:
     def forward(self, model):
         return np.asarray(self._simulation.dpred(self._to_full(model)), dtype=float)
 
+    predict = forward
+
     def jvp(self, v, model=None):
         m_full = self._to_full(model) if model is not None else np.zeros(self.mesh.n_cells)
         return np.asarray(self._simulation.Jvec(m_full, self._to_full(v)), dtype=float)
 
     def jtp(self, w, model=None):
         m_full = self._to_full(model) if model is not None else np.zeros(self.mesh.n_cells)
-        w = np.asarray(w, dtype=float)
+        w = validate_vector(w, self.n_data, "data vector").astype(float)
         jt_full = np.asarray(self._simulation.Jtvec(m_full, w), dtype=float)
         return jt_full[self.ind_active]
+    method = "magnetic"
+    dimensionality = "3d"
+    data_mode = "real"
+    source_type = "uniform_background_field"
+    waveform = None
+    units = "nT"
+    parameterization = "cell_scalar_susceptibility_SI"

@@ -9,6 +9,7 @@ from __future__ import annotations
 import numpy as np
 from simpeg.potential_fields import gravity
 from simpeg import maps
+from .base import validate_vector
 
 
 class GravityOperator:
@@ -68,6 +69,7 @@ class GravityOperator:
         return self._simulation
 
     def _to_full(self, x):
+        x = validate_vector(x, self.n_param, "model/vector")
         x_full = np.zeros(self.mesh.n_cells)
         x_full[self.ind_active] = np.asarray(x, dtype=float)
         return x_full
@@ -75,6 +77,8 @@ class GravityOperator:
     def forward(self, model):
         """正演 dpred(m)；model 长度为活动单元数。"""
         return np.asarray(self._simulation.dpred(self._to_full(model)), dtype=float)
+
+    predict = forward
 
     def jvp(self, v, model=None):
         """J @ v（matrix-free，经 SimPEG getJ 的 LinearOperator）。线性算子 J 不依赖 m。"""
@@ -84,6 +88,13 @@ class GravityOperator:
     def jtp(self, w, model=None):
         """Jᵀ @ w（matrix-free），返回长度为活动单元数。"""
         m_full = self._to_full(model) if model is not None else np.zeros(self.mesh.n_cells)
-        w = np.asarray(w, dtype=float)
+        w = validate_vector(w, self.n_data, "data vector").astype(float)
         jt_full = np.asarray(self._simulation.Jtvec(m_full, w), dtype=float)
         return jt_full[self.ind_active]
+    method = "gravity"
+    dimensionality = "3d"
+    data_mode = "real"
+    source_type = "volume_density"
+    waveform = None
+    units = "mGal"
+    parameterization = "cell_density_contrast_g_cm3"

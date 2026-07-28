@@ -1,0 +1,22 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "bootstrap-sync",
+  "argv": [
+    "<user-home>\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-m",
+    "uv",
+    "sync",
+    "--frozen",
+    "--extra",
+    "dev"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:24:48.779109+00:00",
+  "ended_at_utc": "2026-07-28T03:24:48.898669+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Checked 35 packages in 2ms\n",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "12d81fe4e58e5bfb7cc7877cabd37025c1b1fe2796e9f3419061f725f2c20ac3"
+}

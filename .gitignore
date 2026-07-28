@@ -15,6 +15,9 @@ coverage.xml
 .cursor/
 .trae/
 .benchmarks/
+/.agents/
+/.specify/
+/.tmp-wp8-midu-inspect/
 *.log
 
 # 开放数据、运行工作区及历史版本副本不进入Git
@@ -52,6 +55,8 @@ _bmad-output/planning-artifacts/research/open-data/
 !**/validation/wp7/versions/**/*.npz
 *.h5
 *.hdf5
+# WP8 的第三方 epsg.npy 与三个 synthetic supplement NPZ 保持为
+# 本地/制品存储资产，由 evidence manifest 校验，不作为 Git 持久化证据。
 *.tif
 *.tiff
 *.tmp

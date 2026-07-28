@@ -1,0 +1,19 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "pytest",
+  "argv": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:24:49.147399+00:00",
+  "ended_at_utc": "2026-07-28T03:27:08.690670+00:00",
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 16%]\n.s...................................................................... [ 33%]\n........................................................................ [ 49%]\n........................................................................ [ 66%]\n........................................................................ [ 82%]\n........................................................................ [ 99%]\n..                                                                       [100%]\n============================== warnings summary ===============================\ntests/forward/test_controlled_source.py: 5 warnings\ntests/forward/test_mt3d.py: 3 warnings\ntests/validation/test_wp8_method_synthetic_validation.py: 19 warnings\n  .\\.venv\\Lib\\site-packages\\simpeg\\base\\pde_simulation.py:663: PerformanceWarning: The 'pymatsolver.SolverLU' solver might lead to high computation times. We recommend using a faster alternative such as 'pymatsolver.Pardiso' or 'pymatsolver.Mumps'.\n    super().__setattr__(name, value)\n\ntests/forward/test_controlled_source.py: 5 warnings\ntests/forward/test_mt3d.py: 3 warnings\ntests/forward/test_static_operators.py: 4 warnings\ntests/validation/test_wp8_method_synthetic_validation.py: 36 warnings\n  .\\.venv\\Lib\\site-packages\\pymatsolver\\wrappers.py:81: SparseEfficiencyWarning: splu converted its input to CSC format\n    self.solver = fun(self.A, **self.kwargs)\n\ntests/forward/test_static_operators.py: 6 warnings\ntests/validation/test_wp8_method_synthetic_validation.py: 18 warnings\n  .\\.venv\\Lib\\site-packages\\simpeg\\base\\pde_simulation.py:639: PerformanceWarning: The 'pymatsolver.SolverLU' solver might lead to high computation times. We recommend using a faster alternative such as 'pymatsolver.Pardiso' or 'pymatsolver.Mumps'.\n    super().__setattr__(name, value)\n\ntests/forward/test_static_operators.py: 2 warnings\ntests/validation/test_wp8_method_synthetic_validation.py: 18 warnings\n  .\\.venv\\Lib\\site-packages\\simpeg\\electromagnetics\\static\\resistivity\\simulation.py:608: RuntimeWarning: invalid value encountered in divide\n    r_hat = r_vec / r[:, None]\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\governance\\test_wp6_contracts.py:102: Windows�޿�����ģʽʱ�����������Ӳ��ȶ���ACL���ɽű����Ǹ�ƽ̨\n433 passed, 1 skipped, 119 warnings in 138.85s (0:02:18)\n",
+  "stderr": "",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "fec8630d4e9bc47ec8ec352a6a4ac9267ebaa1fabf25708e1e7f6815e3f60f82",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

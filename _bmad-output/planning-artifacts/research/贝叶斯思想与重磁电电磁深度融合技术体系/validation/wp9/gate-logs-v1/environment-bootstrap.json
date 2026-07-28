@@ -1,0 +1,13 @@
+{
+  "schema_version": "wp9-environment-bootstrap-v1",
+  "uv_version": "uv 0.11.29 (901092ee1 2026-07-15 x86_64-pc-windows-msvc)",
+  "lock": {
+    "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/bootstrap-lock.json",
+    "sha256": "7dda69a94e6aeb0765c52f54040b618f29be99bc5ec325135fdc6894ddc3e429"
+  },
+  "sync": {
+    "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/bootstrap-sync.json",
+    "sha256": "ed5e25131398a05a5cf064ca2e2b0e06f860d63dc226a6a8d61e29608ae7b8eb"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "governance",
+  "argv": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-governance.ps1"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:27:08.693398+00:00",
+  "ended_at_utc": "2026-07-28T03:27:13.069649+00:00",
+  "exit_code": 0,
+  "stdout": "PASS entries=59 release_paths=24 evidence_ids=15 cited_refs=72\n",
+  "stderr": "",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "5807876f91e91662b9afe92e705b85fd031d59a23ebe827de741a2e4e4905535",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

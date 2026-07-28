@@ -1,0 +1,17 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "wp9_acceptance",
+  "argv": [
+    ".\\.venv\\Scripts\\python.exe",
+    "validation/wp9/validate_wp9.py"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:29:18.590720+00:00",
+  "ended_at_utc": "2026-07-28T03:29:18.895434+00:00",
+  "exit_code": 0,
+  "stdout": "{\"audit\": {\"schema_version\": \"wp9-acceptance-audit-v1\", \"status\": \"passed\", \"counts\": {\"total\": 60, \"p0\": 22, \"p1\": 38, \"passed\": 60}, \"specialist_reviews\": 4, \"review_coverage\": 60, \"wp8_completion_sha256\": \"559b7da725b6b480700e7ea0e0d4d73dfd74c5201ec0bd127292aaba0bc61fbc\", \"final_gates_sha256\": \"2ea1015724ab703b13fb474c734a1fe7154b67649a171cb9dad50a144f15d7a9\", \"final_gates_status\": \"blocked\", \"final_gates_live_replay\": true, \"errors\": []}, \"manifest_ok\": true, \"manifest_errors\": []}\n",
+  "stderr": "",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "dcd4cdd7b8c976c847a2acb699638f4df92803355cdaf683a8fa8cbf0e9e1aad",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

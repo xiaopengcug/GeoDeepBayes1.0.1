@@ -1,0 +1,20 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "bootstrap-lock",
+  "argv": [
+    "<user-home>\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-m",
+    "uv",
+    "lock",
+    "--check"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:24:48.669222+00:00",
+  "ended_at_utc": "2026-07-28T03:24:48.776113+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Resolved 73 packages in 1ms\n",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "f96ebe48d8c14c3992796eb4551358a7e7c9ebe3808080575a59b2ccb2a1370c"
+}

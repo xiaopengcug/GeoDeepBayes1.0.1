@@ -1,0 +1,1033 @@
+{
+  "schema_version": "wp9-finding-registry-v1",
+  "status": "passed",
+  "ledger_sha256": "0a1e18dfc06879893a0dcf7ca6d275a1fbac9bef5755a0203a4d8bc88aa742fa",
+  "counts": {
+    "total": 60,
+    "p0": 22,
+    "p1": 38,
+    "passed": 60
+  },
+  "findings": [
+    {
+      "id": "R03-0001",
+      "source_finding_id": "R03-F-37c55fd53a89",
+      "severity": "P1",
+      "section": "00-摘要",
+      "summary": "证据定位与成果语气跨章失配",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0002",
+      "source_finding_id": "R03-F-e7d52ee82486",
+      "severity": "P0",
+      "section": "00-摘要",
+      "summary": "“可采资源量”超出物探后验支持范围",
+      "status": "已通过",
+      "primary_work_package": "WP4",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp4-rewrite-resource-risk-decision.md",
+          "sha256": "bd5f04d0f4aa817de253cae122847748ecb9131deb84a8478d2079333a4b03b3",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0003",
+      "source_finding_id": "R03-F-06d5e67b7ec8",
+      "severity": "P1",
+      "section": "00-摘要",
+      "summary": "加速口径仍未统一",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0004",
+      "source_finding_id": "R03-F-7d73cc6477b6",
+      "severity": "P1",
+      "section": "01-引言",
+      "summary": "正确物理边界未贯彻到方案",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0005",
+      "source_finding_id": "R03-F-2c3273ee9916",
+      "severity": "P1",
+      "section": "01-引言",
+      "summary": "创新与能力陈述超过工程现状",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0006",
+      "source_finding_id": "R03-F-79f50ab4b86f",
+      "severity": "P0",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "联合概率模型符号冲突",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0007",
+      "source_finding_id": "R03-F-a864287a2e61",
+      "severity": "P0",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "相关误差主张与iid Student-t似然不一致",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0008",
+      "source_finding_id": "R03-F-b570918c4a2c",
+      "severity": "P1",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "Full Bayes与经验贝叶斯混用",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0009",
+      "source_finding_id": "R03-F-a6d230431054",
+      "severity": "P1",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "proper性整改未闭环",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0010",
+      "source_finding_id": "R03-F-b81c02cb3550",
+      "severity": "P0",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "联合先验可能重复计数",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0011",
+      "source_finding_id": "R03-F-bfcfaa56ff94",
+      "severity": "P0",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "TEM频—时域公式错误",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0012",
+      "source_finding_id": "R03-F-b13c69101ad2",
+      "severity": "P0",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "CSAMT近区校正不具物理合法性",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0013",
+      "source_finding_id": "R03-F-69c3389e0128",
+      "severity": "P1",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "扩散近似条件不全",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0014",
+      "source_finding_id": "R03-F-023b6f020663",
+      "severity": "P1",
+      "section": "02-全方法深度融合的底层逻辑与理论总纲",
+      "summary": "WFEM仅完成量纲占位，不是算子闭环",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0015",
+      "source_finding_id": "R03-F-1073c9bf081d",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "POD降维测度公式错误",
+      "status": "已通过",
+      "primary_work_package": "WP2",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md",
+          "sha256": "5cd875f6d313798cdf61c7d4c6628f3adcd1d5530b296b4f491669b3e87eb2ea",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0016",
+      "source_finding_id": "R03-F-f6486697cbd7",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "RJMCMC接受率与Jacobian不完整",
+      "status": "已通过",
+      "primary_work_package": "WP2",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md",
+          "sha256": "5cd875f6d313798cdf61c7d4c6628f3adcd1d5530b296b4f491669b3e87eb2ea",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0017",
+      "source_finding_id": "R03-F-79da8eba7b6b",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "信息增益可加性和单调性陈述错误",
+      "status": "已通过",
+      "primary_work_package": "WP2",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md",
+          "sha256": "5cd875f6d313798cdf61c7d4c6628f3adcd1d5530b296b4f491669b3e87eb2ea",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0018",
+      "source_finding_id": "R03-F-aadc23a052c1",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "KL样本公式遗漏归一化常数",
+      "status": "已通过",
+      "primary_work_package": "WP2",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md",
+          "sha256": "5cd875f6d313798cdf61c7d4c6628f3adcd1d5530b296b4f491669b3e87eb2ea",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0019",
+      "source_finding_id": "R03-F-b4f50e11be01",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "PPC被误当覆盖率",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0020",
+      "source_finding_id": "R03-F-f89b6e0772f1",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "不确定性来源未分解",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0021",
+      "source_finding_id": "R03-F-4200e8f68132",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "资源量分位数公式错误",
+      "status": "已通过",
+      "primary_work_package": "WP4",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp4-rewrite-resource-risk-decision.md",
+          "sha256": "bd5f04d0f4aa817de253cae122847748ecb9131deb84a8478d2079333a4b03b3",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0022",
+      "source_finding_id": "R03-F-b9e728f2c637",
+      "severity": "P0",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "ENPV成本与决策事件定义错误",
+      "status": "已通过",
+      "primary_work_package": "WP4",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp4-rewrite-resource-risk-decision.md",
+          "sha256": "bd5f04d0f4aa817de253cae122847748ecb9131deb84a8478d2079333a4b03b3",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0023",
+      "source_finding_id": "R03-F-105a52d88a50",
+      "severity": "P1",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "生成式先验权重自相矛盾",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0024",
+      "source_finding_id": "R03-F-9a83708e3b52",
+      "severity": "P1",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "复杂度模型过度简化",
+      "status": "已通过",
+      "primary_work_package": "WP2",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md",
+          "sha256": "5cd875f6d313798cdf61c7d4c6628f3adcd1d5530b296b4f491669b3e87eb2ea",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0025",
+      "source_finding_id": "R03-F-649453838f6b",
+      "severity": "P1",
+      "section": "03-多方法深度融合的核心技术实现路径",
+      "summary": "结果式性能表仍与Planned状态冲突",
+      "status": "已通过",
+      "primary_work_package": "WP7",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp7-rebuild-runtime-evidence.md",
+          "sha256": "ec6b3549f208477e302dbd4ec79bd8592cc7675d3c0602da2d24416ce3aade50",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0026",
+      "source_finding_id": "R03-F-d3251a9ae23e",
+      "severity": "P0",
+      "section": "04-分场景多方法融合适配方案",
+      "summary": "综合风险公式不在概率空间内",
+      "status": "已通过",
+      "primary_work_package": "WP4",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp4-rewrite-resource-risk-decision.md",
+          "sha256": "bd5f04d0f4aa817de253cae122847748ecb9131deb84a8478d2079333a4b03b3",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0027",
+      "source_finding_id": "R03-F-4c6724e2d6d7",
+      "severity": "P1",
+      "section": "04-分场景多方法融合适配方案",
+      "summary": "固定阶段深度与方法选择仍过强",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0028",
+      "source_finding_id": "R03-F-720265ed35a3",
+      "severity": "P1",
+      "section": "04-分场景多方法融合适配方案",
+      "summary": "决策阈值缺少外部校准",
+      "status": "已通过",
+      "primary_work_package": "WP4",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp4-rewrite-resource-risk-decision.md",
+          "sha256": "bd5f04d0f4aa817de253cae122847748ecb9131deb84a8478d2079333a4b03b3",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0029",
+      "source_finding_id": "R03-F-7adec9665047",
+      "severity": "P0",
+      "section": "05-工程化落地与效率优化方案",
+      "summary": "文档示例与实际代码不一致",
+      "status": "已通过",
+      "primary_work_package": "WP6",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp6-engineering-contracts-ci-evidence-governance.md",
+          "sha256": "a995b1ab638d0678acf539a506a8f4716e1cb90d22e112c3ae8bdc980b0f7095",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0030",
+      "source_finding_id": "R03-F-75b626a15935",
+      "severity": "P1",
+      "section": "05-工程化落地与效率优化方案",
+      "summary": "CI把契约失败设为可忽略",
+      "status": "已通过",
+      "primary_work_package": "WP6",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp6-engineering-contracts-ci-evidence-governance.md",
+          "sha256": "a995b1ab638d0678acf539a506a8f4716e1cb90d22e112c3ae8bdc980b0f7095",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0031",
+      "source_finding_id": "R03-F-e9f5a8c26d71",
+      "severity": "P1",
+      "section": "05-工程化落地与效率优化方案",
+      "summary": "报告命令在当前环境不可复现",
+      "status": "已通过",
+      "primary_work_package": "WP6",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp6-engineering-contracts-ci-evidence-governance.md",
+          "sha256": "a995b1ab638d0678acf539a506a8f4716e1cb90d22e112c3ae8bdc980b0f7095",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0032",
+      "source_finding_id": "R03-F-7b5310670dc8",
+      "severity": "P1",
+      "section": "05-工程化落地与效率优化方案",
+      "summary": "TRL自评与能力证据冲突",
+      "status": "已通过",
+      "primary_work_package": "WP6",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp6-engineering-contracts-ci-evidence-governance.md",
+          "sha256": "a995b1ab638d0678acf539a506a8f4716e1cb90d22e112c3ae8bdc980b0f7095",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0033",
+      "source_finding_id": "R03-F-ba5a1d95808e",
+      "severity": "P1",
+      "section": "05-工程化落地与效率优化方案",
+      "summary": "POD分布式方案不可扩展",
+      "status": "已通过",
+      "primary_work_package": "WP2",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md",
+          "sha256": "5cd875f6d313798cdf61c7d4c6628f3adcd1d5530b296b4f491669b3e87eb2ea",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0034",
+      "source_finding_id": "R03-F-149d45de2aa3",
+      "severity": "P1",
+      "section": "05-工程化落地与效率优化方案",
+      "summary": "条件数阈值缺少尺度不变性",
+      "status": "已通过",
+      "primary_work_package": "WP2",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp2-correct-numerical-inference-theory.md",
+          "sha256": "5cd875f6d313798cdf61c7d4c6628f3adcd1d5530b296b4f491669b3e87eb2ea",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0035",
+      "source_finding_id": "R03-F-0040eadd7895",
+      "severity": "P1",
+      "section": "05-工程化落地与效率优化方案",
+      "summary": "完整日志与错误处理主要是设计文本",
+      "status": "已通过",
+      "primary_work_package": "WP6",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp6-engineering-contracts-ci-evidence-governance.md",
+          "sha256": "a995b1ab638d0678acf539a506a8f4716e1cb90d22e112c3ae8bdc980b0f7095",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0036",
+      "source_finding_id": "R03-F-b27464e48f64",
+      "severity": "P0",
+      "section": "06-合成数据验证方案与验收设计",
+      "summary": "把方法覆盖深度当作观测属性",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0037",
+      "source_finding_id": "R03-F-8589a1393638",
+      "severity": "P1",
+      "section": "06-合成数据验证方案与验收设计",
+      "summary": "噪声模型缺单位和噪声地板",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0038",
+      "source_finding_id": "R03-F-539744f93d67",
+      "severity": "P1",
+      "section": "06-合成数据验证方案与验收设计",
+      "summary": "基础场景缺关键对抗因素",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0039",
+      "source_finding_id": "R03-F-74d295c66301",
+      "severity": "P1",
+      "section": "06-合成数据验证方案与验收设计",
+      "summary": "条件钻孔与盲孔未严格分离",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0040",
+      "source_finding_id": "R03-F-af95f3fdf01f",
+      "severity": "P1",
+      "section": "06-合成数据验证方案与验收设计",
+      "summary": "统计功效不足",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0041",
+      "source_finding_id": "R03-F-94401253fc0b",
+      "severity": "P1",
+      "section": "06-合成数据验证方案与验收设计",
+      "summary": "基准不公平",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0042",
+      "source_finding_id": "R03-F-f8200754f57b",
+      "severity": "P0",
+      "section": "07-结论与展望",
+      "summary": "结论与证据直接矛盾",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0043",
+      "source_finding_id": "R03-F-e30513684ba1",
+      "severity": "P1",
+      "section": "07-结论与展望",
+      "summary": "路线图不是当前能力证明",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0044",
+      "source_finding_id": "R03-F-d0b57e8c0514",
+      "severity": "P1",
+      "section": "附录1：矿种模板",
+      "summary": "固定异常阈值误写成确定判据",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0045",
+      "source_finding_id": "R03-F-e7178536e50a",
+      "severity": "P1",
+      "section": "附录1：矿种模板",
+      "summary": "网格尺寸不等于分辨率",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0046",
+      "source_finding_id": "R03-F-e4d7fde3c1da",
+      "severity": "P1",
+      "section": "附录3与附录4：算法选型和性能基准",
+      "summary": "收敛阈值跨文冲突",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0047",
+      "source_finding_id": "R03-F-262369b9488b",
+      "severity": "P1",
+      "section": "附录3与附录4：算法选型和性能基准",
+      "summary": "附录4第5节结果表仍是占位数据",
+      "status": "已通过",
+      "primary_work_package": "WP7",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp7-rebuild-runtime-evidence.md",
+          "sha256": "ec6b3549f208477e302dbd4ec79bd8592cc7675d3c0602da2d24416ce3aade50",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0048",
+      "source_finding_id": "R03-F-51742aa39e7a",
+      "severity": "P1",
+      "section": "附录3与附录4：算法选型和性能基准",
+      "summary": "离散化误差没有进入误差预算",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0049",
+      "source_finding_id": "R03-F-02119a2d0cec",
+      "severity": "P1",
+      "section": "附录5：真实矿区验证",
+      "summary": "电阻率误差定义不一致",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0050",
+      "source_finding_id": "R03-F-8717495bfb6c",
+      "severity": "P0",
+      "section": "附录5：真实矿区验证",
+      "summary": "见矿率比较不可归因",
+      "status": "已通过",
+      "primary_work_package": "WP4",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp4-rewrite-resource-risk-decision.md",
+          "sha256": "bd5f04d0f4aa817de253cae122847748ecb9131deb84a8478d2079333a4b03b3",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0051",
+      "source_finding_id": "R03-F-c34357bc8b2d",
+      "severity": "P0",
+      "section": "附录5：真实矿区验证",
+      "summary": "预测覆盖与参数覆盖混淆",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0052",
+      "source_finding_id": "R03-F-dc97c0405962",
+      "severity": "P1",
+      "section": "附录5：真实矿区验证",
+      "summary": "商业软件能力比较不准确",
+      "status": "已通过",
+      "primary_work_package": "WP5",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp5-align-manuscript-and-appendices.md",
+          "sha256": "aa30c7681961ba7672d34d56adbc660804623f926c3f5a27e4236156a024a0ff",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0053",
+      "source_finding_id": "R03-F-257f5c429048",
+      "severity": "P1",
+      "section": "附录11：标准化操作",
+      "summary": "无条件化极不可靠",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0054",
+      "source_finding_id": "R03-F-2ec72d868368",
+      "severity": "P1",
+      "section": "附录11：标准化操作",
+      "summary": "默认二维MT与三维联合目标冲突",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0055",
+      "source_finding_id": "R03-F-23a9b309e896",
+      "severity": "P1",
+      "section": "附录11：标准化操作",
+      "summary": "DC/IP与CSAMT质控不可复现",
+      "status": "已通过",
+      "primary_work_package": "WP8",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp8-nine-method-feasibility-and-validation.md",
+          "sha256": "93d2df5cd8cec9fe21f2a9fa30aefdc0167d41e97a9b713d2012bd2e8b4cbb1c",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0056",
+      "source_finding_id": "R03-F-bf2ca0523124",
+      "severity": "P0",
+      "section": "附录13与附录14：物性库和先验库",
+      "summary": "居里—外斯适用域与结论相反",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0057",
+      "source_finding_id": "R03-F-829093b8d20d",
+      "severity": "P1",
+      "section": "附录13与附录14：物性库和先验库",
+      "summary": "IP温度公式数值自相矛盾",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0058",
+      "source_finding_id": "R03-F-5b76036d8acb",
+      "severity": "P0",
+      "section": "附录13与附录14：物性库和先验库",
+      "summary": "压力公式单位混用",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0059",
+      "source_finding_id": "R03-F-8811bf04a6d9",
+      "severity": "P1",
+      "section": "附录13与附录14：物性库和先验库",
+      "summary": "物性统计不可复算",
+      "status": "已通过",
+      "primary_work_package": "WP3",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp3-correct-geophysical-rock-physics.md",
+          "sha256": "ec02b3cee894cb3650f2b7af5513a8be12941bf2c772c48b0a6fa42d5e989e07",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    },
+    {
+      "id": "R03-0060",
+      "source_finding_id": "R03-F-746b46e4742a",
+      "severity": "P1",
+      "section": "附录13与附录14：物性库和先验库",
+      "summary": "附录14“先验权重”未真正闭环",
+      "status": "已通过",
+      "primary_work_package": "WP1",
+      "evidence": [
+        {
+          "path": "_bmad-output/implementation-artifacts/spec-wp1-rewrite-joint-probability-uq-core.md",
+          "sha256": "a3c08642b03b5a49188e18ed45626c73975502307ffa730dbbb39b788d8ebc17",
+          "claim": "completed-work-package-and-verification-record"
+        }
+      ],
+      "verification_role": "WP9专项独立复审"
+    }
+  ]
+}

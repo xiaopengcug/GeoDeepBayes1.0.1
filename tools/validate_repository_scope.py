@@ -31,6 +31,24 @@ ABSOLUTE_PATH = re.compile(
     r"(?:\b[A-Za-z]:\\[^\\\r\n]{2,}\\|/(?:home|Users|root)/)"
 )
 STRICT_TEXT_SUFFIXES = {".py", ".ps1", ".yml", ".yaml", ".toml", ".json"}
+CONTROLLED_WP7_VERSION_PREFIXES = (
+    "/_bmad-output/planning-artifacts/research/"
+    "贝叶斯思想与重磁电电磁深度融合技术体系/"
+    "validation/wp7/versions/do27-v2-20260724/",
+    "/_bmad-output/planning-artifacts/research/"
+    "贝叶斯思想与重磁电电磁深度融合技术体系/"
+    "validation/wp7/versions/do27-v4-20260724/",
+    "/_bmad-output/planning-artifacts/research/"
+    "贝叶斯思想与重磁电电磁深度融合技术体系/"
+    "validation/wp7/versions/synthetic-block-v6-20260724/",
+)
+
+
+def permitted_forbidden_path(normalized: str) -> bool:
+    """Return true only for narrow, reviewable generated-evidence exceptions."""
+    if normalized.endswith("/validation/wp1-toy/output/manifest.json"):
+        return True
+    return normalized.startswith(CONTROLLED_WP7_VERSION_PREFIXES)
 
 
 def tracked_files(root: Path) -> list[str]:
@@ -52,10 +70,10 @@ def validate(root: Path) -> list[str]:
     for relative in tracked_files(root):
         normalized = f"/{relative}"
         path = root / relative
-        wp1_manifest = normalized.endswith(
-            "/validation/wp1-toy/output/manifest.json"
-        )
-        if any(part in normalized for part in FORBIDDEN_PARTS) and not wp1_manifest:
+        if (
+            any(part in normalized for part in FORBIDDEN_PARTS)
+            and not permitted_forbidden_path(normalized)
+        ):
             failures.append(f"禁止纳入Git的路径: {relative}")
             continue
         if not path.is_file():

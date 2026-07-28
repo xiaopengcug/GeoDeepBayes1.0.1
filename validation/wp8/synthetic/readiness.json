@@ -1,0 +1,27 @@
+{
+  "schema_version": "wp8-synthetic-readiness-v1",
+  "formal_synthetic_run": false,
+  "reason": "WP8-0 has not passed; this is a readiness matrix, not synthetic evidence",
+  "required_checks": [
+    "predict_reference_agreement",
+    "misspecification_detection",
+    "jvp_finite_difference",
+    "jvp_jtp_adjoint",
+    "taylor_remainder_order",
+    "three_level_convergence",
+    "method_adversarial_suite",
+    "sbc_at_least_400",
+    "within_method_5x5_performance"
+  ],
+  "methods": {
+    "gravity": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"},
+    "magnetic": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"},
+    "dc": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"},
+    "tdip": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"},
+    "sip_fdip": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"},
+    "tem": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked", "scope": "tem_1d_layered"},
+    "mt_amt": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"},
+    "csamt": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"},
+    "wfem": {"implemented": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"], "status": "development-synthetic-ready-field-blocked"}
+  }
+}

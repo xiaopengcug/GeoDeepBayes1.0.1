@@ -1,0 +1,32 @@
+{
+  "schema_version": "wp8-1-synthetic-completion-authorization-v2",
+  "started_at_utc": "2026-07-26T03:30:00Z",
+  "status": "synthetic-completion-authorized",
+  "authorization": {
+    "kind": "explicit-user-risk-acceptance",
+    "instruction": "使用合成数据进行，不能因为没有野外数据而阻断",
+    "field_data_required_for_wp8_completion": false,
+    "synthetic_completion_allowed": true
+  },
+  "feasibility_decision": {
+    "status": "failed",
+    "passed_methods": 6,
+    "total_methods": 9,
+    "wp8_1_allowed": false,
+    "reason_code": "WP8_0_NOT_ALL_NINE_PASSED"
+  },
+  "authorized_scope": [
+    "public-interface-implementation",
+    "operator-implementation",
+    "synthetic-development-and-validation",
+    "synthetic-substitutes-for-known-gaps",
+    "training-only-power-analysis",
+    "wp8-synthetic-completion",
+    "wp9-start"
+  ],
+  "prohibited_until_formal_gates_pass": [
+    "formal-field-test-unsealing",
+    "field-validated-claim"
+  ],
+  "known_gap_spec": "_bmad-output/specs/spec-wp8-1-risk-accepted-start/known-gaps.md"
+}
