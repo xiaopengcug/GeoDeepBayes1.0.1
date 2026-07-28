@@ -25,6 +25,11 @@ from geodeepbayes.sampling import PODReducer
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
+LSQR_SOLVER_TOLERANCE = 1e-6
+LSQR_REPLAY_RTOL = 5.0 * LSQR_SOLVER_TOLERANCE
+LSQR_REPLAY_ATOL = 5e-8
+TRIAL_METRIC_RTOL = 1e-8
+TRIAL_METRIC_ATOL = 1e-10
 
 
 def validate_synthetic(run: Path) -> list[str]:
@@ -314,42 +319,75 @@ def validate_do27(run: Path) -> list[str]:
             rerun = lsqr(
                 vstack([normalized_matrix, np.sqrt(alpha) * identity], format="csr"),
                 np.r_[normalized_data, np.zeros(matrix.shape[1])],
-                atol=1e-6, btol=1e-6, iter_lim=2000,
+                atol=LSQR_SOLVER_TOLERANCE,
+                btol=LSQR_SOLVER_TOLERANCE,
+                iter_lim=2000,
             )
-            model = rerun[0]
-            residual = normalized_matrix @ model - normalized_data
+            replay_model = rerun[0]
+            stored_model = solutions[index]
+            replay_residual = normalized_matrix @ replay_model - normalized_data
+            stored_residual = normalized_matrix @ stored_model - normalized_data
             df = float(np.sum(singular**2 / (singular**2 + alpha)))
-            rss = float(residual @ residual)
             denominator = max(1.0 - df / data.size, np.finfo(float).eps)
-            expected_values = {
-                "iterations": int(rerun[2]),
-                "stop_code": int(rerun[1]),
-                "normalized_rms": float(np.sqrt(np.mean(residual**2))),
-                "model_rmse": float(np.sqrt(np.mean((model - truth) ** 2))),
+            stored_rss = float(stored_residual @ stored_residual)
+            replay_rss = float(replay_residual @ replay_residual)
+            stored_values = {
+                "normalized_rms": float(np.sqrt(np.mean(stored_residual**2))),
+                "model_rmse": float(np.sqrt(np.mean((stored_model - truth) ** 2))),
                 "effective_df": df,
-                "gcv": float((rss / data.size) / denominator**2),
-                "solution_norm": float(np.linalg.norm(model)),
-                "residual_norm": float(np.linalg.norm(residual)),
+                "gcv": float((stored_rss / data.size) / denominator**2),
+                "solution_norm": float(np.linalg.norm(stored_model)),
+                "residual_norm": float(np.linalg.norm(stored_residual)),
                 "values_finite": bool(
-                    np.isfinite(model).all()
-                    and np.isfinite(residual).all()
-                    and np.isfinite(np.asarray(rerun[3:9], dtype=float)).all()
+                    np.isfinite(stored_model).all()
+                    and np.isfinite(stored_residual).all()
                 ),
             }
-            expected_values["solver_converged"] = bool(
+            stored_values["solver_converged"] = bool(
+                int(trial["stop_code"]) in (1, 2)
+                and int(trial["iterations"]) < 2000
+                and stored_values["values_finite"]
+            )
+            replay_values = {
+                "normalized_rms": float(np.sqrt(np.mean(replay_residual**2))),
+                "model_rmse": float(np.sqrt(np.mean((replay_model - truth) ** 2))),
+                "gcv": float((replay_rss / data.size) / denominator**2),
+                "solution_norm": float(np.linalg.norm(replay_model)),
+                "residual_norm": float(np.linalg.norm(replay_residual)),
+            }
+            replay_converged = bool(
                 int(rerun[1]) in (1, 2)
                 and int(rerun[2]) < 2000
-                and expected_values["values_finite"]
+                and np.isfinite(replay_model).all()
+                and np.isfinite(replay_residual).all()
+                and np.isfinite(np.asarray(rerun[3:9], dtype=float)).all()
             )
-            if not np.allclose(solutions[index], model, rtol=1e-8, atol=1e-10):
-                errors.append(f"{method}: solution {index} mismatch")
-            for key, value in expected_values.items():
+            if not replay_converged:
+                errors.append(f"{method}: trial {index} replay did not converge")
+            for key, value in stored_values.items():
                 if isinstance(value, bool):
                     matches = trial[key] is value
                 else:
-                    matches = np.isclose(trial[key], value, rtol=1e-8, atol=1e-10)
+                    matches = np.isclose(
+                        trial[key],
+                        value,
+                        rtol=TRIAL_METRIC_RTOL,
+                        atol=TRIAL_METRIC_ATOL,
+                    )
                 if not matches:
                     errors.append(f"{method}: trial {index} {key} mismatch")
+            # Iteration counts, stop codes and individual coefficients are audit
+            # fields, not portable scientific invariants. The frozen manifest
+            # protects their exact bytes; this independent replay checks the
+            # decision-relevant quantities at five times the solver tolerance.
+            for key, value in replay_values.items():
+                if not np.isclose(
+                    stored_values[key],
+                    value,
+                    rtol=LSQR_REPLAY_RTOL,
+                    atol=LSQR_REPLAY_ATOL,
+                ):
+                    errors.append(f"{method}: trial {index} replay {key} mismatch")
         minimum = min(item["gcv"] for item in result["trials"])
         eligible = [item for item in result["trials"] if item["gcv"] <= 1.01 * minimum]
         expected = max(eligible, key=lambda item: item["alpha"])

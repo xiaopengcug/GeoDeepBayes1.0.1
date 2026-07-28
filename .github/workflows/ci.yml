@@ -100,12 +100,21 @@ jobs:
           OMP_NUM_THREADS: "1"
           OPENBLAS_NUM_THREADS: "1"
         run: |
-          & "$env:WP6_ROOT/validate-wp7.ps1" `
+          $wp7Output = & pwsh -NoProfile -File "$env:WP6_ROOT/validate-wp7.ps1" `
             -SyntheticRun "$env:WP6_ROOT/validation/wp7/versions/synthetic-block-v6-20260724" `
             -Do27Run "$env:WP6_ROOT/validation/wp7/versions/do27-v4-20260724" `
             -Signoff "$env:WP6_ROOT/validation/wp7/signoff-v4.json" `
-            -SelfTest
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            -SelfTest 2>&1
+          $wp7Exit = $LASTEXITCODE
+          $wp7Output | ForEach-Object { Write-Output $_ }
+          if ($wp7Exit -ne 0) {
+            $wp7Detail = (($wp7Output | Out-String).Trim() `
+              -replace '%', '%25' `
+              -replace "`r", '%0D' `
+              -replace "`n", '%0A')
+            Write-Output "::error title=WP7 signed evidence gate::$wp7Detail"
+            exit $wp7Exit
+          }
 
       - name: Run WP8 live synthetic gate
         run: uv run --frozen python validation/wp8/validate_wp8.py --phase synthetic
