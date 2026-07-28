@@ -47,7 +47,7 @@ SUPPLEMENT_MANIFEST = (
     ROOT / "validation/wp8/synthetic/supplements-v1/manifest.json"
 )
 SUPPLEMENT_GENERATOR = "validation/wp8/generate_synthetic_supplements.py"
-FROZEN_BASELINE_COMMIT = "50e25166f8897f0fc6e82cbadbc3c4f0a98c14d5"
+FROZEN_BASELINE_COMMIT = "707f4aab48d38523e396ee6793f698c3a4615bc9"
 RESEARCH_RELATIVE = (
     "_bmad-output/planning-artifacts/research/"
     "贝叶斯思想与重磁电电磁深度融合技术体系"
@@ -107,6 +107,12 @@ CONTROL_DIRECTORIES = (
     f"{RESEARCH_RELATIVE}/validation/wp7/versions/do27-v4-20260724",
     "src/geodeepbayes",
     "tests",
+)
+CONTROL_FILE_GLOBS = (
+    # Pytest imports these scripts directly during collection. Keep the whole
+    # shallow WP8 execution surface so a clean checkout cannot pass local
+    # planning while failing remote collection on an omitted helper.
+    "validation/wp8/*.py",
 )
 
 
@@ -219,6 +225,11 @@ def _control_inputs() -> tuple[str, ...]:
             and "__pycache__" not in path.parts
             and path.suffix.lower() not in {".pyc", ".pyo"}
         )
+    for pattern in CONTROL_FILE_GLOBS:
+        for path in sorted(ROOT.glob(pattern)):
+            relative = path.relative_to(ROOT).as_posix()
+            if path.is_file() and relative not in expanded:
+                expanded.append(relative)
     if len(expanded) != len(set(expanded)):
         raise ValueError("duplicate explicit execution control path")
     return tuple(expanded)

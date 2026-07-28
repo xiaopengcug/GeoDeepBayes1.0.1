@@ -36,8 +36,9 @@ baseline_commit: '50e25166f8897f0fc6e82cbadbc3c4f0a98c14d5'
 **Execution:**
 - [x] 生成 tracked/ignored/required 清单并核对 manifest 闭包。
 - [x] 在远程测试和 WP9 审计前确定性重生成三个 ignored supplement NPZ，并由登记哈希 fail-closed。
-- [ ] 提交相关代码、文档、指针和受控证据。（用户已明确授权；精确暂存已完成，等待最终 manifest/plan 刷新）
-- [ ] 推送并验证 Ubuntu/Windows required gates 及 Sigstore/Rekor 证明覆盖该提交。（用户已明确授权；WP5 仍为真实阻断，不得伪造证明成功）
+- [x] 提交相关代码、文档、指针和受控证据；初始目标提交为 `707f4aab48d38523e396ee6793f698c3a4615bc9`。
+- [x] 直接推送受保护 `main` 被 2/2 required checks 正确拒绝；改推 `codex/acceptance-review03-remediation` 并创建 PR #6。
+- [ ] 修复首轮 Ubuntu/Windows clean-checkout 同时发现的 WP8 脚本传递闭包缺口，推送后重跑双平台门。（WP5 仍为真实阻断，不得伪造证明成功）
 
 **Acceptance Criteria:**
 - Given 提交授权，when 核对 Git，then所有 required 资产被跟踪且无临时/秘密文件。
@@ -54,13 +55,13 @@ baseline_commit: '50e25166f8897f0fc6e82cbadbc3c4f0a98c14d5'
 ## Local Preparation Result
 
 - 已生成 `validation/wp9/persistence-plan-v1.json`；绑定 WP9 manifest 的 36 个成员，全部存在且 SHA-256/字节数闭包通过。
-- 另列 162 个不重复执行/源码/测试控制输入（含 WP5/WP6/WP7 直接与关键传递依赖）；合计 195 个 `required-git` 路径，其中 132 个当前内容尚未进入冻结基线 HEAD。
+- 首轮另列 162 个不重复执行/源码/测试控制输入，但远程 clean checkout 证明该集合漏掉 pytest 直接导入的 WP8 顶层脚本。计划现以浅层 glob 纳入 `validation/wp8/*.py` 全部 204 个脚本，共列 363 个控制输入；合计 396 个 `required-git` 路径，其中 239 个当前内容尚未进入 `707f4aab…` 基线。
 - 三个 supplement NPZ 被明确分类为 `required-generated-artifact`，继续受 `.gitignore` 保护；本地两次隔离重生成的文件哈希彼此一致并匹配已登记 SHA-256。未来远程流程必须执行同一重生成/哈希核验，不得强制提交二进制产物。
 - `persistence-plan-v1.json` 是由受控 builder 与绑定输入生成的本地/CI 派生报告，不纳入 required Git 自哈希集合；builder、规格和输入清单本身均为 required Git。
 - required 集合的仓库范围扫描未发现秘密、本机绝对路径或超过 50 MiB 的待提交文件；无 `required-but-ignored-unresolved` 项。
-- 白名单暂存前本地准备状态为 `passed`；用户授权后已按 195 个 required 路径精确暂存，120 个路径相对 HEAD 形成变更，白名单外 staged 路径为 0。builder 将“已暂存但尚未提交”继续 fail-closed 报为本地阻断，这是状态观测而非授权缺失。
+- 首轮白名单暂存按 195 个 required 路径执行，119 个路径相对 HEAD 形成变更，白名单外 staged 路径为 0。远程失败后，builder 的基线更新为 `707f4aab…`，扩大后的 396 路径全部通过扫描且无 unresolved ignored 项；下一提交必须按新集合重新精确暂存。
 - 最新统一 runner 为 `433 passed、1 skipped、119 warnings`；WP7、WP8 synthetic、WP9 均通过，live blocker 精确仅为 `wp5`。`release_ready=false`、`remote_attestation_verified=false`。
-- 本事实快照尚未执行 commit、push、PR、远程配置或证明发布；本轮用户已明确重新协商 Ask First 边界并授权精确提交、推送和远程双平台证明。
+- PR #6 首轮远程运行 `30326446841` 已提供双平台失败证明：Ubuntu job `90172773622` 与 Windows job `90172773641` 都在 pytest collection 因同一组缺失 WP8 脚本失败；attestation job `90172874282` 因依赖门失败正确 `skipped`。该失败被用于扩大传递闭包，不被改写为通过。
 
 ## Review Findings Addressed
 

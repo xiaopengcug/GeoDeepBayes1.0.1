@@ -28,7 +28,8 @@ SECRET_PATTERNS = {
 # ``:\s*\r``).  Require a complete directory segment to avoid treating those
 # expressions as leaked workstation paths.
 ABSOLUTE_PATH = re.compile(
-    r"(?:\b[A-Za-z]:\\[^\\\r\n]{2,}\\|/(?:home|Users|root)/)"
+    r"(?:\b[A-Za-z]:\\[^\\\r\n]{2,}\\|"
+    r"(?<![A-Za-z0-9._-])/(?:home|Users|root)/)"
 )
 STRICT_TEXT_SUFFIXES = {".py", ".ps1", ".yml", ".yaml", ".toml", ".json"}
 CONTROLLED_WP7_VERSION_PREFIXES = (

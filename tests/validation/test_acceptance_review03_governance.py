@@ -222,8 +222,23 @@ def test_wp8_wp9_persistence_plan_is_read_only_and_fail_closed():
     ]["blocking_gates"]
 
 
+def test_persistence_plan_includes_complete_shallow_wp8_python_surface():
+    controls = set(PERSISTENCE._control_inputs())
+    expected = {
+        path.relative_to(PERSISTENCE.ROOT).as_posix()
+        for path in (PERSISTENCE.ROOT / "validation/wp8").glob("*.py")
+    }
+    assert expected
+    assert expected <= controls
+
+
 def test_repository_scope_allows_only_controlled_wp7_versions():
-    from tools.validate_repository_scope import permitted_forbidden_path
+    from tools.validate_repository_scope import ABSOLUTE_PATH, permitted_forbidden_path
+
+    assert ABSOLUTE_PATH.search('path = "/' + 'home/runner/private.json"')
+    assert not ABSOLUTE_PATH.search(
+        '"terms": "https://www2.gov.bc.ca/gov/content/home/disclaimer"'
+    )
 
     prefix = (
         "/_bmad-output/planning-artifacts/research/"
