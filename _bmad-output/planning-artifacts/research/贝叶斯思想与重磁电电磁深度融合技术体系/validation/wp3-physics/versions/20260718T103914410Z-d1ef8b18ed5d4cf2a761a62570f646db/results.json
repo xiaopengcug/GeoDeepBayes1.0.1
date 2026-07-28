@@ -1,0 +1,20 @@
+{
+  "run_id": "WP3-PHYSICS-20260718-v1",
+  "status": "Passed",
+  "evidence_class": "Synthetic-run/Reference-regression",
+  "branch": {
+    "solver": "diffusion",
+    "conductive_ratio": 22468879.48065293
+  },
+  "rock": {
+    "curie_branch": "mineral_calibration",
+    "tau_s": 0.01831563888873418,
+    "effective_stress_pa": 76000000.0,
+    "m": 0.5
+  },
+  "decisions": {
+    "rtp": "alternative_magnetization",
+    "threshold": "local_calibration_required",
+    "mt": "publish_3d_tensor"
+  }
+}

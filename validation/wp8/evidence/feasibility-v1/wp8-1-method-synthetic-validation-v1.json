@@ -12,7 +12,7 @@
       "src/geodeepbayes/forward/em1d.py": "3f48a277ad161b4eca4ed6e8e7403e87e3bc411c1bf2878354f6a022e2b61fce",
       "src/geodeepbayes/forward/controlled_source.py": "20829dc3e32c536918e5c47a694c334839f59ea5e4172fb13f932701138c067b",
       "src/geodeepbayes/validation/sbc.py": "9d2b6806415b0c1423f7dd6ed9fab6c6ad629d57e8ba82a964d3425f03fda1cd",
-      "validation/wp8/validate_wp8.py": "f8dbb233afed5414eb9bf3afd326ecbd020a14161ce1d1cfdf9a9fae89c25dc7",
+      "validation/wp8/validate_wp8.py": "d037810899813db7f84e6d9d7eaed8ed8490f89c5309a1410ce34a7318fc9aa1",
       "validation/wp8/synthetic/method-validation-policy-v1.json": "346603951998a4038781905a155a35f3822993bc036bcf7ae1b859b01ca179b5",
       "uv.lock": "c71791cc6cda23ea4ba563821a4235261374e5268d8cfd9a595799c552834026"
     },
@@ -26,7 +26,7 @@
     "runtime": {
       "python": "3.11.15",
       "implementation": "CPython",
-      "platform": "Windows-10-10.0.26200-SP0",
+      "platform": "Windows-10-10.0.19045-SP0",
       "machine": "AMD64",
       "byteorder": "little"
     }
@@ -1853,7 +1853,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -1869,11 +1869,11 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "setup_ns": 301400,
+                "setup_ns": 527500,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 91400,
+                "first_predict_ns": 112300,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34200.0
+                "median_warm_ns": 90300.0
               },
               {
                 "scale": 2,
@@ -1881,11 +1881,11 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "setup_ns": 354200,
+                "setup_ns": 480600,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 70200,
+                "first_predict_ns": 108600,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 40700.0
+                "median_warm_ns": 90600.0
               },
               {
                 "scale": 3,
@@ -1893,11 +1893,11 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "setup_ns": 309400,
+                "setup_ns": 492300,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 61100,
+                "first_predict_ns": 110500,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 33200.0
+                "median_warm_ns": 95200.0
               },
               {
                 "scale": 4,
@@ -1905,11 +1905,11 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "setup_ns": 337100,
+                "setup_ns": 543200,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 81900,
+                "first_predict_ns": 126000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 35500.0
+                "median_warm_ns": 118000.0
               },
               {
                 "scale": 5,
@@ -1917,14 +1917,14 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "setup_ns": 354500,
+                "setup_ns": 659100,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 71700,
+                "first_predict_ns": 173300,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34000.0
+                "median_warm_ns": 107800.0
               }
             ],
-            "median_warm_scaling_ratio": 1.2259036144578312,
+            "median_warm_scaling_ratio": 1.3067552602436323,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -1936,7 +1936,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 56500,
+                "elapsed_ns": 115800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -1949,7 +1949,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 38800,
+                "elapsed_ns": 94800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -1962,7 +1962,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 34200,
+                "elapsed_ns": 90300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -1975,7 +1975,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 32100,
+                "elapsed_ns": 86700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -1988,7 +1988,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 31900,
+                "elapsed_ns": 86000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2001,7 +2001,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 55400,
+                "elapsed_ns": 107900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2014,7 +2014,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 40700,
+                "elapsed_ns": 115000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2027,7 +2027,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 70000,
+                "elapsed_ns": 90600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2040,7 +2040,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 39000,
+                "elapsed_ns": 88500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2053,7 +2053,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 33500,
+                "elapsed_ns": 88300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2066,7 +2066,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 44000,
+                "elapsed_ns": 117200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2079,7 +2079,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 34600,
+                "elapsed_ns": 95200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2092,7 +2092,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 33200,
+                "elapsed_ns": 88800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2105,7 +2105,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 32100,
+                "elapsed_ns": 114500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2118,7 +2118,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 31100,
+                "elapsed_ns": 90200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2131,7 +2131,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 54300,
+                "elapsed_ns": 136500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2144,7 +2144,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 38600,
+                "elapsed_ns": 116600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2157,7 +2157,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35500,
+                "elapsed_ns": 118000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2170,7 +2170,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34700,
+                "elapsed_ns": 88900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2183,7 +2183,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 33300,
+                "elapsed_ns": 125100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2196,7 +2196,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 44900,
+                "elapsed_ns": 126200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2209,7 +2209,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 35900,
+                "elapsed_ns": 128700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2222,7 +2222,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 34000,
+                "elapsed_ns": 101500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2235,7 +2235,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 32800,
+                "elapsed_ns": 107800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -2248,7 +2248,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 31900,
+                "elapsed_ns": 98400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -4077,7 +4077,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -4093,11 +4093,11 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "setup_ns": 351400,
+                "setup_ns": 530700,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 120800,
+                "first_predict_ns": 186700,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34100.0
+                "median_warm_ns": 95400.0
               },
               {
                 "scale": 2,
@@ -4105,11 +4105,11 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "setup_ns": 345900,
+                "setup_ns": 481900,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 121900,
+                "first_predict_ns": 190000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 33100.0
+                "median_warm_ns": 92900.0
               },
               {
                 "scale": 3,
@@ -4117,11 +4117,11 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "setup_ns": 300500,
+                "setup_ns": 489900,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 151500,
+                "first_predict_ns": 194300,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 32200.0
+                "median_warm_ns": 93100.0
               },
               {
                 "scale": 4,
@@ -4129,11 +4129,11 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "setup_ns": 326900,
+                "setup_ns": 521800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 129000,
+                "first_predict_ns": 219800,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 39400.0
+                "median_warm_ns": 95500.0
               },
               {
                 "scale": 5,
@@ -4141,14 +4141,14 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "setup_ns": 386100,
+                "setup_ns": 578300,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 143700,
+                "first_predict_ns": 245700,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 33800.0
+                "median_warm_ns": 96700.0
               }
             ],
-            "median_warm_scaling_ratio": 1.2236024844720497,
+            "median_warm_scaling_ratio": 1.0409041980624327,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -4160,7 +4160,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 55100,
+                "elapsed_ns": 126800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4173,7 +4173,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 36900,
+                "elapsed_ns": 95400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4186,7 +4186,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 33500,
+                "elapsed_ns": 99000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4199,7 +4199,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 34100,
+                "elapsed_ns": 89600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4212,7 +4212,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 33900,
+                "elapsed_ns": 86900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4225,7 +4225,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 48100,
+                "elapsed_ns": 107300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4238,7 +4238,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 36300,
+                "elapsed_ns": 92900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4251,7 +4251,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 33100,
+                "elapsed_ns": 89600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4264,7 +4264,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 32000,
+                "elapsed_ns": 91700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4277,7 +4277,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 31900,
+                "elapsed_ns": 104800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4290,7 +4290,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 51800,
+                "elapsed_ns": 107300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4303,7 +4303,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 37900,
+                "elapsed_ns": 123400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4316,7 +4316,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 32200,
+                "elapsed_ns": 93100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4329,7 +4329,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 31200,
+                "elapsed_ns": 88900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4342,7 +4342,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 31500,
+                "elapsed_ns": 89100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4355,7 +4355,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 47200,
+                "elapsed_ns": 109600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4368,7 +4368,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35200,
+                "elapsed_ns": 96300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4381,7 +4381,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34200,
+                "elapsed_ns": 95500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4394,7 +4394,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 58200,
+                "elapsed_ns": 90800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4407,7 +4407,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 39400,
+                "elapsed_ns": 88900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4420,7 +4420,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 47700,
+                "elapsed_ns": 110700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4433,7 +4433,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 37500,
+                "elapsed_ns": 96700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4446,7 +4446,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 33800,
+                "elapsed_ns": 92900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4459,7 +4459,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 32900,
+                "elapsed_ns": 90900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -4472,7 +4472,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 32400,
+                "elapsed_ns": 136000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -6308,7 +6308,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -6324,11 +6324,11 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "setup_ns": 4661200,
+                "setup_ns": 8895500,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 5008300,
+                "first_predict_ns": 8884900,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1047900.0
+                "median_warm_ns": 1938900.0
               },
               {
                 "scale": 2,
@@ -6336,11 +6336,11 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "setup_ns": 4174100,
+                "setup_ns": 8138300,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 4567500,
+                "first_predict_ns": 7467300,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1270700.0
+                "median_warm_ns": 2340400.0
               },
               {
                 "scale": 3,
@@ -6348,11 +6348,11 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "setup_ns": 3995700,
+                "setup_ns": 7037200,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 4885200,
+                "first_predict_ns": 7645600,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1610600.0
+                "median_warm_ns": 2188400.0
               },
               {
                 "scale": 4,
@@ -6360,11 +6360,11 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "setup_ns": 4032200,
+                "setup_ns": 6936600,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 5084800,
+                "first_predict_ns": 8703200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1827600.0
+                "median_warm_ns": 2699000.0
               },
               {
                 "scale": 5,
@@ -6372,14 +6372,14 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "setup_ns": 4393700,
+                "setup_ns": 7251500,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 5628800,
+                "first_predict_ns": 9105900,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 2661700.0
+                "median_warm_ns": 3733300.0
               }
             ],
-            "median_warm_scaling_ratio": 2.5400324458440693,
+            "median_warm_scaling_ratio": 1.9254732064572695,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -6391,7 +6391,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 1232900,
+                "elapsed_ns": 2250500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6404,7 +6404,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 1053700,
+                "elapsed_ns": 1938900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6417,7 +6417,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 1047900,
+                "elapsed_ns": 1943500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6430,7 +6430,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 1014900,
+                "elapsed_ns": 1906900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6443,7 +6443,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 1022200,
+                "elapsed_ns": 1860700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6456,7 +6456,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1361600,
+                "elapsed_ns": 2420400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6469,7 +6469,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1313500,
+                "elapsed_ns": 1883100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6482,7 +6482,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1216300,
+                "elapsed_ns": 2584700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6495,7 +6495,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1270700,
+                "elapsed_ns": 2340400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6508,7 +6508,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1213400,
+                "elapsed_ns": 1958400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6521,7 +6521,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1693200,
+                "elapsed_ns": 2182800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6534,7 +6534,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1610600,
+                "elapsed_ns": 2188400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6547,7 +6547,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1814000,
+                "elapsed_ns": 2179000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6560,7 +6560,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1468200,
+                "elapsed_ns": 2595600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6573,7 +6573,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1488100,
+                "elapsed_ns": 2638700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6586,7 +6586,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 2119300,
+                "elapsed_ns": 2850000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6599,7 +6599,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1924300,
+                "elapsed_ns": 2699000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6612,7 +6612,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1827600,
+                "elapsed_ns": 2627800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6625,7 +6625,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1804900,
+                "elapsed_ns": 2606900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6638,7 +6638,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1748400,
+                "elapsed_ns": 2855300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6651,7 +6651,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 2661700,
+                "elapsed_ns": 4207800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6664,7 +6664,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 2461200,
+                "elapsed_ns": 3546400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6677,7 +6677,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 2509600,
+                "elapsed_ns": 3441700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6690,7 +6690,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 2872400,
+                "elapsed_ns": 3733300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -6703,7 +6703,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 2835400,
+                "elapsed_ns": 4410400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -8532,7 +8532,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -8548,11 +8548,11 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "setup_ns": 4481900,
+                "setup_ns": 8364200,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 5994700,
+                "first_predict_ns": 9435400,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 945800.0
+                "median_warm_ns": 1776800.0
               },
               {
                 "scale": 2,
@@ -8560,11 +8560,11 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "setup_ns": 4245000,
+                "setup_ns": 6663900,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 6355900,
+                "first_predict_ns": 9981500,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1040600.0
+                "median_warm_ns": 2260600.0
               },
               {
                 "scale": 3,
@@ -8572,11 +8572,11 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "setup_ns": 4177500,
+                "setup_ns": 6701800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 6412100,
+                "first_predict_ns": 11275000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1040200.0
+                "median_warm_ns": 1786700.0
               },
               {
                 "scale": 4,
@@ -8584,11 +8584,11 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "setup_ns": 4125200,
+                "setup_ns": 7036800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 6819000,
+                "first_predict_ns": 12821200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1061100.0
+                "median_warm_ns": 1913600.0
               },
               {
                 "scale": 5,
@@ -8596,14 +8596,14 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "setup_ns": 6072100,
+                "setup_ns": 8727800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 7305100,
+                "first_predict_ns": 12249200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1135500.0
+                "median_warm_ns": 2081100.0
               }
             ],
-            "median_warm_scaling_ratio": 1.20057094523155,
+            "median_warm_scaling_ratio": 1.2722872579918956,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -8615,7 +8615,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 1046700,
+                "elapsed_ns": 2010300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8628,7 +8628,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 937500,
+                "elapsed_ns": 2362200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8641,7 +8641,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 984300,
+                "elapsed_ns": 1776800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8654,7 +8654,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 931100,
+                "elapsed_ns": 1725000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8667,7 +8667,7 @@
                   "cells_per_axis": 3,
                   "mesh_cells": 27
                 },
-                "elapsed_ns": 945800,
+                "elapsed_ns": 1727700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8680,7 +8680,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1108100,
+                "elapsed_ns": 1788600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8693,7 +8693,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1042500,
+                "elapsed_ns": 1717800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8706,7 +8706,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 982500,
+                "elapsed_ns": 2832500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8719,7 +8719,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 1040600,
+                "elapsed_ns": 3142600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8732,7 +8732,7 @@
                   "cells_per_axis": 4,
                   "mesh_cells": 64
                 },
-                "elapsed_ns": 947000,
+                "elapsed_ns": 2260600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8745,7 +8745,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1162200,
+                "elapsed_ns": 1887400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8758,7 +8758,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1029800,
+                "elapsed_ns": 1780900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8771,7 +8771,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1082100,
+                "elapsed_ns": 1786700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8784,7 +8784,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 1040200,
+                "elapsed_ns": 1900900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8797,7 +8797,7 @@
                   "cells_per_axis": 5,
                   "mesh_cells": 125
                 },
-                "elapsed_ns": 979100,
+                "elapsed_ns": 1768200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8810,7 +8810,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1127400,
+                "elapsed_ns": 2302500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8823,7 +8823,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1040900,
+                "elapsed_ns": 1886000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8836,7 +8836,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1061100,
+                "elapsed_ns": 1839000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8849,7 +8849,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1108200,
+                "elapsed_ns": 1913600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8862,7 +8862,7 @@
                   "cells_per_axis": 6,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 1053900,
+                "elapsed_ns": 2164100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8875,7 +8875,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 1136500,
+                "elapsed_ns": 2004100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8888,7 +8888,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 1135500,
+                "elapsed_ns": 2409400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8901,7 +8901,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 1094400,
+                "elapsed_ns": 1899700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8914,7 +8914,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 1063100,
+                "elapsed_ns": 2091500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -8927,7 +8927,7 @@
                   "cells_per_axis": 7,
                   "mesh_cells": 343
                 },
-                "elapsed_ns": 1151600,
+                "elapsed_ns": 2081100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -9033,8 +9033,8 @@
               33,
               129
             ],
-            "coarse_error": 4.0607767676619734e-07,
-            "fine_error": 2.4333128931237152e-08
+            "coarse_error": 4.060776767661965e-07,
+            "fine_error": 2.4333128931236305e-08
           },
           "convergence_id": "9-33-129-log-time-qoi-v1"
         },
@@ -10765,7 +10765,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -10781,11 +10781,11 @@
                   "layer_count": 2,
                   "time_count": 3
                 },
-                "setup_ns": 481100,
+                "setup_ns": 617600,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 3753900,
+                "first_predict_ns": 7300500,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 1337300.0
+                "median_warm_ns": 2778300.0
               },
               {
                 "scale": 2,
@@ -10793,11 +10793,11 @@
                   "layer_count": 3,
                   "time_count": 4
                 },
-                "setup_ns": 392300,
+                "setup_ns": 1054200,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 4393800,
+                "first_predict_ns": 7889000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 2109500.0
+                "median_warm_ns": 4307800.0
               },
               {
                 "scale": 3,
@@ -10805,11 +10805,11 @@
                   "layer_count": 4,
                   "time_count": 5
                 },
-                "setup_ns": 474000,
+                "setup_ns": 593000,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 5193900,
+                "first_predict_ns": 9542200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 2645500.0
+                "median_warm_ns": 5553700.0
               },
               {
                 "scale": 4,
@@ -10817,11 +10817,11 @@
                   "layer_count": 5,
                   "time_count": 6
                 },
-                "setup_ns": 458900,
+                "setup_ns": 966000,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 5690700,
+                "first_predict_ns": 10245300,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 3281600.0
+                "median_warm_ns": 7365100.0
               },
               {
                 "scale": 5,
@@ -10829,14 +10829,14 @@
                   "layer_count": 6,
                   "time_count": 7
                 },
-                "setup_ns": 579300,
+                "setup_ns": 768100,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 6816500,
+                "first_predict_ns": 12113200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 3978000.0
+                "median_warm_ns": 8475100.0
               }
             ],
-            "median_warm_scaling_ratio": 2.9746504150153292,
+            "median_warm_scaling_ratio": 3.050462513047547,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -10848,7 +10848,7 @@
                   "layer_count": 2,
                   "time_count": 3
                 },
-                "elapsed_ns": 1382000,
+                "elapsed_ns": 2750400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10861,7 +10861,7 @@
                   "layer_count": 2,
                   "time_count": 3
                 },
-                "elapsed_ns": 1337300,
+                "elapsed_ns": 2778300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10874,7 +10874,7 @@
                   "layer_count": 2,
                   "time_count": 3
                 },
-                "elapsed_ns": 1323400,
+                "elapsed_ns": 2910000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10887,7 +10887,7 @@
                   "layer_count": 2,
                   "time_count": 3
                 },
-                "elapsed_ns": 1305900,
+                "elapsed_ns": 3042400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10900,7 +10900,7 @@
                   "layer_count": 2,
                   "time_count": 3
                 },
-                "elapsed_ns": 1338800,
+                "elapsed_ns": 2773100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10913,7 +10913,7 @@
                   "layer_count": 3,
                   "time_count": 4
                 },
-                "elapsed_ns": 2109500,
+                "elapsed_ns": 4307800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10926,7 +10926,7 @@
                   "layer_count": 3,
                   "time_count": 4
                 },
-                "elapsed_ns": 2015100,
+                "elapsed_ns": 4984000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10939,7 +10939,7 @@
                   "layer_count": 3,
                   "time_count": 4
                 },
-                "elapsed_ns": 2146200,
+                "elapsed_ns": 4166400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10952,7 +10952,7 @@
                   "layer_count": 3,
                   "time_count": 4
                 },
-                "elapsed_ns": 2179200,
+                "elapsed_ns": 4331700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10965,7 +10965,7 @@
                   "layer_count": 3,
                   "time_count": 4
                 },
-                "elapsed_ns": 1995200,
+                "elapsed_ns": 4153600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10978,7 +10978,7 @@
                   "layer_count": 4,
                   "time_count": 5
                 },
-                "elapsed_ns": 2792100,
+                "elapsed_ns": 5483400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -10991,7 +10991,7 @@
                   "layer_count": 4,
                   "time_count": 5
                 },
-                "elapsed_ns": 2678800,
+                "elapsed_ns": 5931100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11004,7 +11004,7 @@
                   "layer_count": 4,
                   "time_count": 5
                 },
-                "elapsed_ns": 2645500,
+                "elapsed_ns": 5553700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11017,7 +11017,7 @@
                   "layer_count": 4,
                   "time_count": 5
                 },
-                "elapsed_ns": 2594800,
+                "elapsed_ns": 5357000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11030,7 +11030,7 @@
                   "layer_count": 4,
                   "time_count": 5
                 },
-                "elapsed_ns": 2628100,
+                "elapsed_ns": 5931300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11043,7 +11043,7 @@
                   "layer_count": 5,
                   "time_count": 6
                 },
-                "elapsed_ns": 3372000,
+                "elapsed_ns": 7244900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11056,7 +11056,7 @@
                   "layer_count": 5,
                   "time_count": 6
                 },
-                "elapsed_ns": 3257000,
+                "elapsed_ns": 6673100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11069,7 +11069,7 @@
                   "layer_count": 5,
                   "time_count": 6
                 },
-                "elapsed_ns": 3281600,
+                "elapsed_ns": 7365100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11082,7 +11082,7 @@
                   "layer_count": 5,
                   "time_count": 6
                 },
-                "elapsed_ns": 3228900,
+                "elapsed_ns": 7722400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11095,7 +11095,7 @@
                   "layer_count": 5,
                   "time_count": 6
                 },
-                "elapsed_ns": 3315300,
+                "elapsed_ns": 7921800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11108,7 +11108,7 @@
                   "layer_count": 6,
                   "time_count": 7
                 },
-                "elapsed_ns": 4002000,
+                "elapsed_ns": 8822600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11121,7 +11121,7 @@
                   "layer_count": 6,
                   "time_count": 7
                 },
-                "elapsed_ns": 3974100,
+                "elapsed_ns": 8280100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11134,7 +11134,7 @@
                   "layer_count": 6,
                   "time_count": 7
                 },
-                "elapsed_ns": 4337600,
+                "elapsed_ns": 8475100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11147,7 +11147,7 @@
                   "layer_count": 6,
                   "time_count": 7
                 },
-                "elapsed_ns": 3978000,
+                "elapsed_ns": 8420100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -11160,7 +11160,7 @@
                   "layer_count": 6,
                   "time_count": 7
                 },
-                "elapsed_ns": 3947300,
+                "elapsed_ns": 8548400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -12992,7 +12992,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -13008,11 +13008,11 @@
                   "layer_count": 2,
                   "frequency_count": 3
                 },
-                "setup_ns": 333000,
+                "setup_ns": 424100,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 90500,
+                "first_predict_ns": 114400,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 61300.0
+                "median_warm_ns": 109100.0
               },
               {
                 "scale": 2,
@@ -13020,11 +13020,11 @@
                   "layer_count": 3,
                   "frequency_count": 4
                 },
-                "setup_ns": 361900,
+                "setup_ns": 397300,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 96000,
+                "first_predict_ns": 108900,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 91500.0
+                "median_warm_ns": 118200.0
               },
               {
                 "scale": 3,
@@ -13032,11 +13032,11 @@
                   "layer_count": 4,
                   "frequency_count": 5
                 },
-                "setup_ns": 376100,
+                "setup_ns": 445900,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 85200,
+                "first_predict_ns": 117600,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 81300.0
+                "median_warm_ns": 158900.0
               },
               {
                 "scale": 4,
@@ -13044,11 +13044,11 @@
                   "layer_count": 5,
                   "frequency_count": 6
                 },
-                "setup_ns": 347700,
+                "setup_ns": 592700,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 81400,
+                "first_predict_ns": 128900,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 84900.0
+                "median_warm_ns": 140700.0
               },
               {
                 "scale": 5,
@@ -13056,14 +13056,14 @@
                   "layer_count": 6,
                   "frequency_count": 7
                 },
-                "setup_ns": 469600,
+                "setup_ns": 550800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 116000,
+                "first_predict_ns": 142600,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 78200.0
+                "median_warm_ns": 149500.0
               }
             ],
-            "median_warm_scaling_ratio": 1.4926590538336053,
+            "median_warm_scaling_ratio": 1.4564619615032082,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -13075,7 +13075,7 @@
                   "layer_count": 2,
                   "frequency_count": 3
                 },
-                "elapsed_ns": 79900,
+                "elapsed_ns": 126800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13088,7 +13088,7 @@
                   "layer_count": 2,
                   "frequency_count": 3
                 },
-                "elapsed_ns": 86300,
+                "elapsed_ns": 113100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13101,7 +13101,7 @@
                   "layer_count": 2,
                   "frequency_count": 3
                 },
-                "elapsed_ns": 59600,
+                "elapsed_ns": 109100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13114,7 +13114,7 @@
                   "layer_count": 2,
                   "frequency_count": 3
                 },
-                "elapsed_ns": 57900,
+                "elapsed_ns": 105700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13127,7 +13127,7 @@
                   "layer_count": 2,
                   "frequency_count": 3
                 },
-                "elapsed_ns": 61300,
+                "elapsed_ns": 107900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13140,7 +13140,7 @@
                   "layer_count": 3,
                   "frequency_count": 4
                 },
-                "elapsed_ns": 91500,
+                "elapsed_ns": 127500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13153,7 +13153,7 @@
                   "layer_count": 3,
                   "frequency_count": 4
                 },
-                "elapsed_ns": 73600,
+                "elapsed_ns": 120500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13166,7 +13166,7 @@
                   "layer_count": 3,
                   "frequency_count": 4
                 },
-                "elapsed_ns": 79500,
+                "elapsed_ns": 117000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13179,7 +13179,7 @@
                   "layer_count": 3,
                   "frequency_count": 4
                 },
-                "elapsed_ns": 108500,
+                "elapsed_ns": 118200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13192,7 +13192,7 @@
                   "layer_count": 3,
                   "frequency_count": 4
                 },
-                "elapsed_ns": 92200,
+                "elapsed_ns": 113600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13205,7 +13205,7 @@
                   "layer_count": 4,
                   "frequency_count": 5
                 },
-                "elapsed_ns": 95400,
+                "elapsed_ns": 138100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13218,7 +13218,7 @@
                   "layer_count": 4,
                   "frequency_count": 5
                 },
-                "elapsed_ns": 81300,
+                "elapsed_ns": 211900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13231,7 +13231,7 @@
                   "layer_count": 4,
                   "frequency_count": 5
                 },
-                "elapsed_ns": 75000,
+                "elapsed_ns": 210600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13244,7 +13244,7 @@
                   "layer_count": 4,
                   "frequency_count": 5
                 },
-                "elapsed_ns": 64700,
+                "elapsed_ns": 158900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13257,7 +13257,7 @@
                   "layer_count": 4,
                   "frequency_count": 5
                 },
-                "elapsed_ns": 89900,
+                "elapsed_ns": 125900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13270,7 +13270,7 @@
                   "layer_count": 5,
                   "frequency_count": 6
                 },
-                "elapsed_ns": 100800,
+                "elapsed_ns": 148300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13283,7 +13283,7 @@
                   "layer_count": 5,
                   "frequency_count": 6
                 },
-                "elapsed_ns": 84900,
+                "elapsed_ns": 140700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13296,7 +13296,7 @@
                   "layer_count": 5,
                   "frequency_count": 6
                 },
-                "elapsed_ns": 70600,
+                "elapsed_ns": 137200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13309,7 +13309,7 @@
                   "layer_count": 5,
                   "frequency_count": 6
                 },
-                "elapsed_ns": 68600,
+                "elapsed_ns": 138200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13322,7 +13322,7 @@
                   "layer_count": 5,
                   "frequency_count": 6
                 },
-                "elapsed_ns": 87000,
+                "elapsed_ns": 143300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13335,7 +13335,7 @@
                   "layer_count": 6,
                   "frequency_count": 7
                 },
-                "elapsed_ns": 107600,
+                "elapsed_ns": 167200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13348,7 +13348,7 @@
                   "layer_count": 6,
                   "frequency_count": 7
                 },
-                "elapsed_ns": 78200,
+                "elapsed_ns": 156700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13361,7 +13361,7 @@
                   "layer_count": 6,
                   "frequency_count": 7
                 },
-                "elapsed_ns": 74200,
+                "elapsed_ns": 149500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13374,7 +13374,7 @@
                   "layer_count": 6,
                   "frequency_count": 7
                 },
-                "elapsed_ns": 73000,
+                "elapsed_ns": 147100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -13387,7 +13387,7 @@
                   "layer_count": 6,
                   "frequency_count": 7
                 },
-                "elapsed_ns": 91700,
+                "elapsed_ns": 145600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -13433,19 +13433,19 @@
           "status": "passed",
           "required": true,
           "metrics": {
-            "relative_error": 1.1227389545589698e-09,
+            "relative_error": 1.122765434531069e-09,
             "threshold": 0.005,
             "derivative_check_kind": "finite_difference_implementation_consistency",
             "direction_l2_norm": 1.5876672511411558,
-            "jvp_l2_norm": 0.23983094770204325,
-            "qoi_sensitivity_l2_ratio": 0.1510586979290917
+            "jvp_l2_norm": 0.23983094770204474,
+            "qoi_sensitivity_l2_ratio": 0.15105869792909266
           }
         },
         "jvp_jtp_adjoint": {
           "status": "passed",
           "required": true,
           "metrics": {
-            "relative_error": 9.425652921289149e-17,
+            "relative_error": 9.425652921290628e-17,
             "threshold": 1e-08
           }
         },
@@ -13459,20 +13459,20 @@
               0.0005
             ],
             "remainders": [
-              4.043013561850416e-07,
-              1.0104589121211658e-07,
-              2.5257788344445097e-08
+              4.0430135618029465e-07,
+              1.0104589120975161e-07,
+              2.5257788343250797e-08
             ],
             "normalized_remainders": [
-              1.385180672605018e-06,
-              3.461942766501945e-07,
-              8.653594580439867e-08
+              1.3851806725887545e-06,
+              3.4619427664209185e-07,
+              8.653594580030686e-08
             ],
             "normalization_scale": 0.29187626147331286,
             "scale_aware_exact_tolerance": 6.480954916583689e-15,
             "observed_orders": [
-              2.0004203837917522,
-              2.0002104365747346
+              2.0004203838085797,
+              2.0002104366091853
             ],
             "order_kind": "observed_remainder_orders",
             "minimum_order": 1.8
@@ -13487,8 +13487,8 @@
               33,
               129
             ],
-            "coarse_to_fine_error": 4.223869377672382e-05,
-            "medium_to_fine_error": 2.486275787452637e-06
+            "coarse_to_fine_error": 4.2238693776723256e-05,
+            "medium_to_fine_error": 2.4862757874520773e-06
           },
           "convergence_id": "9-33-129-log-frequency-qoi-v1"
         },
@@ -15192,12 +15192,12 @@
             "max_standardized_bin_deviation": 1.118033988749895,
             "max_standardized_bin_deviation_threshold": 4.0,
             "reference_kind": "operator-sensitivity-conditioned scalar Gaussian reference rank test; not method-posterior calibration",
-            "sensitivity": 0.1510586979290917,
+            "sensitivity": 0.15105869792909266,
             "sensitivity_source": {
               "operator_check": "jvp_finite_difference",
               "direction_l2_norm": 1.5876672511411558,
-              "jvp_l2_norm": 0.23983094770204325,
-              "qoi_sensitivity_l2_ratio": 0.1510586979290917,
+              "jvp_l2_norm": 0.23983094770204474,
+              "qoi_sensitivity_l2_ratio": 0.15105869792909266,
               "nominal_method_sensitivity": 0.8
             },
             "qoi": "log_sigma_inf"
@@ -15217,7 +15217,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -15232,58 +15232,58 @@
                 "size_definition": {
                   "frequency_count": 2
                 },
-                "setup_ns": 149400,
+                "setup_ns": 217500,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 26800,
+                "first_predict_ns": 32000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 10900.0
+                "median_warm_ns": 18900.0
               },
               {
                 "scale": 2,
                 "size_definition": {
                   "frequency_count": 4
                 },
-                "setup_ns": 122700,
+                "setup_ns": 201000,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 14600,
+                "first_predict_ns": 25700,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 10100.0
+                "median_warm_ns": 18500.0
               },
               {
                 "scale": 3,
                 "size_definition": {
                   "frequency_count": 8
                 },
-                "setup_ns": 116900,
+                "setup_ns": 196800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 15800,
+                "first_predict_ns": 26200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 10500.0
+                "median_warm_ns": 18700.0
               },
               {
                 "scale": 4,
                 "size_definition": {
                   "frequency_count": 16
                 },
-                "setup_ns": 116300,
+                "setup_ns": 196800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 17000,
+                "first_predict_ns": 27500,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 13200.0
+                "median_warm_ns": 19500.0
               },
               {
                 "scale": 5,
                 "size_definition": {
                   "frequency_count": 32
                 },
-                "setup_ns": 125500,
+                "setup_ns": 195700,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 17200,
+                "first_predict_ns": 30000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 14200.0
+                "median_warm_ns": 21800.0
               }
             ],
-            "median_warm_scaling_ratio": 1.4059405940594059,
+            "median_warm_scaling_ratio": 1.1783783783783783,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -15294,7 +15294,7 @@
                 "size_definition": {
                   "frequency_count": 2
                 },
-                "elapsed_ns": 12100,
+                "elapsed_ns": 21100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15306,7 +15306,7 @@
                 "size_definition": {
                   "frequency_count": 2
                 },
-                "elapsed_ns": 10900,
+                "elapsed_ns": 19300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15318,7 +15318,7 @@
                 "size_definition": {
                   "frequency_count": 2
                 },
-                "elapsed_ns": 10600,
+                "elapsed_ns": 18900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15330,7 +15330,7 @@
                 "size_definition": {
                   "frequency_count": 2
                 },
-                "elapsed_ns": 10900,
+                "elapsed_ns": 18700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15342,7 +15342,7 @@
                 "size_definition": {
                   "frequency_count": 2
                 },
-                "elapsed_ns": 9900,
+                "elapsed_ns": 17600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15354,7 +15354,7 @@
                 "size_definition": {
                   "frequency_count": 4
                 },
-                "elapsed_ns": 10700,
+                "elapsed_ns": 20000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15366,7 +15366,7 @@
                 "size_definition": {
                   "frequency_count": 4
                 },
-                "elapsed_ns": 10100,
+                "elapsed_ns": 18500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15378,7 +15378,7 @@
                 "size_definition": {
                   "frequency_count": 4
                 },
-                "elapsed_ns": 10000,
+                "elapsed_ns": 17700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15390,7 +15390,7 @@
                 "size_definition": {
                   "frequency_count": 4
                 },
-                "elapsed_ns": 9800,
+                "elapsed_ns": 17600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15402,7 +15402,7 @@
                 "size_definition": {
                   "frequency_count": 4
                 },
-                "elapsed_ns": 10200,
+                "elapsed_ns": 19500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15414,7 +15414,7 @@
                 "size_definition": {
                   "frequency_count": 8
                 },
-                "elapsed_ns": 10800,
+                "elapsed_ns": 20400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15426,7 +15426,7 @@
                 "size_definition": {
                   "frequency_count": 8
                 },
-                "elapsed_ns": 10500,
+                "elapsed_ns": 18800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15438,7 +15438,7 @@
                 "size_definition": {
                   "frequency_count": 8
                 },
-                "elapsed_ns": 10600,
+                "elapsed_ns": 18300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15450,7 +15450,7 @@
                 "size_definition": {
                   "frequency_count": 8
                 },
-                "elapsed_ns": 10300,
+                "elapsed_ns": 18700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15462,7 +15462,7 @@
                 "size_definition": {
                   "frequency_count": 8
                 },
-                "elapsed_ns": 10200,
+                "elapsed_ns": 18100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15474,7 +15474,7 @@
                 "size_definition": {
                   "frequency_count": 16
                 },
-                "elapsed_ns": 13200,
+                "elapsed_ns": 21700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15486,7 +15486,7 @@
                 "size_definition": {
                   "frequency_count": 16
                 },
-                "elapsed_ns": 13700,
+                "elapsed_ns": 19900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15497,72 +15497,72 @@
                 "n_data": 16,
                 "size_definition": {
                   "frequency_count": 16
+                },
+                "elapsed_ns": 19500,
+                "max_elapsed_ns": 2000000000,
+                "finite": true
+              },
+              {
+                "scale": 4,
+                "repeat": 4,
+                "n_param": 4,
+                "n_data": 16,
+                "size_definition": {
+                  "frequency_count": 16
+                },
+                "elapsed_ns": 19100,
+                "max_elapsed_ns": 2000000000,
+                "finite": true
+              },
+              {
+                "scale": 4,
+                "repeat": 5,
+                "n_param": 4,
+                "n_data": 16,
+                "size_definition": {
+                  "frequency_count": 16
+                },
+                "elapsed_ns": 19400,
+                "max_elapsed_ns": 2000000000,
+                "finite": true
+              },
+              {
+                "scale": 5,
+                "repeat": 1,
+                "n_param": 4,
+                "n_data": 32,
+                "size_definition": {
+                  "frequency_count": 32
+                },
+                "elapsed_ns": 24000,
+                "max_elapsed_ns": 2000000000,
+                "finite": true
+              },
+              {
+                "scale": 5,
+                "repeat": 2,
+                "n_param": 4,
+                "n_data": 32,
+                "size_definition": {
+                  "frequency_count": 32
+                },
+                "elapsed_ns": 22300,
+                "max_elapsed_ns": 2000000000,
+                "finite": true
+              },
+              {
+                "scale": 5,
+                "repeat": 3,
+                "n_param": 4,
+                "n_data": 32,
+                "size_definition": {
+                  "frequency_count": 32
                 },
                 "elapsed_ns": 21800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
               {
-                "scale": 4,
-                "repeat": 4,
-                "n_param": 4,
-                "n_data": 16,
-                "size_definition": {
-                  "frequency_count": 16
-                },
-                "elapsed_ns": 12500,
-                "max_elapsed_ns": 2000000000,
-                "finite": true
-              },
-              {
-                "scale": 4,
-                "repeat": 5,
-                "n_param": 4,
-                "n_data": 16,
-                "size_definition": {
-                  "frequency_count": 16
-                },
-                "elapsed_ns": 12200,
-                "max_elapsed_ns": 2000000000,
-                "finite": true
-              },
-              {
-                "scale": 5,
-                "repeat": 1,
-                "n_param": 4,
-                "n_data": 32,
-                "size_definition": {
-                  "frequency_count": 32
-                },
-                "elapsed_ns": 14200,
-                "max_elapsed_ns": 2000000000,
-                "finite": true
-              },
-              {
-                "scale": 5,
-                "repeat": 2,
-                "n_param": 4,
-                "n_data": 32,
-                "size_definition": {
-                  "frequency_count": 32
-                },
-                "elapsed_ns": 17000,
-                "max_elapsed_ns": 2000000000,
-                "finite": true
-              },
-              {
-                "scale": 5,
-                "repeat": 3,
-                "n_param": 4,
-                "n_data": 32,
-                "size_definition": {
-                  "frequency_count": 32
-                },
-                "elapsed_ns": 16400,
-                "max_elapsed_ns": 2000000000,
-                "finite": true
-              },
-              {
                 "scale": 5,
                 "repeat": 4,
                 "n_param": 4,
@@ -15570,7 +15570,7 @@
                 "size_definition": {
                   "frequency_count": 32
                 },
-                "elapsed_ns": 11500,
+                "elapsed_ns": 21600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -15582,7 +15582,7 @@
                 "size_definition": {
                   "frequency_count": 32
                 },
-                "elapsed_ns": 11800,
+                "elapsed_ns": 21600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -15631,50 +15631,50 @@
             ],
             "case_amplitude_ratios": [
               [
-                0.862618913975769,
-                0.5543596703919395
+                0.8626189139757685,
+                0.5543596703919405
               ],
               [
                 0.8626236163442763,
-                0.5543685042567956
+                0.5543685042567966
               ],
               [
-                0.8626349074779122,
-                0.5543895738212105
+                0.8626349074779117,
+                0.5543895738212116
               ]
             ],
             "case_absolute_log_amplitude_errors": [
               [
-                0.1477822683037393,
-                0.5899415783557443
+                0.1477822683037398,
+                0.5899415783557426
               ],
               [
                 0.14777681704871315,
-                0.5899256432238368
+                0.5899256432238349
               ],
               [
-                0.14776372784094502,
-                0.589887637522081
+                0.14776372784094555,
+                0.589887637522079
               ]
             ],
             "case_absolute_phase_errors_radians": [
               [
-                0.00011097824742582643,
-                0.00028452624421101703
+                0.00011097824753371144,
+                0.0002845262419020975
               ],
               [
-                0.00027465294127124515,
-                0.0007030405630414423
+                0.0002746529405766858,
+                0.0007030405623854416
               ],
               [
-                0.0005430197696292688,
-                0.0013874795848665203
+                0.0005430197700268381,
+                0.0013874795846818193
               ]
             ],
             "amplitude_ratio": 0.8626236163442763,
-            "absolute_log_amplitude_error": 0.5899415783557443,
+            "absolute_log_amplitude_error": 0.5899415783557426,
             "log_amplitude_error_threshold": 0.65,
-            "absolute_phase_error_radians": 0.0013874795848665203,
+            "absolute_phase_error_radians": 0.0013874795846818193,
             "phase_error_threshold_radians": 0.01
           },
           "reference_id": "geoana-uniform-wholespace-frequency-geometry-sanity-v3"
@@ -15691,19 +15691,19 @@
           "status": "passed",
           "required": true,
           "metrics": {
-            "relative_error": 1.3643194744455797e-07,
+            "relative_error": 2.1245518939162688e-07,
             "threshold": 0.005,
             "derivative_check_kind": "analytic_or_solver_derivative_consistency",
             "direction_l2_norm": 14.453398024360427,
-            "jvp_l2_norm": 0.0007070496360642718,
-            "qoi_sensitivity_l2_ratio": 4.891926693450064e-05
+            "jvp_l2_norm": 0.0007070496360642715,
+            "qoi_sensitivity_l2_ratio": 4.891926693450062e-05
           }
         },
         "jvp_jtp_adjoint": {
           "status": "passed",
           "required": true,
           "metrics": {
-            "relative_error": 8.804455070636007e-13,
+            "relative_error": 2.6572351690254947e-13,
             "threshold": 1e-08
           }
         },
@@ -15717,20 +15717,20 @@
               0.0005
             ],
             "remainders": [
-              6.4622808401122945e-09,
-              1.6156832198152823e-09,
-              4.039349143777607e-10
+              6.462280833729462e-09,
+              1.6156832121710612e-09,
+              4.0393490783716245e-10
             ],
             "normalized_remainders": [
-              6.106213563951414e-07,
-              1.5266601740126995e-07,
-              3.816783755074586e-08
+              6.106213557920273e-07,
+              1.5266601667896703e-07,
+              3.8167836932724295e-08
             ],
-            "normalization_scale": 0.01058312286727565,
-            "scale_aware_exact_tolerance": 2.349925335937286e-16,
+            "normalization_scale": 0.010583122867275646,
+            "scale_aware_exact_tolerance": 2.349925335937285e-16,
             "observed_orders": [
-              1.9998990864299666,
-              1.9999496058628707
+              1.9998990918307769,
+              1.999949622397521
             ],
             "order_kind": "observed_remainder_orders",
             "minimum_order": 1.8
@@ -15745,8 +15745,8 @@
               20.0,
               15.0
             ],
-            "coarse_to_fine_error": 0.007030070662489585,
-            "medium_to_fine_error": 0.001311360405152419
+            "coarse_to_fine_error": 0.007030070662489583,
+            "medium_to_fine_error": 0.001311360405152413
           },
           "convergence_id": "30-20-15m-mesh-self-convergence-v1"
         },
@@ -15772,12 +15772,12 @@
                 "rejected": true
               },
               "source_endpoint_perturbation": {
-                "relative_response_change": 0.013486969047438227,
+                "relative_response_change": 0.013486969047438346,
                 "minimum": 0.001
               },
               "phase_component_index_contract": {
                 "invalid_component_rejected": true,
-                "phase_stripping_relative_change": 0.0002173723311784742,
+                "phase_stripping_relative_change": 0.00021737233186716758,
                 "minimum_detectable_change": 1e-06
               },
               "receiver_topography_geometry_shape_contract": {
@@ -17460,12 +17460,12 @@
             "max_standardized_bin_deviation": 1.5652475842498528,
             "max_standardized_bin_deviation_threshold": 4.0,
             "reference_kind": "operator-sensitivity-conditioned scalar Gaussian reference rank test; not method-posterior calibration",
-            "sensitivity": 4.891926693450064e-05,
+            "sensitivity": 4.891926693450062e-05,
             "sensitivity_source": {
               "operator_check": "jvp_finite_difference",
               "direction_l2_norm": 14.453398024360427,
-              "jvp_l2_norm": 0.0007070496360642718,
-              "qoi_sensitivity_l2_ratio": 4.891926693450064e-05,
+              "jvp_l2_norm": 0.0007070496360642715,
+              "qoi_sensitivity_l2_ratio": 4.891926693450062e-05,
               "nominal_method_sensitivity": 1.1
             },
             "qoi": "homogeneous_log_conductivity"
@@ -17485,7 +17485,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -17501,11 +17501,11 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "setup_ns": 696500,
+                "setup_ns": 717200,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 42929100,
+                "first_predict_ns": 51276800,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34264500.0
+                "median_warm_ns": 34488800.0
               },
               {
                 "scale": 2,
@@ -17513,11 +17513,11 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "setup_ns": 1033500,
+                "setup_ns": 934200,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 44121600,
+                "first_predict_ns": 46478500,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34490800.0
+                "median_warm_ns": 34306600.0
               },
               {
                 "scale": 3,
@@ -17525,11 +17525,11 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "setup_ns": 1030600,
+                "setup_ns": 918000,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 42709900,
+                "first_predict_ns": 46976800,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34685100.0
+                "median_warm_ns": 35707800.0
               },
               {
                 "scale": 4,
@@ -17537,11 +17537,11 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "setup_ns": 1017400,
+                "setup_ns": 931800,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 43469400,
+                "first_predict_ns": 49585800,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 35126800.0
+                "median_warm_ns": 34459200.0
               },
               {
                 "scale": 5,
@@ -17549,14 +17549,14 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "setup_ns": 991900,
+                "setup_ns": 962900,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 44280600,
+                "first_predict_ns": 48044000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34691700.0
+                "median_warm_ns": 34897100.0
               }
             ],
-            "median_warm_scaling_ratio": 1.0251659881218171,
+            "median_warm_scaling_ratio": 1.0408434528632975,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -17568,7 +17568,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34008700,
+                "elapsed_ns": 38485200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17581,7 +17581,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34036300,
+                "elapsed_ns": 34194000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17594,7 +17594,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35439100,
+                "elapsed_ns": 34488800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17607,7 +17607,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34264500,
+                "elapsed_ns": 33337300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17620,7 +17620,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35137500,
+                "elapsed_ns": 35568600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17633,7 +17633,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34236400,
+                "elapsed_ns": 37246200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17646,7 +17646,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34815600,
+                "elapsed_ns": 33629400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17659,7 +17659,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34716700,
+                "elapsed_ns": 34461600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17672,7 +17672,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 33694000,
+                "elapsed_ns": 32635900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17685,7 +17685,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34490800,
+                "elapsed_ns": 34306600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17698,7 +17698,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34741500,
+                "elapsed_ns": 35639300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17711,7 +17711,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35804100,
+                "elapsed_ns": 35712800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17724,7 +17724,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 33568800,
+                "elapsed_ns": 34491300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17737,7 +17737,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34685100,
+                "elapsed_ns": 35707800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17750,7 +17750,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34536600,
+                "elapsed_ns": 35741700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17763,7 +17763,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 36224800,
+                "elapsed_ns": 35166800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17776,7 +17776,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35533200,
+                "elapsed_ns": 35042400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17789,7 +17789,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35126800,
+                "elapsed_ns": 33710800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17802,7 +17802,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35028700,
+                "elapsed_ns": 33158200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17815,7 +17815,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34554600,
+                "elapsed_ns": 34459200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17828,7 +17828,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35318200,
+                "elapsed_ns": 33392500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17841,7 +17841,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34236000,
+                "elapsed_ns": 36153800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17854,7 +17854,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34930200,
+                "elapsed_ns": 37510600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17867,7 +17867,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34358600,
+                "elapsed_ns": 34897100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -17880,7 +17880,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34691700,
+                "elapsed_ns": 34206000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }
@@ -17929,50 +17929,50 @@
             ],
             "case_amplitude_ratios": [
               [
-                0.862618913975769,
-                0.5543596703919395
+                0.8626189139757685,
+                0.5543596703919405
               ],
               [
                 0.8626236163442763,
-                0.5543685042567956
+                0.5543685042567966
               ],
               [
-                0.8626349074779122,
-                0.5543895738212105
+                0.8626349074779117,
+                0.5543895738212116
               ]
             ],
             "case_absolute_log_amplitude_errors": [
               [
-                0.1477822683037393,
-                0.5899415783557443
+                0.1477822683037398,
+                0.5899415783557426
               ],
               [
                 0.14777681704871315,
-                0.5899256432238368
+                0.5899256432238349
               ],
               [
-                0.14776372784094502,
-                0.589887637522081
+                0.14776372784094555,
+                0.589887637522079
               ]
             ],
             "case_absolute_phase_errors_radians": [
               [
-                0.00011097824742582643,
-                0.00028452624421101703
+                0.00011097824753371144,
+                0.0002845262419020975
               ],
               [
-                0.00027465294127124515,
-                0.0007030405630414423
+                0.0002746529405766858,
+                0.0007030405623854416
               ],
               [
-                0.0005430197696292688,
-                0.0013874795848665203
+                0.0005430197700268381,
+                0.0013874795846818193
               ]
             ],
             "amplitude_ratio": 0.8626236163442763,
-            "absolute_log_amplitude_error": 0.5899415783557443,
+            "absolute_log_amplitude_error": 0.5899415783557426,
             "log_amplitude_error_threshold": 0.65,
-            "absolute_phase_error_radians": 0.0013874795848665203,
+            "absolute_phase_error_radians": 0.0013874795846818193,
             "phase_error_threshold_radians": 0.01
           },
           "reference_id": "geoana-uniform-wholespace-frequency-geometry-sanity-v3"
@@ -17989,19 +17989,19 @@
           "status": "passed",
           "required": true,
           "metrics": {
-            "relative_error": 1.5501323577355522e-08,
+            "relative_error": 1.5238066362365987e-08,
             "threshold": 0.005,
             "derivative_check_kind": "analytic_or_solver_derivative_consistency",
             "direction_l2_norm": 15.22552989210157,
-            "jvp_l2_norm": 0.014975283526834663,
-            "qoi_sensitivity_l2_ratio": 0.0009835640291641526
+            "jvp_l2_norm": 0.014975283526834667,
+            "qoi_sensitivity_l2_ratio": 0.0009835640291641528
           }
         },
         "jvp_jtp_adjoint": {
           "status": "passed",
           "required": true,
           "metrics": {
-            "relative_error": 8.702615673453632e-13,
+            "relative_error": 7.28271956163802e-12,
             "threshold": 1e-08
           }
         },
@@ -18015,20 +18015,20 @@
               0.0005
             ],
             "remainders": [
-              2.7284528300467108e-08,
-              6.826524364718687e-09,
-              1.7073049809291504e-09
+              2.7284528297583593e-08,
+              6.826524366464445e-09,
+              1.7073049755477485e-09
             ],
             "normalized_remainders": [
-              1.1766921650078674e-06,
-              2.9440559300643173e-07,
-              7.363046090497538e-08
+              1.176692164883511e-06,
+              2.944055930817206e-07,
+              7.363046067289318e-08
             ],
             "normalization_scale": 0.023187481919100465,
             "scale_aware_exact_tolerance": 5.148655261932969e-16,
             "observed_orders": [
-              1.998859961062645,
-              1.999430441934605
+              1.9988599605412338,
+              1.9994304468509028
             ],
             "order_kind": "observed_remainder_orders",
             "minimum_order": 1.8
@@ -18043,8 +18043,8 @@
               20.0,
               15.0
             ],
-            "coarse_to_fine_error": 0.00811557260484283,
-            "medium_to_fine_error": 0.0030924540646571886
+            "coarse_to_fine_error": 0.008115572604842828,
+            "medium_to_fine_error": 0.003092454064657183
           },
           "convergence_id": "30-20-15m-mesh-self-convergence-v1"
         },
@@ -18070,12 +18070,12 @@
                 "rejected": true
               },
               "source_endpoint_perturbation": {
-                "relative_response_change": 0.01346299319825547,
+                "relative_response_change": 0.013462993198255602,
                 "minimum": 0.001
               },
               "phase_component_index_contract": {
                 "invalid_component_rejected": true,
-                "phase_stripping_relative_change": 0.00021695396297668362,
+                "phase_stripping_relative_change": 0.00021695396368259518,
                 "minimum_detectable_change": 1e-06
               },
               "receiver_topography_geometry_shape_contract": {
@@ -19758,12 +19758,12 @@
             "max_standardized_bin_deviation": 1.4534441853748632,
             "max_standardized_bin_deviation_threshold": 4.0,
             "reference_kind": "operator-sensitivity-conditioned scalar Gaussian reference rank test; not method-posterior calibration",
-            "sensitivity": 0.0009835640291641526,
+            "sensitivity": 0.0009835640291641528,
             "sensitivity_source": {
               "operator_check": "jvp_finite_difference",
               "direction_l2_norm": 15.22552989210157,
-              "jvp_l2_norm": 0.014975283526834663,
-              "qoi_sensitivity_l2_ratio": 0.0009835640291641526,
+              "jvp_l2_norm": 0.014975283526834667,
+              "qoi_sensitivity_l2_ratio": 0.0009835640291641528,
               "nominal_method_sensitivity": 1.4
             },
             "qoi": "homogeneous_log_conductivity"
@@ -19783,7 +19783,7 @@
             "timings_replay_bound": false,
             "cross_run_timing_audit_forbidden": true,
             "environment_qualification": {
-              "logical_cpu_count": 16,
+              "logical_cpu_count": 12,
               "thread_environment": {
                 "OMP_NUM_THREADS": null,
                 "OPENBLAS_NUM_THREADS": null,
@@ -19799,11 +19799,11 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "setup_ns": 571800,
+                "setup_ns": 1171400,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 44708800,
+                "first_predict_ns": 53275200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34134700.0
+                "median_warm_ns": 35633500.0
               },
               {
                 "scale": 2,
@@ -19811,11 +19811,11 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "setup_ns": 1075800,
+                "setup_ns": 918500,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 43533100,
+                "first_predict_ns": 45936200,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 35269300.0
+                "median_warm_ns": 35373400.0
               },
               {
                 "scale": 3,
@@ -19823,11 +19823,11 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "setup_ns": 1025600,
+                "setup_ns": 922400,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 43629500,
+                "first_predict_ns": 48982600,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34808300.0
+                "median_warm_ns": 33895500.0
               },
               {
                 "scale": 4,
@@ -19835,11 +19835,11 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "setup_ns": 1030500,
+                "setup_ns": 1394100,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 42641900,
+                "first_predict_ns": 46559800,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34741900.0
+                "median_warm_ns": 33407700.0
               },
               {
                 "scale": 5,
@@ -19847,14 +19847,14 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "setup_ns": 992100,
+                "setup_ns": 908400,
                 "max_setup_ns": 5000000000,
-                "first_predict_ns": 43355500,
+                "first_predict_ns": 48854000,
                 "max_first_predict_ns": 5000000000,
-                "median_warm_ns": 34601300.0
+                "median_warm_ns": 35220200.0
               }
             ],
-            "median_warm_scaling_ratio": 1.0332389035204645,
+            "median_warm_scaling_ratio": 1.0666253588244625,
             "max_median_warm_scaling_ratio": 1000.0,
             "records": [
               {
@@ -19866,7 +19866,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 33828700,
+                "elapsed_ns": 34533900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19879,7 +19879,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34332200,
+                "elapsed_ns": 38053700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19892,7 +19892,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35621800,
+                "elapsed_ns": 35633500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19905,7 +19905,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34033100,
+                "elapsed_ns": 35316400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19918,7 +19918,7 @@
                   "receiver_count": 1,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34134700,
+                "elapsed_ns": 40999600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19931,7 +19931,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34934400,
+                "elapsed_ns": 38976100,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19944,7 +19944,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35542800,
+                "elapsed_ns": 35373400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19957,7 +19957,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 33619300,
+                "elapsed_ns": 34094600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19970,7 +19970,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35269300,
+                "elapsed_ns": 40798800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19983,7 +19983,7 @@
                   "receiver_count": 2,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35654100,
+                "elapsed_ns": 35207700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -19996,7 +19996,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34808300,
+                "elapsed_ns": 32355300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20009,7 +20009,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34665800,
+                "elapsed_ns": 33979900,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20022,7 +20022,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34008800,
+                "elapsed_ns": 33895500,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20035,7 +20035,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35096500,
+                "elapsed_ns": 32709800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20048,7 +20048,7 @@
                   "receiver_count": 3,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35165300,
+                "elapsed_ns": 45828800,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20061,7 +20061,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34798500,
+                "elapsed_ns": 33226700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20074,7 +20074,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34741900,
+                "elapsed_ns": 33407700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20087,7 +20087,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34585200,
+                "elapsed_ns": 33047000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20100,7 +20100,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35454900,
+                "elapsed_ns": 33847300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20113,7 +20113,7 @@
                   "receiver_count": 4,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34152600,
+                "elapsed_ns": 34736700,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20126,7 +20126,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34601300,
+                "elapsed_ns": 34754300,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20139,7 +20139,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34605700,
+                "elapsed_ns": 35220200,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20152,7 +20152,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 34341600,
+                "elapsed_ns": 38459400,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20165,7 +20165,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 35755200,
+                "elapsed_ns": 35785000,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               },
@@ -20178,7 +20178,7 @@
                   "receiver_count": 5,
                   "mesh_cells": 216
                 },
-                "elapsed_ns": 33802600,
+                "elapsed_ns": 34544600,
                 "max_elapsed_ns": 2000000000,
                 "finite": true
               }

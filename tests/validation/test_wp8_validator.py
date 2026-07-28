@@ -21,6 +21,39 @@ assert AUDIT_SPEC.loader
 AUDIT_SPEC.loader.exec_module(AUDIT_MODULE)
 
 
+def test_required_repository_assets_are_canonical_and_complete():
+    expected = (
+        "validation/wp8/contracts/field-preregistration-scaffold.schema.json",
+        "validation/wp8/contracts/wp8-feasibility.schema.json",
+        "validation/wp8/datasets.json",
+        "validation/wp8/evidence/wp8-1-start.json",
+        "validation/wp8/field/preregistration-scaffold-v1.json",
+        "validation/wp8/preregistration/wp8-0-v1.json",
+        "validation/wp8/synthetic/method-validation-policy-v1.json",
+        "validation/wp8/synthetic/readiness.json",
+    )
+    assets = MODULE.required_repository_assets()
+
+    assert assets == expected
+    assert assets == tuple(sorted(set(assets)))
+    assert all(
+        not Path(path).is_absolute() and Path(path).as_posix() == path
+        for path in assets
+    )
+    assert all(".." not in Path(path).parts for path in assets)
+    assert all((MODULE.ROOT / path).is_file() for path in assets)
+    assert {
+        MODULE.DATASETS,
+        MODULE.PREREG,
+        MODULE.REGISTRATION_SCHEMA,
+        MODULE.WP8_1_START,
+        MODULE.FIELD_PREREGISTRATION_SCAFFOLD,
+        MODULE.FIELD_PREREGISTRATION_SCHEMA,
+        MODULE.METHOD_VALIDATION_POLICY,
+        MODULE.SYNTHETIC_READINESS,
+    } == {MODULE.ROOT / path for path in assets}
+
+
 def test_merkle_root_changes_with_member():
     members = [{"path": "a", "sha256": "1"}, {"path": "b", "sha256": "2"}]
     before = MODULE.merkle_root(members)

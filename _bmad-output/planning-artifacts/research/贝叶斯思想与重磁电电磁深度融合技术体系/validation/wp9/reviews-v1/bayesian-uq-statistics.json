@@ -4,8 +4,8 @@
   "specialty_slug": "bayesian-uq-statistics",
   "specialty": "贝叶斯/UQ与统计设计",
   "registry_sha256": "e66f8008672de016d04024d99c045722b75f33b93b8b010f5e5db708573331c6",
-  "wp8_completion_sha256": "559b7da725b6b480700e7ea0e0d4d73dfd74c5201ec0bd127292aaba0bc61fbc",
-  "specialty_evidence_sha256": "3bff13da834242b064399c675081306fe2d74aa4d4471712f81ee2564817088c",
+  "wp8_completion_sha256": "26f8c6edbb9f529b7379affd9df07490a4158ca4bd8173679282ca8fab5bc2bd",
+  "specialty_evidence_sha256": "af98c08cb8de670146f5674ad0fae5c09eb8e7d99b45f9ed78247716ed6b5cab",
   "covered_source_finding_ids": [
     "R03-F-e7d52ee82486",
     "R03-F-79f50ab4b86f",

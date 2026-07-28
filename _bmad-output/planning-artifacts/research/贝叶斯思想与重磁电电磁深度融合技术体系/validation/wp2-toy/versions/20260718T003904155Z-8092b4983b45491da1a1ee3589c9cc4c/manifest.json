@@ -1,0 +1,75 @@
+{
+  "schema": "wp2-toy-manifest-v3",
+  "run_id": "WP2-TOY-20260717-v1",
+  "started_utc": "2026-07-18T00:38:28.4190321Z",
+  "ended_utc": "2026-07-18T00:39:04.0691119Z",
+  "command": {
+    "executable": "pwsh",
+    "script": "run-wp2-toy.ps1",
+    "arguments": [
+      "-NoProfile",
+      "-File",
+      "wp2-toy-worker.ps1",
+      "-OutputStage",
+      "<stage>",
+      "-CapabilityToken",
+      "<redacted>"
+    ]
+  },
+  "exit_code": 0,
+  "stdout": {
+    "path": "stdout.log",
+    "sha256": "bea450d30c9c947b0e393b2f0fe0190dcc4e22b1b8b459d411dafa6eacc76d40",
+    "bytes": 45
+  },
+  "stderr": {
+    "path": "stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "environment": {
+    "pwsh": "7.6.3",
+    "dotnet": "10.0.9",
+    "os": "Microsoft Windows NT 10.0.26200.0"
+  },
+  "sources": [
+    {
+      "path": "run-wp2-toy.ps1",
+      "sha256": "bd574aab5a482f077e393afebea5170b1a79ceefd339070116348ca4b57c7d25"
+    },
+    {
+      "path": "wp2-toy-worker.ps1",
+      "sha256": "7e4a74c3847b17b1d653ab3da76fb5933870bf4c0c488ff0e00d18032d639c71"
+    },
+    {
+      "path": "config.json",
+      "sha256": "5e8aceabe54a17bf6bca55ac283e359a67e15649f7da949456153e03b0f4ffeb"
+    },
+    {
+      "path": "diagnostic-contract.json",
+      "sha256": "0e29d1af2f0624a989fa8939c1e1cfeeb7e3b740c44f341281c0eeca0eea8cac"
+    },
+    {
+      "path": "report-contract.json",
+      "sha256": "5bcd344dbdcd14d2474aef839f29b8d0f082d9db8c3952853c632baaf48de941"
+    }
+  ],
+  "attempted_replicates": 200,
+  "failed_replicates": 3,
+  "files": {
+    "config.json": "5e8aceabe54a17bf6bca55ac283e359a67e15649f7da949456153e03b0f4ffeb",
+    "diagnostic-chains.csv": "84498dd1a4d2369f2f4e2c66bf24b135165a4de34c5a03390d0954590c89d91b",
+    "diagnostic-contract.json": "0e29d1af2f0624a989fa8939c1e1cfeeb7e3b740c44f341281c0eeca0eea8cac",
+    "diagnostic-failure-chains.csv": "f85a14d1168950b8173f447d5b8234be5d4c824cd5aea5c2c9b7e3ecfaca6ffa",
+    "diagnostic-failure-summary.json": "394b5b162e0b5c988b22f1c8ecc0e0eddff03c21e446b673ecba16f8f0998ef2",
+    "diagnostic-replicates.csv": "190c99d14b3738217383cd01679d6f0cb5b0b88a4be817e852e478d9099ecbf4",
+    "information-estimates.csv": "d8444b3003167914d7b68e10afbc66d220d27354c6a06d07ba655bcd4c77b76d",
+    "report-contract.json": "5bcd344dbdcd14d2474aef839f29b8d0f082d9db8c3952853c632baaf48de941",
+    "report.json": "08c2b501fda829e07c48eb09241488f7777e5deed7d69b3dbd612c8aef8dec0b",
+    "results.json": "b2b9476adcd0a095889398674a178adaea809c80a4672bc085a6094f7f595047",
+    "rjmcmc-chain.csv": "9681541342b4f0dfedb67738ee11621c31820cd66695788f45b81fdd915652d5",
+    "rjmcmc-records.csv": "89fa6790df0abc4939b8ad368edcc227ad03ec3cf2643f096f605c3aaeb078db",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "bea450d30c9c947b0e393b2f0fe0190dcc4e22b1b8b459d411dafa6eacc76d40"
+  }
+}

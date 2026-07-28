@@ -1,0 +1,136 @@
+{
+  "schema_version": "wp8-datasets-v1",
+  "source_manifest": "_bmad-output/planning-artifacts/research/open-data/00_catalog/open_geophysics_data_manifest.json",
+  "selection_policy": "license_integrity_design_only",
+  "formal_test_endpoints_inspected": false,
+  "methods": {
+    "gravity": {
+      "primary_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+      "expansion_pool": {
+        "USGS_Wisconsin_statewide_gravity_2004": {
+          "selection_status": "locally_frozen_training_audited",
+          "design_split": "validation/wp8/evidence/feasibility-v1/wisconsin-gravity-design-split.json",
+          "training_diagnostics": "validation/wp8/evidence/feasibility-v1/wisconsin-gravity-train-diagnostics.json",
+          "limitation": "training raw-field correlation reduces the test pool to one conservative effective cluster"
+        },
+        "NOAA_NCEI_NGS99_US_gravity": {
+          "selection_status": "locally_frozen_training_audited_license_unresolved",
+          "design_split": "validation/wp8/evidence/feasibility-v1/ngs99-gravity-design-split.json",
+          "training_diagnostics": "validation/wp8/evidence/feasibility-v1/ngs99-gravity-train-diagnostics.json",
+          "limitation": "mixed historical contributors have no dataset-level retroactive license; raw-field range is censored at 2000 km"
+        }
+      }
+    },
+    "magnetic": {
+      "primary_slug": "USGS_MountainPass_airborne_magnetic_2020",
+      "backup_slug": "USGS_Tofty_airborne_mag_rad_2025",
+      "license_evidence_path": "magnetic/USGS_MountainPass_airborne_magnetic_2020/Metadata.xml",
+      "license_evidence_type": "fgdc_constraints",
+      "design_split": "validation/wp8/evidence/feasibility-v1/mountain-pass-magnetic-design-split.json",
+      "expansion_pool": {
+        "USGS_Texas_Alkaline_Igneous_Belt_2026": {
+          "selection_status": "metadata_frozen_contract_passed_response_not_downloaded",
+          "doi": "10.5066/P1EOKG6I",
+          "raw_root": "validation/wp8/data/texas-aib-magnetic-v1",
+          "contract_readiness": "validation/wp8/evidence/feasibility-v1/texas-aib-magnetic-contract-readiness.json",
+          "license": "CC0-1.0",
+          "response_archive": "TX_AIB_mag.csv.zip",
+          "response_archive_bytes": 4236679294,
+          "selection_basis": "license_contract_and_design_only_before_response_acquisition"
+        }
+      },
+      "remanence_prior_pool": {
+        "USGS_Western_US_Alaska_rock_properties": {
+          "selection_status": "locally_frozen_training_audited_insufficient_complete_vectors",
+          "doi": "10.5066/P9FONTGS",
+          "design_split": "validation/wp8/evidence/feasibility-v1/usgs-rock-properties-design-split.json",
+          "training_prior": "validation/wp8/evidence/feasibility-v1/usgs-rock-properties-remanence-prior.json"
+        },
+        "EarthRef_MagIC": {
+          "selection_status": "locally_frozen_contribution_split_training_audited",
+          "api": "https://api.earthref.org/v1/MagIC/download",
+          "license": "CC-BY-4.0 unless contribution metadata states otherwise",
+          "raw_root": "validation/wp8/data/magic-contributions-v1",
+          "design_split": "validation/wp8/evidence/feasibility-v1/magic-contribution-design-split.json",
+          "training_prior": "validation/wp8/evidence/feasibility-v1/magic-training-remanence-prior.json",
+          "excluded_contribution_ids": [
+            20710
+          ],
+          "limitation": "training-only provenance-backed NRM prior; not a substitute for independent field-survey clusters"
+        }
+      }
+    },
+    "dc": {
+      "primary_slug": "USGS_LittleColoradoRiver_ERT_2019",
+      "license_evidence_path": "dc_ip/USGS_LittleColoradoRiver_ERT_2019/Electrical Resistivity Tomography Data along the Little Colorado River near Leupp, AZ 2019.xml",
+      "license_evidence_type": "fgdc_constraints"
+    },
+    "tdip": {
+      "primary_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+      "license_evidence_path": "dc_ip/Zenodo_Reykjanes_ERT_IP_monitoring_2025/source_record.zenodo.json",
+      "license_evidence_type": "zenodo_license"
+    },
+    "sip_fdip": {
+      "primary_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+      "license_evidence_path": "dc_ip/Zenodo_Serpentinite_IP_Revil_2024/source_record.zenodo.json",
+      "license_evidence_type": "zenodo_license"
+    },
+    "tem": {
+      "primary_slug": "USGS_DineroTunnel_TEM_2023",
+      "backup_external": {
+        "selection_status": "selected_and_locally_frozen",
+        "name": "USGS Upper East River VTEM ET 2017",
+        "survey_doi": "10.5066/P949ZCZ8",
+        "sciencebase_processed_item": "5f51c7b782ce4c3d1239a796",
+        "sciencebase_raw_item": "5f51c7a882ce4c3d1239a794",
+        "raw_root": "validation/wp8/data/east-river-aem-v1",
+        "selection_basis": "license_contract_design_only_before_response_interpretation",
+        "expansion_pool": {
+          "status": "frozen_before_held_out_response_interpretation",
+          "raw_root": "validation/wp8/data/tem-aem-consortium-v1",
+          "hualapai": {
+            "doi": "10.5066/P91OLJN3",
+            "contract_status": "eligible",
+            "correlation_adjusted_test_cluster_upper_bound": 4
+          },
+          "yellowstone": {
+            "doi": "10.5066/P9LVAU7W",
+            "contract_status": "ineligible_until_survey_specific_waveform_report_is_restored",
+            "catalogued_report_failure": "HTTP 404"
+          },
+          "maricopa": {
+            "doi": "10.5066/P9R1XBPG",
+            "contract_status": "eligible",
+            "raw_root": "validation/wp8/data/maricopa-aem-v1",
+            "correlation_adjusted_test_cluster_upper_bound": 1
+          }
+        },
+        "limitation": "contract-qualified East River plus Hualapai plus Maricopa upper bound is 7 independent test clusters; power gate remains blocked"
+      }
+    },
+    "mt_amt": {
+      "primary_slug": "USGS_SanAndreas_Parkfield_MT_EDI_1990",
+      "backup_external": {
+        "selection_status": "selected_and_locally_frozen",
+        "name": "USArray TA Magnetotelluric Transfer Functions",
+        "survey_doi": "10.17611/DP/EMTF/USARRAY/TA",
+        "official_member_service": "https://ds.iris.edu/spudservice/emtf/ids?project=USArray&survey=Transportable%20Array",
+        "raw_root": "validation/wp8/data/usarray-ta-emtf-v1",
+        "raw_freeze_evidence": "validation/wp8/evidence/feasibility-v1/mt-usarray-raw-freeze.json",
+        "selection_basis": "license_integrity_design_only_before_endpoint_interpretation"
+      },
+      "license_evidence_path": "mt/USGS_SanAndreas_Parkfield_MT_EDI_1990/Magnetotelluric-Data-from-the-San-Andreas-Fault_Parkfield-CA_1990_EDI-Metadata.xml",
+      "license_evidence_type": "fgdc_constraints"
+    },
+    "csamt": {
+      "primary_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+      "license_evidence_path": "csamt/USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019/Grand Canyon West and Plain Tank Flat CSAMT metadata.xml",
+      "license_evidence_type": "fgdc_constraints"
+    },
+    "wfem": {
+      "primary_slug": "Zenodo_BaotuSpring_WFEM_2025",
+      "license_evidence_path": "wfem/Zenodo_BaotuSpring_WFEM_2025/source_record.zenodo.json",
+      "license_evidence_type": "zenodo_license"
+    }
+  }
+}

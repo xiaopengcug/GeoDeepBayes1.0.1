@@ -1,0 +1,7748 @@
+{
+  "schema_version": "wp8-mt-geographic-split-v1",
+  "created_before_edi_requests": true,
+  "coordinate_source": "https://ds.iris.edu/spudservice/emtf?project=USArray&survey=Transportable%20Array",
+  "policy": {
+    "type": "contiguous_longitude_regions",
+    "train_calibration_boundary_degrees_east": -104.0,
+    "calibration_test_boundary_degrees_east": -90.0,
+    "exclusion_buffer_half_width_degrees": 1.0,
+    "buffer_members_excluded_from_analysis": true
+  },
+  "counts": {
+    "train": 361,
+    "buffer": 74,
+    "calibration": 240,
+    "test": 429
+  },
+  "members": [
+    {
+      "spud_id": "22066852",
+      "product_id": "USArray.TTI55.2017",
+      "latitude": 42.61873,
+      "longitude": -77.34875,
+      "split": "test"
+    },
+    {
+      "spud_id": "22066601",
+      "product_id": "USArray.REF35.2012",
+      "latitude": 45.82485,
+      "longitude": -94.69642,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "22022230",
+      "product_id": "USArray.COP21.2011",
+      "latitude": 39.616142,
+      "longitude": -107.61132,
+      "split": "train"
+    },
+    {
+      "spud_id": "22022008",
+      "product_id": "USArray.UTQ16.2011",
+      "latitude": 38.868877,
+      "longitude": -111.70605,
+      "split": "train"
+    },
+    {
+      "spud_id": "22021786",
+      "product_id": "USArray.NVQ07.2011",
+      "latitude": 38.825687,
+      "longitude": -119.10452,
+      "split": "train"
+    },
+    {
+      "spud_id": "22021564",
+      "product_id": "USArray.NVP12.2011",
+      "latitude": 39.525932,
+      "longitude": -114.90041,
+      "split": "train"
+    },
+    {
+      "spud_id": "22021342",
+      "product_id": "USArray.UTN14.2011",
+      "latitude": 40.78349,
+      "longitude": -113.138054,
+      "split": "train"
+    },
+    {
+      "spud_id": "22021120",
+      "product_id": "USArray.NVN11.2011",
+      "latitude": 40.81395,
+      "longitude": -115.9486,
+      "split": "train"
+    },
+    {
+      "spud_id": "22020863",
+      "product_id": "USArray.NVO09.2010",
+      "latitude": 40.2152,
+      "longitude": -117.3552,
+      "split": "train"
+    },
+    {
+      "spud_id": "22020641",
+      "product_id": "USArray.CAM04.2010",
+      "latitude": 41.4153,
+      "longitude": -121.833,
+      "split": "train"
+    },
+    {
+      "spud_id": "22020308",
+      "product_id": "USArray.REM11.2011",
+      "latitude": 41.464592,
+      "longitude": -115.7826,
+      "split": "train"
+    },
+    {
+      "spud_id": "21969199",
+      "product_id": "USArray.REN03.2011",
+      "latitude": 40.899574,
+      "longitude": -122.506165,
+      "split": "train"
+    },
+    {
+      "spud_id": "17343614",
+      "product_id": "USArray.WYM25.2018",
+      "latitude": 41.599632,
+      "longitude": -104.22814,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17343392",
+      "product_id": "USArray.WYM24.2018",
+      "latitude": 41.54591,
+      "longitude": -105.075226,
+      "split": "train"
+    },
+    {
+      "spud_id": "17343170",
+      "product_id": "USArray.WYM23.2018",
+      "latitude": 41.597572,
+      "longitude": -105.66346,
+      "split": "train"
+    },
+    {
+      "spud_id": "17342948",
+      "product_id": "USArray.WYM22.2018",
+      "latitude": 41.45125,
+      "longitude": -106.5571,
+      "split": "train"
+    },
+    {
+      "spud_id": "17342726",
+      "product_id": "USArray.WYL24.2018",
+      "latitude": 42.32194,
+      "longitude": -104.7506,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17342504",
+      "product_id": "USArray.WYL23.2018",
+      "latitude": 42.22913,
+      "longitude": -105.62365,
+      "split": "train"
+    },
+    {
+      "spud_id": "17342282",
+      "product_id": "USArray.WYL22.2018",
+      "latitude": 42.2152,
+      "longitude": -106.58028,
+      "split": "train"
+    },
+    {
+      "spud_id": "17342060",
+      "product_id": "USArray.WYK24.2018",
+      "latitude": 42.850883,
+      "longitude": -104.74545,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17341838",
+      "product_id": "USArray.WYK23.2018",
+      "latitude": 42.77978,
+      "longitude": -105.75565,
+      "split": "train"
+    },
+    {
+      "spud_id": "17341616",
+      "product_id": "USArray.WYK22.2018",
+      "latitude": 42.704987,
+      "longitude": -106.50353,
+      "split": "train"
+    },
+    {
+      "spud_id": "17341394",
+      "product_id": "USArray.WYJ24.2018",
+      "latitude": 43.555172,
+      "longitude": -104.76282,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17341172",
+      "product_id": "USArray.WYJ23.2018",
+      "latitude": 43.415405,
+      "longitude": -105.625946,
+      "split": "train"
+    },
+    {
+      "spud_id": "17340950",
+      "product_id": "USArray.WYJ22.2018",
+      "latitude": 43.339127,
+      "longitude": -106.6096,
+      "split": "train"
+    },
+    {
+      "spud_id": "17340728",
+      "product_id": "USArray.WYI24.2018",
+      "latitude": 44.146786,
+      "longitude": -104.6334,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17340506",
+      "product_id": "USArray.WYI23.2018",
+      "latitude": 44.093765,
+      "longitude": -105.7042,
+      "split": "train"
+    },
+    {
+      "spud_id": "17340284",
+      "product_id": "USArray.WYI22.2018",
+      "latitude": 44.01324,
+      "longitude": -106.29964,
+      "split": "train"
+    },
+    {
+      "spud_id": "17340062",
+      "product_id": "USArray.WYH24.2018",
+      "latitude": 44.758354,
+      "longitude": -104.406586,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17339840",
+      "product_id": "USArray.WYH23.2018",
+      "latitude": 44.720844,
+      "longitude": -105.54894,
+      "split": "train"
+    },
+    {
+      "spud_id": "17339618",
+      "product_id": "USArray.WYH22.2018",
+      "latitude": 44.77425,
+      "longitude": -106.26862,
+      "split": "train"
+    },
+    {
+      "spud_id": "17339396",
+      "product_id": "USArray.SDJ32.2018",
+      "latitude": 43.400887,
+      "longitude": -97.75895,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17339174",
+      "product_id": "USArray.SDJ31.2018",
+      "latitude": 43.472088,
+      "longitude": -98.69604,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17338952",
+      "product_id": "USArray.SDJ27.2018",
+      "latitude": 43.43523,
+      "longitude": -102.04975,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17338730",
+      "product_id": "USArray.SDJ26.2018",
+      "latitude": 43.564262,
+      "longitude": -103.10535,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17338508",
+      "product_id": "USArray.SDJ25.2018",
+      "latitude": 43.45315,
+      "longitude": -103.823746,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17338286",
+      "product_id": "USArray.SDI32.2018",
+      "latitude": 44.174812,
+      "longitude": -97.575516,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17338064",
+      "product_id": "USArray.SDI31.2018",
+      "latitude": 44.01076,
+      "longitude": -98.395905,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17337842",
+      "product_id": "USArray.SDI30.2018",
+      "latitude": 44.187614,
+      "longitude": -99.109985,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17337620",
+      "product_id": "USArray.SDI29.2018",
+      "latitude": 44.11854,
+      "longitude": -100.30808,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17337398",
+      "product_id": "USArray.SDI25.2018",
+      "latitude": 44.112328,
+      "longitude": -103.77412,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17337176",
+      "product_id": "USArray.SDH32.2018",
+      "latitude": 44.79047,
+      "longitude": -97.47831,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17336954",
+      "product_id": "USArray.SDH31.2018",
+      "latitude": 44.71902,
+      "longitude": -98.2687,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17336732",
+      "product_id": "USArray.SDH30.2018",
+      "latitude": 44.633312,
+      "longitude": -99.160286,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17336510",
+      "product_id": "USArray.SDH29.2018",
+      "latitude": 44.7137,
+      "longitude": -100.20264,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17336288",
+      "product_id": "USArray.SDG25.2018",
+      "latitude": 45.413445,
+      "longitude": -103.51971,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17336066",
+      "product_id": "USArray.REJ30.2018",
+      "latitude": 43.457737,
+      "longitude": -99.321014,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17335844",
+      "product_id": "USArray.REF24.2018",
+      "latitude": 46.00927,
+      "longitude": -104.4889,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17335622",
+      "product_id": "USArray.NEO31.2018",
+      "latitude": 40.315514,
+      "longitude": -99.23628,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17335400",
+      "product_id": "USArray.NEO30.2018",
+      "latitude": 40.392918,
+      "longitude": -100.21261,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17335178",
+      "product_id": "USArray.NEO29.2018",
+      "latitude": 40.392365,
+      "longitude": -100.7613,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17334956",
+      "product_id": "USArray.NEO28.2018",
+      "latitude": 40.429115,
+      "longitude": -101.61497,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17334734",
+      "product_id": "USArray.NEN32.2018",
+      "latitude": 40.770687,
+      "longitude": -98.475586,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17334512",
+      "product_id": "USArray.NEN31.2018",
+      "latitude": 40.92382,
+      "longitude": -99.273705,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17334290",
+      "product_id": "USArray.NEN30.2018",
+      "latitude": 41.0159,
+      "longitude": -99.951836,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17334068",
+      "product_id": "USArray.NEN29.2018",
+      "latitude": 40.972584,
+      "longitude": -100.92377,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17333846",
+      "product_id": "USArray.NEN28.2018",
+      "latitude": 41.05564,
+      "longitude": -101.616035,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17333624",
+      "product_id": "USArray.NEM32.2018",
+      "latitude": 41.488243,
+      "longitude": -98.29971,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17333402",
+      "product_id": "USArray.NEM31.2018",
+      "latitude": 41.538383,
+      "longitude": -99.1722,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17333180",
+      "product_id": "USArray.NEM30.2018",
+      "latitude": 41.580673,
+      "longitude": -99.677124,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17332958",
+      "product_id": "USArray.NEM29.2018",
+      "latitude": 41.71594,
+      "longitude": -100.76635,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17332736",
+      "product_id": "USArray.NEM28.2018",
+      "latitude": 41.635403,
+      "longitude": -101.59395,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17332514",
+      "product_id": "USArray.NEM27.2018",
+      "latitude": 41.726192,
+      "longitude": -102.388794,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17332292",
+      "product_id": "USArray.NEM26.2018",
+      "latitude": 41.614815,
+      "longitude": -103.20394,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17332070",
+      "product_id": "USArray.NEL32.2018",
+      "latitude": 42.27655,
+      "longitude": -98.19274,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17331848",
+      "product_id": "USArray.NEL31.2018",
+      "latitude": 42.189156,
+      "longitude": -98.87805,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17331626",
+      "product_id": "USArray.NEL30.2018",
+      "latitude": 42.19002,
+      "longitude": -99.60636,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17331404",
+      "product_id": "USArray.NEL29.2018",
+      "latitude": 42.299614,
+      "longitude": -100.612015,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17331182",
+      "product_id": "USArray.NEL28.2018",
+      "latitude": 42.27069,
+      "longitude": -101.46367,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17330960",
+      "product_id": "USArray.NEL27.2018",
+      "latitude": 42.321995,
+      "longitude": -102.34492,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17330738",
+      "product_id": "USArray.NEL26.2018",
+      "latitude": 42.209446,
+      "longitude": -103.10624,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17330516",
+      "product_id": "USArray.NEL25.2018",
+      "latitude": 42.264206,
+      "longitude": -103.91803,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17330294",
+      "product_id": "USArray.NEK32.2018",
+      "latitude": 42.70793,
+      "longitude": -97.96755,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17330072",
+      "product_id": "USArray.NEK31.2018",
+      "latitude": 42.74206,
+      "longitude": -98.718475,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17329850",
+      "product_id": "USArray.NEK30.2018",
+      "latitude": 42.779285,
+      "longitude": -99.70596,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17329628",
+      "product_id": "USArray.NEK29.2018",
+      "latitude": 42.886917,
+      "longitude": -100.44453,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17329406",
+      "product_id": "USArray.NEK28.2018",
+      "latitude": 42.777813,
+      "longitude": -101.1616,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17329184",
+      "product_id": "USArray.NEK27.2018",
+      "latitude": 42.926224,
+      "longitude": -102.03553,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17328962",
+      "product_id": "USArray.NEK26.2018",
+      "latitude": 42.755222,
+      "longitude": -102.991844,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17328740",
+      "product_id": "USArray.NEK25.2018",
+      "latitude": 42.897266,
+      "longitude": -103.893295,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17328518",
+      "product_id": "USArray.NDF31.2018",
+      "latitude": 45.937035,
+      "longitude": -98.13735,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17328296",
+      "product_id": "USArray.NDE29.2018",
+      "latitude": 46.68963,
+      "longitude": -99.63963,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17328074",
+      "product_id": "USArray.NDE28.2018",
+      "latitude": 46.638184,
+      "longitude": -100.59213,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17327852",
+      "product_id": "USArray.NDE26.2018",
+      "latitude": 46.686142,
+      "longitude": -102.4134,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17327630",
+      "product_id": "USArray.NDE25.2018",
+      "latitude": 46.63136,
+      "longitude": -103.23517,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17327408",
+      "product_id": "USArray.NDD27.2018",
+      "latitude": 47.423504,
+      "longitude": -101.44283,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17327186",
+      "product_id": "USArray.NDD26.2018",
+      "latitude": 47.25588,
+      "longitude": -102.409706,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17326964",
+      "product_id": "USArray.NDC26.2018",
+      "latitude": 47.845127,
+      "longitude": -102.10553,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17326742",
+      "product_id": "USArray.NDC25.2018",
+      "latitude": 47.98769,
+      "longitude": -103.22835,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17326520",
+      "product_id": "USArray.NDB27.2018",
+      "latitude": 48.503925,
+      "longitude": -101.034836,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17326298",
+      "product_id": "USArray.NDB25.2018",
+      "latitude": 48.559784,
+      "longitude": -103.03322,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17326090",
+      "product_id": "USArray.MTG24.2018",
+      "latitude": 45.3122,
+      "longitude": -104.49434,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17325868",
+      "product_id": "USArray.MTG23.2018",
+      "latitude": 45.353493,
+      "longitude": -105.37133,
+      "split": "train"
+    },
+    {
+      "spud_id": "17325646",
+      "product_id": "USArray.MTG22.2018",
+      "latitude": 45.402603,
+      "longitude": -106.1773,
+      "split": "train"
+    },
+    {
+      "spud_id": "17325424",
+      "product_id": "USArray.MTF23.2018",
+      "latitude": 45.928074,
+      "longitude": -105.382706,
+      "split": "train"
+    },
+    {
+      "spud_id": "17325202",
+      "product_id": "USArray.MTF22.2018",
+      "latitude": 45.929123,
+      "longitude": -106.38236,
+      "split": "train"
+    },
+    {
+      "spud_id": "17324980",
+      "product_id": "USArray.MTE24.2018",
+      "latitude": 46.75349,
+      "longitude": -104.23581,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17324758",
+      "product_id": "USArray.MTE23.2018",
+      "latitude": 46.650536,
+      "longitude": -105.18885,
+      "split": "train"
+    },
+    {
+      "spud_id": "17324536",
+      "product_id": "USArray.MTE22.2018",
+      "latitude": 46.61876,
+      "longitude": -106.077255,
+      "split": "train"
+    },
+    {
+      "spud_id": "17324314",
+      "product_id": "USArray.MTD24.2018",
+      "latitude": 47.230312,
+      "longitude": -104.21123,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17324092",
+      "product_id": "USArray.MTD23.2018",
+      "latitude": 47.18669,
+      "longitude": -105.15827,
+      "split": "train"
+    },
+    {
+      "spud_id": "17323870",
+      "product_id": "USArray.MTD22.2018",
+      "latitude": 47.18015,
+      "longitude": -106.06837,
+      "split": "train"
+    },
+    {
+      "spud_id": "17323648",
+      "product_id": "USArray.MTC24.2018",
+      "latitude": 48.006786,
+      "longitude": -104.243256,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17323426",
+      "product_id": "USArray.MTC23.2018",
+      "latitude": 47.920265,
+      "longitude": -105.14556,
+      "split": "train"
+    },
+    {
+      "spud_id": "17323204",
+      "product_id": "USArray.MTC22.2018",
+      "latitude": 47.793446,
+      "longitude": -105.878944,
+      "split": "train"
+    },
+    {
+      "spud_id": "17322982",
+      "product_id": "USArray.MTB24.2018",
+      "latitude": 48.53355,
+      "longitude": -104.05281,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17322760",
+      "product_id": "USArray.MTB23.2018",
+      "latitude": 48.588764,
+      "longitude": -105.09369,
+      "split": "train"
+    },
+    {
+      "spud_id": "17322538",
+      "product_id": "USArray.MTB22.2018",
+      "latitude": 48.62081,
+      "longitude": -105.98186,
+      "split": "train"
+    },
+    {
+      "spud_id": "17322316",
+      "product_id": "USArray.MND32.2018",
+      "latitude": 47.22137,
+      "longitude": -96.632774,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17322094",
+      "product_id": "USArray.KSQ31.2018",
+      "latitude": 39.119312,
+      "longitude": -99.482796,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17321872",
+      "product_id": "USArray.KSQ28.2018",
+      "latitude": 39.01662,
+      "longitude": -101.98202,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17321650",
+      "product_id": "USArray.KSP31.2018",
+      "latitude": 39.60678,
+      "longitude": -99.42687,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17321428",
+      "product_id": "USArray.KSP30.2018",
+      "latitude": 39.680325,
+      "longitude": -100.029816,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17321206",
+      "product_id": "USArray.KSP29.2018",
+      "latitude": 39.698196,
+      "longitude": -101.03651,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17320984",
+      "product_id": "USArray.KSP28.2018",
+      "latitude": 39.672993,
+      "longitude": -101.694374,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17320762",
+      "product_id": "USArray.COQ27.2018",
+      "latitude": 39.14165,
+      "longitude": -102.81984,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17320540",
+      "product_id": "USArray.COQ25.2018",
+      "latitude": 39.12991,
+      "longitude": -104.34829,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17320318",
+      "product_id": "USArray.COQ24.2018",
+      "latitude": 39.01118,
+      "longitude": -105.21997,
+      "split": "train"
+    },
+    {
+      "spud_id": "17320096",
+      "product_id": "USArray.COQ23.2018",
+      "latitude": 38.955994,
+      "longitude": -106.00199,
+      "split": "train"
+    },
+    {
+      "spud_id": "17319874",
+      "product_id": "USArray.COP27.2018",
+      "latitude": 39.757835,
+      "longitude": -102.59469,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17319652",
+      "product_id": "USArray.COP26.2018",
+      "latitude": 39.7092,
+      "longitude": -103.65303,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17319430",
+      "product_id": "USArray.COP25.2018",
+      "latitude": 39.808846,
+      "longitude": -104.3777,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17319208",
+      "product_id": "USArray.COP24.2018",
+      "latitude": 39.60602,
+      "longitude": -105.2102,
+      "split": "train"
+    },
+    {
+      "spud_id": "17318986",
+      "product_id": "USArray.COP22.2018",
+      "latitude": 39.720146,
+      "longitude": -106.889046,
+      "split": "train"
+    },
+    {
+      "spud_id": "17318764",
+      "product_id": "USArray.COO27.2018",
+      "latitude": 40.4028,
+      "longitude": -102.73653,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17318542",
+      "product_id": "USArray.COO26.2018",
+      "latitude": 40.272255,
+      "longitude": -103.369156,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17318320",
+      "product_id": "USArray.COO25.2018",
+      "latitude": 40.450565,
+      "longitude": -104.28081,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17318098",
+      "product_id": "USArray.COO24.2018",
+      "latitude": 40.31176,
+      "longitude": -105.237045,
+      "split": "train"
+    },
+    {
+      "spud_id": "17317876",
+      "product_id": "USArray.COO22.2018",
+      "latitude": 40.178375,
+      "longitude": -106.7598,
+      "split": "train"
+    },
+    {
+      "spud_id": "17317654",
+      "product_id": "USArray.CON27.2018",
+      "latitude": 40.97947,
+      "longitude": -102.55042,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "17317432",
+      "product_id": "USArray.CON26.2018",
+      "latitude": 40.87453,
+      "longitude": -103.341415,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17317210",
+      "product_id": "USArray.CON25.2018",
+      "latitude": 40.88487,
+      "longitude": -104.1444,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "17316988",
+      "product_id": "USArray.CON24.2018",
+      "latitude": 40.913586,
+      "longitude": -105.071335,
+      "split": "train"
+    },
+    {
+      "spud_id": "16707684",
+      "product_id": "USArray.ILR44.2014",
+      "latitude": 38.098446,
+      "longitude": -88.94798,
+      "split": "test"
+    },
+    {
+      "spud_id": "16707462",
+      "product_id": "USArray.ILP45.2014",
+      "latitude": 39.35359,
+      "longitude": -87.71006,
+      "split": "test"
+    },
+    {
+      "spud_id": "16707240",
+      "product_id": "USArray.WVR53.2015",
+      "latitude": 37.391163,
+      "longitude": -81.86831,
+      "split": "test"
+    },
+    {
+      "spud_id": "16707018",
+      "product_id": "USArray.WVQ53.2015",
+      "latitude": 37.96957,
+      "longitude": -81.45403,
+      "split": "test"
+    },
+    {
+      "spud_id": "16706796",
+      "product_id": "USArray.WVQ52.2015",
+      "latitude": 38.050568,
+      "longitude": -82.318886,
+      "split": "test"
+    },
+    {
+      "spud_id": "16706574",
+      "product_id": "USArray.WVP52.2015",
+      "latitude": 38.728203,
+      "longitude": -82.04092,
+      "split": "test"
+    },
+    {
+      "spud_id": "16706352",
+      "product_id": "USArray.VAS54.2015",
+      "latitude": 36.61447,
+      "longitude": -81.27937,
+      "split": "test"
+    },
+    {
+      "spud_id": "16706130",
+      "product_id": "USArray.VAS53.2015",
+      "latitude": 36.854305,
+      "longitude": -81.987946,
+      "split": "test"
+    },
+    {
+      "spud_id": "16705908",
+      "product_id": "USArray.TTX52.2015",
+      "latitude": 33.904987,
+      "longitude": -83.912445,
+      "split": "test"
+    },
+    {
+      "spud_id": "16705686",
+      "product_id": "USArray.TTV54.2015",
+      "latitude": 35.040695,
+      "longitude": -82.19399,
+      "split": "test"
+    },
+    {
+      "spud_id": "16705464",
+      "product_id": "USArray.TTO53.2015",
+      "latitude": 39.53864,
+      "longitude": -83.31698,
+      "split": "test"
+    },
+    {
+      "spud_id": "16705242",
+      "product_id": "USArray.TNV51.2015",
+      "latitude": 35.255394,
+      "longitude": -84.39714,
+      "split": "test"
+    },
+    {
+      "spud_id": "16705020",
+      "product_id": "USArray.TNV50.2015",
+      "latitude": 35.294807,
+      "longitude": -85.060104,
+      "split": "test"
+    },
+    {
+      "spud_id": "16704798",
+      "product_id": "USArray.TNV49.2015",
+      "latitude": 35.365696,
+      "longitude": -85.79135,
+      "split": "test"
+    },
+    {
+      "spud_id": "16704576",
+      "product_id": "USArray.TNV48.2015",
+      "latitude": 35.498066,
+      "longitude": -86.66657,
+      "split": "test"
+    },
+    {
+      "spud_id": "16704354",
+      "product_id": "USArray.TNV47.2015",
+      "latitude": 35.400616,
+      "longitude": -87.490074,
+      "split": "test"
+    },
+    {
+      "spud_id": "16704132",
+      "product_id": "USArray.TNU52.2015",
+      "latitude": 35.808968,
+      "longitude": -83.25351,
+      "split": "test"
+    },
+    {
+      "spud_id": "16703910",
+      "product_id": "USArray.TNU51.2015",
+      "latitude": 35.813652,
+      "longitude": -84.046524,
+      "split": "test"
+    },
+    {
+      "spud_id": "16703688",
+      "product_id": "USArray.TNU48.2015",
+      "latitude": 36.020782,
+      "longitude": -86.44387,
+      "split": "test"
+    },
+    {
+      "spud_id": "16703466",
+      "product_id": "USArray.TNT53.2015",
+      "latitude": 36.174248,
+      "longitude": -82.29869,
+      "split": "test"
+    },
+    {
+      "spud_id": "16703244",
+      "product_id": "USArray.TNT52.2015",
+      "latitude": 36.269676,
+      "longitude": -83.168335,
+      "split": "test"
+    },
+    {
+      "spud_id": "16703022",
+      "product_id": "USArray.SCZ57.2015",
+      "latitude": 32.28011,
+      "longitude": -80.80903,
+      "split": "test"
+    },
+    {
+      "spud_id": "16702800",
+      "product_id": "USArray.SCY57.2015",
+      "latitude": 32.68015,
+      "longitude": -80.58443,
+      "split": "test"
+    },
+    {
+      "spud_id": "16702578",
+      "product_id": "USArray.SCY56.2015",
+      "latitude": 32.91144,
+      "longitude": -81.27716,
+      "split": "test"
+    },
+    {
+      "spud_id": "16702356",
+      "product_id": "USArray.SCX58.2015",
+      "latitude": 33.276455,
+      "longitude": -79.61326,
+      "split": "test"
+    },
+    {
+      "spud_id": "16702134",
+      "product_id": "USArray.SCX56.2015",
+      "latitude": 33.51637,
+      "longitude": -81.062836,
+      "split": "test"
+    },
+    {
+      "spud_id": "16701912",
+      "product_id": "USArray.SCX55.2015",
+      "latitude": 33.743305,
+      "longitude": -81.81208,
+      "split": "test"
+    },
+    {
+      "spud_id": "16701690",
+      "product_id": "USArray.SCW57.2015",
+      "latitude": 34.00104,
+      "longitude": -80.122986,
+      "split": "test"
+    },
+    {
+      "spud_id": "16701468",
+      "product_id": "USArray.SCW56.2015",
+      "latitude": 34.278133,
+      "longitude": -80.777725,
+      "split": "test"
+    },
+    {
+      "spud_id": "16701246",
+      "product_id": "USArray.SCW55.2015",
+      "latitude": 34.36218,
+      "longitude": -81.56858,
+      "split": "test"
+    },
+    {
+      "spud_id": "16701024",
+      "product_id": "USArray.SCW54.2015",
+      "latitude": 34.447968,
+      "longitude": -82.18462,
+      "split": "test"
+    },
+    {
+      "spud_id": "16700802",
+      "product_id": "USArray.SCV56.2015",
+      "latitude": 34.655487,
+      "longitude": -80.5177,
+      "split": "test"
+    },
+    {
+      "spud_id": "16700580",
+      "product_id": "USArray.SCV55.2015",
+      "latitude": 34.894268,
+      "longitude": -81.335625,
+      "split": "test"
+    },
+    {
+      "spud_id": "16700358",
+      "product_id": "USArray.SCV53.2015",
+      "latitude": 35.067192,
+      "longitude": -82.81794,
+      "split": "test"
+    },
+    {
+      "spud_id": "16700136",
+      "product_id": "USArray.REY52.2015",
+      "latitude": 33.232113,
+      "longitude": -84.39699,
+      "split": "test"
+    },
+    {
+      "spud_id": "16699914",
+      "product_id": "USArray.REY51.2015",
+      "latitude": 33.392555,
+      "longitude": -85.23704,
+      "split": "test"
+    },
+    {
+      "spud_id": "16699692",
+      "product_id": "USArray.REX52.2015",
+      "latitude": 33.90439,
+      "longitude": -83.90856,
+      "split": "test"
+    },
+    {
+      "spud_id": "16699470",
+      "product_id": "USArray.REX49.2015",
+      "latitude": 34.04986,
+      "longitude": -86.49491,
+      "split": "test"
+    },
+    {
+      "spud_id": "16699248",
+      "product_id": "USArray.REV55.2015",
+      "latitude": 34.903416,
+      "longitude": -81.338425,
+      "split": "test"
+    },
+    {
+      "spud_id": "16699026",
+      "product_id": "USArray.REV54.2015",
+      "latitude": 35.04069,
+      "longitude": -82.189445,
+      "split": "test"
+    },
+    {
+      "spud_id": "16698804",
+      "product_id": "USArray.REU60.2015",
+      "latitude": 34.96901,
+      "longitude": -77.3549,
+      "split": "test"
+    },
+    {
+      "spud_id": "16698582",
+      "product_id": "USArray.REU49.2015",
+      "latitude": 35.96924,
+      "longitude": -85.70473,
+      "split": "test"
+    },
+    {
+      "spud_id": "16698360",
+      "product_id": "USArray.RET54.2015",
+      "latitude": 36.067623,
+      "longitude": -81.5037,
+      "split": "test"
+    },
+    {
+      "spud_id": "16698138",
+      "product_id": "USArray.RET50.2015",
+      "latitude": 36.47328,
+      "longitude": -84.71082,
+      "split": "test"
+    },
+    {
+      "spud_id": "16697916",
+      "product_id": "USArray.RET46.2015",
+      "latitude": 36.68965,
+      "longitude": -87.78961,
+      "split": "test"
+    },
+    {
+      "spud_id": "16697694",
+      "product_id": "USArray.RET45.2015",
+      "latitude": 36.894268,
+      "longitude": -88.52898,
+      "split": "test"
+    },
+    {
+      "spud_id": "16697472",
+      "product_id": "USArray.RES50.2015",
+      "latitude": 37.026894,
+      "longitude": -84.28319,
+      "split": "test"
+    },
+    {
+      "spud_id": "16697250",
+      "product_id": "USArray.RES46.2015",
+      "latitude": 37.470726,
+      "longitude": -87.6256,
+      "split": "test"
+    },
+    {
+      "spud_id": "16697028",
+      "product_id": "USArray.REQ53.2015",
+      "latitude": 38.00231,
+      "longitude": -81.59487,
+      "split": "test"
+    },
+    {
+      "spud_id": "16696806",
+      "product_id": "USArray.REQ48.2015",
+      "latitude": 38.39254,
+      "longitude": -85.63697,
+      "split": "test"
+    },
+    {
+      "spud_id": "16696584",
+      "product_id": "USArray.REP47.2015",
+      "latitude": 39.134663,
+      "longitude": -86.215675,
+      "split": "test"
+    },
+    {
+      "spud_id": "16696362",
+      "product_id": "USArray.REO49.2015",
+      "latitude": 39.706875,
+      "longitude": -84.17881,
+      "split": "test"
+    },
+    {
+      "spud_id": "16696140",
+      "product_id": "USArray.REN47.2015",
+      "latitude": 40.361084,
+      "longitude": -85.76005,
+      "split": "test"
+    },
+    {
+      "spud_id": "16695918",
+      "product_id": "USArray.OHO52.2015",
+      "latitude": 39.325367,
+      "longitude": -81.84147,
+      "split": "test"
+    },
+    {
+      "spud_id": "16695696",
+      "product_id": "USArray.NCV59.2015",
+      "latitude": 34.401394,
+      "longitude": -78.11409,
+      "split": "test"
+    },
+    {
+      "spud_id": "16695474",
+      "product_id": "USArray.NCV52.2015",
+      "latitude": 35.16502,
+      "longitude": -83.60964,
+      "split": "test"
+    },
+    {
+      "spud_id": "16695252",
+      "product_id": "USArray.NCU60.2015",
+      "latitude": 34.984074,
+      "longitude": -77.46894,
+      "split": "test"
+    },
+    {
+      "spud_id": "16695030",
+      "product_id": "USArray.NCU57.2015",
+      "latitude": 35.33874,
+      "longitude": -79.47816,
+      "split": "test"
+    },
+    {
+      "spud_id": "16694808",
+      "product_id": "USArray.NCU55.2015",
+      "latitude": 35.460682,
+      "longitude": -81.116196,
+      "split": "test"
+    },
+    {
+      "spud_id": "16694586",
+      "product_id": "USArray.NCU54.2015",
+      "latitude": 35.605152,
+      "longitude": -81.75944,
+      "split": "test"
+    },
+    {
+      "spud_id": "16694364",
+      "product_id": "USArray.NCU53.2015",
+      "latitude": 35.655888,
+      "longitude": -82.441826,
+      "split": "test"
+    },
+    {
+      "spud_id": "16694142",
+      "product_id": "USArray.NCT54.2015",
+      "latitude": 36.150375,
+      "longitude": -81.61954,
+      "split": "test"
+    },
+    {
+      "spud_id": "16693920",
+      "product_id": "USArray.NCS59.2015",
+      "latitude": 36.226353,
+      "longitude": -77.368034,
+      "split": "test"
+    },
+    {
+      "spud_id": "16693698",
+      "product_id": "USArray.NCS58.2015",
+      "latitude": 36.220684,
+      "longitude": -78.05832,
+      "split": "test"
+    },
+    {
+      "spud_id": "16693476",
+      "product_id": "USArray.KYS52.2015",
+      "latitude": 36.99599,
+      "longitude": -82.99173,
+      "split": "test"
+    },
+    {
+      "spud_id": "16693254",
+      "product_id": "USArray.KYS51.2015",
+      "latitude": 37.003044,
+      "longitude": -83.6707,
+      "split": "test"
+    },
+    {
+      "spud_id": "16693032",
+      "product_id": "USArray.KYR52.2015",
+      "latitude": 37.45694,
+      "longitude": -82.639404,
+      "split": "test"
+    },
+    {
+      "spud_id": "16692810",
+      "product_id": "USArray.GAZ56.2015",
+      "latitude": 32.260563,
+      "longitude": -81.569885,
+      "split": "test"
+    },
+    {
+      "spud_id": "16692588",
+      "product_id": "USArray.GAZ55.2015",
+      "latitude": 32.488487,
+      "longitude": -82.416046,
+      "split": "test"
+    },
+    {
+      "spud_id": "16692366",
+      "product_id": "USArray.GAZ54.2015",
+      "latitude": 32.58572,
+      "longitude": -83.149475,
+      "split": "test"
+    },
+    {
+      "spud_id": "16692144",
+      "product_id": "USArray.GAZ53.2015",
+      "latitude": 32.51462,
+      "longitude": -83.87565,
+      "split": "test"
+    },
+    {
+      "spud_id": "16691922",
+      "product_id": "USArray.GAZ52.2015",
+      "latitude": 32.598557,
+      "longitude": -84.58889,
+      "split": "test"
+    },
+    {
+      "spud_id": "16691700",
+      "product_id": "USArray.GAY55.2015",
+      "latitude": 32.955326,
+      "longitude": -82.103455,
+      "split": "test"
+    },
+    {
+      "spud_id": "16691478",
+      "product_id": "USArray.GAY54.2015",
+      "latitude": 33.209938,
+      "longitude": -82.77739,
+      "split": "test"
+    },
+    {
+      "spud_id": "16691256",
+      "product_id": "USArray.GAY53.2015",
+      "latitude": 33.209515,
+      "longitude": -83.54831,
+      "split": "test"
+    },
+    {
+      "spud_id": "16691034",
+      "product_id": "USArray.GAY52.2015",
+      "latitude": 33.28998,
+      "longitude": -84.357414,
+      "split": "test"
+    },
+    {
+      "spud_id": "16690812",
+      "product_id": "USArray.GAY51.2015",
+      "latitude": 33.327847,
+      "longitude": -85.24603,
+      "split": "test"
+    },
+    {
+      "spud_id": "16690590",
+      "product_id": "USArray.GAX54.2015",
+      "latitude": 33.79127,
+      "longitude": -82.60676,
+      "split": "test"
+    },
+    {
+      "spud_id": "16690368",
+      "product_id": "USArray.GAX53.2015",
+      "latitude": 33.777935,
+      "longitude": -83.26914,
+      "split": "test"
+    },
+    {
+      "spud_id": "16690146",
+      "product_id": "USArray.GAX52.2015",
+      "latitude": 33.816082,
+      "longitude": -84.16221,
+      "split": "test"
+    },
+    {
+      "spud_id": "16689924",
+      "product_id": "USArray.GAX51.2015",
+      "latitude": 34.014824,
+      "longitude": -84.93818,
+      "split": "test"
+    },
+    {
+      "spud_id": "16689702",
+      "product_id": "USArray.GAW53.2015",
+      "latitude": 34.496944,
+      "longitude": -83.07164,
+      "split": "test"
+    },
+    {
+      "spud_id": "16689480",
+      "product_id": "USArray.GAW52.2015",
+      "latitude": 34.586594,
+      "longitude": -83.93535,
+      "split": "test"
+    },
+    {
+      "spud_id": "16689258",
+      "product_id": "USArray.GAW51.2015",
+      "latitude": 34.62083,
+      "longitude": -84.45266,
+      "split": "test"
+    },
+    {
+      "spud_id": "16689036",
+      "product_id": "USArray.GAW50.2015",
+      "latitude": 34.688984,
+      "longitude": -85.374214,
+      "split": "test"
+    },
+    {
+      "spud_id": "16688814",
+      "product_id": "USArray.GAB57.2015",
+      "latitude": 31.077732,
+      "longitude": -81.422905,
+      "split": "test"
+    },
+    {
+      "spud_id": "16688592",
+      "product_id": "USArray.GAB56.2015",
+      "latitude": 31.087835,
+      "longitude": -81.917915,
+      "split": "test"
+    },
+    {
+      "spud_id": "16688370",
+      "product_id": "USArray.GAB55.2015",
+      "latitude": 31.137505,
+      "longitude": -82.7486,
+      "split": "test"
+    },
+    {
+      "spud_id": "16688148",
+      "product_id": "USArray.GAB54.2015",
+      "latitude": 31.191486,
+      "longitude": -83.52805,
+      "split": "test"
+    },
+    {
+      "spud_id": "16687926",
+      "product_id": "USArray.GAB53.2015",
+      "latitude": 31.45358,
+      "longitude": -84.42879,
+      "split": "test"
+    },
+    {
+      "spud_id": "16687704",
+      "product_id": "USArray.GAA56.2015",
+      "latitude": 31.681602,
+      "longitude": -81.83706,
+      "split": "test"
+    },
+    {
+      "spud_id": "16687496",
+      "product_id": "USArray.GAA55.2015",
+      "latitude": 31.78942,
+      "longitude": -82.499466,
+      "split": "test"
+    },
+    {
+      "spud_id": "16687274",
+      "product_id": "USArray.GAA54.2015",
+      "latitude": 31.888699,
+      "longitude": -83.28168,
+      "split": "test"
+    },
+    {
+      "spud_id": "16687052",
+      "product_id": "USArray.GAA53.2015",
+      "latitude": 31.904133,
+      "longitude": -83.94699,
+      "split": "test"
+    },
+    {
+      "spud_id": "16686830",
+      "product_id": "USArray.GAA52.2015",
+      "latitude": 32.064903,
+      "longitude": -84.91153,
+      "split": "test"
+    },
+    {
+      "spud_id": "16686608",
+      "product_id": "USArray.FLC57.2015",
+      "latitude": 30.470045,
+      "longitude": -81.49868,
+      "split": "test"
+    },
+    {
+      "spud_id": "16686386",
+      "product_id": "USArray.FLC56.2015",
+      "latitude": 30.47943,
+      "longitude": -82.27254,
+      "split": "test"
+    },
+    {
+      "spud_id": "16686164",
+      "product_id": "USArray.FLC55.2015",
+      "latitude": 30.441132,
+      "longitude": -83.034,
+      "split": "test"
+    },
+    {
+      "spud_id": "16685942",
+      "product_id": "USArray.FLC54.2015",
+      "latitude": 30.519032,
+      "longitude": -83.741455,
+      "split": "test"
+    },
+    {
+      "spud_id": "16685720",
+      "product_id": "USArray.ALZ51.2015",
+      "latitude": 32.80112,
+      "longitude": -85.356064,
+      "split": "test"
+    },
+    {
+      "spud_id": "16685498",
+      "product_id": "USArray.ALY50.2015",
+      "latitude": 33.397385,
+      "longitude": -85.88498,
+      "split": "test"
+    },
+    {
+      "spud_id": "16685276",
+      "product_id": "USArray.ALX50.2015",
+      "latitude": 33.97854,
+      "longitude": -85.49788,
+      "split": "test"
+    },
+    {
+      "spud_id": "16685054",
+      "product_id": "USArray.ALW49.2015",
+      "latitude": 34.803783,
+      "longitude": -86.18279,
+      "split": "test"
+    },
+    {
+      "spud_id": "16684832",
+      "product_id": "USArray.ALW48.2015",
+      "latitude": 34.6837,
+      "longitude": -87.01706,
+      "split": "test"
+    },
+    {
+      "spud_id": "16546169",
+      "product_id": "USArray.SDJ29.2017",
+      "latitude": 43.43735,
+      "longitude": -100.458565,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16310505",
+      "product_id": "USArray.TTH61.2017",
+      "latitude": 42.18823,
+      "longitude": -72.06016,
+      "split": "test"
+    },
+    {
+      "spud_id": "16310283",
+      "product_id": "USArray.REH56.2017",
+      "latitude": 42.890984,
+      "longitude": -76.423546,
+      "split": "test"
+    },
+    {
+      "spud_id": "16309839",
+      "product_id": "USArray.SDJ28.2017",
+      "latitude": 43.534233,
+      "longitude": -101.120125,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16309617",
+      "product_id": "USArray.SDI28.2017",
+      "latitude": 44.125694,
+      "longitude": -101.23196,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16309395",
+      "product_id": "USArray.SDI27.2017",
+      "latitude": 44.09571,
+      "longitude": -101.90146,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16309173",
+      "product_id": "USArray.SDI26.2017",
+      "latitude": 44.212215,
+      "longitude": -102.91202,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16308951",
+      "product_id": "USArray.SDH28.2017",
+      "latitude": 44.734158,
+      "longitude": -101.062805,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16308729",
+      "product_id": "USArray.SDH27.2017",
+      "latitude": 44.911568,
+      "longitude": -101.9447,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16308507",
+      "product_id": "USArray.SDH26.2017",
+      "latitude": 44.7902,
+      "longitude": -102.843346,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16308285",
+      "product_id": "USArray.SDH25.2017",
+      "latitude": 44.87376,
+      "longitude": -103.70293,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "16308063",
+      "product_id": "USArray.SDG32.2017",
+      "latitude": 45.250355,
+      "longitude": -97.28476,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16307841",
+      "product_id": "USArray.SDG31.2017",
+      "latitude": 45.37176,
+      "longitude": -98.2931,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16307619",
+      "product_id": "USArray.SDG30.2017",
+      "latitude": 45.346058,
+      "longitude": -99.10233,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16307397",
+      "product_id": "USArray.SDG29.2017",
+      "latitude": 45.332966,
+      "longitude": -99.71906,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16307175",
+      "product_id": "USArray.SDG28.2017",
+      "latitude": 45.526287,
+      "longitude": -100.68941,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16306953",
+      "product_id": "USArray.SDG27.2017",
+      "latitude": 45.50145,
+      "longitude": -101.902336,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16306731",
+      "product_id": "USArray.SDG26.2017",
+      "latitude": 45.47593,
+      "longitude": -102.599434,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16306509",
+      "product_id": "USArray.NDF32.2017",
+      "latitude": 45.950153,
+      "longitude": -97.08257,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16306287",
+      "product_id": "USArray.NDF30.2017",
+      "latitude": 45.99712,
+      "longitude": -98.934944,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16306065",
+      "product_id": "USArray.NDF29.2017",
+      "latitude": 45.985634,
+      "longitude": -99.9622,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16305843",
+      "product_id": "USArray.NDF28.2017",
+      "latitude": 46.03511,
+      "longitude": -100.752655,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16305621",
+      "product_id": "USArray.NDF27.2017",
+      "latitude": 46.074173,
+      "longitude": -101.583626,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16305399",
+      "product_id": "USArray.NDF26.2017",
+      "latitude": 46.119953,
+      "longitude": -102.49798,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16305177",
+      "product_id": "USArray.NDF25.2017",
+      "latitude": 46.032265,
+      "longitude": -103.49477,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "16304955",
+      "product_id": "USArray.NDE32.2017",
+      "latitude": 46.5167,
+      "longitude": -97.10397,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16304733",
+      "product_id": "USArray.NDE31.2017",
+      "latitude": 46.49977,
+      "longitude": -97.8663,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16304511",
+      "product_id": "USArray.NDE30.2017",
+      "latitude": 46.587128,
+      "longitude": -98.85395,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16304289",
+      "product_id": "USArray.NDE27.2017",
+      "latitude": 46.594585,
+      "longitude": -101.6305,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16304067",
+      "product_id": "USArray.NDD31.2017",
+      "latitude": 47.338394,
+      "longitude": -97.64529,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16303845",
+      "product_id": "USArray.NDD30.2017",
+      "latitude": 47.258205,
+      "longitude": -98.84403,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16303623",
+      "product_id": "USArray.NDD29.2017",
+      "latitude": 47.269714,
+      "longitude": -99.52534,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16303401",
+      "product_id": "USArray.NDD28.2017",
+      "latitude": 47.377773,
+      "longitude": -100.50122,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16303179",
+      "product_id": "USArray.NDD25.2017",
+      "latitude": 47.287113,
+      "longitude": -103.360115,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "16302957",
+      "product_id": "USArray.NDC31.2017",
+      "latitude": 47.811718,
+      "longitude": -97.34619,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16302735",
+      "product_id": "USArray.NDC30.2017",
+      "latitude": 47.937603,
+      "longitude": -98.59741,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16302513",
+      "product_id": "USArray.NDC29.2017",
+      "latitude": 47.89033,
+      "longitude": -99.340034,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16302291",
+      "product_id": "USArray.NDC28.2017",
+      "latitude": 47.80366,
+      "longitude": -100.3253,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16302069",
+      "product_id": "USArray.NDC27.2017",
+      "latitude": 47.895145,
+      "longitude": -101.42138,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16301847",
+      "product_id": "USArray.NDB31.2017",
+      "latitude": 48.531425,
+      "longitude": -97.321846,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16301625",
+      "product_id": "USArray.NDB30.2017",
+      "latitude": 48.50824,
+      "longitude": -98.23202,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16301403",
+      "product_id": "USArray.NDB29.2017",
+      "latitude": 48.587597,
+      "longitude": -99.198715,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16301181",
+      "product_id": "USArray.NDB28.2017",
+      "latitude": 48.516197,
+      "longitude": -100.40343,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16300959",
+      "product_id": "USArray.NDB26.2017",
+      "latitude": 48.59783,
+      "longitude": -102.26739,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16300737",
+      "product_id": "USArray.MNC32.2017",
+      "latitude": 47.876503,
+      "longitude": -96.41121,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "16300515",
+      "product_id": "USArray.MNB32.2017",
+      "latitude": 48.457767,
+      "longitude": -96.340385,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "15047185",
+      "product_id": "USArray.VTG60.2017",
+      "latitude": 42.885868,
+      "longitude": -72.61914,
+      "split": "test"
+    },
+    {
+      "spud_id": "15046963",
+      "product_id": "USArray.VTF60.2017",
+      "latitude": 43.45549,
+      "longitude": -72.42367,
+      "split": "test"
+    },
+    {
+      "spud_id": "15046741",
+      "product_id": "USArray.VTE59.2017",
+      "latitude": 44.27147,
+      "longitude": -72.92886,
+      "split": "test"
+    },
+    {
+      "spud_id": "15046519",
+      "product_id": "USArray.VTD59.2017",
+      "latitude": 44.84094,
+      "longitude": -72.51761,
+      "split": "test"
+    },
+    {
+      "spud_id": "15046297",
+      "product_id": "USArray.VTD58.2017",
+      "latitude": 44.852978,
+      "longitude": -73.34266,
+      "split": "test"
+    },
+    {
+      "spud_id": "15046075",
+      "product_id": "USArray.TTJ58.2017",
+      "latitude": 41.495678,
+      "longitude": -75.2681,
+      "split": "test"
+    },
+    {
+      "spud_id": "15045853",
+      "product_id": "USArray.TTI57.2017",
+      "latitude": 42.38681,
+      "longitude": -75.89242,
+      "split": "test"
+    },
+    {
+      "spud_id": "15045631",
+      "product_id": "USArray.TTF56.2017",
+      "latitude": 44.306988,
+      "longitude": -75.59561,
+      "split": "test"
+    },
+    {
+      "spud_id": "15045409",
+      "product_id": "USArray.TTD61.2017",
+      "latitude": 44.515522,
+      "longitude": -70.61136,
+      "split": "test"
+    },
+    {
+      "spud_id": "15045187",
+      "product_id": "USArray.TTC63.2017",
+      "latitude": 44.586124,
+      "longitude": -68.64277,
+      "split": "test"
+    },
+    {
+      "spud_id": "15044965",
+      "product_id": "USArray.RES55.2017",
+      "latitude": 36.647675,
+      "longitude": -80.39117,
+      "split": "test"
+    },
+    {
+      "spud_id": "15044743",
+      "product_id": "USArray.REK59.2017",
+      "latitude": 40.69608,
+      "longitude": -74.87048,
+      "split": "test"
+    },
+    {
+      "spud_id": "15044521",
+      "product_id": "USArray.REK57.2017",
+      "latitude": 41.11799,
+      "longitude": -76.58089,
+      "split": "test"
+    },
+    {
+      "spud_id": "15044299",
+      "product_id": "USArray.REJ62.2017",
+      "latitude": 41.069096,
+      "longitude": -71.89199,
+      "split": "test"
+    },
+    {
+      "spud_id": "15043855",
+      "product_id": "USArray.REH62.2017",
+      "latitude": 41.921486,
+      "longitude": -71.23447,
+      "split": "test"
+    },
+    {
+      "spud_id": "15043633",
+      "product_id": "USArray.REG58.2017",
+      "latitude": 43.269196,
+      "longitude": -74.157005,
+      "split": "test"
+    },
+    {
+      "spud_id": "15043411",
+      "product_id": "USArray.REG56.2017",
+      "latitude": 43.518505,
+      "longitude": -76.08117,
+      "split": "test"
+    },
+    {
+      "spud_id": "15043189",
+      "product_id": "USArray.REF59.2017",
+      "latitude": 43.669296,
+      "longitude": -73.23586,
+      "split": "test"
+    },
+    {
+      "spud_id": "15042967",
+      "product_id": "USArray.RED61.2017",
+      "latitude": 44.347626,
+      "longitude": -70.51929,
+      "split": "test"
+    },
+    {
+      "spud_id": "15042745",
+      "product_id": "USArray.PAL58.2017",
+      "latitude": 40.351776,
+      "longitude": -75.869705,
+      "split": "test"
+    },
+    {
+      "spud_id": "15042523",
+      "product_id": "USArray.NYJ59.2017",
+      "latitude": 41.281784,
+      "longitude": -74.50759,
+      "split": "test"
+    },
+    {
+      "spud_id": "15042301",
+      "product_id": "USArray.NYI54.2017",
+      "latitude": 42.639877,
+      "longitude": -78.46567,
+      "split": "test"
+    },
+    {
+      "spud_id": "15042079",
+      "product_id": "USArray.NYH56.2017",
+      "latitude": 43.001,
+      "longitude": -76.28385,
+      "split": "test"
+    },
+    {
+      "spud_id": "15041857",
+      "product_id": "USArray.NYH55.2017",
+      "latitude": 43.275646,
+      "longitude": -77.22488,
+      "split": "test"
+    },
+    {
+      "spud_id": "15041635",
+      "product_id": "USArray.NYH54.2017",
+      "latitude": 43.367687,
+      "longitude": -77.97864,
+      "split": "test"
+    },
+    {
+      "spud_id": "15041413",
+      "product_id": "USArray.NHE60.2017",
+      "latitude": 44.08886,
+      "longitude": -71.9355,
+      "split": "test"
+    },
+    {
+      "spud_id": "15041191",
+      "product_id": "USArray.NHD60.2017",
+      "latitude": 44.56381,
+      "longitude": -71.499214,
+      "split": "test"
+    },
+    {
+      "spud_id": "15040969",
+      "product_id": "USArray.NHC60.2017",
+      "latitude": 45.156506,
+      "longitude": -71.18487,
+      "split": "test"
+    },
+    {
+      "spud_id": "15040747",
+      "product_id": "USArray.MEZ62.2017",
+      "latitude": 46.522682,
+      "longitude": -68.18934,
+      "split": "test"
+    },
+    {
+      "spud_id": "15040525",
+      "product_id": "USArray.MEZ61.2017",
+      "latitude": 46.651558,
+      "longitude": -68.83231,
+      "split": "test"
+    },
+    {
+      "spud_id": "15040303",
+      "product_id": "USArray.MEZ60.2017",
+      "latitude": 46.81621,
+      "longitude": -69.70576,
+      "split": "test"
+    },
+    {
+      "spud_id": "15040081",
+      "product_id": "USArray.MEY62.2017",
+      "latitude": 46.978825,
+      "longitude": -67.87765,
+      "split": "test"
+    },
+    {
+      "spud_id": "15039859",
+      "product_id": "USArray.MEY61.2017",
+      "latitude": 47.15692,
+      "longitude": -68.45939,
+      "split": "test"
+    },
+    {
+      "spud_id": "15039637",
+      "product_id": "USArray.MEY60.2017",
+      "latitude": 47.256268,
+      "longitude": -69.37092,
+      "split": "test"
+    },
+    {
+      "spud_id": "15039415",
+      "product_id": "USArray.MEF62.2017",
+      "latitude": 43.110325,
+      "longitude": -70.65748,
+      "split": "test"
+    },
+    {
+      "spud_id": "15039193",
+      "product_id": "USArray.MEE62.2017",
+      "latitude": 43.561527,
+      "longitude": -70.215225,
+      "split": "test"
+    },
+    {
+      "spud_id": "15038971",
+      "product_id": "USArray.MED63.2017",
+      "latitude": 44.04138,
+      "longitude": -69.09801,
+      "split": "test"
+    },
+    {
+      "spud_id": "15038749",
+      "product_id": "USArray.MED62.2017",
+      "latitude": 44.1235,
+      "longitude": -69.79133,
+      "split": "test"
+    },
+    {
+      "spud_id": "15038527",
+      "product_id": "USArray.MEC64.2017",
+      "latitude": 44.440414,
+      "longitude": -67.89636,
+      "split": "test"
+    },
+    {
+      "spud_id": "15038305",
+      "product_id": "USArray.MEC61.2017",
+      "latitude": 44.97199,
+      "longitude": -70.27751,
+      "split": "test"
+    },
+    {
+      "spud_id": "15038083",
+      "product_id": "USArray.MEB64.2017",
+      "latitude": 44.86696,
+      "longitude": -67.42287,
+      "split": "test"
+    },
+    {
+      "spud_id": "15037861",
+      "product_id": "USArray.MEB63.2017",
+      "latitude": 45.110577,
+      "longitude": -68.120255,
+      "split": "test"
+    },
+    {
+      "spud_id": "15037639",
+      "product_id": "USArray.MEB62.2017",
+      "latitude": 45.34896,
+      "longitude": -68.89878,
+      "split": "test"
+    },
+    {
+      "spud_id": "15037417",
+      "product_id": "USArray.MEB61.2017",
+      "latitude": 45.5321,
+      "longitude": -69.864105,
+      "split": "test"
+    },
+    {
+      "spud_id": "15037195",
+      "product_id": "USArray.MEB60.2017",
+      "latitude": 45.603264,
+      "longitude": -70.43476,
+      "split": "test"
+    },
+    {
+      "spud_id": "15036973",
+      "product_id": "USArray.MEA63.2017",
+      "latitude": 45.6594,
+      "longitude": -67.71503,
+      "split": "test"
+    },
+    {
+      "spud_id": "15036751",
+      "product_id": "USArray.MEA62.2017",
+      "latitude": 45.903828,
+      "longitude": -68.765205,
+      "split": "test"
+    },
+    {
+      "spud_id": "15036529",
+      "product_id": "USArray.MEA61.2017",
+      "latitude": 46.11609,
+      "longitude": -69.431755,
+      "split": "test"
+    },
+    {
+      "spud_id": "15036307",
+      "product_id": "USArray.MEA60.2017",
+      "latitude": 46.255905,
+      "longitude": -70.07273,
+      "split": "test"
+    },
+    {
+      "spud_id": "15036085",
+      "product_id": "USArray.MAH64.2017",
+      "latitude": 41.746857,
+      "longitude": -70.01921,
+      "split": "test"
+    },
+    {
+      "spud_id": "15035863",
+      "product_id": "USArray.MAH63.2017",
+      "latitude": 41.886993,
+      "longitude": -70.548935,
+      "split": "test"
+    },
+    {
+      "spud_id": "15035641",
+      "product_id": "USArray.MAH60.2017",
+      "latitude": 42.380135,
+      "longitude": -73.04323,
+      "split": "test"
+    },
+    {
+      "spud_id": "15035419",
+      "product_id": "USArray.MAG62.2017",
+      "latitude": 42.657887,
+      "longitude": -70.90462,
+      "split": "test"
+    },
+    {
+      "spud_id": "15035197",
+      "product_id": "USArray.FTL57.2017",
+      "latitude": 40.454205,
+      "longitude": -76.77385,
+      "split": "test"
+    },
+    {
+      "spud_id": "15034975",
+      "product_id": "USArray.WVQ54.2016",
+      "latitude": 37.903183,
+      "longitude": -80.70156,
+      "split": "test"
+    },
+    {
+      "spud_id": "15034753",
+      "product_id": "USArray.WVP54.2016",
+      "latitude": 38.41553,
+      "longitude": -80.44886,
+      "split": "test"
+    },
+    {
+      "spud_id": "15034531",
+      "product_id": "USArray.WVP53.2016",
+      "latitude": 38.647114,
+      "longitude": -81.40447,
+      "split": "test"
+    },
+    {
+      "spud_id": "15034309",
+      "product_id": "USArray.VTF59.2016",
+      "latitude": 43.66929,
+      "longitude": -73.23589,
+      "split": "test"
+    },
+    {
+      "spud_id": "15034101",
+      "product_id": "USArray.VAS56.2016",
+      "latitude": 36.587105,
+      "longitude": -79.7663,
+      "split": "test"
+    },
+    {
+      "spud_id": "15033879",
+      "product_id": "USArray.VAR54.2016",
+      "latitude": 37.243515,
+      "longitude": -80.92108,
+      "split": "test"
+    },
+    {
+      "spud_id": "15033657",
+      "product_id": "USArray.TTW52.2016",
+      "latitude": 34.639496,
+      "longitude": -83.77672,
+      "split": "test"
+    },
+    {
+      "spud_id": "15033435",
+      "product_id": "USArray.TTO58.2016",
+      "latitude": 38.558537,
+      "longitude": -77.17808,
+      "split": "test"
+    },
+    {
+      "spud_id": "15033213",
+      "product_id": "USArray.TTL57.2016",
+      "latitude": 40.581387,
+      "longitude": -76.74176,
+      "split": "test"
+    },
+    {
+      "spud_id": "15032991",
+      "product_id": "USArray.TTK58.2016",
+      "latitude": 41.094574,
+      "longitude": -75.8777,
+      "split": "test"
+    },
+    {
+      "spud_id": "15032769",
+      "product_id": "USArray.RII62.2016",
+      "latitude": 41.37893,
+      "longitude": -71.746956,
+      "split": "test"
+    },
+    {
+      "spud_id": "15032553",
+      "product_id": "USArray.REV52.2016",
+      "latitude": 35.17164,
+      "longitude": -83.74835,
+      "split": "test"
+    },
+    {
+      "spud_id": "15032331",
+      "product_id": "USArray.RES54.2016",
+      "latitude": 36.61385,
+      "longitude": -81.2838,
+      "split": "test"
+    },
+    {
+      "spud_id": "15032109",
+      "product_id": "USArray.RER54.2016",
+      "latitude": 37.25701,
+      "longitude": -80.856155,
+      "split": "test"
+    },
+    {
+      "spud_id": "15031887",
+      "product_id": "USArray.REM55.2016",
+      "latitude": 40.227814,
+      "longitude": -78.72656,
+      "split": "test"
+    },
+    {
+      "spud_id": "15031665",
+      "product_id": "USArray.REL59.2016",
+      "latitude": 40.272915,
+      "longitude": -75.11088,
+      "split": "test"
+    },
+    {
+      "spud_id": "15031443",
+      "product_id": "USArray.REL57.2016",
+      "latitude": 40.528046,
+      "longitude": -76.743935,
+      "split": "test"
+    },
+    {
+      "spud_id": "15031221",
+      "product_id": "USArray.REL55.2016",
+      "latitude": 40.72592,
+      "longitude": -78.59871,
+      "split": "test"
+    },
+    {
+      "spud_id": "15030999",
+      "product_id": "USArray.REL53.2016",
+      "latitude": 41.014896,
+      "longitude": -80.00503,
+      "split": "test"
+    },
+    {
+      "spud_id": "15030777",
+      "product_id": "USArray.REK58.2016",
+      "latitude": 41.01894,
+      "longitude": -75.763016,
+      "split": "test"
+    },
+    {
+      "spud_id": "15030555",
+      "product_id": "USArray.REK56.2016",
+      "latitude": 41.252377,
+      "longitude": -77.49614,
+      "split": "test"
+    },
+    {
+      "spud_id": "15030333",
+      "product_id": "USArray.REJ61.2016",
+      "latitude": 40.958107,
+      "longitude": -72.782394,
+      "split": "test"
+    },
+    {
+      "spud_id": "15030111",
+      "product_id": "USArray.REI56.2016",
+      "latitude": 42.34337,
+      "longitude": -76.67962,
+      "split": "test"
+    },
+    {
+      "spud_id": "15029667",
+      "product_id": "USArray.PAM58.2016",
+      "latitude": 39.901516,
+      "longitude": -76.32953,
+      "split": "test"
+    },
+    {
+      "spud_id": "15029445",
+      "product_id": "USArray.PAM57.2016",
+      "latitude": 40.006866,
+      "longitude": -77.31732,
+      "split": "test"
+    },
+    {
+      "spud_id": "15029223",
+      "product_id": "USArray.PAM55.2016",
+      "latitude": 40.18603,
+      "longitude": -78.764786,
+      "split": "test"
+    },
+    {
+      "spud_id": "15029001",
+      "product_id": "USArray.PAM53.2016",
+      "latitude": 40.514683,
+      "longitude": -80.43593,
+      "split": "test"
+    },
+    {
+      "spud_id": "15028779",
+      "product_id": "USArray.PAL59.2016",
+      "latitude": 40.183075,
+      "longitude": -75.408745,
+      "split": "test"
+    },
+    {
+      "spud_id": "15028557",
+      "product_id": "USArray.PAL57.2016",
+      "latitude": 40.525303,
+      "longitude": -76.74744,
+      "split": "test"
+    },
+    {
+      "spud_id": "15028335",
+      "product_id": "USArray.PAL56.2016",
+      "latitude": 40.70474,
+      "longitude": -77.67742,
+      "split": "test"
+    },
+    {
+      "spud_id": "15028113",
+      "product_id": "USArray.PAL55.2016",
+      "latitude": 40.6779,
+      "longitude": -78.51709,
+      "split": "test"
+    },
+    {
+      "spud_id": "15027891",
+      "product_id": "USArray.PAL54.2016",
+      "latitude": 40.91143,
+      "longitude": -79.43775,
+      "split": "test"
+    },
+    {
+      "spud_id": "15027669",
+      "product_id": "USArray.PAL53.2016",
+      "latitude": 40.965748,
+      "longitude": -80.10243,
+      "split": "test"
+    },
+    {
+      "spud_id": "15027447",
+      "product_id": "USArray.PAK58.2016",
+      "latitude": 41.031746,
+      "longitude": -75.69742,
+      "split": "test"
+    },
+    {
+      "spud_id": "15027225",
+      "product_id": "USArray.PAK57.2016",
+      "latitude": 41.13495,
+      "longitude": -76.59236,
+      "split": "test"
+    },
+    {
+      "spud_id": "15027003",
+      "product_id": "USArray.PAK56.2016",
+      "latitude": 41.340878,
+      "longitude": -77.426956,
+      "split": "test"
+    },
+    {
+      "spud_id": "15026781",
+      "product_id": "USArray.PAK55.2016",
+      "latitude": 41.467575,
+      "longitude": -78.18016,
+      "split": "test"
+    },
+    {
+      "spud_id": "15026559",
+      "product_id": "USArray.PAK54.2016",
+      "latitude": 41.424423,
+      "longitude": -79.156586,
+      "split": "test"
+    },
+    {
+      "spud_id": "15026337",
+      "product_id": "USArray.PAK53.2016",
+      "latitude": 41.63049,
+      "longitude": -79.88883,
+      "split": "test"
+    },
+    {
+      "spud_id": "15026115",
+      "product_id": "USArray.PAJ58.2016",
+      "latitude": 41.51324,
+      "longitude": -75.47981,
+      "split": "test"
+    },
+    {
+      "spud_id": "15025893",
+      "product_id": "USArray.PAJ57.2016",
+      "latitude": 41.643646,
+      "longitude": -76.347855,
+      "split": "test"
+    },
+    {
+      "spud_id": "15025671",
+      "product_id": "USArray.PAJ56.2016",
+      "latitude": 41.713657,
+      "longitude": -77.01927,
+      "split": "test"
+    },
+    {
+      "spud_id": "15025449",
+      "product_id": "USArray.PAJ55.2016",
+      "latitude": 41.80862,
+      "longitude": -77.819435,
+      "split": "test"
+    },
+    {
+      "spud_id": "15025227",
+      "product_id": "USArray.OHK52.2016",
+      "latitude": 41.698776,
+      "longitude": -80.64304,
+      "split": "test"
+    },
+    {
+      "spud_id": "15025005",
+      "product_id": "USArray.NYJ61.2016",
+      "latitude": 40.91859,
+      "longitude": -72.86938,
+      "split": "test"
+    },
+    {
+      "spud_id": "15024783",
+      "product_id": "USArray.NYJ54.2016",
+      "latitude": 42.13703,
+      "longitude": -78.567635,
+      "split": "test"
+    },
+    {
+      "spud_id": "15024561",
+      "product_id": "USArray.NYJ53.2016",
+      "latitude": 42.110966,
+      "longitude": -79.510155,
+      "split": "test"
+    },
+    {
+      "spud_id": "15024339",
+      "product_id": "USArray.NYI59.2016",
+      "latitude": 41.92619,
+      "longitude": -74.38986,
+      "split": "test"
+    },
+    {
+      "spud_id": "15024117",
+      "product_id": "USArray.NYI58.2016",
+      "latitude": 42.109356,
+      "longitude": -75.08511,
+      "split": "test"
+    },
+    {
+      "spud_id": "15023895",
+      "product_id": "USArray.NYI56.2016",
+      "latitude": 42.343372,
+      "longitude": -76.6796,
+      "split": "test"
+    },
+    {
+      "spud_id": "15023673",
+      "product_id": "USArray.NYI55.2016",
+      "latitude": 42.494743,
+      "longitude": -77.76942,
+      "split": "test"
+    },
+    {
+      "spud_id": "15023451",
+      "product_id": "USArray.NYH59.2016",
+      "latitude": 42.533764,
+      "longitude": -73.95571,
+      "split": "test"
+    },
+    {
+      "spud_id": "15023229",
+      "product_id": "USArray.NYH58.2016",
+      "latitude": 42.656017,
+      "longitude": -74.74545,
+      "split": "test"
+    },
+    {
+      "spud_id": "15023007",
+      "product_id": "USArray.NYH57.2016",
+      "latitude": 42.75686,
+      "longitude": -75.59483,
+      "split": "test"
+    },
+    {
+      "spud_id": "15022785",
+      "product_id": "USArray.NYG59.2016",
+      "latitude": 43.06028,
+      "longitude": -73.34011,
+      "split": "test"
+    },
+    {
+      "spud_id": "15022563",
+      "product_id": "USArray.NYG58.2016",
+      "latitude": 43.271217,
+      "longitude": -74.22728,
+      "split": "test"
+    },
+    {
+      "spud_id": "15022341",
+      "product_id": "USArray.NYG57.2016",
+      "latitude": 43.357105,
+      "longitude": -75.30436,
+      "split": "test"
+    },
+    {
+      "spud_id": "15022119",
+      "product_id": "USArray.NYG56.2016",
+      "latitude": 43.5189,
+      "longitude": -76.08207,
+      "split": "test"
+    },
+    {
+      "spud_id": "15021897",
+      "product_id": "USArray.NYF58.2016",
+      "latitude": 43.843998,
+      "longitude": -74.152794,
+      "split": "test"
+    },
+    {
+      "spud_id": "15021675",
+      "product_id": "USArray.NYF57.2016",
+      "latitude": 43.857883,
+      "longitude": -75.003174,
+      "split": "test"
+    },
+    {
+      "spud_id": "15021453",
+      "product_id": "USArray.NYF56.2016",
+      "latitude": 44.30907,
+      "longitude": -75.661446,
+      "split": "test"
+    },
+    {
+      "spud_id": "15021231",
+      "product_id": "USArray.NYE58.2016",
+      "latitude": 44.459164,
+      "longitude": -73.74918,
+      "split": "test"
+    },
+    {
+      "spud_id": "15021009",
+      "product_id": "USArray.NYE57.2016",
+      "latitude": 44.68532,
+      "longitude": -74.56484,
+      "split": "test"
+    },
+    {
+      "spud_id": "15020787",
+      "product_id": "USArray.NYE56.2016",
+      "latitude": 44.792233,
+      "longitude": -75.336975,
+      "split": "test"
+    },
+    {
+      "spud_id": "15020565",
+      "product_id": "USArray.NJN60.2016",
+      "latitude": 38.955456,
+      "longitude": -74.96142,
+      "split": "test"
+    },
+    {
+      "spud_id": "15020343",
+      "product_id": "USArray.NJM60.2016",
+      "latitude": 39.5058,
+      "longitude": -74.77,
+      "split": "test"
+    },
+    {
+      "spud_id": "15020121",
+      "product_id": "USArray.NJL60.2016",
+      "latitude": 40.06857,
+      "longitude": -74.42601,
+      "split": "test"
+    },
+    {
+      "spud_id": "15019899",
+      "product_id": "USArray.NHF61.2016",
+      "latitude": 43.3777,
+      "longitude": -71.46227,
+      "split": "test"
+    },
+    {
+      "spud_id": "15019677",
+      "product_id": "USArray.NHE61.2016",
+      "latitude": 43.839127,
+      "longitude": -71.1702,
+      "split": "test"
+    },
+    {
+      "spud_id": "15019455",
+      "product_id": "USArray.NCT57.2016",
+      "latitude": 35.80785,
+      "longitude": -79.33651,
+      "split": "test"
+    },
+    {
+      "spud_id": "15019233",
+      "product_id": "USArray.NCS56.2016",
+      "latitude": 36.49235,
+      "longitude": -79.90285,
+      "split": "test"
+    },
+    {
+      "spud_id": "15019011",
+      "product_id": "USArray.MED61.2016",
+      "latitude": 44.348606,
+      "longitude": -70.52064,
+      "split": "test"
+    },
+    {
+      "spud_id": "15018789",
+      "product_id": "USArray.MDO58.2016",
+      "latitude": 38.55734,
+      "longitude": -77.06875,
+      "split": "test"
+    },
+    {
+      "spud_id": "15018567",
+      "product_id": "USArray.MDN57.2016",
+      "latitude": 39.255833,
+      "longitude": -77.398544,
+      "split": "test"
+    },
+    {
+      "spud_id": "15018345",
+      "product_id": "USArray.DEM59.2016",
+      "latitude": 39.55907,
+      "longitude": -75.58762,
+      "split": "test"
+    },
+    {
+      "spud_id": "15018123",
+      "product_id": "USArray.CTI61.2016",
+      "latitude": 41.61009,
+      "longitude": -72.46828,
+      "split": "test"
+    },
+    {
+      "spud_id": "15017901",
+      "product_id": "USArray.CTI60.2016",
+      "latitude": 41.792652,
+      "longitude": -73.32104,
+      "split": "test"
+    },
+    {
+      "spud_id": "15017679",
+      "product_id": "USArray.WVO55.2016",
+      "latitude": 39.129288,
+      "longitude": -79.34608,
+      "split": "test"
+    },
+    {
+      "spud_id": "15017457",
+      "product_id": "USArray.WVO54.2016",
+      "latitude": 39.039326,
+      "longitude": -80.07117,
+      "split": "test"
+    },
+    {
+      "spud_id": "15017235",
+      "product_id": "USArray.WVO53.2016",
+      "latitude": 39.217007,
+      "longitude": -81.116714,
+      "split": "test"
+    },
+    {
+      "spud_id": "15017013",
+      "product_id": "USArray.WVN56.2016",
+      "latitude": 39.49232,
+      "longitude": -78.31922,
+      "split": "test"
+    },
+    {
+      "spud_id": "15016791",
+      "product_id": "USArray.WVN54.2016",
+      "latitude": 39.61392,
+      "longitude": -79.824974,
+      "split": "test"
+    },
+    {
+      "spud_id": "15016569",
+      "product_id": "USArray.VAS55.2016",
+      "latitude": 36.623993,
+      "longitude": -80.4141,
+      "split": "test"
+    },
+    {
+      "spud_id": "15016347",
+      "product_id": "USArray.VAR60.2016",
+      "latitude": 36.580044,
+      "longitude": -76.337944,
+      "split": "test"
+    },
+    {
+      "spud_id": "15016125",
+      "product_id": "USArray.VAR59.2016",
+      "latitude": 36.824207,
+      "longitude": -77.10113,
+      "split": "test"
+    },
+    {
+      "spud_id": "15015903",
+      "product_id": "USArray.VAR58.2016",
+      "latitude": 36.770702,
+      "longitude": -77.87751,
+      "split": "test"
+    },
+    {
+      "spud_id": "15015681",
+      "product_id": "USArray.VAR57.2016",
+      "latitude": 37.005085,
+      "longitude": -78.64481,
+      "split": "test"
+    },
+    {
+      "spud_id": "15015459",
+      "product_id": "USArray.VAR56.2016",
+      "latitude": 37.09496,
+      "longitude": -79.582825,
+      "split": "test"
+    },
+    {
+      "spud_id": "15015237",
+      "product_id": "USArray.VAR55.2016",
+      "latitude": 37.320953,
+      "longitude": -80.169266,
+      "split": "test"
+    },
+    {
+      "spud_id": "15015015",
+      "product_id": "USArray.VAQ60.2016",
+      "latitude": 37.13471,
+      "longitude": -75.96318,
+      "split": "test"
+    },
+    {
+      "spud_id": "15014793",
+      "product_id": "USArray.VAQ59.2016",
+      "latitude": 37.316666,
+      "longitude": -76.888405,
+      "split": "test"
+    },
+    {
+      "spud_id": "15014571",
+      "product_id": "USArray.VAQ58.2016",
+      "latitude": 37.376453,
+      "longitude": -77.58465,
+      "split": "test"
+    },
+    {
+      "spud_id": "15014349",
+      "product_id": "USArray.VAQ57.2016",
+      "latitude": 37.5128,
+      "longitude": -78.31091,
+      "split": "test"
+    },
+    {
+      "spud_id": "15014127",
+      "product_id": "USArray.VAQ56.2016",
+      "latitude": 37.758293,
+      "longitude": -79.18967,
+      "split": "test"
+    },
+    {
+      "spud_id": "15013905",
+      "product_id": "USArray.VAQ55.2016",
+      "latitude": 37.882942,
+      "longitude": -79.808136,
+      "split": "test"
+    },
+    {
+      "spud_id": "15013683",
+      "product_id": "USArray.VAP60.2016",
+      "latitude": 37.765778,
+      "longitude": -75.729324,
+      "split": "test"
+    },
+    {
+      "spud_id": "15013461",
+      "product_id": "USArray.VAP59.2016",
+      "latitude": 37.82158,
+      "longitude": -76.524666,
+      "split": "test"
+    },
+    {
+      "spud_id": "15013239",
+      "product_id": "USArray.VAP58.2016",
+      "latitude": 38.00971,
+      "longitude": -77.28762,
+      "split": "test"
+    },
+    {
+      "spud_id": "15013017",
+      "product_id": "USArray.VAP57.2016",
+      "latitude": 38.114788,
+      "longitude": -78.06872,
+      "split": "test"
+    },
+    {
+      "spud_id": "15012795",
+      "product_id": "USArray.VAP56.2016",
+      "latitude": 38.272182,
+      "longitude": -78.771965,
+      "split": "test"
+    },
+    {
+      "spud_id": "15012573",
+      "product_id": "USArray.VAP55.2016",
+      "latitude": 38.36338,
+      "longitude": -79.57422,
+      "split": "test"
+    },
+    {
+      "spud_id": "15012351",
+      "product_id": "USArray.VAO57.2016",
+      "latitude": 38.663525,
+      "longitude": -77.69445,
+      "split": "test"
+    },
+    {
+      "spud_id": "15012129",
+      "product_id": "USArray.VAO56.2016",
+      "latitude": 38.86586,
+      "longitude": -78.48267,
+      "split": "test"
+    },
+    {
+      "spud_id": "15011907",
+      "product_id": "USArray.TTY52.2016",
+      "latitude": 33.323997,
+      "longitude": -84.39241,
+      "split": "test"
+    },
+    {
+      "spud_id": "15011685",
+      "product_id": "USArray.TTV52.2016",
+      "latitude": 35.17295,
+      "longitude": -83.70126,
+      "split": "test"
+    },
+    {
+      "spud_id": "15011463",
+      "product_id": "USArray.TTT55.2016",
+      "latitude": 35.94729,
+      "longitude": -80.71083,
+      "split": "test"
+    },
+    {
+      "spud_id": "15011241",
+      "product_id": "USArray.TTS54.2016",
+      "latitude": 36.801975,
+      "longitude": -81.09388,
+      "split": "test"
+    },
+    {
+      "spud_id": "15011019",
+      "product_id": "USArray.SCY58.2016",
+      "latitude": 32.68765,
+      "longitude": -79.888756,
+      "split": "test"
+    },
+    {
+      "spud_id": "15010797",
+      "product_id": "USArray.SCX57.2016",
+      "latitude": 33.52125,
+      "longitude": -80.28394,
+      "split": "test"
+    },
+    {
+      "spud_id": "15010575",
+      "product_id": "USArray.SCW58.2016",
+      "latitude": 34.061268,
+      "longitude": -79.37908,
+      "split": "test"
+    },
+    {
+      "spud_id": "15010353",
+      "product_id": "USArray.SCV57.2016",
+      "latitude": 34.73124,
+      "longitude": -79.76038,
+      "split": "test"
+    },
+    {
+      "spud_id": "15010131",
+      "product_id": "USArray.REW51.2016",
+      "latitude": 34.69858,
+      "longitude": -84.70099,
+      "split": "test"
+    },
+    {
+      "spud_id": "15009909",
+      "product_id": "USArray.RET58.2016",
+      "latitude": 35.70488,
+      "longitude": -78.45364,
+      "split": "test"
+    },
+    {
+      "spud_id": "15009687",
+      "product_id": "USArray.RET57.2016",
+      "latitude": 35.807823,
+      "longitude": -79.33655,
+      "split": "test"
+    },
+    {
+      "spud_id": "15009465",
+      "product_id": "USArray.RET56.2016",
+      "latitude": 35.838158,
+      "longitude": -79.961525,
+      "split": "test"
+    },
+    {
+      "spud_id": "15009243",
+      "product_id": "USArray.RES53.2016",
+      "latitude": 36.851772,
+      "longitude": -82.07586,
+      "split": "test"
+    },
+    {
+      "spud_id": "15009021",
+      "product_id": "USArray.REN57.2016",
+      "latitude": 39.492947,
+      "longitude": -77.47724,
+      "split": "test"
+    },
+    {
+      "spud_id": "15008799",
+      "product_id": "USArray.PAM56.2016",
+      "latitude": 39.991856,
+      "longitude": -77.92519,
+      "split": "test"
+    },
+    {
+      "spud_id": "15008577",
+      "product_id": "USArray.PAM54.2016",
+      "latitude": 40.21486,
+      "longitude": -79.46012,
+      "split": "test"
+    },
+    {
+      "spud_id": "15008355",
+      "product_id": "USArray.NCW59.2016",
+      "latitude": 33.95766,
+      "longitude": -78.60654,
+      "split": "test"
+    },
+    {
+      "spud_id": "15008133",
+      "product_id": "USArray.NCV58.2016",
+      "latitude": 34.470345,
+      "longitude": -78.95965,
+      "split": "test"
+    },
+    {
+      "spud_id": "15007911",
+      "product_id": "USArray.NCU61.2016",
+      "latitude": 34.897003,
+      "longitude": -76.36341,
+      "split": "test"
+    },
+    {
+      "spud_id": "15007689",
+      "product_id": "USArray.NCU59.2016",
+      "latitude": 35.11314,
+      "longitude": -77.85401,
+      "split": "test"
+    },
+    {
+      "spud_id": "15007467",
+      "product_id": "USArray.NCU58.2016",
+      "latitude": 35.10407,
+      "longitude": -78.71214,
+      "split": "test"
+    },
+    {
+      "spud_id": "15007245",
+      "product_id": "USArray.NCU56.2016",
+      "latitude": 35.358017,
+      "longitude": -80.09165,
+      "split": "test"
+    },
+    {
+      "spud_id": "15007023",
+      "product_id": "USArray.NCT60.2016",
+      "latitude": 35.472862,
+      "longitude": -76.91077,
+      "split": "test"
+    },
+    {
+      "spud_id": "15006801",
+      "product_id": "USArray.NCT59.2016",
+      "latitude": 35.63377,
+      "longitude": -77.68765,
+      "split": "test"
+    },
+    {
+      "spud_id": "15006579",
+      "product_id": "USArray.NCT58.2016",
+      "latitude": 35.70466,
+      "longitude": -78.45371,
+      "split": "test"
+    },
+    {
+      "spud_id": "15006357",
+      "product_id": "USArray.NCS61.2016",
+      "latitude": 35.863956,
+      "longitude": -75.95645,
+      "split": "test"
+    },
+    {
+      "spud_id": "15006135",
+      "product_id": "USArray.NCS60.2016",
+      "latitude": 35.96117,
+      "longitude": -76.402725,
+      "split": "test"
+    },
+    {
+      "spud_id": "15005913",
+      "product_id": "USArray.NCS57.2016",
+      "latitude": 36.429794,
+      "longitude": -78.83852,
+      "split": "test"
+    },
+    {
+      "spud_id": "15005691",
+      "product_id": "USArray.MDO60.2016",
+      "latitude": 38.353916,
+      "longitude": -75.422195,
+      "split": "test"
+    },
+    {
+      "spud_id": "15005469",
+      "product_id": "USArray.MDO59.2016",
+      "latitude": 38.453598,
+      "longitude": -76.16683,
+      "split": "test"
+    },
+    {
+      "spud_id": "15005247",
+      "product_id": "USArray.MDN59.2016",
+      "latitude": 38.986782,
+      "longitude": -75.92693,
+      "split": "test"
+    },
+    {
+      "spud_id": "15005025",
+      "product_id": "USArray.MDN55.2016",
+      "latitude": 39.6201,
+      "longitude": -79.10303,
+      "split": "test"
+    },
+    {
+      "spud_id": "15004803",
+      "product_id": "USArray.LCV54.2016",
+      "latitude": 35.114857,
+      "longitude": -81.978645,
+      "split": "test"
+    },
+    {
+      "spud_id": "15004581",
+      "product_id": "USArray.LCU55.2016",
+      "latitude": 35.646664,
+      "longitude": -80.941055,
+      "split": "test"
+    },
+    {
+      "spud_id": "15004359",
+      "product_id": "USArray.TNU50.2014",
+      "latitude": 36.005615,
+      "longitude": -84.83851,
+      "split": "test"
+    },
+    {
+      "spud_id": "15004137",
+      "product_id": "USArray.TNU49.2014",
+      "latitude": 35.968903,
+      "longitude": -85.70541,
+      "split": "test"
+    },
+    {
+      "spud_id": "15003915",
+      "product_id": "USArray.TNU47.2014",
+      "latitude": 36.081425,
+      "longitude": -87.27434,
+      "split": "test"
+    },
+    {
+      "spud_id": "15003693",
+      "product_id": "USArray.TNU46.2014",
+      "latitude": 36.092133,
+      "longitude": -87.97987,
+      "split": "test"
+    },
+    {
+      "spud_id": "15003471",
+      "product_id": "USArray.TNU45.2014",
+      "latitude": 36.211483,
+      "longitude": -88.779594,
+      "split": "test"
+    },
+    {
+      "spud_id": "15003041",
+      "product_id": "USArray.TNU44.2014",
+      "latitude": 36.324245,
+      "longitude": -89.56237,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "15002819",
+      "product_id": "USArray.TNT51.2014",
+      "latitude": 36.33508,
+      "longitude": -83.94406,
+      "split": "test"
+    },
+    {
+      "spud_id": "15002597",
+      "product_id": "USArray.TNT50.2014",
+      "latitude": 36.484047,
+      "longitude": -84.689095,
+      "split": "test"
+    },
+    {
+      "spud_id": "15002375",
+      "product_id": "USArray.TNT49.2014",
+      "latitude": 36.492947,
+      "longitude": -85.5507,
+      "split": "test"
+    },
+    {
+      "spud_id": "15002153",
+      "product_id": "USArray.REQ47.2014",
+      "latitude": 38.477406,
+      "longitude": -86.463776,
+      "split": "test"
+    },
+    {
+      "spud_id": "15001931",
+      "product_id": "USArray.OHP51.2014",
+      "latitude": 38.927063,
+      "longitude": -82.82139,
+      "split": "test"
+    },
+    {
+      "spud_id": "15001709",
+      "product_id": "USArray.OHP50.2014",
+      "latitude": 38.97434,
+      "longitude": -83.517166,
+      "split": "test"
+    },
+    {
+      "spud_id": "15001487",
+      "product_id": "USArray.OHO51.2014",
+      "latitude": 39.382023,
+      "longitude": -82.74625,
+      "split": "test"
+    },
+    {
+      "spud_id": "15001265",
+      "product_id": "USArray.OHO50.2014",
+      "latitude": 39.5866,
+      "longitude": -83.24518,
+      "split": "test"
+    },
+    {
+      "spud_id": "15001043",
+      "product_id": "USArray.OHO49.2014",
+      "latitude": 39.641636,
+      "longitude": -84.429726,
+      "split": "test"
+    },
+    {
+      "spud_id": "15000821",
+      "product_id": "USArray.OHN52.2014",
+      "latitude": 39.887554,
+      "longitude": -81.39916,
+      "split": "test"
+    },
+    {
+      "spud_id": "15000599",
+      "product_id": "USArray.OHN51.2014",
+      "latitude": 39.98198,
+      "longitude": -82.26517,
+      "split": "test"
+    },
+    {
+      "spud_id": "15000377",
+      "product_id": "USArray.OHN50.2014",
+      "latitude": 40.082397,
+      "longitude": -83.300514,
+      "split": "test"
+    },
+    {
+      "spud_id": "15000155",
+      "product_id": "USArray.OHN49.2014",
+      "latitude": 40.190407,
+      "longitude": -83.9793,
+      "split": "test"
+    },
+    {
+      "spud_id": "14999933",
+      "product_id": "USArray.OHN48.2014",
+      "latitude": 40.31493,
+      "longitude": -84.65674,
+      "split": "test"
+    },
+    {
+      "spud_id": "14999711",
+      "product_id": "USArray.OHM52.2014",
+      "latitude": 40.5572,
+      "longitude": -81.26349,
+      "split": "test"
+    },
+    {
+      "spud_id": "14999489",
+      "product_id": "USArray.OHM51.2014",
+      "latitude": 40.54314,
+      "longitude": -82.06286,
+      "split": "test"
+    },
+    {
+      "spud_id": "14999267",
+      "product_id": "USArray.OHM50.2014",
+      "latitude": 40.60899,
+      "longitude": -82.76178,
+      "split": "test"
+    },
+    {
+      "spud_id": "14999045",
+      "product_id": "USArray.OHM49.2014",
+      "latitude": 40.734177,
+      "longitude": -83.72225,
+      "split": "test"
+    },
+    {
+      "spud_id": "14998823",
+      "product_id": "USArray.OHL52.2014",
+      "latitude": 41.00253,
+      "longitude": -81.07308,
+      "split": "test"
+    },
+    {
+      "spud_id": "14998601",
+      "product_id": "USArray.OHL51.2014",
+      "latitude": 41.116547,
+      "longitude": -81.74054,
+      "split": "test"
+    },
+    {
+      "spud_id": "14998379",
+      "product_id": "USArray.OHL50.2014",
+      "latitude": 41.20108,
+      "longitude": -82.68057,
+      "split": "test"
+    },
+    {
+      "spud_id": "14998157",
+      "product_id": "USArray.OHL49.2014",
+      "latitude": 41.34667,
+      "longitude": -83.52088,
+      "split": "test"
+    },
+    {
+      "spud_id": "14997935",
+      "product_id": "USArray.MOT44.2014",
+      "latitude": 36.907032,
+      "longitude": -89.557274,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14997713",
+      "product_id": "USArray.MOT43.2014",
+      "latitude": 36.89557,
+      "longitude": -90.294556,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14997491",
+      "product_id": "USArray.MOT42.2014",
+      "latitude": 36.935772,
+      "longitude": -91.05896,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14997269",
+      "product_id": "USArray.MOS43.2014",
+      "latitude": 37.479057,
+      "longitude": -90.14631,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14997047",
+      "product_id": "USArray.KYT48.2014",
+      "latitude": 36.65621,
+      "longitude": -86.22455,
+      "split": "test"
+    },
+    {
+      "spud_id": "14996825",
+      "product_id": "USArray.KYT47.2014",
+      "latitude": 36.685738,
+      "longitude": -87.027954,
+      "split": "test"
+    },
+    {
+      "spud_id": "14996603",
+      "product_id": "USArray.KYT46.2014",
+      "latitude": 36.690353,
+      "longitude": -87.78134,
+      "split": "test"
+    },
+    {
+      "spud_id": "14996395",
+      "product_id": "USArray.KYT45.2014",
+      "latitude": 36.893574,
+      "longitude": -88.52848,
+      "split": "test"
+    },
+    {
+      "spud_id": "14996187",
+      "product_id": "USArray.KYS50.2014",
+      "latitude": 37.072807,
+      "longitude": -84.43426,
+      "split": "test"
+    },
+    {
+      "spud_id": "14995965",
+      "product_id": "USArray.KYS49.2014",
+      "latitude": 37.28688,
+      "longitude": -85.339775,
+      "split": "test"
+    },
+    {
+      "spud_id": "14995743",
+      "product_id": "USArray.KYS48.2014",
+      "latitude": 37.2039,
+      "longitude": -86.061066,
+      "split": "test"
+    },
+    {
+      "spud_id": "14995521",
+      "product_id": "USArray.KYS47.2014",
+      "latitude": 37.29167,
+      "longitude": -86.83138,
+      "split": "test"
+    },
+    {
+      "spud_id": "14995299",
+      "product_id": "USArray.KYS46.2014",
+      "latitude": 37.470097,
+      "longitude": -87.62513,
+      "split": "test"
+    },
+    {
+      "spud_id": "14995077",
+      "product_id": "USArray.KYR51.2014",
+      "latitude": 37.577896,
+      "longitude": -83.41327,
+      "split": "test"
+    },
+    {
+      "spud_id": "14994855",
+      "product_id": "USArray.KYR50.2014",
+      "latitude": 37.5569,
+      "longitude": -84.238205,
+      "split": "test"
+    },
+    {
+      "spud_id": "14994633",
+      "product_id": "USArray.KYR49.2014",
+      "latitude": 37.745987,
+      "longitude": -84.98555,
+      "split": "test"
+    },
+    {
+      "spud_id": "14994411",
+      "product_id": "USArray.KYR48.2014",
+      "latitude": 37.828682,
+      "longitude": -85.85363,
+      "split": "test"
+    },
+    {
+      "spud_id": "14994189",
+      "product_id": "USArray.KYR46.2014",
+      "latitude": 37.896618,
+      "longitude": -87.464096,
+      "split": "test"
+    },
+    {
+      "spud_id": "14993967",
+      "product_id": "USArray.KYQ51.2014",
+      "latitude": 38.177982,
+      "longitude": -83.02192,
+      "split": "test"
+    },
+    {
+      "spud_id": "14993523",
+      "product_id": "USArray.KYQ50.2014",
+      "latitude": 38.287693,
+      "longitude": -83.94667,
+      "split": "test"
+    },
+    {
+      "spud_id": "14993301",
+      "product_id": "USArray.KYQ49.2014",
+      "latitude": 38.36759,
+      "longitude": -84.74314,
+      "split": "test"
+    },
+    {
+      "spud_id": "14993079",
+      "product_id": "USArray.KYP49.2014",
+      "latitude": 38.94646,
+      "longitude": -84.49496,
+      "split": "test"
+    },
+    {
+      "spud_id": "14992857",
+      "product_id": "USArray.INR47.2014",
+      "latitude": 37.915634,
+      "longitude": -86.61354,
+      "split": "test"
+    },
+    {
+      "spud_id": "14992635",
+      "product_id": "USArray.INQ48.2014",
+      "latitude": 38.40511,
+      "longitude": -85.633934,
+      "split": "test"
+    },
+    {
+      "spud_id": "14992413",
+      "product_id": "USArray.INQ47.2014",
+      "latitude": 38.50141,
+      "longitude": -86.46508,
+      "split": "test"
+    },
+    {
+      "spud_id": "14992191",
+      "product_id": "USArray.INQ46.2014",
+      "latitude": 38.56644,
+      "longitude": -87.04855,
+      "split": "test"
+    },
+    {
+      "spud_id": "14991969",
+      "product_id": "USArray.INP48.2014",
+      "latitude": 39.047035,
+      "longitude": -85.21886,
+      "split": "test"
+    },
+    {
+      "spud_id": "14991747",
+      "product_id": "USArray.INP47.2014",
+      "latitude": 39.1418,
+      "longitude": -86.21244,
+      "split": "test"
+    },
+    {
+      "spud_id": "14991525",
+      "product_id": "USArray.INP46.2014",
+      "latitude": 39.354923,
+      "longitude": -86.83657,
+      "split": "test"
+    },
+    {
+      "spud_id": "14991303",
+      "product_id": "USArray.INO48.2014",
+      "latitude": 39.610104,
+      "longitude": -84.97756,
+      "split": "test"
+    },
+    {
+      "spud_id": "14991081",
+      "product_id": "USArray.INO47.2014",
+      "latitude": 39.772594,
+      "longitude": -85.83534,
+      "split": "test"
+    },
+    {
+      "spud_id": "14990859",
+      "product_id": "USArray.INN47.2014",
+      "latitude": 40.32308,
+      "longitude": -85.47135,
+      "split": "test"
+    },
+    {
+      "spud_id": "14990637",
+      "product_id": "USArray.ILS45.2014",
+      "latitude": 37.422546,
+      "longitude": -88.53642,
+      "split": "test"
+    },
+    {
+      "spud_id": "14990415",
+      "product_id": "USArray.ILS44.2014",
+      "latitude": 37.436638,
+      "longitude": -89.33435,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14990193",
+      "product_id": "USArray.ILR45.2014",
+      "latitude": 37.981552,
+      "longitude": -88.209724,
+      "split": "test"
+    },
+    {
+      "spud_id": "14989749",
+      "product_id": "USArray.ILR43.2014",
+      "latitude": 37.982315,
+      "longitude": -89.806244,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14989527",
+      "product_id": "USArray.ILQ45.2014",
+      "latitude": 38.742065,
+      "longitude": -87.83772,
+      "split": "test"
+    },
+    {
+      "spud_id": "14989305",
+      "product_id": "USArray.ILQ44.2014",
+      "latitude": 38.70753,
+      "longitude": -88.7637,
+      "split": "test"
+    },
+    {
+      "spud_id": "14988639",
+      "product_id": "USArray.ARU43.2014",
+      "latitude": 36.341423,
+      "longitude": -90.33083,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14988417",
+      "product_id": "USArray.TTG45.2013",
+      "latitude": 44.851482,
+      "longitude": -85.43952,
+      "split": "test"
+    },
+    {
+      "spud_id": "14988195",
+      "product_id": "USArray.RER39.2013",
+      "latitude": 38.163513,
+      "longitude": -93.131584,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14987973",
+      "product_id": "USArray.REQ33.2013",
+      "latitude": 38.942383,
+      "longitude": -97.84627,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14987751",
+      "product_id": "USArray.REO46.2013",
+      "latitude": 39.83132,
+      "longitude": -86.68256,
+      "split": "test"
+    },
+    {
+      "spud_id": "14987529",
+      "product_id": "USArray.REO43.2013",
+      "latitude": 40.007404,
+      "longitude": -89.158485,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14987307",
+      "product_id": "USArray.REL45.2013",
+      "latitude": 41.272152,
+      "longitude": -86.78661,
+      "split": "test"
+    },
+    {
+      "spud_id": "14987085",
+      "product_id": "USArray.REJ49.2013",
+      "latitude": 42.735256,
+      "longitude": -82.90628,
+      "split": "test"
+    },
+    {
+      "spud_id": "14986863",
+      "product_id": "USArray.REG46.2013",
+      "latitude": 44.85633,
+      "longitude": -84.47567,
+      "split": "test"
+    },
+    {
+      "spud_id": "14986641",
+      "product_id": "USArray.REG45.2013",
+      "latitude": 44.812122,
+      "longitude": -85.291885,
+      "split": "test"
+    },
+    {
+      "spud_id": "14986419",
+      "product_id": "USArray.REE45.2013",
+      "latitude": 46.095333,
+      "longitude": -84.99158,
+      "split": "test"
+    },
+    {
+      "spud_id": "14986197",
+      "product_id": "USArray.REC38.2013",
+      "latitude": 47.710014,
+      "longitude": -91.17762,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14985975",
+      "product_id": "USArray.OHM48.2013",
+      "latitude": 40.798367,
+      "longitude": -84.4602,
+      "split": "test"
+    },
+    {
+      "spud_id": "14985753",
+      "product_id": "USArray.OHL48.2013",
+      "latitude": 41.451466,
+      "longitude": -84.39761,
+      "split": "test"
+    },
+    {
+      "spud_id": "14985531",
+      "product_id": "USArray.NEO35.2013",
+      "latitude": 40.31935,
+      "longitude": -96.124344,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14985309",
+      "product_id": "USArray.NEO34.2013",
+      "latitude": 40.235565,
+      "longitude": -96.88757,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14985087",
+      "product_id": "USArray.NEO33.2013",
+      "latitude": 40.21881,
+      "longitude": -97.70474,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14984865",
+      "product_id": "USArray.NEN35.2013",
+      "latitude": 40.86969,
+      "longitude": -95.8597,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14984643",
+      "product_id": "USArray.NEN34.2013",
+      "latitude": 40.861843,
+      "longitude": -96.88781,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14984421",
+      "product_id": "USArray.NEN33.2013",
+      "latitude": 40.80291,
+      "longitude": -97.72372,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14984199",
+      "product_id": "USArray.NEM34.2013",
+      "latitude": 41.424564,
+      "longitude": -96.692894,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14983977",
+      "product_id": "USArray.NEM33.2013",
+      "latitude": 41.50294,
+      "longitude": -97.473045,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14983755",
+      "product_id": "USArray.NEL33.2013",
+      "latitude": 41.994743,
+      "longitude": -97.23546,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14983533",
+      "product_id": "USArray.NEK33.2013",
+      "latitude": 42.628757,
+      "longitude": -96.92152,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14983311",
+      "product_id": "USArray.MOS42.2013",
+      "latitude": 37.58566,
+      "longitude": -90.96509,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14983089",
+      "product_id": "USArray.MOS41.2013",
+      "latitude": 37.63284,
+      "longitude": -91.68417,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14982867",
+      "product_id": "USArray.MOS40.2013",
+      "latitude": 37.60466,
+      "longitude": -92.3996,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14982645",
+      "product_id": "USArray.MOS39.2013",
+      "latitude": 37.726364,
+      "longitude": -93.41727,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14982423",
+      "product_id": "USArray.MOS38.2013",
+      "latitude": 37.67167,
+      "longitude": -94.100945,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14982201",
+      "product_id": "USArray.MOR42.2013",
+      "latitude": 38.08628,
+      "longitude": -90.68104,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14981979",
+      "product_id": "USArray.MOR41.2013",
+      "latitude": 38.14269,
+      "longitude": -91.58581,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14981757",
+      "product_id": "USArray.MOR40.2013",
+      "latitude": 38.109447,
+      "longitude": -92.58383,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14981535",
+      "product_id": "USArray.MOR39.2013",
+      "latitude": 38.164803,
+      "longitude": -93.14063,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14981313",
+      "product_id": "USArray.MOR38.2013",
+      "latitude": 38.2269,
+      "longitude": -94.092415,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14981091",
+      "product_id": "USArray.MOQ41.2013",
+      "latitude": 38.919018,
+      "longitude": -91.37823,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14980869",
+      "product_id": "USArray.MOQ40.2013",
+      "latitude": 38.832657,
+      "longitude": -92.17402,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14980647",
+      "product_id": "USArray.MOQ39.2013",
+      "latitude": 38.97562,
+      "longitude": -92.931984,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14980439",
+      "product_id": "USArray.MOQ38.2013",
+      "latitude": 38.921654,
+      "longitude": -93.85275,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14980217",
+      "product_id": "USArray.MOP41.2013",
+      "latitude": 39.4778,
+      "longitude": -91.18674,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14979995",
+      "product_id": "USArray.MOP40.2013",
+      "latitude": 39.516533,
+      "longitude": -91.84259,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14979773",
+      "product_id": "USArray.MOP39.2013",
+      "latitude": 39.52877,
+      "longitude": -92.6786,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14979551",
+      "product_id": "USArray.MOP38.2013",
+      "latitude": 39.58832,
+      "longitude": -93.62835,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14979329",
+      "product_id": "USArray.MOP37.2013",
+      "latitude": 39.528687,
+      "longitude": -94.488495,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14979107",
+      "product_id": "USArray.MOO40.2013",
+      "latitude": 40.145798,
+      "longitude": -91.83019,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14978885",
+      "product_id": "USArray.MOO39.2013",
+      "latitude": 40.158188,
+      "longitude": -92.66108,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14978663",
+      "product_id": "USArray.MOO38.2013",
+      "latitude": 40.194687,
+      "longitude": -93.48301,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14978441",
+      "product_id": "USArray.MOO37.2013",
+      "latitude": 40.24668,
+      "longitude": -94.381676,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14978219",
+      "product_id": "USArray.MOO36.2013",
+      "latitude": 40.24493,
+      "longitude": -95.23245,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14977997",
+      "product_id": "USArray.MIK49.2013",
+      "latitude": 42.01985,
+      "longitude": -83.21977,
+      "split": "test"
+    },
+    {
+      "spud_id": "14977775",
+      "product_id": "USArray.MIK48.2013",
+      "latitude": 42.12669,
+      "longitude": -84.03427,
+      "split": "test"
+    },
+    {
+      "spud_id": "14977553",
+      "product_id": "USArray.MIK47.2013",
+      "latitude": 42.16861,
+      "longitude": -84.79754,
+      "split": "test"
+    },
+    {
+      "spud_id": "14977331",
+      "product_id": "USArray.MIK46.2013",
+      "latitude": 42.34247,
+      "longitude": -85.81239,
+      "split": "test"
+    },
+    {
+      "spud_id": "14977109",
+      "product_id": "USArray.MIJ49.2013",
+      "latitude": 42.770485,
+      "longitude": -82.93924,
+      "split": "test"
+    },
+    {
+      "spud_id": "14976887",
+      "product_id": "USArray.MIJ48.2013",
+      "latitude": 42.826984,
+      "longitude": -83.52691,
+      "split": "test"
+    },
+    {
+      "spud_id": "14976665",
+      "product_id": "USArray.MIJ47.2013",
+      "latitude": 42.821278,
+      "longitude": -84.40255,
+      "split": "test"
+    },
+    {
+      "spud_id": "14976443",
+      "product_id": "USArray.MIJ46.2013",
+      "latitude": 43.029716,
+      "longitude": -85.478386,
+      "split": "test"
+    },
+    {
+      "spud_id": "14976221",
+      "product_id": "USArray.MIJ45.2013",
+      "latitude": 43.140396,
+      "longitude": -86.28178,
+      "split": "test"
+    },
+    {
+      "spud_id": "14975999",
+      "product_id": "USArray.MII49.2013",
+      "latitude": 43.436146,
+      "longitude": -82.58305,
+      "split": "test"
+    },
+    {
+      "spud_id": "14975777",
+      "product_id": "USArray.MII48.2013",
+      "latitude": 43.524895,
+      "longitude": -83.281075,
+      "split": "test"
+    },
+    {
+      "spud_id": "14975555",
+      "product_id": "USArray.MII47.2013",
+      "latitude": 43.4536,
+      "longitude": -84.18429,
+      "split": "test"
+    },
+    {
+      "spud_id": "14975333",
+      "product_id": "USArray.MII46.2013",
+      "latitude": 43.5785,
+      "longitude": -85.04381,
+      "split": "test"
+    },
+    {
+      "spud_id": "14975111",
+      "product_id": "USArray.MII45.2013",
+      "latitude": 43.555424,
+      "longitude": -85.88168,
+      "split": "test"
+    },
+    {
+      "spud_id": "14974889",
+      "product_id": "USArray.MIH48.2013",
+      "latitude": 44.001633,
+      "longitude": -83.066246,
+      "split": "test"
+    },
+    {
+      "spud_id": "14974667",
+      "product_id": "USArray.MIH47.2013",
+      "latitude": 44.08333,
+      "longitude": -83.89183,
+      "split": "test"
+    },
+    {
+      "spud_id": "14974223",
+      "product_id": "USArray.MIH46.2013",
+      "latitude": 44.190575,
+      "longitude": -84.82181,
+      "split": "test"
+    },
+    {
+      "spud_id": "14973779",
+      "product_id": "USArray.MIH45.2013",
+      "latitude": 44.191853,
+      "longitude": -85.65356,
+      "split": "test"
+    },
+    {
+      "spud_id": "14973557",
+      "product_id": "USArray.MIG47.2013",
+      "latitude": 44.597668,
+      "longitude": -83.57634,
+      "split": "test"
+    },
+    {
+      "spud_id": "14973335",
+      "product_id": "USArray.MIG46.2013",
+      "latitude": 44.842556,
+      "longitude": -84.47346,
+      "split": "test"
+    },
+    {
+      "spud_id": "14972891",
+      "product_id": "USArray.MIG45.2013",
+      "latitude": 44.82831,
+      "longitude": -85.29422,
+      "split": "test"
+    },
+    {
+      "spud_id": "14972669",
+      "product_id": "USArray.MIF47.2013",
+      "latitude": 45.325535,
+      "longitude": -83.615395,
+      "split": "test"
+    },
+    {
+      "spud_id": "14972447",
+      "product_id": "USArray.MIF46.2013",
+      "latitude": 45.450436,
+      "longitude": -84.13851,
+      "split": "test"
+    },
+    {
+      "spud_id": "14972225",
+      "product_id": "USArray.MIF45.2013",
+      "latitude": 45.536964,
+      "longitude": -85.031166,
+      "split": "test"
+    },
+    {
+      "spud_id": "14972003",
+      "product_id": "USArray.MIF44.2013",
+      "latitude": 45.60355,
+      "longitude": -85.59574,
+      "split": "test"
+    },
+    {
+      "spud_id": "14971781",
+      "product_id": "USArray.MIE46.2013",
+      "latitude": 45.966007,
+      "longitude": -84.02064,
+      "split": "test"
+    },
+    {
+      "spud_id": "14971337",
+      "product_id": "USArray.MIE45.2013",
+      "latitude": 46.05573,
+      "longitude": -84.99939,
+      "split": "test"
+    },
+    {
+      "spud_id": "14971115",
+      "product_id": "USArray.MID45.2013",
+      "latitude": 46.47763,
+      "longitude": -84.68618,
+      "split": "test"
+    },
+    {
+      "spud_id": "14970671",
+      "product_id": "USArray.MIC40.2013",
+      "latitude": 47.914276,
+      "longitude": -89.1494,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14970449",
+      "product_id": "USArray.KSS37.2013",
+      "latitude": 37.78448,
+      "longitude": -95.07055,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14970227",
+      "product_id": "USArray.KSS36.2013",
+      "latitude": 37.73929,
+      "longitude": -95.92253,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14970005",
+      "product_id": "USArray.KSS35.2013",
+      "latitude": 37.72034,
+      "longitude": -96.714455,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14969561",
+      "product_id": "USArray.KSS34.2013",
+      "latitude": 37.608124,
+      "longitude": -97.62104,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14969339",
+      "product_id": "USArray.KSR37.2013",
+      "latitude": 38.24314,
+      "longitude": -94.84508,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14968895",
+      "product_id": "USArray.KSR36.2013",
+      "latitude": 38.274704,
+      "longitude": -95.780304,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14968673",
+      "product_id": "USArray.KSR35.2013",
+      "latitude": 38.36788,
+      "longitude": -96.59454,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14968451",
+      "product_id": "USArray.KSR34.2013",
+      "latitude": 38.34691,
+      "longitude": -97.269714,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14968229",
+      "product_id": "USArray.KSR33.2013",
+      "latitude": 38.218582,
+      "longitude": -98.048035,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14968007",
+      "product_id": "USArray.KSQ37.2013",
+      "latitude": 38.998627,
+      "longitude": -94.80232,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14967785",
+      "product_id": "USArray.KSQ36.2013",
+      "latitude": 38.940353,
+      "longitude": -95.4352,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14967563",
+      "product_id": "USArray.KSQ35.2013",
+      "latitude": 39.10287,
+      "longitude": -96.59173,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14967341",
+      "product_id": "USArray.KSQ34.2013",
+      "latitude": 39.089146,
+      "longitude": -97.224335,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14967119",
+      "product_id": "USArray.KSQ33.2013",
+      "latitude": 38.959366,
+      "longitude": -97.91855,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14966675",
+      "product_id": "USArray.KSP36.2013",
+      "latitude": 39.640602,
+      "longitude": -95.4477,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14966231",
+      "product_id": "USArray.KSP35.2013",
+      "latitude": 39.61181,
+      "longitude": -96.24529,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14966009",
+      "product_id": "USArray.KSP34.2013",
+      "latitude": 39.554672,
+      "longitude": -97.04851,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14965787",
+      "product_id": "USArray.KSP33.2013",
+      "latitude": 39.650574,
+      "longitude": -97.8864,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14965121",
+      "product_id": "USArray.INO46.2013",
+      "latitude": 39.839977,
+      "longitude": -86.68469,
+      "split": "test"
+    },
+    {
+      "spud_id": "14964899",
+      "product_id": "USArray.INN46.2013",
+      "latitude": 40.419514,
+      "longitude": -86.38276,
+      "split": "test"
+    },
+    {
+      "spud_id": "14964677",
+      "product_id": "USArray.INM47.2013",
+      "latitude": 40.94924,
+      "longitude": -85.42253,
+      "split": "test"
+    },
+    {
+      "spud_id": "14964455",
+      "product_id": "USArray.INM46.2013",
+      "latitude": 40.99852,
+      "longitude": -86.25855,
+      "split": "test"
+    },
+    {
+      "spud_id": "14964233",
+      "product_id": "USArray.INL47.2013",
+      "latitude": 41.65018,
+      "longitude": -85.18511,
+      "split": "test"
+    },
+    {
+      "spud_id": "14964011",
+      "product_id": "USArray.INL46.2013",
+      "latitude": 41.54903,
+      "longitude": -85.94891,
+      "split": "test"
+    },
+    {
+      "spud_id": "14963789",
+      "product_id": "USArray.ILQ43.2013",
+      "latitude": 38.71589,
+      "longitude": -89.60967,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14963567",
+      "product_id": "USArray.ILQ42.2013",
+      "latitude": 38.934975,
+      "longitude": -90.509514,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14963345",
+      "product_id": "USArray.ILP44.2013",
+      "latitude": 39.318474,
+      "longitude": -88.681046,
+      "split": "test"
+    },
+    {
+      "spud_id": "14963123",
+      "product_id": "USArray.ILP43.2013",
+      "latitude": 39.427647,
+      "longitude": -89.302925,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14962901",
+      "product_id": "USArray.ILP42.2013",
+      "latitude": 39.44662,
+      "longitude": -90.28315,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14962679",
+      "product_id": "USArray.ILO45.2013",
+      "latitude": 40.008747,
+      "longitude": -87.57511,
+      "split": "test"
+    },
+    {
+      "spud_id": "14962457",
+      "product_id": "USArray.ILO44.2013",
+      "latitude": 39.9859,
+      "longitude": -88.38538,
+      "split": "test"
+    },
+    {
+      "spud_id": "14962235",
+      "product_id": "USArray.ILO43.2013",
+      "latitude": 40.007774,
+      "longitude": -89.158356,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14962013",
+      "product_id": "USArray.ILO42.2013",
+      "latitude": 39.994453,
+      "longitude": -90.06913,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14961791",
+      "product_id": "USArray.ILO41.2013",
+      "latitude": 40.239323,
+      "longitude": -90.900986,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14961569",
+      "product_id": "USArray.IAK34.2013",
+      "latitude": 42.699814,
+      "longitude": -96.30553,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14961347",
+      "product_id": "USArray.WIK42.2012",
+      "latitude": 42.520416,
+      "longitude": -89.27427,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14961125",
+      "product_id": "USArray.WIK41.2012",
+      "latitude": 42.536396,
+      "longitude": -90.04132,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14960903",
+      "product_id": "USArray.WIJ43.2012",
+      "latitude": 42.88522,
+      "longitude": -87.98445,
+      "split": "test"
+    },
+    {
+      "spud_id": "14960681",
+      "product_id": "USArray.WIJ42.2012",
+      "latitude": 43.14368,
+      "longitude": -88.881,
+      "split": "test"
+    },
+    {
+      "spud_id": "14960459",
+      "product_id": "USArray.WIJ41.2012",
+      "latitude": 43.20495,
+      "longitude": -89.825645,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14960237",
+      "product_id": "USArray.WIJ40.2012",
+      "latitude": 43.156025,
+      "longitude": -90.90205,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14960015",
+      "product_id": "USArray.WII43.2012",
+      "latitude": 43.661427,
+      "longitude": -87.73834,
+      "split": "test"
+    },
+    {
+      "spud_id": "14959793",
+      "product_id": "USArray.WII42.2012",
+      "latitude": 43.83511,
+      "longitude": -88.80476,
+      "split": "test"
+    },
+    {
+      "spud_id": "14959571",
+      "product_id": "USArray.WII41.2012",
+      "latitude": 43.89867,
+      "longitude": -89.56995,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14959349",
+      "product_id": "USArray.WIH43.2012",
+      "latitude": 44.46587,
+      "longitude": -87.614365,
+      "split": "test"
+    },
+    {
+      "spud_id": "14959127",
+      "product_id": "USArray.WIH42.2012",
+      "latitude": 44.462452,
+      "longitude": -88.511475,
+      "split": "test"
+    },
+    {
+      "spud_id": "14958905",
+      "product_id": "USArray.WIH41.2012",
+      "latitude": 44.426907,
+      "longitude": -89.40298,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14958683",
+      "product_id": "USArray.WIH40.2012",
+      "latitude": 44.535072,
+      "longitude": -90.53602,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14958461",
+      "product_id": "USArray.WIH39.2012",
+      "latitude": 44.63448,
+      "longitude": -91.388214,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14958239",
+      "product_id": "USArray.WIH38.2012",
+      "latitude": 44.587612,
+      "longitude": -92.33434,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14958017",
+      "product_id": "USArray.WIG43.2012",
+      "latitude": 44.99907,
+      "longitude": -87.17407,
+      "split": "test"
+    },
+    {
+      "spud_id": "14957795",
+      "product_id": "USArray.WIG42.2012",
+      "latitude": 45.04633,
+      "longitude": -88.24691,
+      "split": "test"
+    },
+    {
+      "spud_id": "14957573",
+      "product_id": "USArray.WIG41.2012",
+      "latitude": 45.110397,
+      "longitude": -89.36819,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14957351",
+      "product_id": "USArray.WIF42.2012",
+      "latitude": 45.683544,
+      "longitude": -88.03658,
+      "split": "test"
+    },
+    {
+      "spud_id": "14957129",
+      "product_id": "USArray.WIF41.2012",
+      "latitude": 45.757706,
+      "longitude": -88.97908,
+      "split": "test"
+    },
+    {
+      "spud_id": "14956907",
+      "product_id": "USArray.WIE38.2012",
+      "latitude": 46.51021,
+      "longitude": -91.56762,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14956685",
+      "product_id": "USArray.WID39.2012",
+      "latitude": 46.910152,
+      "longitude": -90.90758,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14956463",
+      "product_id": "USArray.SDJ33.2012",
+      "latitude": 43.28556,
+      "longitude": -96.93645,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14956241",
+      "product_id": "USArray.SDI33.2012",
+      "latitude": 43.953293,
+      "longitude": -96.71486,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14956019",
+      "product_id": "USArray.SDH33.2012",
+      "latitude": 44.6538,
+      "longitude": -96.58645,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14955797",
+      "product_id": "USArray.REH36.2012",
+      "latitude": 44.55801,
+      "longitude": -93.93803,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14955575",
+      "product_id": "USArray.REE36.2012",
+      "latitude": 46.4812,
+      "longitude": -93.31226,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14955353",
+      "product_id": "USArray.RED38.2012",
+      "latitude": 47.115032,
+      "longitude": -91.53173,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14955131",
+      "product_id": "USArray.RED37.2012",
+      "latitude": 47.11316,
+      "longitude": -92.336975,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14954909",
+      "product_id": "USArray.RED36.2012",
+      "latitude": 47.18701,
+      "longitude": -93.067566,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14954687",
+      "product_id": "USArray.NEL34.2012",
+      "latitude": 42.080135,
+      "longitude": -96.44826,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14954465",
+      "product_id": "USArray.MNI39.2012",
+      "latitude": 43.84806,
+      "longitude": -91.50182,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14954243",
+      "product_id": "USArray.MNI38.2012",
+      "latitude": 43.923203,
+      "longitude": -92.575264,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14954021",
+      "product_id": "USArray.MNI37.2012",
+      "latitude": 44.113213,
+      "longitude": -93.43894,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14953799",
+      "product_id": "USArray.MNI36.2012",
+      "latitude": 43.979263,
+      "longitude": -94.044334,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14953577",
+      "product_id": "USArray.MNI35.2012",
+      "latitude": 43.876083,
+      "longitude": -95.02706,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14953355",
+      "product_id": "USArray.MNI34.2012",
+      "latitude": 43.97266,
+      "longitude": -95.9017,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14953133",
+      "product_id": "USArray.MNH37.2012",
+      "latitude": 44.67088,
+      "longitude": -92.926125,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14952703",
+      "product_id": "USArray.MNH35.2012",
+      "latitude": 44.594196,
+      "longitude": -94.827805,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14952481",
+      "product_id": "USArray.MNH34.2012",
+      "latitude": 44.664238,
+      "longitude": -95.75032,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14952259",
+      "product_id": "USArray.MNG37.2012",
+      "latitude": 45.22764,
+      "longitude": -92.8579,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14952037",
+      "product_id": "USArray.MNG36.2012",
+      "latitude": 45.238564,
+      "longitude": -93.739075,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14951815",
+      "product_id": "USArray.MNG34.2012",
+      "latitude": 45.291035,
+      "longitude": -95.40385,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14951593",
+      "product_id": "USArray.MNG33.2012",
+      "latitude": 45.327534,
+      "longitude": -96.35804,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14951149",
+      "product_id": "USArray.MNF34.2012",
+      "latitude": 45.984562,
+      "longitude": -95.17587,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14950927",
+      "product_id": "USArray.MNF33.2012",
+      "latitude": 45.85129,
+      "longitude": -96.08832,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14950705",
+      "product_id": "USArray.MNE34.2012",
+      "latitude": 46.659454,
+      "longitude": -95.13963,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14950483",
+      "product_id": "USArray.MNE33.2012",
+      "latitude": 46.42788,
+      "longitude": -96.02414,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14950261",
+      "product_id": "USArray.MND34.2012",
+      "latitude": 47.249294,
+      "longitude": -95.03926,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14950039",
+      "product_id": "USArray.MND33.2012",
+      "latitude": 47.229923,
+      "longitude": -95.89705,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14949817",
+      "product_id": "USArray.MNC39.2012",
+      "latitude": 47.842056,
+      "longitude": -90.142456,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14949595",
+      "product_id": "USArray.MNC38.2012",
+      "latitude": 47.768826,
+      "longitude": -91.06181,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14949373",
+      "product_id": "USArray.MNC37.2012",
+      "latitude": 47.82579,
+      "longitude": -91.988014,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14949151",
+      "product_id": "USArray.MNC36.2012",
+      "latitude": 47.77155,
+      "longitude": -92.88732,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14948929",
+      "product_id": "USArray.MNC35.2012",
+      "latitude": 47.81404,
+      "longitude": -93.77468,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14948707",
+      "product_id": "USArray.MNC34.2012",
+      "latitude": 47.78929,
+      "longitude": -94.76929,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14948485",
+      "product_id": "USArray.MNC33.2012",
+      "latitude": 47.71662,
+      "longitude": -95.82223,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14948263",
+      "product_id": "USArray.MNB36.2012",
+      "latitude": 48.27194,
+      "longitude": -92.709114,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14948041",
+      "product_id": "USArray.MNB35.2012",
+      "latitude": 48.323742,
+      "longitude": -93.46735,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14947819",
+      "product_id": "USArray.MNB34.2012",
+      "latitude": 48.46815,
+      "longitude": -94.495605,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14947597",
+      "product_id": "USArray.MNB33.2012",
+      "latitude": 48.381252,
+      "longitude": -95.50459,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14947375",
+      "product_id": "USArray.MIF43.2012",
+      "latitude": 45.696747,
+      "longitude": -87.12274,
+      "split": "test"
+    },
+    {
+      "spud_id": "14947153",
+      "product_id": "USArray.MIE44.2012",
+      "latitude": 46.163002,
+      "longitude": -85.8374,
+      "split": "test"
+    },
+    {
+      "spud_id": "14946931",
+      "product_id": "USArray.MIE43.2012",
+      "latitude": 46.243614,
+      "longitude": -86.869705,
+      "split": "test"
+    },
+    {
+      "spud_id": "14946709",
+      "product_id": "USArray.MIE42.2012",
+      "latitude": 46.285385,
+      "longitude": -87.730286,
+      "split": "test"
+    },
+    {
+      "spud_id": "14946487",
+      "product_id": "USArray.MIE41.2012",
+      "latitude": 46.278793,
+      "longitude": -88.577995,
+      "split": "test"
+    },
+    {
+      "spud_id": "14946265",
+      "product_id": "USArray.MID44.2012",
+      "latitude": 46.6468,
+      "longitude": -85.48828,
+      "split": "test"
+    },
+    {
+      "spud_id": "14946043",
+      "product_id": "USArray.MID41.2012",
+      "latitude": 47.009,
+      "longitude": -88.488174,
+      "split": "test"
+    },
+    {
+      "spud_id": "14945821",
+      "product_id": "USArray.MIC41.2012",
+      "latitude": 47.432262,
+      "longitude": -87.76179,
+      "split": "test"
+    },
+    {
+      "spud_id": "14945599",
+      "product_id": "USArray.INN45.2012",
+      "latitude": 40.46687,
+      "longitude": -87.28184,
+      "split": "test"
+    },
+    {
+      "spud_id": "14945377",
+      "product_id": "USArray.INM45.2012",
+      "latitude": 41.069412,
+      "longitude": -87.00586,
+      "split": "test"
+    },
+    {
+      "spud_id": "14945155",
+      "product_id": "USArray.INL45.2012",
+      "latitude": 41.75416,
+      "longitude": -86.57079,
+      "split": "test"
+    },
+    {
+      "spud_id": "14944975",
+      "product_id": "USArray.ILN44.2012",
+      "latitude": 40.607136,
+      "longitude": -88.14565,
+      "split": "test"
+    },
+    {
+      "spud_id": "14944753",
+      "product_id": "USArray.ILN43.2012",
+      "latitude": 40.614033,
+      "longitude": -89.023544,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14944531",
+      "product_id": "USArray.ILN42.2012",
+      "latitude": 40.651955,
+      "longitude": -89.872795,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14944309",
+      "product_id": "USArray.ILN41.2012",
+      "latitude": 40.75391,
+      "longitude": -90.5939,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14944087",
+      "product_id": "USArray.ILM44.2012",
+      "latitude": 41.145912,
+      "longitude": -87.89121,
+      "split": "test"
+    },
+    {
+      "spud_id": "14943865",
+      "product_id": "USArray.ILM43.2012",
+      "latitude": 41.206753,
+      "longitude": -88.744316,
+      "split": "test"
+    },
+    {
+      "spud_id": "14943643",
+      "product_id": "USArray.ILM42.2012",
+      "latitude": 41.28228,
+      "longitude": -89.72057,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14943421",
+      "product_id": "USArray.ILM41.2012",
+      "latitude": 41.309692,
+      "longitude": -90.54671,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14943199",
+      "product_id": "USArray.ILL43.2012",
+      "latitude": 41.836533,
+      "longitude": -88.39322,
+      "split": "test"
+    },
+    {
+      "spud_id": "14942977",
+      "product_id": "USArray.ILL42.2012",
+      "latitude": 41.89066,
+      "longitude": -89.48629,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14942755",
+      "product_id": "USArray.ILK43.2012",
+      "latitude": 42.431255,
+      "longitude": -88.3373,
+      "split": "test"
+    },
+    {
+      "spud_id": "14942533",
+      "product_id": "USArray.IAN40.2012",
+      "latitude": 40.76817,
+      "longitude": -91.59608,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14942311",
+      "product_id": "USArray.IAN39.2012",
+      "latitude": 40.78437,
+      "longitude": -92.45648,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14942089",
+      "product_id": "USArray.IAN38.2012",
+      "latitude": 40.705368,
+      "longitude": -93.39509,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14941867",
+      "product_id": "USArray.IAN37.2012",
+      "latitude": 40.855026,
+      "longitude": -94.02728,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14941645",
+      "product_id": "USArray.IAN36.2012",
+      "latitude": 40.79004,
+      "longitude": -95.13174,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14941423",
+      "product_id": "USArray.IAM40.2012",
+      "latitude": 41.386974,
+      "longitude": -91.407974,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14941201",
+      "product_id": "USArray.IAM39.2012",
+      "latitude": 41.38718,
+      "longitude": -92.124405,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14940979",
+      "product_id": "USArray.IAM38.2012",
+      "latitude": 41.42776,
+      "longitude": -93.08705,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14940757",
+      "product_id": "USArray.IAM37.2012",
+      "latitude": 41.477623,
+      "longitude": -93.9392,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14940535",
+      "product_id": "USArray.IAM36.2012",
+      "latitude": 41.4317,
+      "longitude": -94.98262,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14940313",
+      "product_id": "USArray.IAM35.2012",
+      "latitude": 41.400887,
+      "longitude": -95.854866,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14940091",
+      "product_id": "USArray.IAL41.2012",
+      "latitude": 41.95199,
+      "longitude": -90.39857,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14939869",
+      "product_id": "USArray.IAL40.2012",
+      "latitude": 41.991688,
+      "longitude": -91.20935,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14939647",
+      "product_id": "USArray.IAL39.2012",
+      "latitude": 42.093178,
+      "longitude": -92.11571,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14939425",
+      "product_id": "USArray.IAL38.2012",
+      "latitude": 42.097332,
+      "longitude": -93.03849,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14939203",
+      "product_id": "USArray.IAL37.2012",
+      "latitude": 42.006443,
+      "longitude": -93.87987,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14938981",
+      "product_id": "USArray.IAL36.2012",
+      "latitude": 42.108894,
+      "longitude": -94.669044,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14938759",
+      "product_id": "USArray.IAL35.2012",
+      "latitude": 42.203156,
+      "longitude": -95.62437,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14938537",
+      "product_id": "USArray.IAK40.2012",
+      "latitude": 42.61664,
+      "longitude": -91.11625,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14938315",
+      "product_id": "USArray.IAK39.2012",
+      "latitude": 42.534122,
+      "longitude": -91.92574,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14938093",
+      "product_id": "USArray.IAK38.2012",
+      "latitude": 42.66001,
+      "longitude": -92.78481,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14937871",
+      "product_id": "USArray.IAK37.2012",
+      "latitude": 42.700703,
+      "longitude": -93.53009,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14937649",
+      "product_id": "USArray.IAK36.2012",
+      "latitude": 42.65346,
+      "longitude": -94.54256,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14937427",
+      "product_id": "USArray.IAK35.2012",
+      "latitude": 42.636925,
+      "longitude": -95.44958,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14937205",
+      "product_id": "USArray.IAJ39.2012",
+      "latitude": 43.32604,
+      "longitude": -91.64557,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14936983",
+      "product_id": "USArray.IAJ38.2012",
+      "latitude": 43.235558,
+      "longitude": -92.45966,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14936761",
+      "product_id": "USArray.IAJ37.2012",
+      "latitude": 43.252632,
+      "longitude": -93.55313,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14936539",
+      "product_id": "USArray.IAJ36.2012",
+      "latitude": 43.31022,
+      "longitude": -94.42568,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14936317",
+      "product_id": "USArray.IAJ35.2012",
+      "latitude": 43.410294,
+      "longitude": -95.2554,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14936095",
+      "product_id": "USArray.IAJ34.2012",
+      "latitude": 43.341152,
+      "longitude": -95.95906,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14935873",
+      "product_id": "USArray.WYM21.2011",
+      "latitude": 41.44274,
+      "longitude": -107.41963,
+      "split": "train"
+    },
+    {
+      "spud_id": "14935651",
+      "product_id": "USArray.WYM20.2011",
+      "latitude": 41.478504,
+      "longitude": -108.203156,
+      "split": "train"
+    },
+    {
+      "spud_id": "14935429",
+      "product_id": "USArray.WYM19.2011",
+      "latitude": 41.537514,
+      "longitude": -109.0603,
+      "split": "train"
+    },
+    {
+      "spud_id": "14935207",
+      "product_id": "USArray.WYM18.2011",
+      "latitude": 41.50273,
+      "longitude": -109.80303,
+      "split": "train"
+    },
+    {
+      "spud_id": "14934985",
+      "product_id": "USArray.WYM17.2011",
+      "latitude": 41.48759,
+      "longitude": -110.701866,
+      "split": "train"
+    },
+    {
+      "spud_id": "14934763",
+      "product_id": "USArray.WII40.2011",
+      "latitude": 43.85554,
+      "longitude": -90.61395,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14934541",
+      "product_id": "USArray.WIG40.2011",
+      "latitude": 45.28504,
+      "longitude": -90.065285,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14934319",
+      "product_id": "USArray.WIG39.2011",
+      "latitude": 45.24393,
+      "longitude": -91.26065,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14934097",
+      "product_id": "USArray.WIG38.2011",
+      "latitude": 45.29141,
+      "longitude": -92.04917,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14933875",
+      "product_id": "USArray.WIF40.2011",
+      "latitude": 45.85063,
+      "longitude": -90.01189,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14933653",
+      "product_id": "USArray.WIF39.2011",
+      "latitude": 45.84204,
+      "longitude": -90.73526,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14933431",
+      "product_id": "USArray.WIF38.2011",
+      "latitude": 45.942886,
+      "longitude": -91.77604,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14933209",
+      "product_id": "USArray.WIF37.2011",
+      "latitude": 45.914864,
+      "longitude": -92.62172,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14932987",
+      "product_id": "USArray.WIE39.2011",
+      "latitude": 46.412228,
+      "longitude": -90.46435,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14932543",
+      "product_id": "USArray.UTQ19.2011",
+      "latitude": 38.932022,
+      "longitude": -109.25913,
+      "split": "train"
+    },
+    {
+      "spud_id": "14932321",
+      "product_id": "USArray.UTQ18.2011",
+      "latitude": 39.01561,
+      "longitude": -110.08227,
+      "split": "train"
+    },
+    {
+      "spud_id": "14932099",
+      "product_id": "USArray.UTQ17.2011",
+      "latitude": 39.008854,
+      "longitude": -110.89623,
+      "split": "train"
+    },
+    {
+      "spud_id": "14931655",
+      "product_id": "USArray.UTQ15.2011",
+      "latitude": 38.94308,
+      "longitude": -112.5582,
+      "split": "train"
+    },
+    {
+      "spud_id": "14931433",
+      "product_id": "USArray.UTQ14.2011",
+      "latitude": 38.85515,
+      "longitude": -113.251976,
+      "split": "train"
+    },
+    {
+      "spud_id": "14931211",
+      "product_id": "USArray.UTQ13.2011",
+      "latitude": 38.853336,
+      "longitude": -114.03588,
+      "split": "train"
+    },
+    {
+      "spud_id": "14930989",
+      "product_id": "USArray.UTP19.2011",
+      "latitude": 39.6379,
+      "longitude": -109.25722,
+      "split": "train"
+    },
+    {
+      "spud_id": "14930767",
+      "product_id": "USArray.UTP18.2011",
+      "latitude": 39.72384,
+      "longitude": -110.1394,
+      "split": "train"
+    },
+    {
+      "spud_id": "14930545",
+      "product_id": "USArray.UTP17.2011",
+      "latitude": 39.561634,
+      "longitude": -110.94362,
+      "split": "train"
+    },
+    {
+      "spud_id": "14930323",
+      "product_id": "USArray.UTP16.2011",
+      "latitude": 39.474113,
+      "longitude": -111.644226,
+      "split": "train"
+    },
+    {
+      "spud_id": "14930101",
+      "product_id": "USArray.UTP15.2011",
+      "latitude": 39.528763,
+      "longitude": -112.388176,
+      "split": "train"
+    },
+    {
+      "spud_id": "14929879",
+      "product_id": "USArray.UTP14.2011",
+      "latitude": 39.549263,
+      "longitude": -113.28139,
+      "split": "train"
+    },
+    {
+      "spud_id": "14929657",
+      "product_id": "USArray.UTP13.2011",
+      "latitude": 39.51239,
+      "longitude": -113.9933,
+      "split": "train"
+    },
+    {
+      "spud_id": "14929435",
+      "product_id": "USArray.UTO19.2011",
+      "latitude": 40.23396,
+      "longitude": -109.215485,
+      "split": "train"
+    },
+    {
+      "spud_id": "14929213",
+      "product_id": "USArray.UTO18.2011",
+      "latitude": 40.22045,
+      "longitude": -109.930565,
+      "split": "train"
+    },
+    {
+      "spud_id": "14928769",
+      "product_id": "USArray.UTO17.2011",
+      "latitude": 40.361794,
+      "longitude": -110.80265,
+      "split": "train"
+    },
+    {
+      "spud_id": "14928547",
+      "product_id": "USArray.UTO16.2011",
+      "latitude": 40.262066,
+      "longitude": -111.591,
+      "split": "train"
+    },
+    {
+      "spud_id": "14928339",
+      "product_id": "USArray.UTO15.2011",
+      "latitude": 40.125862,
+      "longitude": -112.533035,
+      "split": "train"
+    },
+    {
+      "spud_id": "14928117",
+      "product_id": "USArray.UTO14.2011",
+      "latitude": 40.03395,
+      "longitude": -113.226685,
+      "split": "train"
+    },
+    {
+      "spud_id": "14927895",
+      "product_id": "USArray.UTO13.2011",
+      "latitude": 40.17164,
+      "longitude": -114.00997,
+      "split": "train"
+    },
+    {
+      "spud_id": "14927673",
+      "product_id": "USArray.UTN19.2011",
+      "latitude": 40.900574,
+      "longitude": -109.10332,
+      "split": "train"
+    },
+    {
+      "spud_id": "14927451",
+      "product_id": "USArray.UTN18.2011",
+      "latitude": 40.97069,
+      "longitude": -109.86508,
+      "split": "train"
+    },
+    {
+      "spud_id": "14927229",
+      "product_id": "USArray.UTN17.2011",
+      "latitude": 40.93784,
+      "longitude": -110.715385,
+      "split": "train"
+    },
+    {
+      "spud_id": "14927007",
+      "product_id": "USArray.UTN16.2011",
+      "latitude": 40.768867,
+      "longitude": -111.510605,
+      "split": "train"
+    },
+    {
+      "spud_id": "14926563",
+      "product_id": "USArray.UTN15.2011",
+      "latitude": 40.596863,
+      "longitude": -112.54998,
+      "split": "train"
+    },
+    {
+      "spud_id": "14926119",
+      "product_id": "USArray.UTN13.2011",
+      "latitude": 40.81731,
+      "longitude": -114.02558,
+      "split": "train"
+    },
+    {
+      "spud_id": "14925897",
+      "product_id": "USArray.UTM16.2011",
+      "latitude": 41.45859,
+      "longitude": -111.60683,
+      "split": "train"
+    },
+    {
+      "spud_id": "14925675",
+      "product_id": "USArray.UTM15.2011",
+      "latitude": 41.393936,
+      "longitude": -112.429726,
+      "split": "train"
+    },
+    {
+      "spud_id": "14925453",
+      "product_id": "USArray.UTM14.2011",
+      "latitude": 41.368446,
+      "longitude": -113.27864,
+      "split": "train"
+    },
+    {
+      "spud_id": "14925231",
+      "product_id": "USArray.NVQ12.2011",
+      "latitude": 38.986366,
+      "longitude": -114.96096,
+      "split": "train"
+    },
+    {
+      "spud_id": "14925009",
+      "product_id": "USArray.NVQ11.2011",
+      "latitude": 38.88887,
+      "longitude": -115.68788,
+      "split": "train"
+    },
+    {
+      "spud_id": "14924787",
+      "product_id": "USArray.NVQ10.2011",
+      "latitude": 38.861,
+      "longitude": -116.48838,
+      "split": "train"
+    },
+    {
+      "spud_id": "14924121",
+      "product_id": "USArray.NVP11.2011",
+      "latitude": 39.595264,
+      "longitude": -115.909256,
+      "split": "train"
+    },
+    {
+      "spud_id": "14923899",
+      "product_id": "USArray.NVP08.2011",
+      "latitude": 39.650818,
+      "longitude": -118.146774,
+      "split": "train"
+    },
+    {
+      "spud_id": "14923677",
+      "product_id": "USArray.NVP06.2011",
+      "latitude": 39.466988,
+      "longitude": -119.86625,
+      "split": "train"
+    },
+    {
+      "spud_id": "14923455",
+      "product_id": "USArray.NVO12.2011",
+      "latitude": 40.183517,
+      "longitude": -114.9781,
+      "split": "train"
+    },
+    {
+      "spud_id": "14923011",
+      "product_id": "USArray.NVN09.2011",
+      "latitude": 40.794693,
+      "longitude": -117.418175,
+      "split": "train"
+    },
+    {
+      "spud_id": "14922789",
+      "product_id": "USArray.NVN07.2011",
+      "latitude": 40.809628,
+      "longitude": -119.31813,
+      "split": "train"
+    },
+    {
+      "spud_id": "14922345",
+      "product_id": "USArray.NVM07.2011",
+      "latitude": 41.388493,
+      "longitude": -119.17124,
+      "split": "train"
+    },
+    {
+      "spud_id": "14921693",
+      "product_id": "USArray.MNH36.2011",
+      "latitude": 44.622833,
+      "longitude": -93.86036,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14921249",
+      "product_id": "USArray.MNG35.2011",
+      "latitude": 45.24427,
+      "longitude": -94.52531,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14921027",
+      "product_id": "USArray.MNF36.2011",
+      "latitude": 45.90613,
+      "longitude": -93.56106,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14920583",
+      "product_id": "USArray.MNE37.2011",
+      "latitude": 46.56406,
+      "longitude": -92.505936,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14920361",
+      "product_id": "USArray.MNE36.2011",
+      "latitude": 46.494286,
+      "longitude": -93.42876,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14920139",
+      "product_id": "USArray.MNE35.2011",
+      "latitude": 46.57965,
+      "longitude": -94.336914,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14919917",
+      "product_id": "USArray.MND38.2011",
+      "latitude": 47.16518,
+      "longitude": -91.43903,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14919695",
+      "product_id": "USArray.MND37.2011",
+      "latitude": 47.149315,
+      "longitude": -92.29308,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14919473",
+      "product_id": "USArray.MND36.2011",
+      "latitude": 47.21132,
+      "longitude": -93.12606,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14919251",
+      "product_id": "USArray.MND35.2011",
+      "latitude": 47.15494,
+      "longitude": -93.93314,
+      "split": "calibration"
+    },
+    {
+      "spud_id": "14919029",
+      "product_id": "USArray.MIE40.2011",
+      "latitude": 46.48547,
+      "longitude": -89.72306,
+      "split": "buffer"
+    },
+    {
+      "spud_id": "14918807",
+      "product_id": "USArray.COQ21.2011",
+      "latitude": 38.88757,
+      "longitude": -107.65312,
+      "split": "train"
+    },
+    {
+      "spud_id": "14918585",
+      "product_id": "USArray.COQ20.2011",
+      "latitude": 39.01141,
+      "longitude": -108.3451,
+      "split": "train"
+    },
+    {
+      "spud_id": "14917919",
+      "product_id": "USArray.COP20.2011",
+      "latitude": 39.614803,
+      "longitude": -108.377235,
+      "split": "train"
+    },
+    {
+      "spud_id": "14917697",
+      "product_id": "USArray.COO21.2011",
+      "latitude": 40.25568,
+      "longitude": -107.44231,
+      "split": "train"
+    },
+    {
+      "spud_id": "14917475",
+      "product_id": "USArray.COO20.2011",
+      "latitude": 40.2693,
+      "longitude": -108.33108,
+      "split": "train"
+    },
+    {
+      "spud_id": "14917031",
+      "product_id": "USArray.CON21.2011",
+      "latitude": 40.907368,
+      "longitude": -107.38781,
+      "split": "train"
+    },
+    {
+      "spud_id": "14916809",
+      "product_id": "USArray.CON20.2011",
+      "latitude": 40.86178,
+      "longitude": -108.158875,
+      "split": "train"
+    },
+    {
+      "spud_id": "14916365",
+      "product_id": "USArray.NVQ09.2010",
+      "latitude": 38.8247,
+      "longitude": -117.192,
+      "split": "train"
+    },
+    {
+      "spud_id": "14916143",
+      "product_id": "USArray.NVQ08.2010",
+      "latitude": 38.9161,
+      "longitude": -118.196,
+      "split": "train"
+    },
+    {
+      "spud_id": "14915921",
+      "product_id": "USArray.NVP10.2010",
+      "latitude": 39.5488,
+      "longitude": -116.466,
+      "split": "train"
+    },
+    {
+      "spud_id": "14915699",
+      "product_id": "USArray.NVP09.2010",
+      "latitude": 39.5152,
+      "longitude": -117.481,
+      "split": "train"
+    },
+    {
+      "spud_id": "14915477",
+      "product_id": "USArray.NVP07.2010",
+      "latitude": 39.6261,
+      "longitude": -118.987,
+      "split": "train"
+    },
+    {
+      "spud_id": "14915255",
+      "product_id": "USArray.NVO11.2010",
+      "latitude": 40.135,
+      "longitude": -115.767,
+      "split": "train"
+    },
+    {
+      "spud_id": "14915033",
+      "product_id": "USArray.NVO10.2010",
+      "latitude": 40.0809,
+      "longitude": -116.65,
+      "split": "train"
+    },
+    {
+      "spud_id": "14914589",
+      "product_id": "USArray.NVO08.2010",
+      "latitude": 40.1825,
+      "longitude": -118.224,
+      "split": "train"
+    },
+    {
+      "spud_id": "14914367",
+      "product_id": "USArray.NVO07.2010",
+      "latitude": 40.1334,
+      "longitude": -119.036,
+      "split": "train"
+    },
+    {
+      "spud_id": "14914145",
+      "product_id": "USArray.NVN12.2010",
+      "latitude": 40.8351,
+      "longitude": -114.852,
+      "split": "train"
+    },
+    {
+      "spud_id": "14913923",
+      "product_id": "USArray.NVN10.2010",
+      "latitude": 40.8276,
+      "longitude": -116.578,
+      "split": "train"
+    },
+    {
+      "spud_id": "14913479",
+      "product_id": "USArray.NVN08.2010",
+      "latitude": 40.8433,
+      "longitude": -118.284,
+      "split": "train"
+    },
+    {
+      "spud_id": "14913035",
+      "product_id": "USArray.NVM13.2010",
+      "latitude": 41.4225,
+      "longitude": -114.121,
+      "split": "train"
+    },
+    {
+      "spud_id": "14912813",
+      "product_id": "USArray.NVM12.2010",
+      "latitude": 41.3729,
+      "longitude": -114.899,
+      "split": "train"
+    },
+    {
+      "spud_id": "14912591",
+      "product_id": "USArray.NVM11.2010",
+      "latitude": 41.4646,
+      "longitude": -115.783,
+      "split": "train"
+    },
+    {
+      "spud_id": "14912369",
+      "product_id": "USArray.NVM10.2010",
+      "latitude": 41.4667,
+      "longitude": -116.592,
+      "split": "train"
+    },
+    {
+      "spud_id": "14912147",
+      "product_id": "USArray.NVM09.2010",
+      "latitude": 41.5697,
+      "longitude": -117.547,
+      "split": "train"
+    },
+    {
+      "spud_id": "14911925",
+      "product_id": "USArray.NVM08.2010",
+      "latitude": 41.5517,
+      "longitude": -118.414,
+      "split": "train"
+    },
+    {
+      "spud_id": "14911481",
+      "product_id": "USArray.CAQ06.2010",
+      "latitude": 38.8258,
+      "longitude": -119.793,
+      "split": "train"
+    },
+    {
+      "spud_id": "14911259",
+      "product_id": "USArray.CAQ05.2010",
+      "latitude": 38.884796,
+      "longitude": -120.577,
+      "split": "train"
+    },
+    {
+      "spud_id": "14911037",
+      "product_id": "USArray.CAQ04.2010",
+      "latitude": 38.9632,
+      "longitude": -121.346,
+      "split": "train"
+    },
+    {
+      "spud_id": "14910815",
+      "product_id": "USArray.CAQ03.2010",
+      "latitude": 38.9778,
+      "longitude": -122.245,
+      "split": "train"
+    },
+    {
+      "spud_id": "14910593",
+      "product_id": "USArray.CAQ02.2010",
+      "latitude": 38.923626,
+      "longitude": -122.868,
+      "split": "train"
+    },
+    {
+      "spud_id": "14910371",
+      "product_id": "USArray.CAQ01.2010",
+      "latitude": 39.35465,
+      "longitude": -123.719,
+      "split": "train"
+    },
+    {
+      "spud_id": "14910149",
+      "product_id": "USArray.CAP05.2010",
+      "latitude": 39.505596,
+      "longitude": -120.719,
+      "split": "train"
+    },
+    {
+      "spud_id": "14909927",
+      "product_id": "USArray.CAP04.2010",
+      "latitude": 39.5914,
+      "longitude": -121.332,
+      "split": "train"
+    },
+    {
+      "spud_id": "14909705",
+      "product_id": "USArray.CAP03.2010",
+      "latitude": 39.6414,
+      "longitude": -122.352,
+      "split": "train"
+    },
+    {
+      "spud_id": "14909483",
+      "product_id": "USArray.CAP02.2010",
+      "latitude": 39.702976,
+      "longitude": -123.064,
+      "split": "train"
+    },
+    {
+      "spud_id": "14909261",
+      "product_id": "USArray.CAP01.2010",
+      "latitude": 40.0364,
+      "longitude": -123.766,
+      "split": "train"
+    },
+    {
+      "spud_id": "14909039",
+      "product_id": "USArray.CAO06.2010",
+      "latitude": 40.1042,
+      "longitude": -120.015,
+      "split": "train"
+    },
+    {
+      "spud_id": "14908817",
+      "product_id": "USArray.CAO05.2010",
+      "latitude": 40.247,
+      "longitude": -120.704,
+      "split": "train"
+    },
+    {
+      "spud_id": "14908595",
+      "product_id": "USArray.CAO04.2010",
+      "latitude": 40.217,
+      "longitude": -121.523,
+      "split": "train"
+    },
+    {
+      "spud_id": "14908373",
+      "product_id": "USArray.CAO03.2010",
+      "latitude": 40.293427,
+      "longitude": -122.515,
+      "split": "train"
+    },
+    {
+      "spud_id": "14908151",
+      "product_id": "USArray.CAO02.2010",
+      "latitude": 40.4668,
+      "longitude": -123.18,
+      "split": "train"
+    },
+    {
+      "spud_id": "14907929",
+      "product_id": "USArray.CAO01.2010",
+      "latitude": 40.6278,
+      "longitude": -123.935,
+      "split": "train"
+    },
+    {
+      "spud_id": "14907707",
+      "product_id": "USArray.CAN06.2010",
+      "latitude": 40.7856,
+      "longitude": -120.109,
+      "split": "train"
+    },
+    {
+      "spud_id": "14907485",
+      "product_id": "USArray.CAN05.2010",
+      "latitude": 40.76214,
+      "longitude": -120.794,
+      "split": "train"
+    },
+    {
+      "spud_id": "14907263",
+      "product_id": "USArray.CAN04.2010",
+      "latitude": 40.8194,
+      "longitude": -121.572,
+      "split": "train"
+    },
+    {
+      "spud_id": "14907041",
+      "product_id": "USArray.CAN03.2010",
+      "latitude": 41.0269,
+      "longitude": -121.971,
+      "split": "train"
+    },
+    {
+      "spud_id": "14906819",
+      "product_id": "USArray.CAN02.2010",
+      "latitude": 40.8663,
+      "longitude": -123.449,
+      "split": "train"
+    },
+    {
+      "spud_id": "14906597",
+      "product_id": "USArray.CAN01.2010",
+      "latitude": 41.1683,
+      "longitude": -124.091,
+      "split": "train"
+    },
+    {
+      "spud_id": "14906375",
+      "product_id": "USArray.CAM94.2010",
+      "latitude": 41.46129,
+      "longitude": -121.692,
+      "split": "train"
+    },
+    {
+      "spud_id": "14906153",
+      "product_id": "USArray.CAM06.2010",
+      "latitude": 41.5313,
+      "longitude": -120.021,
+      "split": "train"
+    },
+    {
+      "spud_id": "14905931",
+      "product_id": "USArray.CAM05.2010",
+      "latitude": 41.411507,
+      "longitude": -120.868,
+      "split": "train"
+    },
+    {
+      "spud_id": "14905487",
+      "product_id": "USArray.CAM03.2010",
+      "latitude": 41.491177,
+      "longitude": -122.62803,
+      "split": "train"
+    },
+    {
+      "spud_id": "14905265",
+      "product_id": "USArray.CAM02.2010",
+      "latitude": 41.6077,
+      "longitude": -123.403,
+      "split": "train"
+    },
+    {
+      "spud_id": "14905043",
+      "product_id": "USArray.WYYS3.2009",
+      "latitude": 44.5607,
+      "longitude": -110.315,
+      "split": "train"
+    },
+    {
+      "spud_id": "14904821",
+      "product_id": "USArray.WYYS2.2009",
+      "latitude": 44.39635,
+      "longitude": -110.577,
+      "split": "train"
+    },
+    {
+      "spud_id": "14904599",
+      "product_id": "USArray.WYYS1.2009",
+      "latitude": 44.7185,
+      "longitude": -110.638,
+      "split": "train"
+    },
+    {
+      "spud_id": "14904377",
+      "product_id": "USArray.WYL21.2009",
+      "latitude": 42.07785,
+      "longitude": -107.188,
+      "split": "train"
+    },
+    {
+      "spud_id": "14904155",
+      "product_id": "USArray.WYL20.2009",
+      "latitude": 42.1121,
+      "longitude": -107.975,
+      "split": "train"
+    },
+    {
+      "spud_id": "14903933",
+      "product_id": "USArray.WYL19.2009",
+      "latitude": 42.1353,
+      "longitude": -108.874,
+      "split": "train"
+    },
+    {
+      "spud_id": "14903711",
+      "product_id": "USArray.WYL18.2009",
+      "latitude": 42.14665,
+      "longitude": -109.6675,
+      "split": "train"
+    },
+    {
+      "spud_id": "14903489",
+      "product_id": "USArray.WYL17.2009",
+      "latitude": 42.1373,
+      "longitude": -110.548,
+      "split": "train"
+    },
+    {
+      "spud_id": "14903267",
+      "product_id": "USArray.WYK21.2009",
+      "latitude": 42.6767,
+      "longitude": -107.136,
+      "split": "train"
+    },
+    {
+      "spud_id": "14903045",
+      "product_id": "USArray.WYK20.2009",
+      "latitude": 42.6972,
+      "longitude": -108.034,
+      "split": "train"
+    },
+    {
+      "spud_id": "14902823",
+      "product_id": "USArray.WYK19.2009",
+      "latitude": 42.7201,
+      "longitude": -108.723,
+      "split": "train"
+    },
+    {
+      "spud_id": "14902601",
+      "product_id": "USArray.WYK18.2009",
+      "latitude": 42.6959,
+      "longitude": -109.651,
+      "split": "train"
+    },
+    {
+      "spud_id": "14902379",
+      "product_id": "USArray.WYK17.2009",
+      "latitude": 42.7674,
+      "longitude": -110.501,
+      "split": "train"
+    },
+    {
+      "spud_id": "14902157",
+      "product_id": "USArray.WYJ21.2009",
+      "latitude": 43.2965,
+      "longitude": -107.228,
+      "split": "train"
+    },
+    {
+      "spud_id": "14901935",
+      "product_id": "USArray.WYJ20.2009",
+      "latitude": 43.309,
+      "longitude": -108.086,
+      "split": "train"
+    },
+    {
+      "spud_id": "14901713",
+      "product_id": "USArray.WYJ19.2009",
+      "latitude": 43.2326,
+      "longitude": -108.89,
+      "split": "train"
+    },
+    {
+      "spud_id": "14901491",
+      "product_id": "USArray.WYJ18.2009",
+      "latitude": 43.3027,
+      "longitude": -109.955,
+      "split": "train"
+    },
+    {
+      "spud_id": "14901269",
+      "product_id": "USArray.WYJ17.2009",
+      "latitude": 43.2694,
+      "longitude": -110.64,
+      "split": "train"
+    },
+    {
+      "spud_id": "14901047",
+      "product_id": "USArray.WYI21.2009",
+      "latitude": 43.9706,
+      "longitude": -107.251,
+      "split": "train"
+    },
+    {
+      "spud_id": "14900825",
+      "product_id": "USArray.WYI20.2009",
+      "latitude": 43.94685,
+      "longitude": -108.148,
+      "split": "train"
+    },
+    {
+      "spud_id": "14900603",
+      "product_id": "USArray.WYI19.2009",
+      "latitude": 43.8936,
+      "longitude": -108.799,
+      "split": "train"
+    },
+    {
+      "spud_id": "14900381",
+      "product_id": "USArray.WYI18.2009",
+      "latitude": 43.6924,
+      "longitude": -109.616,
+      "split": "train"
+    },
+    {
+      "spud_id": "14900159",
+      "product_id": "USArray.WYI17.2009",
+      "latitude": 43.921,
+      "longitude": -110.574,
+      "split": "train"
+    },
+    {
+      "spud_id": "14899937",
+      "product_id": "USArray.WYH21.2009",
+      "latitude": 44.4913,
+      "longitude": -106.828,
+      "split": "train"
+    },
+    {
+      "spud_id": "14899715",
+      "product_id": "USArray.WYH20.2009",
+      "latitude": 44.4989,
+      "longitude": -108.024,
+      "split": "train"
+    },
+    {
+      "spud_id": "14899493",
+      "product_id": "USArray.WYH19.2009",
+      "latitude": 44.5487,
+      "longitude": -108.865,
+      "split": "train"
+    },
+    {
+      "spud_id": "14899271",
+      "product_id": "USArray.WYH18.2009",
+      "latitude": 44.6759,
+      "longitude": -109.665,
+      "split": "train"
+    },
+    {
+      "spud_id": "14899049",
+      "product_id": "USArray.WYG21.2009",
+      "latitude": 44.96555,
+      "longitude": -107.183,
+      "split": "train"
+    },
+    {
+      "spud_id": "14898827",
+      "product_id": "USArray.MTG20.2009",
+      "latitude": 45.1823,
+      "longitude": -108.233,
+      "split": "train"
+    },
+    {
+      "spud_id": "14898605",
+      "product_id": "USArray.MTG19.2009",
+      "latitude": 45.1879,
+      "longitude": -108.91,
+      "split": "train"
+    },
+    {
+      "spud_id": "14898383",
+      "product_id": "USArray.MTG18.2009",
+      "latitude": 45.3061,
+      "longitude": -109.518,
+      "split": "train"
+    },
+    {
+      "spud_id": "14898161",
+      "product_id": "USArray.MTF21.2009",
+      "latitude": 45.8786,
+      "longitude": -107.177,
+      "split": "train"
+    },
+    {
+      "spud_id": "14897939",
+      "product_id": "USArray.MTF20.2009",
+      "latitude": 45.7972,
+      "longitude": -108.049,
+      "split": "train"
+    },
+    {
+      "spud_id": "14897717",
+      "product_id": "USArray.MTF19.2009",
+      "latitude": 45.8405,
+      "longitude": -108.865,
+      "split": "train"
+    },
+    {
+      "spud_id": "14897495",
+      "product_id": "USArray.MTF18.2009",
+      "latitude": 45.7868,
+      "longitude": -109.679,
+      "split": "train"
+    },
+    {
+      "spud_id": "14897273",
+      "product_id": "USArray.MTE21.2009",
+      "latitude": 46.4917,
+      "longitude": -107.019,
+      "split": "train"
+    },
+    {
+      "spud_id": "14897051",
+      "product_id": "USArray.MTE20.2009",
+      "latitude": 46.5861,
+      "longitude": -108.013,
+      "split": "train"
+    },
+    {
+      "spud_id": "14896829",
+      "product_id": "USArray.MTE19.2009",
+      "latitude": 46.5063,
+      "longitude": -108.775,
+      "split": "train"
+    },
+    {
+      "spud_id": "14896607",
+      "product_id": "USArray.MTE18.2009",
+      "latitude": 46.4909,
+      "longitude": -109.786,
+      "split": "train"
+    },
+    {
+      "spud_id": "14896385",
+      "product_id": "USArray.MTD21.2009",
+      "latitude": 47.0966,
+      "longitude": -106.856,
+      "split": "train"
+    },
+    {
+      "spud_id": "14896163",
+      "product_id": "USArray.MTD20.2009",
+      "latitude": 47.1085,
+      "longitude": -107.978,
+      "split": "train"
+    },
+    {
+      "spud_id": "14895941",
+      "product_id": "USArray.MTD19.2009",
+      "latitude": 47.1483,
+      "longitude": -108.818,
+      "split": "train"
+    },
+    {
+      "spud_id": "14895719",
+      "product_id": "USArray.MTD18.2009",
+      "latitude": 47.15125,
+      "longitude": -109.82225,
+      "split": "train"
+    },
+    {
+      "spud_id": "14895497",
+      "product_id": "USArray.MTC21.2009",
+      "latitude": 47.8401,
+      "longitude": -106.878,
+      "split": "train"
+    },
+    {
+      "spud_id": "14895275",
+      "product_id": "USArray.MTC20.2009",
+      "latitude": 47.7552,
+      "longitude": -108.0,
+      "split": "train"
+    },
+    {
+      "spud_id": "14895053",
+      "product_id": "USArray.MTC19.2009",
+      "latitude": 47.7578,
+      "longitude": -108.765,
+      "split": "train"
+    },
+    {
+      "spud_id": "14894831",
+      "product_id": "USArray.MTC18.2009",
+      "latitude": 47.7563,
+      "longitude": -109.693,
+      "split": "train"
+    },
+    {
+      "spud_id": "14894609",
+      "product_id": "USArray.MTB21.2009",
+      "latitude": 48.3517,
+      "longitude": -107.056,
+      "split": "train"
+    },
+    {
+      "spud_id": "14894387",
+      "product_id": "USArray.MTB20.2009",
+      "latitude": 48.2769,
+      "longitude": -107.973,
+      "split": "train"
+    },
+    {
+      "spud_id": "14894165",
+      "product_id": "USArray.MTB19.2009",
+      "latitude": 48.42815,
+      "longitude": -108.904,
+      "split": "train"
+    },
+    {
+      "spud_id": "14893943",
+      "product_id": "USArray.MTB18.2009",
+      "latitude": 48.4444,
+      "longitude": -109.796,
+      "split": "train"
+    },
+    {
+      "spud_id": "14893721",
+      "product_id": "USArray.MTH16.2008",
+      "latitude": 44.6047,
+      "longitude": -111.565,
+      "split": "train"
+    },
+    {
+      "spud_id": "14893499",
+      "product_id": "USArray.MTH15.2008",
+      "latitude": 44.6776,
+      "longitude": -112.485,
+      "split": "train"
+    },
+    {
+      "spud_id": "14893277",
+      "product_id": "USArray.MTG17.2008",
+      "latitude": 45.269325,
+      "longitude": -110.455,
+      "split": "train"
+    },
+    {
+      "spud_id": "14893055",
+      "product_id": "USArray.MTG16.2008",
+      "latitude": 45.24855,
+      "longitude": -111.615,
+      "split": "train"
+    },
+    {
+      "spud_id": "14892847",
+      "product_id": "USArray.MTG15.2008",
+      "latitude": 45.178226,
+      "longitude": -112.52375,
+      "split": "train"
+    },
+    {
+      "spud_id": "14892625",
+      "product_id": "USArray.MTG14.2008",
+      "latitude": 45.185505,
+      "longitude": -113.38,
+      "split": "train"
+    },
+    {
+      "spud_id": "14892403",
+      "product_id": "USArray.MTF17.2008",
+      "latitude": 45.874374,
+      "longitude": -110.434,
+      "split": "train"
+    },
+    {
+      "spud_id": "14892181",
+      "product_id": "USArray.MTF16.2008",
+      "latitude": 45.8034,
+      "longitude": -111.599,
+      "split": "train"
+    },
+    {
+      "spud_id": "14891959",
+      "product_id": "USArray.MTF15.2008",
+      "latitude": 45.8602,
+      "longitude": -112.476,
+      "split": "train"
+    },
+    {
+      "spud_id": "14891737",
+      "product_id": "USArray.MTF14.2008",
+      "latitude": 45.8695,
+      "longitude": -113.362,
+      "split": "train"
+    },
+    {
+      "spud_id": "14891515",
+      "product_id": "USArray.MTF13.2008",
+      "latitude": 45.774174,
+      "longitude": -114.33,
+      "split": "train"
+    },
+    {
+      "spud_id": "14891293",
+      "product_id": "USArray.MTE17.2008",
+      "latitude": 46.5797,
+      "longitude": -110.671,
+      "split": "train"
+    },
+    {
+      "spud_id": "14891071",
+      "product_id": "USArray.MTE16.2008",
+      "latitude": 46.526375,
+      "longitude": -111.536,
+      "split": "train"
+    },
+    {
+      "spud_id": "14890849",
+      "product_id": "USArray.MTE15.2008",
+      "latitude": 46.5276,
+      "longitude": -112.519,
+      "split": "train"
+    },
+    {
+      "spud_id": "14890627",
+      "product_id": "USArray.MTE14.2008",
+      "latitude": 46.4509,
+      "longitude": -113.334,
+      "split": "train"
+    },
+    {
+      "spud_id": "14890405",
+      "product_id": "USArray.MTE13.2008",
+      "latitude": 46.4153,
+      "longitude": -114.205,
+      "split": "train"
+    },
+    {
+      "spud_id": "14890197",
+      "product_id": "USArray.MTD17.2008",
+      "latitude": 47.122776,
+      "longitude": -110.525,
+      "split": "train"
+    },
+    {
+      "spud_id": "14889975",
+      "product_id": "USArray.MTD16.2008",
+      "latitude": 47.0342,
+      "longitude": -111.617,
+      "split": "train"
+    },
+    {
+      "spud_id": "14889753",
+      "product_id": "USArray.MTD15.2008",
+      "latitude": 47.0515,
+      "longitude": -112.496,
+      "split": "train"
+    },
+    {
+      "spud_id": "14889531",
+      "product_id": "USArray.MTD14.2008",
+      "latitude": 47.02094,
+      "longitude": -113.40175,
+      "split": "train"
+    },
+    {
+      "spud_id": "14889309",
+      "product_id": "USArray.MTD13.2008",
+      "latitude": 47.0937,
+      "longitude": -114.4,
+      "split": "train"
+    },
+    {
+      "spud_id": "14889087",
+      "product_id": "USArray.MTC17.2008",
+      "latitude": 47.7285,
+      "longitude": -110.653,
+      "split": "train"
+    },
+    {
+      "spud_id": "14888865",
+      "product_id": "USArray.MTC16.2008",
+      "latitude": 47.7553,
+      "longitude": -111.604,
+      "split": "train"
+    },
+    {
+      "spud_id": "14888643",
+      "product_id": "USArray.MTC15.2008",
+      "latitude": 47.7454,
+      "longitude": -112.507,
+      "split": "train"
+    },
+    {
+      "spud_id": "14888421",
+      "product_id": "USArray.MTC14.2008",
+      "latitude": 47.8401,
+      "longitude": -113.429,
+      "split": "train"
+    },
+    {
+      "spud_id": "14888199",
+      "product_id": "USArray.MTC13.2008",
+      "latitude": 47.8424,
+      "longitude": -114.559,
+      "split": "train"
+    },
+    {
+      "spud_id": "14887977",
+      "product_id": "USArray.MTC12.2008",
+      "latitude": 47.8885,
+      "longitude": -115.454,
+      "split": "train"
+    },
+    {
+      "spud_id": "14887755",
+      "product_id": "USArray.MTB17.2008",
+      "latitude": 48.3946,
+      "longitude": -110.773,
+      "split": "train"
+    },
+    {
+      "spud_id": "14887533",
+      "product_id": "USArray.MTB16.2008",
+      "latitude": 48.3131,
+      "longitude": -111.545,
+      "split": "train"
+    },
+    {
+      "spud_id": "14887311",
+      "product_id": "USArray.MTB15.2008",
+      "latitude": 48.3131,
+      "longitude": -112.447,
+      "split": "train"
+    },
+    {
+      "spud_id": "14887089",
+      "product_id": "USArray.MTB14.2008",
+      "latitude": 48.3106,
+      "longitude": -113.325,
+      "split": "train"
+    },
+    {
+      "spud_id": "14886867",
+      "product_id": "USArray.MTB13.2008",
+      "latitude": 48.3728,
+      "longitude": -114.454,
+      "split": "train"
+    },
+    {
+      "spud_id": "14886645",
+      "product_id": "USArray.MTB12.2008",
+      "latitude": 48.4479,
+      "longitude": -115.563,
+      "split": "train"
+    },
+    {
+      "spud_id": "14886437",
+      "product_id": "USArray.M2E13.2008",
+      "latitude": 46.41525,
+      "longitude": -114.211,
+      "split": "train"
+    },
+    {
+      "spud_id": "14886215",
+      "product_id": "USArray.IDL16.2008",
+      "latitude": 42.078026,
+      "longitude": -111.43499,
+      "split": "train"
+    },
+    {
+      "spud_id": "14885993",
+      "product_id": "USArray.IDL15.2008",
+      "latitude": 42.0165,
+      "longitude": -112.41495,
+      "split": "train"
+    },
+    {
+      "spud_id": "14885771",
+      "product_id": "USArray.IDL14.2008",
+      "latitude": 42.0407,
+      "longitude": -113.192,
+      "split": "train"
+    },
+    {
+      "spud_id": "14885549",
+      "product_id": "USArray.IDL13.2008",
+      "latitude": 42.0468,
+      "longitude": -113.988,
+      "split": "train"
+    },
+    {
+      "spud_id": "14885327",
+      "product_id": "USArray.IDL12.2008",
+      "latitude": 42.0784,
+      "longitude": -115.056,
+      "split": "train"
+    },
+    {
+      "spud_id": "14885105",
+      "product_id": "USArray.IDK16.2008",
+      "latitude": 42.6996,
+      "longitude": -111.425,
+      "split": "train"
+    },
+    {
+      "spud_id": "14884883",
+      "product_id": "USArray.IDK15.2008",
+      "latitude": 42.717857,
+      "longitude": -112.38,
+      "split": "train"
+    },
+    {
+      "spud_id": "14884661",
+      "product_id": "USArray.IDK14.2008",
+      "latitude": 42.5686,
+      "longitude": -113.243,
+      "split": "train"
+    },
+    {
+      "spud_id": "14884439",
+      "product_id": "USArray.IDK13.2008",
+      "latitude": 42.674576,
+      "longitude": -114.065,
+      "split": "train"
+    },
+    {
+      "spud_id": "14884217",
+      "product_id": "USArray.IDK12.2008",
+      "latitude": 42.6155,
+      "longitude": -114.913,
+      "split": "train"
+    },
+    {
+      "spud_id": "14883995",
+      "product_id": "USArray.IDJ16.2008",
+      "latitude": 43.3319,
+      "longitude": -111.557,
+      "split": "train"
+    },
+    {
+      "spud_id": "14883773",
+      "product_id": "USArray.IDJ15.2008",
+      "latitude": 43.4197,
+      "longitude": -112.432,
+      "split": "train"
+    },
+    {
+      "spud_id": "14883551",
+      "product_id": "USArray.IDJ14.2008",
+      "latitude": 43.3865,
+      "longitude": -113.271,
+      "split": "train"
+    },
+    {
+      "spud_id": "14883329",
+      "product_id": "USArray.IDJ13.2008",
+      "latitude": 43.337,
+      "longitude": -114.071,
+      "split": "train"
+    },
+    {
+      "spud_id": "14883107",
+      "product_id": "USArray.IDJ12.2008",
+      "latitude": 43.3112,
+      "longitude": -115.137,
+      "split": "train"
+    },
+    {
+      "spud_id": "14882885",
+      "product_id": "USArray.IDI16.2008",
+      "latitude": 43.9686,
+      "longitude": -111.473,
+      "split": "train"
+    },
+    {
+      "spud_id": "14882663",
+      "product_id": "USArray.IDI15.2008",
+      "latitude": 43.982975,
+      "longitude": -112.453,
+      "split": "train"
+    },
+    {
+      "spud_id": "14882441",
+      "product_id": "USArray.IDI14.2008",
+      "latitude": 43.9464,
+      "longitude": -113.22,
+      "split": "train"
+    },
+    {
+      "spud_id": "14882219",
+      "product_id": "USArray.IDI13.2008",
+      "latitude": 43.9374,
+      "longitude": -114.126,
+      "split": "train"
+    },
+    {
+      "spud_id": "14881997",
+      "product_id": "USArray.IDI12.2008",
+      "latitude": 43.8198,
+      "longitude": -115.101,
+      "split": "train"
+    },
+    {
+      "spud_id": "14881775",
+      "product_id": "USArray.IDH14.2008",
+      "latitude": 44.610874,
+      "longitude": -113.433,
+      "split": "train"
+    },
+    {
+      "spud_id": "14881553",
+      "product_id": "USArray.IDH13.2008",
+      "latitude": 44.5454,
+      "longitude": -114.325,
+      "split": "train"
+    },
+    {
+      "spud_id": "14881331",
+      "product_id": "USArray.IDG13.2008",
+      "latitude": 45.13655,
+      "longitude": -114.154,
+      "split": "train"
+    },
+    {
+      "spud_id": "14881109",
+      "product_id": "USArray.IDG12.2008",
+      "latitude": 45.0779,
+      "longitude": -115.347,
+      "split": "train"
+    },
+    {
+      "spud_id": "14880887",
+      "product_id": "USArray.IDE12.2008",
+      "latitude": 46.3871,
+      "longitude": -115.582,
+      "split": "train"
+    },
+    {
+      "spud_id": "14880665",
+      "product_id": "USArray.IDD12.2008",
+      "latitude": 47.0478,
+      "longitude": -115.348,
+      "split": "train"
+    },
+    {
+      "spud_id": "14880443",
+      "product_id": "USArray.IDC11.2008",
+      "latitude": 47.839024,
+      "longitude": -116.273,
+      "split": "train"
+    },
+    {
+      "spud_id": "14880221",
+      "product_id": "USArray.WAF07.2007",
+      "latitude": 45.9519,
+      "longitude": -119.92,
+      "split": "train"
+    },
+    {
+      "spud_id": "14879999",
+      "product_id": "USArray.WAF06.2007",
+      "latitude": 45.85131,
+      "longitude": -120.64406,
+      "split": "train"
+    },
+    {
+      "spud_id": "14879777",
+      "product_id": "USArray.WAF05.2007",
+      "latitude": 45.8506,
+      "longitude": -121.465,
+      "split": "train"
+    },
+    {
+      "spud_id": "14879555",
+      "product_id": "USArray.WAF04.2007",
+      "latitude": 45.929893,
+      "longitude": -122.45306,
+      "split": "train"
+    },
+    {
+      "spud_id": "14879333",
+      "product_id": "USArray.WAE10.2007",
+      "latitude": 46.610607,
+      "longitude": -117.1429,
+      "split": "train"
+    },
+    {
+      "spud_id": "14879111",
+      "product_id": "USArray.WAE09.2007",
+      "latitude": 46.475376,
+      "longitude": -118.056046,
+      "split": "train"
+    },
+    {
+      "spud_id": "14878889",
+      "product_id": "USArray.WAE08.2007",
+      "latitude": 46.617195,
+      "longitude": -119.121086,
+      "split": "train"
+    },
+    {
+      "spud_id": "14878667",
+      "product_id": "USArray.WAE07.2007",
+      "latitude": 46.514797,
+      "longitude": -119.91205,
+      "split": "train"
+    },
+    {
+      "spud_id": "14878445",
+      "product_id": "USArray.WAE06.2007",
+      "latitude": 46.560703,
+      "longitude": -120.852066,
+      "split": "train"
+    },
+    {
+      "spud_id": "14878223",
+      "product_id": "USArray.WAE05.2007",
+      "latitude": 46.5282,
+      "longitude": -121.791,
+      "split": "train"
+    },
+    {
+      "spud_id": "14878001",
+      "product_id": "USArray.WAE04.2007",
+      "latitude": 46.537495,
+      "longitude": -122.665054,
+      "split": "train"
+    },
+    {
+      "spud_id": "14877779",
+      "product_id": "USArray.WAE03.2007",
+      "latitude": 46.552544,
+      "longitude": -123.64201,
+      "split": "train"
+    },
+    {
+      "spud_id": "14877557",
+      "product_id": "USArray.WAD10.2007",
+      "latitude": 47.05959,
+      "longitude": -117.307884,
+      "split": "train"
+    },
+    {
+      "spud_id": "14877335",
+      "product_id": "USArray.WAD09.2007",
+      "latitude": 47.227406,
+      "longitude": -118.05807,
+      "split": "train"
+    },
+    {
+      "spud_id": "14877113",
+      "product_id": "USArray.WAD08.2007",
+      "latitude": 47.20131,
+      "longitude": -118.96096,
+      "split": "train"
+    },
+    {
+      "spud_id": "14876891",
+      "product_id": "USArray.WAD07.2007",
+      "latitude": 47.26737,
+      "longitude": -119.935936,
+      "split": "train"
+    },
+    {
+      "spud_id": "14876669",
+      "product_id": "USArray.WAD06.2007",
+      "latitude": 47.316692,
+      "longitude": -120.854126,
+      "split": "train"
+    },
+    {
+      "spud_id": "14876447",
+      "product_id": "USArray.WAD05.2007",
+      "latitude": 47.2648,
+      "longitude": -122.04196,
+      "split": "train"
+    },
+    {
+      "spud_id": "14876225",
+      "product_id": "USArray.WAD04.2007",
+      "latitude": 47.0675,
+      "longitude": -122.80599,
+      "split": "train"
+    },
+    {
+      "spud_id": "14876003",
+      "product_id": "USArray.WAD03.2007",
+      "latitude": 47.17411,
+      "longitude": -124.096115,
+      "split": "train"
+    },
+    {
+      "spud_id": "14875781",
+      "product_id": "USArray.WAC10.2007",
+      "latitude": 47.811905,
+      "longitude": -117.284096,
+      "split": "train"
+    },
+    {
+      "spud_id": "14875559",
+      "product_id": "USArray.WAC09.2007",
+      "latitude": 47.8214,
+      "longitude": -118.2,
+      "split": "train"
+    },
+    {
+      "spud_id": "14875337",
+      "product_id": "USArray.WAC08.2007",
+      "latitude": 47.770004,
+      "longitude": -119.17405,
+      "split": "train"
+    },
+    {
+      "spud_id": "14875115",
+      "product_id": "USArray.WAC07.2007",
+      "latitude": 47.803684,
+      "longitude": -119.91197,
+      "split": "train"
+    },
+    {
+      "spud_id": "14874893",
+      "product_id": "USArray.WAC06.2007",
+      "latitude": 47.88108,
+      "longitude": -120.66612,
+      "split": "train"
+    },
+    {
+      "spud_id": "14874671",
+      "product_id": "USArray.WAC05.2007",
+      "latitude": 47.899292,
+      "longitude": -121.72095,
+      "split": "train"
+    },
+    {
+      "spud_id": "14874449",
+      "product_id": "USArray.WAC04.2007",
+      "latitude": 47.86249,
+      "longitude": -122.781944,
+      "split": "train"
+    },
+    {
+      "spud_id": "14874227",
+      "product_id": "USArray.WAC03.2007",
+      "latitude": 47.61745,
+      "longitude": -124.19213,
+      "split": "train"
+    },
+    {
+      "spud_id": "14874005",
+      "product_id": "USArray.WAB10.2007",
+      "latitude": 48.264233,
+      "longitude": -117.32905,
+      "split": "train"
+    },
+    {
+      "spud_id": "14873783",
+      "product_id": "USArray.WAB09.2007",
+      "latitude": 48.3227,
+      "longitude": -118.07801,
+      "split": "train"
+    },
+    {
+      "spud_id": "14873575",
+      "product_id": "USArray.WAB08.2007",
+      "latitude": 48.5673,
+      "longitude": -119.43,
+      "split": "train"
+    },
+    {
+      "spud_id": "14873353",
+      "product_id": "USArray.WAB07.2007",
+      "latitude": 48.506695,
+      "longitude": -120.263985,
+      "split": "train"
+    },
+    {
+      "spud_id": "14873131",
+      "product_id": "USArray.WAB06.2007",
+      "latitude": 48.5211,
+      "longitude": -121.387115,
+      "split": "train"
+    },
+    {
+      "spud_id": "14872909",
+      "product_id": "USArray.WAB05.2007",
+      "latitude": 48.191513,
+      "longitude": -122.04037,
+      "split": "train"
+    },
+    {
+      "spud_id": "14872687",
+      "product_id": "USArray.WAB04.2007",
+      "latitude": 48.0724,
+      "longitude": -123.517975,
+      "split": "train"
+    },
+    {
+      "spud_id": "14872465",
+      "product_id": "USArray.WAB03.2007",
+      "latitude": 48.032104,
+      "longitude": -124.369,
+      "split": "train"
+    },
+    {
+      "spud_id": "14872243",
+      "product_id": "USArray.WAA10.2007",
+      "latitude": 48.9268,
+      "longitude": -117.597,
+      "split": "train"
+    },
+    {
+      "spud_id": "14872021",
+      "product_id": "USArray.WAA05.2007",
+      "latitude": 48.985786,
+      "longitude": -122.11806,
+      "split": "train"
+    },
+    {
+      "spud_id": "14871799",
+      "product_id": "USArray.WAA04.2007",
+      "latitude": 48.724407,
+      "longitude": -122.71195,
+      "split": "train"
+    },
+    {
+      "spud_id": "14871577",
+      "product_id": "USArray.ORL06.2007",
+      "latitude": 42.0785,
+      "longitude": -120.136,
+      "split": "train"
+    },
+    {
+      "spud_id": "14871355",
+      "product_id": "USArray.ORL05.2007",
+      "latitude": 42.0037,
+      "longitude": -121.001,
+      "split": "train"
+    },
+    {
+      "spud_id": "14871133",
+      "product_id": "USArray.ORL04.2007",
+      "latitude": 42.08859,
+      "longitude": -121.88294,
+      "split": "train"
+    },
+    {
+      "spud_id": "14870911",
+      "product_id": "USArray.ORL03.2007",
+      "latitude": 42.18689,
+      "longitude": -122.606,
+      "split": "train"
+    },
+    {
+      "spud_id": "14870689",
+      "product_id": "USArray.ORL02.2007",
+      "latitude": 42.1936,
+      "longitude": -123.66896,
+      "split": "train"
+    },
+    {
+      "spud_id": "14870467",
+      "product_id": "USArray.ORK05.2007",
+      "latitude": 42.717697,
+      "longitude": -120.89695,
+      "split": "train"
+    },
+    {
+      "spud_id": "14870245",
+      "product_id": "USArray.ORK04.2007",
+      "latitude": 42.59839,
+      "longitude": -121.76292,
+      "split": "train"
+    },
+    {
+      "spud_id": "14870023",
+      "product_id": "USArray.ORK03.2007",
+      "latitude": 42.622787,
+      "longitude": -122.62209,
+      "split": "train"
+    },
+    {
+      "spud_id": "14869801",
+      "product_id": "USArray.ORK02.2007",
+      "latitude": 42.785095,
+      "longitude": -123.37208,
+      "split": "train"
+    },
+    {
+      "spud_id": "14869579",
+      "product_id": "USArray.ORK01.2007",
+      "latitude": 42.824013,
+      "longitude": -124.50464,
+      "split": "train"
+    },
+    {
+      "spud_id": "14869357",
+      "product_id": "USArray.ORJ04.2007",
+      "latitude": 43.14969,
+      "longitude": -121.925026,
+      "split": "train"
+    },
+    {
+      "spud_id": "14869135",
+      "product_id": "USArray.ORJ03.2007",
+      "latitude": 43.3725,
+      "longitude": -122.96,
+      "split": "train"
+    },
+    {
+      "spud_id": "14868913",
+      "product_id": "USArray.ORJ02.2007",
+      "latitude": 43.354595,
+      "longitude": -123.51191,
+      "split": "train"
+    },
+    {
+      "spud_id": "14868691",
+      "product_id": "USArray.ORI04.2007",
+      "latitude": 43.76815,
+      "longitude": -122.46207,
+      "split": "train"
+    },
+    {
+      "spud_id": "14868469",
+      "product_id": "USArray.ORI03.2007",
+      "latitude": 43.974,
+      "longitude": -123.278,
+      "split": "train"
+    },
+    {
+      "spud_id": "14868247",
+      "product_id": "USArray.ORI02.2007",
+      "latitude": 43.9737,
+      "longitude": -123.814,
+      "split": "train"
+    },
+    {
+      "spud_id": "14868025",
+      "product_id": "USArray.ORH04.2007",
+      "latitude": 44.691017,
+      "longitude": -122.17796,
+      "split": "train"
+    },
+    {
+      "spud_id": "14867803",
+      "product_id": "USArray.ORH02.2007",
+      "latitude": 44.67822,
+      "longitude": -124.00612,
+      "split": "train"
+    },
+    {
+      "spud_id": "14867581",
+      "product_id": "USArray.ORG05.2007",
+      "latitude": 45.243202,
+      "longitude": -121.31502,
+      "split": "train"
+    },
+    {
+      "spud_id": "14867359",
+      "product_id": "USArray.ORG04.2007",
+      "latitude": 45.221905,
+      "longitude": -122.45098,
+      "split": "train"
+    },
+    {
+      "spud_id": "14867137",
+      "product_id": "USArray.ORG03.2007",
+      "latitude": 45.326027,
+      "longitude": -123.24502,
+      "split": "train"
+    },
+    {
+      "spud_id": "14866915",
+      "product_id": "USArray.ORF03.2007",
+      "latitude": 45.9328,
+      "longitude": -123.554,
+      "split": "train"
+    },
+    {
+      "spud_id": "14866693",
+      "product_id": "USArray.IDL11.2007",
+      "latitude": 42.15286,
+      "longitude": -115.7501,
+      "split": "train"
+    },
+    {
+      "spud_id": "14866471",
+      "product_id": "USArray.IDL10.2007",
+      "latitude": 42.079193,
+      "longitude": -116.47711,
+      "split": "train"
+    },
+    {
+      "spud_id": "14866249",
+      "product_id": "USArray.IDK11.2007",
+      "latitude": 42.7323,
+      "longitude": -115.86802,
+      "split": "train"
+    },
+    {
+      "spud_id": "14866027",
+      "product_id": "USArray.IDK10.2007",
+      "latitude": 42.774796,
+      "longitude": -116.86889,
+      "split": "train"
+    },
+    {
+      "spud_id": "14865805",
+      "product_id": "USArray.IDJ11.2007",
+      "latitude": 43.436306,
+      "longitude": -115.936966,
+      "split": "train"
+    },
+    {
+      "spud_id": "14865583",
+      "product_id": "USArray.IDJ10.2007",
+      "latitude": 43.463013,
+      "longitude": -116.78995,
+      "split": "train"
+    },
+    {
+      "spud_id": "14865361",
+      "product_id": "USArray.IDI11.2007",
+      "latitude": 43.91746,
+      "longitude": -115.962006,
+      "split": "train"
+    },
+    {
+      "spud_id": "14865139",
+      "product_id": "USArray.IDI10.2007",
+      "latitude": 44.052006,
+      "longitude": -116.83008,
+      "split": "train"
+    },
+    {
+      "spud_id": "14864917",
+      "product_id": "USArray.IDH12.2007",
+      "latitude": 44.55838,
+      "longitude": -114.8468,
+      "split": "train"
+    },
+    {
+      "spud_id": "14864695",
+      "product_id": "USArray.IDH11.2007",
+      "latitude": 44.714195,
+      "longitude": -116.00997,
+      "split": "train"
+    },
+    {
+      "spud_id": "14864473",
+      "product_id": "USArray.IDH10.2007",
+      "latitude": 44.646107,
+      "longitude": -116.69211,
+      "split": "train"
+    },
+    {
+      "spud_id": "14864251",
+      "product_id": "USArray.IDG11.2007",
+      "latitude": 45.398994,
+      "longitude": -116.279015,
+      "split": "train"
+    },
+    {
+      "spud_id": "14864029",
+      "product_id": "USArray.IDF12.2007",
+      "latitude": 45.766598,
+      "longitude": -115.223,
+      "split": "train"
+    },
+    {
+      "spud_id": "14863807",
+      "product_id": "USArray.IDF11.2007",
+      "latitude": 45.889496,
+      "longitude": -116.15711,
+      "split": "train"
+    },
+    {
+      "spud_id": "14863585",
+      "product_id": "USArray.IDE11.2007",
+      "latitude": 46.353,
+      "longitude": -116.21297,
+      "split": "train"
+    },
+    {
+      "spud_id": "14863363",
+      "product_id": "USArray.IDD11.2007",
+      "latitude": 47.043987,
+      "longitude": -116.345985,
+      "split": "train"
+    },
+    {
+      "spud_id": "14863141",
+      "product_id": "USArray.IDB11.2007",
+      "latitude": 48.391403,
+      "longitude": -116.42294,
+      "split": "train"
+    },
+    {
+      "spud_id": "14862919",
+      "product_id": "USArray.IDA11.2007",
+      "latitude": 48.93539,
+      "longitude": -116.44388,
+      "split": "train"
+    },
+    {
+      "spud_id": "14862697",
+      "product_id": "USArray.CAM01.2007",
+      "latitude": 41.87624,
+      "longitude": -124.19001,
+      "split": "train"
+    },
+    {
+      "spud_id": "14862475",
+      "product_id": "USArray.ORL09.2006",
+      "latitude": 42.085064,
+      "longitude": -117.55217,
+      "split": "train"
+    },
+    {
+      "spud_id": "14862253",
+      "product_id": "USArray.ORL08.2006",
+      "latitude": 42.19436,
+      "longitude": -118.33897,
+      "split": "train"
+    },
+    {
+      "spud_id": "14862031",
+      "product_id": "USArray.ORL07.2006",
+      "latitude": 42.01184,
+      "longitude": -119.32979,
+      "split": "train"
+    },
+    {
+      "spud_id": "14861809",
+      "product_id": "USArray.ORK09.2006",
+      "latitude": 42.695,
+      "longitude": -117.730034,
+      "split": "train"
+    },
+    {
+      "spud_id": "14861587",
+      "product_id": "USArray.ORK08.2006",
+      "latitude": 42.725002,
+      "longitude": -118.454544,
+      "split": "train"
+    },
+    {
+      "spud_id": "14861365",
+      "product_id": "USArray.ORK07.2006",
+      "latitude": 42.690823,
+      "longitude": -119.25255,
+      "split": "train"
+    },
+    {
+      "spud_id": "14861143",
+      "product_id": "USArray.ORK06.2006",
+      "latitude": 42.791584,
+      "longitude": -120.24495,
+      "split": "train"
+    },
+    {
+      "spud_id": "14860921",
+      "product_id": "USArray.ORJ09.2006",
+      "latitude": 43.362526,
+      "longitude": -117.74547,
+      "split": "train"
+    },
+    {
+      "spud_id": "14860699",
+      "product_id": "USArray.ORJ08.2006",
+      "latitude": 43.35,
+      "longitude": -118.47189,
+      "split": "train"
+    },
+    {
+      "spud_id": "14860477",
+      "product_id": "USArray.ORJ07.2006",
+      "latitude": 43.36973,
+      "longitude": -119.31097,
+      "split": "train"
+    },
+    {
+      "spud_id": "14860255",
+      "product_id": "USArray.ORJ06.2006",
+      "latitude": 43.28132,
+      "longitude": -120.09449,
+      "split": "train"
+    },
+    {
+      "spud_id": "14860033",
+      "product_id": "USArray.ORJ05.2006",
+      "latitude": 43.258053,
+      "longitude": -121.17561,
+      "split": "train"
+    },
+    {
+      "spud_id": "14859811",
+      "product_id": "USArray.ORI09.2006",
+      "latitude": 44.014137,
+      "longitude": -117.79882,
+      "split": "train"
+    },
+    {
+      "spud_id": "14859589",
+      "product_id": "USArray.ORI08.2006",
+      "latitude": 43.909122,
+      "longitude": -118.54848,
+      "split": "train"
+    },
+    {
+      "spud_id": "14859367",
+      "product_id": "USArray.ORI07.2006",
+      "latitude": 44.07511,
+      "longitude": -119.50987,
+      "split": "train"
+    },
+    {
+      "spud_id": "14859145",
+      "product_id": "USArray.ORI06.2006",
+      "latitude": 43.905293,
+      "longitude": -120.232544,
+      "split": "train"
+    },
+    {
+      "spud_id": "14858923",
+      "product_id": "USArray.ORI05.2006",
+      "latitude": 44.11759,
+      "longitude": -121.37946,
+      "split": "train"
+    },
+    {
+      "spud_id": "14858701",
+      "product_id": "USArray.ORH09.2006",
+      "latitude": 44.66155,
+      "longitude": -117.7262,
+      "split": "train"
+    },
+    {
+      "spud_id": "14858479",
+      "product_id": "USArray.ORH08.2006",
+      "latitude": 44.520145,
+      "longitude": -118.668335,
+      "split": "train"
+    },
+    {
+      "spud_id": "14858257",
+      "product_id": "USArray.ORH07.2006",
+      "latitude": 44.599194,
+      "longitude": -119.56866,
+      "split": "train"
+    },
+    {
+      "spud_id": "14858035",
+      "product_id": "USArray.ORH06.2006",
+      "latitude": 44.7423,
+      "longitude": -120.29473,
+      "split": "train"
+    },
+    {
+      "spud_id": "14857813",
+      "product_id": "USArray.ORH05.2006",
+      "latitude": 44.64749,
+      "longitude": -121.203926,
+      "split": "train"
+    },
+    {
+      "spud_id": "14857591",
+      "product_id": "USArray.ORG10.2006",
+      "latitude": 45.33167,
+      "longitude": -117.190285,
+      "split": "train"
+    },
+    {
+      "spud_id": "14857369",
+      "product_id": "USArray.ORG09.2006",
+      "latitude": 45.331245,
+      "longitude": -117.83236,
+      "split": "train"
+    },
+    {
+      "spud_id": "14857147",
+      "product_id": "USArray.ORG08.2006",
+      "latitude": 45.240223,
+      "longitude": -118.960526,
+      "split": "train"
+    },
+    {
+      "spud_id": "14856925",
+      "product_id": "USArray.ORG07.2006",
+      "latitude": 45.2761,
+      "longitude": -119.6341,
+      "split": "train"
+    },
+    {
+      "spud_id": "14856703",
+      "product_id": "USArray.ORG06.2006",
+      "latitude": 45.240036,
+      "longitude": -120.63847,
+      "split": "train"
+    },
+    {
+      "spud_id": "14856481",
+      "product_id": "USArray.ORF10.2006",
+      "latitude": 45.98023,
+      "longitude": -117.22784,
+      "split": "train"
+    },
+    {
+      "spud_id": "14856259",
+      "product_id": "USArray.ORF09.2006",
+      "latitude": 45.708595,
+      "longitude": -117.90286,
+      "split": "train"
+    },
+    {
+      "spud_id": "14856037",
+      "product_id": "USArray.ORF08.2006",
+      "latitude": 45.793507,
+      "longitude": -118.74201,
+      "split": "train"
+    }
+  ]
+}

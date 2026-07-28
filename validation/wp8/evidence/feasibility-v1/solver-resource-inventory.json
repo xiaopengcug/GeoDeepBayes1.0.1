@@ -1,8 +1,8 @@
 {
   "schema_version": "wp8-solver-inventory-v1",
   "python": "3.11.15",
-  "platform": "Windows-10-10.0.26200-SP0",
-  "logical_cpu_count": 16,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "logical_cpu_count": 12,
   "methods": {
     "gravity": {
       "dependency_module": "simpeg.potential_fields.gravity",

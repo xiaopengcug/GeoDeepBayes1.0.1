@@ -1,0 +1,26 @@
+{
+  "schema": "wp5-consistency-scan-v1",
+  "run_instance_id": "20260724T034858702Z-b530a67793c84b6e9d71f53c8d0b0a98",
+  "status": "Passed",
+  "evidence_id": "EVD-WP5-GOVERNANCE",
+  "claim": "Document consistency and evidence-boundary governance only",
+  "documents": {
+    "00-摘要.md": "60c702de3c2da8fe79a794115ca6106d7ad4632a0dcb004cc517ed947e71cd5a",
+    "01-引言.md": "20590535e59e1e1a43fec7785764956022e75d8cd8747ac75dbc0d5ae2b18a05",
+    "02-全方法深度融合的底层逻辑与理论总纲.md": "9ff9f8254885790362fc5a34161229956281f1ff732eae942f2d0f565d31273b",
+    "03-多方法深度融合的核心技术实现路径.md": "23fb412e80e9f7ce116283618286c77b4fbd8113cab12a8f2bcc037b8b1ead77",
+    "04-分场景多方法融合适配方案.md": "61b215cb72e5a0393fc90793f4595aa2bcad578cbb03f046dda69adb89c56510",
+    "05-工程化落地与效率优化方案.md": "c6f3b01f7ecead62cec4270c9341b813615a39fa5f918ccf5b063ab72fe29909",
+    "06-合成数据验证方案与验收设计.md": "d235cf503dba41f1b51a8c87226480eee680aa9ec7789741d3f6b836c1f5fd97",
+    "07-结论与展望.md": "8138635af0695810dbe475396ab1cf6183a1d47035dccb554f927a2e4d2e2a88",
+    "附录1-分矿种多方法融合定制化勘查模板.md": "8cfdcbdb28064c1692c41dc59a2b182f169f07b601cb7fd2c28cac058a41a6d9",
+    "附录2-概率化反演结果应用规范与风险管控准则.md": "656bdef9c555be3697a7d113b93dcb820814f18a585d8fed1ea60ca92e349942",
+    "附录3-算法选型与多方法组合决策树.md": "cf3651b313938cab5e979f23c35d9652d51ab494533dba2c3b4e3be85bcd46e8",
+    "附录4-核心算法性能基准测试计划与验收指标.md": "0a698c297a05998eebc6709cf1a0083a513b18f499f49a8e428beb047241f91a",
+    "附录5-真实矿区验证方案.md": "e0e7828537f44a3b919dc6a80e8624ba67c8a9adb625266f02351b4f242ea0a6",
+    "附录11-分勘查阶段标准化操作手册.md": "9f1e555796bbe1be87b38e22c462a5d3dbb96c65f260da2d29644ff8e76b6162",
+    "附录13-岩性物性参数统计数据库.md": "eb5cae902c0a5fa10569ef5c1191051d757bd9ca1e622a1a6487b18c640bf954",
+    "附录14-地质先验知识库.md": "5ebcdbbc50204bfa464f9c16b534f23c3cdd5c99b5cfd66ee6f4b9f05209acaa",
+    "贝叶斯三维反演测试算力需求说明.md": "f19ffc0b354e5a234e8164953daa7d7d7f336531b62154135477846558e0f3c3"
+  }
+}

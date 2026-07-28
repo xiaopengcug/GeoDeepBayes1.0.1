@@ -6,7 +6,7 @@
     {
       "method": "sip_fdip",
       "path": "validation/wp8/synthetic/supplements-v1/sip_fdip.npz",
-      "sha256": "be15d526c07b6d9fdef0abaf03818e63406f8c60a457d9064a0bbd2466af81c8",
+      "sha256": "5228a19947b95f3edd5db0a022dc70cdfe0056ecfbb5860b7754cec9ce1d60c2",
       "content_digest": "208cb494a8174c00ddc647dee71e2ec90d6719c38b54653bfd10c967f2b93548",
       "clusters": 500,
       "test_clusters": 300,
@@ -17,7 +17,7 @@
     {
       "method": "csamt",
       "path": "validation/wp8/synthetic/supplements-v1/csamt.npz",
-      "sha256": "6b700d799e001c0d7ac3ded4e44987b08393ffb20297c74e0f896957b8a4a5f9",
+      "sha256": "2d6786cea2f0f945f079b04871421b3941b59d49753356dd424a25b3b1842e87",
       "content_digest": "618eed94aaf9f33f130c79b5af23f8b5fc13f4c573e1a579ab9569969bf7c292",
       "clusters": 500,
       "test_clusters": 300,
@@ -28,7 +28,7 @@
     {
       "method": "wfem",
       "path": "validation/wp8/synthetic/supplements-v1/wfem.npz",
-      "sha256": "19ccc489d66792c75284892fd7228b475ca68693c6608c73a5e1d0375b9323ff",
+      "sha256": "f3af3aa4a8d84732c33755c0c0ec49786d49f6d7c58be2a0fc91b43fc1abb05b",
       "content_digest": "34b2d7439561dd0f9887389bdb2fd8b32fd3898cd3b78dde289483d4bd6cfbf7",
       "clusters": 500,
       "test_clusters": 300,

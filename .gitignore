@@ -22,9 +22,25 @@ coverage.xml
 
 # 开放数据、运行工作区及历史版本副本不进入Git
 _bmad-output/planning-artifacts/research/open-data/
+!_bmad-output/planning-artifacts/research/open-data/
+_bmad-output/planning-artifacts/research/open-data/*
+!_bmad-output/planning-artifacts/research/open-data/00_catalog/
+_bmad-output/planning-artifacts/research/open-data/00_catalog/*
+!_bmad-output/planning-artifacts/research/open-data/00_catalog/open_geophysics_data_manifest.json
 **/validation/**/work/
 **/validation/**/source/
 **/validation/**/versions/
+# Git may see only the active WP2-WP5 version closure. The persistence builder
+# derives that exact set from active-output pointers, and repository-scope
+# rejects any tracked historical version.
+!**/validation/wp2-toy/versions/
+!**/validation/wp2-toy/versions/**
+!**/validation/wp3-physics/versions/
+!**/validation/wp3-physics/versions/**
+!**/validation/wp4-decision/versions/
+!**/validation/wp4-decision/versions/**
+!**/validation/wp5-consistency/versions/
+!**/validation/wp5-consistency/versions/**
 !**/validation/wp7/versions/
 !**/validation/wp7/versions/**
 **/validation/**/attempts/

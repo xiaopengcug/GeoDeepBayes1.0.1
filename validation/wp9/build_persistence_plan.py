@@ -8,12 +8,14 @@ the remaining authorization and live-gate blockers.
 from __future__ import annotations
 
 import argparse
+import ast
 import contextlib
 import hashlib
 import importlib.util
 import io
 import json
 import os
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 import subprocess
@@ -29,6 +31,7 @@ from tools.validate_repository_scope import (  # noqa: E402
     ABSOLUTE_PATH,
     FORBIDDEN_PARTS,
     MAX_BYTES,
+    _active_version_prefixes,
     permitted_forbidden_path,
     SECRET_PATTERNS,
 )
@@ -58,6 +61,7 @@ RESEARCH_RELATIVE = (
 # release closure while the live WP5/WP7/WP8 gates remain blocked.
 CONTROL_INPUTS = (
     ".github/workflows/ci.yml",
+    ".gitattributes",
     ".gitignore",
     ".python-version",
     "pyproject.toml",
@@ -105,6 +109,8 @@ CONTROL_INPUTS = (
 CONTROL_DIRECTORIES = (
     f"{RESEARCH_RELATIVE}/validation/wp7/versions/synthetic-block-v6-20260724",
     f"{RESEARCH_RELATIVE}/validation/wp7/versions/do27-v4-20260724",
+    "validation/wp8/contracts",
+    "validation/wp8/field",
     "src/geodeepbayes",
     "tests",
 )
@@ -122,6 +128,261 @@ CONTROL_FILE_GLOBS = (
 
 def sha256_file(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+SHA256_PATTERN = re.compile(r"^[0-9a-f]{64}$")
+ACTIVE_VERSION_PATTERN = re.compile(
+    r"^versions/[0-9]{8}T[0-9]{9}Z-[0-9a-f]{32}$"
+)
+ACTIVE_POINTER_SCHEMAS = {
+    "wp2-active-output-v1",
+    "wp3-active-output-v1",
+    "wp4-active-output-v1",
+    "wp5-active-output-v1",
+}
+ACTIVE_MANIFEST_SCHEMAS = {
+    "wp2-toy-manifest-v3",
+    "wp3-manifest-v2",
+    "wp4-manifest-v1",
+    "wp5-consistency-manifest-v1",
+}
+
+
+def _resolve_reference_target(root: Path, base: Path, relative: Any) -> Path:
+    if not isinstance(relative, str) or not relative or Path(relative).is_absolute():
+        raise ValueError("reference path must be non-empty and relative")
+    target = (base / relative).resolve()
+    resolved_root = root.resolve()
+    if resolved_root not in target.parents:
+        raise ValueError(f"reference path escapes repository root: {relative}")
+    if not target.is_file():
+        raise ValueError(f"reference target missing: {relative}")
+    return target
+
+
+def _derive_reference_closure(
+    *,
+    root: Path = ROOT,
+    research: Path = RESEARCH,
+    wp9: Path = WP9,
+) -> dict[str, Any]:
+    """Resolve every supported path+SHA edge until no new JSON targets appear."""
+
+    root = root.resolve()
+    research = research.resolve()
+    wp9 = wp9.resolve()
+    roots = (
+        research / "contracts/contract-registry.json",
+        research / "validation/wp5-consistency/active-output.json",
+        wp9 / "finding-registry-v1.json",
+        root / "validation/wp8/evidence/feasibility-v1/producer-manifest.json",
+    )
+    for seed in roots:
+        if root not in seed.resolve().parents:
+            raise ValueError("reference-closure root escapes repository root")
+        if not seed.is_file():
+            raise ValueError(
+                "reference-closure root missing: "
+                + seed.resolve().relative_to(root).as_posix()
+            )
+
+    queue = list(roots)
+    queued = {path.resolve() for path in roots}
+    visited: set[Path] = set()
+    expected_by_target: dict[str, str] = {}
+    edges: list[dict[str, str]] = []
+
+    def add_edge(
+        parent: Path,
+        relation: str,
+        base: Path,
+        relative: Any,
+        expected_sha256: Any,
+    ) -> None:
+        if (
+            not isinstance(expected_sha256, str)
+            or SHA256_PATTERN.fullmatch(expected_sha256) is None
+        ):
+            raise ValueError(f"invalid reference sha256 in {relation}")
+        target = _resolve_reference_target(root, base, relative)
+        normalized = target.relative_to(root).as_posix()
+        previous = expected_by_target.get(normalized)
+        if previous is not None and previous != expected_sha256:
+            raise ValueError(f"conflicting reference hashes: {normalized}")
+        expected_by_target[normalized] = expected_sha256
+        if sha256_file(target) != expected_sha256:
+            raise ValueError(f"reference hash drift: {normalized}")
+        edges.append(
+            {
+                "parent": parent.relative_to(root).as_posix(),
+                "relation": relation,
+                "path": normalized,
+                "sha256": expected_sha256,
+            }
+        )
+        if target.suffix.lower() == ".json" and target not in queued:
+            queued.add(target)
+            queue.append(target)
+
+    def add_mapping(
+        parent: Path,
+        relation: str,
+        base: Path,
+        value: Any,
+    ) -> None:
+        if isinstance(value, dict):
+            for relative, expected_sha256 in sorted(value.items()):
+                add_edge(parent, relation, base, relative, expected_sha256)
+            return
+        if isinstance(value, list):
+            for item in value:
+                if not isinstance(item, dict):
+                    raise ValueError(f"invalid reference entry in {relation}")
+                add_edge(
+                    parent,
+                    relation,
+                    base,
+                    item.get("path"),
+                    item.get("sha256"),
+                )
+            return
+        raise ValueError(f"invalid reference collection in {relation}")
+
+    while queue:
+        path = queue.pop(0).resolve()
+        if path in visited:
+            continue
+        visited.add(path)
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise ValueError(
+                f"invalid referenced JSON: {path.relative_to(root).as_posix()}"
+            ) from exc
+        # Hash-bound JSON leaves may legitimately be arrays (for example a
+        # diagnostic failure summary). Only object schemas can declare another
+        # supported edge, so array/scalar leaves terminate this branch.
+        if not isinstance(payload, dict):
+            continue
+
+        relative_path = path.relative_to(root).as_posix()
+        if path == (research / "contracts/contract-registry.json"):
+            contracts = payload.get("contracts")
+            diagnostics = (
+                contracts.get("diagnostics") if isinstance(contracts, dict) else None
+            )
+            if not isinstance(diagnostics, dict):
+                raise ValueError("invalid WP6 diagnostic registry")
+            add_edge(
+                path,
+                "wp6-diagnostic-registry",
+                research,
+                diagnostics.get("canonical_path"),
+                diagnostics.get("sha256"),
+            )
+
+        schema = payload.get("schema")
+        schema_version = payload.get("schema_version")
+        if schema in ACTIVE_POINTER_SCHEMAS:
+            version_path = payload.get("version_path")
+            run_instance_id = payload.get("run_instance_id")
+            if (
+                not isinstance(version_path, str)
+                or ACTIVE_VERSION_PATTERN.fullmatch(version_path) is None
+                or version_path.rsplit("/", 1)[-1] != run_instance_id
+            ):
+                raise ValueError(f"invalid active-output version path: {relative_path}")
+            add_edge(
+                path,
+                "active-output-manifest",
+                path.parent,
+                f"{version_path}/manifest.json",
+                payload.get("manifest_sha256"),
+            )
+        elif schema in ACTIVE_MANIFEST_SCHEMAS:
+            if path.name != "manifest.json" or path.parent.parent.name != "versions":
+                raise ValueError(f"active manifest outside version directory: {relative_path}")
+            add_mapping(path, "active-manifest-file", path.parent, payload.get("files"))
+            add_mapping(
+                path,
+                "active-manifest-source",
+                path.parents[2],
+                payload.get("sources"),
+            )
+        elif schema == "wp5-consistency-scan-v1":
+            add_mapping(path, "wp5-scan-document", research, payload.get("documents"))
+        elif schema == "wp5-claim-ledger-v1":
+            sources = payload.get("sources")
+            if not isinstance(sources, dict):
+                raise ValueError("invalid WP5 claim-ledger sources")
+            for source in sources.values():
+                if not isinstance(source, dict):
+                    raise ValueError("invalid WP5 claim-ledger source")
+                add_edge(
+                    path,
+                    "wp5-claim-ledger-source",
+                    research,
+                    source.get("path"),
+                    source.get("sha256"),
+                )
+        elif schema_version == "wp9-finding-registry-v1":
+            findings = payload.get("findings")
+            if not isinstance(findings, list):
+                raise ValueError("invalid WP9 finding registry")
+            for finding in findings:
+                evidence_items = (
+                    finding.get("evidence") if isinstance(finding, dict) else None
+                )
+                if not isinstance(evidence_items, list):
+                    raise ValueError("invalid WP9 finding evidence")
+                for evidence in evidence_items:
+                    if not isinstance(evidence, dict):
+                        raise ValueError("invalid WP9 finding evidence")
+                    add_edge(
+                        path,
+                        "wp9-finding-evidence",
+                        root,
+                        evidence.get("path"),
+                        evidence.get("sha256"),
+                    )
+        elif schema_version == "wp8-producer-manifest-v1":
+            add_mapping(
+                path,
+                "wp8-producer-manifest-member",
+                root,
+                payload.get("members"),
+            )
+
+    sorted_edges = sorted(
+        edges,
+        key=lambda edge: (
+            edge["parent"],
+            edge["relation"],
+            edge["path"],
+            edge["sha256"],
+        ),
+    )
+    edge_bytes = json.dumps(
+        sorted_edges,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    paths = sorted(
+        {
+            path.relative_to(root).as_posix()
+            for path in visited
+        }
+        | set(expected_by_target)
+    )
+    return {
+        "schema_version": "fixed-point-reference-closure-v1",
+        "status": "passed",
+        "root_paths": sorted(path.relative_to(root).as_posix() for path in roots),
+        "paths": paths,
+        "edges": sorted_edges,
+        "edges_sha256": hashlib.sha256(edge_bytes).hexdigest(),
+    }
 
 
 def _run_git(*args: str, input_bytes: bytes | None = None) -> subprocess.CompletedProcess[bytes]:
@@ -201,7 +462,12 @@ def _ignore_rule(relative: str) -> str | None:
     return fields[2]
 
 
-def _scan_text(path: Path) -> dict[str, Any]:
+def _scan_text(
+    path: Path,
+    active_version_prefixes: tuple[str, ...] | None = None,
+) -> dict[str, Any]:
+    if active_version_prefixes is None:
+        active_version_prefixes = _active_version_prefixes(ROOT)
     normalized = "/" + path.relative_to(ROOT).as_posix()
     result: dict[str, Any] = {
         "secret_patterns": [],
@@ -209,7 +475,7 @@ def _scan_text(path: Path) -> dict[str, Any]:
         "oversized": path.stat().st_size > MAX_BYTES,
         "forbidden_path": (
             any(part in normalized for part in FORBIDDEN_PARTS)
-            and not permitted_forbidden_path(normalized)
+            and not permitted_forbidden_path(normalized, active_version_prefixes)
         ),
     }
     if result["oversized"]:
@@ -225,27 +491,87 @@ def _scan_text(path: Path) -> dict[str, Any]:
     return result
 
 
-def _control_inputs() -> tuple[str, ...]:
+def _control_inputs(
+    reference_closure: dict[str, Any] | None = None,
+) -> tuple[str, ...]:
     expanded = list(CONTROL_INPUTS)
+    for relative in _required_wp8_repository_assets():
+        if relative not in expanded:
+            expanded.append(relative)
+    if reference_closure is None:
+        reference_closure = _derive_reference_closure()
+    closure_paths = reference_closure.get("paths")
+    if not isinstance(closure_paths, list):
+        raise ValueError("invalid fixed-point reference closure")
+    for relative in closure_paths:
+        if not isinstance(relative, str):
+            raise ValueError("invalid fixed-point reference path")
+        if relative not in expanded:
+            expanded.append(relative)
     for relative in CONTROL_DIRECTORIES:
         directory = ROOT / relative
         if not directory.is_dir():
             raise FileNotFoundError(relative)
-        expanded.extend(
-            path.relative_to(ROOT).as_posix()
-            for path in sorted(directory.rglob("*"))
-            if path.is_file()
-            and "__pycache__" not in path.parts
-            and path.suffix.lower() not in {".pyc", ".pyo"}
-        )
+        for path in sorted(directory.rglob("*")):
+            normalized = path.relative_to(ROOT).as_posix()
+            if (
+                path.is_file()
+                and "__pycache__" not in path.parts
+                and path.suffix.lower() not in {".pyc", ".pyo"}
+                and normalized not in expanded
+            ):
+                expanded.append(normalized)
     for pattern in CONTROL_FILE_GLOBS:
         for path in sorted(ROOT.glob(pattern)):
             relative = path.relative_to(ROOT).as_posix()
             if path.is_file() and relative not in expanded:
                 expanded.append(relative)
-    if len(expanded) != len(set(expanded)):
-        raise ValueError("duplicate explicit execution control path")
     return tuple(expanded)
+
+
+def _required_wp8_repository_assets() -> tuple[str, ...]:
+    """Load WP8's exported inventory without importing its solver dependencies."""
+
+    validator_path = ROOT / "validation/wp8/validate_wp8.py"
+    syntax = ast.parse(validator_path.read_text(encoding="utf-8"), validator_path.as_posix())
+    selected = [
+        node
+        for node in syntax.body
+        if (
+            isinstance(node, (ast.Assign, ast.AnnAssign))
+            and any(
+                isinstance(target, ast.Name)
+                and target.id == "_REQUIRED_REPOSITORY_ASSETS"
+                for target in (
+                    node.targets if isinstance(node, ast.Assign) else [node.target]
+                )
+            )
+        )
+        or (
+            isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+            and node.name == "required_repository_assets"
+        )
+    ]
+    if len(selected) != 2:
+        raise ValueError("cannot isolate WP8 required repository asset inventory")
+    namespace: dict[str, Any] = {}
+    exec(
+        compile(
+            ast.fix_missing_locations(ast.Module(body=selected, type_ignores=[])),
+            validator_path.as_posix(),
+            "exec",
+        ),
+        namespace,
+    )
+    assets = namespace["required_repository_assets"]()
+    if (
+        not isinstance(assets, tuple)
+        or not assets
+        or any(not isinstance(path, str) or not path for path in assets)
+        or len(assets) != len(set(assets))
+    ):
+        raise ValueError("invalid WP8 required repository asset inventory")
+    return assets
 
 
 def _expected_wp9_manifest_paths() -> set[str]:
@@ -359,6 +685,7 @@ def _record(
     generated_paths: set[str],
     *,
     source: str,
+    active_version_prefixes: tuple[str, ...] | None = None,
 ) -> dict[str, Any]:
     normalized = Path(relative).as_posix()
     path = (ROOT / normalized).resolve()
@@ -394,7 +721,7 @@ def _record(
         "ignore_rule": ignore_rule,
         "bytes": path.stat().st_size,
         "sha256": worktree_sha256,
-        "scan": _scan_text(path),
+        "scan": _scan_text(path, active_version_prefixes),
     }
     if normalized in generated_paths:
         record["generator"] = SUPPLEMENT_GENERATOR
@@ -425,6 +752,9 @@ def build_plan() -> dict[str, Any]:
 
     supplement_manifest = json.loads(SUPPLEMENT_MANIFEST.read_text(encoding="utf-8"))
     generated_paths = _validate_supplement_manifest(supplement_manifest)
+    reference_closure = _derive_reference_closure()
+    closure_paths = set(reference_closure["paths"])
+    active_version_prefixes = _active_version_prefixes(ROOT)
     tracked = _tracked_paths()
     staged = _staged_paths()
     observed_head = _git_head()
@@ -440,6 +770,7 @@ def build_plan() -> dict[str, Any]:
             staged,
             generated_paths,
             source="wp9-manifest-v1",
+            active_version_prefixes=active_version_prefixes,
         )
         if (
             member.get("sha256") != record["sha256"]
@@ -449,7 +780,7 @@ def build_plan() -> dict[str, Any]:
         manifest_records.append(record)
     by_path = {record["path"]: record for record in manifest_records}
     control_records = []
-    for relative in _control_inputs():
+    for relative in _control_inputs(reference_closure):
         if relative in by_path:
             continue
         control_records.append(
@@ -458,7 +789,12 @@ def build_plan() -> dict[str, Any]:
                 tracked,
                 staged,
                 generated_paths,
-                source="explicit-execution-control",
+                source=(
+                    "fixed-point-reference-closure"
+                    if relative in closure_paths
+                    else "explicit-execution-control"
+                ),
+                active_version_prefixes=active_version_prefixes,
             )
         )
 
@@ -583,7 +919,7 @@ def build_plan() -> dict[str, Any]:
             f"{len(staged_required_git)} required Git paths already have staged changes"
         )
 
-    return {
+    plan = {
         "schema_version": "wp8-wp9-persistence-plan-v1",
         "generated_by": "validation/wp9/build_persistence_plan.py",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -606,6 +942,7 @@ def build_plan() -> dict[str, Any]:
             "resolved_members": len(manifest_records),
             "closure": "passed",
         },
+        "reference_closure": reference_closure,
         "plan_artifact": plan_artifact,
         "classification_counts": {
             "manifest_members": len(manifest_records),
@@ -651,6 +988,12 @@ def build_plan() -> dict[str, Any]:
         "remote_attestation_verified": False,
         "blockers": blockers,
     }
+    closure_errors = _head_closure_errors(plan)
+    plan["head_closure"] = {
+        "status": "passed" if not closure_errors else "blocked",
+        "errors": closure_errors,
+    }
+    return plan
 
 
 def _atomic_write(path: Path, body: str) -> None:
@@ -671,6 +1014,58 @@ def _resolve_output(path: Path) -> Path:
     return resolved
 
 
+def _head_closure_errors(plan: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    records = plan.get("records")
+    if not isinstance(records, list):
+        return ["records are missing"]
+    record_paths = {
+        record.get("path")
+        for record in records
+        if isinstance(record, dict) and isinstance(record.get("path"), str)
+    }
+    reference_closure = plan.get("reference_closure")
+    closure_paths = (
+        reference_closure.get("paths")
+        if isinstance(reference_closure, dict)
+        else None
+    )
+    if (
+        not isinstance(reference_closure, dict)
+        or reference_closure.get("status") != "passed"
+        or not isinstance(closure_paths, list)
+    ):
+        errors.append("fixed-point reference closure is not passed")
+    elif not set(closure_paths) <= record_paths:
+        errors.append("fixed-point reference closure is absent from records")
+
+    required_git = [
+        record
+        for record in records
+        if isinstance(record, dict)
+        and record.get("classification") == "required-git"
+    ]
+    if any(not record.get("tracked_in_head") for record in required_git):
+        errors.append("required Git paths are absent from HEAD")
+    if any(not record.get("head_matches_worktree") for record in required_git):
+        errors.append("required Git paths differ between HEAD and worktree")
+    if plan.get("required_but_ignored_unresolved"):
+        errors.append("required paths remain ignored without a distribution rule")
+    if plan.get("repository_scope_scan", {}).get("status") != "passed":
+        errors.append("repository-scope scan is not passed")
+    if plan.get("deterministic_generation", {}).get("status") != "passed":
+        errors.append("deterministic generation is not passed")
+    authorization = plan.get("authorization")
+    if (
+        not isinstance(authorization, dict)
+        or not authorization.get("observed_head_contains_frozen_baseline")
+    ):
+        errors.append("HEAD does not contain the frozen baseline")
+    elif authorization.get("observed_staged_required_paths"):
+        errors.append("required Git paths have staged changes")
+    return errors
+
+
 def _plan_exit_code(plan: dict[str, Any]) -> int:
     return 0 if plan.get("local_preparation") == "passed" else 4
 
@@ -678,6 +1073,11 @@ def _plan_exit_code(plan: dict[str, Any]) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument(
+        "--verify-head-closure",
+        action="store_true",
+        help="fail unless every required Git input is persisted unchanged in HEAD",
+    )
     args = parser.parse_args()
     output = _resolve_output(args.output)
     plan = build_plan()
@@ -688,6 +1088,7 @@ def main() -> int:
                 "local_preparation": plan["local_preparation"],
                 "release_ready": plan["release_ready"],
                 "manifest_closure": plan["manifest_binding"]["closure"],
+                "head_closure": plan["head_closure"]["status"],
                 "counts": plan["classification_counts"],
                 "blockers": plan["blockers"],
                 "output": output.relative_to(ROOT).as_posix(),
@@ -695,6 +1096,8 @@ def main() -> int:
             ensure_ascii=False,
         )
     )
+    if args.verify_head_closure:
+        return 0 if plan["head_closure"]["status"] == "passed" else 5
     return _plan_exit_code(plan)
 
 

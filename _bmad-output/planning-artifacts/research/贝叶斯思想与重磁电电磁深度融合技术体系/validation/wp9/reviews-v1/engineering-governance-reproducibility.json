@@ -4,8 +4,8 @@
   "specialty_slug": "engineering-governance-reproducibility",
   "specialty": "工程架构、数据治理与可复现性",
   "registry_sha256": "e66f8008672de016d04024d99c045722b75f33b93b8b010f5e5db708573331c6",
-  "wp8_completion_sha256": "559b7da725b6b480700e7ea0e0d4d73dfd74c5201ec0bd127292aaba0bc61fbc",
-  "specialty_evidence_sha256": "f93db43ce4c2d058e3bce2b9d1d9f214622b1b853d4c8ae524676040d5a8ae8c",
+  "wp8_completion_sha256": "26f8c6edbb9f529b7379affd9df07490a4158ca4bd8173679282ca8fab5bc2bd",
+  "specialty_evidence_sha256": "72c82cd7d326ff16ec57c84b51a153fe1d423b310f9c20783caf83166ed0deeb",
   "covered_source_finding_ids": [
     "R03-F-37c55fd53a89",
     "R03-F-06d5e67b7ec8",

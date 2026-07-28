@@ -54,17 +54,40 @@ jobs:
       - name: Regenerate deterministic WP8 supplements
         run: uv run --frozen python validation/wp8/generate_synthetic_supplements.py
 
+      - name: Verify committed persistence closure
+        run: uv run --frozen python validation/wp9/build_persistence_plan.py --verify-head-closure
+
       - name: Run unit tests
-        run: uv run --frozen pytest -q
+        shell: pwsh
+        run: |
+          # Field/raw-data tests remain in the locked local full runner. Remote
+          # CI executes the complete distributable suite from a clean checkout.
+          $portable = @(
+            "tests/benchmarks",
+            "tests/diagnostics",
+            "tests/divergence",
+            "tests/forward",
+            "tests/governance",
+            "tests/io",
+            "tests/sampling",
+            "tests/validation/test_acceptance_review03_governance.py",
+            "tests/validation/test_feasibility.py",
+            "tests/validation/test_field_scaffold.py",
+            "tests/validation/test_metrics.py",
+            "tests/validation/test_models.py",
+            "tests/validation/test_sbc.py",
+            "tests/validation/test_synthetic_supplement.py",
+            "tests/validation/test_wp8_method_synthetic_validation.py",
+            "tests/validation/test_wp8_resource_abort.py",
+            "tests/validation/test_wp8_synthetic_completion.py",
+            "tests/validation/test_wp9_acceptance.py"
+          )
+          uv run --frozen pytest -q @portable
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          uv run --frozen pytest -q tests/validation/test_wp8_validator.py -k semantic_replay
 
       - name: Run WP9 acceptance audit
         run: uv run --frozen python validation/wp9/validate_wp9.py
-
-      - name: Run WP5 consistency gate
-        shell: pwsh
-        run: |
-          & "$env:WP6_ROOT/validate-wp5.ps1"
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Run WP7 signed evidence gate
         shell: pwsh
@@ -96,6 +119,15 @@ jobs:
         if: runner.os == 'Linux'
         shell: bash
         run: bash "$WP6_ROOT/validation/wp6-governance/test-worker-uid.sh"
+
+      # WP5 is intentionally last: its signed root currently reports the
+      # independently documented ACTIVE_MANIFEST drift. Earlier distributable
+      # gates must still produce remote Ubuntu/Windows evidence.
+      - name: Run WP5 consistency gate
+        shell: pwsh
+        run: |
+          & "$env:WP6_ROOT/validate-wp5.ps1"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
   attest-evidence-root:
     name: Attest final evidence root

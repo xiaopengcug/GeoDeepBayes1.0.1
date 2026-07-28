@@ -2,8 +2,10 @@
 from __future__ import annotations
 
 import json
+import io
 from hashlib import sha256
 from pathlib import Path
+import zipfile
 
 import numpy as np
 
@@ -21,13 +23,35 @@ def file_sha256(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
 
 
+def deterministic_savez(path: Path, **arrays: np.ndarray) -> None:
+    """Write a cross-platform NPZ with stable bytes and no zlib dependency."""
+    with zipfile.ZipFile(path, mode="w", compression=zipfile.ZIP_STORED) as archive:
+        for name in sorted(arrays):
+            payload = io.BytesIO()
+            np.lib.format.write_array(
+                payload, np.asanyarray(arrays[name]), allow_pickle=False
+            )
+            member = zipfile.ZipInfo(
+                filename=f"{name}.npy",
+                date_time=(1980, 1, 1, 0, 0, 0),
+            )
+            member.compress_type = zipfile.ZIP_STORED
+            member.create_system = 3
+            member.external_attr = 0o600 << 16
+            archive.writestr(
+                member,
+                payload.getvalue(),
+                compress_type=zipfile.ZIP_STORED,
+            )
+
+
 def main() -> int:
     OUTPUT.mkdir(parents=True, exist_ok=True)
     members = []
     for index, method in enumerate(SUPPORTED_METHODS):
         cohort = make_synthetic_supplement(method, seed=8101 + index)
         path = OUTPUT / f"{method}.npz"
-        np.savez_compressed(
+        deterministic_savez(
             path,
             method=np.array(cohort.method),
             provenance=np.array(cohort.provenance),
@@ -62,10 +86,10 @@ def main() -> int:
         "closes_formal_field_gaps": False,
         "members": members,
     }
-    (OUTPUT / "manifest.json").write_text(
-        json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    with (OUTPUT / "manifest.json").open(
+        "w", encoding="utf-8", newline="\r\n"
+    ) as stream:
+        stream.write(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
     print(json.dumps(manifest, indent=2, ensure_ascii=False))
     return 0
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "wp8-feasibility-registration-v1",
-  "manifest_sha256": "bf01cdfc0cc3e4e3826fd6ff002071687c3be91e46c0e16d78c68c1edc671743",
+  "manifest_sha256": "029d28e1098171cfea2996db22bb6f654f2ec699b3fd61fd718f3c128288aef0",
   "dataset_selection_sha256": "25917e759fc3b7ac66809c935b15243f8342f4d948faf389029fed35b05d0528",
   "preregistration_sha256": "e189e8fcbf7517c4d5e45ae3a81e14e781382da7a426d2114c34619d201f3b1c",
   "methods": {
@@ -10,7 +10,7 @@
         "passed": true,
         "statement": "This work is marked with Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). ",
         "evidence_path": "00_catalog/open_geophysics_data_manifest.json",
-        "evidence_sha256": "bf01cdfc0cc3e4e3826fd6ff002071687c3be91e46c0e16d78c68c1edc671743"
+        "evidence_sha256": "029d28e1098171cfea2996db22bb6f654f2ec699b3fd61fd718f3c128288aef0"
       },
       "gates": {
         "license": {

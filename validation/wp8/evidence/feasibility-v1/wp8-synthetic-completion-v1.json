@@ -159,8 +159,8 @@
   ],
   "bindings_sha256": {
     "authorization": "03e1de96f36c73afa2aa4089cc021246e7bc98158f84d0c599247b4cf679408a",
-    "method_validation": "3bff13da834242b064399c675081306fe2d74aa4d4471712f81ee2564817088c",
-    "supplement_manifest": "ea2a1c21013c16911bc76b8c5941be59eaec19691c1723e7feeb2ec2184b99d7",
+    "method_validation": "af98c08cb8de670146f5674ad0fae5c09eb8e7d99b45f9ed78247716ed6b5cab",
+    "supplement_manifest": "cda5c32d956614e7796007362de566bc73feb53e55dc7371d018a937f7771fe1",
     "method_policy": "346603951998a4038781905a155a35f3822993bc036bcf7ae1b859b01ca179b5",
     "synthetic_readiness": "814563ea0cc3b0054f3d6a4106cd032d3556a7be67b46e83cde1015146a904b0"
   },

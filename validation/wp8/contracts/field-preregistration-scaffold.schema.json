@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wp8-field-preregistration-scaffold-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "frozen", "test_endpoints_viewed", "field_test_unseal_count", "all_nine_feasibility_passed", "selection_policy", "feasibility_decision_sha256", "protected_manifest_sha256", "status", "reason_code"],
+  "properties": {
+    "schema_version": {"const": "wp8-field-preregistration-scaffold-v1"},
+    "frozen": {"const": true},
+    "test_endpoints_viewed": {"const": false},
+    "field_test_unseal_count": {"const": 0},
+    "all_nine_feasibility_passed": {"const": false},
+    "selection_policy": {"const": "license_integrity_design_only"},
+    "feasibility_decision_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "protected_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "status": {"const": "blocked"},
+    "reason_code": {"const": "WP8_0_NOT_ALL_NINE_PASSED"}
+  }
+}

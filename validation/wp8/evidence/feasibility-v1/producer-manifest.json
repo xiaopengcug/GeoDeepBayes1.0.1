@@ -3,7 +3,7 @@
   "members": [
     {
       "path": "_bmad-output/planning-artifacts/research/open-data/00_catalog/open_geophysics_data_manifest.json",
-      "sha256": "bf01cdfc0cc3e4e3826fd6ff002071687c3be91e46c0e16d78c68c1edc671743"
+      "sha256": "029d28e1098171cfea2996db22bb6f654f2ec699b3fd61fd718f3c128288aef0"
     },
     {
       "path": "validation/wp8/datasets.json",

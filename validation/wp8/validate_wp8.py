@@ -45,19 +45,52 @@ ROOT = Path(__file__).resolve().parents[2]
 WP8 = Path(__file__).resolve().parent
 OPEN_DATA = ROOT / "_bmad-output/planning-artifacts/research/open-data"
 MANIFEST = OPEN_DATA / "00_catalog/open_geophysics_data_manifest.json"
-DATASETS = WP8 / "datasets.json"
-PREREG = WP8 / "preregistration/wp8-0-v1.json"
 EVIDENCE = WP8 / "evidence/feasibility-v1"
-REGISTRATION_SCHEMA = WP8 / "contracts/wp8-feasibility.schema.json"
 FIELD_CONTRACT_AUDIT = EVIDENCE / "field-contract-audit.json"
-WP8_1_START = WP8 / "evidence/wp8-1-start.json"
 SYNTHETIC_SUPPLEMENTS = WP8 / "synthetic/supplements-v1"
 SYNTHETIC_MANIFEST = SYNTHETIC_SUPPLEMENTS / "manifest.json"
 METHOD_SYNTHETIC_EVIDENCE = EVIDENCE / "wp8-1-method-synthetic-validation-v1.json"
-SYNTHETIC_READINESS = WP8 / "synthetic/readiness.json"
-METHOD_VALIDATION_POLICY = WP8 / "synthetic/method-validation-policy-v1.json"
-FIELD_PREREGISTRATION_SCAFFOLD = WP8 / "field/preregistration-scaffold-v1.json"
-FIELD_PREREGISTRATION_SCHEMA = WP8 / "contracts/field-preregistration-scaffold.schema.json"
+
+# Clean-checkout inputs that are authoritative repository assets rather than
+# outputs of a WP8 generator.  Keep paths repo-root-relative so persistence and
+# validation consumers share one canonical inventory.
+_REQUIRED_REPOSITORY_ASSETS = {
+    "datasets": "validation/wp8/datasets.json",
+    "field_preregistration_payload": (
+        "validation/wp8/field/preregistration-scaffold-v1.json"
+    ),
+    "field_preregistration_schema": (
+        "validation/wp8/contracts/field-preregistration-scaffold.schema.json"
+    ),
+    "preregistration": "validation/wp8/preregistration/wp8-0-v1.json",
+    "registration_schema": "validation/wp8/contracts/wp8-feasibility.schema.json",
+    "synthetic_policy": "validation/wp8/synthetic/method-validation-policy-v1.json",
+    "synthetic_readiness": "validation/wp8/synthetic/readiness.json",
+    "wp8_1_start": "validation/wp8/evidence/wp8-1-start.json",
+}
+
+
+def required_repository_assets() -> tuple[str, ...]:
+    """Return canonical non-generated WP8 assets required by a clean checkout."""
+    return tuple(sorted(_REQUIRED_REPOSITORY_ASSETS.values()))
+
+
+def _required_repository_asset(name: str) -> Path:
+    return ROOT / _REQUIRED_REPOSITORY_ASSETS[name]
+
+
+DATASETS = _required_repository_asset("datasets")
+PREREG = _required_repository_asset("preregistration")
+REGISTRATION_SCHEMA = _required_repository_asset("registration_schema")
+WP8_1_START = _required_repository_asset("wp8_1_start")
+SYNTHETIC_READINESS = _required_repository_asset("synthetic_readiness")
+METHOD_VALIDATION_POLICY = _required_repository_asset("synthetic_policy")
+FIELD_PREREGISTRATION_SCAFFOLD = _required_repository_asset(
+    "field_preregistration_payload"
+)
+FIELD_PREREGISTRATION_SCHEMA = _required_repository_asset(
+    "field_preregistration_schema"
+)
 EXPECTED_FIELD_PREREGISTRATION_SCHEMA_SHA256 = (
     "b91b25e676a50a526b48ed6792626e963df9aadbec81bd9753347b4a39d9b75f"
 )

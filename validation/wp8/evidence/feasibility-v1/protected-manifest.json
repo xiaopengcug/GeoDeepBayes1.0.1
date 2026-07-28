@@ -94,7 +94,7 @@
     {
       "path": "decision.json",
       "bytes": 6409,
-      "sha256": "a1f3f9b050586cccc8a9c894f5ce938a5aad8494408348baccac4bef77a94285"
+      "sha256": "0bff48bf8e57a74d631242786899e9725b52a89f2d6f137f19e85acba91452d9"
     },
     {
       "path": "development-sbc-raw-ranks.json",
@@ -124,7 +124,7 @@
     {
       "path": "evidence-manifest.json",
       "bytes": 32564,
-      "sha256": "69c7eb0f0de0e914510d9d2f2e8bea805ef6ed83728f928b7bfa0a253aa24cdf"
+      "sha256": "dddfd7558c2e5b5486d0a4143c32b6efec018dbd2b7672d58ca9d26ff2d7c2df"
     },
     {
       "path": "field-contract-audit.json",
@@ -534,7 +534,7 @@
     {
       "path": "producer-manifest.json",
       "bytes": 2401,
-      "sha256": "be4267dcbe91e14f686a19539808fce9722882b5cdb43108c45a8f122535eb02"
+      "sha256": "924972bce012aac7deafaf0aa2a1f9d2ebc2f091702437044c2f1a8f6831e151"
     },
     {
       "path": "qiabuqia-wfem-metadata-audit-v1.json",
@@ -544,7 +544,7 @@
     {
       "path": "registration.json",
       "bytes": 80689,
-      "sha256": "90b32da8de28bd04cf69e0551860e1a19e2d68816a759265d85860d7ab12497b"
+      "sha256": "fa6d32412f5c43b1b11e088f4cb5e3960f70e2f1a413418ec0db9d59999ec1c1"
     },
     {
       "path": "resource-budget-freeze.json",
@@ -554,7 +554,7 @@
     {
       "path": "self-test.json",
       "bytes": 284,
-      "sha256": "600ae7b653bf1b4e647b4c1c08a567079a79e6ac972def768e5a54ad4aeee7c1"
+      "sha256": "be75cddd5f32a0dcb5c1c6bc62260ed8abea052c63fb4739a2c293d943bbf1ed"
     },
     {
       "path": "serpentinite-sip-geometry.json",
@@ -579,7 +579,7 @@
     {
       "path": "solver-resource-inventory.json",
       "bytes": 4804,
-      "sha256": "18d139107d74896322f0120379045603d0312f47d1b9912a2b86599a89771ece"
+      "sha256": "89800aa9f0a187bb1d6cfe3e9a70da996d9ca2f3cd125c784f1430068ab4b3af"
     },
     {
       "path": "spatial-clusters.json",
@@ -858,8 +858,8 @@
     },
     {
       "path": "wp8-1-method-synthetic-validation-v1.json",
-      "bytes": 486918,
-      "sha256": "3bff13da834242b064399c675081306fe2d74aa4d4471712f81ee2564817088c"
+      "bytes": 486997,
+      "sha256": "af98c08cb8de670146f5674ad0fae5c09eb8e7d99b45f9ed78247716ed6b5cab"
     },
     {
       "path": "wp8-synthetic-completion-v1.json",
