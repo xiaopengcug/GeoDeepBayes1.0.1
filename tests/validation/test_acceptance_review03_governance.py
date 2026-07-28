@@ -291,6 +291,7 @@ def test_current_locked_rerun_keeps_failed_gates_blocking():
         "Run WP7 signed evidence gate",
         "Run WP8 live synthetic gate",
         "Regenerate deterministic WP8 supplements",
+        "OPENBLAS_NUM_THREADS",
         "validate-wp5.ps1",
         "validate-wp7.ps1",
         "validation/wp8/generate_synthetic_supplements.py",

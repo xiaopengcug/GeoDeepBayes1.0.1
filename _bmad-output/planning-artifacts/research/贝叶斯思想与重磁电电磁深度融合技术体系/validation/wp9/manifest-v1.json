@@ -86,8 +86,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 8486,
-      "sha256": "9689d2d4dccf3e48821ef9d941a52beac3240784b504c88f7ea62954b9e22aba"
+      "bytes": 8587,
+      "sha256": "7e14ffce4a1e323a6f066efd73e2299ca936badd50a2b6d8886a0f42e7b1dddb"
     },
     {
       "path": "validation/wp9/build_finding_registry.py",
@@ -172,7 +172,7 @@
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/engineering-governance-reproducibility.json",
       "bytes": 1600,
-      "sha256": "b0685221ce78004e0a10037dc0d492b670cf0299760d916af90b6226166d52db"
+      "sha256": "8a214da8ea8107bd1311d7ef95483741e0d416f3cd0c42672d188a00f3868704"
     },
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/geophysics-forward-physics.json",
