@@ -2,7 +2,7 @@
 title: 'WP8/WP9 Git 持久化与远程证明'
 type: 'chore'
 created: '2026-07-27'
-status: 'authorized-submission-in-progress-wp5-blocked'
+status: 'remote-dual-platform-verified-wp5-blocked'
 review_loop_iteration: 1
 baseline_commit: '50e25166f8897f0fc6e82cbadbc3c4f0a98c14d5'
 ---
@@ -39,11 +39,12 @@ baseline_commit: '50e25166f8897f0fc6e82cbadbc3c4f0a98c14d5'
 - [x] 提交相关代码、文档、指针和受控证据；初始目标提交为 `707f4aab48d38523e396ee6793f698c3a4615bc9`。
 - [x] 直接推送受保护 `main` 被 2/2 required checks 正确拒绝；改推 `codex/acceptance-review03-remediation` 并创建 PR #6。
 - [x] 修复首轮 Ubuntu/Windows clean-checkout 同时发现的 WP8 脚本传递闭包缺口，并以 registry/pointer/manifest 驱动的固定点闭包取代版本路径硬编码。
-- [ ] 推送闭包提交后重跑双平台门。（WP5 仍为真实阻断，不得伪造证明成功）
+- [x] 推送闭包提交后重跑双平台门；两平台均通过 WP5 之前的全部门并在 WP5 fail-closed，最终 attestation 按依赖规则跳过。
 
 **Acceptance Criteria:**
 - Given 提交授权，when 核对 Git，then所有 required 资产被跟踪且无临时/秘密文件。
-- Given 远程运行，when 查询目标 SHA，then双平台门和证明均成功；否则保持阻断。
+- Given 远程运行，when 查询目标 SHA，then Ubuntu/Windows 对同一提交执行全部 required gates，并保留每一步终态证据。
+- Given WP5 仍失败，when required gates 终止，then最终 attestation 必须跳过且发布状态保持阻断；只有 WP5 重签、双平台全绿并实际签发后才可声明远程证明成功。
 
 ## Verification
 
@@ -56,13 +57,16 @@ baseline_commit: '50e25166f8897f0fc6e82cbadbc3c4f0a98c14d5'
 ## Local Preparation Result
 
 - 已生成 `validation/wp9/persistence-plan-v1.json`；绑定 WP9 manifest 的 36 个成员，全部存在且 SHA-256/字节数闭包通过。
-- 首轮静态清单漏掉 pytest 直接导入的 WP8 脚本和证据依赖。计划现由 WP6 contract registry、WP2—WP5 active pointer/manifest、WP5 scan/claim ledger、WP9 finding evidence、WP8 producer manifest 与 runtime-asset 单一清单递归求固定点；当前闭包为 95 个目标、152 条强哈希边（闭包摘要 `c033336c…`）。连同完整 distributable 执行面，共列 634 个附加控制输入和 667 个 `required-git` 路径，其中 252 个当前内容尚未进入 HEAD。
+- 首轮静态清单漏掉 pytest 直接导入的 WP8 脚本和证据依赖。计划现由 WP6 contract registry、WP2—WP5 active pointer/manifest、WP5 scan/claim ledger、WP9 finding evidence、WP8 producer manifest 与 runtime-asset 单一清单递归求固定点；当前闭包为 95 个目标、152 条强哈希边（闭包摘要 `c033336c…`）。连同完整 distributable 执行面，共列 635 个附加控制输入和 668 个 `required-git` 路径，相对当前 HEAD 的未持久化 required 路径为 0。
 - 三个 supplement NPZ 被明确分类为 `required-generated-artifact`，继续受 `.gitignore` 保护；本地两次隔离重生成的文件哈希彼此一致并匹配已登记 SHA-256。未来远程流程必须执行同一重生成/哈希核验，不得强制提交二进制产物。
 - `persistence-plan-v1.json` 是由受控 builder 与绑定输入生成的本地/CI 派生报告，不纳入 required Git 自哈希集合；builder、规格和输入清单本身均为 required Git。
 - required 集合的仓库范围扫描未发现秘密、本机绝对路径或超过 50 MiB 的待提交文件；无 `required-but-ignored-unresolved` 项。
-- 首轮白名单暂存按 195 个 required 路径执行，119 个路径相对 HEAD 形成变更，白名单外 staged 路径为 0。远程失败后扩大后的 667 路径全部通过扫描且无 unresolved ignored 项；下一提交必须按该派生集合重新精确暂存。
+- 首轮白名单暂存按 195 个 required 路径执行，119 个路径相对 HEAD 形成变更，白名单外 staged 路径为 0。远程失败后扩大后的 668 路径全部进入当前 HEAD、通过扫描且无 unresolved ignored 项。
+- WP7 所需 18.08 MiB DO-27 源归档已作为唯一受控 open-data 例外持久化，SHA-256 为 `c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e`；其他 open-data 仍禁止进入 required Git。
 - 带本地 raw/artifact 的完整本地 runner 为 `433 passed、1 skipped、119 warnings`；它不是 clean Git checkout 的远程测试合同。远程使用显式 portable suite，raw-tier integration 保留在本地/制品注入环境。WP7、WP8 synthetic、WP9 当前本地通过，live blocker 精确仅为 `wp5`。`release_ready=false`、`remote_attestation_verified=false`。
 - PR #6 首轮远程运行 `30326446841` 已提供双平台失败证明：Ubuntu job `90172773622` 与 Windows job `90172773641` 都在 pytest collection 因同一组缺失 WP8 脚本失败；attestation job `90172874282` 因依赖门失败正确 `skipped`。该失败被用于扩大传递闭包，不被改写为通过。
+- 闭包修复后的远程 run [`30332672500`](https://github.com/xiaopengcug/GeoDeepBayes1.0.1/actions/runs/30332672500) 绑定 SHA `5e17b45d83e7d5c1a13cf5760941bec6741cc0d8`。Ubuntu job [`90190961526`](https://github.com/xiaopengcug/GeoDeepBayes1.0.1/actions/runs/30332672500/job/90190961526) 为 `175 passed`，Windows job [`90190961601`](https://github.com/xiaopengcug/GeoDeepBayes1.0.1/actions/runs/30332672500/job/90190961601) 为 `174 passed、1 skipped`；两平台的 persistence closure、WP9、WP7、WP8、WP6 和各自隔离门均通过。
+- Ubuntu 最终在 WP5 报 `scope registry use exact`，Windows 最终在 WP5 报 `risk lineage hash loop28`。attestation job [`90191799798`](https://github.com/xiaopengcug/GeoDeepBayes1.0.1/actions/runs/30332672500/job/90191799798) 因依赖门失败正确 `skipped`。因此 `release_ready=false`、`remote_attestation_verified=false` 保持不变。
 
 ## Review Findings Addressed
 
