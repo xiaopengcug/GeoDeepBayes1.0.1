@@ -1,7 +1,8 @@
-**/validation/wp7/versions/** -text
-**/validation/wp7/signoff*.json -text
 # Evidence contracts use byte-level SHA-256. Store hash-bound text exactly as
 # authored so Windows and Linux checkouts receive identical bytes.
+* -text
+**/validation/wp7/versions/** -text
+**/validation/wp7/signoff*.json -text
 *.json -text
 *.md -text
 *.py -text
