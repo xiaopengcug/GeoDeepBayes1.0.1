@@ -41,7 +41,7 @@
     {
       "path": "validation/wp8/evidence/feasibility-v1/wp8-synthetic-completion-v1.json",
       "bytes": 4972,
-      "sha256": "26f8c6edbb9f529b7379affd9df07490a4158ca4bd8173679282ca8fab5bc2bd",
+      "sha256": "d728b644afd79515866b78c0946b1ff055b9ef6c38c0d5e8be101d7ad1e75463",
       "location_note": "Repository-root validation/wp8 asset; not under the research document directory."
     },
     {
@@ -57,7 +57,7 @@
     {
       "path": "validation/wp8/synthetic/supplements-v1/manifest.json",
       "bytes": 1539,
-      "sha256": "cda5c32d956614e7796007362de566bc73feb53e55dc7371d018a937f7771fe1"
+      "sha256": "d132f46c4ad3db39447b80f6f083ac322908895962684b886cbd60a21e2af66a"
     },
     {
       "path": "validation/wp8/synthetic/method-validation-policy-v1.json",
@@ -72,17 +72,17 @@
     {
       "path": "validation/wp8/synthetic/supplements-v1/sip_fdip.npz",
       "bytes": 271355,
-      "sha256": "5228a19947b95f3edd5db0a022dc70cdfe0056ecfbb5860b7754cec9ce1d60c2"
+      "sha256": "f97dcd3e719a07a58814c79b8f68e01eaba401209411132c034b1fdd30af4a5b"
     },
     {
       "path": "validation/wp8/synthetic/supplements-v1/csamt.npz",
       "bytes": 271343,
-      "sha256": "2d6786cea2f0f945f079b04871421b3941b59d49753356dd424a25b3b1842e87"
+      "sha256": "82020b649744398d4d84b92a21556cc1d2fb6afdc34fad5919153cd1e6cb25fc"
     },
     {
       "path": "validation/wp8/synthetic/supplements-v1/wfem.npz",
       "bytes": 271339,
-      "sha256": "f3af3aa4a8d84732c33755c0c0ec49786d49f6d7c58be2a0fc91b43fc1abb05b"
+      "sha256": "b62ebe3db0a741f951c56136ca1ed4b5c99dc6573b281f3ce5a93a63f503ddab"
     },
     {
       "path": ".github/workflows/ci.yml",
@@ -167,22 +167,22 @@
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/bayesian-uq-statistics.json",
       "bytes": 1596,
-      "sha256": "c8d1d4381426732aaf34943d0596c1918e36b2ae23e5f6ea88aa6d2e9164e9fa"
+      "sha256": "666d05b8cb9ef1eae434453a2ccc95289fa9bf978e095e32ae3b78059182e6b0"
     },
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/engineering-governance-reproducibility.json",
       "bytes": 1600,
-      "sha256": "98d64ac0c3c9f238b6ed45cadd327d216b93fe02e2aa1d8ab487221789af542c"
+      "sha256": "405cbc1650b1dabf57cdbcd64f8fb91d47ce9f0e2c1f26c07cb1e1f5b9a91667"
     },
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/geophysics-forward-physics.json",
       "bytes": 1548,
-      "sha256": "ffc01ec24ecef098d03888cf86fe8d6a092d907f20972373004d7d49ba2f7c10"
+      "sha256": "e432cd7dd79d10cb9e5dba99b59760126c343d9f27ff82127c4fc4f2c56edba0"
     },
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/numerical-discretization.json",
       "bytes": 1409,
-      "sha256": "b41e3f895bbb7ab08f55a5e7e951d2ee6de1cb76a962d390869e3bdf08fce228"
+      "sha256": "748389972d18162ccb2f3847fb0b20664fa38e646eefc7c11b70ba4872e5a8e6"
     }
   ],
   "audit": {
@@ -196,7 +196,7 @@
     },
     "specialist_reviews": 4,
     "review_coverage": 60,
-    "wp8_completion_sha256": "26f8c6edbb9f529b7379affd9df07490a4158ca4bd8173679282ca8fab5bc2bd",
+    "wp8_completion_sha256": "d728b644afd79515866b78c0946b1ff055b9ef6c38c0d5e8be101d7ad1e75463",
     "final_gates_sha256": "831c994e14f89835d621ed1d6a1405483119e74fb78db8e8c16c08449bb5f32e",
     "final_gates_status": "blocked",
     "final_gates_live_replay": true,

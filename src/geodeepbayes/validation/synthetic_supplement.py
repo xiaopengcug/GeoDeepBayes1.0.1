@@ -13,6 +13,12 @@ import numpy as np
 
 
 SUPPORTED_METHODS = ("sip_fdip", "csamt", "wfem")
+_PORTABLE_DECIMALS = 12
+
+
+def _portable_float64(values: np.ndarray) -> np.ndarray:
+    """Remove platform-libm tail drift before hashing synthetic evidence."""
+    return np.round(np.asarray(values, dtype=np.float64), _PORTABLE_DECIMALS)
 
 
 @dataclass(frozen=True)
@@ -111,16 +117,19 @@ def make_synthetic_supplement(
     sigma = np.maximum(np.abs(clean) * 0.03, 1e-9)
     noise = rng.normal(size=clean.shape) + 1j * rng.normal(size=clean.shape)
     response = clean + sigma * noise / np.sqrt(2.0)
+    response = _portable_float64(response.real) + 1j * _portable_float64(
+        response.imag
+    )
 
     return SyntheticSupplement(
         method=method,
         seed=seed,
         cluster_id=cluster_id,
         role=role,
-        frequencies_hz=frequencies,
-        receiver_xyz_m=receiver,
-        source_vertices_xyz_m=source_vertices,
-        source_current_a=source_current,
+        frequencies_hz=_portable_float64(frequencies),
+        receiver_xyz_m=_portable_float64(receiver),
+        source_vertices_xyz_m=_portable_float64(source_vertices),
+        source_current_a=_portable_float64(source_current),
         response=response,
-        standard_error=sigma,
+        standard_error=_portable_float64(sigma),
     )

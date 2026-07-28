@@ -30,6 +30,21 @@ def test_synthetic_supplement_is_reproducible_and_seed_sensitive():
     assert first.digest() != changed.digest()
 
 
+@pytest.mark.parametrize("method", SUPPORTED_METHODS)
+def test_synthetic_supplement_normalizes_platform_math_tail_drift(method):
+    cohort = make_synthetic_supplement(method)
+    for values in (
+        cohort.frequencies_hz,
+        cohort.receiver_xyz_m,
+        cohort.source_vertices_xyz_m,
+        cohort.source_current_a,
+        cohort.response.real,
+        cohort.response.imag,
+        cohort.standard_error,
+    ):
+        np.testing.assert_array_equal(values, np.round(values, decimals=12))
+
+
 def test_synthetic_supplement_preserves_minimum_test_cluster_requirement():
     with pytest.raises(ValueError, match="223"):
         make_synthetic_supplement("wfem", cluster_count=422)
