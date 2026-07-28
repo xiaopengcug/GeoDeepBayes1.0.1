@@ -1,0 +1,118 @@
+{
+  "schema_version": "wp8-outcome-blind-spatial-clusters-v1",
+  "observation_values_read": false,
+  "formal_test_results_read": false,
+  "release_package_used_as_single_cluster": false,
+  "geometry_cluster_feasibility": "passed",
+  "field_correlation_gate": "blocked_pending_train_only_response_variogram_and_error_model",
+  "interpretation": "Feasibility only: geometry-derived correlation-length proxies are not substitutes for a train-only response variogram/error model.",
+  "gravity": {
+    "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+    "source_sha256": "54e7bb76fdc7e4d34b0b9dfac654900e107d8fc77e170f198b5adb4e080a9522",
+    "row_count": 434356,
+    "endpoint_exposure": {
+      "projection": [
+        "column_0_longitude",
+        "column_1_latitude"
+      ],
+      "excluded_by_position": [
+        "column_2_complete_bouguer_anomaly"
+      ],
+      "excluded_values_converted": 0,
+      "malformed_coordinate_rows": 0
+    },
+    "correlation_length_proxy_m": 2496.8879221229577,
+    "scale_evidence": {
+      "training_candidate_rule": "longitude <= coordinate-only 60th percentile",
+      "training_candidate_rows": 260614,
+      "median_local_sampling_m": 499.37758442459153,
+      "proxy_rule": "5 * median local sampling; no response variogram fitted"
+    },
+    "split": {
+      "block_width_m": 47604.84107714333,
+      "buffer_each_side_m": 4993.775844245915,
+      "minimum_core_separation_m": 9987.55168849183,
+      "role_rule": "vertical spatial blocks cycle train/train/train/cal/test; boundary bands buffered",
+      "counts": {
+        "train": 247652,
+        "buffer": 92070,
+        "cal": 52008,
+        "test": 42626
+      },
+      "spatial_cluster_counts": {
+        "train": 46,
+        "cal": 9,
+        "test": 9
+      },
+      "extent_m": [
+        380838.7286171466,
+        634580.8687800001
+      ]
+    }
+  },
+  "magnetic": {
+    "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+    "source_sha256": "361245a2e779131e93f3d5aa5e9429b14d9d40199d108c1d21d1e2c7b6d72ad8",
+    "row_count": 67355,
+    "endpoint_exposure": {
+      "projection_whitelist": [
+        "Easting",
+        "Northing",
+        "Flight",
+        "Line"
+      ],
+      "header_field_count": 24,
+      "excluded_outcome_like_headers": [
+        "DIURNAL",
+        "DIURNAL_CORR",
+        "FX",
+        "FY",
+        "FZ",
+        "IGRF",
+        "mag_comp",
+        "mag_diu",
+        "mag_lag",
+        "mag_raw",
+        "MAG_RMI",
+        "mag_tmi"
+      ],
+      "excluded_values_converted": 0
+    },
+    "provenance": {
+      "flight_count": 17,
+      "line_count": 184,
+      "flight_line_count": 184
+    },
+    "correlation_length_proxy_m": 200.0,
+    "scale_evidence": {
+      "training_candidate_rule": "easting <= coordinate-only 60th percentile",
+      "training_candidate_rows": 40414,
+      "training_candidate_flight_line_groups": 166,
+      "median_along_line_sampling_m": 26.792760051850443,
+      "nominal_cross_line_spacing_m": 200.0,
+      "nominal_spacing_source": "_bmad-output/planning-artifacts/research/open-data/magnetic/USGS_MountainPass_airborne_magnetic_2020/Readme.txt",
+      "proxy_rule": "max(5 * median along-line sampling, 200 m metadata spacing)"
+    },
+    "split": {
+      "block_width_m": 2187.722861256989,
+      "buffer_each_side_m": 400.0,
+      "minimum_core_separation_m": 800.0,
+      "role_rule": "vertical spatial blocks cycle train/train/train/cal/test; boundary bands buffered",
+      "counts": {
+        "train": 28571,
+        "buffer": 24520,
+        "cal": 7790,
+        "test": 6474
+      },
+      "spatial_cluster_counts": {
+        "train": 45,
+        "cal": 11,
+        "test": 9
+      },
+      "extent_m": [
+        17501.78289005591,
+        24351.449446920305
+      ]
+    }
+  }
+}

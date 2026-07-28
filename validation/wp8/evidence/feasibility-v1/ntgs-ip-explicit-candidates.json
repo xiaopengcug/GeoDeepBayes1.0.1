@@ -1,0 +1,1489 @@
+{
+  "schema_version": "wp8-ntgs-ip-explicit-candidates-audit-v1",
+  "raw_manifest_sha256": "0dad78eb2b136b034109f799d5ca929d481fff8c0fa8070d688ab120d4290808",
+  "package_count": 20,
+  "packages_with_contract_rich_full_decay": 4,
+  "unique_report_handles_with_contract_rich_full_decay": 4,
+  "duplicate_observation_hash_group_count": 26,
+  "duplicate_observation_hash_groups": [
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Plans.zip::ElectLoc.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Plans/ElectLoc.DAT"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Plans.zip::AxesLoc.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Plans/AxesLoc.DAT"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Plans.zip::AxesMGA.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Plans/AxesMGA.DAT"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Sections.zip::SectAxes.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Sections/SectAxes.DAT"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Sections.zip::t46300.DAT",
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Sections.zip::t46400.DAT",
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Sections.zip::t46500.DAT",
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Sections.zip::t46600.DAT",
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/Sections.zip::t46700.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Sections/t46300.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Sections/t46400.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Sections/t46500.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Sections/t46600.DAT",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/Sections/t46700.DAT"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Inversion/ASEG_GDF/Lorella_DPDP_IP_Inversion_MGA53.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Inversion/ASEG_GDF/Lorella_DPDP_IP_Inversion_MGA53.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Raw Data/Line_46300N.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Raw Data/Line_46300N.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Raw Data/Line_46400N.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Raw Data/Line_46400N.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Raw Data/Line_46500N.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Raw Data/Line_46500N.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Raw Data/Line_46501N.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Raw Data/Line_46501N.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Raw Data/Line_46600N.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Raw Data/Line_46600N.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Raw Data/Line_46700N.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Raw Data/Line_46700N.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Dipole_Dipole.zip::IP_Dipole_Dipole/Raw Data/ASEG_GDF/Lorella_DPDP_IP_MGA53.dat",
+      "83026-CR2013-0416_IP_Dipole_Dipole.zip::IP Dipole Dipole/Raw Data/ASEG_GDF/Lorella_DPDP_IP_MGA53.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Gradient.zip::IP_Gradient/Raw Data/Hammer_Grad_all.dat",
+      "83026-CR2013-0416_IP_Gradient.zip::IP Gradient/Raw Data/Hammer_Grad_all.dat"
+    ],
+    [
+      "82853-CR2016-0080_IP_Gradient.zip::IP_Gradient/Raw Data/ASEG_GDF/Hammer_Gradient_IP_MGA53.dat",
+      "83026-CR2013-0416_IP_Gradient.zip::IP Gradient/Raw Data/ASEG_GDF/Hammer_Gradient_IP_MGA53.dat"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/ReadMe.txt",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/ReadMe.txt"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/AMIRA_Located_Data/Helen1_merged_edited.dat",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/AMIRA_Located_Data/Helen1_merged_edited.dat"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/ASEG_FINAL_DATA/HelenSprings.dat",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/ASEG_FINAL_DATA/HelenSprings.dat"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/011113.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/011113.gdd"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/021113.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/021113.gdd"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/271013.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/271013.gdd"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/281013.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/281013.gdd"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013.gdd"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013_edit.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013_edit.gdd"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/301013.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/301013.gdd"
+    ],
+    [
+      "83146-CR2014-0090_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/311013a.gdd",
+      "83155-CR2015-0781_Helen_Springs_North_GAIP.zip::Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/311013a.gdd"
+    ]
+  ],
+  "packages": [
+    {
+      "path": "80192-EL29161_2014_A_04_IP_Survey_GPS.txt",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/80192",
+      "observation_like_member_count": 0,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": []
+    },
+    {
+      "path": "81229-CR2015-0480_IP_Survey.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/81229",
+      "observation_like_member_count": 20,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "IP_Survey/Carpentaria_Gradient_Array_IP.dat",
+          "bytes": 97412,
+          "sha256": "03c926215fe0fe19e16477ebfe467db95e44376879d773541ac6ec8ba875e54d",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Survey/Rx10000E_Tx10200E/Rx10000E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "9cbc9aab5720194f6209c81d5bc0e8d4916fcc0fdfb4749423cdc1f7f8a43976",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10050E_Tx10200E/Rx10050E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "bb2c9371c53d6928ae560db012e3df5e570403341b08a0fbdc2930c96b22bc84",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10100E_Tx10200E/Rx10100E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "46ad92e7703f14a2bdd185f111437cecd20e70ef6b870ada07c96b788bac64c7",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10150E_Tx10200E/Rx10150E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "0c3caadb9f99989caf5f87168ff9a8fa5e5422c47313bffa0de77e8ceeef074e",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10200E_Tx10200E/Rx10200E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "703bb6d6254e66302aef1299dccbf2f7708076f9a383774198e0ad7d43757526",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10250E_Tx10200E/Rx10250E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "371e912fa00eb54dbe78cd08e6c9b449181af147162dd6da23d0aa8647d61957",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10300E_Tx10200E/Rx10300E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "b40f11946964262303544c1415bb470788c50f40189d60ed8ae3c0e2025b39e3",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10350E_Tx10200E/Rx10350E_Tx10200E.dat",
+          "bytes": 6128,
+          "sha256": "af6b63d961729bc1d7d14d1cf246ff7b283fd91a273ea72b6343476dc4b39a21",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10400E_Tx10200E/Rx10400E_Tx10200E.dat",
+          "bytes": 6922,
+          "sha256": "5299ade75841ac1a29bc83d62e73d1571d3f1b0cdf4812a2d4e7e423143492fd",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10400E_Tx10650E/Rx10400E_Tx10650E.dat",
+          "bytes": 6922,
+          "sha256": "c4f41761099b0b352fd26b7c5718cc4c3cf97b9f548618b690f5cb89937cceb1",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10450E_Tx10650E/Rx10450E_Tx10650E.dat",
+          "bytes": 6922,
+          "sha256": "749cceae719da029312ac13f8c5dadaf971b6407709fffb8f222380663a0435f",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10500E_Tx10650E/Rx10500E_Tx10650E.dat",
+          "bytes": 6922,
+          "sha256": "67d7d7e5f421f94029d4a55ab2c8270e1040328182f629675c17ead3b8884481",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10550E_Tx10650E/Rx10550E_Tx10650E.dat",
+          "bytes": 5731,
+          "sha256": "1f76aca9b9952bc5364ddf9d6496f991570fec29d74ab817293b300c350f2d1e",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10600E_Tx10650E/Rx10600E_Tx10650E.dat",
+          "bytes": 6922,
+          "sha256": "66f6dfe5d250b9370533e861e981ee6bcb3df1d3e4805eaa4d718a7af828b00f",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10650E_Tx10650E/Rx10650E_Tx10650E.dat",
+          "bytes": 5334,
+          "sha256": "18a4b708e231db16685c2ddbd329e674e1650f913b26b9d2c828494e200706ea",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10700E_Tx10650E/Rx10700E_Tx10650E.dat",
+          "bytes": 5731,
+          "sha256": "d9be9d3135f20462295f911544f95c5a1607775c8f5e90cb4abcf3d551deeed7",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10750E_Tx10650E/Rx10750E_Tx10650E.dat",
+          "bytes": 5334,
+          "sha256": "ef00ac3ace615d2a7c7750617ccc1263d17ae2b09be68cbd1878c3ee912e2c81",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10800E_Tx10650E/Rx10800E_Tx10650E.dat",
+          "bytes": 5334,
+          "sha256": "ed567239deb8d12267521f41da47c113c8046175ce447364e569dde7213baecd",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        },
+        {
+          "path": "IP_Survey/Rx10850E_Tx10650E/Rx10850E_Tx10650E.dat",
+          "bytes": 6922,
+          "sha256": "6eb505cedf331b606f518cd8bd1f950530cfc38d2e6c9252f18863013c48698f",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "26/07/2012"
+        }
+      ]
+    },
+    {
+      "path": "82853-CR2016-0080_IP_Dipole_Dipole.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/82853",
+      "observation_like_member_count": 17,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Plans.zip::ElectLoc.DAT",
+          "bytes": 3619,
+          "sha256": "5459c479ce602152e767075cc56ad8502963f6d10e35c452652790c366117657",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Plans.zip::AxesLoc.DAT",
+          "bytes": 1179,
+          "sha256": "9a1a0a9df19a5275b5708d0d9992301c0af9e01d91e36aaa8fdde319ac3176eb",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Plans.zip::AxesMGA.DAT",
+          "bytes": 1263,
+          "sha256": "243bddf781471d29560133d68c5d0959ce2a0f6055ac8d9acfffc5c0beef0cc4",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Sections.zip::SectAxes.DAT",
+          "bytes": 1767,
+          "sha256": "f0a249fb019c56f93163d6ca1204e8a41df999df8f36239109910674fc502e4f",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Sections.zip::t46300.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Sections.zip::t46400.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Sections.zip::t46500.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Sections.zip::t46600.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/Sections.zip::t46700.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Inversion/ASEG_GDF/Lorella_DPDP_IP_Inversion_MGA53.dat",
+          "bytes": 13139784,
+          "sha256": "089b6c4348a8911d6eb3637df988b0ddcde514bd6d85cb14fb26b682e8b54b8c",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP_Dipole_Dipole/Raw Data/Line_46300N.dat",
+          "bytes": 33922,
+          "sha256": "930089f6dfa38bb3076e4ce881f4a3a36694baaff30190c1551034ba84475441",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "02/07/2012"
+        },
+        {
+          "path": "IP_Dipole_Dipole/Raw Data/Line_46400N.dat",
+          "bytes": 28364,
+          "sha256": "0b2218866c7c41960e403627e372b967eeb0415c6a3ff96c87146f36a1c09885",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "02/07/2012"
+        },
+        {
+          "path": "IP_Dipole_Dipole/Raw Data/Line_46500N.dat",
+          "bytes": 36304,
+          "sha256": "ccdcee1fdf009f0b22ee1ac8d896c26a92e2016e60c81cdb46ae791dae3e05bd",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "02/07/2012"
+        },
+        {
+          "path": "IP_Dipole_Dipole/Raw Data/Line_46501N.dat",
+          "bytes": 32335,
+          "sha256": "c091cda130b2816322de403463a26cc3468a1eb2738c1e431149d4a89fa7a3eb",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "19/07/2012"
+        },
+        {
+          "path": "IP_Dipole_Dipole/Raw Data/Line_46600N.dat",
+          "bytes": 37098,
+          "sha256": "817337b40d8e6893de3491c12cafacc636d4242ef034f040614e5efb2ed9e589",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "19/07/2012"
+        },
+        {
+          "path": "IP_Dipole_Dipole/Raw Data/Line_46700N.dat",
+          "bytes": 29158,
+          "sha256": "a9422b479d128ae205e32713d90946bc0c7e97b88c62d9674ebad91860aeee78",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "30/06/2012"
+        },
+        {
+          "path": "IP_Dipole_Dipole/Raw Data/ASEG_GDF/Lorella_DPDP_IP_MGA53.dat",
+          "bytes": 176656,
+          "sha256": "b61f1e09d1da528bceb5206ff1756864d9863196ae89c3dd5690ee0ecca504ba",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        }
+      ]
+    },
+    {
+      "path": "82853-CR2016-0080_IP_Gradient.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/82853",
+      "observation_like_member_count": 2,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "IP_Gradient/Raw Data/Hammer_Grad_all.dat",
+          "bytes": 30343,
+          "sha256": "ef427df4ae96cd0da10f6e0c76f2e9dac8c17d3f6cf22af81990b52fcb550c7a",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "23/08/2012"
+        },
+        {
+          "path": "IP_Gradient/Raw Data/ASEG_GDF/Hammer_Gradient_IP_MGA53.dat",
+          "bytes": 21600,
+          "sha256": "dee2ae37411b584211841fe18faeb819f5d6522ee57b4104513e488c1e806517",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        }
+      ]
+    },
+    {
+      "path": "83026-CR2013-0416_IP_Dipole_Dipole.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/83026",
+      "observation_like_member_count": 17,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "IP Dipole Dipole/Inversion/ASEG_GDF/Lorella_DPDP_IP_Inversion_MGA53.dat",
+          "bytes": 13139784,
+          "sha256": "089b6c4348a8911d6eb3637df988b0ddcde514bd6d85cb14fb26b682e8b54b8c",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Plans/AxesLoc.DAT",
+          "bytes": 1179,
+          "sha256": "9a1a0a9df19a5275b5708d0d9992301c0af9e01d91e36aaa8fdde319ac3176eb",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Plans/AxesMGA.DAT",
+          "bytes": 1263,
+          "sha256": "243bddf781471d29560133d68c5d0959ce2a0f6055ac8d9acfffc5c0beef0cc4",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Plans/ElectLoc.DAT",
+          "bytes": 3619,
+          "sha256": "5459c479ce602152e767075cc56ad8502963f6d10e35c452652790c366117657",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Sections/SectAxes.DAT",
+          "bytes": 1767,
+          "sha256": "f0a249fb019c56f93163d6ca1204e8a41df999df8f36239109910674fc502e4f",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Sections/t46300.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Sections/t46400.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Sections/t46500.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Sections/t46600.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Inversion/Sections/t46700.DAT",
+          "bytes": 87,
+          "sha256": "2ead7f56964875b52664417ad1e6246d5da04090bbe8a11889c5fc7e6d8a7d43",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "IP Dipole Dipole/Raw Data/Line_46300N.dat",
+          "bytes": 33922,
+          "sha256": "930089f6dfa38bb3076e4ce881f4a3a36694baaff30190c1551034ba84475441",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "02/07/2012"
+        },
+        {
+          "path": "IP Dipole Dipole/Raw Data/Line_46400N.dat",
+          "bytes": 28364,
+          "sha256": "0b2218866c7c41960e403627e372b967eeb0415c6a3ff96c87146f36a1c09885",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "02/07/2012"
+        },
+        {
+          "path": "IP Dipole Dipole/Raw Data/Line_46500N.dat",
+          "bytes": 36304,
+          "sha256": "ccdcee1fdf009f0b22ee1ac8d896c26a92e2016e60c81cdb46ae791dae3e05bd",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "02/07/2012"
+        },
+        {
+          "path": "IP Dipole Dipole/Raw Data/Line_46501N.dat",
+          "bytes": 32335,
+          "sha256": "c091cda130b2816322de403463a26cc3468a1eb2738c1e431149d4a89fa7a3eb",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "19/07/2012"
+        },
+        {
+          "path": "IP Dipole Dipole/Raw Data/Line_46600N.dat",
+          "bytes": 37098,
+          "sha256": "817337b40d8e6893de3491c12cafacc636d4242ef034f040614e5efb2ed9e589",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "19/07/2012"
+        },
+        {
+          "path": "IP Dipole Dipole/Raw Data/Line_46700N.dat",
+          "bytes": 29158,
+          "sha256": "a9422b479d128ae205e32713d90946bc0c7e97b88c62d9674ebad91860aeee78",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "30/06/2012"
+        },
+        {
+          "path": "IP Dipole Dipole/Raw Data/ASEG_GDF/Lorella_DPDP_IP_MGA53.dat",
+          "bytes": 176656,
+          "sha256": "b61f1e09d1da528bceb5206ff1756864d9863196ae89c3dd5690ee0ecca504ba",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        }
+      ]
+    },
+    {
+      "path": "83026-CR2013-0416_IP_Gradient.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/83026",
+      "observation_like_member_count": 2,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "IP Gradient/Raw Data/Hammer_Grad_all.dat",
+          "bytes": 30343,
+          "sha256": "ef427df4ae96cd0da10f6e0c76f2e9dac8c17d3f6cf22af81990b52fcb550c7a",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "23/08/2012"
+        },
+        {
+          "path": "IP Gradient/Raw Data/ASEG_GDF/Hammer_Gradient_IP_MGA53.dat",
+          "bytes": 21600,
+          "sha256": "dee2ae37411b584211841fe18faeb819f5d6522ee57b4104513e488c1e806517",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        }
+      ]
+    },
+    {
+      "path": "83146-CR2014-0090_Helen_Springs_North_GAIP.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/83146",
+      "observation_like_member_count": 11,
+      "full_decay_member_count": 9,
+      "contract_rich_member_count": 1,
+      "observations": [
+        {
+          "path": "Helen_Springs_North_GAIP/data/ReadMe.txt",
+          "bytes": 1636,
+          "sha256": "4a4a8703b6eb89319a009a6765eda57ac84bbed9c90310caecf167ef0f053ae4",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/AMIRA_Located_Data/Helen1_merged_edited.dat",
+          "bytes": 198634,
+          "sha256": "0944be08b2e4c07b4b72a8325180b0e86b8d0b8d9cb1130c3111c71b7a18a940",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "16/12/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/ASEG_FINAL_DATA/HelenSprings.dat",
+          "bytes": 204303,
+          "sha256": "36b5e1ebbcbcad13a1a74fcbd40911413dcb7f7665b15292d07a835fbf8f0acf",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/011113.gdd",
+          "bytes": 69203,
+          "sha256": "234d9d7af793c09ee55efbefc8f2720b9e70d48f3ab2f0e9428a34289558068c",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "01/11/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/021113.gdd",
+          "bytes": 82021,
+          "sha256": "c2f1faaa4567615226bfecd9f634501922b78ca05dbc3a67b9625a89b0659fd7",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "02/11/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/271013.gdd",
+          "bytes": 164207,
+          "sha256": "5488f59a22bc094ca77e4f7fc06b2ad8169aedc64dda91f0dd86a9682727d164",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "26/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/281013.gdd",
+          "bytes": 85037,
+          "sha256": "c1e59f5fa31bafa8d45e4f8a7d1dd79cbc6f31c1ca8f9c534754896372ac3d49",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "28/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013.gdd",
+          "bytes": 67318,
+          "sha256": "52154973037a14a2e3eebe7d801221c46a53dc22a89ad5651442f06e47b1c424",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "29/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013_edit.gdd",
+          "bytes": 9637,
+          "sha256": "bcbf2150a7746dce0dcd706b8cf820797f38b39bb3cde177f4b202f25840b13b",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "29/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/301013.gdd",
+          "bytes": 88053,
+          "sha256": "fd5c6d510fc92a0bdf8f5d3ecac140954fcfdab2ad5bc450002b3d9661160077",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "30/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/311013a.gdd",
+          "bytes": 144226,
+          "sha256": "3e3041fbe3b32a0bed6acaefa0dc9fe2ee0198e4cd3e72c1ce8952bbc077c4c3",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "31/10/2013"
+        }
+      ]
+    },
+    {
+      "path": "83155-CR2015-0781_Helen_Springs_North_GAIP.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/83155",
+      "observation_like_member_count": 11,
+      "full_decay_member_count": 9,
+      "contract_rich_member_count": 1,
+      "observations": [
+        {
+          "path": "Helen_Springs_North_GAIP/data/ReadMe.txt",
+          "bytes": 1636,
+          "sha256": "4a4a8703b6eb89319a009a6765eda57ac84bbed9c90310caecf167ef0f053ae4",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/AMIRA_Located_Data/Helen1_merged_edited.dat",
+          "bytes": 198634,
+          "sha256": "0944be08b2e4c07b4b72a8325180b0e86b8d0b8d9cb1130c3111c71b7a18a940",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "16/12/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/ASEG_FINAL_DATA/HelenSprings.dat",
+          "bytes": 204303,
+          "sha256": "36b5e1ebbcbcad13a1a74fcbd40911413dcb7f7665b15292d07a835fbf8f0acf",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/011113.gdd",
+          "bytes": 69203,
+          "sha256": "234d9d7af793c09ee55efbefc8f2720b9e70d48f3ab2f0e9428a34289558068c",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "01/11/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/021113.gdd",
+          "bytes": 82021,
+          "sha256": "c2f1faaa4567615226bfecd9f634501922b78ca05dbc3a67b9625a89b0659fd7",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "02/11/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/271013.gdd",
+          "bytes": 164207,
+          "sha256": "5488f59a22bc094ca77e4f7fc06b2ad8169aedc64dda91f0dd86a9682727d164",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "26/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/281013.gdd",
+          "bytes": 85037,
+          "sha256": "c1e59f5fa31bafa8d45e4f8a7d1dd79cbc6f31c1ca8f9c534754896372ac3d49",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "28/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013.gdd",
+          "bytes": 67318,
+          "sha256": "52154973037a14a2e3eebe7d801221c46a53dc22a89ad5651442f06e47b1c424",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "29/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/291013_edit.gdd",
+          "bytes": 9637,
+          "sha256": "bcbf2150a7746dce0dcd706b8cf820797f38b39bb3cde177f4b202f25840b13b",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "29/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/301013.gdd",
+          "bytes": 88053,
+          "sha256": "fd5c6d510fc92a0bdf8f5d3ecac140954fcfdab2ad5bc450002b3d9661160077",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "30/10/2013"
+        },
+        {
+          "path": "Helen_Springs_North_GAIP/data/RAW_DATA/HelenOne/311013a.gdd",
+          "bytes": 144226,
+          "sha256": "3e3041fbe3b32a0bed6acaefa0dc9fe2ee0198e4cd3e72c1ce8952bbc077c4c3",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": false,
+          "acquisition_date": "31/10/2013"
+        }
+      ]
+    },
+    {
+      "path": "85448-CR2006-0332_Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/85448",
+      "observation_like_member_count": 7,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data/Line_555800E.dat",
+          "bytes": 44754,
+          "sha256": "5bcdeb7ad64493706839d157dda01142b2c0d36a528917c0e578628c1a07acd7",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data/Line_556050E.dat",
+          "bytes": 44754,
+          "sha256": "dba0dc5f17ae59058e6142218d8a0d28f25add5188a1d4f8b7ae144da396fadb",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data/Line_556550E.dat",
+          "bytes": 44754,
+          "sha256": "8ec6686a5b2748ad962ed596dd5b7a8daeb109659d6c007c6c91b8a11c779a58",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data/Line_556800E.dat",
+          "bytes": 44084,
+          "sha256": "4026b21158530cade6d69a8722ce3c1514263dc7638666ad07906622e89442b9",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data/Line_557000E.dat",
+          "bytes": 39059,
+          "sha256": "1b057715a0dd7868faaa828c85024552b5239e57ef8e9d770c3b6e2a2b6b6373",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data/Line_557550E.dat",
+          "bytes": 39059,
+          "sha256": "80dc527efd802ade9b1ced27fd551a0759bb513f62c86f96c2477dad6bf1fb6e",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data/Line_558200E.dat",
+          "bytes": 31354,
+          "sha256": "397a3e1ae476181b8ca176f0d0031f430ff929ffecc2861dc1c808eaf6c0538e",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        }
+      ]
+    },
+    {
+      "path": "85448-CR2006-0332_Appendix2_2004_IP_Survey_MIMDAS_Raw_Data.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/85448",
+      "observation_like_member_count": 14,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/555800ETCdp.dat",
+          "bytes": 306550,
+          "sha256": "12d676dd0f8e125dc7f255f2042e9d22981628b4410fd37b0674431d159650a0",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/555800ETCpd.dat",
+          "bytes": 417701,
+          "sha256": "8a5774a1eaf530194155024c78e8e389aff25aee6fe954ef43a1272a4d94b25a",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/556000ETCdp.dat",
+          "bytes": 75437,
+          "sha256": "28cf67c541187335909cbdb073c0c2085cd0ad9442dbc6bd51fce732c26b49a0",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/556000ETCpd.dat",
+          "bytes": 67312,
+          "sha256": "2d58f1dcebf43ed14dd07a4a8dc42595ea7abe75be1b3a37fbb4953771922032",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/556300ETCdp.dat",
+          "bytes": 100342,
+          "sha256": "da0dcf83814a907a69ae5c7b6098857d69f0e8e831925fb1e5bb11add3cc2033",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/556300ETCpd.dat",
+          "bytes": 98269,
+          "sha256": "e0f3d2e36b3426f55d3a960e282cb4a2bb29908794da8c0edd48585e0abf83c8",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/556800ETCdp.dat",
+          "bytes": 70242,
+          "sha256": "9981e2133bb7be70a51bbbc92f055250bc1633330ad365232e632e9295b831bf",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/556800ETCpd.dat",
+          "bytes": 68940,
+          "sha256": "d318bfca01805ddb8ddf26ed5ced0794d3805aa2a9d34a32eea8a3b77cae4234",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/557300ETCdp.dat",
+          "bytes": 45303,
+          "sha256": "0cfa089bff721eda227f1b41a22c7d11ed4fd47323e8152be1f409d207789931",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/557300ETCpd.dat",
+          "bytes": 44462,
+          "sha256": "dd917370fd42c217fa3fe6a1ea41ce865655478b29b1d053971149e595ad068e",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/557800ETCdp.dat",
+          "bytes": 45517,
+          "sha256": "622e2a3c8d621d00c3a59a16dd30913fd10c5a60551a665834d4fb248a37926f",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/557800ETCpd.dat",
+          "bytes": 44675,
+          "sha256": "ea6e37f41e3b720e9b83c40a0c1c33e843927b86a99cd8ea1d50fe5ffe747619",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/558800ETCdp.dat",
+          "bytes": 47022,
+          "sha256": "5adb584a463d69948890eb68322d7bc0d942661ebc4a37f14f55bf19de1a470a",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        },
+        {
+          "path": "Appendix2_2004_IP_Survey_MIMDAS_Raw_Data/558800ETCpd.dat",
+          "bytes": 49528,
+          "sha256": "3319fc6c8578c1d6dbea36a2d6b6bb3e3c0ef5869cc9c31f7006a41ece21fae9",
+          "full_decay_20": false,
+          "error_field": true,
+          "stack_field": false,
+          "electrode_geometry": true,
+          "acquisition_date": null
+        }
+      ]
+    },
+    {
+      "path": "87173-CR2010-0981_Appendix3_-_IP_Geophysics.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87173",
+      "observation_like_member_count": 1,
+      "full_decay_member_count": 1,
+      "contract_rich_member_count": 1,
+      "observations": [
+        {
+          "path": "Appendix3 - IP Geophysics/Line_8532875N.dat",
+          "bytes": 43359,
+          "sha256": "ab1922003bac5d73935a0a4349e1b1b3e1f5d502f3e0b391678c0fa956cdaa49",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "02/09/2010"
+        }
+      ]
+    },
+    {
+      "path": "87177-CR2010-1012_IP_Survey.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87177",
+      "observation_like_member_count": 1,
+      "full_decay_member_count": 1,
+      "contract_rich_member_count": 1,
+      "observations": [
+        {
+          "path": "IP Survey/8532400N/Line_8532400N.dat",
+          "bytes": 43359,
+          "sha256": "ec592bf632d1ab3393b042aee4b89068b9420169f0ecb43fa6b755b93748571f",
+          "full_decay_20": true,
+          "error_field": true,
+          "stack_field": true,
+          "electrode_geometry": true,
+          "acquisition_date": "06/09/2010"
+        }
+      ]
+    },
+    {
+      "path": "87298-CR2009-0564_Appendix5_Hartz_Range_IP_Report.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87298",
+      "observation_like_member_count": 0,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": []
+    },
+    {
+      "path": "87573-CR2018-0151_EL24453_2018_S_07_2013_GAIP_Data.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87573",
+      "observation_like_member_count": 7,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "EL24453_2018_S_07_2013_GAIP_Data/EM_Bigrlyi_GAIP_2013_Grid10.dat",
+          "bytes": 1283064,
+          "sha256": "eb52ad7a0f48fba08d73bcbf68dbb1e870223712cd476663ab2cea778b1cc766",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "EL24453_2018_S_07_2013_GAIP_Data/EM_Bigrlyi_GAIP_2013_Grid11.dat",
+          "bytes": 1144584,
+          "sha256": "8c1efdad5f25bc2c5ae39b85c203d603557e6553c47e0b198195925b864a7849",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "EL24453_2018_S_07_2013_GAIP_Data/EM_Bigrlyi_GAIP_2013_Grid12.dat",
+          "bytes": 1674988,
+          "sha256": "688ffe0a2cee71622e515498de3ab3bf81d27a662d1196523692deae829a6c8f",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "EL24453_2018_S_07_2013_GAIP_Data/EM_Bigrlyi_GAIP_2013_Grid23.dat",
+          "bytes": 456304,
+          "sha256": "23771b7e653ce5a1dd8e249dc2e335743fe61b440f3fe996425144e6e36eb387",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "EL24453_2018_S_07_2013_GAIP_Data/EM_Bigrlyi_GAIP_2013_Grid5.dat",
+          "bytes": 308880,
+          "sha256": "b814b4ff6510a40deedd9b647104362930b82bb400ee4e6106aef16553f56952",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "EL24453_2018_S_07_2013_GAIP_Data/EM_Bigrlyi_GAIP_2013_Grid8.dat",
+          "bytes": 1269768,
+          "sha256": "41439722dc505eaabcdb9e1404cd3d06b88135867f5bec8494fa4f5d261a73e2",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "EL24453_2018_S_07_2013_GAIP_Data/EM_Bigrlyi_GAIP_2013_Grid9.dat",
+          "bytes": 1300728,
+          "sha256": "d4a38c8c80a1aa85c1b36ff9a487b6681064ec694b78cf5119eb42dfed35629f",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        }
+      ]
+    },
+    {
+      "path": "87909-CR2010-0563_Appendix_5_Hartz_Range_Mines_Geophysics_IP_survey.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87909",
+      "observation_like_member_count": 0,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": []
+    },
+    {
+      "path": "88107-JingShan_DD_IP.txt",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/88107",
+      "observation_like_member_count": 0,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": []
+    },
+    {
+      "path": "88107-JingShan_IP.txt",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/88107",
+      "observation_like_member_count": 0,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": []
+    },
+    {
+      "path": "89308-CR2012-0379_Appendix_7_-_GPX_GAIP_and_DDIP.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/89308",
+      "observation_like_member_count": 0,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": []
+    },
+    {
+      "path": "90743-EL29161_2014_P_04_IP_Survey_GPS.txt",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/90743",
+      "observation_like_member_count": 0,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": []
+    },
+    {
+      "path": "93733-CR2025-0238_Raw_Survey_Files.zip",
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/93733",
+      "observation_like_member_count": 8,
+      "full_decay_member_count": 0,
+      "contract_rich_member_count": 0,
+      "observations": [
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC0001_OMNIx42.csv",
+          "bytes": 5792,
+          "sha256": "04876e6144010c31bd9198b541a0efecbb05dd275860651fee732afe75d9b217",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC0002_OMNIx42.csv",
+          "bytes": 7814,
+          "sha256": "2822766b58d69f09d1ec98b8ce877ce69849476a213905b4f63eb6cf94546ba7",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC003_OMNIx42.csv",
+          "bytes": 7950,
+          "sha256": "01e75bd16ce45e5df71daf4d625186576d8d288b5b0fceef5285a4e62e751498",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC004_OMNIx42.csv",
+          "bytes": 7670,
+          "sha256": "89e1711bf56611cb142b1a06baa943ac7132768f9234ba1b753716da91431898",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC005_OMNIx42.csv",
+          "bytes": 7985,
+          "sha256": "2fe2b0aa870b3fe4367d20152ffdc0bd25329f050e521f199800ff59917c3c59",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC006_OMNIx42.csv",
+          "bytes": 8242,
+          "sha256": "9c8de17ad1881cf5580efa87b119dfb78fdda4012dc78d0b68d40d195962a141",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC007_OMNIx42.csv",
+          "bytes": 8075,
+          "sha256": "04b4cb804c00da2f08d1b3ab7228dbb67fff20c2365852b006ad13563b59a2d2",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        },
+        {
+          "path": "Raw Survey Files/SURVEY-IQ_DRILLHOLE_WFRC008_OMNIx42.csv",
+          "bytes": 6890,
+          "sha256": "6a9511b9ef00e900f576ae5832495798669f79a63c0974d39a69e8d0c9513631",
+          "full_decay_20": false,
+          "error_field": false,
+          "stack_field": false,
+          "electrode_geometry": false,
+          "acquisition_date": null
+        }
+      ]
+    }
+  ],
+  "repository_access": {
+    "publicly_downloadable": true,
+    "explicit_reuse_license_on_item_pages": false,
+    "formal_license_gate_passes": false
+  },
+  "formal_independent_campaign_count": 0,
+  "minimum_required_independent_clusters": 223,
+  "formal_cluster_power_gate_passes": false,
+  "selection_role": "training_candidates_only",
+  "formal_test_endpoints_inspected": false,
+  "test_unseal_count": 0,
+  "conclusion": "Deep attachment inspection confirms several full-decay payloads, but also byte-identical re-deposits, integrated-IP files, GPS-only files, PDF-only packages, grids and unrelated drilling surveys. Report handles are not independent campaigns. With no explicit reuse licence or frozen campaign/correlation audit, the formal contribution remains zero."
+}

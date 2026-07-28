@@ -1,0 +1,57 @@
+{
+  "schema_version": "wp8-producer-manifest-v1",
+  "members": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/open-data/00_catalog/open_geophysics_data_manifest.json",
+      "sha256": "bf01cdfc0cc3e4e3826fd6ff002071687c3be91e46c0e16d78c68c1edc671743"
+    },
+    {
+      "path": "validation/wp8/datasets.json",
+      "sha256": "25917e759fc3b7ac66809c935b15243f8342f4d948faf389029fed35b05d0528"
+    },
+    {
+      "path": "validation/wp8/preregistration/wp8-0-v1.json",
+      "sha256": "e189e8fcbf7517c4d5e45ae3a81e14e781382da7a426d2114c34619d201f3b1c"
+    },
+    {
+      "path": "validation/wp8/contracts/wp8-feasibility.schema.json",
+      "sha256": "a0f19e9dd1a1cb7478dc290e319fc47ac23d320335e8f6c2b88590e362d481b2"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/field-contract-audit.json",
+      "sha256": "b49274dc4971546ee30e2d8ece571656e308e43e09512ff838288cb71030c7cb"
+    },
+    {
+      "path": "validation/wp8/data/usarray-ta-emtf-v1/raw-manifest.json",
+      "sha256": "84278b3a0218dd5c6a1c11201e32a465a1f4be8981ae3bc55faf2b85cb8bf736"
+    },
+    {
+      "path": "validation/wp8/data/usarray-ta-emtf-v1/geographic-split.json",
+      "sha256": "c0fb453590be073ced998fff6598887c12f89ddc66ca9fd1140b61ba87dbcc99"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/mt-usarray-raw-freeze.json",
+      "sha256": "d0ac1bdfb9dc9e97d5a59272314e5dd5251942eb01b7dbefe98f5294e488971f"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/mt-usarray-train-diagnostics.json",
+      "sha256": "53fc16c7fca863f3deaa13b6b1d64f3236b975aa933919123f923c0774921bca"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/tdip-date-split.json",
+      "sha256": "92f6e136ecf518d8fd40d1c87170bb3fd26fac6083b49f423daffaa30ed8d366"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/tdip-train-diagnostics.json",
+      "sha256": "804811c74d817a5b2cc01b7d3aa776eda20053a587931b441ec46a69ae58437b"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/tdip-path-readiness.json",
+      "sha256": "b5c7f5ecc726e4fd95c1f53797aa45cd01d8bfc0a9c6a54b8982a6f969363efd"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/final-requirement-audit.json",
+      "sha256": "7b7bd507179db4fb72a58a0d39fb482781275f9bf78ed9ca024a5adba5b53f11"
+    }
+  ]
+}

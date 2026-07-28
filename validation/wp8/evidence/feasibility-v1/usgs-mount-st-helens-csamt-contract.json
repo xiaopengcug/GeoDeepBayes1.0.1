@@ -1,0 +1,188 @@
+{
+  "schema_version": "wp8-usgs-mount-st-helens-csamt-contract-v1",
+  "raw_manifest_sha256": "3fa9913c0537c07eb2cb0bf0d09b6d434cd1931b594199618259b51ad0315b49",
+  "license_gate_passes": true,
+  "station_count": 13,
+  "controlled_source_station_upper_bound": 12,
+  "natural_source_station": "MSH-1102",
+  "repeat_station_pairs": [
+    [
+      "MSH-1001",
+      "MSH-1002"
+    ],
+    [
+      "MSH-1003",
+      "MSH-1004"
+    ]
+  ],
+  "station_edi_contracts": [
+    {
+      "station": "MSH-1001",
+      "frequency_count_declared": 33,
+      "latitude_declared": "-90:00:00.00",
+      "longitude_declared": "0:00:00.00",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1002",
+      "frequency_count_declared": 35,
+      "latitude_declared": "-90:00:00.00",
+      "longitude_declared": "0:00:00.00",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1003",
+      "frequency_count_declared": 38,
+      "latitude_declared": "-90:00:00.00",
+      "longitude_declared": "0:00:00.00",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1004",
+      "frequency_count_declared": 39,
+      "latitude_declared": "-90:00:00.00",
+      "longitude_declared": "0:00:00.00",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1102",
+      "frequency_count_declared": 23,
+      "latitude_declared": "46:12:44.3118",
+      "longitude_declared": "-122:11:18.2487",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1103",
+      "frequency_count_declared": 37,
+      "latitude_declared": "46:13:18.0923",
+      "longitude_declared": "-122:11:16.4439",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1104",
+      "frequency_count_declared": 39,
+      "latitude_declared": "46:13:53.5647",
+      "longitude_declared": "-122:11:06.5366",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1105",
+      "frequency_count_declared": 39,
+      "latitude_declared": "46:14:26.3508",
+      "longitude_declared": "-122:11:06.1446",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1106",
+      "frequency_count_declared": 37,
+      "latitude_declared": "46:15:02.4329",
+      "longitude_declared": "-122:11:04.536",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1107",
+      "frequency_count_declared": 32,
+      "latitude_declared": "46:10:27.2876",
+      "longitude_declared": "-122:10:50.5095",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1108",
+      "frequency_count_declared": 34,
+      "latitude_declared": "46:12:08.643",
+      "longitude_declared": "-122:13:43.8954",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1109",
+      "frequency_count_declared": 37,
+      "latitude_declared": "46:11:53.8563",
+      "longitude_declared": "-122:09:33.9614",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    },
+    {
+      "station": "MSH-1110",
+      "frequency_count_declared": 36,
+      "latitude_declared": "46:12:45.3101",
+      "longitude_declared": "-122:11:17.3939",
+      "rho_components_present": true,
+      "phase_components_present": true,
+      "rho_error_arrays_present": true,
+      "phase_error_arrays_present": true,
+      "response_values_interpreted": 0
+    }
+  ],
+  "all_edi_have_rho_phase_and_error_arrays": true,
+  "receiver_geometry": {
+    "electric_dipoles": "orthogonal 25 m",
+    "magnetic_receiver": "high-sensitivity EMI magnetic coils",
+    "gps_and_elevation": true
+  },
+  "source_contract": {
+    "type": "controlled-source inductive transmitter",
+    "augmentation_band_hz": [
+      450,
+      2700
+    ],
+    "documented_offset": "approximately 250 m west of receiver",
+    "exact_source_coordinates_present": false,
+    "source_orientation_present": false,
+    "source_moment_or_current_present": false,
+    "waveform_present": false
+  },
+  "available_grounded_finite_line_solver_compatible": false,
+  "near_transition_far_classification_possible": false,
+  "observation_contract_ready": false,
+  "formal_cluster_power_gate_passes": false,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "warning": "The EDI response/error contract is strong, but the approximate inductive-source placement lacks source moment/orientation/waveform and is incompatible with the frozen grounded finite-line CSAMT operator. Twelve controlled-source stations are also far below 223."
+}

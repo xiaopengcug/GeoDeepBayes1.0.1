@@ -1,0 +1,235 @@
+{
+  "schema_version": "wp8-sierra-nevada-gravity-train-diagnostics-v1",
+  "raw_manifest_sha256": "b0d7fdab50f1cbb0a83fb78c663d16750d9d42d2ebff8b252d9c15b98626b14d",
+  "design_sha256": "decfee9079a4fb3bf23514f177f8e197701a9364bb0d30ba0e427033935ee295",
+  "training_response_rows_interpreted": 5585,
+  "geometry_rows_by_role": {
+    "test": 17672,
+    "buffer": 2114,
+    "train": 5585,
+    "calibration": 3524
+  },
+  "response_rows_interpreted": {
+    "train": 5585,
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "training_spatial_blocks": 106,
+  "regional_model": "quadratic x/y trend plus dominant-source fixed effects, fitted on training block medians only",
+  "residual_sill_mgal2": 771.3138790231554,
+  "correlation_range_km": 62.5,
+  "range_censored_at_200km": false,
+  "variogram": [
+    {
+      "lag_center_km": 2.5,
+      "pairs": 2,
+      "semivariance_mgal2": 207.19101809157843
+    },
+    {
+      "lag_center_km": 7.5,
+      "pairs": 4,
+      "semivariance_mgal2": 499.1622682150468
+    },
+    {
+      "lag_center_km": 12.5,
+      "pairs": 14,
+      "semivariance_mgal2": 113.06387271859408
+    },
+    {
+      "lag_center_km": 17.5,
+      "pairs": 22,
+      "semivariance_mgal2": 81.57087847472324
+    },
+    {
+      "lag_center_km": 22.5,
+      "pairs": 31,
+      "semivariance_mgal2": 386.37509981475574
+    },
+    {
+      "lag_center_km": 27.5,
+      "pairs": 41,
+      "semivariance_mgal2": 300.41413349532723
+    },
+    {
+      "lag_center_km": 32.5,
+      "pairs": 31,
+      "semivariance_mgal2": 264.79993352682914
+    },
+    {
+      "lag_center_km": 37.5,
+      "pairs": 59,
+      "semivariance_mgal2": 466.60155149131236
+    },
+    {
+      "lag_center_km": 42.5,
+      "pairs": 53,
+      "semivariance_mgal2": 732.2532020991918
+    },
+    {
+      "lag_center_km": 47.5,
+      "pairs": 61,
+      "semivariance_mgal2": 444.66959231320976
+    },
+    {
+      "lag_center_km": 52.5,
+      "pairs": 57,
+      "semivariance_mgal2": 857.0189371253074
+    },
+    {
+      "lag_center_km": 57.5,
+      "pairs": 54,
+      "semivariance_mgal2": 694.456960956134
+    },
+    {
+      "lag_center_km": 62.5,
+      "pairs": 70,
+      "semivariance_mgal2": 906.3328694867865
+    },
+    {
+      "lag_center_km": 67.5,
+      "pairs": 56,
+      "semivariance_mgal2": 1425.2906043117994
+    },
+    {
+      "lag_center_km": 72.5,
+      "pairs": 75,
+      "semivariance_mgal2": 876.4878636527338
+    },
+    {
+      "lag_center_km": 77.5,
+      "pairs": 80,
+      "semivariance_mgal2": 992.8342413382654
+    },
+    {
+      "lag_center_km": 82.5,
+      "pairs": 84,
+      "semivariance_mgal2": 905.158144143207
+    },
+    {
+      "lag_center_km": 87.5,
+      "pairs": 91,
+      "semivariance_mgal2": 1143.2857613123076
+    },
+    {
+      "lag_center_km": 92.5,
+      "pairs": 87,
+      "semivariance_mgal2": 928.0073886339051
+    },
+    {
+      "lag_center_km": 97.5,
+      "pairs": 89,
+      "semivariance_mgal2": 1126.5529886012866
+    },
+    {
+      "lag_center_km": 102.5,
+      "pairs": 74,
+      "semivariance_mgal2": 873.0459297546573
+    },
+    {
+      "lag_center_km": 107.5,
+      "pairs": 69,
+      "semivariance_mgal2": 1036.7669502590622
+    },
+    {
+      "lag_center_km": 112.5,
+      "pairs": 80,
+      "semivariance_mgal2": 919.4013289229118
+    },
+    {
+      "lag_center_km": 117.5,
+      "pairs": 95,
+      "semivariance_mgal2": 870.707266874312
+    },
+    {
+      "lag_center_km": 122.5,
+      "pairs": 93,
+      "semivariance_mgal2": 874.4677544892266
+    },
+    {
+      "lag_center_km": 127.5,
+      "pairs": 83,
+      "semivariance_mgal2": 760.7429328461325
+    },
+    {
+      "lag_center_km": 132.5,
+      "pairs": 88,
+      "semivariance_mgal2": 835.6604090568094
+    },
+    {
+      "lag_center_km": 137.5,
+      "pairs": 82,
+      "semivariance_mgal2": 861.795216035212
+    },
+    {
+      "lag_center_km": 142.5,
+      "pairs": 75,
+      "semivariance_mgal2": 849.3050641096631
+    },
+    {
+      "lag_center_km": 147.5,
+      "pairs": 82,
+      "semivariance_mgal2": 864.4852110716106
+    },
+    {
+      "lag_center_km": 152.5,
+      "pairs": 82,
+      "semivariance_mgal2": 721.4410596222068
+    },
+    {
+      "lag_center_km": 157.5,
+      "pairs": 74,
+      "semivariance_mgal2": 942.2931261026814
+    },
+    {
+      "lag_center_km": 162.5,
+      "pairs": 80,
+      "semivariance_mgal2": 703.0606137461166
+    },
+    {
+      "lag_center_km": 167.5,
+      "pairs": 63,
+      "semivariance_mgal2": 842.8497739808214
+    },
+    {
+      "lag_center_km": 172.5,
+      "pairs": 83,
+      "semivariance_mgal2": 816.9963882512249
+    },
+    {
+      "lag_center_km": 177.5,
+      "pairs": 72,
+      "semivariance_mgal2": 804.9043194077644
+    },
+    {
+      "lag_center_km": 182.5,
+      "pairs": 70,
+      "semivariance_mgal2": 845.561278867119
+    },
+    {
+      "lag_center_km": 187.5,
+      "pairs": 69,
+      "semivariance_mgal2": 797.306296051565
+    },
+    {
+      "lag_center_km": 192.5,
+      "pairs": 74,
+      "semivariance_mgal2": 842.6975400868563
+    },
+    {
+      "lag_center_km": 197.5,
+      "pairs": 75,
+      "semivariance_mgal2": 769.3928888764153
+    }
+  ],
+  "design_block_size_km": 15.0,
+  "range_is_below_design_spacing": false,
+  "design_test_cluster_upper_bound": 320,
+  "correlation_adjusted_test_cluster_upper_bound": 42,
+  "cluster_power_gate_passes": false,
+  "training_colocated_residual_count": 394,
+  "training_colocated_robust_sigma_mgal": 14.366394000000001,
+  "per_observation_uncertainty_contract_ready": false,
+  "uncertainty_reason": "the release has no gravity/Bouguer sigma field; colocated training residuals provide a population noise floor but not a validated per-observation uncertainty for heterogeneous legacy sources",
+  "test_unseal_count": 0
+}

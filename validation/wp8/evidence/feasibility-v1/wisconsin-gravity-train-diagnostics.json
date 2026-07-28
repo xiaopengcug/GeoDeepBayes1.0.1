@@ -1,0 +1,193 @@
+{
+  "schema_version": "wp8-wisconsin-gravity-training-diagnostics-v1",
+  "split_sha256": "1cffe69fd36f7f9217e655b9ad90e4348bb63046789185f32ab9f45bb8b6a8ed",
+  "response_policy": {
+    "training_rows_interpreted": 17168,
+    "heldout_rows_skipped_without_response_tail_parsing": 23320,
+    "buffer_rows_interpreted": 0,
+    "calibration_rows_interpreted": 0,
+    "test_rows_interpreted": 0
+  },
+  "response": "complete Bouguer anomaly at 2.67 g/cm3",
+  "aggregation": "mean response per occupied 5-km training cell",
+  "regional_field": {
+    "model": "fixed ordinary least-squares plane fitted on training cells only",
+    "coefficients": [
+      -798.334902399021,
+      -0.08158266724639432,
+      0.03410404023973959
+    ]
+  },
+  "residual_sill_mgal2": 576.5629637049778,
+  "variogram": {
+    "lag_bin_km": 5.0,
+    "maximum_lag_km": 150.0,
+    "minimum_pairs": 100,
+    "range_rule": "first two consecutive eligible bins at or above 95% residual sill",
+    "bins": [
+      {
+        "lag_center_km": 2.5,
+        "pairs": 0,
+        "semivariance_mgal2": null
+      },
+      {
+        "lag_center_km": 7.5,
+        "pairs": 8207,
+        "semivariance_mgal2": 24.367779123258565
+      },
+      {
+        "lag_center_km": 12.5,
+        "pairs": 13206,
+        "semivariance_mgal2": 67.10478052419074
+      },
+      {
+        "lag_center_km": 17.5,
+        "pairs": 13425,
+        "semivariance_mgal2": 109.21208055404043
+      },
+      {
+        "lag_center_km": 22.5,
+        "pairs": 12758,
+        "semivariance_mgal2": 151.3741695141213
+      },
+      {
+        "lag_center_km": 27.5,
+        "pairs": 13884,
+        "semivariance_mgal2": 199.01743437363803
+      },
+      {
+        "lag_center_km": 32.5,
+        "pairs": 11047,
+        "semivariance_mgal2": 243.10143540316446
+      },
+      {
+        "lag_center_km": 37.5,
+        "pairs": 10892,
+        "semivariance_mgal2": 279.2662828623565
+      },
+      {
+        "lag_center_km": 42.5,
+        "pairs": 15408,
+        "semivariance_mgal2": 313.46894665696766
+      },
+      {
+        "lag_center_km": 47.5,
+        "pairs": 18959,
+        "semivariance_mgal2": 352.3764953462106
+      },
+      {
+        "lag_center_km": 52.5,
+        "pairs": 26473,
+        "semivariance_mgal2": 389.64136476263445
+      },
+      {
+        "lag_center_km": 57.5,
+        "pairs": 32001,
+        "semivariance_mgal2": 416.3690276192032
+      },
+      {
+        "lag_center_km": 62.5,
+        "pairs": 43667,
+        "semivariance_mgal2": 441.58202991517066
+      },
+      {
+        "lag_center_km": 67.5,
+        "pairs": 49278,
+        "semivariance_mgal2": 465.6416880395264
+      },
+      {
+        "lag_center_km": 72.5,
+        "pairs": 44896,
+        "semivariance_mgal2": 483.2075838563503
+      },
+      {
+        "lag_center_km": 77.5,
+        "pairs": 44423,
+        "semivariance_mgal2": 497.3279803067942
+      },
+      {
+        "lag_center_km": 82.5,
+        "pairs": 38176,
+        "semivariance_mgal2": 512.4189598147698
+      },
+      {
+        "lag_center_km": 87.5,
+        "pairs": 38674,
+        "semivariance_mgal2": 521.5689053124828
+      },
+      {
+        "lag_center_km": 92.5,
+        "pairs": 31017,
+        "semivariance_mgal2": 529.354148033315
+      },
+      {
+        "lag_center_km": 97.5,
+        "pairs": 32509,
+        "semivariance_mgal2": 535.7993903959384
+      },
+      {
+        "lag_center_km": 102.5,
+        "pairs": 34269,
+        "semivariance_mgal2": 536.6927063114663
+      },
+      {
+        "lag_center_km": 107.5,
+        "pairs": 41805,
+        "semivariance_mgal2": 541.1042883919426
+      },
+      {
+        "lag_center_km": 112.5,
+        "pairs": 44290,
+        "semivariance_mgal2": 551.4388321354353
+      },
+      {
+        "lag_center_km": 117.5,
+        "pairs": 52296,
+        "semivariance_mgal2": 553.0773988554753
+      },
+      {
+        "lag_center_km": 122.5,
+        "pairs": 57892,
+        "semivariance_mgal2": 560.504322363703
+      },
+      {
+        "lag_center_km": 127.5,
+        "pairs": 68231,
+        "semivariance_mgal2": 553.4013139957924
+      },
+      {
+        "lag_center_km": 132.5,
+        "pairs": 65173,
+        "semivariance_mgal2": 550.555357359729
+      },
+      {
+        "lag_center_km": 137.5,
+        "pairs": 54320,
+        "semivariance_mgal2": 549.9196257170777
+      },
+      {
+        "lag_center_km": 142.5,
+        "pairs": 50867,
+        "semivariance_mgal2": 545.10988741521
+      },
+      {
+        "lag_center_km": 147.5,
+        "pairs": 54056,
+        "semivariance_mgal2": 539.6263731185533
+      }
+    ]
+  },
+  "conservative_spatial_correlation_range_km": 112.5,
+  "range_censored_at_maximum_lag": false,
+  "correlation_cell_merge_factor_2d": 529,
+  "design_test_cells": 957,
+  "correlation_adjusted_test_cluster_upper_bound": 1,
+  "cluster_gate_passed": false,
+  "power_gate_passed": false,
+  "power_reason": "training-only paired-CRPS effect size is not yet available",
+  "dimensionality": {
+    "selected": "3D",
+    "reason": "statewide irregular station coverage and regional lateral variation",
+    "passed": true
+  }
+}

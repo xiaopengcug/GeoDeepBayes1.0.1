@@ -1,0 +1,84 @@
+{
+  "schema_version": "wp8-mt-usarray-metadata-readiness-v1",
+  "candidate": "USArray TA Magnetotelluric Transfer Functions",
+  "survey_doi": "10.17611/DP/EMTF/USARRAY/TA",
+  "official_services": {
+    "catalog": "https://ds.iris.edu/ds/products/emtf/",
+    "member_ids": "https://ds.iris.edu/spudservice/emtf/ids?project=USArray&survey=Transportable%20Array",
+    "metadata": "https://ds.iris.edu/spudservice/emtf?project=USArray&survey=Transportable%20Array"
+  },
+  "outcome_blind": true,
+  "observation_values_read": false,
+  "official_member_manifest": {
+    "member_count": 1104,
+    "unique_station_products": 1104,
+    "member_id_response_sha256": "60e8b4898926d63ce6501498570e42cef9a5cae744e060fd2c7ad4603f33da35",
+    "first_id": "14856037",
+    "last_id": "22066852",
+    "upstream_member_checksums_available": false,
+    "reason": "SPUD ids and product services expose stable IDs and content, but neither the service guide nor response headers expose MD5/SHA/Digest/ETag member checksums"
+  },
+  "license": {
+    "status": "passed",
+    "release_status": "Unrestricted Release",
+    "coverage": "all 1111 project-level metadata records inspected carried the same release status; the TA-filtered manifest contains 1104",
+    "conditions": "free of charge; copying, duplication and further distribution allowed with dataset citation and author acknowledgement",
+    "citation_required": true
+  },
+  "observation_contract": {
+    "status": "candidate",
+    "declared_tags": [
+      "impedance",
+      "tipper"
+    ],
+    "complex_impedance_tensor": true,
+    "frequency_or_period": true,
+    "error_covariance": true,
+    "station_coordinates": true,
+    "acquisition_dates": true,
+    "sign_convention": "exp(+ i omega t)",
+    "source": "natural-field MT; no controlled-source geometry applies"
+  },
+  "clusters": {
+    "inference_unit": "unique station product",
+    "available": 1104,
+    "artificial_replication": false,
+    "candidate_hash_split": {
+      "algorithm": "sha256(decimal SPUD id), first byte modulo 100",
+      "train_buckets": "0-49",
+      "calibration_buckets": "50-69",
+      "test_buckets": "70-99",
+      "train": 648,
+      "calibration": 207,
+      "test": 249,
+      "status": "blocked",
+      "reason": "outcome-blind and adequately sized, but not yet converted to a geographic buffered split"
+    }
+  },
+  "power": {
+    "coverage_90_required": 223,
+    "coverage_95_required": 118,
+    "candidate_test_clusters": 249,
+    "coverage_count_sufficient": true,
+    "crps_power_status": "blocked",
+    "reason": "paired CRPS standardized effect must be estimated from training stations after raw integrity is frozen"
+  },
+  "dimensionality": {
+    "metadata_supports_station_geometry": true,
+    "skew_ellipticity_tipper_not_evaluated": true,
+    "status": "blocked",
+    "reason": "diagnostic requires transfer-function values; outcome-blind metadata audit cannot decide 1-D versus mandatory 2-D/3-D upgrade"
+  },
+  "download_and_raw_root": {
+    "performed": true,
+    "bytes": 13744189,
+    "raw_root": "validation/wp8/data/usarray-ta-emtf-v1",
+    "member_count": 1104,
+    "reason": "authoritative HTTPS member IDs/DOIs and license were frozen; local SHA-256 and Merkle integrity are recorded"
+  },
+  "selection_update": {
+    "datasets_json_changed": true,
+    "role": "selected_and_locally_frozen_backup",
+    "reason": "primary remains preserved; external backup records authoritative source and locally frozen raw root"
+  }
+}

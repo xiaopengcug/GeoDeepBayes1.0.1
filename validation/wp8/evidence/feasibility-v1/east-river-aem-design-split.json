@@ -1,0 +1,83 @@
+{
+  "schema_version": "wp8-east-river-aem-design-split-v1",
+  "candidate_status": "design_split_frozen_before_response_interpretation",
+  "doi": "10.5066/P949ZCZ8",
+  "cluster_candidate_definition": "occupied 500 m x 500 m spatial cell",
+  "assignment": {
+    "axis": "WGS84 UTM zone 13N easting",
+    "period_m": 12000,
+    "stripe_width_m": 1000,
+    "stripe_roles": {
+      "buffer": [
+        0,
+        6,
+        9
+      ],
+      "train": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "calibration": [
+        7,
+        8
+      ],
+      "test": [
+        10,
+        11
+      ]
+    },
+    "boundary_statement": "every held-out stripe is separated from training stripes by a 1-km buffer"
+  },
+  "source_members": [
+    {
+      "path": "EastRiver2017_ProcessedAEMData_100series.csv",
+      "bytes": 30791864,
+      "sha256": "a4e21a3c9583b9edd4baf86acf60d25d10097980008bc0c7607e06e394616b26"
+    },
+    {
+      "path": "EastRiver2017_ProcessedAEMData_200series.csv",
+      "bytes": 7351159,
+      "sha256": "7389b4ee55e94e03c84e6e501c81251a286ad2d60d92a041c5e951ccaa9c81be"
+    },
+    {
+      "path": "EastRiver2017_ProcessedAEMData_300series.csv",
+      "bytes": 15446495,
+      "sha256": "66c05db8e23bfc36dd5db52fd5af945327a5c881bb5bce954ad84ac8c7738e93"
+    },
+    {
+      "path": "EastRiver2017_ProcessedAEMData_400series.csv",
+      "bytes": 14086160,
+      "sha256": "342429b71397036b862634c758bfd4a02040ac1fc77c4002429455d2b6d89888"
+    }
+  ],
+  "design_rows": 66304,
+  "design_line_counts": {
+    "train": 251,
+    "buffer": 313,
+    "calibration": 173,
+    "test": 176
+  },
+  "candidate_500m_cell_counts": {
+    "train": 502,
+    "buffer": 380,
+    "calibration": 267,
+    "test": 262
+  },
+  "design_coordinate_stream_sha256": "f35a154b578f5c355dea900be9921b4397b5d5ac2f32c6c3a9539d2b0cf7195d",
+  "columns_parsed": [
+    "LINE",
+    "TIMESTAMP",
+    "E_UTM13N",
+    "N_UTM13N",
+    "ELEVATION",
+    "ALT"
+  ],
+  "numdata_parsed": false,
+  "observation_response_values_parsed": false,
+  "formal_cluster_gate_passed": false,
+  "formal_power_gate_passed": false,
+  "next_required_evidence": "interpret training response only; estimate spatial correlation length and paired-CRPS effect without calibration/test access; merge candidate cells if correlation exceeds 500 m"
+}

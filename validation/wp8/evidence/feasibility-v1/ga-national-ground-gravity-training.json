@@ -1,0 +1,231 @@
+{
+  "schema_version": "wp8-ga-national-ground-gravity-training-v1",
+  "pool_manifest_sha256": "2a9d008de8089c0df59ee7dd315f89794ad36c046b0940edca0ee61cad5683c9",
+  "geometry_sha256": "362e131364daf407796fa7c5fa0a517da21c5b0741bbf144d3c98e296937b5f6",
+  "uncertainty_sha256": "ae7046a21962f7782002477cb022b8cd5f5080ff7b7b0285feae845319bcb16f",
+  "response_policy": {
+    "train_rows_interpreted": 53066,
+    "train_contract_eligible_rows": 53066,
+    "buffer_rows_interpreted": 0,
+    "calibration_rows_interpreted": 0,
+    "test_rows_interpreted": 0,
+    "test_quality_rows_examined_without_response": 159554
+  },
+  "response_definition": "complete_bouguer_mgal = (bouguer + tc) / 10; GA point bouguer is spherical-cap Bouguer and tc is Bullard-C terrain correction.",
+  "training_subcell_size_km": 5.0,
+  "training_subcells": 598,
+  "dominant_training_surveys": 76,
+  "residual_sill_mgal2": 25.97806508108336,
+  "correlation_range_km": 12.5,
+  "range_censored_at_200km": false,
+  "variogram": [
+    {
+      "lag_center_km": 2.5,
+      "pairs": 580,
+      "semivariance_mgal2": 9.280192399065859
+    },
+    {
+      "lag_center_km": 7.5,
+      "pairs": 1370,
+      "semivariance_mgal2": 16.963524921510285
+    },
+    {
+      "lag_center_km": 12.5,
+      "pairs": 1373,
+      "semivariance_mgal2": 25.150264841768784
+    },
+    {
+      "lag_center_km": 17.5,
+      "pairs": 1287,
+      "semivariance_mgal2": 31.900729779184704
+    },
+    {
+      "lag_center_km": 22.5,
+      "pairs": 1140,
+      "semivariance_mgal2": 25.223818607370877
+    },
+    {
+      "lag_center_km": 27.5,
+      "pairs": 1012,
+      "semivariance_mgal2": 28.74463518336101
+    },
+    {
+      "lag_center_km": 32.5,
+      "pairs": 757,
+      "semivariance_mgal2": 28.566917622886468
+    },
+    {
+      "lag_center_km": 37.5,
+      "pairs": 594,
+      "semivariance_mgal2": 26.230333022059373
+    },
+    {
+      "lag_center_km": 42.5,
+      "pairs": 464,
+      "semivariance_mgal2": 31.548967248887948
+    },
+    {
+      "lag_center_km": 47.5,
+      "pairs": 263,
+      "semivariance_mgal2": 33.41174963623424
+    },
+    {
+      "lag_center_km": 52.5,
+      "pairs": 206,
+      "semivariance_mgal2": 34.091986044974476
+    },
+    {
+      "lag_center_km": 57.5,
+      "pairs": 144,
+      "semivariance_mgal2": 30.39936741162542
+    },
+    {
+      "lag_center_km": 62.5,
+      "pairs": 150,
+      "semivariance_mgal2": 30.408256501388024
+    },
+    {
+      "lag_center_km": 67.5,
+      "pairs": 138,
+      "semivariance_mgal2": 28.768474766042356
+    },
+    {
+      "lag_center_km": 72.5,
+      "pairs": 114,
+      "semivariance_mgal2": 34.05877442287775
+    },
+    {
+      "lag_center_km": 77.5,
+      "pairs": 113,
+      "semivariance_mgal2": 43.84834359004361
+    },
+    {
+      "lag_center_km": 82.5,
+      "pairs": 66,
+      "semivariance_mgal2": 40.168741673583895
+    },
+    {
+      "lag_center_km": 87.5,
+      "pairs": 80,
+      "semivariance_mgal2": 52.9096987604295
+    },
+    {
+      "lag_center_km": 92.5,
+      "pairs": 125,
+      "semivariance_mgal2": 33.28487378724843
+    },
+    {
+      "lag_center_km": 97.5,
+      "pairs": 174,
+      "semivariance_mgal2": 38.78086861485456
+    },
+    {
+      "lag_center_km": 102.5,
+      "pairs": 170,
+      "semivariance_mgal2": 27.14385838583245
+    },
+    {
+      "lag_center_km": 107.5,
+      "pairs": 168,
+      "semivariance_mgal2": 20.768554134075945
+    },
+    {
+      "lag_center_km": 112.5,
+      "pairs": 159,
+      "semivariance_mgal2": 19.573744274893187
+    },
+    {
+      "lag_center_km": 117.5,
+      "pairs": 142,
+      "semivariance_mgal2": 27.95395778678186
+    },
+    {
+      "lag_center_km": 122.5,
+      "pairs": 112,
+      "semivariance_mgal2": 23.70572471854144
+    },
+    {
+      "lag_center_km": 127.5,
+      "pairs": 134,
+      "semivariance_mgal2": 17.375525782254442
+    },
+    {
+      "lag_center_km": 132.5,
+      "pairs": 83,
+      "semivariance_mgal2": 13.014676046926525
+    },
+    {
+      "lag_center_km": 137.5,
+      "pairs": 78,
+      "semivariance_mgal2": 9.643543782965143
+    },
+    {
+      "lag_center_km": 142.5,
+      "pairs": 98,
+      "semivariance_mgal2": 16.161767312504765
+    },
+    {
+      "lag_center_km": 147.5,
+      "pairs": 105,
+      "semivariance_mgal2": 17.058128826478825
+    },
+    {
+      "lag_center_km": 152.5,
+      "pairs": 83,
+      "semivariance_mgal2": 20.602073854488935
+    },
+    {
+      "lag_center_km": 157.5,
+      "pairs": 69,
+      "semivariance_mgal2": 14.773098529173023
+    },
+    {
+      "lag_center_km": 162.5,
+      "pairs": 84,
+      "semivariance_mgal2": 16.09591628291062
+    },
+    {
+      "lag_center_km": 167.5,
+      "pairs": 113,
+      "semivariance_mgal2": 12.102062120554578
+    },
+    {
+      "lag_center_km": 172.5,
+      "pairs": 119,
+      "semivariance_mgal2": 6.937982222484012
+    },
+    {
+      "lag_center_km": 177.5,
+      "pairs": 130,
+      "semivariance_mgal2": 4.4105648679031555
+    },
+    {
+      "lag_center_km": 182.5,
+      "pairs": 121,
+      "semivariance_mgal2": 11.176935395045726
+    },
+    {
+      "lag_center_km": 187.5,
+      "pairs": 89,
+      "semivariance_mgal2": 15.56936219536835
+    },
+    {
+      "lag_center_km": 192.5,
+      "pairs": 78,
+      "semivariance_mgal2": 16.884680102013892
+    },
+    {
+      "lag_center_km": 197.5,
+      "pairs": 80,
+      "semivariance_mgal2": 12.491980179651677
+    }
+  ],
+  "uncertainty_qualified_test_cluster_upper_bound": 301,
+  "correlation_adjusted_test_cluster_upper_bound": 1603,
+  "cluster_power_gate_passes": true,
+  "complete_bouguer_contract": true,
+  "per_observation_uncertainty_contract": true,
+  "paired_crps_effect_available": false,
+  "formal_confirmatory_contribution": 0,
+  "test_unseal_count": 0
+}

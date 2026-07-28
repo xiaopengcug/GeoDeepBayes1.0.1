@@ -1,0 +1,53 @@
+{
+  "schema_version": "wp8-public-evidence-v1",
+  "dataset": {
+    "title": "Comprehensive electromagnetic experimental dataset of the Wuxi polymetallic mining area in southern Anhui",
+    "doi": "10.3974/geodb.2018.03.08.V1",
+    "public_page": "https://geodoi.ac.cn/WebCn/geodoi.aspx?Id=873",
+    "archive": "validation/wp8/data/geodoi-wuxi-integrated-em-v1/ComprehElectromagneticDataPolymetallicOreWuxi.rar",
+    "archive_bytes": 7202123,
+    "archive_sha256": "8e1d22bddf0ee17679fe01b2d22e8cdf431ea6518fd2ead84e24c3008de822f9"
+  },
+  "freeze": {
+    "status": "frozen_before_response_payload_extraction",
+    "basis_seen": [
+      "archive member path",
+      "archive member size",
+      "archive member timestamp"
+    ],
+    "response_values_seen": false,
+    "grouping_rule": "Keep each processed line and each raw CMD/CMS basename indivisible. Assign roles by ascending line number or acquisition date using contiguous deterministic blocks.",
+    "test_unseals_at_freeze": 0
+  },
+  "processed_line_roles": {
+    "training": [5000, 5200, 5400, 5600, 5800, 6000, 6200, 6400],
+    "buffer": [7000, 7200],
+    "calibration": [7400, 7600],
+    "test": [7800, 8000]
+  },
+  "raw_acquisition_date_roles": {
+    "training": ["20110308", "20110309", "20110310", "20110311", "20110312", "20110313", "20110316"],
+    "buffer": ["20110328", "20110329"],
+    "calibration": ["20110330"],
+    "test": ["20110406", "20110408"]
+  },
+  "always_permitted_non_response_members": [
+    "Insitudata_CSAMT/FieldworkLog_CSAMT.pdf",
+    "Insitudata_CSAMT/CalibrationFile/"
+  ],
+  "audit_constraints": {
+    "extract_response_payload_roles": ["training"],
+    "do_not_extract_or_read_response_payload_roles": ["buffer", "calibration", "test"],
+    "test_role_is_formally_usable_now": false,
+    "reason": "This freeze prevents outcome-guided role selection; geometry, source metadata, uncertainty support, independence, and leakage safety still require training-only audit."
+  },
+  "workbook_geometry_protocol": {
+    "status": "frozen_before_workbook_cell_value_inspection",
+    "file": "InsituData.xlsx",
+    "stage_1": "Read workbook structure, sheet names, dimensions, and at most the first 10 rows per sheet to identify headers.",
+    "stage_2": "Permit full-column reads only for columns whose stage-1 labels unambiguously denote identifiers, method, line, station, coordinates, elevation, acquisition metadata, or units.",
+    "forbidden_columns": "Do not read columns labelled as measured or corrected field response, apparent resistivity, amplitude frequency, polarization, magnetic field, inversion, model, prediction, residual, or uncertainty outcome.",
+    "role_effect": "Coordinate-only reads may cover every role because they cannot reveal response outcomes; any response-bearing column remains restricted to training.",
+    "test_response_unseals": 0
+  }
+}

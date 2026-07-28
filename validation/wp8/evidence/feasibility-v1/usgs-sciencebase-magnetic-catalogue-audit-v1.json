@@ -1,0 +1,4528 @@
+{
+  "schema_version": "wp8-usgs-sciencebase-magnetic-catalogue-audit-v1",
+  "catalogue_sha256": "cc0d665b1fa53a1935045801dd77faefca5a8efe2523e503eae3ad8c0aceb014",
+  "parent_manifest_sha256": "a94b4d89ce87eb9cd8d15b2ef3c4c80ae7a2841a816f8b20fef21697ba657a1e",
+  "source_authority": "U.S. Geological Survey ScienceBase",
+  "rights_policy": "https://www.usgs.gov/data-management/data-licensing",
+  "raw_search_item_count": 177,
+  "direct_parent_count": 61,
+  "unavailable_direct_parent_count": 3,
+  "pre_dedup_eligible_count": 19,
+  "unique_provider_unit_count": 18,
+  "duplicate_product_exclusion_count": 1,
+  "rejected_count": 158,
+  "range_km": 75.0,
+  "bbox_conflict_edge_count": 4,
+  "maximum_independent_set_count": 14,
+  "maximum_independent_set_mip_gap": 0.0,
+  "eligible_records": [
+    {
+      "sciencebase_id": "57fdbb8be4b0824b2d13153b",
+      "provider_unit": "57e14136e4b09082500338de",
+      "parent_id": "57e14136e4b09082500338de",
+      "title": "Airborne magnetic survey data",
+      "observational_line_files": [
+        {
+          "name": "PoplarMontana2014_Mag_Data.csv",
+          "title": "Magnetic data",
+          "contentType": "text/csv",
+          "size": 157996484,
+          "dateUploaded": "2016-11-29T18:46:19Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/57fdbb8be4b0824b2d13153b?f=__disk__72%2Fa6%2F29%2F72a629eed7c8896cd929524cb71770daa4316320",
+          "checksum": {
+            "value": "38f5b007f2c27c06f43976363f351de3",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -105.2665042282931,
+        "minY": 48.06088415152472,
+        "maxX": -105.07821808216866,
+        "maxY": 48.28181745558286
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/57fdbb8be4b0824b2d13153b"
+    },
+    {
+      "sciencebase_id": "582b9457e4b0c253be072a40",
+      "provider_unit": "5829ce3fe4b01fad8721b548",
+      "parent_id": "5829ce3fe4b01fad8721b548",
+      "title": "Magnetic Data of Airborne Geophysical Surveys over the Eastern Adirondacks, New York State",
+      "observational_line_files": [
+        {
+          "name": "DataDefinitions_Mag.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 1162,
+          "dateUploaded": "2016-11-23T00:57:19Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/582b9457e4b0c253be072a40?f=__disk__d8%2F3d%2F1d%2Fd83d1db4d3a93f8b0b0ad8bbea829e3cd77f8dc5",
+          "checksum": {
+            "value": "601684a43905d8c019830ca1bab8e5bf",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "EAdirondacksMag.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 334803859,
+          "dateUploaded": "2016-11-23T01:01:24Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/582b9457e4b0c253be072a40?f=__disk__91%2Fc0%2F5a%2F91c05a4c3b41a60236e918fa1f7f9995d6906614",
+          "checksum": {
+            "value": "9bcb5ea0a0ed0f7343a9af1f67790245",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "igrf",
+        "level",
+        "residual magnetic",
+        "total magnetic"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -73.77643201540992,
+        "minY": 43.70441259894282,
+        "maxX": -73.3086609797276,
+        "maxY": 44.383328256292735
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/582b9457e4b0c253be072a40"
+    },
+    {
+      "sciencebase_id": "5dc5833ce4b06957975a47da",
+      "provider_unit": "5d8a672ae4b0c4f70d0ae76f",
+      "parent_id": "5d8a672ae4b0c4f70d0ae76f",
+      "title": "Magnetic data",
+      "observational_line_files": [
+        {
+          "name": "B478ARC_MAG191003.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 6750992250,
+          "dateUploaded": "2019-11-08T15:24:53Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5dc5833ce4b06957975a47da?f=__disk__e1%2F84%2F6b%2Fe1846ba2ff77b038ee6cd60c78d32100b96379a4",
+          "checksum": {
+            "value": "70c5abd8f5024b5c99c6547d62d5b57c",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "total magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -91.80712963153016,
+        "minY": 36.82906164175254,
+        "maxX": -89.54774937018028,
+        "maxY": 38.401669929388135
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5dc5833ce4b06957975a47da"
+    },
+    {
+      "sciencebase_id": "5e7be5eee4b01d50927301b3",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey of the southeast Mojave Desert, California and Nevada",
+      "observational_line_files": [
+        {
+          "name": "Magnetic_Data.csv",
+          "title": "Magetic data in ASCII format",
+          "contentType": "text/csv",
+          "size": 893523364,
+          "dateUploaded": "2020-04-27T16:57:35Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__73%2Fe0%2Fe3%2F73e0e3bbdb86a58e11657d81a62cf0210a5dae45",
+          "checksum": {
+            "value": "4add00f879df0785f12ba59c5d4e7eac",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal",
+        "level",
+        "residual magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -115.61676999449725,
+        "minY": 34.940612859187375,
+        "maxX": -115.0111346332269,
+        "maxY": 35.74691657445437
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5e7be5eee4b01d50927301b3"
+    },
+    {
+      "sciencebase_id": "5f4da2c182ce4c3d1231922e",
+      "provider_unit": "5f247e3082cef313ed972534",
+      "parent_id": "5f247e3082cef313ed972534",
+      "title": "Airborne magnetic flight line data, Charleston, South Carolina and surrounds, 2019",
+      "observational_line_files": [
+        {
+          "name": "Charleston_MagneticFlightLineData.csv",
+          "title": "Flight line data",
+          "contentType": "text/csv",
+          "size": 2769495404,
+          "dateUploaded": "2020-09-26T00:36:16Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5f4da2c182ce4c3d1231922e?f=__disk__c0%2F12%2Fc6%2Fc012c63d9fd63b8d3f9645271a54dbc498b0253d",
+          "checksum": {
+            "value": "fbdd4603c67dc34d5d226de795d702b4",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "total magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -81.05127826362572,
+        "minY": 32.29655769028607,
+        "maxX": -79.07795918871686,
+        "maxY": 33.762420168938554
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f4da2c182ce4c3d1231922e"
+    },
+    {
+      "sciencebase_id": "61311e2fd34e40dd9c0a2ff8",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne magnetic survey over northeast North Dakota, 2000-2001",
+      "observational_line_files": [
+        {
+          "name": "AirborneMagneticSurveyOverNortheastNorthDakota2000-2001.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 957330514,
+          "dateUploaded": "2022-02-18T23:02:49Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/61311e2fd34e40dd9c0a2ff8?f=__disk__86%2Fb8%2Fa6%2F86b8a69f735f74a1e19a3943cadbaf29ebaa17dd",
+          "checksum": {
+            "value": "b13cdfa182cf9cb3887d98a5d70bd0c4",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -99.38282891852084,
+        "minY": 47.87885864626407,
+        "maxX": -96.78617475035055,
+        "maxY": 49.222456713479176
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/61311e2fd34e40dd9c0a2ff8"
+    },
+    {
+      "sciencebase_id": "62291b18d34ee0c6b38b88e5",
+      "provider_unit": "61688b65d34e6537700120e5",
+      "parent_id": "61688b65d34e6537700120e5",
+      "title": "Airborne magnetic flight line data, Columbia, South Carolina and surrounds, 2020",
+      "observational_line_files": [
+        {
+          "name": "SC19C0010_USGS_SCAROLINAII_FALLZONE_MagneticFlightLineData.csv",
+          "title": "Ascii file of magnetic data",
+          "contentType": "text/csv",
+          "size": 5168541427,
+          "dateUploaded": "2022-04-27T22:34:25Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/62291b18d34ee0c6b38b88e5?f=__disk__7b%2F12%2F28%2F7b1228bcc30ece162279d38e8c306ca4f23582d1",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -81.89224729353441,
+        "minY": 32.94577939060095,
+        "maxX": -79.76881537398313,
+        "maxY": 34.6087842804199
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62291b18d34ee0c6b38b88e5"
+    },
+    {
+      "sciencebase_id": "62434c50d34e22d73748d366",
+      "provider_unit": "624347bfd34e22d73748d357",
+      "parent_id": "624347bfd34e22d73748d357",
+      "title": "Airborne magnetic flight line data over parts of southeast Missouri, southern Illinois and western Kentucky - The Gap survey, 2021",
+      "observational_line_files": [
+        {
+          "name": "MO20F0196_USGS_GAP_MagneticFlightLineData.csv",
+          "title": "Tabular Magnetic Flight Line Data",
+          "contentType": "text/csv",
+          "size": 5501234955,
+          "dateUploaded": "2022-05-17T20:18:45Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/62434c50d34e22d73748d366?f=__disk__68%2F98%2Fdb%2F6898db1da809a774f7ed36d4d7a82a6afd517465",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "total magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -90.0094544122753,
+        "minY": 36.83084048395399,
+        "maxX": -88.83873304445018,
+        "maxY": 38.29469526769931
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62434c50d34e22d73748d366"
+    },
+    {
+      "sciencebase_id": "62842420d34e3bef0c9a477f",
+      "provider_unit": "623219c9d34ec9f19eeb418b",
+      "parent_id": "623219c9d34ec9f19eeb418b",
+      "title": "Airborne magnetic survey of the Wet Mountains and surrounding region, Custer and Fremont Counties, south-central Colorado, 2021",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagWetMountainsCO2021.csv",
+          "title": "ASCII File of Magnetic Data",
+          "contentType": "text/csv",
+          "size": 1203549504,
+          "dateUploaded": "2023-02-02T20:16:04Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/62842420d34e3bef0c9a477f?f=__disk__d2%2F4c%2Fca%2Fd24ccaf1d4d80d0f33f1027e2c8cfe4c40a28574",
+          "checksum": {
+            "value": "fcefca20d0b849db160337b6df01d25a",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -105.80582309605735,
+        "minY": 37.99947424895809,
+        "maxX": -104.99773702186837,
+        "maxY": 38.640414016171064
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62842420d34e3bef0c9a477f"
+    },
+    {
+      "sciencebase_id": "62d9e324d34e2842e1ee0fae",
+      "provider_unit": "625581aed34e21f8276f488a",
+      "parent_id": "625581aed34e21f8276f488a",
+      "title": "Airborne magnetic data, Munsungun region in northern Maine, 2021",
+      "observational_line_files": [
+        {
+          "name": "MunsungunMaine_MagRad2021_USGS_MagneticLineData.csv",
+          "title": "Magnetic flight line data",
+          "contentType": "text/csv",
+          "size": 1657467234,
+          "dateUploaded": "2022-08-10T18:38:26Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cl6nyccz300090vo86ajtgfgb",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -70.0594160467161,
+        "minY": 45.82629923368772,
+        "maxX": -67.88301623680714,
+        "maxY": 47.21572058097788
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62d9e324d34e2842e1ee0fae"
+    },
+    {
+      "sciencebase_id": "63237bb3d34e71c6d67acb91",
+      "provider_unit": "630f7f2ad34e36012efa0864",
+      "parent_id": "630f7f2ad34e36012efa0864",
+      "title": "Airborne magnetic flight line data, Virginia and North Carolina Fall Zone, 2021",
+      "observational_line_files": [
+        {
+          "name": "VA21F0025_VA-NC_TiZrREE_MagneticFlightLineData.csv",
+          "title": "Ascii file of magnetic data",
+          "contentType": "text/csv",
+          "size": 4061410172,
+          "dateUploaded": "2022-09-23T16:58:42Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cl8eq9i0g003t0ppfd3el2my1",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "total magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -78.17646940464364,
+        "minY": 35.841490386205685,
+        "maxX": -76.7442384066763,
+        "maxY": 38.06035621488556
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63237bb3d34e71c6d67acb91"
+    },
+    {
+      "sciencebase_id": "6446a248d34ee8d4adec696f",
+      "provider_unit": "63d2ffffd34e06fef1500f01",
+      "parent_id": "63d2ffffd34e06fef1500f01",
+      "title": "Airborne magnetic flight line data, western Arkansas, 2022",
+      "observational_line_files": [
+        {
+          "name": "AR21F1047_USGS_AR-WestCentral_MagneticLineData.csv",
+          "title": "Magnetic Line Data",
+          "contentType": "text/csv",
+          "size": 2323020095,
+          "dateUploaded": "2023-05-03T17:41:54Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/6446a248d34ee8d4adec696f?f=__disk__66%2F47%2Fe9%2F6647e9e3640b9e2a720fd75f009e4274f66bd557",
+          "checksum": {
+            "value": "85cdb120042de9adc1cae2d787b38634",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "residual magnetic",
+        "total magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -94.01010078392194,
+        "minY": 34.722003021940886,
+        "maxX": -92.9992276136831,
+        "maxY": 35.557675404018205
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6446a248d34ee8d4adec696f"
+    },
+    {
+      "sciencebase_id": "65b82c3ed34e36a39045b97e",
+      "provider_unit": "65959be8d34e3265ab152eed",
+      "parent_id": "65959be8d34e3265ab152eed",
+      "title": "High-resolution airborne magnetic survey of the Republic Graben, Okanogan and Kettle metamorphic core complexes, Kootenay Arc and surrounding regions, Northeastern Washington",
+      "observational_line_files": [
+        {
+          "name": "Republic_transect_mag.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 12817197,
+          "dateUploaded": "2024-01-31T17:12:22Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cls21p8r100q116pk19pe1xuz",
+          "checksum": null
+        },
+        {
+          "name": "Republic_main_mag.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 5389499615,
+          "dateUploaded": "2024-01-31T17:13:30Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cls21qmt400pf14o94uh1e9ep",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -120.15833207017889,
+        "minY": 47.70470560851297,
+        "maxX": -116.97639882183523,
+        "maxY": 49.03615282397594
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65b82c3ed34e36a39045b97e"
+    },
+    {
+      "sciencebase_id": "6644d49bd34e1955f5a429b1",
+      "provider_unit": "662999ccd34ea70bd5f087aa",
+      "parent_id": "662999ccd34ea70bd5f087aa",
+      "title": "Airborne Magnetic Survey, Colorado Mineral Belt, Southwest Block, 2023",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyColoradoMineralBeltSW2023.csv",
+          "title": "ASCII File of Magnetic Data",
+          "contentType": "text/csv",
+          "size": 2613385699,
+          "dateUploaded": "2024-05-15T16:32:57Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/clw81gf2s001714pj77oehl5t",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -108.330124176252,
+        "minY": 37.22480209470103,
+        "maxX": -106.79250964569204,
+        "maxY": 38.16054979378247
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6644d49bd34e1955f5a429b1"
+    },
+    {
+      "sciencebase_id": "681252ffd4be02416e148601",
+      "provider_unit": "67aba51ed34e329fb20457a0",
+      "parent_id": "67aba51ed34e329fb20457a0",
+      "title": "Airborne magnetic survey, Maryland, Pennsylvania, and West Virginia, 2022-2023",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyAppalachianTransect2023.csv",
+          "title": "ASCII Magnetic Flightline Data",
+          "contentType": "text/csv",
+          "size": 5727094017,
+          "dateUploaded": "2025-04-30T19:52:24Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cma47rovh0c3j0wo61b493gl2",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -80.60535821313405,
+        "minY": 38.723860363307786,
+        "maxX": -75.7815279583991,
+        "maxY": 41.23228777180642
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/681252ffd4be02416e148601"
+    },
+    {
+      "sciencebase_id": "682f4028d4be024477811cd9",
+      "provider_unit": "63a10d18d34e0de3a1f27974",
+      "parent_id": "63a10d18d34e0de3a1f27974",
+      "title": "Airborne Magnetic Survey, Colorado Mineral Belt, Northeast Block, 2024",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyColoradoMineralBeltNE2024.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 2314401161,
+          "dateUploaded": "2025-07-30T19:41:34Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmdqdfaxx00640upl5n0f3cbx",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "level",
+        "residual magnetic"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -106.42303964716149,
+        "minY": 39.01186224897248,
+        "maxX": -105.09712678602013,
+        "maxY": 40.67573190139487
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/682f4028d4be024477811cd9"
+    },
+    {
+      "sciencebase_id": "682f81e1d4be027fab6e238e",
+      "provider_unit": "67aba8b5d34e329fb20457c6",
+      "parent_id": "67aba8b5d34e329fb20457c6",
+      "title": "Airborne Magnetic Survey over parts of central and northern Florida and southeastern Georgia, 2023-2024",
+      "observational_line_files": [
+        {
+          "name": "MagData_South_AirborneMagRadSurveyCentralNorthernFlSoutheasternGa2023-2024.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 1886429532,
+          "dateUploaded": "2025-05-23T21:23:05Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmb1b4vwb01rj0tpc9rs33j6d",
+          "checksum": null
+        },
+        {
+          "name": "MagData_North_AirborneMagRadSurveyCentralNorthernFlSoutheasternGa2023-2024.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 6807029378,
+          "dateUploaded": "2025-09-03T15:00:17Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmb1bkgd401rn0tpc1l71dwpd",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -83.22787900006652,
+        "minY": 29.227419000208066,
+        "maxX": -81.0450500000001,
+        "maxY": 30.856327000289706
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/682f81e1d4be027fab6e238e"
+    },
+    {
+      "sciencebase_id": "684b40d6d4be020b699d9ab4",
+      "provider_unit": "68475b2ad4be024da9d8747d",
+      "parent_id": "68475b2ad4be024da9d8747d",
+      "title": "Airborne Magnetic Survey over Puerto Rico and the Surrounding Islands and Shelf, 2023-2024",
+      "observational_line_files": [
+        {
+          "name": "MagLineData_AirborneMagneticSurveyPuertoRico2023.csv",
+          "title": "ASCII Magnetic Flightline Data",
+          "contentType": "text/csv",
+          "size": 5876279844,
+          "dateUploaded": "2025-06-16T17:50:38Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmbze3sza02ru0xprhotuh4qm",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -67.44781875102262,
+        "minY": 17.754997286086308,
+        "maxX": -65.08330052797425,
+        "maxY": 18.62002497616801
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/684b40d6d4be020b699d9ab4"
+    }
+  ],
+  "maximum_independent_set_sciencebase_ids": [
+    "57fdbb8be4b0824b2d13153b",
+    "582b9457e4b0c253be072a40",
+    "5dc5833ce4b06957975a47da",
+    "5e7be5eee4b01d50927301b3",
+    "5f4da2c182ce4c3d1231922e",
+    "61311e2fd34e40dd9c0a2ff8",
+    "62842420d34e3bef0c9a477f",
+    "62d9e324d34e2842e1ee0fae",
+    "63237bb3d34e71c6d67acb91",
+    "6446a248d34ee8d4adec696f",
+    "65b82c3ed34e36a39045b97e",
+    "6644d49bd34e1955f5a429b1",
+    "682f81e1d4be027fab6e238e",
+    "684b40d6d4be020b699d9ab4"
+  ],
+  "duplicate_product_exclusions": [
+    {
+      "sciencebase_id": "5f8f45a482ce06b040efca6f",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "High-Resolution Airborne Gravity Gradiometry, Magnetic, and Radiometric Data of Mountain Pass, Southeast Mojave Desert, California",
+      "observational_line_files": [
+        {
+          "name": "Magnetic_Data.csv",
+          "title": "Magnetic data in ASCII format",
+          "contentType": "text/csv",
+          "size": 22159880,
+          "dateUploaded": "2021-03-30T01:06:23Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__08%2F6c%2Fb9%2F086cb9f0ded8b0cbae1113bf6492256c8068eecc",
+          "checksum": {
+            "value": "c5a2f00eb3c60230204e26773770f94d",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal",
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -115.58179711916942,
+        "minY": 35.364495851921966,
+        "maxX": -115.38755844705148,
+        "maxY": 35.58743290448107
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f8f45a482ce06b040efca6f"
+    }
+  ],
+  "rejected_records": [
+    {
+      "sciencebase_id": "51dda0bbe4b0f72b4471ddd1",
+      "provider_unit": "519ba0a3e4b0e4e151ef5dd9",
+      "parent_id": "519ba0a3e4b0e4e151ef5dd9",
+      "title": "Airborne magnetic survey of the Patuxent River area by Aircraft 94 at 2000 feet altitude: Maryland. 1960.",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/51dda0bbe4b0f72b4471ddd1",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "53f59abbe4b09d12e0e845c8",
+      "provider_unit": "53e522c7e4b0fff404296e37",
+      "parent_id": "53e522c7e4b0fff404296e37",
+      "title": "Magnetic Data of Airborne Geophysical Surveys over the 2011 Mineral, Virginia, Earthquake Area",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "diurnal",
+        "igrf",
+        "level",
+        "total magnetic"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -78.15402627869192,
+        "minY": 37.75316523954753,
+        "maxX": -77.72356404756653,
+        "maxY": 38.09248491228882
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/53f59abbe4b09d12e0e845c8",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5730a3a0e4b0dae0d5db1eab",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Helicopter magnetic and gravity gradiometry survey over the Pea Ridge iron mine and surrounding area, southeast Missouri, 2014",
+      "observational_line_files": [
+        {
+          "name": "USA-Southeast-Missouri-Region-AirborneMagnetics.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 56363914,
+          "dateUploaded": "2016-05-12T19:54:02Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5730a3a0e4b0dae0d5db1eab?f=__disk__88%2F2c%2F82%2F882c823d5bb86fb95f5b4c0051307701f12bcfb2",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5730a3a0e4b0dae0d5db1eab",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "573cf012e4b0dae0d5e4b18d",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Missouri Breaks Project, Montana - Digitized aeromagnetic data",
+      "observational_line_files": [
+        {
+          "name": "MO_Breaks_Mag.txt",
+          "title": "",
+          "contentType": "text/plain",
+          "size": 12937109,
+          "dateUploaded": "2016-05-24T15:41:02Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/573cf012e4b0dae0d5e4b18d?f=__disk__cf%2F86%2F10%2Fcf86103d50842c33732a2753ffbddb24738b7468",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "igrf",
+        "residual magnetic"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/573cf012e4b0dae0d5e4b18d",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "57681584e4b07657d19f586d",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Ironton, Missouri area",
+      "observational_line_files": [
+        {
+          "name": "USA-Ironton-Missouri-Region-Airborne-Magnetics.csv",
+          "title": "Magnetic anomaly flight line data",
+          "contentType": "text/csv",
+          "size": 474364189,
+          "dateUploaded": "2016-10-25T20:25:56Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/57681584e4b07657d19f586d?f=__disk__ac%2F31%2F5c%2Fac315c1517d6b0b72dacfd494e016126e3b12190",
+          "checksum": {
+            "value": "64c9ef2b1e8dd4d3966ec6fad49650ff",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -91.03616237499995,
+        "minY": 37.351174066000056,
+        "maxX": -90.30092678999995,
+        "maxY": 37.837700143000056
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/57681584e4b07657d19f586d",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "57ae4f6ae4b0fc09faad6ef3",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Magnetic Total-Field Survey, Manchester Region, Iowa, USA",
+      "observational_line_files": [
+        {
+          "name": "USA-Iowa-ManchesterRegion-AirborneMagnetics-2015.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 1370893997,
+          "dateUploaded": "2016-08-17T20:34:03Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/57ae4f6ae4b0fc09faad6ef3?f=__disk__e2%2Fbd%2Fcb%2Fe2bdcbc11e1befe402babc5a9ca95458da8b3a20",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -92.44759086299996,
+        "minY": 41.85878826700008,
+        "maxX": -91.18486427699996,
+        "maxY": 42.94608869700008
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/57ae4f6ae4b0fc09faad6ef3",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "57e14136e4b09082500338de",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, East Poplar Oil Field and surrounding area, October 2014, Fort Peck Indian Reservation, Montana",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -105.2665042282931,
+        "minY": 48.06088415152472,
+        "maxX": -105.07821808216866,
+        "maxY": 48.28181745558286
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/57e14136e4b09082500338de",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "57fdbf18e4b0824b2d131540",
+      "provider_unit": "57e14136e4b09082500338de",
+      "parent_id": "57e14136e4b09082500338de",
+      "title": "Airborne electromagnetic survey and supporting data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -105.2665042282931,
+        "minY": 48.06088415152472,
+        "maxX": -105.07821808216866,
+        "maxY": 48.28181745558286
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/57fdbf18e4b0824b2d131540",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5829ce3fe4b01fad8721b548",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Geophysical Surveys over the Eastern Adirondacks, New York State",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -73.77643201540992,
+        "minY": 43.70441259894282,
+        "maxX": -73.3086609797276,
+        "maxY": 44.383328256292735
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5829ce3fe4b01fad8721b548",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "582b9415e4b0c253be072a3d",
+      "provider_unit": "5829ce3fe4b01fad8721b548",
+      "parent_id": "5829ce3fe4b01fad8721b548",
+      "title": "Radiometric Data of Airborne Geophysical Surveys over the Eastern Adirondacks, New York State",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -73.77643201540992,
+        "minY": 43.70441259894282,
+        "maxX": -73.3086609797276,
+        "maxY": 44.383328256292735
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/582b9415e4b0c253be072a3d",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5894b149e4b0fa1e59b868ca",
+      "provider_unit": "552d79bee4b0b22a157f59a3",
+      "parent_id": "552d79bee4b0b22a157f59a3",
+      "title": "Airborne Magnetic Total-Field Survey, Iron Mountain-Menominee Region, Michigan-Wisconsin, USA",
+      "observational_line_files": [
+        {
+          "name": "USA-IronMtn-MenomineeRegion_AirborneMagnetics_linedata1.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 1347450658,
+          "dateUploaded": "2020-07-16T19:05:38Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5894b149e4b0fa1e59b868ca?f=__disk__f2%2F22%2F60%2Ff2226014c47f3c2becfbff8941dcadf0d5e83dab",
+          "checksum": {
+            "value": "b64b3a46f312bd62ec0b886462df6312",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -88.03133570940633,
+        "minY": 45.13931474059825,
+        "maxX": -87.21221745870696,
+        "maxY": 45.86076248989821
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5894b149e4b0fa1e59b868ca",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "589e205be4b099f50d3a06e4",
+      "provider_unit": "5ab11643e4b081f61ab25eb4",
+      "parent_id": "5ab11643e4b081f61ab25eb4",
+      "title": "Airborne electromagnetic and magnetic survey data and inverted resistivity models, western Yukon Flats, Alaska, February 2016",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -149.6402317928772,
+        "minY": 65.87596640946418,
+        "maxX": -148.50668586471423,
+        "maxY": 66.3354614018844
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/589e205be4b099f50d3a06e4",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "58af0ce9e4b01ccd54f9ef2d",
+      "provider_unit": "589e205be4b099f50d3a06e4",
+      "parent_id": "589e205be4b099f50d3a06e4",
+      "title": "Airborne electromagnetic and magnetic survey data, Western Yukon Flats, Alaska, February 2016",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -149.6402317928772,
+        "minY": 65.87596640946418,
+        "maxX": -148.50668586471423,
+        "maxY": 66.3354614018844
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/58af0ce9e4b01ccd54f9ef2d",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5911da14e4b0e541a03c1ba1",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Mount Baker and Mount Adams Airborne Magnetic and Electromagnetic Survey Data, August 2002, Washington, USA",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -121.85000486199999,
+        "minY": 46.003698385358966,
+        "maxX": -121.4139204210617,
+        "maxY": 48.799411883000026
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5911da14e4b0e541a03c1ba1",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5911da5ae4b0e541a03c1ba4",
+      "provider_unit": "5911da14e4b0e541a03c1ba1",
+      "parent_id": "5911da14e4b0e541a03c1ba1",
+      "title": "Mount Adams Electromagnetic and Magnetic Data",
+      "observational_line_files": [
+        {
+          "name": "RawData_MtAdamsEmMag.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 259075853,
+          "dateUploaded": "2017-06-27T22:03:33Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5911da5ae4b0e541a03c1ba4?f=__disk__8e%2Fa9%2F41%2F8ea941e22b04c169032c200ff662b9cbac925b28",
+          "checksum": {
+            "value": "7db17eedb8264c58df11e644083e9a66",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -121.55032338860187,
+        "minY": 46.003698385358966,
+        "maxX": -121.4139204210617,
+        "maxY": 46.25461640247243
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5911da5ae4b0e541a03c1ba4",
+      "rejection_reasons": [
+        "no_documented_processing_term",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5911dab3e4b0e541a03c1ba7",
+      "provider_unit": "5911da14e4b0e541a03c1ba1",
+      "parent_id": "5911da14e4b0e541a03c1ba1",
+      "title": "Mount Baker Electromagnetic and Magnetic Data",
+      "observational_line_files": [
+        {
+          "name": "RawData_MtBakerEmMag.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 124168308,
+          "dateUploaded": "2017-06-27T20:57:32Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5911dab3e4b0e541a03c1ba7?f=__disk__ef%2F5f%2Ffa%2Fef5ffaa558656663404e95e8a22f5e733a5d6309",
+          "checksum": {
+            "value": "0a3742bc2d13cf351d57b9e55166bdfb",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -121.85000486199999,
+        "minY": 48.75237266200003,
+        "maxX": -121.78432662499999,
+        "maxY": 48.799411883000026
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5911dab3e4b0e541a03c1ba7",
+      "rejection_reasons": [
+        "no_documented_processing_term",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "593807c4e4b0f6c2d0da19ca",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data in Big Cypress National Preserve and Everglades National Park, 2001",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/593807c4e4b0f6c2d0da19ca",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "59722284e4b0ec1a4885ed9d",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of Delaware Bay and surrounding regions of New Jersey and Delaware, 2022 (ver 2.0, April 2025)",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -75.6007476445722,
+        "minY": 38.57067139186747,
+        "maxX": -74.75108645208128,
+        "maxY": 39.60987065237943
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/59722284e4b0ec1a4885ed9d",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5989d1a4e4b09fa1cb0c54c6",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, Big Sioux aquifer, October 2015, Sioux Falls, South Dakota",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -96.7925336729252,
+        "minY": 43.570449820738084,
+        "maxX": -96.68437913008007,
+        "maxY": 43.81083292956014
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5989d1a4e4b09fa1cb0c54c6",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5a0377d4e4b0036f58f948f5",
+      "provider_unit": "593807c4e4b0f6c2d0da19ca",
+      "parent_id": "593807c4e4b0f6c2d0da19ca",
+      "title": "Big_Cypress_2001",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -81.39253253853906,
+        "minY": 25.487528802841183,
+        "maxX": -80.79989629766602,
+        "maxY": 25.98337021617791
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5a0377d4e4b0036f58f948f5",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5a0377ebe4b0036f58f948fb",
+      "provider_unit": "593807c4e4b0f6c2d0da19ca",
+      "parent_id": "593807c4e4b0f6c2d0da19ca",
+      "title": "Everglades_4Lines_2001",
+      "observational_line_files": [
+        {
+          "name": "Everglades_4Lines_Data.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 12566123,
+          "dateUploaded": "2018-09-27T20:05:11Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5a0377ebe4b0036f58f948fb?f=__disk__5b%2Fdb%2F71%2F5bdb71959f64a6e4fa5a568e3e9b2f8ca3ff5996",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -80.70248374148295,
+        "minY": 25.147566201656208,
+        "maxX": -80.4737938128968,
+        "maxY": 25.453545579874596
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5a0377ebe4b0036f58f948fb",
+      "rejection_reasons": [
+        "title_not_magnetic"
+      ]
+    },
+    {
+      "sciencebase_id": "5a03780be4b0036f58f948fe",
+      "provider_unit": "593807c4e4b0f6c2d0da19ca",
+      "parent_id": "593807c4e4b0f6c2d0da19ca",
+      "title": "Homestead_2001",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -80.49130235909394,
+        "minY": 25.28695905508233,
+        "maxX": -80.36071807897432,
+        "maxY": 25.428931597709276
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5a03780be4b0036f58f948fe",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5a9f0b3ce4b0b1c392e50241",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Magnetic Surveys over Oklahoma, 2017",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5a9f0b3ce4b0b1c392e50241",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5aa82022e4b0b1c392ef323a",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey, southwestern San Joaquin Valley near Lost Hills, California, 2016",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5aa82022e4b0b1c392ef323a",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5b1987ffe4b092d9652384b3",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data and inverted resistivity models, Cedar Rapids, Iowa, May 2017",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5b1987ffe4b092d9652384b3",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "5c59dc34e4b070828900eba7",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, Stillwater Complex, Montana, May 2000",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5c59dc34e4b070828900eba7",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5c8fb915e4b093882452b34a",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, Iliamna Volcano, Alaska, June 2012",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -153.17005176496437,
+        "minY": 59.97615564249991,
+        "maxX": -152.63917578337205,
+        "maxY": 60.10532836297852
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5c8fb915e4b093882452b34a",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5c9e6c42e4b0b8a7f62f5da6",
+      "provider_unit": "5e8ddf9882cee42d13468786",
+      "parent_id": "5e8ddf9882cee42d13468786",
+      "title": "Airborne electromagnetic, magnetic, and radiometric survey, Shellmound, Mississippi, March 2018 (ver. 2.0, March 2024)",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -90.55244676276595,
+        "minY": 33.50596801002147,
+        "maxX": -90.16823542561374,
+        "maxY": 33.783767463945594
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5c9e6c42e4b0b8a7f62f5da6",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5ca6ce7ee4b0c3b0064c2ce5",
+      "provider_unit": "5c9e6c42e4b0b8a7f62f5da6",
+      "parent_id": "5c9e6c42e4b0b8a7f62f5da6",
+      "title": "Airborne EM, magnetic, and radiometric survey data",
+      "observational_line_files": [
+        {
+          "name": "Shellmound2018_EM_Mag_Rad_rawData.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 2087413482,
+          "dateUploaded": "2019-06-14T18:07:04Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5ca6ce7ee4b0c3b0064c2ce5?f=__disk__b7%2Faa%2Fa4%2Fb7aaa45c79af363636cd467d768e4ba4f239221b",
+          "checksum": {
+            "value": "27daddfc656d6c1196598fe7615b63c5",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -90.55244676276595,
+        "minY": 33.50596801002147,
+        "maxX": -90.16823542561374,
+        "maxY": 33.783767463945594
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5ca6ce7ee4b0c3b0064c2ce5",
+      "rejection_reasons": [
+        "minimally_processed_not_corrected",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5cd0ad9de4b09b8c0b79a53f",
+      "provider_unit": "5c9e6c42e4b0b8a7f62f5da6",
+      "parent_id": "5c9e6c42e4b0b8a7f62f5da6",
+      "title": "Processed airborne magnetic and radiometric grids",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -90.55244676276595,
+        "minY": 33.50596801002147,
+        "maxX": -90.16823542561374,
+        "maxY": 33.783767463945594
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5cd0ad9de4b09b8c0b79a53f",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5cd20cf0e4b09b8c0b7a59c9",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey, western Hualapai Indian Reservation near Grand Canyon West and Peach Springs, Arizona, 2018",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5cd20cf0e4b09b8c0b7a59c9",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5ce5c305e4b0bc180232eb80",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "High Resolution Aeromagnetic Survey, Villa Grove, Colorado, USA, 2011",
+      "observational_line_files": [
+        {
+          "name": "HighResolutionAeromagneticSurveyVillaGroveColorado2011.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 777430124,
+          "dateUploaded": "2019-07-09T21:03:22Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5ce5c305e4b0bc180232eb80?f=__disk__65%2F7e%2Fc5%2F657ec5b9a729d81e95e18c0befd015a09905a0d4",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -106.22830151527796,
+        "minY": 37.79877995383154,
+        "maxX": -105.56373981995291,
+        "maxY": 38.619204315906195
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5ce5c305e4b0bc180232eb80",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5d35fe69e4b01d82ce8a61d1",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Electromagnetic and Magnetic Survey, Yellowstone National Park, 2016 - Minimally Processed Data",
+      "observational_line_files": [
+        {
+          "name": "YellowstoneNP_2017_EM_Mag_Mudpot_rawdata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 18436042,
+          "dateUploaded": "2020-05-20T19:05:05Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d35fe69e4b01d82ce8a61d1?f=__disk__89%2Fee%2F63%2F89ee6373d3e0246f2d82b43ef2341c251556c013",
+          "checksum": {
+            "value": "7b6f0d3211a61af488288fd4368c2275",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "YellowstoneNP_2017_EM_Mag_Central_rawdata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 79722106,
+          "dateUploaded": "2020-05-20T19:05:23Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d35fe69e4b01d82ce8a61d1?f=__disk__26%2F5a%2F31%2F265a31ac98d2112c273f629dd85e04db09e88807",
+          "checksum": {
+            "value": "17c5189c3e6013893fe84c0440c1cde7",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "YellowstoneNP_2017_EM_Mag_NorthEast_rawdata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 244468927,
+          "dateUploaded": "2020-05-20T19:06:19Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d35fe69e4b01d82ce8a61d1?f=__disk__dd%2F3b%2Fdb%2Fdd3bdb05f06a8b25345f4b4a1fd86ca992a046a4",
+          "checksum": {
+            "value": "5b9bcf768e09f35c3f829deb32e22bb5",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "YellowstoneNP_2017_EM_Mag_NYellowstone_rawdata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 281220081,
+          "dateUploaded": "2020-05-20T19:06:32Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d35fe69e4b01d82ce8a61d1?f=__disk__fe%2F92%2Ff7%2Ffe92f7dcf9b2635b2edefbd5c952444147a85892",
+          "checksum": {
+            "value": "66fa8fbd7a8be7fc91424af8e8272568",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "YellowstoneNP_2017_EM_Mag_Caldera_rawdata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 346656149,
+          "dateUploaded": "2020-05-20T19:06:49Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d35fe69e4b01d82ce8a61d1?f=__disk__d3%2Fa0%2F8b%2Fd3a08be22daa45ccd256cab813cd14eabad28906",
+          "checksum": {
+            "value": "82b0304e67cef0c39c76cbe56ab573d3",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "YellowstoneNP_2017_EM_Mag_Norris_rawdata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 616490829,
+          "dateUploaded": "2020-05-20T19:07:54Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d35fe69e4b01d82ce8a61d1?f=__disk__21%2Fe9%2Fde%2F21e9de9e0c141754797044e4d97dfefddcfd02a2",
+          "checksum": {
+            "value": "60ebe02e541f3848ef069bd18385190b",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "YellowstoneNP_2017_EM_Mag_ULGeysersB_rawdata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 924037223,
+          "dateUploaded": "2020-05-20T19:08:45Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d35fe69e4b01d82ce8a61d1?f=__disk__a5%2F37%2Fec%2Fa537ec7b3d892cf906cf7be4ed1da19b472ffbca",
+          "checksum": {
+            "value": "09f65a735ca78fd9466470030be92877",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -111.07139586990378,
+        "minY": 44.2135150155839,
+        "maxX": -110.12211741260512,
+        "maxY": 44.99290574516867
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d35fe69e4b01d82ce8a61d1",
+      "rejection_reasons": [
+        "minimally_processed_not_corrected",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d642e32e4b01d82ce987143",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, southeastern San Joaquin Valley near Cawelo, California, 2016",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -119.20005892534469,
+        "minY": 35.46627575668188,
+        "maxX": -119.08692724474086,
+        "maxY": 35.59332136282385
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d642e32e4b01d82ce987143",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d64314be4b01d82ce98718c",
+      "provider_unit": "5d642e32e4b01d82ce987143",
+      "parent_id": "5d642e32e4b01d82ce987143",
+      "title": "Airborne electromagnetic and magnetic survey data, southeastern San Joaquin Valley near Cawelo, California, 2016: Minimally processed data",
+      "observational_line_files": [
+        {
+          "name": "CaweloCA2016_EM_Mag_rawdata.csv",
+          "title": "Minimally processed digital data",
+          "contentType": "text/csv",
+          "size": 154179751,
+          "dateUploaded": "2021-03-22T22:04:34Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d64314be4b01d82ce98718c?f=__disk__ce%2F65%2F23%2Fce652322828227c91c51afb3b443793d06431797",
+          "checksum": {
+            "value": "57814092a7d9fe8678296b6745cbb266",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "CaweloCA2016_DataDictonary_EM_Mag.csv",
+          "title": "Description of digital data",
+          "contentType": "text/csv",
+          "size": 3877,
+          "dateUploaded": "2021-03-26T17:54:06Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d64314be4b01d82ce98718c?f=__disk__82%2F99%2F3c%2F82993cb6140280009fde80a319ba81f4dbd0c67a",
+          "checksum": {
+            "value": "c33294b2a54854c77f07586358e1271f",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -119.20005892534469,
+        "minY": 35.46627575668188,
+        "maxX": -119.08692724474086,
+        "maxY": 35.59332136282385
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d64314be4b01d82ce98718c",
+      "rejection_reasons": [
+        "minimally_processed_not_corrected",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d643159e4b01d82ce98718f",
+      "provider_unit": "5d642e32e4b01d82ce987143",
+      "parent_id": "5d642e32e4b01d82ce987143",
+      "title": "Airborne electromagnetic and magnetic survey data, southeastern San Joaquin Valley near Cawelo, California, 2016: Processed AEM data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -119.20005892534469,
+        "minY": 35.46627575668188,
+        "maxX": -119.08692724474086,
+        "maxY": 35.59332136282385
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d643159e4b01d82ce98718f",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d64316fe4b01d82ce987191",
+      "provider_unit": "5d642e32e4b01d82ce987143",
+      "parent_id": "5d642e32e4b01d82ce987143",
+      "title": "Airborne electromagnetic and magnetic survey data, southeastern San Joaquin Valley near Cawelo, California, 2016: Resistivity models",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -119.20005892534469,
+        "minY": 35.46627575668188,
+        "maxX": -119.08692724474086,
+        "maxY": 35.59332136282385
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d64316fe4b01d82ce987191",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d76b872e4b0c4f70d01ff75",
+      "provider_unit": "5e8ddf9882cee42d13468786",
+      "parent_id": "5e8ddf9882cee42d13468786",
+      "title": "Airborne electromagnetic, magnetic, and radiometric survey of the Mississippi Alluvial Plain, November 2018 - February 2019",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -92.45224219611075,
+        "minY": 31.740543316840373,
+        "maxX": -88.91881647154085,
+        "maxY": 37.41570892475358
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d76b872e4b0c4f70d01ff75",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d76baaae4b0c4f70d01ff9a",
+      "provider_unit": "5d76b872e4b0c4f70d01ff75",
+      "parent_id": "5d76b872e4b0c4f70d01ff75",
+      "title": "Processed airborne magnetic and radiometric grids",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -92.45224219611075,
+        "minY": 31.740543316840373,
+        "maxX": -88.91881647154085,
+        "maxY": 37.41570892475358
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d76baaae4b0c4f70d01ff9a",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d76bafae4b0c4f70d01ffa1",
+      "provider_unit": "5d76b872e4b0c4f70d01ff75",
+      "parent_id": "5d76b872e4b0c4f70d01ff75",
+      "title": "Airborne EM, magnetic, and radiometric survey data",
+      "observational_line_files": [
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_EWBlockN.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 2467717144,
+          "dateUploaded": "2020-12-16T08:34:27Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__d9%2Fe5%2Fec%2Fd9e5ecf979a4d1499829c6a11c0aa1379c5749e0",
+          "checksum": {
+            "value": "5eed2bec323da6d20e5432b1f359415e",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_EWBlockS.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 2677634185,
+          "dateUploaded": "2020-12-16T08:36:41Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__65%2F6d%2Fe0%2F656de0d65c054f2db491f8934054aa9ccd5bf0e6",
+          "checksum": {
+            "value": "a31f1ce152d8ad3883fc4829b155926a",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_EWBlockMidN.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 2895115066,
+          "dateUploaded": "2020-12-16T08:37:57Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__5b%2Fc1%2F69%2F5bc1692254ed49c503b9cb70b28fb56501db9139",
+          "checksum": {
+            "value": "c2d53924f1ef89776ca46a0c588036f6",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_EWBlockMidS.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 2978213408,
+          "dateUploaded": "2020-12-16T08:38:03Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__61%2F73%2F53%2F617353d4f90b7fbfa24b25a8e7b2d1163aa5b5aa",
+          "checksum": {
+            "value": "a3dbd7177a6ff6c0242ad3149005dc20",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_Rivers.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 3184071166,
+          "dateUploaded": "2020-12-16T08:38:21Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__19%2F7e%2F17%2F197e170b51426800754f9eca71260a3413af4f53",
+          "checksum": {
+            "value": "ebb7cf61bc9596852f3a6e0134ee3f49",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_BlockNSTie.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 823468989,
+          "dateUploaded": "2020-12-16T14:52:41Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__aa%2Fab%2F94%2Faaab94669f26fef77228440ab57f04f9184caa7c",
+          "checksum": {
+            "value": "d7c89efbd9e8479a2e10b71dee393ef6",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_Crowley.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 294475275,
+          "dateUploaded": "2020-12-16T14:49:01Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__42%2Fab%2Feb%2F42abeb543f713b3d740bb2ab95b595cf9bcf95ba",
+          "checksum": {
+            "value": "08de47e9371dc5a88f2580d3311cffc0",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RegionalResolve_2019_EMMagRad_rawData_UMemphis.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 62544902,
+          "dateUploaded": "2020-12-16T14:47:32Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5d76bafae4b0c4f70d01ffa1?f=__disk__d2%2Fd5%2F40%2Fd2d540cee629d57a51e2af89c29cee46a4f0fa7c",
+          "checksum": {
+            "value": "fe349a95c18ce14c375850b4c4881a1a",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -92.45224219611075,
+        "minY": 31.740543316840373,
+        "maxX": -88.91881647154085,
+        "maxY": 37.41570892475358
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d76bafae4b0c4f70d01ffa1",
+      "rejection_reasons": [
+        "minimally_processed_not_corrected",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5d8a672ae4b0c4f70d0ae76f",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, southeast Missouri and western Illinois, 2018-2019",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -91.64896045836129,
+        "minY": 36.95738878977639,
+        "maxX": -89.86450235109051,
+        "maxY": 38.31375577123725
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5d8a672ae4b0c4f70d0ae76f",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5dc58376e4b06957975a47dd",
+      "provider_unit": "5d8a672ae4b0c4f70d0ae76f",
+      "parent_id": "5d8a672ae4b0c4f70d0ae76f",
+      "title": "Radiometric data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -91.69312407041896,
+        "minY": 36.887220232271616,
+        "maxX": -89.66738819767562,
+        "maxY": 38.39020139106495
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5dc58376e4b06957975a47dd",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5e695f26e4b01d50925e7053",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, southeastern Illinois, western Kentucky, and southern Indiana, 2019",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -88.88767999999999,
+        "minY": 36.85376000000008,
+        "maxX": -87.83493799999998,
+        "maxY": 38.017334000000055
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5e695f26e4b01d50925e7053",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5e6c0b09e4b01d5092638c8f",
+      "provider_unit": "5e695f26e4b01d50925e7053",
+      "parent_id": "5e695f26e4b01d50925e7053",
+      "title": "Hicks Dome Magnetic Data",
+      "observational_line_files": [
+        {
+          "name": "USA_Hicks-Dome-Airborne-Survey-2019_MagneticData.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 4556100168,
+          "dateUploaded": "2020-04-09T00:37:39Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5e6c0b09e4b01d5092638c8f?f=__disk__9a%2F17%2F9f%2F9a179fa4b0c78a5db7bc51bb8b7af6aaa6530afe",
+          "checksum": {
+            "value": "1b4a25899ee8abe198fe766829bed62f",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -88.89416141361782,
+        "minY": 36.70135947039479,
+        "maxX": -87.81521151130688,
+        "maxY": 38.02597416739666
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5e6c0b09e4b01d5092638c8f",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5e6c0b3fe4b01d5092638c95",
+      "provider_unit": "5e695f26e4b01d50925e7053",
+      "parent_id": "5e695f26e4b01d50925e7053",
+      "title": "Hicks Dome Radiometric Data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -88.92190256942033,
+        "minY": 36.66244238027296,
+        "maxX": -87.77183308212462,
+        "maxY": 38.063227015799136
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5e6c0b3fe4b01d5092638c95",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5ed8591382ce7e579c670254",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, Stillwater Complex, Montana, May 2000 (ver. 2.0, June 2020)",
+      "observational_line_files": [
+        {
+          "name": "StillwaterMagEM_v2.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 151997944,
+          "dateUploaded": "2020-06-04T18:21:16Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5ed8591382ce7e579c670254?f=__disk__e4%2F20%2Fa2%2Fe420a2236c2b81c5e6749f77924831e6892e8d15",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5ed8591382ce7e579c670254",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5edab68a82ce7e579c69c8ee",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic survey, Iron Mountain-Chatham region, central Upper Peninsula, Michigan, 2018",
+      "observational_line_files": [
+        {
+          "name": "USA-IronMtnChatham-AirborneMagnetics-2018-linedata.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 2153327915,
+          "dateUploaded": "2020-09-16T17:37:38Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5edab68a82ce7e579c69c8ee?f=__disk__aa%2Faa%2F2b%2Faaaa2bf03e5d2ef5bce08d4d51ae2874a55dc0d4",
+          "checksum": {
+            "value": "0e1be35a9e3efe3e2235a8d9f64543f7",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -88.2003917427754,
+        "minY": 45.73812365803533,
+        "maxX": -86.91923248804649,
+        "maxY": 46.44583534698372
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5edab68a82ce7e579c69c8ee",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5ee8f11582ce3bd58d851988",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data of the San Juan-Silverton Caldera complex, Silverton, Colorado, 2019",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5ee8f11582ce3bd58d851988",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5eea81f182ce3bd58d8575ee",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey over northwest Arkansas, 2019-2020",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -93.82582092258771,
+        "minY": 35.51327896070431,
+        "maxX": -91.31888580377931,
+        "maxY": 36.50026702830724
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5eea81f182ce3bd58d8575ee",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5f066e2682ce21d4c3f90237",
+      "provider_unit": "5eea81f182ce3bd58d8575ee",
+      "parent_id": "5eea81f182ce3bd58d8575ee",
+      "title": "Airborne magnetic and radiometric survey over northwest Arkansas, 2019-2020; Magnetic Data",
+      "observational_line_files": [
+        {
+          "name": "USA_Northwest-Arkansas-Airborne-Survey-2019-2020_MagneticData.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 4844078276,
+          "dateUploaded": "2020-07-09T02:20:40Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5f066e2682ce21d4c3f90237?f=__disk__cc%2F4b%2F74%2Fcc4b74b648e130ab6b71b1801f918b4e14e8ff03",
+          "checksum": {
+            "value": "7177f59ba69fafc37640d1f64034d17a",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -93.83156011065195,
+        "minY": 35.50218740382857,
+        "maxX": -91.31287168905195,
+        "maxY": 36.51007331662858
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f066e2682ce21d4c3f90237",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5f068fc082ce21d4c3f90a35",
+      "provider_unit": "5eea81f182ce3bd58d8575ee",
+      "parent_id": "5eea81f182ce3bd58d8575ee",
+      "title": "Airborne magnetic and radiometric survey over northwest Arkansas, 2019-2020; Radiometric Data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -93.83156011065195,
+        "minY": 35.502187403828565,
+        "maxX": -91.31235964934805,
+        "maxY": 36.51087526853465
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f068fc082ce21d4c3f90a35",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "5f247e3082cef313ed972534",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Charleston, South Carolina and surrounds, 2019",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "total magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -80.95674553044778,
+        "minY": 32.36499514633852,
+        "maxX": -79.23937660541245,
+        "maxY": 33.72720983322316
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f247e3082cef313ed972534",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5f35b17382cee144fb35a733",
+      "provider_unit": "5e8ddf9882cee42d13468786",
+      "parent_id": "5e8ddf9882cee42d13468786",
+      "title": "Airborne electromagnetic, magnetic, and radiometric survey of the Mississippi Alluvial Plain, November 2019 - March 2020",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -92.92330844434507,
+        "minY": 30.788446305394192,
+        "maxX": -88.53576827518704,
+        "maxY": 37.80480512050534
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f35b17382cee144fb35a733",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5f4d802d82ce4c3d123191ff",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic, magnetic, and radiometric survey, upper East River and surrounding watersheds near Crested Butte, Colorado, 2017",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -107.11191201923816,
+        "minY": 38.76249338209605,
+        "maxX": -106.79926414323677,
+        "maxY": 39.06796804357925
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f4d802d82ce4c3d123191ff",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "5f4da2a682ce4c3d1231922b",
+      "provider_unit": "5f247e3082cef313ed972534",
+      "parent_id": "5f247e3082cef313ed972534",
+      "title": "Airborne radiometric flight line data, Charleston, South Carolina and surrounds, 2019",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "total magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -81.08141791440843,
+        "minY": 32.29369817539769,
+        "maxX": -79.11890250798285,
+        "maxY": 33.82120912496143
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f4da2a682ce4c3d1231922b",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "5f4e951882ce4c3d1233cb7d",
+      "provider_unit": "5f35b17382cee144fb35a733",
+      "parent_id": "5f35b17382cee144fb35a733",
+      "title": "Airborne EM, magnetic, and radiometric survey data",
+      "observational_line_files": [
+        {
+          "name": "MAP_RegionalTempest_2020_EM_RawData.dat",
+          "title": "raw electromagnetic data file",
+          "contentType": "application/unknown",
+          "size": 2737187630,
+          "dateUploaded": "2021-01-15T22:23:02Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5f4e951882ce4c3d1233cb7d?f=__disk__d4%2F8f%2Fdd%2Fd48fdd1842158e926d9266a4a1793b814af339b6",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -92.92330844434507,
+        "minY": 30.788446305394192,
+        "maxX": -88.53576827518704,
+        "maxY": 37.80480512050534
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/5f4e951882ce4c3d1233cb7d",
+      "rejection_reasons": [
+        "minimally_processed_not_corrected",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "61688b65d34e6537700120e5",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne magnetic and radiometric survey, Columbia, South Carolina and surrounds, 2020",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -81.79499091936201,
+        "minY": 32.98335812703452,
+        "maxX": -79.87125881365388,
+        "maxY": 34.57693395023179
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/61688b65d34e6537700120e5",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "6193fbb0d34eb622f68f13e5",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, northeast Wisconsin (ver. 1.1, June 2022)",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -88.3190581362751,
+        "minY": 43.86232098617118,
+        "maxX": -87.31217816147198,
+        "maxY": 44.89492759214822
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6193fbb0d34eb622f68f13e5",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "6197ec00d34eb622f692eebf",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, southwestern San Joaquin Valley near Elk Hills, California, 2017",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -119.66835529140376,
+        "minY": 35.03254199511287,
+        "maxX": -119.15080745343886,
+        "maxY": 35.48465108338085
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6197ec00d34eb622f692eebf",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "6197f026d34eb622f692eed1",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, southwestern San Joaquin Valley near Maricopa, California, 2018",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6197f026d34eb622f692eed1",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "619a9a3ad34eb622f692f961",
+      "provider_unit": "6193e9f3d34eb622f68f13a5",
+      "parent_id": "6193e9f3d34eb622f68f13a5",
+      "title": "[Geophysical Data] Magnetic and related derivative GeoTIFF grids and data for the United States and Canada",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "residual magnetic"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/619a9a3ad34eb622f692f961",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "619d3aa8d34eb622f6957be2",
+      "provider_unit": "6193e9f3d34eb622f68f13a5",
+      "parent_id": "6193e9f3d34eb622f68f13a5",
+      "title": "[Geophysical Data] Magnetic and related derivative GeoTIFF grids and data for Australia",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/619d3aa8d34eb622f6957be2",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "61de2764d34ed79294021b26",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne magnetic and radiometric survey, northwestern Minnesota, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -96.92373842693212,
+        "minY": 46.91898258515173,
+        "maxX": -95.60361195933947,
+        "maxY": 48.35777944551883
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/61de2764d34ed79294021b26",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "61fc2f97d34e622189cb8997",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne electromagnetic and magnetic survey data, Silverton, Colorado, 2019",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -107.83121414626488,
+        "minY": 37.748799511535275,
+        "maxX": -107.52141984248077,
+        "maxY": 37.97352465069978
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/61fc2f97d34e622189cb8997",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "62069b13d34ec05caca511f0",
+      "provider_unit": "5a2ff8f6e4b08e6a89d57a89",
+      "parent_id": "5a2ff8f6e4b08e6a89d57a89",
+      "title": "Airborne electromagnetic, magnetic, and radiometric surveys of the Mississippi Alluvial Plain and Chicot Aquifer System, March 2018 and May - August 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -93.82076443832904,
+        "minY": 29.60773347765202,
+        "maxX": -88.85706078411505,
+        "maxY": 37.391528060454185
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62069b13d34ec05caca511f0",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "62101ac1d34e6c7e83bab22e",
+      "provider_unit": "56b3ea3ae4b0cc79997fb61d",
+      "parent_id": "56b3ea3ae4b0cc79997fb61d",
+      "title": "Historical (1940\u20132006) and recent (2019\u201320) aquifer slug test datasets used to model transmissivity and hydraulic conductivity of the Mississippi River Valley alluvial aquifer from recent (2018\u201320) airborne electromagnetic (AEM) survey data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62101ac1d34e6c7e83bab22e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "62291b66d34ee0c6b38b88ea",
+      "provider_unit": "61688b65d34e6537700120e5",
+      "parent_id": "61688b65d34e6537700120e5",
+      "title": "Airborne radiometric flight line data, Columbia, South Carolina and surrounds, 2020",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -81.85369279708948,
+        "minY": 32.975664271861824,
+        "maxX": -79.80622169083532,
+        "maxY": 34.57947857022534
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62291b66d34ee0c6b38b88ea",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "623219c9d34ec9f19eeb418b",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne magnetic and radiometric survey of the Wet Mountains and surrounding region, Custer and Fremont Counties, south-central Colorado, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -105.63059505560955,
+        "minY": 38.02736799593832,
+        "maxX": -105.12549998938333,
+        "maxY": 38.58596368801518
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/623219c9d34ec9f19eeb418b",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "624347bfd34e22d73748d357",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne horizontal magnetic gradient and radiometric survey over parts of southeast Missouri, southern Illinois and western Kentucky - The Gap survey, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/624347bfd34e22d73748d357",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "62434c71d34e22d73748d369",
+      "provider_unit": "624347bfd34e22d73748d357",
+      "parent_id": "624347bfd34e22d73748d357",
+      "title": "Airborne radiometric flight line data over parts of southeast Missouri, southern Illinois and western Kentucky - The Gap survey, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -90.00829420431681,
+        "minY": 36.831318443899825,
+        "maxX": -88.83930442492824,
+        "maxY": 38.29423575120975
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62434c71d34e22d73748d369",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "624bd4a6d34e21f82763663c",
+      "provider_unit": "62069b13d34ec05caca511f0",
+      "parent_id": "62069b13d34ec05caca511f0",
+      "title": "Airborne electromagnetic, magnetic, and radiometric surveys of the Mississippi Alluvial Plain and Chicot Aquifer System, March 2018 and May - August 2021: Minimally Processed (Raw) Data",
+      "observational_line_files": [
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_AR_Rivers_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 434830119,
+          "dateUploaded": "2023-12-08T19:58:17Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__b9%2Fdc%2F4b%2Fb9dc4be6126a8f33807c03e43d914e37fc32eec5",
+          "checksum": {
+            "value": "2c58dcb8ee167a8d43ec0ab4f3978656",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_ChicotRivers_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 643888516,
+          "dateUploaded": "2023-12-08T20:07:18Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__51%2F39%2F28%2F51392896d1d413173207c0c5eced49e8c4ab2e48",
+          "checksum": {
+            "value": "aa32251d047ec17aeb66bdeae709a75f",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_GravelBars_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 592847117,
+          "dateUploaded": "2023-12-08T20:04:04Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__a1%2Fd2%2F5b%2Fa1d25b1092ce5ad3b9aafa779240ba1fb221cf7a",
+          "checksum": {
+            "value": "3e6350164e2d18d90b673b6d16e94992",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_LeveesOffset_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 1342058363,
+          "dateUploaded": "2023-12-08T20:34:07Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__da%2F0e%2F77%2Fda0e77459a2f98e96822bad5d766ea86da280680",
+          "checksum": {
+            "value": "67545d9c164cf6456aac5a1b88f78ffd",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_LeveesRiver_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 1598841701,
+          "dateUploaded": "2023-12-08T20:30:36Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__02%2F5b%2F27%2F025b27f8fb483b36a8fac5f29239e7701907fcbb",
+          "checksum": {
+            "value": "bb032038cff1a0d14a31f94b37896dd1",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_OSLRaccourciMelton_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 203569408,
+          "dateUploaded": "2023-12-08T19:48:44Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__aa%2Fe9%2F11%2Faae9115b0fc1283b8ff53ede07b2864901fa27ee",
+          "checksum": {
+            "value": "dd53085af2688f51e545013a556fe9d1",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_TN_MS_LA_Rivers_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 786418504,
+          "dateUploaded": "2023-12-08T20:08:51Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__76%2F2a%2F44%2F762a44d164b6fdb55c3f43e08c30857aab22a81c",
+          "checksum": {
+            "value": "e47279da0057fcf9d4117db1e494240d",
+            "type": "MD5"
+          }
+        },
+        {
+          "name": "MAP_RiversResolve_2021_EMMagRad_rawData_LeveesLand_clip.csv",
+          "title": "",
+          "contentType": "text/csv",
+          "size": 1467521620,
+          "dateUploaded": "2023-12-12T16:48:32Z",
+          "downloadUri": "https://www.sciencebase.gov/catalog/file/get/624bd4a6d34e21f82763663c?f=__disk__65%2F50%2F6f%2F65506fba73494d88a188a2352758d27eedf39387",
+          "checksum": {
+            "value": "0738272250b1cd42b91282f2ccbfe931",
+            "type": "MD5"
+          }
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -93.82076443832904,
+        "minY": 29.60773347765202,
+        "maxX": -88.85706078411505,
+        "maxY": 37.391528060454185
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/624bd4a6d34e21f82763663c",
+      "rejection_reasons": [
+        "minimally_processed_not_corrected",
+        "raw_magnetic_file_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "624be965d34e21f827639b07",
+      "provider_unit": "62069b13d34ec05caca511f0",
+      "parent_id": "62069b13d34ec05caca511f0",
+      "title": "Airborne electromagnetic surveys of the Mississippi Alluvial Plain and Chicot Aquifer System, March 2018 and May - August 2021: Resistivity Models",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -93.82076443832904,
+        "minY": 29.60773347765202,
+        "maxX": -88.85706078411505,
+        "maxY": 37.391528060454185
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/624be965d34e21f827639b07",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "624be98bd34e21f827639b6b",
+      "provider_unit": "62069b13d34ec05caca511f0",
+      "parent_id": "62069b13d34ec05caca511f0",
+      "title": "Airborne electromagnetic surveys of the Mississippi Alluvial Plain and Chicot Aquifer System, March 2018 and May - August 2021: Processed Data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -93.82076443832904,
+        "minY": 29.60773347765202,
+        "maxX": -88.85706078411505,
+        "maxY": 37.391528060454185
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/624be98bd34e21f827639b6b",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "625581aed34e21f8276f488a",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne magnetic and radiometric survey, Munsungun region in northern Maine, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -70.01479031162302,
+        "minY": 45.92491596418,
+        "maxX": -67.98680543961649,
+        "maxY": 47.1923358689354
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/625581aed34e21f8276f488a",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "62e19cf9d34e10763b599165",
+      "provider_unit": "625581aed34e21f8276f488a",
+      "parent_id": "625581aed34e21f8276f488a",
+      "title": "Airborne radiometric data, Munsungun region in northern Maine, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -70.07680556009194,
+        "minY": 45.89551654797817,
+        "maxX": -67.93863166751527,
+        "maxY": 47.25946204182057
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62e19cf9d34e10763b599165",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "62ec57fbd34eacf539724fed",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Idaho Cobalt Belt, Central Idaho, 2021 - Magnetic and Radiometric Data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62ec57fbd34eacf539724fed",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "62ed9ca9d34eacf539725790",
+      "provider_unit": "62ec57fbd34eacf539724fed",
+      "parent_id": "62ec57fbd34eacf539724fed",
+      "title": "Airborne magnetic and radiometric survey, Idaho Cobalt Belt, Central Idaho, 2021 - Magnetic Data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62ed9ca9d34eacf539725790",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "62ed9e0cd34eacf539725799",
+      "provider_unit": "62ec57fbd34eacf539724fed",
+      "parent_id": "62ec57fbd34eacf539724fed",
+      "title": "Airborne magnetic and radiometric survey, Idaho Cobalt Belt, Central Idaho, 2021 - Radiometric Data",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62ed9e0cd34eacf539725799",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "62ffc245d34e37cba73e1fa0",
+      "provider_unit": "5e8ddf9882cee42d13468786",
+      "parent_id": "5e8ddf9882cee42d13468786",
+      "title": "Airborne electromagnetic, magnetic, and radiometric survey of the Mississippi Alluvial Plain, Mississippi Embayment, and Gulf Coastal Plain, September 2021 - January 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -94.12812582612658,
+        "minY": 29.018727768105947,
+        "maxX": -88.08694682858238,
+        "maxY": 37.41824888778623
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/62ffc245d34e37cba73e1fa0",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "630f7f2ad34e36012efa0864",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne magnetic and radiometric survey, Virginia and North Carolina Fall Zone, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -78.128407953017,
+        "minY": 35.88081403073502,
+        "maxX": -77.0519282010247,
+        "maxY": 38.017999523401286
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/630f7f2ad34e36012efa0864",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "63237bf3d34e71c6d67acb96",
+      "provider_unit": "630f7f2ad34e36012efa0864",
+      "parent_id": "630f7f2ad34e36012efa0864",
+      "title": "Airborne radiometric flight line data, Virginia and North Carolina Fall Zone, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -78.31223909681637,
+        "minY": 35.52682092887667,
+        "maxX": -76.50255416855205,
+        "maxY": 38.164018055608395
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63237bf3d34e71c6d67acb96",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "633ac9cad34e900e86cf1283",
+      "provider_unit": "602427f7d34eb120311385ba",
+      "parent_id": "602427f7d34eb120311385ba",
+      "title": "Airborne Magnetic Survey, Michigan Upper Peninsula Area, 2008",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/633ac9cad34e900e86cf1283",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "633dfbaad34e342aee056917",
+      "provider_unit": "61de2764d34ed79294021b26",
+      "parent_id": "61de2764d34ed79294021b26",
+      "title": "Airborne radiometric survey, northwestern Minnesota, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -96.95082646097353,
+        "minY": 46.88975677291392,
+        "maxX": -95.54202804485378,
+        "maxY": 48.41592913136175
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/633dfbaad34e342aee056917",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "633e0098d34e342aee056924",
+      "provider_unit": "61de2764d34ed79294021b26",
+      "parent_id": "61de2764d34ed79294021b26",
+      "title": "Airborne magnetic survey, northwestern Minnesota, 2021",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -96.96290345862089,
+        "minY": 46.8876733433977,
+        "maxX": -95.48724399577006,
+        "maxY": 48.39843720306078
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/633e0098d34e342aee056924",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "63a0be97d34e0de3a1f277fe",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey over northwest Arkansas, 2019-2020 (ver 2.0, May 2026)",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63a0be97d34e0de3a1f277fe",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "63a0bf61d34e0de3a1f2780e",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, southeastern Illinois, western Kentucky, and southern Indiana, 2019 (version 2.0, August 2025)",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63a0bf61d34e0de3a1f2780e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "63a10b4ad34e0de3a1f2796d",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey of the Boulder Batholith region, Montana, Butte extension 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -113.45840852843631,
+        "minY": 45.29227282523615,
+        "maxX": -112.26800518113639,
+        "maxY": 46.58938870814753
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63a10b4ad34e0de3a1f2796d",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "63a10d18d34e0de3a1f27974",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Magnetic and Radiometric Survey, Colorado Mineral Belt, Northeast Block, 2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "level",
+        "residual magnetic"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -106.42303964716149,
+        "minY": 39.01186224897248,
+        "maxX": -105.09712678602013,
+        "maxY": 40.67573190139487
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63a10d18d34e0de3a1f27974",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "63ac8a83d34e92aad3ca141e",
+      "provider_unit": "602427f7d34eb120311385ba",
+      "parent_id": "602427f7d34eb120311385ba",
+      "title": "Airborne magnetic and radiometric survey, Hartville Uplift and Shirley Mountains regions, Wyoming, 2025",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -107.26035369945734,
+        "minY": 41.805588321740856,
+        "maxX": -104.08109881677889,
+        "maxY": 42.943962282837745
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63ac8a83d34e92aad3ca141e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "63d2ffffd34e06fef1500f01",
+      "provider_unit": "60774badd34e018b320420ae",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne magnetic and radiometric survey, western Arkansas, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/63d2ffffd34e06fef1500f01",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "642f18b8d34ee8d4add49274",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Boulder Batholith region, Montana, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/642f18b8d34ee8d4add49274",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "643eb3b0d34ee8d4ade5db3c",
+      "provider_unit": "642f18b8d34ee8d4add49274",
+      "parent_id": "642f18b8d34ee8d4add49274",
+      "title": "Airborne magnetic survey, Boulder Batholith region, Montana, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/643eb3b0d34ee8d4ade5db3c",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "643ebd2bd34ee8d4ade5db65",
+      "provider_unit": "642f18b8d34ee8d4add49274",
+      "parent_id": "642f18b8d34ee8d4add49274",
+      "title": "Airborne radiometric survey, Boulder Batholith region, Montana, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/643ebd2bd34ee8d4ade5db65",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "65297daed34e44db0e2ed89a",
+      "provider_unit": "64f929c6d34ed30c20547360",
+      "parent_id": "64f929c6d34ed30c20547360",
+      "title": "Airborne magnetic and radiometric survey, Boulder Batholith region, Montana, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -112.461266821476,
+        "minY": 45.85166876413869,
+        "maxX": -111.56546776013542,
+        "maxY": 46.57121701262874
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65297daed34e44db0e2ed89a",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "65298161d34e44db0e2ed8a3",
+      "provider_unit": "65297daed34e44db0e2ed89a",
+      "parent_id": "65297daed34e44db0e2ed89a",
+      "title": "JUNK",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyBoulderBatholithMT2022.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 1479219355,
+          "dateUploaded": "2023-11-06T16:58:35Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/clon54riv000d14o63c7s1d2h",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -112.60209873236599,
+        "minY": 45.834515423181216,
+        "maxX": -111.54739935151179,
+        "maxY": 46.58390745669893
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65298161d34e44db0e2ed8a3",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "652981bad34e44db0e2ed8a6",
+      "provider_unit": "65297daed34e44db0e2ed89a",
+      "parent_id": "65297daed34e44db0e2ed89a",
+      "title": "Airborne radiometric survey, Boulder Batholith region, Montana, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -112.6473822421152,
+        "minY": 45.833770234552524,
+        "maxX": -111.54828764967462,
+        "maxY": 46.5834325217751
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/652981bad34e44db0e2ed8a6",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "657e1d85d34e23d3533209f7",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "GeoDAWN: Airborne magnetic and radiometric surveys of the northwestern Great Basin, Nevada and California",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal",
+        "level"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "65959be8d34e3265ab152eed",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "High-resolution airborne magnetic and radiometric survey of the Republic Graben, Okanogan and Kettle metamorphic core complexes, Kootenay Arc and surrounding regions, Northeastern Washington",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -120.15574514590074,
+        "minY": 47.70871790232342,
+        "maxX": -116.97939550351866,
+        "maxY": 49.03612605350494
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65959be8d34e3265ab152eed",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "65b01804d34ef34c3506e4c8",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, South Pass-Granite Mountains region, Wyoming, 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -109.16016231441158,
+        "minY": 42.00901347402226,
+        "maxX": -106.70176194834922,
+        "maxY": 42.84023184531754
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65b01804d34ef34c3506e4c8",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "65b126edd34ef34c3507847c",
+      "provider_unit": "65b01804d34ef34c3506e4c8",
+      "parent_id": "65b01804d34ef34c3506e4c8",
+      "title": "Airborne magnetic survey, South Pass-Granite Mountains region, Wyoming, 2023",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveySouthPassGraniteMtnsWY2023.csv",
+          "title": "ASCII File of Magnetic Data",
+          "contentType": "text/csv",
+          "size": 6012379358,
+          "dateUploaded": "2024-01-24T17:57:07Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/clrs37tbh00ip14o92e0m7elr",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -109.29088083333603,
+        "minY": 41.99035100282044,
+        "maxX": -106.52593064636635,
+        "maxY": 42.850727097464386
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65b126edd34ef34c3507847c",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "65b2dc3fd34e36a3904534a7",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of the Alabama Graphite-Vanadium Belt and surrounding regions, 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -87.21014096056656,
+        "minY": 32.27655743070188,
+        "maxX": -85.12305000343596,
+        "maxY": 34.076960841347024
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65b2dc3fd34e36a3904534a7",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "65b837a1d34e18c6baf2b822",
+      "provider_unit": "65959be8d34e3265ab152eed",
+      "parent_id": "65959be8d34e3265ab152eed",
+      "title": "High-resolution airborne radiometric survey of the Republic Graben, Okanogan and Kettle metamorphic core complexes, Kootenay Arc and surrounding regions, Northeastern Washington",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -120.15824682051043,
+        "minY": 47.70560407244024,
+        "maxX": -116.97776760729548,
+        "maxY": 49.03480376162984
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65b837a1d34e18c6baf2b822",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "65c3a97ed34ef4b119cae594",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Regional airborne electromagnetic and magnetic surveys of the Basin and Range Province in Nevada, Oregon, and California, 2022-2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -119.28078883647314,
+        "minY": 36.969112045380676,
+        "maxX": -115.2050374557287,
+        "maxY": 42.39481125977922
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65c3a97ed34ef4b119cae594",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "65cbf516d34ef4b119cb3955",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Boulder Batholith region, Montana, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -112.58518581302617,
+        "minY": 45.41489928144812,
+        "maxX": -111.56080580572615,
+        "maxY": 46.571666799020235
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65cbf516d34ef4b119cb3955",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "65ccd303d34ef4b119cb3b55",
+      "provider_unit": "65cbf516d34ef4b119cb3955",
+      "parent_id": "65cbf516d34ef4b119cb3955",
+      "title": "Airborne magnetic survey, Boulder Batholith region, Montana, 2022",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyBoulderBatholithMT2022.csv",
+          "title": "ASCII File of Magnetic Data",
+          "contentType": "text/csv",
+          "size": 2080118358,
+          "dateUploaded": "2024-02-14T21:06:02Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/clsma33cr003q16o3gwepfmf9",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -112.65752407644742,
+        "minY": 45.400071003827804,
+        "maxX": -111.52691276109125,
+        "maxY": 46.64089714725376
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/65ccd303d34ef4b119cb3b55",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "662999ccd34ea70bd5f087aa",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Magnetic and Radiometric Survey, Colorado Mineral Belt, Southwest Block, 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -108.3025744406133,
+        "minY": 37.24420098348276,
+        "maxX": -106.83447624261484,
+        "maxY": 38.137598393265044
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/662999ccd34ea70bd5f087aa",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "6658b79fd34ef3137d35f9fc",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Medicine Bow Mountains, Wyoming, 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -106.7465069816553,
+        "minY": 40.98681946268339,
+        "maxX": -105.9225224764418,
+        "maxY": 41.63236049591621
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6658b79fd34ef3137d35f9fc",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "6668a6c2d34e9bcc607b7f69",
+      "provider_unit": "6658b79fd34ef3137d35f9fc",
+      "parent_id": "6658b79fd34ef3137d35f9fc",
+      "title": "Airborne magnetic survey, Medicine Bow Mountains, Wyoming, 2023",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyMedicineBowWY2023.csv",
+          "title": "ASCII File of Magnetic Data",
+          "contentType": "text/csv",
+          "size": 1948072495,
+          "dateUploaded": "2024-06-11T19:51:29Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/clxatf30s001014pg7hzdhno8",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -106.77590363329593,
+        "minY": 40.97758931989479,
+        "maxX": -105.83637965415419,
+        "maxY": 41.67291563917226
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6668a6c2d34e9bcc607b7f69",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66842d18d34e0f592272b4c0",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of Illinois River Basin, 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66842d18d34e0f592272b4c0",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "6686d5cfd34ebb7843398b10",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "GeoFlight: Airborne magnetic and radiometric surveys of the Salton Trough, Southern California",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "diurnal",
+        "level"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6686d5cfd34ebb7843398b10",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "66c785bdd34e0338828b41aa",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, central Arkansas and southern Missouri, 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66c785bdd34e0338828b41aa",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66c7b853d34e0338828b4294",
+      "provider_unit": "66c785bdd34e0338828b41aa",
+      "parent_id": "66c785bdd34e0338828b41aa",
+      "title": "Airborne magnetic flight line data, central Arkansas and southern Missouri, 2023",
+      "observational_line_files": [
+        {
+          "name": "AR22F0139_USGS_AR-CentralARSouthernMO_MagneticLineData.csv",
+          "title": "Magnetic Line Data",
+          "contentType": "text/csv",
+          "size": 22794706783,
+          "dateUploaded": "2024-12-07T03:12:34Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cm4dlmvzj00hz0uo78uwb1dkc",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed",
+        "residual magnetic",
+        "total magnetic"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66c7b853d34e0338828b4294",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "66d75d4dd34eef5af66ca727",
+      "provider_unit": "5f9045e482cec5ff998af2fc",
+      "parent_id": "5f9045e482cec5ff998af2fc",
+      "title": "Yukon-Tanana Upland airborne magnetic geophysical data merge, version 2025 (ver. 2.0, March 2026)",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "level"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -159.695968468571,
+        "minY": 62.14694060158846,
+        "maxX": -140.0853979798913,
+        "maxY": 66.00044553503207
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66d75d4dd34eef5af66ca727",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "66ddfeeed34eef5af66d9f39",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Airborne Magnetic Geophysical Survey of the Porcupine River Area, Alaska",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66ddfeeed34eef5af66d9f39",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66e1dee5d34ecba8b8677920",
+      "provider_unit": "66d732b8d34eef5af66ca63d",
+      "parent_id": "66d732b8d34eef5af66ca63d",
+      "title": "Test image 3",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66e1dee5d34ecba8b8677920",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66e33417d34ecba8b8678a9b",
+      "provider_unit": "66d732b8d34eef5af66ca63d",
+      "parent_id": "66d732b8d34eef5af66ca63d",
+      "title": "Test image 1",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66e33417d34ecba8b8678a9b",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66eb738cd34e0606a9dbad84",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Eagle Airborne Magnetic and Radiometric Geophysical Survey",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66eb738cd34e0606a9dbad84",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66eb9e7bd34e0606a9dbd90e",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Tanana River and Big Delta Airborne Magnetic and Radiometric Survey",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66eb9e7bd34e0606a9dbd90e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66ec3d08d34e0606a9dc0046",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "White Mountains Airborne Magnetic and Radiometric Geophysical Survey",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66ec3d08d34e0606a9dc0046",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66ec631cd34e0606a9dc0177",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Kuskokwim Airborne Magnetic and Radiometric Geophysical Survey, Northern Kuskokwim Mountains",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66ec631cd34e0606a9dc0177",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "66ec71b2d34e0606a9dc024e",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Kuskokwim Airborne Magnetic and Radiometric Survey, Sischu Mountains",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/66ec71b2d34e0606a9dc024e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "67368344d34e282e7505bcb1",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Magnetic and Radiometric Survey, Colorado Mineral Belt, Mid Block, 2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -107.2891190241446,
+        "minY": 38.0913634501759,
+        "maxX": -105.98488324750724,
+        "maxY": 38.99559928545036
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/67368344d34e282e7505bcb1",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "67476575d34e6d1dac3b0f24",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Seward Peninsula Airborne Electromagnetic Survey, Kigluiak, Bendeleben, and Darby Mountains",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/67476575d34e6d1dac3b0f24",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "675349edd34e5c4500cfead6",
+      "provider_unit": "67368344d34e282e7505bcb1",
+      "parent_id": "67368344d34e282e7505bcb1",
+      "title": "Airborne Magnetic Survey, Colorado Mineral Belt, Mid Block, 2023",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyColoradoMineralBeltMid2023.csv",
+          "title": "ASCII File of Magnetic Data",
+          "contentType": "text/csv",
+          "size": 3057674661,
+          "dateUploaded": "2024-12-06T20:02:19Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cm4d60pff00hm0upr0yzpdh3n",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -107.33932140233401,
+        "minY": 38.07066527566209,
+        "maxX": -105.69322607815583,
+        "maxY": 39.01768869106842
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/675349edd34e5c4500cfead6",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "67aba51ed34e329fb20457a0",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Maryland, Pennsylvania, and West Virginia, 2022-2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -80.60535821313405,
+        "minY": 38.723860363307786,
+        "maxX": -75.7815279583991,
+        "maxY": 41.23228777180642
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/67aba51ed34e329fb20457a0",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "67aba8b5d34e329fb20457c6",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Magnetic and Radiometric Survey over parts of central and northern Florida and southeastern Georgia, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -83.22787900006652,
+        "minY": 29.227419000208066,
+        "maxX": -81.0450500000001,
+        "maxY": 30.856327000289706
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/67aba8b5d34e329fb20457c6",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "67dc78b1d34eae450ac1c56c",
+      "provider_unit": "63a10b4ad34e0de3a1f2796d",
+      "parent_id": "63a10b4ad34e0de3a1f2796d",
+      "title": "Airborne magnetic survey, Boulder Batholith region, Montana, Butte extension 2023",
+      "observational_line_files": [
+        {
+          "name": "MagLine_AirborneMagneticSurveyButteExtensionMT2023.csv",
+          "title": "ASCII File of Magnetic Data",
+          "contentType": "text/csv",
+          "size": 3769022940,
+          "dateUploaded": "2025-03-20T21:01:59Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cm8hu4l8p000p0vpdgset86d6",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -113.85577513221222,
+        "minY": 45.04771431398243,
+        "maxX": -111.94006730163252,
+        "maxY": 46.80559567560912
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/67dc78b1d34eae450ac1c56c",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "67f8dcafd4be024f83032201",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Sierra Madre-Elkhead Mountains-Medicine Bow Mountains region, Wyoming and Colorado, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -107.5914589999333,
+        "minY": 40.53316550059775,
+        "maxX": -105.1618650002544,
+        "maxY": 41.72416099979589
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/67f8dcafd4be024f83032201",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "67fe127ed4be0201e1518b12",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric data acquired over parts of Cochise, Graham, Greenlee, Pima, Pinal, and Santa Cruz Counties, Arizona",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/67fe127ed4be0201e1518b12",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "6801371cd4be0263cab107ee",
+      "provider_unit": "67f8dcafd4be024f83032201",
+      "parent_id": "67f8dcafd4be024f83032201",
+      "title": "Airborne magnetic survey, Sierra Madre-Elkhead Mountains-Medicine Bow Mountains region, Wyoming and Colorado, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -107.5914589999333,
+        "minY": 40.53316550059775,
+        "maxX": -105.1618650002544,
+        "maxY": 41.72416099979589
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6801371cd4be0263cab107ee",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "680187e3d4be0263cab10a98",
+      "provider_unit": "67fe127ed4be0201e1518b12",
+      "parent_id": "67fe127ed4be0201e1518b12",
+      "title": "Airborne magnetic data acquired over parts of Cochise, Graham, Greenlee, Pima, Pinal, and Santa Cruz Counties, Arizona",
+      "observational_line_files": [
+        {
+          "name": "AZ_SE_magnetic_linedata.csv.zip",
+          "title": null,
+          "contentType": "application/zip",
+          "size": 4071249471,
+          "dateUploaded": "2025-05-22T15:52:23Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmazjts7g00510xprbpa3g7s1",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/680187e3d4be0263cab10a98",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "68125318d4be02416e148604",
+      "provider_unit": "67aba51ed34e329fb20457a0",
+      "parent_id": "67aba51ed34e329fb20457a0",
+      "title": "Airborne radiometric survey, Maryland, Pennsylvania, and West Virginia, 2022-2023",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -80.60535821313405,
+        "minY": 38.723860363307786,
+        "maxX": -75.7815279583991,
+        "maxY": 41.23228777180642
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68125318d4be02416e148604",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "681b78bdd4be0225d797167f",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Tofty Airborne Magnetic and Radiometric Survey, Alaska",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "level"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/681b78bdd4be0225d797167f",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "6827ab5fd4be02693eeabdd0",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey results from the Upper San Pedro Basin, Arizona, 1997 and 1999",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6827ab5fd4be02693eeabdd0",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "68475b2ad4be024da9d8747d",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey over Puerto Rico and the Surrounding Islands and Shelf, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -67.44781875102262,
+        "minY": 17.754997286086308,
+        "maxX": -65.08330052797425,
+        "maxY": 18.62002497616801
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68475b2ad4be024da9d8747d",
+      "rejection_reasons": [
+        "no_observational_line_file"
+      ]
+    },
+    {
+      "sciencebase_id": "68adbfead4be027f635b3e9e",
+      "provider_unit": "5f9045e482cec5ff998af2fc",
+      "parent_id": "5f9045e482cec5ff998af2fc",
+      "title": "Airborne magnetic and radiometric survey, western Spirit Lake tectonic zone region, Iowa, Nebraska, South Dakota, and Minnesota, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -100.19277692411885,
+        "minY": 41.32857696182741,
+        "maxX": -93.7142256309962,
+        "maxY": 44.1336207522505
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68adbfead4be027f635b3e9e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "68ae715dd4be025fdd4b3384",
+      "provider_unit": "68adbfead4be027f635b3e9e",
+      "parent_id": "68adbfead4be027f635b3e9e",
+      "title": "Airborne magnetic survey, western Spirit Lake tectonic zone region, Iowa, Nebraska, South Dakota, and Minnesota, 2023-2024",
+      "observational_line_files": [
+        {
+          "name": "MagLineData_AirborneMagWestSLTZ.csv",
+          "title": "Magnetic Data CSV",
+          "contentType": "text/csv",
+          "size": 17290420739,
+          "dateUploaded": "2025-08-27T20:09:05Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmeuerhdc00nv0wmn4l7ghbhf",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -101.37241966757725,
+        "minY": 40.3017598471655,
+        "maxX": -93.3560211208175,
+        "maxY": 44.8652165829506
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68ae715dd4be025fdd4b3384",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "68bf221cd4be023bd943d0cf",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, west central Utah, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68bf221cd4be023bd943d0cf",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "68bf248ad4be023bd943d0f2",
+      "provider_unit": "68bf221cd4be023bd943d0cf",
+      "parent_id": "68bf221cd4be023bd943d0cf",
+      "title": "Airborne radiometric survey, west central Utah, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68bf248ad4be023bd943d0f2",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "68bf24a5d4be023bd943d0f8",
+      "provider_unit": "68bf221cd4be023bd943d0cf",
+      "parent_id": "68bf221cd4be023bd943d0cf",
+      "title": "Airborne magnetic survey, west central Utah, 2023-2024",
+      "observational_line_files": [
+        {
+          "name": "West_Central_Utah_MAG_20250808_Block1.csv",
+          "title": "Aeromagnetic database ASCII format Block 1",
+          "contentType": "text/csv",
+          "size": 1860055479,
+          "dateUploaded": "2025-11-25T18:40:41Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmiewqdee002s0to61iy99acr",
+          "checksum": null
+        },
+        {
+          "name": "West_Central_Utah_MAG_20250808_Block2.csv",
+          "title": "Aeromagnetic database ASCII format Block 2",
+          "contentType": "text/csv",
+          "size": 1865835253,
+          "dateUploaded": "2025-11-25T18:31:33Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmiewqe7r002t0to61kewbpcw",
+          "checksum": null
+        },
+        {
+          "name": "West_Central_Utah_MAG_20250808_Block3.csv",
+          "title": "Aeromagnetic database ASCII format Block 3",
+          "contentType": "text/csv",
+          "size": 1858987527,
+          "dateUploaded": "2025-11-25T18:35:06Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmiewqfg3002u0to60w3l7qao",
+          "checksum": null
+        },
+        {
+          "name": "West_Central_Utah_MAG_20250808_Block4.csv",
+          "title": "Aeromagnetic database ASCII format Block 4",
+          "contentType": "text/csv",
+          "size": 1858301715,
+          "dateUploaded": "2025-11-25T18:39:14Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmiewqfra002v0to6dndy6adj",
+          "checksum": null
+        },
+        {
+          "name": "West_Central_Utah_MAG_20250808_Block5.csv",
+          "title": "Aeromagnetic database ASCII format Block 5",
+          "contentType": "text/csv",
+          "size": 1860378744,
+          "dateUploaded": "2025-11-25T18:33:39Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmiewqg5x002w0to67v0z0gwa",
+          "checksum": null
+        },
+        {
+          "name": "West_Central_Utah_MAG_20250808_Block6.csv",
+          "title": "Aeromagnetic database ASCII format Block 6",
+          "contentType": "text/csv",
+          "size": 1427757220,
+          "dateUploaded": "2025-11-25T18:32:16Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmiewqghg002x0to6auuv3ikj",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68bf24a5d4be023bd943d0f8",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "68c990a3d4be0274ff4998e8",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Magnetic and Radiometric Survey over a part of the eastern Great Basin, Nevada, 2024-2025",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68c990a3d4be0274ff4998e8",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "68c9d87fd4be0274ff4be93e",
+      "provider_unit": "68c990a3d4be0274ff4998e8",
+      "parent_id": "68c990a3d4be0274ff4998e8",
+      "title": "Airborne Magnetic Survey over a part of the eastern Great Basin, Nevada, 2024-2025",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/68c9d87fd4be0274ff4be93e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "691b7f41d4be027d6aa14077",
+      "provider_unit": "63ac8a83d34e92aad3ca141e",
+      "parent_id": "63ac8a83d34e92aad3ca141e",
+      "title": "Airborne magnetic survey, Hartville Uplift and Shirley Mountains regions, Wyoming, 2025",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -107.26035369945734,
+        "minY": 41.805588321740856,
+        "maxX": -104.08109881677889,
+        "maxY": 42.943962282837745
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/691b7f41d4be027d6aa14077",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "693a0a04d4be02165772a679",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, east central Idaho and Montana, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/693a0a04d4be02165772a679",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "693aed6cd4be0227fbb5810a",
+      "provider_unit": "693a0a04d4be02165772a679",
+      "parent_id": "693a0a04d4be02165772a679",
+      "title": "Airborne magnetic survey over a part of east central Idaho, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/693aed6cd4be0227fbb5810a",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "693aede9d4be0227fbb5811a",
+      "provider_unit": "693a0a04d4be02165772a679",
+      "parent_id": "693a0a04d4be02165772a679",
+      "title": "Airborne radiometric survey over a part of east central Idaho, 2023-2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/693aede9d4be0227fbb5811a",
+      "rejection_reasons": [
+        "title_not_magnetic",
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "693c9f8fd4be0252631a435e",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Kuskokwim Airborne Magnetic and Radiometric Survey, Kilbuck and Buckstock Mountains, Alaska",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/693c9f8fd4be0252631a435e",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "694440fed4be0269d2c29583",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Elk Creek region, Nebraska and Kansas, 2024-2025",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -1.0,
+        "minY": -1.0,
+        "maxX": 0.0,
+        "maxY": 0.0
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/694440fed4be0269d2c29583",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "69445e44d4be023b7b923a66",
+      "provider_unit": "694440fed4be0269d2c29583",
+      "parent_id": "694440fed4be0269d2c29583",
+      "title": "Airborne magnetic survey, Elk Creek region, Nebraska and Kansas, 2024-2025",
+      "observational_line_files": [
+        {
+          "name": "MagData_AirborneMagAndRadSurveyElkCreekRegionNeKs2024-5.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 6373477258,
+          "dateUploaded": "2026-01-12T23:12:40Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmkbs2bq000670vpf6w84dvlg",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": "direct_parent",
+      "bounding_box": {
+        "minX": -1.0,
+        "minY": -1.0,
+        "maxX": 0.0,
+        "maxY": 0.0
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/69445e44d4be023b7b923a66",
+      "rejection_reasons": [
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "69717efcd4be023817e33b98",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey near Coalinga and Pyramid Hills, California, 2022",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": "item",
+      "bounding_box": {
+        "minX": -120.39493670916224,
+        "minY": 35.334519738760164,
+        "maxX": -119.55474007901766,
+        "maxY": 36.328791636799984
+      },
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/69717efcd4be023817e33b98",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "69829a8db66b018d00103597",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of the western Mojave Desert, California, 2024",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/69829a8db66b018d00103597",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "minimally_processed_not_corrected"
+      ]
+    },
+    {
+      "sciencebase_id": "698bcd98b66b01469f9c9eeb",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Kuskokwim Airborne Magnetic and Radiometric Survey, Northern Kaiyuh Mountains, Alaska",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "level"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/698bcd98b66b01469f9c9eeb",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "699769eab66b0100cceee40a",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "White Mountains Airborne Magnetic and Radiometric Geophysical Survey",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/699769eab66b0100cceee40a",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "6997a6bdb66b0100cceee6d1",
+      "provider_unit": "661d750fd34e7eb9eb7e3a85",
+      "parent_id": "661d750fd34e7eb9eb7e3a85",
+      "title": "Eagle Airborne Magnetic and Radiometric Geophysical Survey",
+      "observational_line_files": [],
+      "processing_evidence_terms": [
+        "processed",
+        "level"
+      ],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/6997a6bdb66b0100cceee6d1",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox"
+      ]
+    },
+    {
+      "sciencebase_id": "69a5c06bb66b011d83258c49",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric data acquired over parts of Hudspeth, Culberson, Jeff Davis, Presidio, and Brewster Counties, Texas",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/69a5c06bb66b011d83258c49",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "69ab5a87b66b01cd2fd12813",
+      "provider_unit": "69a5c06bb66b011d83258c49",
+      "parent_id": "69a5c06bb66b011d83258c49",
+      "title": "Airborne magnetic data acquired over parts of Hudspeth, Culberson, Jeff Davis, Presidio, and Brewster Counties, Texas",
+      "observational_line_files": [
+        {
+          "name": "TX_AIB_mag.csv.zip",
+          "title": null,
+          "contentType": "application/zip",
+          "size": 4236679294,
+          "dateUploaded": "2026-03-06T22:54:59Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmmfhsco500600vpdcjjd4tu8",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/69ab5a87b66b01cd2fd12813",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "69b2029cb66b0139fbf05ec7",
+      "provider_unit": "5474ec49e4b04d7459a7eab2",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne magnetic and radiometric survey, Laramie Mountains region, Wyoming, 2024-2025",
+      "observational_line_files": [],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/69b2029cb66b0139fbf05ec7",
+      "rejection_reasons": [
+        "no_observational_line_file",
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    },
+    {
+      "sciencebase_id": "69bb217cb66b010f61c6c4e7",
+      "provider_unit": "69b2029cb66b0139fbf05ec7",
+      "parent_id": "69b2029cb66b0139fbf05ec7",
+      "title": "Airborne magnetic survey, Laramie Mountains region, Wyoming, 2024-2025",
+      "observational_line_files": [
+        {
+          "name": "A1-2_MagData_AirborneMagAndRadSurveyLaramieMtsRegionWy2024-5.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 2755963217,
+          "dateUploaded": "2026-03-23T19:29:23Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmn3kxbd5006v0vpcgi6432mh",
+          "checksum": null
+        },
+        {
+          "name": "A3-5_MagData_AirborneMagAndRadSurveyLaramieMtsRegionWy2024-5.csv",
+          "title": null,
+          "contentType": "text/csv",
+          "size": 4312564974,
+          "dateUploaded": "2026-03-23T22:02:42Z",
+          "downloadUri": "https://sciencebase.usgs.gov/manager/download/cmn3qdy0c007d0vpcglid9f0j",
+          "checksum": null
+        }
+      ],
+      "processing_evidence_terms": [],
+      "bounding_box_source": null,
+      "bounding_box": null,
+      "rights_basis": "https://www.usgs.gov/data-management/data-licensing",
+      "item_url": "https://www.sciencebase.gov/catalog/item/69bb217cb66b010f61c6c4e7",
+      "rejection_reasons": [
+        "no_item_or_direct_parent_bbox",
+        "no_documented_processing_term"
+      ]
+    }
+  ],
+  "selection_interpreted_response_values": 0,
+  "candidate_files_downloaded": 0,
+  "test_unseal_count": 0
+}

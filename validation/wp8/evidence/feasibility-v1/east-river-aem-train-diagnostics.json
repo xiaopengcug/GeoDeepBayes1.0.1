@@ -1,0 +1,375 @@
+{
+  "schema_version": "wp8-east-river-aem-train-diagnostics-v1",
+  "candidate_status": "training_diagnostics_complete",
+  "split_sha256": "922e34c877cc6f9bbc947096e7edb896e80aae399a86223ec79aa6dd4f4289ec",
+  "contract_sha256": "dd83fd9c50049bf2a688d08a6d746ba132758cb67ceb79d47f1fb0dcd547e04a",
+  "training_members_interpreted": [
+    "EastRiver2017_ProcessedAEMData_100series.csv",
+    "EastRiver2017_ProcessedAEMData_200series.csv",
+    "EastRiver2017_ProcessedAEMData_300series.csv",
+    "EastRiver2017_ProcessedAEMData_400series.csv"
+  ],
+  "training_rows_interpreted": 23418,
+  "training_lines": 251,
+  "buffer_rows_interpreted": 0,
+  "calibration_rows_interpreted": 0,
+  "test_rows_interpreted": 0,
+  "held_out_rows_skipped_without_response_tail_parsing": {
+    "buffer": 17471,
+    "calibration": 12485,
+    "test": 12930
+  },
+  "per_observation_positive_finite_std_fraction": 0.8218768271612238,
+  "fixed_diagnostic_gates": [
+    12,
+    32,
+    48
+  ],
+  "transform": "signed log1p(abs(DATA)/DATASTD)",
+  "cell_size_m": 500.0,
+  "range_rule": "first two consecutive 500-m lag bins with >=30 pairs and semivariance >=95% sill",
+  "gate_diagnostics": {
+    "12": {
+      "training_cells": 502,
+      "signed_log_snr_median": 2.3165526836282906e-10,
+      "signed_log_snr_mad": 1.2376795299938854e-10,
+      "sill": 9.401492861945067e-20,
+      "range_m": 3750.0,
+      "range_censored_above_m": null,
+      "variogram": [
+        {
+          "lag_center_m": 250.0,
+          "pairs": 0,
+          "semivariance": null
+        },
+        {
+          "lag_center_m": 750.0,
+          "pairs": 1649,
+          "semivariance": 2.9326032781976846e-20
+        },
+        {
+          "lag_center_m": 1250.0,
+          "pairs": 2830,
+          "semivariance": 4.7713011168463075e-20
+        },
+        {
+          "lag_center_m": 1750.0,
+          "pairs": 3162,
+          "semivariance": 5.59203274390346e-20
+        },
+        {
+          "lag_center_m": 2250.0,
+          "pairs": 3394,
+          "semivariance": 6.16044373263235e-20
+        },
+        {
+          "lag_center_m": 2750.0,
+          "pairs": 4806,
+          "semivariance": 7.13361750769566e-20
+        },
+        {
+          "lag_center_m": 3250.0,
+          "pairs": 3667,
+          "semivariance": 8.165983629321907e-20
+        },
+        {
+          "lag_center_m": 3750.0,
+          "pairs": 4089,
+          "semivariance": 9.157806493569504e-20
+        },
+        {
+          "lag_center_m": 4250.0,
+          "pairs": 3992,
+          "semivariance": 9.680257356687628e-20
+        },
+        {
+          "lag_center_m": 4750.0,
+          "pairs": 3308,
+          "semivariance": 1.0323109965851167e-19
+        },
+        {
+          "lag_center_m": 5250.0,
+          "pairs": 3136,
+          "semivariance": 1.0318350230880444e-19
+        },
+        {
+          "lag_center_m": 5750.0,
+          "pairs": 2595,
+          "semivariance": 9.104824004984165e-20
+        },
+        {
+          "lag_center_m": 6250.0,
+          "pairs": 2580,
+          "semivariance": 9.217754236881438e-20
+        },
+        {
+          "lag_center_m": 6750.0,
+          "pairs": 2650,
+          "semivariance": 9.403355841989155e-20
+        },
+        {
+          "lag_center_m": 7250.0,
+          "pairs": 2148,
+          "semivariance": 9.920989968735092e-20
+        },
+        {
+          "lag_center_m": 7750.0,
+          "pairs": 2280,
+          "semivariance": 1.1886071691596495e-19
+        },
+        {
+          "lag_center_m": 8250.0,
+          "pairs": 2353,
+          "semivariance": 1.2240588409609904e-19
+        },
+        {
+          "lag_center_m": 8750.0,
+          "pairs": 2646,
+          "semivariance": 1.2673984031229275e-19
+        },
+        {
+          "lag_center_m": 9250.0,
+          "pairs": 3083,
+          "semivariance": 1.286947510828245e-19
+        },
+        {
+          "lag_center_m": 9750.0,
+          "pairs": 3122,
+          "semivariance": 1.2665635941029302e-19
+        }
+      ]
+    },
+    "32": {
+      "training_cells": 488,
+      "signed_log_snr_median": 5.14342289574595e-12,
+      "signed_log_snr_mad": 4.479094055767587e-12,
+      "sill": 1.2366468213066758e-22,
+      "range_m": 7250.0,
+      "range_censored_above_m": null,
+      "variogram": [
+        {
+          "lag_center_m": 250.0,
+          "pairs": 0,
+          "semivariance": null
+        },
+        {
+          "lag_center_m": 750.0,
+          "pairs": 1583,
+          "semivariance": 2.2589286212971134e-23
+        },
+        {
+          "lag_center_m": 1250.0,
+          "pairs": 2695,
+          "semivariance": 4.2984248111842065e-23
+        },
+        {
+          "lag_center_m": 1750.0,
+          "pairs": 3006,
+          "semivariance": 5.738139482987119e-23
+        },
+        {
+          "lag_center_m": 2250.0,
+          "pairs": 3212,
+          "semivariance": 6.693487696511476e-23
+        },
+        {
+          "lag_center_m": 2750.0,
+          "pairs": 4531,
+          "semivariance": 7.210538021864228e-23
+        },
+        {
+          "lag_center_m": 3250.0,
+          "pairs": 3446,
+          "semivariance": 7.651142344389385e-23
+        },
+        {
+          "lag_center_m": 3750.0,
+          "pairs": 3812,
+          "semivariance": 8.800039317211245e-23
+        },
+        {
+          "lag_center_m": 4250.0,
+          "pairs": 3705,
+          "semivariance": 9.70851539845969e-23
+        },
+        {
+          "lag_center_m": 4750.0,
+          "pairs": 3079,
+          "semivariance": 1.0523628147297944e-22
+        },
+        {
+          "lag_center_m": 5250.0,
+          "pairs": 2950,
+          "semivariance": 1.0494587845328786e-22
+        },
+        {
+          "lag_center_m": 5750.0,
+          "pairs": 2462,
+          "semivariance": 1.043836492158627e-22
+        },
+        {
+          "lag_center_m": 6250.0,
+          "pairs": 2446,
+          "semivariance": 1.0606043717550663e-22
+        },
+        {
+          "lag_center_m": 6750.0,
+          "pairs": 2527,
+          "semivariance": 1.1418837714528256e-22
+        },
+        {
+          "lag_center_m": 7250.0,
+          "pairs": 2048,
+          "semivariance": 1.2434309118965362e-22
+        },
+        {
+          "lag_center_m": 7750.0,
+          "pairs": 2178,
+          "semivariance": 1.371604426934451e-22
+        },
+        {
+          "lag_center_m": 8250.0,
+          "pairs": 2251,
+          "semivariance": 1.579377215993264e-22
+        },
+        {
+          "lag_center_m": 8750.0,
+          "pairs": 2519,
+          "semivariance": 1.777110769630869e-22
+        },
+        {
+          "lag_center_m": 9250.0,
+          "pairs": 2954,
+          "semivariance": 1.8210444766225744e-22
+        },
+        {
+          "lag_center_m": 9750.0,
+          "pairs": 3000,
+          "semivariance": 1.8411106012611626e-22
+        }
+      ]
+    },
+    "48": {
+      "training_cells": 199,
+      "signed_log_snr_median": 4.4946107784430127e-14,
+      "signed_log_snr_mad": 3.4730834146185116e-14,
+      "sill": 1.550828136814517e-26,
+      "range_m": 2750.0,
+      "range_censored_above_m": null,
+      "variogram": [
+        {
+          "lag_center_m": 250.0,
+          "pairs": 0,
+          "semivariance": null
+        },
+        {
+          "lag_center_m": 750.0,
+          "pairs": 538,
+          "semivariance": 6.327073743687682e-27
+        },
+        {
+          "lag_center_m": 1250.0,
+          "pairs": 845,
+          "semivariance": 1.0848755073537671e-26
+        },
+        {
+          "lag_center_m": 1750.0,
+          "pairs": 918,
+          "semivariance": 1.3308391465574857e-26
+        },
+        {
+          "lag_center_m": 2250.0,
+          "pairs": 960,
+          "semivariance": 1.449810810986136e-26
+        },
+        {
+          "lag_center_m": 2750.0,
+          "pairs": 1309,
+          "semivariance": 1.600618469654656e-26
+        },
+        {
+          "lag_center_m": 3250.0,
+          "pairs": 986,
+          "semivariance": 1.72248039935204e-26
+        },
+        {
+          "lag_center_m": 3750.0,
+          "pairs": 1078,
+          "semivariance": 1.9365361777675026e-26
+        },
+        {
+          "lag_center_m": 4250.0,
+          "pairs": 1055,
+          "semivariance": 2.1733893597198093e-26
+        },
+        {
+          "lag_center_m": 4750.0,
+          "pairs": 830,
+          "semivariance": 2.2134649632588545e-26
+        },
+        {
+          "lag_center_m": 5250.0,
+          "pairs": 779,
+          "semivariance": 2.2609441463093833e-26
+        },
+        {
+          "lag_center_m": 5750.0,
+          "pairs": 645,
+          "semivariance": 2.2242004911728392e-26
+        },
+        {
+          "lag_center_m": 6250.0,
+          "pairs": 632,
+          "semivariance": 2.0737444069094098e-26
+        },
+        {
+          "lag_center_m": 6750.0,
+          "pairs": 679,
+          "semivariance": 1.9678101015714302e-26
+        },
+        {
+          "lag_center_m": 7250.0,
+          "pairs": 572,
+          "semivariance": 1.6718228095415e-26
+        },
+        {
+          "lag_center_m": 7750.0,
+          "pairs": 638,
+          "semivariance": 1.526403619985226e-26
+        },
+        {
+          "lag_center_m": 8250.0,
+          "pairs": 659,
+          "semivariance": 1.2855240222417356e-26
+        },
+        {
+          "lag_center_m": 8750.0,
+          "pairs": 719,
+          "semivariance": 1.2457415639470535e-26
+        },
+        {
+          "lag_center_m": 9250.0,
+          "pairs": 766,
+          "semivariance": 1.4405994062272212e-26
+        },
+        {
+          "lag_center_m": 9750.0,
+          "pairs": 667,
+          "semivariance": 1.3945703278658513e-26
+        }
+      ]
+    }
+  },
+  "conservative_spatial_correlation_range_m": 7250.0,
+  "correlation_cell_merge_factor": 211,
+  "design_test_cells": 262,
+  "correlation_adjusted_test_cluster_upper_bound": 2,
+  "cluster_gate_passed": false,
+  "power_gate_passed": false,
+  "power_reason": "training-only paired-CRPS effect size is not yet available",
+  "dimensionality": {
+    "rule": "500-m sounding is eligible for 1-D only if all fixed-gate ranges are <=500 m",
+    "selected": "3-D",
+    "passed": true
+  }
+}

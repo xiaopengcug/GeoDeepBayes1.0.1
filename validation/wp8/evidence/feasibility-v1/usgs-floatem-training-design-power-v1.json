@@ -1,0 +1,1075 @@
+{
+  "schema_version": "wp8-usgs-floatem-training-design-power-v1",
+  "audit_mode": "training_only_power_and_response_blind_sealed_design",
+  "license": "US-public-domain",
+  "training_source_sha256": {
+    "MS-tTEM.zip:usgs-tallahatchie-ttem": "e34216cf4b8c8a9311744303cbac3e6f1e57c0a2b8c533e57f9e4c06410c4ace",
+    "MS-FloaTEM.zip:usgs-tallahatchie-floatem-sealed": "5ff9d5778c11dc75e9dc7cb1dbeff315bcfa6432aa2697bdbdc08eaf8ef4a870",
+    "CT-FloaTEM.zip:usgs-rainbow-tem-sealed": "a6f9b9433906541c24e5bf467916cc1ddbb61cd6967b3cbc2993c4a29c1f3731",
+    "NY-FloaTEM.zip:usgs-barryville-tem-sealed": "b1cd9f0bd08f6414582efd8712c5c8e5fa6fb664b6e60b6605a6c875af247ca6",
+    "Jamestown_AVG.xyz:usgs-jamestown-tem-sealed": "d6c2bd21a5839d803fa9a3ff09048ebb94503a4289f243af520325e09a7007a6"
+  },
+  "sealed_archive": "validation/wp8/data/usgs-lower-delaware-floatem-sealed/FloaTEM.zip",
+  "sealed_archive_sha256": "79f477a5fe745a991b736a5d9d1e541abbade3e0b921ef1bd5b0912ecc3156de",
+  "training_only_correlation": {
+    "summary_response": "median log positive apparent resistivity across available gates, averaged at coordinate",
+    "detrending": "first-order planar trend",
+    "lag_bin_width_m": 10,
+    "independence_rule": "first five consecutive lag bins with absolute residual correlation below 0.1",
+    "stable_run": [
+      {
+        "lower_m": 210,
+        "upper_m": 220,
+        "pair_count": 32873,
+        "correlation": -0.07051513927597182
+      },
+      {
+        "lower_m": 220,
+        "upper_m": 230,
+        "pair_count": 30757,
+        "correlation": -0.04706979287380347
+      },
+      {
+        "lower_m": 230,
+        "upper_m": 240,
+        "pair_count": 31476,
+        "correlation": -0.07734059615025339
+      },
+      {
+        "lower_m": 240,
+        "upper_m": 250,
+        "pair_count": 30045,
+        "correlation": -0.027091175412647887
+      },
+      {
+        "lower_m": 250,
+        "upper_m": 260,
+        "pair_count": 27567,
+        "correlation": -0.01335155020046782
+      }
+    ],
+    "stable_upper_edge_m": 260,
+    "safety_factor": 1.25,
+    "frozen_range_m": 325.0,
+    "training_positions": 1495
+  },
+  "training_only_power": {
+    "training_only": true,
+    "source_inventory": [
+      {
+        "site": "tallahatchie_river",
+        "response_rows_interpreted": 8110,
+        "unique_response_positions": 4056,
+        "correlation_separated_positions": 53
+      },
+      {
+        "site": "rainbow_reservoir",
+        "response_rows_interpreted": 7148,
+        "unique_response_positions": 3655,
+        "correlation_separated_positions": 18
+      },
+      {
+        "site": "barryville",
+        "response_rows_interpreted": 2128,
+        "unique_response_positions": 1093,
+        "correlation_separated_positions": 39
+      },
+      {
+        "site": "jamestown",
+        "response_rows_interpreted": 2849,
+        "unique_response_positions": 1901,
+        "correlation_separated_positions": 20
+      }
+    ],
+    "comparison": {
+      "information_parity": "Both predictive distributions use only the same site-specific training apparent-resistivity summaries and coordinates.",
+      "baseline": "site-global Gaussian predictive distribution",
+      "candidate": "Gaussian predictive distribution from the nearest 200 retained training positions",
+      "validation": "leave-one-325-m-separated-position-out after removing every training position within 325 m",
+      "candidate_neighbour_count": 200,
+      "paired_estimand": "(baseline CRPS - candidate CRPS) divided by the training-only site mean baseline CRPS; this preserves a 10% site-relative target without unstable division by near-zero individual scores"
+    },
+    "paired_training_clusters": 130,
+    "paired_cluster_scores": [
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.04243256296920427,
+        "candidate_crps": 0.016073774566045453,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.2989602774996281
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.06573662998799529,
+        "candidate_crps": 0.06360949848705577,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.02412583666868653
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.05650475306739564,
+        "candidate_crps": 0.024972096043406104,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.3576420793704912
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.03769926945124592,
+        "candidate_crps": 0.029703087802678316,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.09069235839029403
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.07735481615997696,
+        "candidate_crps": 0.07567508501119903,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.019051440554954994
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.03869964379370442,
+        "candidate_crps": 0.02965421672770657,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.1025928561052257
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.036160427117082394,
+        "candidate_crps": 0.039191253953483544,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.03437551143114081
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.04580257146825587,
+        "candidate_crps": 0.024874819344408324,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.23736169078390235
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.21862688689347898,
+        "candidate_crps": 0.2910038659028437,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.8208966739393597
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.04880891075964761,
+        "candidate_crps": 0.06886908734064047,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.2275216852010719
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.06375980544665114,
+        "candidate_crps": 0.04884883308698777,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.1691196259195292
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.15769122181925685,
+        "candidate_crps": 0.24296500997217801,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.9671717447599637
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.12505938183025664,
+        "candidate_crps": 0.12319033115863103,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.021198694678359983
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.042647286840103014,
+        "candidate_crps": 0.02928084027107293,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.15160167889136755
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.05709687721162724,
+        "candidate_crps": 0.018496244798858672,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.43780676111802913
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.053362840188748546,
+        "candidate_crps": 0.047226953883295585,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.06959296628234073
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.06906851906997995,
+        "candidate_crps": 0.03504494590901994,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.38589394619179596
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.047406588452830356,
+        "candidate_crps": 0.0970824878550605,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.563421976882465
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.06771474079769954,
+        "candidate_crps": 0.04650129618711904,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.2406020030397952
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.04085153080101952,
+        "candidate_crps": 0.0358684671870899,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.056517699449348334
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.03811276082527107,
+        "candidate_crps": 0.08088109134020771,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.4850766189772593
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.06862266923270699,
+        "candidate_crps": 0.23727406822287986,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -1.9128371255774517
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.24714034039780844,
+        "candidate_crps": 0.06396085692052225,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 2.077614053233388
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.058786969081796286,
+        "candidate_crps": 0.0800553617461286,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.24122522157118023
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.24995747024246254,
+        "candidate_crps": 0.13117945130990538,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 1.347175331347092
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.09784225385442531,
+        "candidate_crps": 0.09162895961343008,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.07047092385521676
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.21889192222292791,
+        "candidate_crps": 0.05281269416774162,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 1.8836636702297123
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.09057290671947167,
+        "candidate_crps": 0.1892490360113397,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -1.119180538364607
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.11752305390984219,
+        "candidate_crps": 0.21094300905015967,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -1.0595652306008552
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.08933031959898004,
+        "candidate_crps": 0.059448441676036676,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.33891901173206335
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.13822927016382067,
+        "candidate_crps": 0.10638638842509439,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.3611606351320992
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.13518189705575026,
+        "candidate_crps": 0.06134065211912445,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.8375043169482758
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.03665599494193311,
+        "candidate_crps": 0.024497038375219,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.1379063777019112
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.1625159062461432,
+        "candidate_crps": 0.033041767029241165,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 1.4684902810127578
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.06156000441764878,
+        "candidate_crps": 0.024170504695419967,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.42407014471083326
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.11454211296347537,
+        "candidate_crps": 0.012072632146484425,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 1.1622045729772328
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.09431109620013407,
+        "candidate_crps": 0.03138980063335857,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.7136507071404325
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.057876506984033675,
+        "candidate_crps": 0.11212019178193901,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.6152296081196486
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.0406302261899111,
+        "candidate_crps": 0.02371929911668308,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.19180302877587316
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.06308137313963054,
+        "candidate_crps": 0.02343977559636916,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.44961334416424664
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.036800988879547095,
+        "candidate_crps": 0.01810536049615967,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.2120450365183559
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.037723683477020965,
+        "candidate_crps": 0.054876249557020765,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.1945436883014289
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.05399456696949009,
+        "candidate_crps": 0.04999826158605524,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.045325928799586426
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.03543457615248883,
+        "candidate_crps": 0.034249249062963186,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.013443930357965393
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.13557518850449723,
+        "candidate_crps": 0.151289983548087,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.1782365492382936
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.03547591491703787,
+        "candidate_crps": 0.03176330818648964,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.04210823052392926
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.04688962528946051,
+        "candidate_crps": 0.06471347646669352,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.20215737584581378
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.09370138433018041,
+        "candidate_crps": 0.07564877160939673,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.2047519797211935
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.14751554117464086,
+        "candidate_crps": 0.22820655369086199,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.9151940948349698
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.089734788887572,
+        "candidate_crps": 0.09454866458146631,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": -0.05459877712447856
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.07648014470096046,
+        "candidate_crps": 0.032278088528772605,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.5013378755188836
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.07530542712264261,
+        "candidate_crps": 0.02931136926815077,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.521662683777415
+      },
+      {
+        "site": "tallahatchie_river",
+        "baseline_crps": 0.2344322497803198,
+        "candidate_crps": 0.155311682051326,
+        "site_mean_baseline_crps": 0.08816819620189043,
+        "normalized_paired_crps_improvement": 0.8973821756296445
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 1.8960174282127664,
+        "candidate_crps": 1.7825498082602256,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.3532749098548514
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.6995874724631146,
+        "candidate_crps": 0.10920641193575344,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 1.838117482547449
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.11709871351212522,
+        "candidate_crps": 1.1638831856268836,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": -3.2591032594009968
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.33600491413027217,
+        "candidate_crps": 0.13251671859161332,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.6335487953789264
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.5117444979190217,
+        "candidate_crps": 0.32794956010776977,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.5722349698901398
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.16629931120281038,
+        "candidate_crps": 0.12881302461848956,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.11671139766047872
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.1231579963515642,
+        "candidate_crps": 0.12228588881537432,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.002715256664060466
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.1294374742491854,
+        "candidate_crps": 0.03799486816485806,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.28470129570749003
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.2323674997351955,
+        "candidate_crps": 0.2099522428697098,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.0697886132787478
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.12438285527149931,
+        "candidate_crps": 0.13478422645202479,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": -0.03238407104779238
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.1833052135028034,
+        "candidate_crps": 0.058821239352151895,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.3875736951637744
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.20193331955615906,
+        "candidate_crps": 0.08468240995978306,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.3650539646057987
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.18620784989826225,
+        "candidate_crps": 0.47413434761143103,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": -0.8964425936402579
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.12030519018643146,
+        "candidate_crps": 0.06802248377312643,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.16277919994138731
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.12678850089348154,
+        "candidate_crps": 0.10319942646883795,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.07344322674971852
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.2074670068424986,
+        "candidate_crps": 0.04534473821554721,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.504758360654834
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.299491397631504,
+        "candidate_crps": 0.1519728790052998,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": 0.4592904248048126
+      },
+      {
+        "site": "rainbow_reservoir",
+        "baseline_crps": 0.1197852289650128,
+        "candidate_crps": 0.1972691940423672,
+        "site_mean_baseline_crps": 0.32118788169576157,
+        "normalized_paired_crps_improvement": -0.24124186961309285
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.5183913410736899,
+        "candidate_crps": 0.47793925232832396,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.14884047867990702
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.42914852485478533,
+        "candidate_crps": 0.3822995335114532,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.17237741025205244
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.46936833699818753,
+        "candidate_crps": 0.4880385308706487,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.06869560211132797
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.09742400560785366,
+        "candidate_crps": 0.0956447856611039,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.006546508641816672
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.1594502942951125,
+        "candidate_crps": 0.22416488345751762,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.23811256049440288
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.2738051376341158,
+        "candidate_crps": 0.25247577647053143,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.07847981214290685
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.2604534376779077,
+        "candidate_crps": 0.16718878034600604,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.34316043180311595
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.1522648876156414,
+        "candidate_crps": 0.35203097446765585,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.7350245911460349
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.09553855067057662,
+        "candidate_crps": 0.1894915057292943,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.34569297255220954
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.47256223543322184,
+        "candidate_crps": 0.32477560006451,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.5437700309923258
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.3962056531742715,
+        "candidate_crps": 0.24449068301509727,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.5582240492831448
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.15028961694544943,
+        "candidate_crps": 0.06938347438786015,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.2976881876784643
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.1884535685518565,
+        "candidate_crps": 0.06733738634833036,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.44563806453927013
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.22101353025386333,
+        "candidate_crps": 0.07136775032998018,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.5506106163393196
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.10425772562050167,
+        "candidate_crps": 0.09032784286598099,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.051253976777042326
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.0994862399862327,
+        "candidate_crps": 0.09501256237302853,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.0164605670080552
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.15410919685580307,
+        "candidate_crps": 0.09413398877497872,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.22067435716034672
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.10466592081751584,
+        "candidate_crps": 0.08256185339262351,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.08133028672520168
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.0961864671993085,
+        "candidate_crps": 0.1012640844206444,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.01868271827776883
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.11678939984298162,
+        "candidate_crps": 0.14228825848584142,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.09382117077030569
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.1197917988790361,
+        "candidate_crps": 0.1415315574394831,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.07998983911289909
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.897704840605646,
+        "candidate_crps": 1.097047289967312,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.7334658482280331
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.18368631486788464,
+        "candidate_crps": 0.2502379281943545,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.2448717554928879
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.578100351661579,
+        "candidate_crps": 0.6758918759447308,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.3598167050597473
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.09590953905569113,
+        "candidate_crps": 0.08438684322768035,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.042396909922743184
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.10104914356898512,
+        "candidate_crps": 0.09257840489354836,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.0311674585498095
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.10918026816641126,
+        "candidate_crps": 0.08829234128022907,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.07685558725880157
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.10683476737796958,
+        "candidate_crps": 0.10418380557740331,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.00975401853392881
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.5255274108431128,
+        "candidate_crps": 0.6128124064773767,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.32115870736750757
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.10715889855481489,
+        "candidate_crps": 0.14718037078078097,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.14725605693895819
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.3339371501372697,
+        "candidate_crps": 0.4079392772745277,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.2722853718574077
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.23736974351750528,
+        "candidate_crps": 0.27278928051112167,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.1303235754755548
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.09522064016711,
+        "candidate_crps": 0.08925536178839288,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.021948802073882223
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.09441788306508914,
+        "candidate_crps": 0.08493452073817256,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.034893332631555585
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.09438135772327683,
+        "candidate_crps": 0.12517022529772012,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": -0.11328536868982766
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.44001159757068975,
+        "candidate_crps": 0.3157777521976587,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.4571092763580909
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.8000947913447359,
+        "candidate_crps": 0.6086361624536114,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.7044579119494332
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.3736723900988799,
+        "candidate_crps": 0.2443921949442293,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.4756769483962509
+      },
+      {
+        "site": "barryville",
+        "baseline_crps": 0.7455655912142239,
+        "candidate_crps": 0.48855828998001116,
+        "site_mean_baseline_crps": 0.2717815012699689,
+        "normalized_paired_crps_improvement": 0.9456394200241006
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.15032827423311443,
+        "candidate_crps": 0.10762009761335775,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.1949072651670675
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.0905613287352085,
+        "candidate_crps": 0.07515911730580069,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.07029105770444222
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.12144324596291094,
+        "candidate_crps": 0.2041337275134275,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": -0.37737447229023985
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.08724408504825486,
+        "candidate_crps": 0.0832398551677865,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.018274100110874474
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.15453365428611468,
+        "candidate_crps": 0.14373228074083977,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.049294218212621026
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.4817452923905804,
+        "candidate_crps": 0.7733268192463023,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": -1.3306903377934562
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.08535781727420283,
+        "candidate_crps": 0.10074762529891959,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": -0.07023445229820778
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.1438311348817153,
+        "candidate_crps": 0.07745168640120363,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.30293582612585196
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.5178945934839623,
+        "candidate_crps": 0.5243812656200181,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": -0.02960321948020594
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.10430899531333192,
+        "candidate_crps": 0.07385938847699157,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.13896284186335633
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.13765395467963973,
+        "candidate_crps": 0.1570788912690634,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": -0.08864956470506052
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.3378326145807974,
+        "candidate_crps": 0.2790122077756396,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.26843863479538504
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.30174790200534046,
+        "candidate_crps": 0.7048591400066221,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": -1.8396783748570225
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.3433431083544867,
+        "candidate_crps": 0.24355316179950864,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.4554112845267478
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.20741359602597775,
+        "candidate_crps": 0.17666212308856452,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.14034046790275845
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.10566818387685026,
+        "candidate_crps": 0.07627275647448413,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.1341518841795241
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.11278425880129224,
+        "candidate_crps": 0.08599835301877365,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.12224281283594593
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.1377742536625187,
+        "candidate_crps": 0.08637113171481677,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.2345883789204234
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.6326375110660443,
+        "candidate_crps": 0.6783914585032912,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": -0.20880724656051497
+      },
+      {
+        "site": "jamestown",
+        "baseline_crps": 0.12830611557831734,
+        "candidate_crps": 0.08056884058028523,
+        "site_mean_baseline_crps": 0.21912049601203304,
+        "normalized_paired_crps_improvement": 0.21785855667016477
+      }
+    ],
+    "exploratory_mean_relative_improvement": 0.07064448303353343,
+    "paired_relative_improvement_sd": 0.645495820976901,
+    "paired_relative_improvement_sd_upper_95": 0.7197201213645806,
+    "power_target_relative_improvement": 0.1,
+    "required_paired_crps_clusters_conservative": 321,
+    "required_coverage_clusters": {
+      "0.90": 223,
+      "0.95": 118
+    },
+    "required_clusters_all_metrics": 321,
+    "alpha_one_sided": 0.05,
+    "target_power": 0.8
+  },
+  "sealed_coordinate_inventory": {
+    "members": [
+      {
+        "member": "floatem_20200826_pro_I01_MOD_dat.xyz",
+        "coordinate_rows": 5285
+      },
+      {
+        "member": "floatem_20200827_pro_I01_MOD_dat.xyz",
+        "coordinate_rows": 1624
+      },
+      {
+        "member": "floatem_20210824_pro_I01_MOD_dat.xyz",
+        "coordinate_rows": 7320
+      },
+      {
+        "member": "floatem_20210825_pro_I01_MOD_dat.xyz",
+        "coordinate_rows": 5764
+      },
+      {
+        "member": "floatem_20210826_pro_I01_MOD_dat.xyz",
+        "coordinate_rows": 5759
+      },
+      {
+        "member": "floatem_20210827_pro_I01_MOD_dat.xyz",
+        "coordinate_rows": 5020
+      }
+    ],
+    "coordinate_rows": 30772,
+    "unique_positions": 30669,
+    "coordinate_fields_read": [
+      "LINE_NO",
+      "UTMX",
+      "UTMY"
+    ],
+    "response_columns_interpreted": 0,
+    "test_unseal_count": 0
+  },
+  "sealed_packing": {
+    "algorithm": "lexicographic greedy packing with Euclidean distance strictly greater than frozen range",
+    "frozen_range_m": 325.0,
+    "packed_position_count": 465
+  },
+  "role_assignment": {
+    "salt_sha256": "9adf483bc3c5a7cad0f972072d2785fbb1dc12e19427280bb1727e45e3c95218",
+    "calibration_count": 24,
+    "test_count": 321,
+    "buffer_count": 120,
+    "test_coordinate_sha256": "952ed645c8a7ca3fde08bf995e52c49f1823bb9cf922a8f461bfcf071054835e"
+  },
+  "available_correlation_adjusted_test_clusters": 321,
+  "required_clusters_all_metrics": 321,
+  "selection_frozen_before_sealed_response_interpretation": true,
+  "wp8_0_cluster_gate_passes": true,
+  "wp8_0_power_gate_passes": true,
+  "sealed_response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "formal_test_result": null
+}

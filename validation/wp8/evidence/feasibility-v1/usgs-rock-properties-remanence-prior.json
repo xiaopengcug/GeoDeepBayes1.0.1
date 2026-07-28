@@ -1,0 +1,73 @@
+{
+  "schema_version": "wp8-usgs-rock-properties-remanence-prior-v1",
+  "provenance": {
+    "publisher": "U.S. Geological Survey",
+    "doi": "10.5066/P9FONTGS",
+    "data_dictionary_path": "validation/wp8/data/usgs-rock-properties-v1/data_dictionary.csv",
+    "spatial_split_design_sha256": "c3a9ad634a533279c16a788f4a03cf1ee0c6f7e1050a21530ef9ebf58fd2377b"
+  },
+  "response_policy": {
+    "training_rows_interpreted": 17224,
+    "heldout_rows_skipped_before_property_conversion": 3525,
+    "buffer_rows_interpreted": 0,
+    "calibration_rows_interpreted": 0,
+    "test_rows_interpreted": 0
+  },
+  "measurement_contract": {
+    "remanent_intensity": {
+      "field": "RM_a_m",
+      "unit": "A/m"
+    },
+    "koenigsberger_ratio": {
+      "field": "Q",
+      "accuracy": 0.01
+    },
+    "direction": {
+      "fields": [
+        "DEC_deg",
+        "INC_deg"
+      ],
+      "unit": "degrees",
+      "accuracy_degrees": 0.5
+    },
+    "susceptibility": {
+      "field": "SUSC_10-3_si",
+      "unit": "1e-3 SI"
+    }
+  },
+  "availability_counts": {
+    "positive_remanence_intensity": 50,
+    "positive_koenigsberger_ratio": 50,
+    "complete_direction": 51,
+    "complete_vector_magnetization": 48
+  },
+  "empirical_prior": {
+    "remanence_intensity_a_m": {
+      "n": 50,
+      "log_median": -0.15207919901424333,
+      "log_mad": 1.482663306615283,
+      "log_scale_1p4826_mad": 2.1981966183878185,
+      "physical_median": 0.8589202524099662
+    },
+    "koenigsberger_ratio": {
+      "n": 50,
+      "log_median": 1.4984208289797443,
+      "log_mad": 1.0244999459356934,
+      "log_scale_1p4826_mad": 1.5189236198442588,
+      "physical_median": 4.474617302071764
+    },
+    "direction": {
+      "n": 51,
+      "mean_unit_vector_north_east_down": [
+        0.2849392100670732,
+        0.21561874213751317,
+        0.9339797667002153
+      ],
+      "mean_resultant_length": 0.3702079125261897,
+      "recommended_family": "empirical or multimodal spherical prior; do not collapse to a single direction"
+    },
+    "rock_type_log_intensity_summaries": {}
+  },
+  "prior_gate_passed": false,
+  "scope_limit": "Western U.S. and Alaska samples are provenance for a broad remanence prior, not site-specific ground truth for any airborne survey."
+}

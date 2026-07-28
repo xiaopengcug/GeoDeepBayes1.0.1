@@ -1,0 +1,354 @@
+{
+  "schema_version": "wp8-outcome-blind-field-contract-audit-v1",
+  "audit_policy": "filenames, headers, EDI section labels, and XLSX string headers only",
+  "observation_values_read_by_this_program": false,
+  "formal_test_eligibility": "blocked until an outcome-blind split excludes contaminated members",
+  "endpoint_exposure_incident": {
+    "detected": true,
+    "members_to_exclude_from_formal_test": [
+      "tdip: first inspected CSV member (recorded above)",
+      "csamt: Raw archive A1.raw",
+      "csamt-backup-doi-10.5281/zenodo.5533467: K1-K9 AVG",
+      "magnetic-backup-doi-10.5066/P91O2Y8W: Northwest Arkansas CSV",
+      "wfem: 1 WFEM apparent resistivity of L1.dat"
+    ],
+    "scope": "interactive inspections displayed observation rows before formal splits were frozen; ScienceBase also ignored an HTTP Range request and returned Northwest Arkansas magnetic CSV rows",
+    "remediation": "retain only as training candidates or exclude whole named members before any formal test unseal"
+  },
+  "coverage_equivalence": {
+    "margin": 0.05,
+    "alpha_two_sided": 0.05,
+    "power": 0.8,
+    "required_clusters": {
+      "0.9": 223,
+      "0.95": 118
+    }
+  },
+  "methods": {
+    "gravity": {
+      "contract_status": "blocked",
+      "cluster_basis": "one regional grid package",
+      "available_clusters": 1,
+      "missing": [
+        "independent spatial clusters and outcome-blind correlation length"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    },
+    "magnetic": {
+      "contract_status": "candidate",
+      "source_sha256": "361245a2e779131e93f3d5aa5e9429b14d9d40199d108c1d21d1e2c7b6d72ad8",
+      "header": [
+        "ALT_RADAR",
+        "Bearing",
+        "Date",
+        "DIURNAL",
+        "DIURNAL_CORR",
+        "DTM",
+        "Easting",
+        "FID",
+        "Flight",
+        "FX",
+        "FY",
+        "FZ",
+        "GPSZ",
+        "IGRF",
+        "Line",
+        "Latitude",
+        "Longitude",
+        "mag_comp",
+        "mag_diu",
+        "mag_lag",
+        "mag_raw",
+        "MAG_RMI",
+        "mag_tmi",
+        "Northing"
+      ],
+      "direction_boundary": {
+        "FX_FY_FZ": "measured vector components; not accepted as remanence direction",
+        "Bearing": "aircraft heading; not accepted as magnetization direction",
+        "status": "explicitly bounded"
+      },
+      "cluster_basis": "flight-line identifiers exist; values not read by this audit",
+      "available_clusters": null,
+      "missing": [
+        "outcome-blind line count/correlation length",
+        "remanence prior provenance"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    },
+    "dc": {
+      "contract_status": "blocked",
+      "cluster_basis": "four named survey archives",
+      "available_clusters": 4,
+      "missing": [
+        "validated per-observation error and sufficient independent clusters"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    },
+    "tdip": {
+      "contract_status": "blocked",
+      "source_sha256": "356f81e039884faa38b74e7d80662be7a5cd90c3cf96f490e0905b517f9c672c",
+      "member_count": 741,
+      "header_member": "ERT_IP_Reykjanes/N_20221023.csv",
+      "header": [
+        "Rho (Ohm.m)",
+        "M (mV/V)",
+        "VMN (mV)",
+        "IAB (mA)",
+        "A",
+        "B",
+        "M",
+        "N",
+        "M1 (mV/V)",
+        "M2 (mV/V)",
+        "M3 (mV/V)",
+        "M4 (mV/V)",
+        "M5 (mV/V)",
+        "M6 (mV/V)",
+        "M7 (mV/V)",
+        "M8 (mV/V)",
+        "M9 (mV/V)",
+        "M10 (mV/V)",
+        "M11 (mV/V)",
+        "M12 (mV/V)",
+        "M13 (mV/V)",
+        "M14 (mV/V)",
+        "M15 (mV/V)",
+        "M16 (mV/V)",
+        "M17 (mV/V)",
+        "M18 (mV/V)",
+        "M19 (mV/V)",
+        "M20 (mV/V)",
+        "Mdly (ms)",
+        "TM1 (ms)",
+        "TM2 (ms)",
+        "TM3 (ms)",
+        "TM4 (ms)",
+        "TM5 (ms)",
+        "TM6 (ms)",
+        "TM7 (ms)",
+        "TM8 (ms)",
+        "TM9 (ms)",
+        "TM10 (ms)",
+        "TM11 (ms)",
+        "TM12 (ms)",
+        "TM13 (ms)",
+        "TM14 (ms)",
+        "TM15 (ms)",
+        "TM16 (ms)",
+        "TM17 (ms)",
+        "TM18 (ms)",
+        "TM19 (ms)",
+        "TM20 (ms)"
+      ],
+      "cluster_basis": "one CSV acquisition/date member per cluster candidate",
+      "available_clusters": 741,
+      "missing": [
+        "no explicit error/standard-deviation column"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": true
+      }
+    },
+    "sip_fdip": {
+      "contract_status": "blocked",
+      "archive_members": [
+        "RDC02_XYZ.csv",
+        "LIRDC002.dat",
+        "LIRDC006_P1 paper.dat",
+        "RDC06_XYZ_P1 paper.csv",
+        "LIRDC002.AMP",
+        "LIRDC006_P1 paper.AMP"
+      ],
+      "workbooks": {
+        "Data 2-ProfilesData_P1_P2.xlsx": {
+          "sheets": [
+            "Profile 1",
+            "Profile 2"
+          ],
+          "first_row_string_cells": {
+            "xl/worksheets/sheet1.xml": [
+              "X-location",
+              "Z-location",
+              "Resistivity",
+              "IP(mV/V)"
+            ],
+            "xl/worksheets/sheet2.xml": [
+              "X-location",
+              "Z-location",
+              "Resistivity",
+              "IP (mV/V)"
+            ]
+          }
+        },
+        "Data 3-Complex-conductivity spectrum.xlsx": {
+          "sheets": [
+            "Serpentine-sample"
+          ],
+          "first_row_string_cells": {
+            "xl/worksheets/sheet1.xml": [
+              "Frequency (Hz)",
+              "Inphase-cond (S/m)",
+              "Quadrature-cond (S/m)"
+            ]
+          }
+        }
+      },
+      "cluster_basis": "P1/P2 profile naming",
+      "available_clusters": 2,
+      "missing": [
+        "unambiguous frequency-to-profile/station key",
+        "sufficient independent clusters"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    },
+    "tem": {
+      "contract_status": "blocked",
+      "cluster_basis": "site list exists but site rows were not read",
+      "available_clusters": null,
+      "missing": [
+        "outcome-blind site count/split",
+        "field dimensionality diagnostic"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    },
+    "mt_amt": {
+      "contract_status": "blocked",
+      "cross_power": {
+        "member_count": 90,
+        "sections": [
+          "EMEAS",
+          "END",
+          "HEAD",
+          "HMEAS",
+          "INFO",
+          "SPECTRA"
+        ]
+      },
+      "time_series": {
+        "member_count": 287,
+        "sections": [
+          "EMEAS",
+          "END",
+          "HEAD",
+          "HMEAS",
+          "INFO",
+          "TSERIES"
+        ]
+      },
+      "cluster_basis": "EDI member/site",
+      "available_clusters": 90,
+      "missing": [
+        "processed impedance tensor sections",
+        "impedance variance/error sections"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    },
+    "csamt": {
+      "contract_status": "blocked",
+      "raw_members": [
+        "Raw/A1.raw",
+        "Raw/A2.raw",
+        "Raw/PT1.raw",
+        "Raw/PT2.raw",
+        "Raw/PT3.raw",
+        "Raw/QB1.raw",
+        "Raw/QB2.raw",
+        "Raw/QB3.raw",
+        "Raw/WG.raw"
+      ],
+      "station_members": [
+        "Station/A1.stn",
+        "Station/A2.stn",
+        "Station/PT1.stn",
+        "Station/PT2.stn",
+        "Station/PT3.stn",
+        "Station/QB1.stn",
+        "Station/QB2.stn",
+        "Station/QB3.stn",
+        "Station/WG.stn"
+      ],
+      "cluster_basis": "named survey line",
+      "available_clusters": 9,
+      "missing": [
+        "transmitter endpoint coordinates",
+        "source-receiver distance",
+        "near-field classification"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    },
+    "wfem": {
+      "contract_status": "blocked",
+      "file_count": 27,
+      "headers": [
+        [
+          "Station",
+          "Fre",
+          "Rho_mn"
+        ]
+      ],
+      "cluster_basis": "one named line file",
+      "available_clusters": 27,
+      "missing": [
+        "receiver coordinates",
+        "source geometry",
+        "phase",
+        "field component",
+        "geometric factor definition"
+      ],
+      "coverage_power": {
+        "required_clusters": {
+          "0.9": 223,
+          "0.95": 118
+        },
+        "sufficient": false
+      }
+    }
+  }
+}

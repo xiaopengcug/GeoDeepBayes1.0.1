@@ -1,0 +1,187 @@
+{
+  "schema_version": "wp8-baotu-wfem-training-audit-v1",
+  "design_sha256": "790a181eae13b23505143c481ff5660a878c1e91529a339dd61b93e9ada747c2",
+  "training_line_count": 10,
+  "training_rows_interpreted": 44074,
+  "training_frequency_count": 42,
+  "training_frequency_range_hz": [
+    2.0,
+    3072.0
+  ],
+  "records": [
+    {
+      "name": "11 WFEM apparent resistivity of W3.dat",
+      "sha256": "e5d40971fc06e37315471f8e80f10a6fe236b1f1fea91d16aedf88fbacb53b54",
+      "rows_interpreted": 4563,
+      "unique_station_labels": 117,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        3.1872509,
+        4594.466
+      ]
+    },
+    {
+      "name": "13 WFEM apparent resistivity of W5.dat",
+      "sha256": "9046701a9c3653b776f3113027bf6d5bc1cb3cdd880726a96cdf499a6a37db0f",
+      "rows_interpreted": 8149,
+      "unique_station_labels": 209,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        4.3869526,
+        5063.1056
+      ]
+    },
+    {
+      "name": "15 WFEM apparent resistivity of W7.dat",
+      "sha256": "18bef7add9d17474ccc13825f9f9860ead64932f9cdb0e811caf5ea43b1d9e60",
+      "rows_interpreted": 3471,
+      "unique_station_labels": 89,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        13.653718,
+        2217.3441
+      ]
+    },
+    {
+      "name": "17 WFEM apparent resistivity of W9.dat",
+      "sha256": "2b05526dfa3ca1f7f9fbfa540d150b6624e571d4ca34798938cf35dfd58e3f53",
+      "rows_interpreted": 3457,
+      "unique_station_labels": 91,
+      "frequency_count": 38,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        1.137,
+        154.2249
+      ]
+    },
+    {
+      "name": "20 WFEM apparent resistivity of E1.dat",
+      "sha256": "236ece53b4cabeebf8d2c5a381fa1dc7cd0990354083a5086d37b51bb7c4705f",
+      "rows_interpreted": 2560,
+      "unique_station_labels": 64,
+      "frequency_count": 40,
+      "frequency_range_hz": [
+        2.0,
+        3072.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        23.364371,
+        3761.988
+      ]
+    },
+    {
+      "name": "22 WFEM apparent resistivity of E3.dat",
+      "sha256": "db44666096d579797e2f1a8d7badefcabfa942d2a9db812498e7d15344eab835",
+      "rows_interpreted": 3393,
+      "unique_station_labels": 87,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        4.544,
+        14015.682
+      ]
+    },
+    {
+      "name": "26 WFEM apparent resistivity of E7.dat",
+      "sha256": "2c4a7ca117045484c49fd8215bb1e8aa5b76d6860355b50e20fa14640dd8ea30",
+      "rows_interpreted": 4134,
+      "unique_station_labels": 106,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        7.89,
+        2884.465
+      ]
+    },
+    {
+      "name": "4 WFEM apparent resistivity of L4.dat",
+      "sha256": "25d8476e963a9d6ca76694d5d0b5eb95abdea6d91a9601640f50e2ecbb7584f6",
+      "rows_interpreted": 7249,
+      "unique_station_labels": 186,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        2.0833246,
+        3264.631
+      ]
+    },
+    {
+      "name": "8 WFEM apparent resistivity of L8.dat",
+      "sha256": "401791a8b9fbafe5dbf360a3fac41d5c7fdb2bffcc4d6ca1b76411b8ef5d2689",
+      "rows_interpreted": 3120,
+      "unique_station_labels": 80,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        12.118,
+        5319.6739
+      ]
+    },
+    {
+      "name": "9 WFEM apparent resistivity of W1.dat",
+      "sha256": "057cf204e853463062a2a4e9a8cdcfae611112e4bf0e18f68fb844f646705ed7",
+      "rows_interpreted": 3978,
+      "unique_station_labels": 102,
+      "frequency_count": 39,
+      "frequency_range_hz": [
+        2.0,
+        2560.0
+      ],
+      "apparent_resistivity_range_ohm_m": [
+        3.5436923,
+        4152.9236
+      ]
+    }
+  ],
+  "observed_columns": [
+    "Station",
+    "Fre",
+    "Rho_mn"
+  ],
+  "receiver_coordinates_present": false,
+  "source_geometry_present": false,
+  "source_current_present": false,
+  "phase_present": false,
+  "field_component_present": false,
+  "geometric_factor_definition_present": false,
+  "per_observation_error_present": false,
+  "formal_observation_contract_ready": false,
+  "line_level_test_cluster_upper_bound": 14,
+  "required_test_clusters": 223,
+  "cluster_gate_passed": false,
+  "spatial_correlation_audit_possible": false,
+  "dimensionality_gate_passed": false,
+  "paired_crps_effect_size_available": false,
+  "power_gate_passed": false,
+  "buffer_response_values_interpreted": 0,
+  "calibration_response_values_interpreted": 0,
+  "test_response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

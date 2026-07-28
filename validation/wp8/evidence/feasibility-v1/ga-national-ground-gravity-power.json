@@ -1,0 +1,354 @@
+{
+  "schema_version": "wp8-ga-national-ground-gravity-power-v1",
+  "pool_manifest_sha256": "2a9d008de8089c0df59ee7dd315f89794ad36c046b0940edca0ee61cad5683c9",
+  "geometry_sha256": "362e131364daf407796fa7c5fa0a517da21c5b0741bbf144d3c98e296937b5f6",
+  "training_sha256": "9edcc0ec2d5f535570a3015ea017e03f9389eac09a285194a2f2c8f98d5338fe",
+  "training_only": true,
+  "comparison": {
+    "information_parity": "Both models use identical training subcell complete-Bouguer values and propagated observation sigmas.",
+    "baseline": "weighted quadratic regional-trend Gaussian prediction",
+    "candidate": "same weighted trend plus fixed 12.5-km Gaussian-process residual",
+    "validation": "five deterministic folds of 55-km training blocks"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "training_subcells": 446,
+      "validation_subcells": 152,
+      "validation_blocks": 11
+    },
+    {
+      "fold": 1,
+      "training_subcells": 446,
+      "validation_subcells": 152,
+      "validation_blocks": 11
+    },
+    {
+      "fold": 2,
+      "training_subcells": 536,
+      "validation_subcells": 62,
+      "validation_blocks": 8
+    },
+    {
+      "fold": 3,
+      "training_subcells": 549,
+      "validation_subcells": 49,
+      "validation_blocks": 8
+    },
+    {
+      "fold": 4,
+      "training_subcells": 415,
+      "validation_subcells": 183,
+      "validation_blocks": 10
+    }
+  ],
+  "paired_training_blocks": 48,
+  "paired_block_scores": [
+    {
+      "block": "209:-58",
+      "candidate_crps": 10.19851934870876,
+      "baseline_crps": 65.88893263431653,
+      "relative_improvement": 0.8452165038806969
+    },
+    {
+      "block": "210:-60",
+      "candidate_crps": 16.689350593270632,
+      "baseline_crps": 16.689350120930957,
+      "relative_improvement": -2.830186145690896e-08
+    },
+    {
+      "block": "210:-59",
+      "candidate_crps": 21.996164117285094,
+      "baseline_crps": 52.67178188169837,
+      "relative_improvement": 0.5823918741407151
+    },
+    {
+      "block": "210:-58",
+      "candidate_crps": 21.318165380218364,
+      "baseline_crps": 67.18292985717815,
+      "relative_improvement": 0.6826847917240599
+    },
+    {
+      "block": "212:-49",
+      "candidate_crps": 8.592021664109248,
+      "baseline_crps": 8.592021664109248,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "219:-63",
+      "candidate_crps": 14.046543157963926,
+      "baseline_crps": 14.046543157963926,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "221:-57",
+      "candidate_crps": 8.438377580497152,
+      "baseline_crps": 8.438377580497152,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "222:-62",
+      "candidate_crps": 9.394412209610213,
+      "baseline_crps": 9.394412209610213,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "229:-62",
+      "candidate_crps": 18.67378504871387,
+      "baseline_crps": 18.67378504871387,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "241:-27",
+      "candidate_crps": 20.227128167581903,
+      "baseline_crps": 20.227128167581903,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "242:-57",
+      "candidate_crps": 38.95706385421754,
+      "baseline_crps": 80.5800862427729,
+      "relative_improvement": 0.5165422913938426
+    },
+    {
+      "block": "242:-56",
+      "candidate_crps": 32.46313079269258,
+      "baseline_crps": 87.17591137093541,
+      "relative_improvement": 0.6276135198109802
+    },
+    {
+      "block": "244:-62",
+      "candidate_crps": 9.418618505805703,
+      "baseline_crps": 9.418618505805963,
+      "relative_improvement": 2.7535683539211767e-14
+    },
+    {
+      "block": "244:-28",
+      "candidate_crps": 14.066019898522468,
+      "baseline_crps": 14.066019898522468,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "245:-40",
+      "candidate_crps": 11.145393546347682,
+      "baseline_crps": 11.145393546347682,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "246:-62",
+      "candidate_crps": 9.046488637103396,
+      "baseline_crps": 9.046488637103465,
+      "relative_improvement": 7.657989692539027e-15
+    },
+    {
+      "block": "248:-70",
+      "candidate_crps": 28.403531694475845,
+      "baseline_crps": 28.403531694475845,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "250:-61",
+      "candidate_crps": 11.382040586698315,
+      "baseline_crps": 11.382040586698315,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "252:-73",
+      "candidate_crps": 14.888011798441516,
+      "baseline_crps": 14.888011801026837,
+      "relative_improvement": 1.7365115213206976e-10
+    },
+    {
+      "block": "252:-71",
+      "candidate_crps": 27.576881762637036,
+      "baseline_crps": 27.57688176263331,
+      "relative_improvement": -1.3514206142449132e-13
+    },
+    {
+      "block": "253:-62",
+      "candidate_crps": 8.222940637131654,
+      "baseline_crps": 8.222940637131654,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "255:-65",
+      "candidate_crps": 10.594190671083304,
+      "baseline_crps": 10.594190671083304,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "255:-42",
+      "candidate_crps": 10.103928604618458,
+      "baseline_crps": 10.103928604618458,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "258:-78",
+      "candidate_crps": 0.45071418073864705,
+      "baseline_crps": 15.555909249696578,
+      "relative_improvement": 0.9710261757442794
+    },
+    {
+      "block": "258:-77",
+      "candidate_crps": 3.3439151725453904,
+      "baseline_crps": 14.52174852004418,
+      "relative_improvement": 0.7697305411996477
+    },
+    {
+      "block": "258:-75",
+      "candidate_crps": 11.725131467893469,
+      "baseline_crps": 11.725131467893775,
+      "relative_improvement": 2.6057991521328937e-14
+    },
+    {
+      "block": "260:-52",
+      "candidate_crps": 6.771947463026108,
+      "baseline_crps": 8.461025102293462,
+      "relative_improvement": 0.19963037797979222
+    },
+    {
+      "block": "261:-77",
+      "candidate_crps": 15.670051920317324,
+      "baseline_crps": 15.670051918815,
+      "relative_improvement": -9.587227959676732e-11
+    },
+    {
+      "block": "261:-52",
+      "candidate_crps": 7.3494499012777865,
+      "baseline_crps": 9.621923502870278,
+      "relative_improvement": 0.2361766439854358
+    },
+    {
+      "block": "262:-79",
+      "candidate_crps": 2.6274808255320967,
+      "baseline_crps": 7.638537016225098,
+      "relative_improvement": 0.6560230290236158
+    },
+    {
+      "block": "262:-78",
+      "candidate_crps": 4.335187813507258,
+      "baseline_crps": 8.06318288643436,
+      "relative_improvement": 0.46234782534811975
+    },
+    {
+      "block": "263:-78",
+      "candidate_crps": 7.483429899876676,
+      "baseline_crps": 7.485454039938175,
+      "relative_improvement": 0.00027040979086895674
+    },
+    {
+      "block": "264:-74",
+      "candidate_crps": 8.183936267645878,
+      "baseline_crps": 8.183936267645878,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "265:-84",
+      "candidate_crps": 12.153331669003464,
+      "baseline_crps": 12.152265923670202,
+      "relative_improvement": -8.769930973831417e-05
+    },
+    {
+      "block": "265:-38",
+      "candidate_crps": 13.226196964814143,
+      "baseline_crps": 13.226196964814143,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "266:-85",
+      "candidate_crps": 6.732228161358361,
+      "baseline_crps": 13.82883661427995,
+      "relative_improvement": 0.5131746545905012
+    },
+    {
+      "block": "266:-32",
+      "candidate_crps": 17.52003986424642,
+      "baseline_crps": 17.52003986424642,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "267:-85",
+      "candidate_crps": 19.68808970923908,
+      "baseline_crps": 15.833990859471877,
+      "relative_improvement": -0.24340666127527066
+    },
+    {
+      "block": "267:-74",
+      "candidate_crps": 10.17667101082067,
+      "baseline_crps": 10.176671010820677,
+      "relative_improvement": 6.982074344396046e-16
+    },
+    {
+      "block": "268:-78",
+      "candidate_crps": 8.524603289254891,
+      "baseline_crps": 8.524603289254891,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "269:-85",
+      "candidate_crps": 19.080505528480614,
+      "baseline_crps": 19.080505528480646,
+      "relative_improvement": 1.6757639393504365e-15
+    },
+    {
+      "block": "269:-74",
+      "candidate_crps": 17.404386807122,
+      "baseline_crps": 17.404386807121906,
+      "relative_improvement": -5.3073145680153946e-15
+    },
+    {
+      "block": "270:-69",
+      "candidate_crps": 14.643218196950588,
+      "baseline_crps": 7.829612649852822,
+      "relative_improvement": -0.870235329869843
+    },
+    {
+      "block": "271:-83",
+      "candidate_crps": 10.299894771494605,
+      "baseline_crps": 10.299894771494605,
+      "relative_improvement": 0.0
+    },
+    {
+      "block": "271:-69",
+      "candidate_crps": 4.601485785933936,
+      "baseline_crps": 8.589359290167565,
+      "relative_improvement": 0.4642806721100418
+    },
+    {
+      "block": "274:-72",
+      "candidate_crps": 54.8275700878356,
+      "baseline_crps": 16.173520129140247,
+      "relative_improvement": -2.3899589977973537
+    },
+    {
+      "block": "274:-71",
+      "candidate_crps": 3.1654454516317556,
+      "baseline_crps": 11.776072441323999,
+      "relative_improvement": 0.7311968428010229
+    },
+    {
+      "block": "276:-69",
+      "candidate_crps": 9.524199848150413,
+      "baseline_crps": 9.524199848150413,
+      "relative_improvement": 0.0
+    }
+  ],
+  "exploratory_mean_relative_improvement": 0.0990545299384845,
+  "paired_relative_improvement_sd": 0.49522254633997254,
+  "power_target_relative_improvement": 0.1,
+  "standardized_target_effect": 0.20192941686332178,
+  "required_paired_crps_clusters": 153,
+  "required_coverage_clusters": {
+    "0.90": 223,
+    "0.95": 118
+  },
+  "required_clusters_all_metrics": 223,
+  "available_correlation_adjusted_test_clusters": 1603,
+  "alpha_one_sided": 0.05,
+  "target_power": 0.8,
+  "wp8_0_power_gate_passes": true,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "formal_test_result": null
+}

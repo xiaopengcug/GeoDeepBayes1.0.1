@@ -1,0 +1,244 @@
+{
+  "schema_version": "wp8-po-river-dc-streamer-training-audit-v2",
+  "design_sha256": "bf654b552a085d488edff7d577e271ecd24fc8ca246f048110313956e508e6fc",
+  "response_sha256": "f8e946266becbe811506f534082abe758c942bd54686970e550596adbcb4cdc6",
+  "positions_sha256": "fc79b4c04c66ff04458fbd995c151f48ebf37f6c269aab94c38d2745dcb6fee6",
+  "response_header": "meas_num,A,B,M,N,Rho(Ohm*m),St.Dev.(%),Self_potential_MN(mV),V_MN(mV) ,I_AB(mA),datatype(WennerShlumberger;DipoleDipole;Gapfiller)",
+  "position_header": [
+    "num_shot",
+    "num_electrode_in_shot",
+    "num_elecrode_in_Resistivity_Data.csv",
+    "x(m)_EPSG32632",
+    "y(m)_EPSG32632"
+  ],
+  "training_station_count": 94,
+  "training_response_rows_interpreted": 29892,
+  "nontraining_response_rows_byte_skipped": 134832,
+  "calibration_response_rows_interpreted": 0,
+  "remaining_test_response_rows_interpreted": 0,
+  "quarantined_response_rows_interpreted_during_audit": 0,
+  "quadrupole_type_counts": {
+    "DD": 18800,
+    "Gapfiller": 2632,
+    "WS": 8460
+  },
+  "per_observation_standard_deviation_present": true,
+  "standard_deviation_percent": {
+    "minimum": 0.0,
+    "median": 0.1,
+    "p95": 6.1,
+    "maximum": 6100.0
+  },
+  "training_station_log_resistivity_range": {
+    "minimum": 1.8453967347081732,
+    "maximum": 5.756523637123337
+  },
+  "training_detrended_correlation_bins": [
+    {
+      "lower_m": 0.0,
+      "upper_m": 16.0,
+      "pair_count": 160,
+      "correlation": 0.8644407349732297
+    },
+    {
+      "lower_m": 16.0,
+      "upper_m": 32.0,
+      "pair_count": 133,
+      "correlation": 0.5473570957332626
+    },
+    {
+      "lower_m": 32.0,
+      "upper_m": 48.0,
+      "pair_count": 103,
+      "correlation": 0.09165465363393387
+    },
+    {
+      "lower_m": 48.0,
+      "upper_m": 64.0,
+      "pair_count": 71,
+      "correlation": -0.4579855693748066
+    },
+    {
+      "lower_m": 64.0,
+      "upper_m": 80.0,
+      "pair_count": 58,
+      "correlation": -0.6237882830250554
+    },
+    {
+      "lower_m": 80.0,
+      "upper_m": 96.0,
+      "pair_count": 50,
+      "correlation": -0.49269005984249153
+    },
+    {
+      "lower_m": 96.0,
+      "upper_m": 112.0,
+      "pair_count": 42,
+      "correlation": -0.33961284708196515
+    },
+    {
+      "lower_m": 112.0,
+      "upper_m": 128.0,
+      "pair_count": 34,
+      "correlation": -0.1061909126208774
+    },
+    {
+      "lower_m": 128.0,
+      "upper_m": 144.0,
+      "pair_count": 32,
+      "correlation": -0.007971725143089536
+    },
+    {
+      "lower_m": 144.0,
+      "upper_m": 160.0,
+      "pair_count": 32,
+      "correlation": -0.00454612026776912
+    },
+    {
+      "lower_m": 160.0,
+      "upper_m": 176.0,
+      "pair_count": 32,
+      "correlation": 0.05180457477558494
+    },
+    {
+      "lower_m": 176.0,
+      "upper_m": 192.0,
+      "pair_count": 33,
+      "correlation": 0.12207063286601309
+    },
+    {
+      "lower_m": 192.0,
+      "upper_m": 208.0,
+      "pair_count": 49,
+      "correlation": 0.16608995099778015
+    },
+    {
+      "lower_m": 208.0,
+      "upper_m": 224.0,
+      "pair_count": 45,
+      "correlation": 0.2769978981033711
+    },
+    {
+      "lower_m": 224.0,
+      "upper_m": 240.0,
+      "pair_count": 45,
+      "correlation": 0.4230057483806604
+    },
+    {
+      "lower_m": 240.0,
+      "upper_m": 256.0,
+      "pair_count": 47,
+      "correlation": 0.4825380809773934
+    },
+    {
+      "lower_m": 256.0,
+      "upper_m": 272.0,
+      "pair_count": 43,
+      "correlation": 0.3037408354364661
+    },
+    {
+      "lower_m": 272.0,
+      "upper_m": 288.0,
+      "pair_count": 39,
+      "correlation": -0.11977856060720626
+    },
+    {
+      "lower_m": 288.0,
+      "upper_m": 304.0,
+      "pair_count": 35,
+      "correlation": -0.6518153923671305
+    },
+    {
+      "lower_m": 304.0,
+      "upper_m": 320.0,
+      "pair_count": 32,
+      "correlation": -1.2608770180269069
+    },
+    {
+      "lower_m": 320.0,
+      "upper_m": 336.0,
+      "pair_count": 28,
+      "correlation": -1.6324843676512446
+    },
+    {
+      "lower_m": 336.0,
+      "upper_m": 352.0,
+      "pair_count": 23,
+      "correlation": -1.807608294125479
+    },
+    {
+      "lower_m": 352.0,
+      "upper_m": 368.0,
+      "pair_count": 18,
+      "correlation": -2.011061483336524
+    },
+    {
+      "lower_m": 368.0,
+      "upper_m": 384.0,
+      "pair_count": 24,
+      "correlation": -1.2241209374576696
+    },
+    {
+      "lower_m": 384.0,
+      "upper_m": 400.0,
+      "pair_count": 38,
+      "correlation": -0.29441258939106124
+    },
+    {
+      "lower_m": 400.0,
+      "upper_m": 416.0,
+      "pair_count": 44,
+      "correlation": 0.21158665501364976
+    }
+  ],
+  "training_correlation_range_m": 64.0,
+  "remaining_test_station_count": 304,
+  "correlation_separated_test_station_count": 38,
+  "correlation_separated_test_stations": [
+    9,
+    18,
+    27,
+    36,
+    45,
+    65,
+    74,
+    83,
+    92,
+    105,
+    137,
+    161,
+    177,
+    186,
+    195,
+    233,
+    257,
+    273,
+    289,
+    298,
+    307,
+    316,
+    325,
+    334,
+    345,
+    354,
+    363,
+    372,
+    381,
+    409,
+    418,
+    433,
+    457,
+    473,
+    482,
+    491,
+    500,
+    509
+  ],
+  "required_test_clusters": 223,
+  "cluster_gate_passed": false,
+  "paired_crps_effect_size_available": false,
+  "power_gate_passed": false,
+  "remaining_test_population_sealed": true,
+  "historical_exposure_incident_count": 1,
+  "test_unseal_count_during_audit": 0
+}

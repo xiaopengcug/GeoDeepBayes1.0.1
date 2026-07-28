@@ -1,0 +1,1606 @@
+{
+  "schema_version": "wp8-ga-national-ground-gravity-separation-v1",
+  "pool_manifest_sha256": "2a9d008de8089c0df59ee7dd315f89794ad36c046b0940edca0ee61cad5683c9",
+  "geometry_sha256": "362e131364daf407796fa7c5fa0a517da21c5b0741bbf144d3c98e296937b5f6",
+  "training_sha256": "9edcc0ec2d5f535570a3015ea017e03f9389eac09a285194a2f2c8f98d5338fe",
+  "power_sha256": "31abf2590935d8bb22014538e1fe77159cf84426042eafa2fae2358c65b813a6",
+  "fields_read": [
+    "latitude",
+    "longitude",
+    "gravacc",
+    "gndelevacc",
+    "tcerr"
+  ],
+  "response_fields_read": [],
+  "policy": {
+    "provider_cap": "at most one representative per retained provider survey",
+    "representative": "observed station nearest the componentwise median of eligible station coordinates",
+    "protected_roles": [
+      "train",
+      "calibration"
+    ],
+    "minimum_train_calibration_distance_km": 12.5,
+    "minimum_test_pair_distance_km": 12.5,
+    "packing_order": "SHA-256 wp8-ga-gravity-pack-v1|survey_id"
+  },
+  "test_provider_survey_candidates": 352,
+  "quality_empty_surveys": [
+    "P197392"
+  ],
+  "excluded_near_train_or_calibration": 1,
+  "candidates_after_protected_distance": 351,
+  "accepted_independent_test_surveys": 261,
+  "required_clusters_all_metrics": 223,
+  "provider_spatial_power_gate_passes": true,
+  "accepted": [
+    {
+      "survey_id": "P197859",
+      "x_km": 13806.178247616213,
+      "y_km": -3444.23144912,
+      "nearest_train_or_calibration_km": 93.07731336084039
+    },
+    {
+      "survey_id": "P199152",
+      "x_km": 13527.365604157414,
+      "y_km": -3045.49857128,
+      "nearest_train_or_calibration_km": 118.59745534758775
+    },
+    {
+      "survey_id": "P200863",
+      "x_km": 12399.500932540486,
+      "y_km": -3525.24880928,
+      "nearest_train_or_calibration_km": 152.85807467188346
+    },
+    {
+      "survey_id": "P198002",
+      "x_km": 14449.666427321337,
+      "y_km": -2967.8763598,
+      "nearest_train_or_calibration_km": 145.4846612962807
+    },
+    {
+      "survey_id": "P199942",
+      "x_km": 14931.927151208534,
+      "y_km": -2440.08463996,
+      "nearest_train_or_calibration_km": 86.82830892336013
+    },
+    {
+      "survey_id": "P195651",
+      "x_km": 14033.27508779552,
+      "y_km": -3931.35997672,
+      "nearest_train_or_calibration_km": 59.03106889134768
+    },
+    {
+      "survey_id": "P199280",
+      "x_km": 13559.719875116154,
+      "y_km": -2180.4724849599997,
+      "nearest_train_or_calibration_km": 36.77066797461468
+    },
+    {
+      "survey_id": "P199346",
+      "x_km": 14195.718976548102,
+      "y_km": -2240.8153833999995,
+      "nearest_train_or_calibration_km": 63.14976045228696
+    },
+    {
+      "survey_id": "P200684",
+      "x_km": 13467.787126257645,
+      "y_km": -2343.87900164,
+      "nearest_train_or_calibration_km": 169.65651115122535
+    },
+    {
+      "survey_id": "P199053",
+      "x_km": 14015.967578707467,
+      "y_km": -3774.0130529199996,
+      "nearest_train_or_calibration_km": 57.52673293330629
+    },
+    {
+      "survey_id": "P197569",
+      "x_km": 13810.878015004051,
+      "y_km": -3388.99858396,
+      "nearest_train_or_calibration_km": 39.85049338939587
+    },
+    {
+      "survey_id": "P199154",
+      "x_km": 13967.450801345873,
+      "y_km": -3413.6570771599995,
+      "nearest_train_or_calibration_km": 22.028676996656696
+    },
+    {
+      "survey_id": "P199855",
+      "x_km": 13988.079917923993,
+      "y_km": -3912.69239196,
+      "nearest_train_or_calibration_km": 14.208004176598362
+    },
+    {
+      "survey_id": "P198482",
+      "x_km": 13791.70797225035,
+      "y_km": -3467.1112713599996,
+      "nearest_train_or_calibration_km": 104.46735675101606
+    },
+    {
+      "survey_id": "P199638",
+      "x_km": 14226.02890973169,
+      "y_km": -2281.9304235199997,
+      "nearest_train_or_calibration_km": 53.44818331079166
+    },
+    {
+      "survey_id": "P196947",
+      "x_km": 13551.084280805038,
+      "y_km": -3035.1681866,
+      "nearest_train_or_calibration_km": 125.32326673234567
+    },
+    {
+      "survey_id": "P198079",
+      "x_km": 13703.117816039945,
+      "y_km": -3349.1459126399996,
+      "nearest_train_or_calibration_km": 84.24331849476279
+    },
+    {
+      "survey_id": "P197462",
+      "x_km": 13519.69784937041,
+      "y_km": -3400.0905087599995,
+      "nearest_train_or_calibration_km": 33.593829055534236
+    },
+    {
+      "survey_id": "P196548",
+      "x_km": 12401.29042171375,
+      "y_km": -1873.73133816,
+      "nearest_train_or_calibration_km": 142.42824314637642
+    },
+    {
+      "survey_id": "P201165",
+      "x_km": 11686.162040078243,
+      "y_km": -3673.2535360399997,
+      "nearest_train_or_calibration_km": 47.825830819893596
+    },
+    {
+      "survey_id": "P199103",
+      "x_km": 12276.89393604811,
+      "y_km": -3509.96334876,
+      "nearest_train_or_calibration_km": 123.49422175836885
+    },
+    {
+      "survey_id": "P198844",
+      "x_km": 14690.418652859602,
+      "y_km": -4204.51265124,
+      "nearest_train_or_calibration_km": 65.42730040585907
+    },
+    {
+      "survey_id": "P198286",
+      "x_km": 13885.830038076765,
+      "y_km": -3809.2640894,
+      "nearest_train_or_calibration_km": 42.158484626041925
+    },
+    {
+      "survey_id": "P198037",
+      "x_km": 13836.454281698361,
+      "y_km": -3461.08730088,
+      "nearest_train_or_calibration_km": 81.55305446320772
+    },
+    {
+      "survey_id": "P199640",
+      "x_km": 14208.78344810609,
+      "y_km": -2140.98371872,
+      "nearest_train_or_calibration_km": 157.0930094630244
+    },
+    {
+      "survey_id": "P199399",
+      "x_km": 14170.264686084858,
+      "y_km": -2237.5494772399998,
+      "nearest_train_or_calibration_km": 63.529534582339785
+    },
+    {
+      "survey_id": "P199225",
+      "x_km": 13537.090408882608,
+      "y_km": -2148.05098024,
+      "nearest_train_or_calibration_km": 16.49876663479433
+    },
+    {
+      "survey_id": "P200252",
+      "x_km": 13667.75943899658,
+      "y_km": -3317.01417388,
+      "nearest_train_or_calibration_km": 84.39093576241682
+    },
+    {
+      "survey_id": "P195605",
+      "x_km": 12894.229665224648,
+      "y_km": -2241.8272822,
+      "nearest_train_or_calibration_km": 597.7516115640055
+    },
+    {
+      "survey_id": "P195209",
+      "x_km": 14825.085153798569,
+      "y_km": -4225.01734996,
+      "nearest_train_or_calibration_km": 39.01117499344887
+    },
+    {
+      "survey_id": "P198901",
+      "x_km": 15040.38086928957,
+      "y_km": -2619.2963702399998,
+      "nearest_train_or_calibration_km": 177.0626905645457
+    },
+    {
+      "survey_id": "P197352",
+      "x_km": 14905.48938324284,
+      "y_km": -4636.78591112,
+      "nearest_train_or_calibration_km": 58.459562066425185
+    },
+    {
+      "survey_id": "P199756",
+      "x_km": 13980.995409284062,
+      "y_km": -3803.6137088399996,
+      "nearest_train_or_calibration_km": 53.713689776517036
+    },
+    {
+      "survey_id": "P199396",
+      "x_km": 14158.480611837456,
+      "y_km": -2205.58182416,
+      "nearest_train_or_calibration_km": 96.83839313963354
+    },
+    {
+      "survey_id": "P197980",
+      "x_km": 13873.135429929112,
+      "y_km": -3450.4468899999997,
+      "nearest_train_or_calibration_km": 74.3636694955447
+    },
+    {
+      "survey_id": "P196718",
+      "x_km": 15044.69816199421,
+      "y_km": -3930.33171388,
+      "nearest_train_or_calibration_km": 44.42497978834621
+    },
+    {
+      "survey_id": "P197147",
+      "x_km": 14108.00777561071,
+      "y_km": -3507.0272837599996,
+      "nearest_train_or_calibration_km": 67.37351822413599
+    },
+    {
+      "survey_id": "P195508",
+      "x_km": 14797.644739195684,
+      "y_km": -4303.313938,
+      "nearest_train_or_calibration_km": 39.39832807205942
+    },
+    {
+      "survey_id": "P197849",
+      "x_km": 13886.19415074668,
+      "y_km": -3586.5237900800003,
+      "nearest_train_or_calibration_km": 36.691634811560256
+    },
+    {
+      "survey_id": "P198604",
+      "x_km": 12267.915617785846,
+      "y_km": -3419.1833359199995,
+      "nearest_train_or_calibration_km": 46.81189030744907
+    },
+    {
+      "survey_id": "P199391",
+      "x_km": 14717.35703791261,
+      "y_km": -3654.4091751200003,
+      "nearest_train_or_calibration_km": 182.25888800345749
+    },
+    {
+      "survey_id": "P198863",
+      "x_km": 14015.105774765538,
+      "y_km": -3103.14618988,
+      "nearest_train_or_calibration_km": 265.82197278462934
+    },
+    {
+      "survey_id": "P198906",
+      "x_km": 14719.210491461801,
+      "y_km": -3564.1836471999995,
+      "nearest_train_or_calibration_km": 243.2991179499819
+    },
+    {
+      "survey_id": "P196447",
+      "x_km": 13075.473834210776,
+      "y_km": -1596.81816272,
+      "nearest_train_or_calibration_km": 242.2520020613166
+    },
+    {
+      "survey_id": "P197731",
+      "x_km": 11877.952966109266,
+      "y_km": -2483.0676296799998,
+      "nearest_train_or_calibration_km": 229.78645430074303
+    },
+    {
+      "survey_id": "P199522",
+      "x_km": 14690.933091901969,
+      "y_km": -3455.7914745199996,
+      "nearest_train_or_calibration_km": 346.90230158111194
+    },
+    {
+      "survey_id": "P197868",
+      "x_km": 13825.994895551818,
+      "y_km": -3443.92064368,
+      "nearest_train_or_calibration_km": 96.80524554459073
+    },
+    {
+      "survey_id": "P198185",
+      "x_km": 13520.4592675804,
+      "y_km": -3463.2293203199997,
+      "nearest_train_or_calibration_km": 89.89902733171665
+    },
+    {
+      "survey_id": "P199730",
+      "x_km": 14401.466646914268,
+      "y_km": -4140.750781639999,
+      "nearest_train_or_calibration_km": 47.5369346018294
+    },
+    {
+      "survey_id": "P198078",
+      "x_km": 13818.357004258938,
+      "y_km": -3400.1728855599995,
+      "nearest_train_or_calibration_km": 52.683457726882786
+    },
+    {
+      "survey_id": "P199646",
+      "x_km": 14184.985774445295,
+      "y_km": -2437.2204876799997,
+      "nearest_train_or_calibration_km": 98.27961932579063
+    },
+    {
+      "survey_id": "P200645",
+      "x_km": 14167.56466301135,
+      "y_km": -2254.51230752,
+      "nearest_train_or_calibration_km": 47.07190860351115
+    },
+    {
+      "survey_id": "P199161",
+      "x_km": 14946.253153612915,
+      "y_km": -3619.5241587999994,
+      "nearest_train_or_calibration_km": 134.277292714329
+    },
+    {
+      "survey_id": "P199005",
+      "x_km": 14757.887651070114,
+      "y_km": -2266.00865788,
+      "nearest_train_or_calibration_km": 239.33108677704334
+    },
+    {
+      "survey_id": "P197331",
+      "x_km": 13197.775032558926,
+      "y_km": -2515.31647708,
+      "nearest_train_or_calibration_km": 333.3515643029517
+    },
+    {
+      "survey_id": "P198075",
+      "x_km": 13695.598470711915,
+      "y_km": -3426.55383312,
+      "nearest_train_or_calibration_km": 118.7787924505033
+    },
+    {
+      "survey_id": "P200666",
+      "x_km": 12057.672381761937,
+      "y_km": -2260.9243395199996,
+      "nearest_train_or_calibration_km": 379.3297764178054
+    },
+    {
+      "survey_id": "P199355",
+      "x_km": 13949.431209347244,
+      "y_km": -3587.4136821599996,
+      "nearest_train_or_calibration_km": 63.69303858290019
+    },
+    {
+      "survey_id": "P199648",
+      "x_km": 14251.662784720413,
+      "y_km": -2356.4373448,
+      "nearest_train_or_calibration_km": 93.8835364711109
+    },
+    {
+      "survey_id": "P197608",
+      "x_km": 15031.49960738321,
+      "y_km": -3979.4241678399994,
+      "nearest_train_or_calibration_km": 85.3784548487812
+    },
+    {
+      "survey_id": "P197926",
+      "x_km": 13816.51101658328,
+      "y_km": -3423.09155848,
+      "nearest_train_or_calibration_km": 74.35220445206531
+    },
+    {
+      "survey_id": "P197568",
+      "x_km": 14158.697626620773,
+      "y_km": -3749.24902836,
+      "nearest_train_or_calibration_km": 121.21556381848914
+    },
+    {
+      "survey_id": "P196213",
+      "x_km": 13513.882942791499,
+      "y_km": -2671.54051604,
+      "nearest_train_or_calibration_km": 267.532352744668
+    },
+    {
+      "survey_id": "P199739",
+      "x_km": 14517.061775698367,
+      "y_km": -4146.24275384,
+      "nearest_train_or_calibration_km": 84.54923880379002
+    },
+    {
+      "survey_id": "P200247",
+      "x_km": 13875.510485723655,
+      "y_km": -3645.1466831999996,
+      "nearest_train_or_calibration_km": 96.14378872274231
+    },
+    {
+      "survey_id": "P196314",
+      "x_km": 15193.785199438898,
+      "y_km": -3001.8823933999997,
+      "nearest_train_or_calibration_km": 563.6323646690404
+    },
+    {
+      "survey_id": "P197921",
+      "x_km": 13798.94230281182,
+      "y_km": -3427.32194112,
+      "nearest_train_or_calibration_km": 75.26872739153775
+    },
+    {
+      "survey_id": "P200234",
+      "x_km": 14553.89193872919,
+      "y_km": -4086.37341068,
+      "nearest_train_or_calibration_km": 21.21726348407608
+    },
+    {
+      "survey_id": "P196642",
+      "x_km": 13084.873570766817,
+      "y_km": -1579.06262272,
+      "nearest_train_or_calibration_km": 224.71552577874752
+    },
+    {
+      "survey_id": "P197951",
+      "x_km": 14919.272293792925,
+      "y_km": -4665.12920764,
+      "nearest_train_or_calibration_km": 76.99350855155906
+    },
+    {
+      "survey_id": "P198641",
+      "x_km": 14657.949367092411,
+      "y_km": -4054.8613903599994,
+      "nearest_train_or_calibration_km": 49.34106626311647
+    },
+    {
+      "survey_id": "P199747",
+      "x_km": 14217.140787292898,
+      "y_km": -2346.95332608,
+      "nearest_train_or_calibration_km": 61.79607369390615
+    },
+    {
+      "survey_id": "P199395",
+      "x_km": 12253.20936028229,
+      "y_km": -3456.9848249199995,
+      "nearest_train_or_calibration_km": 65.4802546502715
+    },
+    {
+      "survey_id": "P196832",
+      "x_km": 14357.305197856253,
+      "y_km": -3573.98381472,
+      "nearest_train_or_calibration_km": 168.8125868545937
+    },
+    {
+      "survey_id": "P199597",
+      "x_km": 14243.369409909537,
+      "y_km": -2321.80023812,
+      "nearest_train_or_calibration_km": 70.53402752201032
+    },
+    {
+      "survey_id": "P199429",
+      "x_km": 14713.235976613618,
+      "y_km": -3491.8244226799998,
+      "nearest_train_or_calibration_km": 304.5396251995476
+    },
+    {
+      "survey_id": "P198284",
+      "x_km": 13835.34973597649,
+      "y_km": -3395.06752772,
+      "nearest_train_or_calibration_km": 56.18556475676914
+    },
+    {
+      "survey_id": "P196767",
+      "x_km": 13612.504105432057,
+      "y_km": -3727.2141249199994,
+      "nearest_train_or_calibration_km": 128.4390038313852
+    },
+    {
+      "survey_id": "P199843",
+      "x_km": 14911.740438082225,
+      "y_km": -2417.80093632,
+      "nearest_train_or_calibration_km": 98.21927561892781
+    },
+    {
+      "survey_id": "P197786",
+      "x_km": 13748.287662475574,
+      "y_km": -3493.20534728,
+      "nearest_train_or_calibration_km": 127.62012168741546
+    },
+    {
+      "survey_id": "P199191",
+      "x_km": 11968.566878497519,
+      "y_km": -2268.3661928399997,
+      "nearest_train_or_calibration_km": 452.530221705826
+    },
+    {
+      "survey_id": "P198025",
+      "x_km": 14695.543874148529,
+      "y_km": -3468.8825951999997,
+      "nearest_train_or_calibration_km": 333.4363229229396
+    },
+    {
+      "survey_id": "P198351",
+      "x_km": 14659.008613122185,
+      "y_km": -4689.48401988,
+      "nearest_train_or_calibration_km": 21.584963526675484
+    },
+    {
+      "survey_id": "P199321",
+      "x_km": 14704.802364448575,
+      "y_km": -3628.16292476,
+      "nearest_train_or_calibration_km": 209.4407755910743
+    },
+    {
+      "survey_id": "P198907",
+      "x_km": 14702.966970242116,
+      "y_km": -3526.00099852,
+      "nearest_train_or_calibration_km": 282.95458118414626
+    },
+    {
+      "survey_id": "P199357",
+      "x_km": 13775.777109707326,
+      "y_km": -3755.16802408,
+      "nearest_train_or_calibration_km": 124.557853927269
+    },
+    {
+      "survey_id": "P197213",
+      "x_km": 15444.544318653614,
+      "y_km": -3053.32904272,
+      "nearest_train_or_calibration_km": 765.0676420971437
+    },
+    {
+      "survey_id": "P198223",
+      "x_km": 13817.788286298195,
+      "y_km": -3500.70642284,
+      "nearest_train_or_calibration_km": 62.73159569498507
+    },
+    {
+      "survey_id": "P198903",
+      "x_km": 14990.726555116311,
+      "y_km": -2646.4777086,
+      "nearest_train_or_calibration_km": 156.52320762277824
+    },
+    {
+      "survey_id": "P199073",
+      "x_km": 13592.62793228857,
+      "y_km": -3043.79081116,
+      "nearest_train_or_calibration_km": 88.4784711539717
+    },
+    {
+      "survey_id": "P198350",
+      "x_km": 14702.890293703149,
+      "y_km": -4597.5970409599995,
+      "nearest_train_or_calibration_km": 23.446243829192795
+    },
+    {
+      "survey_id": "P200755",
+      "x_km": 13855.85334516714,
+      "y_km": -3611.6137596,
+      "nearest_train_or_calibration_km": 67.25604534144513
+    },
+    {
+      "survey_id": "P199660",
+      "x_km": 11884.52162324427,
+      "y_km": -3059.11746008,
+      "nearest_train_or_calibration_km": 177.54910431740515
+    },
+    {
+      "survey_id": "P198670",
+      "x_km": 13581.289389088643,
+      "y_km": -3686.51341784,
+      "nearest_train_or_calibration_km": 179.20346193325028
+    },
+    {
+      "survey_id": "P198646",
+      "x_km": 14770.334674709044,
+      "y_km": -4212.647026279999,
+      "nearest_train_or_calibration_km": 29.64007706091116
+    },
+    {
+      "survey_id": "P197858",
+      "x_km": 13822.599537338085,
+      "y_km": -3487.99245432,
+      "nearest_train_or_calibration_km": 67.98064412838735
+    },
+    {
+      "survey_id": "P199966",
+      "x_km": 11738.09546348215,
+      "y_km": -2518.65351672,
+      "nearest_train_or_calibration_km": 128.38265311206598
+    },
+    {
+      "survey_id": "P200242",
+      "x_km": 13923.961079125293,
+      "y_km": -3646.2060043199995,
+      "nearest_train_or_calibration_km": 100.39176591378529
+    },
+    {
+      "survey_id": "P199140",
+      "x_km": 15435.224386232208,
+      "y_km": -2952.62140096,
+      "nearest_train_or_calibration_km": 692.2462113068179
+    },
+    {
+      "survey_id": "P199356",
+      "x_km": 13750.791756813984,
+      "y_km": -3715.5261928399996,
+      "nearest_train_or_calibration_km": 142.67602269758402
+    },
+    {
+      "survey_id": "P199459",
+      "x_km": 14089.77520443608,
+      "y_km": -3950.8738161199994,
+      "nearest_train_or_calibration_km": 106.45187027877792
+    },
+    {
+      "survey_id": "P200462",
+      "x_km": 12299.37327768957,
+      "y_km": -2106.67767772,
+      "nearest_train_or_calibration_km": 112.08908091067684
+    },
+    {
+      "survey_id": "P200350",
+      "x_km": 13548.08642991175,
+      "y_km": -3182.7144975999995,
+      "nearest_train_or_calibration_km": 42.36721341485244
+    },
+    {
+      "survey_id": "P196982",
+      "x_km": 13542.287665762093,
+      "y_km": -3119.5825878799997,
+      "nearest_train_or_calibration_km": 81.42194838015371
+    },
+    {
+      "survey_id": "P201569",
+      "x_km": 11692.685094850598,
+      "y_km": -3563.00654952,
+      "nearest_train_or_calibration_km": 24.174983872292312
+    },
+    {
+      "survey_id": "P199737",
+      "x_km": 14602.730858444631,
+      "y_km": -4146.747144759999,
+      "nearest_train_or_calibration_km": 68.59104366085518
+    },
+    {
+      "survey_id": "P198462",
+      "x_km": 14204.551306715777,
+      "y_km": -4129.6232344400005,
+      "nearest_train_or_calibration_km": 22.723959301221072
+    },
+    {
+      "survey_id": "P199472",
+      "x_km": 13955.880210725389,
+      "y_km": -3623.7300510399996,
+      "nearest_train_or_calibration_km": 94.75135995053175
+    },
+    {
+      "survey_id": "P196691",
+      "x_km": 14349.16608413496,
+      "y_km": -1178.3060586,
+      "nearest_train_or_calibration_km": 638.1427627922806
+    },
+    {
+      "survey_id": "P199598",
+      "x_km": 14234.249340940365,
+      "y_km": -2353.65556932,
+      "nearest_train_or_calibration_km": 78.62279083243135
+    },
+    {
+      "survey_id": "P199344",
+      "x_km": 14029.95691057167,
+      "y_km": -2200.55338844,
+      "nearest_train_or_calibration_km": 65.67436663721377
+    },
+    {
+      "survey_id": "P197721",
+      "x_km": 13801.923305044573,
+      "y_km": -3409.1621981999997,
+      "nearest_train_or_calibration_km": 57.84304315439015
+    },
+    {
+      "survey_id": "P199445",
+      "x_km": 14227.182689862797,
+      "y_km": -2339.30553076,
+      "nearest_train_or_calibration_km": 64.01628543064956
+    },
+    {
+      "survey_id": "P195207",
+      "x_km": 14814.509138600646,
+      "y_km": -4236.391137,
+      "nearest_train_or_calibration_km": 26.08917191172345
+    },
+    {
+      "survey_id": "P198076",
+      "x_km": 13856.723422104064,
+      "y_km": -3422.0836672,
+      "nearest_train_or_calibration_km": 80.58432629645816
+    },
+    {
+      "survey_id": "P198553",
+      "x_km": 13864.211693255773,
+      "y_km": -3283.27330452,
+      "nearest_train_or_calibration_km": 88.57530739016799
+    },
+    {
+      "survey_id": "P196815",
+      "x_km": 13348.825796522658,
+      "y_km": -2651.7971348,
+      "nearest_train_or_calibration_km": 187.16291282430598
+    },
+    {
+      "survey_id": "P199746",
+      "x_km": 14139.413880630997,
+      "y_km": -2166.12266904,
+      "nearest_train_or_calibration_km": 136.73486015529974
+    },
+    {
+      "survey_id": "P195050",
+      "x_km": 14216.624027776325,
+      "y_km": -4151.85049884,
+      "nearest_train_or_calibration_km": 45.882535172638754
+    },
+    {
+      "survey_id": "P197490",
+      "x_km": 15028.220071099395,
+      "y_km": -3932.0160967999996,
+      "nearest_train_or_calibration_km": 59.795721296770424
+    },
+    {
+      "survey_id": "P198943",
+      "x_km": 14591.023965187109,
+      "y_km": -4064.9055713199996,
+      "nearest_train_or_calibration_km": 42.744414086880795
+    },
+    {
+      "survey_id": "P195005",
+      "x_km": 11555.761478740844,
+      "y_km": -2577.65656764,
+      "nearest_train_or_calibration_km": 172.7032102004669
+    },
+    {
+      "survey_id": "P198022",
+      "x_km": 13874.0310320823,
+      "y_km": -3428.83400068,
+      "nearest_train_or_calibration_km": 69.65765298324204
+    },
+    {
+      "survey_id": "P195303",
+      "x_km": 14833.257359499841,
+      "y_km": -4241.77100996,
+      "nearest_train_or_calibration_km": 44.85662450485374
+    },
+    {
+      "survey_id": "P199373",
+      "x_km": 13693.70385396812,
+      "y_km": -3733.8136198,
+      "nearest_train_or_calibration_km": 108.26188288786878
+    },
+    {
+      "survey_id": "P198481",
+      "x_km": 13788.256216424405,
+      "y_km": -3435.7946176399996,
+      "nearest_train_or_calibration_km": 83.188322529449
+    },
+    {
+      "survey_id": "P197979",
+      "x_km": 13843.393912035719,
+      "y_km": -3499.0664565999996,
+      "nearest_train_or_calibration_km": 46.71277974709618
+    },
+    {
+      "survey_id": "P199523",
+      "x_km": 14705.117242709262,
+      "y_km": -3721.5752103199998,
+      "nearest_train_or_calibration_km": 157.55324022893447
+    },
+    {
+      "survey_id": "P196554",
+      "x_km": 14226.555455595999,
+      "y_km": -3742.2128251199993,
+      "nearest_train_or_calibration_km": 149.35904020234955
+    },
+    {
+      "survey_id": "P198554",
+      "x_km": 13850.545109086515,
+      "y_km": -3291.96183052,
+      "nearest_train_or_calibration_km": 72.54449554738132
+    },
+    {
+      "survey_id": "P197781",
+      "x_km": 13724.31615502972,
+      "y_km": -3477.05303792,
+      "nearest_train_or_calibration_km": 140.504665622579
+    },
+    {
+      "survey_id": "P195951",
+      "x_km": 13984.942838578365,
+      "y_km": -3464.94954828,
+      "nearest_train_or_calibration_km": 75.56681835472827
+    },
+    {
+      "survey_id": "P197614",
+      "x_km": 14813.952123901117,
+      "y_km": -2632.75562616,
+      "nearest_train_or_calibration_km": 119.89068475951606
+    },
+    {
+      "survey_id": "P197811",
+      "x_km": 13725.437650302312,
+      "y_km": -1813.7579107999998,
+      "nearest_train_or_calibration_km": 394.2245124382436
+    },
+    {
+      "survey_id": "P196716",
+      "x_km": 14125.903474464796,
+      "y_km": -2193.6351844,
+      "nearest_train_or_calibration_km": 107.95494005058795
+    },
+    {
+      "survey_id": "P199141",
+      "x_km": 14591.309988855497,
+      "y_km": -4097.453535559999,
+      "nearest_train_or_calibration_km": 53.344950983767234
+    },
+    {
+      "survey_id": "P197111",
+      "x_km": 13546.731777426581,
+      "y_km": -2189.16780148,
+      "nearest_train_or_calibration_km": 30.18908155867085
+    },
+    {
+      "survey_id": "P199842",
+      "x_km": 14894.941112845201,
+      "y_km": -2560.3154719999998,
+      "nearest_train_or_calibration_km": 32.474824668611056
+    },
+    {
+      "survey_id": "P195491",
+      "x_km": 14667.043002833678,
+      "y_km": -4217.3760112,
+      "nearest_train_or_calibration_km": 49.398007743720974
+    },
+    {
+      "survey_id": "P196150",
+      "x_km": 14806.49654116865,
+      "y_km": -4686.46079132,
+      "nearest_train_or_calibration_km": 61.4010883946373
+    },
+    {
+      "survey_id": "P197306",
+      "x_km": 14614.225276977066,
+      "y_km": -4056.72210416,
+      "nearest_train_or_calibration_km": 66.57085998877692
+    },
+    {
+      "survey_id": "P199259",
+      "x_km": 13744.501758364018,
+      "y_km": -3730.6859730799997,
+      "nearest_train_or_calibration_km": 126.29745121340586
+    },
+    {
+      "survey_id": "P198942",
+      "x_km": 14433.72527397966,
+      "y_km": -4066.7876585599993,
+      "nearest_train_or_calibration_km": 104.12111598367656
+    },
+    {
+      "survey_id": "P198741",
+      "x_km": 14355.9616432912,
+      "y_km": -3823.2403153999994,
+      "nearest_train_or_calibration_km": 280.6569831636783
+    },
+    {
+      "survey_id": "P199960",
+      "x_km": 12381.993862670752,
+      "y_km": -3493.2649034799997,
+      "nearest_train_or_calibration_km": 121.1693798489136
+    },
+    {
+      "survey_id": "P198155",
+      "x_km": 13729.05526958887,
+      "y_km": -3377.97567756,
+      "nearest_train_or_calibration_km": 64.38512010989227
+    },
+    {
+      "survey_id": "P197609",
+      "x_km": 15036.610804936723,
+      "y_km": -3920.6468738799995,
+      "nearest_train_or_calibration_km": 47.934217266764605
+    },
+    {
+      "survey_id": "P199071",
+      "x_km": 13073.792196642984,
+      "y_km": -3456.2221716,
+      "nearest_train_or_calibration_km": 364.115867649585
+    },
+    {
+      "survey_id": "P198152",
+      "x_km": 13883.196602523938,
+      "y_km": -3655.01419932,
+      "nearest_train_or_calibration_km": 105.23893115454754
+    },
+    {
+      "survey_id": "P198153",
+      "x_km": 13700.1591105376,
+      "y_km": -3459.0763050799997,
+      "nearest_train_or_calibration_km": 138.6079602361291
+    },
+    {
+      "survey_id": "P198730",
+      "x_km": 15106.452034016656,
+      "y_km": -3330.1513810399997,
+      "nearest_train_or_calibration_km": 458.56592348690646
+    },
+    {
+      "survey_id": "P199865",
+      "x_km": 12310.019008003845,
+      "y_km": -3480.84348392,
+      "nearest_train_or_calibration_km": 118.91328407486893
+    },
+    {
+      "survey_id": "P199631",
+      "x_km": 14249.777046312709,
+      "y_km": -4038.20836364,
+      "nearest_train_or_calibration_km": 63.99113369088284
+    },
+    {
+      "survey_id": "P199642",
+      "x_km": 14168.761321470169,
+      "y_km": -2221.62181164,
+      "nearest_train_or_calibration_km": 79.52792435426079
+    },
+    {
+      "survey_id": "P200382",
+      "x_km": 13684.285150057704,
+      "y_km": -2621.6386543599997,
+      "nearest_train_or_calibration_km": 438.1636613846579
+    },
+    {
+      "survey_id": "P198120",
+      "x_km": 13827.616402570631,
+      "y_km": -3380.73953052,
+      "nearest_train_or_calibration_km": 40.17269652815597
+    },
+    {
+      "survey_id": "P195944",
+      "x_km": 15003.505709237194,
+      "y_km": -2579.7413686,
+      "nearest_train_or_calibration_km": 125.82321225440752
+    },
+    {
+      "survey_id": "P198054",
+      "x_km": 13611.63705520062,
+      "y_km": -3368.4690608799997,
+      "nearest_train_or_calibration_km": 65.87403332585868
+    },
+    {
+      "survey_id": "P197876",
+      "x_km": 13562.447138539032,
+      "y_km": -3322.1256543199997,
+      "nearest_train_or_calibration_km": 51.91217241209193
+    },
+    {
+      "survey_id": "P196956",
+      "x_km": 13903.134116898602,
+      "y_km": -3632.40989408,
+      "nearest_train_or_calibration_km": 82.98229716889897
+    },
+    {
+      "survey_id": "P199604",
+      "x_km": 14698.473220607666,
+      "y_km": -3508.09885008,
+      "nearest_train_or_calibration_km": 299.81096211728635
+    },
+    {
+      "survey_id": "P197922",
+      "x_km": 13852.893227202236,
+      "y_km": -3470.4524298399997,
+      "nearest_train_or_calibration_km": 64.05798210109337
+    },
+    {
+      "survey_id": "P200461",
+      "x_km": 12335.293613051426,
+      "y_km": -3108.1391145199996,
+      "nearest_train_or_calibration_km": 175.24587918106153
+    },
+    {
+      "survey_id": "P199211",
+      "x_km": 13564.258823552522,
+      "y_km": -2195.30175612,
+      "nearest_train_or_calibration_km": 48.70282752047731
+    },
+    {
+      "survey_id": "P199392",
+      "x_km": 12668.570409260814,
+      "y_km": -2025.8085958,
+      "nearest_train_or_calibration_km": 336.5433525266341
+    },
+    {
+      "survey_id": "P199306",
+      "x_km": 13107.31800440501,
+      "y_km": -3207.80135016,
+      "nearest_train_or_calibration_km": 242.12681936006035
+    },
+    {
+      "survey_id": "P200532",
+      "x_km": 14583.046174868197,
+      "y_km": -4042.6643919199996,
+      "nearest_train_or_calibration_km": 41.81143946790362
+    },
+    {
+      "survey_id": "P199751",
+      "x_km": 13904.199315449163,
+      "y_km": -3747.74843476,
+      "nearest_train_or_calibration_km": 103.81732685277775
+    },
+    {
+      "survey_id": "P200381",
+      "x_km": 13116.611402708324,
+      "y_km": -2258.7227638799995,
+      "nearest_train_or_calibration_km": 382.90910788097415
+    },
+    {
+      "survey_id": "P200587",
+      "x_km": 13054.549412067445,
+      "y_km": -2245.8208872,
+      "nearest_train_or_calibration_km": 440.35266374201245
+    },
+    {
+      "survey_id": "P199107",
+      "x_km": 12296.319331854611,
+      "y_km": -3511.79656652,
+      "nearest_train_or_calibration_km": 134.45540433945277
+    },
+    {
+      "survey_id": "P199353",
+      "x_km": 14017.924242913714,
+      "y_km": -3696.5887684,
+      "nearest_train_or_calibration_km": 126.47661909043615
+    },
+    {
+      "survey_id": "P195256",
+      "x_km": 14098.731932199213,
+      "y_km": -3935.8676574799997,
+      "nearest_train_or_calibration_km": 95.41569281147714
+    },
+    {
+      "survey_id": "P198113",
+      "x_km": 14537.660726111812,
+      "y_km": -2964.8074900399997,
+      "nearest_train_or_calibration_km": 196.44079243508506
+    },
+    {
+      "survey_id": "P199545",
+      "x_km": 14052.0674985948,
+      "y_km": -2323.4993152800002,
+      "nearest_train_or_calibration_km": 58.00862953203735
+    },
+    {
+      "survey_id": "P200245",
+      "x_km": 14137.180575543363,
+      "y_km": -2152.6761036,
+      "nearest_train_or_calibration_km": 145.28076488500713
+    },
+    {
+      "survey_id": "P196950",
+      "x_km": 14848.494097584835,
+      "y_km": -4723.29524348,
+      "nearest_train_or_calibration_km": 84.0145472104238
+    },
+    {
+      "survey_id": "P198180",
+      "x_km": 13495.676703954594,
+      "y_km": -3117.6612046799996,
+      "nearest_train_or_calibration_km": 85.71037996464692
+    },
+    {
+      "survey_id": "P199854",
+      "x_km": 13951.688324518032,
+      "y_km": -3480.71991872,
+      "nearest_train_or_calibration_km": 62.993853600863055
+    },
+    {
+      "survey_id": "P194905",
+      "x_km": 14291.398080566485,
+      "y_km": -4044.0911803599993,
+      "nearest_train_or_calibration_km": 93.97184035451674
+    },
+    {
+      "survey_id": "P198591",
+      "x_km": 14773.102294205066,
+      "y_km": -4583.224738399999,
+      "nearest_train_or_calibration_km": 73.58719650075611
+    },
+    {
+      "survey_id": "P199380",
+      "x_km": 13055.033483164772,
+      "y_km": -2221.2609122,
+      "nearest_train_or_calibration_km": 435.65672494658253
+    },
+    {
+      "survey_id": "P197722",
+      "x_km": 13797.594813529635,
+      "y_km": -3378.2385040799995,
+      "nearest_train_or_calibration_km": 26.799742018980687
+    },
+    {
+      "survey_id": "P199456",
+      "x_km": 13734.803487756915,
+      "y_km": -3072.6091101199995,
+      "nearest_train_or_calibration_km": 56.837141731234816
+    },
+    {
+      "survey_id": "P199535",
+      "x_km": 14506.816579410017,
+      "y_km": -4156.60831564,
+      "nearest_train_or_calibration_km": 80.79032090754416
+    },
+    {
+      "survey_id": "P201549",
+      "x_km": 15260.577426302832,
+      "y_km": -3025.8278819999996,
+      "nearest_train_or_calibration_km": 621.4917814511703
+    },
+    {
+      "survey_id": "P199070",
+      "x_km": 13294.561406334118,
+      "y_km": -3504.4158278799996,
+      "nearest_train_or_calibration_km": 193.66082454863687
+    },
+    {
+      "survey_id": "P198077",
+      "x_km": 13759.011380901193,
+      "y_km": -3430.6964955999997,
+      "nearest_train_or_calibration_km": 83.90213760803157
+    },
+    {
+      "survey_id": "P196312",
+      "x_km": 15196.2905044595,
+      "y_km": -3025.1671978,
+      "nearest_train_or_calibration_km": 584.6438360318344
+    },
+    {
+      "survey_id": "P199301",
+      "x_km": 13182.834911611515,
+      "y_km": -2329.0811227199997,
+      "nearest_train_or_calibration_km": 348.0623816037647
+    },
+    {
+      "survey_id": "P197563",
+      "x_km": 14046.884669011464,
+      "y_km": -3907.10301476,
+      "nearest_train_or_calibration_km": 57.09562371529656
+    },
+    {
+      "survey_id": "P197812",
+      "x_km": 14485.065967559305,
+      "y_km": -2118.2769990799998,
+      "nearest_train_or_calibration_km": 106.62725668646642
+    },
+    {
+      "survey_id": "P198049",
+      "x_km": 14030.915569089138,
+      "y_km": -2078.1694049599996,
+      "nearest_train_or_calibration_km": 186.9159348857089
+    },
+    {
+      "survey_id": "P198029",
+      "x_km": 13819.142636112814,
+      "y_km": -3458.2799217999996,
+      "nearest_train_or_calibration_km": 94.16446064121985
+    },
+    {
+      "survey_id": "P197035",
+      "x_km": 14242.973315051655,
+      "y_km": -4163.6067814,
+      "nearest_train_or_calibration_km": 53.998655260377326
+    },
+    {
+      "survey_id": "P200345",
+      "x_km": 14200.715966414624,
+      "y_km": -2253.0830700399997,
+      "nearest_train_or_calibration_km": 53.73992579626912
+    },
+    {
+      "survey_id": "P198020",
+      "x_km": 13846.688279176415,
+      "y_km": -3449.01108464,
+      "nearest_train_or_calibration_km": 85.49258173436705
+    },
+    {
+      "survey_id": "P195208",
+      "x_km": 14832.047383536883,
+      "y_km": -4279.3973926,
+      "nearest_train_or_calibration_km": 47.797463420047265
+    },
+    {
+      "survey_id": "P196315",
+      "x_km": 15165.855164778626,
+      "y_km": -2998.07992484,
+      "nearest_train_or_calibration_km": 545.6993107541682
+    },
+    {
+      "survey_id": "P197924",
+      "x_km": 13839.289901177626,
+      "y_km": -3431.5583350399997,
+      "nearest_train_or_calibration_km": 89.66278810617848
+    },
+    {
+      "survey_id": "P200458",
+      "x_km": 14181.376529043913,
+      "y_km": -4137.66298748,
+      "nearest_train_or_calibration_km": 36.955243354058055
+    },
+    {
+      "survey_id": "P199242",
+      "x_km": 14389.73160529573,
+      "y_km": -1890.2014661199996,
+      "nearest_train_or_calibration_km": 273.90018741762907
+    },
+    {
+      "survey_id": "P199178",
+      "x_km": 13723.974944431311,
+      "y_km": -3729.0569161999993,
+      "nearest_train_or_calibration_km": 119.7741353446194
+    },
+    {
+      "survey_id": "P197785",
+      "x_km": 13711.652621058387,
+      "y_km": -3311.2412299999996,
+      "nearest_train_or_calibration_km": 83.3572370287792
+    },
+    {
+      "survey_id": "P199254",
+      "x_km": 14199.585996366672,
+      "y_km": -3604.34834848,
+      "nearest_train_or_calibration_km": 12.531644973685216
+    },
+    {
+      "survey_id": "P197787",
+      "x_km": 13739.117451085523,
+      "y_km": -3543.3442092399996,
+      "nearest_train_or_calibration_km": 128.29175775503282
+    },
+    {
+      "survey_id": "P198170",
+      "x_km": 14044.079720147787,
+      "y_km": -3893.00979144,
+      "nearest_train_or_calibration_km": 47.094005917595595
+    },
+    {
+      "survey_id": "P199407",
+      "x_km": 14042.406153794622,
+      "y_km": -2050.2383264,
+      "nearest_train_or_calibration_km": 214.36040171742547
+    },
+    {
+      "survey_id": "P200444",
+      "x_km": 14224.69988335297,
+      "y_km": -2374.15770768,
+      "nearest_train_or_calibration_km": 88.0212082115771
+    },
+    {
+      "survey_id": "P199913",
+      "x_km": 12256.507662140119,
+      "y_km": -3429.0612048,
+      "nearest_train_or_calibration_km": 44.52028049169385
+    },
+    {
+      "survey_id": "P198101",
+      "x_km": 15196.700320382251,
+      "y_km": -3641.65758044,
+      "nearest_train_or_calibration_km": 153.06662212794834
+    },
+    {
+      "survey_id": "P196243",
+      "x_km": 12545.286439641493,
+      "y_km": -1899.7347995999999,
+      "nearest_train_or_calibration_km": 234.15291275981755
+    },
+    {
+      "survey_id": "P200363",
+      "x_km": 13566.390633116203,
+      "y_km": -3218.5701129999998,
+      "nearest_train_or_calibration_km": 26.44016597095923
+    },
+    {
+      "survey_id": "P200552",
+      "x_km": 14117.650153056513,
+      "y_km": -3583.4747352799995,
+      "nearest_train_or_calibration_km": 24.61785449462308
+    },
+    {
+      "survey_id": "P200071",
+      "x_km": 14069.589298431234,
+      "y_km": -3858.9404167599996,
+      "nearest_train_or_calibration_km": 14.063170185824498
+    },
+    {
+      "survey_id": "P200221",
+      "x_km": 12530.67148775342,
+      "y_km": -3325.1424263199997,
+      "nearest_train_or_calibration_km": 82.60386090805167
+    },
+    {
+      "survey_id": "P200281",
+      "x_km": 13703.921103675819,
+      "y_km": -1811.57692936,
+      "nearest_train_or_calibration_km": 385.4148823964172
+    },
+    {
+      "survey_id": "P200586",
+      "x_km": 13140.35005561215,
+      "y_km": -1728.22819444,
+      "nearest_train_or_calibration_km": 297.69848064963423
+    },
+    {
+      "survey_id": "P199398",
+      "x_km": 14139.473304948697,
+      "y_km": -2236.03908748,
+      "nearest_train_or_calibration_km": 74.38065727419146
+    },
+    {
+      "survey_id": "P200941",
+      "x_km": 13985.334393378018,
+      "y_km": -2086.24021628,
+      "nearest_train_or_calibration_km": 187.91838184969026
+    },
+    {
+      "survey_id": "P198126",
+      "x_km": 13775.916943500759,
+      "y_km": -3473.2986595999996,
+      "nearest_train_or_calibration_km": 112.6852717146437
+    },
+    {
+      "survey_id": "P198256",
+      "x_km": 13453.502085267502,
+      "y_km": -2823.29305324,
+      "nearest_train_or_calibration_km": 153.5645869670004
+    },
+    {
+      "survey_id": "P199244",
+      "x_km": 14058.691847110742,
+      "y_km": -2080.05972988,
+      "nearest_train_or_calibration_km": 185.07021507226597
+    },
+    {
+      "survey_id": "P196592",
+      "x_km": 14678.476080134935,
+      "y_km": -4182.30876404,
+      "nearest_train_or_calibration_km": 69.34317964971028
+    },
+    {
+      "survey_id": "P200583",
+      "x_km": 13582.879317480223,
+      "y_km": -2176.37490708,
+      "nearest_train_or_calibration_km": 57.18969422098726
+    },
+    {
+      "survey_id": "P200480",
+      "x_km": 13233.349718154328,
+      "y_km": -2560.6972996,
+      "nearest_train_or_calibration_km": 279.9431006848415
+    },
+    {
+      "survey_id": "P198383",
+      "x_km": 13780.423607078616,
+      "y_km": -3391.9444451199997,
+      "nearest_train_or_calibration_km": 40.41090261029178
+    },
+    {
+      "survey_id": "P196948",
+      "x_km": 14554.9956773296,
+      "y_km": -4261.3090058,
+      "nearest_train_or_calibration_km": 43.920602966974016
+    },
+    {
+      "survey_id": "P196210",
+      "x_km": 14879.399888188353,
+      "y_km": -3120.8684451999998,
+      "nearest_train_or_calibration_km": 566.6234769518014
+    },
+    {
+      "survey_id": "P198633",
+      "x_km": 14915.800158150041,
+      "y_km": -2462.60033448,
+      "nearest_train_or_calibration_km": 59.32207742232198
+    },
+    {
+      "survey_id": "P196635",
+      "x_km": 14284.45522174328,
+      "y_km": -4191.33180664,
+      "nearest_train_or_calibration_km": 74.63143897825435
+    },
+    {
+      "survey_id": "P197999",
+      "x_km": 13502.596156255377,
+      "y_km": -2639.9780677599997,
+      "nearest_train_or_calibration_km": 279.3507199225224
+    },
+    {
+      "survey_id": "P198561",
+      "x_km": 13306.6056763631,
+      "y_km": -3411.098053,
+      "nearest_train_or_calibration_km": 129.62614371976682
+    },
+    {
+      "survey_id": "P199760",
+      "x_km": 11965.978036405513,
+      "y_km": -2743.5420693999995,
+      "nearest_train_or_calibration_km": 191.05215035208423
+    },
+    {
+      "survey_id": "P195307",
+      "x_km": 11518.098769921118,
+      "y_km": -2938.8937525199995,
+      "nearest_train_or_calibration_km": 201.80176804798225
+    },
+    {
+      "survey_id": "P198755",
+      "x_km": 13332.20585403075,
+      "y_km": -3543.8934621199996,
+      "nearest_train_or_calibration_km": 203.19690375417068
+    },
+    {
+      "survey_id": "P199163",
+      "x_km": 14894.810863619135,
+      "y_km": -3606.7462926,
+      "nearest_train_or_calibration_km": 139.15480264679726
+    },
+    {
+      "survey_id": "P199743",
+      "x_km": 14214.511690017933,
+      "y_km": -2315.2496127199997,
+      "nearest_train_or_calibration_km": 41.100248270194946
+    },
+    {
+      "survey_id": "P195571",
+      "x_km": 14193.268454896788,
+      "y_km": -4167.74744012,
+      "nearest_train_or_calibration_km": 30.753302537385792
+    },
+    {
+      "survey_id": "P200432",
+      "x_km": 14750.796988129028,
+      "y_km": -4303.369597999999,
+      "nearest_train_or_calibration_km": 37.50402886306095
+    },
+    {
+      "survey_id": "P199590",
+      "x_km": 14892.55616981274,
+      "y_km": -4211.2194586,
+      "nearest_train_or_calibration_km": 107.5842859168911
+    },
+    {
+      "survey_id": "P199655",
+      "x_km": 14110.647466354876,
+      "y_km": -3982.6489969199997,
+      "nearest_train_or_calibration_km": 137.8967297379178
+    },
+    {
+      "survey_id": "P199443",
+      "x_km": 13689.337730414978,
+      "y_km": -3700.25642844,
+      "nearest_train_or_calibration_km": 141.27686751204973
+    },
+    {
+      "survey_id": "P196661",
+      "x_km": 13978.898305943281,
+      "y_km": -3356.1671989999995,
+      "nearest_train_or_calibration_km": 29.303861554326552
+    },
+    {
+      "survey_id": "P196505",
+      "x_km": 13711.2647991955,
+      "y_km": -1998.03013696,
+      "nearest_train_or_calibration_km": 244.10298300053984
+    },
+    {
+      "survey_id": "P198908",
+      "x_km": 14685.2767846905,
+      "y_km": -3496.7050254399996,
+      "nearest_train_or_calibration_km": 316.89781639673316
+    },
+    {
+      "survey_id": "P200390",
+      "x_km": 13407.689871037648,
+      "y_km": -1409.1887479999998,
+      "nearest_train_or_calibration_km": 95.29102157268166
+    },
+    {
+      "survey_id": "P195809",
+      "x_km": 14636.272606855548,
+      "y_km": -4261.904679119999,
+      "nearest_train_or_calibration_km": 48.345534617508065
+    },
+    {
+      "survey_id": "P195051",
+      "x_km": 14220.415682628302,
+      "y_km": -4044.43716292,
+      "nearest_train_or_calibration_km": 43.670659073133066
+    },
+    {
+      "survey_id": "P197451",
+      "x_km": 14936.674942323409,
+      "y_km": -4630.680677039999,
+      "nearest_train_or_calibration_km": 66.6815653113882
+    },
+    {
+      "survey_id": "P200276",
+      "x_km": 13527.15252409123,
+      "y_km": -3358.6472972799997,
+      "nearest_train_or_calibration_km": 21.699956918479256
+    },
+    {
+      "survey_id": "P198441",
+      "x_km": 14596.139601908668,
+      "y_km": -4035.98997868,
+      "nearest_train_or_calibration_km": 56.432138396232276
+    },
+    {
+      "survey_id": "P196918",
+      "x_km": 11574.256868841807,
+      "y_km": -2486.3732770799998,
+      "nearest_train_or_calibration_km": 211.88525840368186
+    },
+    {
+      "survey_id": "P195453",
+      "x_km": 14061.937988744034,
+      "y_km": -3951.3973540799993,
+      "nearest_train_or_calibration_km": 93.85809467316855
+    },
+    {
+      "survey_id": "P197857",
+      "x_km": 14428.233619546609,
+      "y_km": -1391.0001731999998,
+      "nearest_train_or_calibration_km": 413.6580243748212
+    },
+    {
+      "survey_id": "P196499",
+      "x_km": 15051.745139486122,
+      "y_km": -2354.05821376,
+      "nearest_train_or_calibration_km": 229.45976521708775
+    },
+    {
+      "survey_id": "P199738",
+      "x_km": 14623.838497160023,
+      "y_km": -4093.98202136,
+      "nearest_train_or_calibration_km": 80.59459204910891
+    },
+    {
+      "survey_id": "P200884",
+      "x_km": 13406.350553860275,
+      "y_km": -2776.3494092399997,
+      "nearest_train_or_calibration_km": 120.09010852583764
+    },
+    {
+      "survey_id": "P197752",
+      "x_km": 13707.909696164726,
+      "y_km": -3436.96203048,
+      "nearest_train_or_calibration_km": 116.85180505910456
+    },
+    {
+      "survey_id": "P197957",
+      "x_km": 14378.343625906205,
+      "y_km": -1299.54489324,
+      "nearest_train_or_calibration_km": 517.7737278886362
+    },
+    {
+      "survey_id": "P198416",
+      "x_km": 15387.52532380264,
+      "y_km": -3083.274568,
+      "nearest_train_or_calibration_km": 723.6088119841164
+    }
+  ],
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

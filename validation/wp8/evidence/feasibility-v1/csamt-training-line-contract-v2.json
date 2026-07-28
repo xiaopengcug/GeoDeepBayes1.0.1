@@ -1,0 +1,423 @@
+{
+  "schema_version": "wp8-csamt-training-line-contract-v2",
+  "training_manifest_sha256": "c3fb595b2abc2b84340a01e733bbdbe58506efcc101c2c6aff8b52b10507b089",
+  "training_line_count": 9,
+  "records": [
+    {
+      "provider": "big-chino",
+      "path": "big-chino/CH.raw",
+      "sha256": "5ec7154ff49b52222e3d6c33b92d8943732da5dc9a33c5495812168d440915b5",
+      "measurement_blocks": 477,
+      "frequencies_hz": [
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        4.0,
+        25.0
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "big-chino",
+      "path": "big-chino/EW2.raw",
+      "sha256": "9bb0d2beab31b1ebfeeebede8be5a39a09a46c6a6e1ba95915bda10707090410",
+      "measurement_blocks": 1808,
+      "frequencies_hz": [
+        1.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        8,
+        112,
+        208,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        3.8,
+        15.7
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "big-chino",
+      "path": "big-chino/GS6.raw",
+      "sha256": "af6bc27bdc5700217d4fac7b1384e3d62ad26cc6da98c549af239d5093968acd",
+      "measurement_blocks": 348,
+      "frequencies_hz": [
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        16,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        3.0,
+        20.0
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "big-chino",
+      "path": "big-chino/GS8.raw",
+      "sha256": "80274cfa9346303c7611521eb2e0affd29279cb8603fe5d95122bdf6bbc2c359",
+      "measurement_blocks": 1348,
+      "frequencies_hz": [
+        1.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        8,
+        16,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        3.0,
+        30.0
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "big-chino",
+      "path": "big-chino/NS3.raw",
+      "sha256": "a2260f08894772487f0a3eac3459e0273845349bafb26810dafdef98dadeb903",
+      "measurement_blocks": 704,
+      "frequencies_hz": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        3,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        4.0,
+        24.0
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "big-chino",
+      "path": "big-chino/NS4.raw",
+      "sha256": "7e967edb4bdf1a74915073489b1c2f33ad114c88332257bec86103a68365d756",
+      "measurement_blocks": 460,
+      "frequencies_hz": [
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        5.8,
+        24.0
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "big-chino",
+      "path": "big-chino/WC.raw",
+      "sha256": "17144e9a8eeb0b3560509496aceae87d214a2739cd374a0dc330427b769ab340",
+      "measurement_blocks": 810,
+      "frequencies_hz": [
+        1.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        8,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        3.0,
+        28.0
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "hualapai",
+      "path": "hualapai/A2.raw",
+      "sha256": "051e45a264bd6424a717155d69e7ec9d98c7b7c819a84aa6b7ffd04205cae455",
+      "measurement_blocks": 598,
+      "frequencies_hz": [
+        1.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        8,
+        16,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        4.0,
+        13.0
+      ],
+      "transmitter_ids": [
+        "1"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    },
+    {
+      "provider": "hualapai",
+      "path": "hualapai/PT3.raw",
+      "sha256": "4138ab594a0993b197cb56f6309f3a76d88bebc2bb0f38c0e4bec50f26f76436",
+      "measurement_blocks": 1593,
+      "frequencies_hz": [
+        1.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "cycle_counts": [
+        8,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384
+      ],
+      "transmitter_current_range": [
+        5.0,
+        20.0
+      ],
+      "transmitter_ids": [
+        "PT"
+      ],
+      "components": [
+        "Ex",
+        "Hy"
+      ]
+    }
+  ],
+  "frequency_count": 16,
+  "frequency_range_hz": [
+    0.25,
+    8192.0
+  ],
+  "transmitter_current_range": [
+    3.0,
+    30.0
+  ],
+  "components": [
+    "Ex",
+    "Hy"
+  ],
+  "receiver_electric_dipole_length_m": 100,
+  "receiver_channel_contract": "five Ex channels plus one Hy channel",
+  "transmitter_identifier_present": true,
+  "transmitter_current_present": true,
+  "frequency_and_cycle_count_present": true,
+  "exact_transmitter_endpoints_present": false,
+  "transmitter_orientation_present": false,
+  "transmitter_waveform_samples_present": false,
+  "official_report_declared_transmitter_dipole_length_m": 1000,
+  "official_report_declared_source_receiver_distance_km": [
+    5,
+    15
+  ],
+  "formal_finite_source_observation_contract_ready": false,
+  "line_level_test_cluster_upper_bound": 14,
+  "required_test_clusters": 223,
+  "cluster_gate_passed": false,
+  "paired_crps_effect_size_available": false,
+  "power_gate_passed": false,
+  "buffer_response_members_opened": 0,
+  "calibration_response_members_opened": 0,
+  "test_response_members_opened": 0,
+  "test_unseal_count": 0,
+  "conclusion": "Training raw lines provide transmitter IDs/current, frequency, cycle count and Ex/Hy receiver observations. Exact transmitter endpoints, orientation and waveform samples remain absent, and only 14 whole-line test candidates exist."
+}

@@ -1,0 +1,95 @@
+{
+  "schema_version": "wp8-geoscience-australia-aem-multisystem-contract-v1",
+  "inventory_sha256": "3cabb4a5d55e070838a7101b94fa2725b21e8acd3fbc5a99b10b785fda3c41fe",
+  "audit_is_response_blind": true,
+  "systems": [
+    {
+      "system": "VTEM",
+      "transmitter_specification_present": true,
+      "peak_current_present": true,
+      "exact_waveform_present": true,
+      "exact_gate_table_present": true,
+      "receiver_specification_present": true,
+      "coordinates_present": true,
+      "response_components": [
+        "BFx",
+        "BFz",
+        "SFx",
+        "SFz"
+      ],
+      "response_fields_present": true,
+      "per_observation_relative_uncertainty_fields": [],
+      "per_observation_uncertainty_present": false,
+      "contract_ready": false,
+      "schema_members": [
+        "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.des",
+        "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.dfn",
+        "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.ehf",
+        "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.prj"
+      ]
+    },
+    {
+      "system": "SkyTEM",
+      "transmitter_specification_present": true,
+      "lm_hm_current_present": true,
+      "exact_lm_hm_waveforms_present": true,
+      "exact_gate_open_center_close_present": true,
+      "receiver_specification_present": true,
+      "coordinates_present": true,
+      "response_components": [
+        "LM_Z",
+        "HM_Z",
+        "LM_X",
+        "HM_X"
+      ],
+      "response_fields_present": true,
+      "per_observation_relative_uncertainty_fields": [
+        "RUNC_LM_Z",
+        "RUNC_HM_Z",
+        "RUNC_LM_X",
+        "RUNC_HM_X"
+      ],
+      "per_observation_uncertainty_present": true,
+      "contract_ready": true,
+      "schema_members": [
+        "located_data_em/AUS_10031_Olympic_EM.des",
+        "located_data_em/AUS_10031_Olympic_EM.dfn"
+      ]
+    },
+    {
+      "system": "SkyTEM",
+      "transmitter_specification_present": true,
+      "lm_hm_current_present": true,
+      "exact_lm_hm_waveforms_present": true,
+      "exact_gate_open_center_close_present": true,
+      "receiver_specification_present": true,
+      "coordinates_present": true,
+      "response_components": [
+        "LM_Z",
+        "HM_Z",
+        "LM_X",
+        "HM_X"
+      ],
+      "response_fields_present": true,
+      "per_observation_relative_uncertainty_fields": [
+        "RUNC_LM_Z",
+        "RUNC_HM_Z",
+        "RUNC_LM_X",
+        "RUNC_HM_X"
+      ],
+      "per_observation_uncertainty_present": true,
+      "contract_ready": true,
+      "schema_members": [
+        "01_EM/AUS_10021_DalyR_EM.des",
+        "01_EM/AUS_10021_DalyR_EM.dfn"
+      ]
+    }
+  ],
+  "skytem_contract_ready": true,
+  "vtem_contract_ready": false,
+  "response_values_interpreted": 0,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "warning": "SkyTEM has a complete waveform/geometry/gate/relative-uncertainty contract. VTEM lacks a per-observation uncertainty field, so the multi-system formal TEM contract remains incomplete."
+}

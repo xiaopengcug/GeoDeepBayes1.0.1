@@ -1,0 +1,183 @@
+{
+  "schema_version": "wp8-zenodo-vineyard-field-sip-audit-v1",
+  "source": {
+    "record": "https://zenodo.org/records/15731729",
+    "doi": "10.5281/zenodo.15731729",
+    "license": "CC-BY-4.0"
+  },
+  "archive": {
+    "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/SIP_Field_data.complete.7z",
+    "bytes": 326775934,
+    "md5": "ef21c75b57afd66727291d12adf0c7f3",
+    "sha256": "4d832f758689f5fbb7a7746895cea8a175cdc43f12b3b498300096f48eab9aa7"
+  },
+  "raw_data": {
+    "das1_files": [
+      {
+        "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/extracted/SIP_Field_data/ComplexConductivityFieldSurvey_RAWDATA/DAS1_13_07_2023/Row_AA'/Hybrid_setup/Raw_SIP_FieldData_Rg78_20230713_Coaxial+MultiwireSetup.Data",
+        "measurement_rows": 144,
+        "frequencies_hz": [
+          225.0,
+          112.5,
+          75.0,
+          37.5,
+          25.0,
+          15.0,
+          7.5,
+          5.0,
+          2.5,
+          1.666666,
+          1.0,
+          0.5,
+          0.25
+        ],
+        "has_abmn_geometry": true,
+        "has_complex_response": true,
+        "has_repeat_uncertainty": true
+      },
+      {
+        "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/extracted/SIP_Field_data/ComplexConductivityFieldSurvey_RAWDATA/DAS1_13_07_2023/Row_AA'/Multiwire_setup/Raw_SIP_FieldData_Rg78_20230713_MultiwireSetup.Data",
+        "measurement_rows": 144,
+        "frequencies_hz": [
+          225.0,
+          112.5,
+          75.0,
+          37.5,
+          25.0,
+          15.0,
+          7.5,
+          5.0,
+          2.5,
+          1.666666,
+          1.0,
+          0.5,
+          0.25
+        ],
+        "has_abmn_geometry": true,
+        "has_complex_response": true,
+        "has_repeat_uncertainty": true
+      },
+      {
+        "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/extracted/SIP_Field_data/ComplexConductivityFieldSurvey_RAWDATA/DAS1_16_03_2023/Row_AA'/Raw_SIP_FieldData_Rg78_20230316_MultiwireSetup.Data",
+        "measurement_rows": 144,
+        "frequencies_hz": [
+          225.0,
+          112.5,
+          75.0,
+          37.5,
+          25.0,
+          15.0,
+          7.5,
+          5.0,
+          2.5,
+          1.666666,
+          1.0,
+          0.5,
+          0.25
+        ],
+        "has_abmn_geometry": true,
+        "has_complex_response": true,
+        "has_repeat_uncertainty": true
+      },
+      {
+        "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/extracted/SIP_Field_data/ComplexConductivityFieldSurvey_RAWDATA/DAS1_16_03_2023/Row_BB'/Raw_SIP_FieldData_Rg7_20230317_MultiwireSetup.Data",
+        "measurement_rows": 144,
+        "frequencies_hz": [
+          225.0,
+          112.5,
+          75.0,
+          37.5,
+          25.0,
+          15.0,
+          7.5,
+          5.0,
+          2.5,
+          1.666666,
+          1.0,
+          0.5,
+          0.25
+        ],
+        "has_abmn_geometry": true,
+        "has_complex_response": true,
+        "has_repeat_uncertainty": true
+      },
+      {
+        "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/extracted/SIP_Field_data/ComplexConductivityFieldSurvey_RAWDATA/DAS1_30_08_2023/Row_AA'/Hybrid_setup/Raw_SIP_FieldData_Rg78_20230830_Coaxial+MultiwireSetup.Data",
+        "measurement_rows": 144,
+        "frequencies_hz": [
+          225.0,
+          112.5,
+          75.0,
+          37.5,
+          25.0,
+          15.0,
+          7.5,
+          5.0,
+          2.5,
+          1.666666,
+          1.0,
+          0.5,
+          0.25,
+          0.125
+        ],
+        "has_abmn_geometry": true,
+        "has_complex_response": true,
+        "has_repeat_uncertainty": true
+      },
+      {
+        "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/extracted/SIP_Field_data/ComplexConductivityFieldSurvey_RAWDATA/DAS1_30_08_2023/Row_AA'/Multiwire_setup/Raw_SIP_FieldData_Rg78_20230830_MultiwireSetup.Data",
+        "measurement_rows": 144,
+        "frequencies_hz": [
+          225.0,
+          112.5,
+          75.0,
+          37.5,
+          25.0,
+          15.0,
+          7.5,
+          5.0,
+          2.5,
+          1.666666,
+          1.0,
+          0.5,
+          0.25,
+          0.125
+        ],
+        "has_abmn_geometry": true,
+        "has_complex_response": true,
+        "has_repeat_uncertainty": true
+      }
+    ],
+    "psip": {
+      "path": "validation/wp8/data/zenodo-vineyard-sip-15731729/extracted/SIP_Field_data/ComplexConductivityFieldSurvey_RAWDATA/PSIP_22_06_2023/Row_AA'/CoaxialCableSetup/Raw_SIP_FieldData_Rg78_20230622_CoaxialCableSetup.csv",
+      "spectral_rows": 880,
+      "frequencies_hz": [
+        0.25,
+        2.5,
+        25.0,
+        250.0
+      ],
+      "has_magnitude": true,
+      "has_phase": true,
+      "has_repeat_loop": true
+    },
+    "campaign_dates": [
+      "2023-03-16",
+      "2023-03-17",
+      "2023-06-22",
+      "2023-07-13",
+      "2023-08-30"
+    ],
+    "published_profiles": [
+      "AA'",
+      "BB'"
+    ],
+    "independent_spatial_cluster_upper_bound": 2
+  },
+  "gate_assessment": {
+    "observation_pass": true,
+    "clusters_pass": false,
+    "power_pass": false,
+    "reason": "The release provides raw field complex SIP responses, ABMN geometry, and repeat uncertainty fields, but only two independent spatial profiles. Campaigns, frequencies, quadrupoles, and duplicate cable setups are repeated observations, not ten independent spatial clusters; no qualifying prospective power evidence is included."
+  }
+}

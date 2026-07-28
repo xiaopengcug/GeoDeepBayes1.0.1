@@ -1,0 +1,63 @@
+{
+  "schema_version": "wp8-taiwan-eri-metadata-audit-v1",
+  "design_sha256": "46afb2242fbf8b63ab3d93d9a7a7b88ab0e61f85132d85916c175ce813b0d84f",
+  "selection_frozen_before_response_payload_access": true,
+  "doi": "10.17632/nkskkcpdg9.2",
+  "license": "CC-BY-4.0",
+  "declared_profile_count": 265,
+  "public_folder_count": 532,
+  "public_file_count": 4838,
+  "file_extension_counts": {
+    ".cmd": 320,
+    ".crs": 416,
+    ".ini": 7,
+    ".jpg": 446,
+    ".kml": 17,
+    ".kmz": 17,
+    ".lvl": 6,
+    ".png": 33,
+    ".stg": 728,
+    ".trn": 928,
+    ".tx0": 941,
+    ".urf": 941,
+    ".xlsx": 38
+  },
+  "coordinate_workbook_count": 38,
+  "coordinate_rows_parsed": 1679,
+  "exact_unique_profile_centres": 251,
+  "training_correlation_range_m": 64,
+  "effective_spatial_clusters_at_training_range": 246,
+  "required_test_clusters": 223,
+  "cluster_count_gate_possible": true,
+  "cluster_sensitivity": {
+    "1": 251,
+    "10": 250,
+    "32": 250,
+    "64": 246,
+    "100": 245,
+    "250": 231,
+    "500": 193,
+    "1000": 130
+  },
+  "observation_contract_metadata": {
+    "stg_files": 728,
+    "urf_files": 941,
+    "stg_official_fields": [
+      "V/I",
+      "repeat error percent",
+      "output current",
+      "apparent resistivity",
+      "A/B/M/N xyz coordinates"
+    ],
+    "contract_status": "possible_pending_frozen_training_only_header_audit"
+  },
+  "paired_crps_effect_size_available": false,
+  "power_gate_passed": false,
+  "response_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "notes": [
+    "The 251 exact centres are obtained from public coordinate workbooks only; the repository declares 265 profiles.",
+    "At 64 m, 246 response-blind spatial components exceed the 223 cluster count requirement, but paired-CRPS effect size remains unavailable."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "wp8-mendeley-low-cost-sip-raw-audit-v1",
+  "audit_mode": "response_blind_spatial_contract",
+  "doi": "10.17632/5vh6nz62k8.1",
+  "title": "Data for: New Spectral-Induced Polarization Measurement with Low Cost and High Efficiency",
+  "license": "CC0-1.0",
+  "public_api_endpoint": "https://data.mendeley.com/public-api/datasets/5vh6nz62k8/files?folder_id=root&version=1",
+  "public_file_inventory": [
+    {
+      "filename": "800092al.tss",
+      "role": "lawn_test_raw_data",
+      "size_bytes": 4194304,
+      "sha256": "9e0210957abb6430bfc3d0a8e8551894d9db1868fe727e0e719f9e4e28cfa96c"
+    },
+    {
+      "filename": "80099oah.tss",
+      "role": "field_test_raw_data",
+      "size_bytes": 3576640,
+      "sha256": "eb0a854f642bb511250540cb41a89bfe6b99b08df2543c069e20a7aefde6920a"
+    },
+    {
+      "filename": "SIP2_128.b",
+      "role": "amplitude_phase_frequency_table",
+      "size_bytes": 480,
+      "sha256": "9f7b2ecede322082c5b789cebe0a7d63e7208e8e9c16d0feaad955aae849d9cf"
+    }
+  ],
+  "downloaded_file": "validation/wp8/data/mendeley-sip-low-cost/80099oah.tss",
+  "downloaded_sha256_verified": true,
+  "binary_header_observations": {
+    "magic": "SPS",
+    "frequency_hz": 8.0,
+    "declared_filename": "80099oah",
+    "header_bytes": 256
+  },
+  "declared_field_raw_files": 1,
+  "spatial_coordinates_or_line_station_identifiers_present_in_public_metadata": false,
+  "response_blind_independent_cluster_upper_bound": 1,
+  "required_test_clusters": 223,
+  "observation_contract_possible": true,
+  "cluster_gate_passes": false,
+  "power_gate_passes": false,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "decision": "retain_as_public_raw_waveform_format_evidence_only",
+  "reason": "The release is genuinely open raw SIP waveform data, but it declares only one field-test recording and supplies no public spatial identities from which independent field clusters can be established. Time samples and frequency bins are repeated observations within that recording, not independent spatial test clusters."
+}

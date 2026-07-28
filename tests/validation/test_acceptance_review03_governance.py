@@ -205,7 +205,7 @@ def test_wp8_wp9_persistence_plan_is_read_only_and_fail_closed():
     assert counts["scan_failures"] == 0
     assert plan["authorization"]["operations_performed_by_builder"] == []
     assert plan["authorization"]["git_add_commit_push_pr"] == "not-authorized"
-    assert plan["authorization"]["observed_head_matches_frozen_baseline"] is True
+    assert plan["authorization"]["observed_head_contains_frozen_baseline"] is True
     assert plan["authorization"]["observed_staged_required_paths"] == sorted(
         set(plan["required_git"]) & PERSISTENCE._staged_paths()
     )
@@ -327,6 +327,8 @@ def test_persistence_git_probes_fail_closed(monkeypatch):
         PERSISTENCE._staged_paths()
     with pytest.raises(RuntimeError, match="injected git failure"):
         PERSISTENCE._ignore_rule("validation/wp9/validate_wp9.py")
+    with pytest.raises(RuntimeError, match="injected git failure"):
+        PERSISTENCE._git_is_ancestor("0" * 40)
 
     monkeypatch.setattr(
         PERSISTENCE,

@@ -1,0 +1,72 @@
+{
+  "schema_version": "wp8-csamt-consortium-candidate-v1",
+  "status": "candidate_release_manifest_frozen_member_split_pending",
+  "audit_scope": "official metadata, archive structure and station coordinates only",
+  "observation_values_read": false,
+  "instrument_contract": {
+    "transmitter": "GGT-30",
+    "receiver": "GDP32-II",
+    "release_license": "CC0/public domain",
+    "common_products": [
+      "raw",
+      "station metadata",
+      "inversion"
+    ]
+  },
+  "releases": [
+    {
+      "name": "Big Chino",
+      "doi": "10.5066/P9KGKWNL",
+      "sciencebase_station_item": "5bbc0d6ae4b0fc368ead0abe",
+      "line_count": 21,
+      "station_rows": 1159,
+      "unique_station_coordinates": 1159
+    },
+    {
+      "name": "Hualapai Grand Canyon West / Plain Tank",
+      "doi": "10.5066/P90KAJM4",
+      "sciencebase_item": "5d1a9d8fe4b0941bde6029a9",
+      "line_count": 9,
+      "station_rows": 543,
+      "unique_station_coordinates": 543
+    },
+    {
+      "name": "Red Knoll",
+      "doi": "10.5066/P9QF9PFR",
+      "sciencebase_station_item": "5f32150782cee144fb2ead3b",
+      "line_count": 2,
+      "station_rows": 141,
+      "unique_station_coordinates": 141
+    }
+  ],
+  "metadata_totals": {
+    "release_count": 3,
+    "line_count": 32,
+    "station_rows": 1843,
+    "within_release_unique_coordinate_upper_bound": 1843,
+    "cross_release_exact_coordinate_duplicates": 0,
+    "cross_release_unique_coordinate_upper_bound": 1843,
+    "deduplication_scope": "official station tables only; exact projected-coordinate equality within each geographically disjoint release",
+    "independent_cluster_count": null
+  },
+  "counting_guardrails": [
+    "station coordinates are observations, not independent inference clusters",
+    "frequency rows, components and repeated readings never increase cluster count",
+    "cross-release coordinate overlap must be deduplicated before assignment",
+    "spatial correlation length must be estimated from training responses only"
+  ],
+  "split_rule_frozen_before_response_access": {
+    "deduplication": "merge identical coordinates and coordinates within the preregistered tolerance across all releases",
+    "spatial_hash": "deterministic coordinate-cell hash with release provenance retained",
+    "sequence": [
+      "freeze deduplicated station candidates",
+      "assign training candidate region outcome-blind",
+      "estimate response correlation length from training only",
+      "merge correlated stations into spatial clusters",
+      "insert buffers at least one correlation length",
+      "freeze calibration/test cluster membership before endpoint access"
+    ],
+    "member_assignments_frozen": false
+  },
+  "gate_effect": "none until correlation-adjusted cluster membership, common observation/error contract and sealed split are protected"
+}

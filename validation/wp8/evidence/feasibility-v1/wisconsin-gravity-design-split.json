@@ -1,0 +1,100 @@
+{
+  "schema_version": "wp8-wisconsin-gravity-design-split-v1",
+  "created_before_response_interpretation": true,
+  "source": {
+    "archive_path": "validation/wp8/data/wisconsin-gravity-v1/wi_gravity_state.zip",
+    "archive_sha256": "ad3a0552da8bc24592740e93473133dc4c2a3e7a31ef0e8d35ef592201f07266",
+    "member": "wi_gravity_state.asc"
+  },
+  "format_contract": {
+    "fortran": "(A8,8X,8E16.8)",
+    "parsed_design_fields": [
+      "station_id",
+      "longitude",
+      "latitude",
+      "elevation_m"
+    ],
+    "response_fields_values_parsed": false,
+    "unparsed_response_fields": [
+      "observed_gravity",
+      "inner_terrain_correction",
+      "outer_terrain_correction",
+      "free_air_anomaly",
+      "complete_bouguer_anomaly"
+    ]
+  },
+  "projection_for_split_only": {
+    "x_km": "longitude * 111.32 * cos(44.5 degrees)",
+    "y_km": "latitude * 110.57"
+  },
+  "split_rule": {
+    "cell_size_km": 5.0,
+    "period_cells": 12,
+    "train_stripes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "buffer_stripes": [
+      0,
+      6,
+      9
+    ],
+    "calibration_stripes": [
+      7,
+      8
+    ],
+    "test_stripes": [
+      10,
+      11
+    ],
+    "heldout_separation": "at least one explicit 5-km buffer stripe from training"
+  },
+  "design_bounds": {
+    "longitude": [
+      -92.875,
+      -86.847832
+    ],
+    "latitude": [
+      42.496334,
+      47.288166
+    ],
+    "elevation_m": [
+      175.8696,
+      565.7088
+    ]
+  },
+  "design_sha256": "1cffe69fd36f7f9217e655b9ad90e4348bb63046789185f32ab9f45bb8b6a8ed",
+  "counts": {
+    "train": {
+      "stations": 17168,
+      "unique_station_ids": 17001,
+      "spatial_cells_5km": 2507
+    },
+    "buffer": {
+      "stations": 10117,
+      "unique_station_ids": 10077,
+      "spatial_cells_5km": 1497
+    },
+    "calibration": {
+      "stations": 6756,
+      "unique_station_ids": 6723,
+      "spatial_cells_5km": 1030
+    },
+    "test": {
+      "stations": 6447,
+      "unique_station_ids": 6409,
+      "spatial_cells_5km": 957
+    }
+  },
+  "cell_overlap_counts": {
+    "train:buffer": 0,
+    "train:calibration": 0,
+    "train:test": 0,
+    "buffer:calibration": 0,
+    "buffer:test": 0,
+    "calibration:test": 0
+  }
+}

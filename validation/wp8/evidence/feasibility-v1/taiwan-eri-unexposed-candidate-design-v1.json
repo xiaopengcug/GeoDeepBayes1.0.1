@@ -1,0 +1,23 @@
+{
+  "schema_version": "wp8-taiwan-eri-unexposed-candidate-design-v1",
+  "selection_frozen_before_response_payload_access": true,
+  "selection_date": "2026-07-25",
+  "license": "CC-BY-4.0",
+  "candidate": {
+    "doi": "10.17632/nkskkcpdg9.2",
+    "name": "Electrical resistivity imaging data for hydrogeological and geological hazard investigations in Taiwan",
+    "declared_profile_count": 265,
+    "declared_total_profile_length_m": 59905,
+    "declared_acquisition_years": "2010-2022",
+    "declared_regions_or_campaign_groups": 13
+  },
+  "staged_protocol": {
+    "stage_1": "Inspect only official landing-page metadata, API metadata, filenames, folder paths, file sizes, format documentation, acquisition summaries, and reuse license.",
+    "stage_2_condition": "Before any electrical-response payload access, metadata must establish raw or minimally processed apparent-resistivity observations, electrode geometry sufficient to reconstruct ABMN configurations, line or campaign identity, coordinates or auditable location grouping, and observation-level uncertainty or a defensible likelihood contract.",
+    "stage_2_role_rule": "Freeze a group-aware spatial or campaign split and verify a correlation-adjusted upper bound of at least 223 effective test clusters before opening response values.",
+    "abort_condition": "Do not access response values when metadata proves the files are inversion products only, the observation contract is incomplete, or the response-blind grouping cannot possibly provide 223 effective test clusters."
+  },
+  "response_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

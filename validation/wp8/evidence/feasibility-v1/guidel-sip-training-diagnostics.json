@@ -1,0 +1,573 @@
+{
+  "schema_version": "wp8-guidel-sip-training-diagnostics-v1",
+  "doi": "10.26169/hplus.guidel_spectral_induced_polarization",
+  "license": "CC BY-NC-SA 4.0",
+  "site": "Guidel wetland, France",
+  "partition": "training-only",
+  "raw_file_count": 30,
+  "sample_rate_hz": 2000,
+  "rows_per_file": [
+    120000
+  ],
+  "channel_count": 8,
+  "channel_names": [
+    "Courant_I1",
+    "M1_N1",
+    "M2_N2",
+    "M3_N3",
+    "M4_N4",
+    "M5_N5",
+    "M6_N6",
+    "M7_N7"
+  ],
+  "total_time_sample_rows": 3600000,
+  "total_scalar_values": 28800000,
+  "finite_scalar_values": 28800000,
+  "nonfinite_scalar_values": 0,
+  "nominal_duration_minutes": 30.0,
+  "long_term_monitoring_csv_bytes": 0,
+  "long_term_monitoring_rows_available": 0,
+  "header_time_monotonic": true,
+  "processing_contract": {
+    "current_injection_dipoles": 8,
+    "potential_dipoles": 7,
+    "abmn_quadrupoles": 56,
+    "selected_frequency_count": 30,
+    "complex_observations_after_processing": 1680,
+    "electrode_ids": {
+      "A": [
+        101,
+        108
+      ],
+      "B": [
+        201,
+        208
+      ],
+      "M": [
+        111,
+        117
+      ],
+      "N": [
+        211,
+        217
+      ]
+    },
+    "amplifier_phase_correction_present": true
+  },
+  "geometry_contract": {
+    "coordinate_system": "local Cartesian; x spans the two vertical rods, y=0, z=0 at ground surface and positive upward",
+    "rod_separation_m": 0.5,
+    "electrode_ring_spacing_m": 0.05,
+    "electrode_depth_range_m": [
+      0.23,
+      0.93
+    ],
+    "current_dipole_depth_spacing_m": 0.1,
+    "potential_dipole_depth_spacing_m": 0.1,
+    "electrodes": [
+      {
+        "id": 101,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.23
+        ]
+      },
+      {
+        "id": 201,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.23
+        ]
+      },
+      {
+        "id": 102,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.33
+        ]
+      },
+      {
+        "id": 202,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.33
+        ]
+      },
+      {
+        "id": 103,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.43000000000000005
+        ]
+      },
+      {
+        "id": 203,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.43000000000000005
+        ]
+      },
+      {
+        "id": 104,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.53
+        ]
+      },
+      {
+        "id": 204,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.53
+        ]
+      },
+      {
+        "id": 105,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.63
+        ]
+      },
+      {
+        "id": 205,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.63
+        ]
+      },
+      {
+        "id": 106,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.73
+        ]
+      },
+      {
+        "id": 206,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.73
+        ]
+      },
+      {
+        "id": 107,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.8300000000000001
+        ]
+      },
+      {
+        "id": 207,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.8300000000000001
+        ]
+      },
+      {
+        "id": 108,
+        "role": "A",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.93
+        ]
+      },
+      {
+        "id": 208,
+        "role": "B",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.93
+        ]
+      },
+      {
+        "id": 111,
+        "role": "M",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.28
+        ]
+      },
+      {
+        "id": 211,
+        "role": "N",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.28
+        ]
+      },
+      {
+        "id": 112,
+        "role": "M",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.38
+        ]
+      },
+      {
+        "id": 212,
+        "role": "N",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.38
+        ]
+      },
+      {
+        "id": 113,
+        "role": "M",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.48000000000000004
+        ]
+      },
+      {
+        "id": 213,
+        "role": "N",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.48000000000000004
+        ]
+      },
+      {
+        "id": 114,
+        "role": "M",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.5800000000000001
+        ]
+      },
+      {
+        "id": 214,
+        "role": "N",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.5800000000000001
+        ]
+      },
+      {
+        "id": 115,
+        "role": "M",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.68
+        ]
+      },
+      {
+        "id": 215,
+        "role": "N",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.68
+        ]
+      },
+      {
+        "id": 116,
+        "role": "M",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.78
+        ]
+      },
+      {
+        "id": 216,
+        "role": "N",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.78
+        ]
+      },
+      {
+        "id": 117,
+        "role": "M",
+        "xyz_m": [
+          0.0,
+          0.0,
+          -0.8800000000000001
+        ]
+      },
+      {
+        "id": 217,
+        "role": "N",
+        "xyz_m": [
+          0.5,
+          0.0,
+          -0.8800000000000001
+        ]
+      }
+    ],
+    "source": "10.1093/gji/ggag060 section 2.2-2.3 plus supplied Matlab ID arrays",
+    "relative_geometry_reconstructable_without_interpolation": true
+  },
+  "contract_gaps": {
+    "absolute_geographic_coordinates": "absent_but_not_required_for_local_forward_geometry",
+    "explicit_observation_uncertainty": "absent",
+    "normal_reciprocal_or_repeat_acquisitions": "absent",
+    "reusable_data_license": "CC BY-NC-SA 4.0",
+    "independent_field_sites": 1
+  },
+  "interpretation": {
+    "raw_waveform_contract": "passed_training_only",
+    "frequency_to_quadrupole_key": "passed_training_only",
+    "field_geometry_contract": "passed_training_only",
+    "uncertainty_contract": "failed",
+    "formal_cluster_gate": "failed",
+    "formal_power_gate": "failed"
+  },
+  "files": [
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-05-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-06-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-07-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-08-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-09-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-10-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-11-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-12-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-13-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-14-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-15-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-16-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-17-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-18-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-19-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-20-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-21-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-22-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-23-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-24-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-25-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-26-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-27-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-28-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-29-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-30-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-31-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-32-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-33-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    },
+    {
+      "path": "SQWA_Data_2025-09-18_12-05/SQWASIP_Data_2025-09-18_12-34-00.mat",
+      "rows": 120000,
+      "channels": 8,
+      "finite_values": 960000,
+      "sample_rate_hz": 2000
+    }
+  ],
+  "buffer_values_read": 0,
+  "calibration_values_read": 0,
+  "test_values_read": 0,
+  "test_unseal_count": 0
+}

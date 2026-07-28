@@ -1,0 +1,9 @@
+{
+  "intact_package_accepted": true,
+  "tampered_package_rejected": true,
+  "active_pointer_drift_rejected": true,
+  "tampered_final_audit_rejected": true,
+  "tampered_mt_raw_rejected": true,
+  "tampered_mt_split_rejected": true,
+  "tampered_mt_diagnostics_rejected": true
+}

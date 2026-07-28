@@ -1,0 +1,51 @@
+{
+  "schema_version": "wp8-csamt-full-waveform-current-recorder-access-audit-v1",
+  "source": {
+    "title": "A full waveform current recorder for electrical prospecting",
+    "authors": ["Kai Chen", "Sheng Jin"],
+    "journal": "Geoscientific Instrumentation, Methods and Data Systems",
+    "year": 2019,
+    "doi": "10.5194/gi-8-139-2019",
+    "url": "https://gi.copernicus.org/articles/8/139/2019/gi-8-139-2019.html",
+    "article_open_access": true
+  },
+  "field_experiment": {
+    "location": "Linxi County, northern China",
+    "receiver_count": 15,
+    "receiver_model": "EMR6",
+    "transmitter_count": 2,
+    "transmitter_model": "EMT48",
+    "csamt_frequency_count": 41,
+    "minimum_frequency_hz": 0.9375,
+    "maximum_frequency_hz": 9600.0,
+    "minimum_current_peak_a": 2.0,
+    "maximum_current_peak_a": 30.0,
+    "transmitter_receiver_distance_km_approx": 6.0,
+    "transmitter_dipole_length_m": 1300.0,
+    "continuous_current_waveform_recorded": true,
+    "gps_time_stamped": true,
+    "current_sample_rate_hz_options": [2400, 24000],
+    "current_waveform_figure_only_in_article": true
+  },
+  "access_audit": {
+    "data_availability_statement": "The raw data of the field experiment are available upon request.",
+    "anonymous_raw_data_download": false,
+    "raw_current_samples_public": false,
+    "raw_receiver_samples_public": false,
+    "receiver_coordinates_public": false,
+    "transmitter_endpoint_coordinates_public": false,
+    "direct_observation_uncertainty_public": false
+  },
+  "gate_assessment": {
+    "source_contract_conceptually_demonstrated": true,
+    "source_contract_byte_auditable": false,
+    "independent_cluster_upper_bound": 15,
+    "cluster_threshold": 223,
+    "observation_contract_pass": false,
+    "clusters_pass": false,
+    "power_pass": false,
+    "formal_clusters_added": 0,
+    "formal_gate_changed": false,
+    "reason": "This is the closest located match to the sampled-transmitter-waveform requirement, but the raw field files are request-only, receiver and transmitter endpoint coordinates are not published, and only 15 receivers were deployed."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "wp8-east-river-aem-contract-readiness-v1",
+  "passed": true,
+  "candidate_status": "contract_ready_not_yet_selected",
+  "doi": "10.5066/P949ZCZ8",
+  "raw_manifest_sha256": "97dbd139ae1428c21382bc834e17fdbfd4fc5adc997974c063c50d9c0def4ded",
+  "report": {
+    "path": "EastRiver2017_Geotech_DataReport.pdf",
+    "sha256": "eedeb5e45f0b0ad84fd8002d5f5b0e9969550a5c88d4933cbb6495f18e69c969",
+    "pages_checked": [
+      11,
+      12,
+      14,
+      15,
+      16,
+      18
+    ]
+  },
+  "survey_contract": {
+    "system": "VTEM ET serial 40 full receiver-waveform TDEM",
+    "geometry": "concentric-coplanar, Z-oriented transmitter and receiver",
+    "transmitter_loop_diameter_m": 18.82,
+    "transmitter_turns": 2,
+    "effective_transmitter_area_m2": 556.0,
+    "base_frequency_hz": 30.0,
+    "peak_current_a": 200.58,
+    "pulse_width_ms": 7.1,
+    "waveform": "bipolar trapezoid",
+    "peak_dipole_moment_nia": 111538,
+    "receiver_coil_diameter_m": 1.2,
+    "receiver_turns": 100,
+    "effective_receiver_area_m2": 113.04,
+    "sampling_seconds": 0.1,
+    "stacked_half_cycles": 15
+  },
+  "observation_contract": {
+    "component": "normalized, primary-field-corrected Z receiver response",
+    "units": "V/(m^4*A)",
+    "time_gate_count": 52,
+    "first_center_time_seconds": 6.944e-06,
+    "last_center_time_seconds": 0.008255,
+    "per_observation_standard_deviation": true,
+    "coordinates": "WGS84 UTM zone 13N",
+    "altitude_above_ground_m": true
+  },
+  "response_values_interpreted": false,
+  "formal_cluster_gate_passed": false,
+  "formal_power_gate_passed": false
+}

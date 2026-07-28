@@ -1,0 +1,1417 @@
+{
+  "schema_version": "wp8-ntgs-pine-creek-tdip-coordinate-design-v1",
+  "selection_frozen_before_sealed_response_interpretation": true,
+  "training_archive": "CR2011-0200_Geophysics.zip",
+  "training_archive_sha256": "057cb9aa6c9bee14c52bbdc8a0bb58f5a9162354495b966cc70ee68a493cb4c4",
+  "sealed_archive": "CR2016-0418_Geophysics.zip",
+  "sealed_archive_sha256": "81abb101a97bccc8501208440126c5ca3367513d44f754a2ca40671f3ee60e4d",
+  "contamination_ledger": {
+    "training_report": "CR2011-0200",
+    "sealed_report": "CR2016-0418",
+    "sealed_response_values_interpreted": 0,
+    "test_unseal_count": 0
+  },
+  "training_only_correlation": {
+    "unique_receiver_centres": 492,
+    "bin_width_m": 50,
+    "criterion": "first five consecutive bins with abs(correlation) < 0.1",
+    "stable_run_first_bin_upper_m": 200,
+    "safety_factor": 1.25,
+    "frozen_range_m": 250,
+    "bins": [
+      {
+        "lower_m": 0,
+        "upper_m": 50,
+        "pair_count": 1099,
+        "correlation": 0.3852630459740289
+      },
+      {
+        "lower_m": 50,
+        "upper_m": 100,
+        "pair_count": 1474,
+        "correlation": 0.11296421664849311
+      },
+      {
+        "lower_m": 100,
+        "upper_m": 150,
+        "pair_count": 4896,
+        "correlation": 0.11837994482217071
+      },
+      {
+        "lower_m": 150,
+        "upper_m": 200,
+        "pair_count": 3279,
+        "correlation": 0.015602337621472997
+      },
+      {
+        "lower_m": 200,
+        "upper_m": 250,
+        "pair_count": 8345,
+        "correlation": 0.06118516265518807
+      },
+      {
+        "lower_m": 250,
+        "upper_m": 300,
+        "pair_count": 4383,
+        "correlation": 0.051831109250651985
+      },
+      {
+        "lower_m": 300,
+        "upper_m": 350,
+        "pair_count": 9522,
+        "correlation": 0.06768834802684048
+      },
+      {
+        "lower_m": 350,
+        "upper_m": 400,
+        "pair_count": 5901,
+        "correlation": -0.02639431070331657
+      },
+      {
+        "lower_m": 400,
+        "upper_m": 450,
+        "pair_count": 10587,
+        "correlation": -0.02055391291075497
+      },
+      {
+        "lower_m": 450,
+        "upper_m": 500,
+        "pair_count": 6819,
+        "correlation": 0.03540505988438918
+      },
+      {
+        "lower_m": 500,
+        "upper_m": 550,
+        "pair_count": 9866,
+        "correlation": -0.02624233295496273
+      },
+      {
+        "lower_m": 550,
+        "upper_m": 600,
+        "pair_count": 6283,
+        "correlation": -0.01612749862693002
+      },
+      {
+        "lower_m": 600,
+        "upper_m": 650,
+        "pair_count": 9369,
+        "correlation": -0.0785794808565284
+      },
+      {
+        "lower_m": 650,
+        "upper_m": 700,
+        "pair_count": 5610,
+        "correlation": -0.049181430405209725
+      },
+      {
+        "lower_m": 700,
+        "upper_m": 750,
+        "pair_count": 7761,
+        "correlation": -0.04563222311341252
+      },
+      {
+        "lower_m": 750,
+        "upper_m": 800,
+        "pair_count": 4846,
+        "correlation": -0.004108967234898138
+      },
+      {
+        "lower_m": 800,
+        "upper_m": 850,
+        "pair_count": 6253,
+        "correlation": -0.051268146026800285
+      },
+      {
+        "lower_m": 850,
+        "upper_m": 900,
+        "pair_count": 3408,
+        "correlation": -0.011997662483200553
+      },
+      {
+        "lower_m": 900,
+        "upper_m": 950,
+        "pair_count": 4265,
+        "correlation": -0.08059272730096166
+      },
+      {
+        "lower_m": 950,
+        "upper_m": 1000,
+        "pair_count": 2292,
+        "correlation": -0.018909810168280236
+      }
+    ]
+  },
+  "sealed_coordinate_audit": {
+    "members": [
+      "Geophysics/CompassIP/Data/RJ2015_NthBLK/NthBlk_IP2015_all.dat",
+      "Geophysics/CompassIP/Data/RJ2015_SthBLK/SthBlk_IP2015_all.dat",
+      "Geophysics/CompassIP/Data/RJ_2012b/RumJungle_2012B_all.dat",
+      "Geophysics/CompassIP/Data/RJ_2013/Batchelor_2013_all.dat"
+    ],
+    "geometry_columns_parsed_only": [
+      "C1X",
+      "C2X",
+      "P1X",
+      "P2X",
+      "C1Y",
+      "C2Y",
+      "P1Y",
+      "P2Y"
+    ],
+    "response_columns_parsed": [],
+    "raw_rows_with_geometry": 77604,
+    "unique_receiver_centres": 1729,
+    "strictly_separated_packed_centres": 247,
+    "minimum_separation_rule": "strictly greater than 250 m"
+  },
+  "role_assignment": {
+    "algorithm": "SHA256 salted ordering of the 247 packed coordinates",
+    "salt": "wp8-ntgs-pine-creek-tdip-coordinate-design-v1",
+    "calibration_count": 24,
+    "test_count": 223,
+    "calibration": [
+      {
+        "easting_m": 712300.0,
+        "northing_m": 8562700.0,
+        "key": "0288a49b9a04b6036aefb41919cbf1b59a947a5672d182fbfd6d081cb156350e"
+      },
+      {
+        "easting_m": 711475.0,
+        "northing_m": 8563700.0,
+        "key": "03775e16c018f5c43e7a1aedc6232980915bb83367c4c28700c2360e1aaf8d2e"
+      },
+      {
+        "easting_m": 717700.0,
+        "northing_m": 8564450.0,
+        "key": "04931c5da26f94fd82cc7148cfe3f3ea990dd7216b975860e01202330060e4fb"
+      },
+      {
+        "easting_m": 720125.0,
+        "northing_m": 8546250.0,
+        "key": "04c5187804260fc4433951085a6512e2c190243410b12eb300a163dd4ab8fc39"
+      },
+      {
+        "easting_m": 719825.0,
+        "northing_m": 8546250.0,
+        "key": "04e3f881acff19ac042f2a0ee03193ab6e2467f3c495160dfd1ae36e3fa835ec"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8562475.0,
+        "key": "065788aebb07367e0e19ddc33fcb81deb0f3e250401845267918180f9fcc61d4"
+      },
+      {
+        "easting_m": 712150.0,
+        "northing_m": 8540550.0,
+        "key": "0677fed1952e103f3bcaf530f390f645611ebecb134edc4d48f08745a785a089"
+      },
+      {
+        "easting_m": 712950.0,
+        "northing_m": 8565500.0,
+        "key": "07e2304511f8b5e2412d8078faa038eb9d5640eafcef9674ef44366aeb92d757"
+      },
+      {
+        "easting_m": 713800.0,
+        "northing_m": 8560575.0,
+        "key": "0a2dd5d386b766e4b9a680d6a676eb675dda4261860dad40a775d55f59a3b7dc"
+      },
+      {
+        "easting_m": 712025.0,
+        "northing_m": 8563700.0,
+        "key": "0c339535740925256d44f4f37aca6559c62a03c3f89f6de657f1a045155cc6c4"
+      },
+      {
+        "easting_m": 710475.0,
+        "northing_m": 8569100.0,
+        "key": "0d391f037b9bb13f011f7031fe2f49c0a2e53de5c770cf8a710a3134ed1ef30e"
+      },
+      {
+        "easting_m": 720125.0,
+        "northing_m": 8546700.0,
+        "key": "0d847fd2ce2faa3b6540f00eb092d866d8a06a60ace26f65e30d88a75b33a9ff"
+      },
+      {
+        "easting_m": 711825.0,
+        "northing_m": 8564200.0,
+        "key": "0dd0693450fdc4ab254e0925849ade209cae6cde4ba55e3b8ff555c93f282b9b"
+      },
+      {
+        "easting_m": 712475.0,
+        "northing_m": 8567850.0,
+        "key": "0df3c2f4c167be2b1aa4e8b5809defed96e05502df508077d4f04d984bfb1c65"
+      },
+      {
+        "easting_m": 714675.0,
+        "northing_m": 8564575.0,
+        "key": "109f5048748a04fd437502bf444c018f83ab8699459a7d88aa23f3813f83c796"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8563975.0,
+        "key": "11ea41f70e48b31de1ae14fe3e3eaf87b75a0e2135c437ea88ee6844ff673b83"
+      },
+      {
+        "easting_m": 712400.0,
+        "northing_m": 8539300.0,
+        "key": "121844b2987d342bf8b25b190959e5133fd102a5d659d898de6900da7a82cb28"
+      },
+      {
+        "easting_m": 715100.0,
+        "northing_m": 8561325.0,
+        "key": "12d0628c7a752c0a921a26ac889867bb86c5cc0b105942d2ca430ec6e72c6792"
+      },
+      {
+        "easting_m": 715800.0,
+        "northing_m": 8560600.0,
+        "key": "1522147585392f36c0db2a8b6e3f55bf381a8567827895520d633bbf0ace15e6"
+      },
+      {
+        "easting_m": 711075.0,
+        "northing_m": 8569100.0,
+        "key": "17fa83f8a88fbec93e42e89deedcf61f52850f554fcc7eed7eb2758d6538a80c"
+      },
+      {
+        "easting_m": 717175.0,
+        "northing_m": 8564050.0,
+        "key": "1b72f4e925674c567b9103db5d5e9c15c67ebfb5219b5f6f6011d592e9744591"
+      },
+      {
+        "easting_m": 713725.0,
+        "northing_m": 8564825.0,
+        "key": "1c82316188f941e890eb208d9ac60aec8845c2344bc9311d0f5ea9d3bf6b13ec"
+      },
+      {
+        "easting_m": 713400.0,
+        "northing_m": 8562700.0,
+        "key": "1d1a0f6ce91e6cb1ff96d33e05e45f9d55b6a61a4c101e986d8ae026dd8b3950"
+      },
+      {
+        "easting_m": 712425.0,
+        "northing_m": 8564575.0,
+        "key": "1d51acc9f6f874b761fdbfe3372922888369d533588446192287f9455644d532"
+      }
+    ],
+    "test": [
+      {
+        "easting_m": 709175.0,
+        "northing_m": 8573800.0,
+        "key": "1e49e801bb62b1743edf362f3ed390aaa017e704f5245bb3e31870ed15f4bd76"
+      },
+      {
+        "easting_m": 719525.0,
+        "northing_m": 8546700.0,
+        "key": "1f56bf0cb508962624b92d29105366b2d00d6d7d29b17f06a80e80ae6acf7776"
+      },
+      {
+        "easting_m": 711775.0,
+        "northing_m": 8564500.0,
+        "key": "1f787d908bf459ba0502db369bc5e510ea7b3bd3112ef74e9a3d9c82906617a7"
+      },
+      {
+        "easting_m": 714200.0,
+        "northing_m": 8561150.0,
+        "key": "215018ae3da9045e5c1d512b7f9d97ee4e603f9d43ecce867390a9545880184b"
+      },
+      {
+        "easting_m": 711725.0,
+        "northing_m": 8567020.0,
+        "key": "21ff65aa8cefec8230c90dc6700924972a520f88bc16cbfb7edcb0c09a8ab43d"
+      },
+      {
+        "easting_m": 710975.0,
+        "northing_m": 8569800.0,
+        "key": "22a9e372812c203ae141d10501055c48f0956a4b1fe1878376d4b27405b886d2"
+      },
+      {
+        "easting_m": 711650.0,
+        "northing_m": 8539050.0,
+        "key": "2498c64882b9ac53aee456b73b4397fe8feb408cca8edf945b7c4b2499dc8a40"
+      },
+      {
+        "easting_m": 710175.0,
+        "northing_m": 8569100.0,
+        "key": "272ea86869177799d9eafccbd05f3d692b74cf99f16f8709af3f8fa01e8bf5cb"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8563225.0,
+        "key": "27308785f2bf95db115f1919108d29e6e26b3471b480c5d090f52529e5e970bc"
+      },
+      {
+        "easting_m": 712325.0,
+        "northing_m": 8563950.0,
+        "key": "28dd7d18a02b843d04351d2812c898e7161eec6919491968fe649a1036078355"
+      },
+      {
+        "easting_m": 713425.0,
+        "northing_m": 8564825.0,
+        "key": "2bb1b27e422680f96bd88f2fc125b89688e16a0e45824c077a51783c023c0c2c"
+      },
+      {
+        "easting_m": 715100.0,
+        "northing_m": 8561875.0,
+        "key": "2c4cc0f16399e49cf387c305110728985c1e8d5c200c66583d46cf73a6f1e902"
+      },
+      {
+        "easting_m": 714200.0,
+        "northing_m": 8560875.0,
+        "key": "2c531a1a60f72a78a0f751fef5bf0fa9e9bc169da5b6651ed6740dcf5d76a85f"
+      },
+      {
+        "easting_m": 712175.0,
+        "northing_m": 8569800.0,
+        "key": "2d36e3f2e41aff62975b3d33cefca7bf90065bb37fc2db3fb65271227bc61b15"
+      },
+      {
+        "easting_m": 717950.0,
+        "northing_m": 8564475.0,
+        "key": "2d990b7f66cf104b4a1e4b4fd392f84fd9a263444d0583add4b57ca457f42013"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8562175.0,
+        "key": "2f29ec0bba0ea8e7b84227be95f48d94dc5f7f1afdcf3f1522a018f783a30bcc"
+      },
+      {
+        "easting_m": 711575.0,
+        "northing_m": 8569800.0,
+        "key": "2f4e609659c7eb963c32f82d94533bd8a6d48dd4d097b1bab6a07e8d342ac5a8"
+      },
+      {
+        "easting_m": 711775.0,
+        "northing_m": 8574875.0,
+        "key": "308597c7028032a8c591fef841d1e99a6d2234e70b4ecfc60f274d32471cf587"
+      },
+      {
+        "easting_m": 718250.0,
+        "northing_m": 8564175.0,
+        "key": "3095d828af3e67d6ef8e0b77c861f3b26e9ee0b41afdb05c590f7484f7cd4388"
+      },
+      {
+        "easting_m": 711875.0,
+        "northing_m": 8565750.0,
+        "key": "30c6498fff57cebf14e5ff3c5dcc0d0806f8890cb5b445264a7d0c786c29788b"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8564125.0,
+        "key": "332d12e52d9f0e8140cc0f3a0ca57081d9da4fc1255e15d8ab50953b3a350138"
+      },
+      {
+        "easting_m": 709775.0,
+        "northing_m": 8569800.0,
+        "key": "3433d091257fe5ec3c7693f243b35070ce3e78466e50975d8ad3bd6631383226"
+      },
+      {
+        "easting_m": 711275.0,
+        "northing_m": 8567850.0,
+        "key": "348b959671a5af4c171b2426bdb6c7418cc1b4d5ac2701b872437f51a768eadb"
+      },
+      {
+        "easting_m": 715100.0,
+        "northing_m": 8561050.0,
+        "key": "35aa23ae77f7d70deb0cd0ef325cf645c66db4502de9b52c73545191d9e1257b"
+      },
+      {
+        "easting_m": 713800.0,
+        "northing_m": 8560875.0,
+        "key": "35c8861740c2c65e474034e8ee06a3b1005dc220638d856f61f47f35528aea25"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8563075.0,
+        "key": "36bb4b47e1ffb284de60929daed3d5908a7c67c00182453242a5ec5ded3eb8db"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8563375.0,
+        "key": "3723232fe28ea73d10bf44f2e13c5733fd5e714ecffa36a58f6607ed1fe9b4b8"
+      },
+      {
+        "easting_m": 711900.0,
+        "northing_m": 8539600.0,
+        "key": "387e617d0ce0a6d8d79725ce85a1654420dd7a439bed349b59f5bcd2fbda7b9a"
+      },
+      {
+        "easting_m": 713225.0,
+        "northing_m": 8567020.0,
+        "key": "394052768052bf44bd63132cb01fa9b4e582e5e4fc242f03985bbd597fd97938"
+      },
+      {
+        "easting_m": 711750.0,
+        "northing_m": 8563200.0,
+        "key": "3aef24b3826f97cf2974ed0729e9785156fe0c22862379b7e6735dfd5f01ca9e"
+      },
+      {
+        "easting_m": 711900.0,
+        "northing_m": 8540500.0,
+        "key": "3be655ccfeb6fb14a27e16ebfe9d73fe078313ecdd60d769dc90aee82a881421"
+      },
+      {
+        "easting_m": 708075.0,
+        "northing_m": 8569100.0,
+        "key": "3c0f187ea22fce6a229747164c03d8147fdeb77723860c2ea2c6c697abf25e54"
+      },
+      {
+        "easting_m": 712150.0,
+        "northing_m": 8539350.0,
+        "key": "3ea179055eeafc497246ca62eaa10e7e262f9194e72e815472d80bd930460d74"
+      },
+      {
+        "easting_m": 711325.0,
+        "northing_m": 8575100.0,
+        "key": "40a3f5e76393be5fc64d4da63f44632ba0a7fdd3cb9a289507e5aa638f00f748"
+      },
+      {
+        "easting_m": 719225.0,
+        "northing_m": 8545950.0,
+        "key": "4247a0ed774ad9258467dfc7e874040f1cefb7f924c90b65a443b380753ec69d"
+      },
+      {
+        "easting_m": 716400.0,
+        "northing_m": 8563925.0,
+        "key": "42d5ae56a5baffd97c68c045e2fab7c733e689cbd53e219f6b855ee78c992499"
+      },
+      {
+        "easting_m": 715100.0,
+        "northing_m": 8561600.0,
+        "key": "43364bc2ac30cdbaf46d5c1adf7d9a1223954b193b411085136cbf92e52ee4a3"
+      },
+      {
+        "easting_m": 711425.0,
+        "northing_m": 8567020.0,
+        "key": "44daf7918705ae83669e14002e26963342458f21062707eb32e910d3a68fd1f0"
+      },
+      {
+        "easting_m": 711625.0,
+        "northing_m": 8575100.0,
+        "key": "44f9bcb51f8033e00df6d8a8992f2de38757c1ef5c2e7081c96258752e50bbb0"
+      },
+      {
+        "easting_m": 717400.0,
+        "northing_m": 8564500.0,
+        "key": "45ab5cc55b60bc188981ec1f2a78f97a49186e144ebfb8c8bada89afe391d339"
+      },
+      {
+        "easting_m": 712725.0,
+        "northing_m": 8564200.0,
+        "key": "470c02a45db87585dd14e23e1844147cab03e4a74f6d2543854af826ba010d9f"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8562925.0,
+        "key": "498a20baa98b2df07c813da5b0f281b555a5cb001b7f1cbe69987e3478cdce48"
+      },
+      {
+        "easting_m": 710075.0,
+        "northing_m": 8569800.0,
+        "key": "4b22347d98a5f15eabd9bdff2aca11a5ed5123f02c6c4613edb4a44485d36087"
+      },
+      {
+        "easting_m": 710375.0,
+        "northing_m": 8569800.0,
+        "key": "4b29733ed625d05459b6c20c222b883d7bca40a5f148b4aa2b5639c1bcedce0b"
+      },
+      {
+        "easting_m": 709875.0,
+        "northing_m": 8569100.0,
+        "key": "4c0bcbead0fb195926cee6ccd803181fd62d68c64d876d081c35bb3d3fbb4ad2"
+      },
+      {
+        "easting_m": 710375.0,
+        "northing_m": 8573800.0,
+        "key": "4d033988b577a8b40f6001637c912a21666e709c3c63354093a7e4eecbe0f590"
+      },
+      {
+        "easting_m": 713250.0,
+        "northing_m": 8562250.0,
+        "key": "4ddbfd1bda295607a04858b4b05e162e1a648c72a9db9bf7d2d50186c0e787fd"
+      },
+      {
+        "easting_m": 713800.0,
+        "northing_m": 8561175.0,
+        "key": "4de938d0179c0ea27fdc50e3eb79885e8d9b812d174227d6457621845e7d8bc2"
+      },
+      {
+        "easting_m": 713675.0,
+        "northing_m": 8562700.0,
+        "key": "4e1ce1c1a990f5e17bcd5b3d16c9c3894a1e227fbaa6ac3c8d97a621a1da2e17"
+      },
+      {
+        "easting_m": 712400.0,
+        "northing_m": 8539900.0,
+        "key": "4ee4ef251f19c2e8e47525901305a7a6fd3e4d6ff237061f457b71dcefcbc03a"
+      },
+      {
+        "easting_m": 719525.0,
+        "northing_m": 8546250.0,
+        "key": "5057956c3e2c46ebf7da55789e9a8c142879d0751a79beab067b760b41ea07eb"
+      },
+      {
+        "easting_m": 713125.0,
+        "northing_m": 8562700.0,
+        "key": "5062ddb74766026494a78db69bc559e0fd3e6de116caf2c7677b93e4b9a360a7"
+      },
+      {
+        "easting_m": 718250.0,
+        "northing_m": 8563875.0,
+        "key": "510f3bc86e6b62a53cb48642613c17a1b6e9c8383c67a4059c9ec1e6ff2abc95"
+      },
+      {
+        "easting_m": 711775.0,
+        "northing_m": 8563950.0,
+        "key": "51b5ef8f31f4a3a37f8efc421a09c7ad4af509a52048fdcbb5ba93556115ad4f"
+      },
+      {
+        "easting_m": 717950.0,
+        "northing_m": 8564175.0,
+        "key": "52637d770a89c1546b25685889379c453662f44fc9cae2f3a814963bdd589344"
+      },
+      {
+        "easting_m": 716400.0,
+        "northing_m": 8563025.0,
+        "key": "52cc94d6bb91461b2f83db538c05539f409cd2698c5b13ec79cd549c8b9441a7"
+      },
+      {
+        "easting_m": 711750.0,
+        "northing_m": 8562700.0,
+        "key": "53c28f3857b4dd188689b6888a65151570bae970a019c88aae284c3de935220f"
+      },
+      {
+        "easting_m": 712350.0,
+        "northing_m": 8562250.0,
+        "key": "54ea58f80e78ad0e49d75ca2a6f8314affac00e791761207a4b018c964435727"
+      },
+      {
+        "easting_m": 712025.0,
+        "northing_m": 8563200.0,
+        "key": "55823779edb228ca6f5d092201377222c20761ef2d85797f010a04522f2f3566"
+      },
+      {
+        "easting_m": 716400.0,
+        "northing_m": 8563625.0,
+        "key": "577ba489d0b175a4faea290c6d2720f487a47656a23712286eeaf7be261c900c"
+      },
+      {
+        "easting_m": 712675.0,
+        "northing_m": 8565500.0,
+        "key": "58256b20b2483dbec28f9002410fcc07d5c48a46a21389d343c66b31ec1914d6"
+      },
+      {
+        "easting_m": 711875.0,
+        "northing_m": 8567850.0,
+        "key": "585127ab738b4dc7de6a610781f189f8611b7c817b19de612280d49daa82d7f9"
+      },
+      {
+        "easting_m": 711900.0,
+        "northing_m": 8539000.0,
+        "key": "58b2e2bec8d3d923381e602369c83d28b31d0f1e192dbb75a4d878044d5b8e36"
+      },
+      {
+        "easting_m": 712400.0,
+        "northing_m": 8539600.0,
+        "key": "5a245b3abf571c380a4d06dfb660d545d3fcdb826cc472d8b259ebe04060e4bd"
+      },
+      {
+        "easting_m": 709275.0,
+        "northing_m": 8569100.0,
+        "key": "5a3745b237dd3af68ce90f4818914bed59294409d2b4de6ebba29608fe18fc44"
+      },
+      {
+        "easting_m": 710975.0,
+        "northing_m": 8570600.0,
+        "key": "5a5439d6fa2f69c7a5fef955f83ff3574f1535eb67019a4c343355217009a60f"
+      },
+      {
+        "easting_m": 719000.0,
+        "northing_m": 8549200.0,
+        "key": "5af6bdf1dbf1ebee4252248d41b41069d5316b34a0ecabd62a5b66375b1833b0"
+      },
+      {
+        "easting_m": 712725.0,
+        "northing_m": 8564575.0,
+        "key": "5b7a1c29cffdbb04e1f580a0ef7418ec7e3e4b8b2e6a570847f8675b6d9f990b"
+      },
+      {
+        "easting_m": 713125.0,
+        "northing_m": 8564825.0,
+        "key": "5ba34f2ad414eee8a9b7cf19bdeb68f3cccb2ab0cb1c9af689a5dc8a633ba615"
+      },
+      {
+        "easting_m": 715400.0,
+        "northing_m": 8539925.0,
+        "key": "5bb10c9288572edf77b15815f378a0a4c0ab52fbfb204058a81edd3b182629bf"
+      },
+      {
+        "easting_m": 709775.0,
+        "northing_m": 8573800.0,
+        "key": "5bc5edfae9257c28bf4b70228f735737ab8aa2e2f6056b6d866945b177af62fe"
+      },
+      {
+        "easting_m": 711275.0,
+        "northing_m": 8569800.0,
+        "key": "5dc06014455e242c960465782df10610f9e31d9b892a814613248f703ab23402"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8563825.0,
+        "key": "5f8c74c5a47a79954b9edee0b1cdb6c7e01b4bd0919a306fa87bbb5cbad55744"
+      },
+      {
+        "easting_m": 719225.0,
+        "northing_m": 8546700.0,
+        "key": "60461595ab8bbf90183f3a192e48b636086522edb3fc91dcd4512103a577313e"
+      },
+      {
+        "easting_m": 711475.0,
+        "northing_m": 8562700.0,
+        "key": "60d814095030e3c5dfea453198f316ef902ab21e3d8d03f6bd8ff568a112b2bc"
+      },
+      {
+        "easting_m": 719525.0,
+        "northing_m": 8545950.0,
+        "key": "6201d7deb9e89ddaef38a91e9651944809c62f26ed8582a7156f0349c91649de"
+      },
+      {
+        "easting_m": 720425.0,
+        "northing_m": 8546700.0,
+        "key": "6218d3b4871b89d0de47d37a2a2b7ffa69537b3d1a49b0f5916c3f0a37659d18"
+      },
+      {
+        "easting_m": 712225.0,
+        "northing_m": 8575100.0,
+        "key": "629a2fbe2d62bcec6743e711d876bf6fd0b7fa804ef4c87f1a759643f224ed13"
+      },
+      {
+        "easting_m": 712325.0,
+        "northing_m": 8567020.0,
+        "key": "62bcee646f0a740733887d3cc7e87ec17f9d6e32f0614e8cb3a9f13f11ce946f"
+      },
+      {
+        "easting_m": 715800.0,
+        "northing_m": 8561150.0,
+        "key": "62deda98a5c3c29913fd4367dc7c1e60b97b07afbe4a8f6045e0478ce637ca8f"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8564425.0,
+        "key": "62e704eaf20d70283954a5f0e285bb57aaac86c963fce58f897023fe0bb9b831"
+      },
+      {
+        "easting_m": 711925.0,
+        "northing_m": 8575100.0,
+        "key": "633608d00b75c1865e8a784194f3426f6837ea05a0b6f73360427229544aaa18"
+      },
+      {
+        "easting_m": 718700.0,
+        "northing_m": 8549200.0,
+        "key": "64b33f4755fa60bf7000a06149eab7ad39d48c00902d55114602ddb2dcd370ca"
+      },
+      {
+        "easting_m": 713800.0,
+        "northing_m": 8562000.0,
+        "key": "6c786fc45df55f939768a2ceb12d7454f0f58694fca25b8c5d18da437deb29dd"
+      },
+      {
+        "easting_m": 712075.0,
+        "northing_m": 8564500.0,
+        "key": "6d517598b8f133fc578e74455ec726fc6d59d2e3c0ba23439a51777f9e91eed4"
+      },
+      {
+        "easting_m": 711475.0,
+        "northing_m": 8564500.0,
+        "key": "6d673eb4aa0ea92f8b8b2f344d8b718fdaa687e0645adb949fb9bdfd4e8a31f3"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8564275.0,
+        "key": "6e6894652989e3e7ec4ff28112811065ec813efebaa73dd9fa643cbc1fa26963"
+      },
+      {
+        "easting_m": 718250.0,
+        "northing_m": 8564475.0,
+        "key": "6e88134f7ecd02e5993798f690c0498503765a579998497c58656466ff717e49"
+      },
+      {
+        "easting_m": 711900.0,
+        "northing_m": 8539300.0,
+        "key": "6ee4b53a0725d6a8ef4547739ddcecc24784a5c9d67b138692cf96900b13cc92"
+      },
+      {
+        "easting_m": 711575.0,
+        "northing_m": 8565500.0,
+        "key": "710277a45aaf3d41da7e96bb01874ab77cf4ca95e9859c33a884336b43852be0"
+      },
+      {
+        "easting_m": 712525.0,
+        "northing_m": 8575100.0,
+        "key": "71b31e8b000e9b656983ee69ae061cbb039043c64f5f7fbd8d8c29466487a681"
+      },
+      {
+        "easting_m": 713800.0,
+        "northing_m": 8561725.0,
+        "key": "72002b5bcaede436c3cf72fc6219e678735d2e5ca5b3ab39d9fecff83d13be3a"
+      },
+      {
+        "easting_m": 712400.0,
+        "northing_m": 8540200.0,
+        "key": "724cf1d3a77177ee5abb45f3bfcbd5d0d0f82cd7745435801e3ab9855dd7d9fd"
+      },
+      {
+        "easting_m": 709475.0,
+        "northing_m": 8573800.0,
+        "key": "7274817d27750c2871a08b8024f4f46d63b54124f91d920ee0d493ec5f52e8bd"
+      },
+      {
+        "easting_m": 711025.0,
+        "northing_m": 8575100.0,
+        "key": "737dc5d745a2f8a30036a8964e9f8c0640c316f0a9a8892f697b5d2b2b752ca4"
+      },
+      {
+        "easting_m": 711425.0,
+        "northing_m": 8566200.0,
+        "key": "754ce04e342382e34a08a311c23d7c470377fb0047dbac44a6cfda6d2c6fc0b9"
+      },
+      {
+        "easting_m": 711375.0,
+        "northing_m": 8569100.0,
+        "key": "770578305f1507686d39bae230910c838c350c8768e0986dbfbf9ae8ff8fb29a"
+      },
+      {
+        "easting_m": 712025.0,
+        "northing_m": 8562700.0,
+        "key": "775534ffe8bb8e6f84d25b03cb11a3b25e11679aca15718c0bc8213a6410ceba"
+      },
+      {
+        "easting_m": 714025.0,
+        "northing_m": 8564825.0,
+        "key": "7bc3abb2a36b57c5890be02e30ba282f917aadb67106983970a19282624e467a"
+      },
+      {
+        "easting_m": 712125.0,
+        "northing_m": 8565500.0,
+        "key": "7d4a645259f677cd437067eca84c4ac9fceffbb6dd500273cf88d1204de22614"
+      },
+      {
+        "easting_m": 711975.0,
+        "northing_m": 8569100.0,
+        "key": "7d57efab14133964e0c92add0cdc2c5f49d3eb6cddb721d3884fb8662ce9e8d7"
+      },
+      {
+        "easting_m": 711900.0,
+        "northing_m": 8540200.0,
+        "key": "7d9c9458903585c990443e9db5ab334d1189356bc6959ea8f0d5423e448d92c4"
+      },
+      {
+        "easting_m": 711650.0,
+        "northing_m": 8539650.0,
+        "key": "7e1646331ca3424d19489abc0e92c11a5d544ca288bcb6c1b154df8c0fc8db24"
+      },
+      {
+        "easting_m": 719225.0,
+        "northing_m": 8546250.0,
+        "key": "7ed6f927f7f4e8aa3b0343ab9470f78aa96ec7d4aa50f446f774f3c3027bc2d1"
+      },
+      {
+        "easting_m": 710675.0,
+        "northing_m": 8569800.0,
+        "key": "813e6ddb9d0753c90aa00564ca6c7082d3de7061569cae812d67fb92587af133"
+      },
+      {
+        "easting_m": 711675.0,
+        "northing_m": 8569100.0,
+        "key": "8355b80397d44851d8313132bdcfa48a44075afc2a1c4d0a355cb36b03bd305a"
+      },
+      {
+        "easting_m": 712400.0,
+        "northing_m": 8540500.0,
+        "key": "85623655742e040f5d1f342561b63548ed00b8da7a51b84de65f31dc09330857"
+      },
+      {
+        "easting_m": 713025.0,
+        "northing_m": 8564575.0,
+        "key": "85f9973e65f0fe3e7a09827aa141f9307826b2ae3560fcfc7ecc9247347f0337"
+      },
+      {
+        "easting_m": 717950.0,
+        "northing_m": 8563575.0,
+        "key": "86734865a7b2a002dd74daca1321d1afeb22769e7a3868279da861468a21f35a"
+      },
+      {
+        "easting_m": 711575.0,
+        "northing_m": 8570600.0,
+        "key": "869609e5c0a55e9809d2813f7ef8df31e7fc9c954224c48be0381f3fdc3ed511"
+      },
+      {
+        "easting_m": 712950.0,
+        "northing_m": 8562250.0,
+        "key": "874793d0e7aeacfe9a45b60ffbac3d9c2dd4db6557ad6e356307d3b544bf4f24"
+      },
+      {
+        "easting_m": 712575.0,
+        "northing_m": 8563700.0,
+        "key": "874e3e69ea17daccd67a30d0e3289b3934f7a19799bd7a266f95fc0e1791afe5"
+      },
+      {
+        "easting_m": 719900.0,
+        "northing_m": 8549200.0,
+        "key": "8859b370708b38fcac0d443b1a512a078f3972b2917eacab9454dfed6e775aa6"
+      },
+      {
+        "easting_m": 718400.0,
+        "northing_m": 8563300.0,
+        "key": "88aeabcd2ed4c8d43954ba8c4cd6b4e7be273721795445b90d9284154721197c"
+      },
+      {
+        "easting_m": 720200.0,
+        "northing_m": 8549200.0,
+        "key": "895eef038c8da70b099e5ea9d9826e09e88499be9e611dabfbe8f5228ef85a0b"
+      },
+      {
+        "easting_m": 711875.0,
+        "northing_m": 8569800.0,
+        "key": "89ac4e0748d8bab040ecc3e3624839bb773aa792695954a9a3b5534034972d9b"
+      },
+      {
+        "easting_m": 712125.0,
+        "northing_m": 8564200.0,
+        "key": "8bdf76c676791152db8a05529c1f4ced844835565bd66448717963e5a6303257"
+      },
+      {
+        "easting_m": 712425.0,
+        "northing_m": 8564200.0,
+        "key": "8cb4fd32b4a08c4ffffc1bb6d1ded17f5b0abb89fad4bebda6f33787663254b8"
+      },
+      {
+        "easting_m": 709575.0,
+        "northing_m": 8569100.0,
+        "key": "8dd8c9fe544693585d5c4195d2a189b245d01729488318cf1a30c2cd5a7f9f64"
+      },
+      {
+        "easting_m": 715400.0,
+        "northing_m": 8539325.0,
+        "key": "8e5feb400d7fdea6ab2255bbc62507be9ea98f9115e0722d41bfce88cfb1c484"
+      },
+      {
+        "easting_m": 712150.0,
+        "northing_m": 8539650.0,
+        "key": "8efb999091bd4913f9b93348e32c6f9dc9964a0cd069d6cd54f1a098caf2079e"
+      },
+      {
+        "easting_m": 715800.0,
+        "northing_m": 8561425.0,
+        "key": "8fa20624ec961b318f3a05fccdc96c10e81cbbfd6b29a01b2434df25443ef598"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8565375.0,
+        "key": "8fea2150bf6900e3acf737bce640613bc7a5f6c9ec02ab91f97797f42b915936"
+      },
+      {
+        "easting_m": 714200.0,
+        "northing_m": 8561975.0,
+        "key": "9054b93df25a01cb1439499ff8d4ae9b2d9ecc888f6f8c91ddd7d02b1a5059d2"
+      },
+      {
+        "easting_m": 711850.0,
+        "northing_m": 8565500.0,
+        "key": "90f1781f4a336d60048fc2718d9cf1c43fcc3948d422f5facfd5e0e08ed58f86"
+      },
+      {
+        "easting_m": 720725.0,
+        "northing_m": 8546700.0,
+        "key": "91268518d68c5475f8e021f36e9a10039932716383faa9c503543c935e6e733b"
+      },
+      {
+        "easting_m": 712425.0,
+        "northing_m": 8565750.0,
+        "key": "91455eabb31d93f87b1d9e89882b50f0fc486861b0c81041a5337db136662d05"
+      },
+      {
+        "easting_m": 711650.0,
+        "northing_m": 8539350.0,
+        "key": "9355ea3b1fa9d659aa98b2b83118a8a932aafbcabe28b6536c569cc9764e8a37"
+      },
+      {
+        "easting_m": 719825.0,
+        "northing_m": 8546700.0,
+        "key": "94025ecdcbd4b4a5571f7f96584e43dab14abeb4a8631d0aef407c9c196e7011"
+      },
+      {
+        "easting_m": 708675.0,
+        "northing_m": 8569100.0,
+        "key": "9529851b071c996de82e194a7d39080d508ed14229b51559a109d3f409c2e396"
+      },
+      {
+        "easting_m": 712850.0,
+        "northing_m": 8562700.0,
+        "key": "955d4aad4abd25c5409619c9b113a0d52e0b8967ec9749901b78f43599916256"
+      },
+      {
+        "easting_m": 717950.0,
+        "northing_m": 8563875.0,
+        "key": "965d8ecb575df93e6ac11a695275f5d772df61ff0dfe7022abbcf4c8a2c19af3"
+      },
+      {
+        "easting_m": 710075.0,
+        "northing_m": 8573800.0,
+        "key": "9677f0253075d025bb63e96c6c16002155ab2403ab64f929ae64834f93e9f39e"
+      },
+      {
+        "easting_m": 712150.0,
+        "northing_m": 8540250.0,
+        "key": "971992b2f813c9dd4a568814eb75fc77f3ff13b2c1f79a28d3a82a425a84ad47"
+      },
+      {
+        "easting_m": 711500.0,
+        "northing_m": 8563950.0,
+        "key": "9a143f36f8a291a171b39859c335222f44611a1d4818a7e842a6643d41de3fd5"
+      },
+      {
+        "easting_m": 712375.0,
+        "northing_m": 8574875.0,
+        "key": "9a44bc064e0ebb9eef607343097b78998559e4281875b1169291750b28e20ac9"
+      },
+      {
+        "easting_m": 712150.0,
+        "northing_m": 8565750.0,
+        "key": "9c47026349d23b1fbc213d9c72fd954985f45cca24f12d2d0118c80ff3a79a1d"
+      },
+      {
+        "easting_m": 717175.0,
+        "northing_m": 8563750.0,
+        "key": "9de5d259820905501c556e31bc6f6a16a7356f02cfcd2e4d3a6c2d424629fca1"
+      },
+      {
+        "easting_m": 712400.0,
+        "northing_m": 8565500.0,
+        "key": "a0f7bab6497cdd21bb4cb3cf097f6cd753745aa14f55beed77a67b31602c4be8"
+      },
+      {
+        "easting_m": 718250.0,
+        "northing_m": 8563575.0,
+        "key": "a176a19eaf39f45b61aac94132c0925dbb52b1a093ef0a692b2e2688a01afdea"
+      },
+      {
+        "easting_m": 712050.0,
+        "northing_m": 8562250.0,
+        "key": "a1ca8c09c88931a61554e13426949c1cf3b899cabcaaeef8fda8349f7571ebaf"
+      },
+      {
+        "easting_m": 713975.0,
+        "northing_m": 8562700.0,
+        "key": "a1e1fa8489603c17df2e43dacb084689446634bd0bb6f8eb55166eae1bdf8ad1"
+      },
+      {
+        "easting_m": 710675.0,
+        "northing_m": 8570600.0,
+        "key": "a533e2b453fc684e1ec50afe1da2676657b7782b774fe537b87417d74c77fff4"
+      },
+      {
+        "easting_m": 712600.0,
+        "northing_m": 8563950.0,
+        "key": "a550e0f80f49d650822a72e824c6fe3eeb9c1789a76a408cfeabea42e2dc1a4f"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8565075.0,
+        "key": "a80fb97578673d0877d5f89793e428bb4c1c1ca629316f93055d1add9cbcd73c"
+      },
+      {
+        "easting_m": 712775.0,
+        "northing_m": 8567850.0,
+        "key": "aa684ae5eabf8b745ddc9ae1feca96e647914f3ef0d1f9bae7514aab6e0007cf"
+      },
+      {
+        "easting_m": 712700.0,
+        "northing_m": 8565750.0,
+        "key": "ac3b7134425aa788833c5daa630c9690bd22011b160cd6a6afa0c01848838182"
+      },
+      {
+        "easting_m": 712075.0,
+        "northing_m": 8574875.0,
+        "key": "ae98e1da63d6423395a24e9bfaf550c7aba4020d7dd92b8f0425ea1de2172524"
+      },
+      {
+        "easting_m": 719300.0,
+        "northing_m": 8549200.0,
+        "key": "aeef5ad8902acc8b0aaa5dd6635e55923fa035d315f627d19f3ca641245e3ece"
+      },
+      {
+        "easting_m": 720425.0,
+        "northing_m": 8546250.0,
+        "key": "afc3557271cdb11d707f098aa5e1f0e805a77a218f8e8789cd1f77d94767ada3"
+      },
+      {
+        "easting_m": 718100.0,
+        "northing_m": 8564700.0,
+        "key": "b0253d2c8f2121a6001e45d0e8aa987dd01cc5b9154791fb3193d6a3ab0e76c7"
+      },
+      {
+        "easting_m": 712625.0,
+        "northing_m": 8567020.0,
+        "key": "b06b92831e67646f163692ff8c7400b80f35f68f6ae2026d33531e93fd0fafea"
+      },
+      {
+        "easting_m": 715100.0,
+        "northing_m": 8560775.0,
+        "key": "b097ed39be3663a66ad8bc8ba5074523f1325322d9cd9a4b8adee9b63682a19b"
+      },
+      {
+        "easting_m": 713800.0,
+        "northing_m": 8562275.0,
+        "key": "b0c530b02dad781c12f75c5c19a6d6f5e29b8e54b49574f95eb8b9c0fd66a8c2"
+      },
+      {
+        "easting_m": 717400.0,
+        "northing_m": 8563900.0,
+        "key": "b2822589cbffc921f51b0ca18a2e257e4aa0c37a2038fd51335bbc47c18fbb24"
+      },
+      {
+        "easting_m": 710775.0,
+        "northing_m": 8569100.0,
+        "key": "b5a2ac1a03ac36e9a87376f50e9e668246428b3adba1d7cbdbbca0d8543bfc17"
+      },
+      {
+        "easting_m": 713325.0,
+        "northing_m": 8564575.0,
+        "key": "b67736323ce1ff6f107437faa18fc5f3022a9a989475aa2647a04abc9ae6abb3"
+      },
+      {
+        "easting_m": 713850.0,
+        "northing_m": 8563525.0,
+        "key": "b6ba4a41eb054a24c73452f79d8106bea0c654a08242b62a92d59cc219278ffc"
+      },
+      {
+        "easting_m": 712575.0,
+        "northing_m": 8563200.0,
+        "key": "b88adf7cb6d3e8c3aecddedde97fac6e5eeddc94bdbc344b8cd861e6b833ae30"
+      },
+      {
+        "easting_m": 711175.0,
+        "northing_m": 8574875.0,
+        "key": "b9174f783ef1fa924ceab74364fb240a4733df520756c2927032e3158432ef35"
+      },
+      {
+        "easting_m": 717400.0,
+        "northing_m": 8564200.0,
+        "key": "b992100cf40d323df36d757836692ce81dc733b11853eb0ae4f37451616d30da"
+      },
+      {
+        "easting_m": 714200.0,
+        "northing_m": 8561700.0,
+        "key": "bb2dca516628c51ffb0683e57abcf4bc4586800abb0bf81ad189f65917b4ea46"
+      },
+      {
+        "easting_m": 709475.0,
+        "northing_m": 8569800.0,
+        "key": "bb2e9c89539efe6f16911268ca5740ddca35701aab9b045a496696b6b44233a6"
+      },
+      {
+        "easting_m": 712050.0,
+        "northing_m": 8563950.0,
+        "key": "bbaca55da8dd7beb899ff76dc66718645f7827ff3657502992ee875934c451b6"
+      },
+      {
+        "easting_m": 711900.0,
+        "northing_m": 8539900.0,
+        "key": "bcc540ca64e92e37656486575f5ba0bbd4aa7e053c4466ff5f5f43cf87762fd1"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8563675.0,
+        "key": "bdc038a991f7732baa0f8e634e7797100bbe61d877522a60e504c1558d462103"
+      },
+      {
+        "easting_m": 717400.0,
+        "northing_m": 8563550.0,
+        "key": "be96c0d64fc3d460aac5f768a10f66d07773082ba153b371ad3eacda3819f91e"
+      },
+      {
+        "easting_m": 717700.0,
+        "northing_m": 8563550.0,
+        "key": "be98ecb9304e3b4643b69c086b53ae714f121757ebc55005968f4b2b2bdb8f4f"
+      },
+      {
+        "easting_m": 720725.0,
+        "northing_m": 8545950.0,
+        "key": "beaef541092cc269dbefa5e8ba49bfb8ea2c63d5f5ca1335be8480746a797367"
+      },
+      {
+        "easting_m": 711275.0,
+        "northing_m": 8570600.0,
+        "key": "bf6b8e4a1a8d7948595401beeb707895bce95e58c990255f6579c299977cd6db"
+      },
+      {
+        "easting_m": 710675.0,
+        "northing_m": 8567850.0,
+        "key": "c37b351603fd0de7dd293b271f503da2ce9d26d4201df3e5dce1a639fd9be7fd"
+      },
+      {
+        "easting_m": 714375.0,
+        "northing_m": 8564575.0,
+        "key": "c3f9855462ee5636abe76c0bcc34fd0a984d2dd148e7eb17105a4e99221d6af3"
+      },
+      {
+        "easting_m": 712175.0,
+        "northing_m": 8567850.0,
+        "key": "c48959ba0a5dc6344ae51e44b3cc9408520c44241814fcb77dfe2dcf1cd6375f"
+      },
+      {
+        "easting_m": 708375.0,
+        "northing_m": 8569100.0,
+        "key": "c55b94714305752b4d987613ae3781574d2db5041b1c659ab8e6b91a95d92b43"
+      },
+      {
+        "easting_m": 713800.0,
+        "northing_m": 8561450.0,
+        "key": "c6d5252577695de648a0a4a78bc4552c154f23e8416cbab1c867f09365bbd118"
+      },
+      {
+        "easting_m": 712150.0,
+        "northing_m": 8539950.0,
+        "key": "cc909c69ce3915cf28762c50060eb365748c0cf87aedbd710ce177e55cff16d0"
+      },
+      {
+        "easting_m": 712825.0,
+        "northing_m": 8564825.0,
+        "key": "ccf3d2d6935fcc1df0bd651eda164a7a8b9958759d629774088cc0f82c3da9c0"
+      },
+      {
+        "easting_m": 715800.0,
+        "northing_m": 8560325.0,
+        "key": "ce73fc579224a9bce19c0a3b7d8320daad54556e2f6bef85d9e20b154730af6d"
+      },
+      {
+        "easting_m": 712650.0,
+        "northing_m": 8562250.0,
+        "key": "cfe27f3391328b2a6774c9903e235ad7b29eb348af4650f84cd3c1d9139d428a"
+      },
+      {
+        "easting_m": 712150.0,
+        "northing_m": 8539050.0,
+        "key": "d004bdd32ccb5d3da9a23ce2e8f8cefbc5eb88c8d83a51f7dcb388e2092046a1"
+      },
+      {
+        "easting_m": 711650.0,
+        "northing_m": 8540550.0,
+        "key": "d088ca011de5f91a9156fcfb13dee3c5b6d59af5587197bfc3a45517a5ab429c"
+      },
+      {
+        "easting_m": 711475.0,
+        "northing_m": 8574875.0,
+        "key": "d132fb84a9d1033612a9c64648d8b356f172f4803a1ad9a0f12c18de26576edb"
+      },
+      {
+        "easting_m": 713550.0,
+        "northing_m": 8562250.0,
+        "key": "d3d5be35ccdf4783a2fd0e19daa7e4409b8ebe8a967f6e35bd86b7ceff6657f8"
+      },
+      {
+        "easting_m": 712300.0,
+        "northing_m": 8563200.0,
+        "key": "d3e795f726157d603c791f18046c3db6207211a7f4160bf07efdf3456451df3f"
+      },
+      {
+        "easting_m": 712025.0,
+        "northing_m": 8567020.0,
+        "key": "d7e8a3a32bdc30dfdcc9620ff336ae6ebd7efc9a54843fb8a56aaf1fa155505d"
+      },
+      {
+        "easting_m": 711750.0,
+        "northing_m": 8563700.0,
+        "key": "d93f326619240868817ec6f216f714277bff16dc7d5c6fb8b9cf90e3c04be619"
+      },
+      {
+        "easting_m": 716400.0,
+        "northing_m": 8563325.0,
+        "key": "dd5fa59c81311a54e8cc02eb4c45da36207cf099afd9d639cd5a9a4edab9805d"
+      },
+      {
+        "easting_m": 711650.0,
+        "northing_m": 8539950.0,
+        "key": "dea9942e5dea1de25e9f511fd1a437303fdc629724210f9150efceca49c4dab9"
+      },
+      {
+        "easting_m": 713625.0,
+        "northing_m": 8564575.0,
+        "key": "e09be49c3ee66d3427274597fc83b5b44e486f953f6013379d9c6362d85d6c8e"
+      },
+      {
+        "easting_m": 720725.0,
+        "northing_m": 8546250.0,
+        "key": "e1e247c9c61b80edc8375466ec2d16742ecc7ac2d48c29eb774eaefe0a927e4f"
+      },
+      {
+        "easting_m": 714200.0,
+        "northing_m": 8561425.0,
+        "key": "e2567a46833bbcdb99d755f7ed0957da9395fa567829187828077e33143c5af0"
+      },
+      {
+        "easting_m": 712575.0,
+        "northing_m": 8562700.0,
+        "key": "e31ea0be3455056aaf4e9842e9788e760c0ad9f20eede1b225ab4cac336acbc6"
+      },
+      {
+        "easting_m": 715400.0,
+        "northing_m": 8539025.0,
+        "key": "e3218f0574d435b103e68f914630ede14dbfbff9bedfc13dc886028fd7c51ba4"
+      },
+      {
+        "easting_m": 711475.0,
+        "northing_m": 8563200.0,
+        "key": "e498f224b2b0c3613f2cd9dcb7071a10c13f96f8c93ed9eedbe2d0e1b8e140ce"
+      },
+      {
+        "easting_m": 715400.0,
+        "northing_m": 8539625.0,
+        "key": "e52d6392b191c1060b8979123fa6b890c3de6bb49e915a80a6b04adafcfe9dc9"
+      },
+      {
+        "easting_m": 711700.0,
+        "northing_m": 8566200.0,
+        "key": "e53197f1676e0f0852554b795cbded97522abca43102ebf010d1f1f8f515f826"
+      },
+      {
+        "easting_m": 712225.0,
+        "northing_m": 8564825.0,
+        "key": "e5401df850990aeb4b1a806f39dda47dfae0057452c574a8b0d06f6012bfb842"
+      },
+      {
+        "easting_m": 714325.0,
+        "northing_m": 8564825.0,
+        "key": "e567c53f26aa65e6268b860614dbdf96ad297445208b0f10ad86b63aa6fdcfb4"
+      },
+      {
+        "easting_m": 717175.0,
+        "northing_m": 8564350.0,
+        "key": "e6736f6c76a685a5be7eb0e88cd77a4130ef7fd6338b5eef71fdd3dbd96dcfe5"
+      },
+      {
+        "easting_m": 719600.0,
+        "northing_m": 8549200.0,
+        "key": "e70cbedc44d3dc2735ba637661be48d827b820648bf95542cdf277443251f43f"
+      },
+      {
+        "easting_m": 717700.0,
+        "northing_m": 8564150.0,
+        "key": "e78614a1609a864392e7481345a1d62e31a6e45da8eb81c0b2b6eb74fe4dc2da"
+      },
+      {
+        "easting_m": 708975.0,
+        "northing_m": 8569100.0,
+        "key": "e8c4ec0a4f182b4bbd3521482e678f06237dcf4dccd13a20909670a2fdec9c38"
+      },
+      {
+        "easting_m": 717175.0,
+        "northing_m": 8564650.0,
+        "key": "e92a9d2bb0e4b4f526fb3137cef32198d788d0446cf54cadbc2266edc72398e6"
+      },
+      {
+        "easting_m": 714075.0,
+        "northing_m": 8564575.0,
+        "key": "ea122f981f7ee3e7f2d99c5a00b5a162e0ee258d1604dd7d25692f07a9c86966"
+      },
+      {
+        "easting_m": 715800.0,
+        "northing_m": 8560875.0,
+        "key": "ec04cd8d24c2e2a5a3fdfaa0faca034ea49828a027a6d984d2a52c3701a60754"
+      },
+      {
+        "easting_m": 711575.0,
+        "northing_m": 8567850.0,
+        "key": "ec51fd3413146cf3b8ee21f7f3ba6dd40b6dfc71e073b4d4cb30e250a3ff130d"
+      },
+      {
+        "easting_m": 712525.0,
+        "northing_m": 8564825.0,
+        "key": "eccb0e0b208b17ee42bf633d1c5699f762c4b6715c9b19be18ba0856a1f7ec33"
+      },
+      {
+        "easting_m": 712925.0,
+        "northing_m": 8567020.0,
+        "key": "edb0d26d25078594d61596acde40884edc5a9a4209eb363dfffb30438f32601f"
+      },
+      {
+        "easting_m": 711975.0,
+        "northing_m": 8566200.0,
+        "key": "ee1e0b9e1b2e494fa58fe8f82abe6041be073bfc9b5830c980e8f6d3d78475d4"
+      },
+      {
+        "easting_m": 711650.0,
+        "northing_m": 8540250.0,
+        "key": "eeb3727d9ea2fe1beb0a3b9f12de12ba77ccf23ab92fda8b3dcf71b1bab844e9"
+      },
+      {
+        "easting_m": 714825.0,
+        "northing_m": 8562775.0,
+        "key": "eee4fe82748436be858d98c06100f9c1059030223594da8f76ea184d3c32fa36"
+      },
+      {
+        "easting_m": 720125.0,
+        "northing_m": 8545950.0,
+        "key": "eff5f08dcb33e8f856969c73271ffb2d6086f842da54bfd9c26a2afe2cc7bf95"
+      },
+      {
+        "easting_m": 711475.0,
+        "northing_m": 8564200.0,
+        "key": "f053d604f0ba2383e0ca50124a671815b826cdf2d945929c0b82770004e74445"
+      },
+      {
+        "easting_m": 717700.0,
+        "northing_m": 8563850.0,
+        "key": "f43878a3644fb5bccd03c341cc816744455413cd3185531a1b9ccb8effd49249"
+      },
+      {
+        "easting_m": 712275.0,
+        "northing_m": 8569100.0,
+        "key": "f4f2c60707f4bffd3d5616274a3c0590db7e4f63f84316ddfa09db3ad9222328"
+      },
+      {
+        "easting_m": 719825.0,
+        "northing_m": 8545950.0,
+        "key": "f80ec534d0937d06744c28c09d679632db08a03c09a383fa5ad422d2084bf820"
+      },
+      {
+        "easting_m": 720425.0,
+        "northing_m": 8545950.0,
+        "key": "f94ea94b684d19338b1765c6ce42d408a6fc664d477dbd52460dd2a3df7c7e30"
+      },
+      {
+        "easting_m": 710675.0,
+        "northing_m": 8573800.0,
+        "key": "f9fe41b55637d326c408361dd6c955778a31f79ede10622050fba5ee7b487788"
+      },
+      {
+        "easting_m": 712400.0,
+        "northing_m": 8539000.0,
+        "key": "faef25eb8ec4eb267e0fe89ae6adc124c90f40175a05edb7dfcc6801154379a9"
+      },
+      {
+        "easting_m": 712575.0,
+        "northing_m": 8569100.0,
+        "key": "fbf1f67dce38185e4003600b002bc923492f0a1fb6a957969b0e12cc79c9c841"
+      },
+      {
+        "easting_m": 710975.0,
+        "northing_m": 8567850.0,
+        "key": "fd42c5c846c0786aae814ea6988ff65593b67e4d9b4449bcb384a557a8e0a484"
+      },
+      {
+        "easting_m": 711600.0,
+        "northing_m": 8565750.0,
+        "key": "fde4db5b41bb9b326097b740cc801b4f5bb05c90ddc85c810a4c8e133323db1f"
+      },
+      {
+        "easting_m": 712300.0,
+        "northing_m": 8563700.0,
+        "key": "ff9b83d54f826906f04d7c24e7b1b0d10c28815061f0c2ed8394b7a0741eda80"
+      }
+    ]
+  },
+  "cluster_count_gate_possible": true,
+  "paired_crps_effect_size_available": false,
+  "power_gate_passes": false,
+  "sealed_response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "wp8-ga-magnetic-training-survey-audit-v1",
+  "raw_manifest_sha256": "db5b3483ede793c098f9dbe5e7c50cd57b16fcc7bf44420f14eaa499de178244",
+  "design_sha256": "8b9cd3702eeffe3b5b313a298c9d3758f602cb30449867c3bf8136f4cc48ba6b",
+  "dataset_no": 16980,
+  "response_variable": "mag_awagslevelled",
+  "selection_policy": {
+    "radius_km_around_design_centers": 20.0,
+    "geometry_classified_before_response_access": true,
+    "response_access_used_train_only_contiguous_runs": true,
+    "response_runs": 216
+  },
+  "geometry_rows_by_role": {
+    "train": 2076119,
+    "buffer": 0,
+    "calibration": 0,
+    "test": 1141327
+  },
+  "response_rows_interpreted": {
+    "train": 2076119,
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "training_covariates": {
+    "main_line_rows": 1863125,
+    "tie_line_rows": 212994,
+    "altitude_min_m": 37.25,
+    "altitude_max_m": 271.24
+  },
+  "training_crossover_error": {
+    "bin_m": 500.0,
+    "bins_with_main_and_tie": 1479,
+    "mean_difference_nt": 0.03595316850492809,
+    "rmse_nt": 3.4440007268802693,
+    "mad_nt": 0.5628804604062445,
+    "method_ready": true
+  },
+  "training_spatial_cells_5km": 152,
+  "regional_plane_residual_sill_nt2": 446.3513621883201,
+  "national_correlation_ready": false,
+  "national_correlation_reason": "one survey demonstrates the leakage-safe response and crossover path; geographically separated training surveys are still required",
+  "formal_contract_ready": false,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": "wp8-bc-aris-ip-training-classification-v1",
+  "discovery_split_path": "validation/wp8/evidence/feasibility-v1/bc-aris-ip-discovery-split-v1.json",
+  "audit_scope": {
+    "training_discovery_reports_total": 30,
+    "training_reports_classified": 30,
+    "training_archives_opened": 21,
+    "training_reports_classified_from_official_pdf_only": 9,
+    "official_pdf_files_opened_for_remaining_reports": 12,
+    "sealed_candidate_test_reports_total": 73,
+    "sealed_candidate_test_responses_opened": 0,
+    "classification_is_training_only": true
+  },
+  "opened_archive_fingerprints": [
+    ["29734", 16035054, "dba9946556316503719c0ece8b467c21214afc9f6e1652cd90805c337d0eab0f"],
+    ["29849", 69780324, "a0bbbc697dc1b8db287bcc51ac1592d7b3341f544488196c0af670d9c0017a0b"],
+    ["29935", 28735435, "374fb112d24384e8e306880dc5df586a3cc6e4cde8ad9bde9e6bbefa33942433"],
+    ["30079", 99782936, "c88177405f17aefb6a7d7a32d7fca9315a7567c9c5ba807e4fd0d4c93bbd9540"],
+    ["30554", 24609505, "7ffa87a861b281b3512bbeb066ba8b3706c7b60139f8a4f579958f2cd5adbcf2"],
+    ["30986", 39610035, "76c9ea09a8df5fe29d0df49a8365830f7259258be01f3d436bb0b96f6745ecb3"],
+    ["31203", 14600327, "db0218b04f0de56ab6f2fc23e23c8e04e411f1fe3d0e1f684b88ac22f337fd97"],
+    ["32722", 19359594, "0b307182e5cc9677c95c0b51c7e7312da85b6763dd798b0eaa0845adb4aa97e6"],
+    ["33804", 462, "8fb40ba960a46e6f1ce421bcc23ace73deeeabf9e9b76839d2024e90d80b99db"],
+    ["35978", 7632407, "cba5c7ee8ebff507346f92a26bdf978bc226c16ff024f18f090f566f9aa9a78e"],
+    ["38192", 226427, "2393b44ee78d025f7c9d349dbaa98f30e7ae3b71be32c9401b1a4de269e63d80"],
+    ["39054", 65176715, "16ab3c465d3607ba3f71948b98e9850d7d8d842bb44f096b01b9450673f54c9b"],
+    ["39489", 43913308, "ff4860fd3f727ea82af8272d1b11b66283b69647ec203ef6f997539ebda02ac4"],
+    ["40791", 36647863, "4e862ef32084753cc0e361e5028857657a767400be0ef92298ca61fa0ff1b66b"],
+    ["40860", 49363259, "40e333c176e823dcedcd42cc7965b5620136ca695110639de03ad03db94245d3"],
+    ["41076", 66291184, "f929b8cc2f9e0896e1cf8150e2e2ece32c1df1d888dd72e8d03b8c93badb7405"],
+    ["41144", 455, "45c2acc313a6faf06c56b1b5f899ae2a8f16a075668561af8aa0c12749b72d26"],
+    ["41150", 25581744, "60313957292d3354364bfaf8bed136f8671ae535e862151ab11ee9e52b96e981"],
+    ["41516", 22506282, "d57e98ba5f3c2c23106b3a8de25ed599eb6bc367c416a117f2b43d2c009d4bcc"],
+    ["42506", 20730103, "911f1e288f1b47b11758f31c6c5c0b9db2ae15c2da011fce1d6c06291ae272c5"],
+    ["42515", 38778484, "e5a04c910a0ec846d9a224cdd9f8a806cc2625dc5a281efe65b774eee1eeafe0"]
+  ],
+  "opened_official_pdf_fingerprints": [
+    ["28944a.pdf", 47180083, "f9d3bbdc0c4f2cc696aea7b2af360c5a3ce9aacdd625af0422ad891a7de7599e"],
+    ["28944b.pdf", 25021302, "b03e70c05e000ccfca8bfa3d2d8dfcc0e0ab41657a07e8b3f45a8181b9404ad0"],
+    ["28944c.pdf", 33814598, "3d276ce62f80a4555ac79e9760b1100c79f842ceddfc839867a8c3e23ad2c11c"],
+    ["28944d.pdf", 2017906, "fbdc67eb2bab2116b267fbe6369e67aced3b257b89c3dd8a1d6c0fa27d62e42f"],
+    ["31878.pdf", 5411950, "5a44038730061dfde0f60028f891bab150c7856aaec6825fcdc3db22044bc599"],
+    ["39689.pdf", 73951259, "6799a9c97a31125ff50763b6c276748c42a947a6bc3d908f2209ad51d6b61702"],
+    ["41052.pdf", 106474303, "8765c1589b360a4c6539794f9f5cf7aaa422620ae58878020cde268b0a49ba46"],
+    ["41452.pdf", 70833558, "85a61cca0a8a9b1dc64252dd07ab568999d2b04514bbdde04cd05bb461456a9f"],
+    ["41579.pdf", 335880337, "437aaf9b4158628535caedf74b51603c26862e24dab40f6e48ab4a3a074ae724"],
+    ["41890.pdf", 197636798, "5e6bc0fa19a35a59c8ecd4eef99f4f5a2341fa28c080abf5b2fb3a424e09e76f"],
+    ["42547.pdf", 54332709, "aa528c2860013e3af79acc2d32abf06d0c300e4f66b7ee12b78f5f0e42b7fe11"],
+    ["42711.pdf", 16007806, "ba75041ed42fc8890bc8d1313591d97f9beba6f0ab3c3591eca8fef2051388bd"]
+  ],
+  "classification": {
+    "explicit_time_domain_ip_reports": [
+      "29734", "29849", "30079", "30986", "31203", "32722",
+      "35978", "38192", "39054", "40860", "41076", "41150",
+      "28944", "31878", "39689", "41052", "41452", "41890",
+      "42547", "42711"
+    ],
+    "derived_scalar_or_no_qualifying_raw_sip_reports": [
+      "29935", "30554", "39489", "40791", "41516", "41579",
+      "42506", "42515"
+    ],
+    "placeholder_only_reports": ["33804", "41144"],
+    "qualifying_sip_fdip_reports": []
+  },
+  "representative_byte_evidence": [
+    {
+      "report_number": "29734",
+      "member": "Data/Kleanza Property 2007 IP.XYZ",
+      "evidence": "IP[0] through IP[19] decay-window fields and Time=2000; no frequency or phase axis"
+    },
+    {
+      "report_number": "29849",
+      "member": "FRAN IP/11200E.ARW",
+      "evidence": "Pulse Rate: 2 sec; Mx chargeability = 690-1050 msec after shutoff"
+    },
+    {
+      "report_number": "39054",
+      "member": "Line_08400N.gdd",
+      "evidence": "20 windows with millisecond timing and M01-M20 decay values"
+    },
+    {
+      "report_number": "40860",
+      "member": "MPD_3DIP_DataExport.txt",
+      "evidence": "26 recorded Mx time windows; calculated Mx start-end time 200-1800 ms"
+    },
+    {
+      "report_number": "41076",
+      "member": "224501_rewindow.gdd",
+      "evidence": "20 millisecond windows and M01-M20 decay values"
+    },
+    {
+      "report_number": "41150",
+      "member": "IP_Raw.zip/Raw/Line_11800N.dat",
+      "evidence": "Mx start=200, Mx end=1200 and IP1-IP20 decay-window values"
+    },
+    {
+      "report_number": "41890",
+      "member": "official assessment report PDF",
+      "evidence": "0.125 Hz square-wave base frequency; apparent chargeability uses the full 40-1940 ms integration window"
+    },
+    {
+      "report_number": "41052",
+      "member": "official assessment report PDF",
+      "evidence": "0.125 Hz time-domain square wave and 40-1940 ms chargeability; frequency-domain spectral analysis is described only as cultural-noise identification"
+    },
+    {
+      "report_number": "41452",
+      "member": "official assessment report PDF",
+      "evidence": "2 s current-on/off pulses, 200 ms delay and twenty 50 ms chargeability windows"
+    },
+    {
+      "report_number": "42711",
+      "member": "official assessment report PDF",
+      "evidence": "direct-current shutoff response measured with a 2 s on/2 s off alternating square wave"
+    }
+  ],
+  "formal_status": {
+    "formal_sip_fdip_clusters_added": 0,
+    "formal_sip_fdip_observations_added": 0,
+    "formal_gate_changed": false,
+    "reason": "The opened training subset contains time-domain decay windows, scalar/derived IP products, unrelated files, or download placeholders; none exposes a multi-frequency complex or phase SIP/FDIP observation contract."
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": "wp8-zenodo-tdip-full-decay-training-diagnostics-v1",
+  "selection_role": "training_only",
+  "observation_values_read": true,
+  "buffer_values_read": 0,
+  "calibration_values_read": 0,
+  "test_values_read": 0,
+  "test_unseal_count": 0,
+  "contract": {
+    "complete_local_abmn_geometry": true,
+    "utm_coordinates_present": true,
+    "apparent_resistivity_present": true,
+    "decay_windows": 18,
+    "window_centres_s": [
+      0.0115,
+      0.0155,
+      0.021,
+      0.028,
+      0.0375,
+      0.05,
+      0.0665,
+      0.086,
+      0.116,
+      0.156,
+      0.206,
+      0.276,
+      0.366,
+      0.486,
+      0.656,
+      0.886,
+      1.186,
+      1.576
+    ],
+    "window_widths_s": [
+      0.003,
+      0.005,
+      0.006,
+      0.008,
+      0.011,
+      0.014,
+      0.019,
+      0.02,
+      0.04,
+      0.06,
+      0.08,
+      0.1,
+      0.14,
+      0.2,
+      0.26,
+      0.34,
+      0.44
+    ],
+    "per_window_standard_deviation_present": true,
+    "row_and_window_quality_flags_present": true,
+    "coordinate_system_epsg_declared": false,
+    "waveform_on_time_declared": false
+  },
+  "profiles": [
+    {
+      "profile": "n1",
+      "path": "validation/wp8/data/zenodo-tdip-full-decay-v1/training-extract/field_survey/field_processed_data/n1.dip",
+      "bytes": 3451264,
+      "sha256": "a1ad6e91ead9b2a0ec063e12d59d3551737e1f84cfd3c25f6c3beebe92b0c3ae",
+      "rows": 2450,
+      "unique_abmn_quadrupoles": 2450,
+      "row_in_use": 2428,
+      "row_in_use_fraction": 0.9910204081632653,
+      "window_values": 44100,
+      "windows_in_use": 24608,
+      "window_in_use_fraction": 0.5580045351473923,
+      "utm_extent": {
+        "min_x": 577400.62,
+        "max_x": 577495.68,
+        "min_y": 4102612.99,
+        "max_y": 4102612.99
+      },
+      "absolute_window_std": {
+        "min": 0.0003,
+        "median": 0.1153,
+        "p95": 1.9304,
+        "max": 8405.8408
+      }
+    },
+    {
+      "profile": "n12",
+      "path": "validation/wp8/data/zenodo-tdip-full-decay-v1/training-extract/field_survey/field_processed_data/n12.dip",
+      "bytes": 3451264,
+      "sha256": "baa5bf14e62986a7f1252e473f9ab7532af055023e23c3196bd30029028fa4c9",
+      "rows": 2450,
+      "unique_abmn_quadrupoles": 2450,
+      "row_in_use": 2450,
+      "row_in_use_fraction": 1.0,
+      "window_values": 44100,
+      "windows_in_use": 29788,
+      "window_in_use_fraction": 0.6754648526077097,
+      "utm_extent": {
+        "min_x": 577500.62,
+        "max_x": 577595.68,
+        "min_y": 4102612.99,
+        "max_y": 4102612.99
+      },
+      "absolute_window_std": {
+        "min": 0.0014,
+        "median": 0.1321,
+        "p95": 2.5978,
+        "max": 7416.4771
+      }
+    },
+    {
+      "profile": "s2",
+      "path": "validation/wp8/data/zenodo-tdip-full-decay-v1/training-extract/field_survey/field_processed_data/s2.dip",
+      "bytes": 3451264,
+      "sha256": "c603fd9c41a0f6d5c5a97d4f32ea6030bb1ccd39b21fe2c2f873ba32fdf08154",
+      "rows": 2450,
+      "unique_abmn_quadrupoles": 2450,
+      "row_in_use": 2449,
+      "row_in_use_fraction": 0.9995918367346939,
+      "window_values": 44100,
+      "windows_in_use": 25794,
+      "window_in_use_fraction": 0.5848979591836735,
+      "utm_extent": {
+        "min_x": 577600.62,
+        "max_x": 577695.68,
+        "min_y": 4102612.99,
+        "max_y": 4102612.99
+      },
+      "absolute_window_std": {
+        "min": 0.0002,
+        "median": 0.0924,
+        "p95": 1.9612,
+        "max": 1434.3086
+      }
+    },
+    {
+      "profile": "s4",
+      "path": "validation/wp8/data/zenodo-tdip-full-decay-v1/training-extract/field_survey/field_processed_data/s4.dip",
+      "bytes": 3451264,
+      "sha256": "b81ca32acdb8e26b921d1e2d6dea6a88a2a60aa57510daa9185344e7b4d44bc4",
+      "rows": 2450,
+      "unique_abmn_quadrupoles": 2450,
+      "row_in_use": 2443,
+      "row_in_use_fraction": 0.9971428571428571,
+      "window_values": 44100,
+      "windows_in_use": 31494,
+      "window_in_use_fraction": 0.7141496598639456,
+      "utm_extent": {
+        "min_x": 577700.62,
+        "max_x": 577795.68,
+        "min_y": 4102612.99,
+        "max_y": 4102612.99
+      },
+      "absolute_window_std": {
+        "min": 0.0,
+        "median": 0.0245,
+        "p95": 0.762,
+        "max": 1258.4904
+      }
+    },
+    {
+      "profile": "s7",
+      "path": "validation/wp8/data/zenodo-tdip-full-decay-v1/training-extract/field_survey/field_processed_data/s7.dip",
+      "bytes": 1933440,
+      "sha256": "292719ce03bf3458af7f699295d23f24dc9ac26306b4bcaae5554c8b645a3502",
+      "rows": 1372,
+      "unique_abmn_quadrupoles": 1372,
+      "row_in_use": 1372,
+      "row_in_use_fraction": 1.0,
+      "window_values": 24696,
+      "windows_in_use": 21913,
+      "window_in_use_fraction": 0.8873096857790735,
+      "utm_extent": {
+        "min_x": 577600.68,
+        "max_x": 577663.62,
+        "min_y": 4102612.99,
+        "max_y": 4102612.99
+      },
+      "absolute_window_std": {
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      }
+    }
+  ],
+  "totals": {
+    "profiles": 5,
+    "rows": 11172,
+    "unique_abmn_quadrupoles": 11172,
+    "row_in_use": 11142,
+    "row_in_use_fraction": 0.9973147153598282,
+    "window_values": 201096,
+    "windows_in_use": 133597,
+    "window_in_use_fraction": 0.6643443927278514,
+    "absolute_window_std": {
+      "min": 0.0,
+      "median": 0.054,
+      "p95": 1.5869,
+      "max": 8405.8408
+    }
+  },
+  "interpretation": {
+    "uncertainty_contract": "passed_for_training_only_processed_profiles",
+    "full_decay_contract": "passed_for_training_only_processed_profiles",
+    "formal_power_gate": "failed",
+    "reason": "five profiles and all quadrupoles are from one field site; the release improves TDIP training uncertainty and censoring evidence but does not add independent formal test clusters"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "usgs-big-chino-csamt-training-power-readiness-v1",
+  "scope": "training-only",
+  "status": "blocked",
+  "approved_sha256": {
+    "design": "e0b560c5213ec38aebe5e20559977303f58e0381201a79f463d6a8c968893599",
+    "training_audit": "40588ecd032f5a47c3825c81c6bdf9aca75b76d91a181a2de7eb54d4f1e8f303",
+    "raw": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+    "inversion": "325fc3d3d9884eb3fa48a7fc1a906f48665ef2d3b82337f13a0574421be37373"
+  },
+  "partition": {
+    "approved_line_count": 21,
+    "authorized_training_lines": [
+      "CG",
+      "CH",
+      "EW2",
+      "FMW",
+      "NS1",
+      "NS3"
+    ],
+    "sealed_lines": [
+      "AX",
+      "EW1",
+      "EW3",
+      "FM",
+      "FME",
+      "GS16",
+      "GS6",
+      "GS8",
+      "K1",
+      "NS2",
+      "NS4",
+      "NS5",
+      "WC",
+      "WCN",
+      "WR"
+    ],
+    "train_sealed_unique_disjoint_complete": true,
+    "response_content_members_opened_by_this_audit": [],
+    "archive_member_leakage_by_this_audit": [],
+    "missing_training_members": []
+  },
+  "inference_hierarchy": {
+    "observation": "frequency/component/repeat row; not an independent cluster",
+    "station": "receiver observation; independence unproven",
+    "line": "archive packaging unit; independence unproven",
+    "site": "Big Chino field site; only proven independent cluster upper bound",
+    "training_observations_reported": 342,
+    "training_lines": 6,
+    "training_sites": 1
+  },
+  "design_reconciliation": {
+    "claimed_257_station_clusters": 257,
+    "claim_status": "superseded_for_formal_gate",
+    "formal_independent_cluster_proven_upper_bound": 1,
+    "sealed_packaged_line_upper_bound_not_independence_evidence": 15,
+    "formal_cluster_gate_passes": false
+  },
+  "paired_power_inputs": {
+    "registry_path": "validation/wp8/evidence/feasibility-v1/usgs-big-chino-csamt-paired-score-registry-v1.json",
+    "registry_present": false,
+    "validated_registry_count": 0,
+    "minimum_computable_conditions": {
+      "cluster_and_correlation_model_frozen": false,
+      "required_independent_cluster_count_derived_by_frozen_power_method": false,
+      "two_frozen_methods_named_and_versioned": false,
+      "same_information_and_compute_budget": false,
+      "paired_out_of_sample_predictions_cover_all_training_lines": false,
+      "paired_crps_artifact_hash_registered": false
+    }
+  },
+  "formal_power_status": "blocked",
+  "formal_power_gate_passes": false,
+  "paired_crps_computed": false,
+  "exact_unblockers": [
+    "freeze a defensible line/site cluster and response-correlation model using training data only",
+    "freeze the paired-power method; derive required independent N from its alpha, target power, effect and training dispersion",
+    "register two versioned information/compute-matched methods and hashed out-of-sample paired scores covering every authorized training line",
+    "freeze a buffered untouched test partition with at least the derived independent N"
+  ],
+  "field_validation_eligible": false,
+  "errors": [],
+  "structure_audit_passed": true
+}

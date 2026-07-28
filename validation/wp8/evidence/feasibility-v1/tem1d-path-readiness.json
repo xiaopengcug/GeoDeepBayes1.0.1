@@ -1,0 +1,55 @@
+{
+  "schema_version": "wp8-tem1d-path-readiness-v1",
+  "formal_wp8_1_evidence": false,
+  "scope": "WP8-0 conditional 1-D path feasibility only",
+  "implementation": {
+    "entrypoint": "geodeepbayes.forward.em1d.TEM1DLayeredOperator",
+    "dependency_versions": {
+      "simpeg": "0.25.2",
+      "discretize": "0.12.0",
+      "libdlf": "0.3.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    },
+    "applicable_dimension": "1-D layered earth only",
+    "fail_closed": "DimensionalityUpgradeRequired when diagnostic exceeds 1-D threshold"
+  },
+  "independent_reference": {
+    "kind": "independent Key 81/2009 versus Key 201/2012 digital-filter discretizations",
+    "quantity": "signed loop-source TEM transient",
+    "test_path": "tests/forward/test_em1d.py",
+    "test_source_sha256": "46a3b970f2e6d6b39a3efe5c12115ad920931720c79bce4ac0fe3e1115959cca",
+    "pytest_exit_code": 0,
+    "pytest_stdout": "...                                                                      [100%]\n3 passed in 1.09s\n",
+    "passed": true
+  },
+  "resource_measurement": {
+    "kind": "representative layered 1-D time-channel scales; conditional on field dimensionality selecting 1-D",
+    "records": [
+      {
+        "time_channels": 9,
+        "wall_time_seconds": 0.016249099999640748,
+        "peak_python_memory_bytes": 2785353,
+        "finite": true
+      },
+      {
+        "time_channels": 33,
+        "wall_time_seconds": 0.015780700000050274,
+        "peak_python_memory_bytes": 2773677,
+        "finite": true
+      },
+      {
+        "time_channels": 129,
+        "wall_time_seconds": 0.016956399999799032,
+        "peak_python_memory_bytes": 2855395,
+        "finite": true
+      }
+    ],
+    "timeout_seconds": 5.0,
+    "memory_limit_bytes": 67108864,
+    "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+    "negative_test": "tests/validation/test_wp8_resource_abort.py",
+    "negative_test_source_sha256": "d1788b83dc10ab8a436b82ff5a1b3624f056fcaeeb70fe49ec670d6a1c70d5c1",
+    "passed": true
+  }
+}

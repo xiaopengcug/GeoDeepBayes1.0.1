@@ -1,0 +1,224 @@
+{
+  "schema_version": "wp8-ridgecrest-gravity-training-v1",
+  "design_sha256": "4f89e84827ce1f2da3684665976145ab5529a1e73931256dba8ff6530e38846b",
+  "training_response_rows_interpreted": 1464,
+  "response_rows_interpreted": {
+    "train": 1464,
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "training_blocks": 126,
+  "residual_sill_mgal2": 104.05557761711488,
+  "correlation_range_km": 21.25,
+  "range_censored_at_100km": false,
+  "variogram": [
+    {
+      "lag_center_km": 1.25,
+      "pairs": 8,
+      "semivariance_mgal2": 14.815767763916782
+    },
+    {
+      "lag_center_km": 3.75,
+      "pairs": 13,
+      "semivariance_mgal2": 13.532683121399504
+    },
+    {
+      "lag_center_km": 6.25,
+      "pairs": 48,
+      "semivariance_mgal2": 40.48184171608325
+    },
+    {
+      "lag_center_km": 8.75,
+      "pairs": 53,
+      "semivariance_mgal2": 51.59832528685766
+    },
+    {
+      "lag_center_km": 11.25,
+      "pairs": 71,
+      "semivariance_mgal2": 65.69960878603192
+    },
+    {
+      "lag_center_km": 13.75,
+      "pairs": 90,
+      "semivariance_mgal2": 99.29332856807386
+    },
+    {
+      "lag_center_km": 16.25,
+      "pairs": 106,
+      "semivariance_mgal2": 96.09484482661125
+    },
+    {
+      "lag_center_km": 18.75,
+      "pairs": 99,
+      "semivariance_mgal2": 95.72661742750962
+    },
+    {
+      "lag_center_km": 21.25,
+      "pairs": 137,
+      "semivariance_mgal2": 104.56345838760328
+    },
+    {
+      "lag_center_km": 23.75,
+      "pairs": 126,
+      "semivariance_mgal2": 116.0365887981572
+    },
+    {
+      "lag_center_km": 26.25,
+      "pairs": 149,
+      "semivariance_mgal2": 111.36961597557197
+    },
+    {
+      "lag_center_km": 28.75,
+      "pairs": 155,
+      "semivariance_mgal2": 130.62714671781367
+    },
+    {
+      "lag_center_km": 31.25,
+      "pairs": 171,
+      "semivariance_mgal2": 144.32469058765443
+    },
+    {
+      "lag_center_km": 33.75,
+      "pairs": 182,
+      "semivariance_mgal2": 117.53030695510013
+    },
+    {
+      "lag_center_km": 36.25,
+      "pairs": 180,
+      "semivariance_mgal2": 114.36340689112966
+    },
+    {
+      "lag_center_km": 38.75,
+      "pairs": 188,
+      "semivariance_mgal2": 119.87228844434775
+    },
+    {
+      "lag_center_km": 41.25,
+      "pairs": 201,
+      "semivariance_mgal2": 144.7779770453217
+    },
+    {
+      "lag_center_km": 43.75,
+      "pairs": 182,
+      "semivariance_mgal2": 120.53444149370178
+    },
+    {
+      "lag_center_km": 46.25,
+      "pairs": 193,
+      "semivariance_mgal2": 121.20383582911595
+    },
+    {
+      "lag_center_km": 48.75,
+      "pairs": 213,
+      "semivariance_mgal2": 140.5076858077205
+    },
+    {
+      "lag_center_km": 51.25,
+      "pairs": 214,
+      "semivariance_mgal2": 119.41715877774362
+    },
+    {
+      "lag_center_km": 53.75,
+      "pairs": 213,
+      "semivariance_mgal2": 132.3412592352622
+    },
+    {
+      "lag_center_km": 56.25,
+      "pairs": 205,
+      "semivariance_mgal2": 132.90505669940805
+    },
+    {
+      "lag_center_km": 58.75,
+      "pairs": 217,
+      "semivariance_mgal2": 133.6685434900798
+    },
+    {
+      "lag_center_km": 61.25,
+      "pairs": 219,
+      "semivariance_mgal2": 122.5838867778241
+    },
+    {
+      "lag_center_km": 63.75,
+      "pairs": 225,
+      "semivariance_mgal2": 118.48000747135717
+    },
+    {
+      "lag_center_km": 66.25,
+      "pairs": 219,
+      "semivariance_mgal2": 121.3514025073837
+    },
+    {
+      "lag_center_km": 68.75,
+      "pairs": 218,
+      "semivariance_mgal2": 122.37654231930846
+    },
+    {
+      "lag_center_km": 71.25,
+      "pairs": 216,
+      "semivariance_mgal2": 88.36263616487044
+    },
+    {
+      "lag_center_km": 73.75,
+      "pairs": 223,
+      "semivariance_mgal2": 95.76941574243743
+    },
+    {
+      "lag_center_km": 76.25,
+      "pairs": 218,
+      "semivariance_mgal2": 109.32401952686412
+    },
+    {
+      "lag_center_km": 78.75,
+      "pairs": 189,
+      "semivariance_mgal2": 85.21360063817403
+    },
+    {
+      "lag_center_km": 81.25,
+      "pairs": 202,
+      "semivariance_mgal2": 86.03606877048429
+    },
+    {
+      "lag_center_km": 83.75,
+      "pairs": 200,
+      "semivariance_mgal2": 89.57238952962167
+    },
+    {
+      "lag_center_km": 86.25,
+      "pairs": 165,
+      "semivariance_mgal2": 81.41680533873073
+    },
+    {
+      "lag_center_km": 88.75,
+      "pairs": 188,
+      "semivariance_mgal2": 79.77348000016568
+    },
+    {
+      "lag_center_km": 91.25,
+      "pairs": 170,
+      "semivariance_mgal2": 107.87250896164636
+    },
+    {
+      "lag_center_km": 93.75,
+      "pairs": 138,
+      "semivariance_mgal2": 113.12621934258802
+    },
+    {
+      "lag_center_km": 96.25,
+      "pairs": 166,
+      "semivariance_mgal2": 79.96248207241716
+    },
+    {
+      "lag_center_km": 98.75,
+      "pairs": 138,
+      "semivariance_mgal2": 84.2147553789918
+    }
+  ],
+  "design_test_cluster_upper_bound": 375,
+  "correlation_adjusted_test_cluster_upper_bound": 46,
+  "cluster_power_gate_passes": false,
+  "complete_bouguer_contract": true,
+  "per_observation_uncertainty_contract": false,
+  "uncertainty_reason": "CSV has no uncertainty field; metadata provides source-dependent position and elevation precision but no per-station propagated Bouguer uncertainty.",
+  "test_unseal_count": 0
+}

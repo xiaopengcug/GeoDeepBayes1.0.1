@@ -1,0 +1,526 @@
+{
+  "schema_version": "wp8-ntgs-ip-open-search-catalogue-audit-v1",
+  "raw_manifest_sha256": "401cf73c2d548e05373dfe99eed4a4cc0d1a8fee95860441f93de39389b0bf4c",
+  "query_count": 6,
+  "unique_item_count": 619,
+  "items_with_digital_attachments": 218,
+  "items_with_explicit_ip_or_raw_named_attachments": 16,
+  "explicit_candidates": [
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/80192",
+      "title": "Annual technical report Year Two EL 29161 14 May 2013 to 13 May 2014",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/80192/7/EL29161_2014_A_04_IP_Survey_GPS.txt",
+          "name": "EL29161_2014_A_04_IP_Survey_GPS.txt"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/80192/7/EL29161_2014_A_04_IP_Survey_GPS.txt",
+          "name": "EL29161_2014_A_04_IP_Survey_GPS.txt"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/81229",
+      "title": "Final technical report",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/81229/2/EL27304_2015_AS_02_COLL2014A.txt",
+          "name": "EL27304_2015_AS_02_COLL2014A.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/81229/3/EL27304_2015_AS_03_GEO2014A.txt",
+          "name": "EL27304_2015_AS_03_GEO2014A.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/81229/4/EL27304_2015_AS_04_ASS2014A.txt",
+          "name": "EL27304_2015_AS_04_ASS2014A.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/81229/5/EL27304_2015_AS_05_ROCK2015S.txt",
+          "name": "EL27304_2015_AS_05_ROCK2015S.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/81229/6/CR2015-0480_IP_Survey.zip",
+          "name": "CR2015-0480_IP_Survey.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/81229/6/CR2015-0480_IP_Survey.zip",
+          "name": "CR2015-0480_IP_Survey.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/82853",
+      "title": "Final report for EL 27483 24 March 2010 to 10 March 2016",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/82853/2/CR2016-0080_Geochem.zip",
+          "name": "CR2016-0080_Geochem.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/82853/3/CR2016-0080_Geological_Mapping.zip",
+          "name": "CR2016-0080_Geological_Mapping.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/82853/4/CR2016-0080_IP_Dipole_Dipole.zip",
+          "name": "CR2016-0080_IP_Dipole_Dipole.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/82853/5/CR2016-0080_IP_Gradient.zip",
+          "name": "CR2016-0080_IP_Gradient.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/82853/4/CR2016-0080_IP_Dipole_Dipole.zip",
+          "name": "CR2016-0080_IP_Dipole_Dipole.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/82853/5/CR2016-0080_IP_Gradient.zip",
+          "name": "CR2016-0080_IP_Gradient.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/83026",
+      "title": "Tenement summary report for the period 24 March 2012 to 23 March 2013 for EL 27483",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83026/7/EL27483_2013_A_02_SurfaceGeochem.txt",
+          "name": "EL27483_2013_A_02_SurfaceGeochem.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83026/8/EL27483_2013_A_03_SurfaceGeochem.txt",
+          "name": "EL27483_2013_A_03_SurfaceGeochem.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83026/9/CR2013-0416_IP_Dipole_Dipole.zip",
+          "name": "CR2013-0416_IP_Dipole_Dipole.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83026/10/CR2013-0416_IP_Gradient.zip",
+          "name": "CR2013-0416_IP_Gradient.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83026/9/CR2013-0416_IP_Dipole_Dipole.zip",
+          "name": "CR2013-0416_IP_Dipole_Dipole.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83026/10/CR2013-0416_IP_Gradient.zip",
+          "name": "CR2013-0416_IP_Gradient.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/83146",
+      "title": "EL 28843 Helen Springs Project Annual Technical Report Year 2, 2 March 2013 to 1 March 2014",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83146/2/CR2014-0090_Helen_Springs_North_GAIP.zip",
+          "name": "CR2014-0090_Helen_Springs_North_GAIP.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83146/2/CR2014-0090_Helen_Springs_North_GAIP.zip",
+          "name": "CR2014-0090_Helen_Springs_North_GAIP.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/83155",
+      "title": "EL 28843 Helen Springs Project Annual technical report Year 4, 2 March 2015 to 1 March 2016 and Final technical report",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83155/2/EL28843_2016_AS_02_collars.txt",
+          "name": "EL28843_2016_AS_02_collars.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83155/3/EL28843_2016_AS_03_DHsurvey.txt",
+          "name": "EL28843_2016_AS_03_DHsurvey.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83155/4/EL28843_2016_AS_04_assays.txt",
+          "name": "EL28843_2016_AS_04_assays.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83155/5/EL28843_2016_AS_05_geol_logs.txt",
+          "name": "EL28843_2016_AS_05_geol_logs.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83155/8/CR2015-0781_Helen_Springs_North_GAIP.zip",
+          "name": "CR2015-0781_Helen_Springs_North_GAIP.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/83155/8/CR2015-0781_Helen_Springs_North_GAIP.zip",
+          "name": "CR2015-0781_Helen_Springs_North_GAIP.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/85448",
+      "title": "Annual report EL 10121  Year 4, 5 September 2005 to 4 September 2006",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/85448/2/CR2006-0332_Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data.zip",
+          "name": "CR2006-0332_Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/85448/3/CR2006-0332_Appendix2_2004_IP_Survey_MIMDAS_Raw_Data.zip",
+          "name": "CR2006-0332_Appendix2_2004_IP_Survey_MIMDAS_Raw_Data.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/85448/2/CR2006-0332_Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data.zip",
+          "name": "CR2006-0332_Appendix1_GPX_IP_Survey_2006_Operations_Summary_and_Raw_Data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/85448/3/CR2006-0332_Appendix2_2004_IP_Survey_MIMDAS_Raw_Data.zip",
+          "name": "CR2006-0332_Appendix2_2004_IP_Survey_MIMDAS_Raw_Data.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87173",
+      "title": "Annual report Amangal Project EL 27354 for the period 2 December 2009 to 1 December 2010",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87173/3/CR2010-0981_Appendix1_-_Ground_Radiometrics.zip",
+          "name": "CR2010-0981_Appendix1_-_Ground_Radiometrics.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87173/4/CR2010-0981_Appendix2_-_Geological_Mapping.zip",
+          "name": "CR2010-0981_Appendix2_-_Geological_Mapping.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87173/5/CR2010-0981_Appendix3_-_IP_Geophysics.zip",
+          "name": "CR2010-0981_Appendix3_-_IP_Geophysics.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87173/5/CR2010-0981_Appendix3_-_IP_Geophysics.zip",
+          "name": "CR2010-0981_Appendix3_-_IP_Geophysics.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87177",
+      "title": "Annual report on EL 24550 George Project for the period 12 December 2009 to 11 December 2010",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87177/2/CR2010-1012_Additional_Data.zip",
+          "name": "CR2010-1012_Additional_Data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87177/3/CR2010-1012_Appendix_2_-_Geochemistry_-_Exploration_EL24550.zip",
+          "name": "CR2010-1012_Appendix_2_-_Geochemistry_-_Exploration_EL24550.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87177/4/CR2010-1012_Appendix1_-_Geological_Mapping_-_Exploration_EL24550.zip",
+          "name": "CR2010-1012_Appendix1_-_Geological_Mapping_-_Exploration_EL24550.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87177/5/CR2010-1012_IP_Survey.zip",
+          "name": "CR2010-1012_IP_Survey.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87177/5/CR2010-1012_IP_Survey.zip",
+          "name": "CR2010-1012_IP_Survey.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87298",
+      "title": "EL 10335 7th Annual report for the period ending 14 August 2009",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87298/2/CR2009-0564_Appendix1_Lagoon_Creek_Scintillometer_Data.zip",
+          "name": "CR2009-0564_Appendix1_Lagoon_Creek_Scintillometer_Data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87298/3/CR2009-0564_Appendix2_Hartz_Range_Soil_Samples.zip",
+          "name": "CR2009-0564_Appendix2_Hartz_Range_Soil_Samples.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87298/4/CR2009-0564_Appendix3_Hartz_Range_Rockchip_Samples.zip",
+          "name": "CR2009-0564_Appendix3_Hartz_Range_Rockchip_Samples.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87298/5/CR2009-0564_Appendix4_Hartz_Range_Drilling_Data.zip",
+          "name": "CR2009-0564_Appendix4_Hartz_Range_Drilling_Data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87298/6/CR2009-0564_Appendix5_Hartz_Range_IP_Report.zip",
+          "name": "CR2009-0564_Appendix5_Hartz_Range_IP_Report.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87298/7/CR2009-0564_Appendix6_Hartz_Range_Geological_Mapping.zip",
+          "name": "CR2009-0564_Appendix6_Hartz_Range_Geological_Mapping.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87298/6/CR2009-0564_Appendix5_Hartz_Range_IP_Report.zip",
+          "name": "CR2009-0564_Appendix5_Hartz_Range_IP_Report.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87573",
+      "title": "Final surrender report EL 24453 Bigrlyi Surrounds Ngalia Regional Project 6 February 2006 to 28 March 2018",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/2/EL24453_2018_S_02_DrillCollars.txt",
+          "name": "EL24453_2018_S_02_DrillCollars.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/3/EL24453_2018_S_03_Lithologs.txt",
+          "name": "EL24453_2018_S_03_Lithologs.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/4/EL24453_2018_S_04_Lithocodes.txt",
+          "name": "EL24453_2018_S_04_Lithocodes.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/5/EL24453_2018_S_05_DownholeSurveys.txt",
+          "name": "EL24453_2018_S_05_DownholeSurveys.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/6/EL24453_2018_S_06_DownholeGammaLogs.txt",
+          "name": "EL24453_2018_S_06_DownholeGammaLogs.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/7/EL24453_2018_S_09_FileListing.txt",
+          "name": "EL24453_2018_S_09_FileListing.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/8/CR2018-0151_EL24453_2018_S_07_2013_GAIP_Data.zip",
+          "name": "CR2018-0151_EL24453_2018_S_07_2013_GAIP_Data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/9/CR2018-0151_EL24453_2018_S_08_2008_GroundRad.zip",
+          "name": "CR2018-0151_EL24453_2018_S_08_2008_GroundRad.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87573/8/CR2018-0151_EL24453_2018_S_07_2013_GAIP_Data.zip",
+          "name": "CR2018-0151_EL24453_2018_S_07_2013_GAIP_Data.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87909",
+      "title": "EL 10335 Eight annual report for the period ending 14 August 2010",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87909/2/CR2010-0563_Appendix_1_Lagoon_Creek_Scintillometer_Data.zip",
+          "name": "CR2010-0563_Appendix_1_Lagoon_Creek_Scintillometer_Data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87909/3/CR2010-0563_Appendix_2_Lagoon_Creek_Gamma_Graphs.zip",
+          "name": "CR2010-0563_Appendix_2_Lagoon_Creek_Gamma_Graphs.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87909/4/CR2010-0563_Appendix_3_Drilling_by_Lagoon_Creek_Resources_in_2010.zip",
+          "name": "CR2010-0563_Appendix_3_Drilling_by_Lagoon_Creek_Resources_in_2010.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87909/5/CR2010-0563_Appendix_4_Geochem_Soil_Rock_Chip_Sample_results.zip",
+          "name": "CR2010-0563_Appendix_4_Geochem_Soil_Rock_Chip_Sample_results.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87909/6/CR2010-0563_Appendix_6_Hartz_Range_Mines_Geological_Maps.zip",
+          "name": "CR2010-0563_Appendix_6_Hartz_Range_Mines_Geological_Maps.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87909/7/CR2010-0563_Appendix_5_Hartz_Range_Mines_Geophysics_IP_survey.zip",
+          "name": "CR2010-0563_Appendix_5_Hartz_Range_Mines_Geophysics_IP_survey.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/87909/7/CR2010-0563_Appendix_5_Hartz_Range_Mines_Geophysics_IP_survey.zip",
+          "name": "CR2010-0563_Appendix_5_Hartz_Range_Mines_Geophysics_IP_survey.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/88107",
+      "title": "Annual and Final report EL 7150 Talbot South from 6 November 1997 to 18 October 2010",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/2/EL7150_2010_A_02_TS_WASL3_COLL_2010S.txt",
+          "name": "EL7150_2010_A_02_TS_WASL3_COLL_2010S.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/3/EL7150_2010_A_03_TS_WADS3_DHSURV_2010S.txt",
+          "name": "EL7150_2010_A_03_TS_WADS3_DHSURV_2010S.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/4/EL7150_2010_A_04_TS_WADS3_DHSAMP_2010S.txt",
+          "name": "EL7150_2010_A_04_TS_WADS3_DHSAMP_2010S.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/5/EL7150_2010_A_05_TS_WADL3_WEAT_2010S.txt",
+          "name": "EL7150_2010_A_05_TS_WADL3_WEAT_2010S.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/6/JingShan_DD_IP.txt",
+          "name": "JingShan_DD_IP.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/7/JingShan_IP.txt",
+          "name": "JingShan_IP.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/8/CR2010-0917_Appendices.zip",
+          "name": "CR2010-0917_Appendices.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/6/JingShan_DD_IP.txt",
+          "name": "JingShan_DD_IP.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/88107/7/JingShan_IP.txt",
+          "name": "JingShan_IP.txt"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/89308",
+      "title": "EL 23495 Helen Springs Project Final Report for EL 23495 for the period 7 November 2002 to 1 March 2012",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/5/CR2012-0379_Appendix_2_-_Amit_Eliyahu_reports.zip",
+          "name": "CR2012-0379_Appendix_2_-_Amit_Eliyahu_reports.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/6/CR2012-0379_Appendix_3_-_SkyTEM_data.zip",
+          "name": "CR2012-0379_Appendix_3_-_SkyTEM_data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/7/CR2012-0379_Appendix_4_-_Ikonos_satellite_imagery.zip",
+          "name": "CR2012-0379_Appendix_4_-_Ikonos_satellite_imagery.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/8/CR2012-0379_Appendix_5_-_GPX_aeromag_data.zip",
+          "name": "CR2012-0379_Appendix_5_-_GPX_aeromag_data.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/9/CR2012-0379_Appendix_6_-_Tim_Blake_mapping.zip",
+          "name": "CR2012-0379_Appendix_6_-_Tim_Blake_mapping.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/10/CR2012-0379_Appendix_7_-_GPX_GAIP_and_DDIP.zip",
+          "name": "CR2012-0379_Appendix_7_-_GPX_GAIP_and_DDIP.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/11/CR2012-0379_Appendix_8_-_RAB_and_RC_drilling.zip",
+          "name": "CR2012-0379_Appendix_8_-_RAB_and_RC_drilling.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/89308/10/CR2012-0379_Appendix_7_-_GPX_GAIP_and_DDIP.zip",
+          "name": "CR2012-0379_Appendix_7_-_GPX_GAIP_and_DDIP.zip"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/90743",
+      "title": "Partial Relinquishment Report EL 29161, 14 May 2012 to 19 June 2014",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/90743/4/EL29161_2014_P_04_IP_Survey_GPS.txt",
+          "name": "EL29161_2014_P_04_IP_Survey_GPS.txt"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/90743/4/EL29161_2014_P_04_IP_Survey_GPS.txt",
+          "name": "EL29161_2014_P_04_IP_Survey_GPS.txt"
+        }
+      ]
+    },
+    {
+      "handle_url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/93733",
+      "title": "Willson's Find RC Drilling Campaign October 2024 Bloodwood Project Area",
+      "digital_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/1/EL33575_2025_C_05_Scintillometer.txt",
+          "name": "EL33575_2025_C_05_Scintillometer.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/2/EL33575_2025_C_06_Lithology.txt",
+          "name": "EL33575_2025_C_06_Lithology.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/3/EL33575_2025_C_07_Survey.txt",
+          "name": "EL33575_2025_C_07_Survey.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/4/EL33575_2025_C_08_FileListing.txt",
+          "name": "EL33575_2025_C_08_FileListing.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/5/EL33575_2025_C_09_DQAQC.txt",
+          "name": "EL33575_2025_C_09_DQAQC.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/6/EL33575_2025_C_10_MineralisationLog.txt",
+          "name": "EL33575_2025_C_10_MineralisationLog.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/8/EL33575_2025_C_02_DrillCollars.txt",
+          "name": "EL33575_2025_C_02_DrillCollars.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/9/EL33575_2025_C_03_PXRF.txt",
+          "name": "EL33575_2025_C_03_PXRF.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/10/EL33575_2025_C_04_Assay.txt",
+          "name": "EL33575_2025_C_04_Assay.txt"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/11/CR2025-0238_Raw_Assay_Files.zip",
+          "name": "CR2025-0238_Raw_Assay_Files.zip"
+        },
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/12/CR2025-0238_Raw_Survey_Files.zip",
+          "name": "CR2025-0238_Raw_Survey_Files.zip"
+        }
+      ],
+      "ip_or_raw_named_attachments": [
+        {
+          "url": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/93733/12/CR2025-0238_Raw_Survey_Files.zip",
+          "name": "CR2025-0238_Raw_Survey_Files.zip"
+        }
+      ]
+    }
+  ],
+  "data_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "nominal_223_item_threshold_exceeded": true,
+  "formal_contract_ready": false,
+  "formal_cluster_power_gate_passes": false,
+  "formal_test_endpoints_inspected": false,
+  "test_unseal_count": 0,
+  "conclusion": "The search catalogue exceeds 223 nominal report items, but most are annual reports or mixed geophysics packages. Attachment names alone cannot prove TDIP observation contracts, licences, distinct campaigns or correlation-adjusted clusters. Only explicit candidates should be probed, response-blind, before any payload interpretation."
+}

@@ -1,0 +1,2556 @@
+{
+  "schema_version": "wp8-ga-magnetic-probability-audit-v1",
+  "sample_sha256": "5f587fa55269c3dd9fb294212fb540e0dc0db401b331f6bf94622db4d4d1695e",
+  "raw_manifest_sha256": "df1f7ba343f5358bad8f45588adce5b0a593255c7f3cd1d381b4a9aa22a6d3a3",
+  "design_sha256": "8b9cd3702eeffe3b5b313a298c9d3758f602cb30449867c3bf8136f4cc48ba6b",
+  "dds_contract_sha256": "a98b48ad91d057b4b347b431c1143be38431389ae6caa615740f832a1aeab872",
+  "members": [
+    {
+      "dataset_no": 15090,
+      "state": "WA",
+      "training_rows_interpreted": 7311205,
+      "geometry_rows_by_role": {
+        "train": 7311205,
+        "buffer": 2914418,
+        "calibration": 3267574,
+        "test": 4609917
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 1047,
+      "correlation_range_m": 32500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 3427,
+          "semivariance_nt2": 373.69087786367453
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 5489,
+          "semivariance_nt2": 1043.399972643406
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 5505,
+          "semivariance_nt2": 1700.949816799915
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 5199,
+          "semivariance_nt2": 2272.984728586825
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 6122,
+          "semivariance_nt2": 2844.104105479062
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 3895,
+          "semivariance_nt2": 3270.9539359108226
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 3385,
+          "semivariance_nt2": 3483.6618761662185
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 2611,
+          "semivariance_nt2": 3398.869668914322
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 2339,
+          "semivariance_nt2": 2965.358003044738
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 3261,
+          "semivariance_nt2": 2938.887872267309
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 3426,
+          "semivariance_nt2": 2922.677251384201
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 4521,
+          "semivariance_nt2": 3379.1523124664727
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 4941,
+          "semivariance_nt2": 3712.01464899829
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 4852,
+          "semivariance_nt2": 4162.992604164902
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 5117,
+          "semivariance_nt2": 4500.186582982154
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 4857,
+          "semivariance_nt2": 4561.104169341879
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 5896,
+          "semivariance_nt2": 4475.349085995872
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 5895,
+          "semivariance_nt2": 4336.017298185898
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 6420,
+          "semivariance_nt2": 4199.496953973201
+        }
+      ],
+      "crossover_bins": 6423,
+      "crossover_rmse_nt": 5.82722526069199
+    },
+    {
+      "dataset_no": 16369,
+      "state": "NSW",
+      "training_rows_interpreted": 2092418,
+      "geometry_rows_by_role": {
+        "train": 2092418,
+        "buffer": 1286105,
+        "calibration": 2035233,
+        "test": 1158437
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 173,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 566,
+          "semivariance_nt2": 2064.757697441427
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 906,
+          "semivariance_nt2": 2689.9327293082333
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 897,
+          "semivariance_nt2": 2845.3436664453566
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 834,
+          "semivariance_nt2": 3076.257832224876
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 964,
+          "semivariance_nt2": 3496.505112534217
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 592,
+          "semivariance_nt2": 4283.079546101667
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 500,
+          "semivariance_nt2": 4850.871912390365
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 318,
+          "semivariance_nt2": 3782.7910436873117
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 205,
+          "semivariance_nt2": 2742.260500617381
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 281,
+          "semivariance_nt2": 2066.721774099018
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 266,
+          "semivariance_nt2": 1842.2910155980148
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 330,
+          "semivariance_nt2": 1401.3609621132803
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 331,
+          "semivariance_nt2": 1170.2814767112718
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 241,
+          "semivariance_nt2": 1049.0904990562478
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 209,
+          "semivariance_nt2": 1052.452971617353
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 179,
+          "semivariance_nt2": 1108.9593145521933
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 207,
+          "semivariance_nt2": 1499.3676291671698
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 245,
+          "semivariance_nt2": 2375.8090108236206
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 245,
+          "semivariance_nt2": 2968.922601973753
+        }
+      ],
+      "crossover_bins": 2556,
+      "crossover_rmse_nt": 26.75428787473607
+    },
+    {
+      "dataset_no": 16401,
+      "state": "NSW",
+      "training_rows_interpreted": 26332,
+      "geometry_rows_by_role": {
+        "train": 26332,
+        "buffer": 11567,
+        "calibration": 30332,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 99,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 298,
+          "semivariance_nt2": 3482.5858768427206
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 433,
+          "semivariance_nt2": 7428.155618689595
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 385,
+          "semivariance_nt2": 8178.892109202616
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 297,
+          "semivariance_nt2": 8010.890019122899
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 262,
+          "semivariance_nt2": 5354.5031309177675
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 117,
+          "semivariance_nt2": 4117.58785628088
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 91,
+          "semivariance_nt2": 4661.714693544678
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 93,
+          "semivariance_nt2": 3914.1718252961737
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 111,
+          "semivariance_nt2": 3442.7690739575874
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 159,
+          "semivariance_nt2": 4448.6358527364455
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 153,
+          "semivariance_nt2": 5187.263033665761
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 244,
+          "semivariance_nt2": 5735.941733689238
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 270,
+          "semivariance_nt2": 4732.827322949088
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 268,
+          "semivariance_nt2": 5417.979322639633
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 286,
+          "semivariance_nt2": 7603.177558296426
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 264,
+          "semivariance_nt2": 9152.659205757533
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 306,
+          "semivariance_nt2": 9221.22891605286
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 252,
+          "semivariance_nt2": 10027.95825765932
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 221,
+          "semivariance_nt2": 13032.69077669544
+        }
+      ],
+      "crossover_bins": 49,
+      "crossover_rmse_nt": 10.30028544659548
+    },
+    {
+      "dataset_no": 16743,
+      "state": "NT",
+      "training_rows_interpreted": 440927,
+      "geometry_rows_by_role": {
+        "train": 440927,
+        "buffer": 230354,
+        "calibration": 593090,
+        "test": 116136
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 78,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 237,
+          "semivariance_nt2": 3647.543603399631
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 346,
+          "semivariance_nt2": 8624.536053097541
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 306,
+          "semivariance_nt2": 12793.601114570325
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 236,
+          "semivariance_nt2": 15345.281026044562
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 194,
+          "semivariance_nt2": 14877.333517607938
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 93,
+          "semivariance_nt2": 10965.912833982624
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 52,
+          "semivariance_nt2": 9230.35647694917
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 26,
+          "semivariance_nt2": 7236.365130690512
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 32,
+          "semivariance_nt2": 7427.298625291997
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 84,
+          "semivariance_nt2": 9698.416884303422
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 98,
+          "semivariance_nt2": 11311.14945423212
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 186,
+          "semivariance_nt2": 14072.650745900723
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 201,
+          "semivariance_nt2": 11417.373763404341
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 208,
+          "semivariance_nt2": 10609.980625337434
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 207,
+          "semivariance_nt2": 10024.045152982166
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 161,
+          "semivariance_nt2": 8613.640512289405
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 155,
+          "semivariance_nt2": 9227.77144874921
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 81,
+          "semivariance_nt2": 9936.649809024335
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 61,
+          "semivariance_nt2": 10741.663239233898
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 16745,
+      "state": "NT",
+      "training_rows_interpreted": 442403,
+      "geometry_rows_by_role": {
+        "train": 442403,
+        "buffer": 222143,
+        "calibration": 433002,
+        "test": 321839
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 75,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 229,
+          "semivariance_nt2": 2729.9028228884613
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 331,
+          "semivariance_nt2": 7116.297323358937
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 287,
+          "semivariance_nt2": 11414.374455591937
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 218,
+          "semivariance_nt2": 14835.588958991373
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 175,
+          "semivariance_nt2": 13720.989816251642
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 83,
+          "semivariance_nt2": 8773.049139854435
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 39,
+          "semivariance_nt2": 6017.837910648595
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 9,
+          "semivariance_nt2": 1169.3966356963865
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 1,
+          "semivariance_nt2": 26484.54724570427
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 14,
+          "semivariance_nt2": 18844.718054823683
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 47,
+          "semivariance_nt2": 15787.803695967072
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 107,
+          "semivariance_nt2": 14227.383407585738
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 196,
+          "semivariance_nt2": 14235.224762399695
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 218,
+          "semivariance_nt2": 12253.286135195878
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 16793,
+      "state": "NT",
+      "training_rows_interpreted": 660793,
+      "geometry_rows_by_role": {
+        "train": 660793,
+        "buffer": 181984,
+        "calibration": 403520,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 116,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 379,
+          "semivariance_nt2": 397.7573853164626
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 605,
+          "semivariance_nt2": 935.6224897571791
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 614,
+          "semivariance_nt2": 1359.1273673982018
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 596,
+          "semivariance_nt2": 1673.7479540012052
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 728,
+          "semivariance_nt2": 1914.3138828946235
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 498,
+          "semivariance_nt2": 1864.0153177967857
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 489,
+          "semivariance_nt2": 1757.2515087598708
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 454,
+          "semivariance_nt2": 1654.8529982471928
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 378,
+          "semivariance_nt2": 1434.1154988765152
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 420,
+          "semivariance_nt2": 1329.5172611074179
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 400,
+          "semivariance_nt2": 1452.1772186096568
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 362,
+          "semivariance_nt2": 1358.006559833687
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 332,
+          "semivariance_nt2": 1130.4358579366015
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 209,
+          "semivariance_nt2": 1185.0563673431836
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 137,
+          "semivariance_nt2": 1408.3138830880423
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 64,
+          "semivariance_nt2": 1705.5580155824637
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 5,
+          "semivariance_nt2": 2162.8873186014443
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 16799,
+      "state": "NT",
+      "training_rows_interpreted": 780118,
+      "geometry_rows_by_role": {
+        "train": 780118,
+        "buffer": 0,
+        "calibration": 215257,
+        "test": 251221
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 140,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 447,
+          "semivariance_nt2": 1849.6164398411613
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 689,
+          "semivariance_nt2": 3552.228689406722
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 669,
+          "semivariance_nt2": 4982.426037590069
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 626,
+          "semivariance_nt2": 6381.066671674865
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 735,
+          "semivariance_nt2": 7952.440921195481
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 546,
+          "semivariance_nt2": 8271.219307736197
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 581,
+          "semivariance_nt2": 7036.673316966505
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 603,
+          "semivariance_nt2": 6297.742721248841
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 588,
+          "semivariance_nt2": 6012.213601533568
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 731,
+          "semivariance_nt2": 6748.065970298191
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 687,
+          "semivariance_nt2": 6824.5200603679605
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 747,
+          "semivariance_nt2": 6985.486760118604
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 665,
+          "semivariance_nt2": 6898.8997397561425
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 503,
+          "semivariance_nt2": 7953.43999857262
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 382,
+          "semivariance_nt2": 7222.540360886184
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 228,
+          "semivariance_nt2": 5777.159486855648
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 177,
+          "semivariance_nt2": 4471.038209983067
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 71,
+          "semivariance_nt2": 2544.271945929645
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 43,
+          "semivariance_nt2": 1262.4699813462396
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 16907,
+      "state": "NT",
+      "training_rows_interpreted": 416936,
+      "geometry_rows_by_role": {
+        "train": 416936,
+        "buffer": 229307,
+        "calibration": 0,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 64,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 213,
+          "semivariance_nt2": 187.01446601951469
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 344,
+          "semivariance_nt2": 498.0602542539624
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 347,
+          "semivariance_nt2": 762.8727273873448
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 326,
+          "semivariance_nt2": 905.3220177444508
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 375,
+          "semivariance_nt2": 798.8699089725402
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 215,
+          "semivariance_nt2": 695.1721238054603
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 149,
+          "semivariance_nt2": 552.1758656618076
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 47,
+          "semivariance_nt2": 485.8977620372265
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 16911,
+      "state": "NT",
+      "training_rows_interpreted": 174595,
+      "geometry_rows_by_role": {
+        "train": 174595,
+        "buffer": 0,
+        "calibration": 561306,
+        "test": 486206
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 29,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 86,
+          "semivariance_nt2": 288.25511782601876
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 119,
+          "semivariance_nt2": 367.42628109432144
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 99,
+          "semivariance_nt2": 289.5492372622149
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 67,
+          "semivariance_nt2": 332.7010416578549
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 34,
+          "semivariance_nt2": 491.5984992029116
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 1,
+          "semivariance_nt2": 275.4486619707276
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 264,
+      "crossover_rmse_nt": 3.2036760536420315
+    },
+    {
+      "dataset_no": 16980,
+      "state": "NT",
+      "training_rows_interpreted": 2076119,
+      "geometry_rows_by_role": {
+        "train": 2076119,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 1141327
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 152,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 466,
+          "semivariance_nt2": 84.85181087838775
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 676,
+          "semivariance_nt2": 232.96569566722636
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 608,
+          "semivariance_nt2": 359.6860441393982
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 509,
+          "semivariance_nt2": 463.58147953056584
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 484,
+          "semivariance_nt2": 516.4955786892396
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 362,
+          "semivariance_nt2": 525.2230031949457
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 386,
+          "semivariance_nt2": 552.0767181943893
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 493,
+          "semivariance_nt2": 621.9225281627832
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 507,
+          "semivariance_nt2": 530.8455008235087
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 626,
+          "semivariance_nt2": 464.0860555017291
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 556,
+          "semivariance_nt2": 477.4084266375665
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 679,
+          "semivariance_nt2": 471.77915688569044
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 576,
+          "semivariance_nt2": 537.2088581653674
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 505,
+          "semivariance_nt2": 549.1821684469129
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 454,
+          "semivariance_nt2": 544.1857816732054
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 371,
+          "semivariance_nt2": 529.0745969486311
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 395,
+          "semivariance_nt2": 399.01967427063096
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 347,
+          "semivariance_nt2": 359.6071598353686
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 294,
+          "semivariance_nt2": 339.5836124917433
+        }
+      ],
+      "crossover_bins": 1479,
+      "crossover_rmse_nt": 3.4440007268802693
+    },
+    {
+      "dataset_no": 17565,
+      "state": "QLD",
+      "training_rows_interpreted": 4142789,
+      "geometry_rows_by_role": {
+        "train": 4142789,
+        "buffer": 544312,
+        "calibration": 1469344,
+        "test": 1395170
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 610,
+      "correlation_range_m": 27500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 1986,
+          "semivariance_nt2": 6106.634722472014
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 3142,
+          "semivariance_nt2": 13634.535325540224
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 3144,
+          "semivariance_nt2": 18150.9984881726
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 3061,
+          "semivariance_nt2": 22182.36442842318
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 3866,
+          "semivariance_nt2": 26013.45532941062
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 2957,
+          "semivariance_nt2": 29911.66538616391
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 3308,
+          "semivariance_nt2": 32858.96935917351
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 3631,
+          "semivariance_nt2": 34060.986123809496
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 3840,
+          "semivariance_nt2": 33679.666012472684
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 5065,
+          "semivariance_nt2": 31828.127766725953
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 5164,
+          "semivariance_nt2": 30839.624551772737
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 6201,
+          "semivariance_nt2": 31008.176233985578
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 6297,
+          "semivariance_nt2": 33615.28573137603
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 5418,
+          "semivariance_nt2": 34057.822648130925
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 5083,
+          "semivariance_nt2": 35214.7746731347
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 4261,
+          "semivariance_nt2": 34318.936761199184
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 4515,
+          "semivariance_nt2": 31630.759894875104
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 3900,
+          "semivariance_nt2": 29411.796968224706
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 3681,
+          "semivariance_nt2": 25518.928109289576
+        }
+      ],
+      "crossover_bins": 5691,
+      "crossover_rmse_nt": 7.55384320138526
+    },
+    {
+      "dataset_no": 17852,
+      "state": "SA",
+      "training_rows_interpreted": 5086097,
+      "geometry_rows_by_role": {
+        "train": 5086097,
+        "buffer": 956506,
+        "calibration": 3788787,
+        "test": 3869091
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 669,
+      "correlation_range_m": 82500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 2206,
+          "semivariance_nt2": 5075.827277945662
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 3551,
+          "semivariance_nt2": 12195.198845430357
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 3580,
+          "semivariance_nt2": 18103.31801898021
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 3400,
+          "semivariance_nt2": 23281.70823302965
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 4046,
+          "semivariance_nt2": 28728.55893305217
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 2582,
+          "semivariance_nt2": 32954.123893848126
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 2267,
+          "semivariance_nt2": 35137.3115705616
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 1730,
+          "semivariance_nt2": 33545.20507523759
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 1461,
+          "semivariance_nt2": 31470.502466925107
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 2005,
+          "semivariance_nt2": 31649.685806140245
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 2081,
+          "semivariance_nt2": 32042.990106550755
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 2702,
+          "semivariance_nt2": 30798.80154417186
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 2963,
+          "semivariance_nt2": 30567.759636159175
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 2826,
+          "semivariance_nt2": 29647.00290735628
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 3025,
+          "semivariance_nt2": 33134.08940905382
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 2981,
+          "semivariance_nt2": 37710.712431421
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 3705,
+          "semivariance_nt2": 40575.19433279438
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 3742,
+          "semivariance_nt2": 45796.975483203896
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 3986,
+          "semivariance_nt2": 44923.11954894724
+        }
+      ],
+      "crossover_bins": 6786,
+      "crossover_rmse_nt": 6.646544637168243
+    },
+    {
+      "dataset_no": 18044,
+      "state": "SA",
+      "training_rows_interpreted": 1123733,
+      "geometry_rows_by_role": {
+        "train": 1123733,
+        "buffer": 263010,
+        "calibration": 246520,
+        "test": 338541
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 168,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 525,
+          "semivariance_nt2": 30021.68964347291
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 787,
+          "semivariance_nt2": 51070.41673692054
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 738,
+          "semivariance_nt2": 68343.65683958358
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 670,
+          "semivariance_nt2": 82274.97814921693
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 749,
+          "semivariance_nt2": 92967.42134357733
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 575,
+          "semivariance_nt2": 93488.24161642525
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 612,
+          "semivariance_nt2": 90956.3913818225
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 683,
+          "semivariance_nt2": 104795.29653851707
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 684,
+          "semivariance_nt2": 105697.65956292232
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 795,
+          "semivariance_nt2": 106462.32553263108
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 786,
+          "semivariance_nt2": 99678.15344067456
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 804,
+          "semivariance_nt2": 89256.95127099381
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 757,
+          "semivariance_nt2": 86220.9022442462
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 603,
+          "semivariance_nt2": 72875.36326884867
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 539,
+          "semivariance_nt2": 57303.300553598085
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 434,
+          "semivariance_nt2": 42131.11904779363
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 483,
+          "semivariance_nt2": 40849.95612237663
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 442,
+          "semivariance_nt2": 75285.00651060301
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 452,
+          "semivariance_nt2": 90221.42473720064
+        }
+      ],
+      "crossover_bins": 1448,
+      "crossover_rmse_nt": 2.2784044514044222e+34
+    },
+    {
+      "dataset_no": 18048,
+      "state": "SA",
+      "training_rows_interpreted": 1238021,
+      "geometry_rows_by_role": {
+        "train": 1238021,
+        "buffer": 752832,
+        "calibration": 288504,
+        "test": 633374
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 182,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 570,
+          "semivariance_nt2": 1.5642215749815958e+72
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 866,
+          "semivariance_nt2": 1.826435702654618e+72
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 829,
+          "semivariance_nt2": 2.200539738191176e+72
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 741,
+          "semivariance_nt2": 2.586473541447207e+72
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 796,
+          "semivariance_nt2": 3.5128552970618317e+72
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 511,
+          "semivariance_nt2": 2.8072417274575653e+72
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 460,
+          "semivariance_nt2": 2.4874510908285517e+72
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 459,
+          "semivariance_nt2": 1.4853097149953768e+72
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 482,
+          "semivariance_nt2": 2.8102385905225194e+72
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 600,
+          "semivariance_nt2": 3.1553086226835634e+72
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 615,
+          "semivariance_nt2": 3.488775998722547e+72
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 674,
+          "semivariance_nt2": 3.248449242496406e+72
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 667,
+          "semivariance_nt2": 3.854905547623868e+72
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 566,
+          "semivariance_nt2": 3.859730550368713e+72
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 534,
+          "semivariance_nt2": 4.059657504544544e+72
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 468,
+          "semivariance_nt2": 4.731912763923126e+72
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 528,
+          "semivariance_nt2": 2.1640185639424672e+72
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 517,
+          "semivariance_nt2": 1.3983016851040258e+72
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 534,
+          "semivariance_nt2": 1.4665555900843647e+72
+        }
+      ],
+      "crossover_bins": 1747,
+      "crossover_rmse_nt": 9.906968598181717e+34
+    },
+    {
+      "dataset_no": 19144,
+      "state": "WA",
+      "training_rows_interpreted": 308094,
+      "geometry_rows_by_role": {
+        "train": 308094,
+        "buffer": 0,
+        "calibration": 679800,
+        "test": 259267
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 66,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 195,
+          "semivariance_nt2": 69268.46555955209
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 270,
+          "semivariance_nt2": 134807.03581825036
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 232,
+          "semivariance_nt2": 190611.09592434365
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 178,
+          "semivariance_nt2": 226334.7253349893
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 148,
+          "semivariance_nt2": 196603.16511630625
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 60,
+          "semivariance_nt2": 156299.9416012602
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 39,
+          "semivariance_nt2": 203668.61267282075
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 44,
+          "semivariance_nt2": 264401.7984856861
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 59,
+          "semivariance_nt2": 225668.86563802688
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 104,
+          "semivariance_nt2": 185678.9156557416
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 90,
+          "semivariance_nt2": 139910.92834081323
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 159,
+          "semivariance_nt2": 127586.49562568429
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 134,
+          "semivariance_nt2": 91365.69922613206
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 136,
+          "semivariance_nt2": 109585.2912608418
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 105,
+          "semivariance_nt2": 90376.37811826577
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 70,
+          "semivariance_nt2": 111472.24672706396
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 60,
+          "semivariance_nt2": 98012.33951540374
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 34,
+          "semivariance_nt2": 101761.79204175985
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 18,
+          "semivariance_nt2": 123801.83905980532
+        }
+      ],
+      "crossover_bins": 394,
+      "crossover_rmse_nt": 8.60196002180914e+34
+    },
+    {
+      "dataset_no": 19306,
+      "state": "WA",
+      "training_rows_interpreted": 4967839,
+      "geometry_rows_by_role": {
+        "train": 4967839,
+        "buffer": 453892,
+        "calibration": 3833767,
+        "test": 2665577
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 390,
+      "correlation_range_m": 27500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 1274,
+          "semivariance_nt2": 564.1085549383226
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 2031,
+          "semivariance_nt2": 1608.8447947909744
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 2049,
+          "semivariance_nt2": 2665.7836763497226
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 1974,
+          "semivariance_nt2": 3811.8139380077587
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 2401,
+          "semivariance_nt2": 5324.164724394494
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 1663,
+          "semivariance_nt2": 6787.670550500853
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 1692,
+          "semivariance_nt2": 7891.166511303618
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 1660,
+          "semivariance_nt2": 7492.322585755687
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 1617,
+          "semivariance_nt2": 7314.762224864405
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 2110,
+          "semivariance_nt2": 7503.191942883445
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 2144,
+          "semivariance_nt2": 7636.791510750989
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 2500,
+          "semivariance_nt2": 8091.1307242964685
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 2567,
+          "semivariance_nt2": 8448.920069859329
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 2255,
+          "semivariance_nt2": 7395.963959273936
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 2123,
+          "semivariance_nt2": 6211.287986283747
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 1788,
+          "semivariance_nt2": 5864.251684229586
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 1828,
+          "semivariance_nt2": 5557.497879852369
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 1599,
+          "semivariance_nt2": 5165.30499897998
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 1547,
+          "semivariance_nt2": 4673.118014295834
+        }
+      ],
+      "crossover_bins": 3455,
+      "crossover_rmse_nt": 1.4333916804341535
+    },
+    {
+      "dataset_no": 19338,
+      "state": "WA",
+      "training_rows_interpreted": 2163009,
+      "geometry_rows_by_role": {
+        "train": 2163009,
+        "buffer": 0,
+        "calibration": 500571,
+        "test": 467327
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 283,
+      "correlation_range_m": 52500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 903,
+          "semivariance_nt2": 302.9315326872904
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 1394,
+          "semivariance_nt2": 474.3535571060336
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 1382,
+          "semivariance_nt2": 502.2679300313265
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 1324,
+          "semivariance_nt2": 531.4971424006211
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 1632,
+          "semivariance_nt2": 504.859525211061
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 1276,
+          "semivariance_nt2": 483.8282069190645
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 1469,
+          "semivariance_nt2": 476.27782444401265
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 1633,
+          "semivariance_nt2": 435.56904006960394
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 1647,
+          "semivariance_nt2": 436.4810022603445
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 2051,
+          "semivariance_nt2": 530.0648158612432
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 1990,
+          "semivariance_nt2": 626.345834014139
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 2230,
+          "semivariance_nt2": 680.1012106660585
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 2175,
+          "semivariance_nt2": 692.5127871244249
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 1758,
+          "semivariance_nt2": 683.4228662300761
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 1504,
+          "semivariance_nt2": 639.9860290962802
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 1180,
+          "semivariance_nt2": 652.9769984912386
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 1220,
+          "semivariance_nt2": 601.0543391630816
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 1131,
+          "semivariance_nt2": 481.9287285349765
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 1034,
+          "semivariance_nt2": 359.43342634208926
+        }
+      ],
+      "crossover_bins": 2580,
+      "crossover_rmse_nt": 8.340020958954346
+    },
+    {
+      "dataset_no": 19394,
+      "state": "WA",
+      "training_rows_interpreted": 1871207,
+      "geometry_rows_by_role": {
+        "train": 1871207,
+        "buffer": 761282,
+        "calibration": 1542156,
+        "test": 2468210
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 272,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 861,
+          "semivariance_nt2": 236835.72091357294
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 1319,
+          "semivariance_nt2": 253212.1688698776
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 1259,
+          "semivariance_nt2": 273423.66098846216
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 1114,
+          "semivariance_nt2": 331001.0139437943
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 1179,
+          "semivariance_nt2": 406675.20530590886
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 714,
+          "semivariance_nt2": 466191.9490273797
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 590,
+          "semivariance_nt2": 572203.1005657685
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 417,
+          "semivariance_nt2": 475167.09443475126
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 338,
+          "semivariance_nt2": 302756.1820091367
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 462,
+          "semivariance_nt2": 296960.5770514085
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 476,
+          "semivariance_nt2": 349310.1391350329
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 590,
+          "semivariance_nt2": 316992.5325537187
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 600,
+          "semivariance_nt2": 368633.3631672607
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 567,
+          "semivariance_nt2": 378065.1991076563
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 571,
+          "semivariance_nt2": 456669.63344336866
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 535,
+          "semivariance_nt2": 568933.1696712767
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 620,
+          "semivariance_nt2": 511788.7610442444
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 641,
+          "semivariance_nt2": 569247.7038596185
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 670,
+          "semivariance_nt2": 468014.532216692
+        }
+      ],
+      "crossover_bins": 2487,
+      "crossover_rmse_nt": 299.6176758607732
+    },
+    {
+      "dataset_no": 19448,
+      "state": "WA",
+      "training_rows_interpreted": 2108613,
+      "geometry_rows_by_role": {
+        "train": 2108613,
+        "buffer": 0,
+        "calibration": 516794,
+        "test": 1240156
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 282,
+      "correlation_range_m": 100000.0,
+      "range_censored_at_100km": true,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 924,
+          "semivariance_nt2": 433.74956081633024
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 1471,
+          "semivariance_nt2": 1161.705920820055
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 1483,
+          "semivariance_nt2": 1557.4582727092431
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 1419,
+          "semivariance_nt2": 1671.1345727950775
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 1703,
+          "semivariance_nt2": 1691.5581572083138
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 1140,
+          "semivariance_nt2": 1534.2267230826599
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 1073,
+          "semivariance_nt2": 1440.5759411682732
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 933,
+          "semivariance_nt2": 1343.9959079209502
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 854,
+          "semivariance_nt2": 1583.4301687210389
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 1092,
+          "semivariance_nt2": 2068.7639800059396
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 1137,
+          "semivariance_nt2": 1753.4991689752674
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 1218,
+          "semivariance_nt2": 2081.0077822414014
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 1225,
+          "semivariance_nt2": 1618.6498134838014
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 963,
+          "semivariance_nt2": 1289.3107681593656
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 824,
+          "semivariance_nt2": 1082.0225280482096
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 672,
+          "semivariance_nt2": 1001.3968438180704
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 586,
+          "semivariance_nt2": 1113.4470430466488
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 529,
+          "semivariance_nt2": 1053.6218756067922
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 513,
+          "semivariance_nt2": 1168.1323694032938
+        }
+      ],
+      "crossover_bins": 2728,
+      "crossover_rmse_nt": 1.7748913472103807
+    }
+  ],
+  "sampled_cell_results": [
+    {
+      "cell": "-16.000000:120.842545",
+      "assigned_dataset_no": 15090,
+      "success": true,
+      "correlation_range_m": 32500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 7311205,
+      "training_cells_5km": 1047
+    },
+    {
+      "cell": "-32.000000:115.537535",
+      "assigned_dataset_no": 19448,
+      "success": false,
+      "correlation_range_m": 100000.0,
+      "range_censored_at_100km": true,
+      "training_rows_interpreted": 2108613,
+      "training_cells_5km": 282
+    },
+    {
+      "cell": "-20.000000:131.687289",
+      "assigned_dataset_no": 16799,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 780118,
+      "training_cells_5km": 140
+    },
+    {
+      "cell": "-22.500000:141.224589",
+      "assigned_dataset_no": 17565,
+      "success": true,
+      "correlation_range_m": 27500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 4142789,
+      "training_cells_5km": 610
+    },
+    {
+      "cell": "-16.000000:123.963444",
+      "assigned_dataset_no": 19338,
+      "success": true,
+      "correlation_range_m": 52500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 2163009,
+      "training_cells_5km": 283
+    },
+    {
+      "cell": "-19.000000:131.037172",
+      "assigned_dataset_no": 16911,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 174595,
+      "training_cells_5km": 29
+    },
+    {
+      "cell": "-29.000000:130.865342",
+      "assigned_dataset_no": 17852,
+      "success": false,
+      "correlation_range_m": 82500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 5086097,
+      "training_cells_5km": 669
+    },
+    {
+      "cell": "-19.500000:131.625701",
+      "assigned_dataset_no": 16799,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 780118,
+      "training_cells_5km": 140
+    },
+    {
+      "cell": "-21.000000:126.996030",
+      "assigned_dataset_no": 19306,
+      "success": true,
+      "correlation_range_m": 27500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 4967839,
+      "training_cells_5km": 390
+    },
+    {
+      "cell": "-27.000000:132.763035",
+      "assigned_dataset_no": 18044,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 1123733,
+      "training_cells_5km": 168
+    },
+    {
+      "cell": "-21.500000:116.299145",
+      "assigned_dataset_no": 19394,
+      "success": true,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 1871207,
+      "training_cells_5km": 272
+    },
+    {
+      "cell": "-21.000000:133.958472",
+      "assigned_dataset_no": 16745,
+      "success": true,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 442403,
+      "training_cells_5km": 75
+    },
+    {
+      "cell": "-26.500000:130.437106",
+      "assigned_dataset_no": 18048,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 1238021,
+      "training_cells_5km": 182
+    },
+    {
+      "cell": "-19.500000:132.686550",
+      "assigned_dataset_no": 16793,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 660793,
+      "training_cells_5km": 116
+    },
+    {
+      "cell": "-34.500000:119.280438",
+      "assigned_dataset_no": 19144,
+      "success": true,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 308094,
+      "training_cells_5km": 66
+    },
+    {
+      "cell": "-34.000000:151.202083",
+      "assigned_dataset_no": 16401,
+      "success": true,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 26332,
+      "training_cells_5km": 99
+    },
+    {
+      "cell": "-15.000000:129.082057",
+      "assigned_dataset_no": 16980,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 2076119,
+      "training_cells_5km": 152
+    },
+    {
+      "cell": "-20.000000:134.879822",
+      "assigned_dataset_no": 16743,
+      "success": true,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 440927,
+      "training_cells_5km": 78
+    },
+    {
+      "cell": "-35.500000:149.463971",
+      "assigned_dataset_no": 16369,
+      "success": true,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 2092418,
+      "training_cells_5km": 173
+    },
+    {
+      "cell": "-17.000000:131.345297",
+      "assigned_dataset_no": 16907,
+      "success": true,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "training_rows_interpreted": 416936,
+      "training_cells_5km": 64
+    }
+  ],
+  "sampled_cells": 20,
+  "successful_sampled_cells": 18,
+  "all_sampled_cells_succeed": false,
+  "total_training_rows_interpreted": 37431248,
+  "total_crossover_bins": 38087,
+  "maximum_observed_correlation_range_m": 100000.0,
+  "censored_product_count": 1,
+  "response_rows_interpreted": {
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "preregistered_inference": {
+    "method": "two-stage one-sided design-based bound with Bonferroni family-wise alpha control",
+    "family_wise_alpha": 0.05,
+    "prevalence_alpha": 0.025,
+    "test_count_alpha": 0.025,
+    "all_successes_one_sided_prevalence_lower_bound": 0.8315665290169146,
+    "test_cells": 305,
+    "required_successful_test_cells": 223,
+    "binomial_tail_probability_at_lower_bound": 0.9999961755548361,
+    "test_count_condition_passes": true,
+    "formal_gate_rule": "pass only if all 20 sampled cells succeed and the preregistered test-count tail probability is at least 0.975",
+    "exchangeability_basis": "train and test roles were assigned by a response-blind hash before this sample and use identical DDS eligibility"
+  },
+  "formal_correlation_power_gate_passes": false,
+  "formal_gate_reason": "one or more preregistered sampled cells or inference criteria failed",
+  "test_unseal_count": 0
+}

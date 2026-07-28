@@ -1,0 +1,124 @@
+{
+  "schema_version": "wp8-potential-path-readiness-v1",
+  "formal_wp8_1_evidence": false,
+  "scope": "WP8-0 path feasibility only",
+  "methods": {
+    "gravity": {
+      "implementation": {
+        "entrypoint": "geodeepbayes.forward.gravity.GravityOperator",
+        "dependency_versions": {
+          "simpeg": "0.25.2",
+          "discretize": "0.12.0",
+          "geoana": "0.8.1",
+          "numpy": "2.4.6",
+          "scipy": "1.17.1"
+        },
+        "applicable_dimension": "3-D rectangular-prism volume integration",
+        "limitations": [
+          "scalar isotropic density contrast",
+          "research-scale in-memory sensitivity"
+        ]
+      },
+      "independent_reference": {
+        "kind": "independent Geoana analytic rectangular-prism implementation",
+        "test_path": "tests/forward/test_potential_independent_reference.py",
+        "test_source_sha256": "63765da04170deb3ecc5053aa210f2b923bc5a91f2a0db6e1ab87aeb6fcbbaeb",
+        "pytest_exit_code": 0,
+        "pytest_stdout": "........                                                                 [100%]\n8 passed in 1.07s\n",
+        "passed": true,
+        "quantity": "gz for a finite rectangular prism with explicit SI-to-mGal conversion"
+      },
+      "resource_measurement": {
+        "kind": "representative 3-D development meshes; not formal WP8-1 field-scale evidence",
+        "records": [
+          {
+            "mesh_cells": 32,
+            "data": 16,
+            "wall_time_seconds": 0.002813499999774649,
+            "peak_python_memory_bytes": 33027,
+            "finite": true
+          },
+          {
+            "mesh_cells": 108,
+            "data": 36,
+            "wall_time_seconds": 0.003557600000021921,
+            "peak_python_memory_bytes": 50516,
+            "finite": true
+          },
+          {
+            "mesh_cells": 256,
+            "data": 64,
+            "wall_time_seconds": 0.005741800000123476,
+            "peak_python_memory_bytes": 171380,
+            "finite": true
+          }
+        ],
+        "timeout_seconds": 5.0,
+        "memory_limit_bytes": 67108864,
+        "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+        "negative_test": "tests/validation/test_wp8_resource_abort.py",
+        "negative_test_source_sha256": "d1788b83dc10ab8a436b82ff5a1b3624f056fcaeeb70fe49ec670d6a1c70d5c1",
+        "passed": true
+      }
+    },
+    "magnetic": {
+      "implementation": {
+        "entrypoint": "geodeepbayes.forward.magnetic.MagneticOperator",
+        "dependency_versions": {
+          "simpeg": "0.25.2",
+          "discretize": "0.12.0",
+          "geoana": "0.8.1",
+          "numpy": "2.4.6",
+          "scipy": "1.17.1"
+        },
+        "applicable_dimension": "3-D rectangular-prism induced-magnetization integration",
+        "limitations": [
+          "scalar isotropic susceptibility",
+          "remanence requires MagneticVectorOperator and a provenance-backed prior",
+          "research-scale in-memory sensitivity"
+        ]
+      },
+      "independent_reference": {
+        "kind": "independent Geoana analytic rectangular-prism implementation",
+        "test_path": "tests/forward/test_potential_independent_reference.py",
+        "test_source_sha256": "63765da04170deb3ecc5053aa210f2b923bc5a91f2a0db6e1ab87aeb6fcbbaeb",
+        "pytest_exit_code": 0,
+        "pytest_stdout": "........                                                                 [100%]\n8 passed in 1.07s\n",
+        "passed": true,
+        "quantity": "TMI projection of an independently magnetized finite rectangular prism"
+      },
+      "resource_measurement": {
+        "kind": "representative 3-D development meshes; not formal WP8-1 field-scale evidence",
+        "records": [
+          {
+            "mesh_cells": 32,
+            "data": 16,
+            "wall_time_seconds": 0.011102799999662238,
+            "peak_python_memory_bytes": 22852,
+            "finite": true
+          },
+          {
+            "mesh_cells": 108,
+            "data": 36,
+            "wall_time_seconds": 0.027496899999732705,
+            "peak_python_memory_bytes": 79796,
+            "finite": true
+          },
+          {
+            "mesh_cells": 256,
+            "data": 64,
+            "wall_time_seconds": 0.06148480000001655,
+            "peak_python_memory_bytes": 235966,
+            "finite": true
+          }
+        ],
+        "timeout_seconds": 5.0,
+        "memory_limit_bytes": 67108864,
+        "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+        "negative_test": "tests/validation/test_wp8_resource_abort.py",
+        "negative_test_source_sha256": "d1788b83dc10ab8a436b82ff5a1b3624f056fcaeeb70fe49ec670d6a1c70d5c1",
+        "passed": true
+      }
+    }
+  }
+}

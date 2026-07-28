@@ -1,0 +1,44 @@
+{
+  "schema_version": "wp8-maricopa-aem-contract-readiness-v1",
+  "passed": true,
+  "doi": "10.5066/P9R1XBPG",
+  "raw_manifest_sha256": "a734a35898e617305e01de545e0954d835d83e8c015d118be07d3aff429af33e",
+  "source_sha256": "00a15a97d5c2512af6f38b37d75b3eadeba70ed0a0380fe121c051b21b982d4b",
+  "report_sha256": "229fa6b65586adfe48ff284e50e7a6b8bc999ff0532dc25c5a43768e1e2017e6",
+  "report_pages_checked": [
+    13,
+    14,
+    15,
+    20,
+    21,
+    22,
+    33,
+    39,
+    40,
+    41
+  ],
+  "system": "SkyTEM 312 dual moment",
+  "processed_observation_rows": 24103,
+  "low_moment": {
+    "frequency_hz": 210,
+    "current_a": 6,
+    "turns": 2,
+    "gate_count": 28
+  },
+  "high_moment": {
+    "frequency_hz": 30,
+    "current_a": 110,
+    "turns": 12,
+    "gate_count": 37
+  },
+  "transmitter_area_m2": 342,
+  "receiver_components": [
+    "Z",
+    "X"
+  ],
+  "receiver_geometry": "survey-specific null-position coordinates documented",
+  "normalized_current_waveform_tables": true,
+  "per_observation_standard_deviation": true,
+  "transmitter_receiver_altitude_standard_deviation": true,
+  "observation_response_values_parsed": false
+}

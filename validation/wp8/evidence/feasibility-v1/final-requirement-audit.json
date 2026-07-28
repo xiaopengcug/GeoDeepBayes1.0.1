@@ -1,0 +1,480 @@
+{
+  "schema_version": "wp8-0-final-requirement-audit-v1",
+  "status": "failed",
+  "wp8_1_allowed": false,
+  "methods": {
+    "gravity": {
+      "license": {
+        "method": "gravity",
+        "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+        "gate_name": "license",
+        "status": "passed",
+        "reason": "This work is marked with Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). ",
+        "producer": "src/geodeepbayes/validation/feasibility.py",
+        "producer_sha256": "615f3fa66427c7077b8a694439b25d41143804512b6a8857c51fbe9d9dfec0f5",
+        "measurements": {
+          "affirmative_gate": true
+        },
+        "thresholds": {
+          "required_status": "passed"
+        },
+        "evidence_id": "wp8-gravity-license-682ba29307dd05a4",
+        "evidence_sha256": "682ba29307dd05a4aa5e48430571d1b3134e9d06a91e251fd91e499ef012c61d"
+      },
+      "integrity": {
+        "method": "gravity",
+        "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+        "gate_name": "integrity",
+        "status": "passed",
+        "reason": "all selected top-level members match manifest",
+        "producer": "src/geodeepbayes/validation/feasibility.py",
+        "producer_sha256": "615f3fa66427c7077b8a694439b25d41143804512b6a8857c51fbe9d9dfec0f5",
+        "measurements": {
+          "affirmative_gate": true
+        },
+        "thresholds": {
+          "required_status": "passed"
+        },
+        "evidence_id": "wp8-gravity-integrity-4113f65219ccd718",
+        "evidence_sha256": "4113f65219ccd718787ffba439841b7bc37a846dc8dd0bde784e1e848aa7342e"
+      },
+      "contract": {
+        "status": "passed",
+        "evidence": "USGS OFR 00-138 contributes 1,520 machine-parseable stations with complete Bouguer anomaly, total terrain correction and positive per-station complete-Bouguer standard deviation",
+        "unblock_condition": null
+      },
+      "cluster_power": {
+        "status": "passed",
+        "evidence": "GA national training-only residual range is 12.5 km; after provider-survey capping, train/calibration separation and test-to-test packing, 261 sealed independent test surveys remain. Training-block paired-CRPS dispersion requires 153 clusters for a 10% improvement at one-sided alpha=0.05 and 80% power; coverage equivalence requires 223, so the conservative 261-unit pool passes",
+        "unblock_condition": null
+      },
+      "dimension": {
+        "method": "gravity",
+        "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+        "gate_name": "dimensionality",
+        "status": "passed",
+        "reason": "training-only regional detrending and variograms select mandatory 3-D for both statewide and continental station coverage",
+        "producer": "src/geodeepbayes/validation/feasibility.py",
+        "producer_sha256": "615f3fa66427c7077b8a694439b25d41143804512b6a8857c51fbe9d9dfec0f5",
+        "measurements": {
+          "affirmative_gate": true
+        },
+        "thresholds": {
+          "required_status": "passed"
+        },
+        "evidence_id": "wp8-gravity-dimensionality-9e774e9dabe97ca7",
+        "evidence_sha256": "9e774e9dabe97ca76af07468b7c92fac32983ca8f0f010f83d282f4644888d35"
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "versioned GravityOperator path frozen for 3-D rectangular-prism volume integration",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "gz for a finite rectangular prism with explicit SI-to-mGal conversion matches an independent Geoana implementation; derivative tests passed with protected source hash",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three representative meshes measured; abort limits frozen at 5.0 s and 67108864 bytes",
+        "unblock_condition": null
+      }
+    },
+    "magnetic": {
+      "license": {
+        "status": "passed",
+        "evidence": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. There is no guarantee concerning the accuracy of the data. Any user who modifies the data is obligated to describe the types of modifications they perform. Data have been checked to ensure their accuracy. If any errors are detected, please notify the originating office. The U.S. Geological Survey strongly recommends that careful attention be paid to the metadata file associated with these data. Acknowledgment of the U.S. Geological Survey would be appreciated in products derived from these data. User specifically agrees not to misrepresent the data, nor to imply that changes made were approved or endorsed by the U.S. Geological Survey. Please refer to http://www.usgs.gov/privacy.html for the USGS disclaimer.",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "all selected top-level members match manifest",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "passed",
+        "evidence": "Mountain Pass survey geometry/correction fields plus training-only MagIC NRM prior=5905 complete vectors from 21 contributions; western Arkansas independently supplies line/flight, height, base-station, correction and vector-field channels; magnitude units remain separate",
+        "unblock_condition": null
+      },
+      "cluster_power": {
+        "status": "blocked",
+        "evidence": "Mountain Pass outcome-blind test design has 43 1-km cells; training-only 1.5-km correlation gives an effective upper bound of 15; western Arkansas has 366 design test cells but its training-only 21-km range excludes every test cell under the frozen 20-km macroblock split; the GA national DDS catalogue has 305 geometry/height/response design test cells, but only 7 with explicit correction declarations and none with an uncertainty declaration; its six-state training pilot gives a 17.5-km maximum range and 1565 crossover bins but covers only six of 598 products; its 14-product state-by-era expansion adds 6,233,124 training rows and 7,210 crossover bins with a 22.5-km maximum; its preregistered cell-weighted probability audit then passed only 18/20 cells, observed an 82.5-km range and one range censored at 100 km, so the formal unsampled-survey tolerance rule failed; Texas AIB contract passes with 166,594 line-km but its 4,236,679,294-byte response archive remains sealed/not downloaded (human_captcha_required_for_temporary_presigned_url)",
+        "unblock_condition": "outcome-blind line clustering/correlation estimate and at least 223 effective held-out clusters"
+      },
+      "dimension": {
+        "status": "passed",
+        "evidence": "training-only regional trend, 1.5-km residual range, 124 flight-line spectra, height sensitivity and MagIC remanence prior select 3-D vector magnetization",
+        "unblock_condition": null
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "versioned MagneticOperator path frozen for 3-D rectangular-prism induced-magnetization integration",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "TMI projection of an independently magnetized finite rectangular prism matches an independent Geoana implementation; derivative tests passed with protected source hash",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three representative meshes measured; abort limits frozen at 5.0 s and 67108864 bytes",
+        "unblock_condition": null
+      }
+    },
+    "dc": {
+      "license": {
+        "status": "passed",
+        "evidence": "Little Colorado and Krause Springs are USGS public-domain/CC0; Ny-Ålesund ERT is CC BY 4.0",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "Krause Springs 4 members (203815 bytes) match provider MD5 and local SHA-256; Ny-Ålesund Repository.zip matches provider MD5 and local SHA-256 (137491581 frozen bytes)",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "passed",
+        "evidence": "Ny-Ålesund supplies a complete training-side reciprocal DD contract: EPSG:32633 electrode geometry, ABMN, resistance, reciprocal mean and direct normal-reciprocal error for all 30,426 paired rows across 10 profiles",
+        "unblock_condition": null
+      },
+      "cluster_power": {
+        "status": "blocked",
+        "evidence": "Krause adds four profiles and Ny-Ålesund adds 18 profiles (10 with reciprocal errors) from one campaign; no DC consortium currently qualifies for 223 correlation-adjusted leakage-safe clusters; CPERS v2 has a sufficient nominal catalogue (423 profiles; 292 raw surveys), but its policy requires contributor permission before use and no permission or training-only correlation audit is frozen",
+        "unblock_condition": "per-observation errors and at least 223 independent field clusters"
+      },
+      "dimension": {
+        "status": "passed",
+        "evidence": "GPS-only PCA geometry finds MB4 crossline deviation far above electrode spacing; mandatory 3-D nodal finite-volume path selected",
+        "unblock_condition": null
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "version-frozen 3-D implementation path",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "analytic homogeneous-halfspace geometric-factor implementation",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three measured scales plus enforced timeout/memory abort limits",
+        "unblock_condition": null
+      }
+    },
+    "tdip": {
+      "license": {
+        "status": "passed",
+        "evidence": "Zenodo access_right=open; license=cc-by-4.0",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "all selected top-level members match manifest",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "passed",
+        "evidence": "training-only adapter validates ABMN, potential/current, delay, 20 chargeability windows/durations and N/R discrepancy error evidence",
+        "unblock_condition": null
+      },
+      "cluster_power": {
+        "status": "blocked",
+        "evidence": "date observations split={'train': 79, 'buffer': 17, 'calibration': 50, 'test': 223}; training-only correlation length=17 days gives effective clusters={'train': 5, 'calibration': 3, 'test': 14}; the IP-VAE paper documents 110 field surveys and 1,600,319 decays, but its public software archive contains four pretrained weight files and no likely field-observation files; NTGS adds two downloadable, contract-rich campaigns (Kroda and Arunta), but their company-report item pages declare no reuse license; a response-blind GEMIS catalogue has 619 nominal search items, 218 with digital attachments and only 16 with explicitly named IP/raw attachments, none yet license- or cluster-qualified; coverage requires 223 independent test clusters and paired-CRPS effect is unavailable",
+        "unblock_condition": "obtain enough correlation-separated campaigns and estimate paired-CRPS effect using training only; never count dates, N/R or windows as independent when correlated"
+      },
+      "dimension": {
+        "status": "passed",
+        "evidence": "training-only dimensionality=2d; repeated profile dates remain clusters, not spatial axes",
+        "unblock_condition": null
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "versioned TDIPOperator path frozen for 2-D profile represented on a 3-D tensor mesh with scalar isotropic cells",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "independent pulse-decay/derivative and three-level discretization tests passed with protected source hash",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "representative development measurements and fail-closed abort limits frozen; formal_wp8_1_evidence=False",
+        "unblock_condition": null
+      }
+    },
+    "sip_fdip": {
+      "license": {
+        "status": "passed",
+        "evidence": "Zenodo access_right=open; license=cc-by-4.0",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "all selected top-level members match manifest",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "blocked",
+        "evidence": "unambiguous frequency-to-profile/station key; sufficient independent clusters; current public-data audit found only small laboratory or repeated-column spectra, not a contract-complete field replacement",
+        "unblock_condition": "multi-laboratory/profile consortium with 223 units, complex covariance and station keys"
+      },
+      "cluster_power": {
+        "status": "blocked",
+        "evidence": "candidate clusters=2; no frozen buffered split and training-only CRPS effect",
+        "unblock_condition": "multi-laboratory/profile consortium with 223 units, complex covariance and station keys"
+      },
+      "dimension": {
+        "status": "passed",
+        "evidence": "two 64-electrode field profiles require lateral 2-D structure; outcome-blind GPS geometry diagnostic completed",
+        "unblock_condition": null
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "version-frozen 2-D profile implementation path",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "analytic homogeneous-halfspace complex Cole-Cole reference",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three measured scales plus enforced timeout/memory abort limits",
+        "unblock_condition": null
+      }
+    },
+    "tem": {
+      "license": {
+        "status": "passed",
+        "evidence": "USGS DOI 10.5066/P949ZCZ8, CC0/public domain",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "10 protected members, 75168482 bytes, SHA-256 verified",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "passed",
+        "evidence": "VTEM ET full waveform, concentric-coplanar Z geometry, transmitter current/loop, 52 time gates, normalized Z response and per-observation DATASTD verified",
+        "unblock_condition": null
+      },
+      "cluster_power": {
+        "status": "blocked",
+        "evidence": "East River cells={'train': 502, 'buffer': 380, 'calibration': 267, 'test': 262}; GA macroblock design has 418 sealed 55-km test centers separated by at least 87.61 km from nonbuffer training/calibration centers; VTEM/SkyTEM train-only descriptive ranges are 5/7 km, but two systems/surveys do not qualify the national unsampled-survey tolerance bound",
+        "unblock_condition": "freeze response-blind located-line products spanning the national GA AEM systems, qualify exact waveforms/gates and uncertainty, and estimate national correlation and paired-CRPS effect using training only"
+      },
+      "dimension": {
+        "status": "passed",
+        "evidence": "fixed training-gate variograms select 3-D path",
+        "unblock_condition": null
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "version-frozen layered 1-D TEM path; valid only if field diagnostic selects 1-D",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "independent Key 81/2009 versus Key 201/2012 digital-filter discretizations",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three time-channel scales plus enforced timeout/memory abort limits",
+        "unblock_condition": null
+      }
+    },
+    "mt_amt": {
+      "license": {
+        "status": "passed",
+        "evidence": "1104 TA members declare Unrestricted Release with citation/acknowledgement",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "1104 HTTPS members, 13744189 bytes, local SHA-256 and Merkle verified",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "passed",
+        "evidence": "official EMTF XML residual/inverse-signal matrices reconstruct joint complex Z covariance; 10820 training periods checked, variance identity maximum relative error=1.2447694623673915e-06",
+        "unblock_condition": null
+      },
+      "cluster_power": {
+        "status": "passed",
+        "evidence": "geographic train/buffer/cal/test={'train': 361, 'buffer': 74, 'calibration': 240, 'test': 429}; sealed test=429 >=223",
+        "unblock_condition": null
+      },
+      "dimension": {
+        "status": "passed",
+        "evidence": "training-only classification={'1d': 0, '2d': 25, '3d': 336}; mandatory 3-D upgrade selected",
+        "unblock_condition": null
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "version-frozen MT3DOperator primary-secondary natural-source Maxwell path produces full Z tensor and tipper",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "analytic homogeneous-halfspace impedance and zero-tipper reference",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three measured scales end at 336 stations/3 frequencies/512 cells with enforced abort limits; formal_wp8_1_evidence=false",
+        "unblock_condition": null
+      }
+    },
+    "csamt": {
+      "license": {
+        "status": "passed",
+        "evidence": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. Users are advised to read the data set's metadata thoroughly to understand appropriate use and data limitations.",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "all selected top-level members match manifest",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "blocked",
+        "evidence": "common GGT-30 transmitter/GDP32-II receiver and Ex/Hy geometry documented; per-acquisition transmitter endpoints and native error/covariance remain absent; the CC0 Hualapai release adds 543 georeferenced stations and official MTM source geometry/error floors, but the entire package has been interpreted and is permanently training-only; Mount St. Helens adds rho/phase error arrays but its approximate inductive source lacks coordinates/orientation/moment/waveform and does not match the grounded finite-line solver; current public-data audit found no contract-complete replacement",
+        "unblock_condition": "transmitter GPS/current logs, receiver geometry, near-field classification, errors and 223 clusters"
+      },
+      "cluster_power": {
+        "status": "blocked",
+        "evidence": "coordinate-unique stations=1843; outcome-blind 250-m test cells=422 but provider raw granularity is 32 whole-line members, all 32 lines mix partitions; safe line-level upper bound=32 <223; the Hualapai station count is 543 but it is packaged in only 9 provider lines, contributes zero sealed/formal clusters, and has no frozen correlation length",
+        "unblock_condition": "obtain station-granular sealed raw exports plus transmitter GPS/current logs, or a new consortium with at least 223 independently packaged and correlation-separated clusters"
+      },
+      "dimension": {
+        "status": "blocked",
+        "evidence": "training response remains sealed by provider line granularity",
+        "unblock_condition": "obtain station-granular training members"
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "version-frozen 3-D finite-line Maxwell path",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "Geoana whole-space electric-dipole reference plus explicit source-zone contract",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three measured meshes plus enforced timeout/memory abort limits",
+        "unblock_condition": null
+      }
+    },
+    "wfem": {
+      "license": {
+        "status": "passed",
+        "evidence": "Zenodo access_right=open; license=cc-by-4.0",
+        "unblock_condition": null
+      },
+      "integrity": {
+        "status": "passed",
+        "evidence": "all selected top-level members match manifest",
+        "unblock_condition": null
+      },
+      "contract": {
+        "status": "blocked",
+        "evidence": "receiver coordinates; source geometry; phase; field component; geometric factor definition",
+        "unblock_condition": "native source/receiver/phase/component/geometric-factor/error export and 223 clusters"
+      },
+      "cluster_power": {
+        "status": "blocked",
+        "evidence": "candidate clusters=27; no frozen buffered split and training-only CRPS effect",
+        "unblock_condition": "native source/receiver/phase/component/geometric-factor/error export and 223 clusters"
+      },
+      "dimension": {
+        "status": "blocked",
+        "evidence": "Baotu line files contain no receiver coordinates or source geometry, so the preregistered near/transition/far-zone and 3-D dimensionality diagnostic cannot be executed",
+        "unblock_condition": "complete field contract and run training-only diagnostic"
+      },
+      "solver": {
+        "status": "passed",
+        "evidence": "version-frozen 3-D finite-line Maxwell path",
+        "unblock_condition": null
+      },
+      "reference": {
+        "status": "passed",
+        "evidence": "Geoana whole-space electric-dipole reference, explicit geometric-factor identity, and three-level discretization convergence",
+        "unblock_condition": null
+      },
+      "resource": {
+        "status": "passed",
+        "evidence": "three measured meshes plus enforced timeout/memory abort limits",
+        "unblock_condition": null
+      }
+    }
+  },
+  "mt_seal_verification": {
+    "raw_member_count": 1104,
+    "all_raw_members_readonly": true,
+    "all_member_hashes_match": true,
+    "merkle_root_matches": true,
+    "train_members_interpreted": 361,
+    "calibration_members_interpreted": 0,
+    "test_members_interpreted": 0,
+    "test_unseal_count": 0,
+    "xml_member_count": 1104,
+    "all_xml_members_readonly": true,
+    "all_xml_member_hashes_match": true,
+    "xml_role_counts": {
+      "train": 361,
+      "buffer": 74,
+      "calibration": 240,
+      "test": 429
+    },
+    "xml_training_members_interpreted": 361,
+    "xml_buffer_members_interpreted": 0,
+    "xml_calibration_members_interpreted": 0,
+    "xml_test_members_interpreted": 0,
+    "xml_covariance_periods_checked": 10820
+  },
+  "tdip_seal_verification": {
+    "cluster_unit": "acquisition_date",
+    "train_dates_interpreted": 79,
+    "buffer_dates_interpreted": 0,
+    "calibration_dates_interpreted": 0,
+    "test_dates_interpreted": 0,
+    "test_unseal_count": 0,
+    "sealed_test_dates": 223,
+    "temporal_correlation_length_days": 17,
+    "effective_test_clusters": 14,
+    "exposed_dates_excluded": [
+      "20221023"
+    ],
+    "unpaired_dates_excluded": [
+      "20230705"
+    ]
+  },
+  "external_blocker_artifact": "wp8-0-final-infeasibility.json",
+  "controlled_source_public_data_audit_sha256": "54cea05362af004827156f76317fb80abab25150ae4abcaa18c1c4545f3038aa",
+  "sip_fdip_public_data_audit_sha256": "424d077c0a48fb0808746d8324974fbe159a5d0349ed21a4ebfdc8bc6d9cc9a5",
+  "zenodo_tdip_full_decay_contract_sha256": "0294f20546c60dcbc0115c602988e09602e046d77473e2840ee27322579f986b",
+  "zenodo_tdip_full_decay_training_diagnostics_sha256": "68f6b16330a36952d4a7659704d5a448d859f085d57a911cedd49e00e6b22b02",
+  "ip_vae_public_release_sha256": "b1712861a5703c642c0bfdb01aaf121b06238ef96b3c7e52d95e13763d1710e3",
+  "ntgs_tdip_training_candidates_sha256": "8cda82cbfe6a7cae3e3825a407777ef1d281f5f48fe7c01a31bea131cfacadc0",
+  "ntgs_ip_open_search_catalogue_sha256": "c5d4abd24049ba28baa15955a10fa06152dac0e6673bc1ae015d5bdbbe1268c1",
+  "ntgs_ip_explicit_candidates_sha256": "d80e86912c59c07599241cf7daf5f9e5b39c76a3e3fd35485fdaab14edfbf656",
+  "pangaea_brittany_ert_training_diagnostics_sha256": "83eeea272dfae24cac97d47141518f580e6c84c54728135a6e353fa2472cd875",
+  "svalbard_ert_training_contract_sha256": "010752c1cb236cf6af2a4f63931f19a32473072777163f02489b16a152265f19",
+  "cpers_public_catalogue_sha256": "d75dccd6093132a9c29afbcdc2d5016e324d07b6d910383db8a09a553b862b20",
+  "guidel_sip_contract_sha256": "8aaece624481bc16ac9df804b2ad246f879c04262a3cfbbf83b880f7a4e530d9",
+  "guidel_sip_training_diagnostics_sha256": "5364793a2daae992f1e2fca002bb6c7a745f4fab70ee8a865fd88ae7f319ef32",
+  "guidel_sip_repeatability_sha256": "6df04d9cfa5bf2ea32bf632401c92100e9a6cfda529eb398381eee5258fa3138",
+  "tuwien_ice_sip_training_diagnostics_sha256": "75a8a14c463945f9c168c027a31f63ca5d956495908c2a0b778e5575b7178a97",
+  "wfem_public_contract_references_sha256": "188cc7992567358151fca00344c435fc47422c1208183cda3ae6554b06ffa1e1",
+  "usgs_hualapai_csamt_contract_sha256": "1f584df04931af1846995db5f1178562a55241c8b9aa69f5fde69998167045ad"
+}

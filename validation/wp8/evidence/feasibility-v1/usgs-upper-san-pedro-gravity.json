@@ -1,0 +1,34 @@
+{
+  "cluster_gate": "not_assessed",
+  "complete_bouguer_sd_range_mgal": [
+    0.06,
+    5.43
+  ],
+  "coordinate_bounds": {
+    "latitude": [
+      31.333333333333332,
+      32.4615
+    ],
+    "longitude": [
+      -110.71266666666666,
+      -109.75166666666667
+    ]
+  },
+  "dataset": "USGS OFR 00-138 Appendix 4",
+  "declared_station_count": 1521,
+  "duplicate_station_ids": 161,
+  "geometry_only_unique_cells_by_spacing_km": {
+    "10": 87,
+    "15": 45,
+    "25": 24,
+    "5": 229,
+    "50": 11
+  },
+  "notes": "The source explicitly supplies complete Bouguer anomaly, total terrain correction, and standard deviation of complete Bouguer anomaly. One of the 1,521 published HTML records is not machine-parseable because adjacent numeric fields lack separators; it is excluded. Geometry-only cell counts are nominal upper bounds, not correlation-adjusted clusters.",
+  "observation_contract": "pass",
+  "parsed_station_count": 1520,
+  "positive_finite_complete_bouguer_sd": 1520,
+  "power_gate": "not_assessed",
+  "rejected_numeric_paragraph_count": 2,
+  "unique_station_ids": 1359
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "wp8-solver-inventory-v1",
+  "python": "3.11.15",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "logical_cpu_count": 16,
+  "methods": {
+    "gravity": {
+      "dependency_module": "simpeg.potential_fields.gravity",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.gravity",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": null
+    },
+    "magnetic": {
+      "dependency_module": "simpeg.potential_fields.magnetics",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.magnetic_vector",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": null
+    },
+    "dc": {
+      "dependency_module": "simpeg.electromagnetics.static.resistivity",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.static",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": "research-scale SolverLU path; production resource budget not frozen"
+    },
+    "tdip": {
+      "dependency_module": "simpeg.electromagnetics.static.spectral_induced_polarization",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.static",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": "SimPEG 0.25.2 multi-time Jtvec is not adjoint-consistent; project path forms an explicit matrix from verified Jvec and is research-scale only"
+    },
+    "sip_fdip": {
+      "dependency_module": "simpeg.electromagnetics.static.spectral_induced_polarization",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.static",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": "2-D profile/2.5-D finite-volume complex Cole-Cole path is implemented; explicit finite-difference transpose remains research-scale only"
+    },
+    "tem": {
+      "dependency_module": "simpeg.electromagnetics.time_domain",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.em1d",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": "Simulation1DLayered is verified; installed 3-D TDEM dependencies remain unverified without a frozen mesh/time-step resource budget"
+    },
+    "mt_amt": {
+      "dependency_module": "simpeg.electromagnetics.natural_source",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.em1d",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": "Simulation1DRecursive is verified only when skew/ellipticity/tipper diagnostics pass; required 2-D/3-D path is not yet verified"
+    },
+    "csamt": {
+      "dependency_module": "simpeg.electromagnetics.frequency_domain",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.controlled_source",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": "finite-line 3-D synthetic solver verified against Geoana Ex only; Hualapai field metadata still lacks a validated near-field/source-distance contract"
+    },
+    "wfem": {
+      "dependency_module": "simpeg.electromagnetics.frequency_domain",
+      "dependency_found": true,
+      "implementation_module": "geodeepbayes.forward.controlled_source",
+      "implementation_found": true,
+      "status": "candidate",
+      "reason": "modules present; method-specific physics verification still required",
+      "known_limitation": "finite-line 3-D synthetic solver verified by independent mesh refinement; Baotu field package lacks receiver/phase/component/geometric-factor contract"
+    }
+  },
+  "resource_budget_status": "blocked",
+  "resource_budget_reason": "no frozen per-method wall-time, memory and abort-limit benchmark",
+  "independent_reference_status": "blocked",
+  "independent_reference_reason": "no independent codebase/discretization evidence registered"
+}

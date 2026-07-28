@@ -1,0 +1,2328 @@
+{
+  "schema_version": "wp8-bc-aris-ip-discovery-split-v1",
+  "catalogue_path": "validation/wp8/evidence/feasibility-v1/bc-aris-ip-digital-catalogue-v1.json",
+  "catalogue_sha256": "00f9cb38f1b07bd4a4cecc9ec73ed955ad57ce8def16293c82a6bf446183bc56",
+  "ranking": {
+    "algorithm": "sha256",
+    "salt": "wp8-bc-aris-ip-discovery-v1",
+    "key": "report_number",
+    "training_prefix_count": 30
+  },
+  "role_counts": {
+    "training-discovery": 30,
+    "sealed-candidate-test": 73
+  },
+  "formal_status": {
+    "this_is_not_yet_a_formal_test_design": true,
+    "reason": "Catalogue metadata does not classify TDIP versus FDIP/SIP or publish independent line counts. Only training-discovery files may be opened until those contracts are measured.",
+    "sealed_candidate_test_responses_opened": 0,
+    "formal_clusters_added": 0,
+    "formal_gate_changed": false
+  },
+  "assignments": [
+    {
+      "report_number": "42711",
+      "rank_sha256": "00c829352199ef07d943fd9ab0a804a7d15a6cd1bec661628d7c8dcc9fd6274e",
+      "role": "training-discovery",
+      "property_name": "Poplar",
+      "catalogue_location_dms": "53 55 48 127 03 37",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42711",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42711.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42711Z.zip/",
+          "http_status": 200,
+          "content_length": 6994525908,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42711Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "29935",
+      "rank_sha256": "01de169f307e76884f18eb1725c2e9484f4fb0ea035e940b65d74d5802bbc149",
+      "role": "training-discovery",
+      "property_name": "Lorraine-Jajay",
+      "catalogue_location_dms": "55 54 52 125 24 46",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29935",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29935.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29935Z.zip/",
+          "http_status": 200,
+          "content_length": 28735435,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29935Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "31878",
+      "rank_sha256": "04af978ab2c8598432c9c21facd2c3001ee19aa652318ff0d94879502d1157ae",
+      "role": "training-discovery",
+      "property_name": "Sphinx",
+      "catalogue_location_dms": "49 38 00 116 40 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31878",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31878.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31878Z.zip/",
+          "http_status": 200,
+          "content_length": 451038733,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=31878Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39054",
+      "rank_sha256": "057d0e7711aa475512992b6a8ae882e01cfc578f74316febb7c8589c01539041",
+      "role": "training-discovery",
+      "property_name": "CR",
+      "catalogue_location_dms": "54 17 46 126 49 54",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39054",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39054.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39054Z.zip/",
+          "http_status": 200,
+          "content_length": 65176715,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39054Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33804",
+      "rank_sha256": "05b592c375f75ad11a7e5e1d8eb4d5cc998f1b3af5c3206cf8dd54b47ca0cbdd",
+      "role": "training-discovery",
+      "property_name": "Turkey Mountain",
+      "catalogue_location_dms": "54 57 25 126 27 37",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33804",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804c.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804Z.zip/",
+          "http_status": 200,
+          "content_length": 462,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=33804Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "28944",
+      "rank_sha256": "06c06fe4f2ad894727c61c796de2d738ed57f7557a1ed95a550e6ebbea7128ba",
+      "role": "training-discovery",
+      "property_name": "Jan-Tam-Misty",
+      "catalogue_location_dms": "55 55 13 125 31 03",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28944",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944c.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944d.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944Z.zip/",
+          "http_status": 200,
+          "content_length": 262447113,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=28944Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41144",
+      "rank_sha256": "0ba17d73e077860277b6cc1fee38ae1205e87718803dbee454bdcc611fe7d47f",
+      "role": "training-discovery",
+      "property_name": "2xFred",
+      "catalogue_location_dms": "53 50 37 124 22 31",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41144",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41144.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41144Z.zip/",
+          "http_status": 200,
+          "content_length": 455,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41144Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30986",
+      "rank_sha256": "0e92a55df6438d76df4cfbebd3b71b2b053dce500b486e79ac06c27b632ef85d",
+      "role": "training-discovery",
+      "property_name": "Babine",
+      "catalogue_location_dms": "55 17 00 126 14 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30986",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30986.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30986Z.zip/",
+          "http_status": 200,
+          "content_length": 39610035,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30986Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "32722",
+      "rank_sha256": "0e9a91280361ea415086e2ce124221d2789f68bfeb773785463399b26b3c54a8",
+      "role": "training-discovery",
+      "property_name": "Rupert",
+      "catalogue_location_dms": "50 34 50 127 18 45",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32722",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32722.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32722Z.zip/",
+          "http_status": 200,
+          "content_length": 19359594,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=32722Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41579",
+      "rank_sha256": "16a528c04dd8cda6e307bc0cca3787664b81bf3d3c69b40bea9fb7c73eaed77c",
+      "role": "training-discovery",
+      "property_name": "MDP Project",
+      "catalogue_location_dms": "49 44 35 120 23 37",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41579",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41579.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41579Z.zip/",
+          "http_status": 200,
+          "content_length": 244297097,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41579Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35978",
+      "rank_sha256": "16f52c50b0cc04130ddac613ff54e59774b5b1f1f2ea16a4554f311130facf5e",
+      "role": "training-discovery",
+      "property_name": "Kliyul",
+      "catalogue_location_dms": "56 30 00 126 09 12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35978",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978A.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978B.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978C.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978Z.zip/",
+          "http_status": 200,
+          "content_length": 7632407,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35978Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41150",
+      "rank_sha256": "18f6d62b36f631dfa543434b35027bdbe0dd7b998d8ed93260c096786f7d1f4e",
+      "role": "training-discovery",
+      "property_name": "Max-Mount Milligan Greenfield",
+      "catalogue_location_dms": "54 55 30 124 03 16",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41150",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41150.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41150Z.zip/",
+          "http_status": 200,
+          "content_length": 25581744,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41150Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41076",
+      "rank_sha256": "1b270d1a1f0e3b4a261354e1727a7f3bdd37e3d3663ae9dd89bf30294af352b4",
+      "role": "training-discovery",
+      "property_name": "Eakin Creek",
+      "catalogue_location_dms": "51 29 21 120 18 42",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41076",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41076.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41076Z.zip/",
+          "http_status": 200,
+          "content_length": 66291184,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41076Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "31203",
+      "rank_sha256": "1b9f9a7c5bfaede1b82a5b4274e6c66f1e3f7fc6ec184132c8592c1d2d26e1d9",
+      "role": "training-discovery",
+      "property_name": "Holy Cross",
+      "catalogue_location_dms": "53 47 44 124 57 56",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31203",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31203.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31203Z.zip/",
+          "http_status": 200,
+          "content_length": 14600327,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=31203Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "29734",
+      "rank_sha256": "1de24ee8df7766423e98a6375aeea0880887ec5b1d53e202972130275a5f1a94",
+      "role": "training-discovery",
+      "property_name": "Kleanza Mountain",
+      "catalogue_location_dms": "54 34 03 128 11 39",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29734",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29734.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29734Z.zip/",
+          "http_status": 200,
+          "content_length": 16035054,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29734Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41452",
+      "rank_sha256": "1eb13efc233c5b50c26eebe612be7d4ab86ebd374fa825e8ac2e264bc8fcca27",
+      "role": "training-discovery",
+      "property_name": "Copley",
+      "catalogue_location_dms": "53 44 11 124 48 19",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41452",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41452.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41452Z.zip/",
+          "http_status": 200,
+          "content_length": 387066456,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41452Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30079",
+      "rank_sha256": "200345012d880a6d20520bf9578e85e018ecaee0a65b8822cc6c73dce86c04be",
+      "role": "training-discovery",
+      "property_name": "Chilanko",
+      "catalogue_location_dms": "52 03 00 124 37 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30079",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30079a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30079b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30079Z.zip/",
+          "http_status": 200,
+          "content_length": 99782936,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30079Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "38192",
+      "rank_sha256": "20dd4caac5a018e615f53ad2f6ac05d741b599a180c416c44db75687b7b93e82",
+      "role": "training-discovery",
+      "property_name": "Whipsaw Creek",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/38192",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/38192.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/38192Z.zip/",
+          "http_status": 200,
+          "content_length": 226427,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=38192Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42515",
+      "rank_sha256": "2197155d463540eebd13f909988e5553e4bbbed673e1f176ac1af5b7b4d1ce4c",
+      "role": "training-discovery",
+      "property_name": "Rip",
+      "catalogue_location_dms": "53 49 57 126 44 33",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42515",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42515.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42515Z.zip/",
+          "http_status": 200,
+          "content_length": 38778484,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42515Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30554",
+      "rank_sha256": "21d984c850e7f91908fffc12b8744c94f12a441c56b34fb86d4fb6dd4b55362b",
+      "role": "training-discovery",
+      "property_name": "Brewster Lake",
+      "catalogue_location_dms": "53 24 15 124 34 18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30554",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30554.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30554Z.zip/",
+          "http_status": 200,
+          "content_length": 24609505,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30554Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40791",
+      "rank_sha256": "22d08b6a79d36d633288ff689c42d3ecfde8789c8563ff9e71fcc7ea1b5c9d26",
+      "role": "training-discovery",
+      "property_name": "Latham",
+      "catalogue_location_dms": "58 13 09 130 08 10",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40791",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40791.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40791Z.zip/",
+          "http_status": 200,
+          "content_length": 36647863,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40791Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40860",
+      "rank_sha256": "25b7466dcbc869444b567da641524881e2256e11dec9b8cebc3a8a864a7c6f2d",
+      "role": "training-discovery",
+      "property_name": "MPD",
+      "catalogue_location_dms": "49 44 35 120 25 37",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40860",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40860.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40860Z.zip/",
+          "http_status": 200,
+          "content_length": 49363259,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40860Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42547",
+      "rank_sha256": "25c39c8a95f07910e131ce3c220a66ddfd92f1d3c944fbd6a154e1e7e330f18c",
+      "role": "training-discovery",
+      "property_name": "Redgold",
+      "catalogue_location_dms": "52 27 26 121 28 09",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42547",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42547.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42547Z.zip/",
+          "http_status": 200,
+          "content_length": 111868206,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42547Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42506",
+      "rank_sha256": "2c39cb9f4a2b0509eba17b23a9d21859ed973d3e9334b1d2aa4d35075681712b",
+      "role": "training-discovery",
+      "property_name": "Copperview",
+      "catalogue_location_dms": "49 50 28 120 28 30",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42506",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42506.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42506Z.zip/",
+          "http_status": 200,
+          "content_length": 20730103,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42506Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39489",
+      "rank_sha256": "323c4d176b6ca38a381d96fea713bea4d563ff5e3021b277d1df28008fc7b677",
+      "role": "training-discovery",
+      "property_name": "Lawyers",
+      "catalogue_location_dms": "57 18 44 127 11 55",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39489",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39489.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39489Z.zip/",
+          "http_status": 200,
+          "content_length": 43913308,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39489Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39689",
+      "rank_sha256": "3257743d0d6a06b4cc750381b6e92e82b4509e755b74bcad2a6880ae8edf338e",
+      "role": "training-discovery",
+      "property_name": "A-J",
+      "catalogue_location_dms": "49 03 47 118 33 32",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39689",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39689.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39689Z.zip/",
+          "http_status": 200,
+          "content_length": 169899450,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=39689Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41052",
+      "rank_sha256": "361f8ed4c0d1997e6c88501c9038bd8e6ff79dfc366f6e42cd78fae59d21a023",
+      "role": "training-discovery",
+      "property_name": "Topley",
+      "catalogue_location_dms": "54 35 47 126 16 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41052",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41052.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41052Z.zip/",
+          "http_status": 200,
+          "content_length": 334301831,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41052Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41890",
+      "rank_sha256": "38494f589b5967e1fee12cc9eee2859d7d0e6a59cf72ac1c2fc698c4e313a228",
+      "role": "training-discovery",
+      "property_name": "Galore Creek",
+      "catalogue_location_dms": "57 07 08 131 27 58",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41890",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41890.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41890Z.zip/",
+          "http_status": 200,
+          "content_length": 116317702,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41890Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41516",
+      "rank_sha256": "3ab72ccc15b3173fd03bd1e55035aa39d29c50f7d864d3be9b883fb8083b4f9a",
+      "role": "training-discovery",
+      "property_name": "Eldorado/Robson",
+      "catalogue_location_dms": "51 01 28 122 53 23",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41516",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41516.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41516Z.zip/",
+          "http_status": 200,
+          "content_length": 22506282,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41516Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "29849",
+      "rank_sha256": "3c407f6d878069cc094dffb71d669aca649e63b0788f6708cf9a57361d69fa54",
+      "role": "training-discovery",
+      "property_name": "Fran",
+      "catalogue_location_dms": "55 00 35 124 24 01",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29849",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29849.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29849Z.zip/",
+          "http_status": 200,
+          "content_length": 69780324,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29849Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "29855",
+      "rank_sha256": "43ac15f222cc1d3debfe9d363ace43061aabf6c758ba35102df2269ae2cc7928",
+      "role": "sealed-candidate-test",
+      "property_name": "Nak",
+      "catalogue_location_dms": "55 16 41 126 14 13",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29855",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29855.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29855Z.zip/",
+          "http_status": 200,
+          "content_length": 50705602,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29855Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35038",
+      "rank_sha256": "4588e6ee5b6ae78a50e09bf2a03436361feed043b87c1dcbe97140294e13f944",
+      "role": "sealed-candidate-test",
+      "property_name": "McBride",
+      "catalogue_location_dms": "58 12 46 129 17 18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35038",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35038.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35038Z.zip/",
+          "http_status": 200,
+          "content_length": 746262,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35038Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33707",
+      "rank_sha256": "45d6cc3dbd8d9e4abaeb7e44fea46c45a205629ad4a618a3848df4282925330e",
+      "role": "sealed-candidate-test",
+      "property_name": "Flute and Lennac",
+      "catalogue_location_dms": "54 47 34 126 20 30",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33707",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707c.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707d.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707e.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707f.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707g.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707Z.zip/",
+          "http_status": 200,
+          "content_length": 408422062,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33707Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40831",
+      "rank_sha256": "47ebf99f05f27b58fb18be85dc8a17a33e496b64b0180c64ee981b32ce8c6407",
+      "role": "sealed-candidate-test",
+      "property_name": "American Creek",
+      "catalogue_location_dms": "56 08 30 129 56 00",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40831",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40831.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40831Z.zip/",
+          "http_status": 200,
+          "content_length": 640035736,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40831Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "32057",
+      "rank_sha256": "486f6e84332ee6ee560344c9be35010a1df5b054e7441bb90d3ee7f6c206bbb5",
+      "role": "sealed-candidate-test",
+      "property_name": "Red Lake",
+      "catalogue_location_dms": "50 51 12 120 46 05",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32057",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32057.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32057Z.zip/",
+          "http_status": 200,
+          "content_length": 9892272,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=32057Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35515",
+      "rank_sha256": "4d137cd8c4e95838d3953e3cadeaeec5bc3b5df091e628d0b3f6e43fd2532d1a",
+      "role": "sealed-candidate-test",
+      "property_name": "Gulo Gulo",
+      "catalogue_location_dms": "54 27 03 122 57 33",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35515",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35515.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35515Z.zip/",
+          "http_status": 200,
+          "content_length": 438896789,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35515Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "36790",
+      "rank_sha256": "4e73c23ca49eb68a25e9ce7fe082259dea6dcdaaeaf831cf1d18e928f260e504",
+      "role": "sealed-candidate-test",
+      "property_name": "Bowser",
+      "catalogue_location_dms": "56 24 30 129 59 25",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36790",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36790.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36790Z.zip/",
+          "http_status": 200,
+          "content_length": 228161,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36790Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42616",
+      "rank_sha256": "4e90c31f1c61eff6b6920ae11083435ee611e535b836309fcb41e20675db36a2",
+      "role": "sealed-candidate-test",
+      "property_name": "MPD Project",
+      "catalogue_location_dms": "49 44 35 120 25 37",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42616",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42616.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42616Z.zip/",
+          "http_status": 200,
+          "content_length": 74762184,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42616Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "36396",
+      "rank_sha256": "50687b68024b0c231a83951eb20fc79476f6a05aec03d62c5d35853fd6d6aa24",
+      "role": "sealed-candidate-test",
+      "property_name": "Windfall Hills",
+      "catalogue_location_dms": "53 37 00 125 59 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36396",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36396.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36396Z.zip/",
+          "http_status": 200,
+          "content_length": 2044221,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36396Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "31363",
+      "rank_sha256": "57ec247cd9d05b6d459eae8f449d332237d211143cc0b280a3ebfb15142670c6",
+      "role": "sealed-candidate-test",
+      "property_name": "TAS",
+      "catalogue_location_dms": "49 17 42 120 28 56",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31363",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31363.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31363Z.zip/",
+          "http_status": 200,
+          "content_length": 65012998,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=31363Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "28151",
+      "rank_sha256": "5b50d3a7259bcf0d8f749d62ec215a3aa7b5f64ac31dff5d675e7d37d1e7bd57",
+      "role": "sealed-candidate-test",
+      "property_name": "Thorn",
+      "catalogue_location_dms": "58 31 59 132 47 07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28151",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28151a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28151b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28151Z.zip/",
+          "http_status": 200,
+          "content_length": 151997813,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=28151Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41597",
+      "rank_sha256": "5eb421a52efce03f6bfc4a50f4bdf1c15f8bffaabca52ab4e728da4b516b9832",
+      "role": "sealed-candidate-test",
+      "property_name": "Woodjam; Redgold",
+      "catalogue_location_dms": "52 17 01 121 19 16",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41597",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41597.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41597Z.zip/",
+          "http_status": 200,
+          "content_length": 1938813450,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41597Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40262",
+      "rank_sha256": "60302b096005bf24384e26c3fb7875900f2028609519d3f706f8c21acb0d7bc0",
+      "role": "sealed-candidate-test",
+      "property_name": "Pathfinder",
+      "catalogue_location_dms": "49 11 26 118 25 24",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40262",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40262.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40262Z.zip/",
+          "http_status": 200,
+          "content_length": 914310408,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40262Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "36711",
+      "rank_sha256": "6396ea1ad4b195b55ae3c19f8a61161fc3b1882030f0c10f48100cb47322fa25",
+      "role": "sealed-candidate-test",
+      "property_name": "Whipsaw Creek",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36711",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36711.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36711Z.zip/",
+          "http_status": 200,
+          "content_length": 18208,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36711Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35447",
+      "rank_sha256": "65aff9fc8fc0d70af8ccb73b84e09f8fc838e227c76f583e62fbd282048dc609",
+      "role": "sealed-candidate-test",
+      "property_name": "Brett",
+      "catalogue_location_dms": "50 14 01 119 39 42",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35447",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35447.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35447Z.zip/",
+          "http_status": 200,
+          "content_length": 29764379,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35447Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "36109",
+      "rank_sha256": "67b8038f3a11410577eadec8ea62d651e535e257de9fdcb018540f009a30e772",
+      "role": "sealed-candidate-test",
+      "property_name": "Bluff",
+      "catalogue_location_dms": "51 45 23 124 40 56",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36109",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36109.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36109Z.zip/",
+          "http_status": 200,
+          "content_length": 10954526,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36109Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "31453",
+      "rank_sha256": "6c86471c723aa209292ce44321070bc4e1aef7d6baab71291c391adfb8500063",
+      "role": "sealed-candidate-test",
+      "property_name": "Cole Creek",
+      "catalogue_location_dms": "53 31 36 127 14 14",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31453",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31453.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31453Z.zip/",
+          "http_status": 200,
+          "content_length": 116234308,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=31453Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30472",
+      "rank_sha256": "71ca1166d185bc640b9b62a8a6c18a337e092ec033a364f144f6a8e4c9623409",
+      "role": "sealed-candidate-test",
+      "property_name": "Slocan",
+      "catalogue_location_dms": "49 35 29 117 43 51",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30472",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30472.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30472Z.zip/",
+          "http_status": 200,
+          "content_length": 521807,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30472Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "38070",
+      "rank_sha256": "75748500fe7486164ac9091f9ecab114eb76a8e90cd595f38413ca2b32c668ba",
+      "role": "sealed-candidate-test",
+      "property_name": "Spius",
+      "catalogue_location_dms": "49 55 05 121 16 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/38070",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/38070.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/38070Z.zip/",
+          "http_status": 200,
+          "content_length": 676960,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=38070Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42648",
+      "rank_sha256": "75b6b4d0ec8fde44f20a453b711077e37f164828a45a2f454e37d6230ad5f7e9",
+      "role": "sealed-candidate-test",
+      "property_name": "Woodjam",
+      "catalogue_location_dms": "52 17 01 121 19 16",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42648",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42648.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42648Z.zip/",
+          "http_status": 200,
+          "content_length": 1402865960,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42648Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "32566",
+      "rank_sha256": "7d7d20abf702357b69444f96d50f531d5f1b0c3c466e3b9900238601860b3ca1",
+      "role": "sealed-candidate-test",
+      "property_name": "Peaks",
+      "catalogue_location_dms": "52 16 40 121 43 25",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32566",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32566.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32566Z.zip/",
+          "http_status": 200,
+          "content_length": 58707014,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=32566Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39336",
+      "rank_sha256": "7e98bb48719cbf413ea81dcceaf6ba340dd62b2e5f35d4f3c88f5855a2a945fa",
+      "role": "sealed-candidate-test",
+      "property_name": "Kliyul",
+      "catalogue_location_dms": "56 30 35 126 09 10",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39336",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39336.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39336Z.zip/",
+          "http_status": 200,
+          "content_length": 12116279,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39336Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40034",
+      "rank_sha256": "807c2792e6979606a49d86dfa7c65c8cedcaf84afea93cfdca7f4039f296d14b",
+      "role": "sealed-candidate-test",
+      "property_name": "Goathorn",
+      "catalogue_location_dms": "54 36 00 127 03 00",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40034",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40034.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40034Z.zip/",
+          "http_status": 200,
+          "content_length": 52055719,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40034Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41502",
+      "rank_sha256": "8129a0abc2aac49d49674ac41303d3e61edb8f84d8b7e24f9dc73f4ba29e1d09",
+      "role": "sealed-candidate-test",
+      "property_name": "SP",
+      "catalogue_location_dms": "52 25 56 121 38 22",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41502",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41502.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41502Z.zip/",
+          "http_status": 200,
+          "content_length": 10137742,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41502Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "28607",
+      "rank_sha256": "81a80b5be145b62145050a10fe3731e16a0f5596e3d23044fe2f1b8d61e5c568",
+      "role": "sealed-candidate-test",
+      "property_name": "Gold King",
+      "catalogue_location_dms": "50 31 03 122 53 46",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28607",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28607.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28607Z.zip/",
+          "http_status": 200,
+          "content_length": 739528,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=28607Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33031",
+      "rank_sha256": "82a9b5d5be41ae95e7b9c5500f4151a30fc6123438ae4d8ca3134977e142dc1a",
+      "role": "sealed-candidate-test",
+      "property_name": "Kliyul",
+      "catalogue_location_dms": "56 30 00 126 09 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33031",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33031.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33031Z.zip/",
+          "http_status": 200,
+          "content_length": 124217061,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33031Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40033",
+      "rank_sha256": "82de0f8718ffdeb9cbafaa5b324e635258ae3ac6e2708e6cc9cd63d3bd644007",
+      "role": "sealed-candidate-test",
+      "property_name": "Emerson",
+      "catalogue_location_dms": "54 26 00 126 53 00",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40033",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40033.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40033Z.zip/",
+          "http_status": 200,
+          "content_length": 82246173,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40033Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39397",
+      "rank_sha256": "83155fdaa6fc02da66026a684c7ccf2704736b695b8b6aaf1406e51dfed0ab60",
+      "role": "sealed-candidate-test",
+      "property_name": "Scottie Mine",
+      "catalogue_location_dms": "56 10 59 130 07 07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39397",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39397.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39397Z.zip/",
+          "http_status": 200,
+          "content_length": 1186875428,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=39397Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "37565",
+      "rank_sha256": "84aa78a7b63526d47d61520617d0e8a7d4be385d77bfad1ca2fb6684c7bd3945",
+      "role": "sealed-candidate-test",
+      "property_name": "Pass",
+      "catalogue_location_dms": "49 18 58 117 27 41",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37565",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37565.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37565Z.zip/",
+          "http_status": 200,
+          "content_length": 204078378,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=37565Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41690",
+      "rank_sha256": "85f36769e277f23710971dc6a99f08d995e97b62a73cbd1ffbc299545f9cdc0a",
+      "role": "sealed-candidate-test",
+      "property_name": "Dolly Varden",
+      "catalogue_location_dms": "55 42 36 129 31 12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41690",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41690.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41690Z.zip/",
+          "http_status": 200,
+          "content_length": 767411,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41690Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35419",
+      "rank_sha256": "867c40954e5db9f0c21f8ec45d49d884aab3d2ba48ea8d06f230f0e19d5afd19",
+      "role": "sealed-candidate-test",
+      "property_name": "CR",
+      "catalogue_location_dms": "54 17 46 126 49 54",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35419",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35419.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35419Z.zip/",
+          "http_status": 200,
+          "content_length": 2942381,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35419Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33815",
+      "rank_sha256": "86bcdb2679403035e930293923bcc6c6d56ba121f4e5d81843a469ca453cfee1",
+      "role": "sealed-candidate-test",
+      "property_name": "GJ-Kinaskan",
+      "catalogue_location_dms": "57 39 16 130 15 27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33815",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33815.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33815Z.zip/",
+          "http_status": 200,
+          "content_length": 38184945,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=33815Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40787",
+      "rank_sha256": "890de886b99a5753ae587c6855149a5fda1217eb8388dacaa380a294eba4243a",
+      "role": "sealed-candidate-test",
+      "property_name": "Wingdam",
+      "catalogue_location_dms": "53 02 22 121 58 35",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40787",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40787.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40787Z.zip/",
+          "http_status": 200,
+          "content_length": 38104168,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40787Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33329",
+      "rank_sha256": "8eb06b292db37b5c0694562e221d39eea8dc9fb846c28ee5c93d390b09296599",
+      "role": "sealed-candidate-test",
+      "property_name": "Elk",
+      "catalogue_location_dms": "49 50 00 120 19 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33329",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33329a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33329b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33329Z.zip/",
+          "http_status": 200,
+          "content_length": 507606001,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33329Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33430",
+      "rank_sha256": "92bed70d118d66a1787859a1080be4dde47c8db47fbbd814a377cee8c7cdb8d7",
+      "role": "sealed-candidate-test",
+      "property_name": "Jesse Creek",
+      "catalogue_location_dms": "50 10 30 120 46 34",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33430",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33430.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33430Z.zip/",
+          "http_status": 200,
+          "content_length": 125281380,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33430Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35967",
+      "rank_sha256": "982c9b343914787d9242636c7ff4a7ffc3a8a7f1229a56583849612444cde256",
+      "role": "sealed-candidate-test",
+      "property_name": "Schaft Creek",
+      "catalogue_location_dms": "57 21 54 130 59 37",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35967",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35967.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35967Z.zip/",
+          "http_status": 200,
+          "content_length": 1346289,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35967Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "31339",
+      "rank_sha256": "994e344648ddcf59f5ca7127e7ea5f1b3e3b50e976039150449f0b15e66c1f0d",
+      "role": "sealed-candidate-test",
+      "property_name": "Thor",
+      "catalogue_location_dms": "56 47 41 126 40 18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31339",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31339.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31339Z.zip/",
+          "http_status": 200,
+          "content_length": 65522423,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=31339Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40939",
+      "rank_sha256": "a201f833468df016444781d1a77a0fa09fc5bb76ddd40c1c4bf87b0e2c41baa1",
+      "role": "sealed-candidate-test",
+      "property_name": "Lucas Lake",
+      "catalogue_location_dms": "53 34 15 125 17 42",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40939",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40939.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40939Z.zip/",
+          "http_status": 200,
+          "content_length": 21864604,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40939Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40786",
+      "rank_sha256": "a369e74c4a51607df83b0c426fb677caab174725ecb945bacdd67b441ca037b0",
+      "role": "sealed-candidate-test",
+      "property_name": "Copper Keg",
+      "catalogue_location_dms": "50 44 00 121 10 00",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40786",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40786.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40786Z.zip/",
+          "http_status": 200,
+          "content_length": 1587858384,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40786Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39002",
+      "rank_sha256": "a9c5b89f6beff42ae25d4c8ea4dce16bc96b48c67956262f1a75c60b1db3f641",
+      "role": "sealed-candidate-test",
+      "property_name": "Whipsaw Creek",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39002",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39002.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39002Z.zip/",
+          "http_status": 200,
+          "content_length": 85589925,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39002Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "37226",
+      "rank_sha256": "aa7462120e5b6a345c92a1897749ed59803888532b23fcf74fdb92ae80fe2a03",
+      "role": "sealed-candidate-test",
+      "property_name": "Melba",
+      "catalogue_location_dms": "50 30 29 120 31 34",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37226",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37226.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37226Z.zip/",
+          "http_status": 200,
+          "content_length": 2746304,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=37226Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35836",
+      "rank_sha256": "ae9b708ebaad9cb30770261b4077975da9acbd933eb9b7baf136ca0392b56378",
+      "role": "sealed-candidate-test",
+      "property_name": "Chuchi",
+      "catalogue_location_dms": "55 15 25 124 33 00",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35836",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35836.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35836Z.zip/",
+          "http_status": 200,
+          "content_length": 13472544,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35836Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41608",
+      "rank_sha256": "b520ff75ec212697d612b4676249c6c524261267d3ebcfef0602bfc2e8405bc2",
+      "role": "sealed-candidate-test",
+      "property_name": "RDP Project",
+      "catalogue_location_dms": "56 29 49 126 46 57",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41608",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41608.pdf/"
+      ],
+      "archives": [],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42199",
+      "rank_sha256": "bf6506d4330d310ab81aeb7b49d7278870ebd1913ffd0f011d02f921078a7d05",
+      "role": "sealed-candidate-test",
+      "property_name": "New Brenda",
+      "catalogue_location_dms": "49 49 49 120 09 18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42199",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42199.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42199Z.zip/",
+          "http_status": 200,
+          "content_length": 5240011,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42199Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "27626",
+      "rank_sha256": "c24150d4728018ed5fc7d01c3bc3ddc0fc8a7a5ea56361eadcecedda4e0aac59",
+      "role": "sealed-candidate-test",
+      "property_name": "IXL",
+      "catalogue_location_dms": "49 32 30 118 24 49",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/27626",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626c.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626Z.zip/",
+          "http_status": 200,
+          "content_length": 894003,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=27626Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "34512",
+      "rank_sha256": "c2ca33a373505792a6dfc703fea386063821d11ce0539145c8beeb9fcaf0be3a",
+      "role": "sealed-candidate-test",
+      "property_name": "Ootsa",
+      "catalogue_location_dms": "53 40 02 127 03 07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/34512",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512A.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512B.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512C.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512D.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512E.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512F.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512G.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512H.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512Z.zip/",
+          "http_status": 200,
+          "content_length": 6758352,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=34512Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "35304",
+      "rank_sha256": "c3709ecb5c2cbe7910519933d26ee2d0ff235c94f0145d3e2e25ed91194f640d",
+      "role": "sealed-candidate-test",
+      "property_name": "Eaglehead",
+      "catalogue_location_dms": "58 28 26 129 04 25",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35304",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304A.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304B.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304X.zip/",
+          "http_status": 200,
+          "content_length": 592689286,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35304X.zip"
+        },
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304Y.zip/",
+          "http_status": 200,
+          "content_length": 603433785,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35304Y.zip"
+        },
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304Z.zip/",
+          "http_status": 200,
+          "content_length": 124216317,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35304Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30748",
+      "rank_sha256": "c4160403eaa2ebbb178d69ccd8f93cbfb7dbbf7d2b9dbe764cfe04f2b01a8ab7",
+      "role": "sealed-candidate-test",
+      "property_name": "Trek",
+      "catalogue_location_dms": "57 01 47 131 17 59",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30748",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30748.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30748Z.zip/",
+          "http_status": 200,
+          "content_length": 75478273,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30748Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30749",
+      "rank_sha256": "c6f6e8ad80d26866c35bf46dc9e5359f47863c0893d5f78caee61dc27a8a4cc4",
+      "role": "sealed-candidate-test",
+      "property_name": "Newmont Lake",
+      "catalogue_location_dms": "56 51 59 130 55 07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30749",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30749.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30749Z.zip/",
+          "http_status": 200,
+          "content_length": 235452820,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=30749Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40803",
+      "rank_sha256": "c851aec101694f010850f22c92d49d73f3ca770d57a1b3d40079aa2c1ef09cb9",
+      "role": "sealed-candidate-test",
+      "property_name": "Goldrange",
+      "catalogue_location_dms": "51 28 30 124 35 02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40803",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40803.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40803Z.zip/",
+          "http_status": 200,
+          "content_length": 30877863,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40803Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40945",
+      "rank_sha256": "ca9fbfe7939e70f31ed44089a62837e260cae3c7ebd4879054e069aa6bafac63",
+      "role": "sealed-candidate-test",
+      "property_name": "Telegraph Creek",
+      "catalogue_location_dms": "57 32 14 131 28 08",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40945",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40945.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40945Z.zip/",
+          "http_status": 200,
+          "content_length": 2288378352,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40945Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42641",
+      "rank_sha256": "cb75ae17762b88411a47f10b9259b2ba22e07560b6fec9e96ee5ce0fb8887a1b",
+      "role": "sealed-candidate-test",
+      "property_name": "Liberty",
+      "catalogue_location_dms": "53 12 13 123 24 15",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42641",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42641.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42641Z.zip/",
+          "http_status": 200,
+          "content_length": 3910176567,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42641Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30366",
+      "rank_sha256": "ceffb6d5c634b0d78dce2d54b04ffe6699c87952682d1f151ffc1806fd1acf3a",
+      "role": "sealed-candidate-test",
+      "property_name": "Woodjam",
+      "catalogue_location_dms": "52 14 38 121 23 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30366",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30366.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30366Z.zip/",
+          "http_status": 200,
+          "content_length": 4408235,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30366Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "27622",
+      "rank_sha256": "d5e7cc8ce0a361a4919b871739eee1a1d828a208c4dd91f52c72b1498a88c6f6",
+      "role": "sealed-candidate-test",
+      "property_name": "Red",
+      "catalogue_location_dms": "56 43 59 126 20 07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/27622",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27622.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/27622Z.zip/",
+          "http_status": 200,
+          "content_length": 97236618,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=27622Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "43141",
+      "rank_sha256": "d8acabe0380f844f573ea5a14b27c77b0e30498bd51c88dd3eb23fda225ef17e",
+      "role": "sealed-candidate-test",
+      "property_name": "Mount Milligan Greenfield, Milly",
+      "catalogue_location_dms": "55 05 34 123 57 17",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/43141",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/43141.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/43141Z.zip/",
+          "http_status": 200,
+          "content_length": 1014138,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=43141Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33626",
+      "rank_sha256": "d9f74bdc94355ca1330b31e938f96ee4f2179df664fcda4d6f59b57c5b35cee7",
+      "role": "sealed-candidate-test",
+      "property_name": "Tulameen",
+      "catalogue_location_dms": "49 19 59 120 40 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33626",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626c.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626d.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626e.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626f.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626Z.zip/",
+          "http_status": 200,
+          "content_length": 281776209,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33626Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "41841",
+      "rank_sha256": "dc9351d39869187d74bc423f976501f69dc8228137c8ad2780e3dfff36ae5a7e",
+      "role": "sealed-candidate-test",
+      "property_name": "Mount Milligan Greenfield, Milly",
+      "catalogue_location_dms": "55 05 34 123 57 17",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41841",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41841.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41841Z.zip/",
+          "http_status": 200,
+          "content_length": 579596,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41841Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "36911",
+      "rank_sha256": "dfb069ee3b28edb8ead2231dfac092143ec71dd1d90bf9060ba16fef52afb672",
+      "role": "sealed-candidate-test",
+      "property_name": "OK (Okeover)",
+      "catalogue_location_dms": "50 02 11 124 39 12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36911",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36911.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36911Z.zip/",
+          "http_status": 200,
+          "content_length": 1020013,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36911Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "34890",
+      "rank_sha256": "e0ab873e831b5f729ef0310431acba598c51670352899da6cb69b19aa1d113ec",
+      "role": "sealed-candidate-test",
+      "property_name": "Kliyul",
+      "catalogue_location_dms": "56 30 00 126 09 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/34890",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34890.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/34890Z.zip/",
+          "http_status": 200,
+          "content_length": 83198731,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=34890Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "42318",
+      "rank_sha256": "e7c025d83e6b7283f3d67c13b1298dd470e90d78f4e538d6a4e0040732ee9d8e",
+      "role": "sealed-candidate-test",
+      "property_name": "Atsutla",
+      "catalogue_location_dms": "59 16 39 131 17 17",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42318",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42318.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42318Z.zip/",
+          "http_status": 200,
+          "content_length": 5029909882,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42318Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "33816",
+      "rank_sha256": "ea77807cc770826bc29c8659ac98bf13da808547e27104fec27507fb9db5d085",
+      "role": "sealed-candidate-test",
+      "property_name": "Rand",
+      "catalogue_location_dms": "52 15 47 121 19 25",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33816",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33816.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33816Z.zip/",
+          "http_status": 200,
+          "content_length": 7943724,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=33816Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "34932",
+      "rank_sha256": "ed87fc949f99aacfde5776ab4a00f2f34a9768566dcf5688661657828422017d",
+      "role": "sealed-candidate-test",
+      "property_name": "Haloba Heath North and Falcon",
+      "catalogue_location_dms": "55 16 00 125 05 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/34932",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34932.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/34932Z.zip/",
+          "http_status": 200,
+          "content_length": 8508902,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=34932Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39734",
+      "rank_sha256": "efbe1da9e8d0b56853871273952df17b9a8b99ce9da95e76864d6fc3bdd35f9c",
+      "role": "sealed-candidate-test",
+      "property_name": "Goldrange",
+      "catalogue_location_dms": "51 29 45 124 36 26",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39734",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39734.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39734Z.zip/",
+          "http_status": 200,
+          "content_length": 34591139,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39734Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "32370",
+      "rank_sha256": "f2b5b427c61ec7a7c64b0dee0a26afa75771aec9751be11dfdeec6d409d85811",
+      "role": "sealed-candidate-test",
+      "property_name": "Getty Highland Valley",
+      "catalogue_location_dms": "50 35 08 120 58 22",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32370",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32370.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32370Z.zip/",
+          "http_status": 200,
+          "content_length": 372822915,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=32370Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "37059",
+      "rank_sha256": "f2d97909d482739794606da2dfe7fcede056a3bb6a3cdf11a7851e467b95b4a9",
+      "role": "sealed-candidate-test",
+      "property_name": "Tatogga",
+      "catalogue_location_dms": "57 43 59 130 10 07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37059",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37059.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37059Z.zip/",
+          "http_status": 200,
+          "content_length": 8471576303,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=37059Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "28004",
+      "rank_sha256": "f358fb63e489a53b7875a8c4c4f17a1df8a4287865c99c9dfae7e5c1d382bcca",
+      "role": "sealed-candidate-test",
+      "property_name": "Williams",
+      "catalogue_location_dms": "57 47 16 127 47 06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28004",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28004.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28004Z.zip/",
+          "http_status": 200,
+          "content_length": 112622571,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=28004Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39951",
+      "rank_sha256": "f5ff2e247f0d65ebc261a86b9ce01cdae5531d4580aa922bd3eb010bb64d51f4",
+      "role": "sealed-candidate-test",
+      "property_name": "Princeton",
+      "catalogue_location_dms": "49 09 41 120 28 00",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39951",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39951.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39951Z.zip/",
+          "http_status": 200,
+          "content_length": 20134263,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39951Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "37463",
+      "rank_sha256": "f678a9ced8f50fac0c366b6afe79abe33ec6365a9cf216463ad1dccdb125fdf2",
+      "role": "sealed-candidate-test",
+      "property_name": "Whipsaw Creek",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37463",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37463.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37463Z.zip/",
+          "http_status": 200,
+          "content_length": 652579,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=37463Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40419",
+      "rank_sha256": "f6f30de308d5e666a6e3025d49cf8ae8699c168d71285a7cbb2fd6cc50d783d5",
+      "role": "sealed-candidate-test",
+      "property_name": "Scottie Gold",
+      "catalogue_location_dms": "56 11 00 130 07 00",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40419",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40419.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40419Z.zip/",
+          "http_status": 200,
+          "content_length": 258149068,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40419Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "39568",
+      "rank_sha256": "f8c24af678702068c77ad97aa3b62733f8c6f427f8db510ae038281c0c4a4484",
+      "role": "sealed-candidate-test",
+      "property_name": "McConnell Creek",
+      "catalogue_location_dms": "56 51 06 126 29 22",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39568",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39568.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39568Z.zip/",
+          "http_status": 200,
+          "content_length": 10325833,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39568Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "40958",
+      "rank_sha256": "fb32cdf181f2f3715253ba1758d428d13a8c456fdb46885ccd32cdfe37fe8b52",
+      "role": "sealed-candidate-test",
+      "property_name": "Lawyers Property",
+      "catalogue_location_dms": "57 18 44 127 11 55",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40958",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40958.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40958Z.zip/",
+          "http_status": 200,
+          "content_length": 2178477743,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40958Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30527",
+      "rank_sha256": "fe602bff63436ba5d7a555ccbe54db90e4fa72a7498a35707a46e9a611935d88",
+      "role": "sealed-candidate-test",
+      "property_name": "Nechako",
+      "catalogue_location_dms": "53 30 47 125 40 02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30527",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30527.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30527Z.zip/",
+          "http_status": 200,
+          "content_length": 46059088,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30527Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    },
+    {
+      "report_number": "30364",
+      "rank_sha256": "feffeb6382c9bbca012d0224a9cb0d11d962dd6017f6a4479eb9cedc80dfe696",
+      "role": "sealed-candidate-test",
+      "property_name": "Nechako",
+      "catalogue_location_dms": "53 34 48 125 42 10",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30364",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30364a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30364b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30364Z.zip/",
+          "http_status": 200,
+          "content_length": 4519109,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30364Z.zip"
+        }
+      ],
+      "response_opened": false,
+      "archive_members_listed": false
+    }
+  ]
+}

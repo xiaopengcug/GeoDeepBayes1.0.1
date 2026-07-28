@@ -1,0 +1,58 @@
+{
+  "schema_version": "wp8-zenodo-martin2020-field-sip-training-audit-v1",
+  "source": {
+    "record_id": 4419736,
+    "doi": "10.5281/zenodo.4419736",
+    "license": "CC-BY-4.0",
+    "archive_path": "validation/wp8/data/zenodo-martin2020-field-sip-4419736/FD-TD-IPdata-Martin2020JAG.zip",
+    "archive_bytes": 9155243,
+    "archive_sha256": "78dee56c04acee1b3f9a7c73457e1b0969a945e835fba76dd6f2f13090d55509"
+  },
+  "partition": "permanently-training-only",
+  "profiles": {
+    "IP1": {
+      "electrode_spacing_m": 1.0,
+      "electrode_count": 42,
+      "quadrupole_count": 522,
+      "unique_current_dipoles": 46,
+      "unique_current_dipole_midpoints": 46,
+      "unique_quadrupole_midpoints": 77,
+      "minimum_x_m": 0.0,
+      "maximum_x_m": 41.0,
+      "frequency_count": 14,
+      "complex_observation_count": 7308
+    },
+    "IP5": {
+      "electrode_spacing_m": 5.0,
+      "electrode_count": 63,
+      "quadrupole_count": 535,
+      "unique_current_dipoles": 60,
+      "unique_current_dipole_midpoints": 60,
+      "unique_quadrupole_midpoints": 119,
+      "minimum_x_m": 25.0,
+      "maximum_x_m": 335.0,
+      "frequency_count": 11,
+      "complex_observation_count": 5885
+    }
+  },
+  "totals": {
+    "field_profiles": 2,
+    "electrodes": 105,
+    "quadrupoles": 1057,
+    "unique_current_dipoles": 106,
+    "unique_quadrupole_midpoints_upper_bound": 196,
+    "complex_observations": 13193
+  },
+  "formal_gate_assessment": {
+    "observation_contract_support": true,
+    "minimum_independent_test_clusters": 223,
+    "independent_profile_upper_bound": 2,
+    "independent_quadrupole_midpoint_upper_bound": 196,
+    "cluster_gate_passes": false,
+    "power_gate_passes": false,
+    "reason": "The archive materially strengthens training and parser evidence, but contains two colocated field profiles. Even the deliberately non-independent quadrupole-midpoint upper bound is below 223, and two profiles cannot support leave-one-profile-out effect-size estimation."
+  },
+  "formal_test_responses_opened": 0,
+  "test_unseal_count": 0,
+  "formal_test_result": null
+}

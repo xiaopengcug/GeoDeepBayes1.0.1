@@ -1,0 +1,10 @@
+{
+  "schema_version": "wp8-saudi-regional-gravity-extraction-v1",
+  "extractor": "pypdf==6.6.2 layout mode with strict no-residue numeric parser",
+  "strict_records": 1342,
+  "strict_csv_sha256": "db3d5f516d2c2fa2ae2016685ee64ce9f8ca46d4f06ad188d66be9b7f3e06d08",
+  "response_values_interpreted_before_spatial_design": 1342,
+  "formal_test_endpoint_exposure": 1342,
+  "formal_confirmatory_contribution": 0,
+  "reason": "The PDF response columns were parsed to establish recoverability before the response-blind spatial design was executed. This version is therefore training/exploratory evidence only and cannot supply a sealed formal test."
+}

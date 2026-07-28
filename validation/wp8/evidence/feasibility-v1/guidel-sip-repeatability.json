@@ -1,0 +1,441 @@
+{
+  "schema_version": "wp8-guidel-sip-repeatability-v1",
+  "partition": "training-only",
+  "estimator": "independent complex-impedance estimates from the two recorded cycles; absolute cycle difference divided by sqrt(2)",
+  "signal_groups": [
+    {
+      "signal": "100_s",
+      "segment_rows": 399598,
+      "cycle_rows": 199799,
+      "cycle_duration_s": 99.8995
+    },
+    {
+      "signal": "10_s",
+      "segment_rows": 39958,
+      "cycle_rows": 19979,
+      "cycle_duration_s": 9.9895
+    },
+    {
+      "signal": "1_s",
+      "segment_rows": 3996,
+      "cycle_rows": 1998,
+      "cycle_duration_s": 0.999
+    }
+  ],
+  "all_channels": {
+    "complex_observations": 1680,
+    "relative_amplitude_sigma": {
+      "median": 0.0015729350225038086,
+      "p95": 0.021097705535461433
+    },
+    "phase_sigma_mrad": {
+      "median": 1.566210870923706,
+      "p95": 26.24169178510128
+    }
+  },
+  "adjacent_dipoles_all_frequencies": {
+    "complex_observations": 420,
+    "relative_amplitude_sigma": {
+      "median": 0.0013566509450664206,
+      "p95": 0.013137030243176728
+    },
+    "phase_sigma_mrad": {
+      "median": 0.9646332350760429,
+      "p95": 12.976888485835588
+    }
+  },
+  "adjacent_dipoles_frequency_ge_0_1_hz": {
+    "complex_observations": 364,
+    "relative_amplitude_sigma": {
+      "median": 0.0010778019103302896,
+      "p95": 0.008697078419260202
+    },
+    "phase_sigma_mrad": {
+      "median": 0.7407703008247495,
+      "p95": 8.244523085288604
+    }
+  },
+  "adjacent_dipoles_frequency_lt_0_1_hz": {
+    "complex_observations": 56,
+    "relative_amplitude_sigma": {
+      "median": 0.007923904723212076,
+      "p95": 0.018972715392453925
+    },
+    "phase_sigma_mrad": {
+      "median": 5.356596124531565,
+      "p95": 30.834710217231624
+    }
+  },
+  "per_frequency_adjacent_dipoles": [
+    {
+      "frequency_hz": 0.01,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.010069989329539172,
+        "p95": 0.03376881643015449
+      },
+      "phase_sigma_mrad": {
+        "median": 9.220058319676589,
+        "p95": 26.841246590866607
+      }
+    },
+    {
+      "frequency_hz": 0.03,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.008951244150265302,
+        "p95": 0.030454591025378175
+      },
+      "phase_sigma_mrad": {
+        "median": 3.8325737254664967,
+        "p95": 27.80378298051038
+      }
+    },
+    {
+      "frequency_hz": 0.05,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.010371577364435183,
+        "p95": 0.01901881636626808
+      },
+      "phase_sigma_mrad": {
+        "median": 6.011904774813194,
+        "p95": 26.546585318874556
+      }
+    },
+    {
+      "frequency_hz": 0.07,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.004172588551527491,
+        "p95": 0.016128916479646073
+      },
+      "phase_sigma_mrad": {
+        "median": 4.879725792939761,
+        "p95": 28.193883586284045
+      }
+    },
+    {
+      "frequency_hz": 0.1,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.003702576361424812,
+        "p95": 0.007256449325929013
+      },
+      "phase_sigma_mrad": {
+        "median": 5.956093551714166,
+        "p95": 19.956942514280346
+      }
+    },
+    {
+      "frequency_hz": 0.13,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.004704684468505945,
+        "p95": 0.01466434321962723
+      },
+      "phase_sigma_mrad": {
+        "median": 6.604359211658941,
+        "p95": 13.224270223916823
+      }
+    },
+    {
+      "frequency_hz": 0.17,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.004131622889946861,
+        "p95": 0.012994403276357872
+      },
+      "phase_sigma_mrad": {
+        "median": 4.283044286723546,
+        "p95": 22.888863280031206
+      }
+    },
+    {
+      "frequency_hz": 0.23,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.004190444100351473,
+        "p95": 0.01911523914167127
+      },
+      "phase_sigma_mrad": {
+        "median": 4.576796619685219,
+        "p95": 18.800272059208446
+      }
+    },
+    {
+      "frequency_hz": 0.30000000000000004,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.003644076984923761,
+        "p95": 0.009189205755764972
+      },
+      "phase_sigma_mrad": {
+        "median": 2.500513265154151,
+        "p95": 4.753773764511623
+      }
+    },
+    {
+      "frequency_hz": 0.37,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.002788476987672103,
+        "p95": 0.006407004004913794
+      },
+      "phase_sigma_mrad": {
+        "median": 3.515498312652862,
+        "p95": 18.191946654040763
+      }
+    },
+    {
+      "frequency_hz": 0.5,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0017839957590202373,
+        "p95": 0.007693131501342697
+      },
+      "phase_sigma_mrad": {
+        "median": 0.7679646488569751,
+        "p95": 3.166548546762056
+      }
+    },
+    {
+      "frequency_hz": 0.7000000000000001,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0011978606721206654,
+        "p95": 0.005842690322907243
+      },
+      "phase_sigma_mrad": {
+        "median": 1.4969743186274405,
+        "p95": 2.635455470064075
+      }
+    },
+    {
+      "frequency_hz": 1.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.002616312120451607,
+        "p95": 0.00903479827818674
+      },
+      "phase_sigma_mrad": {
+        "median": 2.6870723165752013,
+        "p95": 8.016039130260484
+      }
+    },
+    {
+      "frequency_hz": 1.3,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0006016261107534135,
+        "p95": 0.004787494628179067
+      },
+      "phase_sigma_mrad": {
+        "median": 1.2707394056332744,
+        "p95": 3.2263217944736367
+      }
+    },
+    {
+      "frequency_hz": 1.7000000000000002,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0009237514505963411,
+        "p95": 0.0041288124657218785
+      },
+      "phase_sigma_mrad": {
+        "median": 0.8050303352884798,
+        "p95": 2.723955716377732
+      }
+    },
+    {
+      "frequency_hz": 2.3000000000000003,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0006583947802119899,
+        "p95": 0.0036163116312377375
+      },
+      "phase_sigma_mrad": {
+        "median": 0.2721769600789928,
+        "p95": 2.0368455868457307
+      }
+    },
+    {
+      "frequency_hz": 3.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0010647456465819587,
+        "p95": 0.0037994398191406585
+      },
+      "phase_sigma_mrad": {
+        "median": 0.7754568186393065,
+        "p95": 1.8584602224041427
+      }
+    },
+    {
+      "frequency_hz": 3.7,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0006242093527496285,
+        "p95": 0.003604159797974832
+      },
+      "phase_sigma_mrad": {
+        "median": 0.3158651648256604,
+        "p95": 1.7097006531291914
+      }
+    },
+    {
+      "frequency_hz": 5.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0006636012575753315,
+        "p95": 0.0035074770408608288
+      },
+      "phase_sigma_mrad": {
+        "median": 0.21076429434022498,
+        "p95": 0.6575395226123405
+      }
+    },
+    {
+      "frequency_hz": 7.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0004153157003718179,
+        "p95": 0.0030645335460329558
+      },
+      "phase_sigma_mrad": {
+        "median": 0.21166829420801228,
+        "p95": 1.4183247401927621
+      }
+    },
+    {
+      "frequency_hz": 9.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0005126357798810336,
+        "p95": 0.002346033362821337
+      },
+      "phase_sigma_mrad": {
+        "median": 0.23277914235348848,
+        "p95": 1.810553500738411
+      }
+    },
+    {
+      "frequency_hz": 11.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0004258353346625537,
+        "p95": 0.0016396678990852971
+      },
+      "phase_sigma_mrad": {
+        "median": 0.2935268629393656,
+        "p95": 1.8100456222574102
+      }
+    },
+    {
+      "frequency_hz": 13.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0002979362175640729,
+        "p95": 0.001269562342649214
+      },
+      "phase_sigma_mrad": {
+        "median": 0.42884615743230214,
+        "p95": 0.9615081339608809
+      }
+    },
+    {
+      "frequency_hz": 17.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.000178776248988866,
+        "p95": 0.0013741703865828455
+      },
+      "phase_sigma_mrad": {
+        "median": 0.29236247549759364,
+        "p95": 0.9662251302494579
+      }
+    },
+    {
+      "frequency_hz": 21.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.00029976738679899457,
+        "p95": 0.0013493758098795424
+      },
+      "phase_sigma_mrad": {
+        "median": 0.19479963836847058,
+        "p95": 1.0174816224596492
+      }
+    },
+    {
+      "frequency_hz": 25.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0003663606013550748,
+        "p95": 0.0009631109395145004
+      },
+      "phase_sigma_mrad": {
+        "median": 0.402602370234825,
+        "p95": 1.0395084201922131
+      }
+    },
+    {
+      "frequency_hz": 33.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.00032481380660868324,
+        "p95": 0.0010145055197771531
+      },
+      "phase_sigma_mrad": {
+        "median": 0.3515137854514574,
+        "p95": 0.68292402195979
+      }
+    },
+    {
+      "frequency_hz": 49.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0026263507653446006,
+        "p95": 0.004469040850332673
+      },
+      "phase_sigma_mrad": {
+        "median": 3.4040199836486793,
+        "p95": 4.914015248440691
+      }
+    },
+    {
+      "frequency_hz": 65.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0012312832960102425,
+        "p95": 0.002437478410614498
+      },
+      "phase_sigma_mrad": {
+        "median": 0.8143189644940052,
+        "p95": 2.251659625653163
+      }
+    },
+    {
+      "frequency_hz": 97.0,
+      "complex_observations": 14,
+      "relative_amplitude_sigma": {
+        "median": 0.0011500347600515953,
+        "p95": 0.0024792473271969553
+      },
+      "phase_sigma_mrad": {
+        "median": 1.2081049165948172,
+        "p95": 2.8087722841181657
+      }
+    }
+  ],
+  "interpretation": {
+    "repeat_based_uncertainty_contract": "passed_training_only",
+    "low_frequency_noise_increase_confirmed": true,
+    "formal_cluster_gate": "failed",
+    "formal_power_gate": "failed"
+  },
+  "buffer_values_read": 0,
+  "calibration_values_read": 0,
+  "test_values_read": 0,
+  "test_unseal_count": 0
+}

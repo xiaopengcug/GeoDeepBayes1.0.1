@@ -1,0 +1,4858 @@
+{
+  "schema_version": "wp8-tdip-date-split-v1",
+  "selection_inputs": "ZIP member names, sizes and CRC only; no observation values",
+  "archive_sha256": "356f81e039884faa38b74e7d80662be7a5cd90c3cf96f490e0905b517f9c672c",
+  "cluster_unit": "acquisition_date",
+  "observation_unit": "acquisition_date",
+  "power_cluster_unit": "non-overlapping temporal block derived from the training-only correlation length",
+  "normal_and_reciprocal_are_repeated_measurements_not_clusters": true,
+  "time_windows_are_repeated_channels_not_clusters": true,
+  "buffer_policy": "at least the 17-day training-only temporal correlation length",
+  "all_named_dates": 371,
+  "paired_dates": 370,
+  "excluded": {
+    "endpoint_exposed": [
+      "20221023"
+    ],
+    "missing_reciprocal": [
+      "20230705"
+    ]
+  },
+  "counts": {
+    "train": 79,
+    "buffer": 17,
+    "calibration": 50,
+    "test": 223
+  },
+  "partitions": {
+    "train": [
+      "20221024",
+      "20221026",
+      "20221027",
+      "20221028",
+      "20221029",
+      "20221030",
+      "20221031",
+      "20221101",
+      "20221102",
+      "20221103",
+      "20221104",
+      "20221105",
+      "20221106",
+      "20221107",
+      "20221108",
+      "20221109",
+      "20221110",
+      "20221111",
+      "20221112",
+      "20221113",
+      "20221114",
+      "20221115",
+      "20221116",
+      "20221117",
+      "20221118",
+      "20221119",
+      "20221120",
+      "20221121",
+      "20221122",
+      "20221123",
+      "20221124",
+      "20221125",
+      "20221126",
+      "20221127",
+      "20221128",
+      "20221129",
+      "20221130",
+      "20221201",
+      "20221202",
+      "20221203",
+      "20221204",
+      "20221205",
+      "20221206",
+      "20221207",
+      "20221208",
+      "20221209",
+      "20221210",
+      "20221211",
+      "20221212",
+      "20221213",
+      "20221214",
+      "20221215",
+      "20221216",
+      "20221217",
+      "20221218",
+      "20221219",
+      "20221220",
+      "20221221",
+      "20221222",
+      "20221223",
+      "20221224",
+      "20221225",
+      "20221226",
+      "20221227",
+      "20221228",
+      "20221229",
+      "20221230",
+      "20221231",
+      "20230101",
+      "20230102",
+      "20230103",
+      "20230104",
+      "20230105",
+      "20230106",
+      "20230107",
+      "20230108",
+      "20230109",
+      "20230110",
+      "20230111"
+    ],
+    "buffer": [
+      "20230112",
+      "20230113",
+      "20230114",
+      "20230115",
+      "20230116",
+      "20230117",
+      "20230118",
+      "20230119",
+      "20230120",
+      "20230121",
+      "20230122",
+      "20230123",
+      "20230124",
+      "20230125",
+      "20230126",
+      "20230127",
+      "20230128"
+    ],
+    "calibration": [
+      "20230129",
+      "20230130",
+      "20230131",
+      "20230201",
+      "20230202",
+      "20230203",
+      "20230204",
+      "20230205",
+      "20230206",
+      "20230207",
+      "20230208",
+      "20230209",
+      "20230210",
+      "20230211",
+      "20230212",
+      "20230213",
+      "20230214",
+      "20230215",
+      "20230216",
+      "20230217",
+      "20230218",
+      "20230219",
+      "20230220",
+      "20230221",
+      "20230222",
+      "20230223",
+      "20230224",
+      "20230225",
+      "20230226",
+      "20230227",
+      "20230228",
+      "20230301",
+      "20230302",
+      "20230303",
+      "20230304",
+      "20230305",
+      "20230306",
+      "20230307",
+      "20230308",
+      "20230309",
+      "20230310",
+      "20230311",
+      "20230312",
+      "20230313",
+      "20230314",
+      "20230315",
+      "20230316",
+      "20230317",
+      "20230318",
+      "20230319"
+    ],
+    "test": [
+      "20230320",
+      "20230321",
+      "20230322",
+      "20230323",
+      "20230324",
+      "20230325",
+      "20230326",
+      "20230327",
+      "20230328",
+      "20230329",
+      "20230330",
+      "20230331",
+      "20230401",
+      "20230402",
+      "20230403",
+      "20230404",
+      "20230405",
+      "20230406",
+      "20230407",
+      "20230408",
+      "20230409",
+      "20230410",
+      "20230411",
+      "20230412",
+      "20230413",
+      "20230414",
+      "20230415",
+      "20230416",
+      "20230417",
+      "20230418",
+      "20230419",
+      "20230420",
+      "20230422",
+      "20230423",
+      "20230424",
+      "20230425",
+      "20230426",
+      "20230427",
+      "20230428",
+      "20230429",
+      "20230430",
+      "20230501",
+      "20230502",
+      "20230503",
+      "20230504",
+      "20230505",
+      "20230506",
+      "20230507",
+      "20230508",
+      "20230509",
+      "20230510",
+      "20230511",
+      "20230512",
+      "20230513",
+      "20230514",
+      "20230515",
+      "20230516",
+      "20230517",
+      "20230518",
+      "20230519",
+      "20230520",
+      "20230521",
+      "20230522",
+      "20230523",
+      "20230524",
+      "20230525",
+      "20230526",
+      "20230527",
+      "20230528",
+      "20230529",
+      "20230530",
+      "20230531",
+      "20230601",
+      "20230602",
+      "20230603",
+      "20230604",
+      "20230605",
+      "20230606",
+      "20230607",
+      "20230608",
+      "20230609",
+      "20230610",
+      "20230611",
+      "20230612",
+      "20230613",
+      "20230614",
+      "20230615",
+      "20230616",
+      "20230617",
+      "20230618",
+      "20230619",
+      "20230620",
+      "20230621",
+      "20230622",
+      "20230623",
+      "20230624",
+      "20230625",
+      "20230626",
+      "20230627",
+      "20230628",
+      "20230629",
+      "20230630",
+      "20230701",
+      "20230703",
+      "20230704",
+      "20230706",
+      "20230707",
+      "20230708",
+      "20230709",
+      "20230710",
+      "20230711",
+      "20230712",
+      "20230713",
+      "20230714",
+      "20230715",
+      "20230716",
+      "20230717",
+      "20230718",
+      "20230719",
+      "20230720",
+      "20230721",
+      "20230722",
+      "20230723",
+      "20230724",
+      "20230725",
+      "20230726",
+      "20230727",
+      "20230728",
+      "20230729",
+      "20230730",
+      "20230731",
+      "20230801",
+      "20230802",
+      "20230803",
+      "20230804",
+      "20230805",
+      "20230806",
+      "20230807",
+      "20230808",
+      "20230809",
+      "20230810",
+      "20230811",
+      "20230812",
+      "20230813",
+      "20230814",
+      "20230815",
+      "20230816",
+      "20230817",
+      "20230818",
+      "20230819",
+      "20230820",
+      "20230821",
+      "20230822",
+      "20230823",
+      "20230824",
+      "20230825",
+      "20230826",
+      "20230827",
+      "20230828",
+      "20230829",
+      "20230830",
+      "20230831",
+      "20230901",
+      "20230902",
+      "20230903",
+      "20230904",
+      "20230905",
+      "20230906",
+      "20230907",
+      "20230908",
+      "20230909",
+      "20230910",
+      "20230911",
+      "20230912",
+      "20230913",
+      "20230914",
+      "20230915",
+      "20230916",
+      "20230917",
+      "20230918",
+      "20230919",
+      "20230920",
+      "20230921",
+      "20230922",
+      "20230923",
+      "20230924",
+      "20230925",
+      "20230926",
+      "20230927",
+      "20230928",
+      "20230929",
+      "20230930",
+      "20231001",
+      "20231002",
+      "20231003",
+      "20231004",
+      "20231005",
+      "20231006",
+      "20231007",
+      "20231008",
+      "20231009",
+      "20231010",
+      "20231011",
+      "20231012",
+      "20231013",
+      "20231014",
+      "20231015",
+      "20231016",
+      "20231017",
+      "20231018",
+      "20231019",
+      "20231020",
+      "20231021",
+      "20231022",
+      "20231023",
+      "20231024",
+      "20231025",
+      "20231026",
+      "20231027",
+      "20231028",
+      "20231029",
+      "20231030",
+      "20231031"
+    ]
+  },
+  "members": {
+    "20221023": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221023.csv",
+        "bytes": 353563,
+        "crc32": "bfcd418d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221023.csv",
+        "bytes": 356162,
+        "crc32": "c95889f3"
+      }
+    },
+    "20221024": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221024.csv",
+        "bytes": 353782,
+        "crc32": "314acf52"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221024.csv",
+        "bytes": 353306,
+        "crc32": "231c2115"
+      }
+    },
+    "20221026": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221026.csv",
+        "bytes": 353196,
+        "crc32": "cff095ba"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221026.csv",
+        "bytes": 355857,
+        "crc32": "c2607a88"
+      }
+    },
+    "20221027": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221027.csv",
+        "bytes": 352910,
+        "crc32": "7799c1d1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221027.csv",
+        "bytes": 356021,
+        "crc32": "b09d9518"
+      }
+    },
+    "20221028": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221028.csv",
+        "bytes": 352930,
+        "crc32": "842985aa"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221028.csv",
+        "bytes": 356381,
+        "crc32": "d74049a1"
+      }
+    },
+    "20221029": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221029.csv",
+        "bytes": 353191,
+        "crc32": "31625a64"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221029.csv",
+        "bytes": 357195,
+        "crc32": "324647dc"
+      }
+    },
+    "20221030": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221030.csv",
+        "bytes": 352764,
+        "crc32": "6104693f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221030.csv",
+        "bytes": 356664,
+        "crc32": "1862cd56"
+      }
+    },
+    "20221031": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221031.csv",
+        "bytes": 352048,
+        "crc32": "4f81b7b8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221031.csv",
+        "bytes": 356142,
+        "crc32": "7b37ca7c"
+      }
+    },
+    "20221101": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221101.csv",
+        "bytes": 353054,
+        "crc32": "903b3cf1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221101.csv",
+        "bytes": 356036,
+        "crc32": "4c007da4"
+      }
+    },
+    "20221102": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221102.csv",
+        "bytes": 353013,
+        "crc32": "43bef8e5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221102.csv",
+        "bytes": 356147,
+        "crc32": "fb428f96"
+      }
+    },
+    "20221103": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221103.csv",
+        "bytes": 352701,
+        "crc32": "2e322dd6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221103.csv",
+        "bytes": 355627,
+        "crc32": "e18751d2"
+      }
+    },
+    "20221104": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221104.csv",
+        "bytes": 352883,
+        "crc32": "15f50752"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221104.csv",
+        "bytes": 355433,
+        "crc32": "eed863df"
+      }
+    },
+    "20221105": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221105.csv",
+        "bytes": 352574,
+        "crc32": "d1c8213e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221105.csv",
+        "bytes": 355149,
+        "crc32": "8fbb4acc"
+      }
+    },
+    "20221106": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221106.csv",
+        "bytes": 352354,
+        "crc32": "c8f0bf17"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221106.csv",
+        "bytes": 355271,
+        "crc32": "a1dd0c11"
+      }
+    },
+    "20221107": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221107.csv",
+        "bytes": 352598,
+        "crc32": "efa4f6c3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221107.csv",
+        "bytes": 355084,
+        "crc32": "f5711b92"
+      }
+    },
+    "20221108": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221108.csv",
+        "bytes": 352011,
+        "crc32": "fe09586d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221108.csv",
+        "bytes": 355055,
+        "crc32": "a3751967"
+      }
+    },
+    "20221109": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221109.csv",
+        "bytes": 352041,
+        "crc32": "08da14ed"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221109.csv",
+        "bytes": 354627,
+        "crc32": "66beef94"
+      }
+    },
+    "20221110": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221110.csv",
+        "bytes": 351887,
+        "crc32": "a195ab61"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221110.csv",
+        "bytes": 354670,
+        "crc32": "a8e77525"
+      }
+    },
+    "20221111": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221111.csv",
+        "bytes": 352155,
+        "crc32": "33863b0b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221111.csv",
+        "bytes": 354429,
+        "crc32": "f1c8da77"
+      }
+    },
+    "20221112": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221112.csv",
+        "bytes": 352070,
+        "crc32": "193e9412"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221112.csv",
+        "bytes": 354657,
+        "crc32": "71382438"
+      }
+    },
+    "20221113": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221113.csv",
+        "bytes": 352320,
+        "crc32": "c44c24dc"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221113.csv",
+        "bytes": 354547,
+        "crc32": "8bd03780"
+      }
+    },
+    "20221114": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221114.csv",
+        "bytes": 352056,
+        "crc32": "bd2badd4"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221114.csv",
+        "bytes": 354392,
+        "crc32": "51b3c3f4"
+      }
+    },
+    "20221115": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221115.csv",
+        "bytes": 352105,
+        "crc32": "9206f451"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221115.csv",
+        "bytes": 355022,
+        "crc32": "1c6c94db"
+      }
+    },
+    "20221116": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221116.csv",
+        "bytes": 352017,
+        "crc32": "6088b74e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221116.csv",
+        "bytes": 354881,
+        "crc32": "e5a96d7c"
+      }
+    },
+    "20221117": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221117.csv",
+        "bytes": 352064,
+        "crc32": "9182580f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221117.csv",
+        "bytes": 355169,
+        "crc32": "8a5cc448"
+      }
+    },
+    "20221118": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221118.csv",
+        "bytes": 352134,
+        "crc32": "b7403a95"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221118.csv",
+        "bytes": 354981,
+        "crc32": "56c44f91"
+      }
+    },
+    "20221119": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221119.csv",
+        "bytes": 352642,
+        "crc32": "5d1f7346"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221119.csv",
+        "bytes": 355354,
+        "crc32": "c9af25ca"
+      }
+    },
+    "20221120": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221120.csv",
+        "bytes": 352461,
+        "crc32": "5834ab09"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221120.csv",
+        "bytes": 355248,
+        "crc32": "d6f1be6a"
+      }
+    },
+    "20221121": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221121.csv",
+        "bytes": 352581,
+        "crc32": "4a20eb19"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221121.csv",
+        "bytes": 355216,
+        "crc32": "6c68bfba"
+      }
+    },
+    "20221122": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221122.csv",
+        "bytes": 353147,
+        "crc32": "36a51002"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221122.csv",
+        "bytes": 355864,
+        "crc32": "35273e85"
+      }
+    },
+    "20221123": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221123.csv",
+        "bytes": 353278,
+        "crc32": "d7a25d0b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221123.csv",
+        "bytes": 355937,
+        "crc32": "2e7f7be2"
+      }
+    },
+    "20221124": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221124.csv",
+        "bytes": 353437,
+        "crc32": "81ca3833"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221124.csv",
+        "bytes": 355940,
+        "crc32": "c7e4e3a4"
+      }
+    },
+    "20221125": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221125.csv",
+        "bytes": 352915,
+        "crc32": "50bf26c1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221125.csv",
+        "bytes": 355869,
+        "crc32": "83f6a922"
+      }
+    },
+    "20221126": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221126.csv",
+        "bytes": 353020,
+        "crc32": "6c719a9f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221126.csv",
+        "bytes": 356652,
+        "crc32": "35ca8e3d"
+      }
+    },
+    "20221127": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221127.csv",
+        "bytes": 353409,
+        "crc32": "059c300b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221127.csv",
+        "bytes": 356006,
+        "crc32": "5bab1cdc"
+      }
+    },
+    "20221128": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221128.csv",
+        "bytes": 353380,
+        "crc32": "2e571126"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221128.csv",
+        "bytes": 356038,
+        "crc32": "846e4590"
+      }
+    },
+    "20221129": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221129.csv",
+        "bytes": 353701,
+        "crc32": "e5a523a9"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221129.csv",
+        "bytes": 357194,
+        "crc32": "8f607101"
+      }
+    },
+    "20221130": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221130.csv",
+        "bytes": 352880,
+        "crc32": "f454e235"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221130.csv",
+        "bytes": 355820,
+        "crc32": "2a4324be"
+      }
+    },
+    "20221201": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221201.csv",
+        "bytes": 352810,
+        "crc32": "1a2ba6e8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221201.csv",
+        "bytes": 357941,
+        "crc32": "469349a4"
+      }
+    },
+    "20221202": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221202.csv",
+        "bytes": 353358,
+        "crc32": "ce7541b8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221202.csv",
+        "bytes": 357230,
+        "crc32": "b0f6cf60"
+      }
+    },
+    "20221203": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221203.csv",
+        "bytes": 353491,
+        "crc32": "68d8568d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221203.csv",
+        "bytes": 356085,
+        "crc32": "250b8c28"
+      }
+    },
+    "20221204": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221204.csv",
+        "bytes": 353742,
+        "crc32": "a2bbf631"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221204.csv",
+        "bytes": 357010,
+        "crc32": "7bcb8725"
+      }
+    },
+    "20221205": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221205.csv",
+        "bytes": 353668,
+        "crc32": "1692f80e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221205.csv",
+        "bytes": 356488,
+        "crc32": "a3757289"
+      }
+    },
+    "20221206": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221206.csv",
+        "bytes": 355258,
+        "crc32": "3254152e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221206.csv",
+        "bytes": 356882,
+        "crc32": "41c874fd"
+      }
+    },
+    "20221207": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221207.csv",
+        "bytes": 355001,
+        "crc32": "68f95261"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221207.csv",
+        "bytes": 356510,
+        "crc32": "4d0beb66"
+      }
+    },
+    "20221208": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221208.csv",
+        "bytes": 354405,
+        "crc32": "0961f1ba"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221208.csv",
+        "bytes": 357461,
+        "crc32": "ea7918f2"
+      }
+    },
+    "20221209": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221209.csv",
+        "bytes": 356025,
+        "crc32": "5be58176"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221209.csv",
+        "bytes": 357372,
+        "crc32": "1a3180da"
+      }
+    },
+    "20221210": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221210.csv",
+        "bytes": 355567,
+        "crc32": "4c6b58a2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221210.csv",
+        "bytes": 357639,
+        "crc32": "b50479a9"
+      }
+    },
+    "20221211": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221211.csv",
+        "bytes": 356266,
+        "crc32": "d9ca74ea"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221211.csv",
+        "bytes": 357921,
+        "crc32": "d8f869d2"
+      }
+    },
+    "20221212": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221212.csv",
+        "bytes": 356536,
+        "crc32": "8d5b7199"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221212.csv",
+        "bytes": 357867,
+        "crc32": "d405b169"
+      }
+    },
+    "20221213": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221213.csv",
+        "bytes": 356779,
+        "crc32": "2093c601"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221213.csv",
+        "bytes": 357952,
+        "crc32": "d22c525f"
+      }
+    },
+    "20221214": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221214.csv",
+        "bytes": 357218,
+        "crc32": "04a603ed"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221214.csv",
+        "bytes": 358481,
+        "crc32": "4d25f56d"
+      }
+    },
+    "20221215": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221215.csv",
+        "bytes": 356951,
+        "crc32": "47180484"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221215.csv",
+        "bytes": 359041,
+        "crc32": "d5efcbcb"
+      }
+    },
+    "20221216": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221216.csv",
+        "bytes": 357308,
+        "crc32": "4063156c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221216.csv",
+        "bytes": 359529,
+        "crc32": "dc6e2faa"
+      }
+    },
+    "20221217": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221217.csv",
+        "bytes": 359599,
+        "crc32": "651a3af4"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221217.csv",
+        "bytes": 359505,
+        "crc32": "cb9f3ce0"
+      }
+    },
+    "20221218": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221218.csv",
+        "bytes": 357089,
+        "crc32": "ca9522c1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221218.csv",
+        "bytes": 359071,
+        "crc32": "25b9f214"
+      }
+    },
+    "20221219": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221219.csv",
+        "bytes": 358024,
+        "crc32": "81b58622"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221219.csv",
+        "bytes": 359168,
+        "crc32": "ae652464"
+      }
+    },
+    "20221220": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221220.csv",
+        "bytes": 357154,
+        "crc32": "423bbf60"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221220.csv",
+        "bytes": 358810,
+        "crc32": "7f0a415f"
+      }
+    },
+    "20221221": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221221.csv",
+        "bytes": 357032,
+        "crc32": "a6e1559f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221221.csv",
+        "bytes": 358212,
+        "crc32": "08251615"
+      }
+    },
+    "20221222": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221222.csv",
+        "bytes": 355797,
+        "crc32": "9a69d898"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221222.csv",
+        "bytes": 358835,
+        "crc32": "3b471812"
+      }
+    },
+    "20221223": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221223.csv",
+        "bytes": 355723,
+        "crc32": "2a315d4c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221223.csv",
+        "bytes": 359225,
+        "crc32": "b766680d"
+      }
+    },
+    "20221224": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221224.csv",
+        "bytes": 356713,
+        "crc32": "846525c5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221224.csv",
+        "bytes": 358995,
+        "crc32": "89be7310"
+      }
+    },
+    "20221225": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221225.csv",
+        "bytes": 356885,
+        "crc32": "bb42aa9f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221225.csv",
+        "bytes": 358391,
+        "crc32": "00ab73f6"
+      }
+    },
+    "20221226": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221226.csv",
+        "bytes": 355880,
+        "crc32": "e2f64348"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221226.csv",
+        "bytes": 358792,
+        "crc32": "41aecebe"
+      }
+    },
+    "20221227": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221227.csv",
+        "bytes": 357113,
+        "crc32": "aeab9f53"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221227.csv",
+        "bytes": 360034,
+        "crc32": "70688027"
+      }
+    },
+    "20221228": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221228.csv",
+        "bytes": 355533,
+        "crc32": "d1772b5f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221228.csv",
+        "bytes": 358735,
+        "crc32": "0d1e8eb3"
+      }
+    },
+    "20221229": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221229.csv",
+        "bytes": 355620,
+        "crc32": "f9dc143c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221229.csv",
+        "bytes": 358726,
+        "crc32": "7e4632af"
+      }
+    },
+    "20221230": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221230.csv",
+        "bytes": 355550,
+        "crc32": "0d9bb3c2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221230.csv",
+        "bytes": 359550,
+        "crc32": "75f863b7"
+      }
+    },
+    "20221231": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20221231.csv",
+        "bytes": 356705,
+        "crc32": "cbb13558"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20221231.csv",
+        "bytes": 358791,
+        "crc32": "84acd41b"
+      }
+    },
+    "20230101": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230101.csv",
+        "bytes": 356885,
+        "crc32": "9bf59fde"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230101.csv",
+        "bytes": 359095,
+        "crc32": "6305cf20"
+      }
+    },
+    "20230102": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230102.csv",
+        "bytes": 356753,
+        "crc32": "3196e232"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230102.csv",
+        "bytes": 358306,
+        "crc32": "9731b90d"
+      }
+    },
+    "20230103": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230103.csv",
+        "bytes": 356126,
+        "crc32": "8b21e6e3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230103.csv",
+        "bytes": 357651,
+        "crc32": "522584d9"
+      }
+    },
+    "20230104": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230104.csv",
+        "bytes": 355079,
+        "crc32": "a297ca0f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230104.csv",
+        "bytes": 358180,
+        "crc32": "110af525"
+      }
+    },
+    "20230105": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230105.csv",
+        "bytes": 355925,
+        "crc32": "ec34b044"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230105.csv",
+        "bytes": 358227,
+        "crc32": "ea6b3bc7"
+      }
+    },
+    "20230106": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230106.csv",
+        "bytes": 355992,
+        "crc32": "a8851dd8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230106.csv",
+        "bytes": 359008,
+        "crc32": "7de40bda"
+      }
+    },
+    "20230107": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230107.csv",
+        "bytes": 356455,
+        "crc32": "29335ad3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230107.csv",
+        "bytes": 358940,
+        "crc32": "298e9afd"
+      }
+    },
+    "20230108": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230108.csv",
+        "bytes": 356495,
+        "crc32": "92f4c0e1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230108.csv",
+        "bytes": 358223,
+        "crc32": "44240115"
+      }
+    },
+    "20230109": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230109.csv",
+        "bytes": 356614,
+        "crc32": "6440f57a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230109.csv",
+        "bytes": 358052,
+        "crc32": "aac14ada"
+      }
+    },
+    "20230110": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230110.csv",
+        "bytes": 355798,
+        "crc32": "8e5cbe0a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230110.csv",
+        "bytes": 358647,
+        "crc32": "eba70253"
+      }
+    },
+    "20230111": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230111.csv",
+        "bytes": 356342,
+        "crc32": "15f522dd"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230111.csv",
+        "bytes": 357692,
+        "crc32": "48f7f315"
+      }
+    },
+    "20230112": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230112.csv",
+        "bytes": 356440,
+        "crc32": "cd5ce149"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230112.csv",
+        "bytes": 358328,
+        "crc32": "3a44243e"
+      }
+    },
+    "20230113": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230113.csv",
+        "bytes": 356726,
+        "crc32": "9b5fc09a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230113.csv",
+        "bytes": 358377,
+        "crc32": "93388bc8"
+      }
+    },
+    "20230114": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230114.csv",
+        "bytes": 356681,
+        "crc32": "7bc4b854"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230114.csv",
+        "bytes": 358456,
+        "crc32": "14424ce0"
+      }
+    },
+    "20230115": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230115.csv",
+        "bytes": 357459,
+        "crc32": "847e5f5b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230115.csv",
+        "bytes": 360095,
+        "crc32": "599e80c1"
+      }
+    },
+    "20230116": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230116.csv",
+        "bytes": 358218,
+        "crc32": "551c8cbe"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230116.csv",
+        "bytes": 359918,
+        "crc32": "cb33b25b"
+      }
+    },
+    "20230117": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230117.csv",
+        "bytes": 358805,
+        "crc32": "94c826f5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230117.csv",
+        "bytes": 359274,
+        "crc32": "8e87d9d9"
+      }
+    },
+    "20230118": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230118.csv",
+        "bytes": 358200,
+        "crc32": "10244b89"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230118.csv",
+        "bytes": 359807,
+        "crc32": "36252401"
+      }
+    },
+    "20230119": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230119.csv",
+        "bytes": 358351,
+        "crc32": "a6f176f4"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230119.csv",
+        "bytes": 360549,
+        "crc32": "cb082a49"
+      }
+    },
+    "20230120": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230120.csv",
+        "bytes": 355568,
+        "crc32": "6d1882a4"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230120.csv",
+        "bytes": 358284,
+        "crc32": "bd91b96b"
+      }
+    },
+    "20230121": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230121.csv",
+        "bytes": 355540,
+        "crc32": "b959ce59"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230121.csv",
+        "bytes": 358550,
+        "crc32": "bcf090be"
+      }
+    },
+    "20230122": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230122.csv",
+        "bytes": 356973,
+        "crc32": "ba77009f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230122.csv",
+        "bytes": 359099,
+        "crc32": "e4a8a0a1"
+      }
+    },
+    "20230123": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230123.csv",
+        "bytes": 357080,
+        "crc32": "ad12628f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230123.csv",
+        "bytes": 358356,
+        "crc32": "c158f2e6"
+      }
+    },
+    "20230124": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230124.csv",
+        "bytes": 354162,
+        "crc32": "4a8c73ff"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230124.csv",
+        "bytes": 357550,
+        "crc32": "e5e12af1"
+      }
+    },
+    "20230125": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230125.csv",
+        "bytes": 355251,
+        "crc32": "a589d6ed"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230125.csv",
+        "bytes": 357849,
+        "crc32": "e943ec10"
+      }
+    },
+    "20230126": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230126.csv",
+        "bytes": 353934,
+        "crc32": "978a32e6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230126.csv",
+        "bytes": 357615,
+        "crc32": "9fde36e7"
+      }
+    },
+    "20230127": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230127.csv",
+        "bytes": 354540,
+        "crc32": "737f1e9e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230127.csv",
+        "bytes": 358190,
+        "crc32": "62385f15"
+      }
+    },
+    "20230128": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230128.csv",
+        "bytes": 353937,
+        "crc32": "dbf95622"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230128.csv",
+        "bytes": 357080,
+        "crc32": "bd21fe3d"
+      }
+    },
+    "20230129": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230129.csv",
+        "bytes": 354353,
+        "crc32": "ae907998"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230129.csv",
+        "bytes": 357603,
+        "crc32": "cee46547"
+      }
+    },
+    "20230130": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230130.csv",
+        "bytes": 356132,
+        "crc32": "c25ce0c0"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230130.csv",
+        "bytes": 357877,
+        "crc32": "8aa63f40"
+      }
+    },
+    "20230131": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230131.csv",
+        "bytes": 357145,
+        "crc32": "f63c02e5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230131.csv",
+        "bytes": 359201,
+        "crc32": "42dd5e3f"
+      }
+    },
+    "20230201": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230201.csv",
+        "bytes": 356796,
+        "crc32": "9ba912e2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230201.csv",
+        "bytes": 359264,
+        "crc32": "bb4680c4"
+      }
+    },
+    "20230202": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230202.csv",
+        "bytes": 355314,
+        "crc32": "c580122e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230202.csv",
+        "bytes": 358775,
+        "crc32": "24faaf80"
+      }
+    },
+    "20230203": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230203.csv",
+        "bytes": 355659,
+        "crc32": "e9fd0f91"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230203.csv",
+        "bytes": 358896,
+        "crc32": "5822ba7f"
+      }
+    },
+    "20230204": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230204.csv",
+        "bytes": 356852,
+        "crc32": "6269d3ab"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230204.csv",
+        "bytes": 358367,
+        "crc32": "f6ea70ee"
+      }
+    },
+    "20230205": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230205.csv",
+        "bytes": 354237,
+        "crc32": "ee13a6d2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230205.csv",
+        "bytes": 357786,
+        "crc32": "da371ffd"
+      }
+    },
+    "20230206": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230206.csv",
+        "bytes": 355596,
+        "crc32": "22246f99"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230206.csv",
+        "bytes": 358664,
+        "crc32": "693d0f39"
+      }
+    },
+    "20230207": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230207.csv",
+        "bytes": 356024,
+        "crc32": "4a6b725d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230207.csv",
+        "bytes": 358071,
+        "crc32": "a4665e1c"
+      }
+    },
+    "20230208": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230208.csv",
+        "bytes": 356239,
+        "crc32": "be40575a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230208.csv",
+        "bytes": 359812,
+        "crc32": "6b557c8f"
+      }
+    },
+    "20230209": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230209.csv",
+        "bytes": 356618,
+        "crc32": "5f610eb9"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230209.csv",
+        "bytes": 358949,
+        "crc32": "5e72b22c"
+      }
+    },
+    "20230210": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230210.csv",
+        "bytes": 355143,
+        "crc32": "83bef9c2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230210.csv",
+        "bytes": 358112,
+        "crc32": "21c92cb6"
+      }
+    },
+    "20230211": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230211.csv",
+        "bytes": 354907,
+        "crc32": "880d5ab4"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230211.csv",
+        "bytes": 357793,
+        "crc32": "5f509bbf"
+      }
+    },
+    "20230212": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230212.csv",
+        "bytes": 355211,
+        "crc32": "8722f506"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230212.csv",
+        "bytes": 358184,
+        "crc32": "d7cb8f05"
+      }
+    },
+    "20230213": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230213.csv",
+        "bytes": 354184,
+        "crc32": "db6c3660"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230213.csv",
+        "bytes": 357470,
+        "crc32": "0da05f02"
+      }
+    },
+    "20230214": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230214.csv",
+        "bytes": 354856,
+        "crc32": "18544861"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230214.csv",
+        "bytes": 357712,
+        "crc32": "09350b3a"
+      }
+    },
+    "20230215": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230215.csv",
+        "bytes": 356456,
+        "crc32": "f454ee1a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230215.csv",
+        "bytes": 359299,
+        "crc32": "93a02724"
+      }
+    },
+    "20230216": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230216.csv",
+        "bytes": 356005,
+        "crc32": "8a01da8a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230216.csv",
+        "bytes": 357976,
+        "crc32": "94d0c52d"
+      }
+    },
+    "20230217": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230217.csv",
+        "bytes": 356432,
+        "crc32": "c1dd5975"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230217.csv",
+        "bytes": 357865,
+        "crc32": "9891b8ba"
+      }
+    },
+    "20230218": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230218.csv",
+        "bytes": 356717,
+        "crc32": "ca9ffa5e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230218.csv",
+        "bytes": 358090,
+        "crc32": "a5ca7c54"
+      }
+    },
+    "20230219": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230219.csv",
+        "bytes": 355137,
+        "crc32": "085caa3b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230219.csv",
+        "bytes": 357818,
+        "crc32": "5b248379"
+      }
+    },
+    "20230220": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230220.csv",
+        "bytes": 356530,
+        "crc32": "2ee3ae89"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230220.csv",
+        "bytes": 358486,
+        "crc32": "a1b29552"
+      }
+    },
+    "20230221": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230221.csv",
+        "bytes": 356870,
+        "crc32": "936acbd2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230221.csv",
+        "bytes": 359384,
+        "crc32": "cc432363"
+      }
+    },
+    "20230222": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230222.csv",
+        "bytes": 357146,
+        "crc32": "16660e06"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230222.csv",
+        "bytes": 358975,
+        "crc32": "c7630b38"
+      }
+    },
+    "20230223": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230223.csv",
+        "bytes": 356097,
+        "crc32": "47503eac"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230223.csv",
+        "bytes": 359460,
+        "crc32": "2f0396e0"
+      }
+    },
+    "20230224": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230224.csv",
+        "bytes": 356017,
+        "crc32": "a85fba6f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230224.csv",
+        "bytes": 358907,
+        "crc32": "9300d76d"
+      }
+    },
+    "20230225": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230225.csv",
+        "bytes": 355849,
+        "crc32": "b395d823"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230225.csv",
+        "bytes": 358838,
+        "crc32": "5c0b71c8"
+      }
+    },
+    "20230226": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230226.csv",
+        "bytes": 355443,
+        "crc32": "72554a65"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230226.csv",
+        "bytes": 358397,
+        "crc32": "822b7db6"
+      }
+    },
+    "20230227": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230227.csv",
+        "bytes": 355428,
+        "crc32": "17a4671f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230227.csv",
+        "bytes": 361400,
+        "crc32": "8510df7f"
+      }
+    },
+    "20230228": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230228.csv",
+        "bytes": 355629,
+        "crc32": "a1788770"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230228.csv",
+        "bytes": 358387,
+        "crc32": "05001e02"
+      }
+    },
+    "20230301": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230301.csv",
+        "bytes": 355648,
+        "crc32": "55d33679"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230301.csv",
+        "bytes": 357985,
+        "crc32": "96e02b1d"
+      }
+    },
+    "20230302": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230302.csv",
+        "bytes": 355262,
+        "crc32": "d0bcf471"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230302.csv",
+        "bytes": 358358,
+        "crc32": "2aa3540c"
+      }
+    },
+    "20230303": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230303.csv",
+        "bytes": 355526,
+        "crc32": "f302bf02"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230303.csv",
+        "bytes": 358601,
+        "crc32": "93ed51c1"
+      }
+    },
+    "20230304": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230304.csv",
+        "bytes": 355478,
+        "crc32": "c07dbfe9"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230304.csv",
+        "bytes": 357760,
+        "crc32": "b4a8fd9f"
+      }
+    },
+    "20230305": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230305.csv",
+        "bytes": 355390,
+        "crc32": "65afb7c9"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230305.csv",
+        "bytes": 358482,
+        "crc32": "56cc4025"
+      }
+    },
+    "20230306": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230306.csv",
+        "bytes": 356297,
+        "crc32": "3a0e9fc6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230306.csv",
+        "bytes": 358595,
+        "crc32": "33cc8542"
+      }
+    },
+    "20230307": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230307.csv",
+        "bytes": 358011,
+        "crc32": "96b8dfed"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230307.csv",
+        "bytes": 359842,
+        "crc32": "f253bca0"
+      }
+    },
+    "20230308": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230308.csv",
+        "bytes": 358778,
+        "crc32": "6d7a72a2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230308.csv",
+        "bytes": 360953,
+        "crc32": "f69eb5ae"
+      }
+    },
+    "20230309": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230309.csv",
+        "bytes": 359942,
+        "crc32": "90f6aa04"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230309.csv",
+        "bytes": 361602,
+        "crc32": "969b4137"
+      }
+    },
+    "20230310": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230310.csv",
+        "bytes": 360207,
+        "crc32": "5207ea67"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230310.csv",
+        "bytes": 361177,
+        "crc32": "8f57fa86"
+      }
+    },
+    "20230311": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230311.csv",
+        "bytes": 361272,
+        "crc32": "e4ff032b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230311.csv",
+        "bytes": 362492,
+        "crc32": "34b97a08"
+      }
+    },
+    "20230312": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230312.csv",
+        "bytes": 362130,
+        "crc32": "cf63ea5a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230312.csv",
+        "bytes": 363102,
+        "crc32": "7288e146"
+      }
+    },
+    "20230313": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230313.csv",
+        "bytes": 362913,
+        "crc32": "6c6f2635"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230313.csv",
+        "bytes": 363024,
+        "crc32": "0ae34ab2"
+      }
+    },
+    "20230314": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230314.csv",
+        "bytes": 362073,
+        "crc32": "46616b0f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230314.csv",
+        "bytes": 363308,
+        "crc32": "fb549848"
+      }
+    },
+    "20230315": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230315.csv",
+        "bytes": 362296,
+        "crc32": "546a40b6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230315.csv",
+        "bytes": 363105,
+        "crc32": "4347fbbc"
+      }
+    },
+    "20230316": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230316.csv",
+        "bytes": 362949,
+        "crc32": "18e518c3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230316.csv",
+        "bytes": 363142,
+        "crc32": "4c14d104"
+      }
+    },
+    "20230317": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230317.csv",
+        "bytes": 362240,
+        "crc32": "22e60d5c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230317.csv",
+        "bytes": 362262,
+        "crc32": "c5ca02b4"
+      }
+    },
+    "20230318": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230318.csv",
+        "bytes": 361675,
+        "crc32": "d95320f7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230318.csv",
+        "bytes": 361897,
+        "crc32": "00227a46"
+      }
+    },
+    "20230319": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230319.csv",
+        "bytes": 361764,
+        "crc32": "6f8ff294"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230319.csv",
+        "bytes": 361634,
+        "crc32": "99495914"
+      }
+    },
+    "20230320": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230320.csv",
+        "bytes": 361194,
+        "crc32": "0b4411ab"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230320.csv",
+        "bytes": 361120,
+        "crc32": "fd5bed34"
+      }
+    },
+    "20230321": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230321.csv",
+        "bytes": 360719,
+        "crc32": "f0b5ac99"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230321.csv",
+        "bytes": 361038,
+        "crc32": "a08b2344"
+      }
+    },
+    "20230322": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230322.csv",
+        "bytes": 359743,
+        "crc32": "2f2e81a5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230322.csv",
+        "bytes": 360866,
+        "crc32": "c954f10a"
+      }
+    },
+    "20230323": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230323.csv",
+        "bytes": 359242,
+        "crc32": "75ff07d1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230323.csv",
+        "bytes": 360105,
+        "crc32": "307fa787"
+      }
+    },
+    "20230324": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230324.csv",
+        "bytes": 359381,
+        "crc32": "c9787c3b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230324.csv",
+        "bytes": 360368,
+        "crc32": "c20f63cc"
+      }
+    },
+    "20230325": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230325.csv",
+        "bytes": 359508,
+        "crc32": "591bc770"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230325.csv",
+        "bytes": 361293,
+        "crc32": "32aacbab"
+      }
+    },
+    "20230326": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230326.csv",
+        "bytes": 359286,
+        "crc32": "aed9beb3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230326.csv",
+        "bytes": 360000,
+        "crc32": "e82f0815"
+      }
+    },
+    "20230327": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230327.csv",
+        "bytes": 359274,
+        "crc32": "99194224"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230327.csv",
+        "bytes": 360347,
+        "crc32": "727fbaca"
+      }
+    },
+    "20230328": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230328.csv",
+        "bytes": 360180,
+        "crc32": "4fa05fb0"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230328.csv",
+        "bytes": 360415,
+        "crc32": "b20b2169"
+      }
+    },
+    "20230329": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230329.csv",
+        "bytes": 358649,
+        "crc32": "326df53c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230329.csv",
+        "bytes": 359568,
+        "crc32": "5743efc6"
+      }
+    },
+    "20230330": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230330.csv",
+        "bytes": 356172,
+        "crc32": "ec827086"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230330.csv",
+        "bytes": 358745,
+        "crc32": "f9c1f3e6"
+      }
+    },
+    "20230331": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230331.csv",
+        "bytes": 355725,
+        "crc32": "0a2fe731"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230331.csv",
+        "bytes": 358667,
+        "crc32": "43bcb2db"
+      }
+    },
+    "20230401": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230401.csv",
+        "bytes": 355930,
+        "crc32": "b71403d8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230401.csv",
+        "bytes": 358124,
+        "crc32": "2ac15b03"
+      }
+    },
+    "20230402": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230402.csv",
+        "bytes": 355755,
+        "crc32": "8e508a99"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230402.csv",
+        "bytes": 358978,
+        "crc32": "d0f06170"
+      }
+    },
+    "20230403": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230403.csv",
+        "bytes": 355262,
+        "crc32": "a0a7aa32"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230403.csv",
+        "bytes": 357984,
+        "crc32": "08a4fd8e"
+      }
+    },
+    "20230404": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230404.csv",
+        "bytes": 354779,
+        "crc32": "c6d9f964"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230404.csv",
+        "bytes": 357727,
+        "crc32": "0ef5618b"
+      }
+    },
+    "20230405": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230405.csv",
+        "bytes": 355477,
+        "crc32": "c0effcc9"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230405.csv",
+        "bytes": 358308,
+        "crc32": "0c5360ca"
+      }
+    },
+    "20230406": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230406.csv",
+        "bytes": 355848,
+        "crc32": "494f4eeb"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230406.csv",
+        "bytes": 358234,
+        "crc32": "d56a01ac"
+      }
+    },
+    "20230407": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230407.csv",
+        "bytes": 354820,
+        "crc32": "f4531968"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230407.csv",
+        "bytes": 357725,
+        "crc32": "434ea0d8"
+      }
+    },
+    "20230408": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230408.csv",
+        "bytes": 355091,
+        "crc32": "3e9dfeeb"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230408.csv",
+        "bytes": 357912,
+        "crc32": "ba93ff8d"
+      }
+    },
+    "20230409": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230409.csv",
+        "bytes": 355882,
+        "crc32": "6dee7869"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230409.csv",
+        "bytes": 358578,
+        "crc32": "adc0e954"
+      }
+    },
+    "20230410": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230410.csv",
+        "bytes": 355141,
+        "crc32": "3d17e146"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230410.csv",
+        "bytes": 358240,
+        "crc32": "e68a8924"
+      }
+    },
+    "20230411": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230411.csv",
+        "bytes": 355577,
+        "crc32": "5e31e018"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230411.csv",
+        "bytes": 358196,
+        "crc32": "ce330c59"
+      }
+    },
+    "20230412": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230412.csv",
+        "bytes": 355451,
+        "crc32": "4f651923"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230412.csv",
+        "bytes": 358018,
+        "crc32": "a452ab3a"
+      }
+    },
+    "20230413": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230413.csv",
+        "bytes": 356238,
+        "crc32": "c048103e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230413.csv",
+        "bytes": 358640,
+        "crc32": "10038a20"
+      }
+    },
+    "20230414": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230414.csv",
+        "bytes": 355858,
+        "crc32": "e40d44d5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230414.csv",
+        "bytes": 358698,
+        "crc32": "777e5622"
+      }
+    },
+    "20230415": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230415.csv",
+        "bytes": 356421,
+        "crc32": "f55dd77c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230415.csv",
+        "bytes": 358925,
+        "crc32": "44b25420"
+      }
+    },
+    "20230416": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230416.csv",
+        "bytes": 356040,
+        "crc32": "310a04b5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230416.csv",
+        "bytes": 358551,
+        "crc32": "1d4a6a81"
+      }
+    },
+    "20230417": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230417.csv",
+        "bytes": 354638,
+        "crc32": "7ebd5a3e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230417.csv",
+        "bytes": 357867,
+        "crc32": "166e8b61"
+      }
+    },
+    "20230418": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230418.csv",
+        "bytes": 354637,
+        "crc32": "c74cfd5d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230418.csv",
+        "bytes": 358256,
+        "crc32": "5c29598a"
+      }
+    },
+    "20230419": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230419.csv",
+        "bytes": 355635,
+        "crc32": "63ce56df"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230419.csv",
+        "bytes": 358025,
+        "crc32": "97a117b2"
+      }
+    },
+    "20230420": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230420.csv",
+        "bytes": 355549,
+        "crc32": "09d1e9fc"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230420.csv",
+        "bytes": 358336,
+        "crc32": "1afa1f6f"
+      }
+    },
+    "20230422": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230422.csv",
+        "bytes": 355657,
+        "crc32": "fc681e9b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230422.csv",
+        "bytes": 358154,
+        "crc32": "f684c970"
+      }
+    },
+    "20230423": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230423.csv",
+        "bytes": 355411,
+        "crc32": "9ac03a7f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230423.csv",
+        "bytes": 358086,
+        "crc32": "022ccd46"
+      }
+    },
+    "20230424": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230424.csv",
+        "bytes": 355750,
+        "crc32": "16eb8517"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230424.csv",
+        "bytes": 361306,
+        "crc32": "1efbcf99"
+      }
+    },
+    "20230425": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230425.csv",
+        "bytes": 355721,
+        "crc32": "b19ff604"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230425.csv",
+        "bytes": 358950,
+        "crc32": "2e75dcf6"
+      }
+    },
+    "20230426": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230426.csv",
+        "bytes": 355022,
+        "crc32": "2e130e16"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230426.csv",
+        "bytes": 358369,
+        "crc32": "86aec0a4"
+      }
+    },
+    "20230427": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230427.csv",
+        "bytes": 355500,
+        "crc32": "612a336a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230427.csv",
+        "bytes": 358282,
+        "crc32": "d78235eb"
+      }
+    },
+    "20230428": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230428.csv",
+        "bytes": 355498,
+        "crc32": "0f971cfa"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230428.csv",
+        "bytes": 358331,
+        "crc32": "8cd7a0cd"
+      }
+    },
+    "20230429": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230429.csv",
+        "bytes": 356076,
+        "crc32": "63c6d7a1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230429.csv",
+        "bytes": 359027,
+        "crc32": "c78b465c"
+      }
+    },
+    "20230430": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230430.csv",
+        "bytes": 356791,
+        "crc32": "c7af1e30"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230430.csv",
+        "bytes": 359353,
+        "crc32": "e1c0dd74"
+      }
+    },
+    "20230501": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230501.csv",
+        "bytes": 356556,
+        "crc32": "70ff3a94"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230501.csv",
+        "bytes": 359649,
+        "crc32": "1c2c9aa7"
+      }
+    },
+    "20230502": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230502.csv",
+        "bytes": 356458,
+        "crc32": "7bcb212d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230502.csv",
+        "bytes": 358883,
+        "crc32": "30cece2b"
+      }
+    },
+    "20230503": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230503.csv",
+        "bytes": 355617,
+        "crc32": "70b2d402"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230503.csv",
+        "bytes": 358488,
+        "crc32": "d2d1bbfd"
+      }
+    },
+    "20230504": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230504.csv",
+        "bytes": 355507,
+        "crc32": "a343de5c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230504.csv",
+        "bytes": 358705,
+        "crc32": "3f454fb6"
+      }
+    },
+    "20230505": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230505.csv",
+        "bytes": 354877,
+        "crc32": "23b29e01"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230505.csv",
+        "bytes": 358107,
+        "crc32": "236511e9"
+      }
+    },
+    "20230506": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230506.csv",
+        "bytes": 354685,
+        "crc32": "b3e5bd4d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230506.csv",
+        "bytes": 358101,
+        "crc32": "cbeee20e"
+      }
+    },
+    "20230507": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230507.csv",
+        "bytes": 354274,
+        "crc32": "6039d715"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230507.csv",
+        "bytes": 357764,
+        "crc32": "f52aed24"
+      }
+    },
+    "20230508": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230508.csv",
+        "bytes": 354145,
+        "crc32": "fcfaffe1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230508.csv",
+        "bytes": 357141,
+        "crc32": "63d5110f"
+      }
+    },
+    "20230509": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230509.csv",
+        "bytes": 353874,
+        "crc32": "a2725abf"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230509.csv",
+        "bytes": 357192,
+        "crc32": "4c8fa25c"
+      }
+    },
+    "20230510": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230510.csv",
+        "bytes": 353990,
+        "crc32": "425d2170"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230510.csv",
+        "bytes": 357184,
+        "crc32": "20dc132d"
+      }
+    },
+    "20230511": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230511.csv",
+        "bytes": 354151,
+        "crc32": "6bbf0f42"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230511.csv",
+        "bytes": 356889,
+        "crc32": "f53e9225"
+      }
+    },
+    "20230512": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230512.csv",
+        "bytes": 354066,
+        "crc32": "af8aafeb"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230512.csv",
+        "bytes": 356935,
+        "crc32": "506dde4d"
+      }
+    },
+    "20230513": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230513.csv",
+        "bytes": 354334,
+        "crc32": "5ce44e7c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230513.csv",
+        "bytes": 357042,
+        "crc32": "60098189"
+      }
+    },
+    "20230514": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230514.csv",
+        "bytes": 354550,
+        "crc32": "efffc7eb"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230514.csv",
+        "bytes": 357689,
+        "crc32": "d8386473"
+      }
+    },
+    "20230515": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230515.csv",
+        "bytes": 354588,
+        "crc32": "a1553c0e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230515.csv",
+        "bytes": 357351,
+        "crc32": "1a896f07"
+      }
+    },
+    "20230516": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230516.csv",
+        "bytes": 354998,
+        "crc32": "f6ef1f8f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230516.csv",
+        "bytes": 357537,
+        "crc32": "585aedd2"
+      }
+    },
+    "20230517": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230517.csv",
+        "bytes": 354077,
+        "crc32": "a918c2fa"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230517.csv",
+        "bytes": 357572,
+        "crc32": "52405243"
+      }
+    },
+    "20230518": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230518.csv",
+        "bytes": 354085,
+        "crc32": "a6bbc3fc"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230518.csv",
+        "bytes": 357239,
+        "crc32": "e270b932"
+      }
+    },
+    "20230519": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230519.csv",
+        "bytes": 354609,
+        "crc32": "39690405"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230519.csv",
+        "bytes": 357375,
+        "crc32": "14b61775"
+      }
+    },
+    "20230520": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230520.csv",
+        "bytes": 354652,
+        "crc32": "8a305b85"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230520.csv",
+        "bytes": 358043,
+        "crc32": "26f7e39c"
+      }
+    },
+    "20230521": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230521.csv",
+        "bytes": 354447,
+        "crc32": "0ad40888"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230521.csv",
+        "bytes": 357507,
+        "crc32": "2663e589"
+      }
+    },
+    "20230522": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230522.csv",
+        "bytes": 354735,
+        "crc32": "4f1802d1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230522.csv",
+        "bytes": 358133,
+        "crc32": "277e4b3f"
+      }
+    },
+    "20230523": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230523.csv",
+        "bytes": 354301,
+        "crc32": "d38758d7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230523.csv",
+        "bytes": 358039,
+        "crc32": "970dcacc"
+      }
+    },
+    "20230524": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230524.csv",
+        "bytes": 355035,
+        "crc32": "cf71194e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230524.csv",
+        "bytes": 357735,
+        "crc32": "5904080b"
+      }
+    },
+    "20230525": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230525.csv",
+        "bytes": 354648,
+        "crc32": "437df287"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230525.csv",
+        "bytes": 357513,
+        "crc32": "4a3a4607"
+      }
+    },
+    "20230526": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230526.csv",
+        "bytes": 353935,
+        "crc32": "32af6609"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230526.csv",
+        "bytes": 357007,
+        "crc32": "3a906522"
+      }
+    },
+    "20230527": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230527.csv",
+        "bytes": 354238,
+        "crc32": "d7b180c1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230527.csv",
+        "bytes": 357065,
+        "crc32": "32207973"
+      }
+    },
+    "20230528": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230528.csv",
+        "bytes": 353549,
+        "crc32": "1e331a2a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230528.csv",
+        "bytes": 356561,
+        "crc32": "3b3ead9b"
+      }
+    },
+    "20230529": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230529.csv",
+        "bytes": 353996,
+        "crc32": "5085def0"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230529.csv",
+        "bytes": 356872,
+        "crc32": "153d9f0c"
+      }
+    },
+    "20230530": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230530.csv",
+        "bytes": 354109,
+        "crc32": "a26eb32a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230530.csv",
+        "bytes": 356739,
+        "crc32": "56cf9442"
+      }
+    },
+    "20230531": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230531.csv",
+        "bytes": 354459,
+        "crc32": "be2d95ee"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230531.csv",
+        "bytes": 356966,
+        "crc32": "62a62b42"
+      }
+    },
+    "20230601": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230601.csv",
+        "bytes": 353941,
+        "crc32": "ad2782da"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230601.csv",
+        "bytes": 356649,
+        "crc32": "938bc0c1"
+      }
+    },
+    "20230602": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230602.csv",
+        "bytes": 354148,
+        "crc32": "4e7bdd5b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230602.csv",
+        "bytes": 356881,
+        "crc32": "6502697a"
+      }
+    },
+    "20230603": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230603.csv",
+        "bytes": 353912,
+        "crc32": "efcbb890"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230603.csv",
+        "bytes": 357111,
+        "crc32": "29cc8ed7"
+      }
+    },
+    "20230604": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230604.csv",
+        "bytes": 353897,
+        "crc32": "de6d903a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230604.csv",
+        "bytes": 356718,
+        "crc32": "0d46ce7e"
+      }
+    },
+    "20230605": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230605.csv",
+        "bytes": 353699,
+        "crc32": "43c320fa"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230605.csv",
+        "bytes": 356890,
+        "crc32": "8a30f12f"
+      }
+    },
+    "20230606": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230606.csv",
+        "bytes": 354189,
+        "crc32": "76dd4ebc"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230606.csv",
+        "bytes": 357200,
+        "crc32": "8af19212"
+      }
+    },
+    "20230607": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230607.csv",
+        "bytes": 354202,
+        "crc32": "c56960ca"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230607.csv",
+        "bytes": 357146,
+        "crc32": "74222a47"
+      }
+    },
+    "20230608": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230608.csv",
+        "bytes": 353327,
+        "crc32": "234be7af"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230608.csv",
+        "bytes": 356444,
+        "crc32": "876923b5"
+      }
+    },
+    "20230609": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230609.csv",
+        "bytes": 353098,
+        "crc32": "5d7f23e7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230609.csv",
+        "bytes": 356255,
+        "crc32": "50f0146b"
+      }
+    },
+    "20230610": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230610.csv",
+        "bytes": 353749,
+        "crc32": "b05be3e1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230610.csv",
+        "bytes": 356831,
+        "crc32": "313901f6"
+      }
+    },
+    "20230611": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230611.csv",
+        "bytes": 354031,
+        "crc32": "6cb3a8f0"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230611.csv",
+        "bytes": 356768,
+        "crc32": "7c0413e6"
+      }
+    },
+    "20230612": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230612.csv",
+        "bytes": 353582,
+        "crc32": "5258f8ce"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230612.csv",
+        "bytes": 356710,
+        "crc32": "d3d08888"
+      }
+    },
+    "20230613": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230613.csv",
+        "bytes": 353926,
+        "crc32": "c480b50a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230613.csv",
+        "bytes": 356764,
+        "crc32": "0c2749d3"
+      }
+    },
+    "20230614": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230614.csv",
+        "bytes": 353308,
+        "crc32": "375308ae"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230614.csv",
+        "bytes": 356467,
+        "crc32": "223c4bfe"
+      }
+    },
+    "20230615": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230615.csv",
+        "bytes": 353400,
+        "crc32": "f63a06d9"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230615.csv",
+        "bytes": 356486,
+        "crc32": "9a8b1de4"
+      }
+    },
+    "20230616": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230616.csv",
+        "bytes": 353798,
+        "crc32": "bfbe3d5e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230616.csv",
+        "bytes": 357622,
+        "crc32": "e3626c6e"
+      }
+    },
+    "20230617": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230617.csv",
+        "bytes": 353715,
+        "crc32": "1ac171fb"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230617.csv",
+        "bytes": 356575,
+        "crc32": "1a59c9b4"
+      }
+    },
+    "20230618": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230618.csv",
+        "bytes": 353394,
+        "crc32": "234388ef"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230618.csv",
+        "bytes": 356357,
+        "crc32": "d5bc0f28"
+      }
+    },
+    "20230619": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230619.csv",
+        "bytes": 353795,
+        "crc32": "26c3bddc"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230619.csv",
+        "bytes": 356335,
+        "crc32": "f6ddb008"
+      }
+    },
+    "20230620": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230620.csv",
+        "bytes": 352164,
+        "crc32": "084ee6d6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230620.csv",
+        "bytes": 355490,
+        "crc32": "37ec5a05"
+      }
+    },
+    "20230621": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230621.csv",
+        "bytes": 352298,
+        "crc32": "e1fb22e1"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230621.csv",
+        "bytes": 355830,
+        "crc32": "3ad5df15"
+      }
+    },
+    "20230622": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230622.csv",
+        "bytes": 352508,
+        "crc32": "86800332"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230622.csv",
+        "bytes": 355780,
+        "crc32": "662fb3fb"
+      }
+    },
+    "20230623": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230623.csv",
+        "bytes": 352363,
+        "crc32": "0c894925"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230623.csv",
+        "bytes": 355267,
+        "crc32": "94041d79"
+      }
+    },
+    "20230624": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230624.csv",
+        "bytes": 352064,
+        "crc32": "a0c74bb7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230624.csv",
+        "bytes": 355166,
+        "crc32": "dfff18c0"
+      }
+    },
+    "20230625": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230625.csv",
+        "bytes": 352109,
+        "crc32": "b4c357cc"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230625.csv",
+        "bytes": 355000,
+        "crc32": "b931a50b"
+      }
+    },
+    "20230626": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230626.csv",
+        "bytes": 351988,
+        "crc32": "f23b05cd"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230626.csv",
+        "bytes": 354883,
+        "crc32": "de5d703b"
+      }
+    },
+    "20230627": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230627.csv",
+        "bytes": 351903,
+        "crc32": "e39ceca0"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230627.csv",
+        "bytes": 355251,
+        "crc32": "843e95ce"
+      }
+    },
+    "20230628": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230628.csv",
+        "bytes": 351624,
+        "crc32": "62524d86"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230628.csv",
+        "bytes": 355197,
+        "crc32": "decbe113"
+      }
+    },
+    "20230629": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230629.csv",
+        "bytes": 352112,
+        "crc32": "2c764846"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230629.csv",
+        "bytes": 355250,
+        "crc32": "53610ac7"
+      }
+    },
+    "20230630": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230630.csv",
+        "bytes": 352343,
+        "crc32": "09343674"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230630.csv",
+        "bytes": 355267,
+        "crc32": "110ba973"
+      }
+    },
+    "20230701": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230701.csv",
+        "bytes": 351907,
+        "crc32": "0a87e05c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230701.csv",
+        "bytes": 355310,
+        "crc32": "b482c73a"
+      }
+    },
+    "20230703": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230703.csv",
+        "bytes": 352272,
+        "crc32": "7c814bca"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230703.csv",
+        "bytes": 355591,
+        "crc32": "c9f4634f"
+      }
+    },
+    "20230704": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230704.csv",
+        "bytes": 352677,
+        "crc32": "1cd118bd"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230704.csv",
+        "bytes": 355452,
+        "crc32": "5e2c1fe1"
+      }
+    },
+    "20230705": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230705.csv",
+        "bytes": 350906,
+        "crc32": "fbac63e4"
+      }
+    },
+    "20230706": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230706.csv",
+        "bytes": 352689,
+        "crc32": "afb0022e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230706.csv",
+        "bytes": 355680,
+        "crc32": "5e4d5c37"
+      }
+    },
+    "20230707": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230707.csv",
+        "bytes": 352277,
+        "crc32": "943e6859"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230707.csv",
+        "bytes": 356666,
+        "crc32": "b6814dee"
+      }
+    },
+    "20230708": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230708.csv",
+        "bytes": 353117,
+        "crc32": "cdb30f3b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230708.csv",
+        "bytes": 355726,
+        "crc32": "7b7f38e3"
+      }
+    },
+    "20230709": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230709.csv",
+        "bytes": 352783,
+        "crc32": "7f8ecd64"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230709.csv",
+        "bytes": 355530,
+        "crc32": "fdde8a92"
+      }
+    },
+    "20230710": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230710.csv",
+        "bytes": 353112,
+        "crc32": "602d9056"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230710.csv",
+        "bytes": 355436,
+        "crc32": "8dad41db"
+      }
+    },
+    "20230711": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230711.csv",
+        "bytes": 353114,
+        "crc32": "c48f9e01"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230711.csv",
+        "bytes": 355693,
+        "crc32": "35051048"
+      }
+    },
+    "20230712": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230712.csv",
+        "bytes": 353248,
+        "crc32": "52bfc6f2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230712.csv",
+        "bytes": 355817,
+        "crc32": "ad729648"
+      }
+    },
+    "20230713": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230713.csv",
+        "bytes": 353624,
+        "crc32": "ffa299d7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230713.csv",
+        "bytes": 355860,
+        "crc32": "5b23bd8c"
+      }
+    },
+    "20230714": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230714.csv",
+        "bytes": 353101,
+        "crc32": "f34a3a75"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230714.csv",
+        "bytes": 356051,
+        "crc32": "9e97b4ec"
+      }
+    },
+    "20230715": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230715.csv",
+        "bytes": 353331,
+        "crc32": "45c3b25e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230715.csv",
+        "bytes": 356081,
+        "crc32": "2c402189"
+      }
+    },
+    "20230716": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230716.csv",
+        "bytes": 353485,
+        "crc32": "3e0f8817"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230716.csv",
+        "bytes": 355988,
+        "crc32": "b8bfc87e"
+      }
+    },
+    "20230717": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230717.csv",
+        "bytes": 353730,
+        "crc32": "01ba6df3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230717.csv",
+        "bytes": 357101,
+        "crc32": "6671ea84"
+      }
+    },
+    "20230718": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230718.csv",
+        "bytes": 353694,
+        "crc32": "819a1015"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230718.csv",
+        "bytes": 356492,
+        "crc32": "d457812d"
+      }
+    },
+    "20230719": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230719.csv",
+        "bytes": 353860,
+        "crc32": "05a461cb"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230719.csv",
+        "bytes": 356188,
+        "crc32": "df1f592b"
+      }
+    },
+    "20230720": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230720.csv",
+        "bytes": 354068,
+        "crc32": "76a1a974"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230720.csv",
+        "bytes": 356475,
+        "crc32": "7f1162d6"
+      }
+    },
+    "20230721": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230721.csv",
+        "bytes": 354346,
+        "crc32": "6f1be6c8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230721.csv",
+        "bytes": 356279,
+        "crc32": "0b7f72c8"
+      }
+    },
+    "20230722": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230722.csv",
+        "bytes": 354028,
+        "crc32": "2b1e13c2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230722.csv",
+        "bytes": 356396,
+        "crc32": "d0b75bc7"
+      }
+    },
+    "20230723": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230723.csv",
+        "bytes": 353942,
+        "crc32": "bb2e4e81"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230723.csv",
+        "bytes": 356958,
+        "crc32": "53f9d2bd"
+      }
+    },
+    "20230724": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230724.csv",
+        "bytes": 354372,
+        "crc32": "eee91ba2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230724.csv",
+        "bytes": 357033,
+        "crc32": "b30bdaf6"
+      }
+    },
+    "20230725": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230725.csv",
+        "bytes": 354968,
+        "crc32": "7e9051ef"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230725.csv",
+        "bytes": 356653,
+        "crc32": "468bd5e1"
+      }
+    },
+    "20230726": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230726.csv",
+        "bytes": 354572,
+        "crc32": "1abf84fb"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230726.csv",
+        "bytes": 358009,
+        "crc32": "450c576a"
+      }
+    },
+    "20230727": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230727.csv",
+        "bytes": 354780,
+        "crc32": "37987957"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230727.csv",
+        "bytes": 358057,
+        "crc32": "0f2388fa"
+      }
+    },
+    "20230728": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230728.csv",
+        "bytes": 354739,
+        "crc32": "24dd46ed"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230728.csv",
+        "bytes": 357551,
+        "crc32": "de88fb2d"
+      }
+    },
+    "20230729": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230729.csv",
+        "bytes": 355287,
+        "crc32": "37772a0e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230729.csv",
+        "bytes": 357281,
+        "crc32": "6fa31476"
+      }
+    },
+    "20230730": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230730.csv",
+        "bytes": 355258,
+        "crc32": "c33e7dd6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230730.csv",
+        "bytes": 357302,
+        "crc32": "3b74bb7f"
+      }
+    },
+    "20230731": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230731.csv",
+        "bytes": 355129,
+        "crc32": "5cb94f12"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230731.csv",
+        "bytes": 357393,
+        "crc32": "dd02b19d"
+      }
+    },
+    "20230801": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230801.csv",
+        "bytes": 355435,
+        "crc32": "4aadb34f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230801.csv",
+        "bytes": 357715,
+        "crc32": "5f28b5b2"
+      }
+    },
+    "20230802": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230802.csv",
+        "bytes": 355348,
+        "crc32": "aae3c452"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230802.csv",
+        "bytes": 358201,
+        "crc32": "f59590ca"
+      }
+    },
+    "20230803": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230803.csv",
+        "bytes": 356036,
+        "crc32": "69d7ba4e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230803.csv",
+        "bytes": 357547,
+        "crc32": "fd8e0b4e"
+      }
+    },
+    "20230804": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230804.csv",
+        "bytes": 355508,
+        "crc32": "3b84acdf"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230804.csv",
+        "bytes": 357935,
+        "crc32": "caa1b672"
+      }
+    },
+    "20230805": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230805.csv",
+        "bytes": 354128,
+        "crc32": "33c67b35"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230805.csv",
+        "bytes": 356742,
+        "crc32": "ed70ca0c"
+      }
+    },
+    "20230806": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230806.csv",
+        "bytes": 354085,
+        "crc32": "77aecdee"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230806.csv",
+        "bytes": 356874,
+        "crc32": "0d434ba7"
+      }
+    },
+    "20230807": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230807.csv",
+        "bytes": 355138,
+        "crc32": "83265a9f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230807.csv",
+        "bytes": 357551,
+        "crc32": "d77f3af4"
+      }
+    },
+    "20230808": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230808.csv",
+        "bytes": 354374,
+        "crc32": "522b3115"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230808.csv",
+        "bytes": 357023,
+        "crc32": "cd9971da"
+      }
+    },
+    "20230809": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230809.csv",
+        "bytes": 355004,
+        "crc32": "6e6672c3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230809.csv",
+        "bytes": 357900,
+        "crc32": "692d3246"
+      }
+    },
+    "20230810": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230810.csv",
+        "bytes": 354768,
+        "crc32": "20d99f1a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230810.csv",
+        "bytes": 356920,
+        "crc32": "29e2d324"
+      }
+    },
+    "20230811": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230811.csv",
+        "bytes": 354148,
+        "crc32": "6bf04821"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230811.csv",
+        "bytes": 356552,
+        "crc32": "1e0e54b4"
+      }
+    },
+    "20230812": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230812.csv",
+        "bytes": 354704,
+        "crc32": "15009b46"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230812.csv",
+        "bytes": 356921,
+        "crc32": "428b7702"
+      }
+    },
+    "20230813": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230813.csv",
+        "bytes": 355043,
+        "crc32": "25b1aa59"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230813.csv",
+        "bytes": 357062,
+        "crc32": "41be66d5"
+      }
+    },
+    "20230814": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230814.csv",
+        "bytes": 355064,
+        "crc32": "bf4d945b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230814.csv",
+        "bytes": 357416,
+        "crc32": "514f1a46"
+      }
+    },
+    "20230815": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230815.csv",
+        "bytes": 355030,
+        "crc32": "00af51bf"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230815.csv",
+        "bytes": 357181,
+        "crc32": "56732bf1"
+      }
+    },
+    "20230816": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230816.csv",
+        "bytes": 355310,
+        "crc32": "e183dad5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230816.csv",
+        "bytes": 357693,
+        "crc32": "5da44c53"
+      }
+    },
+    "20230817": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230817.csv",
+        "bytes": 354802,
+        "crc32": "b0f6f6f0"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230817.csv",
+        "bytes": 356951,
+        "crc32": "8c45e48b"
+      }
+    },
+    "20230818": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230818.csv",
+        "bytes": 353327,
+        "crc32": "2378ade5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230818.csv",
+        "bytes": 356174,
+        "crc32": "dd051b86"
+      }
+    },
+    "20230819": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230819.csv",
+        "bytes": 353159,
+        "crc32": "becb01df"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230819.csv",
+        "bytes": 355707,
+        "crc32": "c15c2815"
+      }
+    },
+    "20230820": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230820.csv",
+        "bytes": 353514,
+        "crc32": "cc3b2c12"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230820.csv",
+        "bytes": 355724,
+        "crc32": "927970e5"
+      }
+    },
+    "20230821": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230821.csv",
+        "bytes": 353473,
+        "crc32": "75fca2c7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230821.csv",
+        "bytes": 356216,
+        "crc32": "2c5ce2a7"
+      }
+    },
+    "20230822": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230822.csv",
+        "bytes": 353455,
+        "crc32": "7a32baaa"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230822.csv",
+        "bytes": 355846,
+        "crc32": "bd9efead"
+      }
+    },
+    "20230823": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230823.csv",
+        "bytes": 353439,
+        "crc32": "1ee8e359"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230823.csv",
+        "bytes": 355931,
+        "crc32": "3b0fee77"
+      }
+    },
+    "20230824": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230824.csv",
+        "bytes": 353403,
+        "crc32": "9c8e697e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230824.csv",
+        "bytes": 355742,
+        "crc32": "5a33b2d7"
+      }
+    },
+    "20230825": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230825.csv",
+        "bytes": 353334,
+        "crc32": "d6cc28da"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230825.csv",
+        "bytes": 355555,
+        "crc32": "df1db12e"
+      }
+    },
+    "20230826": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230826.csv",
+        "bytes": 352626,
+        "crc32": "1594a8af"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230826.csv",
+        "bytes": 354967,
+        "crc32": "93cbb157"
+      }
+    },
+    "20230827": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230827.csv",
+        "bytes": 351908,
+        "crc32": "4d50474e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230827.csv",
+        "bytes": 354819,
+        "crc32": "1404d646"
+      }
+    },
+    "20230828": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230828.csv",
+        "bytes": 351725,
+        "crc32": "18ccb56c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230828.csv",
+        "bytes": 354691,
+        "crc32": "3222f736"
+      }
+    },
+    "20230829": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230829.csv",
+        "bytes": 352386,
+        "crc32": "554ff72b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230829.csv",
+        "bytes": 354659,
+        "crc32": "109655bd"
+      }
+    },
+    "20230830": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230830.csv",
+        "bytes": 352005,
+        "crc32": "0b7ebb9f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230830.csv",
+        "bytes": 354844,
+        "crc32": "4ac9c422"
+      }
+    },
+    "20230831": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230831.csv",
+        "bytes": 352066,
+        "crc32": "71e1be10"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230831.csv",
+        "bytes": 355119,
+        "crc32": "24824c9c"
+      }
+    },
+    "20230901": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230901.csv",
+        "bytes": 352349,
+        "crc32": "04a86b7f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230901.csv",
+        "bytes": 355142,
+        "crc32": "76e212b2"
+      }
+    },
+    "20230902": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230902.csv",
+        "bytes": 352855,
+        "crc32": "9b8e84cd"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230902.csv",
+        "bytes": 358375,
+        "crc32": "3a18d871"
+      }
+    },
+    "20230903": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230903.csv",
+        "bytes": 352533,
+        "crc32": "eed85477"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230903.csv",
+        "bytes": 355170,
+        "crc32": "9cc48002"
+      }
+    },
+    "20230904": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230904.csv",
+        "bytes": 352174,
+        "crc32": "19ac5c58"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230904.csv",
+        "bytes": 355339,
+        "crc32": "7318c805"
+      }
+    },
+    "20230905": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230905.csv",
+        "bytes": 352482,
+        "crc32": "08eb2054"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230905.csv",
+        "bytes": 355402,
+        "crc32": "12184828"
+      }
+    },
+    "20230906": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230906.csv",
+        "bytes": 352222,
+        "crc32": "f54f8ef5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230906.csv",
+        "bytes": 355276,
+        "crc32": "370c40fd"
+      }
+    },
+    "20230907": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230907.csv",
+        "bytes": 352565,
+        "crc32": "6906da4c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230907.csv",
+        "bytes": 355291,
+        "crc32": "573bf57e"
+      }
+    },
+    "20230908": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230908.csv",
+        "bytes": 352515,
+        "crc32": "814940c5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230908.csv",
+        "bytes": 355130,
+        "crc32": "a5c35d95"
+      }
+    },
+    "20230909": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230909.csv",
+        "bytes": 352416,
+        "crc32": "de4c0ff7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230909.csv",
+        "bytes": 355144,
+        "crc32": "134e40d6"
+      }
+    },
+    "20230910": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230910.csv",
+        "bytes": 352211,
+        "crc32": "94ad49c8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230910.csv",
+        "bytes": 355053,
+        "crc32": "36803d1e"
+      }
+    },
+    "20230911": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230911.csv",
+        "bytes": 352575,
+        "crc32": "6fbbde30"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230911.csv",
+        "bytes": 355536,
+        "crc32": "3eb19bcd"
+      }
+    },
+    "20230912": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230912.csv",
+        "bytes": 352860,
+        "crc32": "4ec2c6c6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230912.csv",
+        "bytes": 355402,
+        "crc32": "8e852b6f"
+      }
+    },
+    "20230913": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230913.csv",
+        "bytes": 352577,
+        "crc32": "db1b7366"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230913.csv",
+        "bytes": 355349,
+        "crc32": "5782e89d"
+      }
+    },
+    "20230914": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230914.csv",
+        "bytes": 352827,
+        "crc32": "e9ab9c35"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230914.csv",
+        "bytes": 355530,
+        "crc32": "9f197b32"
+      }
+    },
+    "20230915": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230915.csv",
+        "bytes": 352826,
+        "crc32": "a0325836"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230915.csv",
+        "bytes": 355596,
+        "crc32": "4a2d77e1"
+      }
+    },
+    "20230916": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230916.csv",
+        "bytes": 352765,
+        "crc32": "12ff2a22"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230916.csv",
+        "bytes": 355441,
+        "crc32": "93cf64ec"
+      }
+    },
+    "20230917": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230917.csv",
+        "bytes": 352187,
+        "crc32": "42f8fc1f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230917.csv",
+        "bytes": 355261,
+        "crc32": "59d48964"
+      }
+    },
+    "20230918": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230918.csv",
+        "bytes": 352545,
+        "crc32": "8ad9063f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230918.csv",
+        "bytes": 355321,
+        "crc32": "881023cf"
+      }
+    },
+    "20230919": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230919.csv",
+        "bytes": 352682,
+        "crc32": "349b543e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230919.csv",
+        "bytes": 355294,
+        "crc32": "8e7b6318"
+      }
+    },
+    "20230920": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230920.csv",
+        "bytes": 352957,
+        "crc32": "77c3223a"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230920.csv",
+        "bytes": 355514,
+        "crc32": "81b2dc3f"
+      }
+    },
+    "20230921": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230921.csv",
+        "bytes": 352772,
+        "crc32": "d7300782"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230921.csv",
+        "bytes": 355567,
+        "crc32": "11bdb8ac"
+      }
+    },
+    "20230922": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230922.csv",
+        "bytes": 353509,
+        "crc32": "7cd112af"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230922.csv",
+        "bytes": 355911,
+        "crc32": "23f0aa5a"
+      }
+    },
+    "20230923": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230923.csv",
+        "bytes": 352814,
+        "crc32": "c9a3c862"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230923.csv",
+        "bytes": 355478,
+        "crc32": "afc71d29"
+      }
+    },
+    "20230924": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230924.csv",
+        "bytes": 352959,
+        "crc32": "bbf2622f"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230924.csv",
+        "bytes": 355518,
+        "crc32": "195f8846"
+      }
+    },
+    "20230925": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230925.csv",
+        "bytes": 352471,
+        "crc32": "07f3b1ae"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230925.csv",
+        "bytes": 355295,
+        "crc32": "524e5fa6"
+      }
+    },
+    "20230926": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230926.csv",
+        "bytes": 352302,
+        "crc32": "593c78b8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230926.csv",
+        "bytes": 357085,
+        "crc32": "fa6eedce"
+      }
+    },
+    "20230927": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230927.csv",
+        "bytes": 352518,
+        "crc32": "5b24a0c6"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230927.csv",
+        "bytes": 355262,
+        "crc32": "fbf01b6b"
+      }
+    },
+    "20230928": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230928.csv",
+        "bytes": 352765,
+        "crc32": "673d82aa"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230928.csv",
+        "bytes": 355615,
+        "crc32": "5c872925"
+      }
+    },
+    "20230929": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230929.csv",
+        "bytes": 353458,
+        "crc32": "a0f492e0"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230929.csv",
+        "bytes": 356346,
+        "crc32": "ecf59d1c"
+      }
+    },
+    "20230930": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20230930.csv",
+        "bytes": 353357,
+        "crc32": "4d552942"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20230930.csv",
+        "bytes": 356290,
+        "crc32": "f615f784"
+      }
+    },
+    "20231001": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231001.csv",
+        "bytes": 352882,
+        "crc32": "73ab695c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231001.csv",
+        "bytes": 356194,
+        "crc32": "10b2b530"
+      }
+    },
+    "20231002": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231002.csv",
+        "bytes": 353167,
+        "crc32": "d62f1770"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231002.csv",
+        "bytes": 356039,
+        "crc32": "18c50a5b"
+      }
+    },
+    "20231003": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231003.csv",
+        "bytes": 353412,
+        "crc32": "9832a9d4"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231003.csv",
+        "bytes": 356135,
+        "crc32": "14bb43fb"
+      }
+    },
+    "20231004": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231004.csv",
+        "bytes": 353263,
+        "crc32": "5ff4cf3d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231004.csv",
+        "bytes": 355982,
+        "crc32": "18a6704b"
+      }
+    },
+    "20231005": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231005.csv",
+        "bytes": 353127,
+        "crc32": "1d3de37e"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231005.csv",
+        "bytes": 355986,
+        "crc32": "d760966f"
+      }
+    },
+    "20231006": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231006.csv",
+        "bytes": 353393,
+        "crc32": "5a4793d7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231006.csv",
+        "bytes": 356250,
+        "crc32": "91c9e517"
+      }
+    },
+    "20231007": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231007.csv",
+        "bytes": 354906,
+        "crc32": "6c6fd954"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231007.csv",
+        "bytes": 356431,
+        "crc32": "87a0f1db"
+      }
+    },
+    "20231008": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231008.csv",
+        "bytes": 353478,
+        "crc32": "e77ad491"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231008.csv",
+        "bytes": 356390,
+        "crc32": "792d67cd"
+      }
+    },
+    "20231009": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231009.csv",
+        "bytes": 353290,
+        "crc32": "8de01772"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231009.csv",
+        "bytes": 356175,
+        "crc32": "fcec2ddb"
+      }
+    },
+    "20231010": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231010.csv",
+        "bytes": 354121,
+        "crc32": "2b168e56"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231010.csv",
+        "bytes": 356228,
+        "crc32": "42c878a7"
+      }
+    },
+    "20231011": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231011.csv",
+        "bytes": 354102,
+        "crc32": "200d483d"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231011.csv",
+        "bytes": 356890,
+        "crc32": "3c847514"
+      }
+    },
+    "20231012": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231012.csv",
+        "bytes": 353708,
+        "crc32": "07cfe5f3"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231012.csv",
+        "bytes": 357235,
+        "crc32": "36d520b4"
+      }
+    },
+    "20231013": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231013.csv",
+        "bytes": 355826,
+        "crc32": "8e425f3c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231013.csv",
+        "bytes": 357892,
+        "crc32": "b0a63b00"
+      }
+    },
+    "20231014": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231014.csv",
+        "bytes": 355633,
+        "crc32": "9fe243a8"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231014.csv",
+        "bytes": 357662,
+        "crc32": "10379495"
+      }
+    },
+    "20231015": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231015.csv",
+        "bytes": 353738,
+        "crc32": "f8ef32e5"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231015.csv",
+        "bytes": 357234,
+        "crc32": "7dd2bb49"
+      }
+    },
+    "20231016": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231016.csv",
+        "bytes": 354375,
+        "crc32": "cc62b580"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231016.csv",
+        "bytes": 357542,
+        "crc32": "1f360071"
+      }
+    },
+    "20231017": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231017.csv",
+        "bytes": 354461,
+        "crc32": "f56f0e7c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231017.csv",
+        "bytes": 357146,
+        "crc32": "ebea149c"
+      }
+    },
+    "20231018": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231018.csv",
+        "bytes": 353830,
+        "crc32": "ad217910"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231018.csv",
+        "bytes": 357683,
+        "crc32": "5f1e6aed"
+      }
+    },
+    "20231019": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231019.csv",
+        "bytes": 353613,
+        "crc32": "b54274c2"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231019.csv",
+        "bytes": 356845,
+        "crc32": "37591918"
+      }
+    },
+    "20231020": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231020.csv",
+        "bytes": 354269,
+        "crc32": "f68648ad"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231020.csv",
+        "bytes": 357362,
+        "crc32": "fe9ae96a"
+      }
+    },
+    "20231021": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231021.csv",
+        "bytes": 354506,
+        "crc32": "2dd1a52b"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231021.csv",
+        "bytes": 358357,
+        "crc32": "ce8c06d3"
+      }
+    },
+    "20231022": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231022.csv",
+        "bytes": 355179,
+        "crc32": "0b1cc995"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231022.csv",
+        "bytes": 358545,
+        "crc32": "fb900294"
+      }
+    },
+    "20231023": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231023.csv",
+        "bytes": 355654,
+        "crc32": "8d29a8a9"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231023.csv",
+        "bytes": 358561,
+        "crc32": "5a87c890"
+      }
+    },
+    "20231024": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231024.csv",
+        "bytes": 355545,
+        "crc32": "66dc59df"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231024.csv",
+        "bytes": 358406,
+        "crc32": "2f37f324"
+      }
+    },
+    "20231025": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231025.csv",
+        "bytes": 355615,
+        "crc32": "fee8c4c7"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231025.csv",
+        "bytes": 358385,
+        "crc32": "95305ea9"
+      }
+    },
+    "20231026": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231026.csv",
+        "bytes": 355808,
+        "crc32": "ac6afdbc"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231026.csv",
+        "bytes": 358262,
+        "crc32": "0d00e54a"
+      }
+    },
+    "20231027": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231027.csv",
+        "bytes": 355356,
+        "crc32": "1ab69939"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231027.csv",
+        "bytes": 358359,
+        "crc32": "6cda4c32"
+      }
+    },
+    "20231028": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231028.csv",
+        "bytes": 357056,
+        "crc32": "b0c20154"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231028.csv",
+        "bytes": 358925,
+        "crc32": "ea8b877d"
+      }
+    },
+    "20231029": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231029.csv",
+        "bytes": 356962,
+        "crc32": "0985e438"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231029.csv",
+        "bytes": 361177,
+        "crc32": "e733f3a0"
+      }
+    },
+    "20231030": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231030.csv",
+        "bytes": 355689,
+        "crc32": "2833b267"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231030.csv",
+        "bytes": 358176,
+        "crc32": "43fa233c"
+      }
+    },
+    "20231031": {
+      "N": {
+        "path": "ERT_IP_Reykjanes/N_20231031.csv",
+        "bytes": 355840,
+        "crc32": "c91add5c"
+      },
+      "R": {
+        "path": "ERT_IP_Reykjanes/R_20231031.csv",
+        "bytes": 358250,
+        "crc32": "432cee17"
+      }
+    }
+  },
+  "calibration_members_interpreted": 0,
+  "test_members_interpreted": 0,
+  "test_unseal_count": 0
+}

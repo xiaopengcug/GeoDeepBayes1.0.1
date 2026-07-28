@@ -1,0 +1,34 @@
+{
+  "schema_version": "wp8-mendeley-heavy-metal-sip-metadata-audit-v1",
+  "audit_mode": "response_blind",
+  "doi": "10.17632/zz9t2wrvyw.2",
+  "title": "Survey of a heavy metal polluted field site based on spectrum-induced polarization",
+  "license": "CC-BY-4.0",
+  "site_count": 1,
+  "declared_receiver_channels": 8,
+  "declared_receiver_electrodes": "M0-M8",
+  "declared_receiver_spacing_m": 1,
+  "declared_transmitter_ab_spacing_m": 5,
+  "declared_transmitter_move_step_m": 1,
+  "declared_pseudorandom_sequences_per_measurement": 27,
+  "declared_base_frequency_hz": 0.015625,
+  "declared_sampling_rate_hz": 25000,
+  "declared_transmitter_voltage_v": 300,
+  "public_file_inventory": [
+    {
+      "filename": "2021_4_06_field_trial_paper_data.zip",
+      "declared_size": 185002317,
+      "content_type": "application/zip"
+    }
+  ],
+  "response_blind_independent_cluster_upper_bound": 1,
+  "required_test_clusters": 223,
+  "observation_contract_possible": true,
+  "cluster_gate_passes": false,
+  "power_gate_passes": false,
+  "decision": "abort_before_response_payload",
+  "response_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "reason": "The release is a single fixed-receiver field trial. Moving the transmitter by 1 m and repeating sequences cannot create independent spatial test clusters, so its response-blind upper bound is one, far below 223."
+}

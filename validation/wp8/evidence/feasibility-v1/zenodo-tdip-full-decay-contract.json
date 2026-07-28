@@ -1,0 +1,66 @@
+{
+  "schema_version": "wp8-zenodo-tdip-full-decay-contract-v1",
+  "doi": "10.5281/zenodo.13329326",
+  "license": "CC BY 4.0",
+  "archive_sha256": "f71d593dc7ff902732c9099b8e8ee5ea484a4008a8906420930d5804bd374cd0",
+  "archive_bytes": 564125459,
+  "archive_member_names_read": true,
+  "observation_values_read": false,
+  "formal_test_endpoints_inspected": false,
+  "selection_role": "training_contract_candidate_only",
+  "inventory": {
+    "members": 18788,
+    "suffix_counts": {
+      "": 49,
+      ".con": 5,
+      ".dat": 30,
+      ".db": 5,
+      ".dcp": 443,
+      ".dip": 5,
+      ".emo": 5,
+      ".emt": 5,
+      ".ini": 9,
+      ".inv": 21,
+      ".ite": 5,
+      ".log": 4602,
+      ".mod": 5,
+      ".msh": 5,
+      ".raw": 10334,
+      ".txt": 3239,
+      ".xyz": 21
+    },
+    "project_databases": 5,
+    "acquisition_groups": [
+      "field_survey/field_full_waveform_data/n12_n13",
+      "field_survey/field_full_waveform_data/n7_n6_n1",
+      "field_survey/field_full_waveform_data/s2",
+      "field_survey/field_full_waveform_data/s5_s7_n10",
+      "field_survey/field_full_waveform_data/s6_s4"
+    ],
+    "processed_profile_ids": [
+      "n1",
+      "n12",
+      "s2",
+      "s4",
+      "s7"
+    ],
+    "full_waveform_raw_members": 10334,
+    "processed_dip_members": 5,
+    "inversion_input_members": 30
+  },
+  "contract_readiness": {
+    "full_decay_waveforms_present": true,
+    "instrument_project_databases_present": true,
+    "processed_profiles_present": true,
+    "geometry_and_time_window_fields_verified": false,
+    "empirical_error_model_verified": false,
+    "independent_field_sites": 1
+  },
+  "gate_impact": {
+    "contract_can_be_audited_training_only": true,
+    "minimum_independent_test_clusters": 223,
+    "power_gate_passed": false,
+    "reason": "the CC-BY archive provides full-waveform field TDIP and five processed profiles, but all observations belong to one contaminated site and cannot repair the 223-cluster gate"
+  },
+  "test_unseal_count": 0
+}

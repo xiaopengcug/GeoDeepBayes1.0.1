@@ -1,0 +1,117 @@
+{
+  "schema_version": "wp8-controlled-source-path-readiness-v1",
+  "formal_wp8_1_evidence": false,
+  "scope": "WP8-0 path feasibility only",
+  "methods": {
+    "csamt": {
+      "implementation": {
+        "entrypoint": "geodeepbayes.forward.controlled_source.CSAMTOperator",
+        "dependency_versions": {
+          "simpeg": "0.25.2",
+          "discretize": "0.12.0",
+          "geoana": "0.8.1",
+          "numpy": "2.4.6",
+          "scipy": "1.17.1",
+          "pymatsolver": "0.4.0"
+        },
+        "applicable_dimension": "3-D finite-line grounded-source Maxwell"
+      },
+      "independent_reference": {
+        "test_path": "tests/forward/test_controlled_source.py",
+        "test_source_sha256": "a283892fc1f3f8294544d0b9fcc3446384770c38442fe3a94a1940af58cdc1c0",
+        "pytest_exit_code": 0,
+        "pytest_stdout": ".....                                                                    [100%]\n============================== warnings summary ===============================\ntests/forward/test_controlled_source.py::test_csamt_real_simpeg_path_and_geoana_reference\ntests/forward/test_controlled_source.py::test_csamt_derivatives_taylor_and_adjoint\ntests/forward/test_controlled_source.py::test_wfem_independent_contract_and_apparent_resistivity\ntests/forward/test_controlled_source.py::test_wfem_three_level_discretization_convergence\ntests/forward/test_controlled_source.py::test_zones_and_contract_misspecification_fail\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\simpeg\\base\\pde_simulation.py:663: PerformanceWarning: The 'pymatsolver.SolverLU' solver might lead to high computation times. We recommend using a faster alternative such as 'pymatsolver.Pardiso' or 'pymatsolver.Mumps'.\n    super().__setattr__(name, value)\n\ntests/forward/test_controlled_source.py::test_csamt_real_simpeg_path_and_geoana_reference\ntests/forward/test_controlled_source.py::test_csamt_derivatives_taylor_and_adjoint\ntests/forward/test_controlled_source.py::test_wfem_independent_contract_and_apparent_resistivity\ntests/forward/test_controlled_source.py::test_wfem_three_level_discretization_convergence\ntests/forward/test_controlled_source.py::test_zones_and_contract_misspecification_fail\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\pymatsolver\\wrappers.py:81: SparseEfficiencyWarning: splu converted its input to CSC format\n    self.solver = fun(self.A, **self.kwargs)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 10 warnings in 2.02s\n",
+        "passed": true,
+        "kind": "Geoana whole-space electric-dipole reference plus explicit source-zone contract",
+        "quantity": "complex Ex and CSAMT Ex/Hy apparent resistivity"
+      },
+      "resource_measurement": {
+        "kind": "representative 3-D development meshes; not formal WP8-1 field scale",
+        "records": [
+          {
+            "mesh_cells": 64,
+            "complex_data": 2,
+            "wall_time_seconds": 0.09000220000007175,
+            "peak_python_memory_bytes": 546705,
+            "finite": true
+          },
+          {
+            "mesh_cells": 125,
+            "complex_data": 2,
+            "wall_time_seconds": 0.09386999999969703,
+            "peak_python_memory_bytes": 834124,
+            "finite": true
+          },
+          {
+            "mesh_cells": 216,
+            "complex_data": 2,
+            "wall_time_seconds": 0.17347209999979896,
+            "peak_python_memory_bytes": 1307933,
+            "finite": true
+          }
+        ],
+        "timeout_seconds": 10.0,
+        "memory_limit_bytes": 134217728,
+        "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+        "negative_test": "tests/validation/test_wp8_resource_abort.py",
+        "negative_test_source_sha256": "d1788b83dc10ab8a436b82ff5a1b3624f056fcaeeb70fe49ec670d6a1c70d5c1",
+        "passed": true
+      }
+    },
+    "wfem": {
+      "implementation": {
+        "entrypoint": "geodeepbayes.forward.controlled_source.WFEMOperator",
+        "dependency_versions": {
+          "simpeg": "0.25.2",
+          "discretize": "0.12.0",
+          "geoana": "0.8.1",
+          "numpy": "2.4.6",
+          "scipy": "1.17.1",
+          "pymatsolver": "0.4.0"
+        },
+        "applicable_dimension": "3-D finite-line waveform-frequency Maxwell"
+      },
+      "independent_reference": {
+        "test_path": "tests/forward/test_controlled_source.py",
+        "test_source_sha256": "a283892fc1f3f8294544d0b9fcc3446384770c38442fe3a94a1940af58cdc1c0",
+        "pytest_exit_code": 0,
+        "pytest_stdout": ".....                                                                    [100%]\n============================== warnings summary ===============================\ntests/forward/test_controlled_source.py::test_csamt_real_simpeg_path_and_geoana_reference\ntests/forward/test_controlled_source.py::test_csamt_derivatives_taylor_and_adjoint\ntests/forward/test_controlled_source.py::test_wfem_independent_contract_and_apparent_resistivity\ntests/forward/test_controlled_source.py::test_wfem_three_level_discretization_convergence\ntests/forward/test_controlled_source.py::test_zones_and_contract_misspecification_fail\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\simpeg\\base\\pde_simulation.py:663: PerformanceWarning: The 'pymatsolver.SolverLU' solver might lead to high computation times. We recommend using a faster alternative such as 'pymatsolver.Pardiso' or 'pymatsolver.Mumps'.\n    super().__setattr__(name, value)\n\ntests/forward/test_controlled_source.py::test_csamt_real_simpeg_path_and_geoana_reference\ntests/forward/test_controlled_source.py::test_csamt_derivatives_taylor_and_adjoint\ntests/forward/test_controlled_source.py::test_wfem_independent_contract_and_apparent_resistivity\ntests/forward/test_controlled_source.py::test_wfem_three_level_discretization_convergence\ntests/forward/test_controlled_source.py::test_zones_and_contract_misspecification_fail\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\pymatsolver\\wrappers.py:81: SparseEfficiencyWarning: splu converted its input to CSC format\n    self.solver = fun(self.A, **self.kwargs)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 10 warnings in 2.02s\n",
+        "passed": true,
+        "kind": "Geoana whole-space electric-dipole reference, explicit geometric-factor identity, and three-level discretization convergence",
+        "quantity": "complex Ex/Ey and explicitly defined apparent resistivity"
+      },
+      "resource_measurement": {
+        "kind": "representative 3-D development meshes; not formal WP8-1 field scale",
+        "records": [
+          {
+            "mesh_cells": 64,
+            "complex_data": 2,
+            "wall_time_seconds": 0.08355250000022352,
+            "peak_python_memory_bytes": 440453,
+            "finite": true
+          },
+          {
+            "mesh_cells": 125,
+            "complex_data": 2,
+            "wall_time_seconds": 0.09229260000029171,
+            "peak_python_memory_bytes": 793307,
+            "finite": true
+          },
+          {
+            "mesh_cells": 216,
+            "complex_data": 2,
+            "wall_time_seconds": 0.1653535999998894,
+            "peak_python_memory_bytes": 1306191,
+            "finite": true
+          }
+        ],
+        "timeout_seconds": 10.0,
+        "memory_limit_bytes": 134217728,
+        "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+        "negative_test": "tests/validation/test_wp8_resource_abort.py",
+        "negative_test_source_sha256": "d1788b83dc10ab8a436b82ff5a1b3624f056fcaeeb70fe49ec670d6a1c70d5c1",
+        "passed": true
+      }
+    }
+  }
+}

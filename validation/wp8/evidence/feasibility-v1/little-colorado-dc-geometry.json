@@ -1,0 +1,82 @@
+{
+  "schema_version": "wp8-little-colorado-dc-geometry-v1",
+  "doi": "10.5066/P9TNW6SD",
+  "parsed_fields": [
+    "line name",
+    "station number",
+    "easting",
+    "northing",
+    "altitude"
+  ],
+  "resistance_or_apparent_resistivity_values_parsed": false,
+  "profiles": {
+    "MB2.5": {
+      "archive_path": "_bmad-output/planning-artifacts/research/open-data/dc_ip/USGS_LittleColoradoRiver_ERT_2019/MB2.5.zip",
+      "archive_bytes": 636613,
+      "archive_sha256": "bd55803b3cef0538a15315ceb1e512a0102293d2fd6a8db82a3287695c3bd258",
+      "gps_member": "MB2.5/Geophysics Data-GPS Coordinates_Line MB2.5.csv",
+      "electrodes": 197,
+      "profile_length_m": 1089.4128815352453,
+      "median_electrode_spacing_m": 5.0990195135927845,
+      "crossline_rms_m": 1.2964504883762649,
+      "crossline_maximum_m": 3.610949111852065,
+      "crossline_maximum_spacing_ratio": 0.7081653839970853,
+      "elevation_relief_m": 4.571999999999889,
+      "two_d_eligibility_rule": "maximum PCA crossline deviation <=1.5 median electrode spacings",
+      "two_d_eligible": true
+    },
+    "MB2.5B": {
+      "archive_path": "_bmad-output/planning-artifacts/research/open-data/dc_ip/USGS_LittleColoradoRiver_ERT_2019/MB2.5B.zip",
+      "archive_bytes": 635030,
+      "archive_sha256": "790b5199b87825ad2f84ff77d0cf0e485f981cfe859a3842faa631e8c4b071ae",
+      "gps_member": "MB2.5B/Geophysics Data-GPS Coordinates_Line MB2.5B.csv",
+      "electrodes": 169,
+      "profile_length_m": 821.3014062124316,
+      "median_electrode_spacing_m": 5.0990195135927845,
+      "crossline_rms_m": 0.27612119550564634,
+      "crossline_maximum_m": 0.48648464120929485,
+      "crossline_maximum_spacing_ratio": 0.09540748763805305,
+      "elevation_relief_m": 1.5240000000001146,
+      "two_d_eligibility_rule": "maximum PCA crossline deviation <=1.5 median electrode spacings",
+      "two_d_eligible": true
+    },
+    "MB4": {
+      "archive_path": "_bmad-output/planning-artifacts/research/open-data/dc_ip/USGS_LittleColoradoRiver_ERT_2019/MB4.zip",
+      "archive_bytes": 505404,
+      "archive_sha256": "4bbc7e01571e338ee3c2e5f3f9516193de20f8690d74ae68cdcedfa075e46628",
+      "gps_member": "MB4/Geophysics Data-GPS Coordinates_Line MB4.csv",
+      "electrodes": 114,
+      "profile_length_m": 1830.531689863883,
+      "median_electrode_spacing_m": 6.324555320336759,
+      "crossline_rms_m": 179.3066574602759,
+      "crossline_maximum_m": 784.0382536331315,
+      "crossline_maximum_spacing_ratio": 123.96733270907406,
+      "elevation_relief_m": 10.667999999999893,
+      "two_d_eligibility_rule": "maximum PCA crossline deviation <=1.5 median electrode spacings",
+      "two_d_eligible": false
+    },
+    "MB4B": {
+      "archive_path": "_bmad-output/planning-artifacts/research/open-data/dc_ip/USGS_LittleColoradoRiver_ERT_2019/MB4B.zip",
+      "archive_bytes": 588576,
+      "archive_sha256": "cdc09bab86f1cc69f40907900de62c9b12dd49ccb4a6e033519d158a56337c9b",
+      "gps_member": "MB4B/Geophysics Data-GPS Coordinates_Line MB4B.csv",
+      "electrodes": 163,
+      "profile_length_m": 818.7607379413998,
+      "median_electrode_spacing_m": 5.0990195135927845,
+      "crossline_rms_m": 2.9655591104446657,
+      "crossline_maximum_m": 6.960158395076357,
+      "crossline_maximum_spacing_ratio": 1.3649993643919611,
+      "elevation_relief_m": 14.325599999999895,
+      "two_d_eligibility_rule": "maximum PCA crossline deviation <=1.5 median electrode spacings",
+      "two_d_eligible": true
+    }
+  },
+  "profiles_requiring_3d": [
+    "MB4"
+  ],
+  "dimensionality": {
+    "selected": "3-D",
+    "passed": true,
+    "reason": "the formal method path must cover every selected profile; MB4 has crossline curvature far beyond electrode spacing, so the available 3-D nodal finite-volume DC path is mandatory"
+  }
+}

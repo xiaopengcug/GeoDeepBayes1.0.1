@@ -113,6 +113,10 @@ CONTROL_FILE_GLOBS = (
     # shallow WP8 execution surface so a clean checkout cannot pass local
     # planning while failing remote collection on an omitted helper.
     "validation/wp8/*.py",
+    # The synthetic gate verifies this protected JSON package as a whole.
+    # Raw field archives remain excluded; no protected JSON member may be
+    # silently supplied only by a developer's working tree.
+    "validation/wp8/evidence/feasibility-v1/*.json",
 )
 
 
@@ -162,6 +166,15 @@ def _git_head() -> str:
     ):
         raise RuntimeError("git rev-parse returned an invalid commit")
     return value
+
+
+def _git_is_ancestor(ancestor: str, descendant: str = "HEAD") -> bool:
+    process = _run_git("merge-base", "--is-ancestor", ancestor, descendant)
+    if process.returncode == 0:
+        return True
+    if process.returncode == 1:
+        return False
+    raise RuntimeError(process.stderr.decode("utf-8", errors="replace"))
 
 
 def _head_blob_sha256(relative: str) -> str | None:
@@ -415,6 +428,7 @@ def build_plan() -> dict[str, Any]:
     tracked = _tracked_paths()
     staged = _staged_paths()
     observed_head = _git_head()
+    baseline_is_ancestor = _git_is_ancestor(FROZEN_BASELINE_COMMIT)
 
     manifest_records = []
     for member in manifest_members:
@@ -562,8 +576,8 @@ def build_plan() -> dict[str, Any]:
         blockers.append(f"{len(scan_failures)} required paths failed repository-scope scanning")
     if generation_replay["status"] != "passed":
         blockers.append("ignored generated artifacts failed deterministic replay")
-    if observed_head != FROZEN_BASELINE_COMMIT:
-        blockers.append("observed HEAD differs from the frozen specification baseline")
+    if not baseline_is_ancestor:
+        blockers.append("observed HEAD does not contain the frozen specification baseline")
     if staged_required_git:
         blockers.append(
             f"{len(staged_required_git)} required Git paths already have staged changes"
@@ -582,6 +596,7 @@ def build_plan() -> dict[str, Any]:
             "observed_head_matches_frozen_baseline": (
                 observed_head == FROZEN_BASELINE_COMMIT
             ),
+            "observed_head_contains_frozen_baseline": baseline_is_ancestor,
             "observed_staged_required_paths": staged_required_git,
         },
         "manifest_binding": {
@@ -628,7 +643,7 @@ def build_plan() -> dict[str, Any]:
             if not scan_failures
             and not unresolved_ignored
             and generation_replay["status"] == "passed"
-            and observed_head == FROZEN_BASELINE_COMMIT
+            and baseline_is_ancestor
             and not staged_required_git
             else "blocked"
         ),

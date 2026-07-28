@@ -1,0 +1,33 @@
+{
+  "schema_version": "wp8-usgs-aem-2026-unexposed-candidate-design-v1",
+  "selection_frozen_before_response_payload_access": true,
+  "selection_date": "2026-07-25",
+  "license": "CC0-1.0",
+  "candidates": [
+    {
+      "doi": "10.5066/P18JCA5M",
+      "name": "Western Mojave Desert SkyTEM312, 2024",
+      "publication_date": "2026-06-23",
+      "declared_line_km": 3251,
+      "declared_payload_format": "NetCDF",
+      "declared_processing_level": "minimally processed AEM"
+    },
+    {
+      "doi": "10.5066/P14TP9LW",
+      "name": "Coalinga and Pyramid Hills SkyTEM312, 2022",
+      "publication_date": "2026-04-13",
+      "declared_line_km": 2372,
+      "declared_payload_format": "NetCDF",
+      "declared_processing_level": "raw, fully processed AEM, and inverted resistivity"
+    }
+  ],
+  "staged_protocol": {
+    "stage_1": "Inspect only official inventories, NCML, FGDC XML, reports, and flightline geometry.",
+    "stage_2_condition": "Before any response payload access, metadata must prove coordinates, line identity, transmitter geometry and current, exact waveform, gate times, response components, and per-observation uncertainty semantics.",
+    "stage_2_role_rule": "Freeze a coordinate-first spatial split and verify a correlation-adjusted upper bound of at least 223 effective test clusters before opening response arrays.",
+    "abort_condition": "Do not access response payloads when the metadata contract fails or the response-blind spatial design cannot possibly provide 223 effective test clusters."
+  },
+  "response_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": "wp8-western-arkansas-magnetic-train-diagnostics-v1",
+  "raw_manifest_sha256": "496a9331ec2f94c7acf09ead40e1049fc3bd09184e4cc21955a5256371694a3c",
+  "split_sha256": "bc86e2781a098f7fb9ea9bb30d7efe34214e3c230c413d275ac1e099f8428437",
+  "remanence_prior_sha256": "65c0997cf4ea2a849bd90f1cf38751a450a003a8fbc972edcb157ce847ef9212",
+  "response_policy": {
+    "training_rows_interpreted": 1551155,
+    "buffer_rows_interpreted": 0,
+    "calibration_rows_interpreted": 0,
+    "test_rows_interpreted": 0,
+    "held_out_rows_skipped_without_response_parsing": {
+      "test": 618244,
+      "buffer": 1236292,
+      "calibration": 372299
+    }
+  },
+  "training_cells_2km": 913,
+  "regional_field": {
+    "model": "fixed OLS plane on training-cell medians",
+    "coefficients": [
+      -70.99771880136531,
+      0.026930188206045008,
+      0.005356719582303025
+    ],
+    "residual_sill_nt2": 32518733.87324686
+  },
+  "variogram": {
+    "range_rule": "first two consecutive 2-km bins with >=100 pairs and semivariance >=95% training residual sill",
+    "bins": [
+      {
+        "lag_center_m": 1000.0,
+        "pairs": 0,
+        "semivariance_nt2": null
+      },
+      {
+        "lag_center_m": 3000.0,
+        "pairs": 3231,
+        "semivariance_nt2": 12396044.87853292
+      },
+      {
+        "lag_center_m": 5000.0,
+        "pairs": 5731,
+        "semivariance_nt2": 15720054.606079902
+      },
+      {
+        "lag_center_m": 7000.0,
+        "pairs": 6464,
+        "semivariance_nt2": 17804738.236325853
+      },
+      {
+        "lag_center_m": 9000.0,
+        "pairs": 6984,
+        "semivariance_nt2": 17188774.96069064
+      },
+      {
+        "lag_center_m": 11000.0,
+        "pairs": 10098,
+        "semivariance_nt2": 18814382.903547507
+      },
+      {
+        "lag_center_m": 13000.0,
+        "pairs": 8039,
+        "semivariance_nt2": 20512599.41032709
+      },
+      {
+        "lag_center_m": 15000.0,
+        "pairs": 9264,
+        "semivariance_nt2": 21017923.391014963
+      },
+      {
+        "lag_center_m": 17000.0,
+        "pairs": 9203,
+        "semivariance_nt2": 24389869.55904892
+      },
+      {
+        "lag_center_m": 19000.0,
+        "pairs": 7928,
+        "semivariance_nt2": 28925743.430554643
+      },
+      {
+        "lag_center_m": 21000.0,
+        "pairs": 8210,
+        "semivariance_nt2": 31547520.138115205
+      },
+      {
+        "lag_center_m": 23000.0,
+        "pairs": 7083,
+        "semivariance_nt2": 33033634.2358019
+      },
+      {
+        "lag_center_m": 25000.0,
+        "pairs": 8318,
+        "semivariance_nt2": 34704861.91813448
+      },
+      {
+        "lag_center_m": 27000.0,
+        "pairs": 9270,
+        "semivariance_nt2": 33814152.1719679
+      },
+      {
+        "lag_center_m": 29000.0,
+        "pairs": 8591,
+        "semivariance_nt2": 32999134.771694563
+      },
+      {
+        "lag_center_m": 31000.0,
+        "pairs": 9258,
+        "semivariance_nt2": 31691446.866730466
+      },
+      {
+        "lag_center_m": 33000.0,
+        "pairs": 9179,
+        "semivariance_nt2": 30331771.934529547
+      },
+      {
+        "lag_center_m": 35000.0,
+        "pairs": 11041,
+        "semivariance_nt2": 18097403.00205328
+      },
+      {
+        "lag_center_m": 37000.0,
+        "pairs": 11529,
+        "semivariance_nt2": 16069940.945099724
+      },
+      {
+        "lag_center_m": 39000.0,
+        "pairs": 11460,
+        "semivariance_nt2": 16620725.692093987
+      },
+      {
+        "lag_center_m": 41000.0,
+        "pairs": 11983,
+        "semivariance_nt2": 17995172.98152042
+      },
+      {
+        "lag_center_m": 43000.0,
+        "pairs": 14047,
+        "semivariance_nt2": 19289598.462752264
+      },
+      {
+        "lag_center_m": 45000.0,
+        "pairs": 12925,
+        "semivariance_nt2": 21346323.085890163
+      },
+      {
+        "lag_center_m": 47000.0,
+        "pairs": 12920,
+        "semivariance_nt2": 22519211.913818922
+      },
+      {
+        "lag_center_m": 49000.0,
+        "pairs": 13293,
+        "semivariance_nt2": 24891357.641807795
+      }
+    ]
+  },
+  "conservative_spatial_correlation_range_m": 21000.0,
+  "range_censored_at_maximum_lag": false,
+  "design_test_cells": 366,
+  "test_cells_excluded_within_range_of_training": 366,
+  "eligible_test_cells_before_correlation_packing": 0,
+  "correlation_adjusted_test_clusters": 0,
+  "selected_test_cell_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "selected_test_cell_ids": [],
+  "flight_geometry": {
+    "eligible_training_lines": 338,
+    "orientation_bins_15deg": [
+      0,
+      5,
+      6,
+      11
+    ],
+    "passed": true
+  },
+  "remanence_sensitivity": {
+    "complete_untreated_vectors": 5905,
+    "contributions": 21,
+    "vector_prior_required": true,
+    "passed": true
+  },
+  "dimensionality": {
+    "selected": "3-D vector magnetization",
+    "passed": true,
+    "reason": "broad two-dimensional survey coverage, multiple flight orientations, and a provenance-backed remanence prior require 3-D vector magnetization"
+  },
+  "coverage_required_clusters": 223,
+  "cluster_gate_passed": false,
+  "power_gate_passed": false
+}

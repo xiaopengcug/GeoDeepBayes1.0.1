@@ -1,0 +1,29 @@
+{
+  "contract_assessment": {
+    "absolute_gravity": "pass",
+    "complete_bouguer_anomaly": "fail",
+    "formal_wp8_gravity_contribution": 0,
+    "per_measurement_uncertainty": "pass",
+    "reason": "The release is a reusable absolute-gravity reference network with per-measurement uncertainty, but it does not publish complete Bouguer anomaly or terrain-correction fields required by the registered contract.",
+    "terrain_correction": "fail"
+  },
+  "dataset": "USGS Southwest Gravity Program Absolute-Gravity Database",
+  "date_range": [
+    "2007-10-26",
+    "2025-04-25"
+  ],
+  "has_complete_bouguer_anomaly": false,
+  "has_terrain_correction": false,
+  "independence_note": "Repeated dates at the same station are temporally correlated and are not counted as independent spatial clusters.",
+  "license": "CC0-1.0",
+  "maximum_measurements_at_one_station": 30,
+  "measurement_coordinate_rows_complete": 2009,
+  "measurement_gravity_related_fields": [
+    "Gravity (microGal)"
+  ],
+  "measurement_rows": 2009,
+  "station_rows": 331,
+  "stations_with_repeated_measurements": 245,
+  "uncertainty_rows_finite_positive": 2009,
+  "unique_measured_stations": 331
+}

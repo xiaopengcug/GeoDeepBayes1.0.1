@@ -1,0 +1,86 @@
+{
+  "schema_version": "wp8-western-arkansas-magnetic-contract-readiness-v1",
+  "raw_manifest_sha256": "496a9331ec2f94c7acf09ead40e1049fc3bd09184e4cc21955a5256371694a3c",
+  "design_split_sha256": "bc86e2781a098f7fb9ea9bb30d7efe34214e3c230c413d275ac1e099f8428437",
+  "member_integrity": {
+    "AR21F1047_USGS_AR-WestCentral_MagneticLineData.csv": true,
+    "AR21F0147_USGS_AR-WestCentral_MagneticChannelNames.csv": true,
+    "source-record.json": true
+  },
+  "license": "USGS public domain",
+  "response_values_interpreted_by_contract_audit": 0,
+  "channel_groups": {
+    "identity": {
+      "required": [
+        "date",
+        "flt",
+        "line"
+      ],
+      "present": true
+    },
+    "coordinates": {
+      "required": [
+        "Lat",
+        "Lon",
+        "x",
+        "y",
+        "z"
+      ],
+      "present": true
+    },
+    "height_topography": {
+      "required": [
+        "DTM_final",
+        "Radar_final",
+        "topodig"
+      ],
+      "present": true
+    },
+    "base_station": {
+      "required": [
+        "Basea",
+        "Baseao",
+        "Baseb",
+        "Basebo"
+      ],
+      "present": true
+    },
+    "vector_fluxgate": {
+      "required": [
+        "mfluxX",
+        "mfluxY",
+        "mfluxZ"
+      ],
+      "present": true
+    },
+    "processing_corrections": {
+      "required": [
+        "IGRF",
+        "coralt",
+        "corlvl",
+        "cormicro",
+        "drift_LF"
+      ],
+      "present": true
+    },
+    "response": {
+      "required": [
+        "magres"
+      ],
+      "present": true
+    }
+  },
+  "line_and_flight_identity_passed": true,
+  "position_height_topography_passed": true,
+  "field_processing_trace_passed": true,
+  "vector_measurement_channels_present": true,
+  "remanence_boundary": "fluxgate X/Y/Z are measured airborne field components and are not treated as a rock-remanence direction prior; the frozen training-only MagIC NRM prior remains the remanence source",
+  "per_observation_uncertainty": {
+    "present": false,
+    "reason": "the released line-data dictionary contains corrections and raw/processed channels but no standard-deviation, crossover-error, or per-observation uncertainty column"
+  },
+  "observation_contract_passed": true,
+  "formal_uncertainty_model_ready": false,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0
+}

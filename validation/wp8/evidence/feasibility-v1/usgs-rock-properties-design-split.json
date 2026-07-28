@@ -1,0 +1,93 @@
+{
+  "schema_version": "wp8-usgs-rock-properties-design-split-v1",
+  "created_before_property_interpretation": true,
+  "source": {
+    "path": "validation/wp8/data/usgs-rock-properties-v1/rock_property_data.csv",
+    "sha256": "242a913bed99b8a7c114d2d6da2246a1852655e411193f86514a56e4aa865502",
+    "bytes": 1501134
+  },
+  "design_contract": {
+    "parsed_fields": [
+      "Sample_ID",
+      "LAT_nad27",
+      "LONG_nad27",
+      "ELEV_m_navd29",
+      "DEPTH_m",
+      "ROCK_MODIFIER",
+      "ROCK_TYPE",
+      "AGE_yr_sym"
+    ],
+    "property_values_converted_or_interpreted": false,
+    "property_field_names_recorded_only": [
+      "N_density",
+      "GD_kg_m3",
+      "SBD_kg_m3",
+      "DBD_kg_m3",
+      "N_susc",
+      "SUSC_10-3_si",
+      "N_rm",
+      "RM_a_m",
+      "Q",
+      "DEC_deg",
+      "INC_deg",
+      "SRC",
+      "COMMENTS"
+    ]
+  },
+  "split_rule": {
+    "cell_size_km": 100.0,
+    "period_cells": 12,
+    "train_stripes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "buffer_stripes": [
+      0,
+      6,
+      9
+    ],
+    "calibration_stripes": [
+      7,
+      8
+    ],
+    "test_stripes": [
+      10,
+      11
+    ]
+  },
+  "design_sha256": "c3a9ad634a533279c16a788f4a03cf1ee0c6f7e1050a21530ef9ebf58fd2377b",
+  "invalid_design_rows_excluded": 196,
+  "counts": {
+    "train": {
+      "samples": 17224,
+      "spatial_cells_100km": 60,
+      "rock_types": 124
+    },
+    "buffer": {
+      "samples": 1635,
+      "spatial_cells_100km": 18,
+      "rock_types": 54
+    },
+    "calibration": {
+      "samples": 134,
+      "spatial_cells_100km": 4,
+      "rock_types": 15
+    },
+    "test": {
+      "samples": 1560,
+      "spatial_cells_100km": 10,
+      "rock_types": 54
+    }
+  },
+  "cell_overlap_counts": {
+    "train:buffer": 0,
+    "train:calibration": 0,
+    "train:test": 0,
+    "buffer:calibration": 0,
+    "buffer:test": 0,
+    "calibration:test": 0
+  }
+}

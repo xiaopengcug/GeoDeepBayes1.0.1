@@ -1,0 +1,49 @@
+{
+  "schema_version": "wp8-usgs-aem-2025-unexposed-metadata-audit-v1",
+  "audit_date": "2026-07-25",
+  "response_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "candidates": [
+    {
+      "doi": "10.5066/P9LFGESW",
+      "name": "Elk Hills SkyTEM 312, 2017",
+      "metadata_contract": {
+        "coordinates": true,
+        "line_identity": true,
+        "transmitter_geometry_and_current": true,
+        "exact_waveform": true,
+        "gate_times": true,
+        "response_components": true,
+        "per_observation_uncertainty": true
+      },
+      "flightline_record_count": 209,
+      "required_effective_test_clusters": 223,
+      "raw_line_upper_bound_sufficient": false,
+      "decision": "abort_before_response_payload",
+      "reason": "Even treating every flightline record as independent gives only 209 clusters, below 223 before spatial-correlation adjustment."
+    },
+    {
+      "doi": "10.5066/P1UKDJSM",
+      "name": "Basin and Range HELITEM2, 2022-2023",
+      "declared_line_km": 11079,
+      "flightline_shx_declared_bytes": 3316,
+      "shapefile_header_bytes": 100,
+      "shx_record_bytes": 8,
+      "flightline_record_count_inferred_from_declared_shx_size": 402,
+      "inference_formula": "(3316 - 100) / 8",
+      "official_wfs_number_of_features_observed": 0,
+      "metadata_download_issue": "ScienceBase manager URLs returned a 4255-byte HTML application shell instead of the declared files on 2026-07-25.",
+      "raw_line_upper_bound_sufficient": true,
+      "correlation_adjusted_upper_bound_verified": false,
+      "metadata_contract_verified": false,
+      "decision": "continue_metadata_only",
+      "reason": "The declared SHX size permits 402 raw records, but line identities, geometry, correlation adjustment, and the complete acquisition contract remain unverified."
+    }
+  ],
+  "formal_tem_effect": {
+    "observation_contract_passed": false,
+    "effective_test_clusters_passed": false,
+    "prospective_power_passed": false
+  }
+}

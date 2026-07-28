@@ -1,0 +1,2236 @@
+{
+  "schema_version": "wp8-bc-aris-ip-digital-catalogue-v1",
+  "generated_at_utc": "2026-07-25T22:20:00.514759+00:00",
+  "source": {
+    "provider": "British Columbia Geological Survey",
+    "catalogue": "https://apps.nrs.gov.bc.ca/pub/aris",
+    "digital_data_policy": "https://www2.gov.bc.ca/gov/content/industry/mineral-exploration-mining/british-columbia-geological-survey/assessmentreports/downloaddigitaldata",
+    "terms": "https://www2.gov.bc.ca/gov/content/home/disclaimer"
+  },
+  "query": {
+    "general_work": "GEOP (Geophysical)",
+    "specific_work": "IPOL (Induced Polarization)",
+    "all_keywords": [
+      "Digital data ground geophysics"
+    ],
+    "response_payloads_opened": false,
+    "archive_members_listed": false,
+    "pdf_response_tables_opened": false
+  },
+  "catalogue_counts": {
+    "reported_records": 103,
+    "parsed_unique_records": 103,
+    "records_with_archive_endpoint": 102,
+    "head_verified_archive_endpoints": 104,
+    "head_verified_total_bytes": 45139610874
+  },
+  "gate_assessment": {
+    "classification_complete": false,
+    "reason": "ARIS work-type metadata does not distinguish TDIP from frequency-domain or spectral IP; archive contracts and survey line separation must be audited after freezing a training/test discovery design.",
+    "formal_clusters_added": 0,
+    "formal_gate_changed": false
+  },
+  "records": [
+    {
+      "report_number": "43141",
+      "property_name": "Mount Milligan Greenfield, Milly",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 05 34 123 57 17",
+      "general_work": "Drilling, Geophysical",
+      "off_confidential": "2026/07/01",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/43141",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/43141.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/43141Z.zip/",
+          "http_status": 200,
+          "content_length": 1014138,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=43141Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42711",
+      "property_name": "Poplar",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 55 48 127 03 37",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2026/01/17",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42711",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42711.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42711Z.zip/",
+          "http_status": 200,
+          "content_length": 6994525908,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42711Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42648",
+      "property_name": "Woodjam",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "52 17 01 121 19 16",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2025/09/17",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42648",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42648.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42648Z.zip/",
+          "http_status": 200,
+          "content_length": 1402865960,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42648Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42641",
+      "property_name": "Liberty",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "53 12 13 123 24 15",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2026/01/03",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42641",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42641.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42641Z.zip/",
+          "http_status": 200,
+          "content_length": 3910176567,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42641Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42616",
+      "property_name": "MPD Project",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 44 35 120 25 37",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2025/12/10",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42616",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42616.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42616Z.zip/",
+          "http_status": 200,
+          "content_length": 74762184,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42616Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42547",
+      "property_name": "Redgold",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "52 27 26 121 28 09",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2026/01/28",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42547",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42547.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42547Z.zip/",
+          "http_status": 200,
+          "content_length": 111868206,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42547Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42515",
+      "property_name": "Rip",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 49 57 126 44 33",
+      "general_work": "Drilling, Geological, Geophysical",
+      "off_confidential": "2025/12/23",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42515",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42515.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42515Z.zip/",
+          "http_status": 200,
+          "content_length": 38778484,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42515Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42506",
+      "property_name": "Copperview",
+      "mining_division": "Nicola",
+      "catalogue_location_dms": "49 50 28 120 28 30",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2026/01/12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42506",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42506.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42506Z.zip/",
+          "http_status": 200,
+          "content_length": 20730103,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42506Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42318",
+      "property_name": "Atsutla",
+      "mining_division": "Atlin",
+      "catalogue_location_dms": "59 16 39 131 17 17",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2025/09/12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42318",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42318.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42318Z.zip/",
+          "http_status": 200,
+          "content_length": 5029909882,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=42318Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "42199",
+      "property_name": "New Brenda",
+      "mining_division": "Nicola Similkameen",
+      "catalogue_location_dms": "49 49 49 120 09 18",
+      "general_work": "Geophysical",
+      "off_confidential": "2025/07/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/42199",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/42199.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/42199Z.zip/",
+          "http_status": 200,
+          "content_length": 5240011,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=42199Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41890",
+      "property_name": "Galore Creek",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "57 07 08 131 27 58",
+      "general_work": "Drilling, Geophysical, Physical",
+      "off_confidential": "2024/12/18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41890",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41890.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41890Z.zip/",
+          "http_status": 200,
+          "content_length": 116317702,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41890Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41841",
+      "property_name": "Mount Milligan Greenfield, Milly",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 05 34 123 57 17",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2024/11/28",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41841",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41841.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41841Z.zip/",
+          "http_status": 200,
+          "content_length": 579596,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41841Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41690",
+      "property_name": "Dolly Varden",
+      "mining_division": "Skeena",
+      "catalogue_location_dms": "55 42 36 129 31 12",
+      "general_work": "Drilling, Geophysical",
+      "off_confidential": "2024/10/23",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41690",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41690.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41690Z.zip/",
+          "http_status": 200,
+          "content_length": 767411,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41690Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41608",
+      "property_name": "RDP Project",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 29 49 126 46 57",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2025/01/20",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41608",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41608.pdf/"
+      ],
+      "archives": []
+    },
+    {
+      "report_number": "41597",
+      "property_name": "Woodjam; Redgold",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "52 17 01 121 19 16",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2024/09/13",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41597",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41597.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41597Z.zip/",
+          "http_status": 200,
+          "content_length": 1938813450,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41597Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41579",
+      "property_name": "MDP Project",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 44 35 120 23 37",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2024/09/14",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41579",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41579.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41579Z.zip/",
+          "http_status": 200,
+          "content_length": 244297097,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41579Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41516",
+      "property_name": "Eldorado/Robson",
+      "mining_division": "Lillooet",
+      "catalogue_location_dms": "51 01 28 122 53 23",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2025/01/31",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41516",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41516.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41516Z.zip/",
+          "http_status": 200,
+          "content_length": 22506282,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41516Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41502",
+      "property_name": "SP",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "52 25 56 121 38 22",
+      "general_work": "Geophysical",
+      "off_confidential": "2024/11/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41502",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41502.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41502Z.zip/",
+          "http_status": 200,
+          "content_length": 10137742,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41502Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41452",
+      "property_name": "Copley",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 44 11 124 48 19",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2024/10/03",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41452",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41452.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41452Z.zip/",
+          "http_status": 200,
+          "content_length": 387066456,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41452Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41150",
+      "property_name": "Max-Mount Milligan Greenfield",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 55 30 124 03 16",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2024/02/07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41150",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41150.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41150Z.zip/",
+          "http_status": 200,
+          "content_length": 25581744,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41150Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41144",
+      "property_name": "2xFred",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 50 37 124 22 31",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2024/02/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41144",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41144.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41144Z.zip/",
+          "http_status": 200,
+          "content_length": 455,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41144Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41076",
+      "property_name": "Eakin Creek",
+      "mining_division": "Kamloops",
+      "catalogue_location_dms": "51 29 21 120 18 42",
+      "general_work": "Geochemical, Geological, Geophysical",
+      "off_confidential": "2024/01/20",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41076",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41076.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41076Z.zip/",
+          "http_status": 200,
+          "content_length": 66291184,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=41076Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "41052",
+      "property_name": "Topley",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 35 47 126 16 04",
+      "general_work": "Drilling, Geophysical",
+      "off_confidential": "2024/01/19",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/41052",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/41052.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/41052Z.zip/",
+          "http_status": 200,
+          "content_length": 334301831,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=41052Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40958",
+      "property_name": "Lawyers Property",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "57 18 44 127 11 55",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2023/12/31",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40958",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40958.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40958Z.zip/",
+          "http_status": 200,
+          "content_length": 2178477743,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40958Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40945",
+      "property_name": "Telegraph Creek",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "57 32 14 131 28 08",
+      "general_work": "Geochemical, Geological, Geophysical",
+      "off_confidential": "2023/12/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40945",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40945.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40945Z.zip/",
+          "http_status": 200,
+          "content_length": 2288378352,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40945Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40939",
+      "property_name": "Lucas Lake",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 34 15 125 17 42",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2023/12/21",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40939",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40939.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40939Z.zip/",
+          "http_status": 200,
+          "content_length": 21864604,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40939Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40860",
+      "property_name": "MPD",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 44 35 120 25 37",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2023/12/08",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40860",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40860.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40860Z.zip/",
+          "http_status": 200,
+          "content_length": 49363259,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40860Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40831",
+      "property_name": "American Creek",
+      "mining_division": "Skeena",
+      "catalogue_location_dms": "56 08 30 129 56 00",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2023/11/28",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40831",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40831.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40831Z.zip/",
+          "http_status": 200,
+          "content_length": 640035736,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40831Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40803",
+      "property_name": "Goldrange",
+      "mining_division": "Clinton",
+      "catalogue_location_dms": "51 28 30 124 35 02",
+      "general_work": "Geophysical",
+      "off_confidential": "2023/11/10",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40803",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40803.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40803Z.zip/",
+          "http_status": 200,
+          "content_length": 30877863,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40803Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40791",
+      "property_name": "Latham",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "58 13 09 130 08 10",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2023/11/04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40791",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40791.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40791Z.zip/",
+          "http_status": 200,
+          "content_length": 36647863,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40791Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40787",
+      "property_name": "Wingdam",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "53 02 22 121 58 35",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2023/10/25",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40787",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40787.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40787Z.zip/",
+          "http_status": 200,
+          "content_length": 38104168,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40787Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40786",
+      "property_name": "Copper Keg",
+      "mining_division": "Kamloops",
+      "catalogue_location_dms": "50 44 00 121 10 00",
+      "general_work": "Geophysical",
+      "off_confidential": "2023/11/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40786",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40786.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40786Z.zip/",
+          "http_status": 200,
+          "content_length": 1587858384,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40786Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40419",
+      "property_name": "Scottie Gold",
+      "mining_division": "Skeena",
+      "catalogue_location_dms": "56 11 00 130 07 00",
+      "general_work": "Drilling, Geophysical",
+      "off_confidential": "2023/06/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40419",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40419.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40419Z.zip/",
+          "http_status": 200,
+          "content_length": 258149068,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40419Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40262",
+      "property_name": "Pathfinder",
+      "mining_division": "Greenwood",
+      "catalogue_location_dms": "49 11 26 118 25 24",
+      "general_work": "Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2023/02/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40262",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40262.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40262Z.zip/",
+          "http_status": 200,
+          "content_length": 914310408,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=40262Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40034",
+      "property_name": "Goathorn",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 36 00 127 03 00",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2022/12/20",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40034",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40034.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40034Z.zip/",
+          "http_status": 200,
+          "content_length": 52055719,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40034Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "40033",
+      "property_name": "Emerson",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 26 00 126 53 00",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2022/12/20",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/40033",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/40033.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/40033Z.zip/",
+          "http_status": 200,
+          "content_length": 82246173,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=40033Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39951",
+      "property_name": "Princeton",
+      "mining_division": "Osoyoos Similkameen",
+      "catalogue_location_dms": "49 09 41 120 28 00",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical, Prospecting",
+      "off_confidential": "2022/12/14",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39951",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39951.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39951Z.zip/",
+          "http_status": 200,
+          "content_length": 20134263,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39951Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39734",
+      "property_name": "Goldrange",
+      "mining_division": "Clinton",
+      "catalogue_location_dms": "51 29 45 124 36 26",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2023/02/07",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39734",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39734.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39734Z.zip/",
+          "http_status": 200,
+          "content_length": 34591139,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39734Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39689",
+      "property_name": "A-J",
+      "mining_division": "Greenwood",
+      "catalogue_location_dms": "49 03 47 118 33 32",
+      "general_work": "Geological, Geophysical",
+      "off_confidential": "2022/12/24",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39689",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39689.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39689Z.zip/",
+          "http_status": 200,
+          "content_length": 169899450,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=39689Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39568",
+      "property_name": "McConnell Creek",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 51 06 126 29 22",
+      "general_work": "Geophysical",
+      "off_confidential": "2022/10/24",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39568",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39568.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39568Z.zip/",
+          "http_status": 200,
+          "content_length": 10325833,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39568Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39489",
+      "property_name": "Lawyers",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "57 18 44 127 11 55",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2022/05/21",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39489",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39489.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39489Z.zip/",
+          "http_status": 200,
+          "content_length": 43913308,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39489Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39397",
+      "property_name": "Scottie Mine",
+      "mining_division": "Skeena",
+      "catalogue_location_dms": "56 10 59 130 07 07",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Prospecting",
+      "off_confidential": "2022/02/23",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39397",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39397.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39397Z.zip/",
+          "http_status": 200,
+          "content_length": 1186875428,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=39397Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39336",
+      "property_name": "Kliyul",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 30 35 126 09 10",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2022/02/22",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39336",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39336.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39336Z.zip/",
+          "http_status": 200,
+          "content_length": 12116279,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39336Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39054",
+      "property_name": "CR",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 17 46 126 49 54",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2021/04/15",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39054",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39054.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39054Z.zip/",
+          "http_status": 200,
+          "content_length": 65176715,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39054Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "39002",
+      "property_name": "Whipsaw Creek",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "general_work": "Geochemical, Geological, Geophysical",
+      "off_confidential": "2021/02/15",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/39002",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/39002.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/39002Z.zip/",
+          "http_status": 200,
+          "content_length": 85589925,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=39002Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "38192",
+      "property_name": "Whipsaw Creek",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2020/02/08",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/38192",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/38192.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/38192Z.zip/",
+          "http_status": 200,
+          "content_length": 226427,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=38192Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "38070",
+      "property_name": "Spius",
+      "mining_division": "Nicola New Westminster",
+      "catalogue_location_dms": "49 55 05 121 16 06",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2019/12/14",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/38070",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/38070.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/38070Z.zip/",
+          "http_status": 200,
+          "content_length": 676960,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=38070Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "37565",
+      "property_name": "Pass",
+      "mining_division": "Nelson",
+      "catalogue_location_dms": "49 18 58 117 27 41",
+      "general_work": "Geochemical, Geological, Geophysical, Physical, Prospecting",
+      "off_confidential": "2019/05/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37565",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37565.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37565Z.zip/",
+          "http_status": 200,
+          "content_length": 204078378,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=37565Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "37463",
+      "property_name": "Whipsaw Creek",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2019/02/13",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37463",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37463.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37463Z.zip/",
+          "http_status": 200,
+          "content_length": 652579,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=37463Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "37226",
+      "property_name": "Melba",
+      "mining_division": "Kamloops",
+      "catalogue_location_dms": "50 30 29 120 31 34",
+      "general_work": "Geophysical",
+      "off_confidential": "2018/10/30",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37226",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37226.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37226Z.zip/",
+          "http_status": 200,
+          "content_length": 2746304,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=37226Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "37059",
+      "property_name": "Tatogga",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "57 43 59 130 10 07",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2018/08/13",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/37059",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/37059.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/37059Z.zip/",
+          "http_status": 200,
+          "content_length": 8471576303,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=37059Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "36911",
+      "property_name": "OK (Okeover)",
+      "mining_division": "Vancouver",
+      "catalogue_location_dms": "50 02 11 124 39 12",
+      "general_work": "Geophysical",
+      "off_confidential": "2018/12/09",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36911",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36911.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36911Z.zip/",
+          "http_status": 200,
+          "content_length": 1020013,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36911Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "36790",
+      "property_name": "Bowser",
+      "mining_division": "Skeena",
+      "catalogue_location_dms": "56 24 30 129 59 25",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2018/04/04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36790",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36790.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36790Z.zip/",
+          "http_status": 200,
+          "content_length": 228161,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36790Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "36711",
+      "property_name": "Whipsaw Creek",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 15 59 120 45 04",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2018/02/11",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36711",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36711.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36711Z.zip/",
+          "http_status": 200,
+          "content_length": 18208,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36711Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "36396",
+      "property_name": "Windfall Hills",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 37 00 125 59 06",
+      "general_work": "Geophysical",
+      "off_confidential": "2017/09/22",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36396",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36396.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36396Z.zip/",
+          "http_status": 200,
+          "content_length": 2044221,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36396Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "36109",
+      "property_name": "Bluff",
+      "mining_division": "Clinton",
+      "catalogue_location_dms": "51 45 23 124 40 56",
+      "general_work": "Geochemical, Geophysical, Physical",
+      "off_confidential": "2017/02/28",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/36109",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/36109.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/36109Z.zip/",
+          "http_status": 200,
+          "content_length": 10954526,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=36109Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35978",
+      "property_name": "Kliyul",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 30 00 126 09 12",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2017/05/17",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35978",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978A.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978B.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978C.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35978Z.zip/",
+          "http_status": 200,
+          "content_length": 7632407,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35978Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35967",
+      "property_name": "Schaft Creek",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "57 21 54 130 59 37",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2017/04/04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35967",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35967.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35967Z.zip/",
+          "http_status": 200,
+          "content_length": 1346289,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35967Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35836",
+      "property_name": "Chuchi",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 15 25 124 33 00",
+      "general_work": "Geological, Geophysical",
+      "off_confidential": "2016/12/14",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35836",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35836.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35836Z.zip/",
+          "http_status": 200,
+          "content_length": 13472544,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35836Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35515",
+      "property_name": "Gulo Gulo",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "54 27 03 122 57 33",
+      "general_work": "Geochemical, Geophysical, Prospecting",
+      "off_confidential": "2016/04/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35515",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35515.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35515Z.zip/",
+          "http_status": 200,
+          "content_length": 438896789,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35515Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35447",
+      "property_name": "Brett",
+      "mining_division": "Vernon",
+      "catalogue_location_dms": "50 14 01 119 39 42",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2016/03/04",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35447",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35447.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35447Z.zip/",
+          "http_status": 200,
+          "content_length": 29764379,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35447Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35419",
+      "property_name": "CR",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 17 46 126 49 54",
+      "general_work": "Geochemical, Geological, Geophysical",
+      "off_confidential": "2016/02/19",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35419",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35419.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35419Z.zip/",
+          "http_status": 200,
+          "content_length": 2942381,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35419Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35304",
+      "property_name": "Eaglehead",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "58 28 26 129 04 25",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2016/03/05",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35304",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304A.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304B.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304X.zip/",
+          "http_status": 200,
+          "content_length": 592689286,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35304X.zip"
+        },
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304Y.zip/",
+          "http_status": 200,
+          "content_length": 603433785,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35304Y.zip"
+        },
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35304Z.zip/",
+          "http_status": 200,
+          "content_length": 124216317,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=35304Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "35038",
+      "property_name": "McBride",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "58 12 46 129 17 18",
+      "general_work": "Geochemical, Geological, Geophysical",
+      "off_confidential": "2015/12/09",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/35038",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/35038.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/35038Z.zip/",
+          "http_status": 200,
+          "content_length": 746262,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=35038Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "34932",
+      "property_name": "Haloba Heath North and Falcon",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 16 00 125 05 06",
+      "general_work": "Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2015/07/21",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/34932",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34932.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/34932Z.zip/",
+          "http_status": 200,
+          "content_length": 8508902,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=34932Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "34890",
+      "property_name": "Kliyul",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 30 00 126 09 06",
+      "general_work": "Geochemical, Geological, Geophysical, Prospecting",
+      "off_confidential": "2015/08/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/34890",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34890.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/34890Z.zip/",
+          "http_status": 200,
+          "content_length": 83198731,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=34890Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "34512",
+      "property_name": "Ootsa",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 40 02 127 03 07",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2014/10/16",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/34512",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512A.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512B.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512C.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512D.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512E.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512F.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512G.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512H.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/34512Z.zip/",
+          "http_status": 200,
+          "content_length": 6758352,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=34512Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33816",
+      "property_name": "Rand",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "52 15 47 121 19 25",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2014/03/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33816",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33816.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33816Z.zip/",
+          "http_status": 200,
+          "content_length": 7943724,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=33816Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33815",
+      "property_name": "GJ-Kinaskan",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "57 39 16 130 15 27",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2014/03/28",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33815",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33815.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33815Z.zip/",
+          "http_status": 200,
+          "content_length": 38184945,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=33815Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33804",
+      "property_name": "Turkey Mountain",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 57 25 126 27 37",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2014/02/09",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33804",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804c.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33804Z.zip/",
+          "http_status": 200,
+          "content_length": 462,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=33804Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33707",
+      "property_name": "Flute and Lennac",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 47 34 126 20 30",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2013/11/30",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33707",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707c.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707d.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707e.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707f.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707g.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33707Z.zip/",
+          "http_status": 200,
+          "content_length": 408422062,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33707Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33626",
+      "property_name": "Tulameen",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 19 59 120 40 04",
+      "general_work": "Geochemical, Geological, Geophysical",
+      "off_confidential": "2013/03/01",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33626",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626c.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626d.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626e.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626f.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33626Z.zip/",
+          "http_status": 200,
+          "content_length": 281776209,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33626Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33430",
+      "property_name": "Jesse Creek",
+      "mining_division": "Nicola",
+      "catalogue_location_dms": "50 10 30 120 46 34",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2013/11/26",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33430",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33430.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33430Z.zip/",
+          "http_status": 200,
+          "content_length": 125281380,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33430Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33329",
+      "property_name": "Elk",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 50 00 120 19 04",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2013/07/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33329",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33329a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33329b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33329Z.zip/",
+          "http_status": 200,
+          "content_length": 507606001,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33329Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "33031",
+      "property_name": "Kliyul",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 30 00 126 09 06",
+      "general_work": "Geochemical, Geophysical, Physical",
+      "off_confidential": "2013/03/21",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/33031",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/33031.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/33031Z.zip/",
+          "http_status": 200,
+          "content_length": 124217061,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=33031Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "32722",
+      "property_name": "Rupert",
+      "mining_division": "Nanaimo",
+      "catalogue_location_dms": "50 34 50 127 18 45",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2012/11/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32722",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32722.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32722Z.zip/",
+          "http_status": 200,
+          "content_length": 19359594,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=32722Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "32566",
+      "property_name": "Peaks",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "52 16 40 121 43 25",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2012/11/18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32566",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32566.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32566Z.zip/",
+          "http_status": 200,
+          "content_length": 58707014,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=32566Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "32370",
+      "property_name": "Getty Highland Valley",
+      "mining_division": "Kamloops",
+      "catalogue_location_dms": "50 35 08 120 58 22",
+      "general_work": "Geophysical",
+      "off_confidential": "2012/07/12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32370",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32370.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32370Z.zip/",
+          "http_status": 200,
+          "content_length": 372822915,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=32370Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "32057",
+      "property_name": "Red Lake",
+      "mining_division": "Kamloops",
+      "catalogue_location_dms": "50 51 12 120 46 05",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2011/11/21",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/32057",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/32057.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/32057Z.zip/",
+          "http_status": 200,
+          "content_length": 9892272,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=32057Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "31878",
+      "property_name": "Sphinx",
+      "mining_division": "Fort Steele Nelson",
+      "catalogue_location_dms": "49 38 00 116 40 04",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2011/12/02",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31878",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31878.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31878Z.zip/",
+          "http_status": 200,
+          "content_length": 451038733,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=31878Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "31453",
+      "property_name": "Cole Creek",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 31 36 127 14 14",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2010/12/30",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31453",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31453.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31453Z.zip/",
+          "http_status": 200,
+          "content_length": 116234308,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=31453Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "31363",
+      "property_name": "TAS",
+      "mining_division": "Similkameen",
+      "catalogue_location_dms": "49 17 42 120 28 56",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2011/01/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31363",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31363.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31363Z.zip/",
+          "http_status": 200,
+          "content_length": 65012998,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=31363Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "31339",
+      "property_name": "Thor",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 47 41 126 40 18",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2011/01/05",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31339",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31339.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31339Z.zip/",
+          "http_status": 200,
+          "content_length": 65522423,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=31339Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "31203",
+      "property_name": "Holy Cross",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 47 44 124 57 56",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2010/10/05",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/31203",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/31203.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/31203Z.zip/",
+          "http_status": 200,
+          "content_length": 14600327,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=31203Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30986",
+      "property_name": "Babine",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 17 00 126 14 06",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2010/03/31",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30986",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30986.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30986Z.zip/",
+          "http_status": 200,
+          "content_length": 39610035,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30986Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30749",
+      "property_name": "Newmont Lake",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "56 51 59 130 55 07",
+      "general_work": "Drilling, Geochemical, Geophysical",
+      "off_confidential": "2010/04/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30749",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30749.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30749Z.zip/",
+          "http_status": 200,
+          "content_length": 235452820,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=30749Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30748",
+      "property_name": "Trek",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "57 01 47 131 17 59",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2010/04/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30748",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30748.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30748Z.zip/",
+          "http_status": 200,
+          "content_length": 75478273,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30748Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30554",
+      "property_name": "Brewster Lake",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 24 15 124 34 18",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2009/08/20",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30554",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30554.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30554Z.zip/",
+          "http_status": 200,
+          "content_length": 24609505,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30554Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30527",
+      "property_name": "Nechako",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 30 47 125 40 02",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2009/09/18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30527",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30527.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30527Z.zip/",
+          "http_status": 200,
+          "content_length": 46059088,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30527Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30472",
+      "property_name": "Slocan",
+      "mining_division": "Slocan",
+      "catalogue_location_dms": "49 35 29 117 43 51",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2009/12/11",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30472",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30472.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30472Z.zip/",
+          "http_status": 200,
+          "content_length": 521807,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30472Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30366",
+      "property_name": "Woodjam",
+      "mining_division": "Cariboo",
+      "catalogue_location_dms": "52 14 38 121 23 04",
+      "general_work": "Geophysical",
+      "off_confidential": "2009/09/12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30366",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30366.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30366Z.zip/",
+          "http_status": 200,
+          "content_length": 4408235,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30366Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30364",
+      "property_name": "Nechako",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "53 34 48 125 42 10",
+      "general_work": "Drilling, Geochemical, Geophysical, Physical",
+      "off_confidential": "2009/07/24",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30364",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30364a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30364b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30364Z.zip/",
+          "http_status": 200,
+          "content_length": 4519109,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30364Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "30079",
+      "property_name": "Chilanko",
+      "mining_division": "Clinton",
+      "catalogue_location_dms": "52 03 00 124 37 06",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2009/03/15",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/30079",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30079a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/30079b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/30079Z.zip/",
+          "http_status": 200,
+          "content_length": 99782936,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=30079Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "29935",
+      "property_name": "Lorraine-Jajay",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 54 52 125 24 46",
+      "general_work": "Geochemical, Geophysical",
+      "off_confidential": "2009/03/29",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29935",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29935.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29935Z.zip/",
+          "http_status": 200,
+          "content_length": 28735435,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29935Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "29855",
+      "property_name": "Nak",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 16 41 126 14 13",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2008/12/31",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29855",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29855.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29855Z.zip/",
+          "http_status": 200,
+          "content_length": 50705602,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29855Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "29849",
+      "property_name": "Fran",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 00 35 124 24 01",
+      "general_work": "Geophysical",
+      "off_confidential": "2009/02/28",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29849",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29849.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29849Z.zip/",
+          "http_status": 200,
+          "content_length": 69780324,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29849Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "29734",
+      "property_name": "Kleanza Mountain",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "54 34 03 128 11 39",
+      "general_work": "Geochemical, Geophysical, Physical",
+      "off_confidential": "2009/01/31",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/29734",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/29734.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/29734Z.zip/",
+          "http_status": 200,
+          "content_length": 16035054,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=29734Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "28944",
+      "property_name": "Jan-Tam-Misty",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "55 55 13 125 31 03",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2007/12/18",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28944",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944c.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944d.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28944Z.zip/",
+          "http_status": 200,
+          "content_length": 262447113,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=28944Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "28607",
+      "property_name": "Gold King",
+      "mining_division": "Lillooet",
+      "catalogue_location_dms": "50 31 03 122 53 46",
+      "general_work": "Geophysical, Physical",
+      "off_confidential": "2007/10/06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28607",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28607.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28607Z.zip/",
+          "http_status": 200,
+          "content_length": 739528,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=28607Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "28151",
+      "property_name": "Thorn",
+      "mining_division": "Atlin",
+      "catalogue_location_dms": "58 31 59 132 47 07",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2006/12/06",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28151",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28151a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28151b.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28151Z.zip/",
+          "http_status": 200,
+          "content_length": 151997813,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=28151Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "28004",
+      "property_name": "Williams",
+      "mining_division": "Liard",
+      "catalogue_location_dms": "57 47 16 127 47 06",
+      "general_work": "Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2006/12/12",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/28004",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/28004.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/28004Z.zip/",
+          "http_status": 200,
+          "content_length": 112622571,
+          "content_type": "application/octet-stream",
+          "content_disposition": "attachment;filename=28004Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "27626",
+      "property_name": "IXL",
+      "mining_division": "Greenwood",
+      "catalogue_location_dms": "49 32 30 118 24 49",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical, Physical",
+      "off_confidential": "2005/10/27",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/27626",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626a.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626b.pdf/",
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626c.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/27626Z.zip/",
+          "http_status": 200,
+          "content_length": 894003,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=27626Z.zip"
+        }
+      ]
+    },
+    {
+      "report_number": "27622",
+      "property_name": "Red",
+      "mining_division": "Omineca",
+      "catalogue_location_dms": "56 43 59 126 20 07",
+      "general_work": "Drilling, Geochemical, Geological, Geophysical",
+      "off_confidential": "2005/11/26",
+      "detail_url": "https://apps.nrs.gov.bc.ca/pub/aris/Detail/27622",
+      "pdf_urls": [
+        "https://apps.nrs.gov.bc.ca/pub/aris/Report/27622.pdf/"
+      ],
+      "archives": [
+        {
+          "url": "https://apps.nrs.gov.bc.ca/pub/aris/Report/27622Z.zip/",
+          "http_status": 200,
+          "content_length": 97236618,
+          "content_type": "application/x-zip-compressed",
+          "content_disposition": "inline; filename=27622Z.zip"
+        }
+      ]
+    }
+  ]
+}

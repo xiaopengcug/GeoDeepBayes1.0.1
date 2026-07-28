@@ -1,0 +1,85 @@
+{
+  "schema_version": "wp8-usgs-aem-2026-unexposed-metadata-audit-v1",
+  "audit_mode": "response_blind",
+  "response_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "candidates": [
+    {
+      "doi": "10.5066/P18JCA5M",
+      "name": "Western Mojave Desert SkyTEM312, 2024",
+      "line_records": 146,
+      "unique_line_ids": 146,
+      "response_payload": {
+        "name": "CA_WMojaveAEM_rawdata.nc",
+        "bytes": 2989043342,
+        "downloaded": false
+      },
+      "metadata_contract": {
+        "coordinates": true,
+        "line_identity": true,
+        "transmitter_current": true,
+        "exact_waveform": true,
+        "gate_times": true,
+        "response_components": true,
+        "per_observation_uncertainty": true
+      }
+    },
+    {
+      "doi": "10.5066/P14TP9LW",
+      "name": "Coalinga and Pyramid Hills SkyTEM312, 2022",
+      "line_records": 236,
+      "unique_line_ids": 236,
+      "response_payload": {
+        "name": "CoalingaCA2022.nc",
+        "bytes": 1344404553,
+        "downloaded": false
+      },
+      "metadata_contract": {
+        "coordinates": true,
+        "line_identity": true,
+        "transmitter_current": true,
+        "exact_waveform": true,
+        "gate_times": true,
+        "response_components": true,
+        "per_observation_uncertainty": true
+      }
+    }
+  ],
+  "combined_geometry": {
+    "raw_line_records": 382,
+    "unique_survey_line_pairs": 382,
+    "cluster_merge_rule": "Line-centre vertices separated by no more than the frozen correlation range are joined; each connected component is one cluster.",
+    "frozen_training_only_correlation_range_km": 3.51,
+    "frozen_range_source": "usgs-aem-training-response-diagnostics-v1.json: maximum uncensored SkyTEM training-only fitted range",
+    "effective_cluster_upper_bound": 44,
+    "sensitivity_component_counts": {
+      "0.35": 263,
+      "1.72": 83,
+      "3.51": 44,
+      "3.82": 40,
+      "7.0": 12,
+      "15.5": 3,
+      "55.0": 2
+    },
+    "required_test_clusters": 223,
+    "passes_cluster_gate": false
+  },
+  "decision": "abort_before_response_payload",
+  "reason": "The two surveys provide 382 raw line records but only 44 correlation-merged components at the frozen 3.51-km training-only range, below 223; downloading 4.33 GB of response payload cannot repair the cluster or prospective-power gates.",
+  "formal_tem_effect": {
+    "observation_contract_passed": true,
+    "effective_test_clusters_passed": false,
+    "prospective_power_passed": false
+  },
+  "metadata_sha256": {
+    "CA_WestMojaveAEM.xml": "30780b698a25e065a6587819f547ea3c3110dc90dba660bdac6f2c2c82162f94",
+    "CA_WestMojaveAEM_Flightlines.zip": "674e704ddb0c1f5d9b802ac59540be095e7d21b9b82b25ca5138693bec55f552",
+    "CA_WMojaveAEM_rawdata.ncml": "713c9184ce460bd7ad706b75b8c57316dfb969ee30614ea3c39c3c5ff8bb0be0",
+    "CoalingaCA2022.ncml": "c1cb14c1fd6dbe214fbe9fdcdc2ef6d1583711c3147cbf1d79735afde4aebf55",
+    "CoalingaCA2022.xml": "9a2927f16c9083126edde27e7c7295e32a29cf31d0612f561f18e1fd32715531",
+    "CoalingaCA2022_flightlines.dbf": "cfc7f1d443bbe1cb976448ad9caeab0718a771f81d0c332e26c25c69ea2f6611",
+    "CoalingaCA2022_flightlines.shp": "b551bc95c0d680972d147212d6313adb7b2636fddd4e74e1552d8f4d5ef0fc6a",
+    "CoalingaCA2022_flightlines.shx": "0470b89f5ad15991fb9ebf2882941b590ccffc71d6bb11c6f30b7df679f568a6"
+  }
+}
