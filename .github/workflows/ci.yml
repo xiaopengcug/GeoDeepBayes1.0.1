@@ -13,10 +13,6 @@ permissions:
   contents: read
 
 env:
-  MKL_NUM_THREADS: "1"
-  NUMEXPR_NUM_THREADS: "1"
-  OMP_NUM_THREADS: "1"
-  OPENBLAS_NUM_THREADS: "1"
   PYTHON_VERSION: "3.11.15"
   PYTHONUTF8: "1"
   UV_VERSION: "0.11.29"
@@ -98,6 +94,11 @@ jobs:
 
       - name: Run WP7 signed evidence gate
         shell: pwsh
+        env:
+          MKL_NUM_THREADS: "1"
+          NUMEXPR_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+          OPENBLAS_NUM_THREADS: "1"
         run: |
           & "$env:WP6_ROOT/validate-wp7.ps1" `
             -SyntheticRun "$env:WP6_ROOT/validation/wp7/versions/synthetic-block-v6-20260724" `
