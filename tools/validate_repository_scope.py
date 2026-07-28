@@ -48,6 +48,11 @@ RESEARCH_RELATIVE = (
     "_bmad-output/planning-artifacts/research/"
     "贝叶斯思想与重磁电电磁深度融合技术体系"
 )
+CONTROLLED_DO27_ARCHIVE = (
+    "/_bmad-output/planning-artifacts/research/open-data/mining_geophysics/"
+    "Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/"
+    "simpeg-research_Astic-2020-JointInversion-1.0.0.zip"
+)
 
 
 def _active_version_prefixes(root: Path) -> tuple[str, ...]:
@@ -82,6 +87,8 @@ def permitted_forbidden_path(
     if normalized.endswith(
         "/research/open-data/00_catalog/open_geophysics_data_manifest.json"
     ):
+        return True
+    if normalized == CONTROLLED_DO27_ARCHIVE:
         return True
     return normalized.startswith(
         (*active_version_prefixes, *CONTROLLED_WP7_VERSION_PREFIXES)

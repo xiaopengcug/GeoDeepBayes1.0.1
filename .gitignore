@@ -27,6 +27,10 @@ _bmad-output/planning-artifacts/research/open-data/*
 !_bmad-output/planning-artifacts/research/open-data/00_catalog/
 _bmad-output/planning-artifacts/research/open-data/00_catalog/*
 !_bmad-output/planning-artifacts/research/open-data/00_catalog/open_geophysics_data_manifest.json
+!_bmad-output/planning-artifacts/research/open-data/mining_geophysics/
+_bmad-output/planning-artifacts/research/open-data/mining_geophysics/*
+!_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/
+_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/*
 **/validation/**/work/
 **/validation/**/source/
 **/validation/**/versions/
@@ -63,6 +67,7 @@ _bmad-output/planning-artifacts/research/open-data/00_catalog/*
 
 # 通用大型二进制与临时文件
 *.zip
+!_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/simpeg-research_Astic-2020-JointInversion-1.0.0.zip
 *.7z
 *.tar
 *.gz

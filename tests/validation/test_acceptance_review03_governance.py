@@ -324,6 +324,9 @@ def test_repository_asset_ignore_policy():
         "validation/wp8/synthetic/supplements-v1/wfem.npz",
     ]
     required = [
+        "_bmad-output/planning-artifacts/research/open-data/mining_geophysics/"
+        "Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/"
+        "simpeg-research_Astic-2020-JointInversion-1.0.0.zip",
         "validation/wp8/evidence/feasibility-v1/wp8-synthetic-completion-v1.json",
         "validation/wp9/validate_wp9.py",
     ]
@@ -472,6 +475,7 @@ def test_persistence_uses_dynamic_active_versions_and_wp8_asset_inventory():
     )
     required_assets = set(PERSISTENCE._required_wp8_repository_assets())
     controls = set(PERSISTENCE._control_inputs({"paths": []}))
+    assert PERSISTENCE.WP7_DO27_ARCHIVE in controls
     assert required_assets <= controls
     assert {
         "validation/wp8/field/preregistration-scaffold-v1.json",
@@ -524,6 +528,15 @@ def test_repository_scope_allows_only_controlled_wp7_versions():
     )
     assert permitted_forbidden_path(prefix + "do27-v4-20260724/raw-numerics.npz")
     assert not permitted_forbidden_path(prefix + "unreviewed-v99/raw.npz")
+    assert permitted_forbidden_path(
+        "/_bmad-output/planning-artifacts/research/open-data/mining_geophysics/"
+        "Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/"
+        "simpeg-research_Astic-2020-JointInversion-1.0.0.zip"
+    )
+    assert not permitted_forbidden_path(
+        "/_bmad-output/planning-artifacts/research/open-data/mining_geophysics/"
+        "unreviewed.zip"
+    )
     assert not permitted_forbidden_path("/validation/wp8/versions/raw.npz")
 
 

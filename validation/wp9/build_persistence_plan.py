@@ -55,6 +55,11 @@ RESEARCH_RELATIVE = (
     "_bmad-output/planning-artifacts/research/"
     "贝叶斯思想与重磁电电磁深度融合技术体系"
 )
+WP7_DO27_ARCHIVE = (
+    "_bmad-output/planning-artifacts/research/open-data/mining_geophysics/"
+    "Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/"
+    "simpeg-research_Astic-2020-JointInversion-1.0.0.zip"
+)
 
 # These are execution/control inputs beyond the evidence members already
 # enumerated by manifest-v1.json.  They do not pretend to be a full remote
@@ -70,6 +75,7 @@ CONTROL_INPUTS = (
     "validation/wp8/generate_synthetic_supplements.py",
     "validation/wp8/validate_wp8.py",
     "validation/wp9/build_persistence_plan.py",
+    WP7_DO27_ARCHIVE,
     "_bmad-output/implementation-artifacts/spec-persist-wp8-wp9-remote-attestation.md",
     "_bmad-output/implementation-artifacts/spec-rebuild-locked-reproducible-environment.md",
     "_bmad-output/implementation-artifacts/spec-verify-and-remediate-acceptance-review03.md",
