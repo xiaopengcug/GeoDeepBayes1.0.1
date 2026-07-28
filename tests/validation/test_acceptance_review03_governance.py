@@ -230,7 +230,7 @@ def test_wp5_corrected_pointer_requires_new_signoff_root():
     assert "机械改写旧签核不构成确认" in review
 
 
-def test_chapter05_correction_matches_file_and_manifest():
+def test_chapter05_correction_matches_file_manifest_and_acceptance_review():
     expected = sha256(RESEARCH / "05-工程化落地与效率优化方案.md")
     manifest = (RESEARCH / "manifest.yaml").read_text(encoding="utf-8")
     registered = re.search(
@@ -238,11 +238,9 @@ def test_chapter05_correction_matches_file_and_manifest():
         manifest,
     )
     assert registered and registered.group(1) == expected
-    log = (RESEARCH / "修改计划03-执行日志.md").read_text(encoding="utf-8")
-    correction = log.split("## 变更批准", maxsplit=1)[0]
+    correction = (RESEARCH / "验收审查意见03.md").read_text(encoding="utf-8")
     assert expected in correction
-    assert "bf4565da548d69a3cf4e5fb0a6970831619c957428244c2edf44a8f34b96fbd2" in correction
-    assert "已由本勘误废止" in correction
+    assert "旧 `bf4565da…` 仅为失效历史记录" in correction
 
 
 def test_published_status_keeps_release_blocked_and_ai_boundary():
