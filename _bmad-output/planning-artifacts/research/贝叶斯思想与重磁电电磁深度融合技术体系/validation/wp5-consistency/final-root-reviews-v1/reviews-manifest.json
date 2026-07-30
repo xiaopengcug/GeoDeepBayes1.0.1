@@ -1,0 +1,79 @@
+{
+  "schema": "wp5-final-root-reviews-manifest-v1",
+  "authorization": {
+    "spec_path": "_bmad-output/implementation-artifacts/spec-fix-wp5-final-gate.md",
+    "hash_basis": "utf8-lf-normalized-inclusive-frozen-block",
+    "frozen_block_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+    "amendment_hash_basis": "utf8-lf-normalized-inclusive-approved-scope-amendment-round-2",
+    "scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+    "approval_effect": "authorizes-round-2-remediation-and-six-automated-ai-role-reviews-only"
+  },
+  "candidate": {
+    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25"
+  },
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680",
+    "total_fixture_count": 300
+  },
+  "implementation_evidence": {
+    "ci_workflow_path": ".github/workflows/ci.yml",
+    "ci_workflow_sha256": "7fabc517901f43a7e82f17b013bb2e149741642e6e39d2ebdfebe34e0b5b896e",
+    "remote_required_gates": "pending-until-committed-clean-checkout-run"
+  },
+  "exact_roles": [
+    "主编",
+    "技术编辑",
+    "地球物理复核",
+    "贝叶斯/UQ复核",
+    "算法数值复核",
+    "工程架构复核"
+  ],
+  "reviews": [
+    {
+      "review_id": "WP5-FINAL-ROOT-MAIN-EDITOR",
+      "role": "主编",
+      "path": "main-editor.json",
+      "sha256": "386a1948b68a4f8c7766be47c781c606dbd5cb619211f2af144787a3382fc2d7",
+      "decision": "Approved"
+    },
+    {
+      "review_id": "WP5-FINAL-ROOT-TECHNICAL-EDITOR",
+      "role": "技术编辑",
+      "path": "technical-editor.json",
+      "sha256": "be3f2313805ac1b6d8cab897d081a386c40ffb342b557fb8f7f67776fbd09117",
+      "decision": "Approved"
+    },
+    {
+      "review_id": "WP5-FINAL-ROOT-GEOPHYSICS",
+      "role": "地球物理复核",
+      "path": "geophysics-review.json",
+      "sha256": "54225893e30681300c44e106883ac601f8028bd06c170a6dd9404559ef3a76e8",
+      "decision": "Approved"
+    },
+    {
+      "review_id": "WP5-FINAL-ROOT-BAYES-UQ",
+      "role": "贝叶斯/UQ复核",
+      "path": "bayes-uq-review.json",
+      "sha256": "66d591be620d12888a0bfe69f57a378b07ec720899eb5a7f35901aa6be427a76",
+      "decision": "Approved"
+    },
+    {
+      "review_id": "WP5-FINAL-ROOT-NUMERICAL",
+      "role": "算法数值复核",
+      "path": "numerical-review.json",
+      "sha256": "36f3fd7364bd3fddd48b95045608440d33b9fabc3b78d102f775955c95bf8232",
+      "decision": "Approved"
+    },
+    {
+      "review_id": "WP5-FINAL-ROOT-ARCHITECTURE",
+      "role": "工程架构复核",
+      "path": "architecture-review.json",
+      "sha256": "0cff56c5ef91bc4b621a0cc524f1a5b64bfb5524ac6ffd9681194044c89f9e24",
+      "decision": "Approved"
+    }
+  ]
+}

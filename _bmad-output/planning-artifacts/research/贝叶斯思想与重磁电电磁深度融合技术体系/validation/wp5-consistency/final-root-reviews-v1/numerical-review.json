@@ -1,0 +1,35 @@
+{
+  "schema": "wp5-final-root-review-v1",
+  "review_id": "WP5-FINAL-ROOT-NUMERICAL",
+  "role": "算法数值复核",
+  "reviewer_identity": "Codex automated AI / 算法数值复核",
+  "identity_type": "automated-ai-final-root-review",
+  "decision": "Approved",
+  "reviewed_at_utc": "2026-07-30T22:03:56Z",
+  "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+  "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+  "candidate": {
+    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25"
+  },
+  "review_scope": "numerical inference, diagnostics, POD, and RJMCMC boundaries",
+  "checks": [
+    "Confirmed the thin-SVD proof uses complete orthogonal extensions and the four-block Frobenius decomposition without deleting orthogonal-complement terms.",
+    "Confirmed the Green acceptance ratio contains target, forward and reverse move-selection, auxiliary-density, dimension-matching, Jacobian, boundary, and adaptation factors.",
+    "Confirmed numerical release remains conditional on the joint rank-normalized/folded R-hat, bulk/tail ESS, relative MCSE, per-chain mode-access, and failed-replicate diagnostics rather than acceptance rate or PPC alone.",
+    "Recomputed the complete-span hashes and metadata for ledger records CLM-DOC-03-0005 and CLM-DOC-03-0007.",
+    "Confirmed formula-specific POD and RJMCMC composite assertions execute before the general ledger hash check and retain unique rejection oracles.",
+    "Confirmed FXT-LINEAGE-MIGRATION-103 and 104 use the dedicated science-pod and science-rjmcmc mutations and match their immutable oracles.",
+    "Confirmed FXT-LINEAGE-MIGRATION-154 still rejects the rank-deficient economic-SVD mutation, so the new POD guard does not replace the prior constraint.",
+    "Confirmed the three numerical oracles and their lineage-migration stage evidence bind the exact 29-member root, dual active pointers, v3 canonical cases, and current release envelope."
+  ],
+  "findings": [],
+  "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680",
+    "total_fixture_count": 300
+  }
+}

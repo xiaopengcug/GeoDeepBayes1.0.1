@@ -1,0 +1,211 @@
+{
+  "schema": "wp5-ledger-text-migration-v1",
+  "source_ledger_sha256": "11aa2d36135eea81dd51675c18d0879829b86f53997bfab7f44d61a85b38868b",
+  "replacements": 7,
+  "tombstones": 0,
+  "entries": [
+    {
+      "id": "CLM-DOC-03-0038",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0038",
+        "old_text_sha256": "64f74f39aa3f61df6f1e9c85a59b28d5f10b6157978f9a1f1bdeb33e5d23af14",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 957,
+        "span_end": 957
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0038",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 957,
+        "span_end": 957,
+        "text_sha256": "2fddebd248aee6fd305a4a103ce784cdd73b2c97c791da1472a21f64168f01c2",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Remove unbound communication benchmark numbers and retain a Planned empty benchmark contract."
+    },
+    {
+      "id": "CLM-DOC-03-0039",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0039",
+        "old_text_sha256": "d1d54b7b5c924db3fc285a040b6fb2c4dde3423e33dff6d7da330b2c0291afee",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 960,
+        "span_end": 960
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0039",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 960,
+        "span_end": 960,
+        "text_sha256": "376cc52f780d58c11bc64a18263c178298d106515be4cc0606aa910b734873b1",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Remove unbound communication benchmark numbers and retain a Planned empty benchmark contract."
+    },
+    {
+      "id": "CLM-DOC-03-0040",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0040",
+        "old_text_sha256": "8c73661adb5db8923b0274a8d178247916a2434194fd29661b64cdce141adf8f",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 961,
+        "span_end": 961
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0040",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 961,
+        "span_end": 961,
+        "text_sha256": "fc0dfc51ab9e2e84091c50427024315e763611fe57a565e613d38a53b2f929ba",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Remove unbound communication benchmark numbers and retain a Planned empty benchmark contract."
+    },
+    {
+      "id": "CLM-DOC-03-0041",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0041",
+        "old_text_sha256": "f653ca4effbea7dfc9ac3d1a4a633624722ed5491d5836d4098689329a0ec396",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 962,
+        "span_end": 962
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0041",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 962,
+        "span_end": 962,
+        "text_sha256": "1fd69ad000840bfae4836644809c99ad947d7099175f40e01b2d8e4bd59e1c2c",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Remove unbound communication benchmark numbers and retain a Planned empty benchmark contract."
+    },
+    {
+      "id": "CLM-DOC-03-0042",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0042",
+        "old_text_sha256": "f762115c4828a96f17a95014d6515cb82b7d3f69cfbe35709b801755d710860f",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 982,
+        "span_end": 982
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0042",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 982,
+        "span_end": 982,
+        "text_sha256": "48297a54d1df778d6daa7fbea76150a63a0657cad6d46354e637a0855d49177f",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Remove unbound communication benchmark numbers and retain a Planned empty benchmark contract."
+    },
+    {
+      "id": "CLM-DOC-03-0043",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0043",
+        "old_text_sha256": "8391c6a42e8f28163100b88432a1489da0bed36fda553d701a5b266ba78a55ce",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 983,
+        "span_end": 983
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0043",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 983,
+        "span_end": 983,
+        "text_sha256": "db0952caf797db1cc4a65f8b599c9b3582a89277a2dc94f4888684298d92d112",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Remove unbound communication benchmark numbers and retain a Planned empty benchmark contract."
+    },
+    {
+      "id": "CLM-DOC-03-0044",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0044",
+        "old_text_sha256": "3a2725da5381e8bde21db9729d2fe88aa944f55009b145b7730c79e1a0329b25",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 984,
+        "span_end": 984
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0044",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 984,
+        "span_end": 984,
+        "text_sha256": "fafe1c8ea7bd96d5831c71be380374b03699eafed54554519dec7b523137f8ed",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Remove unbound communication benchmark numbers and retain a Planned empty benchmark contract."
+    }
+  ]
+}

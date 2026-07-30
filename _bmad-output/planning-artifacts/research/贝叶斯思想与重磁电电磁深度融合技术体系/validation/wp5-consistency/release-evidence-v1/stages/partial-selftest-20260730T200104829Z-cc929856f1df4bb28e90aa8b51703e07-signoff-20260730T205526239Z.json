@@ -1,0 +1,122 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "signoff",
+  "fixture_count": 7,
+  "fixture_id_set": [
+    "FXT-SIGNOFF-001",
+    "FXT-SIGNOFF-002",
+    "FXT-SIGNOFF-003",
+    "FXT-SIGNOFF-004",
+    "FXT-SIGNOFF-005",
+    "FXT-SIGNOFF-006",
+    "FXT-SIGNOFF-007"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-SIGNOFF-001",
+      "case": "FXT-SIGNOFF-001",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "signoff exact 16+1 scope"
+      ],
+      "actual_rejection": "signoff exact 16+1 scope",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 64023
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-002",
+      "case": "FXT-SIGNOFF-002",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews exact role set"
+      ],
+      "actual_rejection": "final reviews exact role set",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 66572
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-003",
+      "case": "FXT-SIGNOFF-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews exact role set"
+      ],
+      "actual_rejection": "final reviews exact role set",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 61947
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-004",
+      "case": "FXT-SIGNOFF-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review approved role"
+      ],
+      "actual_rejection": "final review approved role",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60458
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-005",
+      "case": "FXT-SIGNOFF-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review candidate binding"
+      ],
+      "actual_rejection": "final review candidate binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62151
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-006",
+      "case": "FXT-SIGNOFF-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review candidate binding"
+      ],
+      "actual_rejection": "final review candidate binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 63139
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-007",
+      "case": "FXT-SIGNOFF-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization binding"
+      ],
+      "actual_rejection": "final reviews authorization binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 81340
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T20:55:26.2408754Z",
+  "output_sha256": "4d423df78e0081c37e9970710f8a5ba67c1f4761a2cf9c31cfd8f5a9762b2445",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

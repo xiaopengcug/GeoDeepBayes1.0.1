@@ -1,4 +1,4 @@
-# WP5 主编、技术编辑与四专项交叉复核独立签核
+# WP5 最终根六角色 AI 复核状态
 
 - 状态：PASS
 - 主编：PASS
@@ -9,26 +9,22 @@
 - 工程架构复核：PASS
 - 签核范围：仅限manifest exact清单中的00—07、附录1—5/11/13/14共16篇文稿，加1份《贝叶斯三维反演测试算力需求说明》，即16+1 exact集合。
 - 范围排除：附录6—10及附录12未纳入WP5扫描、ledger或签核，不得用于WP5 PASS，也不得作为本工作包已清除残句或已整改的证据。
-- 输入版本：`20260724T034858702Z-b530a67793c84b6e9d71f53c8d0b0a98`
-- manifest SHA-256：`9dc55bce45eb0dd499fcfd2fe3cbca6fd2319f5ab99c619ca98c04129998d3b1`
-- 成员清单内容根SHA-256：`0d76c88eb69841ef2c0aff89527c021479d11dcfd1324a187b44b087adc546c0`
-- 根清单文件SHA-256：`dd07b0c105b4d3b60c3a858a8b84798a05daf071888e67291034232ec01cb6c6`
+- 输入版本：`20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07`
+- manifest SHA-256：`e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824`
+- 成员清单内容根SHA-256：`fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7`
+- 根清单文件SHA-256：`ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25`
+- 授权冻结块SHA-256：`fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748`
+- Round-2授权修正块SHA-256：`126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1`
+- CI workflow SHA-256：`7fabc517901f43a7e82f17b013bb2e149741642e6e39d2ebdfebe34e0b5b896e`
+- release evidence envelope SHA-256：`a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680`
+- 六角色reviews manifest SHA-256：`ec9b8cb2100e6b67eb4c5fd2221005bb850a547a7e85d87650f3af1ea809c7f4`
+- 身份类型：`automated-ai-final-root-review`
 - 证据等级：`Document-governance`
-- 结论：PASS；六项由 AI 独立专项审查角色在当前输入版本上完成签署。本记录不升级WP1—WP4证据状态，不构成Field-validated、正式资源分类或生产能力签署。
 
-## AI 独立签署说明
+## 派生规则与身份边界
 
-- 签署主体均为 AI 审查角色，非自然人身份，亦非外部资质认证或法定责任签章。
-- 主编签署代理：跨章理论一致性主审；结论为通过。已复核跨物性潜变量耦合、唯一联合后验与章节间术语边界。
-- 技术编辑签署代理：验证证据与技术编辑审查角色；结论为通过。已复核 16+1 范围、版本绑定、证据等级和能力表述边界。
-- 地球物理签署代理：地球物理学审查角色；结论为通过。已复核同物性 change-of-support、WFEM 频域定义与物性耦合物理边界。
-- 贝叶斯/UQ签署代理：贝叶斯理论与不确定性量化审查角色；结论为通过。已复核分层潜变量先验、支持域、联合协方差及不确定性传播。
-- 算法数值签署代理：算法与数值推断审查角色；结论为通过。已复核提议度量、RJMCMC、伴随验证与数值诊断合同。
-- 工程架构签署代理：工程实现与系统架构审查角色；结论为通过。已复核最小运行合同、DAG、检查点边界及 Planned 能力声明。
-- 签署时间：2026-07-24（America/Denver）；适用冻结版本为本记录所列输入版本与 manifest。
+本汇总只由 `validation/wp5-consistency/final-root-reviews-v1/reviews-manifest.json` 中六个 exact 角色的唯一 `Approved` 记录派生。validator 独立重算每条记录、授权冻结块、活动 run/manifest、成员根及根文件根；任一记录缺失、重复、拒绝、陈旧或授权漂移均拒绝本汇总。
 
+当前候选根六个 exact 角色均为 `Approved`，且共同绑定当前 300 项 release evidence envelope，故本汇总可派生 PASS。阻断项以六条独立 review JSON 为准；任何后续候选、根、validator、fixture、envelope、授权或审查记录漂移都会使本汇总失效。
 
-
-
-
-
+六条记录均由自动化 AI 审查角色形成，不是自然人、外部资质或法定签章。本汇总不升级 WP1—WP4 证据状态，不构成 Field-validated、正式资源分类、生产能力或远程 attestation。

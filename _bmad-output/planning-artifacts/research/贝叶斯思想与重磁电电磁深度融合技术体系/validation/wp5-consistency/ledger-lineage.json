@@ -36,6 +36,24 @@
       "sha256": "ea8168d745883f3375c03740f4c83045a327421be40dacb2f083de9bf580bd49",
       "active_count": 350,
       "tombstone_count": 698
+    },
+    "loop31": {
+      "path": "claim-ledger.loop31-anchor.json",
+      "sha256": "11aa2d36135eea81dd51675c18d0879829b86f53997bfab7f44d61a85b38868b",
+      "active_count": 350,
+      "tombstone_count": 698
+    },
+    "loop32": {
+      "path": "claim-ledger.loop32-anchor.json",
+      "sha256": "e51afeef016562b43bb6e028c13176e62e9678caa629e641623bc34989e077b3",
+      "active_count": 350,
+      "tombstone_count": 698
+    },
+    "loop33": {
+      "path": "claim-ledger.loop33-anchor.json",
+      "sha256": "9f530083b3754b1d565342aaa1306a75433bc7067f133ee7ad9077599840c3f2",
+      "active_count": 350,
+      "tombstone_count": 698
     }
   },
   "migrations": {
@@ -69,6 +87,30 @@
       "path": "claim-ledger.loop30.text-migration.json",
       "sha256": "9f546ad734b4783472f063491bde886d5002ed9d0d883ea763c5e7fca1729c32",
       "replacements": 47,
+      "tombstones": 0
+    },
+    "loop31": {
+      "from": "loop30",
+      "to": "loop31",
+      "path": "claim-ledger.loop31.text-migration.json",
+      "sha256": "d4548ab9c0352ffd7eecbd7e70329a542a0cd2719b504486d3c0ef8497993454",
+      "replacements": 7,
+      "tombstones": 0
+    },
+    "loop32": {
+      "from": "loop31",
+      "to": "loop32",
+      "path": "claim-ledger.loop32.text-migration.json",
+      "sha256": "f77bd6ca4923c9845dfc1182d041d9f73cf53040e82a043b68f8ecbe6f1d8c6c",
+      "replacements": 7,
+      "tombstones": 0
+    },
+    "loop33": {
+      "from": "loop32",
+      "to": "loop33",
+      "path": "claim-ledger.loop33.text-migration.json",
+      "sha256": "b3be52912c41063cc2132991c1fa1308483f62468492658e72c0aa7d144f8ebb",
+      "replacements": 176,
       "tombstones": 0
     }
   }

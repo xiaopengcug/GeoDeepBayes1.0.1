@@ -1,0 +1,178 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "lineage-migration",
+  "fixture_count": 11,
+  "fixture_id_set": [
+    "FXT-LINEAGE-MIGRATION-089",
+    "FXT-LINEAGE-MIGRATION-090",
+    "FXT-LINEAGE-MIGRATION-091",
+    "FXT-LINEAGE-MIGRATION-092",
+    "FXT-LINEAGE-MIGRATION-093",
+    "FXT-LINEAGE-MIGRATION-094",
+    "FXT-LINEAGE-MIGRATION-095",
+    "FXT-LINEAGE-MIGRATION-096",
+    "FXT-LINEAGE-MIGRATION-097",
+    "FXT-LINEAGE-MIGRATION-098",
+    "FXT-LINEAGE-MIGRATION-099"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-089",
+      "case": "FXT-LINEAGE-MIGRATION-089",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "manuscript process trace"
+      ],
+      "actual_rejection": "manuscript process trace",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3770
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-090",
+      "case": "FXT-LINEAGE-MIGRATION-090",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "manuscript stale xref"
+      ],
+      "actual_rejection": "manuscript stale xref",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3662
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-091",
+      "case": "FXT-LINEAGE-MIGRATION-091",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "manuscript promotional language"
+      ],
+      "actual_rejection": "manuscript promotional language",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3604
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-092",
+      "case": "FXT-LINEAGE-MIGRATION-092",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix1 candidate evidence boundary"
+      ],
+      "actual_rejection": "appendix1 candidate evidence boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3579
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-093",
+      "case": "FXT-LINEAGE-MIGRATION-093",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix14 positive prior contract"
+      ],
+      "actual_rejection": "appendix14 positive prior contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4085
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-094",
+      "case": "FXT-LINEAGE-MIGRATION-094",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop17 appendix1 exact residual"
+      ],
+      "actual_rejection": "loop17 appendix1 exact residual",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4488
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-095",
+      "case": "FXT-LINEAGE-MIGRATION-095",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop17 appendix14 exact residual"
+      ],
+      "actual_rejection": "loop17 appendix14 exact residual",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4053
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-096",
+      "case": "FXT-LINEAGE-MIGRATION-096",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop17 promotional wording 01-引言.md"
+      ],
+      "actual_rejection": "loop17 promotional wording 01-引言.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3842
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-097",
+      "case": "FXT-LINEAGE-MIGRATION-097",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop17 guarantee/editorial wording 02-全方法深度融合的底层逻辑与理论总纲.md"
+      ],
+      "actual_rejection": "loop17 guarantee/editorial wording 02-全方法深度融合的底层逻辑与理论总纲.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3700
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-098",
+      "case": "FXT-LINEAGE-MIGRATION-098",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop17 guarantee/editorial wording 06-合成数据验证方案与验收设计.md"
+      ],
+      "actual_rejection": "loop17 guarantee/editorial wording 06-合成数据验证方案与验收设计.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3752
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-099",
+      "case": "FXT-LINEAGE-MIGRATION-099",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop17 guarantee/editorial wording 03-多方法深度融合的核心技术实现路径.md"
+      ],
+      "actual_rejection": "loop17 guarantee/editorial wording 03-多方法深度融合的核心技术实现路径.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3712
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T20:23:09.0828239Z",
+  "output_sha256": "5175c12aeb50582f228bf7f2f1f9d7824243a9f7687f519419e6197cbad66daa",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

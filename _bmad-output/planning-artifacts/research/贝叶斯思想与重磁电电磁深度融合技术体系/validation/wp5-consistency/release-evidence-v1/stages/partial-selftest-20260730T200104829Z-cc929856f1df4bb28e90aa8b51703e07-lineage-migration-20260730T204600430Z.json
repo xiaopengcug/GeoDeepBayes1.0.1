@@ -1,0 +1,178 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "lineage-migration",
+  "fixture_count": 11,
+  "fixture_id_set": [
+    "FXT-LINEAGE-MIGRATION-133",
+    "FXT-LINEAGE-MIGRATION-134",
+    "FXT-LINEAGE-MIGRATION-135",
+    "FXT-LINEAGE-MIGRATION-136",
+    "FXT-LINEAGE-MIGRATION-137",
+    "FXT-LINEAGE-MIGRATION-138",
+    "FXT-LINEAGE-MIGRATION-139",
+    "FXT-LINEAGE-MIGRATION-140",
+    "FXT-LINEAGE-MIGRATION-141",
+    "FXT-LINEAGE-MIGRATION-142",
+    "FXT-LINEAGE-MIGRATION-143"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-133",
+      "case": "FXT-LINEAGE-MIGRATION-133",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "lambda coupling support"
+      ],
+      "actual_rejection": "lambda coupling support",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 71404
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-134",
+      "case": "FXT-LINEAGE-MIGRATION-134",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "generalized weight dimension and defaults"
+      ],
+      "actual_rejection": "generalized weight dimension and defaults",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 72298
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-135",
+      "case": "FXT-LINEAGE-MIGRATION-135",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "SBC categorical and transdimensional contract"
+      ],
+      "actual_rejection": "SBC categorical and transdimensional contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 64115
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-136",
+      "case": "FXT-LINEAGE-MIGRATION-136",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "Chib full state and PoE normalizer"
+      ],
+      "actual_rejection": "Chib full state and PoE normalizer",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52952
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-137",
+      "case": "FXT-LINEAGE-MIGRATION-137",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "POD centering and rectangular dimensions"
+      ],
+      "actual_rejection": "POD centering and rectangular dimensions",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 48352
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-138",
+      "case": "FXT-LINEAGE-MIGRATION-138",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "PT unique target and swap ratio"
+      ],
+      "actual_rejection": "PT unique target and swap ratio",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 51570
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-139",
+      "case": "FXT-LINEAGE-MIGRATION-139",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "MH detailed balance test contract"
+      ],
+      "actual_rejection": "MH detailed balance test contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 49635
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-140",
+      "case": "FXT-LINEAGE-MIGRATION-140",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "GMM latent support"
+      ],
+      "actual_rejection": "GMM latent support",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53195
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-141",
+      "case": "FXT-LINEAGE-MIGRATION-141",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "parallel RNG and reduction semantics"
+      ],
+      "actual_rejection": "parallel RNG and reduction semantics",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52001
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-142",
+      "case": "FXT-LINEAGE-MIGRATION-142",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "no shadow threshold or selective restart"
+      ],
+      "actual_rejection": "no shadow threshold or selective restart",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53670
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-143",
+      "case": "FXT-LINEAGE-MIGRATION-143",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP2 diagnostic exact scope"
+      ],
+      "actual_rejection": "WP2 diagnostic exact scope",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52846
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T20:46:00.4341324Z",
+  "output_sha256": "5175c12aeb50582f228bf7f2f1f9d7824243a9f7687f519419e6197cbad66daa",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

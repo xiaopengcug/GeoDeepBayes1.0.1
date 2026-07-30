@@ -1,0 +1,94 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "publish",
+  "fixture_count": 5,
+  "fixture_id_set": [
+    "FXT-PUBLISH-016",
+    "FXT-PUBLISH-017",
+    "FXT-PUBLISH-018",
+    "FXT-PUBLISH-019",
+    "FXT-PUBLISH-020"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-PUBLISH-016",
+      "case": "FXT-PUBLISH-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterReplace"
+      ],
+      "actual_rejection": "WP5 injected failure AfterReplace",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 73712
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-017",
+      "case": "FXT-PUBLISH-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal old pointer invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal old pointer invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 945
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-018",
+      "case": "FXT-PUBLISH-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 910
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-019",
+      "case": "FXT-PUBLISH-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal old pointer manifest invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal old pointer manifest invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 1054
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-020",
+      "case": "FXT-PUBLISH-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal version binding invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal version binding invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 808
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T21:35:06.8315405Z",
+  "output_sha256": "c469a555ede7c1cdc8d2b2640334eef83dd057ad58b47db9366f50f484a22364",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

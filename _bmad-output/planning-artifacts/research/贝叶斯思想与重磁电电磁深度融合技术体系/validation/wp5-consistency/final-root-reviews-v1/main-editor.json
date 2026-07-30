@@ -1,0 +1,35 @@
+{
+  "schema": "wp5-final-root-review-v1",
+  "review_id": "WP5-FINAL-ROOT-MAIN-EDITOR",
+  "role": "主编",
+  "reviewer_identity": "Codex automated AI / 主编",
+  "identity_type": "automated-ai-final-root-review",
+  "decision": "Approved",
+  "reviewed_at_utc": "2026-07-30T21:52:49Z",
+  "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+  "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+  "candidate": {
+    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25"
+  },
+  "review_scope": "cross-document theory and conclusion consistency",
+  "checks": [
+    "Recomputed all 29 ordered member hashes, member/root-file/root-anchor hashes, and confirmed the exact dual-pointer binding.",
+    "Confirmed fixture-manifest v3 and all 300 executable results preserve exact canonical_case equality, unique IDs, expected exits, rejections, and matched outcomes across seven stages.",
+    "Confirmed the abstract and conclusion retain the same theory-draft, WP3 reference-regression, and WP4 synthetic-toy evidence boundary.",
+    "Confirmed the unique joint probability model and generalized-Bayes separation are consistent across the controlled documents.",
+    "Confirmed the POD conclusion preserves global truncated-SVD optimality and the complete thin-SVD orthogonal-complement proof.",
+    "Confirmed the unique RJMCMC Green contract is consistent across theory, implementation, scenarios, engineering, and appendices.",
+    "Confirmed design EIG, realized information gain, LOMO, PPC, SBC, parameter coverage, and holdout predictive coverage remain distinct.",
+    "Confirmed all 300 formal fixtures are governance evidence only and are not presented as field, production, resource, or performance proof."
+  ],
+  "findings": [],
+  "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680",
+    "total_fixture_count": 300
+  }
+}

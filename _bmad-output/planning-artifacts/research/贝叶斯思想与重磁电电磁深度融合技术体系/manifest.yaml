@@ -7,22 +7,22 @@ canonical_policy: "每个版本族恰有一个canonical；archived文件不得�
 document_groups:
   main_text:
     canonical:
-      - {path: "00-摘要.md", sha256: "60c702de3c2da8fe79a794115ca6106d7ad4632a0dcb004cc517ed947e71cd5a"}
-      - {path: "01-引言.md", sha256: "20590535e59e1e1a43fec7785764956022e75d8cd8747ac75dbc0d5ae2b18a05"}
-      - {path: "02-全方法深度融合的底层逻辑与理论总纲.md", sha256: "9ff9f8254885790362fc5a34161229956281f1ff732eae942f2d0f565d31273b"}
-      - {path: "03-多方法深度融合的核心技术实现路径.md", sha256: "23fb412e80e9f7ce116283618286c77b4fbd8113cab12a8f2bcc037b8b1ead77"}
+      - {path: "00-摘要.md", sha256: "a20f7f0e8c46f13ed055d45c9313c75d00494738c92263e90ecfb26b42620656"}
+      - {path: "01-引言.md", sha256: "006f725f9dba8d07223a09e3da5eea55fd780c93234f8009e17d31885c59c8ce"}
+      - {path: "02-全方法深度融合的底层逻辑与理论总纲.md", sha256: "a57ffdc03d6bd5be1268e1048a6b688f920d548cf9edd9286b3cce582ae3a051"}
+      - {path: "03-多方法深度融合的核心技术实现路径.md", sha256: "f1fdd94c5e5f5dd62fe0f1776127196cfc5b4889fc1025fb7ae76229985ab35a"}
       - {path: "04-分场景多方法融合适配方案.md", sha256: "61b215cb72e5a0393fc90793f4595aa2bcad578cbb03f046dda69adb89c56510"}
-      - {path: "05-工程化落地与效率优化方案.md", sha256: "c6f3b01f7ecead62cec4270c9341b813615a39fa5f918ccf5b063ab72fe29909"}
-      - {path: "06-合成数据验证方案与验收设计.md", sha256: "d235cf503dba41f1b51a8c87226480eee680aa9ec7789741d3f6b836c1f5fd97"}
+      - {path: "05-工程化落地与效率优化方案.md", sha256: "56627e8259b31d83855930409ae91064c8eb0e21a6f10b7ca829e7ae02671631"}
+      - {path: "06-合成数据验证方案与验收设计.md", sha256: "dd8f311e599588e9c9001d0bb98bbdd45409dd5e5690e1ce5b51b8dbc7f1d9c0"}
       - {path: "07-结论与展望.md", sha256: "8138635af0695810dbe475396ab1cf6183a1d47035dccb554f927a2e4d2e2a88"}
     archived: []
   appendices:
     canonical:
       - {path: "附录1-分矿种多方法融合定制化勘查模板.md", sha256: "8cfdcbdb28064c1692c41dc59a2b182f169f07b601cb7fd2c28cac058a41a6d9"}
       - {path: "附录2-概率化反演结果应用规范与风险管控准则.md", sha256: "656bdef9c555be3697a7d113b93dcb820814f18a585d8fed1ea60ca92e349942"}
-      - {path: "附录3-算法选型与多方法组合决策树.md", sha256: "cf3651b313938cab5e979f23c35d9652d51ab494533dba2c3b4e3be85bcd46e8"}
-      - {path: "附录4-核心算法性能基准测试计划与验收指标.md", sha256: "0a698c297a05998eebc6709cf1a0083a513b18f499f49a8e428beb047241f91a"}
-      - {path: "附录5-真实矿区验证方案.md", sha256: "e0e7828537f44a3b919dc6a80e8624ba67c8a9adb625266f02351b4f242ea0a6"}
+      - {path: "附录3-算法选型与多方法组合决策树.md", sha256: "819f871c5de0d71782cd94cca934d003f78b4257cc5f5afb186a9dfc20efdc1c"}
+      - {path: "附录4-核心算法性能基准测试计划与验收指标.md", sha256: "f850843f1f1758ccb35f46252e0ccb9dbe785e495a646fea5fb7ab517e0a719f"}
+      - {path: "附录5-真实矿区验证方案.md", sha256: "e21da6f40226bd035d1b891b7929cae4cf8ca2a27523b2c4b32defc8dd02ebd6"}
       - {path: "附录6-科研项目立项申报材料核心模板.md", sha256: "c12d13035bd1a6569e82a57832ba6738f32143ca5eb714ee05fdb3ec8172e7d6"}
       - {path: "附录7-知识产权布局与成果转化规划_专家评审完善版.md", sha256: "eae631a043b0454d4792ed8c934b8ff54e91018a8dd0bbf8664acb73fb502335"}
       - {path: "附录8-产业化商业模式与盈利路径.md", sha256: "8d9e20ed288af726739a4aa6e3fc336dc1c8a7ee147046dceb4289c71f8bba07"}
@@ -43,7 +43,7 @@ document_groups:
       - {path: "archive/参考文献.md", sha256: "c3bf7c40d3e5ad67746d1af7b63ee2573b3dcd7346ac01e9706e1e2464999f91"}
   compute_plan:
     canonical:
-      - {path: "贝叶斯三维反演测试算力需求说明.md", sha256: "f19ffc0b354e5a234e8164953daa7d7d7f336531b62154135477846558e0f3c3"}
+      - {path: "贝叶斯三维反演测试算力需求说明.md", sha256: "535c7c2982539461758b38b05692168d10b35032f43d900eaeda7d7301f17ed0"}
     archived:
       - {path: "archive/贝叶斯三维反演测试算力需求说明-01.md", sha256: "0454f403715db98d514d26a7269ab506c94c723fa85fd7f9e5ff149ba6a7fa6b"}
 

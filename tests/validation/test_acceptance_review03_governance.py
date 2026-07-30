@@ -2,6 +2,7 @@ import hashlib
 import importlib.util
 import json
 import re
+import shutil
 import subprocess
 from copy import deepcopy
 from pathlib import Path
@@ -40,6 +41,151 @@ def _write_json(path: Path, payload) -> Path:
         encoding="utf-8",
     )
     return path
+
+
+WP5_STAGES = {
+    "upstream-lineage": 33,
+    "allowlist": 9,
+    "registry": 25,
+    "language-structure-boundary": 31,
+    "publish": 20,
+    "signoff": 28,
+    "lineage-migration": 154,
+}
+WP5_RUN = "20260730T010101001Z-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+
+def _wp5_result(fixture_id: str, duration_ms: int = 1) -> dict:
+    return {
+        "fixture_id": fixture_id,
+        "case": fixture_id,
+        "expected_exit": 0,
+        "actual_exit": 0,
+        "expected_rejections": [],
+        "actual_rejection": "",
+        "success_criterion": "child accepts this positive fixture",
+        "matched": True,
+        "duration_ms": duration_ms,
+    }
+
+
+def _wp5_evidence(
+    stage: str,
+    fixture_ids: list[str],
+    *,
+    schema: str = "wp5-selftest-evidence-v1",
+    duration_ms: int = 1,
+) -> dict:
+    return {
+        "schema": schema,
+        "evidence_class": (
+            "Post-publication self-test evidence; not an input to its referenced manifest"
+        ),
+        "source_run_instance_id": WP5_RUN,
+        "source_version_path": f"versions/{WP5_RUN}",
+        "source_manifest_sha256": "b" * 64,
+        "validator_sha256": "",
+        "fixture_manifest_sha256": "",
+        "member_root_sha256": "",
+        "root_file_sha256": "",
+        "root_anchor_file_sha256": "",
+        "stage": stage,
+        "fixture_count": len(fixture_ids),
+        "fixture_id_set": fixture_ids,
+        "batch_role": "stage",
+        "fixture_results": [
+            _wp5_result(fixture_id, duration_ms) for fixture_id in fixture_ids
+        ],
+        "status": "Passed",
+        "completed_at_utc": "2026-07-30T01:02:03Z",
+        "output_sha256": "c" * 64,
+        "validator_exit": 0,
+        "pass_marker_count": 1,
+    }
+
+
+def _wp5_root_binding_fixture(research: Path) -> dict[str, str]:
+    template = (RESEARCH / "WP5-consistency-input-root.sha256").read_text(
+        encoding="utf-8"
+    )
+    members = [line.split("  ", 1)[1] for line in template.splitlines()[2:]]
+    assert len(members) == 29
+    for relative in members:
+        member = research / relative
+        if not member.exists():
+            member.parent.mkdir(parents=True, exist_ok=True)
+            member.write_text("# root fixture\n", encoding="utf-8")
+    member_lines = [f"{sha256(research / item)}  {item}" for item in members]
+    root_text = "# WP5 consistency root v1\n\n" + "\n".join(member_lines) + "\n"
+    root_path = research / "WP5-consistency-input-root.sha256"
+    root_path.write_text(root_text, encoding="utf-8", newline="\n")
+    member_root = hashlib.sha256(
+        ("\n".join(member_lines) + "\n").encode("utf-8")
+    ).hexdigest()
+    root_file = sha256(root_path)
+    anchor = research / "validation/wp5-consistency/WP5-consistency-root-anchor.sha256"
+    anchor.write_text(root_file + "\n", encoding="utf-8", newline="\n")
+    return {
+        "member_root_sha256": member_root,
+        "root_file_sha256": root_file,
+        "root_anchor_file_sha256": sha256(anchor),
+    }
+
+
+def _wp5_release_script_fixture(tmp_path: Path) -> tuple[Path, dict[str, list[str]]]:
+    research = tmp_path / "research"
+    vroot = research / "validation/wp5-consistency"
+    stages = vroot / "release-evidence-v1/stages"
+    stages.mkdir(parents=True)
+    validator = research / "validate-wp5.ps1"
+    validator.write_text("# validator fixture\n", encoding="utf-8")
+    shutil.copy2(
+        RESEARCH / "validation/wp5-consistency/materialize-release-evidence.ps1",
+        vroot / "materialize-release-evidence.ps1",
+    )
+    _write_json(
+        vroot / "active-output.json",
+        {
+            "schema": "wp5-active-output-v1",
+            "run_instance_id": WP5_RUN,
+            "version_path": f"versions/{WP5_RUN}",
+            "manifest_sha256": "b" * 64,
+        },
+    )
+    ids_by_stage = {
+        stage: [f"FXT-{stage.upper()}-{index:03d}" for index in range(count)]
+        for stage, count in WP5_STAGES.items()
+    }
+    fixture_manifest = _write_json(
+        vroot / "selftest-fixture-manifest.json",
+        {
+            "schema": "wp5-selftest-fixture-manifest-v3",
+            "fixtures": [
+                {
+                    "id": fixture_id,
+                    "stage": stage,
+                    "canonical_case": fixture_id,
+                    "expected_exit": 0,
+                    "expected_rejections": [],
+                }
+                for stage, fixture_ids in ids_by_stage.items()
+                for fixture_id in fixture_ids
+            ],
+        },
+    )
+    validator_hash = sha256(validator)
+    fixture_hash = sha256(fixture_manifest)
+    root_binding = _wp5_root_binding_fixture(research)
+    for stage, fixture_ids in ids_by_stage.items():
+        evidence = _wp5_evidence(stage, fixture_ids)
+        evidence["validator_sha256"] = validator_hash
+        evidence["fixture_manifest_sha256"] = fixture_hash
+        evidence.update(root_binding)
+        _write_json(
+            stages / f"selftest-{WP5_RUN}-{stage}-20260730T010101001Z.json",
+            evidence,
+        )
+    return vroot, ids_by_stage
 
 
 def _reference_closure_fixture(tmp_path: Path):
@@ -217,17 +363,603 @@ def test_wp5_active_pointer_resolves_to_bound_manifest():
     assert target_manifest["status"] == "Passed"
 
 
-def test_wp5_corrected_pointer_requires_new_signoff_root():
+def test_wp5_corrected_pointer_is_bound_to_authorized_six_role_reviews():
     active_hash = sha256(RESEARCH / "ACTIVE_MANIFEST")
     root_text = (RESEARCH / "WP5-consistency-input-root.sha256").read_text(
         encoding="utf-8"
     )
     recorded = re.search(r"(?m)^([0-9a-f]{64})  ACTIVE_MANIFEST$", root_text)
     assert recorded
-    assert recorded.group(1) != active_hash
-    review = (RESEARCH / "验收审查意见03.md").read_text(encoding="utf-8")
-    assert "新指针尚未重新取得六角色确认" in review
-    assert "机械改写旧签核不构成确认" in review
+    assert recorded.group(1) == active_hash
+    review_dir = RESEARCH / "validation/wp5-consistency/final-root-reviews-v1"
+    review_manifest_path = review_dir / "reviews-manifest.json"
+    review_manifest = json.loads(review_manifest_path.read_text(encoding="utf-8"))
+    roles = [
+        "主编",
+        "技术编辑",
+        "地球物理复核",
+        "贝叶斯/UQ复核",
+        "算法数值复核",
+        "工程架构复核",
+    ]
+    assert review_manifest["exact_roles"] == roles
+    assert [item["role"] for item in review_manifest["reviews"]] == roles
+    assert all(item["decision"] == "Approved" for item in review_manifest["reviews"])
+    summary = (
+        RESEARCH / "WP5-主编技术编辑与专项交叉复核独立签核.md"
+    ).read_text(encoding="utf-8")
+    assert sha256(review_manifest_path) in summary
+    assert "automated-ai-final-root-review" in summary
+
+
+def test_wp5_final_review_check_sets_are_role_distinct():
+    review_dir = RESEARCH / "validation/wp5-consistency/final-root-reviews-v1"
+    review_manifest = json.loads(
+        (review_dir / "reviews-manifest.json").read_text(encoding="utf-8")
+    )
+    seen_check_sets = {}
+    for record in review_manifest["reviews"]:
+        review = json.loads(
+            (review_dir / record["path"]).read_text(encoding="utf-8")
+        )
+        normalized = tuple(
+            sorted(" ".join(check.split()).casefold() for check in review["checks"])
+        )
+        assert len(normalized) >= 3
+        assert len(normalized) == len(set(normalized))
+        assert normalized not in seen_check_sets, (
+            f"cross-role checks copied in full: "
+            f"{seen_check_sets.get(normalized)} and {record['role']}"
+        )
+        seen_check_sets[normalized] = record["role"]
+
+
+def test_wp5_final_gate_evidence_chain_is_in_persistence_inputs(tmp_path):
+    required = set(PERSISTENCE._wp5_final_gate_evidence_inputs())
+    root_inputs = set(PERSISTENCE._wp5_root_inputs())
+    assert len(root_inputs) == 30
+    assert {
+        (
+            RESEARCH
+            / "validation/wp5-consistency/selftest-fixture-manifest.json"
+        ).relative_to(PERSISTENCE.ROOT).as_posix(),
+        (
+            RESEARCH / "validation/wp5-consistency/run-selftest-evidence.ps1"
+        ).relative_to(PERSISTENCE.ROOT).as_posix(),
+        (
+            RESEARCH
+            / "validation/wp5-consistency/finalize-selftest-stage-evidence.ps1"
+        ).relative_to(PERSISTENCE.ROOT).as_posix(),
+    } <= root_inputs
+    vroot = RESEARCH / "validation/wp5-consistency"
+    review_dir = vroot / "final-root-reviews-v1"
+    review_manifest = json.loads(
+        (review_dir / "reviews-manifest.json").read_text(encoding="utf-8")
+    )
+    expected = {
+        (review_dir / record["path"]).relative_to(PERSISTENCE.ROOT).as_posix()
+        for record in review_manifest["reviews"]
+    }
+    envelope = vroot / review_manifest["release_evidence"]["path"]
+    expected.add(envelope.relative_to(PERSISTENCE.ROOT).as_posix())
+    envelope_payload = json.loads(envelope.read_text(encoding="utf-8"))
+    for stage in envelope_payload["stages"]:
+        stage_path = envelope.parent / stage["path"]
+        expected.add(stage_path.relative_to(PERSISTENCE.ROOT).as_posix())
+        stage_payload = json.loads(stage_path.read_text(encoding="utf-8"))
+        for partial in stage_payload.get("partial_evidence", []):
+            expected.add(
+                (stage_path.parent / partial["path"])
+                .relative_to(PERSISTENCE.ROOT)
+                .as_posix()
+            )
+    assert expected <= required
+
+    temporary_research = tmp_path / "research"
+    temporary_vroot = temporary_research / "validation/wp5-consistency"
+    shutil.copytree(review_dir, temporary_vroot / "final-root-reviews-v1")
+    shutil.copytree(envelope.parent, temporary_vroot / "release-evidence-v1")
+    temporary_manifest_path = (
+        temporary_vroot / "final-root-reviews-v1/reviews-manifest.json"
+    )
+    temporary_manifest = json.loads(
+        temporary_manifest_path.read_text(encoding="utf-8")
+    )
+    temporary_manifest["reviews"][1]["path"] = "./main-editor.json"
+    temporary_manifest["reviews"][1]["sha256"] = temporary_manifest["reviews"][0][
+        "sha256"
+    ]
+    _write_json(temporary_manifest_path, temporary_manifest)
+    with pytest.raises(ValueError, match="non-canonical WP5 final review path"):
+        PERSISTENCE._wp5_final_gate_evidence_inputs(
+            root=tmp_path,
+            research=temporary_research,
+        )
+
+
+def test_wp5_materializer_selects_equivalent_retry_and_rejects_conflict(tmp_path):
+    vroot, ids_by_stage = _wp5_release_script_fixture(tmp_path)
+    stage_dir = vroot / "release-evidence-v1/stages"
+    finalized_path = (
+        stage_dir / f"selftest-{WP5_RUN}-allowlist-20260730T010101001Z.json"
+    )
+    finalized = json.loads(finalized_path.read_text(encoding="utf-8"))
+    partial = deepcopy(finalized)
+    partial["schema"] = "wp5-selftest-partial-evidence-v1"
+    partial_path = _write_json(
+        stage_dir
+        / f"partial-selftest-{WP5_RUN}-allowlist-20260730T010101000Z.json",
+        partial,
+    )
+    finalized["schema"] = "wp5-selftest-finalized-evidence-v1"
+    finalized["evidence_class"] = (
+        "Finalized from exact, non-overlapping partial evidence; "
+        "not an input to its referenced manifest"
+    )
+    finalized["partial_evidence"] = [
+        {"path": partial_path.name, "sha256": sha256(partial_path)}
+    ]
+    partial_root = (
+        f"{finalized['partial_evidence'][0]['sha256']}  {partial_path.name}\n"
+    )
+    finalized["output_sha256"] = hashlib.sha256(
+        partial_root.encode("utf-8")
+    ).hexdigest()
+    _write_json(finalized_path, finalized)
+
+    first = stage_dir / f"selftest-{WP5_RUN}-publish-20260730T010101001Z.json"
+    retry_payload = json.loads(first.read_text(encoding="utf-8"))
+    retry_payload["completed_at_utc"] = "2026-07-30T02:02:03Z"
+    retry_payload["output_sha256"] = "d" * 64
+    for result in retry_payload["fixture_results"]:
+        result["duration_ms"] = 99
+    retry = _write_json(
+        stage_dir / f"selftest-{WP5_RUN}-publish-20260730T020202002Z.json",
+        retry_payload,
+    )
+
+    completed = subprocess.run(
+        ["pwsh", "-NoProfile", "-File", str(vroot / "materialize-release-evidence.ps1")],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+        timeout=60,
+    )
+    assert completed.returncode == 0, completed.stdout + completed.stderr
+    envelope = json.loads(
+        (vroot / "release-evidence-v1/envelope.json").read_text(encoding="utf-8")
+    )
+    publish = next(item for item in envelope["stages"] if item["stage"] == "publish")
+    allowlist = next(
+        item for item in envelope["stages"] if item["stage"] == "allowlist"
+    )
+    assert publish["path"].endswith(first.name)
+    assert allowlist["path"].endswith(finalized_path.name)
+
+    conflict = json.loads(retry.read_text(encoding="utf-8"))
+    conflict["fixture_results"][0]["case"] = "different-but-oracle-valid"
+    _write_json(retry, conflict)
+    rejected = subprocess.run(
+        ["pwsh", "-NoProfile", "-File", str(vroot / "materialize-release-evidence.ps1")],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+        timeout=60,
+    )
+    assert rejected.returncode != 0
+    assert "oracle" in rejected.stdout + rejected.stderr
+    assert len(ids_by_stage["publish"]) == WP5_STAGES["publish"]
+
+
+@pytest.mark.parametrize("evidence_kind", ["direct", "finalized-partial"])
+def test_wp5_materializer_rejects_manifest_oracle_tamper(tmp_path, evidence_kind):
+    vroot, _ = _wp5_release_script_fixture(tmp_path)
+    stage_dir = vroot / "release-evidence-v1/stages"
+    stage = "publish" if evidence_kind == "direct" else "allowlist"
+    evidence_path = (
+        stage_dir / f"selftest-{WP5_RUN}-{stage}-20260730T010101001Z.json"
+    )
+    evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+
+    def tamper(result):
+        result["expected_exit"] = 1
+        result["actual_exit"] = 1
+        result["expected_rejections"] = ["internally-consistent-but-not-oracle"]
+        result["actual_rejection"] = "internally-consistent-but-not-oracle"
+        result["success_criterion"] = (
+            "child rejects this fixture with one predeclared business assertion"
+        )
+
+    if evidence_kind == "direct":
+        tamper(evidence["fixture_results"][0])
+        _write_json(evidence_path, evidence)
+    else:
+        partial = deepcopy(evidence)
+        partial["schema"] = "wp5-selftest-partial-evidence-v1"
+        tamper(partial["fixture_results"][0])
+        partial_path = _write_json(
+            stage_dir
+            / f"partial-selftest-{WP5_RUN}-{stage}-20260730T010101000Z.json",
+            partial,
+        )
+        evidence["schema"] = "wp5-selftest-finalized-evidence-v1"
+        evidence["evidence_class"] = (
+            "Finalized from exact, non-overlapping partial evidence; "
+            "not an input to its referenced manifest"
+        )
+        evidence["partial_evidence"] = [
+            {"path": partial_path.name, "sha256": sha256(partial_path)}
+        ]
+        evidence["output_sha256"] = hashlib.sha256(
+            f"{sha256(partial_path)}  {partial_path.name}\n".encode("utf-8")
+        ).hexdigest()
+        _write_json(evidence_path, evidence)
+
+    rejected = subprocess.run(
+        ["pwsh", "-NoProfile", "-File", str(vroot / "materialize-release-evidence.ps1")],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+        timeout=60,
+    )
+    assert rejected.returncode != 0
+    assert "oracle" in rejected.stdout + rejected.stderr
+    assert not (vroot / "release-evidence-v1/envelope.json").exists()
+
+
+def test_wp5_finalizer_deduplicates_partial_retry_and_emits_provenance(tmp_path):
+    research = tmp_path / "research"
+    vroot = research / "validation/wp5-consistency"
+    stage_dir = vroot / "release-evidence-v1/stages"
+    stage_dir.mkdir(parents=True)
+    validator = research / "validate-wp5.ps1"
+    validator.write_text("# validator fixture\n", encoding="utf-8")
+    shutil.copy2(
+        RESEARCH / "validation/wp5-consistency/finalize-selftest-stage-evidence.ps1",
+        vroot / "finalize-selftest-stage-evidence.ps1",
+    )
+    _write_json(
+        vroot / "active-output.json",
+        {
+            "schema": "wp5-active-output-v1",
+            "run_instance_id": WP5_RUN,
+            "version_path": f"versions/{WP5_RUN}",
+            "manifest_sha256": "b" * 64,
+        },
+    )
+    fixture_ids = ["FXT-PUBLISH-001", "FXT-PUBLISH-002"]
+    fixture_manifest = _write_json(
+        vroot / "selftest-fixture-manifest.json",
+        {
+            "schema": "wp5-selftest-fixture-manifest-v3",
+            "fixtures": [
+                {
+                    "id": fixture_id,
+                    "stage": "publish",
+                    "canonical_case": fixture_id,
+                    "expected_exit": 0,
+                    "expected_rejections": [],
+                }
+                for fixture_id in fixture_ids
+            ]
+            + [
+                {
+                    "id": f"FXT-REGISTRY-{index:03d}",
+                    "stage": "registry",
+                    "canonical_case": f"FXT-REGISTRY-{index:03d}",
+                    "expected_exit": 0,
+                    "expected_rejections": [],
+                }
+                for index in range(1, 299)
+            ],
+        },
+    )
+    validator_hash = sha256(validator)
+    fixture_hash = sha256(fixture_manifest)
+    root_binding = _wp5_root_binding_fixture(research)
+
+    def write_partial(name: str, ids: list[str], duration_ms: int) -> Path:
+        payload = _wp5_evidence(
+            "publish",
+            ids,
+            schema="wp5-selftest-partial-evidence-v1",
+            duration_ms=duration_ms,
+        )
+        payload["validator_sha256"] = validator_hash
+        payload["fixture_manifest_sha256"] = fixture_hash
+        payload.update(root_binding)
+        return _write_json(stage_dir / name, payload)
+
+    first = write_partial(
+        f"partial-selftest-{WP5_RUN}-publish-20260730T010101001Z.json",
+        [fixture_ids[0]],
+        1,
+    )
+    write_partial(
+        f"partial-selftest-{WP5_RUN}-publish-20260730T010101002Z.json",
+        [fixture_ids[0]],
+        99,
+    )
+    second = write_partial(
+        f"partial-selftest-{WP5_RUN}-publish-20260730T010101003Z.json",
+        [fixture_ids[1]],
+        2,
+    )
+    other_stage = _wp5_evidence(
+        "registry",
+        ["FXT-REGISTRY-001"],
+        schema="wp5-selftest-partial-evidence-v1",
+        duration_ms=3,
+    )
+    other_stage["validator_sha256"] = validator_hash
+    other_stage["fixture_manifest_sha256"] = fixture_hash
+    other_stage.update(root_binding)
+    _write_json(
+        stage_dir
+        / f"partial-selftest-{WP5_RUN}-registry-20260730T010101004Z.json",
+        other_stage,
+    )
+    completed = subprocess.run(
+        [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            str(vroot / "finalize-selftest-stage-evidence.ps1"),
+            "-Stage",
+            "publish",
+        ],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+        timeout=60,
+    )
+    assert completed.returncode == 0, completed.stdout + completed.stderr
+    outputs = sorted(stage_dir.glob(f"selftest-{WP5_RUN}-publish-*.json"))
+    assert len(outputs) == 1
+    finalized = json.loads(outputs[0].read_text(encoding="utf-8"))
+    assert finalized["schema"] == "wp5-selftest-finalized-evidence-v1"
+    assert finalized["fixture_id_set"] == fixture_ids
+    assert finalized["batch_role"] == "stage"
+    assert finalized["validator_exit"] == 0
+    assert finalized["pass_marker_count"] == 1
+    assert [item["path"] for item in finalized["partial_evidence"]] == [
+        first.name,
+        second.name,
+    ]
+    root_text = "".join(
+        f"{item['sha256']}  {item['path']}\n"
+        for item in finalized["partial_evidence"]
+    )
+    assert finalized["output_sha256"] == hashlib.sha256(
+        root_text.encode("utf-8")
+    ).hexdigest()
+
+
+@pytest.mark.parametrize(
+    "failure_kind", ["oracle-tamper", "wrong-canonical-case", "object-case"]
+)
+def test_wp5_finalizer_rejects_invalid_partial_without_output(
+    tmp_path, failure_kind
+):
+    research = tmp_path / "research"
+    vroot = research / "validation/wp5-consistency"
+    stage_dir = vroot / "release-evidence-v1/stages"
+    stage_dir.mkdir(parents=True)
+    validator = research / "validate-wp5.ps1"
+    validator.write_text("# validator fixture\n", encoding="utf-8")
+    shutil.copy2(
+        RESEARCH / "validation/wp5-consistency/finalize-selftest-stage-evidence.ps1",
+        vroot / "finalize-selftest-stage-evidence.ps1",
+    )
+    _write_json(
+        vroot / "active-output.json",
+        {
+            "schema": "wp5-active-output-v1",
+            "run_instance_id": WP5_RUN,
+            "version_path": f"versions/{WP5_RUN}",
+            "manifest_sha256": "b" * 64,
+        },
+    )
+    target_id = "FXT-PUBLISH-001"
+    fixture_manifest = _write_json(
+        vroot / "selftest-fixture-manifest.json",
+        {
+            "schema": "wp5-selftest-fixture-manifest-v3",
+            "fixtures": [
+                {
+                    "id": target_id,
+                    "stage": "publish",
+                    "canonical_case": target_id,
+                    "expected_exit": 0,
+                    "expected_rejections": [],
+                }
+            ]
+            + [
+                {
+                    "id": f"FXT-REGISTRY-{index:03d}",
+                    "stage": "registry",
+                    "canonical_case": f"FXT-REGISTRY-{index:03d}",
+                    "expected_exit": 0,
+                    "expected_rejections": [],
+                }
+                for index in range(1, 300)
+            ],
+        },
+    )
+    validator_hash = sha256(validator)
+    fixture_hash = sha256(fixture_manifest)
+    root_binding = _wp5_root_binding_fixture(research)
+
+    def write_partial(name: str, case: object, *, tampered: bool = False):
+        payload = _wp5_evidence(
+            "publish",
+            [target_id],
+            schema="wp5-selftest-partial-evidence-v1",
+        )
+        payload["validator_sha256"] = validator_hash
+        payload["fixture_manifest_sha256"] = fixture_hash
+        payload.update(root_binding)
+        payload["fixture_results"][0]["case"] = case
+        if tampered:
+            result = payload["fixture_results"][0]
+            result["expected_exit"] = 1
+            result["actual_exit"] = 1
+            result["expected_rejections"] = ["not-the-manifest-oracle"]
+            result["actual_rejection"] = "not-the-manifest-oracle"
+            result["success_criterion"] = (
+                "child rejects this fixture with one predeclared business assertion"
+            )
+        _write_json(stage_dir / name, payload)
+
+    write_partial(
+        f"partial-selftest-{WP5_RUN}-publish-20260730T010101001Z.json",
+        (
+            {"polluted": True}
+            if failure_kind == "object-case"
+            else "wrong-case"
+            if failure_kind == "wrong-canonical-case"
+            else target_id
+        ),
+        tampered=failure_kind == "oracle-tamper",
+    )
+
+    rejected = subprocess.run(
+        [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            str(vroot / "finalize-selftest-stage-evidence.ps1"),
+            "-Stage",
+            "publish",
+        ],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+        timeout=60,
+    )
+    assert rejected.returncode != 0
+    assert "oracle" in rejected.stdout + rejected.stderr
+    assert not list(stage_dir.glob(f"selftest-{WP5_RUN}-publish-*.json"))
+
+
+def test_wp5_validator_persisted_evidence_keeps_both_oracle_guards():
+    source = (RESEARCH / "validate-wp5.ps1").read_text(encoding="utf-8")
+    function = re.search(
+        r"function ValidateReleaseEvidence\(\$candidatePointer\)\{(?P<body>.*?)"
+        r"\n\}\nfunction ValidateFinalRootReviews",
+        source,
+        flags=re.DOTALL,
+    )
+    assert function
+    body = function.group("body")
+    assert (
+        "AssertFixtureResultOracle $evidence.fixture_results[$resultIndex] "
+        "$stageFixtures[$resultIndex] 'release evidence'"
+    ) in body
+    assert (
+        "AssertFixtureResultOracle $partial.fixture_results[$partialIndex] "
+        "$selfTestFixtureOracle[$partialId] 'release evidence partial'"
+    ) in body
+    assert body.count("AssertFixtureResultOracle") == 2
+    oracle_function = re.search(
+        r"function AssertFixtureResultOracle\(\$result,\$oracle,"
+        r"\[string\]\$prefix\)\{.*?\n\}\nfunction ValidateReleaseEvidence",
+        source,
+        flags=re.DOTALL,
+    )
+    assert oracle_function
+    function_text = oracle_function.group(0).removesuffix(
+        "function ValidateReleaseEvidence"
+    )
+    oracle = {
+        "id": "FXT-TEST-001",
+        "stage": "publish",
+        "expected_exit": 0,
+        "expected_rejections": [],
+    }
+    tampered = _wp5_result("FXT-TEST-001")
+    tampered.update(
+        {
+            "expected_exit": 1,
+            "actual_exit": 1,
+            "expected_rejections": ["internally-consistent-but-not-oracle"],
+            "actual_rejection": "internally-consistent-but-not-oracle",
+            "success_criterion": (
+                "child rejects this fixture with one predeclared business assertion"
+            ),
+        }
+    )
+    script = (
+        "function Req($c,[string]$m){if(-not$c){throw $m}}\n"
+        + function_text
+        + "\n$result='"
+        + json.dumps(tampered, ensure_ascii=False)
+        + "'|ConvertFrom-Json;"
+        + "$oracle='"
+        + json.dumps(oracle, ensure_ascii=False)
+        + "'|ConvertFrom-Json;"
+        + "AssertFixtureResultOracle $result $oracle 'persisted';"
+    )
+    rejected = subprocess.run(
+        ["pwsh", "-NoProfile", "-Command", script],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+        timeout=60,
+    )
+    assert rejected.returncode != 0
+    assert "persisted fixture oracle" in rejected.stdout + rejected.stderr
+
+
+def test_wp5_after_replace_bootstrap_failure_removes_new_candidate():
+    source = (
+        RESEARCH / "validation/wp5-consistency/publish-wp5-consistency.ps1"
+    ).read_text(encoding="utf-8")
+    branch = re.search(
+        r"if\(\$InjectFailure-ceq'AfterReplace'\)\{(?P<body>.*?)"
+        r"throw 'WP5 injected failure AfterReplace'",
+        source,
+        flags=re.DOTALL,
+    )
+    assert branch
+    body = branch.group("body")
+    assert "elseif(-not$hadActive-and(Test-Path -LiteralPath $active))" in body
+    assert "Remove-Item -Force -LiteralPath $active" in body
+    assert "Remove-Item -Recurse -Force -LiteralPath $dest" in body
+    assert "Remove-Item -Force -LiteralPath $journalPath" in body
+
+
+@pytest.mark.parametrize("extra_args", [["-SkipSignoff"], []])
+def test_wp5_final_gate_passes_on_runner_platform(extra_args):
+    completed = subprocess.run(
+        [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            str(RESEARCH / "validate-wp5.ps1"),
+            *extra_args,
+        ],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+        timeout=300,
+    )
+    assert completed.returncode == 0, completed.stdout + completed.stderr
 
 
 def test_chapter05_correction_matches_file_manifest_and_acceptance_review():
@@ -628,6 +1360,26 @@ def test_persistence_git_probes_fail_closed(monkeypatch):
     )
     with pytest.raises(RuntimeError, match="invalid commit"):
         PERSISTENCE._git_head()
+
+
+def test_persistence_head_blob_uses_long_path_safe_git_plumbing(monkeypatch):
+    calls = []
+
+    def fake_run_git(*args, input_bytes=None):
+        calls.append(args)
+        return subprocess.CompletedProcess(
+            args=["git", *args],
+            returncode=0,
+            stdout=b"long-path-evidence",
+            stderr=b"",
+        )
+
+    monkeypatch.setattr(PERSISTENCE, "_run_git", fake_run_git)
+    expected = hashlib.sha256(b"long-path-evidence").hexdigest()
+    long_path = "a/" + ("b" * 300) + ".json"
+
+    assert PERSISTENCE._head_blob_sha256(long_path) == expected
+    assert calls == [("cat-file", "blob", f"HEAD:{long_path}")]
 
 
 def test_persistence_output_is_repo_scoped_and_atomic(tmp_path, monkeypatch):

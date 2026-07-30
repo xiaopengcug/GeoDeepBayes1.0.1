@@ -1,0 +1,108 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "registry",
+  "fixture_count": 6,
+  "fixture_id_set": [
+    "FXT-REGISTRY-008",
+    "FXT-REGISTRY-009",
+    "FXT-REGISTRY-010",
+    "FXT-REGISTRY-011",
+    "FXT-REGISTRY-012",
+    "FXT-REGISTRY-013"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-REGISTRY-008",
+      "case": "FXT-REGISTRY-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match a3-pod-hardware-boundary"
+      ],
+      "actual_rejection": "risk match a3-pod-hardware-boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4809
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-009",
+      "case": "FXT-REGISTRY-009",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match a11-borehole-observation"
+      ],
+      "actual_rejection": "risk match a11-borehole-observation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4918
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-010",
+      "case": "FXT-REGISTRY-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match a13-curie-source-contract"
+      ],
+      "actual_rejection": "risk match a13-curie-source-contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 5311
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-011",
+      "case": "FXT-REGISTRY-011",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-02-0027"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-02-0027",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 96191
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-012",
+      "case": "FXT-REGISTRY-012",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-03-0030"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-03-0030",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 72334
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-013",
+      "case": "FXT-REGISTRY-013",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-06-0002"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-06-0002",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 68112
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T21:03:15.5724324Z",
+  "output_sha256": "995d9e84e3d7e437040bc6e80e818db1ce003a467bf4cc57c47600803920efc1",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

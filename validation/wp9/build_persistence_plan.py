@@ -80,6 +80,7 @@ CONTROL_INPUTS = (
     "_bmad-output/implementation-artifacts/spec-rebuild-locked-reproducible-environment.md",
     "_bmad-output/implementation-artifacts/spec-verify-and-remediate-acceptance-review03.md",
     "_bmad-output/implementation-artifacts/spec-wp9-specialist-review-hardening.md",
+    "_bmad-output/implementation-artifacts/spec-fix-wp5-final-gate.md",
     "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/manifest-v1.json",
     f"{RESEARCH_RELATIVE}/validate-governance.ps1",
     f"{RESEARCH_RELATIVE}/validate-wp5.ps1",
@@ -89,8 +90,11 @@ CONTROL_INPUTS = (
     f"{RESEARCH_RELATIVE}/manifest.yaml",
     f"{RESEARCH_RELATIVE}/WP5-consistency-input-root.sha256",
     f"{RESEARCH_RELATIVE}/WP5-upstream-allowlist.json",
+    f"{RESEARCH_RELATIVE}/WP5-主编技术编辑与专项交叉复核独立签核.md",
     f"{RESEARCH_RELATIVE}/六角色独立再审-WP5.md",
     f"{RESEARCH_RELATIVE}/validation/wp5-consistency/active-output.json",
+    f"{RESEARCH_RELATIVE}/validation/wp5-consistency/WP5-consistency-root-anchor.sha256",
+    f"{RESEARCH_RELATIVE}/validation/wp5-consistency/final-root-reviews-v1/reviews-manifest.json",
     f"{RESEARCH_RELATIVE}/validation/wp7/validate_wp7.py",
     f"{RESEARCH_RELATIVE}/validation/wp7/synthetic-v6-config.json",
     f"{RESEARCH_RELATIVE}/validation/wp7/signoff-v4.json",
@@ -119,6 +123,37 @@ CONTROL_DIRECTORIES = (
     "validation/wp8/field",
     "src/geodeepbayes",
     "tests",
+)
+WP5_ROOT_MEMBERS = (
+    "00-摘要.md",
+    "01-引言.md",
+    "02-全方法深度融合的底层逻辑与理论总纲.md",
+    "03-多方法深度融合的核心技术实现路径.md",
+    "04-分场景多方法融合适配方案.md",
+    "05-工程化落地与效率优化方案.md",
+    "06-合成数据验证方案与验收设计.md",
+    "07-结论与展望.md",
+    "附录1-分矿种多方法融合定制化勘查模板.md",
+    "附录2-概率化反演结果应用规范与风险管控准则.md",
+    "附录3-算法选型与多方法组合决策树.md",
+    "附录4-核心算法性能基准测试计划与验收指标.md",
+    "附录5-真实矿区验证方案.md",
+    "附录11-分勘查阶段标准化操作手册.md",
+    "附录13-岩性物性参数统计数据库.md",
+    "附录14-地质先验知识库.md",
+    "贝叶斯三维反演测试算力需求说明.md",
+    "validation/wp5-consistency/consistency-contract.json",
+    "validation/wp5-consistency/claim-ledger.json",
+    "validation/wp5-consistency/previous-claim-ledger.json",
+    "WP5-upstream-allowlist.json",
+    "validation/wp5-consistency/scope-registry.json",
+    "validation/wp5-consistency/high-risk-classification.json",
+    "validation/wp5-consistency/selftest-fixture-manifest.json",
+    "validation/wp5-consistency/run-selftest-evidence.ps1",
+    "validation/wp5-consistency/finalize-selftest-stage-evidence.ps1",
+    "validation/wp5-consistency/publish-wp5-consistency.ps1",
+    "validate-wp5.ps1",
+    "ACTIVE_MANIFEST",
 )
 CONTROL_FILE_GLOBS = (
     # Pytest imports these scripts directly during collection. Keep the whole
@@ -164,6 +199,163 @@ def _resolve_reference_target(root: Path, base: Path, relative: Any) -> Path:
     if not target.is_file():
         raise ValueError(f"reference target missing: {relative}")
     return target
+
+
+def _wp5_final_gate_evidence_inputs(
+    *,
+    root: Path = ROOT,
+    research: Path = RESEARCH,
+) -> tuple[str, ...]:
+    """Resolve the exact review and release-evidence chain used by WP5."""
+
+    root = root.resolve()
+    research = research.resolve()
+    vroot = research / "validation/wp5-consistency"
+    review_dir = vroot / "final-root-reviews-v1"
+    review_manifest = review_dir / "reviews-manifest.json"
+    if not review_manifest.is_file():
+        raise FileNotFoundError(review_manifest.relative_to(root).as_posix())
+
+    paths: set[str] = {review_manifest.relative_to(root).as_posix()}
+    expected_by_target: dict[str, str] = {}
+
+    def add_bound(base: Path, record: Any, relation: str) -> Path:
+        if not isinstance(record, dict):
+            raise ValueError(f"invalid WP5 {relation} record")
+        expected = record.get("sha256")
+        if not isinstance(expected, str) or SHA256_PATTERN.fullmatch(expected) is None:
+            raise ValueError(f"invalid WP5 {relation} sha256")
+        raw_path = record.get("path")
+        target = _resolve_reference_target(root, base, raw_path)
+        try:
+            canonical_path = target.relative_to(base.resolve()).as_posix()
+        except ValueError as exc:
+            raise ValueError(f"WP5 {relation} path escapes its evidence base") from exc
+        if raw_path != canonical_path:
+            raise ValueError(f"non-canonical WP5 {relation} path")
+        relative = target.relative_to(root).as_posix()
+        previous = expected_by_target.get(relative)
+        if previous is not None and previous != expected:
+            raise ValueError(f"conflicting WP5 evidence hashes: {relative}")
+        if sha256_file(target) != expected:
+            raise ValueError(f"WP5 evidence hash drift: {relative}")
+        expected_by_target[relative] = expected
+        paths.add(relative)
+        return target
+
+    manifest_payload = json.loads(review_manifest.read_text(encoding="utf-8"))
+    if manifest_payload.get("schema") != "wp5-final-root-reviews-manifest-v1":
+        raise ValueError("unexpected WP5 final reviews manifest schema")
+    reviews = manifest_payload.get("reviews")
+    if not isinstance(reviews, list) or len(reviews) != 6:
+        raise ValueError("unexpected WP5 final review set")
+    review_paths: set[str] = set()
+    for review in reviews:
+        review_path = review.get("path") if isinstance(review, dict) else None
+        if not isinstance(review_path, str) or review_path in review_paths:
+            raise ValueError("duplicate or invalid WP5 final review path")
+        review_paths.add(review_path)
+        add_bound(review_dir, review, "final review")
+
+    envelope = add_bound(
+        vroot,
+        manifest_payload.get("release_evidence"),
+        "release envelope",
+    )
+    envelope_payload = json.loads(envelope.read_text(encoding="utf-8"))
+    if envelope_payload.get("schema") != "wp5-release-evidence-envelope-v1":
+        raise ValueError("unexpected WP5 release envelope schema")
+    stages = envelope_payload.get("stages")
+    if not isinstance(stages, list) or len(stages) != 7:
+        raise ValueError("unexpected WP5 release stage set")
+    expected_stages = {
+        "upstream-lineage",
+        "allowlist",
+        "registry",
+        "language-structure-boundary",
+        "publish",
+        "signoff",
+        "lineage-migration",
+    }
+    stage_names: set[str] = set()
+    stage_paths: set[str] = set()
+    partial_paths: set[str] = set()
+    for stage in stages:
+        if not isinstance(stage, dict):
+            raise ValueError("invalid WP5 release stage record")
+        stage_name = stage.get("stage")
+        stage_relative = stage.get("path")
+        if (
+            not isinstance(stage_name, str)
+            or stage_name in stage_names
+            or not isinstance(stage_relative, str)
+            or stage_relative in stage_paths
+        ):
+            raise ValueError("duplicate or invalid WP5 release stage")
+        stage_names.add(stage_name)
+        stage_paths.add(stage_relative)
+        stage_path = add_bound(envelope.parent, stage, "release stage")
+        stage_payload = json.loads(stage_path.read_text(encoding="utf-8"))
+        if stage_payload.get("stage") != stage_name:
+            raise ValueError("WP5 release stage identity drift")
+        if stage_payload.get("schema") == "wp5-selftest-finalized-evidence-v1":
+            partials = stage_payload.get("partial_evidence")
+            if not isinstance(partials, list) or not partials:
+                raise ValueError("finalized WP5 stage has no partial evidence")
+            for partial in partials:
+                partial_relative = (
+                    partial.get("path") if isinstance(partial, dict) else None
+                )
+                if (
+                    not isinstance(partial_relative, str)
+                    or partial_relative in partial_paths
+                ):
+                    raise ValueError("duplicate or invalid WP5 release partial")
+                partial_paths.add(partial_relative)
+                add_bound(stage_path.parent, partial, "release partial")
+        elif stage_payload.get("schema") != "wp5-selftest-evidence-v1":
+            raise ValueError("unexpected WP5 release stage schema")
+    if stage_names != expected_stages:
+        raise ValueError("unexpected WP5 release stage identities")
+
+    return tuple(sorted(paths))
+
+
+def _wp5_root_inputs(
+    *,
+    root: Path = ROOT,
+    research: Path = RESEARCH,
+) -> tuple[str, ...]:
+    """Validate and expand the exact 29-member WP5 root."""
+
+    root = root.resolve()
+    research = research.resolve()
+    root_file = research / "WP5-consistency-input-root.sha256"
+    lines = root_file.read_text(encoding="utf-8").splitlines()
+    if len(lines) != 31 or lines[:2] != ["# WP5 consistency root v1", ""]:
+        raise ValueError("unexpected WP5 root file structure")
+    records: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for line in lines[2:]:
+        match = re.fullmatch(r"([0-9a-f]{64})  (\S(?:.*\S)?)", line)
+        if match is None:
+            raise ValueError("invalid WP5 root member record")
+        expected, relative = match.groups()
+        if relative in seen:
+            raise ValueError("duplicate WP5 root member")
+        seen.add(relative)
+        records.append((relative, expected))
+    if tuple(relative for relative, _ in records) != WP5_ROOT_MEMBERS:
+        raise ValueError("unexpected WP5 root member set or order")
+
+    paths = {root_file.relative_to(root).as_posix()}
+    for relative, expected in records:
+        target = _resolve_reference_target(root, research, relative)
+        normalized = target.relative_to(root).as_posix()
+        if sha256_file(target) != expected:
+            raise ValueError(f"WP5 root member hash drift: {normalized}")
+        paths.add(normalized)
+    return tuple(sorted(paths))
 
 
 def _derive_reference_closure(
@@ -445,7 +637,9 @@ def _git_is_ancestor(ancestor: str, descendant: str = "HEAD") -> bool:
 
 
 def _head_blob_sha256(relative: str) -> str | None:
-    process = _run_git("show", f"HEAD:{relative}")
+    # `git show HEAD:<path>` may fail with "Filename too long" on Windows
+    # even when the blob is present. Read the tree object directly instead.
+    process = _run_git("cat-file", "blob", f"HEAD:{relative}")
     if process.returncode:
         return None
     return hashlib.sha256(process.stdout).hexdigest()
@@ -501,6 +695,12 @@ def _control_inputs(
     reference_closure: dict[str, Any] | None = None,
 ) -> tuple[str, ...]:
     expanded = list(CONTROL_INPUTS)
+    for relative in _wp5_root_inputs():
+        if relative not in expanded:
+            expanded.append(relative)
+    for relative in _wp5_final_gate_evidence_inputs():
+        if relative not in expanded:
+            expanded.append(relative)
     for relative in _required_wp8_repository_assets():
         if relative not in expanded:
             expanded.append(relative)

@@ -1,0 +1,34 @@
+{
+  "schema": "wp5-final-root-review-v1",
+  "review_id": "WP5-FINAL-ROOT-ARCHITECTURE",
+  "role": "工程架构复核",
+  "reviewer_identity": "Codex automated AI / 工程架构复核",
+  "identity_type": "automated-ai-final-root-review",
+  "decision": "Approved",
+  "reviewed_at_utc": "2026-07-30T22:00:07Z",
+  "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+  "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+  "candidate": {
+    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25"
+  },
+  "review_scope": "execution contracts, recovery, CI, and capability-status boundaries",
+  "checks": [
+    "Traced the journal v3 transaction across prepared, version-moved, and candidate-committed phases, including atomic active-output and ACTIVE_MANIFEST commit or rollback.",
+    "Confirmed publish fixtures 011-020 exercise lock contention, snapshot drift, every injected transaction boundary, invalid journals, fail-closed recovery, and the recovered production gate.",
+    "Confirmed the evidence runner uses platform-safe nested Join-Path construction and CI executes its publish smoke on both Ubuntu and Windows.",
+    "Confirmed canonical containment accepts a legal child and an internal resolved link while rejecting prefix-sibling, dot-dot, and resolved-link escapes.",
+    "Confirmed the validator, runner, finalizer, fixture oracle, root anchor, and seven-stage envelope form one hash-bound 300-fixture evidence chain.",
+    "Confirmed all 15 governed code blocks remain interface drafts with capability_status=not-executable and test_evidence=none; no tested capability is asserted.",
+    "Confirmed the pinned CI contract runs fixed Ubuntu and Windows required gates, the WP5 smoke and full gate, and permits main-branch attestation only after required-gates."
+  ],
+  "findings": [],
+  "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680",
+    "total_fixture_count": 300
+  }
+}

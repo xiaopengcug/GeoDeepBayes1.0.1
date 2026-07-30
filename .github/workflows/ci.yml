@@ -22,7 +22,7 @@ jobs:
   required-gates:
     name: Required gates (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 30
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
@@ -137,14 +137,63 @@ jobs:
         shell: bash
         run: bash "$WP6_ROOT/validation/wp6-governance/test-worker-uid.sh"
 
-      # WP5 is intentionally last: its signed root currently reports the
-      # independently documented ACTIVE_MANIFEST drift. Earlier distributable
-      # gates must still produce remote Ubuntu/Windows evidence.
+      - name: Run WP5 cross-platform publish smoke
+        shell: pwsh
+        run: |
+          $fixtureIds = @(
+            "FXT-PUBLISH-001",
+            "FXT-PUBLISH-006",
+            "FXT-PUBLISH-011",
+            "FXT-PUBLISH-012",
+            "FXT-PUBLISH-013",
+            "FXT-PUBLISH-014",
+            "FXT-PUBLISH-015",
+            "FXT-PUBLISH-016"
+          )
+          $smokeScript = "$env:WP6_ROOT/validation/wp5-consistency/run-selftest-evidence.ps1"
+          $smokeOutput = & $smokeScript `
+            -Stage publish `
+            -FixtureIds $fixtureIds `
+            -SmokeTest 2>&1
+          $smokeExit = $LASTEXITCODE
+          $smokeOutput | ForEach-Object { Write-Output $_ }
+          if ($smokeExit -ne 0) {
+            $smokeDetail = (($smokeOutput | Out-String).Trim() `
+              -replace '%', '%25' `
+              -replace "`r", '%0D' `
+              -replace "`n", '%0A')
+            Write-Output "::error title=WP5 publish smoke failed::$smokeDetail"
+            exit $smokeExit
+          }
+
+      # WP5 is intentionally last so every earlier distributable gate still
+      # produces evidence when WP5 fails closed. Preserve its complete output
+      # and surface it as a GitHub annotation on both runner platforms.
       - name: Run WP5 consistency gate
         shell: pwsh
         run: |
-          & "$env:WP6_ROOT/validate-wp5.ps1"
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $startInfo = [Diagnostics.ProcessStartInfo]::new()
+          $startInfo.FileName = (Get-Command pwsh).Source
+          $startInfo.UseShellExecute = $false
+          $startInfo.RedirectStandardOutput = $true
+          $startInfo.RedirectStandardError = $true
+          foreach ($argument in @('-NoProfile', '-File', "$env:WP6_ROOT/validate-wp5.ps1")) {
+            [void]$startInfo.ArgumentList.Add($argument)
+          }
+          $process = [Diagnostics.Process]::new()
+          $process.StartInfo = $startInfo
+          [void]$process.Start()
+          $stdout = $process.StandardOutput.ReadToEndAsync()
+          $stderr = $process.StandardError.ReadToEndAsync()
+          $process.WaitForExit()
+          $wp5Exit = $process.ExitCode
+          $wp5Text = $stdout.Result + $stderr.Result
+          Write-Host $wp5Text
+          if ($wp5Exit -ne 0) {
+            $annotation = $wp5Text.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A')
+            Write-Output "::error title=WP5 consistency gate failed::$annotation"
+            exit $wp5Exit
+          }
 
   attest-evidence-root:
     name: Attest final evidence root

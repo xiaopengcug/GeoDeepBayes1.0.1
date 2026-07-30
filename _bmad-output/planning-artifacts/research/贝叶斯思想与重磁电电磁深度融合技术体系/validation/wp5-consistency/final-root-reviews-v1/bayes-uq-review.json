@@ -1,0 +1,35 @@
+{
+  "schema": "wp5-final-root-review-v1",
+  "review_id": "WP5-FINAL-ROOT-BAYES-UQ",
+  "role": "贝叶斯/UQ复核",
+  "reviewer_identity": "Codex automated AI / 贝叶斯/UQ复核",
+  "identity_type": "automated-ai-final-root-review",
+  "decision": "Approved",
+  "reviewed_at_utc": "2026-07-30T22:00:14Z",
+  "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+  "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+  "candidate": {
+    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25"
+  },
+  "review_scope": "Bayesian hierarchy, support, calibration, and uncertainty boundaries",
+  "checks": [
+    "Confirmed the unique joint model defines model-index base measures, correlated Student-t scale semantics, properness conditions, and Full-Bayes versus empirical-Bayes boundaries.",
+    "Confirmed origin and ancestor lineage prevents double use of boreholes, physical properties, interpretation, and geophysical observations.",
+    "Confirmed the Green specification includes forward and reverse move probabilities, auxiliary densities, dimension matching, Jacobians, boundary renormalization, and move-level logs.",
+    "Confirmed PPC, SBC, parameter coverage, holdout predictive coverage, and field coverage use distinct meanings and independent units.",
+    "Confirmed design EIG, realized posterior information gain, forward LOMO, and draw-wise decision loss are not collapsed into additive contribution scores.",
+    "Confirmed the selected UQ, marginal-likelihood, model-index, Green-ratio, SBC, PPC, and LOMO negative fixtures reject exactly as predeclared.",
+    "Confirmed the rank-deficient economic-SVD dimensions, centered POD snapshots, isolated tune/final-test selection, and the prohibition on inferring time-to-accuracy from dimension ratio alone.",
+    "Traced 45 Bayesian/UQ oracle cases through the v3 fixture manifest and current seven-stage envelope; every selected result matched its immutable oracle."
+  ],
+  "findings": [],
+  "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680",
+    "total_fixture_count": 300
+  }
+}

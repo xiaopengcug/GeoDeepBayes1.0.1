@@ -1,0 +1,108 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "registry",
+  "fixture_count": 6,
+  "fixture_id_set": [
+    "FXT-REGISTRY-020",
+    "FXT-REGISTRY-021",
+    "FXT-REGISTRY-022",
+    "FXT-REGISTRY-023",
+    "FXT-REGISTRY-024",
+    "FXT-REGISTRY-025"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-REGISTRY-020",
+      "case": "FXT-REGISTRY-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ],
+      "actual_rejection": "planned communication benchmark boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52481
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-021",
+      "case": "FXT-REGISTRY-021",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix3 conditional depth capability"
+      ],
+      "actual_rejection": "appendix3 conditional depth capability",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53578
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-022",
+      "case": "FXT-REGISTRY-022",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "lambda namespace separation"
+      ],
+      "actual_rejection": "lambda namespace separation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 51873
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-023",
+      "case": "FXT-REGISTRY-023",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ],
+      "actual_rejection": "planned communication benchmark boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55798
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-024",
+      "case": "FXT-REGISTRY-024",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "summary normalized likelihood and generalized posterior separation"
+      ],
+      "actual_rejection": "summary normalized likelihood and generalized posterior separation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55829
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-025",
+      "case": "FXT-REGISTRY-025",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ],
+      "actual_rejection": "planned communication benchmark boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55555
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T21:42:10.0944066Z",
+  "output_sha256": "7e58c0198fa70923a400b4f2a3423361ac1b59b5e3b061a3d56a1bf4112c9d97",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}
