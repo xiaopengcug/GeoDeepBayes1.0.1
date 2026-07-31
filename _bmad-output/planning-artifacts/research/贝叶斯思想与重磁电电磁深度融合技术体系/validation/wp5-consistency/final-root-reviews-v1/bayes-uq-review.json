@@ -5,7 +5,7 @@
   "reviewer_identity": "Codex automated AI / 贝叶斯/UQ复核",
   "identity_type": "automated-ai-final-root-review",
   "decision": "Approved",
-  "reviewed_at_utc": "2026-07-31T06:15:03Z",
+  "reviewed_at_utc": "2026-07-31T06:46:03Z",
   "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
   "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
   "candidate": {
@@ -24,7 +24,7 @@
     "Confirmed the selected UQ, marginal-likelihood, model-index, Green-ratio, SBC, PPC, and LOMO negative fixtures reject exactly as predeclared.",
     "Confirmed the rank-deficient economic-SVD dimensions, centered POD snapshots, isolated tune/final-test selection, and the prohibition on inferring time-to-accuracy from dimension ratio alone.",
     "Traced 45 Bayesian/UQ oracle cases through the v3 fixture manifest and current seven-stage envelope; every selected result matched its immutable oracle.",
-    "Confirmed the Windows-only pre-checkout core.longpaths bootstrap is operational plumbing and does not alter the Bayesian target, calibration contracts, fixture oracles, or frozen 29-member candidate; reviewed CI workflow SHA-256 bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821, with effectiveness subject to the next Windows clean-checkout run."
+    "Confirmed the Windows-only pre-checkout core.longpaths bootstrap and smoke TEMP-to-RUNNER_TEMP normalization are operational plumbing and do not alter the Bayesian target, calibration contracts, fixture oracles, or frozen 29-member candidate; reviewed CI workflow SHA-256 3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6, with effectiveness subject to the next Windows clean-checkout run."
   ],
   "findings": [],
   "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",

@@ -145,6 +145,11 @@ jobs:
       - name: Run WP5 cross-platform publish smoke
         shell: pwsh
         run: |
+          if ([string]::IsNullOrWhiteSpace($env:RUNNER_TEMP) -or
+              -not (Test-Path -LiteralPath $env:RUNNER_TEMP -PathType Container)) {
+            throw "RUNNER_TEMP is unavailable for WP5 publish smoke."
+          }
+          $env:TEMP = [IO.Path]::GetFullPath($env:RUNNER_TEMP)
           $fixtureIds = @(
             "FXT-PUBLISH-001",
             "FXT-PUBLISH-006",

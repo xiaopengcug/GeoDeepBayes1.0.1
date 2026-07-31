@@ -21,7 +21,7 @@
   },
   "implementation_evidence": {
     "ci_workflow_path": ".github/workflows/ci.yml",
-    "ci_workflow_sha256": "bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821",
+    "ci_workflow_sha256": "3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6",
     "remote_required_gates": "pending-until-committed-clean-checkout-run"
   },
   "exact_roles": [
@@ -37,42 +37,42 @@
       "review_id": "WP5-FINAL-ROOT-MAIN-EDITOR",
       "role": "主编",
       "path": "main-editor.json",
-      "sha256": "8b1d3486928c6bb4e17bf543743827924dbe8847ace5704b682e5f289e1b25d3",
+      "sha256": "d60ff1dfa37cba66b9346c5338de8ad852fd17db2b5fce54207e0504b6be4295",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-TECHNICAL-EDITOR",
       "role": "技术编辑",
       "path": "technical-editor.json",
-      "sha256": "b81dab43b17a94a3d3893ff12a48f7beee25f18fb2e692ca7060d1221a0f25b0",
+      "sha256": "f02b22a79aafd808ccacda8cb07d59ed2c81de6f701d73df60ec3a8fff99369d",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-GEOPHYSICS",
       "role": "地球物理复核",
       "path": "geophysics-review.json",
-      "sha256": "274b8f290effa085f9dbd3f73c4f5417a38f8f85245862cd6b662ca8ac36c101",
+      "sha256": "7f5357b14e71b54a4c7b7b18964b544a314000efda396a2e5579cda2b697b51d",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-BAYES-UQ",
       "role": "贝叶斯/UQ复核",
       "path": "bayes-uq-review.json",
-      "sha256": "141eb36612e2717178a30de1583c6ec4b4ca8d27ddd4346f2ffc9e9b744f2d35",
+      "sha256": "9aa69d213ea09ec9acb2703f7a31a0aae68af8011881372ed48a7c1ccae249db",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-NUMERICAL",
       "role": "算法数值复核",
       "path": "numerical-review.json",
-      "sha256": "d8ad86b55ab78d61f12678ef10de657270359a2baf96760a3c27596f95f53cdd",
+      "sha256": "2f38b6857e7bbe696839c371d35ba37f90c6ec3733686ac55a4437918bea0c09",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-ARCHITECTURE",
       "role": "工程架构复核",
       "path": "architecture-review.json",
-      "sha256": "1c768115b40187995ae1ec644fadaaa3dd91ff593b4ce63c4597766dab0e6d44",
+      "sha256": "dfb20c2d72c994bbb028d723c1652bfa73dc19bba5b83ddb30d1e7b45535b039",
       "decision": "Approved"
     }
   ]

@@ -15,9 +15,9 @@
 - 根清单文件SHA-256：`ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c`
 - 授权冻结块SHA-256：`fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748`
 - Round-2授权修正块SHA-256：`126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1`
-- CI workflow SHA-256：`bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821`
+- CI workflow SHA-256：`3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6`
 - release evidence envelope SHA-256：`bcfcf3044df93c15eb8ef8db63732b32337fa394e0700de326f2c6ff1c742317`
-- 六角色reviews manifest SHA-256：`fa54da865572ad07cf4016edc4d0e4996511d2ada4ca00f35890aa25116e400c`
+- 六角色reviews manifest SHA-256：`39f6d5480331d3c8efef82da2fe3acf3109b94a5b781310e0205f27bd5355e73`
 - 身份类型：`automated-ai-final-root-review`
 - 证据等级：`Document-governance`
 

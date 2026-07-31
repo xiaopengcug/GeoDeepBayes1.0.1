@@ -5,7 +5,7 @@
   "reviewer_identity": "Codex automated AI / 地球物理复核",
   "identity_type": "automated-ai-final-root-review",
   "decision": "Approved",
-  "reviewed_at_utc": "2026-07-31T06:15:02Z",
+  "reviewed_at_utc": "2026-07-31T06:46:02Z",
   "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
   "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
   "candidate": {
@@ -24,7 +24,7 @@
     "Confirmed the selected geophysical and conditional-depth negative fixtures reject with their predeclared business assertions.",
     "Recomputed all 29 ordered root members, member/root/anchor hashes, active-output pointer, and ACTIVE_MANIFEST binding against the current candidate.",
     "Confirmed the v3 fixture manifest has 300 unique canonical cases and the seven-stage envelope contains exactly 300 matched oracle-bound results.",
-    "Bound this geophysical review to CI workflow SHA-256 bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821; explicit Sort-Object and pre-checkout long-path changes affect validation and repository transport only, do not alter physical claims or evidence scope, and do not assert a remote gate PASS."
+    "Bound this geophysical review to CI workflow SHA-256 3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6; explicit Sort-Object, pre-checkout long-path, and smoke TEMP-to-RUNNER_TEMP normalization affect validation and repository transport only, do not alter physical claims or evidence scope, and do not assert a remote gate PASS."
   ],
   "findings": [],
   "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",

@@ -5,7 +5,7 @@
   "reviewer_identity": "Codex automated AI / 工程架构复核",
   "identity_type": "automated-ai-final-root-review",
   "decision": "Approved",
-  "reviewed_at_utc": "2026-07-31T06:15:05Z",
+  "reviewed_at_utc": "2026-07-31T06:46:05Z",
   "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
   "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
   "candidate": {
@@ -22,7 +22,7 @@
     "Confirmed canonical containment accepts a legal child and an internal resolved link while rejecting prefix-sibling, dot-dot, and resolved-link escapes.",
     "Confirmed validator SHA-256 cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d, the runner, finalizer, fixture oracle, root anchor, and seven-stage envelope form one hash-bound 300-fixture evidence chain.",
     "Confirmed all 15 governed code blocks remain interface drafts with capability_status=not-executable and test_evidence=none; no tested capability is asserted.",
-    "Confirmed CI workflow SHA-256 bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821 configures Git core.longpaths=true before checkout, retains pinned Ubuntu and Windows required gates plus the WP5 smoke and full gate, and leaves remote clean-checkout status pending until those gates actually run."
+    "Confirmed CI workflow SHA-256 3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6 configures Git core.longpaths=true before checkout, normalizes WP5 smoke TEMP to RUNNER_TEMP, retains pinned Ubuntu and Windows required gates plus the full WP5 gate, and leaves remote clean-checkout status pending until those gates actually run."
   ],
   "findings": [],
   "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",

@@ -5,7 +5,7 @@
   "reviewer_identity": "Codex automated AI / 主编",
   "identity_type": "automated-ai-final-root-review",
   "decision": "Approved",
-  "reviewed_at_utc": "2026-07-31T06:15:00Z",
+  "reviewed_at_utc": "2026-07-31T06:46:00Z",
   "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
   "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
   "candidate": {
@@ -24,7 +24,7 @@
     "Confirmed the unique RJMCMC Green contract is consistent across theory, implementation, scenarios, engineering, and appendices.",
     "Confirmed design EIG, realized information gain, LOMO, PPC, SBC, parameter coverage, and holdout predictive coverage remain distinct.",
     "Confirmed all 300 formal fixtures are governance evidence only and are not presented as field, production, resource, or performance proof.",
-    "Confirmed the CI workflow bound to this review has SHA-256 bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821; its Windows-only long-path bootstrap precedes checkout without changing the manuscript evidence boundary or promoting remote PASS before a committed clean-checkout run.",
+    "Confirmed the CI workflow bound to this review has SHA-256 3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6; its Windows-only long-path bootstrap precedes checkout and the WP5 smoke normalizes TEMP to RUNNER_TEMP without changing the manuscript evidence boundary or promoting remote PASS before a committed clean-checkout run.",
     "Confirmed the validator delta is exactly 17 command-name expansions from the sort alias to Sort-Object; arguments and data flow are unchanged, so the portable spelling does not alter scientific or governance meaning."
   ],
   "findings": [],
