@@ -5,14 +5,14 @@
   "reviewer_identity": "Codex automated AI / 技术编辑",
   "identity_type": "automated-ai-final-root-review",
   "decision": "Approved",
-  "reviewed_at_utc": "2026-07-30T23:44:35Z",
+  "reviewed_at_utc": "2026-07-31T02:55:59Z",
   "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
   "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
   "candidate": {
-    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
-    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
-    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
-    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25"
+    "run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+    "manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+    "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+    "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f"
   },
   "review_scope": "exact scope, evidence language, and traceability",
   "checks": [
@@ -22,14 +22,14 @@
     "Confirmed 350 active ledger entries, 72 scopes, nine risk rules, and no Observed evidence promotion.",
     "Compared all seven formal stages and all 300 fixture IDs, v3 canonical cases, exits, rejection oracles, matched flags, candidate bindings, and stage hashes.",
     "Confirmed the exact controlled set is 00-07, appendices 1-5/11/13/14, plus the compute-support file; appendices 6-10 and 12 are outside the controlled root.",
-    "Executed the final production validator with SkipSignoff and observed its unique PASS marker for the bound run.",
-    "Confirmed CI workflow SHA-256 bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821 enables Windows long paths before checkout, and the staged removal is limited to the inactive 20260724T034858702Z-b530 manifest/scan pair outside the active 29-member and persistence closures."
+    "Recomputed the finalized seven-stage evidence and confirmed exact ordered coverage of all 300 oracle fixtures, including 61 referenced partial-evidence files with no overlap or omission.",
+    "Confirmed validator SHA-256 cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d changes exactly 17 lowercase sort aliases to explicit Sort-Object cmdlets without changing arguments or data flow; this local evidence does not assert remote CI PASS."
   ],
   "findings": [],
   "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
   "release_evidence": {
     "path": "release-evidence-v1/envelope.json",
-    "sha256": "a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680",
+    "sha256": "99abfb2f72ea0669bfbdaccf385afeaf8a64cba334ec168b86dc8eb9912d2870",
     "total_fixture_count": 300
   }
 }

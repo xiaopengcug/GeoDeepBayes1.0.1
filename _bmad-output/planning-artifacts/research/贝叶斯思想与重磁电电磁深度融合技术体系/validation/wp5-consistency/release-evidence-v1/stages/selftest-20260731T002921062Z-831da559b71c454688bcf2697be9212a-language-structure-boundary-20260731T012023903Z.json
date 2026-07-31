@@ -1,0 +1,474 @@
+{
+  "schema": "wp5-selftest-finalized-evidence-v1",
+  "evidence_class": "Finalized from exact, non-overlapping partial evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_version_path": "versions/20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+  "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f",
+  "root_anchor_file_sha256": "c3cc21b5342d59390d0c33da2250cda58f3dde61bae7b9e94a6faca3e52b7e67",
+  "stage": "language-structure-boundary",
+  "fixture_count": 31,
+  "fixture_id_set": [
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-001",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-002",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-003",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-004",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-005",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-006",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-007",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-008",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-009",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-010",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-011",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-012",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-013",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-014",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-015",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-016",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-017",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-018",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-019",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-020",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-021",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-022",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-023",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-024",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-025",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-026",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-027",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-028",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-029",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-030",
+    "FXT-LANGUAGE-STRUCTURE-BOUNDARY-031"
+  ],
+  "batch_role": "stage",
+  "partial_evidence": [
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T004840314Z.json",
+      "sha256": "def0647edba774f89dac943333896bbfde03347e31d17dcff2dca857fa3d3d9f"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T005502879Z.json",
+      "sha256": "8dd9a67deaa2d4283a825645138a6d70a22c6d8de1092a13556b7d229ffa1ab1"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T010059399Z.json",
+      "sha256": "c606580bf0b5660a8c887e5b889da21e16ea4c4864d9abd286947155ff7029b5"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T010647235Z.json",
+      "sha256": "f17c130bc11f5028a36e528ff05076a0d79ea20965332eb214a58174ee1c478f"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T011234347Z.json",
+      "sha256": "61f132ad60155c06265338213f22da9328e811265dc47b690f86bb941ca125b8"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T011814144Z.json",
+      "sha256": "05b1532d14f12e88e977f5e284853aec6cb55b6b33411c9c20ede17bc83a5f7c"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T012023564Z.json",
+      "sha256": "c4aa2ec9fab949076d4588808cd535b593d1f84cfdecea8aae2c85c525ac8e20"
+    }
+  ],
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-001",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-001",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "code language/fence"
+      ],
+      "actual_rejection": "code language/fence",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 76821
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-002",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-002",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml indentation"
+      ],
+      "actual_rejection": "yaml indentation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 71118
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-003",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml syntax"
+      ],
+      "actual_rejection": "toml syntax",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59861
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-004",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "text execution semantics"
+      ],
+      "actual_rejection": "text execution semantics",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 61191
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-005",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "code imports/symbols/tests"
+      ],
+      "actual_rejection": "code imports/symbols/tests",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 61229
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-006",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "code content keys"
+      ],
+      "actual_rejection": "code content keys",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 61525
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-007",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml structure"
+      ],
+      "actual_rejection": "yaml structure",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 57959
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-008",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml duplicate key"
+      ],
+      "actual_rejection": "yaml duplicate key",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59948
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-009",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-009",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml indentation"
+      ],
+      "actual_rejection": "yaml indentation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60522
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-010",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml block"
+      ],
+      "actual_rejection": "yaml block",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60976
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-011",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-011",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml value"
+      ],
+      "actual_rejection": "toml value",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 61736
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-012",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-012",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml string"
+      ],
+      "actual_rejection": "toml string",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 56864
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-013",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-013",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml duplicate key"
+      ],
+      "actual_rejection": "toml duplicate key",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55598
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-014",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-014",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml duplicate table"
+      ],
+      "actual_rejection": "toml duplicate table",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52484
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-015",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-015",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml duplicate key"
+      ],
+      "actual_rejection": "yaml duplicate key",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54135
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-016",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml value"
+      ],
+      "actual_rejection": "toml value",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54608
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-017",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml value"
+      ],
+      "actual_rejection": "toml value",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55870
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-018",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml duplicate table"
+      ],
+      "actual_rejection": "toml duplicate table",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52642
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-019",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml duplicate key"
+      ],
+      "actual_rejection": "toml duplicate key",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53533
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-020",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml duplicate table"
+      ],
+      "actual_rejection": "toml duplicate table",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53211
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-021",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-021",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "toml duplicate key"
+      ],
+      "actual_rejection": "toml duplicate key",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54140
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-022",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-022",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 54185
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-023",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-023",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 53676
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-024",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-024",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 54531
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-025",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-025",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml duplicate key"
+      ],
+      "actual_rejection": "yaml duplicate key",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54623
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-026",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-026",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml syntax"
+      ],
+      "actual_rejection": "yaml syntax",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52932
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-027",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-027",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "yaml syntax"
+      ],
+      "actual_rejection": "yaml syntax",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52478
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-028",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-028",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 52255
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-029",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-029",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 52446
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-030",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-030",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 56001
+    },
+    {
+      "fixture_id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-031",
+      "case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-031",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 54917
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T01:20:23.9044273Z",
+  "output_sha256": "e42df0cd77e7c5df143e6d1661af577a616ee6a45856af995860f38f62e95954",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

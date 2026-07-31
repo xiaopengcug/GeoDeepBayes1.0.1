@@ -34,7 +34,7 @@
       "work_package": "WP5",
       "path": "validation/wp5-consistency/active-output.json",
       "bytes": 288,
-      "sha256": "77d077eabb247076ec30441d8456f94b0c0acf6fcc3fa8e53fa29bb83dbfe8c1",
+      "sha256": "beed9bf4eb18b27ac57f503221313b558de374df32e15e3ad54778f4dbbb6477",
       "migration_state": "Legacy-frozen"
     }
   ]

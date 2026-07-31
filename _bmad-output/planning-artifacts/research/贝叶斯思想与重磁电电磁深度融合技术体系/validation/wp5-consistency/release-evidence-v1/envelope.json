@@ -2,58 +2,58 @@
   "schema": "wp5-release-evidence-envelope-v1",
   "evidence_class": "Post-publication self-test evidence; document-governance only",
   "candidate": {
-    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
-    "version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
-    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
-    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
-    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
-    "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036"
+    "run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+    "version_path": "versions/20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+    "manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+    "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+    "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f",
+    "root_anchor_file_sha256": "c3cc21b5342d59390d0c33da2250cda58f3dde61bae7b9e94a6faca3e52b7e67"
   },
-  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
   "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
   "total_fixture_count": 300,
   "stages": [
     {
       "stage": "upstream-lineage",
       "fixture_count": 33,
-      "path": "stages/selftest-20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07-upstream-lineage-20260730T213541855Z.json",
-      "sha256": "7b3c7c22c74ccb1f09b3c6d5d1d876ac6623691ec8569a351845526aac716bad"
+      "path": "stages/selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T011914872Z.json",
+      "sha256": "84c35e483ace85705a1d8d34d8e833a60dc453955544ce32f924ed4504db12d0"
     },
     {
       "stage": "allowlist",
       "fixture_count": 9,
-      "path": "stages/selftest-20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07-allowlist-20260730T203850098Z.json",
-      "sha256": "e43e41505a8ac5e1ef1fddc36108ed4c2625afaec5a82fbd6ca4209aa1bf9279"
+      "path": "stages/selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-allowlist-20260731T015433018Z.json",
+      "sha256": "c8f75f51c376837bc74ff9d2d7a45617bbe4795f8b42ed1f37a94691764f287f"
     },
     {
       "stage": "registry",
       "fixture_count": 25,
-      "path": "stages/selftest-20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07-registry-20260730T214218867Z.json",
-      "sha256": "9d8b1fb55f1b6c3b620b6edb9550f1dee6925ebe3d7bca6fcd3aca88aab14953"
+      "path": "stages/selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-registry-20260731T014751765Z.json",
+      "sha256": "fead2e422a25d687f5c0f1f05947600e39ec4b4c3eca2cf042a15441c6855a3d"
     },
     {
       "stage": "language-structure-boundary",
       "fixture_count": 31,
-      "path": "stages/selftest-20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07-language-structure-boundary-20260730T214218817Z.json",
-      "sha256": "782198b5f2a68a0141d6a13a3ea9b7fcbf29c43f5d9793e2083c58902883b328"
+      "path": "stages/selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-language-structure-boundary-20260731T012023903Z.json",
+      "sha256": "717b3630830a729c37d59b1c8504a8406fe51f13ce42a8e9250069925412af61"
     },
     {
       "stage": "publish",
       "fixture_count": 20,
-      "path": "stages/selftest-20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07-publish-20260730T214218895Z.json",
-      "sha256": "9dfba6d505e7de79e1ba69e7f139c0e8fcec4f7898c966bc2892d9ca9967feb5"
+      "path": "stages/selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-publish-20260731T023711794Z.json",
+      "sha256": "5116d339f0dae44a11fe99da8fcd0f50066fc95cbb82d10cdf41866db65c92fd"
     },
     {
       "stage": "signoff",
       "fixture_count": 28,
-      "path": "stages/selftest-20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07-signoff-20260730T213541814Z.json",
-      "sha256": "0cac3cde41697a8c0afc701716dd9a75756c795feb07945fdb79764d91975f40"
+      "path": "stages/selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-signoff-20260731T015822384Z.json",
+      "sha256": "2af57ce5f22f4c0efd34a11687e44837eed6378f1fe5330359c58e000469de66"
     },
     {
       "stage": "lineage-migration",
       "fixture_count": 154,
-      "path": "stages/selftest-20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07-lineage-migration-20260730T204609065Z.json",
-      "sha256": "e2bc3f8455c16c643efa15d5ef924b2a577f4497fbf8898891d87a16f57b3363"
+      "path": "stages/selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-lineage-migration-20260731T024940100Z.json",
+      "sha256": "7e678afb52f91e03ed9698ba68d1fc4a8b3c8b51809054c159677875af830d3e"
     }
   ]
 }

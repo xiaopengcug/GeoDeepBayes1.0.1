@@ -1,0 +1,94 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_version_path": "versions/20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+  "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f",
+  "root_anchor_file_sha256": "c3cc21b5342d59390d0c33da2250cda58f3dde61bae7b9e94a6faca3e52b7e67",
+  "stage": "upstream-lineage",
+  "fixture_count": 5,
+  "fixture_id_set": [
+    "FXT-UPSTREAM-LINEAGE-016",
+    "FXT-UPSTREAM-LINEAGE-017",
+    "FXT-UPSTREAM-LINEAGE-018",
+    "FXT-UPSTREAM-LINEAGE-019",
+    "FXT-UPSTREAM-LINEAGE-020"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-016",
+      "case": "FXT-UPSTREAM-LINEAGE-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream pointer wp2-active"
+      ],
+      "actual_rejection": "upstream pointer wp2-active",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52134
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-017",
+      "case": "FXT-UPSTREAM-LINEAGE-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52391
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-018",
+      "case": "FXT-UPSTREAM-LINEAGE-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53414
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-019",
+      "case": "FXT-UPSTREAM-LINEAGE-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53448
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-020",
+      "case": "FXT-UPSTREAM-LINEAGE-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream member wp2-active/diagnostic-chains.csv"
+      ],
+      "actual_rejection": "upstream member wp2-active/diagnostic-chains.csv",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52645
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T01:04:41.3738724Z",
+  "output_sha256": "fc8f3cd42a037569149ffa015398eeba2b9a47170304a949e47f68e98b2729db",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

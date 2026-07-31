@@ -1,0 +1,92 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_version_path": "versions/20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+  "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f",
+  "root_anchor_file_sha256": "c3cc21b5342d59390d0c33da2250cda58f3dde61bae7b9e94a6faca3e52b7e67",
+  "stage": "publish",
+  "fixture_count": 5,
+  "fixture_id_set": [
+    "FXT-PUBLISH-006",
+    "FXT-PUBLISH-007",
+    "FXT-PUBLISH-008",
+    "FXT-PUBLISH-009",
+    "FXT-PUBLISH-010"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-PUBLISH-006",
+      "case": "FXT-PUBLISH-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "source hash publish-wp5-consistency.ps1"
+      ],
+      "actual_rejection": "source hash publish-wp5-consistency.ps1",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 93374
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-007",
+      "case": "FXT-PUBLISH-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "root drift 00-摘要.md"
+      ],
+      "actual_rejection": "root drift 00-摘要.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 91279
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-008",
+      "case": "FXT-PUBLISH-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "root anchor"
+      ],
+      "actual_rejection": "root anchor",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 80785
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-009",
+      "case": "FXT-PUBLISH-009",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 83780
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-010",
+      "case": "FXT-PUBLISH-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 semantic scan failed"
+      ],
+      "actual_rejection": "WP5 semantic scan failed",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 74195
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T02:16:05.4449286Z",
+  "output_sha256": "c469a555ede7c1cdc8d2b2640334eef83dd057ad58b47db9366f50f484a22364",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

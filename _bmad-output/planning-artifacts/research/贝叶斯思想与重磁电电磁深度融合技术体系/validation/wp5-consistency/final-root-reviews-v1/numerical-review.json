@@ -5,14 +5,14 @@
   "reviewer_identity": "Codex automated AI / 算法数值复核",
   "identity_type": "automated-ai-final-root-review",
   "decision": "Approved",
-  "reviewed_at_utc": "2026-07-30T23:47:45Z",
+  "reviewed_at_utc": "2026-07-31T02:54:25Z",
   "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
   "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
   "candidate": {
-    "run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
-    "manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
-    "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
-    "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25"
+    "run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+    "manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+    "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+    "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f"
   },
   "review_scope": "numerical inference, diagnostics, POD, and RJMCMC boundaries",
   "checks": [
@@ -30,7 +30,7 @@
   "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
   "release_evidence": {
     "path": "release-evidence-v1/envelope.json",
-    "sha256": "a1c16d6cb5eee9a00df4975fdc6b23c514454b586e652dbe6b300e1cd63ae680",
+    "sha256": "99abfb2f72ea0669bfbdaccf385afeaf8a64cba334ec168b86dc8eb9912d2870",
     "total_fixture_count": 300
   }
 }

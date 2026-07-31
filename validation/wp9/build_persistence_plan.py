@@ -95,6 +95,7 @@ CONTROL_INPUTS = (
     f"{RESEARCH_RELATIVE}/validation/wp5-consistency/active-output.json",
     f"{RESEARCH_RELATIVE}/validation/wp5-consistency/WP5-consistency-root-anchor.sha256",
     f"{RESEARCH_RELATIVE}/validation/wp5-consistency/final-root-reviews-v1/reviews-manifest.json",
+    f"{RESEARCH_RELATIVE}/validation/wp5-consistency/materialize-release-evidence.ps1",
     f"{RESEARCH_RELATIVE}/validation/wp7/validate_wp7.py",
     f"{RESEARCH_RELATIVE}/validation/wp7/synthetic-v6-config.json",
     f"{RESEARCH_RELATIVE}/validation/wp7/signoff-v4.json",
