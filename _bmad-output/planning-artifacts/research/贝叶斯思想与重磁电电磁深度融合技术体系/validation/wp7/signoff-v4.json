@@ -1,0 +1,48 @@
+{
+  "schema": "wp7-ai-signoff-v1",
+  "status": "Done",
+  "decided_at": "2026-07-24T16:06:33.053089+00:00",
+  "roles": [
+    {
+      "role": "numerical",
+      "identity_type": "ai",
+      "decision": "Approved",
+      "review_sha256": "bfbd304bbef0add0f7a4bbfac7c1955fd5a2f9ef8141972eb1dac3272dadd00c",
+      "review_text": "No high-confidence blocker remains. Synthetic v6 and DO-27 v4 independently pass manifest and numerical validation; producer source/timing/command/seeds, regenerated POD/coverage, complete alpha/solution paths, LSQR/GCV, zero-RMSE, finite-solver, and derived flags are bound. Scoped tests: 11 passed. Pending approval was excluded as requested.\n\n## Verdict: Approved\n"
+    },
+    {
+      "role": "qa",
+      "identity_type": "ai",
+      "decision": "Approved",
+      "review_sha256": "61bbdf8e27135e0757c34b783a4fd01be98ecf82253e2f4f3d51cadfa8e68156",
+      "review_text": "No verification gaps found in the requested unsigned-numerics scope.\n\n- Synthetic v6 manifest and numerical validation pass; producer exit-code tampering is rejected.\n- DO-27 v4 manifest and independent numerical rerun pass; zero-RMSE, overfit, recovery, and compatibility tampering are rejected.\n- Alpha/trial/solution counts and script/config/seed bindings are enforced.\n- All 14 scoped tests pass.\n- Pending approval was excluded as requested.\n\n## Verdict: Approved\n"
+    },
+    {
+      "role": "science",
+      "identity_type": "ai",
+      "decision": "Approved",
+      "review_sha256": "86200ea5586789af56b56a46bf2d4901b4edb826bb39098b662cea122300aba7",
+      "review_text": "No unhandled edge cases found in the reviewed synthetic v6 and DO-27 v4 scope.\n\n## Verdict: Approved\n"
+    }
+  ],
+  "manifests": {
+    "synthetic": {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "sha256": "932c983e5ee299e243cbeadc996bcc29e342d49e6267334f9acdfbea953cc3c5",
+      "run_id": "synthetic-block-v6-20260724",
+      "evidence_id": "EVD-ALGO-002"
+    },
+    "do27": {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "sha256": "1d444d958d882830f20ee965fd5466d23877d608ffeef33c793959a1bcd425b5",
+      "run_id": "do27-v4-20260724",
+      "evidence_id": "EVD-SYNTH-001"
+    }
+  },
+  "scope_limitations": [
+    "AI技术签核，非自然人签章",
+    "仅限指定小规模合成DA与DO-27现代API降阶单物理兼容",
+    "不证明PGI、联合、贝叶斯、模型恢复、现场、资源量或生产能力",
+    "本地证据未要求Sigstore远程证明"
+  ]
+}

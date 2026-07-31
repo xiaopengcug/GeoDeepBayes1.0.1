@@ -1,0 +1,192 @@
+{
+  "schema_version": "wp8-usgs-sevier-fault-csamt-raw-audit-v2",
+  "audit_date": "2026-07-25",
+  "source": {
+    "doi": "10.5066/P9QF9PFR",
+    "sciencebase_item": "5f31f31682cee144fb2ead0c",
+    "license": "United States public domain",
+    "archive_path": "validation/wp8/data/usgs-sevier-fault-csamt-v2/Sevier_Fault_CSAMT_all_data_files.zip",
+    "archive_bytes": 328632,
+    "archive_md5": "d77f1080c4051c8f330424e00a38159d",
+    "archive_sha256": "59e087bb2f8d5f6ab43e40642a9860561dd2a4e4665f9e85b2f84a9493dbcabd",
+    "provider_parent_zip_restored": true
+  },
+  "partition": "permanently-training-only",
+  "formal_test_responses_opened": 0,
+  "test_unseal_count": 0,
+  "members": [
+    {
+      "path": "Sevier_Fault_CSAMT_all_data_files/SV1_2.0.raw",
+      "bytes": 1325993,
+      "sha256": "5b9d49225f39fd1149af31e11971a9d2a33009bc35e4b0225973f32bc5617310"
+    },
+    {
+      "path": "Sevier_Fault_CSAMT_all_data_files/SV2_2.0.raw",
+      "bytes": 528153,
+      "sha256": "4770d591273411bb0d090ebb163fc9c34e9ed98c272cbb0254a0904586c5da16"
+    },
+    {
+      "path": "Sevier_Fault_CSAMT_all_data_files/Sv1.mtm_2.0.txt",
+      "bytes": 115738,
+      "sha256": "8859cab05cdedc6b06c690d4f2b9cfdeece67701ffb168271048d9ab9fe67473"
+    },
+    {
+      "path": "Sevier_Fault_CSAMT_all_data_files/Sv1.stn_2.0.txt",
+      "bytes": 2641,
+      "sha256": "07c59d215e8aeb9b9113cdfe9fed3664973ee61bba7439055ba9a3f5161eb40a"
+    },
+    {
+      "path": "Sevier_Fault_CSAMT_all_data_files/Sv2.mtm_2.0.txt",
+      "bytes": 54590,
+      "sha256": "72ae3482be3610355a3a78db049a13c4c5044752428687df06068fde5fa2d49a"
+    },
+    {
+      "path": "Sevier_Fault_CSAMT_all_data_files/Sv2.stn_2.0.txt",
+      "bytes": 1528,
+      "sha256": "4a09ca458581b3140ae3b4bf998456aaae92fb4e08c226f35c89a7004df85c5f"
+    }
+  ],
+  "lines": {
+    "Sv1": {
+      "raw": {
+        "frequency_block_count": 2156,
+        "unique_frequencies_hz": [
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          256.0,
+          512.0,
+          1024.0,
+          2048.0,
+          4096.0,
+          8192.0
+        ],
+        "unique_frequency_count": 11,
+        "transmitter_currents_a": [
+          3.5,
+          3.6,
+          3.7,
+          3.8,
+          3.9,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1,
+          5.3,
+          5.4,
+          5.5,
+          5.6,
+          5.7,
+          5.8,
+          5.9
+        ],
+        "receiver_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "receiver_id_count": 12,
+        "component_row_count": 12948,
+        "component_rows": {
+          "Ex": 10790,
+          "Hy": 2158
+        }
+      },
+      "inversion_member_bytes": 115738,
+      "stations": {
+        "station_count": 101,
+        "station_min_m": 0.0,
+        "station_max_m": 5000.0,
+        "easting_min_m": 349692.0,
+        "easting_max_m": 354355.0,
+        "northing_min_m": 4113812.0,
+        "northing_max_m": 4115598.0,
+        "elevation_min_m": 1676.0,
+        "elevation_max_m": 1873.0
+      }
+    },
+    "Sv2": {
+      "raw": {
+        "frequency_block_count": 860,
+        "unique_frequencies_hz": [
+          1.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          256.0,
+          512.0,
+          1024.0,
+          2048.0,
+          4096.0,
+          8192.0
+        ],
+        "unique_frequency_count": 12,
+        "transmitter_currents_a": [
+          3.9,
+          4.9,
+          5.6,
+          5.7,
+          5.8,
+          5.9
+        ],
+        "receiver_ids": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "receiver_id_count": 8,
+        "component_row_count": 5124,
+        "component_rows": {
+          "Ex": 4270,
+          "Hy": 854
+        }
+      },
+      "inversion_member_bytes": 54590,
+      "stations": {
+        "station_count": 40,
+        "station_min_m": 0.0,
+        "station_max_m": 2000.0,
+        "easting_min_m": 350825.938,
+        "easting_max_m": 352695.683,
+        "northing_min_m": 4115040.764,
+        "northing_max_m": 4115752.031,
+        "elevation_min_m": 1715.321,
+        "elevation_max_m": 1753.351
+      }
+    }
+  },
+  "gate_assessment": {
+    "observation_payload_present": true,
+    "electric_and_magnetic_components_present": true,
+    "transmitter_current_present": true,
+    "transmitter_endpoint_coordinates_present": false,
+    "sampled_transmitter_waveform_present": false,
+    "independent_profile_upper_bound": 2,
+    "minimum_independent_test_clusters": 223,
+    "observation_contract_passes": false,
+    "cluster_gate_passes": false,
+    "power_gate_passes": false,
+    "reason": "The restored official ZIP supplies genuine multicomponent raw responses, station coordinates and transmitter current, but only two survey lines. It does not publish transmitter endpoints or a sampled waveform and was opened as training-only."
+  },
+  "formal_test_result": null
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "wp8-ntgs-angularli-csamt-contract-v1",
+  "audit_mode": "public_training_candidate",
+  "report_id": "CR2010-0262",
+  "source_page": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/87695",
+  "archive_filename": "CR2010-0262_Geophysics.zip",
+  "archive_size_bytes": 16004010,
+  "archive_sha256": "e6be7999a4b16417eb3c45881352724ed99c10b7dd8ed3f49c6f7c65210f01ad",
+  "license": "CC-BY-4.0",
+  "survey_line": "9100E",
+  "survey_type": "scalar CSAMT",
+  "transmitter": {
+    "type": "bipole",
+    "center_easting_m": 300328,
+    "center_northing_m": 8691221,
+    "length_m": 1770,
+    "azimuth_deg": 0,
+    "endpoint_coordinates_derivable": true,
+    "endpoint_1_easting_m": 300328,
+    "endpoint_1_northing_m": 8690336,
+    "endpoint_2_easting_m": 300328,
+    "endpoint_2_northing_m": 8692106,
+    "per_frequency_current_present": true,
+    "sampled_waveform_present": false
+  },
+  "receiver": {
+    "unique_centers": 24,
+    "dipole_length_m": 100,
+    "components": [
+      "Ex",
+      "Hy"
+    ]
+  },
+  "observations": {
+    "row_count": 417,
+    "frequency_count": 21,
+    "minimum_frequency_hz": 128,
+    "maximum_frequency_hz": 7168,
+    "electric_magnitude_and_phase_present": true,
+    "magnetic_magnitude_and_phase_present": true,
+    "apparent_resistivity_present": true,
+    "per_observation_percent_errors_present": true
+  },
+  "formal_finite_source_observation_contract_ready": false,
+  "cluster_gate_passes": false,
+  "power_gate_passes": false,
+  "reason": "This release repairs exact finite-bipole and receiver geometry for one public CSAMT line and supplies per-frequency current and uncertainty fields. It still has no sampled transmitter waveform and only 24 receiver centers, so it cannot independently pass the formal observation, cluster, or power gates."
+}

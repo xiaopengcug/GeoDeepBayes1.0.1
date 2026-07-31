@@ -1,0 +1,45 @@
+{
+  "schema_version": "wp8-guidel-sip-contract-v1",
+  "doi": "10.26169/hplus.guidel_spectral_induced_polarization",
+  "site": "Guidel wetland, France",
+  "selection_role": "training_contract_candidate_only",
+  "license": "CC BY-NC-SA 4.0",
+  "license_status": "resolved",
+  "archive_members": 33,
+  "raw_mat_members": 30,
+  "matlab_code_members": 1,
+  "monitoring_archive_members": {
+    "guidel_sip_monitoring_data.csv": 0,
+    "Terms_and_agreements_Hplus_README_en.pdf": 113928
+  },
+  "monitoring_csv_bytes": 0,
+  "monitoring_observations_available": false,
+  "acquisition_dates_from_names": [
+    "2025-09-18"
+  ],
+  "official_metadata_contract": {
+    "square_wave_periods_s": [
+      1,
+      10,
+      100
+    ],
+    "frequency_range_hz": [
+      0.01,
+      100
+    ],
+    "sampling_rate_hz": 2000,
+    "successive_current_injection_depths": 8,
+    "simultaneous_potential_dipoles_per_injection": 7,
+    "raw_time_series": true
+  },
+  "observation_values_read": false,
+  "formal_test_endpoints_inspected": false,
+  "gate_impact": {
+    "observation_contract_passed": false,
+    "reason": "payload geometry and uncertainty are not established by the response-blind inventory",
+    "cluster_gate_passed": false,
+    "power_gate_passed": false,
+    "reason_power": "one site and one dated acquisition package"
+  },
+  "test_unseal_count": 0
+}

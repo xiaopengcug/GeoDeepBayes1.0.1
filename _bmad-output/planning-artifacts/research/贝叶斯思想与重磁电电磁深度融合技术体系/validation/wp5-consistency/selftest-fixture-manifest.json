@@ -1,929 +1,2681 @@
 {
-  "schema": "wp5-selftest-fixture-manifest-v1",
+  "schema": "wp5-selftest-fixture-manifest-v3",
   "fixtures": [
     {
       "id": "FXT-UPSTREAM-LINEAGE-001",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-001",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-002",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-002",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone unique"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-003",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-003",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-004",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-004",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-005",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-005",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-006",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-006",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-007",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-007",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-008",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-008",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-009",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-009",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-010",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-010",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-011",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-011",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-012",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-012",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-013",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-013",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-014",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-014",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-015",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-015",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-016",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-016",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream pointer wp2-active"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-017",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-017",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-018",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-018",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-019",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-019",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-020",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-020",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream member wp2-active/diagnostic-chains.csv"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-021",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-021",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream source wp2-active/run-wp2-toy.ps1"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-022",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-022",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream pointer wp3-active"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-023",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-023",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-024",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-024",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-025",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-025",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-026",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-026",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream member wp3-active/empymod-reference.json"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-027",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-027",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream source wp3-active/run-wp3-physics.ps1"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-028",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-028",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream pointer wp4-active"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-029",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-029",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-030",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-030",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-031",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-031",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-032",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-032",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream member wp4-active/raw.json"
+      ]
     },
     {
       "id": "FXT-UPSTREAM-LINEAGE-033",
-      "stage": "upstream-lineage"
+      "stage": "upstream-lineage",
+      "canonical_case": "FXT-UPSTREAM-LINEAGE-033",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream source wp4-active/run-wp4-decision.ps1"
+      ]
     },
     {
       "id": "FXT-ALLOWLIST-001",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-001",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-ALLOWLIST-002",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-002",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-ALLOWLIST-003",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-003",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "contained path prefix sibling"
+      ]
     },
     {
       "id": "FXT-ALLOWLIST-004",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-004",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "contained path dotdot escape"
+      ]
     },
     {
       "id": "FXT-ALLOWLIST-005",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-005",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "contained path symlink escape"
+      ]
     },
     {
       "id": "FXT-ALLOWLIST-006",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-006",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-ALLOWLIST-007",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-007",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-ALLOWLIST-008",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-008",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-ALLOWLIST-009",
-      "stage": "allowlist"
+      "stage": "allowlist",
+      "canonical_case": "FXT-ALLOWLIST-009",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ]
     },
     {
       "id": "FXT-REGISTRY-001",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-001",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "scope registry use exact"
+      ]
     },
     {
       "id": "FXT-REGISTRY-002",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-002",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "scope registry source"
+      ]
     },
     {
       "id": "FXT-REGISTRY-003",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-003",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "scope registry owner"
+      ]
     },
     {
       "id": "FXT-REGISTRY-004",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-004",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk frozen constants"
+      ]
     },
     {
       "id": "FXT-REGISTRY-005",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-005",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk frozen constants"
+      ]
     },
     {
       "id": "FXT-REGISTRY-006",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-006",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk match c02-gn-hessian"
+      ]
     },
     {
       "id": "FXT-REGISTRY-007",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-007",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk match c03-rjmcmc-interface"
+      ]
     },
     {
       "id": "FXT-REGISTRY-008",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-008",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk match a3-pod-hardware-boundary"
+      ]
     },
     {
       "id": "FXT-REGISTRY-009",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-009",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk match a11-borehole-observation"
+      ]
     },
     {
       "id": "FXT-REGISTRY-010",
-      "stage": "registry"
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-010",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk match a13-curie-source-contract"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-011",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-011",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-02-0027"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-012",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-012",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-03-0030"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-013",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-013",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-06-0002"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-014",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-014",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-COMPUTE-PLAN-0003"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-015",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-015",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-A4-0003"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-016",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-016",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-A4-0004"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-017",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-017",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-A4-0006"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-018",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-018",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix3 conditional depth capability"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-019",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-019",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "lambda namespace separation"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-020",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-020",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-021",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-021",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix3 conditional depth capability"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-022",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-022",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "lambda namespace separation"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-023",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-023",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-024",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-024",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "summary normalized likelihood and generalized posterior separation"
+      ]
+    },
+    {
+      "id": "FXT-REGISTRY-025",
+      "stage": "registry",
+      "canonical_case": "FXT-REGISTRY-025",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-001",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-001",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "code language/fence"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-002",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-002",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml indentation"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-003",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-003",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml syntax"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-004",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-004",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "text execution semantics"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-005",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-005",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "code imports/symbols/tests"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-006",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-006",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "code content keys"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-007",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-007",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml structure"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-008",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-008",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml duplicate key"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-009",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-009",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml indentation"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-010",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-010",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml block"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-011",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-011",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml value"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-012",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-012",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml string"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-013",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-013",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml duplicate key"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-014",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-014",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml duplicate table"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-015",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-015",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml duplicate key"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-016",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-016",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml value"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-017",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-017",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml value"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-018",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-018",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml duplicate table"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-019",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-019",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml duplicate key"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-020",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-020",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml duplicate table"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-021",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-021",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "toml duplicate key"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-022",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-022",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-023",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-023",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-024",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-024",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-025",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-025",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml duplicate key"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-026",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-026",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml syntax"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-027",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-027",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "yaml syntax"
+      ]
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-028",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-028",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-029",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-029",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-030",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-030",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-031",
-      "stage": "language-structure-boundary"
+      "stage": "language-structure-boundary",
+      "canonical_case": "FXT-LANGUAGE-STRUCTURE-BOUNDARY-031",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-PUBLISH-001",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-001",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "pointer manifest"
+      ]
     },
     {
       "id": "FXT-PUBLISH-002",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-002",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "manifest exact schema"
+      ]
     },
     {
       "id": "FXT-PUBLISH-003",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-003",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "file hash scan.json"
+      ]
     },
     {
       "id": "FXT-PUBLISH-004",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-004",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "scan exact schema"
+      ]
     },
     {
       "id": "FXT-PUBLISH-005",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-005",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "document hash 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-PUBLISH-006",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-006",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "source hash publish-wp5-consistency.ps1"
+      ]
     },
     {
       "id": "FXT-PUBLISH-007",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-007",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "root drift 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-PUBLISH-008",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-008",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "root anchor"
+      ]
     },
     {
       "id": "FXT-PUBLISH-009",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-009",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-PUBLISH-010",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-010",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 semantic scan failed"
+      ]
     },
     {
       "id": "FXT-PUBLISH-011",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-011",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 publish lock busy"
+      ]
     },
     {
       "id": "FXT-PUBLISH-012",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-012",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 snapshot drift"
+      ]
     },
     {
       "id": "FXT-PUBLISH-013",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-013",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterStage"
+      ]
     },
     {
       "id": "FXT-PUBLISH-014",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-014",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterVersion"
+      ]
     },
     {
       "id": "FXT-PUBLISH-015",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-015",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterFlush"
+      ]
     },
     {
       "id": "FXT-PUBLISH-016",
-      "stage": "publish"
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-016",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterReplace"
+      ]
+    },
+    {
+      "id": "FXT-PUBLISH-017",
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-017",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal old pointer invalid"
+      ]
+    },
+    {
+      "id": "FXT-PUBLISH-018",
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-018",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal invalid"
+      ]
+    },
+    {
+      "id": "FXT-PUBLISH-019",
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-019",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal old pointer manifest invalid"
+      ]
+    },
+    {
+      "id": "FXT-PUBLISH-020",
+      "stage": "publish",
+      "canonical_case": "FXT-PUBLISH-020",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal version binding invalid"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-001",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-001",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "signoff exact 16+1 scope"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-002",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-002",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews exact role set"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-003",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-003",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews exact role set"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-004",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-004",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final review approved role"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-005",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-005",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final review candidate binding"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-006",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-006",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final review candidate binding"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-007",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-007",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization binding"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-008",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-008",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews implementation evidence binding"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-009",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-009",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final review authorization binding"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-010",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-010",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization binding"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-011",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-011",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews unique review id"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-012",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-012",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews role review id"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-013",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-013",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final review timestamp"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-014",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-014",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final review release evidence binding"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-015",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-015",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-SIGNOFF-016",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-016",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-017",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-017",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-018",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-018",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ]
     },
     {
       "id": "FXT-SIGNOFF-019",
-      "stage": "signoff"
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-019",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-020",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-020",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-021",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-021",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-022",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-022",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-023",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-023",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-024",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-024",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-025",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-025",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-026",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-026",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization frozen binding"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-027",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-027",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization amendment binding"
+      ]
+    },
+    {
+      "id": "FXT-SIGNOFF-028",
+      "stage": "signoff",
+      "canonical_case": "FXT-SIGNOFF-028",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "release evidence stage hash"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-001",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-001",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 covariance noise contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-002",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-002",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 metric dimension contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-003",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-003",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 chapter structure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-004",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-004",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 ambiguous xref"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-005",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-005",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 duplicate prose 附录4-核心算法性能基准测试计划与验收指标.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-006",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-006",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 observed evidence boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-007",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-007",
+      "expected_exit": 0,
+      "expected_rejections": []
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-008",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-008",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 scenario condition boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-009",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-009",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop20 appendix1 condition boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-010",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-010",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 pending source schema only"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-011",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-011",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop19 synthetic-only boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-012",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-012",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop19 world-class case boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-013",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-013",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop19 knowledge admission contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-014",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-014",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "chapter completeness 04-分场景多方法融合适配方案.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-015",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-015",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "empty heading 附录3-算法选型与多方法组合决策树.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-016",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-016",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "stale xref/resource hard gate"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-017",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-017",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unconditioned prior"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-018",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-018",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix1 fixed prior removal"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-019",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-019",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix1 fixed prior removal"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-020",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-020",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix1 fixed prior removal"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-021",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-021",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix14 sourced geometry and angle"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-022",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-022",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix14 sourced geometry and angle"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-023",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-023",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix14 sourced geometry and angle"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-024",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-024",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 SBC tie randomization and PPC terminology"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-025",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-025",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop22 SBC tie randomization and PPC terminology"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-026",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-026",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix1 physical prior closure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-027",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-027",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix1 physical prior closure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-028",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-028",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix1 physical prior closure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-029",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-029",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 PPC discrepancy and repetition separation"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-030",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-030",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 PPC discrepancy and repetition separation"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-031",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-031",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix14 3D geometry and mechanism source contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-032",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-032",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix14 3D geometry and mechanism source contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-033",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-033",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix14 3D geometry and mechanism source contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-034",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-034",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix14 nondeterministic mechanism"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-035",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-035",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix14 nondeterministic mechanism"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-036",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-036",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix14 nondeterministic mechanism"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-037",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-037",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix1 per-table source"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-038",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-038",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 intro unsupported quantities"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-039",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-039",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 intro unsupported quantities"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-040",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-040",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 BMA and joint information conditions"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-041",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-041",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 BMA and joint information conditions"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-042",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-042",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 risk-based test gate"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-043",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-043",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop24 risk-based test gate"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-044",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-044",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 fold and spectral evidence contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-045",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-045",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 fold and spectral evidence contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-046",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-046",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 fold and spectral evidence contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-047",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-047",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 point estimate and decision computability"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-048",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-048",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 point estimate and decision computability"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-049",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-049",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 smoothing and risk utility contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-050",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-050",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 smoothing and risk utility contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-051",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-051",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 smoothing and risk utility contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-052",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-052",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 smoothing and risk utility contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-053",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-053",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 risk CI and supply-chain contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-054",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-054",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 risk CI and supply-chain contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-055",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-055",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop25 risk CI and supply-chain contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-056",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-056",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 gravity decision and weight contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-057",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-057",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 gravity decision and weight contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-058",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-058",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 gravity decision and weight contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-059",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-059",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 conditional MI single contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-060",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-060",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 basis borehole and risk contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-061",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-061",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 basis borehole and risk contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-062",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-062",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 basis borehole and risk contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-063",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-063",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop26 basis borehole and risk contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-064",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-064",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 theory residual closure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-065",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-065",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 theory residual closure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-066",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-066",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 POD and proposal metric closure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-067",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-067",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 POD and proposal metric closure"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-068",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-068",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 compute evidence boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-069",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-069",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 compute evidence boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-070",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-070",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 risk oracle and CI boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-071",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-071",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop27 risk oracle and CI boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-072",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-072",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 prior support and LogN contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-073",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-073",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 prior support and LogN contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-074",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-074",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 reproducible calibration contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-075",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-075",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 reproducible calibration contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-076",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-076",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 reproducible calibration contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-077",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-077",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 depth modeling domain"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-078",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-078",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 pending source schema only"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-079",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-079",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 holdout selection bias"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-080",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-080",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 heading H4"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-081",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-081",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop21 appendix4 overview order"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-082",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-082",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix heading H1 附录2-概率化反演结果应用规范与风险管控准则.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-083",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-083",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix internal numbering 附录14-地质先验知识库.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-084",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-084",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix1 scientific boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-085",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-085",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix prior boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-086",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-086",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix xref/list"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-087",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-087",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix revision trace"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-088",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-088",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix maturity"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-089",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-089",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "manuscript process trace"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-090",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-090",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "manuscript stale xref"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-091",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-091",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "manuscript promotional language"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-092",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-092",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix1 candidate evidence boundary"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-093",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-093",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "appendix14 positive prior contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-094",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-094",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop17 appendix1 exact residual"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-095",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-095",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop17 appendix14 exact residual"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-096",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-096",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop17 promotional wording 01-引言.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-097",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-097",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop17 guarantee/editorial wording 02-全方法深度融合的底层逻辑与理论总纲.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-098",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-098",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop17 guarantee/editorial wording 06-合成数据验证方案与验收设计.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-099",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-099",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop17 guarantee/editorial wording 03-多方法深度融合的核心技术实现路径.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-100",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-100",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "loop17 quote balance 03-多方法深度融合的核心技术实现路径.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-101",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-101",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "duplicate diagnostic threshold 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-102",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-102",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "LOMO contribution 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-103",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-103",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "POD orthogonal-complement projection contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-104",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-104",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "RJMCMC Green acceptance-ratio contract"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-105",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-105",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "PPC calibration confusion 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-106",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-106",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "formal resource promotion 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-107",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-107",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unconditional depth 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-108",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-108",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unbound economic number 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-109",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-109",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unsupported contribution grade 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-110",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-110",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unbound performance claim 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-111",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-111",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "field hit-rate promotion 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-112",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-112",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unledgered language claim 00-摘要.md"
+      ]
     },
     {
       "id": "FXT-LINEAGE-MIGRATION-113",
-      "stage": "lineage-migration"
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-113",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unledgered language claim 00-摘要.md"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-114",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-114",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unledgered language claim 00-摘要.md"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-115",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-115",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "unledgered language claim 00-摘要.md"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-116",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-116",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "risk match resource"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-117",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-117",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "ledger exact record"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-118",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-118",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "ledger source hash wp1-manifest"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-119",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-119",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "semantic rule formulas"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-120",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-120",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "ledger identity"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-121",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-121",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "ledger exact record"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-122",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-122",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "code capability contract"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-123",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-123",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "non-python execution semantics"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-124",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-124",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "non-python execution semantics"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-125",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-125",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "code capability contract"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-126",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-126",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "code capability contract"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-127",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-127",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "upstream member wp3-active/raw-responses.json"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-128",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-128",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "Bayes model contract marker"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-129",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-129",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "epsilon marginalized exactly once"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-130",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-130",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "Student-t scale semantics"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-131",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-131",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "noncompact proper posterior"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-132",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-132",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "kappa physical support"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-133",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-133",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "lambda coupling support"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-134",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-134",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "generalized weight dimension and defaults"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-135",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-135",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "SBC categorical and transdimensional contract"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-136",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-136",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "Chib full state and PoE normalizer"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-137",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-137",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "POD centering and rectangular dimensions"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-138",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-138",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "PT unique target and swap ratio"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-139",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-139",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "MH detailed balance test contract"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-140",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-140",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "GMM latent support"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-141",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-141",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "parallel RNG and reduction semantics"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-142",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-142",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "no shadow threshold or selective restart"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-143",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-143",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP2 diagnostic exact scope"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-144",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-144",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "double-slot state machine"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-145",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-145",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "ledger source hash wp1-root-anchor"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-146",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-146",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "WP1 recursive member results"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-147",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-147",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "communication critical path metrics"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-148",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-148",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "change-of-support unique direction"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-149",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-149",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "change-of-support no parallel theta"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-150",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-150",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "transdimensional mixture measure"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-151",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-151",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "Chib model-specific points and full ordinate"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-152",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-152",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "predeclared model pool"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-153",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-153",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "EM covariance strictly positive definite"
+      ]
+    },
+    {
+      "id": "FXT-LINEAGE-MIGRATION-154",
+      "stage": "lineage-migration",
+      "canonical_case": "FXT-LINEAGE-MIGRATION-154",
+      "expected_exit": 1,
+      "expected_rejections": [
+        "POD rank-deficient economic SVD contract"
+      ]
     }
   ]
 }

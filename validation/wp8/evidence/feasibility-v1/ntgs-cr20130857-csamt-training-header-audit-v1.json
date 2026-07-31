@@ -1,0 +1,389 @@
+{
+  "schema_version": "wp8-ntgs-cr20130857-csamt-training-header-audit-v1",
+  "audit_date": "2026-07-25",
+  "design_path": "validation/wp8/evidence/feasibility-v1/ntgs-cr20130857-csamt-design-audit-v1.json",
+  "design_sha256": "ef1165d621e139c9b5e03aaaefaa05084e1c436cd7063569783967c7b3b73486",
+  "archive_path": "validation/wp8/data/ntgs-cr2013-0857-csamt-v1/CR2013-0857_Geophysics.zip",
+  "archive_sha256": "4a5217a3c03ecac251d8eab213bb0c8f129bc7108d239e1ee8e85e5adc2890ca",
+  "training_raw_members_opened": 10,
+  "calibration_raw_members_opened": 0,
+  "test_raw_members_opened": 0,
+  "test_response_values_interpreted": 0,
+  "training_response_values_interpreted": 0,
+  "parsed_content": "record/job headers and frequency/cycle/current acquisition headers only",
+  "training_lines": {
+    "7411000N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411000N.raw",
+      "bytes": 488266,
+      "sha256": "f51dcee15f29621c9a7de55e5cc075e704d68b3f8d78ebae1fd48d04603726ea",
+      "job_line_identifiers": [
+        "11000",
+        "12300"
+      ],
+      "acquisition_header_count": 156,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        4.0,
+        4.8,
+        5.5,
+        5.7,
+        7.5,
+        8.5,
+        10.0,
+        10.5,
+        11.3,
+        11.5,
+        12.0
+      ],
+      "response_rows_skipped_without_value_parsing": 1240
+    },
+    "7411200N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411200N.raw",
+      "bytes": 108205,
+      "sha256": "f71dec2ca18685f03b9ed3919044606062f6efbaf3c2370f11f29521b336cf70",
+      "job_line_identifiers": [
+        "11200"
+      ],
+      "acquisition_header_count": 65,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        4.0,
+        4.8,
+        7.5,
+        9.5,
+        10.5,
+        11.0,
+        11.2
+      ],
+      "response_rows_skipped_without_value_parsing": 450
+    },
+    "7411450N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411450N.raw",
+      "bytes": 349494,
+      "sha256": "b2870f6168ba5440d028292a69a0b62c1fbd584bc44e3baf751ca59833e4412a",
+      "job_line_identifiers": [
+        "11450"
+      ],
+      "acquisition_header_count": 45,
+      "unique_frequency_hz": [
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        5.5,
+        8.5
+      ],
+      "response_rows_skipped_without_value_parsing": 360
+    },
+    "7411600N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411600N.raw",
+      "bytes": 243801,
+      "sha256": "c7f971879f0b0a6416f26c7ecfa8abab23e724629a37fceae4f6fc559ccfe3da",
+      "job_line_identifiers": [
+        "11600"
+      ],
+      "acquisition_header_count": 122,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        5.5,
+        8.5,
+        10.0,
+        11.3,
+        12.0
+      ],
+      "response_rows_skipped_without_value_parsing": 1038
+    },
+    "7411650N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411650N.raw",
+      "bytes": 176682,
+      "sha256": "0c0e06572783c6d7235206a3ccb52e88fbb30be0a679ed645d80c58fa6323f52",
+      "job_line_identifiers": [
+        "11650"
+      ],
+      "acquisition_header_count": 120,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        5.5,
+        8.5,
+        10.0,
+        11.3,
+        12.0
+      ],
+      "response_rows_skipped_without_value_parsing": 720
+    },
+    "7411700N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411700N.raw",
+      "bytes": 203931,
+      "sha256": "462d194c3331ac1c8829cb20871a395298da833c4d235b8bf37bec804702809d",
+      "job_line_identifiers": [
+        "11700"
+      ],
+      "acquisition_header_count": 147,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        5.5,
+        8.5,
+        10.0,
+        11.0,
+        11.3,
+        12.0
+      ],
+      "response_rows_skipped_without_value_parsing": 880
+    },
+    "7411750N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411750N.raw",
+      "bytes": 148373,
+      "sha256": "eb69546603bff1a36424da71825feb82c574040a800a8c20673bbe35372c54d7",
+      "job_line_identifiers": [
+        "11750"
+      ],
+      "acquisition_header_count": 85,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        5.5,
+        8.5,
+        10.0,
+        12.0
+      ],
+      "response_rows_skipped_without_value_parsing": 465
+    },
+    "7411800N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411800N.raw",
+      "bytes": 213989,
+      "sha256": "8f5ed231f838aeb79e06271bec27f4f2d2e9f65ca1801d1ac6bcc35184b1619d",
+      "job_line_identifiers": [
+        "11800"
+      ],
+      "acquisition_header_count": 75,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        4.0,
+        4.8,
+        5.5,
+        7.4,
+        8.5,
+        9.4,
+        10.5,
+        10.8,
+        11.2,
+        11.4
+      ],
+      "response_rows_skipped_without_value_parsing": 495
+    },
+    "7412000N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7412000N.raw",
+      "bytes": 280499,
+      "sha256": "83b69a5e3de88cc882f5223fc347b44d082c4d7b4f7d4597bbe40a48a9addcc5",
+      "job_line_identifiers": [
+        "12000"
+      ],
+      "acquisition_header_count": 95,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        3.5,
+        4.0,
+        4.8,
+        5.0,
+        5.7,
+        7.3,
+        7.4,
+        8.5,
+        9.5,
+        10.4,
+        11.0,
+        11.2
+      ],
+      "response_rows_skipped_without_value_parsing": 585
+    },
+    "7412050N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7412050N.raw",
+      "bytes": 75905,
+      "sha256": "da1a59e0a68b27f19f9dc2d40b96992b12c13937350f3e303bb521513edc3971",
+      "job_line_identifiers": [
+        "12050"
+      ],
+      "acquisition_header_count": 60,
+      "unique_frequency_hz": [
+        4.0,
+        8.0,
+        16.0,
+        32.0,
+        64.0,
+        128.0,
+        256.0,
+        512.0,
+        1024.0,
+        2048.0,
+        4096.0,
+        8192.0
+      ],
+      "unique_transmitter_current_a": [
+        5.9,
+        7.5,
+        9.5,
+        10.4,
+        11.0,
+        11.2
+      ],
+      "response_rows_skipped_without_value_parsing": 300
+    }
+  },
+  "training_acquisition_header_count": 970,
+  "unique_frequency_hz": [
+    4.0,
+    8.0,
+    16.0,
+    32.0,
+    64.0,
+    128.0,
+    256.0,
+    512.0,
+    1024.0,
+    2048.0,
+    4096.0,
+    8192.0
+  ],
+  "unique_transmitter_current_a": [
+    3.5,
+    4.0,
+    4.8,
+    5.0,
+    5.5,
+    5.7,
+    5.9,
+    7.3,
+    7.4,
+    7.5,
+    8.5,
+    9.4,
+    9.5,
+    10.0,
+    10.4,
+    10.5,
+    10.8,
+    11.0,
+    11.2,
+    11.3,
+    11.4,
+    11.5,
+    12.0
+  ],
+  "sampled_transmitter_waveform_present": false,
+  "waveform_evidence_present": "frequency, cycle count, source current, and odd-harmonic response labels only; no transmitter time samples or transmitter harmonic amplitude/phase series",
+  "observation_contract_ready": false,
+  "cluster_gate_passes": false,
+  "power_gate_passes": false,
+  "decision": "Retain as provenance evidence but do not unseal calibration or test responses and do not admit to formal WP8 validation."
+}

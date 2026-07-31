@@ -1,0 +1,9 @@
+{
+  "schema_version": "wp8-mt-usarray-raw-freeze-v1",
+  "raw_root": "validation/wp8/data/usarray-ta-emtf-v1",
+  "manifest_sha256": "84278b3a0218dd5c6a1c11201e32a465a1f4be8981ae3bc55faf2b85cb8bf736",
+  "member_count": 1104,
+  "total_edi_bytes": 13744189,
+  "member_merkle_root": "cfe70648466caefdc354a481ee7aaab80e1d9ef5fdd706dbdc025b559ea9d25d",
+  "calibration_and_test_values_interpreted": false
+}

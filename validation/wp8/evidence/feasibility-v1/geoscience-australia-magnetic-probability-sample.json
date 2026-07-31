@@ -1,0 +1,459 @@
+{
+  "schema_version": "wp8-ga-magnetic-cell-weighted-probability-sample-v1",
+  "design_sha256": "8b9cd3702eeffe3b5b313a298c9d3758f602cb30449867c3bf8136f4cc48ba6b",
+  "dds_contract_sha256": "a98b48ad91d057b4b347b431c1143be38431389ae6caa615740f832a1aeab872",
+  "selection_is_design_metadata_only": true,
+  "magnetic_response_values_interpreted": 0,
+  "sampling_frame": {
+    "inference_unit": "eligible design cell",
+    "eligible_training_cells": 506,
+    "eligible_test_cells": 305,
+    "eligibility": "train/test design cell covered by at least one DDS product declaring latitude, longitude, point height, line identity, and magnetic response",
+    "cell_order": "ascending SHA-256 of wp8-ga-probability-cell-sample-v1|cell",
+    "product_assignment": "minimum SHA-256 of wp8-ga-cell-product-v1|cell|dataset_no among compatible covering products",
+    "file size and response values do not enter selection": true
+  },
+  "sample_size": 20,
+  "sampled_cells": [
+    {
+      "cell": "-16.000000:120.842545",
+      "latitude": -16.0,
+      "longitude": 120.84254520482371,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 15090,
+      "sample_rank_sha256": "007fc2d81241fe3f1c0d5ec076464e63e31a13da31720abf694d6340008b7614"
+    },
+    {
+      "cell": "-32.000000:115.537535",
+      "latitude": -32.0,
+      "longitude": 115.5375352100863,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 19448,
+      "sample_rank_sha256": "00ef88325f7a9a6875a9e4849efc4a3832ca2f922664931477d7fa095cfbae2c"
+    },
+    {
+      "cell": "-20.000000:131.687289",
+      "latitude": -20.0,
+      "longitude": 131.68728879080433,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 16799,
+      "sample_rank_sha256": "016f6fe90442527bc9103460e57e4290d943f02810fda8caeaf2c5baa696d583"
+    },
+    {
+      "cell": "-22.500000:141.224589",
+      "latitude": -22.5,
+      "longitude": 141.22458940789485,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 17565,
+      "sample_rank_sha256": "01e45c20dc5c6fd5303a0043bea3d549d39c64054021b1a5cbbd63c2f2f807c9"
+    },
+    {
+      "cell": "-16.000000:123.963444",
+      "latitude": -16.0,
+      "longitude": 123.96344351240855,
+      "candidate_dataset_count": 2,
+      "assigned_dataset_no": 19338,
+      "sample_rank_sha256": "01ffe682ff0ea1937e489631409db248a9ce844ade6e647de250e4faaf43b856"
+    },
+    {
+      "cell": "-19.000000:131.037172",
+      "latitude": -19.0,
+      "longitude": 131.03717226136018,
+      "candidate_dataset_count": 2,
+      "assigned_dataset_no": 16911,
+      "sample_rank_sha256": "02562241dff465facde50f3f2f90eeb4de07fe418c7d82caf3d31c92a1f67b06"
+    },
+    {
+      "cell": "-29.000000:130.865342",
+      "latitude": -29.0,
+      "longitude": 130.8653421199099,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 17852,
+      "sample_rank_sha256": "02e16d3cf9c8f82babb54439d38825eef2d67b26b7e371787e56b5f8c0f3e800"
+    },
+    {
+      "cell": "-19.500000:131.625701",
+      "latitude": -19.5,
+      "longitude": 131.6257009423224,
+      "candidate_dataset_count": 2,
+      "assigned_dataset_no": 16799,
+      "sample_rank_sha256": "03aed3cf98c3a2daf4f953d922e31849a06af136470c1db97cf2989f1ac7a4a2"
+    },
+    {
+      "cell": "-21.000000:126.996030",
+      "latitude": -21.0,
+      "longitude": 126.99602991091848,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 19306,
+      "sample_rank_sha256": "03d2f40fc5f4ddd02675dc7f64182b034a0a1c541d899fcff60f9e9cba73de1b"
+    },
+    {
+      "cell": "-27.000000:132.763035",
+      "latitude": -27.0,
+      "longitude": 132.76303539623555,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 18044,
+      "sample_rank_sha256": "054191f0a9e9632d19389f2b1339b0cb3d566437aeeca455ed02f804f7e654c1"
+    },
+    {
+      "cell": "-21.500000:116.299145",
+      "latitude": -21.5,
+      "longitude": 116.29914496205777,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 19394,
+      "sample_rank_sha256": "05cc260bd3487424de37af2a0906b4d66a0cb9f311a51f7d437ca9ac056dca81"
+    },
+    {
+      "cell": "-21.000000:133.958472",
+      "latitude": -21.0,
+      "longitude": 133.95847236955905,
+      "candidate_dataset_count": 2,
+      "assigned_dataset_no": 16745,
+      "sample_rank_sha256": "063769fae5fe64419699d8ce4cfc2bb7ce7bacab97f3c8d646d374a068b8e621"
+    },
+    {
+      "cell": "-26.500000:130.437106",
+      "latitude": -26.5,
+      "longitude": 130.4371063487417,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 18048,
+      "sample_rank_sha256": "0650d2369db88afa6974b0baf76b9e83662976bb503acd732177db2ead3c2bc7"
+    },
+    {
+      "cell": "-19.500000:132.686550",
+      "latitude": -19.5,
+      "longitude": 132.6865496419074,
+      "candidate_dataset_count": 2,
+      "assigned_dataset_no": 16793,
+      "sample_rank_sha256": "06561d2d9eec4eeb4054698868626eb150035d074a2e4dd6524e97821097abac"
+    },
+    {
+      "cell": "-34.500000:119.280438",
+      "latitude": -34.5,
+      "longitude": 119.28043846056192,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 19144,
+      "sample_rank_sha256": "06e2a93ef5ac504aa4a5520aa312fd914f826c5da45ff759bc9a71bdb992e320"
+    },
+    {
+      "cell": "-34.000000:151.202083",
+      "latitude": -34.0,
+      "longitude": 151.2020833263764,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 16401,
+      "sample_rank_sha256": "0727b891fcd49e5126d0531a3620ff73512388ca3682b35eedaf0901ca592852"
+    },
+    {
+      "cell": "-15.000000:129.082057",
+      "latitude": -15.0,
+      "longitude": 129.08205697676635,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 16980,
+      "sample_rank_sha256": "0728466c323ab3f69c2bcffd59056035742eee61eafbf11fafd334b9cb1e434e"
+    },
+    {
+      "cell": "-20.000000:134.879822",
+      "latitude": -20.0,
+      "longitude": 134.879822108232,
+      "candidate_dataset_count": 2,
+      "assigned_dataset_no": 16743,
+      "sample_rank_sha256": "0756ff622beafc7e43450d53356f5af776634c96fcf33edc0688d521f099bc8e"
+    },
+    {
+      "cell": "-35.500000:149.463971",
+      "latitude": -35.5,
+      "longitude": 149.4639707907535,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 16369,
+      "sample_rank_sha256": "07b468bcb14fc22f96ea24aa98e5697372c58c12a663d6d5b886258bc570c9cd"
+    },
+    {
+      "cell": "-17.000000:131.345297",
+      "latitude": -17.0,
+      "longitude": 131.34529749501218,
+      "candidate_dataset_count": 1,
+      "assigned_dataset_no": 16907,
+      "sample_rank_sha256": "08dbbf264a6818ae4db12815f0c08967e103e6aa830a530b756d251e53688f24"
+    }
+  ],
+  "selected_product_count": 19,
+  "selected_dataset_numbers": [
+    15090,
+    16369,
+    16401,
+    16743,
+    16745,
+    16793,
+    16799,
+    16907,
+    16911,
+    16980,
+    17565,
+    17852,
+    18044,
+    18048,
+    19144,
+    19306,
+    19338,
+    19394,
+    19448
+  ],
+  "products": [
+    {
+      "dataset_no": 15090,
+      "survey_id": "1258",
+      "survey_name": "Browse Basin Airborne Magnetic Survey, WA, 2013 (Offshore)",
+      "state": "WA",
+      "survey_start_date": "2013-08-04",
+      "catalogue_file_size": "873298 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/GA/line/P1258/P1258-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-16.000000:120.842545"
+      ]
+    },
+    {
+      "dataset_no": 16369,
+      "survey_id": "1218",
+      "survey_name": "Southeast Lachlan, NSW, 2010",
+      "state": "NSW",
+      "survey_start_date": "2010-03-04",
+      "catalogue_file_size": "442147 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NSW/line/P1218/P1218-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-35.500000:149.463971"
+      ]
+    },
+    {
+      "dataset_no": 16401,
+      "survey_id": "525",
+      "survey_name": "Wollongong, NSWGS, 1984",
+      "state": "NSW",
+      "survey_start_date": "1984-02-29",
+      "catalogue_file_size": "4432 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NSW/line/P525/P525-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-34.000000:151.202083"
+      ]
+    },
+    {
+      "dataset_no": 16743,
+      "survey_id": "1008",
+      "survey_name": "Bonney Well, NT, 1999",
+      "state": "NT",
+      "survey_start_date": "1999-06-22",
+      "catalogue_file_size": "87600 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NT/line/P1008/P1008-line-magnetic-Part2-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-20.000000:134.879822"
+      ]
+    },
+    {
+      "dataset_no": 16745,
+      "survey_id": "1008",
+      "survey_name": "Bonney Well, NT, 1999",
+      "state": "NT",
+      "survey_start_date": "1999-06-22",
+      "catalogue_file_size": "84768 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NT/line/P1008/P1008-line-magnetic-Part3-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-21.000000:133.958472"
+      ]
+    },
+    {
+      "dataset_no": 16793,
+      "survey_id": "1015",
+      "survey_name": "Wiso Basin, NT, 2000",
+      "state": "NT",
+      "survey_start_date": "2000-05-01",
+      "catalogue_file_size": "61313 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NT/line/P1015/P1015-line-magnetic-Part1-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-19.500000:132.686550"
+      ]
+    },
+    {
+      "dataset_no": 16799,
+      "survey_id": "1015",
+      "survey_name": "Wiso Basin, NT, 2000",
+      "state": "NT",
+      "survey_start_date": "2000-05-01",
+      "catalogue_file_size": "78419 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NT/line/P1015/P1015-line-magnetic-Part4-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-20.000000:131.687289",
+        "-19.500000:131.625701"
+      ]
+    },
+    {
+      "dataset_no": 16907,
+      "survey_id": "1023",
+      "survey_name": "Buchanan, NT, 2002",
+      "state": "NT",
+      "survey_start_date": "2002-07-15",
+      "catalogue_file_size": "74655 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NT/line/P1023/P1023-line-magnetic-Northwest-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-17.000000:131.345297"
+      ]
+    },
+    {
+      "dataset_no": 16911,
+      "survey_id": "1023",
+      "survey_name": "Buchanan, NT, 2002",
+      "state": "NT",
+      "survey_start_date": "2002-07-15",
+      "catalogue_file_size": "95087 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NT/line/P1023/P1023-line-magnetic-Southwest-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-19.000000:131.037172"
+      ]
+    },
+    {
+      "dataset_no": 16980,
+      "survey_id": "1274",
+      "survey_name": "NTGS Delamere and Spirit Hills, NT, 2015",
+      "state": "NT",
+      "survey_start_date": "2015-07-20",
+      "catalogue_file_size": "149840 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NT/line/P1274/P1274-line-magnetic-SpiritHills-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-15.000000:129.082057"
+      ]
+    },
+    {
+      "dataset_no": 17565,
+      "survey_id": "1145",
+      "survey_name": "East Mount Isa - South, Qld, 2007",
+      "state": "QLD",
+      "survey_start_date": "2006-09-10",
+      "catalogue_file_size": "507212 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/QLD/line/P1145/P1145-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-22.500000:141.224589"
+      ]
+    },
+    {
+      "dataset_no": 17852,
+      "survey_id": "1270",
+      "survey_name": "Coompana, SA, 2015",
+      "state": "SA",
+      "survey_start_date": "2015-02-16",
+      "catalogue_file_size": "815565 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/SA/line/P1270/P1270-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-29.000000:130.865342"
+      ]
+    },
+    {
+      "dataset_no": 18044,
+      "survey_id": "829",
+      "survey_name": "TEISA - Area M2, SA, 2000 (Alberga)",
+      "state": "SA",
+      "survey_start_date": "2000-03-01",
+      "catalogue_file_size": "91672 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/SA/line/P829/P829-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-27.000000:132.763035"
+      ]
+    },
+    {
+      "dataset_no": 18048,
+      "survey_id": "830",
+      "survey_name": "TEISA - Area M3, SA, 2000 (Mann)",
+      "state": "SA",
+      "survey_start_date": "2000-06-01",
+      "catalogue_file_size": "135175 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/SA/line/P830/P830-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-26.500000:130.437106"
+      ]
+    },
+    {
+      "dataset_no": 19144,
+      "survey_id": "1067",
+      "survey_name": "Southern Yilgarn (Newdegate, Ravensthorpe, Bremer Bay), WA, 2004",
+      "state": "WA",
+      "survey_start_date": "2004-11-07",
+      "catalogue_file_size": "46969 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/WA/line/P1067/P1067-line-magnetic-BremerBay-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-34.500000:119.280438"
+      ]
+    },
+    {
+      "dataset_no": 19306,
+      "survey_id": "1207",
+      "survey_name": "Cornish - Helena, WA, 2009 (East Canning 2)",
+      "state": "WA",
+      "survey_start_date": "2009-06-01",
+      "catalogue_file_size": "485112 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/WA/line/P1207/P1207-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-21.000000:126.996030"
+      ]
+    },
+    {
+      "dataset_no": 19338,
+      "survey_id": "1214",
+      "survey_name": "Yampi - Derby, WA, 2009 (North Canning 2)",
+      "state": "WA",
+      "survey_start_date": "2009-06-30",
+      "catalogue_file_size": "145992 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/WA/line/P1214/P1214-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-16.000000:123.963444"
+      ]
+    },
+    {
+      "dataset_no": 19394,
+      "survey_id": "1233",
+      "survey_name": "South Pilbara, Hickman Crater, WA, 2011",
+      "state": "WA",
+      "survey_start_date": "2012-05-13",
+      "catalogue_file_size": "443977 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/WA/line/P1233/P1233-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-21.500000:116.299145"
+      ]
+    },
+    {
+      "dataset_no": 19448,
+      "survey_id": "1243",
+      "survey_name": "Perth Basin South, WA, 2011",
+      "state": "WA",
+      "survey_start_date": "2011-03-22",
+      "catalogue_file_size": "255154 KB",
+      "provider_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/WA/line/P1243/P1243-line-magnetic-AWAGS_MAG_2010.nc",
+      "sampled_cells": [
+        "-32.000000:115.537535"
+      ]
+    }
+  ],
+  "success_definition": {
+    "cell_success": "the assigned product's training-only spatial diagnostic has an uncensored correlation-range upper bound strictly below the 55 km minimum design-center spacing",
+    "all_sampled_cells_must_succeed": true,
+    "failure_includes": [
+      "range estimate at or above 55 km",
+      "range estimate censored before 55 km",
+      "insufficient training-only geometry or response support",
+      "integrity or schema failure"
+    ]
+  },
+  "preregistered_inference": {
+    "method": "two-stage one-sided design-based bound with Bonferroni family-wise alpha control",
+    "family_wise_alpha": 0.05,
+    "prevalence_alpha": 0.025,
+    "test_count_alpha": 0.025,
+    "all_successes_one_sided_prevalence_lower_bound": 0.8315665290169146,
+    "test_cells": 305,
+    "required_successful_test_cells": 223,
+    "binomial_tail_probability_at_lower_bound": 0.9999961755548361,
+    "test_count_condition_passes": true,
+    "formal_gate_rule": "pass only if all 20 sampled cells succeed and the preregistered test-count tail probability is at least 0.975",
+    "exchangeability_basis": "train and test roles were assigned by a response-blind hash before this sample and use identical DDS eligibility"
+  },
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "status": "sample frozen; response acquisition not started"
+}

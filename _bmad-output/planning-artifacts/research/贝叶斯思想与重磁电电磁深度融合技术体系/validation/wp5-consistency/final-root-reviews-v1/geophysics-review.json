@@ -1,0 +1,36 @@
+{
+  "schema": "wp5-final-root-review-v1",
+  "review_id": "WP5-FINAL-ROOT-GEOPHYSICS",
+  "role": "地球物理复核",
+  "reviewer_identity": "Codex automated AI / 地球物理复核",
+  "identity_type": "automated-ai-final-root-review",
+  "decision": "Approved",
+  "reviewed_at_utc": "2026-07-31T06:46:02Z",
+  "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+  "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+  "candidate": {
+    "run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+    "manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+    "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+    "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c"
+  },
+  "review_scope": "geophysical physics and change-of-support boundaries",
+  "checks": [
+    "Confirmed depth capability is conditioned on acquisition parameters, geometry, noise, sensitivity, resolution, and posterior DOI rather than method labels.",
+    "Confirmed gravity, magnetic, DC/IP, Maxwell/diffusion, TEM, CSAMT, and WFEM observation operators retain their units, polarity, coordinate, and source-geometry boundaries.",
+    "Confirmed weak-contrast and conductive-cover adversarial scenarios require absolute noise floors, shared covariance, competing explanations, DOI, failure rates, calibration, and sharpness.",
+    "Confirmed field holdout uses borehole and buffer lineage isolation with clustered independent units and does not promote the package to Field-validated.",
+    "Confirmed source-bound physical-property priors and method-dependent candidate claims are not promoted into universal ranges or depths.",
+    "Confirmed the selected geophysical and conditional-depth negative fixtures reject with their predeclared business assertions.",
+    "Recomputed all 29 ordered root members, member/root/anchor hashes, active-output pointer, and ACTIVE_MANIFEST binding against the current candidate.",
+    "Confirmed the v3 fixture manifest has 300 unique canonical cases and the seven-stage envelope contains exactly 300 matched oracle-bound results.",
+    "Bound this geophysical review to CI workflow SHA-256 3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6; explicit Sort-Object, pre-checkout long-path, and smoke TEMP-to-RUNNER_TEMP normalization affect validation and repository transport only, do not alter physical claims or evidence scope, and do not assert a remote gate PASS."
+  ],
+  "findings": [],
+  "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "bcfcf3044df93c15eb8ef8db63732b32337fa394e0700de326f2c6ff1c742317",
+    "total_fixture_count": 300
+  }
+}

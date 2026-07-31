@@ -1,0 +1,84 @@
+{
+  "schema_version": "wp8-controlled-source-public-data-audit-v1",
+  "selection_policy": "license_integrity_design_and_native_observation_contract_only",
+  "formal_test_endpoints_inspected": false,
+  "candidates": [
+    {
+      "id": "usgs-red-knoll",
+      "method": "csamt",
+      "doi": "10.5066/P9QF9PFR",
+      "license": "US public domain",
+      "raw_data": true,
+      "receiver_coordinates": true,
+      "survey_lines": 2,
+      "source_dipole_length_m": 1000,
+      "source_receiver_distance_m": [
+        4700,
+        5500
+      ],
+      "per_acquisition_transmitter_endpoints": false,
+      "native_error_or_complex_covariance": false,
+      "local_pool_status": "already_frozen_as_red-knoll",
+      "decision": "retain_as_contract_comparison_only",
+      "reason": "two whole-line raw members, missing exact transmitter endpoints and native error/covariance"
+    },
+    {
+      "id": "usgs-mount-st-helens-ds901",
+      "method": "csamt",
+      "url": "https://pubs.usgs.gov/ds/0901/",
+      "license": "USGS publication",
+      "raw_or_processed_edi": true,
+      "receiver_coordinates": true,
+      "transmitter_location_statement": "approximately 250 meters west of receiver station",
+      "per_acquisition_transmitter_endpoints": false,
+      "source_current_log": false,
+      "decision": "reject_as_formal_expansion",
+      "reason": "approximate moving source geometry cannot define the finite-source contract"
+    },
+    {
+      "id": "mendeley-shandong-l1150",
+      "method": "csamt",
+      "doi": "10.17632/fftf9dhjcj.1",
+      "license": "CC-BY-NC-3.0",
+      "raw_data": true,
+      "survey_lines": 1,
+      "public_transmitter_endpoint_contract_evidenced": false,
+      "decision": "reject_as_formal_expansion",
+      "reason": "single line, noncommercial restriction, and no verified source/receiver/error contract"
+    },
+    {
+      "id": "gfz-gipp-controlled-source-repository",
+      "method": "csem_lotem",
+      "url": "https://www.gfz.de/en/section/geophysical-imaging/data-products-services/repository-for-electromagnetic-data",
+      "metadata_and_time_series": true,
+      "decision": "do_not_substitute_for_csamt_or_wfem",
+      "reason": "repository contains heterogeneous CSEM/LOTEM experiments; method and observation contracts differ from the preregistered CSAMT and WFEM quantities"
+    },
+    {
+      "id": "pangaea-scanner-pockmark",
+      "method": "marine_csem",
+      "doi": "10.1594/PANGAEA.911025",
+      "electric_field_data": true,
+      "decision": "do_not_substitute_for_csamt_or_wfem",
+      "reason": "marine towed-source geometry and observation support are materially different from land CSAMT/WFEM"
+    },
+    {
+      "id": "wfem-literature-search",
+      "method": "wfem",
+      "representative_sources": [
+        "https://doi.org/10.3389/feart.2025.1579468",
+        "https://doi.org/10.3389/feart.2023.1158702",
+        "https://doi.org/10.3390/app16136350"
+      ],
+      "method_contract_described": true,
+      "reusable_raw_release_found": false,
+      "decision": "no_formal_replacement_found",
+      "reason": "papers define or apply single-component wide-field apparent resistivity but expose no reusable native source/receiver/phase/error package"
+    }
+  ],
+  "conclusions": {
+    "csamt": "existing 32-line USGS consortium remains the strongest locally sealed public pool, but exact transmitter endpoints, native errors and at least 223 safely separable clusters remain absent",
+    "wfem": "no public raw replacement satisfying source geometry, receiver geometry, component/phase, geometric-factor and error contracts was found",
+    "method_substitution_allowed": false
+  }
+}

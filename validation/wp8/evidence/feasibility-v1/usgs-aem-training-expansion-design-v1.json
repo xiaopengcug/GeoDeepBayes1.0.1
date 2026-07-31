@@ -1,0 +1,122 @@
+{
+  "schema_version": "wp8-usgs-aem-training-expansion-design-v1",
+  "catalogue_sha256": "c452b1fd71cbd9c8f9a76e70e9cebb283ef8a019d74895e6d94b2253e1f296cb",
+  "contract_document_manifest_sha256": "d861c8f84fc7f57789326c4a38c0ac4c63d79996621bc3077f278821cf6b7a83",
+  "contract_audit_sha256": "ffde8deb717bb3c7f9d2fbf744b57d7e7213b63fcf5f8f039b6c187087a7b0a5",
+  "ga_multisystem_spatial_split_sha256": "b05d072ec8c24ad04795dee3817d4444cd6c28dc2afc6e554d5a603e5742e8ca",
+  "selection_frozen_before_payload_access": true,
+  "excluded_response_exposed_sciencebase_ids": [
+    "69829a8db66b018d00103597"
+  ],
+  "training_survey_count": 5,
+  "training_systems": [
+    "SkyTEM 304M",
+    "TEMPEST"
+  ],
+  "training_surveys": [
+    {
+      "sciencebase_id": "59722284e4b0ec1a4885ed9d",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of Delaware Bay and surrounding regions of New Jersey and Delaware, 2022 (ver 2.0, April 2025)",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "role": "training",
+      "selection_basis": "all unexposed provisional contract-ready time-domain USGS surveys in frozen catalogue",
+      "payload": {
+        "name": "DelawareBay_SkyTEM_2022_v2.nc",
+        "title": null,
+        "contentType": "application/x-netcdf",
+        "size": 2093008216,
+        "dateUploaded": "2025-03-14T22:08:25Z",
+        "downloadUri": "https://sciencebase.usgs.gov/manager/download/cm89bsxb901le0upibj0e0ouo",
+        "checksum": null
+      }
+    },
+    {
+      "sciencebase_id": "5f4e951882ce4c3d1233cb7d",
+      "parent_id": "5f35b17382cee144fb35a733",
+      "title": "Airborne EM, magnetic, and radiometric survey data",
+      "systems": [
+        "TEMPEST"
+      ],
+      "role": "training",
+      "selection_basis": "all unexposed provisional contract-ready time-domain USGS surveys in frozen catalogue",
+      "payload": {
+        "name": "MAP_RegionalTempest_2020_EM_RawData.dat",
+        "title": "raw electromagnetic data file",
+        "contentType": "application/unknown",
+        "size": 2737187630,
+        "dateUploaded": "2021-01-15T22:23:02Z",
+        "downloadUri": "https://www.sciencebase.gov/catalog/file/get/5f4e951882ce4c3d1233cb7d?f=__disk__d4%2F8f%2Fdd%2Fd48fdd1842158e926d9266a4a1793b814af339b6",
+        "checksum": null
+      }
+    },
+    {
+      "sciencebase_id": "6193fbb0d34eb622f68f13e5",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, northeast Wisconsin (ver. 1.1, June 2022)",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "role": "training",
+      "selection_basis": "all unexposed provisional contract-ready time-domain USGS surveys in frozen catalogue",
+      "payload": {
+        "name": "WI_SkyTEM_2021.nc",
+        "title": null,
+        "contentType": "application/octet-stream",
+        "size": 2069515187,
+        "dateUploaded": "2022-06-27T23:56:08Z",
+        "downloadUri": "https://sciencebase.usgs.gov/manager/download/ckxqnf2vb000x12plgr05ajaf",
+        "checksum": null
+      }
+    },
+    {
+      "sciencebase_id": "62ffc245d34e37cba73e1fa0",
+      "parent_id": "5e8ddf9882cee42d13468786",
+      "title": "Airborne electromagnetic, magnetic, and radiometric survey of the Mississippi Alluvial Plain, Mississippi Embayment, and Gulf Coastal Plain, September 2021 - January 2022",
+      "systems": [
+        "TEMPEST"
+      ],
+      "role": "training",
+      "selection_basis": "all unexposed provisional contract-ready time-domain USGS surveys in frozen catalogue",
+      "payload": {
+        "name": "MAP_RegionalTempest_2022.nc",
+        "title": null,
+        "contentType": "application/octet-stream",
+        "size": 5250026882,
+        "dateUploaded": "2023-07-26T23:28:28Z",
+        "downloadUri": "https://sciencebase.usgs.gov/manager/download/clcl746bx00160vpl1mb6gb5q",
+        "checksum": null
+      }
+    },
+    {
+      "sciencebase_id": "636c0b28d34ed907bf6abb14",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne Electromagnetic (AEM) Survey in Southwest and Southeast Areas, Wisconsin, 2022",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "role": "training",
+      "selection_basis": "all unexposed provisional contract-ready time-domain USGS surveys in frozen catalogue",
+      "payload": {
+        "name": "Southeast_and_Southwest_Wisconsin_AEM_Survey_2022.nc",
+        "title": "NetCDF Data and Metadata",
+        "contentType": "application/octet-stream",
+        "size": 1788610203,
+        "dateUploaded": "2022-12-29T19:11:42Z",
+        "downloadUri": "https://sciencebase.usgs.gov/manager/download/clc8b20jq00040vplhy2758g1",
+        "checksum": null
+      }
+    }
+  ],
+  "ga_sealed_test_cluster_upper_bound": 418,
+  "ga_required_test_clusters": 223,
+  "usgs_calibration_surveys": [],
+  "usgs_test_surveys": [],
+  "training_payloads_downloaded": 0,
+  "training_response_values_interpreted": 0,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

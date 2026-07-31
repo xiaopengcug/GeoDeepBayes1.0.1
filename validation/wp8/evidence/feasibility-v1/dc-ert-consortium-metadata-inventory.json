@@ -1,0 +1,239 @@
+{
+  "schema_version": "wp8-dc-ert-consortium-metadata-v1",
+  "created_date": "2026-07-24",
+  "scope": "outcome-blind official release metadata only",
+  "observation_values_read": false,
+  "formal_gate_changed": false,
+  "decision": {
+    "status": "candidate_release_pool_only",
+    "nominal_profile_or_site_sum_exceeds_223": true,
+    "qualified_independent_clusters_demonstrated": false,
+    "common_observation_error_contract_demonstrated": false,
+    "member_split_frozen": false
+  },
+  "counting_policy": {
+    "candidate_cluster_unit": "provider survey transect or spatially separated VES site",
+    "repeated_arrays_and_electrode quadruples_are_channels": true,
+    "grid_intersections_and_nearby_parallel_lines_require_training_only_correlation_merging": true,
+    "continuous_waterborne_samples_do_not_count_as_independent_profiles": true,
+    "minimum_formal_test_clusters": 223
+  },
+  "releases": [
+    {
+      "name": "Ellsworth AFB 2014-2019",
+      "doi": "10.5066/P9XSJH17",
+      "nominal_units": 30,
+      "basis": "4 ERT surveys in 2014 plus 26 transects in 2019",
+      "raw_status": "official metadata states unprocessed and processed files",
+      "instrument_contract": "EarthImager2D processing; acquisition instrument/member fields require archive audit",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "East and Southeast of Ellsworth AFB 2021",
+      "doi": "10.5066/P9X57BS0",
+      "nominal_units": 21,
+      "basis": "21 co-located ERT transects",
+      "raw_status": "official metadata states unprocessed and processed files",
+      "instrument_contract": "EarthImager2D processing; acquisition instrument/member fields require archive audit",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "Sioux Falls 2022 and 2025",
+      "doi": "10.5066/P18XCLZT",
+      "nominal_units": 22,
+      "basis": "22 transects",
+      "raw_status": "unprocessed and processed ZIP folders per transect",
+      "instrument_contract": "SuperSting R8, dipole-dipole, 56 electrodes, 2/3/4 m spacing, EarthImager2D",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "Summerset South Dakota 2025",
+      "doi": "10.5066/P148NEP7",
+      "nominal_units": 13,
+      "basis": "13 transects",
+      "raw_status": "unprocessed and processed ZIP folders per transect",
+      "instrument_contract": "SuperSting, two 14-electrode passive cables, 1/2/3 m spacing, EarthImager2D",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "Malmstrom AFB 2023",
+      "doi": "10.5066/P98Q26RN",
+      "nominal_units": 7,
+      "basis": "7 ERT transects",
+      "raw_status": "member-level raw status requires ScienceBase archive audit",
+      "instrument_contract": "requires archive audit",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "Quitobaquito Spring 2023-2024",
+      "doi": "10.5066/P13COJJR",
+      "nominal_units": 6,
+      "basis": "6 transects",
+      "raw_status": "official metadata states raw plus inverted models",
+      "instrument_contract": "requires archive audit",
+      "license": "USGS public-domain label"
+    },
+    {
+      "name": "Alaska fire/permafrost ERT 2014",
+      "doi": "10.5066/F7959FM0",
+      "nominal_units": 11,
+      "basis": "11 transect locations",
+      "raw_status": "digital release exists; raw ABMN/current/voltage/error fields require archive audit",
+      "instrument_contract": "requires archive audit",
+      "license": "USGS public-domain label"
+    },
+    {
+      "name": "Barter Island Alaska 2018 campaign",
+      "doi": null,
+      "nominal_units": 22,
+      "basis": "official USGS campaign metadata states 22 ERT transects",
+      "raw_status": "exact data release and archive mapping unresolved",
+      "instrument_contract": "unresolved",
+      "license": "public-domain campaign media is not file-level data license evidence"
+    },
+    {
+      "name": "Palm Beach County VES 1988",
+      "doi": "10.3133/ofr88464",
+      "nominal_units": 94,
+      "basis": "94 spatially distinct vertical electrical sounding sites",
+      "raw_status": "report presents field and smoothed data; machine-readable raw files not yet demonstrated",
+      "instrument_contract": "legacy VES contract differs from modern ERT and requires an explicit compatible adapter",
+      "license": "USGS publication; file-level digital reuse and availability unresolved"
+    },
+    {
+      "name": "Hendry and Collier Counties VES",
+      "doi": "10.3133/ofr96556",
+      "nominal_units": 109,
+      "basis": "109 vertical electrical sounding sites reported by USGS",
+      "raw_status": "machine-readable field observations not demonstrated",
+      "instrument_contract": "legacy VES; current, voltage, error and exact geometry require source-table audit",
+      "license": "USGS publication; exact data artifact and file-level terms unresolved"
+    },
+    {
+      "name": "Amargosa Desert Schlumberger soundings 1999-2000",
+      "doi": "10.3133/ofr02140",
+      "nominal_units": 54,
+      "basis": "38 soundings in 1999 plus 16 in 2000",
+      "raw_status": "report states data are presented; machine-readable raw observations not yet demonstrated",
+      "instrument_contract": "Schlumberger VES with UTM site coordinates; current, voltage and error fields unresolved",
+      "license": "USGS publication; exact downloadable data members unresolved"
+    },
+    {
+      "name": "Lower Peninsula of Michigan VES 1987",
+      "doi": "10.3133/ofr89244",
+      "nominal_units": 93,
+      "basis": "93 spatially distinct Schlumberger vertical electrical-resistivity soundings",
+      "raw_status": "USGS report appendix presents tabulated raw field data per sounding; separate machine-readable observation files not demonstrated",
+      "instrument_contract": "legacy VES; PDF tables require a verified transcription adapter and do not yet demonstrate current, voltage or per-observation error fields",
+      "license": "USGS publication; machine-readable file-level artifact unresolved"
+    },
+    {
+      "name": "Little Wind River Riverton Wyoming 2017",
+      "doi": "10.5066/P9J9VJBR",
+      "nominal_units": 9,
+      "basis": "9 ERT transects collected August 24-28, 2017",
+      "raw_status": "official catalog explicitly lists raw SuperSting .stg and .crs instrument files",
+      "instrument_contract": "AGI SuperSting R8; electrode positions are available for some lines and full member fields require archive audit",
+      "license": "USGS public-domain label"
+    },
+    {
+      "name": "Des Moines River Floodplain Iowa 2018",
+      "doi": "10.5066/P9B9AVKJ",
+      "nominal_units": 7,
+      "basis": "7 spatial survey lines; three acquisition arrays at each line are channels, not independent clusters",
+      "raw_status": "7 per-line ZIP folders contain original command, .crs and .stg instrument files",
+      "instrument_contract": "56 electrodes at 5 m spacing; dipole-dipole, Wenner-Schlumberger and inverse Schlumberger configurations",
+      "license": "USGS public-domain label"
+    },
+    {
+      "name": "Indian River Lagoon Florida stationary ERT 2017",
+      "doi": "10.5066/F7V40TFH",
+      "nominal_units": 12,
+      "basis": "6 fixed transect locations at each of two field regions; later surveys repeat the same spatial locations",
+      "raw_status": "official metadata lists .stg, .crs, .cmd and .uwt files",
+      "instrument_contract": "modified SuperSting R8/IP, 28 electrodes at 2 m spacing, dipole-dipole or dipole-gradient",
+      "license": "USGS public data release",
+      "counting_note": "repeat dates are channels or temporal repeats, not additional independent spatial clusters"
+    },
+    {
+      "name": "Jim Woodruff Lock and Dam Florida 2018",
+      "doi": null,
+      "nominal_units": 11,
+      "basis": "11 ERT profiles along and downstream of the spillway abutment",
+      "raw_status": "official Science Data Catalog states raw and processed digital resistivity data plus data dictionaries",
+      "instrument_contract": "AGI SuperSting R8; exact DOI and archive-member fields require catalog-item audit",
+      "license": "USGS public data release"
+    },
+    {
+      "name": "Redwell Basin and East River 2017",
+      "doi": "10.5066/P934HUCX",
+      "nominal_units": 5,
+      "basis": "5 ERT profiles",
+      "raw_status": "official release includes raw digital data and dictionaries",
+      "instrument_contract": "SuperSting R8; member fields require archive audit",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "Brookside West Beaumont 2024",
+      "doi": "10.5066/P16PH76Q",
+      "nominal_units": 3,
+      "basis": "3 ERT profiles",
+      "raw_status": "official release includes raw and processed digital data",
+      "instrument_contract": "SuperSting R8; member fields require archive audit",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "Krause Springs Texas 2019",
+      "doi": null,
+      "nominal_units": 4,
+      "basis": "4 ERT profiles with 13,605 resistance measurements",
+      "raw_status": "official release describes resistance measurements and inversion inputs",
+      "instrument_contract": "IRIS Syscal Pro Switch 96, reciprocal Schlumberger arrays",
+      "license": "USGS release; exact DOI/file-level terms unresolved"
+    },
+    {
+      "name": "Anza-Terwilliger Valley 2018",
+      "doi": null,
+      "nominal_units": 2,
+      "basis": "2 ERT transects",
+      "raw_status": "official digital data release; member fields require audit",
+      "instrument_contract": "requires archive audit",
+      "license": "CC0 1.0"
+    }
+  ],
+  "count_summary": {
+    "nominal_sum": 535,
+    "modern_or_digital_release_sum_excluding_barter_and_four_legacy_VES_reports": 163,
+    "why_nominal_sum_is_not_eligible": [
+      "Palm Beach contributes 94 units but machine-readable raw observations are not demonstrated.",
+      "Hendry/Collier contributes 109 units but the exact machine-readable field-data artifact is unresolved.",
+      "Amargosa contributes 54 units but machine-readable current, voltage and error observations are unresolved.",
+      "Michigan contributes 93 units but raw observations are only demonstrated as report appendix tables, not machine-readable instrument files.",
+      "Barter Island contributes 22 campaign transects but its exact data release is unresolved.",
+      "Closely spaced grid transects can be correlated and are not automatically independent.",
+      "Several releases do not yet prove ABMN coordinates, current, voltage, polarity and per-observation error.",
+      "Different VES and ERT acquisition contracts cannot be pooled without a frozen compatible adapter.",
+      "The proven modern/digital candidate subset has only 124 nominal profiles before correlation adjustment and cannot retain 223 sealed test clusters."
+    ]
+  },
+  "excluded_high_density_trajectories": [
+    {
+      "name": "Mississippi Alluvial Plain waterborne resistivity",
+      "extent": "180 km across three rivers",
+      "reason": "continuous samples on three correlated trajectories are not hundreds of independent clusters"
+    },
+    {
+      "name": "Dolores River continuous resistivity",
+      "extent": "three repeated 8-10 km river profiles",
+      "reason": "repeat dates and dense samples do not create independent profile clusters"
+    }
+  ],
+  "unblock_conditions": [
+    "Resolve official ScienceBase items and central-directory manifests for every retained release.",
+    "Prove per-transect raw files contain ABMN geometry, injected current, measured voltage or resistance, polarity and usable error evidence.",
+    "Restrict to a common acquisition/units/sign contract or implement and verify an explicit lossless adapter for each family.",
+    "Freeze coordinate-level transect identities and eliminate repeat/overlapping grids without using outcomes.",
+    "Demonstrate enough total candidates to preserve training, buffer and calibration while retaining 223 sealed test clusters.",
+    "Estimate correlation length using training responses only and merge nearby transects before the formal count."
+  ]
+}

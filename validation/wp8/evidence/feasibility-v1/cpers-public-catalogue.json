@@ -1,0 +1,35 @@
+{
+  "schema_version": "wp8-cpers-public-catalogue-audit-v1",
+  "raw_manifest_sha256": "b5df6f68515dfd1565833855e4c6ff7bf6842217e5b26bb2ce244a1ba4617d78",
+  "doi": "10.5885/45855XD-DC9883ABD609428B",
+  "catalogue_version": "2.0",
+  "catalogue_update_date": "2025-11-05",
+  "metadata_survey_count": 494,
+  "distinct_profile_count": 423,
+  "repeat_profile_count": 15,
+  "raw_survey_count": 292,
+  "embargoed_survey_count": 33,
+  "survey_count_without_raw_data": 169,
+  "data_year_range": [
+    2008,
+    2024
+  ],
+  "regional_download_member_count": 21,
+  "measurement_download_member_count": 7,
+  "electrode_download_member_count": 7,
+  "metadata_download_member_count": 7,
+  "nominal_profile_power_threshold_exceeded": true,
+  "nominal_raw_survey_power_threshold_exceeded": true,
+  "permission_contract": {
+    "publicly_visible_and_downloadable": true,
+    "contact_contributors_required_before_use": true,
+    "collaboration_or_attribution_discussion_required": true,
+    "permission_obtained": false
+  },
+  "measurement_payloads_downloaded": 0,
+  "correlation_length_frozen": false,
+  "formal_contract_ready": false,
+  "formal_cluster_power_gate_passes": false,
+  "test_unseal_count": 0,
+  "conclusion": "CPERS v2 is the first public DC/ERT catalogue found whose nominal scale exceeds both thresholds: 423 distinct profiles and 292 surveys with raw data. Formal inclusion is not yet allowed because CPERS requires contributor permission and a collaboration/attribution discussion before use; no such permission is frozen. Response bytes were therefore not downloaded or interpreted, and no training-only correlation adjustment has been run."
+}

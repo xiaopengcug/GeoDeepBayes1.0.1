@@ -1,0 +1,1604 @@
+{
+  "design_version": "usgs-big-chino-csamt-design-v1",
+  "status": "frozen_before_response_archive_download_or_inspection",
+  "source": {
+    "doi": "10.5066/P9KGKWNL",
+    "license": "US Government public domain",
+    "station_archive_sha256": "27b44f2c32d1f0f705ccf0cb60c35140acf9dfb193a64fd89d9b400cb3266072"
+  },
+  "outcome_blinding": {
+    "read": [
+      "line name",
+      "station",
+      "easting",
+      "northing",
+      "elevation"
+    ],
+    "not_downloaded_or_read": [
+      "raw CSAMT response archive",
+      "inversion response archive"
+    ]
+  },
+  "split": {
+    "training_lines": [
+      "CG",
+      "CH",
+      "EW2",
+      "FMW",
+      "NS1",
+      "NS3"
+    ],
+    "sealed_test_lines": [
+      "AX",
+      "EW1",
+      "EW3",
+      "FM",
+      "FME",
+      "GS16",
+      "GS6",
+      "GS8",
+      "K1",
+      "NS2",
+      "NS4",
+      "NS5",
+      "WC",
+      "WCN",
+      "WR"
+    ],
+    "minimum_training_test_distance_m": 200.0,
+    "minimum_test_test_distance_m": 200.0,
+    "salt": "usgs-big-chino-csamt-v1"
+  },
+  "counts": {
+    "lines": 21,
+    "stations": 1159,
+    "training_stations": 342,
+    "candidate_test_stations": 817,
+    "eligible_after_training_distance": 795,
+    "sealed_independent_test_clusters": 257
+  },
+  "sealed_test_cluster_geometry": [
+    {
+      "line": "AX",
+      "station": "3400",
+      "easting_m": 354655.0,
+      "northing_m": 3867654.0
+    },
+    {
+      "line": "NS4",
+      "station": "3000",
+      "easting_m": 368077.0,
+      "northing_m": 3859513.0
+    },
+    {
+      "line": "GS8",
+      "station": "2100",
+      "easting_m": 363772.0,
+      "northing_m": 3860202.0
+    },
+    {
+      "line": "NS5",
+      "station": "800",
+      "easting_m": 357692.0,
+      "northing_m": 3868144.0
+    },
+    {
+      "line": "EW1",
+      "station": "230",
+      "easting_m": 370816.0,
+      "northing_m": 3863998.0
+    },
+    {
+      "line": "NS4",
+      "station": "4400",
+      "easting_m": 367837.0,
+      "northing_m": 3858300.0
+    },
+    {
+      "line": "GS16",
+      "station": "1200",
+      "easting_m": 364165.0,
+      "northing_m": 3857163.0
+    },
+    {
+      "line": "AX",
+      "station": "2400",
+      "easting_m": 355301.0,
+      "northing_m": 3866892.0
+    },
+    {
+      "line": "FME",
+      "station": "1800",
+      "easting_m": 363487.0,
+      "northing_m": 3866863.0
+    },
+    {
+      "line": "GS16",
+      "station": "2400",
+      "easting_m": 363301.0,
+      "northing_m": 3856334.0
+    },
+    {
+      "line": "AX",
+      "station": "14500",
+      "easting_m": 347249.0,
+      "northing_m": 3876143.0
+    },
+    {
+      "line": "AX",
+      "station": "5000",
+      "easting_m": 353635.0,
+      "northing_m": 3868851.0
+    },
+    {
+      "line": "AX",
+      "station": "19100",
+      "easting_m": 344672.0,
+      "northing_m": 3879952.0
+    },
+    {
+      "line": "WC",
+      "station": "2800",
+      "easting_m": 349792.0,
+      "northing_m": 3872550.0
+    },
+    {
+      "line": "WR",
+      "station": "1500",
+      "easting_m": 345579.0,
+      "northing_m": 3881239.0
+    },
+    {
+      "line": "AX",
+      "station": "15700",
+      "easting_m": 346580.0,
+      "northing_m": 3877132.0
+    },
+    {
+      "line": "WC",
+      "station": "1000",
+      "easting_m": 348508.0,
+      "northing_m": 3871307.0
+    },
+    {
+      "line": "GS8",
+      "station": "3400",
+      "easting_m": 362841.0,
+      "northing_m": 3859304.0
+    },
+    {
+      "line": "FME",
+      "station": "200",
+      "easting_m": 364533.0,
+      "northing_m": 3868072.0
+    },
+    {
+      "line": "AX",
+      "station": "4500",
+      "easting_m": 353942.0,
+      "northing_m": 3868494.0
+    },
+    {
+      "line": "NS5",
+      "station": "2900",
+      "easting_m": 357665.0,
+      "northing_m": 3866054.0
+    },
+    {
+      "line": "GS8",
+      "station": "3900",
+      "easting_m": 362477.0,
+      "northing_m": 3858956.0
+    },
+    {
+      "line": "WCN",
+      "station": "600",
+      "easting_m": 347843.0,
+      "northing_m": 3874699.0
+    },
+    {
+      "line": "EW3",
+      "station": "390",
+      "easting_m": 370833.0,
+      "northing_m": 3866203.0
+    },
+    {
+      "line": "FM",
+      "station": "2500",
+      "easting_m": 361922.0,
+      "northing_m": 3868498.0
+    },
+    {
+      "line": "FME",
+      "station": "2200",
+      "easting_m": 363227.0,
+      "northing_m": 3866564.0
+    },
+    {
+      "line": "NS4",
+      "station": "500",
+      "easting_m": 367949.0,
+      "northing_m": 3861979.0
+    },
+    {
+      "line": "FME",
+      "station": "1100",
+      "easting_m": 363950.0,
+      "northing_m": 3867389.0
+    },
+    {
+      "line": "NS5",
+      "station": "3400",
+      "easting_m": 357663.0,
+      "northing_m": 3865557.0
+    },
+    {
+      "line": "AX",
+      "station": "14300",
+      "easting_m": 347361.0,
+      "northing_m": 3875974.0
+    },
+    {
+      "line": "WC",
+      "station": "3500",
+      "easting_m": 350301.0,
+      "northing_m": 3873032.0
+    },
+    {
+      "line": "FM",
+      "station": "800",
+      "easting_m": 363043.0,
+      "northing_m": 3869768.0
+    },
+    {
+      "line": "EW3",
+      "station": "420",
+      "easting_m": 370532.0,
+      "northing_m": 3866210.0
+    },
+    {
+      "line": "WC",
+      "station": "4200",
+      "easting_m": 350800.0,
+      "northing_m": 3873520.0
+    },
+    {
+      "line": "NS2",
+      "station": "0",
+      "easting_m": 371204.0,
+      "northing_m": 3865572.0
+    },
+    {
+      "line": "FM",
+      "station": "4500",
+      "easting_m": 360607.0,
+      "northing_m": 3867001.0
+    },
+    {
+      "line": "AX",
+      "station": "9600",
+      "easting_m": 350668.0,
+      "northing_m": 3872349.0
+    },
+    {
+      "line": "FME",
+      "station": "0",
+      "easting_m": 364663.0,
+      "northing_m": 3868224.0
+    },
+    {
+      "line": "NS2",
+      "station": "1800",
+      "easting_m": 371386.0,
+      "northing_m": 3863755.0
+    },
+    {
+      "line": "NS5",
+      "station": "5100",
+      "easting_m": 359323.0,
+      "northing_m": 3863852.0
+    },
+    {
+      "line": "AX",
+      "station": "6100",
+      "easting_m": 352925.0,
+      "northing_m": 3869684.0
+    },
+    {
+      "line": "GS8",
+      "station": "4200",
+      "easting_m": 362261.0,
+      "northing_m": 3858747.0
+    },
+    {
+      "line": "AX",
+      "station": "8800",
+      "easting_m": 351182.0,
+      "northing_m": 3871738.0
+    },
+    {
+      "line": "GS8",
+      "station": "100",
+      "easting_m": 365277.0,
+      "northing_m": 3861515.0
+    },
+    {
+      "line": "AX",
+      "station": "12400",
+      "easting_m": 348430.0,
+      "northing_m": 3874412.0
+    },
+    {
+      "line": "GS8",
+      "station": "700",
+      "easting_m": 364845.0,
+      "northing_m": 3861101.0
+    },
+    {
+      "line": "AX",
+      "station": "16100",
+      "easting_m": 346358.0,
+      "northing_m": 3877469.0
+    },
+    {
+      "line": "AX",
+      "station": "8300",
+      "easting_m": 351503.0,
+      "northing_m": 3871357.0
+    },
+    {
+      "line": "EW3",
+      "station": "80",
+      "easting_m": 373936.0,
+      "northing_m": 3866155.0
+    },
+    {
+      "line": "WCN",
+      "station": "1200",
+      "easting_m": 347412.0,
+      "northing_m": 3874285.0
+    },
+    {
+      "line": "WR",
+      "station": "4200",
+      "easting_m": 347523.0,
+      "northing_m": 3883101.0
+    },
+    {
+      "line": "EW3",
+      "station": "290",
+      "easting_m": 371834.0,
+      "northing_m": 3866188.0
+    },
+    {
+      "line": "GS8",
+      "station": "400",
+      "easting_m": 365061.0,
+      "northing_m": 3861307.0
+    },
+    {
+      "line": "GS6",
+      "station": "1200",
+      "easting_m": 361071.0,
+      "northing_m": 3861036.0
+    },
+    {
+      "line": "AX",
+      "station": "7100",
+      "easting_m": 352279.0,
+      "northing_m": 3870441.0
+    },
+    {
+      "line": "NS4",
+      "station": "1400",
+      "easting_m": 368053.0,
+      "northing_m": 3861087.0
+    },
+    {
+      "line": "WC",
+      "station": "2200",
+      "easting_m": 349361.0,
+      "northing_m": 3872137.0
+    },
+    {
+      "line": "WR",
+      "station": "3600",
+      "easting_m": 347088.0,
+      "northing_m": 3882688.0
+    },
+    {
+      "line": "AX",
+      "station": "7400",
+      "easting_m": 352086.0,
+      "northing_m": 3870671.0
+    },
+    {
+      "line": "K1",
+      "station": "1400",
+      "easting_m": 350060.0,
+      "northing_m": 3868964.0
+    },
+    {
+      "line": "NS4",
+      "station": "200",
+      "easting_m": 367918.0,
+      "northing_m": 3862276.0
+    },
+    {
+      "line": "NS5",
+      "station": "6300",
+      "easting_m": 359307.0,
+      "northing_m": 3862658.0
+    },
+    {
+      "line": "GS8",
+      "station": "4700",
+      "easting_m": 361908.0,
+      "northing_m": 3858406.0
+    },
+    {
+      "line": "NS2",
+      "station": "650",
+      "easting_m": 371273.0,
+      "northing_m": 3864929.0
+    },
+    {
+      "line": "FM",
+      "station": "3400",
+      "easting_m": 361330.0,
+      "northing_m": 3867825.0
+    },
+    {
+      "line": "EW3",
+      "station": "480",
+      "easting_m": 369930.0,
+      "northing_m": 3866221.0
+    },
+    {
+      "line": "GS16",
+      "station": "1900",
+      "easting_m": 363663.0,
+      "northing_m": 3856673.0
+    },
+    {
+      "line": "FM",
+      "station": "1300",
+      "easting_m": 362712.0,
+      "northing_m": 3869394.0
+    },
+    {
+      "line": "WR",
+      "station": "800",
+      "easting_m": 345076.0,
+      "northing_m": 3880755.0
+    },
+    {
+      "line": "WCN",
+      "station": "3100",
+      "easting_m": 346046.0,
+      "northing_m": 3872962.0
+    },
+    {
+      "line": "AX",
+      "station": "13600",
+      "easting_m": 347752.0,
+      "northing_m": 3875401.0
+    },
+    {
+      "line": "NS2",
+      "station": "1500",
+      "easting_m": 371342.0,
+      "northing_m": 3864050.0
+    },
+    {
+      "line": "AX",
+      "station": "12600",
+      "easting_m": 348318.0,
+      "northing_m": 3874580.0
+    },
+    {
+      "line": "WC",
+      "station": "600",
+      "easting_m": 348224.0,
+      "northing_m": 3871030.0
+    },
+    {
+      "line": "FME",
+      "station": "500",
+      "easting_m": 364339.0,
+      "northing_m": 3867845.0
+    },
+    {
+      "line": "NS5",
+      "station": "6000",
+      "easting_m": 359308.0,
+      "northing_m": 3862956.0
+    },
+    {
+      "line": "WR",
+      "station": "4500",
+      "easting_m": 347739.0,
+      "northing_m": 3883312.0
+    },
+    {
+      "line": "EW3",
+      "station": "360",
+      "easting_m": 371131.0,
+      "northing_m": 3866198.0
+    },
+    {
+      "line": "NS2",
+      "station": "2900",
+      "easting_m": 371498.0,
+      "northing_m": 3862659.0
+    },
+    {
+      "line": "FM",
+      "station": "500",
+      "easting_m": 363241.0,
+      "northing_m": 3869990.0
+    },
+    {
+      "line": "GS16",
+      "station": "1600",
+      "easting_m": 363878.0,
+      "northing_m": 3856883.0
+    },
+    {
+      "line": "EW1",
+      "station": "610",
+      "easting_m": 374269.0,
+      "northing_m": 3865562.0
+    },
+    {
+      "line": "AX",
+      "station": "14000",
+      "easting_m": 347529.0,
+      "northing_m": 3875728.0
+    },
+    {
+      "line": "WCN",
+      "station": "1700",
+      "easting_m": 347053.0,
+      "northing_m": 3873938.0
+    },
+    {
+      "line": "GS6",
+      "station": "800",
+      "easting_m": 361366.0,
+      "northing_m": 3861311.0
+    },
+    {
+      "line": "NS2",
+      "station": "900",
+      "easting_m": 371296.0,
+      "northing_m": 3864676.0
+    },
+    {
+      "line": "GS8",
+      "station": "2900",
+      "easting_m": 363199.0,
+      "northing_m": 3859650.0
+    },
+    {
+      "line": "WR",
+      "station": "2500",
+      "easting_m": 346299.0,
+      "northing_m": 3881927.0
+    },
+    {
+      "line": "GS16",
+      "station": "900",
+      "easting_m": 364395.0,
+      "northing_m": 3857388.0
+    },
+    {
+      "line": "GS8",
+      "station": "5300",
+      "easting_m": 361479.0,
+      "northing_m": 3857990.0
+    },
+    {
+      "line": "WR",
+      "station": "1200",
+      "easting_m": 345362.0,
+      "northing_m": 3881032.0
+    },
+    {
+      "line": "EW3",
+      "station": "200",
+      "easting_m": 372738.0,
+      "northing_m": 3866173.0
+    },
+    {
+      "line": "K1",
+      "station": "2900",
+      "easting_m": 351129.0,
+      "northing_m": 3870010.0
+    },
+    {
+      "line": "K1",
+      "station": "1100",
+      "easting_m": 349840.0,
+      "northing_m": 3868757.0
+    },
+    {
+      "line": "K1",
+      "station": "5700",
+      "easting_m": 353144.0,
+      "northing_m": 3871943.0
+    },
+    {
+      "line": "EW1",
+      "station": "270",
+      "easting_m": 371175.0,
+      "northing_m": 3864164.0
+    },
+    {
+      "line": "AX",
+      "station": "9900",
+      "easting_m": 350475.0,
+      "northing_m": 3872577.0
+    },
+    {
+      "line": "AX",
+      "station": "6400",
+      "easting_m": 352731.0,
+      "northing_m": 3869911.0
+    },
+    {
+      "line": "WR",
+      "station": "4800",
+      "easting_m": 347954.0,
+      "northing_m": 3883519.0
+    },
+    {
+      "line": "GS8",
+      "station": "3600",
+      "easting_m": 362692.0,
+      "northing_m": 3859162.0
+    },
+    {
+      "line": "WCN",
+      "station": "1900",
+      "easting_m": 346909.0,
+      "northing_m": 3873798.0
+    },
+    {
+      "line": "K1",
+      "station": "5200",
+      "easting_m": 352780.0,
+      "northing_m": 3871600.0
+    },
+    {
+      "line": "AX",
+      "station": "7800",
+      "easting_m": 351824.0,
+      "northing_m": 3870973.0
+    },
+    {
+      "line": "K1",
+      "station": "2700",
+      "easting_m": 350989.0,
+      "northing_m": 3869867.0
+    },
+    {
+      "line": "NS2",
+      "station": "2350",
+      "easting_m": 371455.0,
+      "northing_m": 3863199.0
+    },
+    {
+      "line": "GS8",
+      "station": "2500",
+      "easting_m": 363482.0,
+      "northing_m": 3859925.0
+    },
+    {
+      "line": "EW3",
+      "station": "320",
+      "easting_m": 371533.0,
+      "northing_m": 3866191.0
+    },
+    {
+      "line": "WC",
+      "station": "0",
+      "easting_m": 347796.0,
+      "northing_m": 3870615.0
+    },
+    {
+      "line": "GS8",
+      "station": "1900",
+      "easting_m": 363917.0,
+      "northing_m": 3860340.0
+    },
+    {
+      "line": "FME",
+      "station": "800",
+      "easting_m": 364144.0,
+      "northing_m": 3867617.0
+    },
+    {
+      "line": "AX",
+      "station": "10600",
+      "easting_m": 350021.0,
+      "northing_m": 3873111.0
+    },
+    {
+      "line": "WR",
+      "station": "500",
+      "easting_m": 344860.0,
+      "northing_m": 3880547.0
+    },
+    {
+      "line": "K1",
+      "station": "1900",
+      "easting_m": 350414.0,
+      "northing_m": 3869313.0
+    },
+    {
+      "line": "AX",
+      "station": "12900",
+      "easting_m": 348151.0,
+      "northing_m": 3874825.0
+    },
+    {
+      "line": "K1",
+      "station": "4800",
+      "easting_m": 352493.0,
+      "northing_m": 3871326.0
+    },
+    {
+      "line": "EW1",
+      "station": "300",
+      "easting_m": 371447.0,
+      "northing_m": 3864295.0
+    },
+    {
+      "line": "FME",
+      "station": "3100",
+      "easting_m": 362634.0,
+      "northing_m": 3865882.0
+    },
+    {
+      "line": "EW3",
+      "station": "140",
+      "easting_m": 373333.0,
+      "northing_m": 3866163.0
+    },
+    {
+      "line": "GS8",
+      "station": "1400",
+      "easting_m": 364263.0,
+      "northing_m": 3860685.0
+    },
+    {
+      "line": "GS6",
+      "station": "200",
+      "easting_m": 361795.0,
+      "northing_m": 3861723.0
+    },
+    {
+      "line": "AX",
+      "station": "18200",
+      "easting_m": 345175.0,
+      "northing_m": 3879207.0
+    },
+    {
+      "line": "AX",
+      "station": "2800",
+      "easting_m": 355041.0,
+      "northing_m": 3867198.0
+    },
+    {
+      "line": "NS5",
+      "station": "100",
+      "easting_m": 357703.0,
+      "northing_m": 3868832.0
+    },
+    {
+      "line": "GS16",
+      "station": "500",
+      "easting_m": 364682.0,
+      "northing_m": 3857665.0
+    },
+    {
+      "line": "FME",
+      "station": "3300",
+      "easting_m": 362504.0,
+      "northing_m": 3865730.0
+    },
+    {
+      "line": "FM",
+      "station": "2800",
+      "easting_m": 361724.0,
+      "northing_m": 3868273.0
+    },
+    {
+      "line": "NS5",
+      "station": "500",
+      "easting_m": 357697.0,
+      "northing_m": 3868444.0
+    },
+    {
+      "line": "EW1",
+      "station": "350",
+      "easting_m": 371906.0,
+      "northing_m": 3864492.0
+    },
+    {
+      "line": "AX",
+      "station": "5500",
+      "easting_m": 353313.0,
+      "northing_m": 3869228.0
+    },
+    {
+      "line": "FM",
+      "station": "1600",
+      "easting_m": 362514.0,
+      "northing_m": 3869169.0
+    },
+    {
+      "line": "WR",
+      "station": "2700",
+      "easting_m": 346443.0,
+      "northing_m": 3882066.0
+    },
+    {
+      "line": "AX",
+      "station": "9300",
+      "easting_m": 350861.0,
+      "northing_m": 3872122.0
+    },
+    {
+      "line": "NS4",
+      "station": "2400",
+      "easting_m": 368167.0,
+      "northing_m": 3860098.0
+    },
+    {
+      "line": "K1",
+      "station": "3700",
+      "easting_m": 351704.0,
+      "northing_m": 3870559.0
+    },
+    {
+      "line": "AX",
+      "station": "9000",
+      "easting_m": 351053.0,
+      "northing_m": 3871891.0
+    },
+    {
+      "line": "GS16",
+      "station": "0",
+      "easting_m": 365046.0,
+      "northing_m": 3858005.0
+    },
+    {
+      "line": "FME",
+      "station": "2600",
+      "easting_m": 362962.0,
+      "northing_m": 3866260.0
+    },
+    {
+      "line": "EW1",
+      "station": "570",
+      "easting_m": 373909.0,
+      "northing_m": 3865392.0
+    },
+    {
+      "line": "AX",
+      "station": "19600",
+      "easting_m": 344391.0,
+      "northing_m": 3880367.0
+    },
+    {
+      "line": "AX",
+      "station": "17800",
+      "easting_m": 345402.0,
+      "northing_m": 3878877.0
+    },
+    {
+      "line": "NS5",
+      "station": "2100",
+      "easting_m": 357676.0,
+      "northing_m": 3866851.0
+    },
+    {
+      "line": "AX",
+      "station": "6700",
+      "easting_m": 352537.0,
+      "northing_m": 3870140.0
+    },
+    {
+      "line": "EW1",
+      "station": "400",
+      "easting_m": 372363.0,
+      "northing_m": 3864695.0
+    },
+    {
+      "line": "EW3",
+      "station": "500",
+      "easting_m": 369730.0,
+      "northing_m": 3866224.0
+    },
+    {
+      "line": "AX",
+      "station": "13200",
+      "easting_m": 347974.0,
+      "northing_m": 3875070.0
+    },
+    {
+      "line": "FME",
+      "station": "1600",
+      "easting_m": 363619.0,
+      "northing_m": 3867016.0
+    },
+    {
+      "line": "AX",
+      "station": "600",
+      "easting_m": 356466.0,
+      "northing_m": 3865518.0
+    },
+    {
+      "line": "AX",
+      "station": "16800",
+      "easting_m": 345966.0,
+      "northing_m": 3878049.0
+    },
+    {
+      "line": "AX",
+      "station": "1200",
+      "easting_m": 356077.0,
+      "northing_m": 3865973.0
+    },
+    {
+      "line": "AX",
+      "station": "17400",
+      "easting_m": 345623.0,
+      "northing_m": 3878542.0
+    },
+    {
+      "line": "WCN",
+      "station": "2300",
+      "easting_m": 346619.0,
+      "northing_m": 3873520.0
+    },
+    {
+      "line": "NS4",
+      "station": "2200",
+      "easting_m": 368144.0,
+      "northing_m": 3860297.0
+    },
+    {
+      "line": "FM",
+      "station": "3100",
+      "easting_m": 361528.0,
+      "northing_m": 3868048.0
+    },
+    {
+      "line": "GS8",
+      "station": "1000",
+      "easting_m": 364630.0,
+      "northing_m": 3860894.0
+    },
+    {
+      "line": "K1",
+      "station": "200",
+      "easting_m": 349198.0,
+      "northing_m": 3868139.0
+    },
+    {
+      "line": "WR",
+      "station": "3400",
+      "easting_m": 346947.0,
+      "northing_m": 3882546.0
+    },
+    {
+      "line": "WC",
+      "station": "3000",
+      "easting_m": 349940.0,
+      "northing_m": 3872688.0
+    },
+    {
+      "line": "EW1",
+      "station": "480",
+      "easting_m": 373092.0,
+      "northing_m": 3865022.0
+    },
+    {
+      "line": "AX",
+      "station": "5900",
+      "easting_m": 353055.0,
+      "northing_m": 3869532.0
+    },
+    {
+      "line": "NS5",
+      "station": "1500",
+      "easting_m": 357680.0,
+      "northing_m": 3867449.0
+    },
+    {
+      "line": "GS16",
+      "station": "1400",
+      "easting_m": 364018.0,
+      "northing_m": 3857027.0
+    },
+    {
+      "line": "WR",
+      "station": "3000",
+      "easting_m": 346659.0,
+      "northing_m": 3882271.0
+    },
+    {
+      "line": "EW3",
+      "station": "170",
+      "easting_m": 373034.0,
+      "northing_m": 3866167.0
+    },
+    {
+      "line": "WR",
+      "station": "2100",
+      "easting_m": 346009.0,
+      "northing_m": 3881657.0
+    },
+    {
+      "line": "K1",
+      "station": "4200",
+      "easting_m": 352058.0,
+      "northing_m": 3870912.0
+    },
+    {
+      "line": "WCN",
+      "station": "4000",
+      "easting_m": 345394.0,
+      "northing_m": 3872335.0
+    },
+    {
+      "line": "EW1",
+      "station": "520",
+      "easting_m": 373452.0,
+      "northing_m": 3865189.0
+    },
+    {
+      "line": "AX",
+      "station": "18700",
+      "easting_m": 344898.0,
+      "northing_m": 3879624.0
+    },
+    {
+      "line": "K1",
+      "station": "2200",
+      "easting_m": 350629.0,
+      "northing_m": 3869520.0
+    },
+    {
+      "line": "AX",
+      "station": "1700",
+      "easting_m": 355756.0,
+      "northing_m": 3866355.0
+    },
+    {
+      "line": "AX",
+      "station": "11700",
+      "easting_m": 348820.0,
+      "northing_m": 3873828.0
+    },
+    {
+      "line": "AX",
+      "station": "15400",
+      "easting_m": 346748.0,
+      "northing_m": 3876889.0
+    },
+    {
+      "line": "AX",
+      "station": "10900",
+      "easting_m": 349826.0,
+      "northing_m": 3873339.0
+    },
+    {
+      "line": "NS5",
+      "station": "1200",
+      "easting_m": 357688.0,
+      "northing_m": 3867747.0
+    },
+    {
+      "line": "WCN",
+      "station": "3500",
+      "easting_m": 345758.0,
+      "northing_m": 3872687.0
+    },
+    {
+      "line": "EW3",
+      "station": "120",
+      "easting_m": 373536.0,
+      "northing_m": 3866161.0
+    },
+    {
+      "line": "AX",
+      "station": "4200",
+      "easting_m": 354138.0,
+      "northing_m": 3868265.0
+    },
+    {
+      "line": "NS4",
+      "station": "1100",
+      "easting_m": 368018.0,
+      "northing_m": 3861382.0
+    },
+    {
+      "line": "AX",
+      "station": "3100",
+      "easting_m": 354849.0,
+      "northing_m": 3867426.0
+    },
+    {
+      "line": "AX",
+      "station": "2000",
+      "easting_m": 355563.0,
+      "northing_m": 3866585.0
+    },
+    {
+      "line": "AX",
+      "station": "12100",
+      "easting_m": 348600.0,
+      "northing_m": 3874160.0
+    },
+    {
+      "line": "EW1",
+      "station": "200",
+      "easting_m": 370539.0,
+      "northing_m": 3863878.0
+    },
+    {
+      "line": "WC",
+      "station": "3700",
+      "easting_m": 350445.0,
+      "northing_m": 3873172.0
+    },
+    {
+      "line": "K1",
+      "station": "500",
+      "easting_m": 349409.0,
+      "northing_m": 3868347.0
+    },
+    {
+      "line": "AX",
+      "station": "1000",
+      "easting_m": 356207.0,
+      "northing_m": 3865821.0
+    },
+    {
+      "line": "NS4",
+      "station": "2700",
+      "easting_m": 368136.0,
+      "northing_m": 3859804.0
+    },
+    {
+      "line": "FM",
+      "station": "4100",
+      "easting_m": 360872.0,
+      "northing_m": 3867301.0
+    },
+    {
+      "line": "EW3",
+      "station": "10",
+      "easting_m": 374636.0,
+      "northing_m": 3866144.0
+    },
+    {
+      "line": "WR",
+      "station": "1700",
+      "easting_m": 345723.0,
+      "northing_m": 3881379.0
+    },
+    {
+      "line": "NS5",
+      "station": "5500",
+      "easting_m": 359315.0,
+      "northing_m": 3863454.0
+    },
+    {
+      "line": "AX",
+      "station": "200",
+      "easting_m": 356722.0,
+      "northing_m": 3865213.0
+    },
+    {
+      "line": "EW3",
+      "station": "250",
+      "easting_m": 372235.0,
+      "northing_m": 3866180.0
+    },
+    {
+      "line": "NS2",
+      "station": "400",
+      "easting_m": 371235.0,
+      "northing_m": 3865178.0
+    },
+    {
+      "line": "AX",
+      "station": "19900",
+      "easting_m": 344224.0,
+      "northing_m": 3880617.0
+    },
+    {
+      "line": "WCN",
+      "station": "2700",
+      "easting_m": 346331.0,
+      "northing_m": 3873242.0
+    },
+    {
+      "line": "GS8",
+      "station": "5000",
+      "easting_m": 361697.0,
+      "northing_m": 3858202.0
+    },
+    {
+      "line": "AX",
+      "station": "16300",
+      "easting_m": 346244.0,
+      "northing_m": 3877634.0
+    },
+    {
+      "line": "AX",
+      "station": "11300",
+      "easting_m": 349576.0,
+      "northing_m": 3873646.0
+    },
+    {
+      "line": "AX",
+      "station": "14800",
+      "easting_m": 347077.0,
+      "northing_m": 3876388.0
+    },
+    {
+      "line": "EW1",
+      "station": "700",
+      "easting_m": 375095.0,
+      "northing_m": 3865924.0
+    },
+    {
+      "line": "WCN",
+      "station": "3700",
+      "easting_m": 345612.0,
+      "northing_m": 3872547.0
+    },
+    {
+      "line": "WC",
+      "station": "1500",
+      "easting_m": 348864.0,
+      "northing_m": 3871654.0
+    },
+    {
+      "line": "EW1",
+      "station": "660",
+      "easting_m": 374728.0,
+      "northing_m": 3865769.0
+    },
+    {
+      "line": "NS5",
+      "station": "2700",
+      "easting_m": 357668.0,
+      "northing_m": 3866254.0
+    },
+    {
+      "line": "FM",
+      "station": "300",
+      "easting_m": 363376.0,
+      "northing_m": 3870144.0
+    },
+    {
+      "line": "WC",
+      "station": "4800",
+      "easting_m": 351231.0,
+      "northing_m": 3873937.0
+    },
+    {
+      "line": "NS4",
+      "station": "4100",
+      "easting_m": 367900.0,
+      "northing_m": 3858600.0
+    },
+    {
+      "line": "WC",
+      "station": "2500",
+      "easting_m": 349576.0,
+      "northing_m": 3872342.0
+    },
+    {
+      "line": "WC",
+      "station": "1200",
+      "easting_m": 348651.0,
+      "northing_m": 3871448.0
+    },
+    {
+      "line": "NS4",
+      "station": "900",
+      "easting_m": 367996.0,
+      "northing_m": 3861582.0
+    },
+    {
+      "line": "AX",
+      "station": "18400",
+      "easting_m": 345064.0,
+      "northing_m": 3879375.0
+    },
+    {
+      "line": "K1",
+      "station": "2400",
+      "easting_m": 350776.0,
+      "northing_m": 3869656.0
+    },
+    {
+      "line": "EW3",
+      "station": "460",
+      "easting_m": 370131.0,
+      "northing_m": 3866215.0
+    },
+    {
+      "line": "K1",
+      "station": "5400",
+      "easting_m": 352925.0,
+      "northing_m": 3871740.0
+    },
+    {
+      "line": "NS4",
+      "station": "1600",
+      "easting_m": 368070.0,
+      "northing_m": 3860884.0
+    },
+    {
+      "line": "EW3",
+      "station": "340",
+      "easting_m": 371332.0,
+      "northing_m": 3866194.0
+    },
+    {
+      "line": "FM",
+      "station": "3800",
+      "easting_m": 361067.0,
+      "northing_m": 3867526.0
+    },
+    {
+      "line": "FM",
+      "station": "2100",
+      "easting_m": 362187.0,
+      "northing_m": 3868796.0
+    },
+    {
+      "line": "GS6",
+      "station": "1470",
+      "easting_m": 360878.0,
+      "northing_m": 3860847.0
+    },
+    {
+      "line": "GS8",
+      "station": "2300",
+      "easting_m": 363628.0,
+      "northing_m": 3860063.0
+    },
+    {
+      "line": "AX",
+      "station": "3900",
+      "easting_m": 354333.0,
+      "northing_m": 3868035.0
+    },
+    {
+      "line": "WCN",
+      "station": "100",
+      "easting_m": 348206.0,
+      "northing_m": 3875042.0
+    },
+    {
+      "line": "AX",
+      "station": "17200",
+      "easting_m": 345738.0,
+      "northing_m": 3878378.0
+    },
+    {
+      "line": "NS5",
+      "station": "2400",
+      "easting_m": 357672.0,
+      "northing_m": 3866550.0
+    },
+    {
+      "line": "AX",
+      "station": "15100",
+      "easting_m": 346916.0,
+      "northing_m": 3876638.0
+    },
+    {
+      "line": "AX",
+      "station": "11500",
+      "easting_m": 349190.0,
+      "northing_m": 3873731.0
+    },
+    {
+      "line": "WR",
+      "station": "3900",
+      "easting_m": 347307.0,
+      "northing_m": 3882893.0
+    },
+    {
+      "line": "AX",
+      "station": "10200",
+      "easting_m": 350279.0,
+      "northing_m": 3872804.0
+    },
+    {
+      "line": "EW3",
+      "station": "60",
+      "easting_m": 374136.0,
+      "northing_m": 3866151.0
+    },
+    {
+      "line": "WR",
+      "station": "100",
+      "easting_m": 344575.0,
+      "northing_m": 3880268.0
+    },
+    {
+      "line": "EW1",
+      "station": "630",
+      "easting_m": 374452.0,
+      "northing_m": 3865645.0
+    },
+    {
+      "line": "WC",
+      "station": "1900",
+      "easting_m": 349147.0,
+      "northing_m": 3871930.0
+    },
+    {
+      "line": "EW3",
+      "station": "40",
+      "easting_m": 374338.0,
+      "northing_m": 3866151.0
+    },
+    {
+      "line": "WC",
+      "station": "300",
+      "easting_m": 348011.0,
+      "northing_m": 3870822.0
+    },
+    {
+      "line": "K1",
+      "station": "3300",
+      "easting_m": 351425.0,
+      "northing_m": 3870274.0
+    },
+    {
+      "line": "K1",
+      "station": "4500",
+      "easting_m": 352279.0,
+      "northing_m": 3871116.0
+    },
+    {
+      "line": "FM",
+      "station": "0",
+      "easting_m": 363568.0,
+      "northing_m": 3870368.0
+    },
+    {
+      "line": "EW1",
+      "station": "380",
+      "easting_m": 372177.0,
+      "northing_m": 3864619.0
+    },
+    {
+      "line": "AX",
+      "station": "16500",
+      "easting_m": 346132.0,
+      "northing_m": 3877801.0
+    },
+    {
+      "line": "K1",
+      "station": "6000",
+      "easting_m": 353362.0,
+      "northing_m": 3872148.0
+    },
+    {
+      "line": "AX",
+      "station": "2200",
+      "easting_m": 355431.0,
+      "northing_m": 3866738.0
+    },
+    {
+      "line": "GS8",
+      "station": "1200",
+      "easting_m": 364417.0,
+      "northing_m": 3860829.0
+    },
+    {
+      "line": "AX",
+      "station": "3700",
+      "easting_m": 354462.0,
+      "northing_m": 3867882.0
+    },
+    {
+      "line": "NS5",
+      "station": "5800",
+      "easting_m": 359312.0,
+      "northing_m": 3863156.0
+    },
+    {
+      "line": "EW1",
+      "station": "550",
+      "easting_m": 373727.0,
+      "northing_m": 3865308.0
+    },
+    {
+      "line": "WCN",
+      "station": "1400",
+      "easting_m": 347268.0,
+      "northing_m": 3874146.0
+    },
+    {
+      "line": "WC",
+      "station": "4500",
+      "easting_m": 351015.0,
+      "northing_m": 3873730.0
+    },
+    {
+      "line": "WCN",
+      "station": "900",
+      "easting_m": 347627.0,
+      "northing_m": 3874492.0
+    },
+    {
+      "line": "GS6",
+      "station": "500",
+      "easting_m": 361578.0,
+      "northing_m": 3861518.0
+    },
+    {
+      "line": "AX",
+      "station": "2600",
+      "easting_m": 355172.0,
+      "northing_m": 3867045.0
+    },
+    {
+      "line": "EW1",
+      "station": "330",
+      "easting_m": 371715.0,
+      "northing_m": 3864421.0
+    },
+    {
+      "line": "K1",
+      "station": "800",
+      "easting_m": 349625.0,
+      "northing_m": 3868556.0
+    },
+    {
+      "line": "GS16",
+      "station": "300",
+      "easting_m": 364829.0,
+      "northing_m": 3857801.0
+    },
+    {
+      "line": "FME",
+      "station": "2400",
+      "easting_m": 363094.0,
+      "northing_m": 3866414.0
+    },
+    {
+      "line": "NS4",
+      "station": "1900",
+      "easting_m": 368105.0,
+      "northing_m": 3860592.0
+    },
+    {
+      "line": "WCN",
+      "station": "2500",
+      "easting_m": 346475.0,
+      "northing_m": 3873381.0
+    },
+    {
+      "line": "FME",
+      "station": "2900",
+      "easting_m": 362769.0,
+      "northing_m": 3866034.0
+    }
+  ]
+}

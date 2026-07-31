@@ -14,6 +14,7 @@ permissions:
 
 env:
   PYTHON_VERSION: "3.11.15"
+  PYTHONUTF8: "1"
   UV_VERSION: "0.11.29"
   WP6_ROOT: "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系"
 
@@ -21,15 +22,22 @@ jobs:
   required-gates:
     name: Required gates (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 30
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
 
     steps:
+      - name: Enable Git long paths on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: git config --global core.longpaths true
+
       - name: Checkout candidate commit
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
 
       - name: Install pinned uv
         uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
@@ -51,8 +59,70 @@ jobs:
       - name: Validate repository scope
         run: uv run --frozen python tools/validate_repository_scope.py
 
+      - name: Regenerate deterministic WP8 supplements
+        run: uv run --frozen python validation/wp8/generate_synthetic_supplements.py
+
+      - name: Verify committed persistence closure
+        run: uv run --frozen python validation/wp9/build_persistence_plan.py --verify-head-closure
+
       - name: Run unit tests
-        run: uv run --frozen pytest -q
+        shell: pwsh
+        run: |
+          # Field/raw-data tests remain in the locked local full runner. Remote
+          # CI executes the complete distributable suite from a clean checkout.
+          $portable = @(
+            "tests/benchmarks",
+            "tests/diagnostics",
+            "tests/divergence",
+            "tests/forward",
+            "tests/governance",
+            "tests/io",
+            "tests/sampling",
+            "tests/validation/test_acceptance_review03_governance.py",
+            "tests/validation/test_feasibility.py",
+            "tests/validation/test_field_scaffold.py",
+            "tests/validation/test_metrics.py",
+            "tests/validation/test_models.py",
+            "tests/validation/test_sbc.py",
+            "tests/validation/test_synthetic_supplement.py",
+            "tests/validation/test_wp8_method_synthetic_validation.py",
+            "tests/validation/test_wp8_resource_abort.py",
+            "tests/validation/test_wp8_synthetic_completion.py",
+            "tests/validation/test_wp9_acceptance.py"
+          )
+          uv run --frozen pytest -q @portable
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          uv run --frozen pytest -q tests/validation/test_wp8_validator.py -k semantic_replay
+
+      - name: Run WP9 acceptance audit
+        run: uv run --frozen python validation/wp9/validate_wp9.py
+
+      - name: Run WP7 signed evidence gate
+        shell: pwsh
+        env:
+          MKL_NUM_THREADS: "1"
+          NUMEXPR_NUM_THREADS: "1"
+          OMP_NUM_THREADS: "1"
+          OPENBLAS_NUM_THREADS: "1"
+        run: |
+          $wp7Output = & pwsh -NoProfile -File "$env:WP6_ROOT/validate-wp7.ps1" `
+            -SyntheticRun "$env:WP6_ROOT/validation/wp7/versions/synthetic-block-v6-20260724" `
+            -Do27Run "$env:WP6_ROOT/validation/wp7/versions/do27-v4-20260724" `
+            -Signoff "$env:WP6_ROOT/validation/wp7/signoff-v4.json" `
+            -SelfTest 2>&1
+          $wp7Exit = $LASTEXITCODE
+          $wp7Output | ForEach-Object { Write-Output $_ }
+          if ($wp7Exit -ne 0) {
+            $wp7Detail = (($wp7Output | Out-String).Trim() `
+              -replace '%', '%25' `
+              -replace "`r", '%0D' `
+              -replace "`n", '%0A')
+            Write-Output "::error title=WP7 signed evidence gate::$wp7Detail"
+            exit $wp7Exit
+          }
+
+      - name: Run WP8 live synthetic gate
+        run: uv run --frozen python validation/wp8/validate_wp8.py --phase synthetic
 
       - name: Run contract and governance self-test
         shell: pwsh
@@ -72,6 +142,69 @@ jobs:
         shell: bash
         run: bash "$WP6_ROOT/validation/wp6-governance/test-worker-uid.sh"
 
+      - name: Run WP5 cross-platform publish smoke
+        shell: pwsh
+        run: |
+          if ([string]::IsNullOrWhiteSpace($env:RUNNER_TEMP) -or
+              -not (Test-Path -LiteralPath $env:RUNNER_TEMP -PathType Container)) {
+            throw "RUNNER_TEMP is unavailable for WP5 publish smoke."
+          }
+          $env:TEMP = [IO.Path]::GetFullPath($env:RUNNER_TEMP)
+          $fixtureIds = @(
+            "FXT-PUBLISH-001",
+            "FXT-PUBLISH-006",
+            "FXT-PUBLISH-011",
+            "FXT-PUBLISH-012",
+            "FXT-PUBLISH-013",
+            "FXT-PUBLISH-014",
+            "FXT-PUBLISH-015",
+            "FXT-PUBLISH-016"
+          )
+          $smokeScript = "$env:WP6_ROOT/validation/wp5-consistency/run-selftest-evidence.ps1"
+          $smokeOutput = & $smokeScript `
+            -Stage publish `
+            -FixtureIds $fixtureIds `
+            -SmokeTest 2>&1
+          $smokeExit = $LASTEXITCODE
+          $smokeOutput | ForEach-Object { Write-Output $_ }
+          if ($smokeExit -ne 0) {
+            $smokeDetail = (($smokeOutput | Out-String).Trim() `
+              -replace '%', '%25' `
+              -replace "`r", '%0D' `
+              -replace "`n", '%0A')
+            Write-Output "::error title=WP5 publish smoke failed::$smokeDetail"
+            exit $smokeExit
+          }
+
+      # WP5 is intentionally last so every earlier distributable gate still
+      # produces evidence when WP5 fails closed. Preserve its complete output
+      # and surface it as a GitHub annotation on both runner platforms.
+      - name: Run WP5 consistency gate
+        shell: pwsh
+        run: |
+          $startInfo = [Diagnostics.ProcessStartInfo]::new()
+          $startInfo.FileName = (Get-Command pwsh).Source
+          $startInfo.UseShellExecute = $false
+          $startInfo.RedirectStandardOutput = $true
+          $startInfo.RedirectStandardError = $true
+          foreach ($argument in @('-NoProfile', '-File', "$env:WP6_ROOT/validate-wp5.ps1")) {
+            [void]$startInfo.ArgumentList.Add($argument)
+          }
+          $process = [Diagnostics.Process]::new()
+          $process.StartInfo = $startInfo
+          [void]$process.Start()
+          $stdout = $process.StandardOutput.ReadToEndAsync()
+          $stderr = $process.StandardError.ReadToEndAsync()
+          $process.WaitForExit()
+          $wp5Exit = $process.ExitCode
+          $wp5Text = $stdout.Result + $stderr.Result
+          Write-Host $wp5Text
+          if ($wp5Exit -ne 0) {
+            $annotation = $wp5Text.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A')
+            Write-Output "::error title=WP5 consistency gate failed::$annotation"
+            exit $wp5Exit
+          }
+
   attest-evidence-root:
     name: Attest final evidence root
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -85,6 +218,8 @@ jobs:
     steps:
       - name: Checkout final commit
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
 
       - name: Install pinned uv
         uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7

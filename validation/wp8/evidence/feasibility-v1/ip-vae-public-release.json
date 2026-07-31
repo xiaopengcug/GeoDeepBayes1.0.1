@@ -1,0 +1,35 @@
+{
+  "schema_version": "wp8-ip-vae-public-release-audit-v1",
+  "raw_manifest_sha256": "74f1be8d049869785c43531d093b746206077e20f662d610d260faf8c8599afe",
+  "paper_doi": "10.1190/geo2021-0497.1",
+  "software_doi": "10.5281/zenodo.5165398",
+  "software_resource_type": "software",
+  "software_version": "v0.0.2",
+  "zenodo_archive_bytes": 124445,
+  "archive_member_count": 16,
+  "pretrained_weight_file_count": 4,
+  "likely_field_observation_file_count": 0,
+  "paper_compilation": {
+    "field_decay_curve_count": 1600319,
+    "field_survey_count": 110,
+    "countries": [
+      "Canada",
+      "United States",
+      "Kazakhstan"
+    ],
+    "curve_count_statement_present": true,
+    "survey_count_statement_present": true
+  },
+  "license": {
+    "zenodo_declared": "other-open",
+    "repository_license": "MIT",
+    "field_compilation_license_declared": false
+  },
+  "field_response_payloads_downloaded": 0,
+  "raw_field_compilation_publicly_released": false,
+  "formal_observation_contract_ready": false,
+  "formal_cluster_power_gate_passes": false,
+  "reference_value": "The paper proves a 110-survey, 1,600,319-curve TDIP compilation exists and the archival software release provides four pretrained weight files, but the 124,445-byte archive contains no likely field observation files. It therefore supports scale/model provenance only.",
+  "formal_test_endpoints_inspected": false,
+  "test_unseal_count": 0
+}

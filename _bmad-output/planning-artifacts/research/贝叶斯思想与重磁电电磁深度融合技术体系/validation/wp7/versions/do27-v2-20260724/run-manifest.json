@@ -1,0 +1,96 @@
+{
+  "run_id": "do27-v2-20260724",
+  "evidence_id": "EVD-SYNTH-001",
+  "status": "Failed",
+  "started_at": "2026-07-24T14:11:12.649157+00:00",
+  "completed_at": "2026-07-24T14:11:15.039450+00:00",
+  "inputs": [
+    {
+      "path": "simpeg-research_Astic-2020-JointInversion-1.0.0.zip",
+      "sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e"
+    },
+    {
+      "path": "Forward/mesh_inverse_ubc.msh",
+      "sha256": "901c32980d12173993cd20e43f4c343d4a3e07faef6b017cd17bd9140faa3adc"
+    },
+    {
+      "path": "Forward/model_grav.den",
+      "sha256": "737555f7fbda11925b499a77bff3145426ec40e8251489caadf7beaa629798e2"
+    },
+    {
+      "path": "Forward/model_mag.sus",
+      "sha256": "dff6c3273d9ee42df5d4256f0294383135c275f758ffadc3535a64703b22ef9f"
+    },
+    {
+      "path": "Forward/GRAV_noisydata.obs",
+      "sha256": "c63f64fcb4f488efd1247627ac1995b35ac9d72d3c496129856f3be1eddebb1b"
+    },
+    {
+      "path": "Forward/MAG_noisydata.obs",
+      "sha256": "62e014781f51656b68c3eaa2740edf0490a33473adfda83761f7c1cd42debd1b"
+    }
+  ],
+  "script": {
+    "path": "run_do27_validation.py",
+    "sha256": "94f5a6bb8879e223838c27b9d52b79e8b843a8d20697c393e29e6cae52b8556e"
+  },
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "powershell": "7.6.3",
+    "python": "3.11.15"
+  },
+  "checks": [
+    {
+      "name": "dependency-import",
+      "status": "passed",
+      "detail": "simpeg 0.25.2, discretize 0.12.0"
+    },
+    {
+      "name": "do27-input-read",
+      "status": "passed",
+      "detail": "393660 cells, 961 observations/method"
+    },
+    {
+      "name": "gravity-forward-and-inverse",
+      "status": "failed",
+      "detail": "solver=True; data_fit=False; recovery=True; alpha=10.0"
+    },
+    {
+      "name": "magnetic-forward-and-inverse",
+      "status": "failed",
+      "detail": "solver=True; data_fit=False; recovery=False; alpha=1.0"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "do27-v2-20260724/metrics.json",
+      "sha256": "2ef391d0b8fe824dcf67966246307b64d4bba21487e3d61d375cd145f5e92fdf"
+    },
+    {
+      "path": "do27-v2-20260724/environment.json",
+      "sha256": "15af187e2cf52d0c832e7bbd7a69fc980c8d8e28f5e28cfbe1119264d1b9830d"
+    },
+    {
+      "path": "do27-v2-20260724/config.json",
+      "sha256": "bc640755ea4586a2b7a655709bea040c87e29582188fece864c77eb60dcc810e"
+    },
+    {
+      "path": "do27-v2-20260724/stdout.json",
+      "sha256": "1971298806a2c14edc4d349a13ba23f6b7d580557305cd288f6c5eb524ddd593"
+    },
+    {
+      "path": "do27-v2-20260724/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "approval": {
+    "owner": null,
+    "date": null,
+    "decision": "pending"
+  },
+  "validation_context": {
+    "truth_reference": "Forward/model_grav.den and Forward/model_mag.sus; coarse nearest-cell projection",
+    "drillhole_holdout": false,
+    "blind_release_record": null
+  }
+}

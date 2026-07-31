@@ -1,0 +1,23 @@
+{
+  "schema": "wp3-manifest-v2",
+  "run_id": "WP3-PHYSICS-20260718-v1",
+  "run_instance_id": "20260718T103914410Z-d1ef8b18ed5d4cf2a761a62570f646db",
+  "evidence_class": "Synthetic-run/Reference-regression",
+  "status": "Passed",
+  "files": {
+    "config.json": "f029a5c1a723716b4174cb73885c88553db70d1479e84cee9920c4c73f96161a",
+    "empymod-reference.json": "837945b07adf8a261878ad8555c24936529d6304c265ffa3e06cf8c77ed6eb3c",
+    "physics-contract.json": "9eaa14b23dc07ccba15af38bba0158bd52b7a1cdc390a66eee4a7303c8320c0a",
+    "raw-responses.json": "37ea14442e1c9dfa546c78ff3809b81e624b6d96c6e34565bc58e0caf54b7e8b",
+    "results.json": "685e6680642744adaab7d80b1f81e70c8387a1d0b33c81817f62b58c41811ece"
+  },
+  "sources": {
+    "config.json": "f029a5c1a723716b4174cb73885c88553db70d1479e84cee9920c4c73f96161a",
+    "physics-contract.json": "9eaa14b23dc07ccba15af38bba0158bd52b7a1cdc390a66eee4a7303c8320c0a",
+    "run-wp3-physics.ps1": "453ceb90a0ad71c98ab0472443f50bbeceee8bcfde90a4a5fc670e79f5a27797",
+    "oracle/wp3-oracle.ps1": "b7669dc7f9e3999eeef9be759d9fec655eee8850ceb036e22368c6934f485608",
+    "oracle/empymod-frequency-oracle.py": "3c0e079811c28fb46a91b9e853034ce9ec91d8843170ccd5d2b23c5f66c18d16",
+    "oracle/requirements-lock.txt": "dd965f10474f923ac3b98d69d7bc73f973b7252bcc1ac0eaa1148877cfdc5119",
+    "oracle/EMPYMOD-PROVENANCE.md": "1b4b4ac1cd44da35167062f33cf04821e3123a041c992ae5133f0202cb368e3b"
+  }
+}

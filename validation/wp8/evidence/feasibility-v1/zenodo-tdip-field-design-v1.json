@@ -1,0 +1,75 @@
+{
+  "schema_version": "wp8-zenodo-tdip-field-design-v1",
+  "source": "Zenodo record 13329326",
+  "doi": "10.5281/zenodo.13329326",
+  "license": "cc-by-4.0",
+  "archive_sha256": "f71d593dc7ff902732c9099b8e8ee5ea484a4008a8906420930d5804bd374cd0",
+  "archive_member_count": 18788,
+  "archive_extension_counts": {
+    ".raw": 10334,
+    ".log": 4602,
+    ".txt": 3239,
+    ".dcp": 443,
+    "<none>": 49,
+    ".dat": 30,
+    ".inv": 21,
+    ".xyz": 21,
+    ".ini": 9,
+    ".db": 5,
+    ".con": 5,
+    ".mod": 5,
+    ".msh": 5,
+    ".emo": 5,
+    ".emt": 5,
+    ".ite": 5,
+    ".dip": 5
+  },
+  "selection_unit": "whole field acquisition group",
+  "selection_frozen_before_payload_extraction": true,
+  "selection_frozen_before_response_access": true,
+  "role_rule": "explicit immutable acquisition-group assignment in script v1",
+  "groups": [
+    {
+      "acquisition_group": "n12_n13",
+      "role": "train",
+      "archive_member_count": 3339
+    },
+    {
+      "acquisition_group": "n7_n6_n1",
+      "role": "train",
+      "archive_member_count": 5470
+    },
+    {
+      "acquisition_group": "s2",
+      "role": "buffer",
+      "archive_member_count": 2527
+    },
+    {
+      "acquisition_group": "s5_s7_n10",
+      "role": "calibration",
+      "archive_member_count": 3508
+    },
+    {
+      "acquisition_group": "s6_s4",
+      "role": "test",
+      "archive_member_count": 3354
+    }
+  ],
+  "partition_group_counts": {
+    "train": 2,
+    "buffer": 1,
+    "calibration": 1,
+    "test": 1
+  },
+  "required_test_clusters": 223,
+  "profile_level_test_cluster_upper_bound": 1,
+  "profile_level_power_gate_possible": false,
+  "archive_members_listed": true,
+  "archive_members_extracted": false,
+  "response_payloads_opened": 0,
+  "response_values_interpreted": 0,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "next_step": "extract training group only; derive waveform schema and spatial correlation without opening buffer/calibration/test payloads"
+}

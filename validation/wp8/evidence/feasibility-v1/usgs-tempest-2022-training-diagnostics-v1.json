@@ -1,0 +1,238 @@
+{
+  "schema_version": "wp8-usgs-tempest-2022-training-diagnostics-v1",
+  "design_sha256": "00baf4f8920cf64a317f912edc7992f066b52b91fea0d8ff146bb5d899a33939",
+  "sciencebase_id": "62ffc245d34e37cba73e1fa0",
+  "path": "validation/wp8/data/usgs-aem-training-expansion-v1/files/62ffc245d34e37cba73e1fa0__MAP_RegionalTempest_2022.nc",
+  "payload_sha256": "c610499d7357eabd41b8e413391329aca0d34cf7195e675aa54501d069581570",
+  "system": "TEMPEST",
+  "processed_group_count": 3,
+  "processed_rows": 449501,
+  "unique_lines": 385,
+  "components": [
+    "XS",
+    "ZS"
+  ],
+  "gate_count": 15,
+  "valid_response_noise_pairs": 13485030,
+  "records": [
+    {
+      "group": "/survey/tabular/6",
+      "rows": 425158,
+      "unique_lines": 302,
+      "gate_count": 15,
+      "gate_range_seconds": [
+        1.085e-05,
+        0.01337928
+      ],
+      "components": [
+        "XS",
+        "ZS"
+      ],
+      "valid_response_noise_pairs": 12754740,
+      "zs_standardized_absolute_p95": 33.29848504934692,
+      "along_line_correlations": [
+        {
+          "index_lag": 1,
+          "pair_count": 424852,
+          "median_distance_km": 0.060806660819401226,
+          "correlation": 0.9867891868014965
+        },
+        {
+          "index_lag": 2,
+          "pair_count": 424549,
+          "median_distance_km": 0.12161644625628762,
+          "correlation": 0.974079948293779
+        },
+        {
+          "index_lag": 4,
+          "pair_count": 423945,
+          "median_distance_km": 0.24323289251251703,
+          "correlation": 0.954658570068141
+        },
+        {
+          "index_lag": 8,
+          "pair_count": 422737,
+          "median_distance_km": 0.48640497530352467,
+          "correlation": 0.9315843707446172
+        },
+        {
+          "index_lag": 16,
+          "pair_count": 420321,
+          "median_distance_km": 0.9723090712319705,
+          "correlation": 0.8753308318989066
+        },
+        {
+          "index_lag": 32,
+          "pair_count": 415489,
+          "median_distance_km": 1.94310643300873,
+          "correlation": 0.8308975832847142
+        },
+        {
+          "index_lag": 64,
+          "pair_count": 405825,
+          "median_distance_km": 3.8812000000000118,
+          "correlation": 0.8144842345463711
+        },
+        {
+          "index_lag": 128,
+          "pair_count": 386531,
+          "median_distance_km": 7.7540179836005025,
+          "correlation": 0.7570270597404265
+        },
+        {
+          "index_lag": 256,
+          "pair_count": 348653,
+          "median_distance_km": 15.486900020662647,
+          "correlation": 0.6547630141817647
+        }
+      ],
+      "training_correlation_range_km": null
+    },
+    {
+      "group": "/survey/tabular/7",
+      "rows": 21096,
+      "unique_lines": 56,
+      "gate_count": 15,
+      "gate_range_seconds": [
+        1.085e-05,
+        0.01337928
+      ],
+      "components": [
+        "XS",
+        "ZS"
+      ],
+      "valid_response_noise_pairs": 632880,
+      "zs_standardized_absolute_p95": 33.234933426317006,
+      "along_line_correlations": [
+        {
+          "index_lag": 1,
+          "pair_count": 21038,
+          "median_distance_km": 0.06015621331165789,
+          "correlation": 0.14839740716671898
+        },
+        {
+          "index_lag": 2,
+          "pair_count": 20982,
+          "median_distance_km": 0.12030814602514389,
+          "correlation": 0.1321885947500774
+        },
+        {
+          "index_lag": 4,
+          "pair_count": 20870,
+          "median_distance_km": 0.24060054031515699,
+          "correlation": 0.11997957940451023
+        },
+        {
+          "index_lag": 8,
+          "pair_count": 20646,
+          "median_distance_km": 0.480864481946473,
+          "correlation": 0.10031750752585604
+        },
+        {
+          "index_lag": 16,
+          "pair_count": 20198,
+          "median_distance_km": 0.9601216040798415,
+          "correlation": 0.07844575530141869
+        },
+        {
+          "index_lag": 32,
+          "pair_count": 19302,
+          "median_distance_km": 1.915542779472545,
+          "correlation": 0.05041343803680099
+        },
+        {
+          "index_lag": 64,
+          "pair_count": 17510,
+          "median_distance_km": 3.822313049707957,
+          "correlation": 0.046093209879712244
+        },
+        {
+          "index_lag": 128,
+          "pair_count": 13966,
+          "median_distance_km": 7.628409771433593,
+          "correlation": 0.021560103697436047
+        },
+        {
+          "index_lag": 256,
+          "pair_count": 7210,
+          "median_distance_km": 15.086838827579006,
+          "correlation": 0.004867796786065299
+        }
+      ],
+      "training_correlation_range_km": 3.822313049707957
+    },
+    {
+      "group": "/survey/tabular/8",
+      "rows": 3247,
+      "unique_lines": 27,
+      "gate_count": 15,
+      "gate_range_seconds": [
+        1.085e-05,
+        0.01337928
+      ],
+      "components": [
+        "XS",
+        "ZS"
+      ],
+      "valid_response_noise_pairs": 97410,
+      "zs_standardized_absolute_p95": 32.924313098481974,
+      "along_line_correlations": [
+        {
+          "index_lag": 1,
+          "pair_count": 3217,
+          "median_distance_km": 0.058358375577147244,
+          "correlation": 0.9852030017677978
+        },
+        {
+          "index_lag": 2,
+          "pair_count": 3190,
+          "median_distance_km": 0.11669967857692956,
+          "correlation": 0.9499443090175715
+        },
+        {
+          "index_lag": 4,
+          "pair_count": 3136,
+          "median_distance_km": 0.23335045528535478,
+          "correlation": 0.8575177022720274
+        },
+        {
+          "index_lag": 8,
+          "pair_count": 3028,
+          "median_distance_km": 0.466324060535053,
+          "correlation": 0.6472372068109196
+        },
+        {
+          "index_lag": 16,
+          "pair_count": 2812,
+          "median_distance_km": 0.9293998870238767,
+          "correlation": 0.4145148285933725
+        },
+        {
+          "index_lag": 32,
+          "pair_count": 2381,
+          "median_distance_km": 1.8398853795821317,
+          "correlation": 0.2589526639463149
+        },
+        {
+          "index_lag": 64,
+          "pair_count": 1522,
+          "median_distance_km": 3.7044530250744625,
+          "correlation": 0.2616050591373102
+        },
+        {
+          "index_lag": 128,
+          "pair_count": 318,
+          "median_distance_km": 6.960370724001821,
+          "correlation": -0.14429899686481074
+        }
+      ],
+      "training_correlation_range_km": null
+    }
+  ],
+  "formal_response_uncertainty_contract_ready": true,
+  "paired_crps_effect_size_available": false,
+  "power_gate_passed": false,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "wp8-mountain-pass-magnetic-train-diagnostics-v1",
+  "candidate_status": "training_diagnostics_complete",
+  "split_sha256": "cab98d4dd6345e5cb9a41b99e40a83f2aefe6a0c715417dfbc5d2be4331599bf",
+  "remanence_prior_sha256": "65c0997cf4ea2a849bd90f1cf38751a450a003a8fbc972edcb157ce847ef9212",
+  "training_rows_interpreted": 23661,
+  "held_out_rows_skipped_without_response_parsing": {
+    "test": 11687,
+    "buffer": 18753,
+    "calibration": 13254
+  },
+  "sealed_response_rows_interpreted": {
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "training_cells_1km": 113,
+  "regional_field": {
+    "model": "fixed OLS plane on training-cell medians",
+    "coefficients": [
+      -78.57694113757083,
+      0.0072367980941194475,
+      0.005294169519688504
+    ],
+    "residual_sill_nt2": 9109.229677967649
+  },
+  "variogram": {
+    "range_rule": "first two consecutive 1-km bins with >=30 pairs and semivariance >=95% training residual sill",
+    "bins": [
+      {
+        "lag_center_m": 500.0,
+        "pairs": 0,
+        "semivariance_nt2": null
+      },
+      {
+        "lag_center_m": 1500.0,
+        "pairs": 332,
+        "semivariance_nt2": 9434.857327892607
+      },
+      {
+        "lag_center_m": 2500.0,
+        "pairs": 496,
+        "semivariance_nt2": 11954.327210704958
+      },
+      {
+        "lag_center_m": 3500.0,
+        "pairs": 491,
+        "semivariance_nt2": 12213.083017624933
+      },
+      {
+        "lag_center_m": 4500.0,
+        "pairs": 445,
+        "semivariance_nt2": 11397.072760262983
+      },
+      {
+        "lag_center_m": 5500.0,
+        "pairs": 454,
+        "semivariance_nt2": 12526.259951730504
+      },
+      {
+        "lag_center_m": 6500.0,
+        "pairs": 335,
+        "semivariance_nt2": 13224.556287182111
+      },
+      {
+        "lag_center_m": 7500.0,
+        "pairs": 309,
+        "semivariance_nt2": 11556.743956661263
+      },
+      {
+        "lag_center_m": 8500.0,
+        "pairs": 411,
+        "semivariance_nt2": 8157.605644644668
+      },
+      {
+        "lag_center_m": 9500.0,
+        "pairs": 386,
+        "semivariance_nt2": 8045.904837207004
+      },
+      {
+        "lag_center_m": 10500.0,
+        "pairs": 407,
+        "semivariance_nt2": 7693.270975288031
+      },
+      {
+        "lag_center_m": 11500.0,
+        "pairs": 380,
+        "semivariance_nt2": 7921.354195768636
+      },
+      {
+        "lag_center_m": 12500.0,
+        "pairs": 418,
+        "semivariance_nt2": 5249.901021333204
+      },
+      {
+        "lag_center_m": 13500.0,
+        "pairs": 316,
+        "semivariance_nt2": 5613.700048469701
+      },
+      {
+        "lag_center_m": 14500.0,
+        "pairs": 251,
+        "semivariance_nt2": 6002.709955176055
+      },
+      {
+        "lag_center_m": 15500.0,
+        "pairs": 219,
+        "semivariance_nt2": 5224.978083691442
+      },
+      {
+        "lag_center_m": 16500.0,
+        "pairs": 164,
+        "semivariance_nt2": 8371.806944728796
+      },
+      {
+        "lag_center_m": 17500.0,
+        "pairs": 144,
+        "semivariance_nt2": 9033.897613048845
+      },
+      {
+        "lag_center_m": 18500.0,
+        "pairs": 100,
+        "semivariance_nt2": 8633.056191433478
+      },
+      {
+        "lag_center_m": 19500.0,
+        "pairs": 76,
+        "semivariance_nt2": 7311.01800307348
+      }
+    ]
+  },
+  "conservative_spatial_correlation_range_m": 1500.0,
+  "range_censored_at_maximum_lag": false,
+  "correlation_cell_merge_factor": 3,
+  "design_test_cells": 43,
+  "correlation_adjusted_test_cluster_upper_bound": 15,
+  "height_sensitivity": {
+    "training_only_residual_slope_nt_per_m": -0.0323313986570747,
+    "training_only_residual_correlation": -0.0021474702009898704,
+    "passed": true
+  },
+  "flight_line_spectrum": {
+    "eligible_training_lines": 124,
+    "peak_wavelength_median_m": 5219.276771428441,
+    "peak_wavelength_q05_m": 1158.307960047365,
+    "peak_wavelength_q95_m": 12635.758435789403,
+    "orientation_bins_15deg": [
+      3,
+      4,
+      5,
+      10,
+      11
+    ],
+    "passed": true
+  },
+  "remanence_sensitivity": {
+    "complete_untreated_vectors": 5905,
+    "contributions": 21,
+    "direction_resultant_length": 0.016918424931418603,
+    "vector_prior_required": true,
+    "passed": true
+  },
+  "dimensionality": {
+    "selected": "3-D vector magnetization",
+    "passed": true,
+    "reason": "training residual correlation exceeds the 1-km sounding cell, multiple flight orientations are present, and the provenance-backed remanence prior requires vector magnetization sensitivity"
+  },
+  "cluster_gate_passed": false,
+  "power_gate_passed": false
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "wp8-geoscience-australia-aem-multisystem-sample-v1",
+  "design_sha256": "8b9452c7aeaa025329327bebe5650d1279303a1766839eca2fcd104ce9510f94",
+  "selection_is_response_blind": true,
+  "systems": [
+    "SkyTEM",
+    "VTEM"
+  ],
+  "choices": [
+    {
+      "system": "VTEM",
+      "dataset_number": 22122,
+      "survey_id": "1279",
+      "record_id": 102781,
+      "package_id": "490c9485-9943-4b06-9103-9302f0e13341",
+      "resource_name": "Point-located electromagnetic subsampled data",
+      "url": "https://d28rz98at9flks.cloudfront.net/102781/ga1279_decimated_point_located_em.zip",
+      "expected_bytes": 613795566,
+      "provider_etag": "\"ce89eb967678e565363f3b1df055e12c-2\"",
+      "covered_design_roles": [
+        "test",
+        "train"
+      ],
+      "selection_basis": "pre-response system stratum and smallest official located observation resource identified from catalogue/HTTP metadata",
+      "response_access_rule": "read coordinates and line identifiers first; interpret response only for train cells; skip buffer/calibration/test responses"
+    },
+    {
+      "system": "SkyTEM",
+      "dataset_number": 22131,
+      "survey_id": "1305",
+      "record_id": 121613,
+      "package_id": "8ff431a5-a5b0-41b2-9474-268a5de2e418",
+      "resource_name": "Located observed data",
+      "url": "https://d28rz98at9flks.cloudfront.net/121613/121613_located_data_em.zip",
+      "expected_bytes": 139294555,
+      "provider_etag": "\"27d7b7d1943eaea7022c41596d8c89f3\"",
+      "covered_design_roles": [
+        "test",
+        "train"
+      ],
+      "selection_basis": "pre-response system stratum and smallest official located observation resource identified from catalogue/HTTP metadata",
+      "response_access_rule": "read coordinates and line identifiers first; interpret response only for train cells; skip buffer/calibration/test responses"
+    },
+    {
+      "system": "SkyTEM",
+      "dataset_number": 22130,
+      "survey_id": "1304",
+      "record_id": 122012,
+      "package_id": "f891b73e-88a6-48d9-816f-2131041deea4",
+      "resource_name": "Processed electromagnetic data",
+      "url": "https://d28rz98at9flks.cloudfront.net/122012/122012_02_0.zip",
+      "expected_bytes": 168667247,
+      "provider_etag": "\"a056c961d98f81ef80668e702a9553c8\"",
+      "covered_design_roles": [
+        "calibration",
+        "test",
+        "train"
+      ],
+      "selection_basis": "pre-response system stratum and smallest official located observation resource identified from catalogue/HTTP metadata",
+      "response_access_rule": "read coordinates and line identifiers first; interpret response only for train cells; skip buffer/calibration/test responses"
+    }
+  ],
+  "response_values_interpreted": 0,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

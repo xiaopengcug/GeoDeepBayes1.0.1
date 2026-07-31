@@ -1,0 +1,12 @@
+{
+  "schema_version": "wp8-field-preregistration-scaffold-v1",
+  "frozen": true,
+  "test_endpoints_viewed": false,
+  "field_test_unseal_count": 0,
+  "all_nine_feasibility_passed": false,
+  "selection_policy": "license_integrity_design_only",
+  "feasibility_decision_sha256": "b1761db2c885407c47bb73191bf869519e828936091b909f880467906cd9ca0f",
+  "protected_manifest_sha256": "a6127358a6467d89ca303d1c22aeeab6736664d43bac64af587b332a12c4b235",
+  "status": "blocked",
+  "reason_code": "WP8_0_NOT_ALL_NINE_PASSED"
+}

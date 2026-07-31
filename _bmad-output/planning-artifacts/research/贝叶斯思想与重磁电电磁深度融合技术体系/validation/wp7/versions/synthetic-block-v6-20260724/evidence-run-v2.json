@@ -1,0 +1,135 @@
+{
+  "schema_version": "2.0.0",
+  "run_id": "synthetic-block-v6-20260724",
+  "evidence_id": "EVD-ALGO-002",
+  "execution": {
+    "started_at": "2026-07-24T16:03:13.575266+00:00",
+    "ended_at": "2026-07-24T16:03:21.760169+00:00",
+    "outcome": "succeeded",
+    "exit_code": 0,
+    "failure_reason": null
+  },
+  "code": {
+    "algorithm": "sha256-canonical-manifest-v1",
+    "manifest": [
+      {
+        "path": "src/geodeepbayes/benchmarks/synthetic_block_v2.py",
+        "bytes": 10487,
+        "sha256": "a481cbe271035d655e67f6a69092fd2869f37b73dd541e14f1499de630ffa5ce",
+        "locator": null
+      },
+      {
+        "path": "src/geodeepbayes/sampling/delayed_acceptance.py",
+        "bytes": 3920,
+        "sha256": "dd9482d046a368e3f97454b63f6e5a09c7735df9db71765267eeaab9a013f972",
+        "locator": null
+      },
+      {
+        "path": "src/geodeepbayes/sampling/pod.py",
+        "bytes": 5776,
+        "sha256": "047e107b503e7d1c9f19057ba126a3f47d6e8bfad8894e12921829cb710fd34b",
+        "locator": null
+      },
+      {
+        "path": "src/geodeepbayes/sampling/__init__.py",
+        "bytes": 374,
+        "sha256": "a2ef20ce3508cc287babd74ebb17ed323ce80e3eb6f9e43b110e51ada11cd8e9",
+        "locator": null
+      },
+      {
+        "path": "src/geodeepbayes/diagnostics/__init__.py",
+        "bytes": 547,
+        "sha256": "148ecb471d3fc938e6c1e3fa39283e2fb38e0fe36530b12b20c97579ccc317fb",
+        "locator": null
+      },
+      {
+        "path": "src/geodeepbayes/diagnostics/ess.py",
+        "bytes": 2820,
+        "sha256": "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+        "locator": null
+      },
+      {
+        "path": "src/geodeepbayes/diagnostics/mcse.py",
+        "bytes": 747,
+        "sha256": "ecc6efabb7702a469bdd47d1b302525600796cf6f8d57477a30fb3b2b6c5d65f",
+        "locator": null
+      },
+      {
+        "path": "src/geodeepbayes/diagnostics/rhat.py",
+        "bytes": 2999,
+        "sha256": "bfe187a7507f3bd6e36bd9bbbee6ab1d5fff9c24879d8a2f2a8e47fe8c98010c",
+        "locator": null
+      }
+    ],
+    "sha256": "345e5789ca760287143fa9fe97131913ad9e0dd437c154a365cc20cb3bd30a62"
+  },
+  "inputs": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/synthetic-v6-config.json",
+      "bytes": 993,
+      "sha256": "69114b631eebe7a1014380949aa10ee9c801104397ffe0880a875a2dd8d2c7a8",
+      "locator": null
+    }
+  ],
+  "configs": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/synthetic-v6-config.json",
+      "bytes": 993,
+      "sha256": "69114b631eebe7a1014380949aa10ee9c801104397ffe0880a875a2dd8d2c7a8",
+      "locator": null
+    }
+  ],
+  "outputs": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/synthetic-block-v6-20260724/metrics.json",
+      "bytes": 3569,
+      "sha256": "43f6e99ef01551f222fdf276f41843c402d5b9a633e7ce03533cd49b851d4199",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/synthetic-block-v6-20260724/raw-chains.npz",
+      "bytes": 3330470,
+      "sha256": "15d340931a0cbff92adb50a27ecf967cb05bc302d319e7cddcfd179d5c53e3b4",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/synthetic-block-v6-20260724/run-manifest.json",
+      "bytes": 967,
+      "sha256": "2969b0e74324d28958663acaa8a2babf273e214f4ab39caab1921cab2b3425bf",
+      "locator": null
+    }
+  ],
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "architecture": "AMD64",
+    "python_version": "3.11.15",
+    "python_sha256": "4cca2027319c08dca5cc4b64c9ba415cc89205152202cb6805081277c43b610f",
+    "uv_lock_sha256": "c71791cc6cda23ea4ba563821a4235261374e5268d8cfd9a595799c552834026"
+  },
+  "randomness": {
+    "stochastic": true,
+    "seeds": [
+      20260724
+    ]
+  },
+  "approval": {
+    "identity": "WP7三角色独立AI技术复核",
+    "identity_type": "ai",
+    "decided_at": "2026-07-24T16:06:33.053089+00:00",
+    "decision": "approved"
+  },
+  "claims": [
+    {
+      "claim_id": "EVD-ALGO-002",
+      "scope": "synthetic",
+      "max_maturity": "Synthetic-verified"
+    }
+  ],
+  "attestation": {
+    "required": false,
+    "subject_digest": null,
+    "workflow": null,
+    "commit_sha": null,
+    "verified": false
+  }
+}

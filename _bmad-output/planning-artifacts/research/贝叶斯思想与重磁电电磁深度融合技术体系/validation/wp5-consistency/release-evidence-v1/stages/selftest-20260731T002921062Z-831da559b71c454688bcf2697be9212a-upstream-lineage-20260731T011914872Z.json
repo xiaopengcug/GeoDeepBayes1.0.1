@@ -1,0 +1,516 @@
+{
+  "schema": "wp5-selftest-finalized-evidence-v1",
+  "evidence_class": "Finalized from exact, non-overlapping partial evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_version_path": "versions/20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+  "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f",
+  "root_anchor_file_sha256": "c3cc21b5342d59390d0c33da2250cda58f3dde61bae7b9e94a6faca3e52b7e67",
+  "stage": "upstream-lineage",
+  "fixture_count": 33,
+  "fixture_id_set": [
+    "FXT-UPSTREAM-LINEAGE-001",
+    "FXT-UPSTREAM-LINEAGE-002",
+    "FXT-UPSTREAM-LINEAGE-003",
+    "FXT-UPSTREAM-LINEAGE-004",
+    "FXT-UPSTREAM-LINEAGE-005",
+    "FXT-UPSTREAM-LINEAGE-006",
+    "FXT-UPSTREAM-LINEAGE-007",
+    "FXT-UPSTREAM-LINEAGE-008",
+    "FXT-UPSTREAM-LINEAGE-009",
+    "FXT-UPSTREAM-LINEAGE-010",
+    "FXT-UPSTREAM-LINEAGE-011",
+    "FXT-UPSTREAM-LINEAGE-012",
+    "FXT-UPSTREAM-LINEAGE-013",
+    "FXT-UPSTREAM-LINEAGE-014",
+    "FXT-UPSTREAM-LINEAGE-015",
+    "FXT-UPSTREAM-LINEAGE-016",
+    "FXT-UPSTREAM-LINEAGE-017",
+    "FXT-UPSTREAM-LINEAGE-018",
+    "FXT-UPSTREAM-LINEAGE-019",
+    "FXT-UPSTREAM-LINEAGE-020",
+    "FXT-UPSTREAM-LINEAGE-021",
+    "FXT-UPSTREAM-LINEAGE-022",
+    "FXT-UPSTREAM-LINEAGE-023",
+    "FXT-UPSTREAM-LINEAGE-024",
+    "FXT-UPSTREAM-LINEAGE-025",
+    "FXT-UPSTREAM-LINEAGE-026",
+    "FXT-UPSTREAM-LINEAGE-027",
+    "FXT-UPSTREAM-LINEAGE-028",
+    "FXT-UPSTREAM-LINEAGE-029",
+    "FXT-UPSTREAM-LINEAGE-030",
+    "FXT-UPSTREAM-LINEAGE-031",
+    "FXT-UPSTREAM-LINEAGE-032",
+    "FXT-UPSTREAM-LINEAGE-033"
+  ],
+  "batch_role": "stage",
+  "partial_evidence": [
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T004735798Z.json",
+      "sha256": "09bfe16a82da8a3e8dfc12cba6c29a3af0815e9b50f4e132c1f2c28577dea0d3"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T005328771Z.json",
+      "sha256": "77373adc5db0a6c0d63e719caa524612790598f2cf6245a9357734a8a64e768e"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T005921005Z.json",
+      "sha256": "5e0e275fe93eefea11a85d8cb60e1f778b188a160bc407a0f249965e975a4d7a"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T010441373Z.json",
+      "sha256": "25d33dcf3d21a79b78900c73b348b1415a62e9cc17935cce0af23b5a61a9b794"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T011012370Z.json",
+      "sha256": "9d7612f5b3beb8f5a9e5ffd4629f493adff102bb3054832bcbaffdbc724fcb23"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T011537083Z.json",
+      "sha256": "303bdd3c33ab9efa08252aca504b04dbb54980efba6b67225b005da75b3f20a5"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-upstream-lineage-20260731T011914518Z.json",
+      "sha256": "75ec5dc86e89bba3c661e690e018eb77f51a1b01e76cbee7b40ec50a1851bdaa"
+    }
+  ],
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-001",
+      "case": "FXT-UPSTREAM-LINEAGE-001",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ],
+      "actual_rejection": "loop33 tombstone binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 71243
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-002",
+      "case": "FXT-UPSTREAM-LINEAGE-002",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone unique"
+      ],
+      "actual_rejection": "loop33 tombstone unique",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58873
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-003",
+      "case": "FXT-UPSTREAM-LINEAGE-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ],
+      "actual_rejection": "loop33 tombstone binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 64153
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-004",
+      "case": "FXT-UPSTREAM-LINEAGE-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ],
+      "actual_rejection": "loop33 tombstone binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54763
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-005",
+      "case": "FXT-UPSTREAM-LINEAGE-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ],
+      "actual_rejection": "loop33 tombstone binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55780
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-006",
+      "case": "FXT-UPSTREAM-LINEAGE-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop33 tombstone binding"
+      ],
+      "actual_rejection": "loop33 tombstone binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55123
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-007",
+      "case": "FXT-UPSTREAM-LINEAGE-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59893
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-008",
+      "case": "FXT-UPSTREAM-LINEAGE-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60206
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-009",
+      "case": "FXT-UPSTREAM-LINEAGE-009",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 56346
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-010",
+      "case": "FXT-UPSTREAM-LINEAGE-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59651
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-011",
+      "case": "FXT-UPSTREAM-LINEAGE-011",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60607
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-012",
+      "case": "FXT-UPSTREAM-LINEAGE-012",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 57496
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-013",
+      "case": "FXT-UPSTREAM-LINEAGE-013",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58759
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-014",
+      "case": "FXT-UPSTREAM-LINEAGE-014",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 57854
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-015",
+      "case": "FXT-UPSTREAM-LINEAGE-015",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "semantic rule fields"
+      ],
+      "actual_rejection": "semantic rule fields",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54236
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-016",
+      "case": "FXT-UPSTREAM-LINEAGE-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream pointer wp2-active"
+      ],
+      "actual_rejection": "upstream pointer wp2-active",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52134
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-017",
+      "case": "FXT-UPSTREAM-LINEAGE-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52391
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-018",
+      "case": "FXT-UPSTREAM-LINEAGE-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53414
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-019",
+      "case": "FXT-UPSTREAM-LINEAGE-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53448
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-020",
+      "case": "FXT-UPSTREAM-LINEAGE-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream member wp2-active/diagnostic-chains.csv"
+      ],
+      "actual_rejection": "upstream member wp2-active/diagnostic-chains.csv",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52645
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-021",
+      "case": "FXT-UPSTREAM-LINEAGE-021",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream source wp2-active/run-wp2-toy.ps1"
+      ],
+      "actual_rejection": "upstream source wp2-active/run-wp2-toy.ps1",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52869
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-022",
+      "case": "FXT-UPSTREAM-LINEAGE-022",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream pointer wp3-active"
+      ],
+      "actual_rejection": "upstream pointer wp3-active",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53145
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-023",
+      "case": "FXT-UPSTREAM-LINEAGE-023",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58103
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-024",
+      "case": "FXT-UPSTREAM-LINEAGE-024",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55710
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-025",
+      "case": "FXT-UPSTREAM-LINEAGE-025",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53637
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-026",
+      "case": "FXT-UPSTREAM-LINEAGE-026",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream member wp3-active/empymod-reference.json"
+      ],
+      "actual_rejection": "upstream member wp3-active/empymod-reference.json",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55954
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-027",
+      "case": "FXT-UPSTREAM-LINEAGE-027",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream source wp3-active/run-wp3-physics.ps1"
+      ],
+      "actual_rejection": "upstream source wp3-active/run-wp3-physics.ps1",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52867
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-028",
+      "case": "FXT-UPSTREAM-LINEAGE-028",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream pointer wp4-active"
+      ],
+      "actual_rejection": "upstream pointer wp4-active",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53153
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-029",
+      "case": "FXT-UPSTREAM-LINEAGE-029",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52846
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-030",
+      "case": "FXT-UPSTREAM-LINEAGE-030",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52305
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-031",
+      "case": "FXT-UPSTREAM-LINEAGE-031",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52536
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-032",
+      "case": "FXT-UPSTREAM-LINEAGE-032",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream member wp4-active/raw.json"
+      ],
+      "actual_rejection": "upstream member wp4-active/raw.json",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54239
+    },
+    {
+      "fixture_id": "FXT-UPSTREAM-LINEAGE-033",
+      "case": "FXT-UPSTREAM-LINEAGE-033",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "upstream source wp4-active/run-wp4-decision.ps1"
+      ],
+      "actual_rejection": "upstream source wp4-active/run-wp4-decision.ps1",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 52442
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T01:19:14.8727366Z",
+  "output_sha256": "030a4c2b1177552459d7fe666013797e4fc7f800851905b3e790f217733d2b65",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

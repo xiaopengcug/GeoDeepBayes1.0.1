@@ -1,0 +1,68 @@
+{
+  "schema_version": "wp8-github-sip-debye-net-field-audit-v1",
+  "audit_date": "2026-07-25",
+  "source": {
+    "title": "Learning relaxation time distributions from spectral induced polarization data with a complex-valued variational autoencoder",
+    "arxiv_id": "2603.13973v2",
+    "article_url": "https://arxiv.org/html/2603.13973",
+    "repository_url": "https://github.com/clberube/sip-decomposition-net",
+    "data_url": "https://raw.githubusercontent.com/clberube/sip-decomposition-net/main/data/data_dict.pt",
+    "repository_license": "MIT",
+    "anonymous_download": true
+  },
+  "download_audit": {
+    "filename": "data_dict.pt",
+    "bytes": 68593,
+    "sha256": "7ec8c6cc663ea09b14427947fdacf63edf94df0e308d7e200e50cd118eba82b3",
+    "torch_archive_members": 10,
+    "pickle_metadata_inspected_without_response_interpretation": true
+  },
+  "published_dataset_contract": {
+    "total_spectra": 140,
+    "frequency_count_per_spectrum": 19,
+    "minimum_frequency_hz": 0.09,
+    "maximum_frequency_hz": 20000.0,
+    "complex_resistivity_present": true,
+    "real_and_imaginary_standard_deviations_present": true,
+    "repeat_measurements_per_spectrum": 2,
+    "uncertainty_basis": "standard deviation of two measurements under identical conditions",
+    "series_count": 11
+  },
+  "population_breakdown_from_article_table_1": {
+    "pyrite_sand_mixtures": 30,
+    "graphite_sand_mixtures": 25,
+    "stainless_steel_spheres": 11,
+    "stainless_steel_cylinders": 6,
+    "canadian_malartic_rock_cores": 12,
+    "highland_valley_rock_cores": 5,
+    "canadian_malartic_field_stations": 26,
+    "concrete_samples": 25,
+    "laboratory_or_core_total": 114,
+    "field_total": 26
+  },
+  "field_subset": {
+    "site": "Bravo Zone outcrop, Canadian Malartic deposit",
+    "profile_count": 1,
+    "station_count": 26,
+    "array": "Wenner",
+    "electrode_spacing_m": 1.0,
+    "station_coordinates_in_repository": false,
+    "abmn_endpoint_coordinates_in_repository": false,
+    "raw_voltage_current_waveforms_in_repository": false,
+    "processed_complex_spectra_in_repository": true,
+    "direct_repeat_uncertainty_in_repository": true
+  },
+  "gate_assessment": {
+    "observation_content_useful": true,
+    "uncertainty_content_useful": true,
+    "independent_field_cluster_upper_bound": 26,
+    "required_test_clusters": 223,
+    "cluster_gate_passes": false,
+    "power_gate_passes": false,
+    "formal_sip_fdip_clusters_added": 0,
+    "formal_gate_changed": false,
+    "decision": "retain_as_open_processed_sip_and_direct_uncertainty_evidence_only"
+  },
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": "wp8-gate-failure-inventory-v1",
+  "formal_test_eligibility": "blocked until an outcome-blind split excludes contaminated members",
+  "endpoint_exposure_incident": {
+    "detected": true,
+    "members_to_exclude_from_formal_test": [
+      "tdip: first inspected CSV member (recorded above)",
+      "csamt: Raw archive A1.raw",
+      "csamt-backup-doi-10.5281/zenodo.5533467: K1-K9 AVG",
+      "magnetic-backup-doi-10.5066/P91O2Y8W: Northwest Arkansas CSV",
+      "wfem: 1 WFEM apparent resistivity of L1.dat"
+    ],
+    "scope": "interactive inspections displayed observation rows before formal splits were frozen; ScienceBase also ignored an HTTP Range request and returned Northwest Arkansas magnetic CSV rows",
+    "remediation": "retain only as training candidates or exclude whole named members before any formal test unseal"
+  },
+  "methods": {
+    "gravity": {},
+    "magnetic": {},
+    "dc": {},
+    "tdip": {},
+    "sip_fdip": {
+      "clusters": "Guidel supplies one site/date only; the Serpentinite and newly located Mendeley and Martin 2020 field candidates do not add 223 independently auditable frequency-keyed profiles; Martin 2020 has two colocated profiles and even its non-independent quadrupole-midpoint upper bound is only 196. The 2026 sip-debye-net release adds 26 Canadian Malartic field spectra with complex uncertainties, but no coordinates or ABMN geometry from which independent spatial clusters can be derived. The checksum-verified Zenodo vineyard release adds raw complex responses, ABMN geometry and repeat uncertainties, but its five campaign dates still cover only two independent spatial profiles. The newly audited CC-BY-4.0 streambed release adds 40,800 raw frequency-keyed rows, 320 electrode coordinates and repeat uncertainties across ten profiles, but those profiles belong to only two field sites. The response-blind BC ARIS query adds 103 public IP reports with 104 HEAD-verified digital archive endpoints (45.14 GB), but catalogue metadata does not distinguish TDIP from FDIP/SIP; all 30 frozen training reports have now been classified and none exposes a qualifying multi-frequency complex or phase response. The 73 candidate-test reports therefore remain sealed and contribute zero formal SIP/FDIP clusters",
+      "power": "the observation contract is repaired, but no training-only paired-CRPS effect size and no 223 independent SIP/FDIP test clusters are available"
+    },
+    "tem": {},
+    "mt_amt": {},
+    "csamt": {
+      "clusters": "The Big Chino split was frozen before raw response download: six whole training lines and fifteen sealed test lines. A deterministic 200-m station packing retained 257 receiver points, but did not estimate response correlation and cannot override whole-line archive packaging; the conservative sealed inference-unit upper bound is therefore 15 lines, below 223. Mount St. Helens contributes only 12 controlled-source stations (plus one natural-source station), Wuxi adds only two sealed whole test lines, and Angularli adds one 24-centre line. pyCSAMT contributes one 47-station profile and Pilgrim Hot Springs only 20 named locations. CR2010-0883 adds 111 published soundings on five lines, still independently below the frozen threshold and not a source-complete population. CR2013-0857 adds 205 soundings on 13 tightly spaced lines, but even its unadjusted sounding upper bound is below 223 and its line-level upper bound is 13. The restored Red Knoll package adds only two opened training profiles and therefore no sealed independent test cluster. San Antonio adds only 29 opened training sites and no sealed source-complete population; the Linxi waveform experiment uses only 15 receivers and is request-only. Laizhou and Caosiyao demonstration documents each imply a nominal 300 stations from 15 km/50 m, but both native entities are offline application-only; overlap, coordinates and spatial independence cannot be audited anonymously. No the Big Chino replacement is the eligible source-complete population and its sealed responses remain unopened",
+      "power": "Big Chino has only six authorized training lines, no frozen pair of information-matched inference methods and no paired out-of-sample predictions or CRPS scores; stable paired dispersion and formal effect power are therefore not computable"
+    },
+    "wfem": {
+      "observation_contract": "Ten frozen Baotu Spring training lines provide 44,074 apparent-resistivity rows at 42 frequencies (2-3072 Hz), but expose only Station/Fre/Rho_mn. Receiver coordinates, source geometry/current, phase, field component, geometric-factor definition and direct per-observation error remain absent. Sichuan metadata declares Station/Freq/I/Emag/Error/Rho plus survey coordinates, but its native payload is not anonymously downloadable",
+      "clusters": "The outcome-blind Baotu whole-line split leaves only 14 sealed test lines; the 304-station Wucaiwan design remains request-only, so no downloadable population reaches 223 independent clusters",
+      "power": "Baotu lacks a usable uncertainty and spatial-correlation contract; no training-only paired-CRPS effect size exists at sufficient independent cluster count",
+      "dimensionality": "Baotu line files contain no receiver coordinates or source geometry, so the preregistered near/transition/far-zone and 3-D dimensionality diagnostic cannot be executed"
+    }
+  }
+}

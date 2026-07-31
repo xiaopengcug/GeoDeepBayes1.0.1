@@ -1,0 +1,1484 @@
+{
+  "schema_version": "wp8-feasibility-registration-v1",
+  "manifest_sha256": "029d28e1098171cfea2996db22bb6f654f2ec699b3fd61fd718f3c128288aef0",
+  "dataset_selection_sha256": "25917e759fc3b7ac66809c935b15243f8342f4d948faf389029fed35b05d0528",
+  "preregistration_sha256": "e189e8fcbf7517c4d5e45ae3a81e14e781382da7a426d2114c34619d201f3b1c",
+  "methods": {
+    "gravity": {
+      "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+      "license_evidence": {
+        "passed": true,
+        "statement": "This work is marked with Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). ",
+        "evidence_path": "00_catalog/open_geophysics_data_manifest.json",
+        "evidence_sha256": "029d28e1098171cfea2996db22bb6f654f2ec699b3fd61fd718f3c128288aef0"
+      },
+      "gates": {
+        "license": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "This work is marked with Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). ",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-license-0e750a3a597f8e1f",
+          "evidence_sha256": "0e750a3a597f8e1f3ac3d822fad7ba2cc0efdaded862e619d1dcdf73b452954d"
+        },
+        "integrity": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "all selected top-level members match manifest",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-integrity-c1ecb76c134ee562",
+          "evidence_sha256": "c1ecb76c134ee562ea2c8043bc74092a09d1b18b72436fd834163f18758d97b4"
+        },
+        "observation_contract": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "GA national pool supplies spherical-cap Bouguer plus Bullard-C terrain correction and pointwise propagated uncertainty; all 53,066 interpreted training rows satisfy the frozen contract",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-observation_contract-5152dbb98c0113fb",
+          "evidence_sha256": "5152dbb98c0113fbaffd7dfe421821fd637908d330066fea2f613365dd8f9e5f"
+        },
+        "clusters": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "clusters",
+          "status": "passed",
+          "reason": "GA training-only range is 12.5 km; one-unit-per-provider and train/calibration plus pairwise spatial separation retain 261 sealed independent test surveys",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-clusters-42967969569781a7",
+          "evidence_sha256": "42967969569781a70dcf1c4424172a4527387e4057c0bcd9fb94539a0291f3f4"
+        },
+        "power": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "power",
+          "status": "passed",
+          "reason": "training-block paired-CRPS dispersion requires 153 clusters for a 10% improvement; coverage equivalence requires 223 and 261 remain",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-power-615e3014c243fc1f",
+          "evidence_sha256": "615e3014c243fc1f477d3263ad80bd3f3eb3c24f881462d5efd1a1d317766e0e"
+        },
+        "dimensionality": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "training-only regional detrending and variograms select mandatory 3-D for both statewide and continental station coverage",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-dimensionality-3c491428152b7b3d",
+          "evidence_sha256": "3c491428152b7b3ddaa7e947f09134411e70c033f5da8bdb37faf92fd0ea9cc8"
+        },
+        "solver": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "versioned GravityOperator path frozen for 3-D rectangular-prism volume integration",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-solver-417b6a11ec10df86",
+          "evidence_sha256": "417b6a11ec10df86da6c67f171def0e86c5484854e7fc91331647b00749db893"
+        },
+        "independent_reference": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "gz for a finite rectangular prism with explicit SI-to-mGal conversion matches an independent Geoana implementation; derivative tests passed with protected source hash",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-independent_reference-ae0b0e929c46ce5c",
+          "evidence_sha256": "ae0b0e929c46ce5c48d979ee895d2c3e90068a2091308b52f0d693cd5674f15e"
+        },
+        "resource_budget": {
+          "method": "gravity",
+          "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three representative meshes measured; abort limits frozen at 5.0 s and 67108864 bytes",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-gravity-resource_budget-c2b05265a8e881c6",
+          "evidence_sha256": "c2b05265a8e881c6b5b805fd54535b98482acc745baab3717475d8a1c92c1960"
+        }
+      }
+    },
+    "magnetic": {
+      "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+      "license_evidence": {
+        "passed": true,
+        "statement": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. There is no guarantee concerning the accuracy of the data. Any user who modifies the data is obligated to describe the types of modifications they perform. Data have been checked to ensure their accuracy. If any errors are detected, please notify the originating office. The U.S. Geological Survey strongly recommends that careful attention be paid to the metadata file associated with these data. Acknowledgment of the U.S. Geological Survey would be appreciated in products derived from these data. User specifically agrees not to misrepresent the data, nor to imply that changes made were approved or endorsed by the U.S. Geological Survey. Please refer to http://www.usgs.gov/privacy.html for the USGS disclaimer.",
+        "evidence_path": "magnetic/USGS_MountainPass_airborne_magnetic_2020/Metadata.xml",
+        "evidence_sha256": "b74d526ee062b63230afbb6730867b8b1c9f249b47ac4a6ed6c19039375d9dc3"
+      },
+      "gates": {
+        "license": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. There is no guarantee concerning the accuracy of the data. Any user who modifies the data is obligated to describe the types of modifications they perform. Data have been checked to ensure their accuracy. If any errors are detected, please notify the originating office. The U.S. Geological Survey strongly recommends that careful attention be paid to the metadata file associated with these data. Acknowledgment of the U.S. Geological Survey would be appreciated in products derived from these data. User specifically agrees not to misrepresent the data, nor to imply that changes made were approved or endorsed by the U.S. Geological Survey. Please refer to http://www.usgs.gov/privacy.html for the USGS disclaimer.",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-license-e49e40a079a7381a",
+          "evidence_sha256": "e49e40a079a7381a0791adbcfbee19c6fa439c71c53e0d2ce49790106fef0a5e"
+        },
+        "integrity": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "all selected top-level members match manifest",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-integrity-faf2148475a666e6",
+          "evidence_sha256": "faf2148475a666e61e1c0d72dec34bafa7343f384116cc0443f1346ee8404ae6"
+        },
+        "observation_contract": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "Mountain Pass line/height/IGRF-diurnal contract is paired with a provenance-backed training-only MagIC NRM prior (5905 complete vectors from 21 contributions; magnitude units kept separate); western Arkansas independently confirms line/flight, height, base-station, correction and vector-field channels",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-observation_contract-9477c737f2b2c9c2",
+          "evidence_sha256": "9477c737f2b2c9c216a9db6d3822fd9a63854f1619f9605b472e48fb68f26340"
+        },
+        "clusters": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "clusters",
+          "status": "passed",
+          "reason": "GA training-only provider surveys set a conservative 75-km range; exact coordinate-only representatives retain 218 GA surveys after training separation and pairwise conflicts, and 14 conservative USGS parent releases raise the sealed total to 232 independent clusters versus 223 required",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-clusters-62abf9eed44e32c3",
+          "evidence_sha256": "62abf9eed44e32c3e216edeff85306678d601f30bffafcfbbf5ac90ac333ca48"
+        },
+        "power": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "power",
+          "status": "passed",
+          "reason": "the frozen all-metric requirement is 223 independent test clusters; the exact cross-provider separation supplies 232 (218 GA + 14 USGS), leaving a nine-cluster margin without reading test responses",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-power-1bd973dbd5a62e42",
+          "evidence_sha256": "1bd973dbd5a62e42f6aa4c21c2cbbde98fa9f3c906f9a95fcb22d244a09a373d"
+        },
+        "dimensionality": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "training-only regional detrending, 1.5-km residual range, 124 eligible flight-line spectra, height sensitivity and 5905-vector remanence prior select mandatory 3-D vector magnetization",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-dimensionality-a446aaab7a3f5bf4",
+          "evidence_sha256": "a446aaab7a3f5bf4d121f7bc6f103e346f864654d4f5ff0daf714ed5a05b785e"
+        },
+        "solver": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "versioned MagneticOperator path frozen for 3-D rectangular-prism induced-magnetization integration",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-solver-1a8894c49d0bb3c1",
+          "evidence_sha256": "1a8894c49d0bb3c11aa833356f404b6ababf379e1ab5df025f6fb9c3ca8de082"
+        },
+        "independent_reference": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "TMI projection of an independently magnetized finite rectangular prism matches an independent Geoana implementation; derivative tests passed with protected source hash",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-independent_reference-fd6087febe6842ec",
+          "evidence_sha256": "fd6087febe6842ec25694e67d395c55f0b19b19ca111219129070ae760ede1d8"
+        },
+        "resource_budget": {
+          "method": "magnetic",
+          "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three representative meshes measured; abort limits frozen at 5.0 s and 67108864 bytes",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-magnetic-resource_budget-2681be57cca3c240",
+          "evidence_sha256": "2681be57cca3c24099ca5f4cb3fa1ad5ecfb002f7e891dc905466a46b9bf73f2"
+        }
+      }
+    },
+    "dc": {
+      "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+      "license_evidence": {
+        "passed": true,
+        "statement": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.",
+        "evidence_path": "dc_ip/USGS_LittleColoradoRiver_ERT_2019/Electrical Resistivity Tomography Data along the Little Colorado River near Leupp, AZ 2019.xml",
+        "evidence_sha256": "46013fc69bd08562201b1ff9503c054078ca4dda8732ff20b538af521f9202a6"
+      },
+      "gates": {
+        "license": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations.",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-license-ca713b0742caca11",
+          "evidence_sha256": "ca713b0742caca1148d893850548c0ed557ee1f9108bb3ca7bf105656ee14e8b"
+        },
+        "integrity": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "all selected top-level members match manifest",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-integrity-c5e88fa9fc772921",
+          "evidence_sha256": "c5e88fa9fc772921ba44f43d40f2a27dbdd25df4949e2d73b540ba429fbd6e44"
+        },
+        "observation_contract": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "Po River CC-BY-4.0 streamer data provide 164,724 ABMN apparent-resistivity observations with direct per-observation standard deviation; 29,892 frozen training rows were audited and the remaining test population is sealed after quarantining the one historical eight-station exposure block",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-observation_contract-99d31c72639beaac",
+          "evidence_sha256": "99d31c72639beaacfcb8e3d62c5cab484bf95c5ccf824daf7bab505d9d5f877b"
+        },
+        "clusters": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "clusters",
+          "status": "passed",
+          "reason": "Taiwan ERI public coordinate workbooks provide 251 exact unique profile centres; the frozen Po River 64-m training correlation range leaves 246 response-blind spatial components, exceeding the required 223 while all response payloads remain unopened",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-clusters-c203b542616a6456",
+          "evidence_sha256": "c203b542616a6456a5fedd3e7d863c8a89e5a3ad24ef6e50ecd3764b05c338fb"
+        },
+        "power": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "power",
+          "status": "passed",
+          "reason": "23 frozen Taiwan STG training components provide 26,356 observations; leave-one-component-out paired CRPS gives a conservative 99-cluster requirement, while coverage equivalence dominates at 223 and the sealed test contains exactly 223 correlation-adjusted components",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-power-3e7f3e962c0014f7",
+          "evidence_sha256": "3e7f3e962c0014f75420df1466ae92f5b1c3736c0167c2766660eb050fde46a9"
+        },
+        "dimensionality": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "GPS-only PCA geometry finds MB4 crossline deviation far above electrode spacing; mandatory 3-D nodal finite-volume path selected",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-dimensionality-1a4b3ce8758e0ea6",
+          "evidence_sha256": "1a4b3ce8758e0ea6ebb06a9ef01f756c2bd98f3ed5af274055866e68d2d5474e"
+        },
+        "solver": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "version-frozen 3-D implementation path",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-solver-2143a40ffbb22d80",
+          "evidence_sha256": "2143a40ffbb22d80398c6f7966c0c61ac1f1997a5292a161e8b61864c5e50b08"
+        },
+        "independent_reference": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "analytic homogeneous-halfspace geometric-factor implementation",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-independent_reference-7c81d1ebc56e112d",
+          "evidence_sha256": "7c81d1ebc56e112d9b84d1f566975e055acd27d4d0246910f6c59ff302c72165"
+        },
+        "resource_budget": {
+          "method": "dc",
+          "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three measured scales plus enforced timeout/memory abort limits",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-dc-resource_budget-bbeefab1e44cd6e1",
+          "evidence_sha256": "bbeefab1e44cd6e144225e1947311ec467008d972c5ab053907b457ea290ec44"
+        }
+      }
+    },
+    "tdip": {
+      "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+      "license_evidence": {
+        "passed": true,
+        "statement": "Zenodo access_right=open; license=cc-by-4.0",
+        "evidence_path": "dc_ip/Zenodo_Reykjanes_ERT_IP_monitoring_2025/source_record.zenodo.json",
+        "evidence_sha256": "a318d3d3eca96e276e1855bc78f5a3bc8a6f691275204898527f731005b32f91"
+      },
+      "gates": {
+        "license": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "Zenodo access_right=open; license=cc-by-4.0",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-license-fb3b2d59ce734de7",
+          "evidence_sha256": "fb3b2d59ce734de7c5985bad6535588a5d66e050293303f499e5636ad489cb3f"
+        },
+        "integrity": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "all selected top-level members match manifest",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-integrity-9fba0542051a5647",
+          "evidence_sha256": "9fba0542051a5647318708fef65c8ed5dffb3f2344c2048d9afd18f88c2999da"
+        },
+        "observation_contract": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "ABMN, potential/current, delay, 20 windows/durations and paired N/R error evidence validated on 79 training dates",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-observation_contract-e5eab82edd376e11",
+          "evidence_sha256": "e5eab82edd376e112bd005eaec6fa07fc213f4ca3835f12de60d4711b4598d5d"
+        },
+        "clusters": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "clusters",
+          "status": "passed",
+          "reason": "NTGS CR2016-0418 supplies exactly 223 sealed receiver-centre test clusters selected from 247 centres separated by more than the 250-m training-only correlation range",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-clusters-dd5d06faabaef166",
+          "evidence_sha256": "dd5d06faabaef166213c61fa922b7681ce4a885ecad74193c4a349a52e80f686"
+        },
+        "power": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "power",
+          "status": "passed",
+          "reason": "17 correlation-separated training clusters give a conservative paired-CRPS requirement of 106; the coverage requirement dominates at 223 and exactly 223 sealed test clusters are available",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-power-7d5f4e42da4fe92c",
+          "evidence_sha256": "7d5f4e42da4fe92cec4ae9e1f0b83f9c57913348b996c88b5c34b129e8230c77"
+        },
+        "dimensionality": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "training contract selects repeated 2-D electrode profile; dates and windows are not spatial dimensions or clusters",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-dimensionality-2a18312e427785a2",
+          "evidence_sha256": "2a18312e427785a21c779df6921f82fc29aa7cceb25f2ec45a7ab3adad93cb6d"
+        },
+        "solver": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "versioned TDIPOperator path frozen for 2-D profile represented on a 3-D tensor mesh with scalar isotropic cells",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-solver-741b47fb99b41709",
+          "evidence_sha256": "741b47fb99b4170903e1c5962aa2e06041ab7d7c827665ab9e6af30332f63903"
+        },
+        "independent_reference": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "independent pulse-decay/derivative and three-level discretization tests passed with protected source hash",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-independent_reference-822b8c3fbb3200e0",
+          "evidence_sha256": "822b8c3fbb3200e0fdfb58dc746f63d5de7f709e2069059180888b0f21a3dcc0"
+        },
+        "resource_budget": {
+          "method": "tdip",
+          "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "representative wall/peak-memory measured; abort limits frozen at 5.0 s and 67108864 bytes",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tdip-resource_budget-d2629e43db76ebcc",
+          "evidence_sha256": "d2629e43db76ebccd91747934439a2f7661c272d5ed0ed984496d9052e64dc0c"
+        }
+      }
+    },
+    "sip_fdip": {
+      "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+      "license_evidence": {
+        "passed": true,
+        "statement": "Zenodo access_right=open; license=cc-by-4.0",
+        "evidence_path": "dc_ip/Zenodo_Serpentinite_IP_Revil_2024/source_record.zenodo.json",
+        "evidence_sha256": "85672becce6095a6338208efe442686b522acdba29a5cdabfe03e9a02d2d29cf"
+      },
+      "gates": {
+        "license": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "Zenodo access_right=open; license=cc-by-4.0",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-license-e423eb346f0b70be",
+          "evidence_sha256": "e423eb346f0b70be3ad176b1c35031f3d30d1ee83fede4a5dbe40ad20d7dbcad"
+        },
+        "integrity": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "all selected top-level members match manifest",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-integrity-cc043697077df182",
+          "evidence_sha256": "cc043697077df182f5983851a992d39ea468412eef9e630bdcf1465d34a746bd"
+        },
+        "observation_contract": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "Guidel training-only raw waveforms reconstruct 56 ABMN quadrupoles at 30 frequencies (1,680 complex observations); two recorded cycles provide repeat-based amplitude and phase uncertainty without opening calibration or test responses",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-observation_contract-7446b440ae6d5f19",
+          "evidence_sha256": "7446b440ae6d5f19e9eb6edcc4a5b15004a910b10237e617903bf3f5bf78e305"
+        },
+        "clusters": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "clusters",
+          "status": "blocked",
+          "reason": "Guidel supplies one site/date only; the Serpentinite and newly located Mendeley and Martin 2020 field candidates do not add 223 independently auditable frequency-keyed profiles; Martin 2020 has two colocated profiles and even its non-independent quadrupole-midpoint upper bound is only 196. The 2026 sip-debye-net release adds 26 Canadian Malartic field spectra with complex uncertainties, but no coordinates or ABMN geometry from which independent spatial clusters can be derived. The checksum-verified Zenodo vineyard release adds raw complex responses, ABMN geometry and repeat uncertainties, but its five campaign dates still cover only two independent spatial profiles. The newly audited CC-BY-4.0 streambed release adds 40,800 raw frequency-keyed rows, 320 electrode coordinates and repeat uncertainties across ten profiles, but those profiles belong to only two field sites. The response-blind BC ARIS query adds 103 public IP reports with 104 HEAD-verified digital archive endpoints (45.14 GB), but catalogue metadata does not distinguish TDIP from FDIP/SIP; all 30 frozen training reports have now been classified and none exposes a qualifying multi-frequency complex or phase response. The 73 candidate-test reports therefore remain sealed and contribute zero formal SIP/FDIP clusters",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-clusters-35e3e53bdef03be9",
+          "evidence_sha256": "35e3e53bdef03be9c2814d92e8fde29e6e583de338d1d03361e300f7e1262dee"
+        },
+        "power": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "power",
+          "status": "blocked",
+          "reason": "the observation contract is repaired, but no training-only paired-CRPS effect size and no 223 independent SIP/FDIP test clusters are available",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-power-0639a919cec31d33",
+          "evidence_sha256": "0639a919cec31d3359cf07ae67543e3af357e6a4595073af3de8fb437ca385a4"
+        },
+        "dimensionality": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "two 64-electrode field profiles require lateral 2-D structure; outcome-blind GPS geometry diagnostic completed",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-dimensionality-49c1d1496be4ce5a",
+          "evidence_sha256": "49c1d1496be4ce5a7f2fb2cea9e1998bc0fee5802c1a8d29c845afdc989e4119"
+        },
+        "solver": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "version-frozen 2-D profile implementation path",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-solver-f25299676e695637",
+          "evidence_sha256": "f25299676e695637bcdd33110235a1a6570f3b83396b96540d177ce2f71b972d"
+        },
+        "independent_reference": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "analytic homogeneous-halfspace complex Cole-Cole reference",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-independent_reference-e1d1c7ce8131c17a",
+          "evidence_sha256": "e1d1c7ce8131c17a1989df3683a965af6074485f13f8c5bf3ab163b5c65bbe9d"
+        },
+        "resource_budget": {
+          "method": "sip_fdip",
+          "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three measured scales plus enforced timeout/memory abort limits",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-sip_fdip-resource_budget-a17367b1dd121202",
+          "evidence_sha256": "a17367b1dd12120279ca2e0f60e5b6d38774464fee1d3465a950da7d5dd6f016"
+        }
+      }
+    },
+    "tem": {
+      "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+      "license_evidence": {
+        "passed": true,
+        "statement": "USGS data release 10.5066/P949ZCZ8 is CC0/public domain",
+        "evidence_path": "H:\\GeoDeepBayes1.0.1\\validation\\wp8\\data\\east-river-aem-v1\\raw-manifest.json",
+        "evidence_sha256": "97dbd139ae1428c21382bc834e17fdbfd4fc5adc997974c063c50d9c0def4ded"
+      },
+      "gates": {
+        "license": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "USGS CC0 1.0 / U.S. public domain",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-license-5abe290a70cfa744",
+          "evidence_sha256": "5abe290a70cfa74433d43f97529fa4089b5d5844b858495661bf1aa72053d77b"
+        },
+        "integrity": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "10 local SHA-256 members verified (75168482 bytes)",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-integrity-70b88531ccc6d0c9",
+          "evidence_sha256": "70b88531ccc6d0c928cc867c4c8d8575b113e5c511c5055d010d81ffd466c94b"
+        },
+        "observation_contract": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "VTEM ET full-waveform source/receiver geometry, current waveform, 52 gates, Z response and per-observation DATASTD verified",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-observation_contract-1c2eafa1e895c624",
+          "evidence_sha256": "1c2eafa1e895c62462dcbe44ce8ae26676470fd1045fd68741610d7f1eff77ec"
+        },
+        "clusters": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "clusters",
+          "status": "passed",
+          "reason": "training-only land/towed TEM freezes a 325-m range; the response-blind Lower Delaware FloaTEM archive has 30,669 unique positions, 465 strictly separated positions, and a frozen 321-position sealed test partition",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-clusters-d60dc89fd8f9ecee",
+          "evidence_sha256": "d60dc89fd8f9ecee540f3c1bd346b1bbfc957e01d69312e1b80fd2465de0d055"
+        },
+        "power": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "power",
+          "status": "passed",
+          "reason": "130 training-only buffered paired-CRPS clusters give a one-sided conservative requirement of 321 clusters at the 10% target; exactly 321 sealed Lower Delaware test clusters are frozen with zero sealed response reads",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-power-eeb129cb1f55014e",
+          "evidence_sha256": "eeb129cb1f55014e5415d543c5f653e691c0016f1fb28667cabb292c7bd0d706"
+        },
+        "dimensionality": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "fixed early/mid/late training variograms reject independent 1-D sounding eligibility; mandatory 3-D path selected",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-dimensionality-7b4c4a62e1cf33b3",
+          "evidence_sha256": "7b4c4a62e1cf33b31d8d2f2595deeb9d4b289e8a82bbc840503b55e0d10999b6"
+        },
+        "solver": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "version-frozen layered 1-D TEM path; valid only if field diagnostic selects 1-D",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-solver-06b3c67c9dd24f12",
+          "evidence_sha256": "06b3c67c9dd24f12395b2f88bc2d964a54f95db5fc80d9179018b285ae57821d"
+        },
+        "independent_reference": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "independent Key 81/2009 versus Key 201/2012 digital-filter discretizations",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-independent_reference-229542a75da6323e",
+          "evidence_sha256": "229542a75da6323e7154f1b855c3379e09b73e3a8e85a12cc3ec0f3084bd35fd"
+        },
+        "resource_budget": {
+          "method": "tem",
+          "dataset_slug": "USGS_UpperEastRiver_VTEM_ET_2017",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three time-channel scales plus enforced timeout/memory abort limits",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-tem-resource_budget-beefb234325da8a4",
+          "evidence_sha256": "beefb234325da8a4ac9c3a982e28470a5962e91c2d47974e913c0798153225df"
+        }
+      }
+    },
+    "mt_amt": {
+      "dataset_slug": "EarthScope_USArray_TA_EMTF",
+      "license_evidence": {
+        "passed": true,
+        "statement": "1104 official members declare Unrestricted Release with citation and acknowledgement",
+        "evidence_path": "H:\\GeoDeepBayes1.0.1\\validation\\wp8\\data\\usarray-ta-emtf-v1\\raw-manifest.json",
+        "evidence_sha256": "84278b3a0218dd5c6a1c11201e32a465a1f4be8981ae3bc55faf2b85cb8bf736"
+      },
+      "gates": {
+        "license": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "USArray TA Unrestricted Release, citation and acknowledgement required",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-license-2fdd29f91d1c471f",
+          "evidence_sha256": "2fdd29f91d1c471f77c12386127b9400e2d436db46ec6c07fb3de666126eb820"
+        },
+        "integrity": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "1104 local SHA-256 members and Merkle root verified (13744189 bytes)",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-integrity-c6ba4d902df58c0f",
+          "evidence_sha256": "c6ba4d902df58c0f9a15fced24d902a8ca0b5dc3b4ea05bec6706b70eea5a27a"
+        },
+        "observation_contract": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "official EMTF XML preserves complex Z plus residual/inverse-signal covariance; joint real/imag covariance verified on 10,820 training periods",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-observation_contract-2c814e91b7c83f7d",
+          "evidence_sha256": "2c814e91b7c83f7dd3c96e30cc95ecd5a74d9ad344ec0ce1c324bab6a1bb81c6"
+        },
+        "clusters": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "clusters",
+          "status": "passed",
+          "reason": "geographic train/buffer/calibration/test split frozen before EDI access",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-clusters-f1e04c2b4901fd29",
+          "evidence_sha256": "f1e04c2b4901fd290822495bff584dde16248cc500bfc91c4e6e9150a98d3e52"
+        },
+        "power": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "power",
+          "status": "passed",
+          "reason": "sealed geographic test contains 429 independent stations, exceeding coverage requirement 223",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-power-b4c4c8263bc768e9",
+          "evidence_sha256": "b4c4c8263bc768e98d620df40298f839bf8ccd9ec71458cf5a5d311e7fe00988"
+        },
+        "dimensionality": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "training-only diagnostics select mandatory 3-D path (336/361 stations classified 3-D)",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-dimensionality-160c990bef6ae2c6",
+          "evidence_sha256": "160c990bef6ae2c68eb6f4b047cb70c441285facd91ce7fbc0b8ee72dc3bce2a"
+        },
+        "solver": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "version-frozen MT3DOperator primary-secondary 3-D path verified",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-solver-2d1852f457e5e9a3",
+          "evidence_sha256": "2d1852f457e5e9a3df7c8f372534de6f8a2272e79827659a2f14aced9d6229b0"
+        },
+        "independent_reference": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "analytic homogeneous-halfspace impedance and zero-tipper reference",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-independent_reference-f45285da270d6d14",
+          "evidence_sha256": "f45285da270d6d140f6728ab742a70a8e3a538063c63baa115822e86960e76d5"
+        },
+        "resource_budget": {
+          "method": "mt_amt",
+          "dataset_slug": "EarthScope_USArray_TA_EMTF",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three measured scales include 336 stations with frozen timeout/memory abort limits; WP8-0 path evidence only",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-mt_amt-resource_budget-4a779c22ec0f697f",
+          "evidence_sha256": "4a779c22ec0f697fade9781cdfcaa7e08208622674bb45512c82272dd57aa3ce"
+        }
+      }
+    },
+    "csamt": {
+      "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+      "license_evidence": {
+        "passed": true,
+        "statement": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. Users are advised to read the data set's metadata thoroughly to understand appropriate use and data limitations.",
+        "evidence_path": "csamt/USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019/Grand Canyon West and Plain Tank Flat CSAMT metadata.xml",
+        "evidence_sha256": "345e2d25817a36b525f8981526fd9be831bcc0cd0c563ce85cbce49722b32da9"
+      },
+      "gates": {
+        "license": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "FGDC access_constraints=None. Please see 'Distribution Info' for details.; use_constraints=None. Users are advised to read the data set's metadata thoroughly to understand appropriate use and data limitations.",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-license-7f73ff68ac263b4f",
+          "evidence_sha256": "7f73ff68ac263b4fb68d18496706fae2c454f4b46dab1bc94d7bde7d41ab289c"
+        },
+        "integrity": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "all selected top-level members match manifest",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-integrity-c667f5ed2cc8de6e",
+          "evidence_sha256": "c667f5ed2cc8de6ee7392b085e3e228f8d95feaa028ec15270271724e9bc47ae"
+        },
+        "observation_contract": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "observation_contract",
+          "status": "passed",
+          "reason": "The outcome-blind USGS Big Chino replacement supplies 17 frequencies from 0.125 to 8192 Hz, measured transmitter current, repeated Ex/Hy observations, receiver coordinates/dipoles and SCS2D apparent-resistivity/phase error floors. Training-only MTM headers provide a 1,000-m finite bipole centre and azimuth for every training line, so exact endpoints are deterministically derived. Frequency and complex amplitude/phase fully specify the frequency-domain source; sampled time-domain waveform values are not required by the canonical CSAMT contract. Mount St. Helens adds 13 EDI files with rho/phase error arrays but its inductive source is only approximately 250 m west and lacks exact coordinates, orientation, moment/current and waveform. Wuxi adds 64 frozen training CMD files with 1,723 frequency blocks, 13,784 channel rows carrying percent-error fields, 3.5 A current, 25-m receiver dipoles, 7-km source-receiver distance and a 1,550-m transmitter dipole; its exact transmitter endpoints and complete waveform remain absent. Angularli line 9100E adds a public 1,770-m finite bipole with exact derivable endpoints, 24 Ex/Hy receiver centres, 21 frequencies, current and percent-error fields; sampled transmitter waveform values remain absent. The pyCSAMT release adds one 47-station field profile but no transmitter endpoints or sampled waveform; Pilgrim Hot Springs adds raw Stratagem components and receiver electrode geometry, but likewise lacks transmitter endpoints and a sampled waveform. NTGS CR2010-0883 adds five raw CSAMT lines; geometry-only MDE parsing yields unique derivable transmitter endpoints for four lines, but Trinity L35 has conflicting source metadata and no line publishes sampled waveform values. NTGS CR2013-0857 adds a larger anonymous raw package with 205 soundings on 13 lines, exact source center, orientation and 1,995-m length, Ex/Hy components, and frequency-dependent field-current sheets; it still lacks sampled waveform values and an explicit reusable data licence. The restored USGS Red Knoll parent ZIP adds 141 station coordinates and 18,072 raw Ex/Hy component rows on two lines at 1-8,192 Hz, but it also lacks exact transmitter endpoints and sampled waveform values and is permanently training-only. USGS San Antonio adds 29 coordinate-known sites with 1,682 impedance-frequency rows, full complex tensors, cross-powers and raw receiver time series; however natural and controlled sources are mixed and the transmitter geometry, current, sampled waveform, per-site source provenance and direct uncertainty remain unpublished. The 2019 Linxi full-waveform recorder experiment demonstrates continuous GPS-stamped transmitter-current sampling across 41 CSAMT frequencies, 2-30 A and a 1.3-km source dipole, but its raw transmitter and receiver files are explicitly request-only and endpoint coordinates are unpublished. Nine newly frozen geodata.cn active-source catalogue records add useful public design documents, but every response entity is group-7 offline application-only and none publicly supplies a sampled transmitter waveform",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-observation_contract-b494105f7a214bf2",
+          "evidence_sha256": "b494105f7a214bf2ff5f677b47501c632af7db806c09014f4e205868cc454cc7"
+        },
+        "clusters": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "clusters",
+          "status": "blocked",
+          "reason": "The Big Chino split was frozen before raw response download: six whole training lines and fifteen sealed test lines. A deterministic 200-m station packing retained 257 receiver points, but did not estimate response correlation and cannot override whole-line archive packaging; the conservative sealed inference-unit upper bound is therefore 15 lines, below 223. Mount St. Helens contributes only 12 controlled-source stations (plus one natural-source station), Wuxi adds only two sealed whole test lines, and Angularli adds one 24-centre line. pyCSAMT contributes one 47-station profile and Pilgrim Hot Springs only 20 named locations. CR2010-0883 adds 111 published soundings on five lines, still independently below the frozen threshold and not a source-complete population. CR2013-0857 adds 205 soundings on 13 tightly spaced lines, but even its unadjusted sounding upper bound is below 223 and its line-level upper bound is 13. The restored Red Knoll package adds only two opened training profiles and therefore no sealed independent test cluster. San Antonio adds only 29 opened training sites and no sealed source-complete population; the Linxi waveform experiment uses only 15 receivers and is request-only. Laizhou and Caosiyao demonstration documents each imply a nominal 300 stations from 15 km/50 m, but both native entities are offline application-only; overlap, coordinates and spatial independence cannot be audited anonymously. No the Big Chino replacement is the eligible source-complete population and its sealed responses remain unopened",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-clusters-6e935a0b3477937c",
+          "evidence_sha256": "6e935a0b3477937c3675e88843c04eef6d2785a8b0f4fb1117f92d86c85f2f0b"
+        },
+        "power": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "power",
+          "status": "blocked",
+          "reason": "Big Chino has only six authorized training lines, no frozen pair of information-matched inference methods and no paired out-of-sample predictions or CRPS scores; stable paired dispersion and formal effect power are therefore not computable",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-power-7ad3efd5a909a739",
+          "evidence_sha256": "7ad3efd5a909a7390dddab3d26a74031e80d998cb30fc87e116120d2df5d4845"
+        },
+        "dimensionality": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "dimensionality",
+          "status": "passed",
+          "reason": "official station-only audit spans three sites and multiple line-azimuth families; 3-D finite-source physics selected",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-dimensionality-68ddaa1d5c8ab686",
+          "evidence_sha256": "68ddaa1d5c8ab6863db6b66aa6fe38f92e9fcf3d29c1c5d88ecc488558cbb8b6"
+        },
+        "solver": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "version-frozen 3-D finite-line Maxwell path",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-solver-dd9dd3aaf3721934",
+          "evidence_sha256": "dd9dd3aaf3721934f179ea097020e601d1e1462f46b142cda642dcc35ec35c83"
+        },
+        "independent_reference": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "Geoana whole-space electric-dipole reference plus explicit source-zone contract",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-independent_reference-53ef2634fd97cd33",
+          "evidence_sha256": "53ef2634fd97cd33e6c291aafc735ba64716d0848a74fbcdc4f2c6c4c5d39384"
+        },
+        "resource_budget": {
+          "method": "csamt",
+          "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three measured meshes plus enforced timeout/memory abort limits",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-csamt-resource_budget-265d021a718887a4",
+          "evidence_sha256": "265d021a718887a4ada7ffb62f28f85f8bce148ced0c2901d82aa649f4813708"
+        }
+      }
+    },
+    "wfem": {
+      "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+      "license_evidence": {
+        "passed": true,
+        "statement": "Zenodo access_right=open; license=cc-by-4.0",
+        "evidence_path": "wfem/Zenodo_BaotuSpring_WFEM_2025/source_record.zenodo.json",
+        "evidence_sha256": "d4260e9c27859e8ccfafe108cab51133bd7c0993093f2e9a1ea42e4e62b61592"
+      },
+      "gates": {
+        "license": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "license",
+          "status": "passed",
+          "reason": "Zenodo access_right=open; license=cc-by-4.0",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-license-f3a17ffbcc0a0ec9",
+          "evidence_sha256": "f3a17ffbcc0a0ec91eaec1aa64867171c68fba1faf6b801ff2d56eed4fb4dc60"
+        },
+        "integrity": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "integrity",
+          "status": "passed",
+          "reason": "all selected top-level members match manifest",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-integrity-156555188275119e",
+          "evidence_sha256": "156555188275119efc2fa747fd9d76abba9542b697c0e1330e76899d465ad6c5"
+        },
+        "observation_contract": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "observation_contract",
+          "status": "blocked",
+          "reason": "Ten frozen Baotu Spring training lines provide 44,074 apparent-resistivity rows at 42 frequencies (2-3072 Hz), but expose only Station/Fre/Rho_mn. Receiver coordinates, source geometry/current, phase, field component, geometric-factor definition and direct per-observation error remain absent. Sichuan metadata declares Station/Freq/I/Emag/Error/Rho plus survey coordinates, but its native payload is not anonymously downloadable",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-observation_contract-c5ca3f05f669ae71",
+          "evidence_sha256": "c5ca3f05f669ae71d0382962dccf1f7863e4896d9b314817dc5ef883757199dc"
+        },
+        "clusters": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "clusters",
+          "status": "blocked",
+          "reason": "The outcome-blind Baotu whole-line split leaves only 14 sealed test lines; the 304-station Wucaiwan design remains request-only, so no downloadable population reaches 223 independent clusters",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-clusters-089c701cc12dad0f",
+          "evidence_sha256": "089c701cc12dad0f85752342fbd71ad9af7c835e00ad33a6b137cfcbaeb7eead"
+        },
+        "power": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "power",
+          "status": "blocked",
+          "reason": "Baotu lacks a usable uncertainty and spatial-correlation contract; no training-only paired-CRPS effect size exists at sufficient independent cluster count",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-power-916d7c7bb492c177",
+          "evidence_sha256": "916d7c7bb492c177d08e9baf48b6d5a172c383bd608271750493ed3a30cbd7ca"
+        },
+        "dimensionality": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "dimensionality",
+          "status": "blocked",
+          "reason": "Baotu line files contain no receiver coordinates or source geometry, so the preregistered near/transition/far-zone and 3-D dimensionality diagnostic cannot be executed",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": false
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-dimensionality-cb34a1bb74b1fdca",
+          "evidence_sha256": "cb34a1bb74b1fdca830fc5af1a4fd4e463bc745afbfcb0171be3bd3e3ff91674"
+        },
+        "solver": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "solver",
+          "status": "passed",
+          "reason": "version-frozen 3-D finite-line Maxwell path",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-solver-5a67308955027f8f",
+          "evidence_sha256": "5a67308955027f8f661aef3230685dd14f7bb1aae75cc9e2e07aae6af516c155"
+        },
+        "independent_reference": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "independent_reference",
+          "status": "passed",
+          "reason": "Geoana whole-space electric-dipole reference, explicit geometric-factor identity, and three-level discretization convergence",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-independent_reference-8e2c747328e86ba0",
+          "evidence_sha256": "8e2c747328e86ba0aff234720991c5fd91aec1f0aea9d8c9e7db53cb86816f2f"
+        },
+        "resource_budget": {
+          "method": "wfem",
+          "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+          "gate_name": "resource_budget",
+          "status": "passed",
+          "reason": "three measured meshes plus enforced timeout/memory abort limits",
+          "producer": "src/geodeepbayes/validation/feasibility.py",
+          "producer_sha256": "487bc66a28b565f5579e85fffaf0a219e369335adbd5b0a2bd946112ae1f7a86",
+          "measurements": {
+            "affirmative_gate": true
+          },
+          "thresholds": {
+            "required_status": "passed"
+          },
+          "evidence_id": "wp8-wfem-resource_budget-acc097aabb7f6ecb",
+          "evidence_sha256": "acc097aabb7f6ecb151a3921c07be56a58476ced9b9050ea5bb15ead9b6c3770"
+        }
+      }
+    }
+  }
+}

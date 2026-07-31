@@ -1,0 +1,17 @@
+{
+  "schema_version": "wp8-preregistration-v1",
+  "version": "wp8-0-v1",
+  "frozen": true,
+  "test_endpoints_viewed": false,
+  "selection_policy": "license_integrity_design_only",
+  "alpha_one_sided": 0.05,
+  "minimum_power": 0.8,
+  "minimum_relative_crps_improvement": 0.1,
+  "coverage_equivalence_margin_percentage_points": 5,
+  "cluster_is_inference_unit": true,
+  "small_cluster_test": "exact_paired_randomization",
+  "bootstrap_requires_stability_check": true,
+  "dimensionality_upgrade_required_when_indicated": true,
+  "field_test_unseal_limit": 1,
+  "intent_to_analyze_all_preregistered_clusters": true
+}

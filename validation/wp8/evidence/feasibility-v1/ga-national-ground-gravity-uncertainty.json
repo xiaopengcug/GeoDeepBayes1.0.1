@@ -1,0 +1,4252 @@
+{
+  "schema_version": "wp8-ga-national-ground-gravity-uncertainty-v1",
+  "pool_manifest_sha256": "2a9d008de8089c0df59ee7dd315f89794ad36c046b0940edca0ee61cad5683c9",
+  "geometry_sha256": "362e131364daf407796fa7c5fa0a517da21c5b0741bbf144d3c98e296937b5f6",
+  "selection_policy_frozen_before_quality_values": "Retain rows with finite coordinates; finite nonnegative gravacc, gndelevacc and tcerr; and strictly positive propagated sigma.",
+  "propagation": {
+    "formula": "sigma_cba_mgal = sqrt(gravacc^2 + (1.967*gndelevacc)^2 + tcerr^2) / 10",
+    "input_units": {
+      "gravacc": "um/s^2",
+      "gndelevacc": "m",
+      "tcerr": "um/s^2"
+    },
+    "elevation_coefficient_um_s2_per_m": 1.967
+  },
+  "fields_read": [
+    "latitude",
+    "longitude",
+    "gravacc",
+    "gndelevacc",
+    "tcerr"
+  ],
+  "response_fields_read": [],
+  "role_row_counts": {
+    "train": 53066,
+    "test": 159555,
+    "calibration": 14862,
+    "buffer": 13314
+  },
+  "role_eligible_row_counts": {
+    "train": 53066,
+    "test": 159554,
+    "calibration": 14862,
+    "buffer": 13314
+  },
+  "eligible_unique_block_counts": {
+    "train": 48,
+    "buffer": 27,
+    "calibration": 29,
+    "test": 301
+  },
+  "survey_status_counts": {
+    "eligible_rows_present": 524,
+    "no_eligible_rows": 1
+  },
+  "uncertainty_qualified_test_cluster_upper_bound": 301,
+  "uncertainty_power_gate_possible": true,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "surveys": [
+    {
+      "survey_id": "P194901",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 84,
+      "eligible_rows": 84,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P194905",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195005",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195050",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 76,
+      "eligible_rows": 76,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195051",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 45,
+      "eligible_rows": 45,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195105",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195108",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 94,
+      "eligible_rows": 94,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195207",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 197,
+      "eligible_rows": 197,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195208",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 44,
+      "eligible_rows": 44,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195209",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 224,
+      "eligible_rows": 224,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195256",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 293,
+      "eligible_rows": 293,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195303",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 54,
+      "eligible_rows": 54,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195307",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195453",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 89,
+      "eligible_rows": 89,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195491",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195508",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 420,
+      "eligible_rows": 420,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195547",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 98,
+      "eligible_rows": 98,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195555",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 13,
+      "eligible_rows": 13,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195571",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 19,
+      "eligible_rows": 19,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195605",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195611",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 131,
+      "eligible_rows": 131,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195612",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 221,
+      "eligible_rows": 221,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195651",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 75,
+      "eligible_rows": 75,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195809",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 102,
+      "eligible_rows": 102,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195810",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195911",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 47,
+      "eligible_rows": 47,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195917",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 95,
+      "eligible_rows": 95,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195944",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 160,
+      "eligible_rows": 160,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195951",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 54,
+      "eligible_rows": 54,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P195998",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 325,
+      "eligible_rows": 325,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196050",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 16,
+      "eligible_rows": 16,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196106",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196150",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196161",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 149,
+      "eligible_rows": 149,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196164",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 140,
+      "eligible_rows": 140,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196166",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 338,
+      "eligible_rows": 338,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196210",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196212",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 210,
+      "eligible_rows": 210,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196213",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 127,
+      "eligible_rows": 127,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196215",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 914,
+      "eligible_rows": 914,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196243",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 477,
+      "eligible_rows": 477,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196261",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 166,
+      "eligible_rows": 166,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196312",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 114,
+      "eligible_rows": 114,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196314",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 21,
+      "eligible_rows": 21,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196315",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 60,
+      "eligible_rows": 60,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196367",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 625,
+      "eligible_rows": 625,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196369",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 794,
+      "eligible_rows": 794,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196370",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 281,
+      "eligible_rows": 281,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196375",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 232,
+      "eligible_rows": 232,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196384",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 116,
+      "eligible_rows": 116,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196447",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 531,
+      "eligible_rows": 531,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196459",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 25,
+      "eligible_rows": 25,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196464",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 36,
+      "eligible_rows": 36,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196480",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 352,
+      "eligible_rows": 352,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196499",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 3,
+      "eligible_rows": 3,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196505",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196537",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 355,
+      "eligible_rows": 355,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196548",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 827,
+      "eligible_rows": 827,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196554",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 21,
+      "eligible_rows": 21,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196592",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196635",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 180,
+      "eligible_rows": 180,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196642",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 378,
+      "eligible_rows": 378,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196647",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 142,
+      "eligible_rows": 142,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196661",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 955,
+      "eligible_rows": 955,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196677",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 322,
+      "eligible_rows": 322,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196691",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 3,
+      "eligible_rows": 3,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196692",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196716",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 716,
+      "eligible_rows": 716,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196718",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1030,
+      "eligible_rows": 1030,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196732",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 545,
+      "eligible_rows": 545,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196758",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 438,
+      "eligible_rows": 438,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196767",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 10,
+      "eligible_rows": 10,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196768",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 41,
+      "eligible_rows": 41,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196769",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 322,
+      "eligible_rows": 322,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196815",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1481,
+      "eligible_rows": 1481,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196832",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 370,
+      "eligible_rows": 370,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196891",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 3,
+      "eligible_rows": 3,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196892",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196893",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 3,
+      "eligible_rows": 3,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196906",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 112,
+      "eligible_rows": 112,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196918",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 4,
+      "eligible_rows": 4,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196919",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 138,
+      "eligible_rows": 138,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196937",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 150,
+      "eligible_rows": 150,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196947",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 70,
+      "eligible_rows": 70,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196948",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 410,
+      "eligible_rows": 410,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196950",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 257,
+      "eligible_rows": 257,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196956",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 60,
+      "eligible_rows": 60,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196959",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 443,
+      "eligible_rows": 443,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P196982",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 107,
+      "eligible_rows": 107,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197024",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 988,
+      "eligible_rows": 988,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197033",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1435,
+      "eligible_rows": 1435,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197035",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1138,
+      "eligible_rows": 1138,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197089",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 161,
+      "eligible_rows": 161,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197111",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 318,
+      "eligible_rows": 318,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197134",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 11,
+      "eligible_rows": 11,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197147",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 457,
+      "eligible_rows": 457,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197199",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197212",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197213",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197306",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 685,
+      "eligible_rows": 685,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197331",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 769,
+      "eligible_rows": 769,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197352",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 321,
+      "eligible_rows": 321,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197392",
+      "role": "test",
+      "status": "no_eligible_rows",
+      "rows": 1,
+      "eligible_rows": 0,
+      "eligible_fraction": 0.0
+    },
+    {
+      "survey_id": "P197451",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 473,
+      "eligible_rows": 473,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197462",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 214,
+      "eligible_rows": 214,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197490",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197499",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197530",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197563",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 123,
+      "eligible_rows": 123,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197568",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 47,
+      "eligible_rows": 47,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197569",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1565,
+      "eligible_rows": 1565,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197591",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197608",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 90,
+      "eligible_rows": 90,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197609",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 21,
+      "eligible_rows": 21,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197613",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 140,
+      "eligible_rows": 140,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197614",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 110,
+      "eligible_rows": 110,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197691",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197721",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1362,
+      "eligible_rows": 1362,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197722",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 800,
+      "eligible_rows": 800,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197731",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1763,
+      "eligible_rows": 1763,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197745",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 239,
+      "eligible_rows": 239,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197746",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 84,
+      "eligible_rows": 84,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197749",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 827,
+      "eligible_rows": 827,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197752",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 911,
+      "eligible_rows": 911,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197781",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 353,
+      "eligible_rows": 353,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197785",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 63,
+      "eligible_rows": 63,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197786",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 302,
+      "eligible_rows": 302,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197787",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 151,
+      "eligible_rows": 151,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197791",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197811",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 382,
+      "eligible_rows": 382,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197812",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 116,
+      "eligible_rows": 116,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197849",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 152,
+      "eligible_rows": 152,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197850",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 216,
+      "eligible_rows": 216,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197852",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 36,
+      "eligible_rows": 36,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197857",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 528,
+      "eligible_rows": 528,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197858",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 135,
+      "eligible_rows": 135,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197859",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 480,
+      "eligible_rows": 480,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197864",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 301,
+      "eligible_rows": 301,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197868",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2003,
+      "eligible_rows": 2003,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197876",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 623,
+      "eligible_rows": 623,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197921",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 479,
+      "eligible_rows": 479,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197922",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1060,
+      "eligible_rows": 1060,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197923",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1939,
+      "eligible_rows": 1939,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197924",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1047,
+      "eligible_rows": 1047,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197925",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 615,
+      "eligible_rows": 615,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197926",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1063,
+      "eligible_rows": 1063,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197951",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 377,
+      "eligible_rows": 377,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197957",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 690,
+      "eligible_rows": 690,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197964",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 69,
+      "eligible_rows": 69,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197978",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 789,
+      "eligible_rows": 789,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197979",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 3628,
+      "eligible_rows": 3628,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197980",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1007,
+      "eligible_rows": 1007,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P197999",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198002",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 284,
+      "eligible_rows": 284,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198020",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 436,
+      "eligible_rows": 436,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198022",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 460,
+      "eligible_rows": 460,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198024",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 928,
+      "eligible_rows": 928,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198025",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 178,
+      "eligible_rows": 178,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198028",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1569,
+      "eligible_rows": 1569,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198029",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 623,
+      "eligible_rows": 623,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198037",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 619,
+      "eligible_rows": 619,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198039",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 356,
+      "eligible_rows": 356,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198049",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 207,
+      "eligible_rows": 207,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198054",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 515,
+      "eligible_rows": 515,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198057",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 905,
+      "eligible_rows": 905,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198064",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1154,
+      "eligible_rows": 1154,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198065",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1008,
+      "eligible_rows": 1008,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198066",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 434,
+      "eligible_rows": 434,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198075",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 472,
+      "eligible_rows": 472,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198076",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 664,
+      "eligible_rows": 664,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198077",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 200,
+      "eligible_rows": 200,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198078",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1068,
+      "eligible_rows": 1068,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198079",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 743,
+      "eligible_rows": 743,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198082",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 51,
+      "eligible_rows": 51,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198101",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 10,
+      "eligible_rows": 10,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198113",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 69,
+      "eligible_rows": 69,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198120",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1507,
+      "eligible_rows": 1507,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198121",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 405,
+      "eligible_rows": 405,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198122",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1255,
+      "eligible_rows": 1255,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198124",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 239,
+      "eligible_rows": 239,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198125",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 560,
+      "eligible_rows": 560,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198126",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 680,
+      "eligible_rows": 680,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198141",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 374,
+      "eligible_rows": 374,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198143",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 411,
+      "eligible_rows": 411,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198152",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 292,
+      "eligible_rows": 292,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198153",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 586,
+      "eligible_rows": 586,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198155",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 305,
+      "eligible_rows": 305,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198170",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 180,
+      "eligible_rows": 180,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198180",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 406,
+      "eligible_rows": 406,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198185",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 200,
+      "eligible_rows": 200,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198222",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 215,
+      "eligible_rows": 215,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198223",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 574,
+      "eligible_rows": 574,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198224",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1003,
+      "eligible_rows": 1003,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198225",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 727,
+      "eligible_rows": 727,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198250",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1199,
+      "eligible_rows": 1199,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198256",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 471,
+      "eligible_rows": 471,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198259",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 198,
+      "eligible_rows": 198,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198284",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1231,
+      "eligible_rows": 1231,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198286",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 412,
+      "eligible_rows": 412,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198290",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198291",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198342",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 406,
+      "eligible_rows": 406,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198350",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 216,
+      "eligible_rows": 216,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198351",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 312,
+      "eligible_rows": 312,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198362",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 73,
+      "eligible_rows": 73,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198364",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 363,
+      "eligible_rows": 363,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198376",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 330,
+      "eligible_rows": 330,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198377",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 219,
+      "eligible_rows": 219,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198381",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 525,
+      "eligible_rows": 525,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198383",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 743,
+      "eligible_rows": 743,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198391",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198416",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 270,
+      "eligible_rows": 270,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198438",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 117,
+      "eligible_rows": 117,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198441",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 202,
+      "eligible_rows": 202,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198453",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 115,
+      "eligible_rows": 115,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198456",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 336,
+      "eligible_rows": 336,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198461",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 125,
+      "eligible_rows": 125,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198462",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 221,
+      "eligible_rows": 221,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198470",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 148,
+      "eligible_rows": 148,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198481",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1086,
+      "eligible_rows": 1086,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198482",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1087,
+      "eligible_rows": 1087,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198499",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 45,
+      "eligible_rows": 45,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198534",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 194,
+      "eligible_rows": 194,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198542",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 334,
+      "eligible_rows": 334,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198552",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 39,
+      "eligible_rows": 39,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198553",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 197,
+      "eligible_rows": 197,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198554",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 55,
+      "eligible_rows": 55,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198561",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 41,
+      "eligible_rows": 41,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198572",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 143,
+      "eligible_rows": 143,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198591",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198603",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 5100,
+      "eligible_rows": 5100,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198604",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 51,
+      "eligible_rows": 51,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198633",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 284,
+      "eligible_rows": 284,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198641",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 175,
+      "eligible_rows": 175,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198643",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 86,
+      "eligible_rows": 86,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198646",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 60,
+      "eligible_rows": 60,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198650",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 103,
+      "eligible_rows": 103,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198670",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 211,
+      "eligible_rows": 211,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198673",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 38,
+      "eligible_rows": 38,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198705",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 135,
+      "eligible_rows": 135,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198730",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 117,
+      "eligible_rows": 117,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198741",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 558,
+      "eligible_rows": 558,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198749",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 317,
+      "eligible_rows": 317,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198752",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 357,
+      "eligible_rows": 357,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198755",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 371,
+      "eligible_rows": 371,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198782",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 600,
+      "eligible_rows": 600,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198843",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 138,
+      "eligible_rows": 138,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198844",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 69,
+      "eligible_rows": 69,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198849",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 92,
+      "eligible_rows": 92,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198850",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 891,
+      "eligible_rows": 891,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198854",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 417,
+      "eligible_rows": 417,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198855",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 65,
+      "eligible_rows": 65,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198863",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 333,
+      "eligible_rows": 333,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198901",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 357,
+      "eligible_rows": 357,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198902",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 126,
+      "eligible_rows": 126,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198903",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 90,
+      "eligible_rows": 90,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198906",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 181,
+      "eligible_rows": 181,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198907",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 248,
+      "eligible_rows": 248,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198908",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 438,
+      "eligible_rows": 438,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198941",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 136,
+      "eligible_rows": 136,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198942",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 925,
+      "eligible_rows": 925,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198943",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 193,
+      "eligible_rows": 193,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198949",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 312,
+      "eligible_rows": 312,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198950",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 182,
+      "eligible_rows": 182,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198952",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 61,
+      "eligible_rows": 61,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198953",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 64,
+      "eligible_rows": 64,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P198972",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 3145,
+      "eligible_rows": 3145,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199005",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 10,
+      "eligible_rows": 10,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199011",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 806,
+      "eligible_rows": 806,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199012",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 699,
+      "eligible_rows": 699,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199043",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 119,
+      "eligible_rows": 119,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199052",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1188,
+      "eligible_rows": 1188,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199053",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 197,
+      "eligible_rows": 197,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199054",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 187,
+      "eligible_rows": 187,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199055",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 47,
+      "eligible_rows": 47,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199070",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 131,
+      "eligible_rows": 131,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199071",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 69,
+      "eligible_rows": 69,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199073",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 55,
+      "eligible_rows": 55,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199103",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 166,
+      "eligible_rows": 166,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199107",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 133,
+      "eligible_rows": 133,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199110",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 189,
+      "eligible_rows": 189,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199112",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 33,
+      "eligible_rows": 33,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199113",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 928,
+      "eligible_rows": 928,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199114",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 344,
+      "eligible_rows": 344,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199115",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1628,
+      "eligible_rows": 1628,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199116",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 69,
+      "eligible_rows": 69,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199119",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 164,
+      "eligible_rows": 164,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199120",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 53,
+      "eligible_rows": 53,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199121",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 722,
+      "eligible_rows": 722,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199140",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 259,
+      "eligible_rows": 259,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199141",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 433,
+      "eligible_rows": 433,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199150",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1646,
+      "eligible_rows": 1646,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199152",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 308,
+      "eligible_rows": 308,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199153",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 152,
+      "eligible_rows": 152,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199154",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1335,
+      "eligible_rows": 1335,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199161",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1389,
+      "eligible_rows": 1389,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199162",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1196,
+      "eligible_rows": 1196,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199163",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1355,
+      "eligible_rows": 1355,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199170",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 103,
+      "eligible_rows": 103,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199174",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 133,
+      "eligible_rows": 133,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199175",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 121,
+      "eligible_rows": 121,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199176",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 36,
+      "eligible_rows": 36,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199178",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 36,
+      "eligible_rows": 36,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199179",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 32,
+      "eligible_rows": 32,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199191",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 7,
+      "eligible_rows": 7,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199198",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199211",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1565,
+      "eligible_rows": 1565,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199212",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 262,
+      "eligible_rows": 262,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199215",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 196,
+      "eligible_rows": 196,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199216",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 332,
+      "eligible_rows": 332,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199217",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1255,
+      "eligible_rows": 1255,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199218",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 408,
+      "eligible_rows": 408,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199219",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 873,
+      "eligible_rows": 873,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199220",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 228,
+      "eligible_rows": 228,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199222",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 363,
+      "eligible_rows": 363,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199223",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 119,
+      "eligible_rows": 119,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199224",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 817,
+      "eligible_rows": 817,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199225",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 502,
+      "eligible_rows": 502,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199226",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1575,
+      "eligible_rows": 1575,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199229",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 419,
+      "eligible_rows": 419,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199232",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 98,
+      "eligible_rows": 98,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199242",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 54,
+      "eligible_rows": 54,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199244",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 124,
+      "eligible_rows": 124,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199251",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 976,
+      "eligible_rows": 976,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199254",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 412,
+      "eligible_rows": 412,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199257",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 82,
+      "eligible_rows": 82,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199258",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 88,
+      "eligible_rows": 88,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199259",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 47,
+      "eligible_rows": 47,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199273",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 139,
+      "eligible_rows": 139,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199274",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 156,
+      "eligible_rows": 156,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199277",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 807,
+      "eligible_rows": 807,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199278",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 1906,
+      "eligible_rows": 1906,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199280",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 131,
+      "eligible_rows": 131,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199282",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 33,
+      "eligible_rows": 33,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199292",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199293",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199301",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 198,
+      "eligible_rows": 198,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199306",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 171,
+      "eligible_rows": 171,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199312",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 167,
+      "eligible_rows": 167,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199313",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 238,
+      "eligible_rows": 238,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199315",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 465,
+      "eligible_rows": 465,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199316",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 294,
+      "eligible_rows": 294,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199318",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 135,
+      "eligible_rows": 135,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199319",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 403,
+      "eligible_rows": 403,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199321",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 903,
+      "eligible_rows": 903,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199324",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 30,
+      "eligible_rows": 30,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199331",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 977,
+      "eligible_rows": 977,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199332",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 295,
+      "eligible_rows": 295,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199344",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 429,
+      "eligible_rows": 429,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199346",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 186,
+      "eligible_rows": 186,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199353",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 46,
+      "eligible_rows": 46,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199355",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 284,
+      "eligible_rows": 284,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199356",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 65,
+      "eligible_rows": 65,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199357",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 136,
+      "eligible_rows": 136,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199361",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 285,
+      "eligible_rows": 285,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199366",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 145,
+      "eligible_rows": 145,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199371",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 527,
+      "eligible_rows": 527,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199372",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 29,
+      "eligible_rows": 29,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199373",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 63,
+      "eligible_rows": 63,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199374",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 457,
+      "eligible_rows": 457,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199377",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 129,
+      "eligible_rows": 129,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199380",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 434,
+      "eligible_rows": 434,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199381",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 236,
+      "eligible_rows": 236,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199386",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 791,
+      "eligible_rows": 791,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199391",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199392",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199395",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199396",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 260,
+      "eligible_rows": 260,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199397",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 609,
+      "eligible_rows": 609,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199398",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 369,
+      "eligible_rows": 369,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199399",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 265,
+      "eligible_rows": 265,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199407",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 84,
+      "eligible_rows": 84,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199410",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 134,
+      "eligible_rows": 134,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199411",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199420",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 259,
+      "eligible_rows": 259,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199428",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 3740,
+      "eligible_rows": 3740,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199429",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 185,
+      "eligible_rows": 185,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199435",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1037,
+      "eligible_rows": 1037,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199443",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 678,
+      "eligible_rows": 678,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199445",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 299,
+      "eligible_rows": 299,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199447",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 201,
+      "eligible_rows": 201,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199450",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 68,
+      "eligible_rows": 68,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199452",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 654,
+      "eligible_rows": 654,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199453",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 115,
+      "eligible_rows": 115,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199454",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 120,
+      "eligible_rows": 120,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199456",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 218,
+      "eligible_rows": 218,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199457",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 50,
+      "eligible_rows": 50,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199459",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 371,
+      "eligible_rows": 371,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199461",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 342,
+      "eligible_rows": 342,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199465",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 55,
+      "eligible_rows": 55,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199467",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 585,
+      "eligible_rows": 585,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199468",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 505,
+      "eligible_rows": 505,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199469",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 65,
+      "eligible_rows": 65,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199470",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 460,
+      "eligible_rows": 460,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199472",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 82,
+      "eligible_rows": 82,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199479",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 350,
+      "eligible_rows": 350,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199491",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199510",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 695,
+      "eligible_rows": 695,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199522",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 468,
+      "eligible_rows": 468,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199523",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 372,
+      "eligible_rows": 372,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199535",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 529,
+      "eligible_rows": 529,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199545",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 249,
+      "eligible_rows": 249,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199546",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 469,
+      "eligible_rows": 469,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199549",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 390,
+      "eligible_rows": 390,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199551",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 177,
+      "eligible_rows": 177,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199552",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 415,
+      "eligible_rows": 415,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199554",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 580,
+      "eligible_rows": 580,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199558",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 128,
+      "eligible_rows": 128,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199560",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 29,
+      "eligible_rows": 29,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199563",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 84,
+      "eligible_rows": 84,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199590",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199597",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 743,
+      "eligible_rows": 743,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199598",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1860,
+      "eligible_rows": 1860,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199599",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 35,
+      "eligible_rows": 35,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199604",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1189,
+      "eligible_rows": 1189,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199605",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 968,
+      "eligible_rows": 968,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199626",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 107,
+      "eligible_rows": 107,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199631",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 586,
+      "eligible_rows": 586,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199638",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 127,
+      "eligible_rows": 127,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199639",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 383,
+      "eligible_rows": 383,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199640",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1462,
+      "eligible_rows": 1462,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199642",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 190,
+      "eligible_rows": 190,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199646",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 300,
+      "eligible_rows": 300,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199647",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 130,
+      "eligible_rows": 130,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199648",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1552,
+      "eligible_rows": 1552,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199655",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1889,
+      "eligible_rows": 1889,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199660",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2,
+      "eligible_rows": 2,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199666",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 377,
+      "eligible_rows": 377,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199680",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 213,
+      "eligible_rows": 213,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199696",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 152,
+      "eligible_rows": 152,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199698",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1303,
+      "eligible_rows": 1303,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199730",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1033,
+      "eligible_rows": 1033,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199737",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 858,
+      "eligible_rows": 858,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199738",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1767,
+      "eligible_rows": 1767,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199739",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 454,
+      "eligible_rows": 454,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199743",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 450,
+      "eligible_rows": 450,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199746",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1377,
+      "eligible_rows": 1377,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199747",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1722,
+      "eligible_rows": 1722,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199751",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 349,
+      "eligible_rows": 349,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199755",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 704,
+      "eligible_rows": 704,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199756",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 392,
+      "eligible_rows": 392,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199760",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 540,
+      "eligible_rows": 540,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199842",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 150,
+      "eligible_rows": 150,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199843",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 754,
+      "eligible_rows": 754,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199848",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 3318,
+      "eligible_rows": 3318,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199854",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 218,
+      "eligible_rows": 218,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199855",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 107,
+      "eligible_rows": 107,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199858",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 536,
+      "eligible_rows": 536,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199860",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 3719,
+      "eligible_rows": 3719,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199865",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 67,
+      "eligible_rows": 67,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199901",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 148,
+      "eligible_rows": 148,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199904",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 59,
+      "eligible_rows": 59,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199913",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 95,
+      "eligible_rows": 95,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199942",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 638,
+      "eligible_rows": 638,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199960",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 99,
+      "eligible_rows": 99,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199966",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 56,
+      "eligible_rows": 56,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199971",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1444,
+      "eligible_rows": 1444,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P199981",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 144,
+      "eligible_rows": 144,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200056",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 85,
+      "eligible_rows": 85,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200057",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 13,
+      "eligible_rows": 13,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200060",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 7230,
+      "eligible_rows": 7230,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200061",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 5668,
+      "eligible_rows": 5668,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200071",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 259,
+      "eligible_rows": 259,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200142",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 33,
+      "eligible_rows": 33,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200149",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 167,
+      "eligible_rows": 167,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200221",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 697,
+      "eligible_rows": 697,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200234",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 634,
+      "eligible_rows": 634,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200242",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 20,
+      "eligible_rows": 20,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200243",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 557,
+      "eligible_rows": 557,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200245",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 610,
+      "eligible_rows": 610,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200247",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 933,
+      "eligible_rows": 933,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200252",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2368,
+      "eligible_rows": 2368,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200276",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 453,
+      "eligible_rows": 453,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200281",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 463,
+      "eligible_rows": 463,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200288",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 968,
+      "eligible_rows": 968,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200343",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 66,
+      "eligible_rows": 66,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200344",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 449,
+      "eligible_rows": 449,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200345",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 104,
+      "eligible_rows": 104,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200346",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 1108,
+      "eligible_rows": 1108,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200350",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 53,
+      "eligible_rows": 53,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200362",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 1662,
+      "eligible_rows": 1662,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200363",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 17,
+      "eligible_rows": 17,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200381",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 668,
+      "eligible_rows": 668,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200382",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 251,
+      "eligible_rows": 251,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200390",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200430",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 194,
+      "eligible_rows": 194,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200432",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1068,
+      "eligible_rows": 1068,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200443",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 403,
+      "eligible_rows": 403,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200444",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 85,
+      "eligible_rows": 85,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200445",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 48,
+      "eligible_rows": 48,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200454",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 118,
+      "eligible_rows": 118,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200455",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 363,
+      "eligible_rows": 363,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200458",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1299,
+      "eligible_rows": 1299,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200461",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 659,
+      "eligible_rows": 659,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200462",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2307,
+      "eligible_rows": 2307,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200480",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 57,
+      "eligible_rows": 57,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200481",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1649,
+      "eligible_rows": 1649,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200532",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 191,
+      "eligible_rows": 191,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200541",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 72,
+      "eligible_rows": 72,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200545",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 190,
+      "eligible_rows": 190,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200552",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 179,
+      "eligible_rows": 179,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200582",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 197,
+      "eligible_rows": 197,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200583",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 96,
+      "eligible_rows": 96,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200586",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 38,
+      "eligible_rows": 38,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200587",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 2356,
+      "eligible_rows": 2356,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200621",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 1383,
+      "eligible_rows": 1383,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200645",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 50,
+      "eligible_rows": 50,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200664",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 8,
+      "eligible_rows": 8,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200666",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1396,
+      "eligible_rows": 1396,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200667",
+      "role": "calibration",
+      "status": "eligible_rows_present",
+      "rows": 17,
+      "eligible_rows": 17,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200671",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 3260,
+      "eligible_rows": 3260,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200681",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 203,
+      "eligible_rows": 203,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200684",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 142,
+      "eligible_rows": 142,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200685",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 16,
+      "eligible_rows": 16,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200691",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 3,
+      "eligible_rows": 3,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200753",
+      "role": "buffer",
+      "status": "eligible_rows_present",
+      "rows": 121,
+      "eligible_rows": 121,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200755",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 128,
+      "eligible_rows": 128,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200863",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 170,
+      "eligible_rows": 170,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200864",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 170,
+      "eligible_rows": 170,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200884",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 528,
+      "eligible_rows": 528,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P200941",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1292,
+      "eligible_rows": 1292,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P201070",
+      "role": "train",
+      "status": "eligible_rows_present",
+      "rows": 294,
+      "eligible_rows": 294,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P201165",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 402,
+      "eligible_rows": 402,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P201549",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    },
+    {
+      "survey_id": "P201569",
+      "role": "test",
+      "status": "eligible_rows_present",
+      "rows": 1,
+      "eligible_rows": 1,
+      "eligible_fraction": 1.0
+    }
+  ]
+}

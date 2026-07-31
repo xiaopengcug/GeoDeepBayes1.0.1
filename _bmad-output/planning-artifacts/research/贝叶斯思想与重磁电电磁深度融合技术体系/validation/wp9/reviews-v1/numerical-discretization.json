@@ -1,0 +1,38 @@
+{
+  "schema_version": "wp9-specialist-review-v1",
+  "identity_type": "automated-ai-specialist-evidence-review",
+  "specialty_slug": "numerical-discretization",
+  "specialty": "算法数值与离散化",
+  "registry_sha256": "e66f8008672de016d04024d99c045722b75f33b93b8b010f5e5db708573331c6",
+  "wp8_completion_sha256": "ed887e76bc83edc2f18a2d2bd16c5abd96941e6d6ca341fa26757dc5e3707756",
+  "specialty_evidence_sha256": "97e7fb8960f87586cb8180e36c50bf477d0c4cf4c32fb2a53392a6c572e4fe79",
+  "covered_source_finding_ids": [
+    "R03-F-1073c9bf081d",
+    "R03-F-f6486697cbd7",
+    "R03-F-79da8eba7b6b",
+    "R03-F-aadc23a052c1",
+    "R03-F-9a83708e3b52",
+    "R03-F-649453838f6b",
+    "R03-F-ba5a1d95808e",
+    "R03-F-149d45de2aa3",
+    "R03-F-b27464e48f64",
+    "R03-F-8589a1393638",
+    "R03-F-539744f93d67",
+    "R03-F-74d295c66301",
+    "R03-F-af95f3fdf01f",
+    "R03-F-94401253fc0b",
+    "R03-F-262369b9488b",
+    "R03-F-51742aa39e7a",
+    "R03-F-23a9b309e896"
+  ],
+  "checks": {
+    "evidence_exists": true,
+    "evidence_hashes_match": true,
+    "work_packages_done": true,
+    "synthetic_not_field_claim": true,
+    "discretization_converged": true
+  },
+  "blocking_findings": [],
+  "decision": "Approved",
+  "scope_limit": "AI evidence review only; not a human signature, field validation, resource certification, regulatory approval, or production certification."
+}

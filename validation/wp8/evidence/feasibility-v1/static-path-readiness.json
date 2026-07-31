@@ -1,0 +1,123 @@
+{
+  "schema_version": "wp8-static-path-readiness-v1",
+  "formal_wp8_1_evidence": false,
+  "scope": "WP8-0 path feasibility only",
+  "methods": {
+    "dc": {
+      "implementation": {
+        "entrypoint": "geodeepbayes.forward.static.DCOperator",
+        "dependency_versions": {
+          "simpeg": "0.25.2",
+          "discretize": "0.12.0",
+          "numpy": "2.4.6",
+          "scipy": "1.17.1"
+        },
+        "applicable_dimension": "3-D nodal finite-volume galvanic DC"
+      },
+      "independent_reference": {
+        "test_path": "tests/forward/test_static_operators.py",
+        "test_source_sha256": "371bf4f10829926025addc9fff86168949b885084ecdf7edb4861fce72ca53b9",
+        "pytest_exit_code": 0,
+        "pytest_stdout": "......                                                                   [100%]\n============================== warnings summary ===============================\ntests/forward/test_static_operators.py::test_dc_forward_derivatives_and_halfspace_reference\ntests/forward/test_static_operators.py::test_dc_three_level_mesh_convergence\ntests/forward/test_static_operators.py::test_cole_cole_2d_complex_limit_derivatives_and_geometry\ntests/forward/test_static_operators.py::test_cole_cole_2d_three_level_homogeneous_convergence\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\simpeg\\base\\pde_simulation.py:639: PerformanceWarning: The 'pymatsolver.SolverLU' solver might lead to high computation times. We recommend using a faster alternative such as 'pymatsolver.Pardiso' or 'pymatsolver.Mumps'.\n    super().__setattr__(name, value)\n\ntests/forward/test_static_operators.py::test_dc_forward_derivatives_and_halfspace_reference\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\simpeg\\electromagnetics\\static\\resistivity\\simulation.py:608: RuntimeWarning: invalid value encountered in divide\n    r_hat = r_vec / r[:, None]\n\ntests/forward/test_static_operators.py::test_dc_forward_derivatives_and_halfspace_reference\ntests/forward/test_static_operators.py::test_dc_three_level_mesh_convergence\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\pymatsolver\\wrappers.py:81: SparseEfficiencyWarning: splu converted its input to CSC format\n    self.solver = fun(self.A, **self.kwargs)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 7 warnings in 4.23s\n",
+        "passed": true,
+        "kind": "analytic homogeneous-halfspace geometric-factor implementation",
+        "quantity": "signed voltage for explicit ABMN geometry and injected current"
+      },
+      "resource_measurement": {
+        "kind": "representative WP8-0 development scales; not formal WP8-1 field scale",
+        "records": [
+          {
+            "scale": 4,
+            "parameters": 48,
+            "data": 2,
+            "wall_time_seconds": 0.043491500000527594,
+            "peak_python_memory_bytes": 138604,
+            "finite": true
+          },
+          {
+            "scale": 5,
+            "parameters": 100,
+            "data": 2,
+            "wall_time_seconds": 0.04103509999549715,
+            "peak_python_memory_bytes": 177667,
+            "finite": true
+          },
+          {
+            "scale": 6,
+            "parameters": 180,
+            "data": 2,
+            "wall_time_seconds": 0.039762899999914225,
+            "peak_python_memory_bytes": 282057,
+            "finite": true
+          }
+        ],
+        "timeout_seconds": 5.0,
+        "memory_limit_bytes": 67108864,
+        "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+        "negative_test": "tests/validation/test_wp8_resource_abort.py",
+        "negative_test_source_sha256": "15dcb330809a3c0a84a5ac692da52d81e245d35bea52bbf221e6d128c24c6281",
+        "passed": true
+      }
+    },
+    "sip_fdip": {
+      "implementation": {
+        "entrypoint": "geodeepbayes.forward.static.ColeCole2DOperator",
+        "dependency_versions": {
+          "simpeg": "0.25.2",
+          "discretize": "0.12.0",
+          "numpy": "2.4.6",
+          "scipy": "1.17.1"
+        },
+        "applicable_dimension": "2-D profile with 2.5-D nodal finite-volume physics",
+        "limitations": [
+          "ABMN electrodes must be coplanar",
+          "explicit finite-difference transpose is limited to WP8-0 scale"
+        ]
+      },
+      "independent_reference": {
+        "test_path": "tests/forward/test_static_operators.py",
+        "test_source_sha256": "371bf4f10829926025addc9fff86168949b885084ecdf7edb4861fce72ca53b9",
+        "pytest_exit_code": 0,
+        "pytest_stdout": "......                                                                   [100%]\n============================== warnings summary ===============================\ntests/forward/test_static_operators.py::test_dc_forward_derivatives_and_halfspace_reference\ntests/forward/test_static_operators.py::test_dc_three_level_mesh_convergence\ntests/forward/test_static_operators.py::test_cole_cole_2d_complex_limit_derivatives_and_geometry\ntests/forward/test_static_operators.py::test_cole_cole_2d_three_level_homogeneous_convergence\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\simpeg\\base\\pde_simulation.py:639: PerformanceWarning: The 'pymatsolver.SolverLU' solver might lead to high computation times. We recommend using a faster alternative such as 'pymatsolver.Pardiso' or 'pymatsolver.Mumps'.\n    super().__setattr__(name, value)\n\ntests/forward/test_static_operators.py::test_dc_forward_derivatives_and_halfspace_reference\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\simpeg\\electromagnetics\\static\\resistivity\\simulation.py:608: RuntimeWarning: invalid value encountered in divide\n    r_hat = r_vec / r[:, None]\n\ntests/forward/test_static_operators.py::test_dc_forward_derivatives_and_halfspace_reference\ntests/forward/test_static_operators.py::test_dc_three_level_mesh_convergence\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\pymatsolver\\wrappers.py:81: SparseEfficiencyWarning: splu converted its input to CSC format\n    self.solver = fun(self.A, **self.kwargs)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 7 warnings in 4.23s\n",
+        "passed": true,
+        "kind": "analytic homogeneous-halfspace complex Cole-Cole reference",
+        "quantity": "complex voltage, zero-IP DC limit, derivatives, and three-level mesh convergence"
+      },
+      "resource_measurement": {
+        "kind": "representative WP8-0 development scales; not formal WP8-1 field scale",
+        "records": [
+          {
+            "scale": 4,
+            "parameters": 48,
+            "data": 4,
+            "wall_time_seconds": 8.495663200003037,
+            "peak_python_memory_bytes": 154285,
+            "finite": true
+          },
+          {
+            "scale": 5,
+            "parameters": 60,
+            "data": 6,
+            "wall_time_seconds": 15.938751100002264,
+            "peak_python_memory_bytes": 104364,
+            "finite": true
+          },
+          {
+            "scale": 6,
+            "parameters": 72,
+            "data": 8,
+            "wall_time_seconds": 28.21311180000339,
+            "peak_python_memory_bytes": 91300,
+            "finite": true
+          }
+        ],
+        "timeout_seconds": 282.1311180000339,
+        "memory_limit_bytes": 67108864,
+        "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+        "negative_test": "tests/validation/test_wp8_resource_abort.py",
+        "negative_test_source_sha256": "15dcb330809a3c0a84a5ac692da52d81e245d35bea52bbf221e6d128c24c6281",
+        "passed": true
+      }
+    }
+  }
+}

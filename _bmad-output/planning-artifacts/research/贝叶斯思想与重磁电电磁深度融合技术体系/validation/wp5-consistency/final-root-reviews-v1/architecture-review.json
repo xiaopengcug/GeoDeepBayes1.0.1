@@ -1,0 +1,34 @@
+{
+  "schema": "wp5-final-root-review-v1",
+  "review_id": "WP5-FINAL-ROOT-ARCHITECTURE",
+  "role": "工程架构复核",
+  "reviewer_identity": "Codex automated AI / 工程架构复核",
+  "identity_type": "automated-ai-final-root-review",
+  "decision": "Approved",
+  "reviewed_at_utc": "2026-07-31T06:46:05Z",
+  "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+  "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+  "candidate": {
+    "run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+    "manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+    "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+    "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c"
+  },
+  "review_scope": "execution contracts, recovery, CI, and capability-status boundaries",
+  "checks": [
+    "Traced the journal v3 transaction across prepared, version-moved, and candidate-committed phases, including atomic active-output and ACTIVE_MANIFEST commit or rollback.",
+    "Confirmed publish fixtures 011-020 exercise lock contention, snapshot drift, every injected transaction boundary, invalid journals, fail-closed recovery, and the recovered production gate.",
+    "Confirmed platform-safe nested Join-Path construction and explicit Sort-Object use remove shell-alias ambiguity; the CI matrix is configured to execute publish smoke on Ubuntu and Windows, without treating configuration as a remote PASS.",
+    "Confirmed canonical containment accepts a legal child and an internal resolved link while rejecting prefix-sibling, dot-dot, and resolved-link escapes.",
+    "Confirmed validator SHA-256 cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d, the runner, finalizer, fixture oracle, root anchor, and seven-stage envelope form one hash-bound 300-fixture evidence chain.",
+    "Confirmed all 15 governed code blocks remain interface drafts with capability_status=not-executable and test_evidence=none; no tested capability is asserted.",
+    "Confirmed CI workflow SHA-256 3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6 configures Git core.longpaths=true before checkout, normalizes WP5 smoke TEMP to RUNNER_TEMP, retains pinned Ubuntu and Windows required gates plus the full WP5 gate, and leaves remote clean-checkout status pending until those gates actually run."
+  ],
+  "findings": [],
+  "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "bcfcf3044df93c15eb8ef8db63732b32337fa394e0700de326f2c6ff1c742317",
+    "total_fixture_count": 300
+  }
+}

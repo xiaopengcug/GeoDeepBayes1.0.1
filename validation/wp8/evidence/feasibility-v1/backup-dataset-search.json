@@ -1,0 +1,454 @@
+{
+  "schema_version": "wp8-outcome-blind-backup-search-v1",
+  "search_date_utc": "2026-07-25",
+  "policy": {
+    "authoritative_primary_sources_only": true,
+    "observation_endpoints_opened": true,
+    "observation_endpoint_exception": "Xingning DOI 10.5281/zenodo.5533467 K1-K9 AVG and Northwest Arkansas DOI 10.5066/P91O2Y8W magnetic CSV rows were accidentally displayed and are permanently excluded from formal test use",
+    "metadata_fields_used": [
+      "title",
+      "description",
+      "license",
+      "DOI",
+      "file name",
+      "file size",
+      "repository checksum",
+      "declared station/profile/site count",
+      "declared data contract"
+    ],
+    "minimum_independent_clusters": 223,
+    "cluster_replication_forbidden": true,
+    "maximum_download_bytes_during_search": 2331221
+  },
+  "repositories": [
+    {
+      "name": "Zenodo",
+      "authority": "CERN-operated general research repository",
+      "endpoint": "https://zenodo.org/api/records/",
+      "queries": [
+        "spectral induced polarization",
+        "time domain induced polarization",
+        "CSAMT",
+        "WFEM geophysics",
+        "\"wide-field electromagnetic\"",
+        "广域电磁法"
+      ],
+      "page_size": 25
+    },
+    {
+      "name": "USGS Science Data Catalog / ScienceBase",
+      "authority": "United States Geological Survey",
+      "endpoint": "https://data.usgs.gov/datacatalog/",
+      "queries": [
+        "magnetotelluric EDI impedance error stations",
+        "CSAMT transmitter receiver station",
+        "time domain induced polarization dataset stations"
+      ]
+    },
+    {
+      "name": "EarthScope EMTF/SPUD",
+      "authority": "NSF SAGE facility operated by EarthScope",
+      "endpoint": "https://ds.iris.edu/ds/products/emtf/",
+      "retrieved_page_sha256": "21c47840dd24276d967de59b70ab4aca475014d7c1562b39485e472186faff23",
+      "declared_repository_item_count": 8210
+    },
+    {
+      "name": "GFZ Repository for Electromagnetic Data",
+      "authority": "GFZ Helmholtz Centre for Geosciences",
+      "endpoint": "https://www.gfz.de/en/section/geophysical-imaging/data-products-services/repository-for-electromagnetic-data",
+      "metadata_result": "public repository description explicitly includes CSEM projects, raw time series and XML metadata",
+      "qualification_limit": "public page does not establish at least 223 independent stations or complete source geometry and uncertainty"
+    },
+    {
+      "name": "GFZ GIPP Project Repository",
+      "authority": "GFZ Geophysical Instrument Pool Potsdam",
+      "endpoint": "https://gipp.gfz.de/projects/",
+      "metadata_result": "public electromagnetic category is mixed with MT projects",
+      "qualification_limit": "current public filters do not expose a large controlled-source collection satisfying the CSAMT or WFEM observation contract"
+    },
+    {
+      "name": "SIP-Archiv",
+      "authority": "specialized spectral induced polarization archive",
+      "endpoint": "https://www.sip-archiv.de/",
+      "access": "registration required; free for scientific use",
+      "metadata_result": "petrophysical database of rock specimens and materials",
+      "qualification_limit": "laboratory material records are not directly interchangeable with independent spatial field clusters"
+    }
+  ],
+  "methods": {
+    "mt_amt": {
+      "decision": "qualified_metadata_candidate_frozen",
+      "candidate": "USA rray TA Magnetotelluric Transfer Functions",
+      "doi": "10.17611/DP/EMTF/USARRAY/TA",
+      "repository_doi": "10.17611/DP/EMTF.1",
+      "source": "https://ds.iris.edu/ds/products/emtf/",
+      "declared_independent_station_count": 1104,
+      "contract": [
+        "geographic station coordinates",
+        "frequency-dependent 2x2 complex impedance tensor",
+        "vertical magnetic transfer function where available",
+        "estimation error covariance",
+        "XML and EDI representations"
+      ],
+      "license_evidence": {
+        "status": "passed",
+        "statement": "all inspected USArray project records declare Unrestricted Release and permit free copying, duplication, and further distribution with dataset citation and author acknowledgement",
+        "terms_url": "https://www.earthscope.org/terms-of-service/",
+        "terms_page_sha256": "bc3f0e909f0d0db5b4064e18889709e0b9fdf97248a01f9296bf2956ce4a3425"
+      },
+      "download": {
+        "status": "complete_and_locally_frozen",
+        "bytes_downloaded": 13744189,
+        "reason": "1104 authoritative HTTPS EDI members frozen with request metadata, local SHA-256 and Merkle root",
+        "download_sha256": "see mt-usarray-raw-freeze.json"
+      },
+      "gate_effect": "license and local raw integrity pass; 3-D solver/resource and full cross-component covariance remain blocked"
+    },
+    "dc": {
+      "decision": "strong_contract_candidate_rejected_by_absolute_cluster_bound",
+      "doi": "10.5281/zenodo.18183049",
+      "title": "Database of a 4-km seismic and electric streamer survey: the embankment of the Po River near Crescentino, Piedmont, Italy",
+      "license": "CC-BY-4.0",
+      "download": {
+        "status": "electrical_archive_complete_and_locally_frozen",
+        "bytes": 2331221,
+        "sha256": "d7257a1d24a3f52e0f807739f1b23e975bbb32561091abf9cb87b5b412051891"
+      },
+      "declared_contract": [
+        "518 RTK-positioned stations",
+        "164724 raw ABMN quadrupoles",
+        "apparent resistivity",
+        "resistivity standard deviation percent",
+        "primary voltage",
+        "injected current",
+        "array type",
+        "EPSG:32632 electrode coordinates"
+      ],
+      "outcome_blind_audit": {
+        "observation_values_parsed": false,
+        "median_station_step_m": 7.727,
+        "electric_streamer_footprint_m": 48.0,
+        "maximum_nonoverlapping_footprint_units": 75,
+        "required_test_clusters": 223
+      },
+      "remaining_contract_limit": "per-electrode elevation/topography is in a separate 1.36-GB QGIS archive",
+      "rejection": "the 48-m acquisition footprints overlap at the approximately 8-m station step; the absolute non-overlap upper bound is 75, below 223 even before response-correlation adjustment"
+    },
+    "tdip": {
+      "decision": "primary_package_contract_and_coverage_candidate",
+      "primary_reassessment": {
+        "doi": "10.5281/zenodo.15488867",
+        "concept_doi": "10.5281/zenodo.15488866",
+        "all_named_dates": 371,
+        "paired_dates": 370,
+        "formal_eligible_dates_after_exclusions": 369,
+        "frozen_date_observation_split": {
+          "train": 79,
+          "buffer": 17,
+          "calibration": 50,
+          "test": 223
+        },
+        "observation_unit": "acquisition date",
+        "power_cluster_unit": "non-overlapping 17-day temporal block from training-only correlation estimate",
+        "counting_guardrail": "correlated dates, normal/reciprocal files and 20 decay windows are not independent clusters",
+        "remaining_limit": "effective temporal test clusters are far below 223 and paired-CRPS power requires two training inference methods"
+      },
+      "candidates": [
+        {
+          "doi": "10.5281/zenodo.13329326",
+          "license": "CC-BY-4.0",
+          "bytes": 591396864,
+          "declared_scope": "field_survey at one contaminated site",
+          "quality_limit": "associated paper reports removal of about 80% of full-decay data because of deep-data quality",
+          "rejection": "measurements within one site cannot be inflated into independent cross-site clusters"
+        },
+        {
+          "doi": "10.5281/zenodo.14241707",
+          "title": "Data for Time domain induced polarization data acquisition at contaminated sites",
+          "api_record_sha256": "e3e9181633d801affc1be90754cec05c2bd3bc200ad6fd2dfaad24ec25fa5ab6",
+          "license": "CC-BY-4.0",
+          "repository_files": 3,
+          "rejection": "metadata describes seven sites, below 223 independent clusters; endpoint files were not opened"
+        },
+        {
+          "doi": "10.5281/zenodo.4419736",
+          "title": "SIP field data sets for comparison between time and frequency domain",
+          "api_record_sha256": "0dc3de49843e172df8d566f910bb166843f76bda47e132f338261bbc3504da2e",
+          "license": "CC-BY-4.0",
+          "repository_files": 1,
+          "rejection": "metadata declares two profiles, below 223 independent clusters"
+        },
+        {
+          "title": "KTB borehole measurement collection",
+          "authority": "GFZ Data Services / KTB scientific drilling archive",
+          "declared_content": "SP/IP logs among processed borehole measurements",
+          "declared_borehole_count": 2,
+          "rejection": "two boreholes and processed logs do not satisfy the required field TDIP contract of explicit ABMN geometry, at least 20 timing windows, independent acquisition dates, and at least 223 independent clusters"
+        }
+      ],
+      "gate_effect": "contract and dimensionality can pass; correlation-adjusted clusters, coverage and CRPS power remain blocked"
+    },
+    "tem": {
+      "decision": "outcome_blind_consortium_candidate",
+      "candidate_name": "USGS WalkTEM unified-contract consortium",
+      "observation_values_opened": false,
+      "freeze_before_endpoint_access": [
+        "candidate membership and license",
+        "unique spatial-station key",
+        "transmitter/receiver/waveform/channel/error contract",
+        "spatial decorrelation and cross-survey grouping rule"
+      ],
+      "members": [
+        {"name": "Genesee Valley", "doi": "10.5066/P9VQOCRZ", "declared_locations": 120, "declared_products": "raw and processed"},
+        {"name": "Mississippi Alluvial Plain", "doi": "10.5066/P965NBFT", "declared_design": "two high-density surveys plus six regional transects", "declared_soundings_per_transect": "10-20"},
+        {"name": "Manistee 2020", "declared_raw_usf_members": 49},
+        {"name": "Shelter Island", "doi": "10.5066/P93X25UF", "declared_soundings": 26},
+        {"name": "Dawson County", "identifier": "USGS DS581", "declared_count": "metadata count pending"},
+        {"name": "Los Humeros", "doi": "10.5281/zenodo.3822280", "declared_count": "metadata count pending"},
+        {"name": "Illinois River Basin", "declared_count": "metadata count pending"}
+      ],
+      "qualification_limit": "catalogue sounding totals are not independent clusters until duplicate stations and spatial correlation within/across surveys are resolved outcome-blind",
+      "gate_effect": "candidate only; no TEM gate changes"
+    },
+    "sip_fdip": {
+      "decision": "no_qualified_public_backup_found",
+      "candidates": [
+        {
+          "doi": "10.5281/zenodo.6754562",
+          "declared_design": "six clay types across salinity experiments",
+          "rejection": "laboratory treatment combinations are not at least 223 independent field clusters"
+        },
+        {
+          "doi": "10.5281/zenodo.14016513",
+          "declared_design": "single illite freeze-thaw study",
+          "rejection": "one material experiment is not an independent multi-field-cluster dataset"
+        },
+        {
+          "doi": "10.5281/zenodo.17165457",
+          "declared_design": "two sand-column cases and five channels",
+          "access": "files restricted",
+          "rejection": "two laboratory cases and repeated channels are not 223 independent field clusters"
+        },
+        {
+          "doi": "10.5061/dryad.pt2624c",
+          "declared_independent_samples": 5,
+          "rejection": "five rock specimens are below 223 and are not spatial field clusters"
+        },
+        {
+          "doi": "10.5281/zenodo.18153271",
+          "title": "Monitoring Proton-Promoted Iron Mineral Dissolution using SIP",
+          "api_record_sha256": "b6bbc922667926599e80ca0211420b530926b1f3b98cbb05732cdd794c2bcf5c",
+          "license": "CC-BY-4.0",
+          "repository_files": 1,
+          "rejection": "laboratory study metadata does not establish 223 independent specimens/sites or per-cluster errors"
+        },
+        {
+          "doi": "10.5281/zenodo.4419736",
+          "title": "SIP field data sets for comparison between time and frequency domain",
+          "api_record_sha256": "0dc3de49843e172df8d566f910bb166843f76bda47e132f338261bbc3504da2e",
+          "license": "CC-BY-4.0",
+          "repository_files": 1,
+          "rejection": "two profiles only"
+        },
+        {
+          "doi": "10.5880/fidgeo.2022.034",
+          "title": "Spectral induced polarization measurements on Moffat Shale",
+          "authority": "GFZ Data Services",
+          "license": "CC-BY-4.0",
+          "declared_independent_sample_count": 28,
+          "declared_frequency_range_hz": [
+            0.0001,
+            100000
+          ],
+          "declared_contract": "complex conductivity on directionally oriented laboratory specimens",
+          "rejection": "28 specimens are below 223 independent clusters and laboratory specimens are not the required independent field clusters"
+        },
+        {
+          "title": "SIP-Archiv petrophysical database",
+          "source": "https://www.sip-archiv.de/",
+          "access": "registration required; free scientific use",
+          "rejection": "rock/material laboratory records do not directly supply 223 independent spatial field clusters or the frozen field geometry contract"
+        }
+      ],
+      "gate_effect": "blocked"
+    },
+    "csamt": {
+      "decision": "no_qualified_public_backup_found",
+      "repository_query_result_count": 9,
+      "consortium_candidate": {
+        "name": "USGS GGT-30 + GDP32-II CSAMT consortium",
+        "manifest": "csamt-consortium-candidate-manifest.json",
+        "license": "CC0/public domain",
+        "release_count": 3,
+        "line_count": 32,
+        "within_release_unique_station_coordinate_upper_bound": 1843,
+        "releases": [
+          {"doi": "10.5066/P9KGKWNL", "name": "Big Chino", "lines": 21, "unique_coordinates": 1159},
+          {"doi": "10.5066/P90KAJM4", "name": "Hualapai Grand Canyon West / Plain Tank", "lines": 9, "unique_coordinates": 543},
+          {"doi": "10.5066/P9QF9PFR", "name": "Red Knoll", "lines": 2, "unique_coordinates": 141}
+        ],
+        "qualification_limit": "station coordinates are not independent clusters; cross-release deduplication and training-only spatial response correlation are required before buffered split"
+      },
+      "candidates": [
+        {
+          "doi": "10.5066/P9QF9PFR",
+          "title": "USGS Red Knoll CSAMT",
+          "authority": "United States Geological Survey",
+          "license": "public domain",
+          "archive_structure": "raw, mtm and station metadata present",
+          "declared_line_count": 2,
+          "station_data_rows_by_line": [
+            101,
+            40
+          ],
+          "station_row_total": 141,
+          "permitted_use": "training_and_development_candidate",
+          "rejection": "approximately 141 station rows are nested within only two survey lines and do not establish 223 independent field clusters"
+        },
+        {
+          "doi": "10.5281/zenodo.13759393",
+          "title": "Yanqing CSAMT dataset",
+          "api_record_sha256": "a92dd2a00e4fc3da5856885e0a2ca56b29e3d5bb33f1cde75e1ecfe7e99ac255",
+          "license": "CC-BY-4.0",
+          "repository_checksum": "md5:774abf661d92e65ba22ec140e5bb79e8",
+          "bytes": 64962511,
+          "archive_structure": "machine-readable members are synthetic; field-data directory contains only six PNG images",
+          "rejection": "field observations are not released as machine-readable data; figures cannot substitute for formal field observations"
+        },
+        {
+          "doi": "10.5281/zenodo.5533467",
+          "title": "CSAMT data from Xingning",
+          "api_record_sha256": "e2ea841f3a1c7ae6cc19a98068314690e351bdfa921ab6a032613e1c35fb7eca",
+          "license": "CC-BY-4.0",
+          "repository_checksum": "md5:b7a594e97890430905de0050daa4a4ea",
+          "bytes": 140057,
+          "local_sha256": "81d20c00155790c2504e2d7489903768865ffa461af85b0d6588e9f7c5411572",
+          "archive_inventory": {
+            "avg_members": 9,
+            "mde_members": 9,
+            "coordinate_workbooks": 1,
+            "independent_line_candidates": 9
+          },
+          "mde_contract_fields": [
+            "TxType=Bipole",
+            "TxLen",
+            "TXDIS",
+            "TxBrg",
+            "TxCX",
+            "TxCY",
+            "RxLEN",
+            "RxBrg"
+          ],
+          "avg_contract_fields": [
+            "Station",
+            "Freq",
+            "ExHy",
+            "Emag",
+            "Ephz",
+            "Hmag",
+            "Hphz",
+            "resistivity",
+            "phase",
+            "errors"
+          ],
+          "contract_assessment": "substantially more complete source, receiver, component, phase and error metadata than the Hualapai primary package",
+          "endpoint_exposure": {
+            "detected": true,
+            "members": [
+              "K1.AVG",
+              "K2.AVG",
+              "K3.AVG",
+              "K4.AVG",
+              "K5.AVG",
+              "K6.AVG",
+              "K7.AVG",
+              "K8.AVG",
+              "K9.AVG"
+            ],
+            "formal_test_eligible": false,
+            "permitted_use": "training_and_development_only"
+          },
+          "related_software_publication": {
+            "name": "pyCSAMT",
+            "statement": "publication states that data are freely downloadable",
+            "gate_effect": "none; availability does not increase the nine independent line candidates"
+          },
+          "rejection": "only nine independent line candidates, below the frozen minimum of 223; all nine AVG endpoints are additionally exposed and forbidden from formal test use"
+        },
+        {
+          "record_id": 10684606,
+          "doi": "10.5281/zenodo.10684606",
+          "paper_doi": "10.1093/jge/gxae017",
+          "title": "CSAMT denoising data record",
+          "license": "CC-BY-4.0",
+          "bytes": 438682,
+          "inspection_scope": "repository structure and metadata only",
+          "observation_values_opened": false,
+          "rejection": "metadata/structure does not establish at least 223 independent field clusters; observation results remain unopened"
+        },
+        {
+          "title": "GFZ electromagnetic repository and GIPP project catalogue",
+          "sources": [
+            "https://www.gfz.de/en/section/geophysical-imaging/data-products-services/repository-for-electromagnetic-data",
+            "https://gipp.gfz.de/projects/"
+          ],
+          "rejection": "repository metadata acknowledges CSEM and electromagnetic projects, but public catalogue filters do not establish a controlled-source CSAMT collection with at least 223 independent receivers, complete transmitter geometry, phase/components and uncertainty"
+        }
+      ],
+      "gate_effect": "blocked"
+    },
+    "wfem": {
+      "decision": "no_qualified_public_backup_found",
+      "exact_english_query_result_count": 2,
+      "geophysical_result_count": 1,
+      "candidate": {
+        "doi": "10.5281/zenodo.17140933",
+        "title": "Data for Wide Field Electromagnetic Method in the Baotu Spring Region of Jinan, China",
+        "relationship": "same already-audited primary package",
+        "rejection": "27 line files and incomplete source/receiver/phase/component/geometric-factor contract"
+      },
+      "additional_candidates": [
+        {
+          "title": "GFZ electromagnetic repository and GIPP project catalogue",
+          "sources": [
+            "https://www.gfz.de/en/section/geophysical-imaging/data-products-services/repository-for-electromagnetic-data",
+            "https://gipp.gfz.de/projects/"
+          ],
+          "rejection": "public metadata does not expose a large WFEM controlled-source collection satisfying the frozen field contract"
+        },
+        {
+          "title": "Public WFEM formula and case-study literature",
+          "artifact_type": "paper",
+          "rejection": "formulas and published case figures are not a downloadable complete field observation package and cannot substitute for field observations"
+        },
+        {
+          "title": "Yemaquan WFEM case study",
+          "publisher": "Journal of Geophysics and Engineering",
+          "data_availability": "data available on reasonable request",
+          "rejection": "no directly downloadable public field package"
+        },
+        {
+          "title": "Gonghe WFEM case study",
+          "publisher": "MDPI",
+          "data_availability": "not applicable",
+          "rejection": "no directly downloadable public field package"
+        },
+        {
+          "title": "2025 WFEM case study",
+          "publisher": "Frontiers",
+          "data_availability": "available from authors on request",
+          "rejection": "no directly downloadable public field package"
+        }
+      ],
+      "gate_effect": "blocked"
+    }
+  },
+  "overall": {
+    "replacement_selected": true,
+    "metadata_candidate_selected": [
+      "mt_amt"
+    ],
+    "formal_downloads_performed": 1104,
+    "reason": "MT/AMT external backup was selected and locally frozen; all other searched methods remain without a qualified public backup"
+  }
+}

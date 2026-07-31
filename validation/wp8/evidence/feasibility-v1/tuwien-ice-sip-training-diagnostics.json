@@ -1,0 +1,160 @@
+{
+  "schema_version": "wp8-tuwien-ice-sip-training-diagnostics-v1",
+  "doi": "10.48436/2wx5q-bg153",
+  "license": "CC BY 4.0",
+  "selection_role": "laboratory_solver_reference_only",
+  "partition": "training-only",
+  "sample_count": 1,
+  "electrode_count": 54,
+  "electrode_dimensions": 3,
+  "quadrupoles_per_frequency": 138,
+  "frequency_count": 21,
+  "frequency_range_hz": [
+    1.0,
+    97.686
+  ],
+  "complex_observation_count": 2898,
+  "response_fields": [
+    "impedance_magnitude_ohm",
+    "phase_mrad_negative_sign_convention"
+  ],
+  "mesh_present": true,
+  "geometry_constant_across_frequencies": true,
+  "abmn_constant_across_frequencies": true,
+  "explicit_uncertainty": false,
+  "field_profile_link": false,
+  "formal_cluster_contribution": 0,
+  "decision": "parser_geometry_and_solver_convention_reference_only",
+  "profiles": [
+    {
+      "path": "data/SB01_1000.ohm",
+      "frequency_hz": 1.0,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_12428.ohm",
+      "frequency_hz": 12.428,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_1257.ohm",
+      "frequency_hz": 1.257,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_15628.ohm",
+      "frequency_hz": 15.628,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_1581.ohm",
+      "frequency_hz": 1.581,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_19651.ohm",
+      "frequency_hz": 19.651,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_1988.ohm",
+      "frequency_hz": 1.988,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_24711.ohm",
+      "frequency_hz": 24.711,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_2500.ohm",
+      "frequency_hz": 2.5,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_31072.ohm",
+      "frequency_hz": 31.072,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_3144.ohm",
+      "frequency_hz": 3.144,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_39072.ohm",
+      "frequency_hz": 39.072,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_3953.ohm",
+      "frequency_hz": 3.953,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_49131.ohm",
+      "frequency_hz": 49.131,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_4971.ohm",
+      "frequency_hz": 4.971,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_61780.ohm",
+      "frequency_hz": 61.78,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_6251.ohm",
+      "frequency_hz": 6.251,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_77686.ohm",
+      "frequency_hz": 77.686,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_7860.ohm",
+      "frequency_hz": 7.86,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_97686.ohm",
+      "frequency_hz": 97.686,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    },
+    {
+      "path": "data/SB01_9884.ohm",
+      "frequency_hz": 9.884,
+      "quadrupoles": 138,
+      "finite_responses": 276
+    }
+  ],
+  "buffer_values_read": 0,
+  "calibration_values_read": 0,
+  "test_values_read": 0,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,544 @@
+{
+  "schema_version": "wp8-ga-ground-gravity-schema-probe-v1",
+  "raw_sha256": "6eebd42b991d34ac8b39982c3c041cdd84c7bb3d9a2a33fded460dfc4c8f4fdb",
+  "survey_id": "P199964",
+  "point_count": 77202,
+  "required_variables": [
+    "bouguer",
+    "gndelev",
+    "gndelevacc",
+    "grav",
+    "gravacc",
+    "latitude",
+    "longitude",
+    "reliab_index",
+    "tc",
+    "tcerr"
+  ],
+  "required_variables_present": true,
+  "declared_variables": {
+    "crs": {
+      "dtype": "int8",
+      "dimensions": [],
+      "long_name": null,
+      "units": null,
+      "fill_value_declared": false
+    },
+    "ga_gravity_metadata": {
+      "dtype": "int8",
+      "dimensions": [],
+      "long_name": null,
+      "units": null,
+      "fill_value_declared": false
+    },
+    "obsno": {
+      "dtype": "int32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Observation Number",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "latitude": {
+      "dtype": "float64",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Latitude",
+      "units": "degrees_north",
+      "fill_value_declared": true
+    },
+    "longitude": {
+      "dtype": "float64",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Longitude",
+      "units": "degrees_east",
+      "fill_value_declared": true
+    },
+    "locmethod": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "locmethod"
+      ],
+      "long_name": "Location Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "locmethod_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in locmethod",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "locacc": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Location Accuracy",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "locaccmethod": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "locaccmethod"
+      ],
+      "long_name": "Location Accuracy Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "locaccmethod_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in locaccmethod",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "stattype": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "stattype"
+      ],
+      "long_name": "Station Type",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "stattype_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in stattype",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "grav": {
+      "dtype": "float64",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Gravity",
+      "units": "um/s^2",
+      "fill_value_declared": true
+    },
+    "gravmeth": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "gravmeth"
+      ],
+      "long_name": "Gravity Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gravmeth_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in gravmeth",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "freeair": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Free Air Anomaly",
+      "units": "um/s^2",
+      "fill_value_declared": true
+    },
+    "bouguer": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Bouguer Anomaly",
+      "units": "um/s^2",
+      "fill_value_declared": true
+    },
+    "gravacc": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Gravity Accuracy",
+      "units": "um/s^2",
+      "fill_value_declared": true
+    },
+    "gravaccmeth": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "gravaccmeth"
+      ],
+      "long_name": "Gravity Accuracy Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gravaccmeth_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in gravaccmeth",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelev": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Ground Elevation",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "gndelevacc": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Ground Level Accuracy",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "gndelevtype": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "gndelevtype"
+      ],
+      "long_name": "Ground Level Type",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelevtype_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in gndelevtype",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelevdatum": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "gndelevdatum"
+      ],
+      "long_name": "Ground Level Datum",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelevdatum_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in gndelevdatum",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelevmeth": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "gndelevmeth"
+      ],
+      "long_name": "Ground Level Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelevmeth_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in gndelevmeth",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelevaccmethod": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "gndelevaccmethod"
+      ],
+      "long_name": "Ground Level Accuracy Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gndelevaccmethod_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in gndelevaccmethod",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "insthgt": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Instrument Height",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "insthgterr": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Instrument Height Error",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "insthgtmeth": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "insthgtmeth"
+      ],
+      "long_name": "Instrument Height Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "insthgtmeth_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in insthgtmeth",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "insthgterrmeth": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "insthgterrmeth"
+      ],
+      "long_name": "Instrument Height Error Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "insthgterrmeth_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in insthgterrmeth",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "ellipsoidinsthgt": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Ellipsoid Instrument Height",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "ellipsoidinsthgterr": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Ellipsoid Instrument Height Error",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "ellipsoidinsthgterrmethod": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "ellipsoidinsthgterrmethod"
+      ],
+      "long_name": "Ellipsoid Instrument Height Accuracy Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "ellipsoidinsthgterrmethod_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in ellipsoidinsthgterrmethod",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "ellipsoidhgt": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Ellipsoid Height",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "ellipsoidhgtacc": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Ellipsoid Height Accuracy",
+      "units": "m",
+      "fill_value_declared": true
+    },
+    "ellipsoidhgtmeth": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "ellipsoidhgtmeth"
+      ],
+      "long_name": "Ellipsoid Height Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "ellipsoidhgtmeth_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in ellipsoidhgtmeth",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "ellipsoidhgtaccmethod": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "ellipsoidhgtaccmethod"
+      ],
+      "long_name": "Ellipsoid Height Accuracy Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "ellipsoidhgtaccmethod_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in ellipsoidhgtaccmethod",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "elipsoiddatum": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "elipsoiddatum"
+      ],
+      "long_name": "Elipsoid Datum",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "elipsoiddatum_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in elipsoiddatum",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "tc": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "Terrain Correction",
+      "units": "um/s^2",
+      "fill_value_declared": true
+    },
+    "tcdensity": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "TC Density",
+      "units": "um/s^2",
+      "fill_value_declared": true
+    },
+    "tcerr": {
+      "dtype": "float32",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "TC Error",
+      "units": "um/s^2",
+      "fill_value_declared": true
+    },
+    "tcmeth": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "tcmeth"
+      ],
+      "long_name": "TC Method",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "tcmeth_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in tcmeth",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gridflag": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "gridflag"
+      ],
+      "long_name": "Grid Flag",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "gridflag_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in gridflag",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "reliab": {
+      "dtype": "<class 'str'>",
+      "dimensions": [
+        "reliab"
+      ],
+      "long_name": "Estimation of Station Reliability",
+      "units": null,
+      "fill_value_declared": true
+    },
+    "reliab_index": {
+      "dtype": "int8",
+      "dimensions": [
+        "point"
+      ],
+      "long_name": "zero-based index of value in reliab",
+      "units": null,
+      "fill_value_declared": true
+    }
+  },
+  "array_values_read": 0,
+  "response_array_values_read": 0,
+  "pre_design_response_metadata_exposure": {
+    "detected": true,
+    "scope": "P199964 only",
+    "kind": "NetCDF actual_range attributes for grav, freeair, bouguer and terrain correction were displayed during the first manual header probe.",
+    "remediation": "P199964 is wholly excluded from the subsequently frozen formal design."
+  },
+  "contract_potential": {
+    "complete_bouguer_reconstructable": true,
+    "per_observation_error_inputs_declared": true,
+    "reason": "The unified schema declares Bouguer anomaly, terrain correction, gravity accuracy, ground-elevation accuracy and terrain-correction error as point-dimension variables. Coverage/value validity across the remaining formal pool is not yet established."
+  },
+  "formal_confirmatory_contribution": 0
+}

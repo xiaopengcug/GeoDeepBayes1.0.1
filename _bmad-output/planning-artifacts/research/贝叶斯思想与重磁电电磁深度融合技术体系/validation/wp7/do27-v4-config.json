@@ -1,0 +1,24 @@
+{
+  "schema": "wp7-do27-preregistration-v3",
+  "run_id": "do27-v4-20260724",
+  "supersedes_protocol": "do27-v3-20260724",
+  "reason": "v4仅加固输入绑定、原始数值持久化与独立复算；数值门、alpha路径和有限主张边界保持v3不变",
+  "archive_sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e",
+  "shape": [12, 12, 8],
+  "stride": 8,
+  "seed": 20260724,
+  "alphas": [0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+  "selection_rule_id": "do27_gcv_stronger_tie_break_v1",
+  "gcv_tie_relative": 0.01,
+  "assumed_inversion_weight": {"gravity_mgal": 0.01, "magnetic_nt": 1.0},
+  "hard_gates": {
+    "solver_converged": true,
+    "weighted_rms_max": 1.2
+  },
+  "reported_non_gates": {
+    "overfit_warning_weighted_rms_below": 0.5,
+    "model_recovery_improvement_over_zero": 0.05
+  },
+  "compatibility_accepted": "solver_converged AND data_fit_accepted for gravity and magnetic",
+  "claim_boundary": "仅证明DO-27同源数据在现代SimPEG API上的降阶双单物理读取、正演、GCV选参和LSQR运行兼容；不证明模型恢复、PGI、联合、贝叶斯或原notebook复现"
+}

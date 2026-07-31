@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.0.0",
+  "run_id": "do27-v4-20260724",
+  "evidence_id": "EVD-SYNTH-001",
+  "execution": {
+    "started_at": "2026-07-24T15:39:00.776054+00:00",
+    "ended_at": "2026-07-24T15:39:03.231495+00:00",
+    "outcome": "succeeded",
+    "exit_code": 0,
+    "failure_reason": null
+  },
+  "code": {
+    "algorithm": "sha256-canonical-manifest-v1",
+    "manifest": [
+      {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/do27/run_do27_validation.py",
+        "bytes": 18982,
+        "sha256": "0bd7998623fd1dcd4a4ae2c76b24e0347ea159bf9205faf0e007ea6bd532baae",
+        "locator": null
+      }
+    ],
+    "sha256": "86e28f4e4f4c859bbb744b671887d916a7e69535fc736e6e03d8da682b10183b"
+  },
+  "inputs": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/simpeg-research_Astic-2020-JointInversion-1.0.0.zip",
+      "bytes": 18956806,
+      "sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e",
+      "locator": null
+    }
+  ],
+  "configs": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/do27-v4-config.json",
+      "bytes": 1139,
+      "sha256": "4df59f8240926ccd0da6e4c6a81ae8bce19436d58ee38472dc81dc71d5981b14",
+      "locator": null
+    }
+  ],
+  "outputs": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/config.json",
+      "bytes": 903,
+      "sha256": "6ff7c1bd42f30fd8f3f714fd0f885cacd9437a5142c929c635f63c9745196a19",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/environment.json",
+      "bytes": 1247,
+      "sha256": "7c664203d669d5e1d17b7b0895efad5badfffbf4d257d80a007376944b65ddb9",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/metrics.json",
+      "bytes": 10236,
+      "sha256": "81fd40c7d37518599838174ecb6a756deecddc4e8be63d91df78cc454192f242",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/raw-numerics.npz",
+      "bytes": 1106858,
+      "sha256": "e5b866e84922bb428474a422743dbf4d8392d5dbe1b72cd76cabb5b589ad47b2",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "bytes": 3244,
+      "sha256": "44972ff97cda32e498fc20258d571f32ed5f06efd4ba0c5707a1c667e5f2a0e5",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "locator": null
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/stdout.json",
+      "bytes": 1411,
+      "sha256": "1d17658a8a6eca5c2d96cf3550fda2e5da96da54395fda221337b8ef9b9c48f1",
+      "locator": null
+    }
+  ],
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "architecture": "AMD64",
+    "python_version": "3.11.15",
+    "python_sha256": "4cca2027319c08dca5cc4b64c9ba415cc89205152202cb6805081277c43b610f",
+    "uv_lock_sha256": "c71791cc6cda23ea4ba563821a4235261374e5268d8cfd9a595799c552834026"
+  },
+  "randomness": {
+    "stochastic": true,
+    "seeds": [
+      20260724
+    ]
+  },
+  "approval": {
+    "identity": "WP7三角色独立AI技术复核",
+    "identity_type": "ai",
+    "decided_at": "2026-07-24T16:06:33.053089+00:00",
+    "decision": "approved"
+  },
+  "claims": [
+    {
+      "claim_id": "EVD-SYNTH-001",
+      "scope": "synthetic",
+      "max_maturity": "Synthetic-verified"
+    }
+  ],
+  "attestation": {
+    "required": false,
+    "subject_digest": null,
+    "workflow": null,
+    "commit_sha": null,
+    "verified": false
+  }
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "case": "sticky_bimodal",
+    "seed": 20261118,
+    "stage": "diagnostics",
+    "error": "bulk_ess,failed_replicate_rate,folded_rhat,mode_visits,rank_rhat,relative_mcse,tail_ess",
+    "exit_code": 2,
+    "last_state": "separated modes",
+    "status": "Failed",
+    "reason": [
+      "bulk_ess",
+      "failed_replicate_rate",
+      "folded_rhat",
+      "mode_visits",
+      "rank_rhat",
+      "relative_mcse",
+      "tail_ess"
+    ],
+    "rank_normalized_split_rhat": 1.7230215702196494,
+    "folded_split_rhat": 1.7234600398208895,
+    "bulk_ess": 7,
+    "tail_ess": 7,
+    "relative_mcse": 0.3779644730092272,
+    "mode_visits_per_chain": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "failed_replicate_rate": 1.0
+  },
+  {
+    "case": "scale_mismatch",
+    "seed": 20261119,
+    "stage": "diagnostics",
+    "error": "failed_replicate_rate,folded_rhat",
+    "exit_code": 2,
+    "last_state": "scale mismatch",
+    "status": "Failed",
+    "reason": [
+      "failed_replicate_rate",
+      "folded_rhat"
+    ],
+    "rank_normalized_split_rhat": 0.9901232082972049,
+    "folded_split_rhat": 1.5531032842846508,
+    "bulk_ess": 400,
+    "tail_ess": 400,
+    "relative_mcse": 0.05,
+    "mode_visits_per_chain": [
+      31,
+      63,
+      95,
+      72
+    ],
+    "failed_replicate_rate": 1.0
+  },
+  {
+    "case": "tail_unexplored",
+    "seed": 20261120,
+    "stage": "diagnostics",
+    "error": "constant_tail,failed_replicate_rate,tail_ess",
+    "exit_code": 2,
+    "last_state": "constant tail",
+    "status": "Failed",
+    "reason": [
+      "constant_tail",
+      "failed_replicate_rate",
+      "tail_ess"
+    ],
+    "rank_normalized_split_rhat": 0.9901961901008376,
+    "folded_split_rhat": 0.9908711925187536,
+    "bulk_ess": 400,
+    "tail_ess": 0,
+    "relative_mcse": 0.05,
+    "mode_visits_per_chain": [
+      99,
+      99,
+      99,
+      99
+    ],
+    "failed_replicate_rate": 1.0
+  }
+]

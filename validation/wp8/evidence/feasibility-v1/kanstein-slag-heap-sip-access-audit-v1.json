@@ -1,0 +1,46 @@
+{
+  "schema_version": "wp8-kanstein-slag-heap-sip-access-audit-v1",
+  "audit_date": "2026-07-25",
+  "source": {
+    "title": "Spectral two-dimensional inversion of frequency-domain induced polarization data from a mining slag heap",
+    "authors": ["Thomas Günther", "Tina Martin"],
+    "doi": "10.1016/j.jappgeo.2016.01.008",
+    "site": "Kanstein historical mining slag heap, Germany"
+  },
+  "field_design": {
+    "profile_count": 2,
+    "published_example_profile_length_m": 39,
+    "electrode_count": 40,
+    "electrode_spacing_m": 1.0,
+    "array": "dipole-dipole",
+    "instrument": "SIP256C",
+    "frequency_count": 14,
+    "minimum_frequency_hz_approx": 0.2,
+    "maximum_frequency_hz": 1000.0,
+    "qualifying_field_sip": true
+  },
+  "public_access_audit": {
+    "article_public_raw_supplement": false,
+    "presentation_example_filename": "example.res",
+    "presentation_example_filename_is_literal_release_link": false,
+    "bert_repository": "https://gitlab.com/resistivity-net/bert",
+    "bert_repository_head": "9d0387621ef07bd037f8d01fe4f0d4f9babbdaa7",
+    "bert_repository_full_git_history_searched": true,
+    "bert_history_contains_sip_or_fdip_code": true,
+    "bert_history_contains_kanstein_raw_sip_response": false,
+    "bert_history_contains_example_res": false,
+    "anonymous_raw_field_response_download_found": false
+  },
+  "gate_assessment": {
+    "independent_field_cluster_upper_bound_if_obtained": 2,
+    "required_test_clusters": 223,
+    "observation_contract_byte_auditable": false,
+    "cluster_gate_passes": false,
+    "power_gate_passes": false,
+    "formal_sip_fdip_clusters_added": 0,
+    "formal_gate_changed": false,
+    "decision": "retain_as_field-design-and-negative-access-evidence-only"
+  },
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

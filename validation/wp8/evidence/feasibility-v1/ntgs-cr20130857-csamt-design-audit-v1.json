@@ -1,0 +1,278 @@
+{
+  "schema_version": "wp8-ntgs-cr20130857-csamt-design-audit-v1",
+  "audit_date": "2026-07-25",
+  "source_landing_page": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/90282",
+  "archive_download": "https://geoscience.nt.gov.au/gemis/ntgsjspui/bitstream/1/90282/2/CR2013-0857_Geophysics.zip",
+  "archive_path": "validation/wp8/data/ntgs-cr2013-0857-csamt-v1/CR2013-0857_Geophysics.zip",
+  "archive_bytes": 12422736,
+  "archive_sha256": "4a5217a3c03ecac251d8eab213bb0c8f129bc7108d239e1ee8e85e5adc2890ca",
+  "report_member": "Geophysics/CSAMT_Survey_Data/Logistics Report.pdf",
+  "report_bytes": 8475158,
+  "report_sha256": "97b46c25ae7ec276686fa06dea36ace691b35607eedf4d2e6dc09f4d067898db",
+  "archive_member_count": 128,
+  "response_member_count": 96,
+  "response_payload_members_opened": 0,
+  "test_response_members_opened": 0,
+  "geometry_members_opened": 13,
+  "field_sheet_members_present": 3,
+  "field_sheet_members_opened_by_audit": 0,
+  "survey_year": 2012,
+  "survey_area": "Arltunga East and West",
+  "published_line_count": 13,
+  "published_sounding_count": 205,
+  "published_line_km": 5.125,
+  "receiver_spacing_m": 25,
+  "frequency_range_hz": [
+    4,
+    8192
+  ],
+  "mode": "scalar TM",
+  "receiver_contract": {
+    "electric_component": "Ex",
+    "electric_dipole_length_m": 25,
+    "magnetic_component": "Hy",
+    "receiver": "Zonge GDP-32ii",
+    "magnetic_sensor": "EMI ANT-6"
+  },
+  "transmitter_contract": {
+    "type": "grounded electric dipole",
+    "model": "Zonge GGT-30 with ZMG-30 generator and XMT-32 controller",
+    "center_gda94_zone_53": [
+      478230,
+      7405490
+    ],
+    "orientation_deg_true": 90,
+    "length_m": 1995,
+    "derived_endpoints_gda94_zone_53": [
+      [
+        477232.5,
+        7405490.0
+      ],
+      [
+        479227.5,
+        7405490.0
+      ]
+    ],
+    "maximum_current_a_approximate": 12,
+    "frequency_dependent_current_not_in_report": true,
+    "sampled_waveform_present": false
+  },
+  "coordinate_file_count": 13,
+  "coordinate_row_count": 217,
+  "coordinate_count_differs_from_published_soundings": true,
+  "coordinate_lines": {
+    "7411000N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411000N.utm.stn",
+      "bytes": 1211,
+      "sha256": "16169027b8c558008f3f4399e51b8c85cc86f3f0135a84cbb6cd70ea923d0532",
+      "coordinate_row_count": 32,
+      "easting_range_m": [
+        478900.0,
+        479675.0
+      ],
+      "northing_range_m": [
+        7411000.0,
+        7411000.0
+      ]
+    },
+    "7411200N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411200N.utm.stn",
+      "bytes": 265,
+      "sha256": "227579270442f4c62388fe6853438d0af9af03e8d2867588151570e2b53ed905",
+      "coordinate_row_count": 7,
+      "easting_range_m": [
+        479050.0,
+        479200.0
+      ],
+      "northing_range_m": [
+        7411200.0,
+        7411200.0
+      ]
+    },
+    "7411450N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411450N.stn",
+      "bytes": 834,
+      "sha256": "dee7a8a1e2d71bd9461ba647499af8d0aef6b46610b13e7299a82bed4fed374f",
+      "coordinate_row_count": 22,
+      "easting_range_m": [
+        479075.0,
+        479600.0
+      ],
+      "northing_range_m": [
+        7411450.0,
+        7411450.0
+      ]
+    },
+    "7411600N": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411600N.stn",
+      "bytes": 608,
+      "sha256": "450831166a3476c4ce0811e186ae28862b75b18a1cd3301b3c8145b847efb275",
+      "coordinate_row_count": 16,
+      "easting_range_m": [
+        479125.0,
+        479500.0
+      ],
+      "northing_range_m": [
+        7411450.0,
+        7411450.0
+      ]
+    },
+    "7411650N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411650N.utm.stn",
+      "bytes": 418,
+      "sha256": "13bfe0e6aec2da776c19da0355030404117c6468057d9b4d514c912beb1653b3",
+      "coordinate_row_count": 11,
+      "easting_range_m": [
+        479350.0,
+        479600.0
+      ],
+      "northing_range_m": [
+        7411650.0,
+        7411650.0
+      ]
+    },
+    "7411700N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411700N.utm.stn",
+      "bytes": 418,
+      "sha256": "3b2cd79f2222ea1dfaaffe957f3c87ffdf0101c8ace60ef39c8068309f7156b6",
+      "coordinate_row_count": 11,
+      "easting_range_m": [
+        479250.0,
+        479500.0
+      ],
+      "northing_range_m": [
+        7411700.0,
+        7411700.0
+      ]
+    },
+    "7411750N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411750N.utm.stn",
+      "bytes": 304,
+      "sha256": "078249decaef4f9832f65563a976dfd50bede2c17115ce32cb2e2569f01598fa",
+      "coordinate_row_count": 8,
+      "easting_range_m": [
+        479325.0,
+        479500.0
+      ],
+      "northing_range_m": [
+        7411750.0,
+        7411750.0
+      ]
+    },
+    "7411800N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7411800N.utm.stn",
+      "bytes": 530,
+      "sha256": "842b973ac418ebf2d35c370497997571c255e7a0d28b8f632e0b647beb120000",
+      "coordinate_row_count": 14,
+      "easting_range_m": [
+        479175.0,
+        479500.0
+      ],
+      "northing_range_m": [
+        7411800.0,
+        7411800.0
+      ]
+    },
+    "7412000N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7412000N.utm.stn",
+      "bytes": 644,
+      "sha256": "6581420f597243217c381625246e9926d60f7cc8faef3e3ab5a518b9b62c3145",
+      "coordinate_row_count": 17,
+      "easting_range_m": [
+        479000.0,
+        479400.0
+      ],
+      "northing_range_m": [
+        7412000.0,
+        7412000.0
+      ]
+    },
+    "7412050N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7412050N.utm.stn",
+      "bytes": 454,
+      "sha256": "b862689558897a7280c3f26828ba99410a825b6bd84a9dedcdfaae559c600edf",
+      "coordinate_row_count": 12,
+      "easting_range_m": [
+        479525.0,
+        479800.0
+      ],
+      "northing_range_m": [
+        7412050.0,
+        7412050.0
+      ]
+    },
+    "7412300N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7412300N.utm.stn",
+      "bytes": 1329,
+      "sha256": "188bdedc1df15bcb25a85417b42232d6109787f5d759f7cb77073544b5e12541",
+      "coordinate_row_count": 35,
+      "easting_range_m": [
+        479075.0,
+        479925.0
+      ],
+      "northing_range_m": [
+        7412300.0,
+        7412300.0
+      ]
+    },
+    "7412500N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7412500N.utm.stn",
+      "bytes": 908,
+      "sha256": "505a80f334001dcc7bafd00c42f2da80da78029b880fa2c58b07360d8c7d0471",
+      "coordinate_row_count": 24,
+      "easting_range_m": [
+        474275.0,
+        474850.0
+      ],
+      "northing_range_m": [
+        7412500.0,
+        7412500.0
+      ]
+    },
+    "7412900N.utm": {
+      "member": "Geophysics/CSAMT_Survey_Data/7412900N.utm.stn",
+      "bytes": 301,
+      "sha256": "89e7a598d267bff8d0f4812a2321d8b776c88730900f87247fc4d28870914d6b",
+      "coordinate_row_count": 8,
+      "easting_range_m": [
+        474625.0,
+        474800.0
+      ],
+      "northing_range_m": [
+        7412900.0,
+        7412900.0
+      ]
+    }
+  },
+  "line_roles": {
+    "train": [
+      "7411000N",
+      "7411200N",
+      "7411450N",
+      "7411600N",
+      "7411650N",
+      "7411700N",
+      "7411750N",
+      "7411800N",
+      "7412000N",
+      "7412050N"
+    ],
+    "calibration": [
+      "7412300N"
+    ],
+    "test": [
+      "7412500N",
+      "7412900N"
+    ]
+  },
+  "role_assignment_basis": "line identity and station coordinates only; the two spatially separate western-grid lines are sealed test lines",
+  "role_assignment_frozen_before_response_access": true,
+  "minimum_independent_test_clusters": 223,
+  "absolute_sounding_upper_bound": 205,
+  "line_level_cluster_upper_bound": 13,
+  "observation_contract_ready": false,
+  "cluster_gate_passes": false,
+  "power_gate_passes": false,
+  "rights_gate_ready": false,
+  "reason": "The anonymous NTGS package contains raw and averaged CSAMT data, 13 coordinate-bearing lines, exact transmitter center/orientation/length, Ex/Hy receiver components, 4--8192 Hz acquisition and approximately 12 A maximum current. The logistics report does not publish sampled transmitter-waveform values, the item page does not state a reusable data licence, and even the unadjusted 205-sounding upper bound is below the frozen 223-cluster requirement. Response members remained unopened."
+}

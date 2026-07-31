@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "manifest_sha256", "dataset_selection_sha256", "preregistration_sha256", "methods"],
+  "properties": {
+    "schema_version": {"const": "wp8-feasibility-registration-v1"},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "dataset_selection_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "preregistration_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "methods": {
+      "type": "object",
+      "minProperties": 9,
+      "additionalProperties": false,
+      "required": ["gravity", "magnetic", "dc", "tdip", "sip_fdip", "tem", "mt_amt", "csamt", "wfem"],
+      "properties": {
+        "gravity": {"$ref": "#/$defs/method"},
+        "magnetic": {"$ref": "#/$defs/method"},
+        "dc": {"$ref": "#/$defs/method"},
+        "tdip": {"$ref": "#/$defs/method"},
+        "sip_fdip": {"$ref": "#/$defs/method"},
+        "tem": {"$ref": "#/$defs/method"},
+        "mt_amt": {"$ref": "#/$defs/method"},
+        "csamt": {"$ref": "#/$defs/method"},
+        "wfem": {"$ref": "#/$defs/method"}
+      }
+    }
+  },
+  "$defs": {
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reason", "method", "dataset_slug", "gate_name", "producer", "producer_sha256", "measurements", "thresholds", "evidence_id", "evidence_sha256"],
+      "properties": {
+        "status": {"enum": ["passed", "failed", "blocked"]},
+        "reason": {"type": "string", "minLength": 1},
+        "method": {"enum": ["gravity", "magnetic", "dc", "tdip", "sip_fdip", "tem", "mt_amt", "csamt", "wfem"]},
+        "dataset_slug": {"type": "string", "minLength": 1},
+        "gate_name": {"enum": ["license", "integrity", "observation_contract", "clusters", "power", "dimensionality", "solver", "independent_reference", "resource_budget"]},
+        "producer": {"type": "string", "minLength": 1},
+        "producer_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "measurements": {"type": "object", "minProperties": 1},
+        "thresholds": {"type": "object", "minProperties": 1},
+        "evidence_id": {"type": "string", "minLength": 1},
+        "evidence_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "method": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dataset_slug", "gates"],
+      "properties": {
+        "dataset_slug": {"type": "string", "minLength": 1},
+        "license_evidence": {"type": "object"},
+        "gates": {
+          "type": "object",
+          "required": ["license", "integrity", "observation_contract", "clusters", "power", "dimensionality", "solver", "independent_reference", "resource_budget"],
+          "additionalProperties": false,
+          "properties": {
+            "license": {"$ref": "#/$defs/gate"},
+            "integrity": {"$ref": "#/$defs/gate"},
+            "observation_contract": {"$ref": "#/$defs/gate"},
+            "clusters": {"$ref": "#/$defs/gate"},
+            "power": {"$ref": "#/$defs/gate"},
+            "dimensionality": {"$ref": "#/$defs/gate"},
+            "solver": {"$ref": "#/$defs/gate"},
+            "independent_reference": {"$ref": "#/$defs/gate"},
+            "resource_budget": {"$ref": "#/$defs/gate"}
+          }
+        }
+      }
+    }
+  }
+}

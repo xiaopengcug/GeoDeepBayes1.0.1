@@ -1,0 +1,134 @@
+{
+  "schema_version": "wp8-svalbard-ert-training-contract-v1",
+  "raw_manifest_sha256": "4cff4b8afa4312625a56bd0dd066f9189a65248e32c47241ae5e600cbff9d9aa",
+  "doi": "10.5281/zenodo.10260056",
+  "license_gate_passes": true,
+  "selection_role": "training_contract_candidate_only",
+  "archive_entry_count": 500,
+  "raw_bin_file_count": 39,
+  "raw_bin_profile_count": 18,
+  "topography_profile_count": 18,
+  "topography_electrode_count": 1200,
+  "topography_profiles": {
+    "ERT_P1_Ort": 48,
+    "ERT_P1_Par": 48,
+    "ERT_P2_Ort": 48,
+    "ERT_P2_Par": 48,
+    "ERT_P3_Ort": 48,
+    "ERT_P3_Par": 48,
+    "ERT_P4_Ort": 48,
+    "ERT_P4_Par": 48,
+    "ERT1": 132,
+    "ERT10": 60,
+    "ERT2": 96,
+    "ERT3": 60,
+    "ERT4": 168,
+    "ERT5": 60,
+    "ERT6": 72,
+    "ERT7": 60,
+    "ERT8": 60,
+    "ERT9": 48
+  },
+  "reciprocal_profile_count": 10,
+  "reciprocal_paired_row_count": 30426,
+  "reciprocal_profiles": {
+    "ERT1": {
+      "paired_rows": 6426,
+      "complete_abmn_rows": 6426,
+      "finite_resistance_rows": 6426,
+      "finite_reciprocal_mean_rows": 6426,
+      "finite_direct_error_rows": 6426,
+      "finite_fitted_error_rows": 6426
+    },
+    "ERT10": {
+      "paired_rows": 1812,
+      "complete_abmn_rows": 1812,
+      "finite_resistance_rows": 1812,
+      "finite_reciprocal_mean_rows": 1812,
+      "finite_direct_error_rows": 1812,
+      "finite_fitted_error_rows": 0
+    },
+    "ERT2": {
+      "paired_rows": 3762,
+      "complete_abmn_rows": 3762,
+      "finite_resistance_rows": 3762,
+      "finite_reciprocal_mean_rows": 3762,
+      "finite_direct_error_rows": 3762,
+      "finite_fitted_error_rows": 3762
+    },
+    "ERT3": {
+      "paired_rows": 2040,
+      "complete_abmn_rows": 2040,
+      "finite_resistance_rows": 2040,
+      "finite_reciprocal_mean_rows": 2040,
+      "finite_direct_error_rows": 2040,
+      "finite_fitted_error_rows": 2040
+    },
+    "ERT4": {
+      "paired_rows": 6952,
+      "complete_abmn_rows": 6952,
+      "finite_resistance_rows": 6952,
+      "finite_reciprocal_mean_rows": 6952,
+      "finite_direct_error_rows": 6952,
+      "finite_fitted_error_rows": 6952
+    },
+    "ERT5": {
+      "paired_rows": 1596,
+      "complete_abmn_rows": 1596,
+      "finite_resistance_rows": 1596,
+      "finite_reciprocal_mean_rows": 1596,
+      "finite_direct_error_rows": 1596,
+      "finite_fitted_error_rows": 1596
+    },
+    "ERT6": {
+      "paired_rows": 2448,
+      "complete_abmn_rows": 2448,
+      "finite_resistance_rows": 2448,
+      "finite_reciprocal_mean_rows": 2448,
+      "finite_direct_error_rows": 2448,
+      "finite_fitted_error_rows": 2448
+    },
+    "ERT7": {
+      "paired_rows": 1776,
+      "complete_abmn_rows": 1776,
+      "finite_resistance_rows": 1776,
+      "finite_reciprocal_mean_rows": 1776,
+      "finite_direct_error_rows": 1776,
+      "finite_fitted_error_rows": 1776
+    },
+    "ERT8": {
+      "paired_rows": 1802,
+      "complete_abmn_rows": 1802,
+      "finite_resistance_rows": 1802,
+      "finite_reciprocal_mean_rows": 1802,
+      "finite_direct_error_rows": 1802,
+      "finite_fitted_error_rows": 1802
+    },
+    "ERT9": {
+      "paired_rows": 1812,
+      "complete_abmn_rows": 1812,
+      "finite_resistance_rows": 1812,
+      "finite_reciprocal_mean_rows": 1812,
+      "finite_direct_error_rows": 1812,
+      "finite_fitted_error_rows": 1812
+    }
+  },
+  "profiles_with_complete_abmn_response_and_direct_error": 10,
+  "geometry_contract": {
+    "electrode_id_easting_northing_altitude": true,
+    "crs": "EPSG:32633",
+    "profile_local_abmn_indices": true
+  },
+  "uncertainty_contract": {
+    "independent_normal_reciprocal_measurements": true,
+    "per_pair_resistance_difference_present": true,
+    "per_pair_reciprocal_mean_present": true,
+    "fitted_error_model_present_for_all_pairs": false,
+    "repeat_based_training_uncertainty_ready": true
+  },
+  "training_observation_contract_ready": true,
+  "available_field_profile_clusters": 18,
+  "formal_cluster_power_gate_passes": false,
+  "test_unseal_count": 0,
+  "conclusion": "The CC BY 4.0 release provides a complete training-side DC field contract for the reciprocal DD subset: GPS/topographic electrode geometry, ABMN indices, resistance, reciprocal mean, and a direct normal-reciprocal error for every paired row. It covers only 18 profiles in one Ny-\u00c5lesund campaign, including 10 reciprocal-error profiles, so it cannot supply 223 independent formal clusters."
+}

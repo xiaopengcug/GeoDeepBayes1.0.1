@@ -1,0 +1,50 @@
+{
+  "schema_version": "wp8-usgs-aem-2025-unexposed-candidate-design-v1",
+  "selection_frozen_before_response_payload_access": true,
+  "selection_date": "2026-07-25",
+  "license": "CC0-1.0",
+  "candidates": [
+    {
+      "sciencebase_id": "6197ec00d34eb622f692eebf",
+      "doi": "10.5066/P9LFGESW",
+      "name": "Elk Hills SkyTEM 312, 2017",
+      "declared_line_km": 1980,
+      "response_payload": {
+        "name": "ElkHillsCA2017.nc",
+        "bytes": 1248513154
+      },
+      "metadata_only_members": [
+        "ElkHillsCA2017.ncml",
+        "ElkHillsCA2017.xml",
+        "ElkHillsCA2017_SkyTEMApS_DataReport.pdf"
+      ]
+    },
+    {
+      "sciencebase_id": "65c3a97ed34ef4b119cae594",
+      "doi": "10.5066/P1UKDJSM",
+      "name": "Basin and Range HELITEM2, 2022-2023",
+      "declared_line_km": 11079,
+      "response_payloads": [
+        {"name": "NV_BasinRangeAEM_Year1_AOI1.nc", "bytes": 9180946318},
+        {"name": "NV_BasinRangeAEM_Year1_AOI2.nc", "bytes": 5101199387},
+        {"name": "NV_BasinRangeAEM_Year1_AOI3.nc", "bytes": 3643035695}
+      ],
+      "metadata_only_members": [
+        "NV_BasinRangeAEM_Year1_AOI1.ncml",
+        "NV_BasinRangeAEM_Year1_AOI2.ncml",
+        "NV_BasinRangeAEM_Year1_AOI3.ncml",
+        "NV_BasinRangeAEM_Year1.xml",
+        "NV_BasinRangeAEM_Year1_DataReport.pdf"
+      ]
+    }
+  ],
+  "staged_protocol": {
+    "stage_1": "Download and inspect only NCML, FGDC XML, reports, and official file inventory.",
+    "stage_2_condition": "Before any response payload download, metadata must prove coordinates, line identity, transmitter geometry and current, exact waveform, gate times, response components, and per-observation uncertainty semantics.",
+    "stage_2_role_rule": "If the condition passes, freeze a coordinate-first spatial split and verify its correlation-adjusted test-cluster upper bound before opening response arrays.",
+    "abort_condition": "Do not download response payloads when the metadata contract fails or the response-blind spatial design cannot possibly provide 223 effective test clusters."
+  },
+  "response_payloads_downloaded": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

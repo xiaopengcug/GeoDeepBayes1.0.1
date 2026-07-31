@@ -1,0 +1,29 @@
+{
+  "schema": "wp7-synthetic-preregistration-v5",
+  "run_id": "synthetic-block-v5-20260724",
+  "supersedes_protocol": "synthetic-block-v4-20260724",
+  "reason": "v5仅增加真实执行时段/退出码、从快照重建POD及按冻结种子重建48维覆盖复制；数值设计和门槛保持v4不变",
+  "seed": 20260724,
+  "dimension": 48,
+  "pod_rank_cap": 12,
+  "snapshots": {"prior": 24, "multi_map": 24, "pilot": 24, "holdout": 24},
+  "chains": 4,
+  "warmup_per_chain": 2000,
+  "draws_per_chain": 4000,
+  "coverage_replicates": 400,
+  "coverage_methods": {
+    "full": "48D mixture target",
+    "naive_pod": "frozen POD projected prior",
+    "error_inflated_pod": "frozen POD projected mean plus discarded predictive variance"
+  },
+  "thresholds": {
+    "max_rhat": 1.01,
+    "min_bulk_ess": 400,
+    "min_tail_ess": 400,
+    "max_relative_mcse": 0.05,
+    "min_mode_visits_per_chain": 2,
+    "max_failed_replicate_rate": 0.02,
+    "max_standardized_mean_rmse": 0.25,
+    "coverage_wilson_contains_nominal": [0.9, 0.95]
+  }
+}

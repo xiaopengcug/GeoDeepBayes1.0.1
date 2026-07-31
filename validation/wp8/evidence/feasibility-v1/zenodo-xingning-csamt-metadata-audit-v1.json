@@ -1,0 +1,35 @@
+{
+  "schema_version": "wp8-zenodo-xingning-csamt-metadata-audit-v1",
+  "audit_date": "2026-07-25",
+  "record_id": 5533467,
+  "doi": "10.5281/zenodo.5533467",
+  "license": "CC-BY-4.0",
+  "archive_checksum_verified": true,
+  "outer_members": [
+    {
+      "name": "2017资兴何家山和州门司CSAMT测点坐标.xlsx",
+      "bytes": 30850
+    },
+    {
+      "name": "CSAMT数据Xingning.rar",
+      "bytes": 115782
+    }
+  ],
+  "inner_inventory": {
+    "line_ids": ["K1", "K2", "K3", "K4", "K5", "K6", "K7", "K8", "K9"],
+    "line_count": 9,
+    "avg_files": 9,
+    "mde_files": 9
+  },
+  "required_effective_test_clusters": 223,
+  "raw_line_upper_bound_sufficient": false,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "decision": "abort_before_response_parsing",
+  "reason": "The complete public archive contains only nine line identities; even treating every line as independent is far below the required 223 effective test clusters.",
+  "formal_csamt_effect": {
+    "observation_contract_passed": false,
+    "effective_test_clusters_passed": false,
+    "prospective_power_passed": false
+  }
+}

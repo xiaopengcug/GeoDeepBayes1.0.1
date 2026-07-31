@@ -1,0 +1,14 @@
+{
+  "schema": "wp7-do27-preregistration-v1",
+  "run_id": "do27-v2-20260724",
+  "archive_sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e",
+  "shape": [12, 12, 8],
+  "stride": 8,
+  "alphas": [0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+  "selection_rule_id": "do27_gcv_stronger_tie_break_v1",
+  "gcv_tie_relative": 0.01,
+  "sigma": {"gravity_mgal": 0.01, "magnetic_nt": 1.0},
+  "normalized_rms_acceptance": [0.5, 1.2],
+  "minimum_zero_model_rmse_improvement": 0.05,
+  "claim_boundary": "DO-27同源数据的现代SimPEG降阶单物理兼容验证；非PGI、非联合、非贝叶斯、非原notebook复现"
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "wp8-tem-aem-consortium-contract-readiness-v1",
+  "raw_manifest_sha256": "49ba8d6573030b59c4528b4d9207ff41af48f4267a1a7bd52034e8f8b179b214",
+  "surveys": {
+    "hualapai": {
+      "passed": true,
+      "doi": "10.5066/P91OLJN3",
+      "report_path": "hualapai/GrandCanyonWest2018_SkyTEM_DataReport.pdf",
+      "report_sha256": "5b2625eec970d35a6572f47a8db83ce28744d74793ad856b3ff14c65a86965ab",
+      "report_pages_checked": [
+        13,
+        14,
+        17,
+        21,
+        22,
+        23,
+        39,
+        40,
+        41,
+        42
+      ],
+      "system": "SkyTEM 312M dual moment",
+      "low_moment_frequency_hz": 210,
+      "low_moment_current_a": 6,
+      "high_moment_frequency_hz": 30,
+      "high_moment_current_a": 115,
+      "transmitter_geometry": "documented octagonal loop",
+      "receiver_geometry": "documented null-position coils",
+      "gate_count": 44,
+      "per_observation_standard_deviation": true
+    },
+    "yellowstone": {
+      "passed": false,
+      "raw_doi": "10.5066/P9MCJ9B6",
+      "processed_doi": "10.5066/P9LVAU7W",
+      "contractor_report": {
+        "fgdc_name": "20170706_395_Yellowstone_USGS_SkyTEM_Datareport_V2_app.pdf",
+        "sciencebase_display_name": "20170706_395_Yellowstone_USGS_SkyTEM_Datareport_V2_app-508.pdf",
+        "catalogued_size_mb": 17.5,
+        "sciencebase_display_size_mb": 17.39,
+        "sciencebase_item_id": "5d35fe69e4b01d82ce8a61d1",
+        "historical_disk_key": "__disk__4c/50/a9/4c50a962c6a0c069f7fb009bd06524cd6d313544",
+        "fgdc_metadata_url": "https://data.usgs.gov/datacatalog/metadata/USGS.5d35fe69e4b01d82ce8a61d1.xml",
+        "current_file_status": "HTTP 404",
+        "internet_archive_status": "catalog pages captured; no archived PDF payload found"
+      },
+      "reason": "processed response/time/STD fields are protected locally, but the catalogued 17.5 MB survey-specific SkyTEM 312M contractor report 20170706_395_Yellowstone_USGS_SkyTEM_Datareport_V2_app.pdf returns HTTP 404 and no archived payload was found; it is absent from the immutable pool, so loop/current waveform cannot be reconstructed",
+      "processed_dictionary_sha256": "d650f8ea722686db26df74503dadde8a12e511ebdd32355d12ca6c4fb7026a0b"
+    }
+  },
+  "sealed_response_values_interpreted": false
+}

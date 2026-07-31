@@ -163,6 +163,12 @@
     },
     "calibration": {
       "source": "WP2-REPORT-CONTRACT",
+      "synthetic_source": {
+        "run_id": "WP1-TOY-20260717-R400-v1",
+        "anchor": "validation/wp1-toy-root-anchor.sha256",
+        "manifest": "validation/wp1-toy/output/manifest.json",
+        "recursive_required": true
+      },
       "types": [
         "ppc",
         "holdout_predictive_calibration",
@@ -200,6 +206,57 @@
       "formula": "WP4-DECISION",
       "metric": "decision_contract_only",
       "status": "Planned"
+    },
+    "evidence_status_bindings": {
+      "CLM-DOC-02-0027": {
+        "status": "Planned",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "CLM-DOC-03-0030": {
+        "status": "Planned",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "CLM-DOC-06-0002": {
+        "status": "Planned",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "CLM-COMPUTE-PLAN-0003": {
+        "status": "Planned",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "CLM-DOC-A4-0003": {
+        "status": "Synthetic-run",
+        "source": "WP1-MANIFEST",
+        "evidence_id": "WP1-TOY",
+        "run_id": "WP1-TOY-20260717-R400-v1",
+        "manifest": "validation/wp1-toy/output/manifest.json"
+      },
+      "CLM-DOC-A4-0004": {
+        "status": "Synthetic-run",
+        "source": "WP1-MANIFEST",
+        "evidence_id": "WP1-TOY",
+        "run_id": "WP1-TOY-20260717-R400-v1",
+        "manifest": "validation/wp1-toy/output/manifest.json"
+      },
+      "CLM-DOC-A4-0006": {
+        "status": "Synthetic-run",
+        "source": "WP1-MANIFEST",
+        "evidence_id": "WP1-TOY",
+        "run_id": "WP1-TOY-20260717-R400-v1",
+        "manifest": "validation/wp1-toy/output/manifest.json"
+      }
     }
   }
 }

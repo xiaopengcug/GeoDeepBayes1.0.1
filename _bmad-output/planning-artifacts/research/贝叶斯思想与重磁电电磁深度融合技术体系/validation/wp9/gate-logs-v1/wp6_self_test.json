@@ -1,0 +1,21 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "wp6_self_test",
+  "argv": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-wp6.ps1",
+    "-SelfTest",
+    "-SkipTests"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:27:45.498685+00:00",
+  "ended_at_utc": "2026-07-28T03:27:58.539909+00:00",
+  "exit_code": 0,
+  "stdout": "{\"status\": \"passed\", \"self_test\": true, \"release\": false, \"contracts\": {\"status\": \"passed\", \"methods\": 9, \"capabilities\": 4, \"self_test\": true, \"failures\": []}, \"failures\": []}\nPASS WP6 self_test=True release=False\n",
+  "stderr": "Resolved 73 packages in 1ms\n",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "d1cd942390cb72fca4f47f9ebebc1ed9248b6940cb48da55cc31ad1b1c06d7af",
+  "stderr_sha256": "f96ebe48d8c14c3992796eb4551358a7e7c9ebe3808080575a59b2ccb2a1370c"
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": "wp8-zenodo-tdip-training-audit-v1",
+  "training_manifest_sha256": "65cc7e17093711dbc5b265444409b55a81db3c9cb6bd00da07220e748993d05b",
+  "training_groups": [
+    "n12_n13",
+    "n7_n6_n1"
+  ],
+  "training_database_count": 2,
+  "surveys": [
+    {
+      "database": "field_survey/field_full_waveform_data/n12_n13/SH20221212_LS25582003_2022-12-12_02-11-15/project.db",
+      "database_sha256": "8e9d7ce83f28c29ccb37e1cc433a8e073f610e331ad762a86d25da770674db02",
+      "tasks": 2,
+      "measures": 546,
+      "abmn_rows": 3822,
+      "unique_abmn_geometries": 2450,
+      "coordinate_bounds_m": {
+        "A_min": 0.0,
+        "B_max": 95.0,
+        "M_min": 1.0,
+        "N_max": 94.0
+      },
+      "datatypes": [
+        {
+          "datatype_id": 1,
+          "name": "SP",
+          "unit": "V",
+          "explanation": "SP",
+          "observations": 546,
+          "with_standard_deviation": 546,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 3,
+          "name": "IP",
+          "unit": "mV/V",
+          "explanation": "One IP window. Can be recalculated",
+          "observations": 42042,
+          "with_standard_deviation": 41929,
+          "min_sequence": 0,
+          "max_sequence": 10
+        },
+        {
+          "datatype_id": 5,
+          "name": "R",
+          "unit": "\u03a9",
+          "explanation": "Resistance",
+          "observations": 4368,
+          "with_standard_deviation": 4368,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 6,
+          "name": "I",
+          "unit": "A",
+          "explanation": "Current",
+          "observations": 1092,
+          "with_standard_deviation": 1092,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 7,
+          "name": "\u0394U",
+          "unit": "V",
+          "explanation": "ResDeltaVoltage",
+          "observations": 4368,
+          "with_standard_deviation": 4368,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 9,
+          "name": "IP\u0394U",
+          "unit": "V",
+          "explanation": "IPDeltaVoltage",
+          "observations": 42042,
+          "with_standard_deviation": 42042,
+          "min_sequence": 0,
+          "max_sequence": 10
+        },
+        {
+          "datatype_id": 13,
+          "name": "Temp",
+          "unit": "C",
+          "explanation": "Temperature",
+          "observations": 546,
+          "with_standard_deviation": 546,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 17,
+          "name": "undeclared",
+          "observations": 545,
+          "with_standard_deviation": 545,
+          "min_sequence": 0,
+          "max_sequence": 0
+        }
+      ],
+      "ip_window_count": 11,
+      "ip_observations": 42042,
+      "ip_relative_sdev_p50": 0.2845101226475245,
+      "ip_relative_sdev_p95": 3.9137566491720572
+    },
+    {
+      "database": "field_survey/field_full_waveform_data/n7_n6_n1/SH20221201_LS25582003_2022-12-01_01-03-10/project.db",
+      "database_sha256": "5846c06171b971c83a16b61b49ae852e7552f1fc69a0013784729c45ab65a251",
+      "tasks": 3,
+      "measures": 1050,
+      "abmn_rows": 7350,
+      "unique_abmn_geometries": 2450,
+      "coordinate_bounds_m": {
+        "A_min": 0.0,
+        "B_max": 95.0,
+        "M_min": 1.0,
+        "N_max": 94.0
+      },
+      "datatypes": [
+        {
+          "datatype_id": 1,
+          "name": "SP",
+          "unit": "V",
+          "explanation": "SP",
+          "observations": 1050,
+          "with_standard_deviation": 1050,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 3,
+          "name": "IP",
+          "unit": "mV/V",
+          "explanation": "One IP window. Can be recalculated",
+          "observations": 80850,
+          "with_standard_deviation": 80542,
+          "min_sequence": 0,
+          "max_sequence": 10
+        },
+        {
+          "datatype_id": 5,
+          "name": "R",
+          "unit": "\u03a9",
+          "explanation": "Resistance",
+          "observations": 8400,
+          "with_standard_deviation": 8400,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 6,
+          "name": "I",
+          "unit": "A",
+          "explanation": "Current",
+          "observations": 2100,
+          "with_standard_deviation": 2100,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 7,
+          "name": "\u0394U",
+          "unit": "V",
+          "explanation": "ResDeltaVoltage",
+          "observations": 8400,
+          "with_standard_deviation": 8400,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 9,
+          "name": "IP\u0394U",
+          "unit": "V",
+          "explanation": "IPDeltaVoltage",
+          "observations": 80850,
+          "with_standard_deviation": 80850,
+          "min_sequence": 0,
+          "max_sequence": 10
+        },
+        {
+          "datatype_id": 13,
+          "name": "Temp",
+          "unit": "C",
+          "explanation": "Temperature",
+          "observations": 1050,
+          "with_standard_deviation": 1050,
+          "min_sequence": 0,
+          "max_sequence": 0
+        },
+        {
+          "datatype_id": 17,
+          "name": "undeclared",
+          "observations": 1049,
+          "with_standard_deviation": 1049,
+          "min_sequence": 0,
+          "max_sequence": 0
+        }
+      ],
+      "ip_window_count": 11,
+      "ip_observations": 80850,
+      "ip_relative_sdev_p50": 0.27921661338429704,
+      "ip_relative_sdev_p95": 3.511638085684144
+    }
+  ],
+  "total_ip_observations": 122892,
+  "declared_ip_unit": "mV/V",
+  "ip_window_count": [
+    11
+  ],
+  "per_observation_standard_deviation_contract": true,
+  "ip_relative_sdev_p50": 0.2807998030449196,
+  "ip_relative_sdev_p95": 3.637280190888853,
+  "waveform_metadata": {
+    "ini_file_count": 4,
+    "wave_type_4_declared": true,
+    "pulse_count_3_declared": true,
+    "on_times_s": [
+      2.0,
+      2.3,
+      2.0
+    ],
+    "amplitudes_relative": [
+      1,
+      -1,
+      1
+    ],
+    "dc_integration_interval_s": [
+      1.756,
+      1.796
+    ]
+  },
+  "formal_observation_contract_ready": true,
+  "plan_expected_time_windows": 20,
+  "observed_processed_time_windows": 11,
+  "twenty_window_contract_ready": false,
+  "profile_level_test_cluster_upper_bound": 1,
+  "required_test_clusters": 223,
+  "power_gate_possible": false,
+  "paired_crps_effect_distribution_available": false,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "conclusion": "Training data establish ABMN geometry, waveform metadata, 11 processed IP windows, and direct per-observation standard deviations. They do not satisfy the plan's 20-window contract or the 223 independent test-cluster power gate."
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": "wp8-ngs99-gravity-training-diagnostics-v1",
+  "response_policy": {
+    "training_rows_interpreted": 767102,
+    "heldout_or_invalid_rows_skipped_without_response_parsing": 866397,
+    "buffer_rows_interpreted": 0,
+    "calibration_rows_interpreted": 0,
+    "test_rows_interpreted": 0
+  },
+  "quality_metadata": {
+    "bouguer_anomaly_sd_counts_training_only": {
+      "positive_sd": 489562,
+      "zero_or_unspecified_sd": 277540
+    },
+    "positive_sd_fraction": 0.6381967456739782
+  },
+  "aggregation": "mean Bouguer anomaly per occupied 100-km training cell",
+  "regional_field": {
+    "model": "fixed OLS plane fitted to training cells only",
+    "coefficients": [
+      -123.27383261977687,
+      -0.010145788922641173,
+      -0.0020086500534148297
+    ]
+  },
+  "residual_sill_mgal2": 8510.069277640225,
+  "variogram": {
+    "range_rule": "first two consecutive 100-km bins at or above 95% residual sill",
+    "bins": [
+      {
+        "lag_center_km": 50.0,
+        "pairs": 0,
+        "semivariance_mgal2": null
+      },
+      {
+        "lag_center_km": 150.0,
+        "pairs": 2784,
+        "semivariance_mgal2": 1131.152820583888
+      },
+      {
+        "lag_center_km": 250.0,
+        "pairs": 4345,
+        "semivariance_mgal2": 1749.4849332791348
+      },
+      {
+        "lag_center_km": 350.0,
+        "pairs": 4241,
+        "semivariance_mgal2": 2326.774939068092
+      },
+      {
+        "lag_center_km": 450.0,
+        "pairs": 3868,
+        "semivariance_mgal2": 2959.5279904987847
+      },
+      {
+        "lag_center_km": 550.0,
+        "pairs": 3939,
+        "semivariance_mgal2": 3582.6644648763713
+      },
+      {
+        "lag_center_km": 650.0,
+        "pairs": 2959,
+        "semivariance_mgal2": 4020.728291438
+      },
+      {
+        "lag_center_km": 750.0,
+        "pairs": 2801,
+        "semivariance_mgal2": 4427.654657969252
+      },
+      {
+        "lag_center_km": 850.0,
+        "pairs": 4018,
+        "semivariance_mgal2": 4502.41706161743
+      },
+      {
+        "lag_center_km": 950.0,
+        "pairs": 5015,
+        "semivariance_mgal2": 4973.1428357919285
+      },
+      {
+        "lag_center_km": 1050.0,
+        "pairs": 6944,
+        "semivariance_mgal2": 5517.32371848459
+      },
+      {
+        "lag_center_km": 1150.0,
+        "pairs": 8376,
+        "semivariance_mgal2": 6009.8721442368005
+      },
+      {
+        "lag_center_km": 1250.0,
+        "pairs": 11268,
+        "semivariance_mgal2": 6470.947788245353
+      },
+      {
+        "lag_center_km": 1350.0,
+        "pairs": 12513,
+        "semivariance_mgal2": 7125.50513741587
+      },
+      {
+        "lag_center_km": 1450.0,
+        "pairs": 10933,
+        "semivariance_mgal2": 7508.3369455003285
+      },
+      {
+        "lag_center_km": 1550.0,
+        "pairs": 10436,
+        "semivariance_mgal2": 7627.548803167446
+      },
+      {
+        "lag_center_km": 1650.0,
+        "pairs": 8401,
+        "semivariance_mgal2": 7701.343596800505
+      },
+      {
+        "lag_center_km": 1750.0,
+        "pairs": 7895,
+        "semivariance_mgal2": 7717.252578215468
+      },
+      {
+        "lag_center_km": 1850.0,
+        "pairs": 5735,
+        "semivariance_mgal2": 7589.193644756117
+      },
+      {
+        "lag_center_km": 1950.0,
+        "pairs": 6703,
+        "semivariance_mgal2": 7484.485421038598
+      }
+    ]
+  },
+  "conservative_spatial_correlation_range_km": 2000.0,
+  "range_censored_at_maximum_lag": true,
+  "correlation_cell_merge_factor_2d": 400,
+  "design_test_cells": 380,
+  "correlation_adjusted_test_cluster_upper_bound": 0,
+  "cluster_gate_passed": false,
+  "power_gate_passed": false,
+  "power_reason": "training-only paired-CRPS effect size is not yet available",
+  "dimensionality": {
+    "selected": "3D",
+    "passed": true,
+    "reason": "continental station coverage spans heterogeneous lateral structure"
+  }
+}

@@ -137,45 +137,82 @@ def subset_survey(gravity_data, magnetic_data, stride: int):
     return indices, gsurvey, msurvey
 
 
-def regularized_inverse(matrix: np.ndarray, data: np.ndarray, truth: np.ndarray, alphas: list[float]) -> dict:
-    scale = max(float(np.std(data)), 1e-12)
-    normalized_matrix = matrix / scale
-    normalized_data = data / scale
+def regularized_inverse(
+    matrix: np.ndarray, data: np.ndarray, truth: np.ndarray,
+    alphas: list[float], sigma: float, protocol: str,
+) -> dict:
+    """预注册白化LSQR路径；GCV选参，绝不按训练RMS或真值选参。"""
+    normalized_matrix = matrix / sigma
+    normalized_data = data / sigma
     initial_rms = float(np.sqrt(np.mean(normalized_data**2)))
     trials = []
-    best = None
+    solutions = []
+    singular = np.linalg.svd(normalized_matrix, compute_uv=False)
     identity = eye(matrix.shape[1], format="csr")
     for alpha in alphas:
         started = time.perf_counter()
         augmented = vstack([normalized_matrix, np.sqrt(alpha) * identity], format="csr")
         rhs = np.r_[normalized_data, np.zeros(matrix.shape[1])]
-        # 审查意见02 / G: iter_lim 500→2000，并放宽 converged 判据（数据拟合达标亦视为收敛）
+        # WP7：求解器收敛只接受LSQR停止码1/2；数据拟合另行判定。
         solution = lsqr(augmented, rhs, atol=1e-6, btol=1e-6, iter_lim=2000)
         model = solution[0]
         residual = normalized_matrix @ model - normalized_data
         normalized_rms = float(np.sqrt(np.mean(residual**2)))
         stop_code = int(solution[1])
+        values_finite = bool(
+            np.isfinite(model).all()
+            and np.isfinite(residual).all()
+            and np.isfinite(np.asarray(solution[3:9], dtype=float)).all()
+        )
+        effective_df = float(np.sum(singular**2 / (singular**2 + alpha)))
+        rss = float(np.dot(residual, residual))
+        denominator = max(1.0 - effective_df / data.size, np.finfo(float).eps)
         trial = {
             "alpha": alpha,
             "iterations": int(solution[2]),
             "stop_code": stop_code,
-            "converged": (stop_code in (1, 2)) or (normalized_rms < 1e-3),
+            "values_finite": values_finite,
+            "solver_converged": (
+                stop_code in (1, 2) and int(solution[2]) < 2000 and values_finite
+            ),
             "normalized_rms": normalized_rms,
             "model_rmse": float(np.sqrt(np.mean((model - truth) ** 2))),
+            "effective_df": effective_df,
+            "gcv": float((rss / data.size) / denominator**2),
+            "solution_norm": float(np.linalg.norm(model)),
+            "residual_norm": float(np.linalg.norm(residual)),
             "elapsed_seconds": time.perf_counter() - started,
         }
         trials.append(trial)
-        if best is None or (
-            trial["converged"] and not best["converged"]
-        ) or (
-            trial["converged"] == best["converged"]
-            and trial["normalized_rms"] < best["normalized_rms"]
-        ):
-            best = {**trial, "model": model}
-    assert best is not None
-    recovered = best.pop("model")
+        solutions.append(model)
+    minimum_gcv = min(trial["gcv"] for trial in trials)
+    eligible = [
+        index for index, trial in enumerate(trials)
+        if trial["gcv"] <= 1.01 * minimum_gcv
+    ]
+    selected_index = max(eligible, key=lambda index: trials[index]["alpha"])
+    best = {**trials[selected_index]}
+    recovered = solutions[selected_index]
+    zero_rmse = float(np.sqrt(np.mean(truth**2)))
+    best["overfit_warning"] = best["normalized_rms"] < 0.5
+    best["data_fit_accepted"] = (
+        best["normalized_rms"] <= 1.2 if protocol == "v3"
+        else 0.5 <= best["normalized_rms"] <= 1.2
+    )
+    best["model_recovery_accepted"] = best["model_rmse"] <= 0.95 * zero_rmse
+    best["compatibility_accepted"] = (
+        best["solver_converged"] and best["data_fit_accepted"]
+    )
+    best["accepted"] = (
+        best["compatibility_accepted"] if protocol == "v3"
+        else best["compatibility_accepted"] and best["model_recovery_accepted"]
+    )
     return {
+        "selection_rule_id": "do27_gcv_stronger_tie_break_v1",
+        "protocol": protocol,
+        "sigma": sigma,
         "initial_normalized_rms": initial_rms,
+        "zero_model_rmse": zero_rmse,
         "best": best,
         "trials": trials,
         "recovered_model_summary": {
@@ -183,23 +220,26 @@ def regularized_inverse(matrix: np.ndarray, data: np.ndarray, truth: np.ndarray,
             "maximum": float(recovered.max()),
             "mean": float(recovered.mean()),
         },
+        "_solutions": np.asarray(solutions),
     }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--archive", required=True, type=Path)
+    parser.add_argument("--config", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--work", required=True, type=Path)
-    parser.add_argument("--stride", type=int, default=8)
-    parser.add_argument("--shape", default="12,12,8")
-    parser.add_argument("--seed", type=int, default=20260717)
     args = parser.parse_args()
-    try:
-        nx, ny, nz = [int(value) for value in args.shape.split(",")]
-    except ValueError:
-        parser.error("--shape must contain three comma-separated integers")
-    if args.stride <= 0 or min(nx, ny, nz) <= 0:
+    prereg = json.loads(args.config.resolve().read_text(encoding="utf-8"))
+    nx, ny, nz = map(int, prereg["shape"])
+    stride = int(prereg["stride"])
+    seed = int(prereg.get("seed", 20260724))
+    protocol = str(prereg["schema"]).rsplit("-", 1)[-1]
+    alphas = [float(value) for value in prereg["alphas"]]
+    if protocol not in {"v2", "v3"}:
+        parser.error("config schema must end in v2 or v3")
+    if stride <= 0 or min(nx, ny, nz) <= 0:
         parser.error("--stride and every --shape dimension must be positive")
     if nx * ny * nz > 250_000:
         parser.error("--shape exceeds the 250000-cell validation safety limit")
@@ -210,7 +250,12 @@ def main() -> int:
     work = args.work.resolve()
     work.mkdir(parents=True, exist_ok=False)
     archive = args.archive.resolve()
-    np.random.seed(args.seed)
+    actual_archive_hash = sha256(archive)
+    if actual_archive_hash != prereg["archive_sha256"]:
+        raise RuntimeError(
+            f"archive drift: expected {prereg['archive_sha256']}, got {actual_archive_hash}"
+        )
+    np.random.seed(seed)
     extract_required(archive, work)
     forward = work / "Forward"
 
@@ -219,7 +264,7 @@ def main() -> int:
     mesh, density_truth, susceptibility_truth, original_mesh = coarse_mesh_and_truth(
         forward, gravity_data, nx, ny, nz
     )
-    indices, gravity_survey, magnetic_survey = subset_survey(gravity_data, magnetic_data, args.stride)
+    indices, gravity_survey, magnetic_survey = subset_survey(gravity_data, magnetic_data, stride)
 
     gravity_simulation = gravity.simulation.Simulation3DIntegral(
         mesh=mesh, survey=gravity_survey, rhoMap=simpeg.maps.IdentityMap(nP=mesh.n_cells), engine="geoana"
@@ -238,22 +283,29 @@ def main() -> int:
     magnetic_observed = magnetic_data.dobs[indices]
 
     # 审查意见02 / G: alpha 候选集扩展，含更大正则化以助 LSQR 早停
-    alphas = [1e-4, 1e-3, 1e-2, 1e-1, 1.0, 10.0, 100.0]
-    gravity_inverse = regularized_inverse(gravity_matrix, gravity_observed, density_truth, alphas)
-    magnetic_inverse = regularized_inverse(magnetic_matrix, magnetic_observed, susceptibility_truth, alphas)
+    gravity_inverse = regularized_inverse(
+        gravity_matrix, gravity_observed, density_truth, alphas,
+        sigma=float(prereg["assumed_inversion_weight"]["gravity_mgal"]), protocol=protocol,
+    )
+    magnetic_inverse = regularized_inverse(
+        magnetic_matrix, magnetic_observed, susceptibility_truth, alphas,
+        sigma=float(prereg["assumed_inversion_weight"]["magnetic_nt"]), protocol=protocol,
+    )
+    gravity_solutions = gravity_inverse.pop("_solutions")
+    magnetic_solutions = magnetic_inverse.pop("_solutions")
     compatibility = compatibility_audit(work / "PGI_joint_inversion/Joint_PGI_Grav_Mag.ipynb")
 
     metrics = {
         "run_scope": "DO-27同源数据的现代SimPEG降阶兼容验证；不是原2020完整PGI notebook复现。",
-        "seed": args.seed,
+        "seed": seed,
         "input": {
-            "archive_sha256": sha256(archive),
+            "archive_sha256": actual_archive_hash,
             "original_mesh_cells": original_mesh.n_cells,
             "coarse_mesh_shape": [nx, ny, nz],
             "coarse_mesh_cells": mesh.n_cells,
             "original_observations_per_method": int(gravity_data.dobs.size),
             "selected_observations_per_method": int(indices.size),
-            "stride": args.stride,
+            "stride": stride,
         },
         "forward": {
             "elapsed_seconds": forward_seconds,
@@ -271,11 +323,24 @@ def main() -> int:
         "gravity_inverse": gravity_inverse,
         "magnetic_inverse": magnetic_inverse,
         "compatibility": compatibility,
-        "evidence_class": "Failed" if not magnetic_inverse["best"]["converged"] else "Synthetic-run",
+        "evidence_class": "Synthetic-run" if gravity_inverse["best"]["accepted"] and magnetic_inverse["best"]["accepted"] else "Failed",
         "original_pgi_reproduced": False,
     }
     metrics_path = output / "metrics.json"
     metrics_path.write_text(json.dumps(metrics, ensure_ascii=False, indent=2), encoding="utf-8")
+    raw_path = output / "raw-numerics.npz"
+    np.savez_compressed(
+        raw_path,
+        gravity_matrix=gravity_matrix,
+        gravity_data=gravity_observed,
+        gravity_truth=density_truth,
+        gravity_solutions=gravity_solutions,
+        magnetic_matrix=magnetic_matrix,
+        magnetic_data=magnetic_observed,
+        magnetic_truth=susceptibility_truth,
+        magnetic_solutions=magnetic_solutions,
+        alphas=np.asarray(alphas),
+    )
     environment = {
         "os": platform.platform(),
         "python": sys.version,
@@ -293,7 +358,13 @@ def main() -> int:
     config_path = output / "config.json"
     config_path.write_text(
         json.dumps(
-            {"archive": str(archive), "work": str(work), "stride": args.stride, "shape": [nx, ny, nz], "seed": args.seed},
+            {
+                "preregistration": str(args.config.resolve()),
+                "preregistration_sha256": sha256(args.config.resolve()),
+                "archive": str(archive), "work": str(work), "stride": stride,
+                "shape": [nx, ny, nz], "seed": seed, "protocol": protocol,
+                "alphas": alphas,
+            },
             ensure_ascii=False,
             indent=2,
         ),
@@ -305,13 +376,13 @@ def main() -> int:
         {"name": "do27-input-read", "status": "passed", "detail": f"{original_mesh.n_cells} cells, {gravity_data.dobs.size} observations/method"},
         {
             "name": "gravity-forward-and-inverse",
-            "status": "passed" if gravity_inverse["best"]["converged"] else "failed",
-            "detail": f"converged={gravity_inverse['best']['converged']}; stop={gravity_inverse['best']['stop_code']}; best normalized RMS={gravity_inverse['best']['normalized_rms']:.6g}",
+            "status": "passed" if gravity_inverse["best"]["accepted"] else "failed",
+            "detail": f"solver={gravity_inverse['best']['solver_converged']}; data_fit={gravity_inverse['best']['data_fit_accepted']}; recovery={gravity_inverse['best']['model_recovery_accepted']}; alpha={gravity_inverse['best']['alpha']}",
         },
         {
             "name": "magnetic-forward-and-inverse",
-            "status": "passed" if magnetic_inverse["best"]["converged"] else "failed",
-            "detail": f"converged={magnetic_inverse['best']['converged']}; stop={magnetic_inverse['best']['stop_code']}; best normalized RMS={magnetic_inverse['best']['normalized_rms']:.6g}",
+            "status": "passed" if magnetic_inverse["best"]["accepted"] else "failed",
+            "detail": f"solver={magnetic_inverse['best']['solver_converged']}; data_fit={magnetic_inverse['best']['data_fit_accepted']}; recovery={magnetic_inverse['best']['model_recovery_accepted']}; alpha={magnetic_inverse['best']['alpha']}",
         },
     ]
     run_passed = all(check["status"] == "passed" for check in checks)
@@ -334,9 +405,9 @@ def main() -> int:
         "checks": checks,
         "outputs": [],
         "approval": {
-            "owner": "Jesse（用户批准本验证规格）" if run_passed else None,
-            "date": completed_at.date().isoformat() if run_passed else None,
-            "decision": "approved" if run_passed else "pending",
+            "owner": "WP7结果独立复核待执行",
+            "date": None,
+            "decision": "pending",
         },
         "validation_context": {
             "truth_reference": "Forward/model_grav.den and Forward/model_mag.sus; coarse nearest-cell projection",
@@ -356,6 +427,7 @@ def main() -> int:
     stderr_path.write_text("", encoding="utf-8")
     manifest["outputs"] = [
         artifact(metrics_path, output.parent),
+        artifact(raw_path, output.parent),
         artifact(environment_path, output.parent),
         artifact(config_path, output.parent),
         artifact(stdout_path, output.parent),

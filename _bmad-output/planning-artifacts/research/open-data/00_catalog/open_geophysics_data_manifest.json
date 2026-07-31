@@ -1,0 +1,2133 @@
+{
+  "downloaded_at_utc": "2026-07-07T09:12:32.160940+00:00",
+  "root": "_bmad-output/planning-artifacts/research/open-data",
+  "selection_policy": "Curated public field or gridded datasets for MT, magnetic/aeromagnetic, gravity, DC/IP, TEM, CSAMT, WFEM, and seismic data. Very large raw airborne and seismic files were excluded when smaller grids, representative line data, or short waveform windows were available.",
+  "datasets": [
+    {
+      "repository": "ScienceBase",
+      "category": "mt",
+      "slug": "USGS_SanAndreas_Parkfield_MT_EDI_1990",
+      "title": "Magnetotelluric Data from the San Andreas Fault, Parkfield CA, 1990: EDI Data",
+      "item_id": "5a5e2a98e4b06e28e9be482a",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5a5e2a98e4b06e28e9be482a",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mt\\USGS_SanAndreas_Parkfield_MT_EDI_1990\\Magnetotelluric_Time-Series_EDI.zip",
+          "bytes": 5211517,
+          "sha256": "e5dcede7f90523020d6b713288c38a064a8e0d40a0cbd7b889df617ad51e38a3",
+          "name": "Magnetotelluric_Time-Series_EDI.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5a5e2a98e4b06e28e9be482a?f=__disk__9b%2Ff0%2F7d%2F9bf07de1d08574843f04aba0f5e77c6f1f632d0a",
+          "expected_bytes": 5211517
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mt\\USGS_SanAndreas_Parkfield_MT_EDI_1990\\Magnetotelluric_Cross-Power_EDI.zip",
+          "bytes": 661483,
+          "sha256": "331055e9064ed80328aa8c19472836f87fd130c03959908e32e110e3c0d3b7c1",
+          "name": "Magnetotelluric_Cross-Power_EDI.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5a5e2a98e4b06e28e9be482a?f=__disk__53%2F75%2F58%2F537558bbb03662bfc8e48c686af54a539ef8a186",
+          "expected_bytes": 661483
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mt\\USGS_SanAndreas_Parkfield_MT_EDI_1990\\Magnetotelluric_EDI-Format-Manual.pdf",
+          "bytes": 2784736,
+          "sha256": "695f090af23a7261ef3fdfa8ef17bf0b2602fd767e66bfd64422be336004c134",
+          "name": "Magnetotelluric_EDI-Format-Manual.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5a5e2a98e4b06e28e9be482a?f=__disk__bd%2F90%2Fe1%2Fbd90e1ffe3a633b17ebad72c88013a56d5d9c0a0",
+          "expected_bytes": 2784736
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mt\\USGS_SanAndreas_Parkfield_MT_EDI_1990\\Magnetotelluric-Data-from-the-San-Andreas-Fault_Parkfield-CA_1990_EDI-Metadata.xml",
+          "bytes": 20125,
+          "sha256": "621dfde06f612fee1cade7fe49ef35121c2e03350a4dcc2c0bd5f05ef4bdb03a",
+          "name": "Magnetotelluric-Data-from-the-San-Andreas-Fault_Parkfield-CA_1990_EDI-Metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5a5e2a98e4b06e28e9be482a?f=__disk__eb%2F3b%2F59%2Feb3b593fb1071cbc593b17617bd8629e176b5e74",
+          "expected_bytes": 20125
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "magnetic",
+      "slug": "USGS_MountainPass_airborne_magnetic_2020",
+      "title": "High-Resolution Airborne Gravity Gradiometry, Magnetic, and Radiometric Data of Mountain Pass, Southeast Mojave Desert, California",
+      "item_id": "5f8f45a482ce06b040efca6f",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5f8f45a482ce06b040efca6f",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_MountainPass_airborne_magnetic_2020\\Readme.txt",
+          "bytes": 5587,
+          "sha256": "19bf6109450d44deca8f573dbb9395f53824c92e09d121b6b0f573824a041852",
+          "name": "Readme.txt",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__cf%2F77%2F27%2Fcf77278380061d95f0a66e854f30b1baff788bd2",
+          "expected_bytes": 5587
+        },
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_MountainPass_airborne_magnetic_2020\\Metadata.xml",
+          "bytes": 13835,
+          "sha256": "b74d526ee062b63230afbb6730867b8b1c9f249b47ac4a6ed6c19039375d9dc3",
+          "name": "Metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__a5%2F29%2Fd5%2Fa529d51b76b94754907d5ace8a43048fda7c9037",
+          "expected_bytes": 13835
+        },
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_MountainPass_airborne_magnetic_2020\\Survey_Report.pdf",
+          "bytes": 2355046,
+          "sha256": "8d5c9a833f44e26507a7fc94711fc37dd64bb433b8391a9dc712782b17d57ab6",
+          "name": "Survey_Report.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__07%2Ff8%2Fcd%2F07f8cdf967bf02435585b862fdd2aa2de8597a88",
+          "expected_bytes": 2355046
+        },
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_MountainPass_airborne_magnetic_2020\\Magnetic_Data.csv",
+          "bytes": 22159880,
+          "sha256": "361245a2e779131e93f3d5aa5e9429b14d9d40199d108c1d21d1e2c7b6d72ad8",
+          "name": "Magnetic_Data.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__08%2F6c%2Fb9%2F086cb9f0ded8b0cbae1113bf6492256c8068eecc",
+          "expected_bytes": 22159880
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "magnetic",
+      "slug": "USGS_SoutheastMojave_airborne_TMI_grid_2020",
+      "title": "Airborne magnetic and radiometric survey of the southeast Mojave Desert, California and Nevada",
+      "item_id": "5e7be5eee4b01d50927301b3",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5e7be5eee4b01d50927301b3",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_SoutheastMojave_airborne_TMI_grid_2020\\Survey_Report.pdf",
+          "bytes": 1725952,
+          "sha256": "dacb3947e20f2bbec61faf3c4d9adebd2c45e65a20c3eee168fb55e5ea79ef35",
+          "name": "Survey_Report.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__f1%2Ffc%2Ffa%2Ff1fcfa4176f5956f1d747104ad117d1f4e6a9cc2",
+          "expected_bytes": 1725952
+        },
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_SoutheastMojave_airborne_TMI_grid_2020\\TMI.gxf",
+          "bytes": 16280636,
+          "sha256": "630c57c69f824b02ba3e3e9af66974c7f31f22086ac7050b321f1ebf0542b26c",
+          "name": "TMI.gxf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__40%2F7a%2F02%2F407a022afa13cf1480203c145000b1af9d6cc4be",
+          "expected_bytes": 16280636
+        },
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_SoutheastMojave_airborne_TMI_grid_2020\\Metadata.xml",
+          "bytes": 12403,
+          "sha256": "cc37b9cb517765993704c8a4548217cc92242d6e67b0186c79d70fb2286f35f8",
+          "name": "Metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__ec%2F74%2F70%2Fec74703b84d7592366b204706785ede457670749",
+          "expected_bytes": 12403
+        },
+        {
+          "status": "skipped_existing",
+          "path": "magnetic\\USGS_SoutheastMojave_airborne_TMI_grid_2020\\Readme.txt",
+          "bytes": 4392,
+          "sha256": "285732db70f4d6263d0350dc01cc5df172d19627ae287cc9e99a236168f272c8",
+          "name": "Readme.txt",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__b7%2F96%2F76%2Fb79676248dff5e43683e149d26970acfaf7813bc",
+          "expected_bytes": 4392
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "gravity",
+      "slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+      "title": "Gridded gravity, magnetic, and pseudogravity data of the Sierra Nevada, California and Nevada",
+      "item_id": "66c4eae6d34e033882892b86",
+      "source_url": "https://www.sciencebase.gov/catalog/item/66c4eae6d34e033882892b86",
+      "rights": "This work is marked with Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). ",
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_SierraNevada_gravity_magnetic_grids_2024\\cba_grid.csv",
+          "bytes": 12715736,
+          "sha256": "54e7bb76fdc7e4d34b0b9dfac654900e107d8fc77e170f198b5adb4e080a9522",
+          "name": "cba_grid.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/66c4eae6d34e033882892b86?f=__disk__df%2F6a%2Fcd%2Fdf6acd49f715fba96cfa46167aad1570bfbc106c",
+          "expected_bytes": 12715736
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_SierraNevada_gravity_magnetic_grids_2024\\iso_grid.csv",
+          "bytes": 12183156,
+          "sha256": "15729ff5c9859245766d758cb84488383d002a10bc6485323f4af98e6a91e2eb",
+          "name": "iso_grid.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/66c4eae6d34e033882892b86?f=__disk__6d%2F82%2F7d%2F6d827dbffda552b1cc82ac2d672906a9bd875a30",
+          "expected_bytes": 12183156
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_SierraNevada_gravity_magnetic_grids_2024\\mag_grid.csv",
+          "bytes": 3398621,
+          "sha256": "75b733364b3354cb6f0edc59f4556b0d00f7160c7dc28b6e9b76e7d55070df38",
+          "name": "mag_grid.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/66c4eae6d34e033882892b86?f=__disk__37%2F01%2F48%2F370148a470a125f284976a4aaa7e5462941ec6f9",
+          "expected_bytes": 3398621
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_SierraNevada_gravity_magnetic_grids_2024\\psgr_grid.csv",
+          "bytes": 2966525,
+          "sha256": "257e8c1b48737c2e33b295abbfe5ae0291df2188a5b856bb36957089a47f11be",
+          "name": "psgr_grid.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/66c4eae6d34e033882892b86?f=__disk__c5%2F38%2Fda%2Fc538da515531b244db7e143922300b3f28ce825c",
+          "expected_bytes": 2966525
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_SierraNevada_gravity_magnetic_grids_2024\\geotiffs.zip",
+          "bytes": 3899734,
+          "sha256": "b8cc43903865c642e5c1568115515c86b6de68180bfcb2b3b7649ac19cdf0448",
+          "name": "geotiffs.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/66c4eae6d34e033882892b86?f=__disk__63%2F5b%2F36%2F635b36aec23df58b44446a024dbf03089c55c171",
+          "expected_bytes": 3899734
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_SierraNevada_gravity_magnetic_grids_2024\\geophysical-grids-final.jpg",
+          "bytes": 691392,
+          "sha256": "6c429e9ec3ef3694415a1849a23db42715d02b80d420a6129dc660a715f8d829",
+          "name": "geophysical-grids-final.jpg",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/66c4eae6d34e033882892b86?f=__disk__f1%2F17%2F14%2Ff1171422d4beffa83d98f76da920561e20848e25",
+          "expected_bytes": 691392
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_SierraNevada_gravity_magnetic_grids_2024\\sierra_nevada_tif_metadata.xml",
+          "bytes": 89451,
+          "sha256": "8dc83aedbb91f6a6dc4102dec42162fea46599a93948980a9cdf1fc7498185d0",
+          "name": "sierra_nevada_tif_metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/66c4eae6d34e033882892b86?f=__disk__00%2F60%2F20%2F006020693f535e4f70683495dbd644a919915d15",
+          "expected_bytes": 89451
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "gravity",
+      "slug": "USGS_MountainPass_airborne_gravity_gradiometry_grids_2020",
+      "title": "High-Resolution Airborne Gravity Gradiometry, Magnetic, and Radiometric Data of Mountain Pass, Southeast Mojave Desert, California",
+      "item_id": "5f8f45a482ce06b040efca6f",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5f8f45a482ce06b040efca6f",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_MountainPass_airborne_gravity_gradiometry_grids_2020\\Readme.txt",
+          "bytes": 5587,
+          "sha256": "19bf6109450d44deca8f573dbb9395f53824c92e09d121b6b0f573824a041852",
+          "name": "Readme.txt",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__cf%2F77%2F27%2Fcf77278380061d95f0a66e854f30b1baff788bd2",
+          "expected_bytes": 5587
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_MountainPass_airborne_gravity_gradiometry_grids_2020\\Metadata.xml",
+          "bytes": 13835,
+          "sha256": "b74d526ee062b63230afbb6730867b8b1c9f249b47ac4a6ed6c19039375d9dc3",
+          "name": "Metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__a5%2F29%2Fd5%2Fa529d51b76b94754907d5ace8a43048fda7c9037",
+          "expected_bytes": 13835
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_MountainPass_airborne_gravity_gradiometry_grids_2020\\Survey_Report.pdf",
+          "bytes": 2355046,
+          "sha256": "8d5c9a833f44e26507a7fc94711fc37dd64bb433b8391a9dc712782b17d57ab6",
+          "name": "Survey_Report.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__07%2Ff8%2Fcd%2F07f8cdf967bf02435585b862fdd2aa2de8597a88",
+          "expected_bytes": 2355046
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_MountainPass_airborne_gravity_gradiometry_grids_2020\\602202_Fourier_gD_2p67_final.gxf",
+          "bytes": 13676006,
+          "sha256": "043b20917707ab4d599125f25657e99fefadbef6ed1e95f3c224013fa3c9919c",
+          "name": "602202_Fourier_gD_2p67_final.gxf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__c4%2F0e%2Ff4%2Fc40ef4b8f6153ab1672ce1e928c2544d937d1ca5",
+          "expected_bytes": 13676006
+        },
+        {
+          "status": "skipped_existing",
+          "path": "gravity\\USGS_MountainPass_airborne_gravity_gradiometry_grids_2020\\602202_Fourier_GDD_2p67_final.gxf",
+          "bytes": 13655659,
+          "sha256": "91bdf4308802b2e10d5adf21b354cb9b7a46ee8637dd8cc8839296615972f7ce",
+          "name": "602202_Fourier_GDD_2p67_final.gxf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5f8f45a482ce06b040efca6f?f=__disk__ee%2F3a%2F4f%2Fee3a4f27721e124f305a92f2a1e5e74e6049a49f",
+          "expected_bytes": 13655659
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "dc_ip",
+      "slug": "USGS_LittleColoradoRiver_ERT_2019",
+      "title": "Electrical Resistivity Tomography Data along the Little Colorado River near Leupp, AZ 2019",
+      "item_id": "62d8338fd34e83b67d134f73",
+      "source_url": "https://www.sciencebase.gov/catalog/item/62d8338fd34e83b67d134f73",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\USGS_LittleColoradoRiver_ERT_2019\\Electrical Resistivity Tomography Data along the Little Colorado River near Leupp, AZ 2019.xml",
+          "bytes": 16083,
+          "sha256": "46013fc69bd08562201b1ff9503c054078ca4dda8732ff20b538af521f9202a6",
+          "name": "Electrical Resistivity Tomography Data along the Little Colorado River near Leupp, AZ 2019.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/62d8338fd34e83b67d134f73?f=__disk__9c%2F0f%2F6d%2F9c0f6da1e449d6c785773bab5c9b64108116b959",
+          "expected_bytes": 16083
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\USGS_LittleColoradoRiver_ERT_2019\\Read_Me_ERT_LCR_Leupp_2019.txt",
+          "bytes": 11173,
+          "sha256": "889026ca690c5e3c8b92731047a002f9ca8aa01baa3fc620bccebecd6e68f141",
+          "name": "Read_Me_ERT_LCR_Leupp_2019.txt",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/62d8338fd34e83b67d134f73?f=__disk__80%2Fa5%2F47%2F80a5471e4fca3a79cc0bb1cf466c714d752397ff",
+          "expected_bytes": 11173
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\USGS_LittleColoradoRiver_ERT_2019\\MB2.5.zip",
+          "bytes": 636613,
+          "sha256": "bd55803b3cef0538a15315ceb1e512a0102293d2fd6a8db82a3287695c3bd258",
+          "name": "MB2.5.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/62d8338fd34e83b67d134f73?f=__disk__65%2Fc0%2F29%2F65c029bcb2751629033989d1e6f6bf192d86c516",
+          "expected_bytes": 636613
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\USGS_LittleColoradoRiver_ERT_2019\\MB2.5B.zip",
+          "bytes": 635030,
+          "sha256": "790b5199b87825ad2f84ff77d0cf0e485f981cfe859a3842faa631e8c4b071ae",
+          "name": "MB2.5B.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/62d8338fd34e83b67d134f73?f=__disk__5b%2F2b%2F2d%2F5b2b2d995375c57df7478032a0d811b47d6437fb",
+          "expected_bytes": 635030
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\USGS_LittleColoradoRiver_ERT_2019\\MB4.zip",
+          "bytes": 505404,
+          "sha256": "4bbc7e01571e338ee3c2e5f3f9516193de20f8690d74ae68cdcedfa075e46628",
+          "name": "MB4.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/62d8338fd34e83b67d134f73?f=__disk__72%2Fab%2Fca%2F72abca229bc0e71d96b83a01b90d66056e5c6898",
+          "expected_bytes": 505404
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\USGS_LittleColoradoRiver_ERT_2019\\MB4B.zip",
+          "bytes": 588576,
+          "sha256": "cdc09bab86f1cc69f40907900de62c9b12dd49ccb4a6e033519d158a56337c9b",
+          "name": "MB4B.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/62d8338fd34e83b67d134f73?f=__disk__2f%2F25%2F1d%2F2f251d280c3e970959905590d5b528fe0fb73b45",
+          "expected_bytes": 588576
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "tem",
+      "slug": "USGS_DineroTunnel_TEM_2023",
+      "title": "Transient Electromagnetic Sounding Data from the Area Around the Dinero Mine Tunnel Near Leadville, Colorado",
+      "item_id": "67e3f8ebd34ee7f14221732d",
+      "source_url": "https://www.sciencebase.gov/catalog/item/67e3f8ebd34ee7f14221732d",
+      "rights": "This work is marked with the Creative Commons Zero v1.0 Universal (CC0-1.0) public domain dedication; https://creativecommons.org/publicdomain/zero/1.0/. ",
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_DineroTunnel_TEM_2023\\2023_Dinero_Tunnel_TEM_inversion_results.zip",
+          "bytes": 41780,
+          "sha256": "e1df1fa206029c7a3361264e09a890e996e3712e94ebe178efe1c393ee1bb4ce",
+          "name": "2023_Dinero_Tunnel_TEM_inversion_results.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67e3f8ebd34ee7f14221732d?f=__disk__ad%2F60%2Fd8%2Fad60d86d260faab0b2af32158f06df25f6f82cbe",
+          "expected_bytes": 41780
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_DineroTunnel_TEM_2023\\2023_Dinero_Tunnel_TEM_raw_&_stacked_data.zip",
+          "bytes": 484472,
+          "sha256": "0a186b7b76e57683adf30cecfb70ce85df7b740007d1141dbec672771e3a93ba",
+          "name": "2023_Dinero_Tunnel_TEM_raw_&_stacked_data.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67e3f8ebd34ee7f14221732d?f=__disk__c2%2F8e%2Fee%2Fc28eee386bab7a1f2af264c323e1e431c827f99b",
+          "expected_bytes": 484472
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_DineroTunnel_TEM_2023\\2023_DineroTunnel_TEM_SiteList.csv",
+          "bytes": 2690,
+          "sha256": "593cbd5d4df85c38ef65e2723f222b1c7eb2d2dc832cd523ac53e7eeb21f874e",
+          "name": "2023_DineroTunnel_TEM_SiteList.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67e3f8ebd34ee7f14221732d?f=__disk__b7%2F84%2F27%2Fb78427485d68b65725468c8110219402e4dfbaff",
+          "expected_bytes": 2690
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_DineroTunnel_TEM_2023\\TEM_dictionary.csv",
+          "bytes": 3438,
+          "sha256": "fa7ba740865442a145b6857a20d5924d7225c7c5dd819fd2554c70efca319449",
+          "name": "TEM_dictionary.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67e3f8ebd34ee7f14221732d?f=__disk__da%2Fc6%2F11%2Fdac6111112cbfb9a7ac7fb627373e638ae2d2229",
+          "expected_bytes": 3438
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_DineroTunnel_TEM_2023\\Dinero_Tunnel_TEM_August2023.xml",
+          "bytes": 22618,
+          "sha256": "9244e608486bccea9914b2a2aa1b046f661c0b2b879996d27ba5043553490e03",
+          "name": "Dinero_Tunnel_TEM_August2023.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67e3f8ebd34ee7f14221732d?f=__disk__bc%2F20%2F7f%2Fbc207ff2336e840fdfd4e9d8e5909338c7a7a43b",
+          "expected_bytes": 22618
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_DineroTunnel_TEM_2023\\Dinero TEM map.jpg",
+          "bytes": 1063144,
+          "sha256": "cd255559ac49efcbc8679b8731e00ba91142af51e1b526e6da34a64cc40874ee",
+          "name": "Dinero TEM map.jpg",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67e3f8ebd34ee7f14221732d?f=__disk__35%2Fb3%2Fe1%2F35b3e1f486fd196b90620c79ebea46ba47355218",
+          "expected_bytes": 1063144
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "tem",
+      "slug": "USGS_Jamestowne_tTEM_2021",
+      "title": "Towed transient electromagnetic survey data, Historic Jamestowne Island, Virginia, August 2021",
+      "item_id": "6319dec4d34e36012efa641c",
+      "source_url": "https://www.sciencebase.gov/catalog/item/6319dec4d34e36012efa641c",
+      "rights": "This work is marked with Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). ",
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_Jamestowne_tTEM_2021\\20210804_JamestownVA_Towed-Transient_Electromagnetic_Historic_Jamestowne_Virginia_August2021_Lat-Long_WGS84_Map.png",
+          "bytes": 7322902,
+          "sha256": "2b90aebb9b2233211915320e0b26a602fc6526e738916c2f93fa9715ab4a387f",
+          "name": "20210804_JamestownVA_Towed-Transient_Electromagnetic_Historic_Jamestowne_Virginia_August2021_Lat-Long_WGS84_Map.png",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6319dec4d34e36012efa641c?f=__disk__7f%2F69%2Fca%2F7f69ca73a824fbddc49059ee0e30e77e17663dce",
+          "expected_bytes": 7322902
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_Jamestowne_tTEM_2021\\original_20210804_JamestownVA_tTEM_Latitude-Longitude_NAD83_NAVD88_Rhoa_AVG.xyz",
+          "bytes": 3335615,
+          "sha256": "d6c2bd21a5839d803fa9a3ff09048ebb94503a4289f243af520325e09a7007a6",
+          "name": "original_20210804_JamestownVA_tTEM_Latitude-Longitude_NAD83_NAVD88_Rhoa_AVG.xyz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6319dec4d34e36012efa641c?f=__disk__0d%2Ff1%2F0d%2F0df10d4fed217ed71af8ade817646687a0cc1907",
+          "expected_bytes": 3335615
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_Jamestowne_tTEM_2021\\original_20210804_JamestownVA_tTEM_Latitude-Longitude_NAD83_NAVD88_Rhoa_RAW.xyz",
+          "bytes": 6639581,
+          "sha256": "f0634fa003be5a905932f711e6ddd07e2699bc0dc6d99c30a6a5980ded5067ec",
+          "name": "original_20210804_JamestownVA_tTEM_Latitude-Longitude_NAD83_NAVD88_Rhoa_RAW.xyz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6319dec4d34e36012efa641c?f=__disk__4f%2Faf%2Fb3%2F4fafb32dcfe5de08eeda4afbc98307244fe7137f",
+          "expected_bytes": 6639581
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_Jamestowne_tTEM_2021\\Towed_Transient_Electromagnetics_Historic_Jamestowne_Island_JamestownVA_August_2021.xml",
+          "bytes": 127683,
+          "sha256": "1f43dc3a474beb4c0ce493016b44fd85414a94e217ea43432f6fc60e54fc470b",
+          "name": "Towed_Transient_Electromagnetics_Historic_Jamestowne_Island_JamestownVA_August_2021.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6319dec4d34e36012efa641c?f=__disk__56%2F80%2F89%2F568089148bb1a5c8947259273b9f422e9539ea2b",
+          "expected_bytes": 127683
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "tem",
+      "slug": "USGS_California_COGG_TEM_2019",
+      "title": "Ground-based transient electromagnetic data and resistivity models at selected sites of the California Central Coast and San Joaquin Valley 2019",
+      "item_id": "5e18a32ee4b0ecf25c5a3961",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5e18a32ee4b0ecf25c5a3961",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_California_COGG_TEM_2019\\COGG_TEM_data_models_2019.zip",
+          "bytes": 5734797,
+          "sha256": "79f36f8da17f88e13d1594d9e9a44531b2226f6ac7b5a586d44e1c5e9e4170f2",
+          "name": "COGG_TEM_data_models_2019.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e18a32ee4b0ecf25c5a3961?f=__disk__e3%2Fdd%2F93%2Fe3dd93dd439535e8c8a0ef735c18e0540bc01042",
+          "expected_bytes": 5734797
+        },
+        {
+          "status": "skipped_existing",
+          "path": "tem\\USGS_California_COGG_TEM_2019\\COGG_TEM_data_models_2019.xml",
+          "bytes": 28391,
+          "sha256": "1204562bd3a33ee5d53f47d7901fa3bb75e3860ef8e764d91833dd8f1a21bf50",
+          "name": "COGG_TEM_data_models_2019.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e18a32ee4b0ecf25c5a3961?f=__disk__6b%2F6a%2Fca%2F6b6aca0dbc1bbcf8ed4ecbbd43da8fbc291b7bcc",
+          "expected_bytes": 28391
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "csamt",
+      "slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+      "title": "Controlled source audio-frequency magnetotellurics (CSAMT) data from the Grand Canyon West and Plain Tank Flat areas of the western Hualapai Reservation, Arizona",
+      "item_id": "5d1a9d8fe4b0941bde6029a9",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5d1a9d8fe4b0941bde6029a9",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "csamt\\USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019\\KMZ files for Grand Canyon West and Plain Tank Flat CSAMT.kmz",
+          "bytes": 2489978,
+          "sha256": "0548e12b591fd90c79e2bf0bfc7c963c7e215824d30d759bc010b075384b3e74",
+          "name": "KMZ files for Grand Canyon West and Plain Tank Flat CSAMT.kmz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5d1a9d8fe4b0941bde6029a9?f=__disk__ad%2F86%2F72%2Fad86723ffa18bb7c4522868f7d1ddbdbe8c78ffb",
+          "expected_bytes": 2489978
+        },
+        {
+          "status": "skipped_existing",
+          "path": "csamt\\USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019\\Cross_sections_Colorbar.zip",
+          "bytes": 2471945,
+          "sha256": "aa2bd459370de0b900eaecd2ef407370e166653bcaafdb0c9f07ea414995e75c",
+          "name": "Cross_sections_Colorbar.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5d1a9d8fe4b0941bde6029a9?f=__disk__cf%2F1f%2F48%2Fcf1f48455651cef0a593ac469b92adf6d95f948e",
+          "expected_bytes": 2471945
+        },
+        {
+          "status": "skipped_existing",
+          "path": "csamt\\USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019\\LandingPageMap.png",
+          "bytes": 9073663,
+          "sha256": "f7f8ad3ec4d95ab27810faea9c8f68ed66a7a41369009e5feadb3ea83713c876",
+          "name": "LandingPageMap.png",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5d1a9d8fe4b0941bde6029a9?f=__disk__47%2F00%2F53%2F4700531104709b9c3a823bdf1d17ac2ca08a0704",
+          "expected_bytes": 9073663
+        },
+        {
+          "status": "skipped_existing",
+          "path": "csamt\\USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019\\Inversions-GrandCanyonWest_PlainTankFlat.zip",
+          "bytes": 114382,
+          "sha256": "80d68dfab36b77824474dba9bba9eda972eaa39caecc073cbb30476dcf9cacbb",
+          "name": "Inversions-GrandCanyonWest_PlainTankFlat.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5d1a9d8fe4b0941bde6029a9?f=__disk__f9%2Ffe%2Fcd%2Ff9fecdfd80b1f15316610b3a8d4f2cc2f904391d",
+          "expected_bytes": 114382
+        },
+        {
+          "status": "skipped_existing",
+          "path": "csamt\\USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019\\Raw-GrandCanyonWest_PlainTankFlat.zip",
+          "bytes": 644983,
+          "sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+          "name": "Raw-GrandCanyonWest_PlainTankFlat.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5d1a9d8fe4b0941bde6029a9?f=__disk__d0%2Faa%2F98%2Fd0aa986132a75e021a89c0155a50b972de614f67",
+          "expected_bytes": 644983
+        },
+        {
+          "status": "skipped_existing",
+          "path": "csamt\\USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019\\Station-GrandCanyonWest_PlainTankFlat.zip",
+          "bytes": 6499,
+          "sha256": "e22aaf87194ca2fd06e0bfc6c01ceadaefb75c169c350a313bb5cd010f5337ad",
+          "name": "Station-GrandCanyonWest_PlainTankFlat.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5d1a9d8fe4b0941bde6029a9?f=__disk__9f%2Fa8%2F9f%2F9fa89f71de44013a43947856f99ec9c7e0166f71",
+          "expected_bytes": 6499
+        },
+        {
+          "status": "skipped_existing",
+          "path": "csamt\\USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019\\Grand Canyon West and Plain Tank Flat CSAMT metadata.xml",
+          "bytes": 21060,
+          "sha256": "345e2d25817a36b525f8981526fd9be831bcc0cd0c563ce85cbce49722b32da9",
+          "name": "Grand Canyon West and Plain Tank Flat CSAMT metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5d1a9d8fe4b0941bde6029a9?f=__disk__33%2Fc3%2F75%2F33c3753392e8a992ccdc3f7aeae54dccef0dda27",
+          "expected_bytes": 21060
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "seismic_reflection",
+      "slug": "USGS_MeadowBank_scarp_reflection_SEG-Y_2025",
+      "title": "Seismic reflection data imaging the Meadow Bank scarp in the Wabash Valley Seismic Zone, southeastern Illinois, U.S. Geological Survey data release",
+      "item_id": "68acd8d7d4be0220fe212d92",
+      "source_url": "https://www.sciencebase.gov/catalog/item/68acd8d7d4be0220fe212d92",
+      "rights": "This work is marked with the Creative Commons Zero v1.0 Universal (CC0-1.0) public domain dedication; https://creativecommons.org/publicdomain/zero/1.0/. ",
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "seismic_reflection\\USGS_MeadowBank_scarp_reflection_SEG-Y_2025\\ML2_coordinates.csv",
+          "bytes": 733,
+          "sha256": "159752a120b2268b0ca015ee9c1879e465fbee79400a9eba1624b6cbb59a72ab",
+          "name": "ML2_coordinates.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/68acd8d7d4be0220fe212d92?f=__disk__45%2F06%2Ffe%2F4506fe802c63197284b0493258e0eb725df44567",
+          "expected_bytes": 733
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_reflection\\USGS_MeadowBank_scarp_reflection_SEG-Y_2025\\Meadowbank_ff1001-1898.sgy",
+          "bytes": 91384080,
+          "sha256": "20a430639bd4b54eec63b5c4cd3d1c366f34eb23d6579a3d8789d1b28f6166d9",
+          "name": "Meadowbank_ff1001-1898.sgy",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/68acd8d7d4be0220fe212d92?f=__disk__f0%2Fa5%2F1f%2Ff0a51fc90fcacf4feba60665abd226a32a3d7d3e",
+          "expected_bytes": 91384080
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_reflection\\USGS_MeadowBank_scarp_reflection_SEG-Y_2025\\ML2_obslog.csv",
+          "bytes": 10490,
+          "sha256": "1d87fcb1ab5442286cbb0a8fa87c2ee64dd7f2da80fdb6ac32ec33b94ae96b1c",
+          "name": "ML2_obslog.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/68acd8d7d4be0220fe212d92?f=__disk__fd%2F68%2F4c%2Ffd684c596d250565bdcde9244a78ec71b84b5ae5",
+          "expected_bytes": 10490
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_reflection\\USGS_MeadowBank_scarp_reflection_SEG-Y_2025\\ML2_map.jpg",
+          "bytes": 1640948,
+          "sha256": "5ecd4dd9c8e4827496becde660b762528f272b49b01cfd0fe6b27696fdcf854d",
+          "name": "ML2_map.jpg",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/68acd8d7d4be0220fe212d92?f=__disk__0a%2Fdb%2F95%2F0adb95970e9da9d6c95c7bda7452f3c9b03e268c",
+          "expected_bytes": 1640948
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_reflection\\USGS_MeadowBank_scarp_reflection_SEG-Y_2025\\README.txt",
+          "bytes": 1387,
+          "sha256": "7ab265f4dfc1a708b04ca4c69bb4bd49ce518b4af1dd282fcf66cc37d89d8914",
+          "name": "README.txt",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/68acd8d7d4be0220fe212d92?f=__disk__bf%2F5d%2F47%2Fbf5d477e442f050274ad1c1c82a4f3079b419f1f",
+          "expected_bytes": 1387
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_reflection\\USGS_MeadowBank_scarp_reflection_SEG-Y_2025\\Seismic reflection data imaging the Meadow Bank scarp in the Wabash Valley Seismic Zone, southeastern Illinois.xml",
+          "bytes": 7917,
+          "sha256": "7b6e2c2420602e5670303a4852d1a2e0aff504c7e0e89d2aa85c952eadd671c8",
+          "name": "Seismic reflection data imaging the Meadow Bank scarp in the Wabash Valley Seismic Zone, southeastern Illinois.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/68acd8d7d4be0220fe212d92?f=__disk__3f%2F79%2F59%2F3f7959e75a707ecbec3f15d87e52bfd0df3765df",
+          "expected_bytes": 7917
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "seismic_active_source",
+      "slug": "USGS_WestNapaFault_HendryWinery_active_source_2015",
+      "title": "High-resolution seismic imaging data from the West Napa Fault Zone acquired in 2015 at Hendry Winery, Napa, California",
+      "item_id": "67de0c42d34eae450ac1cb3b",
+      "source_url": "https://www.sciencebase.gov/catalog/item/67de0c42d34eae450ac1cb3b",
+      "rights": "This work is marked with the Creative Commons Zero v1.0 Universal (CC0-1.0) public domain dedication; https://creativecommons.org/publicdomain/zero/1.0/. ",
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\map1.jpg",
+          "bytes": 482455,
+          "sha256": "e87a254d7f63bf687270878090b535acde594183b2701cb40a6c772d5143d7a6",
+          "name": "map1.jpg",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__3c%2F7c%2Fc3%2F3c7cc3ec516a6f6cad5f8b18853bd2ba77580a40",
+          "expected_bytes": 482455
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\n15.guided.81052.csv",
+          "bytes": 243,
+          "sha256": "c1e6ad4210041417f2e823f2dcef9f8017fb061abb379b13d38e87a4e1b78abd",
+          "name": "n15.guided.81052.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__b4%2F43%2F3f%2Fb4433f6a0d74d01a95f269d5badab8a5824d4b64",
+          "expected_bytes": 243
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\n15.guided.78023.csv",
+          "bytes": 257,
+          "sha256": "673f52eb540b63de067e19bb2b49bcfafab45185ede744797ba7ec52361ba9cf",
+          "name": "n15.guided.78023.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__c8%2F87%2F01%2Fc88701129ec1e07ae5886bd947f68295924aa710",
+          "expected_bytes": 257
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\n15.stations.csv",
+          "bytes": 4247,
+          "sha256": "5a5eeeb8fe7fa9a24721ac1e7c91b8d1777a26a929e1a7b67746fce35d5b62df",
+          "name": "n15.stations.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__45%2F14%2F82%2F451482777ed9f33fbf32905e04d7869ca4e0bcc9",
+          "expected_bytes": 4247
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\n15.shots.csv",
+          "bytes": 19783,
+          "sha256": "ab968f18caeb39401cc23dae93cc63ba5de2a1616c30d7d4fb43a750a1558b91",
+          "name": "n15.shots.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__96%2F5b%2F6b%2F965b6b9fce455e5f7fefb65a0847beb978c1a216",
+          "expected_bytes": 19783
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\n15.txt",
+          "bytes": 13530,
+          "sha256": "2709acb80fd61d77a92d33718920eb5e1d1b1a2e7ce26d02a9be9d13cb5847e4",
+          "name": "n15.txt",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__02%2Ff8%2Fdd%2F02f8dd04f0a9076e54a9229c69e5ab805947a9c4",
+          "expected_bytes": 13530
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\n15.xml",
+          "bytes": 36883,
+          "sha256": "0e4ab260c936fa09b09849186fb90d9fd29f542dd891355595d5de66e98f0560",
+          "name": "n15.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__8b%2F71%2F15%2F8b711540478300a9df1c5bc961e7bcbcd77fcdc6",
+          "expected_bytes": 36883
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_active_source\\USGS_WestNapaFault_HendryWinery_active_source_2015\\n15.filenames.csv",
+          "bytes": 221,
+          "sha256": "e8fd5ea8b27e15cdbbfdab07e591ee7024d6a2b2f08fd9900e615830bec8767f",
+          "name": "n15.filenames.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/67de0c42d34eae450ac1cb3b?f=__disk__6e%2Ff7%2Fe7%2F6ef7e7b89be1456407ff30a145535f644b04578b",
+          "expected_bytes": 221
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "seismic_waveform_ml",
+      "slug": "USGS_NEIC_deep_learning_waveform_metadata_2020",
+      "title": "Waveform Data and Metadata used to National Earthquake Information Center Deep-Learning Models",
+      "item_id": "5ed528ff82ce2832f047eee6",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5ed528ff82ce2832f047eee6",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SAzi_Train.tar.gz",
+          "bytes": 677495,
+          "sha256": "b2f4f2daa8465b359472dd33b8e33a3fa1bc7b972113a6178c2c40e7a7d20183",
+          "name": "SAzi_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__2f%2F50%2F18%2F2f5018a2adbb339411be3343a22028c994a2fcf2",
+          "expected_bytes": 677495
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SAzi_Test.tar.gz",
+          "bytes": 168546,
+          "sha256": "3bc5cff2a7177cbaaa6cbe845f78ae3b18fc6dfae93b0a84378a49a6aa09e5e3",
+          "name": "SAzi_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__d1%2Fea%2Fae%2Fd1eaae21752e4dc5b7ec843a06eb44b7418b548b",
+          "expected_bytes": 168546
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PAzi_Train.tar.gz",
+          "bytes": 2095232,
+          "sha256": "8077e04fa9a5bb0b8e92b7b4398a4bb2f04a11c555fbfe0e5a42369ffdeb1e2b",
+          "name": "PAzi_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__a3%2Faf%2F76%2Fa3af76ff44d0bc789cbc014b87f2dc08c9139b88",
+          "expected_bytes": 2095232
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PAzi_Test.tar.gz",
+          "bytes": 526770,
+          "sha256": "82cb35f4ca428baf1294ef4ce6188239ce577337b01cafdb7c6dae392885f7f5",
+          "name": "PAzi_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__e0%2Fde%2Fa0%2Fe0dea051f7cc543e8051cdc7be71722dc600d0d9",
+          "expected_bytes": 526770
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SEID_Train.tar.gz",
+          "bytes": 1379226,
+          "sha256": "bca3d4b82b181d3f8cdcf3cd6d9ee144f3afcc16977dab388edf77e96e3a4c2a",
+          "name": "SEID_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__28%2F0b%2F26%2F280b2684bae5c99e6ddff1dccd66deb063ef65bd",
+          "expected_bytes": 1379226
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SEID_Test.tar.gz",
+          "bytes": 334301,
+          "sha256": "9c45d892737bbecaf5a9061bfad41246d70c654924e733ce022087a9e34b5224",
+          "name": "SEID_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__3f%2F47%2Ff9%2F3f47f9f669ac430ab8d8d45493202b34f910bd4e",
+          "expected_bytes": 334301
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PEID_Train.tar.gz",
+          "bytes": 4246361,
+          "sha256": "4740dd55c8b08f53f6ebfd4337fb3d04d4f31778f54e6482c9f01511fcdc2a1e",
+          "name": "PEID_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__8f%2Fbf%2Ff4%2F8fbff448b1a2f8d9143bf232c3ead7621a83cb2e",
+          "expected_bytes": 4246361
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PEID_Test.tar.gz",
+          "bytes": 1045848,
+          "sha256": "e73b62d01e9f688481b6075c2c75120849ec8980dd73cdafbd4fc4286af4fdf9",
+          "name": "PEID_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__2f%2F04%2F57%2F2f0457c4ad442d263a7b3a496c7bb7ac3a2890aa",
+          "expected_bytes": 1045848
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SDist_Train.tar.gz",
+          "bytes": 503026,
+          "sha256": "0b210c148e8d58166a44f6031e3a3127b2d7f2fd0ff16d4a1dcfb4c5e949e4cc",
+          "name": "SDist_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__b5%2F23%2F20%2Fb523205bdb07651f58b5a2c9ced9af17c5395248",
+          "expected_bytes": 503026
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SDist_Test.tar.gz",
+          "bytes": 125986,
+          "sha256": "d175a1930a43ee58a2f163fca40c5f2ca0cf7c959d6d170229f1bead246b610b",
+          "name": "SDist_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__03%2F00%2Fcb%2F0300cb149086ab56e35a89b40ad372ceb55c571a",
+          "expected_bytes": 125986
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PDist_Train.tar.gz",
+          "bytes": 1873075,
+          "sha256": "029b6c839c68600c47edd062b1b31cef63d10cbf2abe8315eea110b78aa9452b",
+          "name": "PDist_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__a4%2F87%2F0e%2Fa4870ea5357f0753f105ab9c4d756ccf25b5538a",
+          "expected_bytes": 1873075
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PDist_Test.tar.gz",
+          "bytes": 473001,
+          "sha256": "5ab4c5c311ea4bd1e65214ac58738c042d1f95c5f6c94cb9d33e43041546fd45",
+          "name": "PDist_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__ff%2Fe7%2F01%2Fffe701fe327e4c0dcf4e605de2550166999809d9",
+          "expected_bytes": 473001
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SMag_Train.tar.gz",
+          "bytes": 422630,
+          "sha256": "c91c0ac75aa8146bee10733bffc94640d62621d697b0866894f4356ea4a59f47",
+          "name": "SMag_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__d8%2F5e%2F4a%2Fd85e4a3016451ca3562255bd5c5dce8798df5b9b",
+          "expected_bytes": 422630
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\SMag_Test.tar.gz",
+          "bytes": 105265,
+          "sha256": "f4f44269a27c2dd486f9e0ecac2cabea11976e42f5c07d73ae73a774dcc46366",
+          "name": "SMag_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__5a%2F26%2F63%2F5a2663a629042384e577bd5010823ca2ed7b09ae",
+          "expected_bytes": 105265
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PMag_Train.tar.gz",
+          "bytes": 1311414,
+          "sha256": "48bb7f38d3976f277146319e677157b318af7a4884eb85af91dddf9837c3e7e2",
+          "name": "PMag_Train.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__0b%2Fd7%2F44%2F0bd74466e39571a4b8cdfd9383a545d6d8bb31ed",
+          "expected_bytes": 1311414
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform_ml\\USGS_NEIC_deep_learning_waveform_metadata_2020\\PMag_Test.tar.gz",
+          "bytes": 328382,
+          "sha256": "6979156598973bb9524b1f5011e3b7edca7887afd216efa33db0decb1b5a552f",
+          "name": "PMag_Test.tar.gz",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5ed528ff82ce2832f047eee6?f=__disk__a4%2F88%2F15%2Fa48815ae68ab956056dad8fcbc7ea428b8aa0be3",
+          "expected_bytes": 328382
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "mining_geophysics",
+      "slug": "USGS_Kuskokwim_NorthernKaiyuh_airborne_mag_rad_2025",
+      "title": "Kuskokwim Airborne Magnetic and Radiometric Survey, Northern Kaiyuh Mountains, Alaska",
+      "item_id": "698bcd98b66b01469f9c9eeb",
+      "source_url": "https://www.sciencebase.gov/catalog/item/698bcd98b66b01469f9c9eeb",
+      "rights": "USGS and Earth MRI-funded airborne geophysical surveys are managed by Alaska Division of Geological and Geophysical Surveys (DGGS). Primary data releases are completed and hosted by the DGGS, and all data releases are replicated in ScienceBase to meet USGS and DOI policies for data repositories.",
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Kuskokwim_NorthernKaiyuh_airborne_mag_rad_2025\\gpr2025_003_documents.zip",
+          "bytes": 2750574,
+          "sha256": "ca7fca3ca71d8fe4821e15e617327bf4b1fb8ad523083730dea66d0a92143c02",
+          "name": "gpr2025_003_documents.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/698bcd98b66b01469f9c9eeb?f=__disk__b8%2F4a%2F76%2Fb84a768bbf402e270296ee292bf52e4becfd8859",
+          "expected_bytes": 2750574
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Kuskokwim_NorthernKaiyuh_airborne_mag_rad_2025\\gpr2025_003_grids_geosoft.zip",
+          "bytes": 24371945,
+          "sha256": "9838393a7dd0590e6b7fae62e24bb24e4b648337196b89db089a81f6d603e06f",
+          "name": "gpr2025_003_grids_geosoft.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/698bcd98b66b01469f9c9eeb?f=__disk__cb%2Fad%2F51%2Fcbad510bf7f2f699118a171331827003cb221e48",
+          "expected_bytes": 24371945
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Kuskokwim_NorthernKaiyuh_airborne_mag_rad_2025\\gpr2025_003_grids_tif.zip",
+          "bytes": 13457553,
+          "sha256": "0957a0585b9e08604a3ad28ee7aa0e1bdbba940df565205874db1403b54615a6",
+          "name": "gpr2025_003_grids_tif.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/698bcd98b66b01469f9c9eeb?f=__disk__8d%2Fd7%2F28%2F8dd728d906b20d6e55cc667073499310c76375a4",
+          "expected_bytes": 13457553
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Kuskokwim_NorthernKaiyuh_airborne_mag_rad_2025\\gpr2025_003_vector_data.zip",
+          "bytes": 459601,
+          "sha256": "9bf488aed8e1dd342fe3b2ceac997664984f2d35f3269162d6927e2a6898e2c7",
+          "name": "gpr2025_003_vector_data.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/698bcd98b66b01469f9c9eeb?f=__disk__46%2F1e%2F6e%2F461e6e663857c368da64358ed5b5684b9ba40898",
+          "expected_bytes": 459601
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Kuskokwim_NorthernKaiyuh_airborne_mag_rad_2025\\GPR2025-3_metadata.html",
+          "bytes": 53000,
+          "sha256": "9b44292a1dbec87a02e6b1438130b1edf6d31923edb031058b84b3dea1062e9c",
+          "name": "GPR2025-3_metadata.html",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/698bcd98b66b01469f9c9eeb?f=__disk__d8%2F9e%2F42%2Fd89e42415a87c50306d88c6a5112e62def717e84",
+          "expected_bytes": 52281
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Kuskokwim_NorthernKaiyuh_airborne_mag_rad_2025\\GPR2025-3_metadata.xml",
+          "bytes": 22117,
+          "sha256": "614dfe8b187c898ba325e0846e7cac0c6a1602c5a90887aec44fed6bceb8edd3",
+          "name": "GPR2025-3_metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/698bcd98b66b01469f9c9eeb?f=__disk__96%2F14%2Fdc%2F9614dc7a3359c85a24302dbe0fc46a776fa6d013",
+          "expected_bytes": 22117
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "mining_geophysics",
+      "slug": "USGS_Tofty_airborne_mag_rad_2025",
+      "title": "Tofty Airborne Magnetic and Radiometric Survey, Alaska",
+      "item_id": "681b78bdd4be0225d797167f",
+      "source_url": "https://www.sciencebase.gov/catalog/item/681b78bdd4be0225d797167f",
+      "rights": "This work is marked with the Creative Commons Zero v1.0 (CC0-1.0) Universal public domain dedication; https://creativecommons.org/publicdomain/zero/1.0/",
+      "doi": null,
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Tofty_airborne_mag_rad_2025\\gpr2025_004_tofty-maps_pdf_format.zip",
+          "bytes": 31541808,
+          "sha256": "9e323e8e1e8ea1de52920e469a6658d1bfa13509c513b8709ad5fd76c0d6fd53",
+          "name": "gpr2025_004_tofty-maps_pdf_format.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/681b78bdd4be0225d797167f?f=__disk__c2%2Fff%2F01%2Fc2ff019e0759373f6bfb594adabf8dae6d898add",
+          "expected_bytes": 31541808
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Tofty_airborne_mag_rad_2025\\gpr2025_004_tofty-vector_data.zip",
+          "bytes": 23191964,
+          "sha256": "994b24504b6718329f5c7415398151ef87a091d65637b43365f22d0d7e9fa3d6",
+          "name": "gpr2025_004_tofty-vector_data.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/681b78bdd4be0225d797167f?f=__disk__40%2Fb7%2F1c%2F40b71c12ac1ab74b1999d57ac08d1889f2334373",
+          "expected_bytes": 23191964
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Tofty_airborne_mag_rad_2025\\GPR2025-4.html",
+          "bytes": 43975,
+          "sha256": "23c7541294bb4dca81e71461c265bab108fab25f307641241bd1a91f7ef22868",
+          "name": "GPR2025-4.html",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/681b78bdd4be0225d797167f?f=__disk__dc%2F53%2F3b%2Fdc533bb970856f85af886c901d86a255b6b73518",
+          "expected_bytes": 43256
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\USGS_Tofty_airborne_mag_rad_2025\\GPR2025-4.xml",
+          "bytes": 18359,
+          "sha256": "c4629f79d58e394c89d81761c7d7211f00c10c7841d0f046b25a11de3ca30c43",
+          "name": "GPR2025-4.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/681b78bdd4be0225d797167f?f=__disk__1c%2F20%2F6e%2F1c206eb9539009f30bb1b96c0afcf9bffa5990ba",
+          "expected_bytes": 18359
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "mining_geophysics",
+      "slug": "USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023",
+      "title": "GeoDAWN: Airborne magnetic and radiometric surveys of the northwestern Great Basin, Nevada and California",
+      "item_id": "657e1d85d34e23d3533209f7",
+      "source_url": "https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\GeoDAWN_ReadMe.pdf",
+          "bytes": 305151,
+          "sha256": "d799ddef5f653723a12bec5d044b97ae7dc92228341daf10023d3bde77d37fdf",
+          "name": "GeoDAWN_ReadMe.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__7e%2F5e%2Fc0%2F7e5ec0b3aa4cceb4dae189c91f8040e04060f758",
+          "expected_bytes": 305151
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\GeoDAWN_NV_WestCentral_Geophysical_2020_D21_Report.pdf",
+          "bytes": 7638184,
+          "sha256": "67a498dc1f0d2a43be536acf33dea99af1c14c60f41cec14d85ad6da1e24459b",
+          "name": "GeoDAWN_NV_WestCentral_Geophysical_2020_D21_Report.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__2b%2F67%2Fb4%2F2b67b4e0d88525acc1ae32cf17b8fd001395bf52",
+          "expected_bytes": 7638184
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\GeoDAWN Metadata FINAL.csv",
+          "bytes": 9515,
+          "sha256": "447b8b700f96b38ac30e6d4d4f3aaf5fb97261720d8ce6a0c70dff731dd5022c",
+          "name": "GeoDAWN Metadata FINAL.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__28%2Ff7%2Fce%2F28f7cee8e7cf737e61c8dcb26fcca2bf5c948f00",
+          "expected_bytes": 9515
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\GeoDAWN_data_extent.zip",
+          "bytes": 2774,
+          "sha256": "a27b484332fd1b75345cc63a0fa5353861db5812c5c846a494c566938c0c2ddb",
+          "name": "GeoDAWN_data_extent.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__2d%2F0e%2F73%2F2d0e73bd2517f5bcc9dfc5dd3271fe302ed66537",
+          "expected_bytes": 2774
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\GeoDAWN_area1_outline.zip",
+          "bytes": 1190,
+          "sha256": "6a63cccdd7ebe51bc009eca5cc7ac83c959bf4876385813e73cebe442f850131",
+          "name": "GeoDAWN_area1_outline.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__09%2Ff1%2Fa5%2F09f1a519280068416e999b331e3596b7e38e8a93",
+          "expected_bytes": 1190
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\area1_flight_path.zip",
+          "bytes": 33672176,
+          "sha256": "6a59eff9c0e99cce7009a8fb1c46d2827f82ae0ac8bc2b9728a195c97be2c0b8",
+          "name": "area1_flight_path.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__28%2Fdc%2F23%2F28dc23c2391a95be2dfe6c810319024a17d1f08c",
+          "expected_bytes": 33672176
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\22103_area1_grids.zip",
+          "bytes": 44487393,
+          "sha256": "246c6e73f7de593a88b6906f3388df497e1ab947f6307b931efd3f6da8fd9331",
+          "name": "22103_area1_grids.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__83%2Ff2%2F53%2F83f25379f9fb3df7a545c37001f1a78f52f9af7e",
+          "expected_bytes": 44487393
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\22103_area1_tiffs.zip",
+          "bytes": 45685879,
+          "sha256": "d4eb95223c243a7f79aaf7bb9bfd2a544222b86ceec2cecceb11d4aa8cda4388",
+          "name": "22103_area1_tiffs.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__51%2Fa9%2F11%2F51a9112b3035464a94e3b1d1e6e6efd1e2ff80ae",
+          "expected_bytes": 45685879
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\22103_ternary_a1_map.zip",
+          "bytes": 10149448,
+          "sha256": "f4972793fa2a40374c1688d665cafe405b9207577d600a3803154a11d08b6e20",
+          "name": "22103_ternary_a1_map.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__3a%2F5b%2F47%2F3a5b4748914362951ea06e0a9834383e360c6cf7",
+          "expected_bytes": 10149448
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\Figure1_index.PNG",
+          "bytes": 2975249,
+          "sha256": "d8cf844c6441ec4895c4d8ecaad6cedfa35185955dd33067a49998edfbc16873",
+          "name": "Figure1_index.PNG",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__46%2F2c%2F86%2F462c862f35165119a05560c817e5a4115c1deb79",
+          "expected_bytes": 2975249
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\Figure2_tmi.PNG",
+          "bytes": 4268231,
+          "sha256": "f785bc73dfe614f1aa62299f7a47d2c0bc8a54d62bb6dc2a7ac670c98bd77981",
+          "name": "Figure2_tmi.PNG",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__33%2F95%2F67%2F3395676f767daec25c6089b5ddcba199f032d802",
+          "expected_bytes": 4268231
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoDAWN_GreatBasin_area1_airborne_mag_rad_2023\\Figure3_tc.PNG",
+          "bytes": 4338960,
+          "sha256": "ada762375b56e2d67c459cf4f049923426d47524d976770d8a9607b2a1e18e41",
+          "name": "Figure3_tc.PNG",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/657e1d85d34e23d3533209f7?f=__disk__0c%2F19%2F23%2F0c192355e8e5c6f13b901c7231582148f37df6ef",
+          "expected_bytes": 4338960
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "mining_geophysics",
+      "slug": "USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024",
+      "title": "GeoFlight: Airborne magnetic and radiometric surveys of the Salton Trough, Southern California",
+      "item_id": "6686d5cfd34ebb7843398b10",
+      "source_url": "https://www.sciencebase.gov/catalog/item/6686d5cfd34ebb7843398b10",
+      "rights": "This work is marked with Creative Commons Zero v1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/). ",
+      "doi": null,
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\GeoFlight_readme.pdf",
+          "bytes": 588212,
+          "sha256": "651902ef7ba823acaba235c6971f06cd11d8b84b6aeacfec62a2412dc144d2e3",
+          "name": "GeoFlight_readme.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__50%2Fcf%2Fa0%2F50cfa0b5953e610d7ad9276f2bb97df45f73abe9",
+          "expected_bytes": 588212
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\GeoFlight_report.pdf",
+          "bytes": 5028008,
+          "sha256": "7f0b5a2e889ebd189ae247aa601bc3f98acc8fff5455ed8565c2471a02b80b60",
+          "name": "GeoFlight_report.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__36%2F1a%2F22%2F361a22c87d6aa9dce99459c54331d1bfe17084eb",
+          "expected_bytes": 5028008
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\GeoFlight_metadata.csv",
+          "bytes": 9350,
+          "sha256": "deb4f94253f5d246b1ab48f9ff8e15c741b4b735199d7fa26e59e071c8d10fba",
+          "name": "GeoFlight_metadata.csv",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__f6%2F22%2F36%2Ff62236ccbf0c7e6e77d5fde06f4bad372260c14f",
+          "expected_bytes": 9350
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\GeoFlight_data_extent.zip",
+          "bytes": 6006,
+          "sha256": "586e35f16cdd31e89b9d3657aaa988a34431ef8536096204afae27ec286294c9",
+          "name": "GeoFlight_data_extent.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__59%2F20%2Ff6%2F5920f675bd51af11c2bc06e967bdabcd87ef0e54",
+          "expected_bytes": 6006
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\GeoFlight_outline.zip",
+          "bytes": 3056,
+          "sha256": "a61b5d1a50d832f498cb0730e61d2ba938f830ffd0de19a7251917962e3e504e",
+          "name": "GeoFlight_outline.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__30%2F38%2F82%2F303882e3d182eef35730b04c4d19edb3db1dfd36",
+          "expected_bytes": 3056
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\22118 _grids.zip",
+          "bytes": 282553222,
+          "sha256": "a23291bd407c67d89249c56b7fcbdeadab5f6a9348ede5ad876d86685c0848e9",
+          "name": "22118 _grids.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__5c%2F67%2F85%2F5c6785bc8e7dec98302e7204564f84228318f68b",
+          "expected_bytes": 282553222
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\22118_ternary_pdf.zip",
+          "bytes": 2016846,
+          "sha256": "ade11667255120bef6d28cfaf52f012347b7fa89e649db01e139f7cf3c141655",
+          "name": "22118_ternary_pdf.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__40%2Fdd%2F48%2F40dd48863a37f5dd12cf65743ed62a31b22c1c8e",
+          "expected_bytes": 2016846
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\22118_ternary_map.zip",
+          "bytes": 70011753,
+          "sha256": "c58a954cb5842fcc918e7af8fa8d19cdafab9e0d5b7ec73495856173cb94ee21",
+          "name": "22118_ternary_map.zip",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__93%2F86%2Ffa%2F9386fada052c039936fa22c89c9488d663c5cee8",
+          "expected_bytes": 70011753
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\Figure1_index.PNG",
+          "bytes": 2792370,
+          "sha256": "26f94c2234632512f2321e5b65290ffa95f021298ade4b352c0e2d98f72736fb",
+          "name": "Figure1_index.PNG",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__54%2F57%2F10%2F54571095a7867926001417921b610ae0e5d54c4d",
+          "expected_bytes": 2792370
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\Figure2_tmi.PNG",
+          "bytes": 2221429,
+          "sha256": "922a03b233091fe1fd4d23f63dcd1f8f3e3e6273f31a66a81a926a220c0c01b5",
+          "name": "Figure2_tmi.PNG",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__d5%2F0b%2F78%2Fd50b78e190c364e3dc3a18c5dd05169c9ff76a25",
+          "expected_bytes": 2221429
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\Figure3_tc.PNG",
+          "bytes": 2640723,
+          "sha256": "249e1e31b01fd1c13e1b204a2d9730b8ffd9063f1209f283d4a5c57f8c7b5bfe",
+          "name": "Figure3_tc.PNG",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__77%2F9e%2Fb6%2F779eb610cca4c8a0aaca2dda11f23284e57dcfe8",
+          "expected_bytes": 2640723
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_GeoFlight_SaltonTrough_airborne_mag_rad_2024\\GeoFlight.xml",
+          "bytes": 27757,
+          "sha256": "5f0979831497584964544569b471798dce29465c350f958dd79627c4166b6e40",
+          "name": "GeoFlight.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/6686d5cfd34ebb7843398b10?f=__disk__62%2F2b%2F8d%2F622b8dce46f89141b875c0a0f81a1819983ef6d9",
+          "expected_bytes": 27757
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "ScienceBase",
+      "category": "mining_geophysics",
+      "slug": "USGS_SoutheastMojave_airborne_radiometric_grids_2020",
+      "title": "Airborne magnetic and radiometric survey of the southeast Mojave Desert, California and Nevada",
+      "item_id": "5e7be5eee4b01d50927301b3",
+      "source_url": "https://www.sciencebase.gov/catalog/item/5e7be5eee4b01d50927301b3",
+      "rights": null,
+      "doi": null,
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_SoutheastMojave_airborne_radiometric_grids_2020\\Survey_Report.pdf",
+          "bytes": 1725952,
+          "sha256": "dacb3947e20f2bbec61faf3c4d9adebd2c45e65a20c3eee168fb55e5ea79ef35",
+          "name": "Survey_Report.pdf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__f1%2Ffc%2Ffa%2Ff1fcfa4176f5956f1d747104ad117d1f4e6a9cc2",
+          "expected_bytes": 1725952
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_SoutheastMojave_airborne_radiometric_grids_2020\\K.gxf",
+          "bytes": 15342388,
+          "sha256": "7ab6c6670c035902e67526aa2b9c77d9c883cbaac07c1e1d696a8f32a1d098c7",
+          "name": "K.gxf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__2f%2F07%2F8c%2F2f078c6d94e7381bec0f32231a2dc75a7dcc3046",
+          "expected_bytes": 15342388
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_SoutheastMojave_airborne_radiometric_grids_2020\\eTh.gxf",
+          "bytes": 15280761,
+          "sha256": "9e2d37aa79e65e4818fcf803ba10678ebb0cac5f7ada4ef0a4b3cb111943357f",
+          "name": "eTh.gxf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__54%2Fbb%2F6a%2F54bb6a3585516564a123f951528ee60816992a2e",
+          "expected_bytes": 15280761
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_SoutheastMojave_airborne_radiometric_grids_2020\\eU.gxf",
+          "bytes": 15280189,
+          "sha256": "320d829ff613322bf1d79e6e53f05dabef4068023fccd87e73f0e266129bdd79",
+          "name": "eU.gxf",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__cf%2F29%2Fae%2Fcf29ae2be58e409de0706840df0155356ea57ccd",
+          "expected_bytes": 15280189
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_SoutheastMojave_airborne_radiometric_grids_2020\\Metadata.xml",
+          "bytes": 12403,
+          "sha256": "cc37b9cb517765993704c8a4548217cc92242d6e67b0186c79d70fb2286f35f8",
+          "name": "Metadata.xml",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__ec%2F74%2F70%2Fec74703b84d7592366b204706785ede457670749",
+          "expected_bytes": 12403
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\USGS_SoutheastMojave_airborne_radiometric_grids_2020\\Readme.txt",
+          "bytes": 4392,
+          "sha256": "285732db70f4d6263d0350dc01cc5df172d19627ae287cc9e99a236168f272c8",
+          "name": "Readme.txt",
+          "source_url": "https://www.sciencebase.gov/catalog/file/get/5e7be5eee4b01d50927301b3?f=__disk__b7%2F96%2F76%2Fb79676248dff5e43683e149d26970acfaf7813bc",
+          "expected_bytes": 4392
+        }
+      ],
+      "missing_files": []
+    },
+    {
+      "repository": "Zenodo",
+      "category": "dc_ip",
+      "slug": "Zenodo_Serpentinite_IP_Revil_2024",
+      "title": "Data for the paper \"Field investigation of serpentinite with induced polarization and the K-means clustering technique\" by   A. Revil, A. Ghorbani, J. Jacquet, S. Barde-Cabusson, H. Chen, J. Richard, P. Vaudelet, G. Ménard, and J.J. Delannoy",
+      "record_id": "10684241",
+      "doi": "10.5281/zenodo.10684241",
+      "source_url": "https://zenodo.org/records/10684241",
+      "license": "cc-by-4.0",
+      "publication_date": "2024-02-20",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\Zenodo_Serpentinite_IP_Revil_2024\\Data 1.zip",
+          "bytes": 208941,
+          "sha256": "80273dd944c20be2d92a97620b7458d247fb3ae8fd0ef67c3acfa6085cac1e0f",
+          "name": "Data 1.zip",
+          "source_url": "https://zenodo.org/api/records/10684241/files/Data%201.zip/content",
+          "expected_bytes": 208941,
+          "zenodo_checksum": "md5:bae933c3c91b5ff4a744f200bfe0c7cf"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\Zenodo_Serpentinite_IP_Revil_2024\\Data 2-ProfilesData_P1_P2.xlsx",
+          "bytes": 48230,
+          "sha256": "3968dbc3c8ca79433102124fd8806b8b22bf5c7a30e719f43d2704d8fd637175",
+          "name": "Data 2-ProfilesData_P1_P2.xlsx",
+          "source_url": "https://zenodo.org/api/records/10684241/files/Data%202-ProfilesData_P1_P2.xlsx/content",
+          "expected_bytes": 48230,
+          "zenodo_checksum": "md5:61397125dd4d930a5ebfe3099fa821d8"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\Zenodo_Serpentinite_IP_Revil_2024\\Data 3-Complex-conductivity spectrum.xlsx",
+          "bytes": 19740,
+          "sha256": "2c42c5f51cafae40dd651c7caf588a14ea651763b70e95216e944e480fb82e41",
+          "name": "Data 3-Complex-conductivity spectrum.xlsx",
+          "source_url": "https://zenodo.org/api/records/10684241/files/Data%203-Complex-conductivity%20spectrum.xlsx/content",
+          "expected_bytes": 19740,
+          "zenodo_checksum": "md5:d184dabf193ca908b1f6a3226460eaca"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\Zenodo_Serpentinite_IP_Revil_2024\\README.docx",
+          "bytes": 51768,
+          "sha256": "21b5e23bd77805ad594d5a902f14bb61dc43c50718cff51fbe6185a2cc6a5d80",
+          "name": "README.docx",
+          "source_url": "https://zenodo.org/api/records/10684241/files/README.docx/content",
+          "expected_bytes": 51768,
+          "zenodo_checksum": "md5:4320fe62ae2022e6a907b27506f88be9"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\Zenodo_Serpentinite_IP_Revil_2024\\README.txt",
+          "bytes": 1194,
+          "sha256": "bf831e53d4bbed7c4097edca09d83e97403455b634d75462391a3e279a175133",
+          "name": "README.txt",
+          "source_url": "https://zenodo.org/api/records/10684241/files/README.txt/content",
+          "expected_bytes": 1194,
+          "zenodo_checksum": "md5:3c2de0716093c99f923201111c74eb84"
+        }
+      ]
+    },
+    {
+      "repository": "Zenodo",
+      "category": "dc_ip",
+      "slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+      "title": "Shallow ERT and IP monitoring of the Reykjanes Geothermal Area",
+      "record_id": "15488867",
+      "doi": "10.5281/zenodo.15488867",
+      "source_url": "https://zenodo.org/records/15488867",
+      "license": "cc-by-4.0",
+      "publication_date": "2025-05-22",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "dc_ip\\Zenodo_Reykjanes_ERT_IP_monitoring_2025\\ERT_IP_Reykjanes.zip",
+          "bytes": 69292581,
+          "sha256": "356f81e039884faa38b74e7d80662be7a5cd90c3cf96f490e0905b517f9c672c",
+          "name": "ERT_IP_Reykjanes.zip",
+          "source_url": "https://zenodo.org/api/records/15488867/files/ERT_IP_Reykjanes.zip/content",
+          "expected_bytes": 69292581,
+          "zenodo_checksum": "md5:f47ec6cf439aa6a91fb82bf6ff562a92"
+        }
+      ]
+    },
+    {
+      "repository": "Zenodo",
+      "category": "wfem",
+      "slug": "Zenodo_BaotuSpring_WFEM_2025",
+      "title": "Data for Wide Field Electromagnetic Method in the Baotu Spring Region of Jinan, China",
+      "record_id": "17140933",
+      "doi": "10.5281/zenodo.17140933",
+      "source_url": "https://zenodo.org/records/17140933",
+      "license": "cc-by-4.0",
+      "publication_date": "2025-09-17",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\26 WFEM apparent resistivity of E7.dat",
+          "bytes": 74742,
+          "sha256": "2c4a7ca117045484c49fd8215bb1e8aa5b76d6860355b50e20fa14640dd8ea30",
+          "name": "26 WFEM apparent resistivity of E7.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/26%20WFEM%20apparent%20resistivity%20of%20E7.dat/content",
+          "expected_bytes": 74742,
+          "zenodo_checksum": "md5:c1c25b8c217849b5662192d6ebd44ee8"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\12 WFEM apparent resistivity of W4.dat",
+          "bytes": 100365,
+          "sha256": "9534ff73f5b0068914bf5af5b5e0c928bd329367e29e8677e8b2266166c2b883",
+          "name": "12 WFEM apparent resistivity of W4.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/12%20WFEM%20apparent%20resistivity%20of%20W4.dat/content",
+          "expected_bytes": 100365,
+          "zenodo_checksum": "md5:c6efa44ea931635d7bed9aff442c750d"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\20 WFEM apparent resistivity of E1.dat",
+          "bytes": 46703,
+          "sha256": "236ece53b4cabeebf8d2c5a381fa1dc7cd0990354083a5086d37b51bb7c4705f",
+          "name": "20 WFEM apparent resistivity of E1.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/20%20WFEM%20apparent%20resistivity%20of%20E1.dat/content",
+          "expected_bytes": 46703,
+          "zenodo_checksum": "md5:587104edddf758c35486208fe9b24459"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\2 WFEM apparent resistivity of L2.dat",
+          "bytes": 107405,
+          "sha256": "39c24bbc29a68bb2a1c44d457ddf02fcddb258dc9f0ab9b76b0a13dcba920c47",
+          "name": "2 WFEM apparent resistivity of L2.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/2%20WFEM%20apparent%20resistivity%20of%20L2.dat/content",
+          "expected_bytes": 107405,
+          "zenodo_checksum": "md5:53c1bc3891f2c6910bc10a38bc161220"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\4 WFEM apparent resistivity of L4.dat",
+          "bytes": 130547,
+          "sha256": "25d8476e963a9d6ca76694d5d0b5eb95abdea6d91a9601640f50e2ecbb7584f6",
+          "name": "4 WFEM apparent resistivity of L4.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/4%20WFEM%20apparent%20resistivity%20of%20L4.dat/content",
+          "expected_bytes": 130547,
+          "zenodo_checksum": "md5:406c06b5df61c712f257d0133e5f5445"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\22 WFEM apparent resistivity of E3.dat",
+          "bytes": 61206,
+          "sha256": "db44666096d579797e2f1a8d7badefcabfa942d2a9db812498e7d15344eab835",
+          "name": "22 WFEM apparent resistivity of E3.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/22%20WFEM%20apparent%20resistivity%20of%20E3.dat/content",
+          "expected_bytes": 61206,
+          "zenodo_checksum": "md5:0a1345db397dcab9284092de5b871572"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\23 WFEM apparent resistivity of E4.dat",
+          "bytes": 58167,
+          "sha256": "a6680d67c114876e69b29ca8d2540e8c0c6cae1472807f799129d6cc49ab8c11",
+          "name": "23 WFEM apparent resistivity of E4.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/23%20WFEM%20apparent%20resistivity%20of%20E4.dat/content",
+          "expected_bytes": 58167,
+          "zenodo_checksum": "md5:5412744c662cbb620bd783c6c5c4fca8"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\9 WFEM apparent resistivity of W1.dat",
+          "bytes": 73035,
+          "sha256": "057cf204e853463062a2a4e9a8cdcfae611112e4bf0e18f68fb844f646705ed7",
+          "name": "9 WFEM apparent resistivity of W1.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/9%20WFEM%20apparent%20resistivity%20of%20W1.dat/content",
+          "expected_bytes": 73035,
+          "zenodo_checksum": "md5:2e7cd06a206fd63376e95621692d1f65"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\6 WFEM apparent resistivity of L6.dat",
+          "bytes": 146852,
+          "sha256": "2a84bed43f859a95dc2ca07821d49c22c30d2053c05d2b9e765cf5d6d905cc4e",
+          "name": "6 WFEM apparent resistivity of L6.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/6%20WFEM%20apparent%20resistivity%20of%20L6.dat/content",
+          "expected_bytes": 146852,
+          "zenodo_checksum": "md5:de2d83f280b2bd3e2aaed9ec701aca89"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\8 WFEM apparent resistivity of L8.dat",
+          "bytes": 56207,
+          "sha256": "401791a8b9fbafe5dbf360a3fac41d5c7fdb2bffcc4d6ca1b76411b8ef5d2689",
+          "name": "8 WFEM apparent resistivity of L8.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/8%20WFEM%20apparent%20resistivity%20of%20L8.dat/content",
+          "expected_bytes": 56207,
+          "zenodo_checksum": "md5:98b4996178edb0bee394b1d7f6b269f6"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\16 WFEM apparent resistivity of W8.dat",
+          "bytes": 61813,
+          "sha256": "b42fd43b28f71f924b89de883be42fdff142a3be89bf931240c5c333cbc6cef6",
+          "name": "16 WFEM apparent resistivity of W8.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/16%20WFEM%20apparent%20resistivity%20of%20W8.dat/content",
+          "expected_bytes": 61813,
+          "zenodo_checksum": "md5:d4aa73724088bf4a06043d8ca1267e66"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\17 WFEM apparent resistivity of W9.dat",
+          "bytes": 62183,
+          "sha256": "2b05526dfa3ca1f7f9fbfa540d150b6624e571d4ca34798938cf35dfd58e3f53",
+          "name": "17 WFEM apparent resistivity of W9.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/17%20WFEM%20apparent%20resistivity%20of%20W9.dat/content",
+          "expected_bytes": 62183,
+          "zenodo_checksum": "md5:dd4a99e983c08d09d2cfcbd48a845763"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\18 WFEM apparent resistivity of W10.dat",
+          "bytes": 87728,
+          "sha256": "d9beeeae6f10a95473a45f9d00c829dbb5023c5a0c0d5baadbb9cefb9274c70c",
+          "name": "18 WFEM apparent resistivity of W10.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/18%20WFEM%20apparent%20resistivity%20of%20W10.dat/content",
+          "expected_bytes": 87728,
+          "zenodo_checksum": "md5:c4400997950c9ff73561ce90d0e944f7"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\25 WFEM apparent resistivity of E6.dat",
+          "bytes": 83058,
+          "sha256": "281e056c1fe1adb5bf7d87c08028d9cdb921a4b256b9f226efb13e13cf134a9f",
+          "name": "25 WFEM apparent resistivity of E6.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/25%20WFEM%20apparent%20resistivity%20of%20E6.dat/content",
+          "expected_bytes": 83058,
+          "zenodo_checksum": "md5:38e688c4a2f7ffcaee8ffeb0263fd42b"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\13 WFEM apparent resistivity of W5.dat",
+          "bytes": 147330,
+          "sha256": "9046701a9c3653b776f3113027bf6d5bc1cb3cdd880726a96cdf499a6a37db0f",
+          "name": "13 WFEM apparent resistivity of W5.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/13%20WFEM%20apparent%20resistivity%20of%20W5.dat/content",
+          "expected_bytes": 147330,
+          "zenodo_checksum": "md5:9e4bf55217f10cc7c2549e0cc7f8b360"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\24 WFEM apparent resistivity of E5.dat",
+          "bytes": 59664,
+          "sha256": "de15c828607fc5088e16fb8e12b0b0867f84cee791d81925b48b9a1cf731bc6b",
+          "name": "24 WFEM apparent resistivity of E5.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/24%20WFEM%20apparent%20resistivity%20of%20E5.dat/content",
+          "expected_bytes": 59664,
+          "zenodo_checksum": "md5:c90825abb74e57fe54b762690873fa6a"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\27 WFEM apparent resistivity of E8.dat",
+          "bytes": 73285,
+          "sha256": "2dd05c8907014b960d6f8e3c4333fcd4a01f2a4b81244be17f3a0d6c0026947e",
+          "name": "27 WFEM apparent resistivity of E8.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/27%20WFEM%20apparent%20resistivity%20of%20E8.dat/content",
+          "expected_bytes": 73285,
+          "zenodo_checksum": "md5:6f2d5d5a4ec4620cbadd7ad0b5fb4da9"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\14 WFEM apparent resistivity of W6.dat",
+          "bytes": 128015,
+          "sha256": "625c6cdac8e4bac5d5818a6b550daa98c5ff1e4c6f364a9186a5eadbc5f0d3e0",
+          "name": "14 WFEM apparent resistivity of W6.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/14%20WFEM%20apparent%20resistivity%20of%20W6.dat/content",
+          "expected_bytes": 128015,
+          "zenodo_checksum": "md5:2b3527609b5eeafc3402a2529644f686"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\1 WFEM apparent resistivity of L1.dat",
+          "bytes": 110092,
+          "sha256": "48fddf5651293d90303a0a5ecaa4d9834c564400d4e4193cebf03cff4bb90235",
+          "name": "1 WFEM apparent resistivity of L1.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/1%20WFEM%20apparent%20resistivity%20of%20L1.dat/content",
+          "expected_bytes": 110092,
+          "zenodo_checksum": "md5:bc1d8ef5f0236358e391f82d3ad18a16"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\21 WFEM apparent resistivity of E2.dat",
+          "bytes": 19943,
+          "sha256": "0dd6c7646fffa89dda2567be7c69c9410d123c89f10dbff4ce22275311967bac",
+          "name": "21 WFEM apparent resistivity of E2.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/21%20WFEM%20apparent%20resistivity%20of%20E2.dat/content",
+          "expected_bytes": 19943,
+          "zenodo_checksum": "md5:3753fcb53b68ac4d8a433e99d01622aa"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\5 WFEM apparent resistivity of L5.dat",
+          "bytes": 144134,
+          "sha256": "93500cfd8b651195848ce2b28df1598bd6b7e6356f281c3506ee1c6c1465d344",
+          "name": "5 WFEM apparent resistivity of L5.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/5%20WFEM%20apparent%20resistivity%20of%20L5.dat/content",
+          "expected_bytes": 144134,
+          "zenodo_checksum": "md5:1c42124a7a59881e5cd35a05d1493cb4"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\10 WFEM apparent resistivity of W2.dat",
+          "bytes": 126356,
+          "sha256": "d2a57054b8010229246a45ac0d50788fc40772799b1f145f37ae90d8a432a695",
+          "name": "10 WFEM apparent resistivity of W2.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/10%20WFEM%20apparent%20resistivity%20of%20W2.dat/content",
+          "expected_bytes": 126356,
+          "zenodo_checksum": "md5:adfe2159133c1d4da3d6692c9b46396b"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\7 WFEM apparent resistivity of L7.dat",
+          "bytes": 38704,
+          "sha256": "87650422d04c05c0d06830863a521fb30e8112b7747edf81ff045e052f1749d1",
+          "name": "7 WFEM apparent resistivity of L7.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/7%20WFEM%20apparent%20resistivity%20of%20L7.dat/content",
+          "expected_bytes": 38704,
+          "zenodo_checksum": "md5:efbdddc33bbc312c4034fd7062f38bf6"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\11 WFEM apparent resistivity of W3.dat",
+          "bytes": 82040,
+          "sha256": "e5d40971fc06e37315471f8e80f10a6fe236b1f1fea91d16aedf88fbacb53b54",
+          "name": "11 WFEM apparent resistivity of W3.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/11%20WFEM%20apparent%20resistivity%20of%20W3.dat/content",
+          "expected_bytes": 82040,
+          "zenodo_checksum": "md5:8d2c5aa029366aa2abea443f6a33d2ba"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\15 WFEM apparent resistivity of W7.dat",
+          "bytes": 63035,
+          "sha256": "18bef7add9d17474ccc13825f9f9860ead64932f9cdb0e811caf5ea43b1d9e60",
+          "name": "15 WFEM apparent resistivity of W7.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/15%20WFEM%20apparent%20resistivity%20of%20W7.dat/content",
+          "expected_bytes": 63035,
+          "zenodo_checksum": "md5:6aa73122a2c1536e6a4ab0f8199668bf"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\19 WFEM apparent resistivity of W11.dat",
+          "bytes": 61390,
+          "sha256": "55a10ce68bf3028834df8d4463943ddede99506af9c0560a741e035090f3d6e6",
+          "name": "19 WFEM apparent resistivity of W11.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/19%20WFEM%20apparent%20resistivity%20of%20W11.dat/content",
+          "expected_bytes": 61390,
+          "zenodo_checksum": "md5:64f3a43da7c5251061b68dbf34113b04"
+        },
+        {
+          "status": "skipped_existing",
+          "path": "wfem\\Zenodo_BaotuSpring_WFEM_2025\\3 WFEM apparent resistivity of L3.dat",
+          "bytes": 129265,
+          "sha256": "7cc5d36b43cd05a71331bf1a12f7e494f6745593bf0eee8069bb0a947707cd6c",
+          "name": "3 WFEM apparent resistivity of L3.dat",
+          "source_url": "https://zenodo.org/api/records/17140933/files/3%20WFEM%20apparent%20resistivity%20of%20L3.dat/content",
+          "expected_bytes": 129265,
+          "zenodo_checksum": "md5:dda03359450813b9c57f85bc9a000366"
+        }
+      ]
+    },
+    {
+      "repository": "Zenodo",
+      "category": "mining_geophysics",
+      "slug": "Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic",
+      "title": "simpeg-research/Astic-2020-JointInversion: Joint inversion of synthetic potential fields data based on the DO-27 kimberlite pipe",
+      "record_id": "3633239",
+      "doi": "10.5281/zenodo.3633239",
+      "source_url": "https://zenodo.org/records/3633239",
+      "license": "other-open",
+      "publication_date": "2020-01-31",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic\\simpeg-research_Astic-2020-JointInversion-1.0.0.zip",
+          "bytes": 18956806,
+          "sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e",
+          "name": "simpeg-research/Astic-2020-JointInversion-1.0.0.zip",
+          "source_url": "https://zenodo.org/api/records/3633239/files/simpeg-research/Astic-2020-JointInversion-1.0.0.zip/content",
+          "expected_bytes": 18956806,
+          "zenodo_checksum": "md5:99ffb458c2a41fa3577f1edd8fa4a9a4"
+        }
+      ]
+    },
+    {
+      "repository": "Zenodo",
+      "category": "mining_geophysics",
+      "slug": "Zenodo_SerraDasEguas_Brazil_magnetic_database",
+      "title": "Magnetic database of Serra das Éguas, Brazil",
+      "record_id": "4633754",
+      "doi": "10.5281/zenodo.4633754",
+      "source_url": "https://zenodo.org/records/4633754",
+      "license": "cc-nc",
+      "publication_date": "2021-03-24",
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\Zenodo_SerraDasEguas_Brazil_magnetic_database\\bru_geof_mag_folha_100000.gdb",
+          "bytes": 86795491,
+          "sha256": "48718b81a3e205a9c8adbae14a53c708a42f3fff8cfd578b3850274f8477429e",
+          "name": "bru_geof_mag_folha_100000.gdb",
+          "source_url": "https://zenodo.org/api/records/4633754/files/bru_geof_mag_folha_100000.gdb/content",
+          "expected_bytes": 86795491,
+          "zenodo_checksum": "md5:1730aa0fa3129e31cc9b0e120acf20c0"
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia",
+      "category": "mining_geophysics",
+      "slug": "GA_Gawler_Challenger_AEM_magnetic_elevation",
+      "title": "Gawler Mineral Promotion Project - Challenger airborne electromagnetic, magnetic and elevation survey",
+      "source_url": "https://data.gov.au/data/dataset/gawler-mineral-promotion-project-challenger-airborne-electromagnetic-magnetic-and-elevation-sur",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Gawler_Challenger_AEM_magnetic_elevation\\GA_Challenger_AEM_magnetic_elevation_35533_00_0.zip",
+          "bytes": 137415873,
+          "sha256": "52e0301c2cc0da860132c1f51774762c84c9ac41ba7e19d9f5b729376443fac4",
+          "name": "GA_Challenger_AEM_magnetic_elevation_35533_00_0.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/35533/35533_00_0.zip",
+          "expected_bytes": 137412471
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia",
+      "category": "mining_geophysics",
+      "slug": "GA_Georgetown_Queensland_AEM_2024",
+      "title": "Georgetown, Queensland, 2024 Airborne Electromagnetic Survey NRG XCITE airborne electromagnetic data and GALEI conductivity estimates",
+      "source_url": "https://data.gov.au/data/dataset/georgetown-queensland-2024-airborne-electromagnetic-survey-nrg-xcite-airborne-electromagnetic-d",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Georgetown_Queensland_AEM_2024\\GA_Georgetown_AEM_2024_summary.pdf",
+          "bytes": 631639,
+          "sha256": "dc8223ba55f222278b98c157c240d266c80c7cb34f43229485a08fef9959990a",
+          "name": "GA_Georgetown_AEM_2024_summary.pdf",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/150184/150184_00_1.pdf",
+          "expected_bytes": 631472
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Georgetown_Queensland_AEM_2024\\GA_Georgetown_AEM_2024_shapes_kml.zip",
+          "bytes": 4545984,
+          "sha256": "2d6b57787cd271f4e220e8b06503bfad69626c6cfa336b7c5b360f74d8384f1d",
+          "name": "GA_Georgetown_AEM_2024_shapes_kml.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/150184/150184_01_0.zip",
+          "expected_bytes": 4549928
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_Cobar_P5009_Extension1_magnetic_radiometric_2021",
+      "title": "Cobar magnetic and radiometric survey, NSW, 2021 (P5009), Extension 1",
+      "source_url": "https://data.gov.au/data/dataset/cobar-magnetic-and-radiometric-survey-nsw-2021-p5009-extension-1-magnetic-line-data",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Cobar_P5009_Extension1_magnetic_radiometric_2021\\P5009-line-magnetic-Extension1.nc",
+          "bytes": 12502052,
+          "sha256": "0a5e7c049807ef6d2e61ad52672e757ac79d84f9e022d8113821788a97941781",
+          "name": "P5009-line-magnetic-Extension1.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NSW/line/P5009/P5009-line-magnetic-Extension1.nc",
+          "expected_bytes": 12495214
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Cobar_P5009_Extension1_magnetic_radiometric_2021\\P5009-line-radiometric-Extension1.nc",
+          "bytes": 2339819,
+          "sha256": "0b73455e01b91edbd3e4e232a5a517eba5f681c6ea040f1c6216aecd03ee3967",
+          "name": "P5009-line-radiometric-Extension1.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NSW/line/P5009/P5009-line-radiometric-Extension1.nc",
+          "expected_bytes": 2336724
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_Andamooka_P1282_radiometric_line_2017",
+      "title": "Andamooka Airborne Magnetic Radiometric and DEM Survey, 2017 (P1282), radiometric line data",
+      "source_url": "https://data.gov.au/data/dataset/andamooka-airborne-magnetic-radiometric-and-dem-survey-2017-p1282-radiometric-line-data",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Andamooka_P1282_radiometric_line_2017\\P1282-line-radiometric.nc",
+          "bytes": 118673899,
+          "sha256": "10459f78a9203f26543de5decb7ab6e0b1b2d3819528c808a4df7e55c83d4ea9",
+          "name": "P1282-line-radiometric.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/SA/line/P1282/P1282-line-radiometric.nc",
+          "expected_bytes": 118680150
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_Cobar_P5009_Extension1_DEM_radar_grid_2021",
+      "title": "Cobar P5009 EXT 1 digital elevation model radar grid",
+      "source_url": "https://data.gov.au/data/dataset/cobar-p5009-ext-1-digital-elevation-model-radar-grid",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Cobar_P5009_Extension1_DEM_radar_grid_2021\\P5009_EXT_1_grid_DEMradar.nc",
+          "bytes": 504164,
+          "sha256": "6d4cc6ec30e3ec61ed41851597ea71c4fe92362ca3103697e266bb76643378bb",
+          "name": "P5009_EXT_1_grid_DEMradar.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NSW/grid/P5009/P5009_EXT_1_grid_DEMradar.nc",
+          "expected_bytes": 499240
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia",
+      "category": "mining_geophysics",
+      "slug": "GA_GawlerCraton_Tranche3_StreakyBay_mag_rad_elev_grids",
+      "title": "Gawler Craton Airborne Survey Tranche 3, P1308 Streaky Bay magnetics, radiometrics, and elevation grids",
+      "source_url": "https://data.gov.au/data/dataset/gawler-craton-airborne-survey-tranche-3-magnetics-radiometrics-elevation",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_GawlerCraton_Tranche3_StreakyBay_mag_rad_elev_grids\\GCAS_T3_MagRadElev_description_134431_24_1.pdf",
+          "bytes": 844604,
+          "sha256": "148981b0caf52dae6d69614f8b4328ba63bcac5ca844a95c55d95b5dce558cb3",
+          "name": "GCAS_T3_MagRadElev_description_134431_24_1.pdf",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/134431/134431_24_1.pdf",
+          "expected_bytes": 844504
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_GawlerCraton_Tranche3_StreakyBay_mag_rad_elev_grids\\P1308_GCAS5_StreakyBay_elevation_grids_134431_00_1.zip",
+          "bytes": 57154231,
+          "sha256": "b51d0e523efa3c4611b676e66e9621080f63b8216f7e7861f0ae36ba5d6bdcce",
+          "name": "P1308_GCAS5_StreakyBay_elevation_grids_134431_00_1.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/134431/134431_00_1.zip",
+          "expected_bytes": 57157688
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_GawlerCraton_Tranche3_StreakyBay_mag_rad_elev_grids\\P1308_GCAS5_StreakyBay_magnetics_grids_134431_01_1.zip",
+          "bytes": 131943690,
+          "sha256": "1594bb3afd589bb8264ee0c99e5377f01819ba9afe09f3e7d007ef1a6d460988",
+          "name": "P1308_GCAS5_StreakyBay_magnetics_grids_134431_01_1.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/134431/134431_01_1.zip",
+          "expected_bytes": 131942176
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_GawlerCraton_Tranche3_StreakyBay_mag_rad_elev_grids\\P1308_GCAS5_StreakyBay_radiometrics_grids_134431_02_1.zip",
+          "bytes": 300252519,
+          "sha256": "2c002ab06d74745aee54ed13bda2000702279e57238128a587edd8690ddb14db",
+          "name": "P1308_GCAS5_StreakyBay_radiometrics_grids_134431_02_1.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/134431/134431_02_1.zip",
+          "expected_bytes": 300252921
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_Yathong_P5023_radiometric_reduced_reports_2023",
+      "title": "Yathong Magnetic Gradient and Radiometric Survey, NSW, 2023 (P5023), reduced radiometrics and reports",
+      "source_url": "https://data.gov.au/data/dataset/p5023-yathong-magnetic-gradient-and-radiometric-survey-nsw-2023",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Yathong_P5023_radiometric_reduced_reports_2023\\P5023_radiometrics_reduced.nc",
+          "bytes": 170924261,
+          "sha256": "ca174ad370105a31876118480572cdf3570b2235409636f5650fac6f26c67d64",
+          "name": "P5023_radiometrics_reduced.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/NSW/line/P5023/P5023_radiometrics_reduced.nc",
+          "expected_bytes": 170929617
+        },
+        {
+          "status": "skipped_existing",
+          "path": "mining_geophysics\\GA_Yathong_P5023_radiometric_reduced_reports_2023\\P5023_Yathong_reports_149105_02_0.zip",
+          "bytes": 10736810,
+          "sha256": "c2d496f8bcace6e9513c205df0c99927cfa2c6bcb57962543a244d6af1a890e9",
+          "name": "P5023_Yathong_reports_149105_02_0.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/149105/149105_02_0.zip",
+          "expected_bytes": 10734848
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_EastTasmania_P5020_TMI_doserate_grids_2022",
+      "title": "East Tasmania Magnetic and Radiometric Survey, TAS, 2022 (P5020), TMI and dose-rate grids",
+      "source_url": "https://data.gov.au/data/dataset/p5020-east-tasmania-magnetic-and-radiometric-survey-2022",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_EastTasmania_P5020_TMI_doserate_grids_2022\\P5020_TMI_.nc",
+          "bytes": 20793811,
+          "sha256": "76a3db78acb84b9f0da24d11fb16e86e82efeef31968836225b4b3baae1a0474",
+          "name": "P5020_TMI_.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/TAS/grid/P5020/P5020_TMI_.nc",
+          "expected_bytes": 20795764
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_EastTasmania_P5020_TMI_doserate_grids_2022\\P5020_dose_rate.nc",
+          "bytes": 20244542,
+          "sha256": "ea2baaf7a01ba19fdd2fccd3d05dcfb5bdc0ed9e2fad908d497e7a7b4abc0b3e",
+          "name": "P5020_dose_rate.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/TAS/grid/P5020/P5020_dose_rate.nc",
+          "expected_bytes": 20246936
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_EastTasmania_P5020_TMI_doserate_grids_2022\\P5020_EastTasmania_reports_147455_05_0.zip",
+          "bytes": 11526081,
+          "sha256": "39021623722b1a2c09fbe4325f55d2c4b9f9d6bca05003fc2a92188251bb12d4",
+          "name": "P5020_EastTasmania_reports_147455_05_0.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/147455/147455_05_0.zip",
+          "expected_bytes": 11528752
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_TasmanianTiers_P5003_TMI_DEM_grids_2021",
+      "title": "Tasmanian Tiers Airborne Magnetic, Radiometric and Digital Elevation Survey, TAS, 2021 (P5003), TMI and DEM grids",
+      "source_url": "https://data.gov.au/data/dataset/tasmanian-tiers-airborne-magnetic-radiometric-and-digital-elevation-survey-tas-2021-p5003-total",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_TasmanianTiers_P5003_TMI_DEM_grids_2021\\P5003_grid_TMI_reduced.nc",
+          "bytes": 11248144,
+          "sha256": "4c814e2424e3dd7e217b8be3da7ba2fcf1d1e7cf7935b1d3fde50db09e9af996",
+          "name": "P5003_grid_TMI_reduced.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/TAS/grid/P5003/P5003_grid_TMI_reduced.nc",
+          "expected_bytes": 11250240
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_TasmanianTiers_P5003_TMI_DEM_grids_2021\\P5003_grid_radar_DEM.nc",
+          "bytes": 9199415,
+          "sha256": "7bea0c4f9a94453671c1ffa405fa0f01df279c58f4616308aebad1e7a6bc9f8c",
+          "name": "P5003_grid_radar_DEM.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/TAS/grid/P5003/P5003_grid_radar_DEM.nc",
+          "expected_bytes": 9196072
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_Ravensthorpe_SouthernYilgarn_P1067_rad_elev_2004",
+      "title": "Southern Yilgarn (Ravensthorpe), WA, 2004 (P1067), radiometric and elevation line data",
+      "source_url": "https://data.gov.au/data/dataset/southern-yilgarn-ravensthorpe-wa-2004-p1067-radiometric-line-data-awags-levelled",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_Ravensthorpe_SouthernYilgarn_P1067_rad_elev_2004\\P1067-line-radiometric-Ravensthorpe-AWAGS_RAD_2015.nc",
+          "bytes": 24149481,
+          "sha256": "9f03b5f3c9f8b0afa3224561319c13d4dd6deba9fe0673b70a130e0081e23bd1",
+          "name": "P1067-line-radiometric-Ravensthorpe-AWAGS_RAD_2015.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/WA/line/P1067/P1067-line-radiometric-Ravensthorpe-AWAGS_RAD_2015.nc",
+          "expected_bytes": 24150972
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_Ravensthorpe_SouthernYilgarn_P1067_rad_elev_2004\\P1067-line-elevation-Ravensthorpe.nc",
+          "bytes": 132655372,
+          "sha256": "9a9d242099a1a68acf2e559dd2d67e97014028eced6a029f4a588b4b29ee89d3",
+          "name": "P1067-line-elevation-Ravensthorpe.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/WA/line/P1067/P1067-line-elevation-Ravensthorpe.nc",
+          "expected_bytes": 132657080
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia GADDS2",
+      "category": "mining_geophysics",
+      "slug": "GA_Ravensthorpe_P457_radiometric_1980",
+      "title": "Ravensthorpe, WA, 1980/81 (P457), radiometric line data AWAGS levelled",
+      "source_url": "https://data.gov.au/data/dataset/ravensthorpe-wa-1980-81-p457-radiometric-line-data-awags-levelled",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_Ravensthorpe_P457_radiometric_1980\\P457-line-radiometric-AWAGS_RAD_2015.nc",
+          "bytes": 13719151,
+          "sha256": "2c325508659dfa0efe2b19e663f67344b0c9d41a3e781f4d6930971f23bcb0c2",
+          "name": "P457-line-radiometric-AWAGS_RAD_2015.nc",
+          "source_url": "https://thredds.nci.org.au/thredds/fileServer/iv65/Geoscience_Australia_Geophysics_Reference_Data_Collection/airborne_geophysics/GA/line/P457/P457-line-radiometric-AWAGS_RAD_2015.nc",
+          "expected_bytes": 13716632
+        }
+      ]
+    },
+    {
+      "repository": "data.gov.au / Geoscience Australia",
+      "category": "mining_geophysics",
+      "slug": "GA_AusAEM_NortheastQueensland_2024_summary_extent",
+      "title": "AusAEM, Northeast Queensland, Australia, 2024 Airborne Electromagnetic Survey TEMPEST summary and extent files",
+      "source_url": "https://data.gov.au/data/dataset/ausaem-northeast-queensland-australia-2024-airborne-electromagnetic-survey-tempest-airborne-ele",
+      "license": "Creative Commons Attribution 4.0 International unless source record says otherwise",
+      "files": [
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_AusAEM_NortheastQueensland_2024_summary_extent\\AusAEM_NE_Queensland_2024_summary_150185_00_0.pdf",
+          "bytes": 638686,
+          "sha256": "0054a448e855918442e9d5051575ceaa75d160b9dad08cf030d52b2b56d01885",
+          "name": "AusAEM_NE_Queensland_2024_summary_150185_00_0.pdf",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/150185/150185_00_0.pdf",
+          "expected_bytes": 639200
+        },
+        {
+          "status": "downloaded",
+          "path": "mining_geophysics\\GA_AusAEM_NortheastQueensland_2024_summary_extent\\AusAEM_NE_Queensland_2024_shapes_kml_150185_02_0.zip",
+          "bytes": 10396646,
+          "sha256": "ffb80f8d737dc7fd35adafe71887fbb72a4167c5f643f5a2e13bf4c7e55e4ef4",
+          "name": "AusAEM_NE_Queensland_2024_shapes_kml_150185_02_0.zip",
+          "source_url": "https://d28rz98at9flks.cloudfront.net/150185/150185_02_0.zip",
+          "expected_bytes": 10401848
+        }
+      ]
+    },
+    {
+      "repository": "EarthScope/USGS FDSN web services",
+      "category": "seismic_waveform",
+      "slug": "EarthScope_USGS_2010_Maule_IU_ANMO_BHZ",
+      "title": "FDSN event, station response, and miniSEED waveform sample for the 2010 Maule earthquake",
+      "source_url": "https://service.iris.edu/fdsnws/dataselect/1/",
+      "license": "open public seismic data; see EarthScope and USGS service terms",
+      "files": [
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform\\EarthScope_USGS_2010_Maule_IU_ANMO_BHZ\\IU_ANMO_BHZ_2010_Maule_10min.mseed",
+          "bytes": 15872,
+          "sha256": "6ff2e5977151fdd15bcf6a8e633120c9db0af62c677b048fb44ea361076572c0",
+          "name": "IU_ANMO_BHZ_2010_Maule_10min.mseed",
+          "source_url": "https://service.iris.edu/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BHZ&starttime=2010-02-27T06:34:00&endtime=2010-02-27T06:44:00",
+          "expected_bytes": null
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform\\EarthScope_USGS_2010_Maule_IU_ANMO_BHZ\\IU_ANMO_BHZ_station_response.xml",
+          "bytes": 9443,
+          "sha256": "dab6a4d835e44c1aca6e360e7a21f29436e601a72038ef19be4488d789f119ee",
+          "name": "IU_ANMO_BHZ_station_response.xml",
+          "source_url": "https://service.iris.edu/fdsnws/station/1/query?net=IU&sta=ANMO&loc=00&cha=BHZ&starttime=2010-02-27T06:34:00&endtime=2010-02-27T06:44:00&level=response&format=xml",
+          "expected_bytes": null
+        },
+        {
+          "status": "skipped_existing",
+          "path": "seismic_waveform\\EarthScope_USGS_2010_Maule_IU_ANMO_BHZ\\USGS_2010_Maule_event.quakeml",
+          "bytes": 3042,
+          "sha256": "870c87864c44ced3205cc39e0ddb4434aed81fda1f1e5817b0beb001dd7085e9",
+          "name": "USGS_2010_Maule_event.quakeml",
+          "source_url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=quakeml&starttime=2010-02-27T06:34:00&endtime=2010-02-27T06:36:00&minmagnitude=8",
+          "expected_bytes": null
+        }
+      ]
+    },
+    {
+      "repository": "国家地球系统科学数据中心 / National Earth System Science Data Center",
+      "category": "wfem",
+      "slug": "GeoData_SichuanBasin_WFEM_2017_metadata_only",
+      "title": "四川盆地川中地区广域电磁法试验数据集（2017年）",
+      "source_url": "https://www.geodata.cn/data/datadetails.html?dataguid=37412589003507",
+      "api_url": "https://www.geodata.cn/service/scidata/entry/37412589003507",
+      "doi": "10.12041/geodata.37412589003507.ver1.db",
+      "license": "see source record; data access requires platform order/login",
+      "access_status": "metadata_only_data_files_not_anonymous",
+      "notes": "Search hit for 广域电磁/WFEM. Anonymous API exposes source metadata, a document, and a thumbnail only; the dataset body is marked online=False and must be requested through the Geodata order/login workflow.",
+      "files": [
+        {
+          "name": "components.geodata.json",
+          "source_url": "https://www.geodata.cn/service/scidata/datacomponents/bytype?dataGuid=37412589003507&type=5&pageSize=100",
+          "path": "wfem\\GeoData_SichuanBasin_WFEM_2017_metadata_only\\components.geodata.json",
+          "bytes": 1095,
+          "sha256": "439e246a5291faa2c600a506c1a498b8f48b1ad2f1d1c4cbd7aa9274c8a76991"
+        },
+        {
+          "name": "source_record.geodata.json",
+          "source_url": "https://www.geodata.cn/service/scidata/entry/37412589003507",
+          "path": "wfem\\GeoData_SichuanBasin_WFEM_2017_metadata_only\\source_record.geodata.json",
+          "bytes": 2085,
+          "sha256": "169a0544b96eee981068557c07c56a4c364502a2a7204cfc97825d9a3a6e83fe"
+        },
+        {
+          "name": "数据文档_四川盆地川中地区广域电磁法试验数据集_2017年.docx",
+          "source_url": "http://img.data.ac.cn/geores/M00/05/04/n-JzimKoNmyAZiJuAACVY2qqRcU25.docx",
+          "path": "wfem\\GeoData_SichuanBasin_WFEM_2017_metadata_only\\数据文档_四川盆地川中地区广域电磁法试验数据集_2017年.docx",
+          "bytes": 38243,
+          "sha256": "212fe85eda86e18f395d990b504445569a8bc03a9d00880f5d5e11e1ad37ad29"
+        },
+        {
+          "name": "数据缩略图_四川盆地川中地区广域电磁法试验数据集_2017年.jpg",
+          "source_url": "http://img.data.ac.cn/geores/M00/05/17/n-JzimKpOrCAHzUcAAKeOg_Iqpc299.jpg",
+          "path": "wfem\\GeoData_SichuanBasin_WFEM_2017_metadata_only\\数据缩略图_四川盆地川中地区广域电磁法试验数据集_2017年.jpg",
+          "bytes": 171578,
+          "sha256": "d4129ea31a89e4df7155c08097081a90af39e90a76db645d43a8a4cb0cd12381"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_version_path": "versions/20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+  "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f",
+  "root_anchor_file_sha256": "c3cc21b5342d59390d0c33da2250cda58f3dde61bae7b9e94a6faca3e52b7e67",
+  "stage": "lineage-migration",
+  "fixture_count": 3,
+  "fixture_id_set": [
+    "FXT-LINEAGE-MIGRATION-124",
+    "FXT-LINEAGE-MIGRATION-125",
+    "FXT-LINEAGE-MIGRATION-126"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-124",
+      "case": "FXT-LINEAGE-MIGRATION-124",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "non-python execution semantics"
+      ],
+      "actual_rejection": "non-python execution semantics",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 79340
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-125",
+      "case": "FXT-LINEAGE-MIGRATION-125",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "code capability contract"
+      ],
+      "actual_rejection": "code capability contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 82069
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-126",
+      "case": "FXT-LINEAGE-MIGRATION-126",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "code capability contract"
+      ],
+      "actual_rejection": "code capability contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 75415
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T02:17:01.5286683Z",
+  "output_sha256": "5175c12aeb50582f228bf7f2f1f9d7824243a9f7687f519419e6197cbad66daa",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

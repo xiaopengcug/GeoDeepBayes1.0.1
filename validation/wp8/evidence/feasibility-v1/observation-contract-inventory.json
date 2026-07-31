@@ -1,0 +1,359 @@
+{
+  "schema_version": "wp8-observation-contract-inventory-v1",
+  "observation_values_read": false,
+  "methods": {
+    "gravity": {
+      "dataset_slug": "USGS_SierraNevada_gravity_magnetic_grids_2024",
+      "top_level_member_count": 7,
+      "archive_member_name_count": 13,
+      "metadata_paths": [
+        "gravity/USGS_SierraNevada_gravity_magnetic_grids_2024/sierra_nevada_tif_metadata.xml",
+        "gravity/USGS_SierraNevada_gravity_magnetic_grids_2024/source_record.sciencebase.json"
+      ],
+      "concepts": {
+        "coordinates": {
+          "observed_cues": [
+            "x",
+            "y",
+            "latitude",
+            "longitude"
+          ],
+          "candidate_present": true
+        },
+        "anomaly": {
+          "observed_cues": [
+            "cba",
+            "gravity"
+          ],
+          "candidate_present": true
+        },
+        "crs": {
+          "observed_cues": [
+            "datum"
+          ],
+          "candidate_present": true
+        }
+      },
+      "missing_concepts": [],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "magnetic": {
+      "dataset_slug": "USGS_MountainPass_airborne_magnetic_2020",
+      "top_level_member_count": 4,
+      "archive_member_name_count": 0,
+      "metadata_paths": [
+        "magnetic/USGS_MountainPass_airborne_magnetic_2020/Metadata.xml",
+        "magnetic/USGS_MountainPass_airborne_magnetic_2020/Readme.txt",
+        "magnetic/USGS_MountainPass_airborne_magnetic_2020/source_record.sciencebase.json"
+      ],
+      "concepts": {
+        "line_id": {
+          "observed_cues": [
+            "line",
+            "flight"
+          ],
+          "candidate_present": true
+        },
+        "height": {
+          "observed_cues": [
+            "height",
+            "elevation"
+          ],
+          "candidate_present": true
+        },
+        "field_correction": {
+          "observed_cues": [
+            "diurnal",
+            "magnetic"
+          ],
+          "candidate_present": true
+        },
+        "direction": {
+          "observed_cues": [],
+          "candidate_present": false
+        }
+      },
+      "missing_concepts": [
+        "direction"
+      ],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "dc": {
+      "dataset_slug": "USGS_LittleColoradoRiver_ERT_2019",
+      "top_level_member_count": 6,
+      "archive_member_name_count": 28,
+      "metadata_paths": [
+        "dc_ip/USGS_LittleColoradoRiver_ERT_2019/Electrical Resistivity Tomography Data along the Little Colorado River near Leupp, AZ 2019.xml",
+        "dc_ip/USGS_LittleColoradoRiver_ERT_2019/Read_Me_ERT_LCR_Leupp_2019.txt",
+        "dc_ip/USGS_LittleColoradoRiver_ERT_2019/source_record.sciencebase.json"
+      ],
+      "concepts": {
+        "electrodes": {
+          "observed_cues": [
+            "electrode",
+            "resistivity"
+          ],
+          "candidate_present": true
+        },
+        "topography": {
+          "observed_cues": [
+            "elevation"
+          ],
+          "candidate_present": true
+        },
+        "error": {
+          "observed_cues": [
+            "error",
+            "accuracy"
+          ],
+          "candidate_present": true
+        }
+      },
+      "missing_concepts": [],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "tdip": {
+      "dataset_slug": "Zenodo_Reykjanes_ERT_IP_monitoring_2025",
+      "top_level_member_count": 1,
+      "archive_member_name_count": 742,
+      "metadata_paths": [
+        "dc_ip/Zenodo_Reykjanes_ERT_IP_monitoring_2025/source_record.zenodo.json"
+      ],
+      "concepts": {
+        "date": {
+          "observed_cues": [
+            "date",
+            "time"
+          ],
+          "candidate_present": true
+        },
+        "electrodes": {
+          "observed_cues": [
+            "electrode"
+          ],
+          "candidate_present": true
+        },
+        "windows": {
+          "observed_cues": [
+            "window",
+            "chargeability"
+          ],
+          "candidate_present": true
+        },
+        "error": {
+          "observed_cues": [],
+          "candidate_present": false
+        }
+      },
+      "missing_concepts": [
+        "error"
+      ],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "sip_fdip": {
+      "dataset_slug": "Zenodo_Serpentinite_IP_Revil_2024",
+      "top_level_member_count": 5,
+      "archive_member_name_count": 58,
+      "metadata_paths": [
+        "dc_ip/Zenodo_Serpentinite_IP_Revil_2024/README.txt",
+        "dc_ip/Zenodo_Serpentinite_IP_Revil_2024/source_record.zenodo.json"
+      ],
+      "concepts": {
+        "complex_response": {
+          "observed_cues": [
+            "complex",
+            "real",
+            "imaginary",
+            "conductivity"
+          ],
+          "candidate_present": true
+        },
+        "profile_link": {
+          "observed_cues": [
+            "profile"
+          ],
+          "candidate_present": true
+        },
+        "frequency": {
+          "observed_cues": [],
+          "candidate_present": false
+        }
+      },
+      "missing_concepts": [
+        "frequency"
+      ],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "tem": {
+      "dataset_slug": "USGS_DineroTunnel_TEM_2023",
+      "top_level_member_count": 6,
+      "archive_member_name_count": 66,
+      "metadata_paths": [
+        "tem/USGS_DineroTunnel_TEM_2023/Dinero_Tunnel_TEM_August2023.xml",
+        "tem/USGS_DineroTunnel_TEM_2023/source_record.sciencebase.json"
+      ],
+      "concepts": {
+        "transmitter": {
+          "observed_cues": [
+            "transmitter",
+            "loop"
+          ],
+          "candidate_present": true
+        },
+        "waveform": {
+          "observed_cues": [
+            "current"
+          ],
+          "candidate_present": true
+        },
+        "receiver": {
+          "observed_cues": [
+            "receiver",
+            "station"
+          ],
+          "candidate_present": true
+        },
+        "channels": {
+          "observed_cues": [
+            "gate",
+            "time"
+          ],
+          "candidate_present": true
+        }
+      },
+      "missing_concepts": [],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "mt_amt": {
+      "dataset_slug": "USGS_SanAndreas_Parkfield_MT_EDI_1990",
+      "top_level_member_count": 4,
+      "archive_member_name_count": 377,
+      "metadata_paths": [
+        "mt/USGS_SanAndreas_Parkfield_MT_EDI_1990/Magnetotelluric-Data-from-the-San-Andreas-Fault_Parkfield-CA_1990_EDI-Metadata.xml",
+        "mt/USGS_SanAndreas_Parkfield_MT_EDI_1990/source_record.sciencebase.json"
+      ],
+      "concepts": {
+        "station": {
+          "observed_cues": [
+            "station",
+            "site"
+          ],
+          "candidate_present": true
+        },
+        "impedance": {
+          "observed_cues": [],
+          "candidate_present": false
+        },
+        "error": {
+          "observed_cues": [
+            "error"
+          ],
+          "candidate_present": true
+        },
+        "frequency": {
+          "observed_cues": [
+            "frequency",
+            "freq"
+          ],
+          "candidate_present": true
+        }
+      },
+      "missing_concepts": [
+        "impedance"
+      ],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "csamt": {
+      "dataset_slug": "USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019",
+      "top_level_member_count": 7,
+      "archive_member_name_count": 60,
+      "metadata_paths": [
+        "csamt/USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019/Grand Canyon West and Plain Tank Flat CSAMT metadata.xml",
+        "csamt/USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019/source_record.sciencebase.json"
+      ],
+      "concepts": {
+        "transmitter": {
+          "observed_cues": [
+            "transmitter",
+            "source",
+            "gdp32"
+          ],
+          "candidate_present": true
+        },
+        "receiver": {
+          "observed_cues": [
+            "receiver",
+            "station"
+          ],
+          "candidate_present": true
+        },
+        "components": {
+          "observed_cues": [
+            "electric",
+            "magnetic"
+          ],
+          "candidate_present": true
+        },
+        "frequency": {
+          "observed_cues": [
+            "frequency",
+            "freq"
+          ],
+          "candidate_present": true
+        },
+        "near_field": {
+          "observed_cues": [],
+          "candidate_present": false
+        }
+      },
+      "missing_concepts": [
+        "near_field"
+      ],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    },
+    "wfem": {
+      "dataset_slug": "Zenodo_BaotuSpring_WFEM_2025",
+      "top_level_member_count": 27,
+      "archive_member_name_count": 0,
+      "metadata_paths": [
+        "wfem/Zenodo_BaotuSpring_WFEM_2025/source_record.zenodo.json"
+      ],
+      "concepts": {
+        "source_geometry": {
+          "observed_cues": [
+            "source"
+          ],
+          "candidate_present": true
+        },
+        "receiver": {
+          "observed_cues": [],
+          "candidate_present": false
+        },
+        "phase_component": {
+          "observed_cues": [],
+          "candidate_present": false
+        },
+        "apparent_resistivity": {
+          "observed_cues": [
+            "apparent resistivity"
+          ],
+          "candidate_present": true
+        }
+      },
+      "missing_concepts": [
+        "receiver",
+        "phase_component"
+      ],
+      "status": "blocked",
+      "reason": "metadata inventory is not a validated read-only adapter contract"
+    }
+  }
+}

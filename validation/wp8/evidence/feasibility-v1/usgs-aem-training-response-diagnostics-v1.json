@@ -1,0 +1,295 @@
+{
+  "schema_version": "wp8-usgs-aem-training-response-diagnostics-v1",
+  "design_sha256": "00baf4f8920cf64a317f912edc7992f066b52b91fea0d8ff146bb5d899a33939",
+  "completed_netcdf_training_survey_count": 3,
+  "records": [
+    {
+      "sciencebase_id": "59722284e4b0ec1a4885ed9d",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "response_group": "/survey/processed_data",
+      "coordinate_mode": "geographic_degrees",
+      "path": "validation/wp8/data/usgs-aem-training-expansion-v1/files/59722284e4b0ec1a4885ed9d__DelawareBay_SkyTEM_2022_v2.nc",
+      "sha256": "c98ab87efc0b3366dbdbaae6a4a5d0fcee87b59a73c4bcb9c0971701018acbaf",
+      "processed_rows": 77381,
+      "processed_line_variable_present": false,
+      "declared_unique_lines": null,
+      "trajectory_segments_at_1km_jump": 211,
+      "low_moment_gate_count": 28,
+      "high_moment_gate_count": 37,
+      "low_moment_gate_range_seconds": [
+        -1.275e-06,
+        0.00139401
+      ],
+      "high_moment_gate_range_seconds": [
+        5.8915e-05,
+        0.0104382
+      ],
+      "valid_low_moment_response_uncertainty_pairs": 1525732,
+      "valid_high_moment_response_uncertainty_pairs": 2210580,
+      "uncertainty_semantics": "relative_standard_deviation_factor",
+      "uncertainty_to_response_median_scale_ratio": 119521912.3505976,
+      "stored_uncertainty_value_p50": 0.03,
+      "stored_uncertainty_value_p95": 0.032,
+      "standardized_response_absolute_p95_after_relative_sigma_conversion": 33.333333333333336,
+      "training_along_line_correlations": [
+        {
+          "index_lag": 1,
+          "pair_count": 77170,
+          "median_distance_km": 0.04307519162540527,
+          "correlation": 0.4984297498020251
+        },
+        {
+          "index_lag": 2,
+          "pair_count": 76959,
+          "median_distance_km": 0.08632671636720146,
+          "correlation": 0.39613241259508675
+        },
+        {
+          "index_lag": 4,
+          "pair_count": 76537,
+          "median_distance_km": 0.17315646069139076,
+          "correlation": 0.1896725994384752
+        },
+        {
+          "index_lag": 8,
+          "pair_count": 75693,
+          "median_distance_km": 0.34825225828376916,
+          "correlation": 0.024381050237278323
+        },
+        {
+          "index_lag": 16,
+          "pair_count": 74005,
+          "median_distance_km": 0.6973564667515992,
+          "correlation": 0.0009488453601649531
+        },
+        {
+          "index_lag": 32,
+          "pair_count": 70670,
+          "median_distance_km": 1.3919151162242223,
+          "correlation": 0.017797327139993845
+        },
+        {
+          "index_lag": 64,
+          "pair_count": 64458,
+          "median_distance_km": 2.7315166751178843,
+          "correlation": -0.0005286303556729561
+        },
+        {
+          "index_lag": 128,
+          "pair_count": 54614,
+          "median_distance_km": 5.154280676102801,
+          "correlation": -0.0004611554752216361
+        },
+        {
+          "index_lag": 256,
+          "pair_count": 40187,
+          "median_distance_km": 6.3882926294263145,
+          "correlation": -0.000479015439229132
+        },
+        {
+          "index_lag": 512,
+          "pair_count": 20813,
+          "median_distance_km": 3.9305993556046115,
+          "correlation": -0.0006655732819647932
+        }
+      ],
+      "training_correlation_range_km": 0.34825225828376916
+    },
+    {
+      "sciencebase_id": "6193fbb0d34eb622f68f13e5",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "response_group": "/survey/tabular/1",
+      "coordinate_mode": "projected_meters",
+      "path": "validation/wp8/data/usgs-aem-training-expansion-v1/files/6193fbb0d34eb622f68f13e5__WI_SkyTEM_2021.nc",
+      "sha256": "becf1b95a85dd14032db3fc74a4dbc6e988b7d0340820a4320e974c48631eaf4",
+      "processed_rows": 116769,
+      "processed_line_variable_present": true,
+      "declared_unique_lines": 153,
+      "trajectory_segments_at_1km_jump": 103,
+      "low_moment_gate_count": 27,
+      "high_moment_gate_count": 22,
+      "low_moment_gate_range_seconds": [
+        3.65e-07,
+        0.001394365
+      ],
+      "high_moment_gate_range_seconds": [
+        5.6365e-05,
+        0.003544365
+      ],
+      "valid_low_moment_response_uncertainty_pairs": 1646664,
+      "valid_high_moment_response_uncertainty_pairs": 1840834,
+      "uncertainty_semantics": "absolute_standard_deviation",
+      "uncertainty_to_response_median_scale_ratio": 0.03304907197025583,
+      "stored_uncertainty_value_p50": 2.24e-12,
+      "stored_uncertainty_value_p95": 7.71e-10,
+      "standardized_response_absolute_p95_after_relative_sigma_conversion": 33.37464788732394,
+      "training_along_line_correlations": [
+        {
+          "index_lag": 1,
+          "pair_count": 116616,
+          "median_distance_km": 0.023769728648009428,
+          "correlation": 0.6678331036353182
+        },
+        {
+          "index_lag": 2,
+          "pair_count": 116463,
+          "median_distance_km": 0.04781401468182018,
+          "correlation": 0.53352369838237
+        },
+        {
+          "index_lag": 4,
+          "pair_count": 116157,
+          "median_distance_km": 0.09678512282371741,
+          "correlation": 0.4173774811278188
+        },
+        {
+          "index_lag": 8,
+          "pair_count": 115545,
+          "median_distance_km": 0.19821717887209525,
+          "correlation": 0.30660099000851154
+        },
+        {
+          "index_lag": 16,
+          "pair_count": 114321,
+          "median_distance_km": 0.4134924545865167,
+          "correlation": 0.20700424906739595
+        },
+        {
+          "index_lag": 32,
+          "pair_count": 111873,
+          "median_distance_km": 0.8554522780378176,
+          "correlation": 0.10959218875944021
+        },
+        {
+          "index_lag": 64,
+          "pair_count": 106977,
+          "median_distance_km": 1.7367395026312153,
+          "correlation": 0.06118341257327081
+        },
+        {
+          "index_lag": 128,
+          "pair_count": 97229,
+          "median_distance_km": 3.5104837116841847,
+          "correlation": 0.03508692116950085
+        },
+        {
+          "index_lag": 256,
+          "pair_count": 78235,
+          "median_distance_km": 7.078665846047458,
+          "correlation": 0.017473447264916564
+        },
+        {
+          "index_lag": 512,
+          "pair_count": 43367,
+          "median_distance_km": 13.785537607217139,
+          "correlation": 9.70993930135024e-05
+        }
+      ],
+      "training_correlation_range_km": 3.5104837116841847
+    },
+    {
+      "sciencebase_id": "636c0b28d34ed907bf6abb14",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "response_group": "/survey/tabular/1",
+      "coordinate_mode": "geographic_degrees",
+      "path": "validation/wp8/data/usgs-aem-training-expansion-v1/files/636c0b28d34ed907bf6abb14__Southeast_and_Southwest_Wisconsin_AEM_Survey_2022.nc",
+      "sha256": "45fa983412a060efcc37908d5f556e69094c3f1409d26203b853d2829f5a66c6",
+      "processed_rows": 94830,
+      "processed_line_variable_present": true,
+      "declared_unique_lines": 243,
+      "trajectory_segments_at_1km_jump": 159,
+      "low_moment_gate_count": 28,
+      "high_moment_gate_count": 32,
+      "low_moment_gate_range_seconds": [
+        -1.135e-06,
+        0.001394365
+      ],
+      "high_moment_gate_range_seconds": [
+        2.8865e-05,
+        0.003544365
+      ],
+      "valid_low_moment_response_uncertainty_pairs": 1642128,
+      "valid_high_moment_response_uncertainty_pairs": 829517,
+      "uncertainty_semantics": "relative_standard_deviation_factor",
+      "uncertainty_to_response_median_scale_ratio": 193346404.4019986,
+      "stored_uncertainty_value_p50": 0.03057,
+      "stored_uncertainty_value_p95": 3.267,
+      "standardized_response_absolute_p95_after_relative_sigma_conversion": 33.333333333333336,
+      "training_along_line_correlations": [
+        {
+          "index_lag": 1,
+          "pair_count": 94319,
+          "median_distance_km": 0.026766407181447273,
+          "correlation": 0.7985602578890372
+        },
+        {
+          "index_lag": 2,
+          "pair_count": 94029,
+          "median_distance_km": 0.053525637957041704,
+          "correlation": 0.6725489552559083
+        },
+        {
+          "index_lag": 4,
+          "pair_count": 93508,
+          "median_distance_km": 0.10704080455642936,
+          "correlation": 0.5739275303802472
+        },
+        {
+          "index_lag": 8,
+          "pair_count": 92515,
+          "median_distance_km": 0.21411688837806883,
+          "correlation": 0.4314142850869424
+        },
+        {
+          "index_lag": 16,
+          "pair_count": 90568,
+          "median_distance_km": 0.4280116143070683,
+          "correlation": 0.275991822260949
+        },
+        {
+          "index_lag": 32,
+          "pair_count": 86715,
+          "median_distance_km": 0.8557787306556813,
+          "correlation": 0.1165368708186549
+        },
+        {
+          "index_lag": 64,
+          "pair_count": 79158,
+          "median_distance_km": 1.7189721161040006,
+          "correlation": 0.049179046025830245
+        },
+        {
+          "index_lag": 128,
+          "pair_count": 65454,
+          "median_distance_km": 3.452286751273726,
+          "correlation": 0.034175776809511414
+        },
+        {
+          "index_lag": 256,
+          "pair_count": 47083,
+          "median_distance_km": 6.97280962676151,
+          "correlation": 0.02506144341236693
+        },
+        {
+          "index_lag": 512,
+          "pair_count": 29908,
+          "median_distance_km": 14.137737835875884,
+          "correlation": -0.006251534490185816
+        }
+      ],
+      "training_correlation_range_km": 1.7189721161040006
+    }
+  ],
+  "training_response_values_interpreted": 9695455,
+  "paired_crps_effect_size_available": false,
+  "power_gate_passed": false,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

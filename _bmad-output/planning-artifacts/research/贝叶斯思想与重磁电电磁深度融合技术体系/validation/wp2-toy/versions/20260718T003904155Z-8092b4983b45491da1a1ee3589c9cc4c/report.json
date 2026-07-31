@@ -1,0 +1,110 @@
+{
+  "schema": "wp2-report-contract-v1",
+  "manifest_ref": "manifest.json",
+  "cost": [
+    {
+      "stage": "assembly",
+      "value": 0.001,
+      "unit": "s",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    },
+    {
+      "stage": "preconditioner",
+      "value": 0.001,
+      "unit": "s",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    },
+    {
+      "stage": "forward",
+      "value": 0.001,
+      "unit": "s",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    },
+    {
+      "stage": "adjoint",
+      "value": 0.001,
+      "unit": "s",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    },
+    {
+      "stage": "communication",
+      "value": 0.001,
+      "unit": "s",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    },
+    {
+      "stage": "io",
+      "value": 0.001,
+      "unit": "s",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    },
+    {
+      "stage": "diagnostics",
+      "value": 0.001,
+      "unit": "s",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    },
+    {
+      "stage": "storage",
+      "value": 1024,
+      "unit": "byte",
+      "tolerance": 1E-10,
+      "iterations": 1,
+      "calls": 1,
+      "hardware": "CPU toy/reference interpreter",
+      "evidence_status": "Synthetic-run",
+      "manifest_ref": "manifest.json"
+    }
+  ],
+  "regularization": {
+    "train_split": "seeded synthetic train ids 0:59",
+    "validation_split": "seeded synthetic validation ids 60:79",
+    "test_split": "sealed synthetic test ids 80:99",
+    "candidates": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "selection_rule": "validation_predictive_loss_stronger_tie_break",
+    "boundary_policy": "boundary optimum expands candidate grid before test access",
+    "sensitivity_analysis": "refit adjacent candidates and report decision change",
+    "omitted_uncertainty": "hyperparameter-selection and surrogate approximation uncertainty",
+    "evidence_status": "Synthetic-run",
+    "manifest_ref": "manifest.json"
+  }
+}

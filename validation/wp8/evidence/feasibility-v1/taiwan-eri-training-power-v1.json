@@ -1,0 +1,975 @@
+{
+  "schema_version": "wp8-taiwan-eri-training-power-v1",
+  "design_sha256": "a662e75478d2941b4f65ce092bc7ad707eca54b835d3cf0a99bf087767a54631",
+  "manifest_sha256": "03f4a0f834d8efee23b1b14651c1d096181ce4974e5d409763b9c2db65279c9d",
+  "training_only": true,
+  "observation_contract": {
+    "training_component_count": 23,
+    "training_file_count": 81,
+    "training_observation_count": 26356,
+    "v_over_i_present": true,
+    "output_current_present": true,
+    "apparent_resistivity_present": true,
+    "abmn_xyz_present": true,
+    "per_observation_repeat_error_present": true,
+    "repeat_error_percent": {
+      "minimum": 0.0,
+      "median": 0.1,
+      "p95": 1.2,
+      "maximum": 35.4
+    }
+  },
+  "comparison": {
+    "information_parity": "Both models use identical frozen training STG responses and public profile-centre coordinates.",
+    "baseline": "global Gaussian predictive distribution in signed-log apparent resistivity",
+    "candidate": "fixed four-nearest-component distance-weighted hierarchical Gaussian predictor",
+    "validation": "leave-one-correlation-separated-training-component-out",
+    "hyperparameter_sweep_performed": false
+  },
+  "paired_training_components": 23,
+  "paired_component_scores": [
+    {
+      "component_id": "06f81a1f2d75da9f",
+      "observations": 1336,
+      "nearest_training_components": [
+        "e5147910dd12660e",
+        "aa645b848f939e4d",
+        "fe74c81db1013058",
+        "3fe473a2bc7eb972"
+      ],
+      "nearest_distances_km": [
+        0.3319169110783458,
+        2.1528774858344284,
+        5.12726927325636,
+        5.604871552563878
+      ],
+      "baseline_crps": 0.7126675386275951,
+      "candidate_crps": 0.5555730079420175,
+      "relative_improvement": 0.22043171909878093
+    },
+    {
+      "component_id": "0991628e5f06e08f",
+      "observations": 440,
+      "nearest_training_components": [
+        "673380180faa450a",
+        "6ff44253dd610150",
+        "3ba9c4a3f76a9bd4",
+        "fe74c81db1013058"
+      ],
+      "nearest_distances_km": [
+        0.4682506007664884,
+        9.260658387078372,
+        42.97430517329822,
+        111.18637549825434
+      ],
+      "baseline_crps": 1.4357082589077899,
+      "candidate_crps": 1.5648658913573907,
+      "relative_improvement": -0.08996091765039863
+    },
+    {
+      "component_id": "19c709fd3c211eaa",
+      "observations": 118,
+      "nearest_training_components": [
+        "7fd950448b065d7a",
+        "4677910e0c6c5e0c",
+        "74ea7eef4f6b3dc6",
+        "52a6853f9fb6159e"
+      ],
+      "nearest_distances_km": [
+        11.263992335507446,
+        22.309672945969805,
+        25.765426440156514,
+        28.63000440149718
+      ],
+      "baseline_crps": 0.5866727462821881,
+      "candidate_crps": 0.4993150306775758,
+      "relative_improvement": 0.14890365396757915
+    },
+    {
+      "component_id": "30c0a7ab3f1c4a3b",
+      "observations": 488,
+      "nearest_training_components": [
+        "db99f41e4709760f",
+        "feade5d9036b4b55",
+        "e39c33571532d072",
+        "9802bf54b06c6640"
+      ],
+      "nearest_distances_km": [
+        1.1499122622490359,
+        46.33197730938106,
+        51.380306803438685,
+        82.15122101132377
+      ],
+      "baseline_crps": 1.2545840988589543,
+      "candidate_crps": 0.6939532907133067,
+      "relative_improvement": 0.44686586467622375
+    },
+    {
+      "component_id": "3ba9c4a3f76a9bd4",
+      "observations": 662,
+      "nearest_training_components": [
+        "6ff44253dd610150",
+        "673380180faa450a",
+        "0991628e5f06e08f",
+        "fe74c81db1013058"
+      ],
+      "nearest_distances_km": [
+        33.92180788191009,
+        42.52601315154398,
+        42.97430517329822,
+        114.68087044761211
+      ],
+      "baseline_crps": 0.7473888369206505,
+      "candidate_crps": 0.727352850065809,
+      "relative_improvement": 0.02680798249194179
+    },
+    {
+      "component_id": "3f9fadade7a26d5e",
+      "observations": 3259,
+      "nearest_training_components": [
+        "8cdbf7e712db0873",
+        "9802bf54b06c6640",
+        "7fd950448b065d7a",
+        "19c709fd3c211eaa"
+      ],
+      "nearest_distances_km": [
+        1.5688647442500048,
+        88.63980938190066,
+        93.34154484589656,
+        100.00676617310975
+      ],
+      "baseline_crps": 1.1123807060360746,
+      "candidate_crps": 1.7902970684974575,
+      "relative_improvement": -0.6094283717641161
+    },
+    {
+      "component_id": "3fe473a2bc7eb972",
+      "observations": 1056,
+      "nearest_training_components": [
+        "fe74c81db1013058",
+        "aa645b848f939e4d",
+        "e5147910dd12660e",
+        "06f81a1f2d75da9f"
+      ],
+      "nearest_distances_km": [
+        1.1361734024663803,
+        3.4526891422945543,
+        5.273644224716757,
+        5.604871552563878
+      ],
+      "baseline_crps": 0.8489443182305032,
+      "candidate_crps": 0.6811558690167498,
+      "relative_improvement": 0.19764364471333426
+    },
+    {
+      "component_id": "438d29dfffd5a2fd",
+      "observations": 1280,
+      "nearest_training_components": [
+        "ad06ba3d588f6aeb",
+        "06f81a1f2d75da9f",
+        "e5147910dd12660e",
+        "aa645b848f939e4d"
+      ],
+      "nearest_distances_km": [
+        5.626069748365361,
+        15.313043351267197,
+        15.581399811448177,
+        17.043187075622797
+      ],
+      "baseline_crps": 0.7597840501147679,
+      "candidate_crps": 0.4757617517617293,
+      "relative_improvement": 0.3738197693280559
+    },
+    {
+      "component_id": "4677910e0c6c5e0c",
+      "observations": 491,
+      "nearest_training_components": [
+        "74ea7eef4f6b3dc6",
+        "52a6853f9fb6159e",
+        "7fd950448b065d7a",
+        "19c709fd3c211eaa"
+      ],
+      "nearest_distances_km": [
+        5.098056284705892,
+        8.277507261384349,
+        17.849127726214366,
+        22.309672945969805
+      ],
+      "baseline_crps": 0.5682520587331239,
+      "candidate_crps": 0.5176505126682445,
+      "relative_improvement": 0.08904771269582701
+    },
+    {
+      "component_id": "52a6853f9fb6159e",
+      "observations": 222,
+      "nearest_training_components": [
+        "74ea7eef4f6b3dc6",
+        "4677910e0c6c5e0c",
+        "7fd950448b065d7a",
+        "9802bf54b06c6640"
+      ],
+      "nearest_distances_km": [
+        3.235656254078128,
+        8.277507261384349,
+        21.331511204575445,
+        25.947397228506254
+      ],
+      "baseline_crps": 0.5883979040132362,
+      "candidate_crps": 0.439813158154127,
+      "relative_improvement": 0.25252426095618236
+    },
+    {
+      "component_id": "673380180faa450a",
+      "observations": 474,
+      "nearest_training_components": [
+        "0991628e5f06e08f",
+        "6ff44253dd610150",
+        "3ba9c4a3f76a9bd4",
+        "fe74c81db1013058"
+      ],
+      "nearest_distances_km": [
+        0.4682506007664884,
+        8.795024960417376,
+        42.52601315154398,
+        111.00387117950658
+      ],
+      "baseline_crps": 0.5490704819593835,
+      "candidate_crps": 0.599566946276315,
+      "relative_improvement": -0.09196718085578481
+    },
+    {
+      "component_id": "6ff44253dd610150",
+      "observations": 455,
+      "nearest_training_components": [
+        "673380180faa450a",
+        "0991628e5f06e08f",
+        "3ba9c4a3f76a9bd4",
+        "fe74c81db1013058"
+      ],
+      "nearest_distances_km": [
+        8.795024960417376,
+        9.260658387078372,
+        33.92180788191009,
+        108.81681205993158
+      ],
+      "baseline_crps": 1.7104070199937196,
+      "candidate_crps": 1.6997433637045307,
+      "relative_improvement": 0.006234572335436285
+    },
+    {
+      "component_id": "74ea7eef4f6b3dc6",
+      "observations": 442,
+      "nearest_training_components": [
+        "52a6853f9fb6159e",
+        "4677910e0c6c5e0c",
+        "7fd950448b065d7a",
+        "19c709fd3c211eaa"
+      ],
+      "nearest_distances_km": [
+        3.235656254078128,
+        5.098056284705892,
+        19.232337098451104,
+        25.765426440156514
+      ],
+      "baseline_crps": 0.6664799816680275,
+      "candidate_crps": 0.5484106266365245,
+      "relative_improvement": 0.17715364043794057
+    },
+    {
+      "component_id": "7fd950448b065d7a",
+      "observations": 3435,
+      "nearest_training_components": [
+        "19c709fd3c211eaa",
+        "4677910e0c6c5e0c",
+        "74ea7eef4f6b3dc6",
+        "52a6853f9fb6159e"
+      ],
+      "nearest_distances_km": [
+        11.263992335507446,
+        17.849127726214366,
+        19.232337098451104,
+        21.331511204575445
+      ],
+      "baseline_crps": 1.0118606317932535,
+      "candidate_crps": 1.4180569077663194,
+      "relative_improvement": -0.4014350032110561
+    },
+    {
+      "component_id": "8cdbf7e712db0873",
+      "observations": 3306,
+      "nearest_training_components": [
+        "3f9fadade7a26d5e",
+        "9802bf54b06c6640",
+        "7fd950448b065d7a",
+        "19c709fd3c211eaa"
+      ],
+      "nearest_distances_km": [
+        1.5688647442500048,
+        90.05689855074009,
+        94.9082819020288,
+        101.57430103773827
+      ],
+      "baseline_crps": 1.599283152805882,
+      "candidate_crps": 1.8158494723187062,
+      "relative_improvement": -0.1354146194392574
+    },
+    {
+      "component_id": "9802bf54b06c6640",
+      "observations": 662,
+      "nearest_training_components": [
+        "52a6853f9fb6159e",
+        "74ea7eef4f6b3dc6",
+        "4677910e0c6c5e0c",
+        "e39c33571532d072"
+      ],
+      "nearest_distances_km": [
+        25.947397228506254,
+        28.652206415452948,
+        33.54236731659646,
+        34.7350242931627
+      ],
+      "baseline_crps": 0.5360613644558045,
+      "candidate_crps": 0.37134467108303504,
+      "relative_improvement": 0.3072720854262377
+    },
+    {
+      "component_id": "aa645b848f939e4d",
+      "observations": 1666,
+      "nearest_training_components": [
+        "e5147910dd12660e",
+        "06f81a1f2d75da9f",
+        "fe74c81db1013058",
+        "3fe473a2bc7eb972"
+      ],
+      "nearest_distances_km": [
+        1.821316413936067,
+        2.1528774858344284,
+        3.029070392952381,
+        3.4526891422945543
+      ],
+      "baseline_crps": 1.1524032112639973,
+      "candidate_crps": 0.9143675157872081,
+      "relative_improvement": 0.20655591129054826
+    },
+    {
+      "component_id": "ad06ba3d588f6aeb",
+      "observations": 1092,
+      "nearest_training_components": [
+        "438d29dfffd5a2fd",
+        "06f81a1f2d75da9f",
+        "e5147910dd12660e",
+        "aa645b848f939e4d"
+      ],
+      "nearest_distances_km": [
+        5.626069748365361,
+        14.648013609574464,
+        14.96899091375336,
+        16.715214095367394
+      ],
+      "baseline_crps": 0.6288921832952292,
+      "candidate_crps": 0.38376532811115804,
+      "relative_improvement": 0.38977564309938006
+    },
+    {
+      "component_id": "db99f41e4709760f",
+      "observations": 519,
+      "nearest_training_components": [
+        "30c0a7ab3f1c4a3b",
+        "feade5d9036b4b55",
+        "e39c33571532d072",
+        "9802bf54b06c6640"
+      ],
+      "nearest_distances_km": [
+        1.1499122622490359,
+        45.18757800275829,
+        50.23984446967101,
+        81.00995192681525
+      ],
+      "baseline_crps": 1.2530174334296076,
+      "candidate_crps": 0.7342726855627472,
+      "relative_improvement": 0.41399643295226557
+    },
+    {
+      "component_id": "e39c33571532d072",
+      "observations": 554,
+      "nearest_training_components": [
+        "feade5d9036b4b55",
+        "9802bf54b06c6640",
+        "db99f41e4709760f",
+        "30c0a7ab3f1c4a3b"
+      ],
+      "nearest_distances_km": [
+        5.257754312763066,
+        34.7350242931627,
+        50.23984446967101,
+        51.380306803438685
+      ],
+      "baseline_crps": 0.7544579030611509,
+      "candidate_crps": 0.2973424560742633,
+      "relative_improvement": 0.6058859548454317
+    },
+    {
+      "component_id": "e5147910dd12660e",
+      "observations": 2147,
+      "nearest_training_components": [
+        "06f81a1f2d75da9f",
+        "aa645b848f939e4d",
+        "fe74c81db1013058",
+        "3fe473a2bc7eb972"
+      ],
+      "nearest_distances_km": [
+        0.3319169110783458,
+        1.821316413936067,
+        4.7983492780297095,
+        5.273644224716757
+      ],
+      "baseline_crps": 0.9866583009786781,
+      "candidate_crps": 1.2951963875204546,
+      "relative_improvement": -0.3127101715312524
+    },
+    {
+      "component_id": "fe74c81db1013058",
+      "observations": 1160,
+      "nearest_training_components": [
+        "3fe473a2bc7eb972",
+        "aa645b848f939e4d",
+        "e5147910dd12660e",
+        "06f81a1f2d75da9f"
+      ],
+      "nearest_distances_km": [
+        1.1361734024663803,
+        3.029070392952381,
+        4.7983492780297095,
+        5.12726927325636
+      ],
+      "baseline_crps": 0.9886015210795229,
+      "candidate_crps": 0.7349736706679219,
+      "relative_improvement": 0.25655215473940113
+    },
+    {
+      "component_id": "feade5d9036b4b55",
+      "observations": 1092,
+      "nearest_training_components": [
+        "e39c33571532d072",
+        "9802bf54b06c6640",
+        "db99f41e4709760f",
+        "30c0a7ab3f1c4a3b"
+      ],
+      "nearest_distances_km": [
+        5.257754312763066,
+        38.26375443409393,
+        45.18757800275829,
+        46.33197730938106
+      ],
+      "baseline_crps": 0.6708095897405264,
+      "candidate_crps": 0.3389734542033104,
+      "relative_improvement": 0.49468007108481027
+    }
+  ],
+  "exploratory_mean_relative_improvement": 0.1292710786820657,
+  "paired_relative_improvement_sd": 0.2993929387536484,
+  "paired_relative_improvement_sd_upper_95": 0.3997884601239482,
+  "power_target_relative_improvement": 0.1,
+  "required_paired_crps_clusters_conservative": 99,
+  "required_coverage_clusters": {
+    "0.90": 223,
+    "0.95": 118
+  },
+  "required_clusters_all_metrics": 223,
+  "available_correlation_adjusted_test_clusters": 223,
+  "alpha_one_sided": 0.05,
+  "target_power": 0.8,
+  "wp8_0_power_gate_passes": true,
+  "test_files_downloaded": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "formal_test_result": null,
+  "file_audits": [
+    {
+      "component_id": "06f81a1f2d75da9f",
+      "filename": "SY24 WR.stg",
+      "records": 273,
+      "sha256": "1d98ae4b0c9204a8a1f4c424c9cf50e98407caa51876208d02a6616921e8c899"
+    },
+    {
+      "component_id": "06f81a1f2d75da9f",
+      "filename": "SY24 SN.stg",
+      "records": 391,
+      "sha256": "932a02971c40b603af72a918ff27aa3fe3fdd8bfd49b6774f0cfde334c67d703"
+    },
+    {
+      "component_id": "06f81a1f2d75da9f",
+      "filename": "SY24 SR.stg",
+      "records": 400,
+      "sha256": "73f7070fe6a2d08b9b5a32739c0697c9bdcbf7402f2f1b32decd763b50867369"
+    },
+    {
+      "component_id": "06f81a1f2d75da9f",
+      "filename": "SY24 WN.stg",
+      "records": 272,
+      "sha256": "3b58c75ad5f77ce9e9215961022b2e8ecb3d3ccaa0ca0c2a7b4e5aa7cdb4729b"
+    },
+    {
+      "component_id": "0991628e5f06e08f",
+      "filename": "Line25 WR.stg",
+      "records": 70,
+      "sha256": "2fe8966a26a009c97f7202bf014c98642727942b1f175ee1c05523dbe0628bdf"
+    },
+    {
+      "component_id": "0991628e5f06e08f",
+      "filename": "Line25 WN.stg",
+      "records": 100,
+      "sha256": "e3947d64e1646e197b7b179853e58c1baac47dcb1b57b0f1cd5d54e647f31908"
+    },
+    {
+      "component_id": "0991628e5f06e08f",
+      "filename": "Line25 SN1.stg",
+      "records": 100,
+      "sha256": "718313385853b5e8349547b9ba67ce86a422ec08a6053c2acb5c92c31caf9a6b"
+    },
+    {
+      "component_id": "0991628e5f06e08f",
+      "filename": "Line25 SN.stg",
+      "records": 100,
+      "sha256": "e9d52f70d1fdcca53bb5c6bc759b5b1402898adec57d993b331eaf3961ffaf8c"
+    },
+    {
+      "component_id": "0991628e5f06e08f",
+      "filename": "Line25 WN1.stg",
+      "records": 70,
+      "sha256": "b5baaa72a8697cf9f26d6f9c290ce5f0380de62b23ab2b8c6d38f66abbf6b21f"
+    },
+    {
+      "component_id": "19c709fd3c211eaa",
+      "filename": "CH01 WN.stg",
+      "records": 118,
+      "sha256": "efd057c8d9256c9d5caeb2e4cea699e222d0ca85a656c16021fb743b4e518e1f"
+    },
+    {
+      "component_id": "30c0a7ab3f1c4a3b",
+      "filename": "CS01 WR.stg",
+      "records": 100,
+      "sha256": "ea1f65ee95199808a370fb2a98d4fa48c9dcea724c0f7653375b98ab8694577b"
+    },
+    {
+      "component_id": "30c0a7ab3f1c4a3b",
+      "filename": "CS01 SR.stg",
+      "records": 144,
+      "sha256": "71ee0deb081e416cffba755e4db0f10f4112b2debfc8a46d4075215d25de7397"
+    },
+    {
+      "component_id": "30c0a7ab3f1c4a3b",
+      "filename": "CS01 WN.stg",
+      "records": 100,
+      "sha256": "832966d83df8a0ea049fc41e696cbae308d3eb240ffd57938cb25d85df0529d6"
+    },
+    {
+      "component_id": "30c0a7ab3f1c4a3b",
+      "filename": "CS01 SN.stg",
+      "records": 144,
+      "sha256": "49532d653ac41ded968a67acf0e0062a29ece2b5b1760388fe78a7c3bbea7c06"
+    },
+    {
+      "component_id": "3ba9c4a3f76a9bd4",
+      "filename": "TP13 WR.stg",
+      "records": 135,
+      "sha256": "765014a582f54bfa1d1ed2a77db09717fdee3acd6c3856735ac9829e8150b7e1"
+    },
+    {
+      "component_id": "3ba9c4a3f76a9bd4",
+      "filename": "TP13 SR.stg",
+      "records": 196,
+      "sha256": "ebf8572cf6bf7182cc5c9b726fc3e0607acbbbd3e420c118e87df7e789b5db9b"
+    },
+    {
+      "component_id": "3ba9c4a3f76a9bd4",
+      "filename": "TP13 WN.stg",
+      "records": 135,
+      "sha256": "d29a83665e674aec42b165f5191ea4ad9dbf0a6a725b7be53b7cffbbeae613fa"
+    },
+    {
+      "component_id": "3ba9c4a3f76a9bd4",
+      "filename": "TP13 SN.stg",
+      "records": 196,
+      "sha256": "1365d860fb30d82ec86b6099772e8fd6d94d4ca871c142662b2e4e4f9b40209d"
+    },
+    {
+      "component_id": "3f9fadade7a26d5e",
+      "filename": "YL01 DPN.stg",
+      "records": 1206,
+      "sha256": "73b03775de1aaa586d322627f1ab21d312e3e91a9f1dad695b64a6121d24ab3e"
+    },
+    {
+      "component_id": "3f9fadade7a26d5e",
+      "filename": "YL01 SN.stg",
+      "records": 433,
+      "sha256": "aa717c8f69fc53323f1d043ee3067651026eda148be92db4216f696fef017a65"
+    },
+    {
+      "component_id": "3f9fadade7a26d5e",
+      "filename": "YL01 DPR.stg",
+      "records": 1212,
+      "sha256": "55992778ae25d0006af5c114ec520d745af872995d1ada51e5c8034d8cf49bc6"
+    },
+    {
+      "component_id": "3f9fadade7a26d5e",
+      "filename": "YL01 SR.stg",
+      "records": 408,
+      "sha256": "faa912ecc6c254388751a9373a8e14cf4ffc65d6cef649c9663b931f958d0749"
+    },
+    {
+      "component_id": "3fe473a2bc7eb972",
+      "filename": "SY01 DDR.stg",
+      "records": 384,
+      "sha256": "851fc2b767c8a52cc2b0d845c145bcdd86ae6378a7a7fdeecc7931df40e30b7e"
+    },
+    {
+      "component_id": "3fe473a2bc7eb972",
+      "filename": "SY01 SN.stg",
+      "records": 144,
+      "sha256": "42012fcbe1c411955f42c55cb7050ebdb5c4172ebb5cc7185fb60a4994de7bef"
+    },
+    {
+      "component_id": "3fe473a2bc7eb972",
+      "filename": "SY01 DDN.stg",
+      "records": 384,
+      "sha256": "cefc0917e30717b396d5635146d530e6b555ec83abf35b55ac2df49f856fe469"
+    },
+    {
+      "component_id": "3fe473a2bc7eb972",
+      "filename": "SY01 SR.stg",
+      "records": 144,
+      "sha256": "51a83b8ebc302921690de80f5984294b1c5a897b003fef781e862d72fed250cd"
+    },
+    {
+      "component_id": "438d29dfffd5a2fd",
+      "filename": "TC23   SN.stg",
+      "records": 380,
+      "sha256": "0f7a74eb6e7ad2a752bb639ac18a37df839c0c745ba7388a9ee8ec6b716a9d43"
+    },
+    {
+      "component_id": "438d29dfffd5a2fd",
+      "filename": "TC23   SR.stg",
+      "records": 380,
+      "sha256": "0a0708f28b305809e68932d2584180d8483e54831885ce6c10f075ec3c044c55"
+    },
+    {
+      "component_id": "438d29dfffd5a2fd",
+      "filename": "TC23  WN.stg",
+      "records": 260,
+      "sha256": "b6bb2c9e938aacb9767bd48781e7a7219ac62cb0ddefffe3674a29c73055795b"
+    },
+    {
+      "component_id": "438d29dfffd5a2fd",
+      "filename": "TC23   WR.stg",
+      "records": 260,
+      "sha256": "1176f7409d3e9c7a692243f476ee32a27b2c797be63ff9bb282a6bdcf0494ff0"
+    },
+    {
+      "component_id": "4677910e0c6c5e0c",
+      "filename": "ERI22_04WR.stg",
+      "records": 199,
+      "sha256": "d2fb392f2cc729a1b20f2a9825db255abb581380ef46987400673734b9bd26a4"
+    },
+    {
+      "component_id": "4677910e0c6c5e0c",
+      "filename": "ERI22_04SN.stg",
+      "records": 292,
+      "sha256": "ca85a1f7c7d755652fc620e69dd93c55d789d62cb049de26fb0617ca2d6f4e90"
+    },
+    {
+      "component_id": "52a6853f9fb6159e",
+      "filename": "ERI22_09WN.stg",
+      "records": 222,
+      "sha256": "7d09c16fe46efc9e9d50c6b08d4e9b72c2bc659a713983196daa7f05b278fbef"
+    },
+    {
+      "component_id": "673380180faa450a",
+      "filename": "Line24  WR.stg",
+      "records": 57,
+      "sha256": "a9000337c64a6655794d5854509f1a0e3847151cd19775ed08a97556ff23a282"
+    },
+    {
+      "component_id": "673380180faa450a",
+      "filename": "Line24  SR.stg",
+      "records": 82,
+      "sha256": "383b4453578b3e3e686f97a96def44105ffb257e9d3afe91fb4b9b5bc0d58d89"
+    },
+    {
+      "component_id": "673380180faa450a",
+      "filename": "Line24  WR1.stg",
+      "records": 57,
+      "sha256": "ee377509377783679e8e88d5e12c03c4a97071848a2a8c82fedad67ab18c457e"
+    },
+    {
+      "component_id": "673380180faa450a",
+      "filename": "Line24  WN.stg",
+      "records": 57,
+      "sha256": "bb1a517223de6bf8f908e453db7b6373b6fda08fa9b3075f91ca5362e96cd892"
+    },
+    {
+      "component_id": "673380180faa450a",
+      "filename": "Line24 SR1.stg",
+      "records": 82,
+      "sha256": "853c1946410d6444df3a61f28ef1734d66c609d8a07fc73a85483dff2df0523a"
+    },
+    {
+      "component_id": "673380180faa450a",
+      "filename": "Line24  WN1.stg",
+      "records": 57,
+      "sha256": "cebc327b33059303f3e4648059c3fd286535ad2e8780cc4fd8d2d6826ed7c48b"
+    },
+    {
+      "component_id": "673380180faa450a",
+      "filename": "Line24 SN.stg",
+      "records": 82,
+      "sha256": "bbec7127ebbd2e8c89269773d39e55355220e6bad800221d5cce900a3864fed1"
+    },
+    {
+      "component_id": "6ff44253dd610150",
+      "filename": "Line05 SN.stg",
+      "records": 257,
+      "sha256": "5f80e15906bdae9a6cf440c4e58345e24fbfee2a21e435ae7232ed5a7f655c35"
+    },
+    {
+      "component_id": "6ff44253dd610150",
+      "filename": "Line 05 WN.stg",
+      "records": 198,
+      "sha256": "cedaa5cea06c041c75402c6e5fa87919b4055662a085b1201f89e261afda97f5"
+    },
+    {
+      "component_id": "74ea7eef4f6b3dc6",
+      "filename": "ERI22_05SN.stg",
+      "records": 257,
+      "sha256": "1a0cefc2e3a2c715daa006a519f0d5c00aab99a98e545a7c1683bb866c46dc20"
+    },
+    {
+      "component_id": "74ea7eef4f6b3dc6",
+      "filename": "ERI22_05WN.stg",
+      "records": 185,
+      "sha256": "d0f0c843ef74274a03ded801ce6b973d3304e75363099239b6864d26b6d78ad4"
+    },
+    {
+      "component_id": "7fd950448b065d7a",
+      "filename": "ERI_14 SC.stg",
+      "records": 1786,
+      "sha256": "f4e652be5524f59042a1fdd956e9c4a5bc4bab0b021fccd48b31ffb6bd51cdad"
+    },
+    {
+      "component_id": "7fd950448b065d7a",
+      "filename": "ERI_14 WN.stg",
+      "records": 1649,
+      "sha256": "5e8f80edfe53e505e50efccbe7578ef76bc0cbe2b441f60ae857d8071d2afdd5"
+    },
+    {
+      "component_id": "8cdbf7e712db0873",
+      "filename": "YL05 DNP.stg",
+      "records": 1212,
+      "sha256": "879e2a6980f9f65cdf9b6f02d08b6c5392c465ee5c30ab23f30943f3248e077c"
+    },
+    {
+      "component_id": "8cdbf7e712db0873",
+      "filename": "YL05 SR.stg",
+      "records": 441,
+      "sha256": "1ccf2547f03678d18509aa312b4f62dc513893273ae030d4c8c33525a130eb4d"
+    },
+    {
+      "component_id": "8cdbf7e712db0873",
+      "filename": "YL05 DPR.stg",
+      "records": 1212,
+      "sha256": "c2e07037dd30e43680917eb4d0dd92cce670a5d2018bb793c1ca1b5cf1fc666b"
+    },
+    {
+      "component_id": "8cdbf7e712db0873",
+      "filename": "YL05 SN.stg",
+      "records": 441,
+      "sha256": "35a839acebb60352bfa7c28cb5488cbfb1b4b5ca6e30641367151a8f9612048d"
+    },
+    {
+      "component_id": "9802bf54b06c6640",
+      "filename": "CN10 SR.stg",
+      "records": 196,
+      "sha256": "ff2a127309d42bdba1f680615708f57220e54a6d09bfb11ada7a483802115c57"
+    },
+    {
+      "component_id": "9802bf54b06c6640",
+      "filename": "CN10 WN.stg",
+      "records": 135,
+      "sha256": "2dfe1a2408a319ba097814217df550bb7c75e205061e388ba44f20424482d735"
+    },
+    {
+      "component_id": "9802bf54b06c6640",
+      "filename": "CN10 SN.stg",
+      "records": 196,
+      "sha256": "64149bbf870c823c324de2b0b57f3f89caf46f2252ba283771a0f16d30cee0ba"
+    },
+    {
+      "component_id": "9802bf54b06c6640",
+      "filename": "CN10 WR.stg",
+      "records": 135,
+      "sha256": "4d8acdee772bba4ab8e9cfe71160d58ad7abe34c00ced028e998c4657d13a492"
+    },
+    {
+      "component_id": "aa645b848f939e4d",
+      "filename": "SY13 SN.stg",
+      "records": 225,
+      "sha256": "efd3c90220f8857e4f03bd43366b6e9bcf6b532d73db32556d7221f532be4db4"
+    },
+    {
+      "component_id": "aa645b848f939e4d",
+      "filename": "SY13 SR.stg",
+      "records": 225,
+      "sha256": "a740ae5b641faa2a0749580545cc10c42ca75f911a65008bab25d5a56e0617ef"
+    },
+    {
+      "component_id": "aa645b848f939e4d",
+      "filename": "SY13 DDN.stg",
+      "records": 608,
+      "sha256": "270a824cbb92e4dfee806e0eded735ce54454e598f0be5c56b18cd056105ac54"
+    },
+    {
+      "component_id": "aa645b848f939e4d",
+      "filename": "SY13 DDR.stg",
+      "records": 608,
+      "sha256": "d7ca7015ce05db87d4a5f046a078b2894c45f2c47819ddfe7517f761560bf0f9"
+    },
+    {
+      "component_id": "ad06ba3d588f6aeb",
+      "filename": "TC03 WN.stg",
+      "records": 222,
+      "sha256": "9ac643dfc2ff9dc22d16608500d2d28d3253c80042018389d3a3028191b37ab3"
+    },
+    {
+      "component_id": "ad06ba3d588f6aeb",
+      "filename": "TC03  WR.stg",
+      "records": 222,
+      "sha256": "6a22e71eefddce72e32d6c52c2b13c37463c0f72dde2244deb9b4bdffdae08d8"
+    },
+    {
+      "component_id": "ad06ba3d588f6aeb",
+      "filename": "TC03 SN.stg",
+      "records": 324,
+      "sha256": "18c88081e0ad770c78d356195bdf3a7e9ab7293c83644de1b766197f9f59d9d7"
+    },
+    {
+      "component_id": "ad06ba3d588f6aeb",
+      "filename": "TC03 SR.stg",
+      "records": 324,
+      "sha256": "b479b048fde274f6eafb210b8fcda67782551cf818aff54dd2ff7d7c5bfbc98f"
+    },
+    {
+      "component_id": "db99f41e4709760f",
+      "filename": "CS05 SR.stg",
+      "records": 156,
+      "sha256": "191ba2f963a72fdadfc2e36e5de5e558eeb1fd73407134b627613ab883a2db55"
+    },
+    {
+      "component_id": "db99f41e4709760f",
+      "filename": "CS05 WR.stg",
+      "records": 108,
+      "sha256": "e5c3de2b8ec658893951de91cdfb222be9f235a55aac61387416770f5f645fda"
+    },
+    {
+      "component_id": "db99f41e4709760f",
+      "filename": "CS05 SN.stg",
+      "records": 147,
+      "sha256": "5987e73f78844bd3a319f1fc4dc13e0170d0fbcfe5574e8671561cde9a411612"
+    },
+    {
+      "component_id": "db99f41e4709760f",
+      "filename": "CS05 WN.stg",
+      "records": 108,
+      "sha256": "7d279ea9ef82190c4b8e812390e9b6ed19e04646730359005553899df8e10e1a"
+    },
+    {
+      "component_id": "e39c33571532d072",
+      "filename": "CN12 SR.stg",
+      "records": 165,
+      "sha256": "02e4a89e11226c4814013c58f75b461645d2758c67d1b4f1b1163a34bc2b8092"
+    },
+    {
+      "component_id": "e39c33571532d072",
+      "filename": "CN12 WN.stg",
+      "records": 117,
+      "sha256": "97dbaeedfcb0ea2b8835507007a4e6281ca79c13988e1e3b4a64b8bab010697f"
+    },
+    {
+      "component_id": "e39c33571532d072",
+      "filename": "CN12 WR.stg",
+      "records": 116,
+      "sha256": "977f0d5c2098a87aef856c94f9b0db548307ed745158fe312e299c8a878ed2a6"
+    },
+    {
+      "component_id": "e39c33571532d072",
+      "filename": "CN12 SN.stg",
+      "records": 156,
+      "sha256": "70f7ea196668d8ce92c3219c3acfd7e0ac94a31b914329950423f0b3adc6f67c"
+    },
+    {
+      "component_id": "e5147910dd12660e",
+      "filename": "SY07 DDR.stg",
+      "records": 785,
+      "sha256": "7c54ca627746f71b8e6c878edb6418e0c7395449218539a1c8bc5563cb6cefda"
+    },
+    {
+      "component_id": "e5147910dd12660e",
+      "filename": "SY07 DDN.stg",
+      "records": 785,
+      "sha256": "405a27c58e9b8722b7f45700cffdc262eceaadda3c063a9dcae9fa1a12405729"
+    },
+    {
+      "component_id": "e5147910dd12660e",
+      "filename": "SY07 SN.stg",
+      "records": 289,
+      "sha256": "ee3517fee819e5bae600c3a54e53685b713b00e82e22b41a252d50b17151c860"
+    },
+    {
+      "component_id": "e5147910dd12660e",
+      "filename": "SY07 SR.stg",
+      "records": 288,
+      "sha256": "5c5cae991df6ea7dd8ca6f5ed6b71c214ab4636d0a1727050e74612b902b9cd5"
+    },
+    {
+      "component_id": "fe74c81db1013058",
+      "filename": "SY15 SN.stg",
+      "records": 182,
+      "sha256": "cc73b38e51da4d3d40eee3c2d571418decc63aaf6706a6fe5eb0e3f0381cf01e"
+    },
+    {
+      "component_id": "fe74c81db1013058",
+      "filename": "SY15 DDR.stg",
+      "records": 489,
+      "sha256": "2a47cb30cad72f8616bea962020074318d71c30e6b6810ee04e10f58ee28c3bf"
+    },
+    {
+      "component_id": "fe74c81db1013058",
+      "filename": "SY15 DDN.stg",
+      "records": 489,
+      "sha256": "b6c91715dad0ac1c947d7c6b483cef49672115df2e8dc3fb812dfb12cb29bfbc"
+    },
+    {
+      "component_id": "feade5d9036b4b55",
+      "filename": "CN15 SN.stg",
+      "records": 324,
+      "sha256": "46ebb3683fbb31e95661aa64c6254e614bc7b00df9235872a57ce930b1afaeb0"
+    },
+    {
+      "component_id": "feade5d9036b4b55",
+      "filename": "CN15 WR.stg",
+      "records": 222,
+      "sha256": "4f849b351445d19445870496d808d5161da98dbb822af188206f8e13479cc660"
+    },
+    {
+      "component_id": "feade5d9036b4b55",
+      "filename": "CN15 WN.stg",
+      "records": 222,
+      "sha256": "850386e3cf38aae6c61aa2ac5c72f152089a0263d71cb0a07aa350816c14e89e"
+    },
+    {
+      "component_id": "feade5d9036b4b55",
+      "filename": "CN15 SR.stg",
+      "records": 324,
+      "sha256": "a02cb9ef8527ada93b6781c367e18bd9d2364f6a14b87d52435e402a465d3fec"
+    }
+  ]
+}

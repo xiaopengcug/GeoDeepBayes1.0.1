@@ -1,0 +1,211 @@
+{
+  "schema": "wp5-ledger-text-migration-v1",
+  "source_ledger_sha256": "ea8168d745883f3375c03740f4c83045a327421be40dacb2f083de9bf580bd49",
+  "replacements": 7,
+  "tombstones": 0,
+  "entries": [
+    {
+      "id": "CLM-DOC-02-0027",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-02-0027",
+        "old_text_sha256": "fff531480d3dae7a5b1f01edc8826c8fe4fc2855eeca04422525fd9dede6a022",
+        "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+        "span_start": 871,
+        "span_end": 871
+      },
+      "new_entry": {
+        "id": "CLM-DOC-02-0027",
+        "kind": "claim",
+        "document": "02-全方法深度融合的底层逻辑与理论总纲.md",
+        "span_start": 871,
+        "span_end": 871,
+        "text_sha256": "fff531480d3dae7a5b1f01edc8826c8fe4fc2855eeca04422525fd9dede6a022",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-02",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Align the ledger evidence status with the explicit Planned source boundary."
+    },
+    {
+      "id": "CLM-DOC-03-0030",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-03-0030",
+        "old_text_sha256": "7a8f78c7a5733faedd6c9076bfca00f1e96ef976124c7618bedb223825cbff11",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 867,
+        "span_end": 867
+      },
+      "new_entry": {
+        "id": "CLM-DOC-03-0030",
+        "kind": "claim",
+        "document": "03-多方法深度融合的核心技术实现路径.md",
+        "span_start": 867,
+        "span_end": 867,
+        "text_sha256": "7a8f78c7a5733faedd6c9076bfca00f1e96ef976124c7618bedb223825cbff11",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-03",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Align the ledger evidence status with the explicit Planned source boundary."
+    },
+    {
+      "id": "CLM-DOC-06-0002",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-06-0002",
+        "old_text_sha256": "74098053e21b83c2cd076a33d489581b6158d7ab9049b106f5bf96db90f9ffd9",
+        "document": "06-合成数据验证方案与验收设计.md",
+        "span_start": 20,
+        "span_end": 20
+      },
+      "new_entry": {
+        "id": "CLM-DOC-06-0002",
+        "kind": "claim",
+        "document": "06-合成数据验证方案与验收设计.md",
+        "span_start": 20,
+        "span_end": 20,
+        "text_sha256": "74098053e21b83c2cd076a33d489581b6158d7ab9049b106f5bf96db90f9ffd9",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "DOC-06#SECTION-L10",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Align the ledger evidence status with the explicit Planned source boundary."
+    },
+    {
+      "id": "CLM-COMPUTE-PLAN-0003",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-COMPUTE-PLAN-0003",
+        "old_text_sha256": "085fed25b40117ee8735004054c143dc947d6ca532361e673114a0453d6d3b8a",
+        "document": "贝叶斯三维反演测试算力需求说明.md",
+        "span_start": 10,
+        "span_end": 10
+      },
+      "new_entry": {
+        "id": "CLM-COMPUTE-PLAN-0003",
+        "kind": "claim",
+        "document": "贝叶斯三维反演测试算力需求说明.md",
+        "span_start": 10,
+        "span_end": 10,
+        "text_sha256": "085fed25b40117ee8735004054c143dc947d6ca532361e673114a0453d6d3b8a",
+        "claim_type": "quantitative",
+        "metric": "document_consistency",
+        "formula_id": "none",
+        "status": "Planned",
+        "scope": "COMPUTE-PLAN",
+        "source": "WP5-GOVERNANCE",
+        "evidence_id": "EVD-WP5-GOVERNANCE",
+        "run_id": "WP5-CONSISTENCY-v1",
+        "manifest": "validation/wp5-consistency/active-output.json"
+      },
+      "reason": "Align the ledger evidence status with the explicit Planned source boundary."
+    },
+    {
+      "id": "CLM-DOC-A4-0003",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A4-0003",
+        "old_text_sha256": "f1b11b02e9721a6f87c5d8733fb7a632ac3e7c1e74f7076539ff9c66fa97ce9d",
+        "document": "附录4-核心算法性能基准测试计划与验收指标.md",
+        "span_start": 26,
+        "span_end": 26
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A4-0003",
+        "kind": "claim",
+        "document": "附录4-核心算法性能基准测试计划与验收指标.md",
+        "span_start": 26,
+        "span_end": 26,
+        "text_sha256": "f1b11b02e9721a6f87c5d8733fb7a632ac3e7c1e74f7076539ff9c66fa97ce9d",
+        "claim_type": "calibration",
+        "metric": "typed_calibration",
+        "formula_id": "none",
+        "status": "Synthetic-run",
+        "scope": "DOC-A4#SECTION-L12",
+        "source": "WP1-MANIFEST",
+        "evidence_id": "WP1-TOY",
+        "run_id": "WP1-TOY-20260717-R400-v1",
+        "manifest": "validation/wp1-toy/output/manifest.json"
+      },
+      "reason": "Bind an explicit WP1 toy Synthetic-run result to its actual run and manifest."
+    },
+    {
+      "id": "CLM-DOC-A4-0004",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A4-0004",
+        "old_text_sha256": "71cc6f34843b921eca292b15e7f133196e2e44aadf71c4c66ef3b283b56ef295",
+        "document": "附录4-核心算法性能基准测试计划与验收指标.md",
+        "span_start": 36,
+        "span_end": 36
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A4-0004",
+        "kind": "claim",
+        "document": "附录4-核心算法性能基准测试计划与验收指标.md",
+        "span_start": 36,
+        "span_end": 36,
+        "text_sha256": "71cc6f34843b921eca292b15e7f133196e2e44aadf71c4c66ef3b283b56ef295",
+        "claim_type": "calibration",
+        "metric": "typed_calibration",
+        "formula_id": "none",
+        "status": "Synthetic-run",
+        "scope": "DOC-A4#SECTION-L23",
+        "source": "WP1-MANIFEST",
+        "evidence_id": "WP1-TOY",
+        "run_id": "WP1-TOY-20260717-R400-v1",
+        "manifest": "validation/wp1-toy/output/manifest.json"
+      },
+      "reason": "Bind an explicit WP1 toy Synthetic-run result to its actual run and manifest."
+    },
+    {
+      "id": "CLM-DOC-A4-0006",
+      "disposition": "replacement",
+      "old": {
+        "id": "CLM-DOC-A4-0006",
+        "old_text_sha256": "98aad02e7f659d18919b0b985d8e343a7536063e04dc620b393c24956fd36c39",
+        "document": "附录4-核心算法性能基准测试计划与验收指标.md",
+        "span_start": 43,
+        "span_end": 43
+      },
+      "new_entry": {
+        "id": "CLM-DOC-A4-0006",
+        "kind": "claim",
+        "document": "附录4-核心算法性能基准测试计划与验收指标.md",
+        "span_start": 43,
+        "span_end": 43,
+        "text_sha256": "98aad02e7f659d18919b0b985d8e343a7536063e04dc620b393c24956fd36c39",
+        "claim_type": "calibration",
+        "metric": "typed_calibration",
+        "formula_id": "none",
+        "status": "Synthetic-run",
+        "scope": "DOC-A4#SECTION-L23",
+        "source": "WP1-MANIFEST",
+        "evidence_id": "WP1-TOY",
+        "run_id": "WP1-TOY-20260717-R400-v1",
+        "manifest": "validation/wp1-toy/output/manifest.json"
+      },
+      "reason": "Bind an explicit WP1 toy Synthetic-run result to its actual run and manifest."
+    }
+  ]
+}

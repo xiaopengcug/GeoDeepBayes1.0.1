@@ -1,0 +1,308 @@
+{
+  "schema_version": "wp8-csamt-whole-line-split-v2",
+  "source_v1_sha256": "b657d1b14f6d68a4b5e5045dd949c5508cf67aed578bd8888fa0dd06efccd2ec",
+  "selection_unit": "provider raw line member",
+  "selection_frozen_before_response_access": true,
+  "role_rule": "SHA256(salt|provider|member) modulo 10: 30% train, 10% buffer, 10% calibration, 50% test",
+  "salt_sha256": "8302806f1cae7e41bf93b34da8b81e401ed56ca6fdf7825598c990bf3fc93c8f",
+  "raw_line_count": 30,
+  "partition_line_counts": {
+    "test": 14,
+    "buffer": 4,
+    "train": 9,
+    "calibration": 3
+  },
+  "provider_partition_line_counts": {
+    "big-chino": {
+      "test": 8,
+      "buffer": 3,
+      "train": 7,
+      "calibration": 3
+    },
+    "hualapai": {
+      "test": 6,
+      "train": 2,
+      "buffer": 1
+    }
+  },
+  "lines": [
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "AX.raw",
+      "member_bytes": 1912634,
+      "member_crc32": "c34fc619",
+      "role": "test"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "CG.raw",
+      "member_bytes": 329128,
+      "member_crc32": "a069ef13",
+      "role": "buffer"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "CH.raw",
+      "member_bytes": 295031,
+      "member_crc32": "11693bc4",
+      "role": "train"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "EW1.raw",
+      "member_bytes": 668825,
+      "member_crc32": "ed69b3c8",
+      "role": "calibration"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "EW2.raw",
+      "member_bytes": 1098328,
+      "member_crc32": "74b456d8",
+      "role": "train"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "EW3.raw",
+      "member_bytes": 699503,
+      "member_crc32": "69cc190b",
+      "role": "test"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "FM1.raw",
+      "member_bytes": 406628,
+      "member_crc32": "1fe30550",
+      "role": "calibration"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "FME.raw",
+      "member_bytes": 356780,
+      "member_crc32": "97f4cbeb",
+      "role": "test"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "FMW.raw",
+      "member_bytes": 457946,
+      "member_crc32": "6bcb012a",
+      "role": "test"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "GS16.raw",
+      "member_bytes": 402651,
+      "member_crc32": "46c3e402",
+      "role": "calibration"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "GS6.raw",
+      "member_bytes": 213810,
+      "member_crc32": "97c87075",
+      "role": "train"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "GS8.raw",
+      "member_bytes": 823677,
+      "member_crc32": "92cf7278",
+      "role": "train"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "K1.raw",
+      "member_bytes": 343856,
+      "member_crc32": "f327394e",
+      "role": "buffer"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "NS1.raw",
+      "member_bytes": 867649,
+      "member_crc32": "40ca5148",
+      "role": "buffer"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "NS2.raw",
+      "member_bytes": 564811,
+      "member_crc32": "9a4c7644",
+      "role": "test"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "NS3.raw",
+      "member_bytes": 428610,
+      "member_crc32": "438f11b1",
+      "role": "train"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "NS4.raw",
+      "member_bytes": 283002,
+      "member_crc32": "8706b374",
+      "role": "train"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "NS5.raw",
+      "member_bytes": 442264,
+      "member_crc32": "80783c40",
+      "role": "test"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "WC.raw",
+      "member_bytes": 494669,
+      "member_crc32": "a4a7427e",
+      "role": "train"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "WCN.raw",
+      "member_bytes": 293058,
+      "member_crc32": "fef2c9bb",
+      "role": "test"
+    },
+    {
+      "provider": "big-chino",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/big-chino-raw-sealed.zip",
+      "archive_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+      "member": "WR.raw",
+      "member_bytes": 700258,
+      "member_crc32": "554dcbe8",
+      "role": "test"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/A1.raw",
+      "member_bytes": 656833,
+      "member_crc32": "f6e61a6f",
+      "role": "test"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/A2.raw",
+      "member_bytes": 366002,
+      "member_crc32": "3844f3b4",
+      "role": "train"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/PT1.raw",
+      "member_bytes": 491112,
+      "member_crc32": "72936df5",
+      "role": "test"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/PT2.raw",
+      "member_bytes": 482186,
+      "member_crc32": "384acde4",
+      "role": "test"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/PT3.raw",
+      "member_bytes": 983775,
+      "member_crc32": "2786f2de",
+      "role": "train"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/QB1.raw",
+      "member_bytes": 511090,
+      "member_crc32": "11c870f3",
+      "role": "test"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/QB2.raw",
+      "member_bytes": 494470,
+      "member_crc32": "68ee785d",
+      "role": "buffer"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/QB3.raw",
+      "member_bytes": 422900,
+      "member_crc32": "b7fdb5de",
+      "role": "test"
+    },
+    {
+      "provider": "hualapai",
+      "archive_path": "validation/wp8/data/csamt-consortium-v1/hualapai-raw-sealed.zip",
+      "archive_sha256": "cc7fb61c96d18f6e255248810bb0884cdaad42550d5ea1214131bf59033ad0db",
+      "member": "Raw/WG.raw",
+      "member_bytes": 125652,
+      "member_crc32": "3007b7c2",
+      "role": "test"
+    }
+  ],
+  "required_test_clusters": 223,
+  "line_level_test_cluster_upper_bound": 14,
+  "design_cluster_gate_possible": false,
+  "training_response_members_opened": 0,
+  "calibration_response_members_opened": 0,
+  "test_response_members_opened": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "wp9-final-gates-v1",
+  "evidence_kind": "current-local-rerun",
+  "generated_by": "validation/wp9/run_final_gates.py",
+  "generated_at_utc": "2026-07-28T03:29:20.128325+00:00",
+  "status": "blocked",
+  "environment": {
+    "status": "passed",
+    "uv": "0.11.29",
+    "uv_on_path": false,
+    "local_invocation_fallback": "python -m uv",
+    "python": "3.11.15",
+    "implementation": "CPython",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "machine": "AMD64",
+    "powershell": "7.6.4",
+    "python_version_file_sha256": "db82937e1f1830581a9553c7814f5c5fcacb6dfdef8310b43e9a812c887acaf5",
+    "pyproject_sha256": "1ebc81cb9d0be0c3f20dec5b4e234757f38653d387d70c42a1912bc8cb952607",
+    "uv_lock_sha256": "c71791cc6cda23ea4ba563821a4235261374e5268d8cfd9a595799c552834026",
+    "baseline_commit": "50e25166f8897f0fc6e82cbadbc3c4f0a98c14d5",
+    "worktree_dirty": true,
+    "tracked_diff_sha256": "ae87174d4897f4942f72663e4275bc766269d244c36627b125b6024220f5935e",
+    "status_paths_sha256": "79576d37c8b07c71fbd7cd31a69b9007bd181e552d33fe7f106d44c0e37ec11b",
+    "runner_sha256": "ad9921774931ea18dc32784342f65e497d4dcd54ec1e4eb2a94ab87fd53d6cbc",
+    "dependencies": {
+      "matplotlib": "3.11.1",
+      "simpeg": "0.25.2",
+      "discretize": "0.12.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    },
+    "bootstrap_log": {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/environment-bootstrap.json",
+      "sha256": "1811a77001fb1d58b4293b00f3f675137cd0a57a2e17950aced925f99981ca2d"
+    }
+  },
+  "gates": {
+    "pytest": {
+      "status": "passed",
+      "passed": 433,
+      "skipped": 1,
+      "warnings": 119,
+      "exit_code": 0,
+      "argv": [
+        ".\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "log": {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/pytest.json",
+        "sha256": "1b4fba9da929152c9c5ec5de7483cb35e927db12b713389c79fe22e9bf422af4"
+      }
+    },
+    "governance": {
+      "status": "passed",
+      "entries": 59,
+      "release_paths": 24,
+      "evidence_ids": 15,
+      "cited_refs": 72,
+      "exit_code": 0,
+      "argv": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-governance.ps1"
+      ],
+      "log": {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/governance.json",
+        "sha256": "e43b3852ed3049f504e3fb0ebebf8ba770ce3c2679a726f3668a50ad8e4547bd"
+      }
+    },
+    "wp5": {
+      "status": "blocked",
+      "exit_code": 1,
+      "argv": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-wp5.ps1"
+      ],
+      "log": {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp5.json",
+        "sha256": "c984d9df0b41c61b5633be450f661b53a819a650fd439d9ae9b62a207e3d2e9b"
+      },
+      "errors": [
+        "root drift ACTIVE_MANIFEST"
+      ]
+    },
+    "wp6_self_test": {
+      "status": "passed",
+      "exit_code": 0,
+      "argv": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-wp6.ps1",
+        "-SelfTest",
+        "-SkipTests"
+      ],
+      "log": {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp6_self_test.json",
+        "sha256": "91f572620f9c91485b8096b8a649a86ca9f8502d8f3cda2f35de09c27ff9b6f6"
+      },
+      "release": false
+    },
+    "wp7_self_test": {
+      "status": "passed",
+      "exit_code": 0,
+      "argv": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-wp7.ps1",
+        "-SyntheticRun",
+        ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\versions\\synthetic-block-v6-20260724",
+        "-Do27Run",
+        ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\versions\\do27-v4-20260724",
+        "-Signoff",
+        ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\signoff-v4.json",
+        "-SelfTest"
+      ],
+      "log": {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp7_self_test.json",
+        "sha256": "d270dfc98919c24dafb689627509223327edd6bc5cf9049877f81a53dbde7b3c"
+      }
+    },
+    "wp8_synthetic_completion": {
+      "status": "passed",
+      "exit_code": 0,
+      "argv": [
+        ".\\.venv\\Scripts\\python.exe",
+        "validation/wp8/validate_wp8.py",
+        "--phase",
+        "synthetic"
+      ],
+      "log": {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp8_synthetic_completion.json",
+        "sha256": "292dab42a852b48c94053e66156aeb245a27655d7540abb46d3754e23d8b5775"
+      },
+      "field_validated": false,
+      "reason_code": "SYNTHETIC_COMPLETION_AUTHORIZED"
+    },
+    "wp9_acceptance": {
+      "status": "passed",
+      "exit_code": 0,
+      "argv": [
+        ".\\.venv\\Scripts\\python.exe",
+        "validation/wp9/validate_wp9.py"
+      ],
+      "log": {
+        "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp9_acceptance.json",
+        "sha256": "ceedc941bffeba3734376c6afa486bc7e057484be37ff3496dcdfff35f43ffab"
+      },
+      "scope": "saved local evidence package only"
+    }
+  },
+  "release_acceptance": {
+    "status": "blocked",
+    "blocking_gates": [
+      "wp5"
+    ],
+    "additional_external_requirements": [
+      "Git persistence of the required evidence closure",
+      "remote required-gates run",
+      "remote attestation",
+      "authorized WP5 re-sign and any required human review"
+    ]
+  }
+}

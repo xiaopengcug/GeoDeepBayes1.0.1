@@ -7,6 +7,53 @@ $errors = [System.Collections.Generic.List[string]]::new()
 $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..\..\..')).Path
 $manifestPath = Join-Path $Root 'manifest.yaml'
 $manifest = Get-Content -LiteralPath $manifestPath -Raw
+$uvCommand = Get-Command uv -ErrorAction SilentlyContinue
+$uvExecutable = if ($uvCommand) { $uvCommand.Source } else { (Get-Command python -ErrorAction Stop).Source }
+$uvPrefix = if ($uvCommand) { @() } else { @('-m', 'uv') }
+if (-not $uvCommand) {
+    $null = & $uvExecutable @uvPrefix --version 2>$null
+    if ($LASTEXITCODE -ne 0) { throw '未找到固定环境工具 uv（PATH 或 python -m uv）' }
+}
+
+$wp5ActiveManifestPath = Join-Path $Root 'ACTIVE_MANIFEST'
+$wp5ActiveOutputPath = Join-Path $Root 'validation/wp5-consistency/active-output.json'
+if (-not (Test-Path -LiteralPath $wp5ActiveManifestPath) -or -not (Test-Path -LiteralPath $wp5ActiveOutputPath)) {
+    $errors.Add('WP5 active pointer missing')
+} else {
+    $wp5ActiveManifest = (Get-Content -LiteralPath $wp5ActiveManifestPath -Raw).Trim()
+    $wp5ActiveOutput = Get-Content -LiteralPath $wp5ActiveOutputPath -Raw | ConvertFrom-Json
+    if (
+        $wp5ActiveManifest -notmatch '^[0-9a-f]{64}$' -or
+        $wp5ActiveOutput.schema -cne 'wp5-active-output-v1' -or
+        [string]$wp5ActiveOutput.run_instance_id -notmatch '^[0-9]{8}T[0-9]{9}Z-[0-9a-f]{32}$' -or
+        [string]$wp5ActiveOutput.version_path -notmatch '^versions/[0-9]{8}T[0-9]{9}Z-[0-9a-f]{32}$' -or
+        $wp5ActiveManifest -cne [string]$wp5ActiveOutput.manifest_sha256
+    ) {
+        $errors.Add('WP5 active pointer mismatch')
+    } else {
+        $wp5VersionRoot = [IO.Path]::GetFullPath((Join-Path $Root 'validation/wp5-consistency/versions'))
+        $wp5TargetManifest = [IO.Path]::GetFullPath(
+            (Join-Path (Join-Path $Root 'validation/wp5-consistency') ([string]$wp5ActiveOutput.version_path + '/manifest.json'))
+        )
+        if (
+            -not $wp5TargetManifest.StartsWith($wp5VersionRoot + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase) -or
+            -not (Test-Path -LiteralPath $wp5TargetManifest)
+        ) {
+            $errors.Add('WP5 active target missing or escaped')
+        } else {
+            $wp5TargetHash = (Get-FileHash -LiteralPath $wp5TargetManifest -Algorithm SHA256).Hash.ToLowerInvariant()
+            $wp5Target = Get-Content -LiteralPath $wp5TargetManifest -Raw | ConvertFrom-Json
+            if (
+                $wp5TargetHash -cne $wp5ActiveManifest -or
+                $wp5Target.schema -cne 'wp5-consistency-manifest-v1' -or
+                $wp5Target.status -cne 'Passed' -or
+                [string]$wp5Target.run_instance_id -cne [string]$wp5ActiveOutput.run_instance_id
+            ) {
+                $errors.Add('WP5 active target binding mismatch')
+            }
+        }
+    }
+}
 
 $entries = [regex]::Matches($manifest, '\{path: "([^"]+)", sha256: "([0-9a-f]{64})"\}')
 foreach ($entry in $entries) {
@@ -227,14 +274,18 @@ if (-not (Test-Path -LiteralPath $do27RunPath)) {
             $errors.Add("DO-27 output hash mismatch: $($item.path)")
         }
     }
-    $do27Script = Join-Path $Root "validation/do27/$($do27Run.script.path)"
-    if (-not (Test-Path -LiteralPath $do27Script)) { $errors.Add('DO-27 script missing') }
-    elseif ((Get-FileHash -LiteralPath $do27Script -Algorithm SHA256).Hash.ToLowerInvariant() -ne $do27Run.script.sha256) {
-        $errors.Add('DO-27 script hash mismatch')
+    # run-06 is immutable historical evidence produced by the pre-WP7 script.
+    # The current producer is independently anchored in manifest.yaml and the
+    # WP7 v4 package; do not compare a historical run to later producer bytes.
+    if (
+        $do27Run.script.path -ne 'run_do27_validation.py' -or
+        $do27Run.script.sha256 -ne '6414043dc897dd8e57f68899a1d4fd9fbdbe5bda7adbbfac827c23d9432e2ee4'
+    ) {
+        $errors.Add('DO-27 historical script identity drift')
     }
 }
 
-$contractOutput = & uv run --project $ProjectRoot --frozen python (Join-Path $Root 'contracts/validate_contracts.py') 2>&1
+$contractOutput = & $uvExecutable @uvPrefix run --project $ProjectRoot --frozen python (Join-Path $Root 'contracts/validate_contracts.py') 2>&1
 if ($LASTEXITCODE -ne 0) { $errors.Add("contract validation failed: $contractOutput") }
 
 $refLines = Get-Content -LiteralPath (Join-Path $Root '参考文献_更新版.md')

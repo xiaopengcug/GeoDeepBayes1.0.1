@@ -1,0 +1,178 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "lineage-migration",
+  "fixture_count": 11,
+  "fixture_id_set": [
+    "FXT-LINEAGE-MIGRATION-067",
+    "FXT-LINEAGE-MIGRATION-068",
+    "FXT-LINEAGE-MIGRATION-069",
+    "FXT-LINEAGE-MIGRATION-070",
+    "FXT-LINEAGE-MIGRATION-071",
+    "FXT-LINEAGE-MIGRATION-072",
+    "FXT-LINEAGE-MIGRATION-073",
+    "FXT-LINEAGE-MIGRATION-074",
+    "FXT-LINEAGE-MIGRATION-075",
+    "FXT-LINEAGE-MIGRATION-076",
+    "FXT-LINEAGE-MIGRATION-077"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-067",
+      "case": "FXT-LINEAGE-MIGRATION-067",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop27 POD and proposal metric closure"
+      ],
+      "actual_rejection": "loop27 POD and proposal metric closure",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3546
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-068",
+      "case": "FXT-LINEAGE-MIGRATION-068",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop27 compute evidence boundary"
+      ],
+      "actual_rejection": "loop27 compute evidence boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3975
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-069",
+      "case": "FXT-LINEAGE-MIGRATION-069",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop27 compute evidence boundary"
+      ],
+      "actual_rejection": "loop27 compute evidence boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3624
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-070",
+      "case": "FXT-LINEAGE-MIGRATION-070",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop27 risk oracle and CI boundary"
+      ],
+      "actual_rejection": "loop27 risk oracle and CI boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3606
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-071",
+      "case": "FXT-LINEAGE-MIGRATION-071",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop27 risk oracle and CI boundary"
+      ],
+      "actual_rejection": "loop27 risk oracle and CI boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3824
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-072",
+      "case": "FXT-LINEAGE-MIGRATION-072",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 prior support and LogN contract"
+      ],
+      "actual_rejection": "loop21 prior support and LogN contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4573
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-073",
+      "case": "FXT-LINEAGE-MIGRATION-073",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 prior support and LogN contract"
+      ],
+      "actual_rejection": "loop21 prior support and LogN contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3800
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-074",
+      "case": "FXT-LINEAGE-MIGRATION-074",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 reproducible calibration contract"
+      ],
+      "actual_rejection": "loop21 reproducible calibration contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3764
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-075",
+      "case": "FXT-LINEAGE-MIGRATION-075",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 reproducible calibration contract"
+      ],
+      "actual_rejection": "loop21 reproducible calibration contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4323
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-076",
+      "case": "FXT-LINEAGE-MIGRATION-076",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 reproducible calibration contract"
+      ],
+      "actual_rejection": "loop21 reproducible calibration contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4435
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-077",
+      "case": "FXT-LINEAGE-MIGRATION-077",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 depth modeling domain"
+      ],
+      "actual_rejection": "loop21 depth modeling domain",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4373
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T20:20:05.4304576Z",
+  "output_sha256": "5175c12aeb50582f228bf7f2f1f9d7824243a9f7687f519419e6197cbad66daa",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

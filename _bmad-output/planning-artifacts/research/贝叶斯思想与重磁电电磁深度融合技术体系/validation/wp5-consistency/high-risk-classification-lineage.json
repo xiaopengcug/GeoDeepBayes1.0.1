@@ -50,6 +50,51 @@
         "a11-borehole-observation",
         "a13-curie-source-contract"
       ]
+    },
+    "loop31": {
+      "path": "high-risk-classification.loop31-anchor.json",
+      "sha256": "f9fd4eab64ef02e77c2290bb6bf17b8ee898f311a0540806ef173f04506d8e3b",
+      "rule_ids": [
+        "pod",
+        "calibration",
+        "depth",
+        "resource",
+        "c02-gn-hessian",
+        "c03-rjmcmc-interface",
+        "a3-pod-hardware-boundary",
+        "a11-borehole-observation",
+        "a13-curie-source-contract"
+      ]
+    },
+    "loop32": {
+      "path": "high-risk-classification.loop32-anchor.json",
+      "sha256": "f9fd4eab64ef02e77c2290bb6bf17b8ee898f311a0540806ef173f04506d8e3b",
+      "rule_ids": [
+        "pod",
+        "calibration",
+        "depth",
+        "resource",
+        "c02-gn-hessian",
+        "c03-rjmcmc-interface",
+        "a3-pod-hardware-boundary",
+        "a11-borehole-observation",
+        "a13-curie-source-contract"
+      ]
+    },
+    "loop33": {
+      "path": "high-risk-classification.loop33-anchor.json",
+      "sha256": "f9fd4eab64ef02e77c2290bb6bf17b8ee898f311a0540806ef173f04506d8e3b",
+      "rule_ids": [
+        "pod",
+        "calibration",
+        "depth",
+        "resource",
+        "c02-gn-hessian",
+        "c03-rjmcmc-interface",
+        "a3-pod-hardware-boundary",
+        "a11-borehole-observation",
+        "a13-curie-source-contract"
+      ]
     }
   }
 }

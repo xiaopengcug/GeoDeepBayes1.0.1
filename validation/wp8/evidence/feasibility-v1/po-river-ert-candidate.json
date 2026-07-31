@@ -1,0 +1,51 @@
+{
+  "schema_version": "wp8-po-river-ert-candidate-v1",
+  "doi": "10.5281/zenodo.18183049",
+  "archive_path": "validation/wp8/data/po-river-ert-v1/Electrical_Tomography_Data.7z",
+  "archive_bytes": 2331221,
+  "archive_sha256": "d7257a1d24a3f52e0f807739f1b23e975bbb32561091abf9cb87b5b412051891",
+  "raw_manifest_sha256": "5b733e39b78c5eadcd6ffac42153defa8079d3701fd95df5b705f6b2e9ad7db8",
+  "source_record_sha256": "01bc24cfaffdce0fe563980e7390e080a09c67fde90b7fc29e9ced484b7c9718",
+  "observation_values_parsed": false,
+  "response_header": [
+    "meas_num",
+    "A",
+    "B",
+    "M",
+    "N",
+    "Rho(Ohm*m)",
+    "St.Dev.(%)",
+    "Self_potential_MN(mV)",
+    "V_MN(mV) ",
+    "I_AB(mA)",
+    "datatype(WennerShlumberger;DipoleDipole;Gapfiller)"
+  ],
+  "electrode_position_rows": 6734,
+  "station_count": 518,
+  "median_station_step_m": 7.726789945153289,
+  "electric_streamer_footprint_m": 48.0,
+  "maximum_nonoverlapping_footprint_units": 75,
+  "required_wp8_test_clusters": 223,
+  "can_meet_cluster_gate_before_correlation_adjustment": false,
+  "contract_fields": {
+    "ABMN": true,
+    "apparent_resistivity": true,
+    "standard_deviation_percent": true,
+    "primary_voltage": true,
+    "injected_current": true,
+    "array_type": true,
+    "electrode_xy": true,
+    "crs": true,
+    "license": true
+  },
+  "contract_header_and_metadata_complete_except_topographic_elevation": true,
+  "missing": [
+    "per-electrode elevation/topography is in the separate 1.36-GB QGIS archive",
+    "correlation-adjusted independent clusters",
+    "training-only paired-CRPS effect size"
+  ],
+  "rejection": "518 stations are spaced about 8 m but each acquisition reuses a 48-m streamer footprint; the absolute non-overlap upper bound is below 223 before any response-correlation merging, so this release cannot close the preregistered DC cluster gate by itself",
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

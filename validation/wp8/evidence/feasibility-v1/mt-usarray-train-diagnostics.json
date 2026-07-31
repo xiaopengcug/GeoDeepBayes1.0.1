@@ -1,0 +1,3637 @@
+{
+  "schema_version": "wp8-mt-training-diagnostics-v1",
+  "raw_manifest_sha256": "84278b3a0218dd5c6a1c11201e32a465a1f4be8981ae3bc55faf2b85cb8bf736",
+  "split_manifest_sha256": "c0fb453590be073ced998fff6598887c12f89ddc66ca9fd1140b61ba87dbcc99",
+  "training_members_interpreted": 361,
+  "calibration_members_interpreted": 0,
+  "test_members_interpreted": 0,
+  "adapter_contract_checks": 37,
+  "correlation_length_coordinate_degrees": 6.1738497815353215,
+  "dimensionality_counts": {
+    "1d": 0,
+    "2d": 25,
+    "3d": 336
+  },
+  "dimensionality_gate": {
+    "status": "passed",
+    "selected_solver_dimension": "3d",
+    "reason": "training-only diagnostics contain stations classified 3d; fail-closed upgrade is mandatory"
+  },
+  "covariance_contract": {
+    "status": "passed_with_format_limitation",
+    "provided": "EDI Z*.VAR diagonal real-stack covariance",
+    "missing": "cross-component covariance is unavailable in EDI"
+  },
+  "station_results": [
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 53.13171940226717,
+      "max_phase_tensor_ellipticity": 0.9400458198290018,
+      "max_tipper_amplitude": 0.5902099207246011,
+      "training_scalar_log10_abs_zxy": -0.16642176622170562,
+      "spud_id": "22022230",
+      "product_id": "USArray.COP21.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 78.61732961877176,
+      "max_phase_tensor_ellipticity": 0.9995889630749882,
+      "max_tipper_amplitude": 0.6432514584648196,
+      "training_scalar_log10_abs_zxy": -0.3873123380552599,
+      "spud_id": "22022008",
+      "product_id": "USArray.UTQ16.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.42941674138499,
+      "max_phase_tensor_ellipticity": 0.700263249779958,
+      "max_tipper_amplitude": 0.6376661844869177,
+      "training_scalar_log10_abs_zxy": 0.008154060563068109,
+      "spud_id": "22021786",
+      "product_id": "USArray.NVQ07.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 58.44363445717058,
+      "max_phase_tensor_ellipticity": 0.8980717262303652,
+      "max_tipper_amplitude": 0.4231366705975286,
+      "training_scalar_log10_abs_zxy": -0.5921480513419144,
+      "spud_id": "22021564",
+      "product_id": "USArray.NVP12.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.288225459223492,
+      "max_phase_tensor_ellipticity": 0.5570284941840123,
+      "max_tipper_amplitude": 0.3357962455638091,
+      "training_scalar_log10_abs_zxy": -0.9291477625044996,
+      "spud_id": "22021342",
+      "product_id": "USArray.UTN14.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.294241470100046,
+      "max_phase_tensor_ellipticity": 0.6327374525320767,
+      "max_tipper_amplitude": 0.359037672188219,
+      "training_scalar_log10_abs_zxy": -0.3830167046505632,
+      "spud_id": "22021120",
+      "product_id": "USArray.NVN11.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 28.04079109170794,
+      "max_phase_tensor_ellipticity": 0.898886235829648,
+      "max_tipper_amplitude": 1.436784417121194,
+      "training_scalar_log10_abs_zxy": -0.43870564239305065,
+      "spud_id": "22020863",
+      "product_id": "USArray.NVO09.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.548833021351834,
+      "max_phase_tensor_ellipticity": 0.5219176146714105,
+      "max_tipper_amplitude": 0.525313916401211,
+      "training_scalar_log10_abs_zxy": -0.21460634920616278,
+      "spud_id": "22020641",
+      "product_id": "USArray.CAM04.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 48.78618173298071,
+      "max_phase_tensor_ellipticity": 0.469697659365375,
+      "max_tipper_amplitude": 0.41500928832405864,
+      "training_scalar_log10_abs_zxy": -0.42950151090264815,
+      "spud_id": "22020308",
+      "product_id": "USArray.REM11.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 62.5871919038085,
+      "max_phase_tensor_ellipticity": 0.8954133791899516,
+      "max_tipper_amplitude": 0.48016686964134603,
+      "training_scalar_log10_abs_zxy": -1.2214363645504591,
+      "spud_id": "21969199",
+      "product_id": "USArray.REN03.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 25.62440243427189,
+      "max_phase_tensor_ellipticity": 0.8766971378819044,
+      "max_tipper_amplitude": 0.655391229258826,
+      "training_scalar_log10_abs_zxy": -0.16343916562997982,
+      "spud_id": "17343392",
+      "product_id": "USArray.WYM24.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 54.90726302006353,
+      "max_phase_tensor_ellipticity": 0.9098709124934148,
+      "max_tipper_amplitude": 0.8481131709854293,
+      "training_scalar_log10_abs_zxy": -0.4360124399619021,
+      "spud_id": "17343170",
+      "product_id": "USArray.WYM23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 58.49175854527295,
+      "max_phase_tensor_ellipticity": 0.7982443005044504,
+      "max_tipper_amplitude": 0.46199883805356284,
+      "training_scalar_log10_abs_zxy": -0.6222795484719896,
+      "spud_id": "17342948",
+      "product_id": "USArray.WYM22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 23.14151513437694,
+      "max_phase_tensor_ellipticity": 0.4179338980227053,
+      "max_tipper_amplitude": 0.46472724636031454,
+      "training_scalar_log10_abs_zxy": 0.475164532088318,
+      "spud_id": "17342504",
+      "product_id": "USArray.WYL23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 55.65491121746412,
+      "max_phase_tensor_ellipticity": 0.9726927142168048,
+      "max_tipper_amplitude": 0.7172705035632233,
+      "training_scalar_log10_abs_zxy": 1.2812232878371308,
+      "spud_id": "17342282",
+      "product_id": "USArray.WYL22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 86.86083757101703,
+      "max_phase_tensor_ellipticity": 0.9882196478234878,
+      "max_tipper_amplitude": 1.1780965333337399,
+      "training_scalar_log10_abs_zxy": 0.11393459818383248,
+      "spud_id": "17341838",
+      "product_id": "USArray.WYK23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 22.57159094504119,
+      "max_phase_tensor_ellipticity": 0.49587940491413135,
+      "max_tipper_amplitude": 1.3905444652386763,
+      "training_scalar_log10_abs_zxy": 0.5370897956626813,
+      "spud_id": "17341616",
+      "product_id": "USArray.WYK22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.806808337836666,
+      "max_phase_tensor_ellipticity": 0.5287165917473353,
+      "max_tipper_amplitude": 0.4630351998968761,
+      "training_scalar_log10_abs_zxy": 0.042203285008424525,
+      "spud_id": "17341172",
+      "product_id": "USArray.WYJ23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.350997279560083,
+      "max_phase_tensor_ellipticity": 0.7684708261968449,
+      "max_tipper_amplitude": 0.5394276631079774,
+      "training_scalar_log10_abs_zxy": 0.373964642737666,
+      "spud_id": "17340950",
+      "product_id": "USArray.WYJ22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 40.028337304967806,
+      "max_phase_tensor_ellipticity": 0.5883769977286379,
+      "max_tipper_amplitude": 0.3176446576682805,
+      "training_scalar_log10_abs_zxy": 0.0811765295264399,
+      "spud_id": "17340506",
+      "product_id": "USArray.WYI23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 24.53831975634247,
+      "max_phase_tensor_ellipticity": 0.7794257254872933,
+      "max_tipper_amplitude": 0.34900754690447944,
+      "training_scalar_log10_abs_zxy": 0.1821341146342286,
+      "spud_id": "17340284",
+      "product_id": "USArray.WYI22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.57622715752465,
+      "max_phase_tensor_ellipticity": 0.4437132725224633,
+      "max_tipper_amplitude": 0.4515443549750899,
+      "training_scalar_log10_abs_zxy": 0.15197490819178794,
+      "spud_id": "17339840",
+      "product_id": "USArray.WYH23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 88.10259630701364,
+      "max_phase_tensor_ellipticity": 0.8462028335671195,
+      "max_tipper_amplitude": 0.3690513906592278,
+      "training_scalar_log10_abs_zxy": 0.05459817089742722,
+      "spud_id": "17339618",
+      "product_id": "USArray.WYH22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 73.10603077554133,
+      "max_phase_tensor_ellipticity": 0.9977154011864078,
+      "max_tipper_amplitude": 0.5772546057970054,
+      "training_scalar_log10_abs_zxy": 0.017785862771721013,
+      "spud_id": "17325868",
+      "product_id": "USArray.MTG23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.762998661707353,
+      "max_phase_tensor_ellipticity": 0.23225570878784607,
+      "max_tipper_amplitude": 0.3788395692973189,
+      "training_scalar_log10_abs_zxy": 0.12668937157339094,
+      "spud_id": "17325646",
+      "product_id": "USArray.MTG22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 57.932854884148284,
+      "max_phase_tensor_ellipticity": 0.8825733871021471,
+      "max_tipper_amplitude": 0.6314275758600668,
+      "training_scalar_log10_abs_zxy": -0.0021355197912147038,
+      "spud_id": "17325424",
+      "product_id": "USArray.MTF23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.693469542517958,
+      "max_phase_tensor_ellipticity": 0.9677421002245388,
+      "max_tipper_amplitude": 0.42288701683554913,
+      "training_scalar_log10_abs_zxy": 0.07795015450150572,
+      "spud_id": "17325202",
+      "product_id": "USArray.MTF22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.342725405834871,
+      "max_phase_tensor_ellipticity": 0.35745348290381956,
+      "max_tipper_amplitude": 0.5080938535031075,
+      "training_scalar_log10_abs_zxy": -0.00910382381461983,
+      "spud_id": "17324758",
+      "product_id": "USArray.MTE23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.461065924483556,
+      "max_phase_tensor_ellipticity": 0.6094102155461256,
+      "max_tipper_amplitude": 0.6633908146244206,
+      "training_scalar_log10_abs_zxy": 0.03606072400375017,
+      "spud_id": "17324536",
+      "product_id": "USArray.MTE22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 27.654128540768408,
+      "max_phase_tensor_ellipticity": 0.3943324321924368,
+      "max_tipper_amplitude": 0.8619147719494834,
+      "training_scalar_log10_abs_zxy": -0.14238533292157482,
+      "spud_id": "17324092",
+      "product_id": "USArray.MTD23.2018"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.721539840662387,
+      "max_phase_tensor_ellipticity": 0.5966595940910527,
+      "max_tipper_amplitude": 0.2746227116160301,
+      "training_scalar_log10_abs_zxy": -0.13716237934032124,
+      "spud_id": "17323870",
+      "product_id": "USArray.MTD22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.141688733004809,
+      "max_phase_tensor_ellipticity": 0.8816341124932188,
+      "max_tipper_amplitude": 0.5617613176449374,
+      "training_scalar_log10_abs_zxy": -0.28232249271845,
+      "spud_id": "17323426",
+      "product_id": "USArray.MTC23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 73.5728601433907,
+      "max_phase_tensor_ellipticity": 0.9929424080062837,
+      "max_tipper_amplitude": 0.3434683615054658,
+      "training_scalar_log10_abs_zxy": -0.10218624496732322,
+      "spud_id": "17323204",
+      "product_id": "USArray.MTC22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 38.225035963891976,
+      "max_phase_tensor_ellipticity": 0.823289072463998,
+      "max_tipper_amplitude": 0.8078295023777187,
+      "training_scalar_log10_abs_zxy": -0.21456277439585075,
+      "spud_id": "17322760",
+      "product_id": "USArray.MTB23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 25.06283550937361,
+      "max_phase_tensor_ellipticity": 0.7436457366543066,
+      "max_tipper_amplitude": 0.7703367815278533,
+      "training_scalar_log10_abs_zxy": -0.06172952018786015,
+      "spud_id": "17322538",
+      "product_id": "USArray.MTB22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 39.441474994352724,
+      "max_phase_tensor_ellipticity": 0.7149645595225989,
+      "max_tipper_amplitude": 0.38575169998539055,
+      "training_scalar_log10_abs_zxy": -0.10212747660780855,
+      "spud_id": "17320318",
+      "product_id": "USArray.COQ24.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 28.803545316468696,
+      "max_phase_tensor_ellipticity": 0.7493971271773461,
+      "max_tipper_amplitude": 0.282416717701125,
+      "training_scalar_log10_abs_zxy": -0.002721368540754849,
+      "spud_id": "17320096",
+      "product_id": "USArray.COQ23.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.253878148232957,
+      "max_phase_tensor_ellipticity": 0.7342053798522553,
+      "max_tipper_amplitude": 0.9411072024740007,
+      "training_scalar_log10_abs_zxy": 0.6625071406275058,
+      "spud_id": "17319208",
+      "product_id": "USArray.COP24.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.887629961090843,
+      "max_phase_tensor_ellipticity": 0.31635333359305723,
+      "max_tipper_amplitude": 0.38022077303141866,
+      "training_scalar_log10_abs_zxy": 0.0115160979963597,
+      "spud_id": "17318986",
+      "product_id": "USArray.COP22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.20235355172589,
+      "max_phase_tensor_ellipticity": 0.5727820204590989,
+      "max_tipper_amplitude": 1.1189126250188215,
+      "training_scalar_log10_abs_zxy": 0.09021013811899765,
+      "spud_id": "17318098",
+      "product_id": "USArray.COO24.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.494832792848628,
+      "max_phase_tensor_ellipticity": 0.5351388738548899,
+      "max_tipper_amplitude": 0.5036632815404669,
+      "training_scalar_log10_abs_zxy": -0.1232138318825941,
+      "spud_id": "17317876",
+      "product_id": "USArray.COO22.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.401052675315848,
+      "max_phase_tensor_ellipticity": 0.8447754266853849,
+      "max_tipper_amplitude": 1.006446262377248,
+      "training_scalar_log10_abs_zxy": 0.16107176608004783,
+      "spud_id": "17316988",
+      "product_id": "USArray.CON24.2018"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 24.499788531751218,
+      "max_phase_tensor_ellipticity": 0.6933781659508703,
+      "max_tipper_amplitude": 0.8144352870225122,
+      "training_scalar_log10_abs_zxy": 0.2030677560048535,
+      "spud_id": "14935873",
+      "product_id": "USArray.WYM21.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.310788131237638,
+      "max_phase_tensor_ellipticity": 0.38740971555567083,
+      "max_tipper_amplitude": 0.42055013090197696,
+      "training_scalar_log10_abs_zxy": 0.01600274374765007,
+      "spud_id": "14935651",
+      "product_id": "USArray.WYM20.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.682721592013658,
+      "max_phase_tensor_ellipticity": 0.5542365201239215,
+      "max_tipper_amplitude": 0.2848428070688268,
+      "training_scalar_log10_abs_zxy": 0.07661400774023847,
+      "spud_id": "14935429",
+      "product_id": "USArray.WYM19.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.311044401991758,
+      "max_phase_tensor_ellipticity": 0.4708734465467231,
+      "max_tipper_amplitude": 0.38584440341725745,
+      "training_scalar_log10_abs_zxy": -0.17675117427291392,
+      "spud_id": "14935207",
+      "product_id": "USArray.WYM18.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.624950325996288,
+      "max_phase_tensor_ellipticity": 0.6452813586382365,
+      "max_tipper_amplitude": 0.33663242652310804,
+      "training_scalar_log10_abs_zxy": -0.5418933283386222,
+      "spud_id": "14934985",
+      "product_id": "USArray.WYM17.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.68880555383001,
+      "max_phase_tensor_ellipticity": 0.74166977934959,
+      "max_tipper_amplitude": 1.3723493547241423,
+      "training_scalar_log10_abs_zxy": 0.7685659927863056,
+      "spud_id": "14932543",
+      "product_id": "USArray.UTQ19.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 52.43479145913923,
+      "max_phase_tensor_ellipticity": 0.9720931986805239,
+      "max_tipper_amplitude": 0.35854236025528163,
+      "training_scalar_log10_abs_zxy": 0.12813611273581077,
+      "spud_id": "14932321",
+      "product_id": "USArray.UTQ18.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.94772480050932,
+      "max_phase_tensor_ellipticity": 0.23404314109986435,
+      "max_tipper_amplitude": 0.6538171451540319,
+      "training_scalar_log10_abs_zxy": 0.3101076970269046,
+      "spud_id": "14932099",
+      "product_id": "USArray.UTQ17.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.322883367937237,
+      "max_phase_tensor_ellipticity": 0.323030536071961,
+      "max_tipper_amplitude": 0.3754081197668576,
+      "training_scalar_log10_abs_zxy": -0.7056250136314262,
+      "spud_id": "14931655",
+      "product_id": "USArray.UTQ15.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.830296889215086,
+      "max_phase_tensor_ellipticity": 0.46611116022144783,
+      "max_tipper_amplitude": 0.7160829416795946,
+      "training_scalar_log10_abs_zxy": -0.6714609667250168,
+      "spud_id": "14931433",
+      "product_id": "USArray.UTQ14.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.875595934413813,
+      "max_phase_tensor_ellipticity": 0.6484786609792582,
+      "max_tipper_amplitude": 0.35771914346454814,
+      "training_scalar_log10_abs_zxy": 0.2930428921866939,
+      "spud_id": "14931211",
+      "product_id": "USArray.UTQ13.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 47.12466393175866,
+      "max_phase_tensor_ellipticity": 0.997282220165505,
+      "max_tipper_amplitude": 1.1964384744075975,
+      "training_scalar_log10_abs_zxy": 0.24616036340521202,
+      "spud_id": "14930989",
+      "product_id": "USArray.UTP19.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 39.76118958319315,
+      "max_phase_tensor_ellipticity": 0.7221431415104027,
+      "max_tipper_amplitude": 0.436909301816281,
+      "training_scalar_log10_abs_zxy": -0.05038253047686316,
+      "spud_id": "14930767",
+      "product_id": "USArray.UTP18.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.862139586673578,
+      "max_phase_tensor_ellipticity": 0.560873817381961,
+      "max_tipper_amplitude": 0.3734099916634511,
+      "training_scalar_log10_abs_zxy": -0.11375551472490866,
+      "spud_id": "14930545",
+      "product_id": "USArray.UTP17.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.476753030823886,
+      "max_phase_tensor_ellipticity": 0.6840468882699107,
+      "max_tipper_amplitude": 0.6866120434529969,
+      "training_scalar_log10_abs_zxy": -0.06719218530544037,
+      "spud_id": "14930323",
+      "product_id": "USArray.UTP16.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 29.119876384960815,
+      "max_phase_tensor_ellipticity": 0.864196871486612,
+      "max_tipper_amplitude": 0.22875830508460235,
+      "training_scalar_log10_abs_zxy": -0.5884513243154248,
+      "spud_id": "14930101",
+      "product_id": "USArray.UTP15.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 34.31960174074932,
+      "max_phase_tensor_ellipticity": 0.87161873121026,
+      "max_tipper_amplitude": 0.2603635737826394,
+      "training_scalar_log10_abs_zxy": -0.21868133163586342,
+      "spud_id": "14929879",
+      "product_id": "USArray.UTP14.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.286544185337895,
+      "max_phase_tensor_ellipticity": 0.4321128572134918,
+      "max_tipper_amplitude": 0.44971866223418366,
+      "training_scalar_log10_abs_zxy": 0.15745630239372202,
+      "spud_id": "14929657",
+      "product_id": "USArray.UTP13.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 71.50711761873303,
+      "max_phase_tensor_ellipticity": 0.9776279786562261,
+      "max_tipper_amplitude": 0.2767055782247723,
+      "training_scalar_log10_abs_zxy": -0.36965945670795075,
+      "spud_id": "14929435",
+      "product_id": "USArray.UTO19.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 46.192786196812065,
+      "max_phase_tensor_ellipticity": 0.6651972357438057,
+      "max_tipper_amplitude": 0.33195618174503183,
+      "training_scalar_log10_abs_zxy": -0.42837037443322457,
+      "spud_id": "14929213",
+      "product_id": "USArray.UTO18.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 43.6869522427384,
+      "max_phase_tensor_ellipticity": 0.6057762921791048,
+      "max_tipper_amplitude": 0.3222188033576776,
+      "training_scalar_log10_abs_zxy": -0.2859062021161747,
+      "spud_id": "14928769",
+      "product_id": "USArray.UTO17.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 28,
+      "max_abs_phase_tensor_skew_deg": 85.39487940256329,
+      "max_phase_tensor_ellipticity": 0.9586557698089604,
+      "max_tipper_amplitude": 0.6879750266599581,
+      "training_scalar_log10_abs_zxy": -0.15080422006739147,
+      "spud_id": "14928547",
+      "product_id": "USArray.UTO16.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.044583128960754,
+      "max_phase_tensor_ellipticity": 0.6971312355221823,
+      "max_tipper_amplitude": 0.39564973824208505,
+      "training_scalar_log10_abs_zxy": -0.45980253035403096,
+      "spud_id": "14928339",
+      "product_id": "USArray.UTO15.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.47126845208737,
+      "max_phase_tensor_ellipticity": 0.6282239785021332,
+      "max_tipper_amplitude": 0.5276990479684539,
+      "training_scalar_log10_abs_zxy": -0.47407836242796597,
+      "spud_id": "14928117",
+      "product_id": "USArray.UTO14.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.829125536953411,
+      "max_phase_tensor_ellipticity": 0.6619479091732895,
+      "max_tipper_amplitude": 0.35736627143868793,
+      "training_scalar_log10_abs_zxy": -0.35705225141747887,
+      "spud_id": "14927895",
+      "product_id": "USArray.UTO13.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 34.340359176668215,
+      "max_phase_tensor_ellipticity": 0.8683566139028344,
+      "max_tipper_amplitude": 0.6077570299504729,
+      "training_scalar_log10_abs_zxy": 0.610328112642675,
+      "spud_id": "14927673",
+      "product_id": "USArray.UTN19.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 16.23602904305466,
+      "max_phase_tensor_ellipticity": 0.48993359289167865,
+      "max_tipper_amplitude": 0.5468908531393175,
+      "training_scalar_log10_abs_zxy": -1.3554852344498984,
+      "spud_id": "14927451",
+      "product_id": "USArray.UTN18.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 54.68120842284905,
+      "max_phase_tensor_ellipticity": 0.5730620131041404,
+      "max_tipper_amplitude": 0.5807291600896756,
+      "training_scalar_log10_abs_zxy": -0.3912832328629417,
+      "spud_id": "14927229",
+      "product_id": "USArray.UTN17.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 52.29465928706899,
+      "max_phase_tensor_ellipticity": 0.55143673820351,
+      "max_tipper_amplitude": 1.7635616273331518,
+      "training_scalar_log10_abs_zxy": 0.13637015220835974,
+      "spud_id": "14927007",
+      "product_id": "USArray.UTN16.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 21.569811415598416,
+      "max_phase_tensor_ellipticity": 0.8108272801251842,
+      "max_tipper_amplitude": 0.642124778661453,
+      "training_scalar_log10_abs_zxy": -0.5698389842928457,
+      "spud_id": "14926563",
+      "product_id": "USArray.UTN15.2011"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.409984241094201,
+      "max_phase_tensor_ellipticity": 0.29981011275224845,
+      "max_tipper_amplitude": 0.27401460174135506,
+      "training_scalar_log10_abs_zxy": -0.2697554124778147,
+      "spud_id": "14926119",
+      "product_id": "USArray.UTN13.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.059373167616828,
+      "max_phase_tensor_ellipticity": 0.6289017095517244,
+      "max_tipper_amplitude": 0.47300589659459763,
+      "training_scalar_log10_abs_zxy": -0.6019826970964762,
+      "spud_id": "14925897",
+      "product_id": "USArray.UTM16.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 59.9896729182393,
+      "max_phase_tensor_ellipticity": 0.9550327892464313,
+      "max_tipper_amplitude": 0.3787081203518483,
+      "training_scalar_log10_abs_zxy": -0.303930530984065,
+      "spud_id": "14925675",
+      "product_id": "USArray.UTM15.2011"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.061242416776772,
+      "max_phase_tensor_ellipticity": 0.6099860434753246,
+      "max_tipper_amplitude": 0.2382475281790256,
+      "training_scalar_log10_abs_zxy": -0.44313501407975786,
+      "spud_id": "14925453",
+      "product_id": "USArray.UTM14.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.376787568576413,
+      "max_phase_tensor_ellipticity": 0.8152921913493668,
+      "max_tipper_amplitude": 0.44125986209042506,
+      "training_scalar_log10_abs_zxy": 0.0305502968232376,
+      "spud_id": "14925231",
+      "product_id": "USArray.NVQ12.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 16.212851494243978,
+      "max_phase_tensor_ellipticity": 0.47913485938826234,
+      "max_tipper_amplitude": 0.4091310275025105,
+      "training_scalar_log10_abs_zxy": 0.014565098276848557,
+      "spud_id": "14925009",
+      "product_id": "USArray.NVQ11.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.784659479156138,
+      "max_phase_tensor_ellipticity": 0.49106993403926835,
+      "max_tipper_amplitude": 0.3053750486457006,
+      "training_scalar_log10_abs_zxy": -0.26641900333062823,
+      "spud_id": "14924787",
+      "product_id": "USArray.NVQ10.2011"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 3.0383863504758346,
+      "max_phase_tensor_ellipticity": 0.5168680420576665,
+      "max_tipper_amplitude": 0.262071265300865,
+      "training_scalar_log10_abs_zxy": -0.25057699635136466,
+      "spud_id": "14924121",
+      "product_id": "USArray.NVP11.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.299058729848738,
+      "max_phase_tensor_ellipticity": 0.8682790736310882,
+      "max_tipper_amplitude": 0.6867964510419153,
+      "training_scalar_log10_abs_zxy": -0.6226411787145854,
+      "spud_id": "14923899",
+      "product_id": "USArray.NVP08.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.414630836578164,
+      "max_phase_tensor_ellipticity": 0.5191566516936101,
+      "max_tipper_amplitude": 0.46208354324467127,
+      "training_scalar_log10_abs_zxy": -0.1670969073196839,
+      "spud_id": "14923677",
+      "product_id": "USArray.NVP06.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 81.66030175679606,
+      "max_phase_tensor_ellipticity": 0.9811460611387366,
+      "max_tipper_amplitude": 0.3735095694366511,
+      "training_scalar_log10_abs_zxy": -0.2821013986214068,
+      "spud_id": "14923455",
+      "product_id": "USArray.NVO12.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 75.92442911381616,
+      "max_phase_tensor_ellipticity": 0.7394134926784843,
+      "max_tipper_amplitude": 0.37681206417821844,
+      "training_scalar_log10_abs_zxy": -0.66307086576107,
+      "spud_id": "14923011",
+      "product_id": "USArray.NVN09.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.87479295221989,
+      "max_phase_tensor_ellipticity": 0.4038512054418543,
+      "max_tipper_amplitude": 0.32068737492107807,
+      "training_scalar_log10_abs_zxy": 0.1510975566168163,
+      "spud_id": "14922789",
+      "product_id": "USArray.NVN07.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.754885190168036,
+      "max_phase_tensor_ellipticity": 0.4442006400804039,
+      "max_tipper_amplitude": 0.4847344492117849,
+      "training_scalar_log10_abs_zxy": -0.0056927821255708215,
+      "spud_id": "14922345",
+      "product_id": "USArray.NVM07.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 39.91287424013126,
+      "max_phase_tensor_ellipticity": 0.8279270315240392,
+      "max_tipper_amplitude": 0.4229564789265464,
+      "training_scalar_log10_abs_zxy": -0.44999375434778854,
+      "spud_id": "14918807",
+      "product_id": "USArray.COQ21.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 16.956792918084158,
+      "max_phase_tensor_ellipticity": 0.7252221104703683,
+      "max_tipper_amplitude": 0.45381721306455586,
+      "training_scalar_log10_abs_zxy": -0.05893793552144627,
+      "spud_id": "14918585",
+      "product_id": "USArray.COQ20.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 49.065964757466126,
+      "max_phase_tensor_ellipticity": 0.9951207277580543,
+      "max_tipper_amplitude": 0.5748737686719743,
+      "training_scalar_log10_abs_zxy": -0.7172164446630317,
+      "spud_id": "14917919",
+      "product_id": "USArray.COP20.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.275027424937894,
+      "max_phase_tensor_ellipticity": 0.24887586245152601,
+      "max_tipper_amplitude": 0.3608449591002966,
+      "training_scalar_log10_abs_zxy": 0.11774513587761709,
+      "spud_id": "14917697",
+      "product_id": "USArray.COO21.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 78.90643051441002,
+      "max_phase_tensor_ellipticity": 0.9521951647073521,
+      "max_tipper_amplitude": 0.3488754838880068,
+      "training_scalar_log10_abs_zxy": 0.028318423668655654,
+      "spud_id": "14917475",
+      "product_id": "USArray.COO20.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.10323890166944,
+      "max_phase_tensor_ellipticity": 0.6645155328102406,
+      "max_tipper_amplitude": 0.4595718366775536,
+      "training_scalar_log10_abs_zxy": -0.16579820608416243,
+      "spud_id": "14917031",
+      "product_id": "USArray.CON21.2011"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.716192703927996,
+      "max_phase_tensor_ellipticity": 0.8425259537656093,
+      "max_tipper_amplitude": 0.29624793180285286,
+      "training_scalar_log10_abs_zxy": -0.0011962428288759784,
+      "spud_id": "14916809",
+      "product_id": "USArray.CON20.2011"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 45.172066802505434,
+      "max_phase_tensor_ellipticity": 0.9672701530770108,
+      "max_tipper_amplitude": 0.9574160289244847,
+      "training_scalar_log10_abs_zxy": 0.15742193578286884,
+      "spud_id": "14916365",
+      "product_id": "USArray.NVQ09.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 51.94253624213852,
+      "max_phase_tensor_ellipticity": 0.9711007096458486,
+      "max_tipper_amplitude": 0.37240700152919537,
+      "training_scalar_log10_abs_zxy": -0.2804688626853953,
+      "spud_id": "14916143",
+      "product_id": "USArray.NVQ08.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 72.88402682946347,
+      "max_phase_tensor_ellipticity": 0.8801946579051431,
+      "max_tipper_amplitude": 1.0591703756874622,
+      "training_scalar_log10_abs_zxy": 0.11085989829718931,
+      "spud_id": "14915921",
+      "product_id": "USArray.NVP10.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 70.51289250784448,
+      "max_phase_tensor_ellipticity": 0.9849716194175605,
+      "max_tipper_amplitude": 0.6956525906884172,
+      "training_scalar_log10_abs_zxy": -0.3303713214788093,
+      "spud_id": "14915699",
+      "product_id": "USArray.NVP09.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.588371947729072,
+      "max_phase_tensor_ellipticity": 0.6314635419465905,
+      "max_tipper_amplitude": 2.502829777306395,
+      "training_scalar_log10_abs_zxy": -0.5129484315355317,
+      "spud_id": "14915477",
+      "product_id": "USArray.NVP07.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.023335680135751,
+      "max_phase_tensor_ellipticity": 0.4107846653372348,
+      "max_tipper_amplitude": 0.3927740602317439,
+      "training_scalar_log10_abs_zxy": -0.13251431049965934,
+      "spud_id": "14915255",
+      "product_id": "USArray.NVO11.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 22.830252326387754,
+      "max_phase_tensor_ellipticity": 0.601534937402544,
+      "max_tipper_amplitude": 0.8363870390076413,
+      "training_scalar_log10_abs_zxy": -0.22270552438783836,
+      "spud_id": "14915033",
+      "product_id": "USArray.NVO10.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 43.32986503107,
+      "max_phase_tensor_ellipticity": 0.9532692443796773,
+      "max_tipper_amplitude": 0.7792414563001075,
+      "training_scalar_log10_abs_zxy": -0.22280819918455316,
+      "spud_id": "14914589",
+      "product_id": "USArray.NVO08.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.65160989130325,
+      "max_phase_tensor_ellipticity": 0.5665587159230576,
+      "max_tipper_amplitude": 0.41875734894469013,
+      "training_scalar_log10_abs_zxy": -0.37106249149933834,
+      "spud_id": "14914367",
+      "product_id": "USArray.NVO07.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.668315222181684,
+      "max_phase_tensor_ellipticity": 0.8557499557493087,
+      "max_tipper_amplitude": 0.588687592816175,
+      "training_scalar_log10_abs_zxy": -0.3456996724873168,
+      "spud_id": "14914145",
+      "product_id": "USArray.NVN12.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 79.24018832131755,
+      "max_phase_tensor_ellipticity": 0.9677110507018608,
+      "max_tipper_amplitude": 1.5121654813396748,
+      "training_scalar_log10_abs_zxy": -0.5005140019687542,
+      "spud_id": "14913923",
+      "product_id": "USArray.NVN10.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 41.48276904490979,
+      "max_phase_tensor_ellipticity": 0.8337173468440504,
+      "max_tipper_amplitude": 7.290674260723009,
+      "training_scalar_log10_abs_zxy": 0.47680918663936156,
+      "spud_id": "14913479",
+      "product_id": "USArray.NVN08.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 24.627289571896032,
+      "max_phase_tensor_ellipticity": 0.9562289505825592,
+      "max_tipper_amplitude": 0.661947774764697,
+      "training_scalar_log10_abs_zxy": 0.1750651849248303,
+      "spud_id": "14913035",
+      "product_id": "USArray.NVM13.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.100725991768044,
+      "max_phase_tensor_ellipticity": 0.8382841631977658,
+      "max_tipper_amplitude": 7.43197676737098,
+      "training_scalar_log10_abs_zxy": -0.2940560381098918,
+      "spud_id": "14912813",
+      "product_id": "USArray.NVM12.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 18.133538252675447,
+      "max_phase_tensor_ellipticity": 0.7538650896133584,
+      "max_tipper_amplitude": 0.459255268190992,
+      "training_scalar_log10_abs_zxy": -0.439392344376062,
+      "spud_id": "14912591",
+      "product_id": "USArray.NVM11.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.700525370453153,
+      "max_phase_tensor_ellipticity": 0.47845692073295726,
+      "max_tipper_amplitude": 0.4933431283537149,
+      "training_scalar_log10_abs_zxy": -0.10229569000704988,
+      "spud_id": "14912369",
+      "product_id": "USArray.NVM10.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 42.516455616959334,
+      "max_phase_tensor_ellipticity": 0.9373637416287883,
+      "max_tipper_amplitude": 0.8742709820642949,
+      "training_scalar_log10_abs_zxy": 0.03102970176329971,
+      "spud_id": "14912147",
+      "product_id": "USArray.NVM09.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 24.195403722875977,
+      "max_phase_tensor_ellipticity": 0.5348547958871014,
+      "max_tipper_amplitude": 0.5597549948497796,
+      "training_scalar_log10_abs_zxy": -0.4901501170442053,
+      "spud_id": "14911925",
+      "product_id": "USArray.NVM08.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 44.66645546439498,
+      "max_phase_tensor_ellipticity": 0.936634664285238,
+      "max_tipper_amplitude": 0.9138513460725383,
+      "training_scalar_log10_abs_zxy": -0.2592092432098957,
+      "spud_id": "14911481",
+      "product_id": "USArray.CAQ06.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 62.85492384152226,
+      "max_phase_tensor_ellipticity": 0.9709350229075734,
+      "max_tipper_amplitude": 0.507077243369738,
+      "training_scalar_log10_abs_zxy": -0.10136010609101745,
+      "spud_id": "14911259",
+      "product_id": "USArray.CAQ05.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 20.65321173469578,
+      "max_phase_tensor_ellipticity": 0.631421566476371,
+      "max_tipper_amplitude": 5.880035420534264,
+      "training_scalar_log10_abs_zxy": 0.07356068568095492,
+      "spud_id": "14911037",
+      "product_id": "USArray.CAQ04.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 32.60084551504428,
+      "max_phase_tensor_ellipticity": 0.9759573114178427,
+      "max_tipper_amplitude": 0.9089331839317123,
+      "training_scalar_log10_abs_zxy": -0.36524881868113246,
+      "spud_id": "14910815",
+      "product_id": "USArray.CAQ03.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.923749925402573,
+      "max_phase_tensor_ellipticity": 0.5764265340996136,
+      "max_tipper_amplitude": 0.6076254292370178,
+      "training_scalar_log10_abs_zxy": -0.23740200394382197,
+      "spud_id": "14910593",
+      "product_id": "USArray.CAQ02.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 78.02633693482579,
+      "max_phase_tensor_ellipticity": 0.9987582911443578,
+      "max_tipper_amplitude": 0.7962541659598427,
+      "training_scalar_log10_abs_zxy": -0.29177642137764104,
+      "spud_id": "14910371",
+      "product_id": "USArray.CAQ01.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 46.07622368452879,
+      "max_phase_tensor_ellipticity": 0.9553054101758357,
+      "max_tipper_amplitude": 1.0318244525135027,
+      "training_scalar_log10_abs_zxy": -0.18769446018239677,
+      "spud_id": "14910149",
+      "product_id": "USArray.CAP05.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 82.93567978753872,
+      "max_phase_tensor_ellipticity": 0.8444966906526962,
+      "max_tipper_amplitude": 0.5296046575211824,
+      "training_scalar_log10_abs_zxy": 0.22360122618553668,
+      "spud_id": "14909927",
+      "product_id": "USArray.CAP04.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.708969009306038,
+      "max_phase_tensor_ellipticity": 0.49548428708686537,
+      "max_tipper_amplitude": 0.5308846398204228,
+      "training_scalar_log10_abs_zxy": -0.15374432924676598,
+      "spud_id": "14909705",
+      "product_id": "USArray.CAP03.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.44566011276739,
+      "max_phase_tensor_ellipticity": 0.8580961759601717,
+      "max_tipper_amplitude": 0.5860764437366235,
+      "training_scalar_log10_abs_zxy": -0.1435923112440057,
+      "spud_id": "14909483",
+      "product_id": "USArray.CAP02.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.378054322615847,
+      "max_phase_tensor_ellipticity": 0.5391218991431885,
+      "max_tipper_amplitude": 0.7823396454478273,
+      "training_scalar_log10_abs_zxy": -0.1455489881682395,
+      "spud_id": "14909261",
+      "product_id": "USArray.CAP01.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 44.11546017957966,
+      "max_phase_tensor_ellipticity": 0.8363638068615126,
+      "max_tipper_amplitude": 6.890435995062285,
+      "training_scalar_log10_abs_zxy": -0.6591743126518861,
+      "spud_id": "14909039",
+      "product_id": "USArray.CAO06.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.708414435397258,
+      "max_phase_tensor_ellipticity": 0.34590671752351115,
+      "max_tipper_amplitude": 0.3805688307770677,
+      "training_scalar_log10_abs_zxy": 0.3076603844099393,
+      "spud_id": "14908817",
+      "product_id": "USArray.CAO05.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.385279115551798,
+      "max_phase_tensor_ellipticity": 0.5700905001225454,
+      "max_tipper_amplitude": 0.403100886936623,
+      "training_scalar_log10_abs_zxy": 0.27255479184571546,
+      "spud_id": "14908595",
+      "product_id": "USArray.CAO04.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 57.109643556396755,
+      "max_phase_tensor_ellipticity": 0.8297607878949822,
+      "max_tipper_amplitude": 0.3714920039504173,
+      "training_scalar_log10_abs_zxy": -0.6509663962400276,
+      "spud_id": "14908373",
+      "product_id": "USArray.CAO03.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 40.66677753803595,
+      "max_phase_tensor_ellipticity": 0.9024445957201639,
+      "max_tipper_amplitude": 0.5492720771501497,
+      "training_scalar_log10_abs_zxy": -0.17223494274710294,
+      "spud_id": "14908151",
+      "product_id": "USArray.CAO02.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.336647062697109,
+      "max_phase_tensor_ellipticity": 0.7597658743851694,
+      "max_tipper_amplitude": 0.6073660956347553,
+      "training_scalar_log10_abs_zxy": -0.2668710887560191,
+      "spud_id": "14907929",
+      "product_id": "USArray.CAO01.2010"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.835719789878649,
+      "max_phase_tensor_ellipticity": 0.8867453320548194,
+      "max_tipper_amplitude": 0.00030755897448720527,
+      "training_scalar_log10_abs_zxy": -0.16648020236690642,
+      "spud_id": "14907707",
+      "product_id": "USArray.CAN06.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.998687109919701,
+      "max_phase_tensor_ellipticity": 0.5243759799732467,
+      "max_tipper_amplitude": 0.40487958673054875,
+      "training_scalar_log10_abs_zxy": 0.04783280933667364,
+      "spud_id": "14907485",
+      "product_id": "USArray.CAN05.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 55.82847010980084,
+      "max_phase_tensor_ellipticity": 0.6501625694079808,
+      "max_tipper_amplitude": 0.31987905864813126,
+      "training_scalar_log10_abs_zxy": -0.15554867766264058,
+      "spud_id": "14907263",
+      "product_id": "USArray.CAN04.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 44.264625274388315,
+      "max_phase_tensor_ellipticity": 0.40536491682713444,
+      "max_tipper_amplitude": 2.2976513417992055,
+      "training_scalar_log10_abs_zxy": -0.13322475761294206,
+      "spud_id": "14907041",
+      "product_id": "USArray.CAN03.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.927297841763071,
+      "max_phase_tensor_ellipticity": 0.8010386094016274,
+      "max_tipper_amplitude": 0.6390987577072341,
+      "training_scalar_log10_abs_zxy": -0.45437298646443197,
+      "spud_id": "14906819",
+      "product_id": "USArray.CAN02.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.126507110965772,
+      "max_phase_tensor_ellipticity": 0.6520937274657073,
+      "max_tipper_amplitude": 0.912922625136928,
+      "training_scalar_log10_abs_zxy": -0.20553474624809015,
+      "spud_id": "14906597",
+      "product_id": "USArray.CAN01.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 37.503001013704456,
+      "max_phase_tensor_ellipticity": 0.9901370357600608,
+      "max_tipper_amplitude": 1.718387527949694,
+      "training_scalar_log10_abs_zxy": -0.008999929822065463,
+      "spud_id": "14906375",
+      "product_id": "USArray.CAM94.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.378221850915754,
+      "max_phase_tensor_ellipticity": 0.4342838506334983,
+      "max_tipper_amplitude": 1.119761506149082,
+      "training_scalar_log10_abs_zxy": -0.16924415297598494,
+      "spud_id": "14906153",
+      "product_id": "USArray.CAM06.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.536173298492727,
+      "max_phase_tensor_ellipticity": 0.301296411333924,
+      "max_tipper_amplitude": 0.4112533680361784,
+      "training_scalar_log10_abs_zxy": -0.09340554534787478,
+      "spud_id": "14905931",
+      "product_id": "USArray.CAM05.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.37873586870026,
+      "max_phase_tensor_ellipticity": 0.7455682179846561,
+      "max_tipper_amplitude": 0.8609924894426706,
+      "training_scalar_log10_abs_zxy": -0.48595125561003655,
+      "spud_id": "14905487",
+      "product_id": "USArray.CAM03.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 82.35263327104441,
+      "max_phase_tensor_ellipticity": 0.9896539154363705,
+      "max_tipper_amplitude": 0.6748851124651143,
+      "training_scalar_log10_abs_zxy": -1.3533438610209705,
+      "spud_id": "14905265",
+      "product_id": "USArray.CAM02.2010"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 47.3807834673839,
+      "max_phase_tensor_ellipticity": 0.9356566694629224,
+      "max_tipper_amplitude": 1.0002483580450807,
+      "training_scalar_log10_abs_zxy": -0.3462841265568478,
+      "spud_id": "14905043",
+      "product_id": "USArray.WYYS3.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.454553085432316,
+      "max_phase_tensor_ellipticity": 0.67711131963448,
+      "max_tipper_amplitude": 0.4402245235516436,
+      "training_scalar_log10_abs_zxy": -0.25157889033699843,
+      "spud_id": "14904821",
+      "product_id": "USArray.WYYS2.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 54.408359291024915,
+      "max_phase_tensor_ellipticity": 0.9933753833067731,
+      "max_tipper_amplitude": 0.4095194557817576,
+      "training_scalar_log10_abs_zxy": -0.9050628268329235,
+      "spud_id": "14904599",
+      "product_id": "USArray.WYYS1.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.569326394034734,
+      "max_phase_tensor_ellipticity": 0.6999155667205967,
+      "max_tipper_amplitude": 0.3107555872620939,
+      "training_scalar_log10_abs_zxy": 0.023439189284776358,
+      "spud_id": "14904377",
+      "product_id": "USArray.WYL21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.760852548981362,
+      "max_phase_tensor_ellipticity": 0.2840785555161898,
+      "max_tipper_amplitude": 0.28272863221052447,
+      "training_scalar_log10_abs_zxy": -0.014521465977037639,
+      "spud_id": "14904155",
+      "product_id": "USArray.WYL20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 43.12781570792183,
+      "max_phase_tensor_ellipticity": 0.948580789293614,
+      "max_tipper_amplitude": 0.3216945361992276,
+      "training_scalar_log10_abs_zxy": -0.335195820616209,
+      "spud_id": "14903933",
+      "product_id": "USArray.WYL19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.652288288835697,
+      "max_phase_tensor_ellipticity": 0.3894928852088236,
+      "max_tipper_amplitude": 0.2393603976457363,
+      "training_scalar_log10_abs_zxy": -0.23057632065337463,
+      "spud_id": "14903711",
+      "product_id": "USArray.WYL18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 34.26856069592275,
+      "max_phase_tensor_ellipticity": 0.9907472512104426,
+      "max_tipper_amplitude": 0.3205044551375506,
+      "training_scalar_log10_abs_zxy": -0.5053923911461253,
+      "spud_id": "14903489",
+      "product_id": "USArray.WYL17.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.665771626722089,
+      "max_phase_tensor_ellipticity": 0.4648974654265224,
+      "max_tipper_amplitude": 0.7794989541457065,
+      "training_scalar_log10_abs_zxy": 0.12681315086223813,
+      "spud_id": "14903267",
+      "product_id": "USArray.WYK21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 25.074956022109102,
+      "max_phase_tensor_ellipticity": 0.7922855738731933,
+      "max_tipper_amplitude": 0.9920672870829377,
+      "training_scalar_log10_abs_zxy": 0.5610470484765612,
+      "spud_id": "14903045",
+      "product_id": "USArray.WYK20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 81.54449607990293,
+      "max_phase_tensor_ellipticity": 0.8077560982345611,
+      "max_tipper_amplitude": 1.6053373010726841,
+      "training_scalar_log10_abs_zxy": 0.27167693598191683,
+      "spud_id": "14902823",
+      "product_id": "USArray.WYK19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.552177719024755,
+      "max_phase_tensor_ellipticity": 0.5394083954639802,
+      "max_tipper_amplitude": 0.36941458105579694,
+      "training_scalar_log10_abs_zxy": -0.33624311520151334,
+      "spud_id": "14902601",
+      "product_id": "USArray.WYK18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 16.801988981534887,
+      "max_phase_tensor_ellipticity": 0.924111864719726,
+      "max_tipper_amplitude": 0.35217779193823284,
+      "training_scalar_log10_abs_zxy": -0.3491729513589763,
+      "spud_id": "14902379",
+      "product_id": "USArray.WYK17.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.41747522981687,
+      "max_phase_tensor_ellipticity": 0.7061954856816106,
+      "max_tipper_amplitude": 0.7754630495249533,
+      "training_scalar_log10_abs_zxy": 0.5822500754815612,
+      "spud_id": "14902157",
+      "product_id": "USArray.WYJ21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 89.06637348537443,
+      "max_phase_tensor_ellipticity": 0.9559497982300563,
+      "max_tipper_amplitude": 0.27734340671945834,
+      "training_scalar_log10_abs_zxy": -0.8570942923460347,
+      "spud_id": "14901935",
+      "product_id": "USArray.WYJ20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.119991567207661,
+      "max_phase_tensor_ellipticity": 0.6957263908817624,
+      "max_tipper_amplitude": 0.3436917014951644,
+      "training_scalar_log10_abs_zxy": -0.6806499337807492,
+      "spud_id": "14901713",
+      "product_id": "USArray.WYJ19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 88.18370719648556,
+      "max_phase_tensor_ellipticity": 0.992117149246227,
+      "max_tipper_amplitude": 0.43464907285624393,
+      "training_scalar_log10_abs_zxy": 1.0913875214232696,
+      "spud_id": "14901491",
+      "product_id": "USArray.WYJ18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 62.38468494763054,
+      "max_phase_tensor_ellipticity": 0.853905276332413,
+      "max_tipper_amplitude": 0.33800105632058675,
+      "training_scalar_log10_abs_zxy": -0.22810021938663366,
+      "spud_id": "14901269",
+      "product_id": "USArray.WYJ17.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.334188005161927,
+      "max_phase_tensor_ellipticity": 0.8582758356612332,
+      "max_tipper_amplitude": 0.44456392906453857,
+      "training_scalar_log10_abs_zxy": -0.5783118295332117,
+      "spud_id": "14901047",
+      "product_id": "USArray.WYI21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.89444954778234,
+      "max_phase_tensor_ellipticity": 0.389527399884595,
+      "max_tipper_amplitude": 0.26446663099991596,
+      "training_scalar_log10_abs_zxy": -0.07138817646099331,
+      "spud_id": "14900825",
+      "product_id": "USArray.WYI20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.332669255547712,
+      "max_phase_tensor_ellipticity": 0.42184667213429444,
+      "max_tipper_amplitude": 0.32264498832412086,
+      "training_scalar_log10_abs_zxy": 0.1666052828136115,
+      "spud_id": "14900603",
+      "product_id": "USArray.WYI19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.231316389165913,
+      "max_phase_tensor_ellipticity": 0.9508899090500972,
+      "max_tipper_amplitude": 0.40407830511384063,
+      "training_scalar_log10_abs_zxy": 0.02006651226822348,
+      "spud_id": "14900381",
+      "product_id": "USArray.WYI18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.000578973811708,
+      "max_phase_tensor_ellipticity": 0.7213256160616737,
+      "max_tipper_amplitude": 0.437879543422112,
+      "training_scalar_log10_abs_zxy": -0.3599111266475249,
+      "spud_id": "14900159",
+      "product_id": "USArray.WYI17.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 32.81515836111157,
+      "max_phase_tensor_ellipticity": 0.7407541457436171,
+      "max_tipper_amplitude": 0.4747775719495602,
+      "training_scalar_log10_abs_zxy": 0.08423413688043355,
+      "spud_id": "14899937",
+      "product_id": "USArray.WYH21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.403878368564662,
+      "max_phase_tensor_ellipticity": 0.3712626598727939,
+      "max_tipper_amplitude": 0.4684800817693637,
+      "training_scalar_log10_abs_zxy": -0.12804611295308263,
+      "spud_id": "14899715",
+      "product_id": "USArray.WYH20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.1987429414577,
+      "max_phase_tensor_ellipticity": 0.528828305518045,
+      "max_tipper_amplitude": 0.2775980250950424,
+      "training_scalar_log10_abs_zxy": -0.00044204995879121994,
+      "spud_id": "14899493",
+      "product_id": "USArray.WYH19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 25.46143466280688,
+      "max_phase_tensor_ellipticity": 0.6629569659480221,
+      "max_tipper_amplitude": 0.2952765336400771,
+      "training_scalar_log10_abs_zxy": 0.10416332804654183,
+      "spud_id": "14899271",
+      "product_id": "USArray.WYH18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 78.49558132318779,
+      "max_phase_tensor_ellipticity": 0.941033427307323,
+      "max_tipper_amplitude": 0.38331597535997386,
+      "training_scalar_log10_abs_zxy": -0.010347519388346129,
+      "spud_id": "14899049",
+      "product_id": "USArray.WYG21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.291690133819438,
+      "max_phase_tensor_ellipticity": 0.4536365695965034,
+      "max_tipper_amplitude": 0.511295109196786,
+      "training_scalar_log10_abs_zxy": 0.5399622409623148,
+      "spud_id": "14898827",
+      "product_id": "USArray.MTG20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 19.51464568756382,
+      "max_phase_tensor_ellipticity": 0.8260517313591371,
+      "max_tipper_amplitude": 0.5218621785909706,
+      "training_scalar_log10_abs_zxy": 0.4098127063914243,
+      "spud_id": "14898605",
+      "product_id": "USArray.MTG19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.42147371095721,
+      "max_phase_tensor_ellipticity": 0.6290978901740568,
+      "max_tipper_amplitude": 0.43638280341069813,
+      "training_scalar_log10_abs_zxy": -0.08727889380320307,
+      "spud_id": "14898383",
+      "product_id": "USArray.MTG18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 32.83645347149275,
+      "max_phase_tensor_ellipticity": 0.9044811128401214,
+      "max_tipper_amplitude": 0.35599261549085076,
+      "training_scalar_log10_abs_zxy": 0.001982419216148529,
+      "spud_id": "14898161",
+      "product_id": "USArray.MTF21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.39831983486362,
+      "max_phase_tensor_ellipticity": 0.9664275134469045,
+      "max_tipper_amplitude": 0.39654369061676853,
+      "training_scalar_log10_abs_zxy": 0.02313112812131841,
+      "spud_id": "14897939",
+      "product_id": "USArray.MTF20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.96385578371828,
+      "max_phase_tensor_ellipticity": 0.6507187722598465,
+      "max_tipper_amplitude": 0.0003476083425464707,
+      "training_scalar_log10_abs_zxy": 0.12245050961522487,
+      "spud_id": "14897717",
+      "product_id": "USArray.MTF19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.446926210541887,
+      "max_phase_tensor_ellipticity": 0.3510486197017229,
+      "max_tipper_amplitude": 0.47322629767131535,
+      "training_scalar_log10_abs_zxy": 0.007346408466248777,
+      "spud_id": "14897495",
+      "product_id": "USArray.MTF18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 63.492863794659534,
+      "max_phase_tensor_ellipticity": 0.9573553643468775,
+      "max_tipper_amplitude": 2.4362397967209737,
+      "training_scalar_log10_abs_zxy": 0.1563278802908371,
+      "spud_id": "14897273",
+      "product_id": "USArray.MTE21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.234857215378803,
+      "max_phase_tensor_ellipticity": 0.516231575538765,
+      "max_tipper_amplitude": 0.9753512005844553,
+      "training_scalar_log10_abs_zxy": 0.02171322556296116,
+      "spud_id": "14897051",
+      "product_id": "USArray.MTE20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.220479087551064,
+      "max_phase_tensor_ellipticity": 0.7986046618964565,
+      "max_tipper_amplitude": 0.15926305333963367,
+      "training_scalar_log10_abs_zxy": -0.21711706877636755,
+      "spud_id": "14896829",
+      "product_id": "USArray.MTE19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 72.96384665897614,
+      "max_phase_tensor_ellipticity": 0.8492525434119108,
+      "max_tipper_amplitude": 0.2871249498733235,
+      "training_scalar_log10_abs_zxy": -0.34612042862102665,
+      "spud_id": "14896607",
+      "product_id": "USArray.MTE18.2009"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.02117150198341,
+      "max_phase_tensor_ellipticity": 0.444519966635225,
+      "max_tipper_amplitude": 0.19485071916225713,
+      "training_scalar_log10_abs_zxy": -0.11884634565761149,
+      "spud_id": "14896385",
+      "product_id": "USArray.MTD21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 23.961622568681047,
+      "max_phase_tensor_ellipticity": 0.3999812627135323,
+      "max_tipper_amplitude": 0.2365638255799208,
+      "training_scalar_log10_abs_zxy": -0.13799038738829536,
+      "spud_id": "14896163",
+      "product_id": "USArray.MTD20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.350146385399393,
+      "max_phase_tensor_ellipticity": 0.27476345423273,
+      "max_tipper_amplitude": 0.3186074668157087,
+      "training_scalar_log10_abs_zxy": -0.01739860517942398,
+      "spud_id": "14895941",
+      "product_id": "USArray.MTD19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.295020393938199,
+      "max_phase_tensor_ellipticity": 0.5803519722537267,
+      "max_tipper_amplitude": 0.31140851213134574,
+      "training_scalar_log10_abs_zxy": 0.1434982779460703,
+      "spud_id": "14895719",
+      "product_id": "USArray.MTD18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.149713641617824,
+      "max_phase_tensor_ellipticity": 0.39693760551471907,
+      "max_tipper_amplitude": 0.34177964473123607,
+      "training_scalar_log10_abs_zxy": -0.05887097543703782,
+      "spud_id": "14895497",
+      "product_id": "USArray.MTC21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 61.35446093571196,
+      "max_phase_tensor_ellipticity": 0.8116782907763815,
+      "max_tipper_amplitude": 1.3392396515613811,
+      "training_scalar_log10_abs_zxy": 0.0562506488927213,
+      "spud_id": "14895275",
+      "product_id": "USArray.MTC20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 46.92848147886118,
+      "max_phase_tensor_ellipticity": 0.8776217092272839,
+      "max_tipper_amplitude": 0.6544327567569567,
+      "training_scalar_log10_abs_zxy": -0.05157474038080864,
+      "spud_id": "14895053",
+      "product_id": "USArray.MTC19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.47977954931996,
+      "max_phase_tensor_ellipticity": 0.7639369691053665,
+      "max_tipper_amplitude": 0.37807278839025493,
+      "training_scalar_log10_abs_zxy": 0.07820350035707342,
+      "spud_id": "14894831",
+      "product_id": "USArray.MTC18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.006397516249077,
+      "max_phase_tensor_ellipticity": 0.5565982626332947,
+      "max_tipper_amplitude": 0.30384059736078994,
+      "training_scalar_log10_abs_zxy": 0.11160469014998319,
+      "spud_id": "14894609",
+      "product_id": "USArray.MTB21.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.224817612772721,
+      "max_phase_tensor_ellipticity": 0.6240794019781728,
+      "max_tipper_amplitude": 0.29132584571112013,
+      "training_scalar_log10_abs_zxy": 0.16537521864117605,
+      "spud_id": "14894387",
+      "product_id": "USArray.MTB20.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.716243181204765,
+      "max_phase_tensor_ellipticity": 0.8663327153291009,
+      "max_tipper_amplitude": 0.34013771664944437,
+      "training_scalar_log10_abs_zxy": 0.09114129582549191,
+      "spud_id": "14894165",
+      "product_id": "USArray.MTB19.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.847011951032785,
+      "max_phase_tensor_ellipticity": 0.6225635283751294,
+      "max_tipper_amplitude": 0.36729674520788497,
+      "training_scalar_log10_abs_zxy": -0.06601657175604096,
+      "spud_id": "14893943",
+      "product_id": "USArray.MTB18.2009"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 26.97660634041189,
+      "max_phase_tensor_ellipticity": 0.6442809086651609,
+      "max_tipper_amplitude": 1.47792851705413,
+      "training_scalar_log10_abs_zxy": -0.02985683784664159,
+      "spud_id": "14893721",
+      "product_id": "USArray.MTH16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 27.574619858291886,
+      "max_phase_tensor_ellipticity": 0.8332280497006271,
+      "max_tipper_amplitude": 0.7523300600932956,
+      "training_scalar_log10_abs_zxy": 0.6775716497177287,
+      "spud_id": "14893499",
+      "product_id": "USArray.MTH15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.387023637410321,
+      "max_phase_tensor_ellipticity": 0.42487190725814555,
+      "max_tipper_amplitude": 0.23603634750923402,
+      "training_scalar_log10_abs_zxy": 0.9817170343070519,
+      "spud_id": "14893277",
+      "product_id": "USArray.MTG17.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 28,
+      "max_abs_phase_tensor_skew_deg": 71.82411303952038,
+      "max_phase_tensor_ellipticity": 0.7328196872259827,
+      "max_tipper_amplitude": 0.677270717486683,
+      "training_scalar_log10_abs_zxy": 0.12171054891375604,
+      "spud_id": "14893055",
+      "product_id": "USArray.MTG16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 66.72161447905707,
+      "max_phase_tensor_ellipticity": 0.7900158610291176,
+      "max_tipper_amplitude": 0.4989816206587482,
+      "training_scalar_log10_abs_zxy": -0.17654549987276083,
+      "spud_id": "14892847",
+      "product_id": "USArray.MTG15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.472192708490429,
+      "max_phase_tensor_ellipticity": 0.6424363773897259,
+      "max_tipper_amplitude": 0.35134600251065917,
+      "training_scalar_log10_abs_zxy": 0.2723270879602502,
+      "spud_id": "14892625",
+      "product_id": "USArray.MTG14.2008"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.5145355178701045,
+      "max_phase_tensor_ellipticity": 0.41764232277451296,
+      "max_tipper_amplitude": 0.23371709317931394,
+      "training_scalar_log10_abs_zxy": -0.3428483406407453,
+      "spud_id": "14892403",
+      "product_id": "USArray.MTF17.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 50.47841377272447,
+      "max_phase_tensor_ellipticity": 0.9612816226260447,
+      "max_tipper_amplitude": 0.3643875459773377,
+      "training_scalar_log10_abs_zxy": -0.6547985149337285,
+      "spud_id": "14892181",
+      "product_id": "USArray.MTF16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.550286411578119,
+      "max_phase_tensor_ellipticity": 0.3912515879103317,
+      "max_tipper_amplitude": 0.20550162403356087,
+      "training_scalar_log10_abs_zxy": 0.43105089627946946,
+      "spud_id": "14891959",
+      "product_id": "USArray.MTF15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 54.53574679864443,
+      "max_phase_tensor_ellipticity": 0.6697337503377755,
+      "max_tipper_amplitude": 0.36655911320953477,
+      "training_scalar_log10_abs_zxy": -0.39632404774317675,
+      "spud_id": "14891737",
+      "product_id": "USArray.MTF14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 32.5495843317753,
+      "max_phase_tensor_ellipticity": 0.7175123888421153,
+      "max_tipper_amplitude": 0.7223905826253623,
+      "training_scalar_log10_abs_zxy": 0.459478734088811,
+      "spud_id": "14891515",
+      "product_id": "USArray.MTF13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 68.00104206959885,
+      "max_phase_tensor_ellipticity": 0.9887393434492399,
+      "max_tipper_amplitude": 0.26854888899023693,
+      "training_scalar_log10_abs_zxy": -2.028415124783939,
+      "spud_id": "14891293",
+      "product_id": "USArray.MTE17.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 75.61410452708566,
+      "max_phase_tensor_ellipticity": 0.8267505786416879,
+      "max_tipper_amplitude": 0.343422689014874,
+      "training_scalar_log10_abs_zxy": -0.3224890783620181,
+      "spud_id": "14891071",
+      "product_id": "USArray.MTE16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.30793808211689,
+      "max_phase_tensor_ellipticity": 0.4966214598891712,
+      "max_tipper_amplitude": 0.28482058436347557,
+      "training_scalar_log10_abs_zxy": 0.05684790018815924,
+      "spud_id": "14890849",
+      "product_id": "USArray.MTE15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 76.15932868838402,
+      "max_phase_tensor_ellipticity": 0.7100047970229778,
+      "max_tipper_amplitude": 0.46467405297814945,
+      "training_scalar_log10_abs_zxy": 0.269755397319501,
+      "spud_id": "14890627",
+      "product_id": "USArray.MTE14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 28,
+      "max_abs_phase_tensor_skew_deg": 72.37349334544419,
+      "max_phase_tensor_ellipticity": 0.9930788130172747,
+      "max_tipper_amplitude": 0.27584842524488495,
+      "training_scalar_log10_abs_zxy": -0.21730683223619118,
+      "spud_id": "14890405",
+      "product_id": "USArray.MTE13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 28.691281085216904,
+      "max_phase_tensor_ellipticity": 0.9547627724195314,
+      "max_tipper_amplitude": 0.567591205191182,
+      "training_scalar_log10_abs_zxy": 0.5795946295831047,
+      "spud_id": "14890197",
+      "product_id": "USArray.MTD17.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 83.97470860498203,
+      "max_phase_tensor_ellipticity": 0.7531613788371747,
+      "max_tipper_amplitude": 0.2898198799544781,
+      "training_scalar_log10_abs_zxy": -0.3987851157901396,
+      "spud_id": "14889975",
+      "product_id": "USArray.MTD16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.319328709552469,
+      "max_phase_tensor_ellipticity": 0.4247659179253948,
+      "max_tipper_amplitude": 0.24935849632402543,
+      "training_scalar_log10_abs_zxy": 0.392505534708689,
+      "spud_id": "14889753",
+      "product_id": "USArray.MTD15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 45.62791416826556,
+      "max_phase_tensor_ellipticity": 0.9319181152583256,
+      "max_tipper_amplitude": 17.46158600561294,
+      "training_scalar_log10_abs_zxy": 0.5362140597798357,
+      "spud_id": "14889531",
+      "product_id": "USArray.MTD14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 51.582890439299774,
+      "max_phase_tensor_ellipticity": 0.8905476536407193,
+      "max_tipper_amplitude": 0.7678401151641077,
+      "training_scalar_log10_abs_zxy": 0.16421327828765864,
+      "spud_id": "14889309",
+      "product_id": "USArray.MTD13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 40.90812049982344,
+      "max_phase_tensor_ellipticity": 0.8850102443776675,
+      "max_tipper_amplitude": 4.325318347076022,
+      "training_scalar_log10_abs_zxy": 0.18721243378441962,
+      "spud_id": "14889087",
+      "product_id": "USArray.MTC17.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.269658809983774,
+      "max_phase_tensor_ellipticity": 0.6304369416033568,
+      "max_tipper_amplitude": 0.5811854546082843,
+      "training_scalar_log10_abs_zxy": 0.3440442241248781,
+      "spud_id": "14888865",
+      "product_id": "USArray.MTC16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.063959204420025,
+      "max_phase_tensor_ellipticity": 0.7468929312187744,
+      "max_tipper_amplitude": 0.3529945537749839,
+      "training_scalar_log10_abs_zxy": 0.5233782367823844,
+      "spud_id": "14888643",
+      "product_id": "USArray.MTC15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 21.722652545818736,
+      "max_phase_tensor_ellipticity": 0.5691310447107305,
+      "max_tipper_amplitude": 0.34157819204001444,
+      "training_scalar_log10_abs_zxy": -0.03034172341473458,
+      "spud_id": "14888421",
+      "product_id": "USArray.MTC14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 59.19240244842753,
+      "max_phase_tensor_ellipticity": 0.9865771768483359,
+      "max_tipper_amplitude": 0.536549567202661,
+      "training_scalar_log10_abs_zxy": -0.2515506182011537,
+      "spud_id": "14888199",
+      "product_id": "USArray.MTC13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 75.4088943629765,
+      "max_phase_tensor_ellipticity": 0.9893405115780435,
+      "max_tipper_amplitude": 1.8992724079866634,
+      "training_scalar_log10_abs_zxy": 0.07735741351234834,
+      "spud_id": "14887977",
+      "product_id": "USArray.MTC12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.22577302667072,
+      "max_phase_tensor_ellipticity": 0.3932393680772389,
+      "max_tipper_amplitude": 0.26428055751808305,
+      "training_scalar_log10_abs_zxy": 0.1846860926353237,
+      "spud_id": "14887755",
+      "product_id": "USArray.MTB17.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 34.6475034900817,
+      "max_phase_tensor_ellipticity": 0.8264028566924263,
+      "max_tipper_amplitude": 1.508218987490603,
+      "training_scalar_log10_abs_zxy": 0.2932262586019361,
+      "spud_id": "14887533",
+      "product_id": "USArray.MTB16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 17.248123116170667,
+      "max_phase_tensor_ellipticity": 0.40965234029704506,
+      "max_tipper_amplitude": 0.8366936237352596,
+      "training_scalar_log10_abs_zxy": 0.40900855782207635,
+      "spud_id": "14887311",
+      "product_id": "USArray.MTB15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 21.52193495479291,
+      "max_phase_tensor_ellipticity": 0.9732856137757465,
+      "max_tipper_amplitude": 0.5739728297304084,
+      "training_scalar_log10_abs_zxy": 0.9643653634496745,
+      "spud_id": "14887089",
+      "product_id": "USArray.MTB14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 19.604267218759816,
+      "max_phase_tensor_ellipticity": 0.8948574149681068,
+      "max_tipper_amplitude": 0.3009723597429887,
+      "training_scalar_log10_abs_zxy": -0.4851109465708848,
+      "spud_id": "14886867",
+      "product_id": "USArray.MTB13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 28,
+      "max_abs_phase_tensor_skew_deg": 57.50169308710235,
+      "max_phase_tensor_ellipticity": 0.8739924919593508,
+      "max_tipper_amplitude": 1.0622702561445512,
+      "training_scalar_log10_abs_zxy": -0.3334737701271738,
+      "spud_id": "14886645",
+      "product_id": "USArray.MTB12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 69.20789055627216,
+      "max_phase_tensor_ellipticity": 0.9843248742423164,
+      "max_tipper_amplitude": 0.709850690873059,
+      "training_scalar_log10_abs_zxy": -0.34354583047069287,
+      "spud_id": "14886437",
+      "product_id": "USArray.M2E13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 16.906256081832364,
+      "max_phase_tensor_ellipticity": 0.6729057043753833,
+      "max_tipper_amplitude": 0.45988772019582824,
+      "training_scalar_log10_abs_zxy": -0.3378663019239844,
+      "spud_id": "14886215",
+      "product_id": "USArray.IDL16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 51.945574037859366,
+      "max_phase_tensor_ellipticity": 0.9282978980332117,
+      "max_tipper_amplitude": 2.950630021273618,
+      "training_scalar_log10_abs_zxy": -0.6370134345826621,
+      "spud_id": "14885993",
+      "product_id": "USArray.IDL15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 73.79450375397232,
+      "max_phase_tensor_ellipticity": 0.9957272570005702,
+      "max_tipper_amplitude": 0.8817299192532216,
+      "training_scalar_log10_abs_zxy": -0.7995026524944437,
+      "spud_id": "14885771",
+      "product_id": "USArray.IDL14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 16.40679579071325,
+      "max_phase_tensor_ellipticity": 0.8473928530332563,
+      "max_tipper_amplitude": 0.5414861809367739,
+      "training_scalar_log10_abs_zxy": -0.10098770721201915,
+      "spud_id": "14885549",
+      "product_id": "USArray.IDL13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.16202215937367,
+      "max_phase_tensor_ellipticity": 0.7209958672807453,
+      "max_tipper_amplitude": 0.39381867761711004,
+      "training_scalar_log10_abs_zxy": -0.29843554916204,
+      "spud_id": "14885327",
+      "product_id": "USArray.IDL12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 86.84077535589684,
+      "max_phase_tensor_ellipticity": 0.6104818857172599,
+      "max_tipper_amplitude": 0.39175770464554005,
+      "training_scalar_log10_abs_zxy": -0.36036821553572657,
+      "spud_id": "14885105",
+      "product_id": "USArray.IDK16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.066397980794413,
+      "max_phase_tensor_ellipticity": 0.6404621072198103,
+      "max_tipper_amplitude": 0.417928644507952,
+      "training_scalar_log10_abs_zxy": -0.9615706476100365,
+      "spud_id": "14884883",
+      "product_id": "USArray.IDK15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 24.745051145701353,
+      "max_phase_tensor_ellipticity": 0.9154443403031182,
+      "max_tipper_amplitude": 0.37327920355024397,
+      "training_scalar_log10_abs_zxy": -0.7552220826656797,
+      "spud_id": "14884661",
+      "product_id": "USArray.IDK14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.988226759909684,
+      "max_phase_tensor_ellipticity": 0.4883263966938197,
+      "max_tipper_amplitude": 0.4604314772405401,
+      "training_scalar_log10_abs_zxy": 0.2639252233571074,
+      "spud_id": "14884439",
+      "product_id": "USArray.IDK13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 82.13472171056729,
+      "max_phase_tensor_ellipticity": 0.9448873727607525,
+      "max_tipper_amplitude": 0.6237412484200333,
+      "training_scalar_log10_abs_zxy": 0.017771498547816372,
+      "spud_id": "14884217",
+      "product_id": "USArray.IDK12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.898961398326037,
+      "max_phase_tensor_ellipticity": 0.5322674371374401,
+      "max_tipper_amplitude": 0.42583047262807017,
+      "training_scalar_log10_abs_zxy": -0.13665961976750088,
+      "spud_id": "14883995",
+      "product_id": "USArray.IDJ16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 27.544184800757623,
+      "max_phase_tensor_ellipticity": 0.9056099222547634,
+      "max_tipper_amplitude": 1.0186932132704998,
+      "training_scalar_log10_abs_zxy": -0.037861056412986864,
+      "spud_id": "14883773",
+      "product_id": "USArray.IDJ15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.233373165592244,
+      "max_phase_tensor_ellipticity": 0.6348668560750795,
+      "max_tipper_amplitude": 0.34917051572147456,
+      "training_scalar_log10_abs_zxy": -0.29381623823455294,
+      "spud_id": "14883551",
+      "product_id": "USArray.IDJ14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 73.37325800331179,
+      "max_phase_tensor_ellipticity": 0.98559656875258,
+      "max_tipper_amplitude": 0.3375214564123146,
+      "training_scalar_log10_abs_zxy": -0.8299804978792616,
+      "spud_id": "14883329",
+      "product_id": "USArray.IDJ13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.683319582860129,
+      "max_phase_tensor_ellipticity": 0.2719272438317146,
+      "max_tipper_amplitude": 0.444160492626134,
+      "training_scalar_log10_abs_zxy": -0.05570295565435781,
+      "spud_id": "14883107",
+      "product_id": "USArray.IDJ12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.74288521566615,
+      "max_phase_tensor_ellipticity": 0.4290278392683597,
+      "max_tipper_amplitude": 0.26648976075919334,
+      "training_scalar_log10_abs_zxy": 0.11045840521923762,
+      "spud_id": "14882885",
+      "product_id": "USArray.IDI16.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.417442718953952,
+      "max_phase_tensor_ellipticity": 0.9067511895513578,
+      "max_tipper_amplitude": 1.8793088889808003,
+      "training_scalar_log10_abs_zxy": -0.0794669986070482,
+      "spud_id": "14882663",
+      "product_id": "USArray.IDI15.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 16.67849111134593,
+      "max_phase_tensor_ellipticity": 0.9493336664629475,
+      "max_tipper_amplitude": 0.38131063513015445,
+      "training_scalar_log10_abs_zxy": -0.29885608957861254,
+      "spud_id": "14882441",
+      "product_id": "USArray.IDI14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.653617861260795,
+      "max_phase_tensor_ellipticity": 0.9263440917349023,
+      "max_tipper_amplitude": 0.45957968223191725,
+      "training_scalar_log10_abs_zxy": -0.6800635936356294,
+      "spud_id": "14882219",
+      "product_id": "USArray.IDI13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 74.20189237789472,
+      "max_phase_tensor_ellipticity": 0.964344252874692,
+      "max_tipper_amplitude": 2.509933338306745,
+      "training_scalar_log10_abs_zxy": -0.12116763804013372,
+      "spud_id": "14881997",
+      "product_id": "USArray.IDI12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 71.5114346283824,
+      "max_phase_tensor_ellipticity": 0.7181892360240136,
+      "max_tipper_amplitude": 0.4007584366986009,
+      "training_scalar_log10_abs_zxy": -0.5384980330197663,
+      "spud_id": "14881775",
+      "product_id": "USArray.IDH14.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 14.91261289990111,
+      "max_phase_tensor_ellipticity": 0.4909363835380115,
+      "max_tipper_amplitude": 0.4211317605882119,
+      "training_scalar_log10_abs_zxy": -0.2773340374642515,
+      "spud_id": "14881553",
+      "product_id": "USArray.IDH13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.013784906601725,
+      "max_phase_tensor_ellipticity": 0.8395257558424793,
+      "max_tipper_amplitude": 0.3340717729097084,
+      "training_scalar_log10_abs_zxy": -0.7139453746081983,
+      "spud_id": "14881331",
+      "product_id": "USArray.IDG13.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 27.560349114519653,
+      "max_phase_tensor_ellipticity": 0.7271854011943866,
+      "max_tipper_amplitude": 0.34551711265944346,
+      "training_scalar_log10_abs_zxy": 0.2828056044411169,
+      "spud_id": "14881109",
+      "product_id": "USArray.IDG12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 29.668326799240322,
+      "max_phase_tensor_ellipticity": 0.9886395171565493,
+      "max_tipper_amplitude": 1.6480135416264177,
+      "training_scalar_log10_abs_zxy": 0.4231384410424779,
+      "spud_id": "14880887",
+      "product_id": "USArray.IDE12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 57.56560637858188,
+      "max_phase_tensor_ellipticity": 0.9901097138534045,
+      "max_tipper_amplitude": 1.1492222075980347,
+      "training_scalar_log10_abs_zxy": -0.31951438752779837,
+      "spud_id": "14880665",
+      "product_id": "USArray.IDD12.2008"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 73.95864426662489,
+      "max_phase_tensor_ellipticity": 0.9479314257094292,
+      "max_tipper_amplitude": 0.4122747535265749,
+      "training_scalar_log10_abs_zxy": -0.573248326682034,
+      "spud_id": "14880443",
+      "product_id": "USArray.IDC11.2008"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.982004197708846,
+      "max_phase_tensor_ellipticity": 0.2961416896242938,
+      "max_tipper_amplitude": 0.24963901280601597,
+      "training_scalar_log10_abs_zxy": -0.25439758940073576,
+      "spud_id": "14880221",
+      "product_id": "USArray.WAF07.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.684696485044265,
+      "max_phase_tensor_ellipticity": 0.4001667244545913,
+      "max_tipper_amplitude": 0.2894554812594963,
+      "training_scalar_log10_abs_zxy": 0.000929233435179479,
+      "spud_id": "14879999",
+      "product_id": "USArray.WAF06.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.747805077983243,
+      "max_phase_tensor_ellipticity": 0.30864389832803213,
+      "max_tipper_amplitude": 0.25003102996528037,
+      "training_scalar_log10_abs_zxy": -0.037411284762109205,
+      "spud_id": "14879777",
+      "product_id": "USArray.WAF05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 31.77096849114799,
+      "max_phase_tensor_ellipticity": 0.6257332250976033,
+      "max_tipper_amplitude": 0.2502682707679671,
+      "training_scalar_log10_abs_zxy": 0.3434845870335196,
+      "spud_id": "14879555",
+      "product_id": "USArray.WAF04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.057309114750796,
+      "max_phase_tensor_ellipticity": 0.34072986151084894,
+      "max_tipper_amplitude": 0.3844143339582175,
+      "training_scalar_log10_abs_zxy": 0.12636632426287267,
+      "spud_id": "14879333",
+      "product_id": "USArray.WAE10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.513497646394027,
+      "max_phase_tensor_ellipticity": 0.35586149687614926,
+      "max_tipper_amplitude": 0.2534425971702665,
+      "training_scalar_log10_abs_zxy": 0.03964829029570943,
+      "spud_id": "14879111",
+      "product_id": "USArray.WAE09.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.286330766111194,
+      "max_phase_tensor_ellipticity": 0.45040562482273244,
+      "max_tipper_amplitude": 0.306169180563932,
+      "training_scalar_log10_abs_zxy": -0.1104686258233312,
+      "spud_id": "14878889",
+      "product_id": "USArray.WAE08.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.1238687469734385,
+      "max_phase_tensor_ellipticity": 0.2972182327796346,
+      "max_tipper_amplitude": 0.258745157533952,
+      "training_scalar_log10_abs_zxy": -0.10190951681486227,
+      "spud_id": "14878667",
+      "product_id": "USArray.WAE07.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.489278854039565,
+      "max_phase_tensor_ellipticity": 0.328888032253665,
+      "max_tipper_amplitude": 0.3742321670423328,
+      "training_scalar_log10_abs_zxy": 0.04406039820064077,
+      "spud_id": "14878445",
+      "product_id": "USArray.WAE06.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 89.70547453020438,
+      "max_phase_tensor_ellipticity": 0.9807044017539056,
+      "max_tipper_amplitude": 0.3776032588497747,
+      "training_scalar_log10_abs_zxy": -0.7070052146036854,
+      "spud_id": "14878223",
+      "product_id": "USArray.WAE05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.241939383987676,
+      "max_phase_tensor_ellipticity": 0.7747865630239031,
+      "max_tipper_amplitude": 0.3087116547440553,
+      "training_scalar_log10_abs_zxy": -0.2805828092562582,
+      "spud_id": "14878001",
+      "product_id": "USArray.WAE04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.621167129122895,
+      "max_phase_tensor_ellipticity": 0.5414795000286391,
+      "max_tipper_amplitude": 0.39381539043736546,
+      "training_scalar_log10_abs_zxy": 0.13043047459269322,
+      "spud_id": "14877779",
+      "product_id": "USArray.WAE03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.53810459681561,
+      "max_phase_tensor_ellipticity": 0.6517784876369117,
+      "max_tipper_amplitude": 0.2863094508993081,
+      "training_scalar_log10_abs_zxy": 0.3139853067118884,
+      "spud_id": "14877557",
+      "product_id": "USArray.WAD10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.116802282919395,
+      "max_phase_tensor_ellipticity": 0.439029974913905,
+      "max_tipper_amplitude": 0.3908497478880696,
+      "training_scalar_log10_abs_zxy": -0.021626412651250402,
+      "spud_id": "14877335",
+      "product_id": "USArray.WAD09.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.143595202760864,
+      "max_phase_tensor_ellipticity": 0.47169273242317417,
+      "max_tipper_amplitude": 0.3559659963138482,
+      "training_scalar_log10_abs_zxy": -0.16460555325084067,
+      "spud_id": "14877113",
+      "product_id": "USArray.WAD08.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.996827108613537,
+      "max_phase_tensor_ellipticity": 0.5230059460507831,
+      "max_tipper_amplitude": 0.2806265841033721,
+      "training_scalar_log10_abs_zxy": -0.46887561384031984,
+      "spud_id": "14876891",
+      "product_id": "USArray.WAD07.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 18.574104387327097,
+      "max_phase_tensor_ellipticity": 0.8815018641571026,
+      "max_tipper_amplitude": 0.40900356165098367,
+      "training_scalar_log10_abs_zxy": 0.20814689724233018,
+      "spud_id": "14876669",
+      "product_id": "USArray.WAD06.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.785664436685504,
+      "max_phase_tensor_ellipticity": 0.8123802058951742,
+      "max_tipper_amplitude": 0.44445553023215195,
+      "training_scalar_log10_abs_zxy": -0.32488856685167555,
+      "spud_id": "14876447",
+      "product_id": "USArray.WAD05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 21.60117967430185,
+      "max_phase_tensor_ellipticity": 0.6130045517519925,
+      "max_tipper_amplitude": 0.33069957795911636,
+      "training_scalar_log10_abs_zxy": 0.056425838049094415,
+      "spud_id": "14876225",
+      "product_id": "USArray.WAD04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.518768808548344,
+      "max_phase_tensor_ellipticity": 0.6462044856570077,
+      "max_tipper_amplitude": 0.34136101424944526,
+      "training_scalar_log10_abs_zxy": -0.2814217525394749,
+      "spud_id": "14876003",
+      "product_id": "USArray.WAD03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.930299932671114,
+      "max_phase_tensor_ellipticity": 0.299508529526736,
+      "max_tipper_amplitude": 0.4720629763449047,
+      "training_scalar_log10_abs_zxy": -0.0001465425079157489,
+      "spud_id": "14875781",
+      "product_id": "USArray.WAC10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 15.452409540794845,
+      "max_phase_tensor_ellipticity": 0.5814142230302959,
+      "max_tipper_amplitude": 0.35433907544453797,
+      "training_scalar_log10_abs_zxy": 0.47061040713958546,
+      "spud_id": "14875559",
+      "product_id": "USArray.WAC09.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 3.8209336589421823,
+      "max_phase_tensor_ellipticity": 0.2588025327423046,
+      "max_tipper_amplitude": 0.3341997917375511,
+      "training_scalar_log10_abs_zxy": 0.5014158136455706,
+      "spud_id": "14875337",
+      "product_id": "USArray.WAC08.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.931965461447353,
+      "max_phase_tensor_ellipticity": 0.31379756636491773,
+      "max_tipper_amplitude": 1.0608943882633952,
+      "training_scalar_log10_abs_zxy": 0.262466949380302,
+      "spud_id": "14875115",
+      "product_id": "USArray.WAC07.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 53.449481544735995,
+      "max_phase_tensor_ellipticity": 0.9728919275321742,
+      "max_tipper_amplitude": 0.2725452975917387,
+      "training_scalar_log10_abs_zxy": -0.18864420684627783,
+      "spud_id": "14874893",
+      "product_id": "USArray.WAC06.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.507869003957635,
+      "max_phase_tensor_ellipticity": 0.4633957341214934,
+      "max_tipper_amplitude": 0.7435488225152104,
+      "training_scalar_log10_abs_zxy": 0.5250773640266583,
+      "spud_id": "14874671",
+      "product_id": "USArray.WAC05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.155149733275072,
+      "max_phase_tensor_ellipticity": 0.6900470221629031,
+      "max_tipper_amplitude": 0.36190379330812406,
+      "training_scalar_log10_abs_zxy": 0.38430385241128484,
+      "spud_id": "14874449",
+      "product_id": "USArray.WAC04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.19798182452783,
+      "max_phase_tensor_ellipticity": 0.9338206586632916,
+      "max_tipper_amplitude": 0.3073910704062557,
+      "training_scalar_log10_abs_zxy": -0.32532608105603983,
+      "spud_id": "14874227",
+      "product_id": "USArray.WAC03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 88.77085358718372,
+      "max_phase_tensor_ellipticity": 0.9382719163180722,
+      "max_tipper_amplitude": 0.43302485051861633,
+      "training_scalar_log10_abs_zxy": -0.6726213955365081,
+      "spud_id": "14874005",
+      "product_id": "USArray.WAB10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 28,
+      "max_abs_phase_tensor_skew_deg": 54.935238181219184,
+      "max_phase_tensor_ellipticity": 0.9666071996532845,
+      "max_tipper_amplitude": 0.7391475357649165,
+      "training_scalar_log10_abs_zxy": -1.5361072490482908,
+      "spud_id": "14873783",
+      "product_id": "USArray.WAB09.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.360623706086531,
+      "max_phase_tensor_ellipticity": 0.4686593977684017,
+      "max_tipper_amplitude": 0.29880797682707955,
+      "training_scalar_log10_abs_zxy": 0.38611174709278695,
+      "spud_id": "14873575",
+      "product_id": "USArray.WAB08.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 57.97935416703386,
+      "max_phase_tensor_ellipticity": 0.6400153887774479,
+      "max_tipper_amplitude": 0.29593108970088366,
+      "training_scalar_log10_abs_zxy": -0.41209182208095674,
+      "spud_id": "14873353",
+      "product_id": "USArray.WAB07.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 84.46396541908726,
+      "max_phase_tensor_ellipticity": 0.9618489856834861,
+      "max_tipper_amplitude": 0.49132110364216075,
+      "training_scalar_log10_abs_zxy": -0.6140004826279148,
+      "spud_id": "14873131",
+      "product_id": "USArray.WAB06.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 36.71058618283121,
+      "max_phase_tensor_ellipticity": 0.9832514617034803,
+      "max_tipper_amplitude": 0.8390012722591831,
+      "training_scalar_log10_abs_zxy": 1.0361034835448386,
+      "spud_id": "14872909",
+      "product_id": "USArray.WAB05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 20.60455857011046,
+      "max_phase_tensor_ellipticity": 0.682942879892886,
+      "max_tipper_amplitude": 0.6747314155922588,
+      "training_scalar_log10_abs_zxy": -0.22696330599036102,
+      "spud_id": "14872687",
+      "product_id": "USArray.WAB04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 19.312093537489883,
+      "max_phase_tensor_ellipticity": 0.8052542576331597,
+      "max_tipper_amplitude": 0.6411608634399282,
+      "training_scalar_log10_abs_zxy": -0.1056755400338221,
+      "spud_id": "14872465",
+      "product_id": "USArray.WAB03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 1.971349842353591,
+      "max_phase_tensor_ellipticity": 0.8675925935277867,
+      "max_tipper_amplitude": 0.4748011084364268,
+      "training_scalar_log10_abs_zxy": -0.1743563804800582,
+      "spud_id": "14872243",
+      "product_id": "USArray.WAA10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.414842152350224,
+      "max_phase_tensor_ellipticity": 0.7656433399296512,
+      "max_tipper_amplitude": 0.33014345717499166,
+      "training_scalar_log10_abs_zxy": -0.22536261305910477,
+      "spud_id": "14872021",
+      "product_id": "USArray.WAA05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.030146361548142,
+      "max_phase_tensor_ellipticity": 0.4009750905266966,
+      "max_tipper_amplitude": 0.4530041182142667,
+      "training_scalar_log10_abs_zxy": 0.2782511187566363,
+      "spud_id": "14871799",
+      "product_id": "USArray.WAA04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.047979982015037,
+      "max_phase_tensor_ellipticity": 0.19289496717036134,
+      "max_tipper_amplitude": 0.34005568121129187,
+      "training_scalar_log10_abs_zxy": -0.12155033020644505,
+      "spud_id": "14871577",
+      "product_id": "USArray.ORL06.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.9540580056923815,
+      "max_phase_tensor_ellipticity": 0.40483370663957446,
+      "max_tipper_amplitude": 0.44420265574213097,
+      "training_scalar_log10_abs_zxy": -0.13279063528102894,
+      "spud_id": "14871355",
+      "product_id": "USArray.ORL05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.544601714610583,
+      "max_phase_tensor_ellipticity": 0.41075761739901673,
+      "max_tipper_amplitude": 0.43104373497494747,
+      "training_scalar_log10_abs_zxy": -0.2470748311543694,
+      "spud_id": "14871133",
+      "product_id": "USArray.ORL04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.240093313251862,
+      "max_phase_tensor_ellipticity": 0.483981291221063,
+      "max_tipper_amplitude": 0.4899718626820728,
+      "training_scalar_log10_abs_zxy": -0.08293477863565539,
+      "spud_id": "14870911",
+      "product_id": "USArray.ORL03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.572018492808276,
+      "max_phase_tensor_ellipticity": 0.6404992536343045,
+      "max_tipper_amplitude": 0.6417163304712917,
+      "training_scalar_log10_abs_zxy": -0.034150078994504264,
+      "spud_id": "14870689",
+      "product_id": "USArray.ORL02.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 11.898216758487893,
+      "max_phase_tensor_ellipticity": 0.28542312316981083,
+      "max_tipper_amplitude": 0.5059711570387427,
+      "training_scalar_log10_abs_zxy": -0.3642292880927269,
+      "spud_id": "14870467",
+      "product_id": "USArray.ORK05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 12.405144308012604,
+      "max_phase_tensor_ellipticity": 0.2880103943015479,
+      "max_tipper_amplitude": 0.4118219917080171,
+      "training_scalar_log10_abs_zxy": -0.00764012806209389,
+      "spud_id": "14870245",
+      "product_id": "USArray.ORK04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 18.25699426228548,
+      "max_phase_tensor_ellipticity": 0.8055053299754494,
+      "max_tipper_amplitude": 0.6550699646241711,
+      "training_scalar_log10_abs_zxy": -0.07114091929711419,
+      "spud_id": "14870023",
+      "product_id": "USArray.ORK03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 19.264179917299263,
+      "max_phase_tensor_ellipticity": 0.4733207573530274,
+      "max_tipper_amplitude": 0.6051247919142069,
+      "training_scalar_log10_abs_zxy": 0.6510249417683351,
+      "spud_id": "14869801",
+      "product_id": "USArray.ORK02.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.893197354388495,
+      "max_phase_tensor_ellipticity": 0.4882083915456852,
+      "max_tipper_amplitude": 0.7898031165182693,
+      "training_scalar_log10_abs_zxy": 0.09717129799707934,
+      "spud_id": "14869579",
+      "product_id": "USArray.ORK01.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 60.43557506042905,
+      "max_phase_tensor_ellipticity": 0.7545802706737774,
+      "max_tipper_amplitude": 0.3299871150162915,
+      "training_scalar_log10_abs_zxy": -0.0425527436902291,
+      "spud_id": "14869357",
+      "product_id": "USArray.ORJ04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.77360026742326,
+      "max_phase_tensor_ellipticity": 0.5609678046180909,
+      "max_tipper_amplitude": 0.4612289091837005,
+      "training_scalar_log10_abs_zxy": 0.41493234413339963,
+      "spud_id": "14869135",
+      "product_id": "USArray.ORJ03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.458620194355919,
+      "max_phase_tensor_ellipticity": 0.6180518593263383,
+      "max_tipper_amplitude": 0.5020228063944515,
+      "training_scalar_log10_abs_zxy": 0.04566319269514677,
+      "spud_id": "14868913",
+      "product_id": "USArray.ORJ02.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.482540327179606,
+      "max_phase_tensor_ellipticity": 0.5306193552825766,
+      "max_tipper_amplitude": 0.2901331290161394,
+      "training_scalar_log10_abs_zxy": 0.11768920390825902,
+      "spud_id": "14868691",
+      "product_id": "USArray.ORI04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 54.33313442886117,
+      "max_phase_tensor_ellipticity": 0.7820568949973885,
+      "max_tipper_amplitude": 0.5954165911272964,
+      "training_scalar_log10_abs_zxy": 0.9010884409184541,
+      "spud_id": "14868469",
+      "product_id": "USArray.ORI03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 60.153114625655164,
+      "max_phase_tensor_ellipticity": 0.8924541003434362,
+      "max_tipper_amplitude": 0.6201694620594302,
+      "training_scalar_log10_abs_zxy": -0.469990289860917,
+      "spud_id": "14868247",
+      "product_id": "USArray.ORI02.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 34.466849687410935,
+      "max_phase_tensor_ellipticity": 0.8441795511100884,
+      "max_tipper_amplitude": 0.3705384800293689,
+      "training_scalar_log10_abs_zxy": -0.4045083585239489,
+      "spud_id": "14868025",
+      "product_id": "USArray.ORH04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.535145544952304,
+      "max_phase_tensor_ellipticity": 0.7599922817419308,
+      "max_tipper_amplitude": 0.5735278189760437,
+      "training_scalar_log10_abs_zxy": -0.5124571692831235,
+      "spud_id": "14867803",
+      "product_id": "USArray.ORH02.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 22.682338636410435,
+      "max_phase_tensor_ellipticity": 0.730530889993566,
+      "max_tipper_amplitude": 0.26931440616879837,
+      "training_scalar_log10_abs_zxy": -0.854404620000342,
+      "spud_id": "14867581",
+      "product_id": "USArray.ORG05.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 9.359375714860557,
+      "max_phase_tensor_ellipticity": 0.47350520165754123,
+      "max_tipper_amplitude": 0.30024546392083007,
+      "training_scalar_log10_abs_zxy": -0.1548002642673096,
+      "spud_id": "14867359",
+      "product_id": "USArray.ORG04.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 54.076438693051955,
+      "max_phase_tensor_ellipticity": 0.9963875422019097,
+      "max_tipper_amplitude": 0.5325353616212432,
+      "training_scalar_log10_abs_zxy": -0.6573038883325539,
+      "spud_id": "14867137",
+      "product_id": "USArray.ORG03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 30.626048066473192,
+      "max_phase_tensor_ellipticity": 0.7316566032093685,
+      "max_tipper_amplitude": 0.4700159725231911,
+      "training_scalar_log10_abs_zxy": -0.43935066646069504,
+      "spud_id": "14866915",
+      "product_id": "USArray.ORF03.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 19.704790324618433,
+      "max_phase_tensor_ellipticity": 0.5885513385363843,
+      "max_tipper_amplitude": 0.43616184533836017,
+      "training_scalar_log10_abs_zxy": 0.20955576688372946,
+      "spud_id": "14866693",
+      "product_id": "USArray.IDL11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.381777749020856,
+      "max_phase_tensor_ellipticity": 0.449440779163646,
+      "max_tipper_amplitude": 0.3349709918332967,
+      "training_scalar_log10_abs_zxy": 0.20314007381351618,
+      "spud_id": "14866471",
+      "product_id": "USArray.IDL10.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 3.7728486719609142,
+      "max_phase_tensor_ellipticity": 0.354734925639172,
+      "max_tipper_amplitude": 0.2698788689100231,
+      "training_scalar_log10_abs_zxy": 0.1843910022403481,
+      "spud_id": "14866249",
+      "product_id": "USArray.IDK11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 43.42897244270739,
+      "max_phase_tensor_ellipticity": 0.7063799440717647,
+      "max_tipper_amplitude": 0.3903553719873982,
+      "training_scalar_log10_abs_zxy": -1.0097337059137244,
+      "spud_id": "14866027",
+      "product_id": "USArray.IDK10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 36.49185534998604,
+      "max_phase_tensor_ellipticity": 0.9614416335851695,
+      "max_tipper_amplitude": 0.7012706363017377,
+      "training_scalar_log10_abs_zxy": -0.02305956001404818,
+      "spud_id": "14865805",
+      "product_id": "USArray.IDJ11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.812825787075252,
+      "max_phase_tensor_ellipticity": 0.29924647945653116,
+      "max_tipper_amplitude": 0.6273783024353029,
+      "training_scalar_log10_abs_zxy": -0.26583928667480305,
+      "spud_id": "14865583",
+      "product_id": "USArray.IDJ10.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.982702927194472,
+      "max_phase_tensor_ellipticity": 0.5240240689191342,
+      "max_tipper_amplitude": 0.29624620004381164,
+      "training_scalar_log10_abs_zxy": -0.02044081448422068,
+      "spud_id": "14865361",
+      "product_id": "USArray.IDI11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 26.826508611989567,
+      "max_phase_tensor_ellipticity": 0.9986598369941408,
+      "max_tipper_amplitude": 0.31705532727474384,
+      "training_scalar_log10_abs_zxy": -0.7812054873281555,
+      "spud_id": "14865139",
+      "product_id": "USArray.IDI10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 45.51106290996762,
+      "max_phase_tensor_ellipticity": 0.6822339664175009,
+      "max_tipper_amplitude": 0.3564875939408482,
+      "training_scalar_log10_abs_zxy": -0.4664927767704442,
+      "spud_id": "14864917",
+      "product_id": "USArray.IDH12.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.239355654574637,
+      "max_phase_tensor_ellipticity": 0.4280439839258252,
+      "max_tipper_amplitude": 0.2858075733195053,
+      "training_scalar_log10_abs_zxy": -0.37380255079380015,
+      "spud_id": "14864695",
+      "product_id": "USArray.IDH11.2007"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.455570003228218,
+      "max_phase_tensor_ellipticity": 0.29151744227339255,
+      "max_tipper_amplitude": 0.25410139377410057,
+      "training_scalar_log10_abs_zxy": -0.025757350242617286,
+      "spud_id": "14864473",
+      "product_id": "USArray.IDH10.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.443399465590668,
+      "max_phase_tensor_ellipticity": 0.2528349532406427,
+      "max_tipper_amplitude": 0.3954400892548793,
+      "training_scalar_log10_abs_zxy": -0.28822138523825613,
+      "spud_id": "14864251",
+      "product_id": "USArray.IDG11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.348637231082492,
+      "max_phase_tensor_ellipticity": 0.3435204377695623,
+      "max_tipper_amplitude": 0.3720080414239273,
+      "training_scalar_log10_abs_zxy": 0.18162556917047096,
+      "spud_id": "14864029",
+      "product_id": "USArray.IDF12.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 24.421222189683405,
+      "max_phase_tensor_ellipticity": 0.4170827659908287,
+      "max_tipper_amplitude": 0.45296374993717997,
+      "training_scalar_log10_abs_zxy": 0.12284810120469827,
+      "spud_id": "14863807",
+      "product_id": "USArray.IDF11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.53799421840408,
+      "max_phase_tensor_ellipticity": 0.41416224954320524,
+      "max_tipper_amplitude": 0.4947159326158902,
+      "training_scalar_log10_abs_zxy": 0.4384729907964121,
+      "spud_id": "14863585",
+      "product_id": "USArray.IDE11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 83.92492323574557,
+      "max_phase_tensor_ellipticity": 0.8409094404447658,
+      "max_tipper_amplitude": 0.5934743910912743,
+      "training_scalar_log10_abs_zxy": -0.10134004000954275,
+      "spud_id": "14863363",
+      "product_id": "USArray.IDD11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 49.74071764350411,
+      "max_phase_tensor_ellipticity": 0.9926972083228253,
+      "max_tipper_amplitude": 0.5243389694337804,
+      "training_scalar_log10_abs_zxy": -0.8479331175669149,
+      "spud_id": "14863141",
+      "product_id": "USArray.IDB11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 21.655408078799727,
+      "max_phase_tensor_ellipticity": 0.6548111983081719,
+      "max_tipper_amplitude": 0.5361083720096317,
+      "training_scalar_log10_abs_zxy": -0.6441387138604169,
+      "spud_id": "14862919",
+      "product_id": "USArray.IDA11.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.978407912705416,
+      "max_phase_tensor_ellipticity": 0.6102379389380411,
+      "max_tipper_amplitude": 0.7189779696725189,
+      "training_scalar_log10_abs_zxy": -0.050049187703851306,
+      "spud_id": "14862697",
+      "product_id": "USArray.CAM01.2007"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.876447740172484,
+      "max_phase_tensor_ellipticity": 0.4136307479045118,
+      "max_tipper_amplitude": 0.39204145217606023,
+      "training_scalar_log10_abs_zxy": 0.29270501160749685,
+      "spud_id": "14862475",
+      "product_id": "USArray.ORL09.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.872154791479216,
+      "max_phase_tensor_ellipticity": 0.21201389008953908,
+      "max_tipper_amplitude": 0.3293575086829625,
+      "training_scalar_log10_abs_zxy": -0.3184290994300263,
+      "spud_id": "14862253",
+      "product_id": "USArray.ORL08.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 3.962062433908237,
+      "max_phase_tensor_ellipticity": 0.2824413044932206,
+      "max_tipper_amplitude": 0.33015286785976655,
+      "training_scalar_log10_abs_zxy": -0.21424857806684158,
+      "spud_id": "14862031",
+      "product_id": "USArray.ORL07.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 3.5658833650834056,
+      "max_phase_tensor_ellipticity": 0.23840310810961166,
+      "max_tipper_amplitude": 0.8863557550763781,
+      "training_scalar_log10_abs_zxy": 0.08335245824674675,
+      "spud_id": "14861809",
+      "product_id": "USArray.ORK09.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 3.9592287507870547,
+      "max_phase_tensor_ellipticity": 0.22128271406718567,
+      "max_tipper_amplitude": 0.27381166860437123,
+      "training_scalar_log10_abs_zxy": 0.1399299323177164,
+      "spud_id": "14861587",
+      "product_id": "USArray.ORK08.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.293284060209427,
+      "max_phase_tensor_ellipticity": 0.23293484568136028,
+      "max_tipper_amplitude": 0.34519737046898635,
+      "training_scalar_log10_abs_zxy": -0.31210748005092465,
+      "spud_id": "14861365",
+      "product_id": "USArray.ORK07.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 8.210248001728749,
+      "max_phase_tensor_ellipticity": 0.5396646434326946,
+      "max_tipper_amplitude": 0.3890229579262361,
+      "training_scalar_log10_abs_zxy": -0.2321600205953039,
+      "spud_id": "14861143",
+      "product_id": "USArray.ORK06.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.5939037205332385,
+      "max_phase_tensor_ellipticity": 0.23063325727751158,
+      "max_tipper_amplitude": 0.28313919738521964,
+      "training_scalar_log10_abs_zxy": -0.26939708596271605,
+      "spud_id": "14860921",
+      "product_id": "USArray.ORJ09.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.573691876827433,
+      "max_phase_tensor_ellipticity": 0.30443378418421974,
+      "max_tipper_amplitude": 0.3520003341812392,
+      "training_scalar_log10_abs_zxy": -0.214439370426132,
+      "spud_id": "14860699",
+      "product_id": "USArray.ORJ08.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 1.894028258161244,
+      "max_phase_tensor_ellipticity": 0.25895145603154646,
+      "max_tipper_amplitude": 0.21763258926377935,
+      "training_scalar_log10_abs_zxy": -0.1671533895769059,
+      "spud_id": "14860477",
+      "product_id": "USArray.ORJ07.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.64595218716557,
+      "max_phase_tensor_ellipticity": 0.5423585865447916,
+      "max_tipper_amplitude": 0.4143386540934926,
+      "training_scalar_log10_abs_zxy": 0.19764670104824217,
+      "spud_id": "14860255",
+      "product_id": "USArray.ORJ06.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.785335897807328,
+      "max_phase_tensor_ellipticity": 0.44886889574682365,
+      "max_tipper_amplitude": 0.19134270927129224,
+      "training_scalar_log10_abs_zxy": -0.19542339741653522,
+      "spud_id": "14860033",
+      "product_id": "USArray.ORJ05.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.253835710173311,
+      "max_phase_tensor_ellipticity": 0.2505873056807969,
+      "max_tipper_amplitude": 0.2477015428485307,
+      "training_scalar_log10_abs_zxy": -0.10280772880343228,
+      "spud_id": "14859811",
+      "product_id": "USArray.ORI09.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 2.1034216032687163,
+      "max_phase_tensor_ellipticity": 0.21393725716242395,
+      "max_tipper_amplitude": 0.23526440585120392,
+      "training_scalar_log10_abs_zxy": -0.2277323681676057,
+      "spud_id": "14859589",
+      "product_id": "USArray.ORI08.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 69.09401978909763,
+      "max_phase_tensor_ellipticity": 0.2830115541884697,
+      "max_tipper_amplitude": 0.2617065759531902,
+      "training_scalar_log10_abs_zxy": -0.1004996421805659,
+      "spud_id": "14859367",
+      "product_id": "USArray.ORI07.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.149831947171459,
+      "max_phase_tensor_ellipticity": 0.3187195585866748,
+      "max_tipper_amplitude": 0.3176795642788507,
+      "training_scalar_log10_abs_zxy": -0.10389939682315888,
+      "spud_id": "14859145",
+      "product_id": "USArray.ORI06.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.817617638994324,
+      "max_phase_tensor_ellipticity": 0.2921774633030676,
+      "max_tipper_amplitude": 0.3112874678460573,
+      "training_scalar_log10_abs_zxy": -0.03969521973564374,
+      "spud_id": "14858923",
+      "product_id": "USArray.ORI05.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.964832247352125,
+      "max_phase_tensor_ellipticity": 0.448719290225626,
+      "max_tipper_amplitude": 0.22254338334932589,
+      "training_scalar_log10_abs_zxy": -0.9601305028251843,
+      "spud_id": "14858701",
+      "product_id": "USArray.ORH09.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 13.364730579401785,
+      "max_phase_tensor_ellipticity": 0.7365292094877899,
+      "max_tipper_amplitude": 0.6860013352884892,
+      "training_scalar_log10_abs_zxy": -0.6579689497263903,
+      "spud_id": "14858479",
+      "product_id": "USArray.ORH08.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.895200847506385,
+      "max_phase_tensor_ellipticity": 0.485852600476552,
+      "max_tipper_amplitude": 0.44812136287469045,
+      "training_scalar_log10_abs_zxy": 0.10930819913800593,
+      "spud_id": "14858257",
+      "product_id": "USArray.ORH07.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 5.383937472565737,
+      "max_phase_tensor_ellipticity": 0.3528228637270723,
+      "max_tipper_amplitude": 0.38477717601880307,
+      "training_scalar_log10_abs_zxy": 0.11154021747632599,
+      "spud_id": "14858035",
+      "product_id": "USArray.ORH06.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 7.105720825659583,
+      "max_phase_tensor_ellipticity": 0.40761059091379437,
+      "max_tipper_amplitude": 0.31715445302464557,
+      "training_scalar_log10_abs_zxy": -0.27866394791269883,
+      "spud_id": "14857813",
+      "product_id": "USArray.ORH05.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 40.86288241755584,
+      "max_phase_tensor_ellipticity": 0.7874294072441116,
+      "max_tipper_amplitude": 0.5348261969151193,
+      "training_scalar_log10_abs_zxy": -0.21529107454067853,
+      "spud_id": "14857591",
+      "product_id": "USArray.ORG10.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.243120298547027,
+      "max_phase_tensor_ellipticity": 0.4453518372806981,
+      "max_tipper_amplitude": 0.791159021671188,
+      "training_scalar_log10_abs_zxy": -0.14685644009121723,
+      "spud_id": "14857369",
+      "product_id": "USArray.ORG09.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.021030554549871,
+      "max_phase_tensor_ellipticity": 0.2782283732105591,
+      "max_tipper_amplitude": 0.3616122363111416,
+      "training_scalar_log10_abs_zxy": 0.3161775499333144,
+      "spud_id": "14857147",
+      "product_id": "USArray.ORG08.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 44.812651584063296,
+      "max_phase_tensor_ellipticity": 0.9994340227776471,
+      "max_tipper_amplitude": 1.8571007074799175,
+      "training_scalar_log10_abs_zxy": -0.08554044210949374,
+      "spud_id": "14856925",
+      "product_id": "USArray.ORG07.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.5275442171155325,
+      "max_phase_tensor_ellipticity": 0.3181767047708595,
+      "max_tipper_amplitude": 0.3342627042282814,
+      "training_scalar_log10_abs_zxy": -0.11125467900838001,
+      "spud_id": "14856703",
+      "product_id": "USArray.ORG06.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 10.623427098755908,
+      "max_phase_tensor_ellipticity": 0.4204862675282785,
+      "max_tipper_amplitude": 0.3462264999499923,
+      "training_scalar_log10_abs_zxy": -0.1846316762739184,
+      "spud_id": "14856481",
+      "product_id": "USArray.ORF10.2006"
+    },
+    {
+      "classification": "2d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 6.02438748215273,
+      "max_phase_tensor_ellipticity": 0.30109262127555636,
+      "max_tipper_amplitude": 0.29504010663954505,
+      "training_scalar_log10_abs_zxy": -0.2547024911744402,
+      "spud_id": "14856259",
+      "product_id": "USArray.ORF09.2006"
+    },
+    {
+      "classification": "3d",
+      "valid_frequency_count": 30,
+      "max_abs_phase_tensor_skew_deg": 4.612918655547151,
+      "max_phase_tensor_ellipticity": 0.44621017681048264,
+      "max_tipper_amplitude": 0.31906484414417097,
+      "training_scalar_log10_abs_zxy": -0.09584278895219026,
+      "spud_id": "14856037",
+      "product_id": "USArray.ORF08.2006"
+    }
+  ]
+}

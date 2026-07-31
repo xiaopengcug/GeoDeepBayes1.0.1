@@ -1,0 +1,22 @@
+{
+  "schema_version": "wp8-zenodo-xingning-csamt-outcome-blind-design-v1",
+  "selection_frozen_before_response_payload_access": true,
+  "selection_date": "2026-07-25",
+  "record_id": 5533467,
+  "doi": "10.5281/zenodo.5533467",
+  "title": "CSAMT data in Xingning area, Hunan Province, China",
+  "license": "CC-BY-4.0",
+  "archive": {
+    "name": "数据XingNing Area.rar",
+    "bytes": 140057,
+    "checksum": "md5:b7a594e97890430905de0050daa4a4ea"
+  },
+  "staged_protocol": {
+    "stage_1": "Inspect archive member names, directory structure, documentation, coordinates, source metadata, and acquisition settings without parsing response columns.",
+    "stage_2_condition": "Metadata must identify multiple independent survey lines or dates and expose receiver coordinates, transmitter endpoints or reconstructable geometry, source current and waveform, frequencies, response components, and uncertainty semantics.",
+    "stage_2_role_rule": "Freeze whole-line or whole-date roles before parsing any apparent-resistivity, phase, field-amplitude, or impedance values.",
+    "abort_condition": "Do not use the archive for formal CSAMT passage when it is a single worked example, lacks the complete observation contract, or cannot possibly support 223 effective test clusters."
+  },
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

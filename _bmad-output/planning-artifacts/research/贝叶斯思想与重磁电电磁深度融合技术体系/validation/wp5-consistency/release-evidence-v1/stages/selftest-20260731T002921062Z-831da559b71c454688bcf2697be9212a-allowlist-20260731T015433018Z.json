@@ -1,0 +1,156 @@
+{
+  "schema": "wp5-selftest-finalized-evidence-v1",
+  "evidence_class": "Finalized from exact, non-overlapping partial evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_version_path": "versions/20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "source_manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
+  "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f",
+  "root_anchor_file_sha256": "c3cc21b5342d59390d0c33da2250cda58f3dde61bae7b9e94a6faca3e52b7e67",
+  "stage": "allowlist",
+  "fixture_count": 9,
+  "fixture_id_set": [
+    "FXT-ALLOWLIST-001",
+    "FXT-ALLOWLIST-002",
+    "FXT-ALLOWLIST-003",
+    "FXT-ALLOWLIST-004",
+    "FXT-ALLOWLIST-005",
+    "FXT-ALLOWLIST-006",
+    "FXT-ALLOWLIST-007",
+    "FXT-ALLOWLIST-008",
+    "FXT-ALLOWLIST-009"
+  ],
+  "batch_role": "stage",
+  "partial_evidence": [
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-allowlist-20260731T014906949Z.json",
+      "sha256": "d6a094349ce852f7aeeddf8ee8f205d88388e3097d1b3345302b570831f3048c"
+    },
+    {
+      "path": "partial-selftest-20260731T002921062Z-831da559b71c454688bcf2697be9212a-allowlist-20260731T015432478Z.json",
+      "sha256": "4f5efdde99e28f3e3f74e98c933505d722753da35ed25166c13a816b942d4ad1"
+    }
+  ],
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-ALLOWLIST-001",
+      "case": "FXT-ALLOWLIST-001",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 1017
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-002",
+      "case": "FXT-ALLOWLIST-002",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 942
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-003",
+      "case": "FXT-ALLOWLIST-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "contained path prefix sibling"
+      ],
+      "actual_rejection": "contained path prefix sibling",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 973
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-004",
+      "case": "FXT-ALLOWLIST-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "contained path dotdot escape"
+      ],
+      "actual_rejection": "contained path dotdot escape",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 951
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-005",
+      "case": "FXT-ALLOWLIST-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "contained path symlink escape"
+      ],
+      "actual_rejection": "contained path symlink escape",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 979
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-006",
+      "case": "FXT-ALLOWLIST-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62576
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-007",
+      "case": "FXT-ALLOWLIST-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 73204
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-008",
+      "case": "FXT-ALLOWLIST-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62894
+    },
+    {
+      "fixture_id": "FXT-ALLOWLIST-009",
+      "case": "FXT-ALLOWLIST-009",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "allowlist frozen constants"
+      ],
+      "actual_rejection": "allowlist frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 63080
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T01:54:33.0192696Z",
+  "output_sha256": "975ed2386fdbe0610b76d8af2969420a78e1d457da5ace8201b89fa1d1c1a540",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

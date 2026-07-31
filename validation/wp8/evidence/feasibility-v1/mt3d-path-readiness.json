@@ -1,0 +1,71 @@
+{
+  "schema_version": "wp8-mt3d-path-readiness-v1",
+  "formal_wp8_1_evidence": false,
+  "scope": "WP8-0 selected 3-D path feasibility",
+  "implementation": {
+    "entrypoint": "geodeepbayes.forward.mt3d.MT3DOperator",
+    "dependency_versions": {
+      "simpeg": "0.25.2",
+      "discretize": "0.12.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pymatsolver": "0.4.0"
+    },
+    "applicable_dimension": "3-D primary-secondary natural-source Maxwell",
+    "outputs": [
+      "Zxx",
+      "Zxy",
+      "Zyx",
+      "Zyy",
+      "Tx",
+      "Ty"
+    ]
+  },
+  "independent_reference": {
+    "kind": "analytic homogeneous-halfspace impedance and zero-tipper reference",
+    "quantity": "full complex impedance tensor and tipper",
+    "test_path": "tests/forward/test_mt3d.py",
+    "test_source_sha256": "6d1c06f00b8f8a8a7b27db4282f40ff13ba5d2a2b2aa49db8d9c2bf24fe58541",
+    "pytest_exit_code": 0,
+    "pytest_stdout": "...                                                                      [100%]\n============================== warnings summary ===============================\ntests/forward/test_mt3d.py::test_mt3d_homogeneous_halfspace_independent_analytic_reference\ntests/forward/test_mt3d.py::test_mt3d_derivative_adjoint_and_finite_difference\ntests/forward/test_mt3d.py::test_mt3d_three_level_boundary_convergence\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\simpeg\\base\\pde_simulation.py:663: PerformanceWarning: The 'pymatsolver.SolverLU' solver might lead to high computation times. We recommend using a faster alternative such as 'pymatsolver.Pardiso' or 'pymatsolver.Mumps'.\n    super().__setattr__(name, value)\n\ntests/forward/test_mt3d.py::test_mt3d_homogeneous_halfspace_independent_analytic_reference\ntests/forward/test_mt3d.py::test_mt3d_derivative_adjoint_and_finite_difference\ntests/forward/test_mt3d.py::test_mt3d_three_level_boundary_convergence\n  H:\\GeoDeepBayes1.0.1\\.venv\\Lib\\site-packages\\pymatsolver\\wrappers.py:81: SparseEfficiencyWarning: splu converted its input to CSC format\n    self.solver = fun(self.A, **self.kwargs)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 6 warnings in 1.54s\n",
+    "passed": true
+  },
+  "resource_measurement": {
+    "kind": "WP8-0 path scales ending at 336 stations, 3 frequencies and 512 cells; not a formal WP8-1 30-frequency production mesh",
+    "records": [
+      {
+        "mesh_cells": 64,
+        "stations": 16,
+        "frequencies": 1,
+        "complex_data": 96,
+        "wall_time_seconds": 0.5595423000004303,
+        "peak_python_memory_bytes": 680943,
+        "finite": true
+      },
+      {
+        "mesh_cells": 216,
+        "stations": 64,
+        "frequencies": 2,
+        "complex_data": 768,
+        "wall_time_seconds": 1.2381501999998363,
+        "peak_python_memory_bytes": 1813024,
+        "finite": true
+      },
+      {
+        "mesh_cells": 512,
+        "stations": 336,
+        "frequencies": 3,
+        "complex_data": 6048,
+        "wall_time_seconds": 3.730708600000071,
+        "peak_python_memory_bytes": 4897962,
+        "finite": true
+      }
+    ],
+    "timeout_seconds": 37.30708600000071,
+    "memory_limit_bytes": 268435456,
+    "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+    "negative_test": "tests/validation/test_wp8_resource_abort.py",
+    "negative_test_source_sha256": "d1788b83dc10ab8a436b82ff5a1b3624f056fcaeeb70fe49ec670d6a1c70d5c1",
+    "passed": true
+  }
+}

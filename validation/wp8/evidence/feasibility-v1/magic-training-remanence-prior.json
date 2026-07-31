@@ -1,0 +1,1214 @@
+{
+  "schema_version": "wp8-magic-training-remanence-prior-v1",
+  "raw_archive_sha256": "b81371f6489adac8f4f572692e65085461fc6d59acdcb32c86aca9321cda7508",
+  "design_split_sha256": "111188a12ad31555502329c56539d6a6c63480691560c1de0f8727b22e8dc8d5",
+  "training_contributions_interpreted": 64,
+  "buffer_contributions_interpreted": 0,
+  "calibration_contributions_interpreted": 0,
+  "test_contributions_interpreted": 0,
+  "excluded_contribution_ids": [
+    20710
+  ],
+  "selection_rule": "measurement method_codes contains exact token LT-NO; positive magnitude; finite direction where vector completeness is claimed",
+  "magnitude_distributions": {
+    "magn_moment": {
+      "unit": "A m^2",
+      "count": 5905,
+      "minimum": 4.006e-26,
+      "median": 2.167526e-06,
+      "maximum": 0.238,
+      "log10_q05": -8.350082844829622,
+      "log10_q25": -6.480172006224281,
+      "log10_q50": -5.664035684352879,
+      "log10_q75": -4.768785352037399,
+      "log10_q95": -3.917935454537314
+    },
+    "magn_mass": {
+      "unit": "A m^2/kg",
+      "count": 906,
+      "minimum": 1.50381e-13,
+      "median": 0.00052386305,
+      "maximum": 0.01239533,
+      "log10_q05": -10.633055177410576,
+      "log10_q25": -7.090871734441762,
+      "log10_q50": -3.2807863553960983,
+      "log10_q75": -2.6970621373647496,
+      "log10_q95": -2.290615962091946
+    },
+    "magn_volume": {
+      "unit": "A/m",
+      "count": 1474,
+      "minimum": 6.85e-05,
+      "median": 0.308033,
+      "maximum": 72.618,
+      "log10_q05": -2.5240656072050096,
+      "log10_q25": -0.9597320815371622,
+      "log10_q50": -0.5114029225137477,
+      "log10_q75": 0.1473036907151446,
+      "log10_q95": 0.8454869651308388
+    }
+  },
+  "direction_distribution": {
+    "declination": {
+      "count": 5905,
+      "circular_mean_degrees": 177.79505419577228,
+      "mean_resultant_length": 0.016918424931418603
+    },
+    "inclination": {
+      "count": 5905,
+      "mean_degrees": -3.531756597129628,
+      "median_degrees": -5.5,
+      "q05_degrees": -70.08,
+      "q95_degrees": 67.2
+    }
+  },
+  "untreated_contributions": 21,
+  "complete_vector_contributions": 21,
+  "complete_vector_rows": 5905,
+  "prior_gate_definition": "at least 100 complete untreated vectors from at least 10 contributions",
+  "prior_gate_passed": true,
+  "contributions": [
+    {
+      "contribution_id": 20715,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20606,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20678,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20686,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20582,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20713,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20644,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20716,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20684,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20717,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20570,
+      "measurement_rows": 283,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20486,
+      "measurement_rows": 251,
+      "untreated_rows": 12,
+      "untreated_unique_specimens": 12,
+      "complete_vector_rows": 12,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 12
+      },
+      "observed_method_codes": [
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-TRM",
+        "LP-PI-TRM-IZ",
+        "LP-PI-TRM-ZI",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20677,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20683,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20386,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20508,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20693,
+      "measurement_rows": 2774,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LT-AF-Z",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20270,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20393,
+      "measurement_rows": 3018,
+      "untreated_rows": 113,
+      "untreated_unique_specimens": 113,
+      "complete_vector_rows": 113,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 113,
+        "magn_moment": 113
+      },
+      "observed_method_codes": [
+        "LP-CR-TRM",
+        "LP-PI-ALT",
+        "LP-PI-II",
+        "LP-PI-TRM",
+        "LT-AF-Z",
+        "LT-AF-Z-TUMB",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-T-I"
+      ]
+    },
+    {
+      "contribution_id": 20481,
+      "measurement_rows": 1758,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-ARM",
+        "LP-IRM",
+        "LP-IRM-3D"
+      ]
+    },
+    {
+      "contribution_id": 20510,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20312,
+      "measurement_rows": 2061,
+      "untreated_rows": 43,
+      "untreated_unique_specimens": 40,
+      "complete_vector_rows": 43,
+      "positive_magnitude_rows": {
+        "magn_volume": 43,
+        "magn_mass": 0,
+        "magn_moment": 43
+      },
+      "observed_method_codes": [
+        "DE-VM",
+        "LP-AF",
+        "LP-DIR-T",
+        "LP-NO",
+        "LP-T",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20353,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20352,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20541,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20331,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20274,
+      "measurement_rows": 4134,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-AF",
+        "LP-T"
+      ]
+    },
+    {
+      "contribution_id": 20289,
+      "measurement_rows": 0,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": []
+    },
+    {
+      "contribution_id": 20685,
+      "measurement_rows": 6264,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LT-HT-Z"
+      ]
+    },
+    {
+      "contribution_id": 20184,
+      "measurement_rows": 2835,
+      "untreated_rows": 91,
+      "untreated_unique_specimens": 85,
+      "complete_vector_rows": 91,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 91
+      },
+      "observed_method_codes": [
+        "LP-DIR-T",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20480,
+      "measurement_rows": 8587,
+      "untreated_rows": 199,
+      "untreated_unique_specimens": 115,
+      "complete_vector_rows": 199,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 199
+      },
+      "observed_method_codes": [
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-M",
+        "LP-PI-M-IZ",
+        "LP-PI-M-IZZI",
+        "LP-PI-M-ZI",
+        "LP-PI-TRM",
+        "LP-PI-TRM-IZ",
+        "LP-PI-TRM-ZI",
+        "LT-AF-Z",
+        "LT-M-I",
+        "LT-M-Z",
+        "LT-NO",
+        "LT-PMRM-I",
+        "LT-PTRM-I",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20427,
+      "measurement_rows": 3800,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-CW-SIRM",
+        "LP-FC",
+        "LP-MC",
+        "LP-MST",
+        "LP-MW",
+        "LP-X",
+        "LP-X-F",
+        "LP-X-T",
+        "LP-ZFC"
+      ]
+    },
+    {
+      "contribution_id": 20037,
+      "measurement_rows": 7580,
+      "untreated_rows": 604,
+      "untreated_unique_specimens": 602,
+      "complete_vector_rows": 604,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 604
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T",
+        "LT-AF-Z",
+        "LT-LT-Z",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20397,
+      "measurement_rows": 6696,
+      "untreated_rows": 136,
+      "untreated_unique_specimens": 68,
+      "complete_vector_rows": 136,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 136,
+        "magn_moment": 136
+      },
+      "observed_method_codes": [
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-PTRM-Z",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20299,
+      "measurement_rows": 3996,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20330,
+      "measurement_rows": 2310,
+      "untreated_rows": 212,
+      "untreated_unique_specimens": 210,
+      "complete_vector_rows": 212,
+      "positive_magnitude_rows": {
+        "magn_volume": 212,
+        "magn_mass": 0,
+        "magn_moment": 212
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T",
+        "LT-AF-Z",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20476,
+      "measurement_rows": 13712,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20377,
+      "measurement_rows": 8373,
+      "untreated_rows": 413,
+      "untreated_unique_specimens": 293,
+      "complete_vector_rows": 413,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 413
+      },
+      "observed_method_codes": [
+        "LP-DIR-T",
+        "LT-LT-Z",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20595,
+      "measurement_rows": 2736,
+      "untreated_rows": 72,
+      "untreated_unique_specimens": 72,
+      "complete_vector_rows": 72,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 72
+      },
+      "observed_method_codes": [
+        "DE-VM",
+        "LP-AN-TRM",
+        "LP-CR-TRM",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-TRM",
+        "LP-PI-TRM-IZ",
+        "LP-PI-TRM-ZI",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20257,
+      "measurement_rows": 7917,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-AF",
+        "LP-IMT",
+        "LP-MC",
+        "LP-MW",
+        "LP-NO"
+      ]
+    },
+    {
+      "contribution_id": 20258,
+      "measurement_rows": 7225,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-AN-IRM",
+        "LP-ARM",
+        "LP-ARM-AFD",
+        "LP-DIR-AF",
+        "LP-IRM",
+        "LP-IRM-AFD",
+        "LP-X",
+        "LT-AF-Z"
+      ]
+    },
+    {
+      "contribution_id": 20298,
+      "measurement_rows": 4542,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20297,
+      "measurement_rows": 2440,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20185,
+      "measurement_rows": 4260,
+      "untreated_rows": 98,
+      "untreated_unique_specimens": 98,
+      "complete_vector_rows": 98,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 98
+      },
+      "observed_method_codes": [
+        "LP-AN-TRM",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-TRM",
+        "LP-PI-TRM-IZ",
+        "LP-PI-TRM-ZI",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20295,
+      "measurement_rows": 3914,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20343,
+      "measurement_rows": 2272,
+      "untreated_rows": 558,
+      "untreated_unique_specimens": 549,
+      "complete_vector_rows": 558,
+      "positive_magnitude_rows": {
+        "magn_volume": 558,
+        "magn_mass": 0,
+        "magn_moment": 558
+      },
+      "observed_method_codes": [
+        "LT-AF-Z",
+        "LT-AF-Z-TUMB",
+        "LT-IRM",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20296,
+      "measurement_rows": 7043,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20294,
+      "measurement_rows": 4390,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20293,
+      "measurement_rows": 5883,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20259,
+      "measurement_rows": 15142,
+      "untreated_rows": 473,
+      "untreated_unique_specimens": 455,
+      "complete_vector_rows": 473,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 473
+      },
+      "observed_method_codes": [
+        "LP-DIR-T",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20210,
+      "measurement_rows": 14834,
+      "untreated_rows": 229,
+      "untreated_unique_specimens": 229,
+      "complete_vector_rows": 229,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 229,
+        "magn_moment": 229
+      },
+      "observed_method_codes": [
+        "LP-ARM-AFD",
+        "LP-DIR-AF",
+        "LP-PI-ALT-AFARM",
+        "LP-PI-ALT-PMRM",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-ARM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-M",
+        "LP-PI-REL-PT",
+        "LP-PI-TRM",
+        "LP-TRM-AFD",
+        "LT-AF-I",
+        "LT-AF-Z",
+        "LT-M-I",
+        "LT-M-Z",
+        "LT-NO",
+        "LT-PMRM-I",
+        "LT-PTRM-I",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20192,
+      "measurement_rows": 8245,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-AF",
+        "LP-ARM-P",
+        "LP-NO",
+        "LP-T",
+        "LP-X"
+      ]
+    },
+    {
+      "contribution_id": 20557,
+      "measurement_rows": 16656,
+      "untreated_rows": 342,
+      "untreated_unique_specimens": 342,
+      "complete_vector_rows": 342,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 342
+      },
+      "observed_method_codes": [
+        "LP-AN-ARM",
+        "LP-AN-TRM",
+        "LP-CR-TRM",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-BT-MD",
+        "LP-PI-TRM",
+        "LP-PI-TRM-IZ",
+        "LP-PI-TRM-ZI",
+        "LT-AF-I",
+        "LT-AF-Z",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-PTRM-MD",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20522,
+      "measurement_rows": 14205,
+      "untreated_rows": 377,
+      "untreated_unique_specimens": 376,
+      "complete_vector_rows": 369,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 369
+      },
+      "observed_method_codes": [
+        "LP-CA-AR",
+        "LP-DIR-AF",
+        "LP-DIR-AFT",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-TRM",
+        "LP-PI-TRM-IZ",
+        "LP-PI-TRM-ZI",
+        "LP-X-T",
+        "LT-AF-Z",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20545,
+      "measurement_rows": 8735,
+      "untreated_rows": 295,
+      "untreated_unique_specimens": 294,
+      "complete_vector_rows": 295,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 295
+      },
+      "observed_method_codes": [
+        "LP-AN-TRM",
+        "LP-DIR-AF",
+        "LP-DIR-T",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-TRM",
+        "LP-PI-TRM-ZI",
+        "LP-PI-ZI",
+        "LT-AF-Z",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 19987,
+      "measurement_rows": 5079,
+      "untreated_rows": 171,
+      "untreated_unique_specimens": 171,
+      "complete_vector_rows": 171,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 171
+      },
+      "observed_method_codes": [
+        "DE-VM",
+        "LP-PI-ALT",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-BT-MD",
+        "LP-PI-II",
+        "LP-PI-TRM",
+        "LP-PI-TRM-IZ",
+        "LP-PI-TRM-ZI",
+        "LP-PI-ZI",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-PTRM-MD",
+        "LT-T-I",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20245,
+      "measurement_rows": 27324,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-AF"
+      ]
+    },
+    {
+      "contribution_id": 20536,
+      "measurement_rows": 13401,
+      "untreated_rows": 428,
+      "untreated_unique_specimens": 424,
+      "complete_vector_rows": 428,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 428,
+        "magn_moment": 428
+      },
+      "observed_method_codes": [
+        "LP-CR-TRM",
+        "LP-PI-ALT",
+        "LP-PI-ALT-PTRM",
+        "LP-PI-BT-IZZI",
+        "LP-PI-II",
+        "LP-PI-TRM",
+        "LT-AF-Z",
+        "LT-AF-Z-XZY",
+        "LT-AF-Z-YZX",
+        "LT-NO",
+        "LT-PTRM-I",
+        "LT-T-I"
+      ]
+    },
+    {
+      "contribution_id": 20300,
+      "measurement_rows": 3641,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20357,
+      "measurement_rows": 5762,
+      "untreated_rows": 661,
+      "untreated_unique_specimens": 621,
+      "complete_vector_rows": 661,
+      "positive_magnitude_rows": {
+        "magn_volume": 661,
+        "magn_mass": 0,
+        "magn_moment": 661
+      },
+      "observed_method_codes": [
+        "LT-AF-Z",
+        "LT-AF-Z-TUMB",
+        "LT-AF-Z-XZY",
+        "LT-AF-Z-YZX",
+        "LT-AF-Z-Z",
+        "LT-IRM",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20340,
+      "measurement_rows": 29425,
+      "untreated_rows": 386,
+      "untreated_unique_specimens": 386,
+      "complete_vector_rows": 386,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 386
+      },
+      "observed_method_codes": [
+        "LP-BCR-BF",
+        "LP-CW-SIRM",
+        "LP-DIR-T",
+        "LP-FC",
+        "LP-HYS",
+        "LP-MC",
+        "LP-MW",
+        "LP-ZFC",
+        "LT-LT-Z",
+        "LT-NO",
+        "LT-T-Z"
+      ]
+    },
+    {
+      "contribution_id": 20252,
+      "measurement_rows": 35913,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-AF",
+        "LP-T"
+      ]
+    },
+    {
+      "contribution_id": 20301,
+      "measurement_rows": 17679,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-DIR-AF",
+        "LP-DIR-T"
+      ]
+    },
+    {
+      "contribution_id": 20255,
+      "measurement_rows": 126247,
+      "untreated_rows": 0,
+      "untreated_unique_specimens": 0,
+      "complete_vector_rows": 0,
+      "positive_magnitude_rows": {
+        "magn_volume": 0,
+        "magn_mass": 0,
+        "magn_moment": 0
+      },
+      "observed_method_codes": [
+        "LP-U"
+      ]
+    }
+  ],
+  "tables_read": [
+    "measurements"
+  ],
+  "held_out_response_values_read": false
+}

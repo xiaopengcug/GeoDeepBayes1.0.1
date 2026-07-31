@@ -1,0 +1,174 @@
+{
+  "schema_version": "wp8-geoscience-australia-aem-multisystem-inventory-v1",
+  "selection_sha256": "c9059275d889fba40ee16cb879fc8b788fd13b03db92360f1e1c6a97bdfb655f",
+  "archives": [
+    {
+      "record_id": 102781,
+      "system": "VTEM",
+      "archive": "102781-ga1279_decimated_point_located_em.zip",
+      "archive_bytes": 613795566,
+      "archive_sha256": "0b32915032f78e1d3af11696584a6e55edc878295ded939da9acdbf771730423",
+      "members": [
+        {
+          "name": "ga1279_decimated_point_located_em/",
+          "uncompressed_bytes": 0,
+          "compressed_bytes": 0,
+          "crc32": "00000000",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.dat",
+          "uncompressed_bytes": 929102274,
+          "compressed_bytes": 260172032,
+          "crc32": "1b27c1c7",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.des",
+          "uncompressed_bytes": 176376,
+          "compressed_bytes": 37240,
+          "crc32": "50410501",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        },
+        {
+          "name": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.dfn",
+          "uncompressed_bytes": 1503,
+          "compressed_bytes": 400,
+          "crc32": "d445d92d",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        },
+        {
+          "name": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.ehf",
+          "uncompressed_bytes": 98,
+          "compressed_bytes": 84,
+          "crc32": "718aa536",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        },
+        {
+          "name": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.gdb",
+          "uncompressed_bytes": 354607104,
+          "compressed_bytes": 353577958,
+          "crc32": "2dc54fa5",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.gd~",
+          "uncompressed_bytes": 52726,
+          "compressed_bytes": 5665,
+          "crc32": "c56f4373",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.prj",
+          "uncompressed_bytes": 166,
+          "compressed_bytes": 123,
+          "crc32": "105462b6",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        }
+      ]
+    },
+    {
+      "record_id": 121613,
+      "system": "SkyTEM",
+      "archive": "121613-121613_located_data_em.zip",
+      "archive_bytes": 139294555,
+      "archive_sha256": "e764e898555088b268e330d07be01af904e5e0ddae51f8592e9895055b3ee4b0",
+      "members": [
+        {
+          "name": "located_data_em/",
+          "uncompressed_bytes": 0,
+          "compressed_bytes": 0,
+          "crc32": "00000000",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "located_data_em/AUS_10031_Olympic_EM.dat",
+          "uncompressed_bytes": 884644650,
+          "compressed_bytes": 139287201,
+          "crc32": "fd8363a4",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "located_data_em/AUS_10031_Olympic_EM.des",
+          "uncompressed_bytes": 24891,
+          "compressed_bytes": 5996,
+          "crc32": "4a5ab1d3",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        },
+        {
+          "name": "located_data_em/AUS_10031_Olympic_EM.dfn",
+          "uncompressed_bytes": 2660,
+          "compressed_bytes": 616,
+          "crc32": "0ab4e63b",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        }
+      ]
+    },
+    {
+      "record_id": 122012,
+      "system": "SkyTEM",
+      "archive": "122012-122012_02_0.zip",
+      "archive_bytes": 168667247,
+      "archive_sha256": "0c2c80cdeec784c8173136b56e488245abebfcacfc5506f27f26dcb87e387b4f",
+      "members": [
+        {
+          "name": "01_EM/",
+          "uncompressed_bytes": 0,
+          "compressed_bytes": 0,
+          "crc32": "00000000",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "01_EM/AUS_10021_DalyR_EM.dat",
+          "uncompressed_bytes": 1080168336,
+          "compressed_bytes": 168659892,
+          "crc32": "e3367560",
+          "schema_member_read": false,
+          "observation_payload_read": false
+        },
+        {
+          "name": "01_EM/AUS_10021_DalyR_EM.des",
+          "uncompressed_bytes": 24963,
+          "compressed_bytes": 6073,
+          "crc32": "027b95d3",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        },
+        {
+          "name": "01_EM/AUS_10021_DalyR_EM.dfn",
+          "uncompressed_bytes": 2688,
+          "compressed_bytes": 632,
+          "crc32": "b0eeecb2",
+          "schema_member_read": true,
+          "observation_payload_read": false
+        }
+      ]
+    }
+  ],
+  "central_directory_member_count": 16,
+  "schema_bytes_read": 233345,
+  "allowed_schema_suffixes": [
+    ".des",
+    ".dfn",
+    ".ehf",
+    ".prj"
+  ],
+  "observation_payload_members_opened": 0,
+  "response_values_interpreted": 0,
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

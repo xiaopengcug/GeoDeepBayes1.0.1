@@ -1,0 +1,414 @@
+{
+  "schema": "wp5-selftest-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_version_path": "versions/20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+  "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c",
+  "root_anchor_file_sha256": "91f7f646b2fa38631511c720248802ec2a230f7651debf7ea0ab6961431d3e51",
+  "stage": "signoff",
+  "fixture_count": 28,
+  "fixture_id_set": [
+    "FXT-SIGNOFF-001",
+    "FXT-SIGNOFF-002",
+    "FXT-SIGNOFF-003",
+    "FXT-SIGNOFF-004",
+    "FXT-SIGNOFF-005",
+    "FXT-SIGNOFF-006",
+    "FXT-SIGNOFF-007",
+    "FXT-SIGNOFF-008",
+    "FXT-SIGNOFF-009",
+    "FXT-SIGNOFF-010",
+    "FXT-SIGNOFF-011",
+    "FXT-SIGNOFF-012",
+    "FXT-SIGNOFF-013",
+    "FXT-SIGNOFF-014",
+    "FXT-SIGNOFF-015",
+    "FXT-SIGNOFF-016",
+    "FXT-SIGNOFF-017",
+    "FXT-SIGNOFF-018",
+    "FXT-SIGNOFF-019",
+    "FXT-SIGNOFF-020",
+    "FXT-SIGNOFF-021",
+    "FXT-SIGNOFF-022",
+    "FXT-SIGNOFF-023",
+    "FXT-SIGNOFF-024",
+    "FXT-SIGNOFF-025",
+    "FXT-SIGNOFF-026",
+    "FXT-SIGNOFF-027",
+    "FXT-SIGNOFF-028"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-SIGNOFF-001",
+      "case": "FXT-SIGNOFF-001",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "signoff exact 16+1 scope"
+      ],
+      "actual_rejection": "signoff exact 16+1 scope",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62595
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-002",
+      "case": "FXT-SIGNOFF-002",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews exact role set"
+      ],
+      "actual_rejection": "final reviews exact role set",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62334
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-003",
+      "case": "FXT-SIGNOFF-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews exact role set"
+      ],
+      "actual_rejection": "final reviews exact role set",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60953
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-004",
+      "case": "FXT-SIGNOFF-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review approved role"
+      ],
+      "actual_rejection": "final review approved role",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60161
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-005",
+      "case": "FXT-SIGNOFF-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review candidate binding"
+      ],
+      "actual_rejection": "final review candidate binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59799
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-006",
+      "case": "FXT-SIGNOFF-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review candidate binding"
+      ],
+      "actual_rejection": "final review candidate binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60658
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-007",
+      "case": "FXT-SIGNOFF-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization binding"
+      ],
+      "actual_rejection": "final reviews authorization binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 61660
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-008",
+      "case": "FXT-SIGNOFF-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews implementation evidence binding"
+      ],
+      "actual_rejection": "final reviews implementation evidence binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59232
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-009",
+      "case": "FXT-SIGNOFF-009",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review authorization binding"
+      ],
+      "actual_rejection": "final review authorization binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59972
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-010",
+      "case": "FXT-SIGNOFF-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization binding"
+      ],
+      "actual_rejection": "final reviews authorization binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60464
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-011",
+      "case": "FXT-SIGNOFF-011",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews unique review id"
+      ],
+      "actual_rejection": "final reviews unique review id",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60264
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-012",
+      "case": "FXT-SIGNOFF-012",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews role review id"
+      ],
+      "actual_rejection": "final reviews role review id",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59326
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-013",
+      "case": "FXT-SIGNOFF-013",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review timestamp"
+      ],
+      "actual_rejection": "final review timestamp",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 63022
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-014",
+      "case": "FXT-SIGNOFF-014",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final review release evidence binding"
+      ],
+      "actual_rejection": "final review release evidence binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 64095
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-015",
+      "case": "FXT-SIGNOFF-015",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 60185
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-016",
+      "case": "FXT-SIGNOFF-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ],
+      "actual_rejection": "independent signoff Pending",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62211
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-017",
+      "case": "FXT-SIGNOFF-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ],
+      "actual_rejection": "independent signoff Pending",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 61666
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-018",
+      "case": "FXT-SIGNOFF-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ],
+      "actual_rejection": "independent signoff Pending",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 64779
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-019",
+      "case": "FXT-SIGNOFF-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ],
+      "actual_rejection": "signoff root binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62097
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-020",
+      "case": "FXT-SIGNOFF-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ],
+      "actual_rejection": "signoff root binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58870
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-021",
+      "case": "FXT-SIGNOFF-021",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ],
+      "actual_rejection": "signoff root binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58222
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-022",
+      "case": "FXT-SIGNOFF-022",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "signoff root binding"
+      ],
+      "actual_rejection": "signoff root binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 57854
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-023",
+      "case": "FXT-SIGNOFF-023",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ],
+      "actual_rejection": "independent signoff Pending",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 56074
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-024",
+      "case": "FXT-SIGNOFF-024",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ],
+      "actual_rejection": "independent signoff Pending",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 60811
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-025",
+      "case": "FXT-SIGNOFF-025",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "independent signoff Pending"
+      ],
+      "actual_rejection": "independent signoff Pending",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 72515
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-026",
+      "case": "FXT-SIGNOFF-026",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization frozen binding"
+      ],
+      "actual_rejection": "final reviews authorization frozen binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 67516
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-027",
+      "case": "FXT-SIGNOFF-027",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "final reviews authorization amendment binding"
+      ],
+      "actual_rejection": "final reviews authorization amendment binding",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 65471
+    },
+    {
+      "fixture_id": "FXT-SIGNOFF-028",
+      "case": "FXT-SIGNOFF-028",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "release evidence stage hash"
+      ],
+      "actual_rejection": "release evidence stage hash",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 69929
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T05:30:07.0646187Z",
+  "output_sha256": "4d423df78e0081c37e9970710f8a5ba67c1f4761a2cf9c31cfd8f5a9762b2445",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

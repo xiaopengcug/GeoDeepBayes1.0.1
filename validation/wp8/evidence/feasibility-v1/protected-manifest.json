@@ -1,0 +1,920 @@
+{
+  "schema_version": "wp8-protected-manifest-v1",
+  "members": [
+    {
+      "path": "backup-dataset-search.json",
+      "bytes": 21355,
+      "sha256": "0ce8e0ecfe790be05a3dc942439e47ef245026d2872fa71bd79c30dd7f89d41d"
+    },
+    {
+      "path": "baotu-wfem-line-split-v1.json",
+      "bytes": 6502,
+      "sha256": "790a181eae13b23505143c481ff5660a878c1e91529a339dd61b93e9ada747c2"
+    },
+    {
+      "path": "baotu-wfem-training-audit-v1.json",
+      "bytes": 5352,
+      "sha256": "6f8083e7fb540ab48b6ee697426ece4a3804d5f25f4bc289b154faa58baf627e"
+    },
+    {
+      "path": "bc-aris-ip-digital-catalogue-v1.json",
+      "bytes": 83125,
+      "sha256": "00f9cb38f1b07bd4a4cecc9ec73ed955ad57ce8def16293c82a6bf446183bc56"
+    },
+    {
+      "path": "bc-aris-ip-discovery-split-v1.json",
+      "bytes": 89059,
+      "sha256": "1fd03f018900ea07c48f1b24a9d2b7e82ee43781960bac033bca1a44df7811f9"
+    },
+    {
+      "path": "bc-aris-ip-training-classification-v1.json",
+      "bytes": 6609,
+      "sha256": "40a4f766cebecea943407ebc27f0319f055a012ed19e3e9d423f06110c3d514a"
+    },
+    {
+      "path": "combined-magnetic-provider-separation-v3.json",
+      "bytes": 348681,
+      "sha256": "9de6908abbdd88f66bde9db6e582bd26d161ca5071caa906d7a03fec348f76f1"
+    },
+    {
+      "path": "combined-magnetic-provider-survey-design-v3.json",
+      "bytes": 759619,
+      "sha256": "ba1ffe951ca6e604d5a264b91b363a2e5588d030bf0f8a529991529868bb6031"
+    },
+    {
+      "path": "controlled-source-path-readiness.json",
+      "bytes": 7841,
+      "sha256": "2c4bc616a68a9674001f4a76a1becf2f80e50af073fc90d8003e08e9bb0ab809"
+    },
+    {
+      "path": "controlled-source-public-data-audit.json",
+      "bytes": 3655,
+      "sha256": "54cea05362af004827156f76317fb80abab25150ae4abcaa18c1c4545f3038aa"
+    },
+    {
+      "path": "cpers-public-catalogue.json",
+      "bytes": 1681,
+      "sha256": "d75dccd6093132a9c29afbcdc2d5016e324d07b6d910383db8a09a553b862b20"
+    },
+    {
+      "path": "csamt-candidate-split.json",
+      "bytes": 776927,
+      "sha256": "b657d1b14f6d68a4b5e5045dd949c5508cf67aed578bd8888fa0dd06efccd2ec"
+    },
+    {
+      "path": "csamt-consortium-candidate-manifest.json",
+      "bytes": 2818,
+      "sha256": "6ff5b6d73ddb520256bea42740421457d324667f3bf6587ddc5e09f087d105e4"
+    },
+    {
+      "path": "csamt-full-waveform-current-recorder-access-audit-v1.json",
+      "bytes": 2113,
+      "sha256": "9e28c7343985d5e83edb0bac62bb8a62e4ac1ae84757e95e33687aae3b9edabf"
+    },
+    {
+      "path": "csamt-geometry.json",
+      "bytes": 15336,
+      "sha256": "b56302b23997ab2c94c926d12a938e30bf0426b190dc7c322606b17ed46bfc8c"
+    },
+    {
+      "path": "csamt-line-split-v2.json",
+      "bytes": 11606,
+      "sha256": "4e3493b241aab7704cc5509e0c250f6c2f118f266090646b7f50dca3b778ff84"
+    },
+    {
+      "path": "csamt-training-line-contract-v2.json",
+      "bytes": 8614,
+      "sha256": "02236780239a7d44bf3700c228a5844d33c12e07b29bc3bdaea4d4c8cd3f1138"
+    },
+    {
+      "path": "dc-ert-consortium-metadata-inventory.json",
+      "bytes": 11981,
+      "sha256": "d24ee35f41e4ae00c91e65d3269c5c0e2e05c972c141ae5082c59e9018e4feb8"
+    },
+    {
+      "path": "decision.json",
+      "bytes": 6409,
+      "sha256": "0bff48bf8e57a74d631242786899e9725b52a89f2d6f137f19e85acba91452d9"
+    },
+    {
+      "path": "development-sbc-raw-ranks.json",
+      "bytes": 50989,
+      "sha256": "08eaf16c69743917790b5635ae7556cbb7571b7cc498e2f01b92afcb762c7b46"
+    },
+    {
+      "path": "east-river-aem-contract-readiness.json",
+      "bytes": 1652,
+      "sha256": "dd83fd9c50049bf2a688d08a6d746ba132758cb67ceb79d47f1fb0dcd547e04a"
+    },
+    {
+      "path": "east-river-aem-design-split.json",
+      "bytes": 2391,
+      "sha256": "922e34c877cc6f9bbc947096e7edb896e80aae399a86223ec79aa6dd4f4289ec"
+    },
+    {
+      "path": "east-river-aem-train-diagnostics.json",
+      "bytes": 10487,
+      "sha256": "41d3d83ba35ff90d7985dfdea49c279d8232598e86131c14f3b5b36fc8c2c7f6"
+    },
+    {
+      "path": "ess-dive-tempest-ip-sip-metadata-audit-v1.json",
+      "bytes": 2502,
+      "sha256": "3746946eb0d367da4c7b1ce512ce952e33d5b0e98af0b46fc951a43aa2480c0b"
+    },
+    {
+      "path": "evidence-manifest.json",
+      "bytes": 32564,
+      "sha256": "ca30db375ac8d7a0a1c1c482982f0193c8574633e7e13e012ca517533a190506"
+    },
+    {
+      "path": "field-contract-audit.json",
+      "bytes": 9450,
+      "sha256": "b49274dc4971546ee30e2d8ece571656e308e43e09512ff838288cb71030c7cb"
+    },
+    {
+      "path": "final-requirement-audit.json",
+      "bytes": 26056,
+      "sha256": "7b7bd507179db4fb72a58a0d39fb482781275f9bf78ed9ca024a5adba5b53f11"
+    },
+    {
+      "path": "ga-ground-gravity-schema-probe.json",
+      "bytes": 13757,
+      "sha256": "551596d9e8feec5a041fdf221a3b14108808a91bdaab99f9edcfc0985e7d2c6e"
+    },
+    {
+      "path": "ga-magnetic-coordinate-only-v3.json",
+      "bytes": 417115,
+      "sha256": "4452e3ff1b7387d00b8232e50a49c4468866e276c46fbe0e5549f7bacbda1a87"
+    },
+    {
+      "path": "ga-national-ground-gravity-design.json",
+      "bytes": 1184777,
+      "sha256": "fd82de76bc89ad1380bfdf8cd23330beb3e97ac0a79cd653d1c3baafbcc5194b"
+    },
+    {
+      "path": "ga-national-ground-gravity-geometry.json",
+      "bytes": 538511,
+      "sha256": "362e131364daf407796fa7c5fa0a517da21c5b0741bbf144d3c98e296937b5f6"
+    },
+    {
+      "path": "ga-national-ground-gravity-power.json",
+      "bytes": 10560,
+      "sha256": "31abf2590935d8bb22014538e1fe77159cf84426042eafa2fae2358c65b813a6"
+    },
+    {
+      "path": "ga-national-ground-gravity-separation.json",
+      "bytes": 46913,
+      "sha256": "976ad8c759b92e3d9466cb9c9115becdac5a33299126d737b7afc11f120f5201"
+    },
+    {
+      "path": "ga-national-ground-gravity-training.json",
+      "bytes": 5931,
+      "sha256": "9edcc0ec2d5f535570a3015ea017e03f9389eac09a285194a2f2c8f98d5338fe"
+    },
+    {
+      "path": "ga-national-ground-gravity-uncertainty.json",
+      "bytes": 102572,
+      "sha256": "ae7046a21962f7782002477cb022b8cd5f5080ff7b7b0285feae845319bcb16f"
+    },
+    {
+      "path": "gate-failure-inventory.json",
+      "bytes": 5439,
+      "sha256": "0e0b0df0fa9c221ea7842fa9c6ab30292b989f15b7a02f16ab294b578db62513"
+    },
+    {
+      "path": "geodata-cn-locked-methods-metadata-audit-v1.json",
+      "bytes": 33975,
+      "sha256": "5bd5d8f4cbd0e12d808a529c1e676d75ac2bb9f031f10fd82f92c54a49a371b2"
+    },
+    {
+      "path": "geodoi-wuxi-csamt-outcome-blind-design-v1.json",
+      "bytes": 2855,
+      "sha256": "81a4b51e52348b6deb039768f66c62ee10d5a6471ee7e9186c714b77822aeba3"
+    },
+    {
+      "path": "geodoi-wuxi-csamt-training-audit-v1.json",
+      "bytes": 2942,
+      "sha256": "32814e1896f0f7af5de5cfd1a0f8d423a96987150697b9d63f34b93699a66f65"
+    },
+    {
+      "path": "geodoi-wuxi-fdip-outcome-blind-design-v1.json",
+      "bytes": 34699,
+      "sha256": "0110e2f1523f9a91465499bcc23ac111d5203d95edea86ce2e44e0f7dedd39ac"
+    },
+    {
+      "path": "geodoi-wuxi-fdip-training-audit-v1.json",
+      "bytes": 1825,
+      "sha256": "ca2a9b148701dfc1b98995f90dfed9acedb83b93298baab32524fe492a38aa7f"
+    },
+    {
+      "path": "geoscience-australia-aem-design.json",
+      "bytes": 423094,
+      "sha256": "8b9452c7aeaa025329327bebe5650d1279303a1766839eca2fcd104ce9510f94"
+    },
+    {
+      "path": "geoscience-australia-aem-multisystem-contract.json",
+      "bytes": 3266,
+      "sha256": "496cad84b23b9b9af37c615674a9e48b559f0485c9a934566f97199fbed574ea"
+    },
+    {
+      "path": "geoscience-australia-aem-multisystem-inventory.json",
+      "bytes": 6021,
+      "sha256": "3cabb4a5d55e070838a7101b94fa2725b21e8acd3fbc5a99b10b785fda3c41fe"
+    },
+    {
+      "path": "geoscience-australia-aem-multisystem-spatial-split.json",
+      "bytes": 446808,
+      "sha256": "b05d072ec8c24ad04795dee3817d4444cd6c28dc2afc6e554d5a603e5742e8ca"
+    },
+    {
+      "path": "geoscience-australia-aem-multisystem-train-diagnostics.json",
+      "bytes": 5659,
+      "sha256": "930f14b49b1945eea4c6a3e8ba75f93f0972687b1f854cfe1dc9f48f9eb9b680"
+    },
+    {
+      "path": "geoscience-australia-aem-multisystem-training-sample.json",
+      "bytes": 2914,
+      "sha256": "c9059275d889fba40ee16cb879fc8b788fd13b03db92360f1e1c6a97bdfb655f"
+    },
+    {
+      "path": "geoscience-australia-aem-training-probe-contract.json",
+      "bytes": 7043,
+      "sha256": "92ccf75e3a89021d6caf426eb2e60dfa9ec97dc0b4024ca1e49b4a65f8cb0753"
+    },
+    {
+      "path": "geoscience-australia-aem-training-probe-inventory.json",
+      "bytes": 9317,
+      "sha256": "9cc06e0344c529d727ba7172dbd26edb13de89b2f90f182ec61505caf3091972"
+    },
+    {
+      "path": "geoscience-australia-magnetic-dds-contract.json",
+      "bytes": 408083,
+      "sha256": "a98b48ad91d057b4b347b431c1143be38431389ae6caa615740f832a1aeab872"
+    },
+    {
+      "path": "geoscience-australia-magnetic-design.json",
+      "bytes": 1053298,
+      "sha256": "8b9cd3702eeffe3b5b313a298c9d3758f602cb30449867c3bf8136f4cc48ba6b"
+    },
+    {
+      "path": "geoscience-australia-magnetic-probability-audit.json",
+      "bytes": 68731,
+      "sha256": "54068ea3a177edb1d366b9cb65d108575c21e0fa3c0211da6d8626af4e5f07b6"
+    },
+    {
+      "path": "geoscience-australia-magnetic-probability-sample.json",
+      "bytes": 18332,
+      "sha256": "5f587fa55269c3dd9fb294212fb540e0dc0db401b331f6bf94622db4d4d1695e"
+    },
+    {
+      "path": "geoscience-australia-magnetic-survey-design-v2.json",
+      "bytes": 383510,
+      "sha256": "b453b1ade48004b67990bc04005619a7135da98e4dd05b5446ffd24cc64aa1ae"
+    },
+    {
+      "path": "geoscience-australia-magnetic-survey-training-v2.json",
+      "bytes": 247086,
+      "sha256": "edce2d68f66888c42c60d285813b773d16b6e3ac3dd6ca5c3934f793d3f562e0"
+    },
+    {
+      "path": "geoscience-australia-magnetic-training-consortium.json",
+      "bytes": 20051,
+      "sha256": "b586169cf63ff9a5d3427f9004156fc915f689de4b758627654b56a89364befe"
+    },
+    {
+      "path": "geoscience-australia-magnetic-training-expansion.json",
+      "bytes": 45265,
+      "sha256": "3b156f8f749ae0a754c5dda08f65066a644da11d6e36bb2465a54a1230270a7f"
+    },
+    {
+      "path": "geoscience-australia-magnetic-training-survey.json",
+      "bytes": 1547,
+      "sha256": "a913ee5efba7f984fd6ebf562383a6456fb2968583e8d22d3f05ecba5669da1f"
+    },
+    {
+      "path": "github-sip-debye-net-field-audit-v1.json",
+      "bytes": 2624,
+      "sha256": "43821f08995a27191d73f7ae16d76d00394f0564be553546751c7121ee99d65a"
+    },
+    {
+      "path": "guidel-sip-contract.json",
+      "bytes": 1391,
+      "sha256": "8aaece624481bc16ac9df804b2ad246f879c04262a3cfbbf83b880f7a4e530d9"
+    },
+    {
+      "path": "guidel-sip-repeatability.json",
+      "bytes": 11764,
+      "sha256": "6df04d9cfa5bf2ea32bf632401c92100e9a6cfda529eb398381eee5258fa3138"
+    },
+    {
+      "path": "guidel-sip-training-diagnostics.json",
+      "bytes": 13113,
+      "sha256": "5364793a2daae992f1e2fca002bb6c7a745f4fab70ee8a865fd88ae7f319ef32"
+    },
+    {
+      "path": "hualapai-csamt-role-reconciliation-v1.json",
+      "bytes": 1006,
+      "sha256": "1361092a7fd8b8b7083143d97a4fde8be9ee9d151cd1c531ffd82146df99e258"
+    },
+    {
+      "path": "independent-reference-record.json",
+      "bytes": 3142,
+      "sha256": "df8f1063ed61c0a9daab9dfb8a9d245b328700405053275f25adc9391552e0ba"
+    },
+    {
+      "path": "ip-vae-public-release.json",
+      "bytes": 1448,
+      "sha256": "b1712861a5703c642c0bfdb01aaf121b06238ef96b3c7e52d95e13763d1710e3"
+    },
+    {
+      "path": "kanstein-slag-heap-sip-access-audit-v1.json",
+      "bytes": 1802,
+      "sha256": "4ec8785fdd275acb557e867ac63fb6ec25fe610b70f2879b56a66cd4d019b4fb"
+    },
+    {
+      "path": "little-colorado-dc-geometry.json",
+      "bytes": 3879,
+      "sha256": "255bfd3125486a80bb10e0f379b818464ed997eef125718511ab816444696ac0"
+    },
+    {
+      "path": "magic-contribution-design-split.json",
+      "bytes": 30500,
+      "sha256": "111188a12ad31555502329c56539d6a6c63480691560c1de0f8727b22e8dc8d5"
+    },
+    {
+      "path": "magic-training-remanence-prior.json",
+      "bytes": 30326,
+      "sha256": "65c0997cf4ea2a849bd90f1cf38751a450a003a8fbc972edcb157ce847ef9212"
+    },
+    {
+      "path": "maricopa-aem-contract-readiness.json",
+      "bytes": 1182,
+      "sha256": "6db7af82e85553958cb9ae3bf43b4b3270976b3fbf4a151cd0f7352ea9033a59"
+    },
+    {
+      "path": "maricopa-aem-design-split.json",
+      "bytes": 1289,
+      "sha256": "0d7cae1e4a9ed497a35e35fdbe2264252de7bbfb440643f2fb9a9f4ecf21152b"
+    },
+    {
+      "path": "maricopa-aem-train-diagnostics.json",
+      "bytes": 19119,
+      "sha256": "5bdf87e280da5b8866454050a52f505f5eb91375571862a844bd9b92db98bb5e"
+    },
+    {
+      "path": "member-audit.json",
+      "bytes": 132159,
+      "sha256": "3ecd69a717bcab5cdfc6a285dc71c5568d81214fcca7334862489c223ea9e91b"
+    },
+    {
+      "path": "mendeley-heavy-metal-sip-metadata-audit-v1.json",
+      "bytes": 1400,
+      "sha256": "78f234a6ef3f1d8124306188cbf3b8b73a9738e73f311bf3543950223a677dd4"
+    },
+    {
+      "path": "mendeley-low-cost-sip-raw-audit-v1.json",
+      "bytes": 2057,
+      "sha256": "f39527bcb79dbe0babf16dd4b636e9b520cb27ae3b32a43b17aaa85abb39ec9a"
+    },
+    {
+      "path": "mountain-pass-magnetic-design-split.json",
+      "bytes": 2734,
+      "sha256": "cab98d4dd6345e5cb9a41b99e40a83f2aefe6a0c715417dfbc5d2be4331599bf"
+    },
+    {
+      "path": "mountain-pass-magnetic-train-diagnostics.json",
+      "bytes": 4787,
+      "sha256": "656766b280554380d45b5492e8625218cdbbab3b25466d41ffbdb6ddd3452995"
+    },
+    {
+      "path": "mrt-tasmania-gravity-design.json",
+      "bytes": 18295828,
+      "sha256": "d9d374538437430397f1050bcfabfd1c94c1003eff756a9aa112e2803d1d8036"
+    },
+    {
+      "path": "mrt-tasmania-gravity-training.json",
+      "bytes": 5625,
+      "sha256": "ae8e1b30cd67fb2e95ef1629c3d75efa91ebe98f64e8bacc9780b5133027f0d6"
+    },
+    {
+      "path": "mt-usarray-metadata-readiness.json",
+      "bytes": 3470,
+      "sha256": "e26ba942363ec25d253b3b2759559487137325ba7f9c001c22f566d2db91635f"
+    },
+    {
+      "path": "mt-usarray-raw-freeze.json",
+      "bytes": 408,
+      "sha256": "d0ac1bdfb9dc9e97d5a59272314e5dd5251942eb01b7dbefe98f5294e488971f"
+    },
+    {
+      "path": "mt-usarray-train-diagnostics.json",
+      "bytes": 139880,
+      "sha256": "53fc16c7fca863f3deaa13b6b1d64f3236b975aa933919123f923c0774921bca"
+    },
+    {
+      "path": "mt-xml-covariance-readiness.json",
+      "bytes": 1143,
+      "sha256": "86828db9db84f8d61d74797c7ffa62419cada9aad2c8ab2c2fa6d3b2a9e90fd1"
+    },
+    {
+      "path": "mt3d-path-readiness.json",
+      "bytes": 3562,
+      "sha256": "07a9c0b5e795699e77d19bcf01f03308f9232ca889233d500cdc0c3a2334bef6"
+    },
+    {
+      "path": "ncei-project-magnet-design-v1.json",
+      "bytes": 12122,
+      "sha256": "3169ad08c4ad63ac119b4f29b6de89a0c714c743473b790e314dcb56b35fc65d"
+    },
+    {
+      "path": "ncei-project-magnet-geometry-v1.json",
+      "bytes": 31829,
+      "sha256": "dcb40130f8da19385d4e114f68b306318a9ead2e3d528a218a22fb19045b55ef"
+    },
+    {
+      "path": "ngs99-gravity-design-split.json",
+      "bytes": 2210,
+      "sha256": "5a7386d4276225acbcc954e5a6318038d57a0f283a1820b367c907bc5ec3d378"
+    },
+    {
+      "path": "ngs99-gravity-train-diagnostics.json",
+      "bytes": 4017,
+      "sha256": "ee3a76f37be33ce69849850b9477988087f193b1c0b20ebe6228c45a6186dae3"
+    },
+    {
+      "path": "ntgs-angularli-csamt-contract-v1.json",
+      "bytes": 1805,
+      "sha256": "0d4bca566edd11476bf0f005a477d2b081895d65edcee711654dc97239de0f8c"
+    },
+    {
+      "path": "ntgs-cr20100883-csamt-design-audit-v1.json",
+      "bytes": 7030,
+      "sha256": "ffbf82e598739db3c7427251be461696d32bf7433fb23229d859f2b37cf9646e"
+    },
+    {
+      "path": "ntgs-cr20100883-response-blind-inventory-v1.json",
+      "bytes": 1118543,
+      "sha256": "dcc0b23472f7fe78a87f0ef26c255ca6159a6e86916df37504fe377ad70a1392"
+    },
+    {
+      "path": "ntgs-cr20130857-csamt-design-audit-v1.json",
+      "bytes": 8543,
+      "sha256": "ef1165d621e139c9b5e03aaaefaa05084e1c436cd7063569783967c7b3b73486"
+    },
+    {
+      "path": "ntgs-cr20130857-csamt-training-header-audit-v1.json",
+      "bytes": 9107,
+      "sha256": "7f78082d56d26b92d476c3ecf4c55aa05005d55c69b52a8aff2dbaec0c3029af"
+    },
+    {
+      "path": "ntgs-ip-explicit-candidates.json",
+      "bytes": 60711,
+      "sha256": "d80e86912c59c07599241cf7daf5f9e5b39c76a3e3fd35485fdaab14edfbf656"
+    },
+    {
+      "path": "ntgs-ip-open-search-catalogue.json",
+      "bytes": 25628,
+      "sha256": "c5d4abd24049ba28baa15955a10fa06152dac0e6673bc1ae015d5bdbbe1268c1"
+    },
+    {
+      "path": "ntgs-pine-creek-ip-container-audit-v1.json",
+      "bytes": 1558,
+      "sha256": "2b6f589fb3a9531422e60d81521dc6e69578fd3a5a278cf3bbf9e542f9fc6ac6"
+    },
+    {
+      "path": "ntgs-pine-creek-tdip-coordinate-design-v1.json",
+      "bytes": 46454,
+      "sha256": "2df0c03a5acfa4875c4adeca9d62658a46934ce05c48677067e68e979d114c0d"
+    },
+    {
+      "path": "ntgs-pine-creek-tdip-training-power-v1.json",
+      "bytes": 6270,
+      "sha256": "9525ab2d83064d6f54677c67a06e8fa1e80d3d923cf970f77dceabdf7a89e6cf"
+    },
+    {
+      "path": "ntgs-tdip-training-candidates.json",
+      "bytes": 1727,
+      "sha256": "8cda82cbfe6a7cae3e3825a407777ef1d281f5f48fe7c01a31bea131cfacadc0"
+    },
+    {
+      "path": "observation-contract-inventory.json",
+      "bytes": 10444,
+      "sha256": "d13a376d27b0f747d568ebc734c18fcb6dbb30334fe5d2f8ffa65366f74fa9df"
+    },
+    {
+      "path": "pangaea-brittany-ert-training-diagnostics.json",
+      "bytes": 4738,
+      "sha256": "83eeea272dfae24cac97d47141518f580e6c84c54728135a6e353fa2472cd875"
+    },
+    {
+      "path": "po-river-dc-streamer-design-v1.json",
+      "bytes": 20193,
+      "sha256": "72557dfc1c412c44e11a3f53c625cba5c78ca95b06cae8c6fbd155250ecfe509"
+    },
+    {
+      "path": "po-river-dc-streamer-design-v2.json",
+      "bytes": 21202,
+      "sha256": "bf654b552a085d488edff7d577e271ecd24fc8ca246f048110313956e508e6fc"
+    },
+    {
+      "path": "po-river-dc-streamer-training-audit-v2.json",
+      "bytes": 5644,
+      "sha256": "da498eb0293e8677e0b453f66fee52a9c1c4525f486e188cd3b1edada9084f80"
+    },
+    {
+      "path": "po-river-ert-candidate.json",
+      "bytes": 2014,
+      "sha256": "ba3ca49ddfbe2c378a5e7da070dd2fdb1ef0facc83c21cd938dfde6ccd9805e2"
+    },
+    {
+      "path": "potential-path-readiness.json",
+      "bytes": 4916,
+      "sha256": "991a3b0fdb22a3704f6f87aa0e908419a8fdcdb17308195909bf6ba6c9124536"
+    },
+    {
+      "path": "producer-manifest.json",
+      "bytes": 2401,
+      "sha256": "924972bce012aac7deafaf0aa2a1f9d2ebc2f091702437044c2f1a8f6831e151"
+    },
+    {
+      "path": "qiabuqia-wfem-metadata-audit-v1.json",
+      "bytes": 1424,
+      "sha256": "dad94e4d73549495143f4f953162c475e2e0d868dc60baf7a1d155d3512a377e"
+    },
+    {
+      "path": "registration.json",
+      "bytes": 80689,
+      "sha256": "fa6d32412f5c43b1b11e088f4cb5e3960f70e2f1a413418ec0db9d59999ec1c1"
+    },
+    {
+      "path": "resource-budget-freeze.json",
+      "bytes": 4651,
+      "sha256": "8b6015cbfa5eaa133421810053ae1a14b75847583985fccc88191f5fa0c3b6be"
+    },
+    {
+      "path": "self-test.json",
+      "bytes": 284,
+      "sha256": "be75cddd5f32a0dcb5c1c6bc62260ed8abea052c63fb4739a2c293d943bbf1ed"
+    },
+    {
+      "path": "serpentinite-sip-geometry.json",
+      "bytes": 1911,
+      "sha256": "7df4d98ce1bdb358868cbeb10c9eaf56abcd7752b609d150044bc79666cdf547"
+    },
+    {
+      "path": "sierra-nevada-gravity-design.json",
+      "bytes": 5654778,
+      "sha256": "decfee9079a4fb3bf23514f177f8e197701a9364bb0d30ba0e427033935ee295"
+    },
+    {
+      "path": "sierra-nevada-gravity-train-diagnostics.json",
+      "bytes": 5959,
+      "sha256": "1d7461fb5e07825b356126c1c5aa595d0c1ea4b3e9d634db60f176b87adc19cd"
+    },
+    {
+      "path": "sip-fdip-public-data-audit.json",
+      "bytes": 8737,
+      "sha256": "424d077c0a48fb0808746d8324974fbe159a5d0349ed21a4ebfdc8bc6d9cc9a5"
+    },
+    {
+      "path": "solver-resource-inventory.json",
+      "bytes": 4804,
+      "sha256": "89800aa9f0a187bb1d6cfe3e9a70da996d9ca2f3cd125c784f1430068ab4b3af"
+    },
+    {
+      "path": "spatial-clusters.json",
+      "bytes": 3898,
+      "sha256": "b449dab52037eba1f37337686cfceb5dfb2d2cf541ff8bab1934ab5fbcf0b76d"
+    },
+    {
+      "path": "static-path-readiness.json",
+      "bytes": 7765,
+      "sha256": "7af26304d6de1673349a7251d32d1967877e91cebe8de48d03eb68f2cdb0292e"
+    },
+    {
+      "path": "svalbard-ert-training-contract.json",
+      "bytes": 4545,
+      "sha256": "010752c1cb236cf6af2a4f63931f19a32473072777163f02489b16a152265f19"
+    },
+    {
+      "path": "taiwan-eri-design-v1.json",
+      "bytes": 202362,
+      "sha256": "a662e75478d2941b4f65ce092bc7ad707eca54b835d3cf0a99bf087767a54631"
+    },
+    {
+      "path": "taiwan-eri-metadata-audit-v1.json",
+      "bytes": 1878,
+      "sha256": "c6cdb48d6420747b7f248b4287b7962102ddd0d4ea0aeed5f4d106fc88d04a3b"
+    },
+    {
+      "path": "taiwan-eri-training-power-v1.json",
+      "bytes": 30744,
+      "sha256": "de14712b2f94716fe711dfe7b09a01286b1d637bd358abddb0ad25b47b79f94c"
+    },
+    {
+      "path": "taiwan-eri-unexposed-candidate-design-v1.json",
+      "bytes": 1646,
+      "sha256": "46afb2242fbf8b63ab3d93d9a7a7b88ab0e61f85132d85916c175ce813b0d84f"
+    },
+    {
+      "path": "tdip-date-split.json",
+      "bytes": 114889,
+      "sha256": "92f6e136ecf518d8fd40d1c87170bb3fd26fac6083b49f423daffaa30ed8d366"
+    },
+    {
+      "path": "tdip-path-readiness.json",
+      "bytes": 2094,
+      "sha256": "b5c7f5ecc726e4fd95c1f53797aa45cd01d8bfc0a9c6a54b8982a6f969363efd"
+    },
+    {
+      "path": "tdip-train-diagnostics.json",
+      "bytes": 11046,
+      "sha256": "804811c74d817a5b2cc01b7d3aa776eda20053a587931b441ec46a69ae58437b"
+    },
+    {
+      "path": "tem-aem-consortium-contract-readiness.json",
+      "bytes": 2351,
+      "sha256": "ca3d20cc56880eba15edf22994519515ce466fafd12bfa676eb558761cc6d4ad"
+    },
+    {
+      "path": "tem-aem-consortium-design-split.json",
+      "bytes": 1788,
+      "sha256": "f05f352b5d99f121d9843b8b207b1b0c1d44bdd41cac339226a74990dd541ecd"
+    },
+    {
+      "path": "tem-aem-consortium-train-diagnostics.json",
+      "bytes": 31078,
+      "sha256": "df62d1ce10c816c0648f57eb877b7ea9e406df7fc77f419bd00d14ca85286ac0"
+    },
+    {
+      "path": "tem-consortium-metadata-inventory.json",
+      "bytes": 16818,
+      "sha256": "8239b60159dc9e7c4d53b0dd09f8580012b9572e44cf6be72aa00b32639b2373"
+    },
+    {
+      "path": "tem1d-path-readiness.json",
+      "bytes": 2104,
+      "sha256": "49e46be816eb8a07a70bc1b867ec14cdcc4d810c0de1e4b678551286abf9762e"
+    },
+    {
+      "path": "texas-aib-magnetic-contract-readiness.json",
+      "bytes": 49882,
+      "sha256": "b36c21cdc5b48feb9f7e9e713f68069568ac83611698d58af48af7ea29ba899b"
+    },
+    {
+      "path": "texas-aib-response-access.json",
+      "bytes": 1237,
+      "sha256": "e0f8141953789030055ed7299c69d66e55ef12828d8f4a8ed13277f0516d7d50"
+    },
+    {
+      "path": "tuwien-ice-sip-training-diagnostics.json",
+      "bytes": 3945,
+      "sha256": "75a8a14c463945f9c168c027a31f63ca5d956495908c2a0b778e5575b7178a97"
+    },
+    {
+      "path": "usgs-aem-2025-unexposed-candidate-design-v1.json",
+      "bytes": 2173,
+      "sha256": "5fa761f3d1853be8713c993c4e4d85ea46a8d33249015f0ec115a776a2f5ce09"
+    },
+    {
+      "path": "usgs-aem-2025-unexposed-metadata-audit-v1.json",
+      "bytes": 2018,
+      "sha256": "97f9a160ba9f2d62b642be87dd77c80f804d3ab8e84696e0ebb7086cba77c8fa"
+    },
+    {
+      "path": "usgs-aem-2026-unexposed-candidate-design-v1.json",
+      "bytes": 1633,
+      "sha256": "9be128dc4826b48f2c40ac639d7ad23ddddc77d764a24bd8d9bedae613bb70d8"
+    },
+    {
+      "path": "usgs-aem-2026-unexposed-metadata-audit-v1.json",
+      "bytes": 3460,
+      "sha256": "997cb6ae525fd8debe0170485589d9c4fe0ff0aaa927f0bff62510c8ebfab11b"
+    },
+    {
+      "path": "usgs-aem-training-expansion-design-v1.json",
+      "bytes": 5176,
+      "sha256": "00baf4f8920cf64a317f912edc7992f066b52b91fea0d8ff146bb5d899a33939"
+    },
+    {
+      "path": "usgs-aem-training-response-diagnostics-v1.json",
+      "bytes": 10246,
+      "sha256": "d93ddee5b847b19900a6d814dd1c513a933b920860100f3b08a2a3a4bdd0c763"
+    },
+    {
+      "path": "usgs-aem-training-schema-audit-v1.json",
+      "bytes": 412261,
+      "sha256": "c321fa16259857995b337ecf8b862e3fce8ef8ed2b1a8194f637437cda6812af"
+    },
+    {
+      "path": "usgs-big-chino-csamt-design-v1.json",
+      "bytes": 33047,
+      "sha256": "e0b560c5213ec38aebe5e20559977303f58e0381201a79f463d6a8c968893599"
+    },
+    {
+      "path": "usgs-big-chino-csamt-training-audit-v1.json",
+      "bytes": 6952,
+      "sha256": "40588ecd032f5a47c3825c81c6bdf9aca75b76d91a181a2de7eb54d4f1e8f303"
+    },
+    {
+      "path": "usgs-big-chino-csamt-training-power-readiness-v1.json",
+      "bytes": 3082,
+      "sha256": "4859487876b7db448d6f599158c07a1bee5a1e550e9dd54d9680b9991aa10840"
+    },
+    {
+      "path": "usgs-floatem-training-design-power-v1.json",
+      "bytes": 41495,
+      "sha256": "ec2da7bb40e52300d8eae64fef873f13668867b4f1af5e67c5c46d36da755e1c"
+    },
+    {
+      "path": "usgs-hualapai-csamt-contract.json",
+      "bytes": 4154,
+      "sha256": "1f584df04931af1846995db5f1178562a55241c8b9aa69f5fde69998167045ad"
+    },
+    {
+      "path": "usgs-krause-ert-contract.json",
+      "bytes": 3145,
+      "sha256": "98a7cf1ab9f89cacc486c462faf270f67e46b76c9316eb1d3a30076ef4f3f8ca"
+    },
+    {
+      "path": "usgs-mount-st-helens-csamt-contract.json",
+      "bytes": 6567,
+      "sha256": "73e6e0dbb27e3ca60f6c7835767298f14deea3abd4d3ab7dc92b3a778c0f9669"
+    },
+    {
+      "path": "usgs-ridgecrest-gravity-design.json",
+      "bytes": 1452358,
+      "sha256": "4f89e84827ce1f2da3684665976145ab5529a1e73931256dba8ff6530e38846b"
+    },
+    {
+      "path": "usgs-ridgecrest-gravity-training.json",
+      "bytes": 5475,
+      "sha256": "2f0503bed31ff3b43f4bd3e7ceab6c58fa858020b5699df07d0dbe79b7ef9abc"
+    },
+    {
+      "path": "usgs-rock-properties-design-split.json",
+      "bytes": 1994,
+      "sha256": "eee8aa5959e75276633517e268c259505751ecb73d65a5922af6a3fb7c427a07"
+    },
+    {
+      "path": "usgs-rock-properties-remanence-prior.json",
+      "bytes": 2314,
+      "sha256": "cfcd9c69ac7b23eb21b9c8b4c79869ebde45264f7befbea21d7dfb3fc6bb4e3c"
+    },
+    {
+      "path": "usgs-san-antonio-controlled-source-amt-audit-v1.json",
+      "bytes": 2747,
+      "sha256": "e6440ce3c6698a9b6f5a65591be2c4d6f19141565f732af316811e17b29d8156"
+    },
+    {
+      "path": "usgs-saudi-regional-gravity-design.json",
+      "bytes": 280046,
+      "sha256": "3915d2bb1b770a12b71cef797917a8f3042963ee15d901d6833c5a1caac2390b"
+    },
+    {
+      "path": "usgs-saudi-regional-gravity-extraction.json",
+      "bytes": 652,
+      "sha256": "1796212d97144d01e957a5f2c207cd4afdec8ee25dea13a8e14bae031575008f"
+    },
+    {
+      "path": "usgs-sciencebase-aem-contract-audit-v1.json",
+      "bytes": 78857,
+      "sha256": "ffde8deb717bb3c7f9d2fbf744b57d7e7213b63fcf5f8f039b6c187087a7b0a5"
+    },
+    {
+      "path": "usgs-sciencebase-magnetic-catalogue-audit-v1.json",
+      "bytes": 184762,
+      "sha256": "0150e70449dd12529b725e8fd0e746055bfb54cb07b542d27538b364e42a141d"
+    },
+    {
+      "path": "usgs-sevier-csamt-public-candidate-v1.json",
+      "bytes": 1636,
+      "sha256": "6e042fbfbbc8251d1e7b56394b3736e7bcb440f39080a393122a37003c9a8f02"
+    },
+    {
+      "path": "usgs-sevier-fault-csamt-raw-audit-v2.json",
+      "bytes": 5334,
+      "sha256": "effbbea71ad81fba60e0947db7ec512694e3a2a4b66637b864c129c4049271a6"
+    },
+    {
+      "path": "usgs-southwest-absolute-gravity.json",
+      "bytes": 1191,
+      "sha256": "afb8a5ee4d1f6b89337b1e7b365526aa938b8776d59393f31e40ff821d7edd5f"
+    },
+    {
+      "path": "usgs-tallahatchie-tem-coordinate-audit-v1.json",
+      "bytes": 2473,
+      "sha256": "e8fb6cce3bf4e448e6fcb89eb5a05bd5a51b6465926faa7c009d693c6a46cf37"
+    },
+    {
+      "path": "usgs-tempest-2022-training-diagnostics-v1.json",
+      "bytes": 7020,
+      "sha256": "ebd7c414b1ca98e2f1c2b0ca028c6362214c6d2be70ec4fee605626cfbe83643"
+    },
+    {
+      "path": "usgs-upper-san-pedro-gravity-design.json",
+      "bytes": 269075,
+      "sha256": "62891914a067fac8870b8dc63fcdbb2c8073ea4781edfe557ef9da3743efb0b1"
+    },
+    {
+      "path": "usgs-upper-san-pedro-gravity.json",
+      "bytes": 1117,
+      "sha256": "225b93c2446af606d934c179f2a7c2b0b3c2f68f5ca46c1250e4d8afc1117fe2"
+    },
+    {
+      "path": "western-arkansas-magnetic-contract-readiness.json",
+      "bytes": 2417,
+      "sha256": "cecaf727d4b33b5e449b81c9a95d27be8ae7a3a750f43839b25bf386cbdaabba"
+    },
+    {
+      "path": "western-arkansas-magnetic-design-split.json",
+      "bytes": 1727645,
+      "sha256": "bc86e2781a098f7fb9ea9bb30d7efe34214e3c230c413d275ac1e099f8428437"
+    },
+    {
+      "path": "western-arkansas-magnetic-train-diagnostics.json",
+      "bytes": 5324,
+      "sha256": "29907a6ab7630c21cc25a87dba7fc975da7679320eb70dab480f5cb306188e39"
+    },
+    {
+      "path": "wfem-public-contract-references.json",
+      "bytes": 2882,
+      "sha256": "188cc7992567358151fca00344c435fc47422c1208183cda3ae6554b06ffa1e1"
+    },
+    {
+      "path": "wisconsin-gravity-design-split.json",
+      "bytes": 2311,
+      "sha256": "8e1644260d6f7f32800c458b296dd00eb20d11b1e7585688ca6bcef7cab9fd4f"
+    },
+    {
+      "path": "wisconsin-gravity-train-diagnostics.json",
+      "bytes": 5283,
+      "sha256": "bb82e8c7e59ab9d291209bfe75a31a692a11926e20535bfb4e5e1209f31fb56b"
+    },
+    {
+      "path": "wp8-0-final-infeasibility.json",
+      "bytes": 8017,
+      "sha256": "9484e32b62e260cee9efc4b109957c5664a5fb73e88256d9504b8450f0df78a6"
+    },
+    {
+      "path": "wp8-1-method-synthetic-validation-v1.json",
+      "bytes": 486986,
+      "sha256": "97e7fb8960f87586cb8180e36c50bf477d0c4cf4c32fb2a53392a6c572e4fe79"
+    },
+    {
+      "path": "wp8-synthetic-completion-v1.json",
+      "bytes": 4972,
+      "sha256": "d728b644afd79515866b78c0946b1ff055b9ef6c38c0d5e8be101d7ad1e75463"
+    },
+    {
+      "path": "zenodo-csamt-public-search-audit-v1.json",
+      "bytes": 5464,
+      "sha256": "a0929d8b27a1007c057d8b4963ff47cef187613f00202ab8c501ac7743e1e28c"
+    },
+    {
+      "path": "zenodo-martin2020-field-sip-training-audit-v1.json",
+      "bytes": 2135,
+      "sha256": "a546a41af9408bd4a18540b0756b150390b680f049c16784efdf97466833a69b"
+    },
+    {
+      "path": "zenodo-streambed-sip-audit-v1.json",
+      "bytes": 3388,
+      "sha256": "bc6753a84db2a4ff87d9329fc4c8f271722ba3ddb1dfe2d5c254ab312810376b"
+    },
+    {
+      "path": "zenodo-tdip-field-design-v1.json",
+      "bytes": 2081,
+      "sha256": "720c097719032fa8e37402d0f35dfa0940048ca15590d7a59eab51c4984b7bc3"
+    },
+    {
+      "path": "zenodo-tdip-full-decay-contract.json",
+      "bytes": 2058,
+      "sha256": "0294f20546c60dcbc0115c602988e09602e046d77473e2840ee27322579f986b"
+    },
+    {
+      "path": "zenodo-tdip-full-decay-training-diagnostics.json",
+      "bytes": 6063,
+      "sha256": "68f6b16330a36952d4a7659704d5a448d859f085d57a911cedd49e00e6b22b02"
+    },
+    {
+      "path": "zenodo-tdip-training-audit-v1.json",
+      "bytes": 7310,
+      "sha256": "74d72b318d3518209f0b7330c4f8433bf44d758b22e30778435f9685d6a01052"
+    },
+    {
+      "path": "zenodo-vineyard-field-sip-audit-v1.json",
+      "bytes": 5645,
+      "sha256": "378c5986aa8219ee5d091a1995fddf7fd525b14a9371d018f3a54f60223bc3a5"
+    },
+    {
+      "path": "zenodo-xingning-csamt-metadata-audit-v1.json",
+      "bytes": 1115,
+      "sha256": "eb3529868c3b6b7b86ce4ccdff082bda8bd4487b586562889e9d8d22decfa61a"
+    },
+    {
+      "path": "zenodo-xingning-csamt-outcome-blind-design-v1.json",
+      "bytes": 1343,
+      "sha256": "2fe8da8c3151780472c27139ce1d8146afe08a8b875dfc20135848468ddccab9"
+    }
+  ]
+}

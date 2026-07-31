@@ -1,0 +1,14 @@
+[
+  {
+    "id": "numerical",
+    "output": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/reviews-v4/numerical.md"
+  },
+  {
+    "id": "qa",
+    "output": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/reviews-v4/qa.md"
+  },
+  {
+    "id": "science",
+    "output": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/reviews-v4/science.md"
+  }
+]

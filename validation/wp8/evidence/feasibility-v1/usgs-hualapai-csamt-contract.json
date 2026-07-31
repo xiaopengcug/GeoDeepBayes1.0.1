@@ -1,0 +1,163 @@
+{
+  "schema_version": "wp8-usgs-hualapai-csamt-contract-v2",
+  "raw_manifest_sha256": "99c25c7a9f25dde18987fb899e292d879bbc9c70fbdc0df87934e5b122937d67",
+  "doi": "10.5066/P90KAJM4",
+  "scope": "permanently-training-only",
+  "field_validation_eligible": false,
+  "sealed_test_accessed": false,
+  "license_gate_passes": true,
+  "line_ids": [
+    "A1",
+    "A2",
+    "PT1",
+    "PT2",
+    "PT3",
+    "QB1",
+    "QB2",
+    "QB3",
+    "WG"
+  ],
+  "raw_line_file_count": 9,
+  "station_line_file_count": 9,
+  "inversion_line_file_count": 9,
+  "receiver_station_count": 543,
+  "station_counts_by_line": {
+    "A1": 60,
+    "A2": 31,
+    "PT1": 81,
+    "PT2": 70,
+    "PT3": 81,
+    "QB1": 71,
+    "QB2": 66,
+    "QB3": 61,
+    "WG": 22
+  },
+  "mtm_source_and_error_contract_by_line": {
+    "A1": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 90.0,
+      "TxGridE": 241960.0,
+      "TxGridN": 3972019.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 90.0,
+      "ARerrFloor": 7.5,
+      "ZPerrFloor": 4.5
+    },
+    "A2": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 90.0,
+      "TxGridE": 241960.0,
+      "TxGridN": 3972019.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 90.0,
+      "ARerrFloor": 8.1,
+      "ZPerrFloor": 10.6
+    },
+    "PT1": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 37.0,
+      "TxGridE": 264773.0,
+      "TxGridN": 3948975.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 37.0,
+      "ARerrFloor": 0.6,
+      "ZPerrFloor": 1.1
+    },
+    "PT2": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 110.0,
+      "TxGridE": 267001.0,
+      "TxGridN": 3943284.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 110.0,
+      "ARerrFloor": 4.0,
+      "ZPerrFloor": 2.3
+    },
+    "PT3": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 37.0,
+      "TxGridE": 269051.0,
+      "TxGridN": 3944094.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 37.0,
+      "ARerrFloor": 2.3,
+      "ZPerrFloor": 1.6
+    },
+    "QB1": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 75.0,
+      "TxGridE": 243109.0,
+      "TxGridN": 3982818.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 75.0,
+      "ARerrFloor": 10.8,
+      "ZPerrFloor": 3.8
+    },
+    "QB2": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 75.0,
+      "TxGridE": 243109.0,
+      "TxGridN": 3982818.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 75.0,
+      "ARerrFloor": 10.9,
+      "ZPerrFloor": 3.8
+    },
+    "QB3": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 175.0,
+      "TxGridE": 247597.0,
+      "TxGridN": 3975580.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 175.0,
+      "ARerrFloor": 3.0,
+      "ZPerrFloor": 1.0
+    },
+    "WG": {
+      "TxLength": 1000.0,
+      "TxAzimuth": 37.0,
+      "TxGridE": 262383.0,
+      "TxGridN": 3947140.0,
+      "DpLength": 100.0,
+      "DpAzimuth": 37.0,
+      "ARerrFloor": 3.2,
+      "ZPerrFloor": 2.6
+    }
+  },
+  "mtm_header_by_line": {
+    "A1": "Line AIRPORT 1",
+    "A2": "Line AIRPORT2 E",
+    "PT1": "Line PT NE",
+    "PT2": "Line PT2 SW",
+    "PT3": "Line PT3 N",
+    "QB1": "Line ERMASTER E",
+    "QB2": "Line QB2 NW",
+    "QB3": "Line QB3 S",
+    "WG": "Line WG NE"
+  },
+  "source_coordinates_imputed": false,
+  "site_mapping": {
+    "status": "unsupported_by_anchored_official_evidence",
+    "requested_three_site_mapping_accepted": false,
+    "lines_are_sites": false,
+    "supported_partial_marker": {
+      "A1": "AIRPORT",
+      "A2": "AIRPORT2"
+    },
+    "partial_marker_verified_from_mtm_headers": true,
+    "unresolved_lines": [
+      "PT1",
+      "PT2",
+      "PT3",
+      "QB1",
+      "QB2",
+      "QB3",
+      "WG"
+    ],
+    "rule": "no site assignment from line prefix or geographic guess"
+  },
+  "available_provider_line_clusters": 9,
+  "formal_cluster_power_gate_passes": false,
+  "observation_contract_ready": false,
+  "conclusion": "The nine official MTM files provide finite, nonzero transmitter coordinates, source/dipole geometry, and error floors aligned exactly to raw and station lines. This entire package remains permanently training-only. Anchored evidence does not prove a complete three-site mapping; lines are not treated as independent sites, so field validation and formal cluster/power claims remain blocked."
+}

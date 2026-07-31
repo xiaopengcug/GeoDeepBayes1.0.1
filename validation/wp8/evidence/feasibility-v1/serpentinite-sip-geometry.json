@@ -1,0 +1,42 @@
+{
+  "schema_version": "wp8-serpentinite-sip-geometry-v1",
+  "archive_path": "_bmad-output/planning-artifacts/research/open-data/dc_ip/Zenodo_Serpentinite_IP_Revil_2024/Data 1.zip",
+  "archive_bytes": 208941,
+  "archive_sha256": "80273dd944c20be2d92a97620b7458d247fb3ae8fd0ef67c3acfa6085cac1e0f",
+  "parsed_members": [
+    "RDC02_XYZ.csv",
+    "RDC06_XYZ_P1 paper.csv"
+  ],
+  "apparent_resistivity_chargeability_or_spectral_values_parsed": false,
+  "profiles": {
+    "RDC02_XYZ": {
+      "member": "RDC02_XYZ.csv",
+      "electrodes": 64,
+      "profile_length_m": 59.88005990246788,
+      "median_electrode_spacing_m": 0.987927123144453,
+      "crossline_rms_m": 2.367956325678161,
+      "crossline_maximum_m": 4.019532454154965,
+      "elevation_relief_m": 5.079960000000028,
+      "two_d_eligibility_rule": "maximum PCA crossline deviation <=5 median electrode spacings",
+      "two_d_eligible": true
+    },
+    "RDC06_XYZ_P1 paper": {
+      "member": "RDC06_XYZ_P1 paper.csv",
+      "electrodes": 64,
+      "profile_length_m": 60.51831721903528,
+      "median_electrode_spacing_m": 0.9724710793459543,
+      "crossline_rms_m": 0.9772092806577796,
+      "crossline_maximum_m": 2.9912233791460316,
+      "elevation_relief_m": 8.449949999999944,
+      "two_d_eligibility_rule": "maximum PCA crossline deviation <=5 median electrode spacings",
+      "two_d_eligible": true
+    }
+  },
+  "dimensionality": {
+    "selected": "2-D profile",
+    "passed": true,
+    "reason": "two spatially distinct electrode profiles are individually near-linear; their field ERT/IP observations require lateral profile structure and cannot be represented by a 1-D homogeneous halfspace"
+  },
+  "available_solver_compatible": true,
+  "available_solver_limitation": "ColeCole2DOperator matches profile dimensionality; its explicit finite-difference transpose remains WP8-0 research-scale"
+}

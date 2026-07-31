@@ -1,0 +1,130 @@
+{
+  "schema_version": "wp8-zenodo-streambed-sip-audit-v1",
+  "record_id": 3627361,
+  "doi": "10.5281/zenodo.3627361",
+  "landing_page": "https://zenodo.org/records/3627361",
+  "license": "cc-by-4.0",
+  "audit_role": "diagnostic_candidate_not_formal_test",
+  "formal_test_responses_opened": 0,
+  "test_unseal_count": 0,
+  "sites": [
+    {
+      "site": "1Ho",
+      "archive_path": "validation/wp8/data/zenodo-streambed-sip-v1/1Ho.zip",
+      "archive_bytes": 2237523,
+      "archive_md5": "1e752ea89483aecf506b45ecc41c8fd6",
+      "archive_sha256": "0dda569dd51e6441c1421e3df3db4cd1f1364e3f5d134a43e377fb6dc4a53e0f",
+      "coordinate_count": 160,
+      "coordinate_columns": [
+        "locationTag",
+        "x",
+        "y",
+        "z"
+      ],
+      "profile_ids": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "profile_count": 5,
+      "frequency_codes_millihz": [
+        500,
+        1000,
+        1666,
+        2500,
+        5000,
+        7500,
+        15000,
+        25000,
+        37500,
+        75000
+      ],
+      "frequency_range_hz": [
+        0.5,
+        75.0
+      ],
+      "sip_recording_files": 50,
+      "response_rows": 20400,
+      "unique_abmn_quadrupoles": 408,
+      "complex_response_columns": [
+        "R",
+        "Y"
+      ],
+      "source_current_column": "I",
+      "uncertainty_columns": [
+        "stdR",
+        "stdY"
+      ],
+      "uncertainty_columns_present": true
+    },
+    {
+      "site": "2He",
+      "archive_path": "validation/wp8/data/zenodo-streambed-sip-v1/2He.zip",
+      "archive_bytes": 2470924,
+      "archive_md5": "da6f927437d592ee5046b4215a076bf2",
+      "archive_sha256": "a9fa9ea77508d46cbc618b2913871ba3f69585e04c86ee579dad8ef05582ba31",
+      "coordinate_count": 160,
+      "coordinate_columns": [
+        "locationTag",
+        "x",
+        "y",
+        "z"
+      ],
+      "profile_ids": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "profile_count": 5,
+      "frequency_codes_millihz": [
+        500,
+        1000,
+        1666,
+        2500,
+        5000,
+        7500,
+        15000,
+        25000,
+        37500,
+        75000
+      ],
+      "frequency_range_hz": [
+        0.5,
+        75.0
+      ],
+      "sip_recording_files": 50,
+      "response_rows": 20400,
+      "unique_abmn_quadrupoles": 408,
+      "complex_response_columns": [
+        "R",
+        "Y"
+      ],
+      "source_current_column": "I",
+      "uncertainty_columns": [
+        "stdR",
+        "stdY"
+      ],
+      "uncertainty_columns_present": true
+    }
+  ],
+  "totals": {
+    "spatial_sites": 2,
+    "profiles": 10,
+    "coordinates": 320,
+    "sip_recording_files": 100,
+    "response_rows": 40800,
+    "unique_site_profile_clusters_upper_bound": 10,
+    "independent_spatial_cluster_upper_bound": 2
+  },
+  "gate_assessment": {
+    "observation_contract": "strong",
+    "cluster_gate_passes": false,
+    "power_gate_passes": false,
+    "formal_gate_change": false,
+    "reason": "The release provides raw frequency-keyed complex responses, ABMN geometry, current, repeat uncertainties and 3-D electrode coordinates, but only five profiles at each of two field sites. Even the non-independent profile upper bound is 10 versus 223."
+  }
+}

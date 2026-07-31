@@ -1,0 +1,17 @@
+{
+  "schema": "wp4-manifest-v1",
+  "run_instance_id": "20260719T021729206Z-e4ac5cf2c14843e4bfb4d86e23a12449",
+  "status": "Passed",
+  "evidence_class": "Synthetic-run/Reference-regression",
+  "files": {
+    "config.json": "d6d0970246a830072f58d96247302afcbf6f55900d26ff1a531d89a2f4980d1c",
+    "decision-contract.json": "6eee0f946e6b498fa7ce78aec764237f6adef21bcbafbeb9c15eb9eeb46d038a",
+    "raw.json": "d23e30d29b0118df185c1e9332edf24a110204f9048ceb006df394e5566c5416"
+  },
+  "sources": {
+    "config.json": "d6d0970246a830072f58d96247302afcbf6f55900d26ff1a531d89a2f4980d1c",
+    "decision-contract.json": "6eee0f946e6b498fa7ce78aec764237f6adef21bcbafbeb9c15eb9eeb46d038a",
+    "run-wp4-decision.ps1": "09feb90346e04bac475965a028e4b4b50af427a20d174c5be1f789f9d89f7661",
+    "oracle/wp4-oracle.py": "4be74e78785ea44537906e717ef65762c6e7f9bb730dd82ca7b44893b2d4c5d3"
+  }
+}

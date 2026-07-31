@@ -1,0 +1,40 @@
+{
+  "schema_version": "wp8-synthetic-supplements-v1",
+  "purpose": "development-and-synthetic-validation-only",
+  "closes_formal_field_gaps": false,
+  "members": [
+    {
+      "method": "sip_fdip",
+      "path": "validation/wp8/synthetic/supplements-v1/sip_fdip.npz",
+      "sha256": "f97dcd3e719a07a58814c79b8f68e01eaba401209411132c034b1fdd30af4a5b",
+      "content_digest": "2a13f41062dea30b0949bed0c573ae7494bf4a1b3ad78bb3f669067d0d739835",
+      "clusters": 500,
+      "test_clusters": 300,
+      "frequencies": 16,
+      "provenance": "synthetic-substitute",
+      "field_validation_eligible": false
+    },
+    {
+      "method": "csamt",
+      "path": "validation/wp8/synthetic/supplements-v1/csamt.npz",
+      "sha256": "82020b649744398d4d84b92a21556cc1d2fb6afdc34fad5919153cd1e6cb25fc",
+      "content_digest": "f228d46143b87c0c9787d9bc3961c735ffd309054f2b82bc34449e54b3d9d74e",
+      "clusters": 500,
+      "test_clusters": 300,
+      "frequencies": 16,
+      "provenance": "synthetic-substitute",
+      "field_validation_eligible": false
+    },
+    {
+      "method": "wfem",
+      "path": "validation/wp8/synthetic/supplements-v1/wfem.npz",
+      "sha256": "b62ebe3db0a741f951c56136ca1ed4b5c99dc6573b281f3ce5a93a63f503ddab",
+      "content_digest": "5966eb4992ca65b27fb379e8f7436ad9772c6169940c6bd9c9c6c17cc81a48a0",
+      "clusters": 500,
+      "test_clusters": 300,
+      "frequencies": 16,
+      "provenance": "synthetic-substitute",
+      "field_validation_eligible": false
+    }
+  ]
+}

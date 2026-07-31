@@ -1,0 +1,226 @@
+{
+  "schema_version": "wp8-sip-fdip-public-data-audit-v1",
+  "selection_policy": "license_complex_response_sample_or_station_key_error_and_independent_field_support",
+  "formal_test_endpoints_inspected": false,
+  "candidates": [
+    {
+      "id": "dryad-graphitic-rocks",
+      "doi": "10.5061/dryad.pt2624c",
+      "license": "Dryad dataset terms",
+      "complex_conductivity": true,
+      "frequency_range_hz": [
+        0.01,
+        45000
+      ],
+      "samples": 5,
+      "field_profile_link": false,
+      "decision": "training_or_independent_reference_only"
+    },
+    {
+      "id": "zenodo-reactive-transport-sip",
+      "doi": "10.5281/zenodo.17165457",
+      "complex_conductivity": true,
+      "frequency_range_hz": [
+        0.01,
+        1311
+      ],
+      "experimental_cases": 2,
+      "channels_per_case": 5,
+      "monitoring_is_repeated_within_columns": true,
+      "field_profile_link": false,
+      "decision": "training_or_model-comparison_only"
+    },
+    {
+      "id": "gfz-moffat-shale",
+      "doi": "10.5880/FIDGEO.2022.034",
+      "complex_conductivity": true,
+      "samples": 28,
+      "sample_orientation": true,
+      "cell_geometry_factor": true,
+      "field_profile_link": false,
+      "decision": "training_or_independent_reference_only"
+    },
+    {
+      "id": "jgr-clay-salinity",
+      "doi": "10.1029/2020JB021125",
+      "complex_conductivity": true,
+      "clay_types": 4,
+      "salinity_levels": 5,
+      "field_profile_link": false,
+      "decision": "training_or_independent_reference_only"
+    },
+    {
+      "id": "gran-sometta-rock-glacier-2025",
+      "doi": "10.5194/tc-19-143-2025",
+      "license": "article CC BY 4.0; field data available from authors on request",
+      "complex_response": true,
+      "frequency_range_hz": [
+        0.1,
+        225
+      ],
+      "field_profiles": 8,
+      "electrodes_per_profile": 32,
+      "electrode_spacing_m": 7.5,
+      "normal_reciprocal_pairs": true,
+      "explicit_error_model": true,
+      "public_raw_archive": false,
+      "decision": "contract_reference_only_pending_public_raw_archive"
+    },
+    {
+      "id": "alpine-permafrost-multisite-sip-2026",
+      "doi": "10.1093/gji/ggag005",
+      "license": "open-access article; field data available from corresponding author on request",
+      "complex_response": true,
+      "field_sites": 10,
+      "countries": 4,
+      "frequency_range_hz": [
+        0.1,
+        240
+      ],
+      "normal_reciprocal_pairs": true,
+      "explicit_resistance_and_phase_error_parameters": true,
+      "public_raw_archive": false,
+      "decision": "consortium_contract_reference_only_pending_public_raw_archive"
+    },
+    {
+      "id": "epa-pfas-source-zone-sip",
+      "doi": "10.23719/1531789",
+      "publisher": "U.S. EPA Office of Research and Development",
+      "access": "anonymous public XLSX and DOCX download",
+      "complex_response": true,
+      "phase_and_complex_conductivity": true,
+      "reported_error_columns": true,
+      "frequency_spectra_locations_in_figure_data": 4,
+      "field_site_count": 1,
+      "abmn_or_station_geometry": false,
+      "payload_scope": "publication figure data rather than raw survey export",
+      "decision": "training_or_model-comparison_only"
+    },
+    {
+      "id": "hplus-guidel-square-wave-sip-2025",
+      "doi": "10.26169/hplus.guidel_spectral_induced_polarization",
+      "publisher": "SNO H+ / Geosciences Rennes",
+      "access": "anonymous 91,213,915-byte ZIP",
+      "license": "CC BY-NC-SA 4.0",
+      "raw_time_series": true,
+      "raw_mat_members": 30,
+      "matlab_processing_code": true,
+      "frequency_range_hz": [
+        0.01,
+        100
+      ],
+      "sampling_rate_hz": 2000,
+      "current_injection_depths": 8,
+      "potential_dipoles_per_injection": 7,
+      "rod_separation_m": 0.5,
+      "electrode_ring_spacing_m": 0.05,
+      "electrode_depth_range_m": [
+        0.23,
+        0.93
+      ],
+      "local_abmn_coordinates_reconstructed": true,
+      "repeat_based_uncertainty": true,
+      "adjacent_dipole_phase_sigma_p95_mrad_ge_0_1_hz": 8.244523085288604,
+      "field_site_count": 1,
+      "dated_acquisition_packages": 1,
+      "license_status": "resolved",
+      "decision": "training_observation_contract_passed_but_formal_cluster_and_power_failed"
+    },
+    {
+      "id": "zenodo-martin2020-field-sip",
+      "doi": "10.5281/zenodo.4419736",
+      "license": "CC BY 4.0",
+      "access": "anonymous 9,155,243-byte ZIP",
+      "raw_and_processed_field_data": true,
+      "field_profiles": 2,
+      "instruments": [
+        "SIP256C",
+        "DAS-1",
+        "Terrameter LS2",
+        "Syscal Pro Switch72"
+      ],
+      "fdip_electrodes": 105,
+      "fdip_abmn_quadrupoles": 1057,
+      "complex_observations": 13193,
+      "unique_current_dipoles": 106,
+      "unique_quadrupole_midpoint_upper_bound": 196,
+      "minimum_independent_test_clusters": 223,
+      "independent_profile_upper_bound": 2,
+      "decision": "permanently_training_only_parser_and_cross-instrument_reference; cluster_and_power_failed"
+    },
+    {
+      "id": "zenodo-qi-lab-to-field-ratios",
+      "doi": "10.5281/zenodo.13359622",
+      "license": "CC BY 4.0",
+      "access": "anonymous 33,319-byte ZIP",
+      "archive_sha256": "394712613885e20a6d91b20e929ed0175e38a986c68797c3aa2a048662041f86",
+      "archive_members": 20,
+      "complex_response": true,
+      "field_profile_link": false,
+      "raw_field_response_files": 0,
+      "contents": "MATLAB model functions, embedded literature values and COMSOL simulation inputs",
+      "decision": "training_or_model-comparison_only"
+    },
+    {
+      "id": "tuwien-ice-feature-sip",
+      "doi": "10.48436/2wx5q-bg153",
+      "license": "CC BY 4.0",
+      "laboratory_sample_count": 1,
+      "electrodes_3d": 54,
+      "abmn_quadrupoles": 138,
+      "frequency_count": 21,
+      "frequency_range_hz": [
+        1,
+        97.686
+      ],
+      "complex_observations": 2898,
+      "mesh_present": true,
+      "explicit_uncertainty": false,
+      "field_profile_link": false,
+      "decision": "parser_geometry_and_solver_convention_reference_only"
+    },
+    {
+      "id": "github-sip-debye-net-2026",
+      "source": "https://github.com/clberube/sip-debye-net",
+      "commit": "eed826e823dd27959b136cd50c768db58c091f38",
+      "license": "MIT",
+      "access": "anonymous public Git repository",
+      "dataset_path": "validation/wp8/data/github-sip-debye-net-v1/data/data_dict.pt",
+      "dataset_sha256": "7ec8c6cc663ea09b14427947fdacf63edf94df0e308d7e200e50cd118eba82b3",
+      "dataset_bytes": 68593,
+      "complex_response": true,
+      "complex_spectra": 140,
+      "experimental_series": 11,
+      "frequencies_per_spectrum": 19,
+      "complex_uncertainty_per_observation": true,
+      "canadian_malartic_field_series": 6,
+      "canadian_malartic_field_spectra": 26,
+      "field_coordinate_or_abmn_geometry": false,
+      "field_site_count_upper_bound": 1,
+      "independent_spatial_cluster_count_derivable": false,
+      "decision": "training_only_complex-spectrum-and-uncertainty-reference; cluster_and_power_failed"
+    },
+    {
+      "id": "zenodo-vineyard-field-sip-2023",
+      "doi": "10.5281/zenodo.15731729",
+      "license": "CC BY 4.0",
+      "access": "anonymous 326,775,934-byte 7z archive",
+      "archive_sha256": "4d832f758689f5fbb7a7746895cea8a175cdc43f12b3b498300096f48eab9aa7",
+      "complex_response": true,
+      "raw_complex_response": true,
+      "abmn_geometry": true,
+      "amplitude_and_phase_repeat_uncertainty": true,
+      "published_profiles": 2,
+      "campaign_dates": 5,
+      "independent_spatial_cluster_upper_bound": 2,
+      "decision": "observation_contract_reference; cluster_and_power_failed"
+    }
+  ],
+  "conclusions": {
+    "complex_response_sources_exist": true,
+    "contract_complete_field_replacement_found": false,
+    "minimum_independent_test_clusters": 223,
+    "reason": "the CC BY-NC-SA 4.0 H+ Guidel release provides an anonymously downloadable raw 2-kHz square-wave time-series package, reconstructable ABMN geometry and repeat-based uncertainty, but represents one dated package at one site; the CC BY 4.0 Martin et al. archive adds 13,193 complex FDIP observations on 1,057 quadrupoles, but only two colocated profiles and even its non-independent quadrupole-midpoint upper bound is 196; the 2026 sip-debye-net repository adds 140 spectra with complex uncertainties, including 26 Canadian Malartic field spectra, but publishes no field coordinates or ABMN geometry and does not establish independent spatial clusters; no public package reaches 223 independent test clusters or supports a stable leave-one-profile-out paired-CRPS effect size",
+    "method_substitution_allowed": false
+  }
+}

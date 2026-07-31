@@ -1,0 +1,87 @@
+{
+  "schema_version": "wp8-ngs99-gravity-design-split-v1",
+  "created_before_response_interpretation": true,
+  "source": {
+    "archive_path": "validation/wp8/data/ngs99-gravity-v1/ngs99_ascii.zip",
+    "archive_sha256": "9f624374014895a0a02f79bd86d9bc330992ee121af399be398e503a2e6f7117",
+    "format_path": "validation/wp8/data/ngs99-gravity-v1/ngs99.fmt",
+    "format_sha256": "783e43d4a70514160c9585a8ba0cd8a64d37e35cefd0c817bf910390be088b54",
+    "member": "ngs99.asc"
+  },
+  "format_contract": {
+    "parsed_design_fields": [
+      "latitude",
+      "longitude",
+      "sea_level_elevation_m",
+      "source_id"
+    ],
+    "response_fields_values_parsed": false,
+    "quality_fields_reserved_for_training_only": [
+      "observed_gravity_sd",
+      "free_air_anomaly_sd",
+      "bouguer_anomaly_sd",
+      "terrain_correction_sd"
+    ]
+  },
+  "split_rule": {
+    "cell_size_km": 100.0,
+    "projection_for_split_only": {
+      "x_km": "longitude * 111.32 * cos(38.0 degrees)",
+      "y_km": "latitude * 110.57"
+    },
+    "period_cells": 12,
+    "train_stripes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "buffer_stripes": [
+      0,
+      6,
+      9
+    ],
+    "calibration_stripes": [
+      7,
+      8
+    ],
+    "test_stripes": [
+      10,
+      11
+    ],
+    "heldout_separation": "at least one explicit 100-km buffer stripe from training"
+  },
+  "design_sha256": "619517e43141ff7331265e8622c2e22fb5cfae0eb6f90c23d2ee1ac1279c8d7c",
+  "invalid_design_rows_excluded": 0,
+  "counts": {
+    "train": {
+      "stations": 767102,
+      "spatial_cells_100km": 979,
+      "source_ids": 913
+    },
+    "buffer": {
+      "stations": 386459,
+      "spatial_cells_100km": 586,
+      "source_ids": 812
+    },
+    "calibration": {
+      "stations": 205622,
+      "spatial_cells_100km": 408,
+      "source_ids": 458
+    },
+    "test": {
+      "stations": 274316,
+      "spatial_cells_100km": 380,
+      "source_ids": 461
+    }
+  },
+  "cell_overlap_counts": {
+    "train:buffer": 0,
+    "train:calibration": 0,
+    "train:test": 0,
+    "buffer:calibration": 0,
+    "buffer:test": 0,
+    "calibration:test": 0
+  }
+}

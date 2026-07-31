@@ -1,0 +1,1284 @@
+{
+  "schema_version": "wp8-usgs-sciencebase-aem-contract-audit-v1",
+  "manifest_sha256": "d861c8f84fc7f57789326c4a38c0ac4c63d79996621bc3077f278821cf6b7a83",
+  "survey_count": 12,
+  "surveys": [
+    {
+      "sciencebase_id": "59722284e4b0ec1a4885ed9d",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of Delaware Bay and surrounding regions of New Jersey and Delaware, 2022 (ver 2.0, April 2025)",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "bounding_boxes": [
+        {
+          "minX": -75.6007476445722,
+          "minY": 38.57067139186747,
+          "maxX": -74.75108645208128,
+          "maxY": 39.60987065237943
+        }
+      ],
+      "document_count": 2,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": true,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": true,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": true
+    },
+    {
+      "sciencebase_id": "5d35fe69e4b01d82ce8a61d1",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne Electromagnetic and Magnetic Survey, Yellowstone National Park, 2016 - Minimally Processed Data",
+      "systems": [
+        "SkyTEM 312M"
+      ],
+      "bounding_boxes": [
+        {
+          "minX": -111.07139586990378,
+          "minY": 44.2135150155839,
+          "maxX": -110.12211741260512,
+          "maxY": 44.99290574516867
+        }
+      ],
+      "document_count": 1,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": false,
+        "error_model": false,
+        "processed": false
+      },
+      "geometry_contract_ready": false,
+      "explicit_error_contract_ready": false,
+      "provisional_observation_contract_ready": false
+    },
+    {
+      "sciencebase_id": "5d485e83e4b01d82ce8ddc07",
+      "parent_id": "5c8fb915e4b093882452b34a",
+      "title": "Processed airborne electromagnetic data Iliamna Volcano, Alaska June 2012",
+      "systems": [
+        "SkyTEM 304"
+      ],
+      "bounding_boxes": [],
+      "document_count": 2,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": false,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": false,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": false
+    },
+    {
+      "sciencebase_id": "5d64314be4b01d82ce98718c",
+      "parent_id": "5d642e32e4b01d82ce987143",
+      "title": "Airborne electromagnetic and magnetic survey data, southeastern San Joaquin Valley near Cawelo, California, 2016: Minimally processed data",
+      "systems": [
+        "SkyTEM 312"
+      ],
+      "bounding_boxes": [],
+      "document_count": 0,
+      "criteria": {
+        "coordinates": false,
+        "line_identity": false,
+        "flight_height": false,
+        "time_channels": false,
+        "response_channels": false,
+        "error_model": false,
+        "processed": false
+      },
+      "geometry_contract_ready": false,
+      "explicit_error_contract_ready": false,
+      "provisional_observation_contract_ready": false
+    },
+    {
+      "sciencebase_id": "5f4e951882ce4c3d1233cb7d",
+      "parent_id": "5f35b17382cee144fb35a733",
+      "title": "Airborne EM, magnetic, and radiometric survey data",
+      "systems": [
+        "TEMPEST"
+      ],
+      "bounding_boxes": [],
+      "document_count": 2,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": true,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": true,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": true
+    },
+    {
+      "sciencebase_id": "6193fbb0d34eb622f68f13e5",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey data, northeast Wisconsin (ver. 1.1, June 2022)",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "bounding_boxes": [
+        {
+          "minX": -88.3190581362751,
+          "minY": 43.86232098617118,
+          "maxX": -87.31217816147198,
+          "maxY": 44.89492759214822
+        }
+      ],
+      "document_count": 1,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": true,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": true,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": true
+    },
+    {
+      "sciencebase_id": "61fc2f97d34e622189cb8997",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne electromagnetic and magnetic survey data, Silverton, Colorado, 2019",
+      "systems": [
+        "VTEM"
+      ],
+      "bounding_boxes": [
+        {
+          "minX": -107.83121414626488,
+          "minY": 37.748799511535275,
+          "maxX": -107.52141984248077,
+          "maxY": 37.97352465069978
+        }
+      ],
+      "document_count": 2,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": true,
+        "error_model": false,
+        "processed": true
+      },
+      "geometry_contract_ready": true,
+      "explicit_error_contract_ready": false,
+      "provisional_observation_contract_ready": false
+    },
+    {
+      "sciencebase_id": "62ffc245d34e37cba73e1fa0",
+      "parent_id": "5e8ddf9882cee42d13468786",
+      "title": "Airborne electromagnetic, magnetic, and radiometric survey of the Mississippi Alluvial Plain, Mississippi Embayment, and Gulf Coastal Plain, September 2021 - January 2022",
+      "systems": [
+        "TEMPEST"
+      ],
+      "bounding_boxes": [
+        {
+          "minX": -94.12812582612658,
+          "minY": 29.018727768105947,
+          "maxX": -88.08694682858238,
+          "maxY": 37.41824888778623
+        }
+      ],
+      "document_count": 1,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": true,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": true,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": true
+    },
+    {
+      "sciencebase_id": "636c0b28d34ed907bf6abb14",
+      "parent_id": "60774badd34e018b320420ae",
+      "title": "Airborne Electromagnetic (AEM) Survey in Southwest and Southeast Areas, Wisconsin, 2022",
+      "systems": [
+        "SkyTEM 304M"
+      ],
+      "bounding_boxes": [
+        {
+          "minX": -88.67558726652643,
+          "minY": 42.489922181233744,
+          "maxX": -88.09601649089575,
+          "maxY": 43.19896085285743
+        },
+        {
+          "minX": -91.05949067558554,
+          "minY": 42.49789134611775,
+          "maxX": -89.47285054618524,
+          "maxY": 43.20825069678013
+        }
+      ],
+      "document_count": 2,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": true,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": true,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": true
+    },
+    {
+      "sciencebase_id": "65b2dc3fd34e36a3904534a7",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of the Alabama Graphite-Vanadium Belt and surrounding regions, 2023",
+      "systems": [
+        "SkyTEM 306HPM"
+      ],
+      "bounding_boxes": [
+        {
+          "minX": -87.21014096056656,
+          "minY": 32.27655743070188,
+          "maxX": -85.12305000343596,
+          "maxY": 34.076960841347024
+        }
+      ],
+      "document_count": 0,
+      "criteria": {
+        "coordinates": false,
+        "line_identity": false,
+        "flight_height": false,
+        "time_channels": false,
+        "response_channels": false,
+        "error_model": false,
+        "processed": false
+      },
+      "geometry_contract_ready": false,
+      "explicit_error_contract_ready": false,
+      "provisional_observation_contract_ready": false
+    },
+    {
+      "sciencebase_id": "66842d18d34e0f592272b4c0",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of Illinois River Basin, 2023",
+      "systems": [
+        "SkyTEM 304"
+      ],
+      "bounding_boxes": [],
+      "document_count": 2,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": false,
+        "response_channels": true,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": false,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": false
+    },
+    {
+      "sciencebase_id": "69829a8db66b018d00103597",
+      "parent_id": "5474ec49e4b04d7459a7eab2",
+      "title": "Airborne electromagnetic and magnetic survey of the western Mojave Desert, California, 2024",
+      "systems": [
+        "SkyTEM 312"
+      ],
+      "bounding_boxes": [],
+      "document_count": 3,
+      "criteria": {
+        "coordinates": true,
+        "line_identity": true,
+        "flight_height": true,
+        "time_channels": true,
+        "response_channels": true,
+        "error_model": true,
+        "processed": true
+      },
+      "geometry_contract_ready": true,
+      "explicit_error_contract_ready": true,
+      "provisional_observation_contract_ready": true
+    }
+  ],
+  "document_count": 18,
+  "documents": [
+    {
+      "sciencebase_id": "59722284e4b0ec1a4885ed9d",
+      "name": "20221018_USGS_SkyTEM_DelawareBay_Prj#20048_Datareport-508.pdf",
+      "path": "files/59722284e4b0ec1a4885ed9d__20221018_USGS_SkyTEM_DelawareBay_Prj_20048_Datareport-508.pdf",
+      "sha256": "49f8cd9698196086f0e61e19ee5a0ff3bee3cb77361df6534c061987cd188603",
+      "characters_extracted": 54301,
+      "matches": {
+        "coordinates": [
+          "and away from metallic objects that could influence the GPS antenna.",
+          "Longitude W Latitude N Ellipsoidal",
+          "Operational Dates Longitude W Latitude N Elevation",
+          "Data from two GPS receivers are recorded by the EM data ac quisition system while a",
+          "third GPS is recorded by the magnetic data acquisition system.",
+          "The three ASCII SPS files contain the various flight information with GPS time stamp.",
+          "\u2022 Date_Flight_GPS2_PPP.sps: Contains the corrected GPS data.",
+          "Lon Latitude/Longitude, WGS84 Decimal degrees",
+          "Lat Latitude/Longitude, WGS84 Decimal degrees",
+          "areas, the GPS Z data was subtracted from publicly available digital elevation data or",
+          "The DGPS has been processed using the Waypoint GrafNav Lite Differential GPS",
+          "GPS rover. The PPP process eliminates the need of base station data and the"
+        ],
+        "line_identity": [
+          "3457.5 km planned flight line km in total. Flight line spacing and azimuthal flight",
+          "\u2022 The next 3 digits represent the unique line number.",
+          "Line Line number LLLLLL",
+          "of the frame. Data were split at the beginning and end of each planned flight line."
+        ],
+        "flight_height": [
+          "Corrected for height",
+          "HA: high altitude, a flying height such that the return ground EM",
+          "The nominal terrain clearance was 30 - 40 m, with an increase due to steep terrain,",
+          "The safe flying height during the survey is always based on the pilot\u2019s assessment of",
+          "Processed height 37.0 m 10.3 m",
+          "height (m)",
+          "of the SkyTEM system and is derived from the high-altitude data. This information is",
+          "Height Filtered height measurement Metre",
+          "Alt DGPS Altitude, EGM96-World geoid m. a. sl.",
+          "Height processing",
+          "The height processing involves manual and automated routines using a combination of",
+          "was offset to match the difference between the GPSZ height above the EGM-96 geoid"
+        ],
+        "time_channels": [
+          "\u00b5s: microsecond",
+          "Gate Time: A small amount of time over which the amplitude of the",
+          "of the system response file will allow earlier time gate to be used than those listed in",
+          "ramp time gate information during the inversion process.",
+          "100 microseconds until the next TEM pulse is transmitted. The data are averaged and"
+        ],
+        "response_channels": [
+          "EM data....................................................................................................... 34",
+          "dB/dt: change in amplitude of magnetic field over the time it takes to",
+          "HM: High Moment EM dB/dt data",
+          "LM: Low moment EM dB/dt data",
+          "Data from two GPS receivers are recorded by the EM data ac quisition system while a",
+          "Multiplicative shift factor: 0.99 (on the raw dB/dt data)",
+          "waveforms are applied in modelling of the EM data. Figure 5 and Figure 6 show the",
+          "\u2022 Date_time_RawData_PFC.skb: Contains the measured dB/dT EM data.",
+          "This section covers processing of the auxiliary and EM data and presentations.",
+          "component EM data. For every low moment EM data block a PLNI value was obtained",
+          "1. The low moment EM data are measured at a rate lower than the Nyquist",
+          "EM data"
+        ],
+        "error_model": [
+          "Control parameter Average Value Standard Deviation",
+          "line noise level:",
+          "while keeping track of the resulting data uncertainty.",
+          "The uncertainty in the xyz-directions is \u00b1 1 m after processing.",
+          "Uncertainty \u00b1 1 m",
+          "The altimeter measurements are given in metres with two decimals. The uncertainty is",
+          "Uncertainty 10 - 30 cm"
+        ],
+        "processed": [
+          "Data processing and presentation....................................................................... 26",
+          "This report covers data acquisition, technical specifications, data processing and",
+          "This report covers data acquisition, instrument descriptions, data processing and",
+          "Data processing, presentations and",
+          "system. This information is used during data processing and inversion in the Aarhus",
+          "used during data processing and inversion and allows for the use of very early down",
+          "Data processing and presentation",
+          "Geosoft magnetic data processing tools are applied as follows:"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "59722284e4b0ec1a4885ed9d",
+      "name": "Version_History_ver2.0.txt",
+      "path": "files/59722284e4b0ec1a4885ed9d__Version_History_ver2.0.txt",
+      "sha256": "a441bc2d44565e85c97fcc2a9bc278d12783099252fb46d21258156261e412fd",
+      "characters_extracted": 1243,
+      "matches": {
+        "coordinates": [],
+        "line_identity": [],
+        "flight_height": [],
+        "time_channels": [],
+        "response_channels": [],
+        "error_model": [],
+        "processed": []
+      }
+    },
+    {
+      "sciencebase_id": "5d35fe69e4b01d82ce8a61d1",
+      "name": "YellowstoneNP_2017_EM_Mag_rawdata_DataDictionary.csv",
+      "path": "files/5d35fe69e4b01d82ce8a61d1__YellowstoneNP_2017_EM_Mag_rawdata_DataDictionary.csv",
+      "sha256": "a9bb6f3a248fa15b669bcfb2e2c9b8436a464a6575d60a8cbae4c1e2f0d059b1",
+      "characters_extracted": 2828,
+      "matches": {
+        "coordinates": [
+          "Lon,\"Longitude, World Geodetic System 1984 (WGS84)\",Decimal Degrees,",
+          "Lat,\"Latitude, WGS84\",Decimal Degrees,",
+          "E_UTM12N,\"Easting, WGS84 Universal Transverse Mercator (UTM) Zone 12 North\",Meters [m],",
+          "N_UTM12N,\"Northing, WGS84 Universal Transverse Mercator (UTM) Zone 12 North\",Meters [m],"
+        ],
+        "line_identity": [
+          "Line,\"Flight line number prepended with either an \"\"L\"\" or \"\"T\"\" for \"\"Line\"\" or \"\"Tie\"\", respectively\",L######,"
+        ],
+        "flight_height": [
+          "Height,Filtered sensor height above ground surface,Meters [m],",
+          "Alt,\"DGPS altitude, referenced to the Earth Gravitational Model 1996 (EGM96-World)\",Meters [m],"
+        ],
+        "time_channels": [
+          "LM_Z_G01[i],\"Normalized and primary-field corrected low moment Z-component receiver coil response for time gate i; i, represents each timegate from 0 to 27. Null values indicated by -9999.\",picovolts/(Amps*meters^4) [pV/(A*m^4)],-9999",
+          "HM_Z_G01[i],\"Normalized and primary-field corrected high moment Z-component receiver coil response for time gate i; i, represents each timegate from 0 to 36. Null values indicated by -9999.\",picovolts/(Amps*meters^4) [pV/(A*m^4)],-9999",
+          "LM_X_G01[i],\"Normalized and primary-field corrected low moment X-component receiver coil response for time gate i; i, represents each timegate from 0 to 27. Null values indicated by -9999.\",picovolts/(Amps*meters^4) [pV/(A*m^4)],-9999",
+          "HM_X_G01[i],\"Normalized and primary-field corrected high moment X-component receiver coil response for time gate i; i, represents each timegate from 0 to 36. Null values indicated by -9999.\",picovolts/(Amps*meters^4) [pV/(A*m^4)],-9999"
+        ],
+        "response_channels": [],
+        "error_model": [],
+        "processed": []
+      }
+    },
+    {
+      "sciencebase_id": "5d485e83e4b01d82ce8ddc07",
+      "name": "IliamnaAK2012_DataDictonary_EM_Proc.csv",
+      "path": "files/5d485e83e4b01d82ce8ddc07__IliamnaAK2012_DataDictonary_EM_Proc.csv",
+      "sha256": "a6df9925db9a070fc0845adf6f5d1dab535b77f0b2b01e40f219537364cd3222",
+      "characters_extracted": 2105,
+      "matches": {
+        "coordinates": [
+          "UTMX,\"Easting, WGS84 Universal Transverse Mercator (UTM) zone 5 north\",Meters,n/a",
+          "UTMY,\"Northing, WGS84 Universal Transverse Mercator (UTM) zone 5 north\",Meters,n/a"
+        ],
+        "line_identity": [
+          "LINE_NO,Flight line number,LLLLLL,n/a"
+        ],
+        "flight_height": [
+          "RX_ALTITUDE_STD,Uncertainty in altitude of the Z coil,Meters,n/a",
+          "TX_ALTITUDE_STD,Uncertainty in altitude of the X coil,Meters,n/a"
+        ],
+        "time_channels": [
+          "DBDT_[i],Normalized (PFC-Corrected) Z-RxCoil response for time gate I; where I ranges from 1 to 20,pV/(m4*A) [picovolt per meter to the fourth-Ampere],-9.00E+31",
+          "DBDT_STD_[i],Uncertainty in normalized (PFC-Corrected) Z-RxCoil response for time gate; where i ranges from 1 to 20,Percent,-9.00E+31"
+        ],
+        "response_channels": [],
+        "error_model": [
+          "RX_ALTITUDE_STD,Uncertainty in altitude of the Z coil,Meters,n/a",
+          "TX_ALTITUDE_STD,Uncertainty in altitude of the X coil,Meters,n/a",
+          "TILT_X_STD,Uncertainty of angle (in flight direction; pitch),Degrees,n/a",
+          "TILT_Y_STD,\"Uncertainty angle (perpendicular to flight direction, roll)\",Degrees,n/a",
+          "DBDT_STD_[i],Uncertainty in normalized (PFC-Corrected) Z-RxCoil response for time gate; where i ranges from 1 to 20,Percent,-9.00E+31"
+        ],
+        "processed": []
+      }
+    },
+    {
+      "sciencebase_id": "5d485e83e4b01d82ce8ddc07",
+      "name": "IliamnaAK2012_ProcessedData_metadata.xml",
+      "path": "files/5d485e83e4b01d82ce8ddc07__IliamnaAK2012_ProcessedData_metadata.xml",
+      "sha256": "7c08d3401f2318f12e27c7ea0e5b71e0431fc5368a0a0b4d2a3c8d59b995a812",
+      "characters_extracted": 14014,
+      "matches": {
+        "coordinates": [],
+        "line_identity": [],
+        "flight_height": [
+          "<abstract>Airborne electromagnetic (AEM) and magnetic survey data were collected during June 2012 along 556 line-kilometers over Iliamna Volcano, Alaska. These data were collected in support of alteration and volcano flank instability mappi",
+          "Minimally processed binary AEM data received from the contractor were imported into the Aarhus Workbench software (Aarhus Geosoftware, Aarhus, Denmark) and processed. Filters were applied to inclinometer and spatial positioning data to smoo",
+          "Minimally processed binary data received from the contractor were imported into the Aarhus Workbench software (v. 5.9.4.0, Aarhus Geosoftware, Aarhus, Denmark) and processed. Filters were applied to inclinometer and spatial positioning data"
+        ],
+        "time_channels": [],
+        "response_channels": [],
+        "error_model": [],
+        "processed": [
+          "Electromagnetic and magnetic data processing was undertaken by SkyTEM ApS in Aarhus, Denmark. This processing workflow is described in the contractor's report included with this data release at https://www.sciencebase.gov/catalog/item/5c8fb"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "5f4e951882ce4c3d1233cb7d",
+      "name": "MAP_RegionalTempest_2020_CGGReport.pdf",
+      "path": "files/5f4e951882ce4c3d1233cb7d__MAP_RegionalTempest_2020_CGGReport.pdf",
+      "sha256": "e26399593e94be45b92a9ac4ddcf4e8ecf9398a26fd9701c5f880b84d4330c8f",
+      "characters_extracted": 131048,
+      "matches": {
+        "coordinates": [
+          "3.3.4 GPS Receiver ................................................................................................................................................... 15",
+          "3.3.5 Differential GPS Demodulator........................................................................................................................... 15",
+          "3.4.1 Aircraft GPS...................................................................................................................................................... 16",
+          "3.4.2 Bird or towed assembly GPS ............................................................................................................................ 16",
+          "4.2 GPS Base Station ...................................................................................................................................................... 20",
+          "Navigation Real-time differential GPS",
+          "Line Number Base Easting Northing Easting Northing",
+          "GPS cycle rate 1 second",
+          "means that the X- and Y-axes change relative to a fixed geographic (easting/northing or latitude/longitude) co-ordinate system",
+          "GPS -0.65 0.0 0 .12",
+          "Aircraft GPS 0.25 -0.1 -0.11",
+          "high accuracy. The timing card is synchronised to the Global Positioning System (GPS) through the use of the Pulse per Second"
+        ],
+        "line_identity": [
+          "Line Number Base Easting Northing Easting Northing",
+          "Base Flight Number Line Number",
+          "as the aircraft proceeds along the flight line.",
+          "axis parallel with the flight line direction) does not register any response from power lines parallel to the flight line direction since"
+        ],
+        "flight_height": [
+          "Nominal Terrain Clearance 120 m",
+          "Flying height 120 m (subject to safety considerations)",
+          "\uf0b7 Accuracy: 1.5 % of indicated altitude",
+          "checks the calibration of a terrain clearance of 100 feet, and altitudes which are multiples of 100 feet. The aircraft radar altitude",
+          "\uf0b7 Accuracy: \u00b1 0.05m at survey altitude",
+          "Output of a Vailsala PMB100 pressure transducer is used for calculating the barometric altitude of the aircraft. The atmospheric",
+          "Height: 17.489 m (WGS84 Ellipsoidal Height)",
+          "Height: -1.329 m (WGS84 Ellipsoidal Height)",
+          "Height: -1.804 m (WGS84 Ellipsoidal Height)",
+          "Height: 37.960 m (WGS84 Ellipsoidal Height)",
+          "Height: 67.465 m (WGS84 Ellipsoidal Height)",
+          "Height: 21.917 m (WGS84 Ellipsoidal Height)"
+        ],
+        "time_channels": [
+          "Sample interval 10.851 microseconds",
+          "The RS-500 measures the live time electronically, and outputs the value in milliseconds. The live time correction is applied to",
+          "L is the live time in milliseconds"
+        ],
+        "response_channels": [
+          "EM sensor Towed bird with 3 component dB/dt coils",
+          "magnetic field (dB/dt). Signals from each axis are transferred to the aircraft through a tow cable specifically designed for its",
+          "quality control. Selected EM data are transferred from the EM receiver computer to the SURVEY computer for quality control",
+          "With the FASDAS acquisition system the raw EM data including fiducial, local time, X and Z axis sensor response, current",
+          "The EM data are recorded and assessed by the airborne operator to determine if: -",
+          "aircraft. The EM data are monitored by the airborne operator to confirm correct operation of the system during the manoeuvre.",
+          "features on lines flown in opposite directions, magnetics, EM data and the altimeters are \u2018parallaxed\u2019 with respect to the position",
+          "Following acquisition, multiple copies of the EM data are made onto Hard Disk Drives (HDD\u2019s). The EM, location, magnetic and",
+          "No further parallax is applied so that the EM data remain time-synchronised with the GPS and attitude data. Both X and Z data",
+          "and receiver coils (primary field) and the coupling between currents induced in the ground and the receiver (secondary field).",
+          "The pure ground response data are transformed from dB/dt to B-field responses equivalent to that which would be observed for",
+          "6.3.6.1.11 Geometry standardization of EM Data"
+        ],
+        "error_model": [
+          "Typical noise level 1.0 nT",
+          "a. the system noise level is acceptable,",
+          "Noise: For any flight, if the standard deviation of the processed high altitude data for a window exceeds the corresponding Additive",
+          "(standard deviation of high altitude data) (fT)",
+          "of low to moderate topographic relief. Sources of error include uncertainty in the height of the GPS base station, variations in the",
+          "results. Variations in flying heights and other environmental factors also contribute to the uncertainty.",
+          "uncertainty in the estimation of the primary field. This will influence the accuracy of very early time window amplitude information",
+          "to keep this noise below the noise floor at frequencies equal to and above the base frequency of the system. Severe turbulence,",
+          "background values or set to undefined, reflecting the uncertainty in their origin. The settings and options applied are indicated in"
+        ],
+        "processed": [
+          "6 DATA PROCESSING ...................................................................................................................................................... 26",
+          "6.1 Field Data Processing................................................................................................................................................ 26",
+          "6.2 In-field Data Processing............................................................................................................................................. 28",
+          "6.3 Final Data Processing................................................................................................................................................ 28",
+          "6.3.6 Electromagnetic Data Processing ..................................................................................................................... 34",
+          "6 DATA PROCESSING",
+          "6.1 Field Data Processing",
+          "6.2 In-field Data Processing",
+          "Copies of the raw and processed data are then transferred to Perth for final data processing.",
+          "6.3 Final Data Processing",
+          "6.3.6 Electromagnetic Data Processing"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "5f4e951882ce4c3d1233cb7d",
+      "name": "ReadMe_for_DEFN_files.txt",
+      "path": "files/5f4e951882ce4c3d1233cb7d__ReadMe_for_DEFN_files.txt",
+      "sha256": "dd0ba0e995a951937d27ae974384b7928cf5bdabb3f9719e6abeae5d09e54fd8",
+      "characters_extracted": 4787,
+      "matches": {
+        "coordinates": [],
+        "line_identity": [
+          "RT=FLTL record type defines the format of flight line information."
+        ],
+        "flight_height": [],
+        "time_channels": [],
+        "response_channels": [],
+        "error_model": [],
+        "processed": []
+      }
+    },
+    {
+      "sciencebase_id": "6193fbb0d34eb622f68f13e5",
+      "name": "USGS_Midwest_Core_SkyTEM_Prj20022_Datareport-508.pdf",
+      "path": "files/6193fbb0d34eb622f68f13e5__USGS_Midwest_Core_SkyTEM_Prj20022_Datareport-508.pdf",
+      "sha256": "7033601ba6d97170b32ec9f9cd706fabb71584da381869f3c70959a010a6e1bd",
+      "characters_extracted": 67533,
+      "matches": {
+        "coordinates": [
+          "and away from metallic objects that could influence the GPS antenna.",
+          "Latitude N Longitude W Ellipsoidal",
+          "Operational Dates Latitude N Longitude W Elevation",
+          "Data from two GPS receivers are recorded by the EM data ac quisition system while a",
+          "third GPS is recorded by the magnetic data acquisition system.",
+          "Lon Latitude/Longitude, WGS84 Decimal degrees",
+          "Lat Latitude/Longitude, WGS84 Decimal degrees",
+          "The DGPS has been processed using the Waypoint GrafNav Lite Differential GPS",
+          "The ground speed, altitude, latitude and longitude from the processed DGPS\u2019 are",
+          "\u25aa Adjustment of the data for the time lag between the GPS position and the",
+          "Position: variable according to GP S WGS84 longitude and latitude",
+          "Antenna: Trimble, Bullet III GPS Antenna"
+        ],
+        "line_identity": [
+          "2021. The survey was comprised of one block of 3170 km planned flight line km in",
+          "total. Flight line spacing was 800 m with an azimuthal direction of 114\u00b0/294\u00b0. No tie",
+          "Line Line number LLLLLL",
+          "of the frame. Data were split at the beginning and end of each planned flight line.",
+          "soundings located along the flight line, but also those across them (figure"
+        ],
+        "flight_height": [
+          "Corrected for height",
+          "HA: high altitude, a flying height such that the return ground EM",
+          "The nominal terrain clearance was 30 - 40 m, with an increase due to steep terrain,",
+          "The safe flying height during the survey is always based on the pilot\u2019s assessment of",
+          "Processed height 43.6 m 11.3 m",
+          "height (m)",
+          "Height Filtered height measurement Metre",
+          "Alt DGPS Altitude m. a. sl.",
+          "Height Filtered Height Measurement Metre",
+          "InvHei Inverted Height Metre",
+          "Height processing",
+          "The height processing involves manual and automated routines using a combination of"
+        ],
+        "time_channels": [
+          "\u00b5s: microsecond",
+          "Gate Time: A small amount of time over which the amplitude of the",
+          "of the system response file will allow earlier time gate to be used than those listed in",
+          "100 microseconds until the next TEM pulse is transmitted. The data are averaged and",
+          "by selective stacking of delay time series and by applying appropriate filters in the",
+          "For SkyTEM data, the insufficiency lies primarily in the limited delay time range that",
+          "can be obtained. The earliest obtainable time gate is determined by the turnoff of the",
+          "Tx current, and the latest useful time gate is determined by the signal to noise ratio."
+        ],
+        "response_channels": [
+          "EM data....................................................................................................... 34",
+          "dB/dt: change in amplitude of magnetic field over the time it takes to",
+          "HM: High Moment EM dB/dt data",
+          "LM: Low moment EM dB/dt data",
+          "Tx Voltage Tx_off 59.5 V -",
+          "Data from two GPS receivers are recorded by the EM data ac quisition system while a",
+          "Multiplicative shift factor: 0.94 (on the raw dB/dt data)",
+          "Multiplicative shift factor: 0.99 (on the raw dB/dt data)",
+          "waveforms are applied in modelling of the EM data. Figure 6 and Figure 7 show the",
+          "This section covers processing of the auxiliary and EM data and presentations.",
+          "component EM data. For every low moment EM data block a PLNI value was obtained",
+          "\u2022 The low moment EM data are measured at a rate lower than the Nyquist"
+        ],
+        "error_model": [
+          "Control parameter Average Value Standard Deviation",
+          "RUnc_array[xx] Relative uncertainty of layer xx -",
+          "line noise level:",
+          "while keeping track of the resulting data uncertainty.",
+          "The uncertainty in the xyz-directions is \u00b1 1 m after processing.",
+          "Uncertainty \u00b1 1 m",
+          "The altimeter measurements are given in metres with two decimals. The uncertainty is",
+          "Uncertainty 10 - 30 cm",
+          "inversion includes the data uncertainty, estimated from the data stack, and the"
+        ],
+        "processed": [
+          "Data processing and presentation....................................................................... 26",
+          "This report covers data acquisition, technical specifications, data processing and",
+          "This report covers data acquisition, instrument descriptions, data processing and",
+          "Data processing, presentations and",
+          "Data processing and presentation",
+          "Geosoft magnetic data processing tools are applied as follows:"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "61fc2f97d34e622189cb8997",
+      "name": "Silverton_2019_Geotech_ContractorReport.pdf",
+      "path": "files/61fc2f97d34e622189cb8997__Silverton_2019_Geotech_ContractorReport.pdf",
+      "sha256": "c487e438e137bf773bc243a5d6554f0b692d05115b37b3ea4dec63f503738a61",
+      "characters_extracted": 69434,
+      "matches": {
+        "coordinates": [
+          "GPS Navigation Systemm 10",
+          "WAAS ( WWide Area A uugmentationn S y s t e m ) ennabled GPS r eceiver, Ge ootech navigatte software, a full",
+          "screen d iisplay with ccontrols in ffront of the pilot to dir eec t t h e f l i g htt a n d a N o vAAtel GPS an ttenna",
+          "mounted o n t h e h e l icopter tail ((Figure 5). AAs many as 111 GPS and two WAAS satellites m aay be",
+          "GPS Position 0.2 secc",
+          "northing s (y).",
+          "where Z11lag is the elevvation of the helicopter laagged by 12 mmetres (laggged to the Seccond GPS",
+          "xx metres Eassting, WGS844 Zone 13 N, centre of thee GPS & Laseer loop",
+          "yy metres Norrthing, WGS844 Zone 13 N, centre of th e GPS & Las er loop",
+          "z metres EElevation (aboove Geoid), ccentre of the GPS & Laser loop",
+          "Longgitude Decimal Degrrees WGGS 84 Longitudde data of thee centre of thhe GPS & Laseer loop",
+          "Latitude Decimal Degrrees WGGS 84 Latitudde data of thee centre of thee GPS & Laseer loop"
+        ],
+        "line_identity": [
+          "Line Line number"
+        ],
+        "flight_height": [
+          "receiver lloop terrain clearance of 110 metres and a magneetic sensor cllearance of 1129 metres.",
+          "Height of centre oof EM Loop abbove ground,",
+          "TR: meters EM system height from ssea level",
+          "RRadarB metres Height of centre of EM M Loop above ground, calcuulated from GGPS"
+        ],
+        "time_channels": [
+          "B Time Gate 0.19566 ms",
+          "time gate channels time gate channels"
+        ],
+        "response_channels": [
+          "on-time. AAfterwards, a parallax coorrection wass applied to tthe EM data to account foor the distannce by",
+          "during eaach survey fliight. This prooduces the EM data denooted as \u201cSFz\u201d in Table 5.",
+          "SFz pV/(A*m44) Final z dB/dt data foor time channnel 4 to 57",
+          "SRaawz pV/(A*m44) Raw z dB/dt data foor time channnel 4 to 57",
+          "SMMPz pV/(A*m44) MMinimally Proccessed z dB/dt data for timme channel 4 tto 57",
+          "TauSF ms Time connstant dB/dt",
+          "dB/dt Time Cons tant (TauSF)",
+          "Interprettation has n oot been incl uuded in this rreport; howeever the EM data are suppported withh RDI",
+          "dB/dt profiles Z Compon",
+          "dB/dt 0.01227 ms",
+          "dB/dt 0.1956 ms",
+          "VTEM dB/dt Z Componennt Channel 30, T"
+        ],
+        "error_model": [],
+        "processed": [
+          "Preliminaary Data Processing: Nick Veenter"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "61fc2f97d34e622189cb8997",
+      "name": "revision_history.txt",
+      "path": "files/61fc2f97d34e622189cb8997__revision_history.txt",
+      "sha256": "9765cc6b86c03c12ed3c9eb535bce95014d7b69813a4bbb210c2f132bb184789",
+      "characters_extracted": 305,
+      "matches": {
+        "coordinates": [],
+        "line_identity": [],
+        "flight_height": [
+          "1. Updated contractor package and raw data to remediate an erroneous calculation of transmitter/receiver altitude."
+        ],
+        "time_channels": [],
+        "response_channels": [],
+        "error_model": [],
+        "processed": []
+      }
+    },
+    {
+      "sciencebase_id": "62ffc245d34e37cba73e1fa0",
+      "name": "MAP_RegionalTempest_2022_ContractorReport.pdf",
+      "path": "files/62ffc245d34e37cba73e1fa0__MAP_RegionalTempest_2022_ContractorReport.pdf",
+      "sha256": "3f50b69dd41e39831e1cf7b013059008e4f97418770a0d5f992b004f46340c8d",
+      "characters_extracted": 115844,
+      "matches": {
+        "coordinates": [
+          ".4 GPS Receiver .......................................................................................................................................................... 14",
+          ".5 Differential GPS Demodulator .................................................................................................................................. 14",
+          ".1 Aircraft GPS ................................................................................................ ............................................................. 15",
+          ".2 Bird or towed assembly GPS ................................................................................................ ................................... 15",
+          "4.2 GPS Base Station ............................................................................................................................................................. 19",
+          "Navigation Real-time diff erential GPS",
+          "Line Number Area Easting Northing Easti ng Northing",
+          "GPS cycle rate 1 second",
+          "and Y-axes change relative to a fixed geographic (easting/northing or latitude/longitude) co-ordinate system as the aircraft",
+          "Aircraft GPS 0.25 -0.1 -0.11",
+          "Bird GPS -0.65 0.0 0.12",
+          "high accuracy. The timing card is synchronised to the Global Positioning System (GPS) through the use of the Pulse Per Second"
+        ],
+        "line_identity": [
+          "Line Number Area Easting Northing Easti ng Northing",
+          "Line Number Area Flight Number Line Number Area Flight Number",
+          "proceeds along the flight line.",
+          "axis parallel with the flight line direction) does not register any response from powerlines parallel to the flight line direction since"
+        ],
+        "flight_height": [
+          "Nominal Terrain Clearance 120 m",
+          "Flying height 120 m (subject to safety considerations)",
+          "\u2022 Accuracy: 1.5 % of indicated altitude",
+          "checks the calibration of a terrain clearance of 100 feet, and altitudes which are multiples of 100 feet. The aircraft radar altitude",
+          "\u2022 Accuracy: \u00b1 0.05m at survey altitude",
+          "Output of a Vailsala PMB100 pressure transducer is used for calculating the barometric altitude of the aircraft. The atmospheric",
+          "Height: -2.409 m (WGS84 Ellipsoidal Height)",
+          "Height: 37.459 m (WGS84 Ellipsoidal Height)",
+          "Height: -22.524 m (WGS84 Ellipsoidal Height)",
+          "Height: -0.148 m (WGS84 Ellipsoidal Height)",
+          "performance. All of these checks are conducted at a nominal terrain clearance of 1400 m (4600 ft) to eliminate ground response.",
+          "calculating a theoretical primary field on the high altitude data using both the transmitter and receiver. A comparison between"
+        ],
+        "time_channels": [
+          "The RS-500 measures the live time electronically, and outputs the value in milliseconds. The live time correction is applied to",
+          "L is the live time in milliseconds"
+        ],
+        "response_channels": [
+          "M sensor Towed b ird with 3 component dB/dt coils",
+          "magnetic field (dB/dt). Signals from each axis are transferred to the aircraft through a tow cable specifically designed for its",
+          "quality control. Selected EM data are transferred from the EM receiver computer to the SURVEY computer for quality control",
+          "With the FASDAS acquisition system the raw EM data including fiducial, local time, X and Z axis sensor response, current",
+          "The EM data are recorded and assessed by the airborne operator to determine if: -",
+          "aircraft. The EM data are monitored by the airborne operator to confirm correct operation of the system during the manoeuvre.",
+          "features on lines flown in opposite directions, magnetics, EM data and the altimeters are \u2018parallaxed\u2019 with respect to the position",
+          "Following acquisition, multiple copies of the EM data are made onto Hard Disk Drives (HDD\u2019s). The EM, location, magnetic and",
+          "No further parallax is applied so that the EM data remain time-synchronised with the GPS and attitude data. Both X and Z data",
+          "and receiver coils (primary field) and the coupling between currents induced in the ground and the receiver (secondary field).",
+          "The pure ground response data are transformed from dB/dt to B-field responses equivalent to that which would be observed for",
+          "6.2.6.1.11 Geometry standardization of EM Data"
+        ],
+        "error_model": [
+          "Typical noise level 1.0 nT",
+          "a. the system noise level is acceptable,",
+          "Standard Deviation",
+          "oise: For any flight, if the standard deviation of the processed high altitude data for a window exceeds the corresponding Additive",
+          "(standard deviation of high altitude data)",
+          "of low to moderate topographic relief. Sources of error include uncertainty in the height of the GPS base station, variations in the",
+          "results. Variations in flying heights and other environmental factors also contribute to the uncertainty.",
+          "uncertainty in the estimation of the primary field. This will influence the accuracy of very early time window amplitude info rmation",
+          "to keep this noise below the noise floor at frequencies equal to and above the base frequency of the system. Severe turbulence,",
+          "background values or set to undefined, reflecting the uncertainty in their origin. The settings and options applied are indicated in"
+        ],
+        "processed": [
+          "6 DATA PROCESSING ............................................................................................................................................................. 24",
+          "6.1 Field Data Processing ....................................................................................................................................................... 24",
+          "6.1.2 In-field Data Processing ........................................................................................................................................... 26",
+          ".2 Final Data Processing ....................................................................................................................................................... 26",
+          ".6 Electromagnetic Data Processing ............................................................................................................................ 31",
+          "Field Data Processing David Murray",
+          "Office Data Processing David Murray",
+          "6 DATA PROCESSING",
+          "6.1 Field Data Processing",
+          "6.1.2 In-field Data Processing",
+          "Copies of the raw and processed data are then transferred to Perth for final data processing.",
+          "6.2 Final Data Processing"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "636c0b28d34ed907bf6abb14",
+      "name": "Southeast_and_Southwest_Wisconsin_AEM_Survey_2022.ncml",
+      "path": "files/636c0b28d34ed907bf6abb14__Southeast_and_Southwest_Wisconsin_AEM_Survey_2022.ncml",
+      "sha256": "5d5b7703404bd55fbc3f7943250996ba630bf6fd559d878aa0fb32fc453f7796",
+      "characters_extracted": 97031,
+      "matches": {
+        "coordinates": [
+          "<attribute name=\"navigation_system\" type=\"String\" value=\"Real-time differential GPS Trimble Bullet III\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Easting, Wisconsin Transverse Mercator (WTM), North American Datum of 1983 (NAD83)\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Northing, Wisconsin Transverse Mercator (WTM), North American Datum of 1983 (NAD83)\"/>",
+          "<attribute name=\"crs_wkt\" type=\"String\" value=\"PROJCRS['NAD83(HARN) / Wisconsin Transverse Mercator',BASEGEOGCRS['NAD83(HARN)',DATUM['NAD83 (High Accuracy Reference Network)',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Easting, Universal Transverse Mercator (UTM) Zone 16, World Geodetic System of 1984 (WGS84)\"/>",
+          "<attribute name=\"standard_name\" type=\"String\" value=\"latitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Latitude, World Geodetic System of 1984 (WGS84)\"/>",
+          "<attribute name=\"standard_name\" type=\"String\" value=\"longitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Longitude, World Geodetic System of 1984 (WGS84)\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Northing, Universal Transverse Mercator (UTM) Zone 16, World Geodetic System of 1984 (WGS84)\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Longitude, Geographic Coordinate System, World Geodetic System 1984 (WGS 84), espg: 4326\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Latitude, Geographic Coordinate System, World Geodetic System 1984 (WGS 84), espg: 4326 \"/>"
+        ],
+        "line_identity": [
+          "<attribute name=\"key_mapping.line_number\" value=\"Line\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Master line number\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Line number\"/>",
+          "<attribute name=\"key_mapping.line_number\" value=\"LINE_NO\"/>",
+          "<attribute name=\"standard_name\" type=\"String\" value=\"line_number\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"line number\"/>",
+          "<attribute name=\"key_mapping.line_number\" value=\"LINE\"/>"
+        ],
+        "flight_height": [
+          "<attribute name=\"summary\" value=\"Airborne electromagnetic (AEM) and magnetic survey data were collected during March 2022 over a distance of 2,574.6 line kilometers in southeast and southwest Wisconsin. These data were collected in support ",
+          "<attribute name=\"standard_name\" type=\"String\" value=\"altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"DGPS instrument altitude\"/>",
+          "<variable name=\"Height\" shape=\"index\" type=\"Float\">",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Instrument height above ground\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Processed transmitter altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for transmitter altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Processed receiver altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for receiver altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Inverted instrument altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of inverted instrument altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Measured minus inverted altitude\"/>"
+        ],
+        "time_channels": [],
+        "response_channels": [
+          "<attribute name=\"electromagnetic_system.receiver_0_data_type\" type=\"String\" value=\"dBdt\"/>",
+          "<attribute name=\"electromagnetic_system.receiver_1_data_type\" type=\"String\" value=\"dBdt\"/>",
+          "<attribute name=\"electromagnetic_system.receiver_2_data_type\" type=\"String\" value=\"dBdt\"/>",
+          "<attribute name=\"electromagnetic_system.receiver_3_data_type\" type=\"String\" value=\"dBdt\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, low moment x-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, high moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, high moment x-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, low moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, low moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, high moment z-component\"/>"
+        ],
+        "error_model": [
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, low moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, high moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for transmitter altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for receiver altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for x direction tilt\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for y direction tilt\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of inverted instrument altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Uncertainty in inverted layer resistivity\"/>"
+        ],
+        "processed": [
+          "<attribute name=\"history\" value=\"(1) Data acquisition 03/02/2022 - 03/25/2022 by SkyTEM Canada Inc.; (2) AEM and magnetic data processing by SkyTEM Canada Inc. 03/25/2022 - 05/01/2022; raw and minimally processed AEM data, and processed mag",
+          "<attribute name=\"comment\" value=\"This dataset includes minimally processed (raw) AEM and raw/processed magnetic data provided by SkyTEM, fully processed data used as input to inversion, laterally constrained inverted resistivity models.\"/>",
+          "<attribute name=\"comment\" value=\"This dataset includes processed AEM data produced by USGS\"/>",
+          "<attribute name=\"comment\" value=\"This dataset includes inverted resistivity blocky models derived from processed AEM data produced by USGS\"/>",
+          "<attribute name=\"comment\" value=\"This dataset includes inverted resistivity smooth models derived from processed AEM data produced by USGS\"/>"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "636c0b28d34ed907bf6abb14",
+      "name": "Southeast_and_Southwest_Wisconsin_AEM_Survey_2022.pdf",
+      "path": "files/636c0b28d34ed907bf6abb14__Southeast_and_Southwest_Wisconsin_AEM_Survey_2022.pdf",
+      "sha256": "c167f948b04ba2d7e3aeb809b6db1980740a3ca83f3d6fa40c6e62df1a44f1da",
+      "characters_extracted": 71107,
+      "matches": {
+        "coordinates": [
+          "and away from metallic objects that could influence the GPS antenna.",
+          "Longitude W Latitude N Ellipsoidal",
+          "Operational Dates Longitude W Latitude N Elevation",
+          "Data from two GPS receivers are recorded by the EM data ac quisition system while a",
+          "third GPS is recorded by the magnetic data acquisition system.",
+          "The three ASCII SPS files contain the various flight information with GPS time stamp.",
+          "\u2022 Date_Flight_GPS2_Base#.sps: Contains the corrected GPS data.",
+          "Lon Latitude/Longitude, WGS84 Decimal degrees",
+          "Lat Latitude/Longitude, WGS84 Decimal degrees",
+          "The DGPS has been processed using the Waypoint GrafNav Lite Differential GPS",
+          "The ground speed, altitude, latitude and longitude from the processed DGPS\u2019 are",
+          "1. Adjustment of the data for the time lag between the GPS position and the"
+        ],
+        "line_identity": [
+          "2022. The survey was comprised of 2 blocks of 2515.0 km planned flight line km in",
+          "total. Flight line spacing and azimuthal flight directions were variable across each",
+          "\u2022 The next 3 digits represent the unique line number.",
+          "Line Line number LLLLLL",
+          "of the frame. Data were split at the beginning and end of each planned flight line.",
+          "soundings located along the flight line, but also those across them (figure"
+        ],
+        "flight_height": [
+          "Corrected for height",
+          "HA: high altitude, a flying height such that the return ground EM",
+          "at 30m height was also used as a production line. It is shown in red on Figure 4.",
+          "The nominal terrain clearance was 30 - 40 m, with an increase due to steep terrain,",
+          "The safe flying height during the survey is always based on the pilot\u2019s assessment of",
+          "Processed height 51.0 m 15.8 m",
+          "20220315.02 Ferry / High altitude.",
+          "height (m)",
+          "of the SkyTEM system and is derived from the high-altitude data. This information is",
+          "Height Filtered height measurement Metre",
+          "Alt DGPS Altitude m. a. sl.",
+          "Height Filtered Height Measurement Metre"
+        ],
+        "time_channels": [
+          "\u00b5s: microsecond",
+          "Gate Time: A small amount of time over which the amplitude of the",
+          "of the system response file will allow earlier time gate to be used than those listed in",
+          "ramp time gate information during the inversion process.",
+          "100 microseconds until the next TEM pulse is transmitted. The data are averaged and",
+          "by selective stacking of delay time series and by applying appropriate filters in the",
+          "For SkyTEM data, the insufficiency lies primarily in the limited delay time range that",
+          "can be obtained. The earliest obtainable time gate is determined by the turnoff of the",
+          "Tx current, and the latest useful time gate is determined by the signal to noise ratio."
+        ],
+        "response_channels": [
+          "EM data....................................................................................................... 37",
+          "dB/dt: change in amplitude of magnetic field over the time it takes to",
+          "HM: High Moment EM dB/dt data",
+          "LM: Low moment EM dB/dt data",
+          "Data from two GPS receivers are recorded by the EM data ac quisition system while a",
+          "Multiplicative shift factor: 0.94 (on the raw dB/dt data)",
+          "Multiplicative shift factor: 0.99 (on the raw dB/dt data)",
+          "waveforms are applied in modelling of the EM data. Figure 8 and Figure 9 show the",
+          "\u2022 Date_time_RawData_PFC.skb: Contains the measured dB/dT EM data.",
+          "This section covers processing of the auxiliary and EM data and presentations.",
+          "component EM data. For every low moment EM data block a PLNI value was obtained",
+          "1. The low moment EM data are measured at a rate lower than the Nyquist"
+        ],
+        "error_model": [
+          "Control parameter Average Value Standard Deviation",
+          "RUnc_array[xx] Relative uncertainty of layer xx -",
+          "line noise level:",
+          "while keeping track of the resulting data uncertainty.",
+          "The uncertainty in the xyz-directions is \u00b1 1 m after processing.",
+          "Uncertainty \u00b1 1 m",
+          "The altimeter measurements are given in metres with two decimals. The uncertainty is",
+          "Uncertainty 10 - 30 cm",
+          "inversion includes the data uncertainty, estimated from the data stack, and the"
+        ],
+        "processed": [
+          "Data processing and presentation....................................................................... 29",
+          "This report covers data acquisition, technical specifications, data processing and",
+          "This report covers data acquisition, instrument descriptions, data processing and",
+          "Data processing, presentations and",
+          "system. This information is used during data processing and inversion in the Aarhus",
+          "used during data processing and inversion and allows for the use of very early down",
+          "Data processing and presentation",
+          "Geosoft magnetic data processing tools are applied as follows:"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "66842d18d34e0f592272b4c0",
+      "name": "Illinois_River_Basin_AEM_Survey_2023.ncml",
+      "path": "files/66842d18d34e0f592272b4c0__Illinois_River_Basin_AEM_Survey_2023.ncml",
+      "sha256": "f4b4b0be0d4dc85ba6e5ec6ebc3acfa2f65222dbb68aed54b54959b9ba4efed3",
+      "characters_extracted": 113886,
+      "matches": {
+        "coordinates": [
+          "<attribute name=\"gps_system\" type=\"String\" value=\"Real-time differential GPS Trimble Bullet III (2)\"/>",
+          "<attribute name=\"gps_information\" type=\"String\" value=\"position uncertainty = 1m; gps sample frequency = 1 Hz\"/>",
+          "<attribute name=\"crs_wkt\" type=\"String\" value=\"PROJCRS['NAD83 / Conus Albers',BASEGEOGCRS['NAD83',DATUM['North American Datum 1983',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Easting, North American Datum (NAD) 1983, USA Contiguous Albers Equal Area\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Northing, North American Datum (NAD) 1983, USA Contiguous Albers Equal Area\"/>",
+          "<attribute name=\"standard_name\" type=\"String\" value=\"latitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Latitude, World Geodetic System of 1984 (WGS84)\"/>",
+          "<attribute name=\"standard_name\" type=\"String\" value=\"longitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Longitude, World Geodetic System of 1984 (WGS84)\"/>",
+          "<variable name=\"UTMX\" shape=\"index\" type=\"Float\">",
+          "<variable name=\"UTMY\" shape=\"index\" type=\"Float\">"
+        ],
+        "line_identity": [
+          "<attribute name=\"long_name\" type=\"String\" value=\"Line number\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Master line number\"/>"
+        ],
+        "flight_height": [
+          "<attribute name=\"summary\" value=\"Airborne electromagnetic (AEM) and magnetic survey data were collected during January and February 2023 over a distance of 3,799.3 line kilometers covering the Illinois River Basin and surrounding regions in",
+          "<attribute name=\"standard_name\" type=\"String\" value=\"altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"DGPS instrument altitude\"/>",
+          "<variable name=\"Height\" shape=\"index\" type=\"Float\">",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Instrument height above ground\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Processed receiver altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for receiver altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Processed transmitter altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for transmitter altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of DGPS instrument altitude\"/>",
+          "<variable name=\"ALTITUDE\" shape=\"index\" type=\"Float\">",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Inverted instrument altitude\"/>"
+        ],
+        "time_channels": [],
+        "response_channels": [
+          "<attribute name=\"electromagnetic_system.output_data_type\" type=\"String\" value=\"dBdt\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, high moment x-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, high moment, z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, low moment x-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, low moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data, high moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, low moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, high moment z-component\"/>"
+        ],
+        "error_model": [
+          "<attribute name=\"laser_altimiter_information\" type=\"String\" value=\"sample frequency = 30 Hz; uncertainty = 10-30 cm; min/max range = 0.2-200 m\"/>",
+          "<attribute name=\"gps_information\" type=\"String\" value=\"position uncertainty = 1m; gps sample frequency = 1 Hz\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for receiver altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation for transmitter altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of tilt of loop in the in-line, or x, direction\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of tilt of loop in the transverse, or y, direction\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, low moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"EM data error standard deviation, high moment z-component\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of DGPS instrument altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of inverted instrument altitude\"/>",
+          "<attribute name=\"long_name\" type=\"String\" value=\"Standard deviation of inverted layer resistivity\"/>"
+        ],
+        "processed": [
+          "<attribute name=\"history\" value=\"(1) Data acquisition January 30 to February 15, 2023 by SkyTEM Canada Inc.; (2) AEM and magnetic data processing by SkyTEM Canada Inc. completed February to March, 2023; (3) raw and minimally processed AEM d",
+          "<attribute name=\"comment\" value=\"This dataset includes minimally processed (raw) AEM and raw/processed magnetic data provided by SkyTEM, as well as processed AEM data and inverted resistivity models, processed in Aarhus Workbench v.6.9.0.0\"",
+          "<attribute name=\"comment\" value=\"This dataset includes processed AEM data, processed in Workbench.\"/>"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "66842d18d34e0f592272b4c0",
+      "name": "Illinois_River_Basin_AEM_Survey_2023.xml",
+      "path": "files/66842d18d34e0f592272b4c0__Illinois_River_Basin_AEM_Survey_2023.xml",
+      "sha256": "442113504faf0758c73ebd5e2da72090ed624904a9b9fc28f1cae26a54dfe8c6",
+      "characters_extracted": 19407,
+      "matches": {
+        "coordinates": [],
+        "line_identity": [
+          "<attrdef>Flight line number</attrdef>",
+          "<attrdef>Length of flightline segment in kilometers.</attrdef>"
+        ],
+        "flight_height": [
+          "<abstract>Airborne electromagnetic (AEM) and magnetic survey data were collected during January and February 2023 over a distance of 3,799.3 line kilometers covering the Illinois River Basin and surrounding regions in Illinois and Indiana. "
+        ],
+        "time_channels": [],
+        "response_channels": [],
+        "error_model": [],
+        "processed": [
+          "<datacred>Funding for this study was provided by the USGS Next Generation Water Observing Systems (NGWOS) project, and was carried out in collaboration with the Illinois State Geological Survey (ISGS) and Illinois State Water Survey (ISWS).",
+          "<procdesc>AEM and magnetic data processing by SkyTEM Canada Inc. 02/16/2023 - 04/13/2023. Raw and minimally processed AEM data, and processed magnetic data, received by USGS from SkyTEM Canada Inc 04/13/2023. This processing workflow is des",
+          "<procdesc>Minimally processed binary data and system response information received from the contractor were imported into the Aarhus Workbench software (v 6.9.0.0) where data were processed by USGS 04/2023 - 05/2024. Processed AEM data were"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "69829a8db66b018d00103597",
+      "name": "CA_WMojaveAEM_rawdata.ncml",
+      "path": "files/69829a8db66b018d00103597__CA_WMojaveAEM_rawdata.ncml",
+      "sha256": "713c9184ce460bd7ad706b75b8c57316dfb969ee30614ea3c39c3c5ff8bb0be0",
+      "characters_extracted": 68445,
+      "matches": {
+        "coordinates": [
+          "<attribute name='gps_system' type='String' value='Real-time differential GPS Trimble Bullet III (2)'/>",
+          "<attribute name='gps_information' type='String' value='position uncertainty = 1m; gps sample frequency = 1 Hz'/>",
+          "<attribute name='crs_wkt' type='String' value='PROJCRS['WGS 84 / UTM zone 11N',BASEGEOGCRS['WGS 84',ENSEMBLE['World Geodetic System 1984 ensemble',MEMBER['World Geodetic System 1984 (Transit)'],MEMBER['World Geodetic System 1984 (G730)'],ME",
+          "<attribute name='long_name' type='String' value='Longitude, WGS84'/>",
+          "<attribute name='long_name' type='String' value='Latitude, WGS84'/>",
+          "<attribute name='long_name' type='String' value='Easting, UTM Zone 11N (WGS84)'/>",
+          "<attribute name='long_name' type='String' value='Northing, UTM Zone 11N (WGS84)'/>"
+        ],
+        "line_identity": [
+          "<attribute name='long_name' type='String' value='Line number (LLLLLL)'/>"
+        ],
+        "flight_height": [
+          "<attribute name='long_name' type='String' value='GNSS Altitude, EGM96-World geoid, Meters above sea level'/>",
+          "<variable name='height' shape='index' type='Float'>",
+          "<attribute name='standard_name' type='String' value='Height'/>",
+          "<attribute name='long_name' type='String' value='Filtered transmitter terrain clearance'/>"
+        ],
+        "time_channels": [],
+        "response_channels": [
+          "<attribute name='output_data_type' value='dBdt'/>"
+        ],
+        "error_model": [
+          "<attribute name='laser_altimiter_information' type='String' value='sample frequency = 30 Hz; uncertainty = 10-30 cm; min/max range = 0.2-200 m'/>",
+          "<attribute name='gps_information' type='String' value='position uncertainty = 1m; gps sample frequency = 1 Hz'/>",
+          "<attribute name='long_name' type='String' value='Relative uncertainty of HM_X'/>",
+          "<attribute name='long_name' type='String' value='Relative uncertainty of HM_Z'/>",
+          "<attribute name='long_name' type='String' value='Relative uncertainty of LM_X'/>",
+          "<attribute name='long_name' type='String' value='Relative uncertainty of LM_Z'/>"
+        ],
+        "processed": [
+          "<attribute name='history' value='1) Contract Signed, 20240801; 2) Mobilization, 20241101; 3) System verification, 20241103; 4) Start of data acquisition, 20241104; 5) End of data acquisition, 20241120; 6) Data processing complete initial da"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "69829a8db66b018d00103597",
+      "name": "CA_WestMojaveAEM.xml",
+      "path": "files/69829a8db66b018d00103597__CA_WestMojaveAEM.xml",
+      "sha256": "30780b698a25e065a6587819f547ea3c3110dc90dba660bdac6f2c2c82162f94",
+      "characters_extracted": 20861,
+      "matches": {
+        "coordinates": [],
+        "line_identity": [
+          "<attrdef>Line number</attrdef>",
+          "<eaover>CA_WestMojaveAEM_Flightline.shp - Shapefile for the airborne geophysical flight line locations.</eaover>",
+          "<formcont>CA_WestMojaveAEM_Flightline.shp - Shapefile for the airborne geophysical flight line locations.</formcont>"
+        ],
+        "flight_height": [
+          "<abstract>Airborne electromagnetic (AEM) and magnetic survey data were collected during November 4\u201320, 2024 over a distance of 3,251 line kilometers in the western Mojave Desert, California. These data were collected in support of the U.S. "
+        ],
+        "time_channels": [],
+        "response_channels": [],
+        "error_model": [],
+        "processed": [
+          "<datacred>Funding for this study was provided by the USGS Earth Mapping Resources Initiative and the USGS Mineral Resources Program; U.S. Geological Survey roles and contributions: Scientist-in-charge: Lyndsay Ball; Survey design and coordi",
+          "<procdesc>AEM and magnetic data processing by SkyTEM Canada. 11/2024 - 05/2025. Raw and minimally processed AEM data and processed magnetic data were received by USGS from SkyTEM Canada 05/07/2025. This processing workflow is described in t",
+          "<procdesc>Minimally processed AEM data were exported to NetCDF using GSPy version 2.2.8 (Foks and others, 2022).</procdesc>"
+        ]
+      }
+    },
+    {
+      "sciencebase_id": "69829a8db66b018d00103597",
+      "name": "CA_WestMojaveAEM_ContractorsReport.pdf",
+      "path": "files/69829a8db66b018d00103597__CA_WestMojaveAEM_ContractorsReport.pdf",
+      "sha256": "a8c6ffdc8e518534f2bd057513f69fc58738fec68f925b08c5d4da8094107279",
+      "characters_extracted": 47910,
+      "matches": {
+        "coordinates": [
+          "ID # Status Latitude Longitude Height",
+          "The ground speed, altitude, latitude, and longitude from the processed GNSS are imported into",
+          "\u2022 Position: variable according to GNSS longitude and latitude",
+          "Lon* Latitude/Longitude, WGS84 Decimal degrees",
+          "Lat* Latitude/Longitude, WGS84 Decimal degrees",
+          "The three ASCII SPS files contain the various flight information with GPS time stamp.",
+          "\u2022 Date_Flight_GPS1_PPP.sps: Contains the corrected GPS data",
+          "altimeters and three GPS\u2019. All instruments are mounted on the frame su spended ~40 m below",
+          "GPS Airborne Unit and Base Stations",
+          "Antenna: Trimble, Bullet III GPS Antenna",
+          "The DPS delivers one dataset per second. The raw coordinates are given in Latitude/Longitude,",
+          "WGS84. The uncertainty in the xyz-directions is \u00b1 1 m after processing. The processed GPS data"
+        ],
+        "line_identity": [
+          "Flight line details are listed in Table 2 and Table 3. The line numbering convention uses the",
+          "\u2022 The next three digits represent the unique line number within the specific survey area",
+          "Line Line number LLLLLL"
+        ],
+        "flight_height": [
+          "height",
+          "\u2022 HA - High altitude, a flying height such that the return ground EM signal is greatly",
+          "The nominal terrain clearance of the transmitter is 35 - 45 m, with an increase in flight height",
+          "over power lines, extreme terrain or any other obstacles or hazards. The safe flying height during",
+          "Processed height 37.8 m 14.7 m",
+          "ID # Status Latitude Longitude Height",
+          "Height Processing",
+          "The height processing involves automated routines using a combination of SkyTEM in- house",
+          "The ground speed, altitude, latitude, and longitude from the processed GNSS are imported into",
+          "1. Filtering of the laser altimeter height as previously described",
+          "altitude data",
+          "The DEM has been corrected for the canopy effect; see the section on Height Processing. However,"
+        ],
+        "time_channels": [
+          "\u2022 \u00b5s - Microsecond",
+          "\u2022 Gate Time - A small amount of time over which the amplitude of the decaying magnetic",
+          "processing and inversion and allows for the use of very early down ramp time gate information",
+          "is closed. In the TEM off -time the magnetometer data is measured from 100 microseconds until",
+          "GCT_calib = GCT_raw \u2013 Calibration Time Shift + Delay Time"
+        ],
+        "response_channels": [
+          "\u2022 dB/dt - Change in amplitude of magnetic field over the time, unit: pV/(m4*A)",
+          "\u2022 LM - Low moment EM dB/dt data",
+          "\u2022 HM - High moment EM dB/dt data",
+          "Data from two GNSS receivers are recorded by the EM data acquisition system, while data from",
+          "EM data are provided as sampled representations of the transient dB/dt sounding signals, where",
+          "Details are found in Appendix 3. Gate times for dB/dt and if present channel times for B-field can",
+          "This section covers the processing and presentation of auxiliary, magnetic, and EM data.",
+          "This section covers processing and filtering of EM data. Raw (binary) SkyTEM data are processed",
+          "\u2022 PFC correction of LM dB/dt data",
+          "The EM data is filtered adaptively based on the signal -to-noise ratio. T he applied EM filtering",
+          "Height corrected Z component dB/dt data are provided as supplementary datasets in the form of",
+          "Note that height correction has NOT been applied to the EM data channels in the delivered Geosoft"
+        ],
+        "error_model": [
+          "Control parameter Average value Standard deviation",
+          "well as cultural noise components, while keeping track of the resulting data uncertainty.",
+          "may give rise to anomalous PLNI patterns unrelated to the actual power line noise level:",
+          "RelUnc_LM_Z_dBdt [**] Relative uncertainty of LM_Z -",
+          "RelUnc_HM_Z_dBdt [**] Relative uncertainty of HM_Z -",
+          "RelUnc_LM_X_dBdt [**] Relative uncertainty of LM_X",
+          "RelUnc_HM_X_dBdt [**] Relative uncertainty of HM_X -",
+          "WGS84. The uncertainty in the xyz-directions is \u00b1 1 m after processing. The processed GPS data",
+          "Uncertainty \u00b1 1 m",
+          "values. The altimeter measurements are given in meters with two decimals. The uncertainty is 10",
+          "Uncertainty 10 - 30 cm"
+        ],
+        "processed": [
+          "Data Processing and Presentation................................................................................... 13",
+          "technical specifications, data processing, and presentation of the SkyTEM312 survey flown in",
+          "Data processing, presentations,",
+          "Data Processing and Presentation",
+          "The following magnetic data processing tools are applied as standard:",
+          "data processing steps:",
+          "information is used during data processing and inversion in the Aarhus Workbench package. Two"
+        ]
+      }
+    }
+  ],
+  "geometry_contract_ready_count": 7,
+  "explicit_error_contract_ready_count": 8,
+  "provisional_observation_contract_ready_count": 6,
+  "response_files_opened": 0,
+  "response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

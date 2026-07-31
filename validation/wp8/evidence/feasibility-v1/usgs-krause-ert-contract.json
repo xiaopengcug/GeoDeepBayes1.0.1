@@ -1,0 +1,87 @@
+{
+  "schema_version": "wp8-usgs-krause-ert-contract-v1",
+  "raw_manifest_sha256": "b94e9808b1b2d1b20cccb73c717aa93bc44e2f9b3bd8efe6ac5ff3934b1ef994",
+  "license_gate_passes": true,
+  "abmn_local_geometry_present": true,
+  "electrode_gps_present": true,
+  "navd88_topography_present": true,
+  "profiles": [
+    {
+      "profile": "ERT1",
+      "measurement_type": "resistance",
+      "declared_measurement_count": 3442,
+      "parsed_measurement_count": 3442,
+      "electrode_count": 84,
+      "electrode_x_extent_m": [
+        0.0,
+        166.0
+      ],
+      "gps_and_navd88_elevation_present": true,
+      "record_embeds_topography": false,
+      "reciprocal_configuration_group_count": 0,
+      "reciprocal_observation_count": 0,
+      "reciprocal_relative_mismatch_median": null
+    },
+    {
+      "profile": "ERT2",
+      "measurement_type": "apparent_resistivity",
+      "declared_measurement_count": 3422,
+      "parsed_measurement_count": 3422,
+      "electrode_count": 84,
+      "electrode_x_extent_m": [
+        0.0,
+        166.0
+      ],
+      "gps_and_navd88_elevation_present": true,
+      "record_embeds_topography": false,
+      "reciprocal_configuration_group_count": 0,
+      "reciprocal_observation_count": 0,
+      "reciprocal_relative_mismatch_median": null
+    },
+    {
+      "profile": "ERT3",
+      "measurement_type": "apparent_resistivity",
+      "declared_measurement_count": 3274,
+      "parsed_measurement_count": 3274,
+      "electrode_count": 84,
+      "electrode_x_extent_m": [
+        0.0,
+        83.0
+      ],
+      "gps_and_navd88_elevation_present": true,
+      "record_embeds_topography": true,
+      "reciprocal_configuration_group_count": 0,
+      "reciprocal_observation_count": 0,
+      "reciprocal_relative_mismatch_median": null
+    },
+    {
+      "profile": "ERT4",
+      "measurement_type": "apparent_resistivity",
+      "declared_measurement_count": 3467,
+      "parsed_measurement_count": 3467,
+      "electrode_count": 84,
+      "electrode_x_extent_m": [
+        0.0,
+        83.0
+      ],
+      "gps_and_navd88_elevation_present": true,
+      "record_embeds_topography": false,
+      "reciprocal_configuration_group_count": 0,
+      "reciprocal_observation_count": 0,
+      "reciprocal_relative_mismatch_median": null
+    }
+  ],
+  "profile_count": 4,
+  "measurement_count": 13605,
+  "reciprocal_configuration_group_count": 0,
+  "reciprocal_observation_count": 0,
+  "reciprocal_observation_fraction": 0.0,
+  "reciprocal_relative_mismatch_median": null,
+  "empirical_error_model_possible": false,
+  "direct_per_observation_standard_deviation_present": false,
+  "observation_contract_ready_for_development": false,
+  "formal_cluster_power_gate_passes": false,
+  "independent_profile_upper_bound": 4,
+  "test_unseal_count": 0,
+  "warning": "The files describe reciprocal Schlumberger configurations but contain no paired normal/reciprocal repeats, so they cannot support an empirical reciprocal-error contract. Four profiles also cannot satisfy the formal 223-cluster gate. No confirmatory test was opened."
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": "wp8-geoscience-australia-aem-multisystem-train-diagnostics-v1",
+  "manifest_sha256": "67df16f0541b0b5a9464df651845e9a29da92746a69430caa5b04a34e20b8be2",
+  "split_sha256": "b05d072ec8c24ad04795dee3817d4444cd6c28dc2afc6e554d5a603e5742e8ca",
+  "contract_sha256": "496cad84b23b9b9af37c615674a9e48b559f0485c9a934566f97199fbed574ea",
+  "coordinate_first_role_assignment": true,
+  "maximum_assignment_distance_km": 45.0,
+  "products": [
+    {
+      "system": "VTEM",
+      "dataset_number": 22122,
+      "record_id": 102781,
+      "archive_sha256": "0b32915032f78e1d3af11696584a6e55edc878295ded939da9acdbf771730423",
+      "data_member": "ga1279_decimated_point_located_em/ga1279_decimated_PointLocatedSurveyData.dat",
+      "role_row_counts": {
+        "outside_design_support": 66650,
+        "train": 259008
+      },
+      "training_response_rows_interpreted": 259008,
+      "training_uncertainty_rows_interpreted": 0,
+      "diagnostic_sample_stride": 20,
+      "diagnostic_sample_count": 12950,
+      "sample_median_relative_uncertainty": null,
+      "correlation": {
+        "sample_residual_count": 12950,
+        "distance_bins": [
+          {
+            "distance_bin_upper_km": 1,
+            "pair_count": 82113,
+            "pearson_correlation": 0.806228
+          },
+          {
+            "distance_bin_upper_km": 2,
+            "pair_count": 87133,
+            "pearson_correlation": 0.500414
+          },
+          {
+            "distance_bin_upper_km": 3,
+            "pair_count": 84444,
+            "pearson_correlation": 0.323839
+          },
+          {
+            "distance_bin_upper_km": 4,
+            "pair_count": 50848,
+            "pearson_correlation": 0.176108
+          },
+          {
+            "distance_bin_upper_km": 5,
+            "pair_count": 7837,
+            "pearson_correlation": 0.051284
+          }
+        ],
+        "descriptive_correlation_range_km": 5,
+        "range_rule": "first of two consecutive 1-km bins with |Pearson r| <= 0.05; otherwise maximum supported bin"
+      }
+    },
+    {
+      "system": "SkyTEM",
+      "dataset_number": 22131,
+      "record_id": 121613,
+      "archive_sha256": "e764e898555088b268e330d07be01af904e5e0ddae51f8592e9895055b3ee4b0",
+      "data_member": "located_data_em/AUS_10031_Olympic_EM.dat",
+      "role_row_counts": {
+        "outside_design_support": 12935,
+        "test": 199210
+      },
+      "training_response_rows_interpreted": 0,
+      "training_uncertainty_rows_interpreted": 0,
+      "diagnostic_sample_stride": 20,
+      "diagnostic_sample_count": 0,
+      "sample_median_relative_uncertainty": null,
+      "correlation": {
+        "sample_residual_count": 0,
+        "distance_bins": [],
+        "descriptive_correlation_range_km": null,
+        "range_rule": "first of two consecutive 1-km bins with |Pearson r| <= 0.05; otherwise maximum supported bin"
+      }
+    },
+    {
+      "system": "SkyTEM",
+      "dataset_number": 22130,
+      "record_id": 122012,
+      "archive_sha256": "0c2c80cdeec784c8173136b56e488245abebfcacfc5506f27f26dcb87e387b4f",
+      "data_member": "01_EM/AUS_10021_DalyR_EM.dat",
+      "role_row_counts": {
+        "outside_design_support": 9733,
+        "train": 248928
+      },
+      "training_response_rows_interpreted": 248928,
+      "training_uncertainty_rows_interpreted": 248928,
+      "diagnostic_sample_stride": 20,
+      "diagnostic_sample_count": 12446,
+      "sample_median_relative_uncertainty": 0.00868,
+      "correlation": {
+        "sample_residual_count": 12446,
+        "distance_bins": [
+          {
+            "distance_bin_upper_km": 1,
+            "pair_count": 38860,
+            "pearson_correlation": 0.803033
+          },
+          {
+            "distance_bin_upper_km": 2,
+            "pair_count": 43019,
+            "pearson_correlation": 0.541174
+          },
+          {
+            "distance_bin_upper_km": 3,
+            "pair_count": 40472,
+            "pearson_correlation": 0.336394
+          },
+          {
+            "distance_bin_upper_km": 4,
+            "pair_count": 38213,
+            "pearson_correlation": 0.172679
+          },
+          {
+            "distance_bin_upper_km": 5,
+            "pair_count": 36203,
+            "pearson_correlation": 0.10636
+          },
+          {
+            "distance_bin_upper_km": 6,
+            "pair_count": 33237,
+            "pearson_correlation": 0.052941
+          },
+          {
+            "distance_bin_upper_km": 7,
+            "pair_count": 22143,
+            "pearson_correlation": 0.042232
+          },
+          {
+            "distance_bin_upper_km": 8,
+            "pair_count": 6402,
+            "pearson_correlation": -0.011517
+          },
+          {
+            "distance_bin_upper_km": 9,
+            "pair_count": 571,
+            "pearson_correlation": -0.023852
+          }
+        ],
+        "descriptive_correlation_range_km": 7,
+        "range_rule": "first of two consecutive 1-km bins with |Pearson r| <= 0.05; otherwise maximum supported bin"
+      }
+    }
+  ],
+  "training_response_values_interpreted": 23106048,
+  "sealed_response_rows_interpreted": {
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0,
+  "formal_national_correlation_gate_passes": false,
+  "warning": "These are product-level descriptive training diagnostics. They do not establish a national unsampled-survey tolerance bound or a paired-CRPS effect size."
+}

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import json
 import re
 import subprocess
 
@@ -28,9 +29,77 @@ SECRET_PATTERNS = {
 # ``:\s*\r``).  Require a complete directory segment to avoid treating those
 # expressions as leaked workstation paths.
 ABSOLUTE_PATH = re.compile(
-    r"(?:\b[A-Za-z]:\\[^\\\r\n]{2,}\\|/(?:home|Users|root)/)"
+    r"(?:\b[A-Za-z]:\\[^\\\r\n]{2,}\\|"
+    r"(?<![A-Za-z0-9._-])/(?:home|Users|root)/)"
 )
 STRICT_TEXT_SUFFIXES = {".py", ".ps1", ".yml", ".yaml", ".toml", ".json"}
+CONTROLLED_WP7_VERSION_PREFIXES = (
+    "/_bmad-output/planning-artifacts/research/"
+    "贝叶斯思想与重磁电电磁深度融合技术体系/"
+    "validation/wp7/versions/do27-v2-20260724/",
+    "/_bmad-output/planning-artifacts/research/"
+    "贝叶斯思想与重磁电电磁深度融合技术体系/"
+    "validation/wp7/versions/do27-v4-20260724/",
+    "/_bmad-output/planning-artifacts/research/"
+    "贝叶斯思想与重磁电电磁深度融合技术体系/"
+    "validation/wp7/versions/synthetic-block-v6-20260724/",
+)
+RESEARCH_RELATIVE = (
+    "_bmad-output/planning-artifacts/research/"
+    "贝叶斯思想与重磁电电磁深度融合技术体系"
+)
+CONTROLLED_DO27_ARCHIVE = (
+    "/_bmad-output/planning-artifacts/research/open-data/mining_geophysics/"
+    "Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/"
+    "simpeg-research_Astic-2020-JointInversion-1.0.0.zip"
+)
+CONTROLLED_WP1_RECURSIVE_MEMBERS = (
+    "/validation/wp1-toy/output/prior-predictive.csv",
+    "/validation/wp1-toy/output/ranks.csv",
+    "/validation/wp1-toy/output/results.json",
+)
+
+
+def _active_version_prefixes(root: Path) -> tuple[str, ...]:
+    """Derive the only WP2-WP5 version directories allowed in Git."""
+    prefixes: list[str] = []
+    validation = root / RESEARCH_RELATIVE / "validation"
+    for work_package in ("wp2-toy", "wp3-physics", "wp4-decision", "wp5-consistency"):
+        pointer_path = validation / work_package / "active-output.json"
+        if not pointer_path.is_file():
+            continue
+        pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+        version_path = pointer.get("version_path")
+        if (
+            not isinstance(version_path, str)
+            or not version_path.startswith("versions/")
+            or ".." in Path(version_path).parts
+        ):
+            raise ValueError(f"invalid active version pointer: {pointer_path}")
+        prefixes.append(
+            f"/{RESEARCH_RELATIVE}/validation/{work_package}/"
+            f"{Path(version_path).as_posix().rstrip('/')}/"
+        )
+    return tuple(prefixes)
+
+
+def permitted_forbidden_path(
+    normalized: str, active_version_prefixes: tuple[str, ...] = ()
+) -> bool:
+    """Return true only for narrow, reviewable generated-evidence exceptions."""
+    if normalized.endswith("/validation/wp1-toy/output/manifest.json"):
+        return True
+    if normalized.endswith(CONTROLLED_WP1_RECURSIVE_MEMBERS):
+        return True
+    if normalized.endswith(
+        "/research/open-data/00_catalog/open_geophysics_data_manifest.json"
+    ):
+        return True
+    if normalized == CONTROLLED_DO27_ARCHIVE:
+        return True
+    return normalized.startswith(
+        (*active_version_prefixes, *CONTROLLED_WP7_VERSION_PREFIXES)
+    )
 
 
 def tracked_files(root: Path) -> list[str]:
@@ -49,13 +118,14 @@ def tracked_files(root: Path) -> list[str]:
 
 def validate(root: Path) -> list[str]:
     failures: list[str] = []
+    active_version_prefixes = _active_version_prefixes(root)
     for relative in tracked_files(root):
         normalized = f"/{relative}"
         path = root / relative
-        wp1_manifest = normalized.endswith(
-            "/validation/wp1-toy/output/manifest.json"
-        )
-        if any(part in normalized for part in FORBIDDEN_PARTS) and not wp1_manifest:
+        if (
+            any(part in normalized for part in FORBIDDEN_PARTS)
+            and not permitted_forbidden_path(normalized, active_version_prefixes)
+        ):
             failures.append(f"禁止纳入Git的路径: {relative}")
             continue
         if not path.is_file():

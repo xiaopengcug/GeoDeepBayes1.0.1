@@ -15,13 +15,38 @@ coverage.xml
 .cursor/
 .trae/
 .benchmarks/
+/.agents/
+/.specify/
+/.tmp-wp8-midu-inspect/
 *.log
 
 # 开放数据、运行工作区及历史版本副本不进入Git
 _bmad-output/planning-artifacts/research/open-data/
+!_bmad-output/planning-artifacts/research/open-data/
+_bmad-output/planning-artifacts/research/open-data/*
+!_bmad-output/planning-artifacts/research/open-data/00_catalog/
+_bmad-output/planning-artifacts/research/open-data/00_catalog/*
+!_bmad-output/planning-artifacts/research/open-data/00_catalog/open_geophysics_data_manifest.json
+!_bmad-output/planning-artifacts/research/open-data/mining_geophysics/
+_bmad-output/planning-artifacts/research/open-data/mining_geophysics/*
+!_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/
+_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/*
 **/validation/**/work/
 **/validation/**/source/
 **/validation/**/versions/
+# Git may see only the active WP2-WP5 version closure. The persistence builder
+# derives that exact set from active-output pointers, and repository-scope
+# rejects any tracked historical version.
+!**/validation/wp2-toy/versions/
+!**/validation/wp2-toy/versions/**
+!**/validation/wp3-physics/versions/
+!**/validation/wp3-physics/versions/**
+!**/validation/wp4-decision/versions/
+!**/validation/wp4-decision/versions/**
+!**/validation/wp5-consistency/versions/
+!**/validation/wp5-consistency/versions/**
+!**/validation/wp7/versions/
+!**/validation/wp7/versions/**
 **/validation/**/attempts/
 **/validation/**/selftest-results/
 **/validation/**/partial-results/
@@ -42,13 +67,20 @@ _bmad-output/planning-artifacts/research/open-data/
 
 # 通用大型二进制与临时文件
 *.zip
+!_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/simpeg-research_Astic-2020-JointInversion-1.0.0.zip
 *.7z
 *.tar
 *.gz
 *.npy
 *.npz
+!**/validation/wp7/versions/**/*.npz
 *.h5
 *.hdf5
+# WP8 的第三方 epsg.npy 与三个 synthetic supplement NPZ 保持为
+# 本地/制品存储资产，由 evidence manifest 校验，不作为 Git 持久化证据。
 *.tif
 *.tiff
 *.tmp
+.bmad-loop/runs/
+.bmad-loop/cache/
+.bmad-loop/policy.toml

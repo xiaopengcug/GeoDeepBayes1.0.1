@@ -1,0 +1,35 @@
+{
+  "schema": "wp5-final-root-review-v1",
+  "review_id": "WP5-FINAL-ROOT-TECHNICAL-EDITOR",
+  "role": "技术编辑",
+  "reviewer_identity": "Codex automated AI / 技术编辑",
+  "identity_type": "automated-ai-final-root-review",
+  "decision": "Approved",
+  "reviewed_at_utc": "2026-07-31T06:46:01Z",
+  "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
+  "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
+  "candidate": {
+    "run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+    "manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+    "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+    "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c"
+  },
+  "review_scope": "exact scope, evidence language, and traceability",
+  "checks": [
+    "Confirmed ACTIVE_MANIFEST, active-output, and the on-disk candidate manifest identify the same current run and manifest hash.",
+    "Confirmed 29 unique ordered members, zero hash drift, and exact root-anchor equality.",
+    "Confirmed the controlled scope is exactly 16 documents plus one compute-support file, excluding appendices 6-10 and 12.",
+    "Confirmed 350 active ledger entries, 72 scopes, nine risk rules, and no Observed evidence promotion.",
+    "Compared all seven formal stages and all 300 fixture IDs, v3 canonical cases, exits, rejection oracles, matched flags, candidate bindings, and stage hashes.",
+    "Confirmed the exact controlled set is 00-07, appendices 1-5/11/13/14, plus the compute-support file; appendices 6-10 and 12 are outside the controlled root.",
+    "Recomputed the finalized seven-stage evidence and confirmed exact ordered coverage of all 300 oracle fixtures, including three referenced partial-evidence files with no overlap or omission.",
+    "Confirmed validator SHA-256 cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d remains bound and CI workflow SHA-256 3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6 normalizes smoke TEMP to RUNNER_TEMP without changing arguments, evidence semantics, or scientific data flow; this local evidence does not assert remote CI PASS."
+  ],
+  "findings": [],
+  "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
+  "release_evidence": {
+    "path": "release-evidence-v1/envelope.json",
+    "sha256": "bcfcf3044df93c15eb8ef8db63732b32337fa394e0700de326f2c6ff1c742317",
+    "total_fixture_count": 300
+  }
+}

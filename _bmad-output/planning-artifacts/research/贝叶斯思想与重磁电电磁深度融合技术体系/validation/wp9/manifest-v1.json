@@ -1,0 +1,205 @@
+{
+  "schema_version": "wp9-final-manifest-v1",
+  "path_basis": "repo-root-relative",
+  "status": "passed",
+  "members": [
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/finding-registry-v1.json",
+      "bytes": 40431,
+      "sha256": "e66f8008672de016d04024d99c045722b75f33b93b8b010f5e5db708573331c6"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/整改台账03.md",
+      "bytes": 19588,
+      "sha256": "0a1e18dfc06879893a0dcf7ca6d275a1fbac9bef5755a0203a4d8bc88aa742fa"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/整改落实报告03.md",
+      "bytes": 9340,
+      "sha256": "c3b1ff2a78c036b5301a6b946c666a8d9e460d3f3435d8d3e51400e9b4f414d5"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/evidence-status-03.md",
+      "bytes": 878,
+      "sha256": "811fcf70d30cf25640ae6b7594a640a63511f6a21d4ee3e7d9e531f28f8c96e1"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/主张-证据映射03.md",
+      "bytes": 5147,
+      "sha256": "3333fa3ae62fd33a8c74c58a02cf7bc6b782e0ac4b55cd4edc212322d591d3ed"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/验收审查意见03.md",
+      "bytes": 18982,
+      "sha256": "341cfe60d468a91dbb711a0777e36d8454f9c64242315c557624a42abfdf544b"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/final-gates-v1.json",
+      "bytes": 6808,
+      "sha256": "831c994e14f89835d621ed1d6a1405483119e74fb78db8e8c16c08449bb5f32e"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/wp8-synthetic-completion-v1.json",
+      "bytes": 4972,
+      "sha256": "ed887e76bc83edc2f18a2d2bd16c5abd96941e6d6ca341fa26757dc5e3707756",
+      "location_note": "Repository-root validation/wp8 asset; not under the research document directory."
+    },
+    {
+      "path": "validation/wp8/evidence/wp8-1-start.json",
+      "bytes": 1064,
+      "sha256": "03e1de96f36c73afa2aa4089cc021246e7bc98158f84d0c599247b4cf679408a"
+    },
+    {
+      "path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "bytes": 486986,
+      "sha256": "97e7fb8960f87586cb8180e36c50bf477d0c4cf4c32fb2a53392a6c572e4fe79"
+    },
+    {
+      "path": "validation/wp8/synthetic/supplements-v1/manifest.json",
+      "bytes": 1539,
+      "sha256": "d132f46c4ad3db39447b80f6f083ac322908895962684b886cbd60a21e2af66a"
+    },
+    {
+      "path": "validation/wp8/synthetic/method-validation-policy-v1.json",
+      "bytes": 3281,
+      "sha256": "346603951998a4038781905a155a35f3822993bc036bcf7ae1b859b01ca179b5"
+    },
+    {
+      "path": "validation/wp8/synthetic/readiness.json",
+      "bytes": 3458,
+      "sha256": "814563ea0cc3b0054f3d6a4106cd032d3556a7be67b46e83cde1015146a904b0"
+    },
+    {
+      "path": "validation/wp8/synthetic/supplements-v1/sip_fdip.npz",
+      "bytes": 271355,
+      "sha256": "f97dcd3e719a07a58814c79b8f68e01eaba401209411132c034b1fdd30af4a5b"
+    },
+    {
+      "path": "validation/wp8/synthetic/supplements-v1/csamt.npz",
+      "bytes": 271343,
+      "sha256": "82020b649744398d4d84b92a21556cc1d2fb6afdc34fad5919153cd1e6cb25fc"
+    },
+    {
+      "path": "validation/wp8/synthetic/supplements-v1/wfem.npz",
+      "bytes": 271339,
+      "sha256": "b62ebe3db0a741f951c56136ca1ed4b5c99dc6573b281f3ce5a93a63f503ddab"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 11492,
+      "sha256": "3df6791760161903b2cb283f114e7a24606b79dd7af6d80b915706ab67c016d6"
+    },
+    {
+      "path": "validation/wp9/build_finding_registry.py",
+      "bytes": 4829,
+      "sha256": "cd34825514194effa315fc89b8e716265eaba1dfa2cad9edb3df8a51252bc00a"
+    },
+    {
+      "path": "validation/wp9/run_specialist_reviews.py",
+      "bytes": 9318,
+      "sha256": "1f8bb9625fb2389855c891f790fe882fbcded908b6b64366e5ca47e0f30db095"
+    },
+    {
+      "path": "validation/wp9/validate_wp9.py",
+      "bytes": 35057,
+      "sha256": "cb8e47e2dc152b2658735e4f2f7852084577a3628220cc12ac176ba9fddc5fc6"
+    },
+    {
+      "path": "validation/wp9/run_final_gates.py",
+      "bytes": 13067,
+      "sha256": "ad9921774931ea18dc32784342f65e497d4dcd54ec1e4eb2a94ab87fd53d6cbc"
+    },
+    {
+      "path": "validation/wp8/build_synthetic_completion.py",
+      "bytes": 3898,
+      "sha256": "c6842928949714851cac194a391ab0df160b078ca9d38cd6fec09e35070d58f0"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/bootstrap-lock.json",
+      "bytes": 678,
+      "sha256": "7dda69a94e6aeb0765c52f54040b618f29be99bc5ec325135fdc6894ddc3e429"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/bootstrap-sync.json",
+      "bytes": 706,
+      "sha256": "ed5e25131398a05a5cf064ca2e2b0e06f860d63dc226a6a8d61e29608ae7b8eb"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/environment-bootstrap.json",
+      "bytes": 686,
+      "sha256": "1811a77001fb1d58b4293b00f3f675137cd0a57a2e17950aced925f99981ca2d"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/governance.json",
+      "bytes": 765,
+      "sha256": "e43b3852ed3049f504e3fb0ebebf8ba770ce3c2679a726f3668a50ad8e4547bd"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/pytest.json",
+      "bytes": 3207,
+      "sha256": "1b4fba9da929152c9c5ec5de7483cb35e927db12b713389c79fe22e9bf422af4"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp5.json",
+      "bytes": 1462,
+      "sha256": "c984d9df0b41c61b5633be450f661b53a819a650fd439d9ae9b62a207e3d2e9b"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp6_self_test.json",
+      "bytes": 1004,
+      "sha256": "91f572620f9c91485b8096b8a649a86ca9f8502d8f3cda2f35de09c27ff9b6f6"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp7_self_test.json",
+      "bytes": 1315,
+      "sha256": "d270dfc98919c24dafb689627509223327edd6bc5cf9049877f81a53dbde7b3c"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp8_synthetic_completion.json",
+      "bytes": 554023,
+      "sha256": "292dab42a852b48c94053e66156aeb245a27655d7540abb46d3754e23d8b5775"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/gate-logs-v1/wp9_acceptance.json",
+      "bytes": 1134,
+      "sha256": "ceedc941bffeba3734376c6afa486bc7e057484be37ff3496dcdfff35f43ffab"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/bayesian-uq-statistics.json",
+      "bytes": 1596,
+      "sha256": "91de45e1b74dae039150ac58a0fb61f308c34913a2a702ceeee5e267413c65cc"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/engineering-governance-reproducibility.json",
+      "bytes": 1600,
+      "sha256": "46eb69c0a74da26482fc9a5ac426dfad768e3ef490a5c50bc142875c82ca42ad"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/geophysics-forward-physics.json",
+      "bytes": 1548,
+      "sha256": "381b6658e137bdc9559917477ca899a3fa78c9dd3c97e8645d953e1841f49682"
+    },
+    {
+      "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/numerical-discretization.json",
+      "bytes": 1409,
+      "sha256": "1a9349c9d426470a017592c0405b26854528e4a9107d538f4b63988ce621f0bc"
+    }
+  ],
+  "audit": {
+    "schema_version": "wp9-acceptance-audit-v1",
+    "status": "passed",
+    "counts": {
+      "total": 60,
+      "p0": 22,
+      "p1": 38,
+      "passed": 60
+    },
+    "specialist_reviews": 4,
+    "review_coverage": 60,
+    "wp8_completion_sha256": "ed887e76bc83edc2f18a2d2bd16c5abd96941e6d6ca341fa26757dc5e3707756",
+    "final_gates_sha256": "831c994e14f89835d621ed1d6a1405483119e74fb78db8e8c16c08449bb5f32e",
+    "final_gates_status": "blocked",
+    "final_gates_live_replay": true,
+    "errors": []
+  }
+}

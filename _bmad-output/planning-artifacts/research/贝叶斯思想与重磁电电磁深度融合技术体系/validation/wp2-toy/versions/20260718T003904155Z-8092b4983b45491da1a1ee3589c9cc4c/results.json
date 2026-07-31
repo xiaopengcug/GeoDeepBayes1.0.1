@@ -1,0 +1,159 @@
+{
+  "run_id": "WP2-TOY-20260717-v1",
+  "evidence_class": "Synthetic-run",
+  "pod": {
+    "basis_shape": [
+      4,
+      3
+    ],
+    "rank": 3,
+    "gram": [
+      [
+        1.0000000000000002,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0000000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0000000000000002
+      ]
+    ],
+    "gram_determinant": 1.0,
+    "hausdorff_volume_factor": 1.0,
+    "coefficient_prior_proper": true,
+    "posterior_mean": [
+      0.5091494680202672,
+      0.1771840148710534,
+      0.15274484040608088
+    ],
+    "posterior_covariance": [
+      [
+        0.09994239631336398,
+        -0.11322004608294922,
+        -0.17001728110599065
+      ],
+      [
+        -0.11322004608294922,
+        1.3909994239631334,
+        0.056033986175115034
+      ],
+      [
+        -0.17001728110599068,
+        0.05603398617511503,
+        0.7189948156682024
+      ]
+    ],
+    "predictive_mean": 1.1923963133640552,
+    "predictive_variance": 0.488479262672811,
+    "log_z_r": -1.9084566995077958,
+    "z_r": 0.14830909556692065,
+    "full_space_kl_reported": false
+  },
+  "rjmcmc": {
+    "analytic_model_1_probability": 0.4090753761004021,
+    "sampled_model_1_probability": 0.410225,
+    "batch_count": 40,
+    "batch_size": 1000,
+    "batch_means_mcse": 0.0018255619085780894,
+    "batch_means_95": [
+      0.40653245250362124,
+      0.41391754749637877
+    ],
+    "analytic_probability_covered_by_batch_means": true,
+    "doubled_batch_count": 20,
+    "doubled_batch_size": 2000,
+    "doubled_batch_means_mcse": 0.0018073224597963144,
+    "batch_mcse_stability_ratio": 0.9900088577133046,
+    "unit_jacobian": 1.0,
+    "nonunit_jacobian": 2.0,
+    "max_inverse_error": 0.0
+  },
+  "information_records": [
+    {
+      "information_type": "design_eig",
+      "target_variable": "theta",
+      "conditioning_set": "D0=empty; design=a",
+      "direction": "posterior_to_prior",
+      "estimator": "finite_nested_monte_carlo_log_sum_exp",
+      "estimate": 0.32312563881779777,
+      "analytic_truth": 0.34657359027997264,
+      "bias": -0.023447951462174876,
+      "mcse": 0.01759241676503632,
+      "mcse_max": 0.05,
+      "absolute_bias_max": 0.05,
+      "status": "Passed",
+      "outer_budget": 100,
+      "inner_budget": 200,
+      "repeats": 20,
+      "production_no_truth_strategy": "repeat with doubled outer/inner budgets and independent seeds; require estimate shift within combined MCSE and preregistered bias-stability bound",
+      "log_z_baseline": 0.0,
+      "log_z_updated": -1.2655121234846454
+    },
+    {
+      "information_type": "realized_information_gain",
+      "target_variable": "theta",
+      "conditioning_set": "D0=empty; y_obs=0.8",
+      "direction": "posterior_to_prior",
+      "estimator": "finite_nested_monte_carlo_log_sum_exp",
+      "estimate": 0.1865988577754452,
+      "analytic_truth": 0.17657359027997266,
+      "bias": 0.010025267495472528,
+      "mcse": 0.014221198924671625,
+      "mcse_max": 0.05,
+      "absolute_bias_max": 0.05,
+      "status": "Passed",
+      "outer_budget": 100,
+      "inner_budget": 200,
+      "repeats": 20,
+      "production_no_truth_strategy": "repeat with doubled outer/inner budgets and independent seeds; require estimate shift within combined MCSE and preregistered bias-stability bound",
+      "log_z_baseline": 0.0,
+      "log_z_updated": -1.4255121234846453
+    },
+    {
+      "information_type": "lomo_forward_kl",
+      "target_variable": "theta",
+      "conditioning_set": "D={y1,y2}; D_minus={y1}; held_out=y2",
+      "direction": "full_to_leave_one_out",
+      "estimator": "finite_nested_monte_carlo_log_sum_exp",
+      "estimate": 0.0726664138663208,
+      "analytic_truth": 0.09051033183185997,
+      "bias": -0.017843917965539163,
+      "mcse": 0.014695999052478316,
+      "mcse_max": 0.05,
+      "absolute_bias_max": 0.05,
+      "status": "Passed",
+      "outer_budget": 100,
+      "inner_budget": 200,
+      "repeats": 20,
+      "production_no_truth_strategy": "repeat with doubled outer/inner budgets and independent seeds; require estimate shift within combined MCSE and preregistered bias-stability bound",
+      "log_z_leave_out": -1.4255121234846453,
+      "log_z_full": -2.710516544076733
+    }
+  ],
+  "diagnostics": {
+    "contract_id": "WP2-DIAGNOSTIC-CONTRACT-v1",
+    "rank_normalized_split_rhat": 0.9975537429480904,
+    "folded_split_rhat": 0.998039987455693,
+    "bulk_ess": 1600,
+    "tail_ess": 1600,
+    "relative_mcse": 0.025,
+    "mode_visits_per_chain": [
+      399,
+      399,
+      399,
+      399
+    ],
+    "failed_replicate_rate": 0.015,
+    "status": "Passed",
+    "datasets": [
+      "bimodal",
+      "heavy_tail"
+    ]
+  }
+}

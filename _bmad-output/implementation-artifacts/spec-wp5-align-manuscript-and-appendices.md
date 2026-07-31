@@ -2,7 +2,7 @@
 title: 'WP5：文稿一致性与附录整改'
 type: 'refactor'
 created: '2026-07-19'
-status: 'in-review'
+status: 'done'
 review_loop_iteration: 28
 baseline_commit: 'NO_VCS'
 context:

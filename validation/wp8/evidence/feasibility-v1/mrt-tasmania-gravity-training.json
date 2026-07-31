@@ -1,0 +1,226 @@
+{
+  "schema_version": "wp8-mrt-tasmania-gravity-training-v1",
+  "design_sha256": "d9d374538437430397f1050bcfabfd1c94c1003eff756a9aa112e2803d1d8036",
+  "training_response_rows_interpreted": 14226,
+  "response_rows_interpreted": {
+    "train": 14226,
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "training_blocks": 576,
+  "dominant_source_count": 151,
+  "residual_sill_mgal2": 57.71841245555115,
+  "correlation_range_km": 100.0,
+  "range_censored_at_100km": true,
+  "variogram": [
+    {
+      "lag_center_km": 1.25,
+      "pairs": 27,
+      "semivariance_mgal2": 25.172177832107074
+    },
+    {
+      "lag_center_km": 3.75,
+      "pairs": 87,
+      "semivariance_mgal2": 19.43563825996759
+    },
+    {
+      "lag_center_km": 6.25,
+      "pairs": 182,
+      "semivariance_mgal2": 26.123641292141865
+    },
+    {
+      "lag_center_km": 8.75,
+      "pairs": 240,
+      "semivariance_mgal2": 30.56351975141761
+    },
+    {
+      "lag_center_km": 11.25,
+      "pairs": 349,
+      "semivariance_mgal2": 35.77388950564561
+    },
+    {
+      "lag_center_km": 13.75,
+      "pairs": 453,
+      "semivariance_mgal2": 34.272423973950026
+    },
+    {
+      "lag_center_km": 16.25,
+      "pairs": 451,
+      "semivariance_mgal2": 42.986664419008
+    },
+    {
+      "lag_center_km": 18.75,
+      "pairs": 561,
+      "semivariance_mgal2": 42.442458244572165
+    },
+    {
+      "lag_center_km": 21.25,
+      "pairs": 631,
+      "semivariance_mgal2": 43.602873090170355
+    },
+    {
+      "lag_center_km": 23.75,
+      "pairs": 638,
+      "semivariance_mgal2": 48.618154000528634
+    },
+    {
+      "lag_center_km": 26.25,
+      "pairs": 748,
+      "semivariance_mgal2": 40.521830232856246
+    },
+    {
+      "lag_center_km": 28.75,
+      "pairs": 759,
+      "semivariance_mgal2": 50.60672512138013
+    },
+    {
+      "lag_center_km": 31.25,
+      "pairs": 859,
+      "semivariance_mgal2": 50.2550566592406
+    },
+    {
+      "lag_center_km": 33.75,
+      "pairs": 886,
+      "semivariance_mgal2": 46.7022430812093
+    },
+    {
+      "lag_center_km": 36.25,
+      "pairs": 991,
+      "semivariance_mgal2": 53.12291673898426
+    },
+    {
+      "lag_center_km": 38.75,
+      "pairs": 1016,
+      "semivariance_mgal2": 53.46771660092388
+    },
+    {
+      "lag_center_km": 41.25,
+      "pairs": 1055,
+      "semivariance_mgal2": 51.839862755400816
+    },
+    {
+      "lag_center_km": 43.75,
+      "pairs": 1088,
+      "semivariance_mgal2": 51.262238127116156
+    },
+    {
+      "lag_center_km": 46.25,
+      "pairs": 1085,
+      "semivariance_mgal2": 51.521325892777426
+    },
+    {
+      "lag_center_km": 48.75,
+      "pairs": 1170,
+      "semivariance_mgal2": 48.8521565026751
+    },
+    {
+      "lag_center_km": 51.25,
+      "pairs": 1196,
+      "semivariance_mgal2": 54.80325999706988
+    },
+    {
+      "lag_center_km": 53.75,
+      "pairs": 1264,
+      "semivariance_mgal2": 53.91664892842802
+    },
+    {
+      "lag_center_km": 56.25,
+      "pairs": 1362,
+      "semivariance_mgal2": 48.483071573669385
+    },
+    {
+      "lag_center_km": 58.75,
+      "pairs": 1386,
+      "semivariance_mgal2": 50.00683299108896
+    },
+    {
+      "lag_center_km": 61.25,
+      "pairs": 1414,
+      "semivariance_mgal2": 52.548637650964515
+    },
+    {
+      "lag_center_km": 63.75,
+      "pairs": 1308,
+      "semivariance_mgal2": 50.46232572016298
+    },
+    {
+      "lag_center_km": 66.25,
+      "pairs": 1477,
+      "semivariance_mgal2": 47.896039208702675
+    },
+    {
+      "lag_center_km": 68.75,
+      "pairs": 1491,
+      "semivariance_mgal2": 55.02031746399689
+    },
+    {
+      "lag_center_km": 71.25,
+      "pairs": 1479,
+      "semivariance_mgal2": 52.356074586012234
+    },
+    {
+      "lag_center_km": 73.75,
+      "pairs": 1608,
+      "semivariance_mgal2": 49.69154554439401
+    },
+    {
+      "lag_center_km": 76.25,
+      "pairs": 1577,
+      "semivariance_mgal2": 51.71273759511901
+    },
+    {
+      "lag_center_km": 78.75,
+      "pairs": 1572,
+      "semivariance_mgal2": 50.59490535794707
+    },
+    {
+      "lag_center_km": 81.25,
+      "pairs": 1669,
+      "semivariance_mgal2": 54.112716996668986
+    },
+    {
+      "lag_center_km": 83.75,
+      "pairs": 1641,
+      "semivariance_mgal2": 50.43678194899035
+    },
+    {
+      "lag_center_km": 86.25,
+      "pairs": 1690,
+      "semivariance_mgal2": 51.45443554167344
+    },
+    {
+      "lag_center_km": 88.75,
+      "pairs": 1674,
+      "semivariance_mgal2": 56.521088461069105
+    },
+    {
+      "lag_center_km": 91.25,
+      "pairs": 1781,
+      "semivariance_mgal2": 54.464735809213565
+    },
+    {
+      "lag_center_km": 93.75,
+      "pairs": 1659,
+      "semivariance_mgal2": 53.38407599826736
+    },
+    {
+      "lag_center_km": 96.25,
+      "pairs": 1774,
+      "semivariance_mgal2": 53.45075918961858
+    },
+    {
+      "lag_center_km": 98.75,
+      "pairs": 1800,
+      "semivariance_mgal2": 57.92149165955301
+    }
+  ],
+  "design_test_cluster_upper_bound": 1585,
+  "correlation_adjusted_test_cluster_upper_bound": 0,
+  "cluster_power_gate_passes": false,
+  "complete_bouguer_contract": true,
+  "per_observation_uncertainty_contract": false,
+  "uncertainty_reason": "GeoPackage has no uncertainty column. Official metadata says attribute accuracy is generally 0.1 mGal or better, but does not publish a station-specific propagated complete-Bouguer uncertainty.",
+  "formal_confirmatory_contribution": 0,
+  "test_unseal_count": 0
+}

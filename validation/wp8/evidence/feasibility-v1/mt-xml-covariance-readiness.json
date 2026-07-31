@@ -1,0 +1,26 @@
+{
+  "schema_version": "wp8-mt-xml-covariance-readiness-v1",
+  "passed": true,
+  "raw_member_count": 1104,
+  "xml_manifest_sha256": "8659e0a53884552dfff92ffcdd2cbbe478b755672e5b230887ba185b17a98710",
+  "role_counts": {
+    "train": 361,
+    "buffer": 74,
+    "calibration": 240,
+    "test": 429
+  },
+  "training_members_interpreted": 361,
+  "buffer_members_interpreted": 0,
+  "calibration_members_interpreted": 0,
+  "test_members_interpreted": 0,
+  "training_periods_checked": 10820,
+  "covariance_periods_checked": 10820,
+  "covariance_contract": "Cov(Z_ij,Z_kl)=RESIDCOV(E_i,E_k)*INVSIGCOV(H_j,H_l), mapped jointly to real_then_imag; cross-period and cross-station terms unavailable",
+  "variance_identity_max_relative_error": 1.2447694623673915e-06,
+  "representative_training_member": "14856037",
+  "representative_real_stack_off_diagonal_count": 1440,
+  "representative_minimum_covariance_eigenvalue": 8.13315739184758e-08,
+  "adapter_source": "src/geodeepbayes/data/mt_xml.py",
+  "adapter_source_sha256": "9b3cc464884e3ebf9f67b9385dd18f1408d75228ef52ad714fd529dd6225cd7c",
+  "sealed_payload_values_read": false
+}

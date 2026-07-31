@@ -1,0 +1,63 @@
+{
+  "schema_version": "wp8-ess-dive-tempest-ip-sip-metadata-audit-v1",
+  "audit_date": "2026-07-25",
+  "audit_mode": "response_blind_metadata_only",
+  "source": {
+    "title": "Data and scripts associated with the manuscript \"Estimating soil moisture and salinity response to simulated coastal flooding using time-lapse electrical resistivity and induced polarization monitoring\"",
+    "metadata_identifier": "ess-dive-bc46b4f199a4455-20240212T054321020",
+    "metadata_url": "https://cn.dataone.org/cn/v2/object/ess-dive-bc46b4f199a4455-20240212T054321020",
+    "publisher": "ESS-DIVE / COMPASS-FME",
+    "license": "CC0-1.0",
+    "anonymous_public_access": true,
+    "site": "Smithsonian Environmental Research Center Global Change Research Wetlands"
+  },
+  "public_objects": [
+    {
+      "identifier": "ess-dive-acd7805a2c6c67b-20240212T003629304",
+      "filename": "MultiSalinity_Experiment.zip",
+      "bytes": 18394493,
+      "md5": "106bfb63aee40c5f4cc6bf169b4c6fff",
+      "role": "laboratory_multisalinity_sip",
+      "downloaded": false
+    },
+    {
+      "identifier": "ess-dive-446e760a2ff9c8b-20240121T030735628",
+      "filename": "TEMPEST_Experiment_and_petrophysical_conversion.zip",
+      "bytes": 738508613,
+      "md5": "0d3c999f4413572c485053a19879b2ab",
+      "role": "field_eri_ip_gpr_emi",
+      "downloaded": false
+    }
+  ],
+  "field_contract_from_eml": {
+    "eri_ip_transect_lengths_m": [100, 42],
+    "field_ip_frequency_count": 1,
+    "field_ip_frequency_hz": 10.0,
+    "field_spectral_ip": false,
+    "field_profile_cluster_upper_bound": 2,
+    "raw_archive_public": true
+  },
+  "laboratory_sip_contract_from_eml": {
+    "undisturbed_core_count": 6,
+    "collection_location_count": 3,
+    "brine_solution_count": 7,
+    "frequency_count": 50,
+    "minimum_frequency_hz": 0.01,
+    "maximum_frequency_hz": 10000.0,
+    "real_and_imaginary_conductivity": true,
+    "field_measurements": false
+  },
+  "gate_assessment": {
+    "qualifying_field_sip_fdip_observation_population": false,
+    "reason": "The field IP acquisition is single-frequency at 10 Hz; the 50-frequency SIP observations are laboratory measurements on six cores.",
+    "independent_qualifying_field_cluster_upper_bound": 0,
+    "required_test_clusters": 223,
+    "cluster_gate_passes": false,
+    "power_gate_passes": false,
+    "formal_sip_fdip_clusters_added": 0,
+    "formal_gate_changed": false
+  },
+  "response_values_interpreted": 0,
+  "archive_members_listed": false,
+  "test_unseal_count": 0
+}

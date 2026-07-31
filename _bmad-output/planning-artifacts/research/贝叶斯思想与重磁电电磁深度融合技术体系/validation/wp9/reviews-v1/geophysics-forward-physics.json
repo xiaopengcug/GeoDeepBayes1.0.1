@@ -1,0 +1,43 @@
+{
+  "schema_version": "wp9-specialist-review-v1",
+  "identity_type": "automated-ai-specialist-evidence-review",
+  "specialty_slug": "geophysics-forward-physics",
+  "specialty": "地球物理与正演物理",
+  "registry_sha256": "e66f8008672de016d04024d99c045722b75f33b93b8b010f5e5db708573331c6",
+  "wp8_completion_sha256": "ed887e76bc83edc2f18a2d2bd16c5abd96941e6d6ca341fa26757dc5e3707756",
+  "specialty_evidence_sha256": "97e7fb8960f87586cb8180e36c50bf477d0c4cf4c32fb2a53392a6c572e4fe79",
+  "covered_source_finding_ids": [
+    "R03-F-bfcfaa56ff94",
+    "R03-F-b13c69101ad2",
+    "R03-F-69c3389e0128",
+    "R03-F-023b6f020663",
+    "R03-F-4c6724e2d6d7",
+    "R03-F-b27464e48f64",
+    "R03-F-8589a1393638",
+    "R03-F-539744f93d67",
+    "R03-F-74d295c66301",
+    "R03-F-af95f3fdf01f",
+    "R03-F-94401253fc0b",
+    "R03-F-d0b57e8c0514",
+    "R03-F-e7178536e50a",
+    "R03-F-51742aa39e7a",
+    "R03-F-02119a2d0cec",
+    "R03-F-257f5c429048",
+    "R03-F-2ec72d868368",
+    "R03-F-23a9b309e896",
+    "R03-F-bf2ca0523124",
+    "R03-F-829093b8d20d",
+    "R03-F-5b76036d8acb",
+    "R03-F-8811bf04a6d9"
+  ],
+  "checks": {
+    "evidence_exists": true,
+    "evidence_hashes_match": true,
+    "work_packages_done": true,
+    "synthetic_not_field_claim": true,
+    "forward_unit_consistent": true
+  },
+  "blocking_findings": [],
+  "decision": "Approved",
+  "scope_limit": "AI evidence review only; not a human signature, field validation, resource certification, regulatory approval, or production certification."
+}

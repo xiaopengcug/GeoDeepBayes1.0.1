@@ -1,0 +1,302 @@
+{
+  "schema": "wp5-selftest-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_version_path": "versions/20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+  "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c",
+  "root_anchor_file_sha256": "91f7f646b2fa38631511c720248802ec2a230f7651debf7ea0ab6961431d3e51",
+  "stage": "publish",
+  "fixture_count": 20,
+  "fixture_id_set": [
+    "FXT-PUBLISH-001",
+    "FXT-PUBLISH-002",
+    "FXT-PUBLISH-003",
+    "FXT-PUBLISH-004",
+    "FXT-PUBLISH-005",
+    "FXT-PUBLISH-006",
+    "FXT-PUBLISH-007",
+    "FXT-PUBLISH-008",
+    "FXT-PUBLISH-009",
+    "FXT-PUBLISH-010",
+    "FXT-PUBLISH-011",
+    "FXT-PUBLISH-012",
+    "FXT-PUBLISH-013",
+    "FXT-PUBLISH-014",
+    "FXT-PUBLISH-015",
+    "FXT-PUBLISH-016",
+    "FXT-PUBLISH-017",
+    "FXT-PUBLISH-018",
+    "FXT-PUBLISH-019",
+    "FXT-PUBLISH-020"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-PUBLISH-001",
+      "case": "FXT-PUBLISH-001",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "pointer manifest"
+      ],
+      "actual_rejection": "pointer manifest",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 68950
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-002",
+      "case": "FXT-PUBLISH-002",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "manifest exact schema"
+      ],
+      "actual_rejection": "manifest exact schema",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 65063
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-003",
+      "case": "FXT-PUBLISH-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "file hash scan.json"
+      ],
+      "actual_rejection": "file hash scan.json",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 66579
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-004",
+      "case": "FXT-PUBLISH-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "scan exact schema"
+      ],
+      "actual_rejection": "scan exact schema",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 65590
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-005",
+      "case": "FXT-PUBLISH-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "document hash 00-摘要.md"
+      ],
+      "actual_rejection": "document hash 00-摘要.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 67012
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-006",
+      "case": "FXT-PUBLISH-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "source hash publish-wp5-consistency.ps1"
+      ],
+      "actual_rejection": "source hash publish-wp5-consistency.ps1",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 65167
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-007",
+      "case": "FXT-PUBLISH-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "root drift 00-摘要.md"
+      ],
+      "actual_rejection": "root drift 00-摘要.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 65845
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-008",
+      "case": "FXT-PUBLISH-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "root anchor"
+      ],
+      "actual_rejection": "root anchor",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 64916
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-009",
+      "case": "FXT-PUBLISH-009",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 70972
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-010",
+      "case": "FXT-PUBLISH-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 semantic scan failed"
+      ],
+      "actual_rejection": "WP5 semantic scan failed",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 68089
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-011",
+      "case": "FXT-PUBLISH-011",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 publish lock busy"
+      ],
+      "actual_rejection": "WP5 publish lock busy",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 654
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-012",
+      "case": "FXT-PUBLISH-012",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 snapshot drift"
+      ],
+      "actual_rejection": "WP5 snapshot drift",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 70535
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-013",
+      "case": "FXT-PUBLISH-013",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterStage"
+      ],
+      "actual_rejection": "WP5 injected failure AfterStage",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 72633
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-014",
+      "case": "FXT-PUBLISH-014",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterVersion"
+      ],
+      "actual_rejection": "WP5 injected failure AfterVersion",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 75039
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-015",
+      "case": "FXT-PUBLISH-015",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterFlush"
+      ],
+      "actual_rejection": "WP5 injected failure AfterFlush",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 65366
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-016",
+      "case": "FXT-PUBLISH-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 injected failure AfterReplace"
+      ],
+      "actual_rejection": "WP5 injected failure AfterReplace",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 63991
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-017",
+      "case": "FXT-PUBLISH-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal old pointer invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal old pointer invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 687
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-018",
+      "case": "FXT-PUBLISH-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 740
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-019",
+      "case": "FXT-PUBLISH-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal old pointer manifest invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal old pointer manifest invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 750
+    },
+    {
+      "fixture_id": "FXT-PUBLISH-020",
+      "case": "FXT-PUBLISH-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "WP5 candidate journal version binding invalid"
+      ],
+      "actual_rejection": "WP5 candidate journal version binding invalid",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 837
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T04:58:11.7930210Z",
+  "output_sha256": "c469a555ede7c1cdc8d2b2640334eef83dd057ad58b47db9366f50f484a22364",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

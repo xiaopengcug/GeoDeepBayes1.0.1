@@ -1,0 +1,1374 @@
+{
+  "schema_version": "wp8-magic-contribution-design-split-v1",
+  "archive_sha256": "b81371f6489adac8f4f572692e65085461fc6d59acdcb32c86aca9321cda7508",
+  "split_unit": "contribution_id",
+  "split_rule": "sha256('wp8-magic-v1:' + contribution_id) modulo 20",
+  "excluded_contribution_ids": [
+    20710
+  ],
+  "contributions": [
+    {
+      "contribution_id": 20715,
+      "member": "20715/magic_contribution_20715.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "12:44"
+      ]
+    },
+    {
+      "contribution_id": 20606,
+      "member": "20606/magic_contribution_20606.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "12:25"
+      ]
+    },
+    {
+      "contribution_id": 20655,
+      "member": "20655/magic_contribution_20655.txt",
+      "split": "calibration",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "12:42"
+      ]
+    },
+    {
+      "contribution_id": 20678,
+      "member": "20678/magic_contribution_20678.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "13:42"
+      ]
+    },
+    {
+      "contribution_id": 20686,
+      "member": "20686/magic_contribution_20686.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "15:43"
+      ]
+    },
+    {
+      "contribution_id": 20696,
+      "member": "20696/magic_contribution_20696.txt",
+      "split": "calibration",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "13:45"
+      ]
+    },
+    {
+      "contribution_id": 20582,
+      "member": "20582/magic_contribution_20582.txt",
+      "split": "train",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "14:19"
+      ]
+    },
+    {
+      "contribution_id": 20714,
+      "member": "20714/magic_contribution_20714.txt",
+      "split": "buffer",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "15:42"
+      ]
+    },
+    {
+      "contribution_id": 20711,
+      "member": "20711/magic_contribution_20711.txt",
+      "split": "test",
+      "location_rows": 3,
+      "coordinate_rows": 3,
+      "ten_degree_cells": [
+        "15:42"
+      ]
+    },
+    {
+      "contribution_id": 20713,
+      "member": "20713/magic_contribution_20713.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "16:48"
+      ]
+    },
+    {
+      "contribution_id": 20644,
+      "member": "20644/magic_contribution_20644.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "13:45"
+      ]
+    },
+    {
+      "contribution_id": 20716,
+      "member": "20716/magic_contribution_20716.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "14:47"
+      ]
+    },
+    {
+      "contribution_id": 20534,
+      "member": "20534/magic_contribution_20534.txt",
+      "split": "buffer",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "16:19"
+      ]
+    },
+    {
+      "contribution_id": 20674,
+      "member": "20674/magic_contribution_20674.txt",
+      "split": "calibration",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "15:43"
+      ]
+    },
+    {
+      "contribution_id": 20684,
+      "member": "20684/magic_contribution_20684.txt",
+      "split": "train",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "14:47"
+      ]
+    },
+    {
+      "contribution_id": 20717,
+      "member": "20717/magic_contribution_20717.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "14:47"
+      ]
+    },
+    {
+      "contribution_id": 20681,
+      "member": "20681/magic_contribution_20681.txt",
+      "split": "calibration",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "12:42"
+      ]
+    },
+    {
+      "contribution_id": 20570,
+      "member": "20570/magic_contribution_20570.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "11:25"
+      ]
+    },
+    {
+      "contribution_id": 20486,
+      "member": "20486/magic_contribution_20486.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "13:43"
+      ]
+    },
+    {
+      "contribution_id": 20677,
+      "member": "20677/magic_contribution_20677.txt",
+      "split": "train",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "16:44",
+        "16:46"
+      ]
+    },
+    {
+      "contribution_id": 20683,
+      "member": "20683/magic_contribution_20683.txt",
+      "split": "train",
+      "location_rows": 10,
+      "coordinate_rows": 10,
+      "ten_degree_cells": [
+        "12:42"
+      ]
+    },
+    {
+      "contribution_id": 17087,
+      "member": "17087/magic_contribution_17087.txt",
+      "split": "test",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "10:45",
+        "13:27",
+        "13:42"
+      ]
+    },
+    {
+      "contribution_id": 20006,
+      "member": "20006/magic_contribution_20006.txt",
+      "split": "calibration",
+      "location_rows": 3,
+      "coordinate_rows": 3,
+      "ten_degree_cells": [
+        "12:24"
+      ]
+    },
+    {
+      "contribution_id": 20680,
+      "member": "20680/magic_contribution_20680.txt",
+      "split": "calibration",
+      "location_rows": 15,
+      "coordinate_rows": 15,
+      "ten_degree_cells": [
+        "13:43"
+      ]
+    },
+    {
+      "contribution_id": 20580,
+      "member": "20580/magic_contribution_20580.txt",
+      "split": "buffer",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "15:42"
+      ]
+    },
+    {
+      "contribution_id": 20549,
+      "member": "20549/magic_contribution_20549.txt",
+      "split": "calibration",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "13:46"
+      ]
+    },
+    {
+      "contribution_id": 20386,
+      "member": "20386/magic_contribution_20386.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "05:20",
+        "06:20"
+      ]
+    },
+    {
+      "contribution_id": 20167,
+      "member": "20167/magic_contribution_20167.txt",
+      "split": "test",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "12:26"
+      ]
+    },
+    {
+      "contribution_id": 20328,
+      "member": "20328/magic_contribution_20328.txt",
+      "split": "test",
+      "location_rows": 3,
+      "coordinate_rows": 3,
+      "ten_degree_cells": [
+        "08:19",
+        "08:51",
+        "09:20"
+      ]
+    },
+    {
+      "contribution_id": 20508,
+      "member": "20508/magic_contribution_20508.txt",
+      "split": "train",
+      "location_rows": 34,
+      "coordinate_rows": 34,
+      "ten_degree_cells": [
+        "04:47",
+        "05:33",
+        "05:47",
+        "06:47",
+        "06:48",
+        "11:21",
+        "11:27",
+        "12:18",
+        "12:27",
+        "12:53",
+        "13:18",
+        "13:19",
+        "13:21",
+        "13:25",
+        "13:26",
+        "14:19",
+        "14:25",
+        "14:27",
+        "15:19",
+        "15:23",
+        "15:27",
+        "15:28",
+        "15:29",
+        "16:28",
+        "17:45"
+      ]
+    },
+    {
+      "contribution_id": 20693,
+      "member": "20693/magic_contribution_20693.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "12:25",
+        "12:26"
+      ]
+    },
+    {
+      "contribution_id": 20270,
+      "member": "20270/magic_contribution_20270.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "12:27"
+      ]
+    },
+    {
+      "contribution_id": 20075,
+      "member": "20075/magic_contribution_20075.txt",
+      "split": "buffer",
+      "location_rows": 3,
+      "coordinate_rows": 3,
+      "ten_degree_cells": [
+        "05:35",
+        "05:47",
+        "14:38"
+      ]
+    },
+    {
+      "contribution_id": 20511,
+      "member": "20511/magic_contribution_20511.txt",
+      "split": "calibration",
+      "location_rows": 55,
+      "coordinate_rows": 55,
+      "ten_degree_cells": [
+        "05:30",
+        "06:20",
+        "06:29",
+        "06:31",
+        "07:21",
+        "07:47",
+        "07:48",
+        "08:21",
+        "08:50",
+        "10:25",
+        "11:21",
+        "11:25",
+        "12:30",
+        "12:42",
+        "13:29",
+        "13:42",
+        "13:44",
+        "13:45",
+        "13:46",
+        "13:48",
+        "15:19",
+        "15:20",
+        "15:21",
+        "15:42",
+        "15:44",
+        "15:49",
+        "16:45",
+        "16:48",
+        "17:50",
+        "17:51"
+      ]
+    },
+    {
+      "contribution_id": 20393,
+      "member": "20393/magic_contribution_20393.txt",
+      "split": "train",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "05:47"
+      ]
+    },
+    {
+      "contribution_id": 20481,
+      "member": "20481/magic_contribution_20481.txt",
+      "split": "train",
+      "location_rows": 42,
+      "coordinate_rows": 42,
+      "ten_degree_cells": [
+        "07:42",
+        "09:27",
+        "09:33",
+        "09:43",
+        "09:45",
+        "10:22",
+        "10:38",
+        "10:45",
+        "11:42",
+        "11:43",
+        "11:49",
+        "12:21",
+        "12:41",
+        "12:49",
+        "12:50",
+        "13:40",
+        "13:41",
+        "13:51",
+        "15:51"
+      ]
+    },
+    {
+      "contribution_id": 20524,
+      "member": "20524/magic_contribution_20524.txt",
+      "split": "buffer",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "05:46"
+      ]
+    },
+    {
+      "contribution_id": 20510,
+      "member": "20510/magic_contribution_20510.txt",
+      "split": "train",
+      "location_rows": 76,
+      "coordinate_rows": 76,
+      "ten_degree_cells": [
+        "01:34",
+        "01:52",
+        "04:46",
+        "04:47",
+        "05:47",
+        "05:48",
+        "06:19",
+        "06:20",
+        "06:21",
+        "06:48",
+        "06:49",
+        "07:22",
+        "07:46",
+        "08:50",
+        "10:28",
+        "11:21",
+        "11:26",
+        "11:27",
+        "11:29",
+        "12:21",
+        "12:26",
+        "12:30",
+        "12:42",
+        "12:46",
+        "13:25",
+        "13:28",
+        "13:29",
+        "13:30",
+        "13:42",
+        "14:27",
+        "14:28",
+        "15:49",
+        "16:44"
+      ]
+    },
+    {
+      "contribution_id": 20312,
+      "member": "20312/magic_contribution_20312.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "15:19"
+      ]
+    },
+    {
+      "contribution_id": 20474,
+      "member": "20474/magic_contribution_20474.txt",
+      "split": "calibration",
+      "location_rows": 11,
+      "coordinate_rows": 11,
+      "ten_degree_cells": [
+        "10:28",
+        "10:29",
+        "11:28",
+        "11:29"
+      ]
+    },
+    {
+      "contribution_id": 20353,
+      "member": "20353/magic_contribution_20353.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "05:20"
+      ]
+    },
+    {
+      "contribution_id": 20352,
+      "member": "20352/magic_contribution_20352.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "05:20",
+        "06:20"
+      ]
+    },
+    {
+      "contribution_id": 20541,
+      "member": "20541/magic_contribution_20541.txt",
+      "split": "train",
+      "location_rows": 6,
+      "coordinate_rows": 6,
+      "ten_degree_cells": [
+        "05:32",
+        "06:23",
+        "06:34",
+        "07:39",
+        "15:52"
+      ]
+    },
+    {
+      "contribution_id": 20331,
+      "member": "20331/magic_contribution_20331.txt",
+      "split": "train",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "05:20",
+        "06:20"
+      ]
+    },
+    {
+      "contribution_id": 20274,
+      "member": "20274/magic_contribution_20274.txt",
+      "split": "train",
+      "location_rows": 3,
+      "coordinate_rows": 3,
+      "ten_degree_cells": [
+        "14:18"
+      ]
+    },
+    {
+      "contribution_id": 20581,
+      "member": "20581/magic_contribution_20581.txt",
+      "split": "test",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "00:48"
+      ]
+    },
+    {
+      "contribution_id": 20289,
+      "member": "20289/magic_contribution_20289.txt",
+      "split": "train",
+      "location_rows": 6,
+      "coordinate_rows": 6,
+      "ten_degree_cells": [
+        "06:20"
+      ]
+    },
+    {
+      "contribution_id": 20306,
+      "member": "20306/magic_contribution_20306.txt",
+      "split": "calibration",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "12:20"
+      ]
+    },
+    {
+      "contribution_id": 20507,
+      "member": "20507/magic_contribution_20507.txt",
+      "split": "calibration",
+      "location_rows": 45,
+      "coordinate_rows": 45,
+      "ten_degree_cells": [
+        "04:24",
+        "04:46",
+        "05:33",
+        "06:32",
+        "09:19",
+        "10:21",
+        "10:22",
+        "10:25",
+        "10:43",
+        "11:21",
+        "11:27",
+        "11:43",
+        "12:22",
+        "12:25",
+        "12:26",
+        "12:30",
+        "12:43",
+        "13:20",
+        "13:25",
+        "13:28",
+        "13:29",
+        "13:42",
+        "14:27",
+        "14:40",
+        "14:41",
+        "14:53",
+        "15:31",
+        "15:35",
+        "15:53",
+        "16:48"
+      ]
+    },
+    {
+      "contribution_id": 20685,
+      "member": "20685/magic_contribution_20685.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "12:29"
+      ]
+    },
+    {
+      "contribution_id": 20385,
+      "member": "20385/magic_contribution_20385.txt",
+      "split": "test",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "10:29"
+      ]
+    },
+    {
+      "contribution_id": 20184,
+      "member": "20184/magic_contribution_20184.txt",
+      "split": "train",
+      "location_rows": 3,
+      "coordinate_rows": 3,
+      "ten_degree_cells": [
+        "13:45"
+      ]
+    },
+    {
+      "contribution_id": 20480,
+      "member": "20480/magic_contribution_20480.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "14:53"
+      ]
+    },
+    {
+      "contribution_id": 20427,
+      "member": "20427/magic_contribution_20427.txt",
+      "split": "train",
+      "location_rows": 6,
+      "coordinate_rows": 6,
+      "ten_degree_cells": [
+        "13:44"
+      ]
+    },
+    {
+      "contribution_id": 20473,
+      "member": "20473/magic_contribution_20473.txt",
+      "split": "calibration",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "09:18"
+      ]
+    },
+    {
+      "contribution_id": 20037,
+      "member": "20037/magic_contribution_20037.txt",
+      "split": "train",
+      "location_rows": 13,
+      "coordinate_rows": 13,
+      "ten_degree_cells": [
+        "13:41",
+        "13:42"
+      ]
+    },
+    {
+      "contribution_id": 20397,
+      "member": "20397/magic_contribution_20397.txt",
+      "split": "train",
+      "location_rows": 5,
+      "coordinate_rows": 5,
+      "ten_degree_cells": [
+        "12:43"
+      ]
+    },
+    {
+      "contribution_id": 20299,
+      "member": "20299/magic_contribution_20299.txt",
+      "split": "train",
+      "location_rows": 10,
+      "coordinate_rows": 10,
+      "ten_degree_cells": [
+        "05:35"
+      ]
+    },
+    {
+      "contribution_id": 20330,
+      "member": "20330/magic_contribution_20330.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "05:35"
+      ]
+    },
+    {
+      "contribution_id": 20476,
+      "member": "20476/magic_contribution_20476.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "11:52"
+      ]
+    },
+    {
+      "contribution_id": 20377,
+      "member": "20377/magic_contribution_20377.txt",
+      "split": "train",
+      "location_rows": 6,
+      "coordinate_rows": 6,
+      "ten_degree_cells": [
+        "07:19"
+      ]
+    },
+    {
+      "contribution_id": 20595,
+      "member": "20595/magic_contribution_20595.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "11:21",
+        "12:21"
+      ]
+    },
+    {
+      "contribution_id": 20257,
+      "member": "20257/magic_contribution_20257.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "06:20"
+      ]
+    },
+    {
+      "contribution_id": 20258,
+      "member": "20258/magic_contribution_20258.txt",
+      "split": "train",
+      "location_rows": 5,
+      "coordinate_rows": 5,
+      "ten_degree_cells": [
+        "13:44"
+      ]
+    },
+    {
+      "contribution_id": 20384,
+      "member": "20384/magic_contribution_20384.txt",
+      "split": "test",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "13:44"
+      ]
+    },
+    {
+      "contribution_id": 20163,
+      "member": "20163/magic_contribution_20163.txt",
+      "split": "buffer",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "09:18"
+      ]
+    },
+    {
+      "contribution_id": 20298,
+      "member": "20298/magic_contribution_20298.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "14:18"
+      ]
+    },
+    {
+      "contribution_id": 20297,
+      "member": "20297/magic_contribution_20297.txt",
+      "split": "train",
+      "location_rows": 40,
+      "coordinate_rows": 40,
+      "ten_degree_cells": [
+        "10:45"
+      ]
+    },
+    {
+      "contribution_id": 20614,
+      "member": "20614/magic_contribution_20614.txt",
+      "split": "buffer",
+      "location_rows": 9,
+      "coordinate_rows": 9,
+      "ten_degree_cells": [
+        "13:44"
+      ]
+    },
+    {
+      "contribution_id": 20185,
+      "member": "20185/magic_contribution_20185.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "12:29"
+      ]
+    },
+    {
+      "contribution_id": 20295,
+      "member": "20295/magic_contribution_20295.txt",
+      "split": "train",
+      "location_rows": 6,
+      "coordinate_rows": 6,
+      "ten_degree_cells": [
+        "10:43"
+      ]
+    },
+    {
+      "contribution_id": 20304,
+      "member": "20304/magic_contribution_20304.txt",
+      "split": "buffer",
+      "location_rows": 6,
+      "coordinate_rows": 6,
+      "ten_degree_cells": [
+        "10:45"
+      ]
+    },
+    {
+      "contribution_id": 20343,
+      "member": "20343/magic_contribution_20343.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "05:46"
+      ]
+    },
+    {
+      "contribution_id": 20296,
+      "member": "20296/magic_contribution_20296.txt",
+      "split": "train",
+      "location_rows": 16,
+      "coordinate_rows": 16,
+      "ten_degree_cells": [
+        "09:45",
+        "10:45"
+      ]
+    },
+    {
+      "contribution_id": 20294,
+      "member": "20294/magic_contribution_20294.txt",
+      "split": "train",
+      "location_rows": 5,
+      "coordinate_rows": 5,
+      "ten_degree_cells": [
+        "11:42"
+      ]
+    },
+    {
+      "contribution_id": 20303,
+      "member": "20303/magic_contribution_20303.txt",
+      "split": "buffer",
+      "location_rows": 41,
+      "coordinate_rows": 41,
+      "ten_degree_cells": [
+        "12:21"
+      ]
+    },
+    {
+      "contribution_id": 20293,
+      "member": "20293/magic_contribution_20293.txt",
+      "split": "train",
+      "location_rows": 9,
+      "coordinate_rows": 9,
+      "ten_degree_cells": [
+        "12:19",
+        "13:19"
+      ]
+    },
+    {
+      "contribution_id": 20337,
+      "member": "20337/magic_contribution_20337.txt",
+      "split": "test",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "06:48"
+      ]
+    },
+    {
+      "contribution_id": 20259,
+      "member": "20259/magic_contribution_20259.txt",
+      "split": "train",
+      "location_rows": 4,
+      "coordinate_rows": 4,
+      "ten_degree_cells": [
+        "13:44",
+        "13:45"
+      ]
+    },
+    {
+      "contribution_id": 20210,
+      "member": "20210/magic_contribution_20210.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "09:18"
+      ]
+    },
+    {
+      "contribution_id": 20192,
+      "member": "20192/magic_contribution_20192.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "13:42"
+      ]
+    },
+    {
+      "contribution_id": 20557,
+      "member": "20557/magic_contribution_20557.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "12:21"
+      ]
+    },
+    {
+      "contribution_id": 20522,
+      "member": "20522/magic_contribution_20522.txt",
+      "split": "train",
+      "location_rows": 3,
+      "coordinate_rows": 3,
+      "ten_degree_cells": [
+        "10:25"
+      ]
+    },
+    {
+      "contribution_id": 20545,
+      "member": "20545/magic_contribution_20545.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "10:29"
+      ]
+    },
+    {
+      "contribution_id": 20359,
+      "member": "20359/magic_contribution_20359.txt",
+      "split": "test",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "06:47"
+      ]
+    },
+    {
+      "contribution_id": 19987,
+      "member": "19987/magic_contribution_19987.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "13:22"
+      ]
+    },
+    {
+      "contribution_id": 20302,
+      "member": "20302/magic_contribution_20302.txt",
+      "split": "calibration",
+      "location_rows": 12,
+      "coordinate_rows": 12,
+      "ten_degree_cells": [
+        "11:26"
+      ]
+    },
+    {
+      "contribution_id": 20245,
+      "member": "20245/magic_contribution_20245.txt",
+      "split": "train",
+      "location_rows": 7,
+      "coordinate_rows": 7,
+      "ten_degree_cells": [
+        "15:35"
+      ]
+    },
+    {
+      "contribution_id": 20271,
+      "member": "20271/magic_contribution_20271.txt",
+      "split": "calibration",
+      "location_rows": 15,
+      "coordinate_rows": 15,
+      "ten_degree_cells": [
+        "06:29"
+      ]
+    },
+    {
+      "contribution_id": 19964,
+      "member": "19964/magic_contribution_19964.txt",
+      "split": "calibration",
+      "location_rows": 11,
+      "coordinate_rows": 11,
+      "ten_degree_cells": [
+        "13:42"
+      ]
+    },
+    {
+      "contribution_id": 20536,
+      "member": "20536/magic_contribution_20536.txt",
+      "split": "train",
+      "location_rows": 26,
+      "coordinate_rows": 26,
+      "ten_degree_cells": [
+        "06:47"
+      ]
+    },
+    {
+      "contribution_id": 20361,
+      "member": "20361/magic_contribution_20361.txt",
+      "split": "buffer",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "06:47"
+      ]
+    },
+    {
+      "contribution_id": 20300,
+      "member": "20300/magic_contribution_20300.txt",
+      "split": "train",
+      "location_rows": 16,
+      "coordinate_rows": 16,
+      "ten_degree_cells": [
+        "12:20"
+      ]
+    },
+    {
+      "contribution_id": 20357,
+      "member": "20357/magic_contribution_20357.txt",
+      "split": "train",
+      "location_rows": 6,
+      "coordinate_rows": 6,
+      "ten_degree_cells": [
+        "05:46"
+      ]
+    },
+    {
+      "contribution_id": 20340,
+      "member": "20340/magic_contribution_20340.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "10:23"
+      ]
+    },
+    {
+      "contribution_id": 20252,
+      "member": "20252/magic_contribution_20252.txt",
+      "split": "train",
+      "location_rows": 1,
+      "coordinate_rows": 1,
+      "ten_degree_cells": [
+        "14:18"
+      ]
+    },
+    {
+      "contribution_id": 20301,
+      "member": "20301/magic_contribution_20301.txt",
+      "split": "train",
+      "location_rows": 43,
+      "coordinate_rows": 43,
+      "ten_degree_cells": [
+        "13:21",
+        "13:22"
+      ]
+    },
+    {
+      "contribution_id": 20255,
+      "member": "20255/magic_contribution_20255.txt",
+      "split": "train",
+      "location_rows": 2,
+      "coordinate_rows": 2,
+      "ten_degree_cells": [
+        "03:50"
+      ]
+    },
+    {
+      "contribution_id": 20053,
+      "member": "20053/magic_contribution_20053.txt",
+      "split": "calibration",
+      "location_rows": 5,
+      "coordinate_rows": 5,
+      "ten_degree_cells": [
+        "13:41"
+      ]
+    }
+  ],
+  "counts": {
+    "buffer": 10,
+    "calibration": 16,
+    "test": 9,
+    "train": 64
+  },
+  "location_rows": 743,
+  "coordinate_rows": 743,
+  "ten_degree_cells_by_split": {
+    "train": [
+      "01:34",
+      "01:52",
+      "03:50",
+      "04:46",
+      "04:47",
+      "05:20",
+      "05:32",
+      "05:33",
+      "05:35",
+      "05:46",
+      "05:47",
+      "05:48",
+      "06:19",
+      "06:20",
+      "06:21",
+      "06:23",
+      "06:34",
+      "06:47",
+      "06:48",
+      "06:49",
+      "07:19",
+      "07:22",
+      "07:39",
+      "07:42",
+      "07:46",
+      "08:50",
+      "09:18",
+      "09:27",
+      "09:33",
+      "09:43",
+      "09:45",
+      "10:22",
+      "10:23",
+      "10:25",
+      "10:28",
+      "10:29",
+      "10:38",
+      "10:43",
+      "10:45",
+      "11:21",
+      "11:25",
+      "11:26",
+      "11:27",
+      "11:29",
+      "11:42",
+      "11:43",
+      "11:49",
+      "11:52",
+      "12:18",
+      "12:19",
+      "12:20",
+      "12:21",
+      "12:25",
+      "12:26",
+      "12:27",
+      "12:29",
+      "12:30",
+      "12:41",
+      "12:42",
+      "12:43",
+      "12:44",
+      "12:46",
+      "12:49",
+      "12:50",
+      "12:53",
+      "13:18",
+      "13:19",
+      "13:21",
+      "13:22",
+      "13:25",
+      "13:26",
+      "13:28",
+      "13:29",
+      "13:30",
+      "13:40",
+      "13:41",
+      "13:42",
+      "13:43",
+      "13:44",
+      "13:45",
+      "13:51",
+      "14:18",
+      "14:19",
+      "14:25",
+      "14:27",
+      "14:28",
+      "14:47",
+      "14:53",
+      "15:19",
+      "15:23",
+      "15:27",
+      "15:28",
+      "15:29",
+      "15:35",
+      "15:43",
+      "15:49",
+      "15:51",
+      "15:52",
+      "16:28",
+      "16:44",
+      "16:46",
+      "16:48",
+      "17:45"
+    ],
+    "buffer": [
+      "05:35",
+      "05:46",
+      "05:47",
+      "06:47",
+      "09:18",
+      "10:45",
+      "12:21",
+      "13:44",
+      "14:38",
+      "15:42",
+      "16:19"
+    ],
+    "calibration": [
+      "04:24",
+      "04:46",
+      "05:30",
+      "05:33",
+      "06:20",
+      "06:29",
+      "06:31",
+      "06:32",
+      "07:21",
+      "07:47",
+      "07:48",
+      "08:21",
+      "08:50",
+      "09:18",
+      "09:19",
+      "10:21",
+      "10:22",
+      "10:25",
+      "10:28",
+      "10:29",
+      "10:43",
+      "11:21",
+      "11:25",
+      "11:26",
+      "11:27",
+      "11:28",
+      "11:29",
+      "11:43",
+      "12:20",
+      "12:22",
+      "12:24",
+      "12:25",
+      "12:26",
+      "12:30",
+      "12:42",
+      "12:43",
+      "13:20",
+      "13:25",
+      "13:28",
+      "13:29",
+      "13:41",
+      "13:42",
+      "13:43",
+      "13:44",
+      "13:45",
+      "13:46",
+      "13:48",
+      "14:27",
+      "14:40",
+      "14:41",
+      "14:53",
+      "15:19",
+      "15:20",
+      "15:21",
+      "15:31",
+      "15:35",
+      "15:42",
+      "15:43",
+      "15:44",
+      "15:49",
+      "15:53",
+      "16:45",
+      "16:48",
+      "17:50",
+      "17:51"
+    ],
+    "test": [
+      "00:48",
+      "06:47",
+      "06:48",
+      "08:19",
+      "08:51",
+      "09:20",
+      "10:29",
+      "10:45",
+      "12:26",
+      "13:27",
+      "13:42",
+      "13:44",
+      "15:42"
+    ]
+  },
+  "contribution_overlap": false,
+  "location_cell_overlap_is_possible": true,
+  "tables_read": [
+    "locations"
+  ],
+  "response_tables_read": [],
+  "response_values_interpreted": false
+}

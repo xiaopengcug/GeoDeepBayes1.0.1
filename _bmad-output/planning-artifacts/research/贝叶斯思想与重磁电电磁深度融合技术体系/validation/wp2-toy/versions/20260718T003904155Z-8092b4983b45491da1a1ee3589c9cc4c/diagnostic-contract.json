@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "contract_id": "WP2-DIAGNOSTIC-CONTRACT-v1",
+  "algorithms": {
+    "rank_score": "Blom plotting position (rank-3/8)/(N+1/4) with average ties and inverse-normal transform",
+    "rhat": "maximum semantic gate over rank-normalized split-Rhat and folded rank-normalized split-Rhat",
+    "bulk_ess": "Geyer P_t=rho_{2t}+rho_{2t+1} from rho_0+rho_1; truncate at first non-positive pair, apply initial-monotone pairs, tau=-1+2*sum(P_t), on split rank-normalized draws",
+    "tail_ess": "minimum Geyer ESS of lower-5% and upper-5% indicator draws"
+  },
+  "thresholds": {
+    "rank_normalized_split_rhat_max": 1.01,
+    "bulk_ess_min": 400,
+    "tail_ess_min": 400,
+    "relative_mcse_max": 0.05,
+    "required_mode_visits_per_chain": 2,
+    "failed_replicate_rate_max": 0.02
+  },
+  "required_fields": [
+    "rank_normalized_split_rhat",
+    "folded_split_rhat",
+    "bulk_ess",
+    "tail_ess",
+    "relative_mcse",
+    "mode_visits_per_chain",
+    "failed_replicate_rate",
+    "status"
+  ],
+  "hard_gate": "all"
+}

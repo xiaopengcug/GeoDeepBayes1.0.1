@@ -1,0 +1,178 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_version_path": "versions/20260730T200104829Z-cc929856f1df4bb28e90aa8b51703e07",
+  "source_manifest_sha256": "e7cbdbf953a89a5e4a6c671088186cb68f91129dcac3da3a2ed80266466cd824",
+  "validator_sha256": "9b6ecd1853eeceed4d5bf288137bc95519fb91dcec33b0eeb9db8e16fd89ec72",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "fb2ed32d4e9193487c56ccb52145ddb5ea2e65160aa0009da21cd6f3ffe2bed7",
+  "root_file_sha256": "ecd725673228000407579d7f620f63fdc7b2ff91e0ac813ef73477e319455d25",
+  "root_anchor_file_sha256": "cccd190e53e4469d380e16b0fd9f7517707a47df9c35e94e74994355f95f7036",
+  "stage": "lineage-migration",
+  "fixture_count": 11,
+  "fixture_id_set": [
+    "FXT-LINEAGE-MIGRATION-078",
+    "FXT-LINEAGE-MIGRATION-079",
+    "FXT-LINEAGE-MIGRATION-080",
+    "FXT-LINEAGE-MIGRATION-081",
+    "FXT-LINEAGE-MIGRATION-082",
+    "FXT-LINEAGE-MIGRATION-083",
+    "FXT-LINEAGE-MIGRATION-084",
+    "FXT-LINEAGE-MIGRATION-085",
+    "FXT-LINEAGE-MIGRATION-086",
+    "FXT-LINEAGE-MIGRATION-087",
+    "FXT-LINEAGE-MIGRATION-088"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-078",
+      "case": "FXT-LINEAGE-MIGRATION-078",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 pending source schema only"
+      ],
+      "actual_rejection": "loop21 pending source schema only",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4316
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-079",
+      "case": "FXT-LINEAGE-MIGRATION-079",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 holdout selection bias"
+      ],
+      "actual_rejection": "loop21 holdout selection bias",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3446
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-080",
+      "case": "FXT-LINEAGE-MIGRATION-080",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 heading H4"
+      ],
+      "actual_rejection": "loop21 heading H4",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3528
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-081",
+      "case": "FXT-LINEAGE-MIGRATION-081",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 appendix4 overview order"
+      ],
+      "actual_rejection": "loop21 appendix4 overview order",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3676
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-082",
+      "case": "FXT-LINEAGE-MIGRATION-082",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix heading H1 附录2-概率化反演结果应用规范与风险管控准则.md"
+      ],
+      "actual_rejection": "appendix heading H1 附录2-概率化反演结果应用规范与风险管控准则.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4518
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-083",
+      "case": "FXT-LINEAGE-MIGRATION-083",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix internal numbering 附录14-地质先验知识库.md"
+      ],
+      "actual_rejection": "appendix internal numbering 附录14-地质先验知识库.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3770
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-084",
+      "case": "FXT-LINEAGE-MIGRATION-084",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix1 scientific boundary"
+      ],
+      "actual_rejection": "appendix1 scientific boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3868
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-085",
+      "case": "FXT-LINEAGE-MIGRATION-085",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix prior boundary"
+      ],
+      "actual_rejection": "appendix prior boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4240
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-086",
+      "case": "FXT-LINEAGE-MIGRATION-086",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix xref/list"
+      ],
+      "actual_rejection": "appendix xref/list",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4385
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-087",
+      "case": "FXT-LINEAGE-MIGRATION-087",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix revision trace"
+      ],
+      "actual_rejection": "appendix revision trace",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4133
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-088",
+      "case": "FXT-LINEAGE-MIGRATION-088",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix maturity"
+      ],
+      "actual_rejection": "appendix maturity",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3478
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-30T20:20:03.0280778Z",
+  "output_sha256": "5175c12aeb50582f228bf7f2f1f9d7824243a9f7687f519419e6197cbad66daa",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

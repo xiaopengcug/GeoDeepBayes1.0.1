@@ -1,0 +1,363 @@
+{
+  "schema_version": "wp8-geoscience-australia-aem-training-probe-inventory-v1",
+  "raw_manifest_sha256": "35c511c3e1e967f4239e5a86b7695c62b39c3f1b8749d0535a95fe3bb85bb15f",
+  "archive_sha256": "a23eaa1aba162b8d258b01c991dbda3ff0ac92fdfebfc17e635ff89aa260153f",
+  "zip_central_directory_only": true,
+  "member_payloads_read": 0,
+  "aem_response_values_interpreted": 0,
+  "member_count": 48,
+  "suffix_counts": {
+    ".ark": 1,
+    ".c": 11,
+    ".cc": 1,
+    ".doc": 7,
+    ".exe": 1,
+    ".h": 3,
+    ".pdf": 4,
+    ".rpt": 1,
+    ".rsp": 1,
+    ".txt": 8,
+    "<none>": 10
+  },
+  "members": [
+    {
+      "path": "1FINALX",
+      "compressed_bytes": 52576648,
+      "uncompressed_bytes": 162434567,
+      "crc32": "92fd98a2",
+      "is_directory": false
+    },
+    {
+      "path": "1FINALZ",
+      "compressed_bytes": 53680673,
+      "uncompressed_bytes": 162434567,
+      "crc32": "12a60bf5",
+      "is_directory": false
+    },
+    {
+      "path": "1RAWX",
+      "compressed_bytes": 53377441,
+      "uncompressed_bytes": 162434567,
+      "crc32": "b39f4370",
+      "is_directory": false
+    },
+    {
+      "path": "1RAWZ",
+      "compressed_bytes": 54050833,
+      "uncompressed_bytes": 162434567,
+      "crc32": "a4c71503",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "is_directory": true
+    },
+    {
+      "path": "AGS2COLS/ags2cols",
+      "compressed_bytes": 54719,
+      "uncompressed_bytes": 131072,
+      "crc32": "09e6b7d9",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/ags2cols.exe",
+      "compressed_bytes": 60141,
+      "uncompressed_bytes": 152244,
+      "crc32": "bbbd71f6",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/data/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "is_directory": true
+    },
+    {
+      "path": "AGS2COLS/data/flt329.ark",
+      "compressed_bytes": 70557,
+      "uncompressed_bytes": 343048,
+      "crc32": "3e14c267",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/guide/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "is_directory": true
+    },
+    {
+      "path": "AGS2COLS/guide/ags2cols.doc",
+      "compressed_bytes": 23739,
+      "uncompressed_bytes": 87040,
+      "crc32": "3a78aa8d",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/guide/install.doc",
+      "compressed_bytes": 6894,
+      "uncompressed_bytes": 24576,
+      "crc32": "2ada4da9",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/readme.txt",
+      "compressed_bytes": 1375,
+      "uncompressed_bytes": 3049,
+      "crc32": "1acf9434",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/select.txt",
+      "compressed_bytes": 80,
+      "uncompressed_bytes": 104,
+      "crc32": "a66180e1",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/",
+      "compressed_bytes": 0,
+      "uncompressed_bytes": 0,
+      "crc32": "00000000",
+      "is_directory": true
+    },
+    {
+      "path": "AGS2COLS/src/ags2cols.c",
+      "compressed_bytes": 3785,
+      "uncompressed_bytes": 18816,
+      "crc32": "a6f945f5",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/agso_io.c",
+      "compressed_bytes": 2140,
+      "uncompressed_bytes": 10476,
+      "crc32": "dd1d59d6",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/amgutm.c",
+      "compressed_bytes": 2098,
+      "uncompressed_bytes": 7942,
+      "crc32": "4929b1ac",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/choose.c",
+      "compressed_bytes": 7937,
+      "uncompressed_bytes": 44911,
+      "crc32": "7151bdcb",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/columnio.c",
+      "compressed_bytes": 1398,
+      "uncompressed_bytes": 8313,
+      "crc32": "a058fd54",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/constant.h",
+      "compressed_bytes": 594,
+      "uncompressed_bytes": 1543,
+      "crc32": "83ed2068",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/declare.h",
+      "compressed_bytes": 2420,
+      "uncompressed_bytes": 7238,
+      "crc32": "b765e498",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/function.h",
+      "compressed_bytes": 1596,
+      "uncompressed_bytes": 6889,
+      "crc32": "b047666f",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/makefile",
+      "compressed_bytes": 588,
+      "uncompressed_bytes": 1392,
+      "crc32": "ecc41def",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/makefile.c",
+      "compressed_bytes": 588,
+      "uncompressed_bytes": 1392,
+      "crc32": "ecc41def",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/makefile.cc",
+      "compressed_bytes": 586,
+      "uncompressed_bytes": 1400,
+      "crc32": "4d50b6f5",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/pc_comp.rsp",
+      "compressed_bytes": 99,
+      "uncompressed_bytes": 135,
+      "crc32": "43fee2aa",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/proceses.c",
+      "compressed_bytes": 7143,
+      "uncompressed_bytes": 38654,
+      "crc32": "b3c28241",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/readspec.c",
+      "compressed_bytes": 5703,
+      "uncompressed_bytes": 26365,
+      "crc32": "e9af4199",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/report.c",
+      "compressed_bytes": 5130,
+      "uncompressed_bytes": 33383,
+      "crc32": "d681ecdf",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/select.c",
+      "compressed_bytes": 4485,
+      "uncompressed_bytes": 20668,
+      "crc32": "f5038ebc",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/src/wgsagd84.c",
+      "compressed_bytes": 3780,
+      "uncompressed_bytes": 15705,
+      "crc32": "48cbd38b",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/std_chbu.txt",
+      "compressed_bytes": 683,
+      "uncompressed_bytes": 3861,
+      "crc32": "15bf0a06",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/std_chnl.txt",
+      "compressed_bytes": 658,
+      "uncompressed_bytes": 3595,
+      "crc32": "257308c8",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/std_sib.txt",
+      "compressed_bytes": 160,
+      "uncompressed_bytes": 383,
+      "crc32": "00ba5d88",
+      "is_directory": false
+    },
+    {
+      "path": "AGS2COLS/trial.rpt",
+      "compressed_bytes": 922,
+      "uncompressed_bytes": 2914,
+      "crc32": "90116fd2",
+      "is_directory": false
+    },
+    {
+      "path": "Copyright and Disclaimer.txt",
+      "compressed_bytes": 573,
+      "uncompressed_bytes": 1190,
+      "crc32": "1cb82c4d",
+      "is_directory": false
+    },
+    {
+      "path": "Gilmore_report.doc",
+      "compressed_bytes": 117075,
+      "uncompressed_bytes": 827904,
+      "crc32": "3320947b",
+      "is_directory": false
+    },
+    {
+      "path": "Index_all.doc",
+      "compressed_bytes": 370908,
+      "uncompressed_bytes": 1820160,
+      "crc32": "21eaa2c4",
+      "is_directory": false
+    },
+    {
+      "path": "Index_all.pdf",
+      "compressed_bytes": 1336835,
+      "uncompressed_bytes": 2681203,
+      "crc32": "5a7e89e1",
+      "is_directory": false
+    },
+    {
+      "path": "Licence.txt",
+      "compressed_bytes": 2318,
+      "uncompressed_bytes": 6062,
+      "crc32": "3b6484ff",
+      "is_directory": false
+    },
+    {
+      "path": "List_by_CD_num.doc",
+      "compressed_bytes": 14621,
+      "uncompressed_bytes": 80384,
+      "crc32": "ea81f3a6",
+      "is_directory": false
+    },
+    {
+      "path": "List_by_CD_num.pdf",
+      "compressed_bytes": 124376,
+      "uncompressed_bytes": 271441,
+      "crc32": "06b49887",
+      "is_directory": false
+    },
+    {
+      "path": "List_by_project_num.doc",
+      "compressed_bytes": 14636,
+      "uncompressed_bytes": 80384,
+      "crc32": "841b0fff",
+      "is_directory": false
+    },
+    {
+      "path": "List_by_project_num.pdf",
+      "compressed_bytes": 125057,
+      "uncompressed_bytes": 272127,
+      "crc32": "af65e49e",
+      "is_directory": false
+    },
+    {
+      "path": "List_by_survey_name.doc",
+      "compressed_bytes": 14817,
+      "uncompressed_bytes": 80896,
+      "crc32": "30c83254",
+      "is_directory": false
+    },
+    {
+      "path": "List_by_survey_name.pdf",
+      "compressed_bytes": 125174,
+      "uncompressed_bytes": 272235,
+      "crc32": "217df8f2",
+      "is_directory": false
+    },
+    {
+      "path": "Readme.txt",
+      "compressed_bytes": 676,
+      "uncompressed_bytes": 1353,
+      "crc32": "63b48eac",
+      "is_directory": false
+    }
+  ],
+  "calibration_responses_interpreted": 0,
+  "test_responses_interpreted": 0,
+  "test_unseal_count": 0
+}

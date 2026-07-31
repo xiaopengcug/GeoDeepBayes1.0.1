@@ -1,0 +1,72 @@
+{
+  "audit_version": "geodoi-wuxi-fdip-training-audit-v1",
+  "design_version": "geodoi-wuxi-fdip-outcome-blind-design-v1",
+  "response_scope": "training lines only: 5000, 5200, 5400",
+  "training_row_count": 179,
+  "response_completeness": {
+    "fs_percent_complete": 179,
+    "rho_ohm_m_complete": 179
+  },
+  "lagged_pair_correlations": [
+    {
+      "lag_m": [
+        0,
+        25
+      ],
+      "pair_count": 68,
+      "fs_pearson": 0.6578771220453732,
+      "log_rho_pearson": 0.7380790463064932
+    },
+    {
+      "lag_m": [
+        25,
+        50
+      ],
+      "pair_count": 181,
+      "fs_pearson": 0.32173362546078854,
+      "log_rho_pearson": 0.5101277836381172
+    },
+    {
+      "lag_m": [
+        50,
+        75
+      ],
+      "pair_count": 177,
+      "fs_pearson": 0.25595981087713787,
+      "log_rho_pearson": 0.310348115273972
+    },
+    {
+      "lag_m": [
+        75,
+        100
+      ],
+      "pair_count": 170,
+      "fs_pearson": -0.02043929974708874,
+      "log_rho_pearson": 0.2499169949682547
+    },
+    {
+      "lag_m": [
+        100,
+        150
+      ],
+      "pair_count": 323,
+      "fs_pearson": 0.00014403763735118587,
+      "log_rho_pearson": 0.187790555612081
+    },
+    {
+      "lag_m": [
+        150,
+        250
+      ],
+      "pair_count": 1972,
+      "fs_pearson": 0.04283980943955082,
+      "log_rho_pearson": 0.12090981877981048
+    }
+  ],
+  "independence_decision_rule": "The preregistered 50 m radius is unsupported if either absolute Pearson correlation in the 50-75 m bin exceeds 0.20.",
+  "independence_supported_at_50m": false,
+  "limitations": [
+    "The workbook provides no repeat-measurement uncertainty column.",
+    "FS is a dual-frequency amplitude-percent response, not a full SIP spectrum."
+  ]
+}

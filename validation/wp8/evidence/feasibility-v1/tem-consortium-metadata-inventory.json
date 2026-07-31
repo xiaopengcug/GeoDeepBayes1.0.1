@@ -1,0 +1,297 @@
+{
+  "schema_version": "wp8-tem-consortium-metadata-inventory-v1",
+  "created_date": "2026-07-24",
+  "scope": "outcome-blind release-level feasibility inventory",
+  "formal_gate_changed": false,
+  "observation_columns_authorized": false,
+  "observation_values_used_for_counts_or_selection": false,
+  "decision": {
+    "status": "failed_not_yet_freezable",
+    "possibly_enough_release_level_sites": true,
+    "qualified_unique_sites_demonstrated": false,
+    "common_contract_demonstrated": false,
+    "wp8_formal_test_eligible": false,
+    "reason": "Release-level official metadata gives a nominal unique-site upper bound above 223, but exact coordinate catalogs, cross-release de-duplication, and a member-level common observation contract are not available for all releases. A release list and deterministic split algorithm can be frozen; member assignments cannot be frozen without reading provider coordinate catalogs."
+  },
+  "policy": {
+    "allowed_inputs": [
+      "official USGS metadata and catalog/API records",
+      "official report metadata",
+      "archive member names",
+      "provider site-coordinate catalogs"
+    ],
+    "forbidden_inputs": [
+      "observed TEM response values",
+      "inverted models or residuals",
+      "quality or usability outcomes",
+      "calibration or test endpoints"
+    ],
+    "cluster_unit": "unique physical transmitter-receiver site after coordinate de-duplication",
+    "same_site_rule": "Repeated soundings, dates, moments, receivers, currents, stacks, and files at one physical location count once.",
+    "deduplication_rule": "Normalize coordinates to WGS84; union records within 25 m unless official site identity proves they are distinct; manually adjudicate 25-100 m pairs using only acquisition geometry and official site identifiers; never use response similarity.",
+    "cross_release_rule": "Apply the same coordinate union across every release, with special review for Shelter Island versus Dering Harbor and all releases sharing a study area.",
+    "count_semantics": "All counts below are release-level bounds, not frozen eligible members."
+  },
+  "release_inventory": [
+    {
+      "release_id": "USGS-Genesee-2016-2017",
+      "official_identifier": "10.5066/P9VQOCRZ",
+      "nominal_site_upper_bound": 120,
+      "metadata_count_basis": "120 locations",
+      "instrument_family": ["ABEM WalkTEM"],
+      "raw_waveform_time_gate_evidence": "raw and processed TEM stated; dual moments and acquisition software stated; exact member contract not inventoried",
+      "loop_geometry_evidence": "40x40 m and 100x100 m central-loop transmitter; two receiver sizes",
+      "location_catalog_status": "required_before_member freeze",
+      "license": "USGS public-domain label / CC0",
+      "official_metadata_url": "https://www.usgs.gov/data/time-domain-electromagnetic-soundings-delineate-saline-groundwater-genesee-valley-fill-aquifer"
+    },
+    {
+      "release_id": "USGS-Miami-Dade-Broward",
+      "official_identifier": "10.3133/ofr20111299",
+      "nominal_site_upper_bound": 79,
+      "metadata_count_basis": "79 soundings",
+      "instrument_family": ["legacy ground TEM; exact family unresolved"],
+      "raw_waveform_time_gate_evidence": "not demonstrated in frozen metadata",
+      "loop_geometry_evidence": "not demonstrated in frozen metadata",
+      "location_catalog_status": "required",
+      "license": "USGS publication; data-file reuse terms require record-level confirmation"
+    },
+    {
+      "release_id": "USGS-Fort-Irwin-2010-2012",
+      "official_identifier": "10.3133/ofr20131024F",
+      "nominal_site_upper_bound": 79,
+      "metadata_count_basis": "79 soundings in 12 basins",
+      "instrument_family": ["legacy ground TEM; exact family unresolved"],
+      "raw_waveform_time_gate_evidence": "not demonstrated in frozen metadata",
+      "loop_geometry_evidence": "not demonstrated in frozen metadata",
+      "location_catalog_status": "required",
+      "license": "USGS publication; data-file reuse terms require record-level confirmation",
+      "official_metadata_url": "https://www.usgs.gov/centers/gmeg/publications"
+    },
+    {
+      "release_id": "USGS-Hueco-Bolson",
+      "official_identifier": null,
+      "nominal_site_upper_bound": 20,
+      "metadata_count_basis": "20 raw-plus-processed soundings",
+      "instrument_family": ["unresolved"],
+      "raw_waveform_time_gate_evidence": "raw and processed stated; waveform/time-gate fields not demonstrated",
+      "loop_geometry_evidence": "not demonstrated",
+      "location_catalog_status": "required",
+      "license": "requires official record-level confirmation"
+    },
+    {
+      "release_id": "USGS-Nassau-Queens",
+      "official_identifier": "10.5066/P90B6OTX",
+      "nominal_site_upper_bound": 12,
+      "metadata_count_basis": "12 soundings",
+      "instrument_family": ["unresolved"],
+      "raw_waveform_time_gate_evidence": "not demonstrated",
+      "loop_geometry_evidence": "not demonstrated",
+      "location_catalog_status": "required",
+      "license": "USGS data release; public-domain label requires record confirmation"
+    },
+    {
+      "release_id": "USGS-Dawson-DS581",
+      "official_identifier": "DS581",
+      "nominal_site_upper_bound": 23,
+      "conservative_location_count": 14,
+      "metadata_count_basis": "official metadata reports 14 locations, 23 sites, and 30 soundings; contradiction must be resolved by coordinate catalog",
+      "instrument_family": ["unresolved"],
+      "raw_waveform_time_gate_evidence": "not demonstrated",
+      "loop_geometry_evidence": "not demonstrated",
+      "location_catalog_status": "required",
+      "license": "USGS publication/data-series terms require file-level confirmation"
+    },
+    {
+      "release_id": "Utah-FORGE-WalkTEM",
+      "official_identifier": null,
+      "nominal_site_upper_bound": 34,
+      "metadata_count_basis": "34 unique WalkTEM sites",
+      "instrument_family": ["ABEM WalkTEM"],
+      "raw_waveform_time_gate_evidence": "member-level evidence required",
+      "loop_geometry_evidence": "member-level evidence required",
+      "location_catalog_status": "required",
+      "license": "requires official record-level confirmation"
+    },
+    {
+      "release_id": "USGS-Dering-Harbor",
+      "official_identifier": "10.5066/P90KBFNX",
+      "nominal_site_upper_bound": 3,
+      "metadata_count_basis": "three different sites",
+      "instrument_family": ["unresolved"],
+      "raw_waveform_time_gate_evidence": "member-level evidence required",
+      "loop_geometry_evidence": "member-level evidence required",
+      "location_catalog_status": "required; mandatory cross-release check against Shelter Island",
+      "license": "USGS public-domain label",
+      "official_metadata_url": "https://data.usgs.gov/datacatalog/data/USGS%3A655d0e0dd34ee4b6e05cc99b"
+    },
+    {
+      "release_id": "USGS-Shelter-Island-2017-2018",
+      "official_identifier": "10.5066/P93X25UF",
+      "nominal_site_upper_bound": 26,
+      "metadata_count_basis": "26 soundings; metadata does not prove 26 coordinate-unique sites",
+      "instrument_family": ["Geonics ProTEM", "ABEM WalkTEM"],
+      "raw_waveform_time_gate_evidence": "raw and processed stated; multiple time-gate scripts",
+      "loop_geometry_evidence": "20x20 m, 40x40 m, or 100x100 m; central induction",
+      "location_catalog_status": "required; mandatory cross-release check against Dering Harbor",
+      "license": "USGS public-domain label",
+      "official_metadata_url": "https://data.usgs.gov/datacatalog/data/USGS%3A5f06400782ce21d4c3f8aee6"
+    },
+    {
+      "release_id": "USGS-Manistee-2020",
+      "official_identifier": "10.5066/P9LO38I3",
+      "nominal_site_upper_bound": 49,
+      "metadata_count_basis": "49 raw USF station files and 49 model plots; coordinate uniqueness not yet proven",
+      "instrument_family": ["ABEM WalkTEM"],
+      "raw_waveform_time_gate_evidence": "raw USF and processed TEM stated",
+      "loop_geometry_evidence": "40x40 m and 100x100 m loop filename codes; exact geometry catalog required",
+      "location_catalog_status": "required",
+      "license": "CC0 1.0",
+      "official_metadata_url": "https://www.usgs.gov/data/ground-based-time-domain-electromagnetic-data-and-resistivity-models-near-manistee-national"
+    },
+    {
+      "release_id": "USGS-MAP",
+      "official_identifier": null,
+      "nominal_site_upper_bound": 60,
+      "metadata_count_basis": "at least 60 sites; exact release identity and coordinate catalog unresolved",
+      "instrument_family": ["unresolved"],
+      "raw_waveform_time_gate_evidence": "not demonstrated",
+      "loop_geometry_evidence": "not demonstrated",
+      "location_catalog_status": "required",
+      "license": "requires official record-level confirmation"
+    },
+    {
+      "release_id": "USGS-California-COGG-2019",
+      "official_identifier": "ScienceBase:5e18a32ee4b0ecf25c5a3961",
+      "nominal_site_upper_bound": 16,
+      "metadata_count_basis": "official XML states 16 locations and 16 raw USF files",
+      "instrument_family": ["ABEM WalkTEM"],
+      "raw_waveform_time_gate_evidence": "raw USF plus processed TEM; processed files include loop geometry, waveform, gates, and calculated error",
+      "loop_geometry_evidence": "40x40 m central loop; low/high moments and two receiver sizes",
+      "location_catalog_status": "official GDB/model coordinate catalog exists but has not been read",
+      "license": "USGS metadata constraints require exact distribution record confirmation",
+      "local_metadata_path": "_bmad-output/planning-artifacts/research/open-data/tem/USGS_California_COGG_TEM_2019/COGG_TEM_data_models_2019.xml"
+    },
+    {
+      "release_id": "USGS-Dinero-Tunnel-2023",
+      "official_identifier": "ScienceBase:67e3f8ebd34ee7f14221732d",
+      "nominal_site_upper_bound": 11,
+      "metadata_count_basis": "11 project/site rows in provider SiteList",
+      "instrument_family": ["ABEM WalkTEM2"],
+      "raw_waveform_time_gate_evidence": "official archive names state raw and stacked data; XML/record states dual current and center loop",
+      "loop_geometry_evidence": "40x40 m transmitter and 0.5x0.5 m receiver",
+      "location_catalog_status": "available, but entire SiteList member is contaminated for formal calibration/test because it also contains inversion outcomes",
+      "license": "CC0 1.0",
+      "local_metadata_path": "_bmad-output/planning-artifacts/research/open-data/tem/USGS_DineroTunnel_TEM_2023/source_record.sciencebase.json"
+    }
+  ],
+  "count_summary": {
+    "nominal_release_level_sum": 532,
+    "conservative_sum_using_14_for_Dawson": 523,
+    "required_independent_test_clusters": 223,
+    "deduplicated_unique_site_lower_bound": null,
+    "deduplicated_unique_site_upper_bound": null,
+    "why_532_is_not_an_eligible_count": [
+      "Sounding counts are not always unique-site counts.",
+      "Dawson metadata has three incompatible count labels.",
+      "Shelter Island and Dering Harbor may contain repeat coordinates.",
+      "MAP is not uniquely identified.",
+      "Several legacy releases lack frozen coordinate catalogs.",
+      "Spatial correlation length cannot be estimated outcome-blind from release counts.",
+      "The preregistered requirement is 223 independent test clusters, not 223 files or nominal soundings."
+    ]
+  },
+  "common_contract_intersection": {
+    "required_by_wp8": [
+      "transmitter_loop",
+      "waveform",
+      "receiver",
+      "time_channels",
+      "raw_or_stacked",
+      "error",
+      "cluster"
+    ],
+    "demonstrated_for_all_releases": [
+      "TEM/TDEM method label",
+      "release-level provenance"
+    ],
+    "not_demonstrated_for_all_releases": [
+      "digitized transmitter waveform or current-time definition",
+      "receiver geometry and effective area",
+      "time-gate centers or bounds",
+      "raw-versus-stacked flag at member level",
+      "per-gate uncertainty/error",
+      "coordinate-unique site key",
+      "common units and sign convention"
+    ],
+    "candidate_common_instrument_subset": "ABEM WalkTEM-family releases only",
+    "candidate_subset_warning": "Even the WalkTEM subset cannot be member-frozen until exact site catalogs and archive manifests are obtained; instrument family alone does not establish a common waveform, gate, receiver, error, or unit contract."
+  },
+  "duplicate_and_dependence_risks": [
+    "Multiple currents, moments, receiver coils, repeats, dates, stacks, and processed/raw versions inflate file counts.",
+    "Closely spaced sites along a transect are spatially correlated and cannot automatically count as independent clusters.",
+    "Dering Harbor is geographically within Shelter Island and requires coordinate-level cross-release de-duplication.",
+    "Report soundings may later have been republished as data releases.",
+    "Dense towed-tTEM samples are one correlated trajectory, not thousands of independent sites."
+  ],
+  "candidate_manifest_freeze": {
+    "freeze_level": "release candidates and rules only",
+    "member_manifest_frozen": false,
+    "candidate_release_ids": [
+      "USGS-Genesee-2016-2017",
+      "USGS-Miami-Dade-Broward",
+      "USGS-Fort-Irwin-2010-2012",
+      "USGS-Hueco-Bolson",
+      "USGS-Nassau-Queens",
+      "USGS-Dawson-DS581",
+      "Utah-FORGE-WalkTEM",
+      "USGS-Dering-Harbor",
+      "USGS-Shelter-Island-2017-2018",
+      "USGS-Manistee-2020",
+      "USGS-MAP",
+      "USGS-California-COGG-2019",
+      "USGS-Dinero-Tunnel-2023"
+    ],
+    "pre_access_exclusions": [
+      "Dinero SiteList member from calibration and test because outcome columns were exposed during this inventory",
+      "all inverted-model files and maps from split construction",
+      "all members without a provider site key or coordinate mapping",
+      "all duplicate raw/processed representations after one canonical raw member is selected"
+    ]
+  },
+  "frozen_split_rule": {
+    "version": "tem-consortium-geographic-hash-v1",
+    "assignment_allowed_now": false,
+    "steps": [
+      "Acquire only official archive manifests and provider coordinate catalogs; hash and make them read-only before any response member is opened.",
+      "Normalize site coordinates to WGS84 and apply the frozen 25 m union rule across releases.",
+      "Assign one canonical site key as SHA256(round(latitude,6)|round(longitude,6)|provider_site_id).",
+      "Build spatial connected components using a predeclared buffer distance that is at least the maximum of 100 m and the largest transmitter-loop diagonal in metadata.",
+      "Order components by SHA256('wp8-tem-v1|' + component_canonical_key), never by response or quality.",
+      "Allocate whole components in order to train, buffer, calibration, and sealed test; require at least 223 test components after any later training-only correlation-length expansion.",
+      "If 223 independent sealed-test components cannot be retained together with nonempty train, buffer, and calibration sets, fail without opening observations.",
+      "Keep calibration and test archives sealed; training-only diagnostics may only occur after the member manifest, hashes, and assignments are frozen."
+    ],
+    "minimum_partition_constraints": {
+      "train_components": "nonempty and sufficient for the preregistered training-only diagnostics",
+      "buffer_components": "nonempty geographic separation ring",
+      "calibration_components": "nonempty",
+      "test_components": 223
+    }
+  },
+  "metadata_boundary_incident": {
+    "detected": true,
+    "member": "_bmad-output/planning-artifacts/research/open-data/tem/USGS_DineroTunnel_TEM_2023/2023_DineroTunnel_TEM_SiteList.csv",
+    "cause": "A provider file named SiteList was opened as a coordinate catalog but also contained inversion residual, conductor, and usability columns.",
+    "effect": "No response values were used and no gate changed, but the member is disqualified from calibration/test metadata construction.",
+    "remediation": "Use the ScienceBase record and archive filenames for Dinero release inventory; exclude the entire SiteList member from calibration/test and never use its outcome columns for selection."
+  },
+  "unblock_conditions": [
+    "Resolve exact official identifiers for Hueco Bolson, Utah FORGE, and MAP.",
+    "Obtain and hash official site-coordinate catalogs and archive manifests for every retained release without opening response members.",
+    "Prove license/reuse status at the data-file level for legacy report releases.",
+    "Produce a coordinate-deduplicated member manifest with canonical raw member hashes.",
+    "Demonstrate the complete common contract for every retained member or restrict to a documented compatible subset.",
+    "Apply the frozen geographic split and show at least 223 sealed independent test components after buffer/correlation requirements."
+  ]
+}

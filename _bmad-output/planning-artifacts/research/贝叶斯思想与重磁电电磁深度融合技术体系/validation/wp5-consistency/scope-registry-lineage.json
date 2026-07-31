@@ -28,6 +28,27 @@
       "scope_count": 72,
       "ledger_path": "claim-ledger.loop30-anchor.json",
       "ledger_sha256": "ea8168d745883f3375c03740f4c83045a327421be40dacb2f083de9bf580bd49"
+    },
+    "loop31": {
+      "path": "scope-registry.loop31-anchor.json",
+      "sha256": "dc75693856be3a069e04dae316b70a4faf9bbe071ebb07f1d26dc90f88cc99fb",
+      "scope_count": 72,
+      "ledger_path": "claim-ledger.loop31-anchor.json",
+      "ledger_sha256": "11aa2d36135eea81dd51675c18d0879829b86f53997bfab7f44d61a85b38868b"
+    },
+    "loop32": {
+      "path": "scope-registry.loop32-anchor.json",
+      "sha256": "dc75693856be3a069e04dae316b70a4faf9bbe071ebb07f1d26dc90f88cc99fb",
+      "scope_count": 72,
+      "ledger_path": "claim-ledger.loop32-anchor.json",
+      "ledger_sha256": "e51afeef016562b43bb6e028c13176e62e9678caa629e641623bc34989e077b3"
+    },
+    "loop33": {
+      "path": "scope-registry.loop33-anchor.json",
+      "sha256": "9a9074a5aa1fb169db3fdd411d3c2f701c2a5bc851da741a8396d3c4b11e470a",
+      "scope_count": 72,
+      "ledger_path": "claim-ledger.loop33-anchor.json",
+      "ledger_sha256": "9f530083b3754b1d565342aaa1306a75433bc7067f133ee7ad9077599840c3f2"
     }
   }
 }

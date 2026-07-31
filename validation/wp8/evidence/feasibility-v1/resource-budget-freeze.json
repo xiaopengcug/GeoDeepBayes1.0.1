@@ -1,0 +1,121 @@
+{
+  "schema_version": "wp8-development-resource-freeze-v1",
+  "source_sha256_required": "protected by the enclosing WP8 evidence manifest",
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "logical_cpu_count": 16
+  },
+  "cross_method_ranking_forbidden": true,
+  "formal_wp8_1_evidence": false,
+  "methods": {
+    "gravity": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 38500,
+      "maximum_elapsed_ns": 134500,
+      "maximum_observed_n_param": 343,
+      "maximum_observed_n_data": 1,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "magnetic": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 33800,
+      "maximum_elapsed_ns": 174100,
+      "maximum_observed_n_param": 1029,
+      "maximum_observed_n_data": 1,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "dc": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 1061000,
+      "maximum_elapsed_ns": 5872800,
+      "maximum_observed_n_param": 343,
+      "maximum_observed_n_data": 1,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "tdip": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 921800,
+      "maximum_elapsed_ns": 7489300,
+      "maximum_observed_n_param": 343,
+      "maximum_observed_n_data": 2,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "sip_fdip": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 10000,
+      "maximum_elapsed_ns": 83100,
+      "maximum_observed_n_param": 4,
+      "maximum_observed_n_data": 7,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "tem": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 1344400,
+      "maximum_elapsed_ns": 7404200,
+      "maximum_observed_n_param": 6,
+      "maximum_observed_n_data": 7,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "mt_amt": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 57600,
+      "maximum_elapsed_ns": 142400,
+      "maximum_observed_n_param": 6,
+      "maximum_observed_n_data": 7,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "csamt": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 3417100,
+      "maximum_elapsed_ns": 161380400,
+      "maximum_observed_n_param": 343,
+      "maximum_observed_n_data": 2,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    },
+    "wfem": {
+      "measurement": "perf_counter_ns wall time",
+      "record_count": 25,
+      "minimum_elapsed_ns": 3346100,
+      "maximum_elapsed_ns": 164522400,
+      "maximum_observed_n_param": 343,
+      "maximum_observed_n_data": 2,
+      "peak_memory_bytes": null,
+      "formal_field_scale_extrapolation": null,
+      "status": "blocked",
+      "reason": "development wall time is measured, but peak memory and formal field scale were not measured"
+    }
+  }
+}

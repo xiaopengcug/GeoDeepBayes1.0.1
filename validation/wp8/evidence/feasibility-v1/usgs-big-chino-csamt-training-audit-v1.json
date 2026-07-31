@@ -1,0 +1,316 @@
+{
+  "schema_version": "wp8-usgs-big-chino-csamt-training-audit-v1",
+  "design_sha256": "e0b560c5213ec38aebe5e20559977303f58e0381201a79f463d6a8c968893599",
+  "sources": {
+    "doi": "10.5066/P9KGKWNL",
+    "license": "US Government public domain",
+    "raw_sha256": "828ab1bcc745fb10abcb32e66785117bfc877dfefd2407a4be2e8444b42b801a",
+    "inversion_sha256": "325fc3d3d9884eb3fa48a7fc1a906f48665ef2d3b82337f13a0574421be37373",
+    "report_sha256": "1572cd97165d62c3c3e2d9daf5df601e4f81b75d576edf703604a6186ea86841"
+  },
+  "partition": {
+    "training_lines": [
+      "CG",
+      "CH",
+      "EW2",
+      "FMW",
+      "NS1",
+      "NS3"
+    ],
+    "sealed_test_lines": [
+      "AX",
+      "EW1",
+      "EW3",
+      "FM",
+      "FME",
+      "GS16",
+      "GS6",
+      "GS8",
+      "K1",
+      "NS2",
+      "NS4",
+      "NS5",
+      "WC",
+      "WCN",
+      "WR"
+    ],
+    "test_response_members_opened": 0
+  },
+  "training_observation_contract": {
+    "components": [
+      "Ex",
+      "Hy"
+    ],
+    "frequencies_hz": [
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      32.0,
+      64.0,
+      128.0,
+      256.0,
+      512.0,
+      1024.0,
+      2048.0,
+      4096.0,
+      8192.0
+    ],
+    "frequency_count": 17,
+    "transmitter_currents_a": [
+      3.0,
+      3.4,
+      3.5,
+      3.6,
+      3.8,
+      4.0,
+      4.1,
+      4.3,
+      4.4,
+      4.5,
+      4.6,
+      4.75,
+      5.9,
+      6.0,
+      6.8,
+      6.9,
+      7.0,
+      7.2,
+      7.5,
+      7.6,
+      7.7,
+      7.8,
+      7.9,
+      8.0,
+      8.1,
+      8.2,
+      8.4,
+      9.4,
+      9.5,
+      9.7,
+      9.8,
+      10.13,
+      10.4,
+      10.5,
+      10.6,
+      10.7,
+      10.8,
+      11.2,
+      11.3,
+      11.4,
+      11.5,
+      11.6,
+      11.7,
+      11.8,
+      11.9,
+      12.0,
+      12.2,
+      12.3,
+      12.4,
+      12.5,
+      12.6,
+      12.8,
+      12.9,
+      13.0,
+      13.2,
+      13.4,
+      13.5,
+      13.6,
+      13.7,
+      13.8,
+      14.0,
+      14.6,
+      14.8,
+      14.9,
+      15.0,
+      15.2,
+      15.3,
+      15.4,
+      15.5,
+      15.7,
+      16.3,
+      16.7,
+      16.9,
+      17.14,
+      18.0,
+      18.5,
+      18.7,
+      18.8,
+      19.0,
+      19.29,
+      19.4,
+      19.5,
+      20.0,
+      20.1,
+      20.33,
+      20.34,
+      20.35,
+      20.36,
+      22.0,
+      23.0,
+      24.0,
+      25.0
+    ],
+    "raw_frequency_acquisition_blocks": 5688,
+    "repeat_measurements_present": true,
+    "line_contracts": {
+      "CG": {
+        "tx_type": "Bipole",
+        "tx_center_grid_m": [
+          357173.0,
+          3871667.0
+        ],
+        "tx_length_m": 1000.0,
+        "tx_azimuth_deg": 45.0,
+        "tx_endpoints_grid_m": [
+          [
+            356819.447,
+            3871313.447
+          ],
+          [
+            357526.553,
+            3872020.553
+          ]
+        ],
+        "receiver_dipole_length_m": 100.0,
+        "receiver_dipole_azimuth_deg": 45.0,
+        "far_field_floor_hz": 8.0,
+        "apparent_resistivity_error_floor": 0.3,
+        "phase_error_floor_deg": 7.1
+      },
+      "CH": {
+        "tx_type": "Bipole",
+        "tx_center_grid_m": [
+          357173.0,
+          3871667.0
+        ],
+        "tx_length_m": 1000.0,
+        "tx_azimuth_deg": 45.0,
+        "tx_endpoints_grid_m": [
+          [
+            356819.447,
+            3871313.447
+          ],
+          [
+            357526.553,
+            3872020.553
+          ]
+        ],
+        "receiver_dipole_length_m": 100.0,
+        "receiver_dipole_azimuth_deg": 45.0,
+        "far_field_floor_hz": 16.0,
+        "apparent_resistivity_error_floor": 0.8,
+        "phase_error_floor_deg": 21.4
+      },
+      "EW2": {
+        "tx_type": "Bipole",
+        "tx_center_grid_m": [
+          368629.0,
+          3871035.0
+        ],
+        "tx_length_m": 1000.0,
+        "tx_azimuth_deg": 90.0,
+        "tx_endpoints_grid_m": [
+          [
+            368129.0,
+            3871035.0
+          ],
+          [
+            369129.0,
+            3871035.0
+          ]
+        ],
+        "receiver_dipole_length_m": 100.0,
+        "receiver_dipole_azimuth_deg": 90.0,
+        "far_field_floor_hz": 64.0,
+        "apparent_resistivity_error_floor": 1.7,
+        "phase_error_floor_deg": 3.7
+      },
+      "FMW": {
+        "tx_type": "Bipole",
+        "tx_center_grid_m": [
+          366807.0,
+          3865398.0
+        ],
+        "tx_length_m": 1000.0,
+        "tx_azimuth_deg": 40.0,
+        "tx_endpoints_grid_m": [
+          [
+            366485.606,
+            3865014.978
+          ],
+          [
+            367128.394,
+            3865781.022
+          ]
+        ],
+        "receiver_dipole_length_m": 100.0,
+        "receiver_dipole_azimuth_deg": 40.0,
+        "far_field_floor_hz": 16.0,
+        "apparent_resistivity_error_floor": 0.2,
+        "phase_error_floor_deg": 8.4
+      },
+      "NS1": {
+        "tx_type": "Bipole",
+        "tx_center_grid_m": [
+          377831.0,
+          3865721.0
+        ],
+        "tx_length_m": 1000.0,
+        "tx_azimuth_deg": 173.0,
+        "tx_endpoints_grid_m": [
+          [
+            377770.065,
+            3866217.273
+          ],
+          [
+            377891.935,
+            3865224.727
+          ]
+        ],
+        "receiver_dipole_length_m": 100.0,
+        "receiver_dipole_azimuth_deg": 173.0,
+        "far_field_floor_hz": 64.0,
+        "apparent_resistivity_error_floor": 2.4,
+        "phase_error_floor_deg": 2.1
+      },
+      "NS3": {
+        "tx_type": "Bipole",
+        "tx_center_grid_m": [
+          377890.0,
+          3863510.0
+        ],
+        "tx_length_m": 1000.0,
+        "tx_azimuth_deg": 173.0,
+        "tx_endpoints_grid_m": [
+          [
+            377829.065,
+            3864006.273
+          ],
+          [
+            377950.935,
+            3863013.727
+          ]
+        ],
+        "receiver_dipole_length_m": 50.0,
+        "receiver_dipole_azimuth_deg": 173.0,
+        "far_field_floor_hz": 64.0,
+        "apparent_resistivity_error_floor": 1.9,
+        "phase_error_floor_deg": 3.2
+      }
+    },
+    "finite_source_geometry_complete": true,
+    "uncertainty_contract": "training raw repeats plus SCS2D ARerrFloor and ZPerrFloor; retain joint complex-field covariance"
+  },
+  "gate_assessment": {
+    "canonical_observation_contract_passes": true,
+    "cluster_gate_passes": true,
+    "sealed_independent_test_clusters": 257,
+    "power_gate_passes": false,
+    "power_note": "The 257-cluster population is adequate for the fixed coverage-equivalence requirement, but paired-CRPS effect power still requires both frozen inference methods on training clusters."
+  }
+}

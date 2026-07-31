@@ -1,0 +1,250 @@
+{
+  "schema_version": "wp8-ncei-project-magnet-design-v1",
+  "created_utc": "2026-07-25T00:00:00Z",
+  "catalogue_url": "https://www.ncei.noaa.gov/products/airborne-magnetic-data",
+  "catalogue_sha256": "1116c123383952efd4871025d10c30d50872e249259109125dfdc900ec0d3a4a",
+  "licence_basis": {
+    "catalogue_record": "https://catalog.data.gov/dataset/airborne-magnetic-trackline-database",
+    "licence": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "description": "NOAA/NCEI Airborne Magnetic Trackline Database public-domain archive"
+  },
+  "split_salt": "wp8-ncei-project-magnet-high-alt-v1-2026-07-25",
+  "selection_contract": {
+    "project_exact": "Project Magnet High-Altitude World",
+    "candidate_nominal_altitude_contains": "25,000 FT AG",
+    "training_exception": "PM-HI-ALT-WORLD-C32-051",
+    "test_response_fields_must_not_be_displayed_or_summarized_during_geometry_audit": true,
+    "spatial_cluster_minimum_separation_km": 120.0,
+    "minimum_sealed_test_clusters": 223
+  },
+  "counts": {
+    "catalogue_project_surveys": 22,
+    "training_exposed_surveys": 1,
+    "sealed_test_candidate_surveys": 16,
+    "excluded_ineligible_surveys": 5
+  },
+  "records": [
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-051",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1989",
+      "end_year": "1989",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-051/pm-hi-alt-world-c32-051.zip",
+      "role": "training_exposed",
+      "role_hash_sha256": "27585cea78b5773a183f317404b4d05227f592a698430020ef05b935d9b11e2c"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-052",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1990",
+      "end_year": "1990",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-052/pm-hi-alt-world-c32-052.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "537362908d1f2ceabd025fd8e3645578a5666a8f21f553108ceef355085e4fe4"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-053",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1990",
+      "end_year": "1990",
+      "nominal_altitude": "25,000 FT AG; 500 FT Barometric (flt9555)",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-053/pm-hi-alt-world-c32-053.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "3097f93a3e479df4f2383ba207c817e7277341cef33b33b294ecb605fc69fe3f"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-054",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1990",
+      "end_year": "1990",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-054/pm-hi-alt-world-c32-054.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "c91bb7f7d8258d230d7c2ab0ad01ed11fd6e75ec54b6af175de3981091ca2569"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-753",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1987",
+      "end_year": "1987",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-753/pm-hi-alt-world-c32-753.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "bcc975e51d3cfca7eadf4eb33c2790b6b80fb89f8835a9098a6df71ab936cc80"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-754",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1987",
+      "end_year": "1987",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-754/pm-hi-alt-world-c32-754.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "623bdd4769c3eeb6a4a0cf10ee6fd69dba0f957282f3b26082950d64eb6d0739"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-851",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1987",
+      "end_year": "1987",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-851/pm-hi-alt-world-c32-851.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "8505586d741350d2412aeab3503c7ae8d3b43aac17f0caf0d73a5666c8162699"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-852",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1988",
+      "end_year": "1988",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-852/pm-hi-alt-world-c32-852.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "b861b5b58f26d1d5fa05d54bbe27ad461391f33ac7add8f7c47a2c61575e9a8e"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-853",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1988",
+      "end_year": "1988",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-853/pm-hi-alt-world-c32-853.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "ba600527f17ba18b2dfd0910db95587fbf1aec7f169c14b5513edb744d6abbe0"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-854",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1988",
+      "end_year": "1988",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-854/pm-hi-alt-world-c32-854.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "4547e9f524d37f41d5dbeff5f5760bb79f502effccd37da93db69f4bd998b332"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-951",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1988",
+      "end_year": "1988",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-951/pm-hi-alt-world-c32-951.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "761a6c4d5eb3b23a950c807a260531826f748bd91743918650a45183151453fa"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-953",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1989",
+      "end_year": "1989",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-953/pm-hi-alt-world-c32-953.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "a88613e08f2282c84806b2108c92cfc6353ad7ee3c9bf24b118df1342d7a4b51"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-C32-954",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1989",
+      "end_year": "1989",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-c32-954/pm-hi-alt-world-c32-954.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "fab62e68492b3aed55df7cd952e29e949f7dc6d208b8781dc028c051ca833e4e"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-D32-352",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1993",
+      "end_year": "1993",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-d32-352/pm-hi-alt-world-d32-352.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "d6c94900e2f368509fd9e8f39ee94c3c818f9303b96b3a69501cc8c40110f294"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-D32-353",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1993",
+      "end_year": "1993",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-d32-353/pm-hi-alt-world-d32-353.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "b0560e9d57147d81df6da31f159cfde5052388ececfa950f03c1888e8bfab1b2"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-D32-451",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1993",
+      "end_year": "1993",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-d32-451/pm-hi-alt-world-d32-451.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "ec11bb057d2d5536710145eaee017ef25a0209cb86df5af91ca603079d525ee8"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-D32-452",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1994",
+      "end_year": "1994",
+      "nominal_altitude": "25,000 FT AG",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-d32-452/pm-hi-alt-world-d32-452.zip",
+      "role": "sealed_test_candidate",
+      "role_hash_sha256": "b48ff90222a5f0ed6c24bdbed4db3ee6a916cb6e346aa0d49370ae9fa371ea0a"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-NC-121K",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1962",
+      "end_year": "1967",
+      "nominal_altitude": "",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-nc-121k/pm-hi-alt-world-nc-121k.zip",
+      "role": "excluded_ineligible",
+      "role_hash_sha256": "083e7a9d5898727981a40ad324573932a9eef6e51c75b9fb5d28d1bc3813dc69"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-NC-54R",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1966",
+      "end_year": "1966",
+      "nominal_altitude": "",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-nc-54r/pm-hi-alt-world-nc-54r.zip",
+      "role": "excluded_ineligible",
+      "role_hash_sha256": "364ee4c4ea6c97988f4ca3864c7dba6ddc2b744eb449247fb000fe5dfdf26664"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-P2V-2",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1953",
+      "end_year": "1954",
+      "nominal_altitude": "",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-p2v-2/pm-hi-alt-world-p2v-2.zip",
+      "role": "excluded_ineligible",
+      "role_hash_sha256": "4f6e2d6a792881ff157f64ad8de3ca3370ad4071b031b0fe980daccd165d2099"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-R5D-4",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1955",
+      "end_year": "1963",
+      "nominal_altitude": "",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-r5d-4/pm-hi-alt-world-r5d-4.zip",
+      "role": "excluded_ineligible",
+      "role_hash_sha256": "6be9d52c156293e6693cab65d9952ddbc33d16a13868b7e51b77d2cd23d3c0a4"
+    },
+    {
+      "survey_id": "PM-HI-ALT-WORLD-WV-2",
+      "project": "Project Magnet High-Altitude World",
+      "start_year": "1958",
+      "end_year": "1960",
+      "nominal_altitude": "",
+      "survey_zip_url": "https://www.ngdc.noaa.gov/mgg/trk/aeromag/proj_mag_hi-alt_world/pm-hi-alt-world-wv-2/pm-hi-alt-world-wv-2.zip",
+      "role": "excluded_ineligible",
+      "role_hash_sha256": "86c235abfe00699808b4a2d65c2883eaf622f402f2c7e0174f2f61455332614b"
+    }
+  ],
+  "response_values_interpreted_during_selection": 0,
+  "test_unseal_count": 0
+}

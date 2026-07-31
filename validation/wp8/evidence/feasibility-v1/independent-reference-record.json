@@ -1,0 +1,69 @@
+{
+  "schema_version": "wp8-independent-reference-record-v1",
+  "formal_wp8_1_evidence": false,
+  "methods": {
+    "gravity": {
+      "type": "SimPEG analytic-integral regression",
+      "test": "tests/forward/test_interface_and_vector.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "magnetic": {
+      "type": "SimPEG vector-integral regression",
+      "test": "tests/forward/test_interface_and_vector.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "dc": {
+      "type": "homogeneous half-space analytic reference",
+      "test": "tests/forward/test_static_operators.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "tdip": {
+      "type": "independent pulse-decay construction plus derivative checks",
+      "test": "tests/forward/test_static_operators.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "sip_fdip": {
+      "type": "Cole-Cole homogeneous half-space analytic reference",
+      "test": "tests/forward/test_static_operators.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "tem": {
+      "type": "independent digital-linear-filter refinement",
+      "test": "tests/forward/test_em1d.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "mt_amt": {
+      "type": "layered-earth analytic impedance reference",
+      "test": "tests/forward/test_em1d.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "csamt": {
+      "type": "Geoana finite-wire Ex reference",
+      "test": "tests/forward/test_controlled_source.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    },
+    "wfem": {
+      "type": "independent mesh-discretization refinement",
+      "test": "tests/forward/test_controlled_source.py",
+      "test_exists": true,
+      "status": "candidate",
+      "reason": "registered development reference; formal readiness still requires protected test output and field-scale applicability"
+    }
+  }
+}

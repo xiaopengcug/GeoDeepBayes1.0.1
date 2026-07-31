@@ -1,0 +1,66 @@
+{
+  "schema_version": "wp8-usgs-tallahatchie-tem-coordinate-audit-v1",
+  "audit_mode": "training_and_response_blind_sealed_candidate",
+  "doi": "10.5066/P9E5JBAF",
+  "license": "US-public-domain",
+  "system": "Aarhus tTEM/FloaTEM dual-moment TEM",
+  "training_source": {
+    "sciencebase_item": "5ed54a4082ce2832f047ef89",
+    "title": "Towed transient electromagnetic (tTEM) surveys adjacent to the Tallahatchie River near Shellmound, Mississippi",
+    "archive": "validation/wp8/data/usgs-tallahatchie-ttem/MS-tTEM.zip",
+    "archive_size_bytes": 6052598,
+    "archive_sha256": "e34216cf4b8c8a9311744303cbac3e6f1e57c0a2b8c533e57f9e4c06410c4ace",
+    "average_rows": 3031,
+    "unique_positions": 1521,
+    "unique_lines": 41,
+    "designation": "training",
+    "reason": "Two response rows were inspected during format reconnaissance, so the complete source is permanently training-only."
+  },
+  "sealed_candidate": {
+    "sciencebase_item": "5ed549fc82ce2832f047ef83",
+    "title": "Floating transient electromagnetic (FloaTEM) surveys in the Tallahatchie River near Shellmound, Mississippi",
+    "archive": "validation/wp8/data/usgs-tallahatchie-floatem-sealed/MS-FloaTEM.zip",
+    "archive_size_bytes": 6289991,
+    "archive_sha256": "5ff9d5778c11dc75e9dc7cb1dbeff315bcfa6432aa2697bdbdc08eaf8ef4a870",
+    "coordinate_source_member": "20181017_ShellmoundMS_FloaTEM_ALL_LINES_AVERAGED.csv",
+    "rows": 8110,
+    "unique_positions": 4056,
+    "unique_lines": 3,
+    "coordinate_fields_read": [
+      "TIMESTAMP",
+      "LINE_NO",
+      "UTMX",
+      "UTMY"
+    ],
+    "packing_strictly_greater_than_range_m": {
+      "25": 654,
+      "50": 322,
+      "75": 223,
+      "100": 172,
+      "150": 115,
+      "200": 86,
+      "250": 71
+    },
+    "response_columns_interpreted": 0,
+    "test_unseal_count": 0
+  },
+  "transmitter_loop_m": [
+    4,
+    2
+  ],
+  "receiver_loop_m": [
+    0.5,
+    0.5
+  ],
+  "receiver_effective_area_m2": 35,
+  "receiver_offset_behind_transmitter_m": 7,
+  "dual_current_approx_a": [
+    3,
+    30
+  ],
+  "required_test_clusters": 223,
+  "current_decision": "promising_pending_training_only_correlation_and_power",
+  "cluster_gate_passes": false,
+  "power_gate_passes": false,
+  "reason": "The sealed source provides exactly 223 response-blind positions at a strict 75 m packing range, but the range is not yet justified. A correlation range and prospective CRPS requirement must first be frozen using only the separate training tTEM source."
+}

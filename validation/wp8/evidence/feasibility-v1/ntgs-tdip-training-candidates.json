@@ -1,0 +1,43 @@
+{
+  "schema_version": "wp8-ntgs-tdip-training-candidates-audit-v1",
+  "raw_manifest_sha256": "f0bafe20ecae38ec5b24ef7b216e7e676247821caddf895cce891f6977fa245d",
+  "repository_access": {
+    "publicly_downloadable": true,
+    "statutory_open_file_reports": true,
+    "explicit_reuse_license_on_item_pages": false,
+    "formal_license_gate_passes": false
+  },
+  "kroda_2018": {
+    "report_id": "CR2018-0418",
+    "survey_count": 1,
+    "line_file_count": 4,
+    "observation_row_count": 8579,
+    "acquisition_date_count": 4,
+    "all_files_have_contract_fields": true,
+    "window_count": 20,
+    "window_widths_ms_present": true,
+    "integral_range_ms": [
+      590,
+      1540
+    ]
+  },
+  "arunta_2024": {
+    "report_id": "CR2024-0690",
+    "survey_count": 1,
+    "raw_gdd_file_count": 15,
+    "processed_esf_line_count": 14,
+    "raw_acquisition_date_count": 15,
+    "all_raw_files_have_contract_fields": true,
+    "all_esf_files_have_geometry_windows_and_sd": true,
+    "window_count": 20,
+    "delay_ms": 40
+  },
+  "independent_survey_upper_bound": 2,
+  "minimum_required_independent_clusters": 223,
+  "formal_observation_contract_ready": false,
+  "formal_cluster_power_gate_passes": false,
+  "selection_role": "training_candidates_only",
+  "formal_test_endpoints_inspected": false,
+  "test_unseal_count": 0,
+  "conclusion": "Both payloads expose unusually complete TDIP geometry, 20-window decay, current, primary-voltage, stacking and error/repeatability fields. They are only two campaigns, and GEMIS item pages do not declare a reusable license for these company-submitted statutory reports. They therefore remain training candidates and contribute no formal clusters."
+}

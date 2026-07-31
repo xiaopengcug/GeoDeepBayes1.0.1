@@ -1,0 +1,39 @@
+{
+  "schema_version": "wp8-usgs-sevier-csamt-public-candidate-v1",
+  "doi": "10.5066/P9QF9PFR",
+  "science_data_catalog_id": "USGS:5f320e3582cee144fb2ead2e",
+  "sciencebase_item_id": "5f320e3582cee144fb2ead2e",
+  "title": "Controlled source audio-frequency magnetotellurics (CSAMT) data from the Sevier fault near Red Knoll, Kane County, Utah - Raw Data (ver 2.0, July 2022)",
+  "license": "US Government public domain",
+  "access_level": "public",
+  "acquisition_dates": [
+    "2020-05-25",
+    "2021-01-23"
+  ],
+  "instrument_contract": {
+    "transmitter": "GGT-30",
+    "receiver": "GDP32-II",
+    "raw_format": "one text file per survey line",
+    "station_coordinates_declared_in_separate_child_release": true,
+    "report_source_dipole_length_m": 1000
+  },
+  "sciencebase_file_inventory": {
+    "name": "Sevier_Fault_CSAMT_RawData_2.0.zip",
+    "declared_bytes": 283450,
+    "declared_md5": "b219f6e62627772b020bb35d87be6211",
+    "published_flag": false,
+    "anonymous_download_http_status_observed": 404
+  },
+  "payload_acquisition": {
+    "downloaded": false,
+    "reason": "The current USGS catalog still declares the release public, but the ScienceBase file endpoint returned HTTP 404 on 2026-07-25.",
+    "raw_response_values_interpreted": 0,
+    "test_response_values_interpreted": 0
+  },
+  "formal_assessment": {
+    "observation_contract_ready": false,
+    "cluster_gate_ready": false,
+    "power_gate_ready": false,
+    "reason": "The anonymous payload could not be acquired, and the public metadata does not establish exact transmitter endpoints, orientation, waveform samples, or per-observation uncertainty."
+  }
+}

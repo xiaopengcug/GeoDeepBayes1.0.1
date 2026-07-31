@@ -1,0 +1,127 @@
+{
+  "schema_version": "wp8-mountain-pass-magnetic-design-split-v1",
+  "created_before_response_interpretation": true,
+  "source": {
+    "path": "_bmad-output/planning-artifacts/research/open-data/magnetic/USGS_MountainPass_airborne_magnetic_2020/Magnetic_Data.csv",
+    "sha256": "361245a2e779131e93f3d5aa5e9429b14d9d40199d108c1d21d1e2c7b6d72ad8",
+    "bytes": 22159880
+  },
+  "design_contract": {
+    "parsed_fields": [
+      "ALT_RADAR",
+      "Bearing",
+      "Date",
+      "Easting",
+      "FID",
+      "Flight",
+      "GPSZ",
+      "Line",
+      "Latitude",
+      "Longitude",
+      "Northing"
+    ],
+    "response_fields_values_parsed": false,
+    "response_field_names_recorded_only": [
+      "DIURNAL",
+      "DIURNAL_CORR",
+      "DTM",
+      "FX",
+      "FY",
+      "FZ",
+      "IGRF",
+      "mag_comp",
+      "mag_diu",
+      "mag_lag",
+      "mag_raw",
+      "MAG_RMI",
+      "mag_tmi"
+    ],
+    "coordinate_design_sha256": "8a844eb3090b6e24688d55cc1beab7c5ff0a4aa14bb75e042a6dccf5cc685e21",
+    "design_minmax": {
+      "ALT_RADAR": [
+        35.3768730033107,
+        198.463649130837
+      ],
+      "Bearing": [
+        59.7512855529785,
+        346.179992675781
+      ],
+      "Easting": [
+        628663.764469646,
+        646165.547359702
+      ],
+      "GPSZ": [
+        928.0132,
+        2468.7733
+      ],
+      "Latitude": [
+        35.3665894153,
+        35.5863739354
+      ],
+      "Longitude": [
+        -115.5802385775,
+        -115.390549733
+      ],
+      "Northing": [
+        3914752.56973898,
+        3939104.0191859
+      ]
+    }
+  },
+  "split_rule": {
+    "cell_size_m": 1000.0,
+    "axis": "UTM NAD83 Zone 11 easting",
+    "period_km": 12,
+    "train_stripes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "buffer_stripes": [
+      0,
+      6,
+      9
+    ],
+    "calibration_stripes": [
+      7,
+      8
+    ],
+    "test_stripes": [
+      10,
+      11
+    ],
+    "heldout_separation": "at least one explicit 1-km buffer stripe from training"
+  },
+  "counts": {
+    "train": {
+      "rows": 23661,
+      "lines_touched": 174,
+      "spatial_cells_1km": 113
+    },
+    "buffer": {
+      "rows": 18753,
+      "lines_touched": 184,
+      "spatial_cells_1km": 75
+    },
+    "calibration": {
+      "rows": 13254,
+      "lines_touched": 178,
+      "spatial_cells_1km": 54
+    },
+    "test": {
+      "rows": 11687,
+      "lines_touched": 157,
+      "spatial_cells_1km": 43
+    }
+  },
+  "cell_overlap_counts": {
+    "buffer:train": 0,
+    "buffer:calibration": 0,
+    "buffer:test": 0,
+    "calibration:train": 0,
+    "calibration:test": 0,
+    "test:train": 0
+  }
+}

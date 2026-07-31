@@ -1,0 +1,60 @@
+{
+  "schema_version": "wp8-tdip-path-readiness-v1",
+  "formal_wp8_1_evidence": false,
+  "scope": "WP8-0 path feasibility only",
+  "implementation": {
+    "entrypoint": "geodeepbayes.forward.static.TDIPOperator",
+    "dependency_versions": {
+      "simpeg": "0.25.2",
+      "discretize": "0.12.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pymatsolver": "0.4.0"
+    },
+    "applicable_dimension": "2-D profile represented on a 3-D tensor mesh with scalar isotropic cells",
+    "limitations": [
+      "research-scale SolverLU",
+      "explicit sensitivity matrix from verified Jvec",
+      "no topography, anisotropy, contact impedance or EM-coupling path"
+    ]
+  },
+  "independent_reference": {
+    "kind": "independent pulse-decay construction and three-level mesh discretization",
+    "test_path": "tests/forward/test_static_operators.py",
+    "test_source_sha256": "371bf4f10829926025addc9fff86168949b885084ecdf7edb4861fce72ca53b9",
+    "pytest_exit_code": 0,
+    "passed": true
+  },
+  "resource_measurement": {
+    "kind": "representative development meshes; not formal WP8-1 field-scale evidence",
+    "records": [
+      {
+        "mesh_cells": 27,
+        "data": 2,
+        "wall_time_seconds": 0.056109299999661744,
+        "peak_python_memory_bytes": 105979,
+        "finite": true
+      },
+      {
+        "mesh_cells": 125,
+        "data": 2,
+        "wall_time_seconds": 0.03370139999969979,
+        "peak_python_memory_bytes": 205361,
+        "finite": true
+      },
+      {
+        "mesh_cells": 343,
+        "data": 2,
+        "wall_time_seconds": 0.03626110000004701,
+        "peak_python_memory_bytes": 482727,
+        "finite": true
+      }
+    ],
+    "timeout_seconds": 5.0,
+    "memory_limit_bytes": 67108864,
+    "abort_policy": "reject when measured wall time or peak memory exceeds its frozen limit",
+    "negative_test": "tests/validation/test_wp8_resource_abort.py",
+    "negative_test_source_sha256": "d1788b83dc10ab8a436b82ff5a1b3624f056fcaeeb70fe49ec670d6a1c70d5c1",
+    "passed": true
+  }
+}

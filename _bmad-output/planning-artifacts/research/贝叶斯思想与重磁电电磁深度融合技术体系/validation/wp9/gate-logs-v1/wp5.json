@@ -1,0 +1,19 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "wp5",
+  "argv": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-wp5.ps1"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:27:13.071644+00:00",
+  "ended_at_utc": "2026-07-28T03:27:45.496681+00:00",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "\u001b[31;1mException: \u001b[0m.\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-wp5.ps1:7\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m   7 | \u001b[0m … ion Req($c,[string]$m){if(-not$c){\u001b[36;1mthrow \"WP5 validation failed: $m\"\u001b[0m}}\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m     | \u001b[31;1m                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mWP5 validation failed: root drift ACTIVE_MANIFEST\u001b[0m\n",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "4fb9c68318aba148430298a222fe2a571704b6a1482a0baa53c332f5af79cb65"
+}

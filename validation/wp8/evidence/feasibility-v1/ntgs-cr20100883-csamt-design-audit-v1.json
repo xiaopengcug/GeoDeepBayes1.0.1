@@ -1,0 +1,181 @@
+{
+  "schema_version": "wp8-ntgs-cr20100883-csamt-design-audit-v1",
+  "audit_date": "2026-07-25",
+  "source_landing_page": "https://geoscience.nt.gov.au/gemis/ntgsjspui/handle/1/90121",
+  "archive_path": "validation/wp8/data/ntgs-cr2010-0883-v1/CR20100883AC.zip",
+  "archive_bytes": 2579440118,
+  "archive_sha256": "8667d4b7c95eafe82d560c729641d29de0e45ca76500905a3e7284cd36a4b03d",
+  "inventory_path": "validation/wp8/evidence/feasibility-v1/ntgs-cr20100883-response-blind-inventory-v1.json",
+  "inventory_sha256": "dcc0b23472f7fe78a87f0ef26c255ca6159a6e86916df37504fe377ad70a1392",
+  "response_payload_members_opened": 0,
+  "test_response_members_opened": 0,
+  "geometry_members_opened": 10,
+  "survey_year": 2009,
+  "survey_line_count": 5,
+  "published_sounding_count": 111,
+  "published_line_km": 11.1,
+  "frequency_range_hz": [
+    4,
+    8192
+  ],
+  "receiver_spacing_m": 100,
+  "transmitter_type": "grounded bipole",
+  "transmitter_geometry_unambiguous_line_count": 4,
+  "sampled_transmitter_waveform_present": false,
+  "lines": {
+    "Hermitage-1000": {
+      "mde_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Hermitage-RisingStar/CSAMT/1000/L1000-cs.mde",
+      "mde_bytes": 860,
+      "mde_sha256": "a7a5b197c35ea70c042d7631358c895863f7e6f54c779ae434ada952f7c35b9e",
+      "stn_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Hermitage-RisingStar/CSAMT/1000/L1000.utm.stn",
+      "stn_bytes": 782,
+      "stn_sha256": "fa5e2306f1bf285df5e6c3fafa2ccddb1777125e0391342f63fe94e27554941c",
+      "station_coordinate_row_count": 20,
+      "published_sounding_count": 20,
+      "transmitter_center_mga_zone_53": [
+        412500.0,
+        7864812.0
+      ],
+      "transmitter_azimuth_values_deg": [
+        162.0
+      ],
+      "transmitter_length_values_m": [
+        1500.0
+      ],
+      "transmitter_geometry_unambiguous": true,
+      "derived_transmitter_endpoints_mga_zone_53": [
+        [
+          412268.237,
+          7865525.292
+        ],
+        [
+          412731.763,
+          7864098.708
+        ]
+      ]
+    },
+    "Rising-Star-2000": {
+      "mde_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Hermitage-RisingStar/CSAMT/2000/L2000-cs.mde",
+      "mde_bytes": 880,
+      "mde_sha256": "2e81e031db5fb5b91c30fe59a1757ee07c75f804dbcbb5eab6e171edd5e247dd",
+      "stn_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Hermitage-RisingStar/CSAMT/2000/L2000.utm.stn",
+      "stn_bytes": 818,
+      "stn_sha256": "348f10064a6aaed422c9e52580924ec22f7eb52cabc23703a608246701b828b0",
+      "station_coordinate_row_count": 21,
+      "published_sounding_count": 21,
+      "transmitter_center_mga_zone_53": [
+        412500.0,
+        7864812.0
+      ],
+      "transmitter_azimuth_values_deg": [
+        162.0
+      ],
+      "transmitter_length_values_m": [
+        1500.0
+      ],
+      "transmitter_geometry_unambiguous": true,
+      "derived_transmitter_endpoints_mga_zone_53": [
+        [
+          412268.237,
+          7865525.292
+        ],
+        [
+          412731.763,
+          7864098.708
+        ]
+      ]
+    },
+    "Rising-Star-3000": {
+      "mde_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Hermitage-RisingStar/CSAMT/3000/L3000-cs.mde",
+      "mde_bytes": 842,
+      "mde_sha256": "f28d59c28797dba2f37ae086d8dc563f7155b4df6043f9e427466555f657b5ae",
+      "stn_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Hermitage-RisingStar/CSAMT/3000/L3000.utm.stn",
+      "stn_bytes": 766,
+      "stn_sha256": "f55636fca4055108665088c4588c92294e05f44f15a90e6037c6333c218af566",
+      "station_coordinate_row_count": 20,
+      "published_sounding_count": 20,
+      "transmitter_center_mga_zone_53": [
+        412500.0,
+        7864812.0
+      ],
+      "transmitter_azimuth_values_deg": [
+        162.0
+      ],
+      "transmitter_length_values_m": [
+        1500.0
+      ],
+      "transmitter_geometry_unambiguous": true,
+      "derived_transmitter_endpoints_mga_zone_53": [
+        [
+          412268.237,
+          7865525.292
+        ],
+        [
+          412731.763,
+          7864098.708
+        ]
+      ]
+    },
+    "Trinity-L34": {
+      "mde_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Trinity/CSAMT/L34/L34.mde",
+      "mde_bytes": 856,
+      "mde_sha256": "22c9abdddf27280727600355e56455af293997dd51d4683df8098c1c21d46e99",
+      "stn_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Trinity/CSAMT/L34/L34.utm.stn",
+      "stn_bytes": 1019,
+      "stn_sha256": "ea5d03a9796627f1e109955d8c8e1ff29f5a271b55b7c90aca3d3c0689d4972b",
+      "station_coordinate_row_count": 26,
+      "published_sounding_count": 25,
+      "transmitter_center_mga_zone_53": [
+        391600.0,
+        7830800.0
+      ],
+      "transmitter_azimuth_values_deg": [
+        -134.6
+      ],
+      "transmitter_length_values_m": [
+        1500.0
+      ],
+      "transmitter_geometry_unambiguous": true,
+      "derived_transmitter_endpoints_mga_zone_53": [
+        [
+          392134.02,
+          7831326.615
+        ],
+        [
+          391065.98,
+          7830273.385
+        ]
+      ]
+    },
+    "Trinity-L35": {
+      "mde_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Trinity/CSAMT/L35/L35.mde",
+      "mde_bytes": 1095,
+      "mde_sha256": "0c7a029cebd54a4727c5952228a75d105b0f3bcad2f81850ac85a32ad4d99028",
+      "stn_member": "geophysics/Geophysics/Original/Electrical_Geophysics/2009/Processed_Data/Trinity/CSAMT/L35/L35.utm.stn",
+      "stn_bytes": 1023,
+      "stn_sha256": "065a1020cd18513b51bd0b7842237c3310d01758adaeeac3b656d6baf49fe875",
+      "station_coordinate_row_count": 26,
+      "published_sounding_count": 25,
+      "transmitter_center_mga_zone_53": [
+        391600.0,
+        7830800.0
+      ],
+      "transmitter_azimuth_values_deg": [
+        90.0,
+        138.0,
+        140.0
+      ],
+      "transmitter_length_values_m": [
+        945.0
+      ],
+      "transmitter_geometry_unambiguous": false,
+      "derived_transmitter_endpoints_mga_zone_53": null
+    }
+  },
+  "independent_cluster_upper_bound": 111,
+  "minimum_independent_test_clusters": 223,
+  "observation_contract_ready": false,
+  "cluster_gate_passes": false,
+  "power_gate_passes": false,
+  "reason": "Geometry-only MDE/STN parsing establishes five coordinate-bearing CSAMT lines and 111 published soundings. Four lines have a unique source center, azimuth and length from which endpoints are derivable; Trinity L35 contains conflicting azimuths and a 945 m length inconsistent with the 1500 m logistics-report description. No sampled transmitter waveform is published, and the absolute sounding upper bound remains below 223."
+}

@@ -1,0 +1,595 @@
+{
+  "schema_version": "wp8-geodata-cn-locked-methods-metadata-audit-v1",
+  "audit_scope": "catalogue_access_contract_and_public_documents_only",
+  "formal_test_responses_opened": 0,
+  "test_unseal_count": 0,
+  "records": [
+    {
+      "id": "sichuan-central-wfem-2017",
+      "method": "wfem",
+      "guid": "37412589003507",
+      "doi": "10.12041/geodata.37412589003507.ver1.db",
+      "title": "四川盆地川中地区广域电磁法试验数据集（2017年）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=37412589003507",
+      "catalogue_entity_bytes": 556888,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/sichuan-central-wfem-2017.docx",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 38243,
+      "public_document_sha256": "212fe85eda86e18f395d990b504445569a8bc03a9d00880f5d5e11e1ad37ad29",
+      "description": "四川盆地川中地区使用广域电磁发送机GY-200激发伪随机信号，广域电磁接收机JSGY-2（48道）采集对广域电磁法原始数据及相应的测量数据。",
+      "quality": "使用广域电磁发送机GY-200激发伪随机信号，采集使用广域电磁接收机JSGY-2（48道）。施工过程中严格执行DB43/T 1460-2018 《广域电磁法技术规程》、SY/T 5171-2011 《陆上石油物探测量规程》等相关标准。",
+      "response_entity_opened": false,
+      "documented_fields": {
+        "station": true,
+        "frequency": true,
+        "source_current": true,
+        "electric_field": true,
+        "relative_error": true,
+        "apparent_resistivity": true,
+        "receiver_coordinates": true
+      },
+      "transmitter": "GY-200",
+      "receiver": "JSGY-2 (48 channels)",
+      "pseudo_random_source_documented": true,
+      "sampled_transmitter_waveform_public": false,
+      "source_endpoint_coordinates_public": false,
+      "station_count_public": null,
+      "formal_observation_contract_ready": false,
+      "cluster_gate_passes": false,
+      "power_gate_passes": false,
+      "decision": "high_value_offline_application_candidate"
+    },
+    {
+      "id": "jiajika-high-power-ip-2018",
+      "method": "tdip_not_sip_fdip",
+      "guid": "85294953740909",
+      "doi": "10.12041/geodata.85294953740909.ver1.db",
+      "title": "甲基卡及其外围大功率激电数据（2018）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=85294953740909",
+      "catalogue_entity_bytes": 1387576,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/jiajika-high-power-ip-2018.docx",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 24425,
+      "public_document_sha256": "1b2163eef5854bd0f5cd6505c009b4800b82487918bc106fa97f3032a21046a6",
+      "description": "大功率激电中梯测量所用仪器选用重庆奔腾数控技术研究所研制的时间域激发极化法测量系统，具体为：激电发射机为：WDFZ-5，附件为整流器、平衡负载，雅马哈汽油发电机；接收机为WDJS-2；测量仪器为中海达公司生产的V90GNSS双星RTK仪器；其它辅助设备有导线、供电源、铜电极、铁电极以及无线电通讯设备等器材。通过实验确定激电中梯测量参数可确定为：周期16s、第一子样宽度40ms、延时150ms；供电极距AB选择为1200m，最大供电电压1200V。激电测量工作施工参照《物化探工程测量规范》（DZ/T0153–2014）和《时间域激发极化法技术规定》（DZ/T0070—2016）有关规定执行。",
+      "quality": "大功率激电中梯测量所用仪器选用重庆奔腾数控技术研究所研制的时间域激发极化法测量系统，具体为：激电发射机为：WDFZ-5，附件为整流器、平衡负载，雅马哈汽油发电机；接收机为WDJS-2；测量仪器为中海达公司生产的V90GNSS双星RTK仪器；其它辅助设备有导线、供电源、铜电极、铁电极以及无线电通讯设备等器材。通过实验确定激电中梯测量参数可确定为：周期16s、第一子样宽度40ms、延时150ms；供电极距AB选择为1200m，最大供电电压1200V。激电测量工作施工参照《物化探工程测量规范》（DZ/T0153–2014）和《时间域激发极化法技术规定》（DZ/T0070—2016）有关规定执行。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "excluded_time_domain_ip"
+    },
+    {
+      "id": "xiangnan-dual-frequency-ip-2018",
+      "method": "dual_frequency_ip",
+      "guid": "95559119370311",
+      "doi": "10.12041/geodata.95559119370311.ver1.db",
+      "title": "湘南试验剖面激电探测数据（2018）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=95559119370311",
+      "catalogue_entity_bytes": 253298,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/xiangnan-dual-frequency-ip-2018.docx",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 134864,
+      "public_document_sha256": "9724f1edbc14b6d61d9bb7d994894de9f75773791f6add4517b80f3f7dcc648d",
+      "description": "包含湘南试验区磁测数据-电阻率和极化率探测数据。数据包括矿区名称、测点编号、测点位置、测量方法、电阻率、极化率等，数据集包含11条记录。",
+      "quality": "激电参数利用中南大学何继善院士发明的双频激电仪进行测量。装置选择为中间梯度法, 中间梯度法是以A、B 为供电电极, M、N 为测量电极, 探测记录点为MN 的中点。双频激电仪测量时选择的频组为2 组, 分别是高频4 Hz 和低频4/13 Hz, 取MN=40 m, 两个连续测点之间的测量距离为20 m, 激电参数选择视幅频率和视电阻率。处理数据时进行平面剖面图或者平面等值线图绘制。数据采集过程中参考《时间域激发极化法技术规程》（DZ/T0070-2016），探测过程中每个测点观测至少三次，遇到跳变点进行复测。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "excluded_two_frequency_ip_not_spectral_population"
+    },
+    {
+      "id": "xiangdongbei-dual-frequency-ip-2018",
+      "method": "dual_frequency_ip",
+      "guid": "73507568835545",
+      "doi": "10.12041/geodata.73507568835545.ver1.db",
+      "title": "湘东北试验剖面激电探测数据（2018）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=73507568835545",
+      "catalogue_entity_bytes": 222659,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/xiangdongbei-dual-frequency-ip-2018.docx",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 119465,
+      "public_document_sha256": "168b6bc8225e032bc94c69c6714c71fd9f5523130807c194c896bebee917e957",
+      "description": "包含湘东北试验剖面磁测数据-电阻率和极化率探测数据。数据包括矿区名称、测点编号、测点位置、测量方法、电阻率、极化率等，数据集包含16条记录。",
+      "quality": "激电参数利用中南大学何继善院士发明的双频激电仪进行测量。装置选择为中间梯度法, 中间梯度法是以A、B 为供电电极, M、N 为测量电极, 探测记录点为MN 的中点。双频激电仪测量时选择的频组为2 组, 分别是高频4 Hz 和低频4/13 Hz, 取MN=40 m, 两个连续测点之间的测量距离为20 m, 激电参数选择视幅频率和视电阻率。处理数据时进行平面剖面图或者平面等值线图绘制。数据采集过程中参考《时间域激发极化法技术规程》（DZ/T0070-2016），探测过程中每个测点观测至少三次，遇到跳变点进行复测。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "excluded_two_frequency_ip_not_spectral_population"
+    },
+    {
+      "id": "laizhou-em-demonstration-2020",
+      "method": "csamt_offline_candidate",
+      "guid": "95277768730770",
+      "doi": "10.12041/geodata.95277768730770.ver1.db",
+      "design": {
+        "survey_area": "Shandong Laizhou",
+        "line_ids": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "total_line_length_km": 15,
+        "csamt_station_spacing_m": 50,
+        "nominal_station_upper_bound": 300,
+        "formats": [
+          "EDI"
+        ]
+      },
+      "title": "山东莱州测区电磁法勘探示范数据（2020）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=95277768730770",
+      "catalogue_entity_bytes": 22350366,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/laizhou-em-demonstration-2020.doc",
+      "catalogue_public_document_rows": 2,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 1006080,
+      "public_document_sha256": "eb6556b1374145a39ce1b011e19b818f61119e9d4eee3c9986bd2c43384a23bf",
+      "description": "202年使用自研电磁仪器在山东莱州测区，进行不同方法的试验取得的数据，包含有大地电磁观测数据，音频大地电磁观测数据，可控源音频大地电磁观测数据，数据格式为EDI",
+      "quality": "通过前期施工单位调研及招标，确定野外施工第三方单位为西北有色物化探总队有限公司，该单位根据勘探示范目标进行实地踏勘并设计施工计划，确定山东莱州测区S1，S2，S3线为示范测线，测线长度15km；于2020年10月到2021年2月在该测线开展自研的发射系EMT70、接收系DRU勘探示范；施工过程严格按照国家电磁法测试行业布设规范，获得质量可靠的数据，专家对原始数据质量进行了验收。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Shandong Laizhou",
+        "line_ids": [
+          "S1",
+          "S2",
+          "S3"
+        ],
+        "total_line_length_km": 15,
+        "csamt_station_spacing_m": 50,
+        "nominal_station_upper_bound": 300,
+        "formats": [
+          "EDI"
+        ]
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "laizhou-em-comparison-2020",
+      "method": "csamt_offline_candidate",
+      "guid": "14839885116687",
+      "doi": "10.12041/geodata.14839885116687.ver1.db",
+      "design": {
+        "survey_area": "Shandong Laizhou",
+        "line_ids": [
+          "C1"
+        ],
+        "total_line_length_km": 8,
+        "csamt_station_spacing_m": 50,
+        "nominal_station_upper_bound": 160,
+        "formats": [
+          "EDI",
+          "AVG"
+        ]
+      },
+      "title": "山东莱州测区电磁法比对试验数据（2020）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=14839885116687",
+      "catalogue_entity_bytes": 16305427,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/laizhou-em-comparison-2020.doc",
+      "catalogue_public_document_rows": 2,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 1009664,
+      "public_document_sha256": "cae4bfed56b24004e59f2fabd570fc77b653e34d9407fbb1aca191c1ddc3fccb",
+      "description": "2020年使用自研电磁仪器与加拿大凤凰仪器在山东莱州测区，进行不同方法的比对试验取得的数据，包含有大地电磁观测数据，音频大地电磁观测数据，可控源音频大地电磁观测数据，数据格式为EDI",
+      "quality": "通过前期施工单位调研及招标，确定野外施工第三方单位为西北有色物化探总队有限公司，该单位根据比对试验目标进行实地踏勘并设计施工计划，确定山东莱州测区C1线为比对测线，测线长度8km；于2020年10月到2021年2月在该测线开展自研的发射系EMT70、接收系DRU与加拿大凤凰公司TXU-30和V8 系统比对试验；施工过程严格按照国家电磁法测试行业布设规范，获得质量可靠的数据，专家对原始数据质量进行了验收。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Shandong Laizhou",
+        "line_ids": [
+          "C1"
+        ],
+        "total_line_length_km": 8,
+        "csamt_station_spacing_m": 50,
+        "nominal_station_upper_bound": 160,
+        "formats": [
+          "EDI",
+          "AVG"
+        ]
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "caosiyao-em-demonstration-2020",
+      "method": "csamt_offline_candidate",
+      "guid": "85425730722323",
+      "doi": "10.12041/geodata.85425730722323.ver1.db",
+      "design": {
+        "survey_area": "Inner Mongolia Caosiyao",
+        "line_ids": [
+          "L1",
+          "L2",
+          "L3"
+        ],
+        "total_line_length_km": 15,
+        "csamt_station_spacing_m": 50,
+        "nominal_station_upper_bound": 300,
+        "formats": [
+          "EDI"
+        ]
+      },
+      "title": "内蒙古曹四夭测区电磁法勘探示范数据（2020）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=85425730722323",
+      "catalogue_entity_bytes": 10822048,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/caosiyao-em-demonstration-2020.doc",
+      "catalogue_public_document_rows": 2,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 2649088,
+      "public_document_sha256": "79e03f1b4037221f7155a5ed689aeb0e723ff753dae64e2961cad03813800ce1",
+      "description": "2020年使用自研电磁仪器在内蒙古曹四夭测区，进行不同方法的试验取得的数据，包含有大地电磁观测数据，音频大地电磁观测数据，可控源音频大地电磁观测数据，数据格式为EDI",
+      "quality": "通过前期施工单位调研及招标，确定野外施工第三方单位为西北有色物化探总队有限公司，该单位根据勘探示范目标进行实地踏勘并设计施工计划，确定内蒙古曹四夭测区L1，L2，L3线为示范测线，测线长度15km；于2020年5月到6月在该测线开展自研的发射系EMT70、接收系DRU勘探示范；施工过程严格按照国家电磁法测试行业布设规范，获得质量可靠的数据，专家对原始数据质量进行了验收。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Inner Mongolia Caosiyao",
+        "line_ids": [
+          "L1",
+          "L2",
+          "L3"
+        ],
+        "total_line_length_km": 15,
+        "csamt_station_spacing_m": 50,
+        "nominal_station_upper_bound": 300,
+        "formats": [
+          "EDI"
+        ]
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "caosiyao-em-comparison-2020",
+      "method": "csamt_offline_candidate",
+      "guid": "35110458226511",
+      "doi": "10.12041/geodata.35110458226511.ver1.db",
+      "design": {
+        "survey_area": "Inner Mongolia Caosiyao",
+        "line_ids": [
+          "L8"
+        ],
+        "total_line_length_km": 8,
+        "station_spacing_m": 100,
+        "nominal_station_upper_bound": 80
+      },
+      "title": "内蒙古曹四夭测区电磁法比对试验数据（2020）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=35110458226511",
+      "catalogue_entity_bytes": 6232370,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/caosiyao-em-comparison-2020.doc",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 280064,
+      "public_document_sha256": "9422cbb9aaf1759251838c4b5016b1d38a3c11bf0abd34e3e732acbdc36e2fa3",
+      "description": "2020年使用自研电磁仪器与加拿大凤凰仪器在内蒙古曹四夭测区，进行不同方法的比对试验取得的数据，包含有大地电磁观测数据，音频大地电磁观测数据，可控源音频大地电磁观测数据，数据格式为EDI",
+      "quality": "通过前期施工单位调研及招标，确定野外施工第三方单位为西北有色物化探总队有限公司，该单位根据比对试验目标进行实地踏勘并设计施工计划，确定内蒙古曹四夭测区L8线为比对测线，测线长度8km；于2020年5月到6月在该测线开展自研的发射系EMT70、接收系DRU与加拿大凤凰公司TXU-30和V8 系统比对试验；施工过程严格按照国家电磁法测试行业布设规范，获得质量可靠的数据，专家对原始数据质量进行了验收。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Inner Mongolia Caosiyao",
+        "line_ids": [
+          "L8"
+        ],
+        "total_line_length_km": 8,
+        "station_spacing_m": 100,
+        "nominal_station_upper_bound": 80
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "taohemu-em-demonstration-2019",
+      "method": "csamt_offline_candidate",
+      "guid": "6206984388243",
+      "doi": "10.12041/geodata.6206984388243.ver1.db",
+      "design": {
+        "survey_area": "Inner Mongolia Taohemu",
+        "line_ids": [
+          "L1",
+          "L2",
+          "L3"
+        ],
+        "total_line_length_km": 15,
+        "nominal_station_upper_bound": null
+      },
+      "title": "内蒙古桃合木测区电磁法勘探示范数据（2019）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=6206984388243",
+      "catalogue_entity_bytes": 20846573,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/taohemu-em-demonstration-2019.doc",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 10620928,
+      "public_document_sha256": "43e4adcad943b0c8e4dfda4cb4d6484507b08eda33cc8e7d6b0e1cfcd527da21",
+      "description": "2019年使用自研电磁仪器在内蒙古桃合木测区，进行不同方法的试验取得的数据，包含有大地电磁观测数据，音频大地电磁观测数据，可控源音频大地电磁观测数据，数据格式为EDI",
+      "quality": "通过前期施工单位调研及招标，确定野外施工第三方单位为西北有色物化探总队有限公司，该单位根据勘探示范目标进行实地踏勘并设计施工计划，确定内蒙古桃合木测区L1，L2,L3线为示范测线，测线长度15km；于2019年10月到11月，2020年4月在该测线自研的发射系EMT70、接收系DRU进行勘探示范；施工过程严格按照国家电磁法测试行业布设规范，获得质量可靠的数据，专家对原始数据质量进行了验收。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Inner Mongolia Taohemu",
+        "line_ids": [
+          "L1",
+          "L2",
+          "L3"
+        ],
+        "total_line_length_km": 15,
+        "nominal_station_upper_bound": null
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "taohemu-em-comparison-2019",
+      "method": "csamt_offline_candidate",
+      "guid": "94898011792185",
+      "doi": "10.12041/geodata.94898011792185.ver1.db",
+      "design": {
+        "survey_area": "Inner Mongolia Taohemu",
+        "line_ids": [
+          "L8"
+        ],
+        "total_line_length_km": 8,
+        "nominal_station_upper_bound": null
+      },
+      "title": "内蒙古桃合木测区电磁法比对试验数据（2019）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=94898011792185",
+      "catalogue_entity_bytes": 14593220,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/taohemu-em-comparison-2019.doc",
+      "catalogue_public_document_rows": 2,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 441856,
+      "public_document_sha256": "1251efe890140fa8e383fbaf1cdc588b0c83dab6c3d6188b50a3e097c5a7ed78",
+      "description": "2019年使用自研电磁仪器与加拿大凤凰仪器在内蒙古桃合木测区，进行不同方法的比对试验取得的数据，包含有大地电磁观测数据，音频大地电磁观测数据，可控源音频大地电磁观测数据，数据格式为EDI",
+      "quality": "通过前期施工单位调研及招标，确定野外施工第三方单位为西北有色物化探总队有限公司，该单位根据比对试验目标进行实地踏勘并设计施工计划，确定内蒙古桃合木测区L8线为比对测线，测线长度8km；于2019年10月到11月在该测线开展自研的发射系EMT70、接收系DRU与加拿大凤凰公司TXU-30和V8 系统比对试验；施工过程严格按照国家电磁法测试行业布设规范，获得质量可靠的数据，专家对原始数据质量进行了验收。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Inner Mongolia Taohemu",
+        "line_ids": [
+          "L8"
+        ],
+        "total_line_length_km": 8,
+        "nominal_station_upper_bound": null
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "xiongan-controlled-source-em-2020",
+      "method": "controlled_source_offline_candidate",
+      "guid": "88075782085513",
+      "doi": "10.12041/geodata.88075782085513.ver1.db",
+      "design": {
+        "survey_area": "Xiongan",
+        "total_line_length_km": 4,
+        "station_spacing_m": 200,
+        "nominal_station_upper_bound": 21,
+        "published_product_counts": {
+          "pxy": 21,
+          "rxy": 21
+        }
+      },
+      "title": "地面多功能电磁探测系统雄安新区场地试验可控源电磁观测数据(2020)",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=88075782085513",
+      "catalogue_entity_bytes": 352427,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/xiongan-controlled-source-em-2020.doc",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 90112,
+      "public_document_sha256": "eb4d37e902c79683e14582a0c297ea517e7887f1f6bef00a4ff117dc36e10d3e",
+      "description": "包括多功能电磁探测系统样机野外场地试验中过D35井剖面的可控源电磁观测数据，主要包括电场、相位、测点坐标、数据反演结果数据等",
+      "quality": "数据采集过程严格遵循中国地质矿产行业标准可控源音频大地电磁法技术规程，野外施工、仪器设备使用维护、资料处理与解释符合规范要求，观测数据经项目负责人审核并确认。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Xiongan",
+        "total_line_length_km": 4,
+        "station_spacing_m": 200,
+        "nominal_station_upper_bound": 21,
+        "published_product_counts": {
+          "pxy": 21,
+          "rxy": 21
+        }
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "tongling-tensor-controlled-source-2021",
+      "method": "controlled_source_offline_candidate",
+      "guid": "2561252853247",
+      "doi": "10.12041/geodata.2561252853247.ver1.db",
+      "design": {
+        "survey_area": "Anhui Tongling",
+        "components": [
+          "XY",
+          "YX"
+        ],
+        "products": [
+          "apparent resistivity",
+          "phase"
+        ],
+        "nominal_station_upper_bound": null
+      },
+      "title": "时空阵列电磁探测系统安徽铜陵张量可控源电磁法视电阻率数据集（2021）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=2561252853247",
+      "catalogue_entity_bytes": 4766663,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/tongling-tensor-controlled-source-2021.doc",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 4579328,
+      "public_document_sha256": "34b2955a3ca2e295ebbed82c62d6e4741c72b37b9790e2d01c7d26e36410ccb2",
+      "description": "2021年安徽铜陵时空阵列电磁探测系统接收机STEM-1R张量阻抗测点数据，包含测点位置、频率、xy模式下视电阻率、yx模式下视电阻率、xy模式下相位、yx模式下相位信息",
+      "quality": "依据《广域电磁法技术规程DB43/T 1460-2018》进行数据采集，除个别点大部分测点曲线质量达到一级点。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Anhui Tongling",
+        "components": [
+          "XY",
+          "YX"
+        ],
+        "products": [
+          "apparent resistivity",
+          "phase"
+        ],
+        "nominal_station_upper_bound": null
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    },
+    {
+      "id": "tongling-short-offset-em-2021",
+      "method": "controlled_source_offline_candidate",
+      "guid": "1722195349655",
+      "doi": "10.12041/geodata.1722195349655.ver1.db",
+      "design": {
+        "survey_area": "Anhui Tongling",
+        "documented_fields": [
+          "line",
+          "station",
+          "x",
+          "y",
+          "frequency",
+          "current",
+          "Ex",
+          "Ey",
+          "Hx",
+          "Hy",
+          "Hz",
+          "wide-field apparent resistivity",
+          "wavenumber apparent resistivity"
+        ],
+        "nominal_station_upper_bound": null
+      },
+      "title": "时空阵列电磁探测系统安徽铜陵短收发距电磁法视电阻率数据集（2021）",
+      "landing_page": "https://www.geodata.cn/main/index.html#/face_science_detail?guid=1722195349655",
+      "catalogue_entity_bytes": 1080920,
+      "catalogue_is_online": false,
+      "catalogue_is_opened": true,
+      "access_group_id": 7,
+      "access_description": "离线资源，实名认证用户可离线申请",
+      "anonymous_entity_download": false,
+      "public_document_path": "validation/wp8/data/geodata-cn-locked-methods-metadata-v1/tongling-short-offset-em-2021.doc",
+      "catalogue_public_document_rows": 1,
+      "catalogue_public_document_unique_files": 1,
+      "public_document_bytes": 891392,
+      "public_document_sha256": "f65bc0f2036997da73e6ec4d178d67eb1320921e8c0411cc591e92b5c142c62b",
+      "description": "2021年安徽铜陵时空阵列电磁探测系统接收机STEM-1R短收发距电磁法视电阻率数据，包含线号、点号、点x坐标、点y坐标、频率、电流、Ex振幅、Ey振幅、Hx振幅、Hy振幅、Hz振幅、广域视电阻率、波数视电阻率等信息",
+      "quality": "依据《广域电磁法技术规程DB43/T 1460-2018》进行数据采集，除个别点大部分测点曲线质量达到一级点。",
+      "response_entity_opened": false,
+      "locked_sip_fdip_method_match": false,
+      "formal_cluster_contribution": 0,
+      "decision": "high_value_offline_application_candidate",
+      "public_document_design_audit": {
+        "survey_area": "Anhui Tongling",
+        "documented_fields": [
+          "line",
+          "station",
+          "x",
+          "y",
+          "frequency",
+          "current",
+          "Ex",
+          "Ey",
+          "Hx",
+          "Hy",
+          "Hz",
+          "wide-field apparent resistivity",
+          "wavenumber apparent resistivity"
+        ],
+        "nominal_station_upper_bound": null
+      },
+      "sampled_transmitter_waveform_public": false,
+      "source_complete_population_public": false
+    }
+  ],
+  "conclusion": {
+    "new_wfem_original_data_catalogue_record_found": true,
+    "anonymous_wfem_entity_download_found": false,
+    "new_locked_sip_fdip_population_found": false,
+    "offline_active_source_candidates_found": 9,
+    "offline_csamt_candidates_found": 6,
+    "nominal_csamt_station_upper_bound_at_least_223": 2,
+    "formal_gate_change": false,
+    "reason": "The WFEM document exposes a strong field/geometry contract, but the entity is an offline resource available only by verified-user application; the IP records are time-domain or two-frequency products rather than a locked SIP/FDIP population. Two CSAMT catalogue designs nominally exceed 223 stations, but all nine added active-source entities are offline application resources and expose neither a source-complete anonymous population nor sampled transmitter waveforms."
+  }
+}

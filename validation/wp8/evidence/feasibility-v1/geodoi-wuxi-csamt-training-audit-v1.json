@@ -1,0 +1,70 @@
+{
+  "schema_version": "wp8-public-evidence-v1",
+  "design": "validation/wp8/evidence/feasibility-v1/geodoi-wuxi-csamt-outcome-blind-design-v1.json",
+  "audit_scope": "training roles only",
+  "test_unseals": 0,
+  "archive_integrity": {
+    "bytes": 7202123,
+    "sha256": "8e1d22bddf0ee17679fe01b2d22e8cdf431ea6518fd2ead84e24c3008de822f9"
+  },
+  "public_metadata": {
+    "doi": "10.3974/geodb.2018.03.08.V1",
+    "anonymous_download_confirmed": true,
+    "survey_grid_m": [200, 25],
+    "line_azimuth_description": "NW 45 degrees, perpendicular to the main fault",
+    "instrument": "Phoenix V6A"
+  },
+  "archive_inventory": {
+    "processed_csamt_lines": 14,
+    "raw_acquisition_dates": 12,
+    "raw_cmd_cms_pairs": 107,
+    "training_processed_lines": 8,
+    "training_raw_acquisition_dates": 7,
+    "training_cmd_cms_pairs": 64
+  },
+  "training_cmd_observations": {
+    "cmd_files": 64,
+    "frequency_blocks": 1723,
+    "unique_frequency_count": 27,
+    "frequency_range_hz": [1.0, 8192.0],
+    "transmitter_current_a": [3.5],
+    "stack_range": [6, 352],
+    "channel_rows": 13784,
+    "ex1_rows_with_apparent_resistivity_and_phase": 12061,
+    "rows_with_percent_uncertainty_fields": 13784,
+    "electric_dipole_length_m": 25,
+    "channels": ["HY1", "EX1"]
+  },
+  "fieldwork_log_and_coordinate_audit": {
+    "fieldwork_log_pages": 12,
+    "source_receiver_distance_m": 7000,
+    "transmitter_dipole_length_m": 1550,
+    "cmd_to_line_and_station_range_mapping_present": true,
+    "coordinate_workbook_sheet": "Tab.2",
+    "coordinate_rows": 803,
+    "coordinate_line_count": 16,
+    "coordinate_line_ids": [5000, 5200, 5400, 5600, 5800, 6000, 6200, 6400, 7000, 7100, 7200, 7300, 7400, 7600, 7800, 8000],
+    "coordinate_columns": ["Line", "Point", "North", "East", "Height"],
+    "receiver_coordinates_reconstructable": true,
+    "coordinate_only_test_role_reads": true,
+    "test_response_values_read": 0
+  },
+  "contract_assessment": {
+    "response_payload_present": true,
+    "per_observation_uncertainty_present": true,
+    "frequency_present": true,
+    "current_present": true,
+    "receiver_dipole_length_present": true,
+    "transmitter_endpoint_coordinates_present": false,
+    "receiver_coordinates_reconstructable_from_training_cmd_alone": false,
+    "receiver_coordinates_reconstructable_from_field_log_and_coordinate_workbook": true,
+    "source_orientation_present_in_training_cmd": false,
+    "waveform_fully_specified": false,
+    "qualified_leakage_safe_test_clusters": 0,
+    "observation_contract_passed": false,
+    "cluster_contract_passed": false,
+    "power_contract_passed": false,
+    "formal_gate_changed": false,
+    "reason": "The training-only raw CMD files materially improve response and uncertainty evidence, but exact transmitter geometry, receiver coordinates, waveform specification, cross-role spatial independence, and paired CRPS effect size remain unresolved. Test payloads remain sealed."
+  }
+}

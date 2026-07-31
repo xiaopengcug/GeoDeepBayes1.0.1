@@ -1,0 +1,179 @@
+{
+  "schema_version": "wp8-ntgs-pine-creek-tdip-training-power-v1",
+  "design_sha256": "2df0c03a5acfa4875c4adeca9d62658a46934ce05c48677067e68e979d114c0d",
+  "training_archive_sha256": "057cb9aa6c9bee14c52bbdc8a0bb58f5a9162354495b966cc70ee68a493cb4c4",
+  "training_only": true,
+  "observation_contract": {
+    "unique_receiver_centres": 492,
+    "correlation_separated_paired_centres": 17,
+    "transmitter_receiver_geometry_present": true,
+    "potential_present": true,
+    "current_present": true,
+    "chargeability_present": true,
+    "chargeability_error_present": true,
+    "decay_window_count": 20
+  },
+  "comparison": {
+    "information_parity": "Both models use the same Jindari training-only receiver coordinates and chargeability observations.",
+    "baseline": "global Gaussian predictive distribution",
+    "candidate": "first-order planar spatial Gaussian predictive distribution",
+    "validation": "leave-one-250-m-separated-centre-out with every training observation within 250 m removed",
+    "test_information_used": false
+  },
+  "paired_training_clusters": 17,
+  "paired_cluster_scores": [
+    {
+      "easting_m": 782000.0,
+      "northing_m": 8463612.5,
+      "training_centres_after_buffer": 464,
+      "baseline_crps": 0.10957542066133197,
+      "candidate_crps": 0.17612227457636523,
+      "relative_improvement": -0.6073155230743911
+    },
+    {
+      "easting_m": 782000.0,
+      "northing_m": 8463887.5,
+      "training_centres_after_buffer": 439,
+      "baseline_crps": 0.12675771839910513,
+      "candidate_crps": 0.11529487029784394,
+      "relative_improvement": 0.090431164634643
+    },
+    {
+      "easting_m": 782000.0,
+      "northing_m": 8464162.5,
+      "training_centres_after_buffer": 439,
+      "baseline_crps": 0.16470689112575185,
+      "candidate_crps": 0.11595026061092548,
+      "relative_improvement": 0.2960205865193657
+    },
+    {
+      "easting_m": 782000.0,
+      "northing_m": 8464437.5,
+      "training_centres_after_buffer": 446,
+      "baseline_crps": 0.19013339946198207,
+      "candidate_crps": 0.11194782205841426,
+      "relative_improvement": 0.41121432438913147
+    },
+    {
+      "easting_m": 782300.0,
+      "northing_m": 8463612.5,
+      "training_centres_after_buffer": 434,
+      "baseline_crps": 0.1174203060534613,
+      "candidate_crps": 0.10537545678203511,
+      "relative_improvement": 0.102578929286236
+    },
+    {
+      "easting_m": 782300.0,
+      "northing_m": 8463875.0,
+      "training_centres_after_buffer": 385,
+      "baseline_crps": 0.18789968142984434,
+      "candidate_crps": 0.25290156537985775,
+      "relative_improvement": -0.34593929832862974
+    },
+    {
+      "easting_m": 782300.0,
+      "northing_m": 8464137.5,
+      "training_centres_after_buffer": 386,
+      "baseline_crps": 0.10704629865105915,
+      "candidate_crps": 0.10992403176359017,
+      "relative_improvement": -0.026883069744537556
+    },
+    {
+      "easting_m": 782300.0,
+      "northing_m": 8464412.5,
+      "training_centres_after_buffer": 399,
+      "baseline_crps": 0.12171556057368486,
+      "candidate_crps": 0.138673537600959,
+      "relative_improvement": -0.13932464302300945
+    },
+    {
+      "easting_m": 782500.0,
+      "northing_m": 8464575.0,
+      "training_centres_after_buffer": 436,
+      "baseline_crps": 0.12904848735709096,
+      "candidate_crps": 0.11751970343165659,
+      "relative_improvement": 0.08933683890097055
+    },
+    {
+      "easting_m": 782600.0,
+      "northing_m": 8463612.5,
+      "training_centres_after_buffer": 439,
+      "baseline_crps": 0.11482653251092365,
+      "candidate_crps": 0.11318033608712379,
+      "relative_improvement": 0.014336376687533027
+    },
+    {
+      "easting_m": 782600.0,
+      "northing_m": 8463887.5,
+      "training_centres_after_buffer": 392,
+      "baseline_crps": 0.1390528133761174,
+      "candidate_crps": 0.13978407433959456,
+      "relative_improvement": -0.005258872120042544
+    },
+    {
+      "easting_m": 782600.0,
+      "northing_m": 8464162.5,
+      "training_centres_after_buffer": 392,
+      "baseline_crps": 0.23998786533402444,
+      "candidate_crps": 0.20605157946628366,
+      "relative_improvement": 0.14140834087801454
+    },
+    {
+      "easting_m": 782700.0,
+      "northing_m": 8464412.5,
+      "training_centres_after_buffer": 408,
+      "baseline_crps": 0.6502436497918151,
+      "candidate_crps": 0.5293774485105269,
+      "relative_improvement": 0.1858783262550665
+    },
+    {
+      "easting_m": 782900.0,
+      "northing_m": 8463612.5,
+      "training_centres_after_buffer": 454,
+      "baseline_crps": 0.19335515283412127,
+      "candidate_crps": 0.11223893802822825,
+      "relative_improvement": 0.41951928157550755
+    },
+    {
+      "easting_m": 782900.0,
+      "northing_m": 8463887.5,
+      "training_centres_after_buffer": 420,
+      "baseline_crps": 0.39505694138511,
+      "candidate_crps": 0.5635177007698086,
+      "relative_improvement": -0.42642146419211857
+    },
+    {
+      "easting_m": 782900.0,
+      "northing_m": 8464162.5,
+      "training_centres_after_buffer": 420,
+      "baseline_crps": 0.35549924763918855,
+      "candidate_crps": 0.28270357665033197,
+      "relative_improvement": 0.20477025330512102
+    },
+    {
+      "easting_m": 782900.0,
+      "northing_m": 8464587.5,
+      "training_centres_after_buffer": 454,
+      "baseline_crps": 0.34607296107623897,
+      "candidate_crps": 0.2123311248507524,
+      "relative_improvement": 0.3864556069609368
+    }
+  ],
+  "exploratory_mean_relative_improvement": 0.04651806817116454,
+  "paired_relative_improvement_sd": 0.2914565611118264,
+  "paired_relative_improvement_sd_upper_95": 0.41317345098936004,
+  "power_target_relative_improvement": 0.1,
+  "required_paired_crps_clusters_conservative": 106,
+  "required_coverage_clusters": {
+    "0.90": 223,
+    "0.95": 118
+  },
+  "required_clusters_all_metrics": 223,
+  "available_correlation_adjusted_test_clusters": 223,
+  "alpha_one_sided": 0.05,
+  "target_power": 0.8,
+  "wp8_0_power_gate_passes": true,
+  "sealed_response_values_interpreted": 0,
+  "test_unseal_count": 0,
+  "formal_test_result": null
+}

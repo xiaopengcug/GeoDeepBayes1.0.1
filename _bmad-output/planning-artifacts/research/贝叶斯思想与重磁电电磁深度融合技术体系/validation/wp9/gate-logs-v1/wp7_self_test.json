@@ -1,0 +1,26 @@
+{
+  "schema_version": "wp9-gate-log-v1",
+  "gate": "wp7_self_test",
+  "argv": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validate-wp7.ps1",
+    "-SyntheticRun",
+    ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\versions\\synthetic-block-v6-20260724",
+    "-Do27Run",
+    ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\versions\\do27-v4-20260724",
+    "-Signoff",
+    ".\\_bmad-output\\planning-artifacts\\research\\贝叶斯思想与重磁电电磁深度融合技术体系\\validation\\wp7\\signoff-v4.json",
+    "-SelfTest"
+  ],
+  "cwd": ".",
+  "started_at_utc": "2026-07-28T03:27:58.542915+00:00",
+  "ended_at_utc": "2026-07-28T03:29:08.847720+00:00",
+  "exit_code": 0,
+  "stdout": "{\"status\": \"PASS\", \"self_test\": true}\nPASS WP7 self_test=True\n",
+  "stderr": "",
+  "output_normalization": "repository-root-to-dot; user-home-redacted",
+  "stdout_sha256": "24c161e88ba6a4557872af8434913cc6b1084944066d953a1699e8ce62218717",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

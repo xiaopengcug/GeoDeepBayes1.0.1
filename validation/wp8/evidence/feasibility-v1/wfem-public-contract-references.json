@@ -1,0 +1,83 @@
+{
+  "schema_version": "wp8-wfem-public-contract-references-v1",
+  "selection_role": "metadata_and_contract_reference_only",
+  "formal_test_endpoints_inspected": false,
+  "candidates": [
+    {
+      "id": "nedc-hunan-huangshaping-baoshan",
+      "doi": "10.12080/nedc.prj_zdyf.ds00028.2021",
+      "advertised_bytes": 2290000,
+      "field_data": true,
+      "advertised_native_files": [
+        ".avg",
+        ".MDE",
+        ".stn"
+      ],
+      "advertised_contract": {
+        "raw_wfem_observations": true,
+        "observation_system_configuration": true,
+        "station_coordinates_and_elevations": true
+      },
+      "anonymous_download": false,
+      "access": "order review required",
+      "provider_download_count": 0,
+      "decision": "acquisition_candidate_pending_external_order_approval"
+    },
+    {
+      "id": "wucaiwan-distributed-wfem",
+      "doi": "10.3390/app16104601",
+      "article_license": "CC BY 4.0",
+      "field_data": true,
+      "survey_lines": 19,
+      "stations_per_line": 16,
+      "design_station_upper_bound": 304,
+      "line_spacing_m": 74,
+      "station_spacing_m": 40,
+      "frequency_count": 53,
+      "frequency_range_hz": [
+        1,
+        8192
+      ],
+      "transmitter_dipole_length_m": 1000,
+      "transmitter_receiver_offset_range_m": [
+        4300,
+        5700
+      ],
+      "raw_data_download": false,
+      "access": "corresponding-author request due to commercial or technical restrictions",
+      "decision": "design_and_contract_reference_only"
+    },
+    {
+      "id": "jiangsu-hdr-fracturing-wfem",
+      "doi": "10.3389/feart.2025.1579468",
+      "article_license": "CC BY 4.0",
+      "field_data": true,
+      "transmitter_dipole_length_m": 3000,
+      "receiver_dipole_length_m": 100,
+      "transmitter_receiver_offset_m": 15000,
+      "current_a": 130,
+      "frequency_focus_hz": [
+        0.1,
+        10
+      ],
+      "raw_data_download": false,
+      "access": "authors will make raw data available on request",
+      "decision": "contract_reference_only"
+    }
+  ],
+  "conclusions": {
+    "largest_public_design_station_upper_bound": 304,
+    "downloadable_response_station_count": 0,
+    "qualified_formal_station_count": 0,
+    "source_receiver_contract_complete_in_public_articles": true,
+    "source_receiver_contract_complete_in_downloadable_field_payload": false,
+    "correlation_length_frozen": false,
+    "formal_power_gate": "failed",
+    "dimensionality_gate": "failed",
+    "reason": "the 304-station design exceeds the nominal 223 count, but its response data are request-only; the NEDC native package requires order approval, so neither can be frozen, split or correlation-audited"
+  },
+  "buffer_values_read": 0,
+  "calibration_values_read": 0,
+  "test_values_read": 0,
+  "test_unseal_count": 0
+}

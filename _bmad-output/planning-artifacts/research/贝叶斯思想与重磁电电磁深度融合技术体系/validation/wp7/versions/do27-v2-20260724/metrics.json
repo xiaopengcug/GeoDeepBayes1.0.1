@@ -1,0 +1,293 @@
+{
+  "run_scope": "DO-27同源数据的现代SimPEG降阶兼容验证；不是原2020完整PGI notebook复现。",
+  "seed": 20260724,
+  "input": {
+    "archive_sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e",
+    "original_mesh_cells": 393660,
+    "coarse_mesh_shape": [
+      12,
+      12,
+      8
+    ],
+    "coarse_mesh_cells": 1152,
+    "original_observations_per_method": 961,
+    "selected_observations_per_method": 121,
+    "stride": 8
+  },
+  "forward": {
+    "elapsed_seconds": 0.02462040000000343,
+    "gravity_truth_vs_observed_rms": 0.2570979736646736,
+    "magnetic_truth_vs_observed_rms": 10.470330134132647,
+    "gravity_sensitivity_shape": [
+      121,
+      1152
+    ],
+    "magnetic_sensitivity_shape": [
+      121,
+      1152
+    ],
+    "all_finite": true
+  },
+  "gravity_inverse": {
+    "selection_rule_id": "do27_gcv_stronger_tie_break_v1",
+    "sigma": 0.01,
+    "initial_normalized_rms": 94.93064344696519,
+    "zero_model_rmse": 0.16061946056163653,
+    "best": {
+      "alpha": 10.0,
+      "iterations": 136,
+      "stop_code": 2,
+      "solver_converged": true,
+      "normalized_rms": 0.3460506825659003,
+      "model_rmse": 0.13045788786258616,
+      "effective_df": 84.57347869873047,
+      "gcv": 1.32134055294507,
+      "solution_norm": 2.9162707925264075,
+      "residual_norm": 3.8065575082249037,
+      "elapsed_seconds": 0.02736830000003465,
+      "data_fit_accepted": false,
+      "model_recovery_accepted": true,
+      "accepted": false
+    },
+    "trials": [
+      {
+        "alpha": 0.0001,
+        "iterations": 1320,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.004555600759823632,
+        "model_rmse": 0.9829717917030649,
+        "effective_df": 120.8677749633789,
+        "gcv": 17.379395324609806,
+        "solution_norm": 33.35710189306278,
+        "residual_norm": 0.05011160835805995,
+        "elapsed_seconds": 0.2245570999998563
+      },
+      {
+        "alpha": 0.001,
+        "iterations": 1055,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.03655220765079886,
+        "model_rmse": 0.8309668944510343,
+        "effective_df": 119.81989288330078,
+        "gcv": 14.04607898760027,
+        "solution_norm": 28.221406881597368,
+        "residual_norm": 0.40207428415878743,
+        "elapsed_seconds": 0.17701530000022103
+      },
+      {
+        "alpha": 0.01,
+        "iterations": 758,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.13832006091306948,
+        "model_rmse": 0.4115962493920479,
+        "effective_df": 114.26883697509766,
+        "gcv": 6.182453599438378,
+        "solution_norm": 14.086178959629436,
+        "residual_norm": 1.5215206700437642,
+        "elapsed_seconds": 0.13279710000006162
+      },
+      {
+        "alpha": 0.1,
+        "iterations": 424,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.2353660893181567,
+        "model_rmse": 0.15743216281385639,
+        "effective_df": 102.422119140625,
+        "gcv": 2.3499908794955062,
+        "solution_norm": 5.283488469209654,
+        "residual_norm": 2.589026982499724,
+        "elapsed_seconds": 0.0747535999998945
+      },
+      {
+        "alpha": 1.0,
+        "iterations": 222,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.3083199044167275,
+        "model_rmse": 0.124166045974747,
+        "effective_df": 91.91341400146484,
+        "gcv": 1.645085093137827,
+        "solution_norm": 3.1470422108411324,
+        "residual_norm": 3.391518948584003,
+        "elapsed_seconds": 0.04192860000011933
+      },
+      {
+        "alpha": 10.0,
+        "iterations": 136,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.3460506825659003,
+        "model_rmse": 0.13045788786258616,
+        "effective_df": 84.57347869873047,
+        "gcv": 1.32134055294507,
+        "solution_norm": 2.9162707925264075,
+        "residual_norm": 3.8065575082249037,
+        "elapsed_seconds": 0.02736830000003465
+      },
+      {
+        "alpha": 100.0,
+        "iterations": 78,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.4406959545756228,
+        "model_rmse": 0.13181415497622323,
+        "effective_df": 75.531005859375,
+        "gcv": 1.375365653166709,
+        "solution_norm": 2.8811932570499827,
+        "residual_norm": 4.847655500331851,
+        "elapsed_seconds": 0.017250000000331056
+      }
+    ],
+    "recovered_model_summary": {
+      "minimum": -0.8122281270317391,
+      "maximum": 0.10394445419110067,
+      "mean": -0.03791693075105476
+    }
+  },
+  "magnetic_inverse": {
+    "selection_rule_id": "do27_gcv_stronger_tie_break_v1",
+    "sigma": 1.0,
+    "initial_normalized_rms": 37.79788452306126,
+    "zero_model_rmse": 0.0018517071702740808,
+    "best": {
+      "alpha": 1.0,
+      "iterations": 917,
+      "stop_code": 2,
+      "solver_converged": true,
+      "normalized_rms": 0.001329210247877,
+      "model_rmse": 0.007964446649808268,
+      "effective_df": 120.93307495117188,
+      "gcv": 5.775381921102096,
+      "solution_norm": 0.2687795243396206,
+      "residual_norm": 0.014621312726646999,
+      "elapsed_seconds": 0.15489809999962745,
+      "data_fit_accepted": false,
+      "model_recovery_accepted": false,
+      "accepted": false
+    },
+    "trials": [
+      {
+        "alpha": 0.0001,
+        "iterations": 530,
+        "stop_code": 1,
+        "solver_converged": true,
+        "normalized_rms": 0.006285990532436844,
+        "model_rmse": 0.00797804897141045,
+        "effective_df": 121.0,
+        "gcv": 8.014325813307277e+26,
+        "solution_norm": 0.26927017514777224,
+        "residual_norm": 0.06914589585680528,
+        "elapsed_seconds": 0.09413949999998295
+      },
+      {
+        "alpha": 0.001,
+        "iterations": 528,
+        "stop_code": 1,
+        "solver_converged": true,
+        "normalized_rms": 0.006579204212679111,
+        "model_rmse": 0.007977191953613927,
+        "effective_df": 120.99993133544922,
+        "gcv": 134416414.87485617,
+        "solution_norm": 0.2692409952714939,
+        "residual_norm": 0.07237124633947022,
+        "elapsed_seconds": 0.09144930000002205
+      },
+      {
+        "alpha": 0.01,
+        "iterations": 529,
+        "stop_code": 1,
+        "solver_converged": true,
+        "normalized_rms": 0.006484306165149379,
+        "model_rmse": 0.00797731662562817,
+        "effective_df": 120.99932861328125,
+        "gcv": 1365690.4541529852,
+        "solution_norm": 0.2692453609557836,
+        "residual_norm": 0.07132736781664317,
+        "elapsed_seconds": 0.0899904000002607
+      },
+      {
+        "alpha": 0.1,
+        "iterations": 642,
+        "stop_code": 1,
+        "solver_converged": true,
+        "normalized_rms": 0.0015178718428329196,
+        "model_rmse": 0.007984274698017156,
+        "effective_df": 120.99327087402344,
+        "gcv": 744.9440098938258,
+        "solution_norm": 0.269459350839679,
+        "residual_norm": 0.01669659027116212,
+        "elapsed_seconds": 0.11183369999980641
+      },
+      {
+        "alpha": 1.0,
+        "iterations": 917,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.001329210247877,
+        "model_rmse": 0.007964446649808268,
+        "effective_df": 120.93307495117188,
+        "gcv": 5.775381921102096,
+        "solution_norm": 0.2687795243396206,
+        "residual_norm": 0.014621312726646999,
+        "elapsed_seconds": 0.15489809999962745
+      },
+      {
+        "alpha": 10.0,
+        "iterations": 698,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.012747277922147098,
+        "model_rmse": 0.007768998679479491,
+        "effective_df": 120.36611938476562,
+        "gcv": 5.920940656145446,
+        "solution_norm": 0.262053461678463,
+        "residual_norm": 0.14022005714361807,
+        "elapsed_seconds": 0.1187459999996463
+      },
+      {
+        "alpha": 100.0,
+        "iterations": 591,
+        "stop_code": 2,
+        "solver_converged": true,
+        "normalized_rms": 0.09587259553791362,
+        "model_rmse": 0.006411881417323866,
+        "effective_df": 116.56586456298828,
+        "gcv": 6.844501177108508,
+        "solution_norm": 0.21524806784277575,
+        "residual_norm": 1.05459855091705,
+        "elapsed_seconds": 0.10239520000004632
+      }
+    ],
+    "recovered_model_summary": {
+      "minimum": -0.06179864300351826,
+      "maximum": 0.07803756038193245,
+      "mean": 0.00045362635939755056
+    }
+  },
+  "compatibility": {
+    "original_environment": {
+      "numpy": "1.17.3",
+      "scipy": "1.3.1",
+      "discretize": "0.4.10",
+      "simpeg": "git branch examples/PGI_joint"
+    },
+    "legacy_symbols": [
+      "PardisoSolver",
+      "from SimPEG",
+      "import SimPEG"
+    ],
+    "modern_import_available": {
+      "simpeg": true,
+      "discretize": true,
+      "legacy_SimPEG_PF": false
+    },
+    "original_notebook_reproduced": false,
+    "reason": "原notebook依赖已移除的SimPEG.PF及2020年私有PGI分支；本run使用正式现代API进行同源数据兼容验证。"
+  },
+  "evidence_class": "Failed",
+  "original_pgi_reproduced": false
+}

@@ -1,0 +1,1759 @@
+{
+  "schema_version": "wp8-ga-magnetic-training-consortium-audit-v1",
+  "raw_manifest_sha256": "4d7306ff93c02b6d039e81a9cc6eaa885c452eb1465adfa0e1f30ef2ce56987a",
+  "design_sha256": "8b9cd3702eeffe3b5b313a298c9d3758f602cb30449867c3bf8136f4cc48ba6b",
+  "dds_contract_sha256": "a98b48ad91d057b4b347b431c1143be38431389ae6caa615740f832a1aeab872",
+  "states": [
+    "NSW",
+    "NT",
+    "QLD",
+    "SA",
+    "TAS",
+    "VIC",
+    "WA"
+  ],
+  "members": [
+    {
+      "dataset_no": 16405,
+      "state": "NSW",
+      "training_rows_interpreted": 50276,
+      "geometry_rows_by_role": {
+        "train": 50276,
+        "buffer": 19992,
+        "calibration": 23798,
+        "test": 55586
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 171,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 559,
+          "semivariance_nt2": 2356.509300136228
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 897,
+          "semivariance_nt2": 5161.311973390461
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 897,
+          "semivariance_nt2": 7476.622770652198
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 852,
+          "semivariance_nt2": 9312.847181442696
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 1025,
+          "semivariance_nt2": 10624.267333268397
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 702,
+          "semivariance_nt2": 12038.269636907296
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 694,
+          "semivariance_nt2": 11944.202204431458
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 636,
+          "semivariance_nt2": 10132.413048789156
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 598,
+          "semivariance_nt2": 7976.4427579949615
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 782,
+          "semivariance_nt2": 8013.782743785821
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 770,
+          "semivariance_nt2": 8210.837687279454
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 867,
+          "semivariance_nt2": 9991.983339704206
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 880,
+          "semivariance_nt2": 12493.65912676713
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 687,
+          "semivariance_nt2": 12610.001892207161
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 594,
+          "semivariance_nt2": 11485.035151619266
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 465,
+          "semivariance_nt2": 8885.01766883178
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 440,
+          "semivariance_nt2": 7073.291827683309
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 358,
+          "semivariance_nt2": 5408.940273037613
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 303,
+          "semivariance_nt2": 3592.9455548634764
+        }
+      ],
+      "crossover_bins": 103,
+      "crossover_rmse_nt": 12.845525291480152
+    },
+    {
+      "dataset_no": 16494,
+      "state": "NSW",
+      "training_rows_interpreted": 712247,
+      "geometry_rows_by_role": {
+        "train": 712247,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 68,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 228,
+          "semivariance_nt2": 496.20427816477434
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 373,
+          "semivariance_nt2": 1079.1544894368737
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 380,
+          "semivariance_nt2": 1528.186762320954
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 361,
+          "semivariance_nt2": 1882.581239934298
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 426,
+          "semivariance_nt2": 2016.5481693723057
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 252,
+          "semivariance_nt2": 2149.875984247387
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 186,
+          "semivariance_nt2": 2135.304253616052
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 72,
+          "semivariance_nt2": 1884.648441079727
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 996,
+      "crossover_rmse_nt": 7.1166764573717085
+    },
+    {
+      "dataset_no": 16550,
+      "state": "NSW",
+      "training_rows_interpreted": 345422,
+      "geometry_rows_by_role": {
+        "train": 345422,
+        "buffer": 201637,
+        "calibration": 290806,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 41,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 127,
+          "semivariance_nt2": 2482.967326532832
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 191,
+          "semivariance_nt2": 4231.363874454742
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 173,
+          "semivariance_nt2": 4193.325991456553
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 142,
+          "semivariance_nt2": 4831.866314754326
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 122,
+          "semivariance_nt2": 4903.520848125451
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 46,
+          "semivariance_nt2": 1986.3252640495234
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 18,
+          "semivariance_nt2": 2042.554247507628
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 1,
+          "semivariance_nt2": 157.6951443096976
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 498,
+      "crossover_rmse_nt": 8.050683982523447
+    },
+    {
+      "dataset_no": 16694,
+      "state": "NT",
+      "training_rows_interpreted": 59437,
+      "geometry_rows_by_role": {
+        "train": 59437,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 41924
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 87,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 277,
+          "semivariance_nt2": 565.9255643823013
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 426,
+          "semivariance_nt2": 1523.1256778982838
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 403,
+          "semivariance_nt2": 2560.33423924517
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 350,
+          "semivariance_nt2": 3437.9902285631206
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 364,
+          "semivariance_nt2": 4273.110126739466
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 188,
+          "semivariance_nt2": 4943.848920729851
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 118,
+          "semivariance_nt2": 5624.71738837797
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 29,
+          "semivariance_nt2": 6815.700777519956
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 1,
+          "semivariance_nt2": 2370.0966618120137
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 9,
+          "semivariance_nt2": 2151.565647085167
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 26,
+          "semivariance_nt2": 1892.9821772485618
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 72,
+          "semivariance_nt2": 1762.1072319764808
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 119,
+          "semivariance_nt2": 1996.7439283216786
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 137,
+          "semivariance_nt2": 1987.2304627641995
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 16803,
+      "state": "NT",
+      "training_rows_interpreted": 80615,
+      "geometry_rows_by_role": {
+        "train": 80615,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 42019
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 121,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 400,
+          "semivariance_nt2": 424.1513477033726
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 644,
+          "semivariance_nt2": 944.8252663510619
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 659,
+          "semivariance_nt2": 1337.6996459168802
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 636,
+          "semivariance_nt2": 1760.2340623247273
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 766,
+          "semivariance_nt2": 2205.273657555058
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 503,
+          "semivariance_nt2": 2798.9695045689537
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 436,
+          "semivariance_nt2": 2978.395208403788
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 359,
+          "semivariance_nt2": 2625.1121051604405
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 331,
+          "semivariance_nt2": 1803.8034226834286
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 400,
+          "semivariance_nt2": 1574.9381781066886
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 418,
+          "semivariance_nt2": 1480.2965317612807
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 400,
+          "semivariance_nt2": 1230.2569743881531
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 401,
+          "semivariance_nt2": 915.5070891374803
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 302,
+          "semivariance_nt2": 911.3614462867266
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 238,
+          "semivariance_nt2": 1026.526843492075
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 175,
+          "semivariance_nt2": 1174.4130045409138
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 113,
+          "semivariance_nt2": 1245.9116126726312
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 59,
+          "semivariance_nt2": 1333.8159914509738
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 20,
+          "semivariance_nt2": 1523.1244896196977
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 17530,
+      "state": "QLD",
+      "training_rows_interpreted": 462464,
+      "geometry_rows_by_role": {
+        "train": 462464,
+        "buffer": 441441,
+        "calibration": 671800,
+        "test": 1061985
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 67,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 200,
+          "semivariance_nt2": 3722.3707976379023
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 283,
+          "semivariance_nt2": 6638.730469737016
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 245,
+          "semivariance_nt2": 7722.6582946642875
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 190,
+          "semivariance_nt2": 7941.55255513327
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 163,
+          "semivariance_nt2": 8269.59258837014
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 83,
+          "semivariance_nt2": 8635.158025714314
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 96,
+          "semivariance_nt2": 12268.753638119137
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 139,
+          "semivariance_nt2": 12711.471434067687
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 149,
+          "semivariance_nt2": 8117.4466204287155
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 178,
+          "semivariance_nt2": 5471.336234438774
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 142,
+          "semivariance_nt2": 4739.927408433657
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 135,
+          "semivariance_nt2": 3939.242071072971
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 111,
+          "semivariance_nt2": 3018.964815069881
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 46,
+          "semivariance_nt2": 2239.939217282064
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 31,
+          "semivariance_nt2": 1535.5421204623228
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 13,
+          "semivariance_nt2": 2076.6417634240943
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 6,
+          "semivariance_nt2": 2248.4737876139193
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 1,
+          "semivariance_nt2": 0.16116449950258793
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 601,
+      "crossover_rmse_nt": 1.354149393940944e+34
+    },
+    {
+      "dataset_no": 18064,
+      "state": "SA",
+      "training_rows_interpreted": 256045,
+      "geometry_rows_by_role": {
+        "train": 256045,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 400765
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 45,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 140,
+          "semivariance_nt2": 1843.9158525198911
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 211,
+          "semivariance_nt2": 2703.7347812269445
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 196,
+          "semivariance_nt2": 3000.2448047683824
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 160,
+          "semivariance_nt2": 2886.548964164648
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 156,
+          "semivariance_nt2": 2584.0939103002693
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 68,
+          "semivariance_nt2": 3033.8470746105704
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 42,
+          "semivariance_nt2": 3403.1141600456576
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 17,
+          "semivariance_nt2": 5853.278577033711
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 356,
+      "crossover_rmse_nt": 29.348029152783766
+    },
+    {
+      "dataset_no": 17844,
+      "state": "SA",
+      "training_rows_interpreted": 346776,
+      "geometry_rows_by_role": {
+        "train": 346776,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 49,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 156,
+          "semivariance_nt2": 27198.879593801743
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 240,
+          "semivariance_nt2": 75964.01404696626
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 230,
+          "semivariance_nt2": 105098.88045364006
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 204,
+          "semivariance_nt2": 105728.65272627037
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 209,
+          "semivariance_nt2": 87976.62606643728
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 97,
+          "semivariance_nt2": 64473.644207325924
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 38,
+          "semivariance_nt2": 54944.6104756134
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 2,
+          "semivariance_nt2": 100286.05402593495
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 427,
+      "crossover_rmse_nt": 5.361188860176296
+    },
+    {
+      "dataset_no": 18270,
+      "state": "TAS",
+      "training_rows_interpreted": 805490,
+      "geometry_rows_by_role": {
+        "train": 805490,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 51,
+      "correlation_range_m": 22500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 161,
+          "semivariance_nt2": 103.31071792701988
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 248,
+          "semivariance_nt2": 123.45936165390174
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 235,
+          "semivariance_nt2": 114.86377046356078
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 204,
+          "semivariance_nt2": 138.37847392575964
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 210,
+          "semivariance_nt2": 144.10356541691556
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 114,
+          "semivariance_nt2": 134.39185913017656
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 76,
+          "semivariance_nt2": 198.47470864382325
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 27,
+          "semivariance_nt2": 217.11316120574227
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 0,
+      "crossover_rmse_nt": null
+    },
+    {
+      "dataset_no": 18290,
+      "state": "TAS",
+      "training_rows_interpreted": 364078,
+      "geometry_rows_by_role": {
+        "train": 364078,
+        "buffer": 666883,
+        "calibration": 319968,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 33,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 96,
+          "semivariance_nt2": 1044.5645128200852
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 131,
+          "semivariance_nt2": 2840.072570202927
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 104,
+          "semivariance_nt2": 3866.490060997304
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 76,
+          "semivariance_nt2": 3286.2800562541092
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 65,
+          "semivariance_nt2": 1376.2801496313693
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 32,
+          "semivariance_nt2": 716.6353446376252
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 21,
+          "semivariance_nt2": 1801.0669650337777
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 3,
+          "semivariance_nt2": 4612.156978452869
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 489,
+      "crossover_rmse_nt": 11.757121495760693
+    },
+    {
+      "dataset_no": 18440,
+      "state": "VIC",
+      "training_rows_interpreted": 126688,
+      "geometry_rows_by_role": {
+        "train": 126688,
+        "buffer": 158165,
+        "calibration": 46219,
+        "test": 53908
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 85,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 263,
+          "semivariance_nt2": 180.83758607020363
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 392,
+          "semivariance_nt2": 294.75543790573596
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 356,
+          "semivariance_nt2": 286.9733161111323
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 290,
+          "semivariance_nt2": 256.6861307168611
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 263,
+          "semivariance_nt2": 264.59377590031556
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 126,
+          "semivariance_nt2": 286.0362699489913
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 71,
+          "semivariance_nt2": 215.08870134812216
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 23,
+          "semivariance_nt2": 185.9878715875327
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 11,
+          "semivariance_nt2": 486.51254045226074
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 29,
+          "semivariance_nt2": 423.5796307903505
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 89,
+          "semivariance_nt2": 268.869998365407
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 145,
+          "semivariance_nt2": 263.54303831302957
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 180,
+          "semivariance_nt2": 252.38442177549902
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 223,
+          "semivariance_nt2": 305.72474074736505
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 211,
+          "semivariance_nt2": 312.46192721247587
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 254,
+          "semivariance_nt2": 346.6721151581604
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 218,
+          "semivariance_nt2": 350.35452262462644
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 146,
+          "semivariance_nt2": 355.78644283446005
+        }
+      ],
+      "crossover_bins": 611,
+      "crossover_rmse_nt": 4.479486251613117
+    },
+    {
+      "dataset_no": 18468,
+      "state": "VIC",
+      "training_rows_interpreted": 853935,
+      "geometry_rows_by_role": {
+        "train": 853935,
+        "buffer": 0,
+        "calibration": 783483,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 48,
+      "correlation_range_m": 12500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 153,
+          "semivariance_nt2": 4587.607914648352
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 234,
+          "semivariance_nt2": 7513.4993726836965
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 222,
+          "semivariance_nt2": 6882.255027975291
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 192,
+          "semivariance_nt2": 5391.720667919774
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 187,
+          "semivariance_nt2": 4334.1331365201795
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 80,
+          "semivariance_nt2": 5883.617499508602
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 47,
+          "semivariance_nt2": 5642.702332232702
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 13,
+          "semivariance_nt2": 7929.873678860306
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 857,
+      "crossover_rmse_nt": 1.6773904300794728e+36
+    },
+    {
+      "dataset_no": 16008,
+      "state": "VIC",
+      "training_rows_interpreted": 1461557,
+      "geometry_rows_by_role": {
+        "train": 1461557,
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 55,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 179,
+          "semivariance_nt2": 18.44683114316194
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 283,
+          "semivariance_nt2": 46.75468654133474
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 277,
+          "semivariance_nt2": 61.33459574589851
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 250,
+          "semivariance_nt2": 64.02634596619723
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 266,
+          "semivariance_nt2": 67.8708125558763
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 136,
+          "semivariance_nt2": 59.70104042941133
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 73,
+          "semivariance_nt2": 43.094138719278405
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 21,
+          "semivariance_nt2": 35.435969075306986
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        }
+      ],
+      "crossover_bins": 1878,
+      "crossover_rmse_nt": 2.9456908528434327
+    },
+    {
+      "dataset_no": 19144,
+      "state": "WA",
+      "training_rows_interpreted": 308094,
+      "geometry_rows_by_role": {
+        "train": 308094,
+        "buffer": 0,
+        "calibration": 679800,
+        "test": 259267
+      },
+      "heldout_response_rows_interpreted": {
+        "buffer": 0,
+        "calibration": 0,
+        "test": 0
+      },
+      "training_cells_5km": 66,
+      "correlation_range_m": 17500.0,
+      "range_censored_at_100km": false,
+      "variogram": [
+        {
+          "lag_center_m": 2500.0,
+          "pairs": 0,
+          "semivariance_nt2": null
+        },
+        {
+          "lag_center_m": 7500.0,
+          "pairs": 195,
+          "semivariance_nt2": 69268.46555955209
+        },
+        {
+          "lag_center_m": 12500.0,
+          "pairs": 270,
+          "semivariance_nt2": 134807.03581825036
+        },
+        {
+          "lag_center_m": 17500.0,
+          "pairs": 232,
+          "semivariance_nt2": 190611.09592434365
+        },
+        {
+          "lag_center_m": 22500.0,
+          "pairs": 178,
+          "semivariance_nt2": 226334.7253349893
+        },
+        {
+          "lag_center_m": 27500.0,
+          "pairs": 148,
+          "semivariance_nt2": 196603.16511630625
+        },
+        {
+          "lag_center_m": 32500.0,
+          "pairs": 60,
+          "semivariance_nt2": 156299.9416012602
+        },
+        {
+          "lag_center_m": 37500.0,
+          "pairs": 39,
+          "semivariance_nt2": 203668.61267282075
+        },
+        {
+          "lag_center_m": 42500.0,
+          "pairs": 44,
+          "semivariance_nt2": 264401.7984856861
+        },
+        {
+          "lag_center_m": 47500.0,
+          "pairs": 59,
+          "semivariance_nt2": 225668.86563802688
+        },
+        {
+          "lag_center_m": 52500.0,
+          "pairs": 104,
+          "semivariance_nt2": 185678.9156557416
+        },
+        {
+          "lag_center_m": 57500.0,
+          "pairs": 90,
+          "semivariance_nt2": 139910.92834081323
+        },
+        {
+          "lag_center_m": 62500.0,
+          "pairs": 159,
+          "semivariance_nt2": 127586.49562568429
+        },
+        {
+          "lag_center_m": 67500.0,
+          "pairs": 134,
+          "semivariance_nt2": 91365.69922613206
+        },
+        {
+          "lag_center_m": 72500.0,
+          "pairs": 136,
+          "semivariance_nt2": 109585.2912608418
+        },
+        {
+          "lag_center_m": 77500.0,
+          "pairs": 105,
+          "semivariance_nt2": 90376.37811826577
+        },
+        {
+          "lag_center_m": 82500.0,
+          "pairs": 70,
+          "semivariance_nt2": 111472.24672706396
+        },
+        {
+          "lag_center_m": 87500.0,
+          "pairs": 60,
+          "semivariance_nt2": 98012.33951540374
+        },
+        {
+          "lag_center_m": 92500.0,
+          "pairs": 34,
+          "semivariance_nt2": 101761.79204175985
+        },
+        {
+          "lag_center_m": 97500.0,
+          "pairs": 18,
+          "semivariance_nt2": 123801.83905980532
+        }
+      ],
+      "crossover_bins": 394,
+      "crossover_rmse_nt": 8.60196002180914e+34
+    }
+  ],
+  "total_training_rows_interpreted": 6233124,
+  "response_rows_interpreted": {
+    "buffer": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "conservative_pilot_correlation_range_m": 22500.0,
+  "censored_member_count": 0,
+  "total_crossover_bins": 7210,
+  "products_sampled": 14,
+  "eligible_catalogue_products": 598,
+  "catalogue_product_fraction": 0.023411371237458192,
+  "pilot_geometry_response_test_clusters": 305,
+  "design_center_minimum_spacing_km": 55.0,
+  "pilot_range_is_below_design_spacing": true,
+  "pilot_power_count_possible": true,
+  "national_correlation_ready": false,
+  "national_correlation_reason": "14 stratified products are 2.34% of the 598-product catalogue and cannot yet establish an upper tolerance bound for unsampled survey heterogeneity",
+  "formal_contract_ready": false,
+  "test_unseal_count": 0
+}

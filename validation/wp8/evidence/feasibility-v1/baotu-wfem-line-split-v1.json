@@ -1,0 +1,189 @@
+{
+  "schema_version": "wp8-baotu-wfem-line-split-v1",
+  "source_record_sha256": "d4260e9c27859e8ccfafe108cab51133bd7c0993093f2e9a1ea42e4e62b61592",
+  "doi": "10.5281/zenodo.17140933",
+  "license": "cc-by-4.0",
+  "selection_unit": "whole named WFEM line file",
+  "selection_inputs": "filename, byte size and checksum only",
+  "selection_frozen_before_response_interpretation": true,
+  "role_rule": "SHA256(salt|filename) modulo 10: 30% train, 10% buffer, 10% calibration, 50% test",
+  "salt_sha256": "97aeefc0bf054e51130d2e56a5e3a198e6b790e38fa4fc3a716a16de6229476c",
+  "line_count": 27,
+  "partition_line_counts": {
+    "test": 14,
+    "train": 10,
+    "buffer": 2,
+    "calibration": 1
+  },
+  "lines": [
+    {
+      "name": "1 WFEM apparent resistivity of L1.dat",
+      "bytes": 110092,
+      "sha256": "48fddf5651293d90303a0a5ecaa4d9834c564400d4e4193cebf03cff4bb90235",
+      "role": "test"
+    },
+    {
+      "name": "10 WFEM apparent resistivity of W2.dat",
+      "bytes": 126356,
+      "sha256": "d2a57054b8010229246a45ac0d50788fc40772799b1f145f37ae90d8a432a695",
+      "role": "test"
+    },
+    {
+      "name": "11 WFEM apparent resistivity of W3.dat",
+      "bytes": 82040,
+      "sha256": "e5d40971fc06e37315471f8e80f10a6fe236b1f1fea91d16aedf88fbacb53b54",
+      "role": "train"
+    },
+    {
+      "name": "12 WFEM apparent resistivity of W4.dat",
+      "bytes": 100365,
+      "sha256": "9534ff73f5b0068914bf5af5b5e0c928bd329367e29e8677e8b2266166c2b883",
+      "role": "test"
+    },
+    {
+      "name": "13 WFEM apparent resistivity of W5.dat",
+      "bytes": 147330,
+      "sha256": "9046701a9c3653b776f3113027bf6d5bc1cb3cdd880726a96cdf499a6a37db0f",
+      "role": "train"
+    },
+    {
+      "name": "14 WFEM apparent resistivity of W6.dat",
+      "bytes": 128015,
+      "sha256": "625c6cdac8e4bac5d5818a6b550daa98c5ff1e4c6f364a9186a5eadbc5f0d3e0",
+      "role": "test"
+    },
+    {
+      "name": "15 WFEM apparent resistivity of W7.dat",
+      "bytes": 63035,
+      "sha256": "18bef7add9d17474ccc13825f9f9860ead64932f9cdb0e811caf5ea43b1d9e60",
+      "role": "train"
+    },
+    {
+      "name": "16 WFEM apparent resistivity of W8.dat",
+      "bytes": 61813,
+      "sha256": "b42fd43b28f71f924b89de883be42fdff142a3be89bf931240c5c333cbc6cef6",
+      "role": "test"
+    },
+    {
+      "name": "17 WFEM apparent resistivity of W9.dat",
+      "bytes": 62183,
+      "sha256": "2b05526dfa3ca1f7f9fbfa540d150b6624e571d4ca34798938cf35dfd58e3f53",
+      "role": "train"
+    },
+    {
+      "name": "18 WFEM apparent resistivity of W10.dat",
+      "bytes": 87728,
+      "sha256": "d9beeeae6f10a95473a45f9d00c829dbb5023c5a0c0d5baadbb9cefb9274c70c",
+      "role": "test"
+    },
+    {
+      "name": "19 WFEM apparent resistivity of W11.dat",
+      "bytes": 61390,
+      "sha256": "55a10ce68bf3028834df8d4463943ddede99506af9c0560a741e035090f3d6e6",
+      "role": "buffer"
+    },
+    {
+      "name": "2 WFEM apparent resistivity of L2.dat",
+      "bytes": 107405,
+      "sha256": "39c24bbc29a68bb2a1c44d457ddf02fcddb258dc9f0ab9b76b0a13dcba920c47",
+      "role": "test"
+    },
+    {
+      "name": "20 WFEM apparent resistivity of E1.dat",
+      "bytes": 46703,
+      "sha256": "236ece53b4cabeebf8d2c5a381fa1dc7cd0990354083a5086d37b51bb7c4705f",
+      "role": "train"
+    },
+    {
+      "name": "21 WFEM apparent resistivity of E2.dat",
+      "bytes": 19943,
+      "sha256": "0dd6c7646fffa89dda2567be7c69c9410d123c89f10dbff4ce22275311967bac",
+      "role": "test"
+    },
+    {
+      "name": "22 WFEM apparent resistivity of E3.dat",
+      "bytes": 61206,
+      "sha256": "db44666096d579797e2f1a8d7badefcabfa942d2a9db812498e7d15344eab835",
+      "role": "train"
+    },
+    {
+      "name": "23 WFEM apparent resistivity of E4.dat",
+      "bytes": 58167,
+      "sha256": "a6680d67c114876e69b29ca8d2540e8c0c6cae1472807f799129d6cc49ab8c11",
+      "role": "test"
+    },
+    {
+      "name": "24 WFEM apparent resistivity of E5.dat",
+      "bytes": 59664,
+      "sha256": "de15c828607fc5088e16fb8e12b0b0867f84cee791d81925b48b9a1cf731bc6b",
+      "role": "buffer"
+    },
+    {
+      "name": "25 WFEM apparent resistivity of E6.dat",
+      "bytes": 83058,
+      "sha256": "281e056c1fe1adb5bf7d87c08028d9cdb921a4b256b9f226efb13e13cf134a9f",
+      "role": "test"
+    },
+    {
+      "name": "26 WFEM apparent resistivity of E7.dat",
+      "bytes": 74742,
+      "sha256": "2c4a7ca117045484c49fd8215bb1e8aa5b76d6860355b50e20fa14640dd8ea30",
+      "role": "train"
+    },
+    {
+      "name": "27 WFEM apparent resistivity of E8.dat",
+      "bytes": 73285,
+      "sha256": "2dd05c8907014b960d6f8e3c4333fcd4a01f2a4b81244be17f3a0d6c0026947e",
+      "role": "test"
+    },
+    {
+      "name": "3 WFEM apparent resistivity of L3.dat",
+      "bytes": 129265,
+      "sha256": "7cc5d36b43cd05a71331bf1a12f7e494f6745593bf0eee8069bb0a947707cd6c",
+      "role": "calibration"
+    },
+    {
+      "name": "4 WFEM apparent resistivity of L4.dat",
+      "bytes": 130547,
+      "sha256": "25d8476e963a9d6ca76694d5d0b5eb95abdea6d91a9601640f50e2ecbb7584f6",
+      "role": "train"
+    },
+    {
+      "name": "5 WFEM apparent resistivity of L5.dat",
+      "bytes": 144134,
+      "sha256": "93500cfd8b651195848ce2b28df1598bd6b7e6356f281c3506ee1c6c1465d344",
+      "role": "test"
+    },
+    {
+      "name": "6 WFEM apparent resistivity of L6.dat",
+      "bytes": 146852,
+      "sha256": "2a84bed43f859a95dc2ca07821d49c22c30d2053c05d2b9e765cf5d6d905cc4e",
+      "role": "test"
+    },
+    {
+      "name": "7 WFEM apparent resistivity of L7.dat",
+      "bytes": 38704,
+      "sha256": "87650422d04c05c0d06830863a521fb30e8112b7747edf81ff045e052f1749d1",
+      "role": "test"
+    },
+    {
+      "name": "8 WFEM apparent resistivity of L8.dat",
+      "bytes": 56207,
+      "sha256": "401791a8b9fbafe5dbf360a3fac41d5c7fdb2bffcc4d6ca1b76411b8ef5d2689",
+      "role": "train"
+    },
+    {
+      "name": "9 WFEM apparent resistivity of W1.dat",
+      "bytes": 73035,
+      "sha256": "057cf204e853463062a2a4e9a8cdcfae611112e4bf0e18f68fb844f646705ed7",
+      "role": "train"
+    }
+  ],
+  "required_test_clusters": 223,
+  "line_level_test_cluster_upper_bound": 14,
+  "design_cluster_gate_possible": false,
+  "response_values_interpreted_during_selection": 0,
+  "calibration_response_values_interpreted": 0,
+  "test_response_values_interpreted": 0,
+  "test_unseal_count": 0
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "wp8-texas-aib-response-access-v1",
+  "sciencebase_item_id": "69ab5a87b66b01cd2fd12813",
+  "file": "TX_AIB_mag.csv.zip",
+  "expected_bytes": 4236679294,
+  "manager_probe": {
+    "url": "https://sciencebase.usgs.gov/manager/download/cmmfhsco500600vpdcjjd4tu8",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "4255"
+  },
+  "request_page_probe": {
+    "url": "https://www.sciencebase.gov/catalog/item/requestDownload/69ab5a87b66b01cd2fd12813?filePath=__s3__",
+    "status": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "content_length": null
+  },
+  "unsigned_s3_probe": {
+    "url": "https://prod-is-usgs-sb-prod-content.s3.amazonaws.com/69ab5a87b66b01cd2fd12813/TX_AIB_mag.csv.zip",
+    "status": 403,
+    "content_type": "application/xml",
+    "content_length": null
+  },
+  "captcha_required_for_presigned_url": true,
+  "direct_archive_available_without_human_challenge": false,
+  "response_bytes_read": 0,
+  "status": "human_captcha_required_for_temporary_presigned_url",
+  "unblock_condition": "complete the ScienceBase browser CAPTCHA and provide the resulting unexpired direct S3 URL; then run the resumable sealed acquisition"
+}

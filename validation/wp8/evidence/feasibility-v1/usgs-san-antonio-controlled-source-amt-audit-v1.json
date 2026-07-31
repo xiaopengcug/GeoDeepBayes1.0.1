@@ -1,0 +1,69 @@
+{
+  "schema_version": "wp8-usgs-san-antonio-controlled-source-amt-audit-v1",
+  "source": {
+    "title": "San Antonio Area Audio-magnetotelluric Data",
+    "publisher": "U.S. Geological Survey",
+    "report": "Open-File Report 02-118",
+    "survey_year": 2001,
+    "landing_page": "https://pubs.usgs.gov/of/2002/of02-118/html/desc.htm",
+    "data_page": "https://pubs.usgs.gov/of/2002/of02-118/html/data.htm",
+    "archive_url": "https://pubs.usgs.gov/of/2002/of02-118/Data/TexasAMT.zip",
+    "public_domain_us_federal_work": true
+  },
+  "archive": {
+    "bytes": 105815157,
+    "sha256": "b85e0ceb05ae593c65dd2ac461101fec23c9341edf643457e9bd13c336cac31b",
+    "members": 87,
+    "crosspower_files": 29,
+    "binary_time_series_files": 29,
+    "ascii_impedance_files": 29
+  },
+  "survey": {
+    "areas": 4,
+    "sites": 29,
+    "area_site_counts": {
+      "Honey Creek": 5,
+      "Kyle": 5,
+      "Tri-County": 4,
+      "Uvalde": 15
+    },
+    "coordinate_reference_system": "UTM zone 14N",
+    "site_coordinates_published": true,
+    "receiver": "Geometrics EH-4",
+    "receiver_components": ["Ex", "Ey", "Hx", "Hy"],
+    "controlled_source_use": "augment natural-source AMT between 450 and 4500 Hz",
+    "controlled_source_augmented_survey_design": true,
+    "controlled_source_use_per_site_known": false
+  },
+  "byte_audit": {
+    "impedance_frequency_rows": 1682,
+    "frequency_rows_per_site": 58,
+    "minimum_frequency_hz": 12.6,
+    "maximum_frequency_hz": 6310000.0,
+    "complex_impedance_tensor_present": true,
+    "scalar_apparent_resistivity_and_phase_present": true,
+    "coherency_fields_present": true,
+    "crosspower_real_and_imaginary_fields_present": true,
+    "number_of_averages_present": true,
+    "raw_receiver_time_series_present": true,
+    "receiver_dipole_lengths_in_time_series_headers": true
+  },
+  "missing_source_contract": {
+    "transmitter_coordinates": false,
+    "transmitter_orientation": false,
+    "transmitter_current_or_moment": false,
+    "sampled_transmitter_waveform": false,
+    "source_on_off_provenance_per_frequency_or_site": false,
+    "direct_per_observation_uncertainty": false
+  },
+  "gate_assessment": {
+    "observation_contract_pass": false,
+    "independent_cluster_upper_bound": 29,
+    "cluster_threshold": 223,
+    "clusters_pass": false,
+    "power_pass": false,
+    "formal_clusters_added": 0,
+    "formal_gate_changed": false,
+    "reason": "The package is a strong public raw receiver-data training resource, but it mixes natural and controlled-source energy, contains only 29 sites, and does not publish the controlled-source geometry, current/moment, sampled waveform, per-frequency source provenance, or direct observation uncertainty required by the locked CSAMT contract."
+  }
+}

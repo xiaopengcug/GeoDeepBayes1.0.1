@@ -1,0 +1,22 @@
+{
+  "schema_version": "wp8-hualapai-csamt-role-reconciliation-v1",
+  "raw_manifest_sha256": "99c25c7a9f25dde18987fb899e292d879bbc9c70fbdc0df87934e5b122937d67",
+  "contract_sha256": "1f584df04931af1846995db5f1178562a55241c8b9aa69f5fde69998167045ad",
+  "legacy_csamt_line_split_sha256": "4e3493b241aab7704cc5509e0c250f6c2f118f266090646b7f50dca3b778ff84",
+  "legacy_split_preserved": true,
+  "legacy_hualapai_test_lines": [
+    "Raw/A1.raw",
+    "Raw/PT1.raw",
+    "Raw/PT2.raw",
+    "Raw/QB1.raw",
+    "Raw/QB3.raw",
+    "Raw/WG.raw"
+  ],
+  "legacy_hualapai_test_line_count": 6,
+  "legacy_hualapai_test_role_status": "contaminated_and_superseded",
+  "effective_hualapai_scope": "permanently-training-only",
+  "hualapai_sealed_test_eligible": false,
+  "hualapai_formal_contribution": 0,
+  "formal_cluster_power_gate_passes": false,
+  "reason": "All Hualapai raw and inversion resources have been interpreted; historical test labels are retained only as immutable provenance and are not valid sealed roles."
+}

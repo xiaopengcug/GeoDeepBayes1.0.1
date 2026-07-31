@@ -1,0 +1,518 @@
+{
+  "schema_version": 2,
+  "run_id": "WP1-TOY-20260717-R400-v1",
+  "status": "Synthetic-run",
+  "repetitions": 400,
+  "prior_predictive_n": 10000,
+  "posterior_draws": 1000,
+  "rank_bins": 20,
+  "attempted": 2000,
+  "succeeded": 2000,
+  "failed": 0,
+  "config_snapshot": {
+    "run_id": "WP1-TOY-20260717-R400-v1",
+    "repetitions": 400,
+    "prior_predictive_n": 10000,
+    "posterior_draws": 1000,
+    "rank_bins": 20,
+    "corr_t": {
+      "seed": 2026071701,
+      "nu": 5.0,
+      "sigma": [
+        [
+          1.0,
+          0.7
+        ],
+        [
+          0.7,
+          1.0
+        ]
+      ],
+      "grid_min": -6.0,
+      "grid_max": 6.0,
+      "grid_count": 1201
+    },
+    "shared_xi": {
+      "seed": 2026071702,
+      "a": [
+        1.0,
+        0.6
+      ],
+      "b": [
+        0.8,
+        -0.5
+      ],
+      "noise_sd": [
+        0.2,
+        0.25
+      ],
+      "xi_sd": 0.3
+    }
+  },
+  "prior_predictive": {
+    "corr_t": {
+      "channel1": {
+        "n": 10000,
+        "mean": 0.004384486404522563,
+        "q01": -3.94866846923587,
+        "q05": -2.540316526797189,
+        "q50": 0.01885691219671093,
+        "q95": 2.589985149182332,
+        "q99": 3.895905836167415
+      },
+      "channel2": {
+        "n": 10000,
+        "mean": -0.00369128534872705,
+        "q01": -4.130352764156111,
+        "q05": -2.5831729738136673,
+        "q50": 0.009284032538718567,
+        "q95": 2.5624336968147436,
+        "q99": 3.8250434191153904
+      }
+    },
+    "shared_xi": {
+      "channel1": {
+        "n": 10000,
+        "mean": 0.0016113041269674496,
+        "q01": -2.4286300233527727,
+        "q05": -1.7275639220718948,
+        "q50": 0.010081461080444776,
+        "q95": 1.7369869470867074,
+        "q99": 2.4502859569285995
+      },
+      "channel2": {
+        "n": 10000,
+        "mean": 0.00046799589691439873,
+        "q01": -1.5340855656696095,
+        "q05": -1.0950170892651256,
+        "q50": -0.004486486609082116,
+        "q95": 1.0968002696915613,
+        "q99": 1.5488473879911184
+      }
+    }
+  },
+  "summaries": [
+    {
+      "model": "corr_t/main/m",
+      "attempted": 400,
+      "succeeded": 400,
+      "failed": 0,
+      "rank_bins": [
+        16,
+        23,
+        20,
+        20,
+        20,
+        25,
+        21,
+        20,
+        17,
+        18,
+        20,
+        16,
+        19,
+        22,
+        24,
+        20,
+        18,
+        19,
+        23,
+        19
+      ],
+      "rank_chi_square": 5.8,
+      "interval_estimate_90": 0.9125,
+      "interval_wilson95_90": [
+        0.8807392673857095,
+        0.9364130897884961
+      ],
+      "interval_estimate_95": 0.9575,
+      "interval_wilson95_95": [
+        0.9329979456752505,
+        0.9732983050088685
+      ]
+    },
+    {
+      "model": "corr_t/adversarial/m",
+      "attempted": 400,
+      "succeeded": 400,
+      "failed": 0,
+      "rank_bins": [
+        31,
+        25,
+        23,
+        16,
+        22,
+        15,
+        9,
+        15,
+        24,
+        16,
+        17,
+        19,
+        16,
+        18,
+        16,
+        24,
+        17,
+        23,
+        22,
+        32
+      ],
+      "rank_chi_square": 30.3,
+      "interval_estimate_90": 0.8425,
+      "interval_wilson95_90": [
+        0.8035652075632739,
+        0.8749188708177335
+      ],
+      "interval_estimate_95": 0.9175,
+      "interval_wilson95_95": [
+        0.8864031104605785,
+        0.9406541237702841
+      ]
+    },
+    {
+      "model": "shared_xi/main/m",
+      "attempted": 400,
+      "succeeded": 400,
+      "failed": 0,
+      "rank_bins": [
+        20,
+        19,
+        20,
+        21,
+        19,
+        19,
+        17,
+        28,
+        15,
+        26,
+        21,
+        24,
+        16,
+        17,
+        23,
+        8,
+        27,
+        17,
+        18,
+        25
+      ],
+      "rank_chi_square": 20.999999999999996,
+      "interval_estimate_90": 0.8875,
+      "interval_wilson95_90": [
+        0.8527764306768807,
+        0.9148515412140398
+      ],
+      "interval_estimate_95": 0.94,
+      "interval_wilson95_95": [
+        0.9122771510995447,
+        0.9593520298862748
+      ]
+    },
+    {
+      "model": "shared_xi/main/xi",
+      "attempted": 400,
+      "succeeded": 400,
+      "failed": 0,
+      "rank_bins": [
+        22,
+        21,
+        20,
+        17,
+        19,
+        24,
+        25,
+        20,
+        26,
+        17,
+        21,
+        11,
+        19,
+        13,
+        20,
+        24,
+        11,
+        19,
+        27,
+        24
+      ],
+      "rank_chi_square": 19.8,
+      "interval_estimate_90": 0.8875,
+      "interval_wilson95_90": [
+        0.8527764306768807,
+        0.9148515412140398
+      ],
+      "interval_estimate_95": 0.94,
+      "interval_wilson95_95": [
+        0.9122771510995447,
+        0.9593520298862748
+      ]
+    },
+    {
+      "model": "shared_xi/adversarial/m",
+      "attempted": 400,
+      "succeeded": 400,
+      "failed": 0,
+      "rank_bins": [
+        43,
+        16,
+        21,
+        23,
+        20,
+        21,
+        17,
+        17,
+        16,
+        11,
+        13,
+        22,
+        15,
+        21,
+        14,
+        18,
+        8,
+        12,
+        26,
+        46
+      ],
+      "rank_chi_square": 85.5,
+      "interval_estimate_90": 0.775,
+      "interval_wilson95_90": [
+        0.7315729789411198,
+        0.8131952591750173
+      ],
+      "interval_estimate_95": 0.865,
+      "interval_wilson95_95": [
+        0.8280190157519699,
+        0.895037009383994
+      ]
+    }
+  ],
+  "calibration_records": [
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.9,
+      "sampling_unit": "SBC repetition",
+      "split_id": "corr_t/main/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.9125,
+      "uncertainty_interval": [
+        0.8807392673857095,
+        0.9364130897884961
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.95,
+      "sampling_unit": "SBC repetition",
+      "split_id": "corr_t/main/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.9575,
+      "uncertainty_interval": [
+        0.9329979456752505,
+        0.9732983050088685
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "sbc_rank",
+      "nominal_level": null,
+      "sampling_unit": "SBC repetition",
+      "split_id": "corr_t/main/m",
+      "statistic": "rank_chi_square",
+      "estimate": 5.8,
+      "uncertainty_interval": null,
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.9,
+      "sampling_unit": "SBC repetition",
+      "split_id": "corr_t/adversarial/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.8425,
+      "uncertainty_interval": [
+        0.8035652075632739,
+        0.8749188708177335
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.95,
+      "sampling_unit": "SBC repetition",
+      "split_id": "corr_t/adversarial/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.9175,
+      "uncertainty_interval": [
+        0.8864031104605785,
+        0.9406541237702841
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "sbc_rank",
+      "nominal_level": null,
+      "sampling_unit": "SBC repetition",
+      "split_id": "corr_t/adversarial/m",
+      "statistic": "rank_chi_square",
+      "estimate": 30.3,
+      "uncertainty_interval": null,
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.9,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/main/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.8875,
+      "uncertainty_interval": [
+        0.8527764306768807,
+        0.9148515412140398
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.95,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/main/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.94,
+      "uncertainty_interval": [
+        0.9122771510995447,
+        0.9593520298862748
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "sbc_rank",
+      "nominal_level": null,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/main/m",
+      "statistic": "rank_chi_square",
+      "estimate": 20.999999999999996,
+      "uncertainty_interval": null,
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.9,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/main/xi",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.8875,
+      "uncertainty_interval": [
+        0.8527764306768807,
+        0.9148515412140398
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.95,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/main/xi",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.94,
+      "uncertainty_interval": [
+        0.9122771510995447,
+        0.9593520298862748
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "sbc_rank",
+      "nominal_level": null,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/main/xi",
+      "statistic": "rank_chi_square",
+      "estimate": 19.8,
+      "uncertainty_interval": null,
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.9,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/adversarial/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.775,
+      "uncertainty_interval": [
+        0.7315729789411198,
+        0.8131952591750173
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "parameter_interval_coverage",
+      "nominal_level": 0.95,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/adversarial/m",
+      "statistic": "interval_hit_rate",
+      "estimate": 0.865,
+      "uncertainty_interval": [
+        0.8280190157519699,
+        0.895037009383994
+      ],
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    },
+    {
+      "calibration_type": "sbc_rank",
+      "nominal_level": null,
+      "sampling_unit": "SBC repetition",
+      "split_id": "shared_xi/adversarial/m",
+      "statistic": "rank_chi_square",
+      "estimate": 85.5,
+      "uncertainty_interval": null,
+      "sharpness": null,
+      "status": "Synthetic-run",
+      "evidence_id": "WP1-TOY",
+      "run_id": "WP1-TOY-20260717-R400-v1"
+    }
+  ]
+}
