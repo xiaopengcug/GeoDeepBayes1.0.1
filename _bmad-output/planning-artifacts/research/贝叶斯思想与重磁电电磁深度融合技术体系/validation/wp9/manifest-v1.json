@@ -31,7 +31,7 @@
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/验收审查意见03.md",
       "bytes": 18982,
-      "sha256": "2e1525024fb093438d97540a6cb199d3a896d7f99ca2afe60a38d72a624ce440"
+      "sha256": "341cfe60d468a91dbb711a0777e36d8454f9c64242315c557624a42abfdf544b"
     },
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/final-gates-v1.json",
@@ -86,8 +86,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 11042,
-      "sha256": "7fabc517901f43a7e82f17b013bb2e149741642e6e39d2ebdfebe34e0b5b896e"
+      "bytes": 11198,
+      "sha256": "bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821"
     },
     {
       "path": "validation/wp9/build_finding_registry.py",
@@ -172,7 +172,7 @@
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/engineering-governance-reproducibility.json",
       "bytes": 1600,
-      "sha256": "7a6d4f5ea275f176a4168f1c2f58c83ba66502ba66c2885a9a15b27e55a3c6b7"
+      "sha256": "610ee6b645b0d21c68beeb389c3b099ace3f3ecba0f241ffb6c6346de41c0941"
     },
     {
       "path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp9/reviews-v1/geophysics-forward-physics.json",

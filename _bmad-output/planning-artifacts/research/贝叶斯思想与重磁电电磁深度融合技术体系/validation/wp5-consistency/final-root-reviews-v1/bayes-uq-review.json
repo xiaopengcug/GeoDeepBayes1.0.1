@@ -5,7 +5,7 @@
   "reviewer_identity": "Codex automated AI / 贝叶斯/UQ复核",
   "identity_type": "automated-ai-final-root-review",
   "decision": "Approved",
-  "reviewed_at_utc": "2026-07-30T22:00:14Z",
+  "reviewed_at_utc": "2026-07-30T23:47:45Z",
   "authorization_frozen_sha256": "fa604cd725d60848582aadde023b308c117a515e4c5e9d88b6f826da68c43748",
   "authorization_scope_amendment_sha256": "126c5dce324f4ef6959b56291b778b10967b6f62134483b62e54b6f2b9f9b1f1",
   "candidate": {
@@ -23,7 +23,8 @@
     "Confirmed design EIG, realized posterior information gain, forward LOMO, and draw-wise decision loss are not collapsed into additive contribution scores.",
     "Confirmed the selected UQ, marginal-likelihood, model-index, Green-ratio, SBC, PPC, and LOMO negative fixtures reject exactly as predeclared.",
     "Confirmed the rank-deficient economic-SVD dimensions, centered POD snapshots, isolated tune/final-test selection, and the prohibition on inferring time-to-accuracy from dimension ratio alone.",
-    "Traced 45 Bayesian/UQ oracle cases through the v3 fixture manifest and current seven-stage envelope; every selected result matched its immutable oracle."
+    "Traced 45 Bayesian/UQ oracle cases through the v3 fixture manifest and current seven-stage envelope; every selected result matched its immutable oracle.",
+    "Confirmed the Windows-only pre-checkout core.longpaths bootstrap is operational plumbing and does not alter the Bayesian target, calibration contracts, fixture oracles, or frozen 29-member candidate; reviewed CI workflow SHA-256 bd37b984794800de51ca39f5b7d145ea2cac93f462d3fbb7b996898de2ed8821, with effectiveness subject to the next Windows clean-checkout run."
   ],
   "findings": [],
   "limitations": "Automated AI review only; not a natural-person, external-credential, or legal signature.",
