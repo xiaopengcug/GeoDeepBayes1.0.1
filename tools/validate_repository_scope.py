@@ -53,6 +53,11 @@ CONTROLLED_DO27_ARCHIVE = (
     "Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/"
     "simpeg-research_Astic-2020-JointInversion-1.0.0.zip"
 )
+CONTROLLED_WP1_RECURSIVE_MEMBERS = (
+    "/validation/wp1-toy/output/prior-predictive.csv",
+    "/validation/wp1-toy/output/ranks.csv",
+    "/validation/wp1-toy/output/results.json",
+)
 
 
 def _active_version_prefixes(root: Path) -> tuple[str, ...]:
@@ -83,6 +88,8 @@ def permitted_forbidden_path(
 ) -> bool:
     """Return true only for narrow, reviewable generated-evidence exceptions."""
     if normalized.endswith("/validation/wp1-toy/output/manifest.json"):
+        return True
+    if normalized.endswith(CONTROLLED_WP1_RECURSIVE_MEMBERS):
         return True
     if normalized.endswith(
         "/research/open-data/00_catalog/open_geophysics_data_manifest.json"

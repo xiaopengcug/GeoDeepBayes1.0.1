@@ -1271,6 +1271,13 @@ def test_repository_scope_allows_only_controlled_wp7_versions():
         "unreviewed.zip"
     )
     assert not permitted_forbidden_path("/validation/wp8/versions/raw.npz")
+    wp1_output = (
+        "/_bmad-output/planning-artifacts/research/"
+        "贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp1-toy/output/"
+    )
+    for member in ("prior-predictive.csv", "ranks.csv", "results.json"):
+        assert permitted_forbidden_path(wp1_output + member)
+    assert not permitted_forbidden_path(wp1_output + "unreviewed.json")
 
 
 def test_persistence_plan_rejects_manifest_member_drift(tmp_path, monkeypatch):
