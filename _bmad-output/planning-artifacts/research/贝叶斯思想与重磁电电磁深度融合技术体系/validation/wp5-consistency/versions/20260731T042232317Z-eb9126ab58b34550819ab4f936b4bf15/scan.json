@@ -1,6 +1,6 @@
 {
   "schema": "wp5-consistency-scan-v1",
-  "run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
+  "run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
   "status": "Passed",
   "evidence_id": "EVD-WP5-GOVERNANCE",
   "claim": "Document consistency and evidence-boundary governance only",

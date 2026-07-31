@@ -1,0 +1,374 @@
+{
+  "schema": "wp5-selftest-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_version_path": "versions/20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+  "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c",
+  "root_anchor_file_sha256": "91f7f646b2fa38631511c720248802ec2a230f7651debf7ea0ab6961431d3e51",
+  "stage": "registry",
+  "fixture_count": 25,
+  "fixture_id_set": [
+    "FXT-REGISTRY-001",
+    "FXT-REGISTRY-002",
+    "FXT-REGISTRY-003",
+    "FXT-REGISTRY-004",
+    "FXT-REGISTRY-005",
+    "FXT-REGISTRY-006",
+    "FXT-REGISTRY-007",
+    "FXT-REGISTRY-008",
+    "FXT-REGISTRY-009",
+    "FXT-REGISTRY-010",
+    "FXT-REGISTRY-011",
+    "FXT-REGISTRY-012",
+    "FXT-REGISTRY-013",
+    "FXT-REGISTRY-014",
+    "FXT-REGISTRY-015",
+    "FXT-REGISTRY-016",
+    "FXT-REGISTRY-017",
+    "FXT-REGISTRY-018",
+    "FXT-REGISTRY-019",
+    "FXT-REGISTRY-020",
+    "FXT-REGISTRY-021",
+    "FXT-REGISTRY-022",
+    "FXT-REGISTRY-023",
+    "FXT-REGISTRY-024",
+    "FXT-REGISTRY-025"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-REGISTRY-001",
+      "case": "FXT-REGISTRY-001",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "scope registry use exact"
+      ],
+      "actual_rejection": "scope registry use exact",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2327
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-002",
+      "case": "FXT-REGISTRY-002",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "scope registry source"
+      ],
+      "actual_rejection": "scope registry source",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2241
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-003",
+      "case": "FXT-REGISTRY-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "scope registry owner"
+      ],
+      "actual_rejection": "scope registry owner",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2216
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-004",
+      "case": "FXT-REGISTRY-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk frozen constants"
+      ],
+      "actual_rejection": "risk frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2833
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-005",
+      "case": "FXT-REGISTRY-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk frozen constants"
+      ],
+      "actual_rejection": "risk frozen constants",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2860
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-006",
+      "case": "FXT-REGISTRY-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match c02-gn-hessian"
+      ],
+      "actual_rejection": "risk match c02-gn-hessian",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2913
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-007",
+      "case": "FXT-REGISTRY-007",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match c03-rjmcmc-interface"
+      ],
+      "actual_rejection": "risk match c03-rjmcmc-interface",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3009
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-008",
+      "case": "FXT-REGISTRY-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match a3-pod-hardware-boundary"
+      ],
+      "actual_rejection": "risk match a3-pod-hardware-boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2946
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-009",
+      "case": "FXT-REGISTRY-009",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match a11-borehole-observation"
+      ],
+      "actual_rejection": "risk match a11-borehole-observation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2996
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-010",
+      "case": "FXT-REGISTRY-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "risk match a13-curie-source-contract"
+      ],
+      "actual_rejection": "risk match a13-curie-source-contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2985
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-011",
+      "case": "FXT-REGISTRY-011",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-02-0027"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-02-0027",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55037
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-012",
+      "case": "FXT-REGISTRY-012",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-03-0030"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-03-0030",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55197
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-013",
+      "case": "FXT-REGISTRY-013",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-06-0002"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-06-0002",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54501
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-014",
+      "case": "FXT-REGISTRY-014",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-COMPUTE-PLAN-0003"
+      ],
+      "actual_rejection": "evidence status binding CLM-COMPUTE-PLAN-0003",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 56834
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-015",
+      "case": "FXT-REGISTRY-015",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-A4-0003"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-A4-0003",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53426
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-016",
+      "case": "FXT-REGISTRY-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-A4-0004"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-A4-0004",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 56477
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-017",
+      "case": "FXT-REGISTRY-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "evidence status binding CLM-DOC-A4-0006"
+      ],
+      "actual_rejection": "evidence status binding CLM-DOC-A4-0006",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 53540
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-018",
+      "case": "FXT-REGISTRY-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix3 conditional depth capability"
+      ],
+      "actual_rejection": "appendix3 conditional depth capability",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 62264
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-019",
+      "case": "FXT-REGISTRY-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "lambda namespace separation"
+      ],
+      "actual_rejection": "lambda namespace separation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58378
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-020",
+      "case": "FXT-REGISTRY-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ],
+      "actual_rejection": "planned communication benchmark boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 59064
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-021",
+      "case": "FXT-REGISTRY-021",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "appendix3 conditional depth capability"
+      ],
+      "actual_rejection": "appendix3 conditional depth capability",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 57970
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-022",
+      "case": "FXT-REGISTRY-022",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "lambda namespace separation"
+      ],
+      "actual_rejection": "lambda namespace separation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58972
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-023",
+      "case": "FXT-REGISTRY-023",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ],
+      "actual_rejection": "planned communication benchmark boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 57634
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-024",
+      "case": "FXT-REGISTRY-024",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "summary normalized likelihood and generalized posterior separation"
+      ],
+      "actual_rejection": "summary normalized likelihood and generalized posterior separation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 58216
+    },
+    {
+      "fixture_id": "FXT-REGISTRY-025",
+      "case": "FXT-REGISTRY-025",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "planned communication benchmark boundary"
+      ],
+      "actual_rejection": "planned communication benchmark boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 54538
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T05:20:57.8984182Z",
+  "output_sha256": "1557837bd09671c040370a41c9cbc008f16c5760ba28d0b292f3f77e5d3e234f",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

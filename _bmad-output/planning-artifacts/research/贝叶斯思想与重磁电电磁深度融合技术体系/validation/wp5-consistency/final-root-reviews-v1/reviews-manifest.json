@@ -9,14 +9,14 @@
     "approval_effect": "authorizes-round-2-remediation-and-six-automated-ai-role-reviews-only"
   },
   "candidate": {
-    "run_instance_id": "20260731T002921062Z-831da559b71c454688bcf2697be9212a",
-    "manifest_sha256": "bbe985fa974916455c7014cbbb4d59ca48eb209f98d9acba6b88cc10ff622577",
-    "member_root_sha256": "623920b4cd472a3aad02032bd870e232f470e2449b70f380d298a89904f3aa47",
-    "root_file_sha256": "ea704b787f64a3b7eb95db9a71d885f8d2a925ee2b6123d825f1bdb0a4c2452f"
+    "run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+    "manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+    "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+    "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c"
   },
   "release_evidence": {
     "path": "release-evidence-v1/envelope.json",
-    "sha256": "99abfb2f72ea0669bfbdaccf385afeaf8a64cba334ec168b86dc8eb9912d2870",
+    "sha256": "bcfcf3044df93c15eb8ef8db63732b32337fa394e0700de326f2c6ff1c742317",
     "total_fixture_count": 300
   },
   "implementation_evidence": {
@@ -37,42 +37,42 @@
       "review_id": "WP5-FINAL-ROOT-MAIN-EDITOR",
       "role": "主编",
       "path": "main-editor.json",
-      "sha256": "8e40523844668df95ed007b71614a70a05b3db449315fb938fc5eedc6ca2762c",
+      "sha256": "8b1d3486928c6bb4e17bf543743827924dbe8847ace5704b682e5f289e1b25d3",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-TECHNICAL-EDITOR",
       "role": "技术编辑",
       "path": "technical-editor.json",
-      "sha256": "9a50508bab5c24ab3d633004c92941cde769d2cc18be7908ffbaf92fd0d9d063",
+      "sha256": "b81dab43b17a94a3d3893ff12a48f7beee25f18fb2e692ca7060d1221a0f25b0",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-GEOPHYSICS",
       "role": "地球物理复核",
       "path": "geophysics-review.json",
-      "sha256": "797b840fbda857e63b828a678b88fa3ec742657bd868c9853d61169334aa2ef1",
+      "sha256": "274b8f290effa085f9dbd3f73c4f5417a38f8f85245862cd6b662ca8ac36c101",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-BAYES-UQ",
       "role": "贝叶斯/UQ复核",
       "path": "bayes-uq-review.json",
-      "sha256": "27ce1e9bf8b9b70d4e673a50646b419bde631ec1abb3b5a207c92b4d7e6e5625",
+      "sha256": "141eb36612e2717178a30de1583c6ec4b4ca8d27ddd4346f2ffc9e9b744f2d35",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-NUMERICAL",
       "role": "算法数值复核",
       "path": "numerical-review.json",
-      "sha256": "c5ac057cc6b8c453ac20367259af529504c53178a359d4c45452a3eb3bf00813",
+      "sha256": "d8ad86b55ab78d61f12678ef10de657270359a2baf96760a3c27596f95f53cdd",
       "decision": "Approved"
     },
     {
       "review_id": "WP5-FINAL-ROOT-ARCHITECTURE",
       "role": "工程架构复核",
       "path": "architecture-review.json",
-      "sha256": "4b0d81da8bdb9bfaf75df8fb8baa00243d51ef21b42b9359713f881aa6edebcc",
+      "sha256": "1c768115b40187995ae1ec644fadaaa3dd91ff593b4ce63c4597766dab0e6d44",
       "decision": "Approved"
     }
   ]

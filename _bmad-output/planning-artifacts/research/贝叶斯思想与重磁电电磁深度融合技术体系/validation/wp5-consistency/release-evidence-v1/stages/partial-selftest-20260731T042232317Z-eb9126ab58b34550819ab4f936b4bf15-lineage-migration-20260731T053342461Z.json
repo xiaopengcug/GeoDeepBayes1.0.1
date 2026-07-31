@@ -1,0 +1,722 @@
+{
+  "schema": "wp5-selftest-partial-evidence-v1",
+  "evidence_class": "Post-publication self-test evidence; not an input to its referenced manifest",
+  "source_run_instance_id": "20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_version_path": "versions/20260731T042232317Z-eb9126ab58b34550819ab4f936b4bf15",
+  "source_manifest_sha256": "08b9018190ec0a717ca02d81a8716aab9bee346c7e539b932ccc1688e7055d30",
+  "validator_sha256": "cf941fe8af13f57a5eefe72e72dea98b3ae8070b23bcbc959bba2c3e73d4898d",
+  "fixture_manifest_sha256": "c8cb59a6fb67a3c7d32ce77d6c2f224d18e3a57aca1e03c84a669f14abde33a9",
+  "member_root_sha256": "516edf533b3ecf17046f6b408a837d053b171938f78c966cae1935e2bdacd3c1",
+  "root_file_sha256": "ba18a0ffd4347b2e15b6bcb571831531c167983a95ee661370654b21dc83a95c",
+  "root_anchor_file_sha256": "91f7f646b2fa38631511c720248802ec2a230f7651debf7ea0ab6961431d3e51",
+  "stage": "lineage-migration",
+  "fixture_count": 50,
+  "fixture_id_set": [
+    "FXT-LINEAGE-MIGRATION-001",
+    "FXT-LINEAGE-MIGRATION-002",
+    "FXT-LINEAGE-MIGRATION-003",
+    "FXT-LINEAGE-MIGRATION-004",
+    "FXT-LINEAGE-MIGRATION-005",
+    "FXT-LINEAGE-MIGRATION-006",
+    "FXT-LINEAGE-MIGRATION-007",
+    "FXT-LINEAGE-MIGRATION-008",
+    "FXT-LINEAGE-MIGRATION-009",
+    "FXT-LINEAGE-MIGRATION-010",
+    "FXT-LINEAGE-MIGRATION-011",
+    "FXT-LINEAGE-MIGRATION-012",
+    "FXT-LINEAGE-MIGRATION-013",
+    "FXT-LINEAGE-MIGRATION-014",
+    "FXT-LINEAGE-MIGRATION-015",
+    "FXT-LINEAGE-MIGRATION-016",
+    "FXT-LINEAGE-MIGRATION-017",
+    "FXT-LINEAGE-MIGRATION-018",
+    "FXT-LINEAGE-MIGRATION-019",
+    "FXT-LINEAGE-MIGRATION-020",
+    "FXT-LINEAGE-MIGRATION-021",
+    "FXT-LINEAGE-MIGRATION-022",
+    "FXT-LINEAGE-MIGRATION-023",
+    "FXT-LINEAGE-MIGRATION-024",
+    "FXT-LINEAGE-MIGRATION-025",
+    "FXT-LINEAGE-MIGRATION-026",
+    "FXT-LINEAGE-MIGRATION-027",
+    "FXT-LINEAGE-MIGRATION-028",
+    "FXT-LINEAGE-MIGRATION-029",
+    "FXT-LINEAGE-MIGRATION-030",
+    "FXT-LINEAGE-MIGRATION-031",
+    "FXT-LINEAGE-MIGRATION-032",
+    "FXT-LINEAGE-MIGRATION-033",
+    "FXT-LINEAGE-MIGRATION-034",
+    "FXT-LINEAGE-MIGRATION-035",
+    "FXT-LINEAGE-MIGRATION-036",
+    "FXT-LINEAGE-MIGRATION-037",
+    "FXT-LINEAGE-MIGRATION-038",
+    "FXT-LINEAGE-MIGRATION-039",
+    "FXT-LINEAGE-MIGRATION-040",
+    "FXT-LINEAGE-MIGRATION-041",
+    "FXT-LINEAGE-MIGRATION-042",
+    "FXT-LINEAGE-MIGRATION-043",
+    "FXT-LINEAGE-MIGRATION-044",
+    "FXT-LINEAGE-MIGRATION-045",
+    "FXT-LINEAGE-MIGRATION-046",
+    "FXT-LINEAGE-MIGRATION-047",
+    "FXT-LINEAGE-MIGRATION-048",
+    "FXT-LINEAGE-MIGRATION-049",
+    "FXT-LINEAGE-MIGRATION-050"
+  ],
+  "batch_role": "stage",
+  "fixture_results": [
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-001",
+      "case": "FXT-LINEAGE-MIGRATION-001",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 covariance noise contract"
+      ],
+      "actual_rejection": "loop20 covariance noise contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3966
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-002",
+      "case": "FXT-LINEAGE-MIGRATION-002",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 metric dimension contract"
+      ],
+      "actual_rejection": "loop20 metric dimension contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4157
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-003",
+      "case": "FXT-LINEAGE-MIGRATION-003",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 chapter structure"
+      ],
+      "actual_rejection": "loop20 chapter structure",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3731
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-004",
+      "case": "FXT-LINEAGE-MIGRATION-004",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 ambiguous xref"
+      ],
+      "actual_rejection": "loop20 ambiguous xref",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3696
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-005",
+      "case": "FXT-LINEAGE-MIGRATION-005",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 duplicate prose 附录4-核心算法性能基准测试计划与验收指标.md"
+      ],
+      "actual_rejection": "loop20 duplicate prose 附录4-核心算法性能基准测试计划与验收指标.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3855
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-006",
+      "case": "FXT-LINEAGE-MIGRATION-006",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 observed evidence boundary"
+      ],
+      "actual_rejection": "loop20 observed evidence boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3851
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-007",
+      "case": "FXT-LINEAGE-MIGRATION-007",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_rejections": [],
+      "actual_rejection": "",
+      "success_criterion": "child accepts this positive fixture",
+      "matched": true,
+      "duration_ms": 66000
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-008",
+      "case": "FXT-LINEAGE-MIGRATION-008",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 scenario condition boundary"
+      ],
+      "actual_rejection": "loop20 scenario condition boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 4155
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-009",
+      "case": "FXT-LINEAGE-MIGRATION-009",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop20 appendix1 condition boundary"
+      ],
+      "actual_rejection": "loop20 appendix1 condition boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3704
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-010",
+      "case": "FXT-LINEAGE-MIGRATION-010",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop21 pending source schema only"
+      ],
+      "actual_rejection": "loop21 pending source schema only",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3594
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-011",
+      "case": "FXT-LINEAGE-MIGRATION-011",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop19 synthetic-only boundary"
+      ],
+      "actual_rejection": "loop19 synthetic-only boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 63245
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-012",
+      "case": "FXT-LINEAGE-MIGRATION-012",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop19 world-class case boundary"
+      ],
+      "actual_rejection": "loop19 world-class case boundary",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 66732
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-013",
+      "case": "FXT-LINEAGE-MIGRATION-013",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop19 knowledge admission contract"
+      ],
+      "actual_rejection": "loop19 knowledge admission contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 55356
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-014",
+      "case": "FXT-LINEAGE-MIGRATION-014",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "chapter completeness 04-分场景多方法融合适配方案.md"
+      ],
+      "actual_rejection": "chapter completeness 04-分场景多方法融合适配方案.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2917
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-015",
+      "case": "FXT-LINEAGE-MIGRATION-015",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "empty heading 附录3-算法选型与多方法组合决策树.md"
+      ],
+      "actual_rejection": "empty heading 附录3-算法选型与多方法组合决策树.md",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2937
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-016",
+      "case": "FXT-LINEAGE-MIGRATION-016",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "stale xref/resource hard gate"
+      ],
+      "actual_rejection": "stale xref/resource hard gate",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 2993
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-017",
+      "case": "FXT-LINEAGE-MIGRATION-017",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "unconditioned prior"
+      ],
+      "actual_rejection": "unconditioned prior",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3753
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-018",
+      "case": "FXT-LINEAGE-MIGRATION-018",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix1 fixed prior removal"
+      ],
+      "actual_rejection": "loop22 appendix1 fixed prior removal",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3115
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-019",
+      "case": "FXT-LINEAGE-MIGRATION-019",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix1 fixed prior removal"
+      ],
+      "actual_rejection": "loop22 appendix1 fixed prior removal",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3119
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-020",
+      "case": "FXT-LINEAGE-MIGRATION-020",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix1 fixed prior removal"
+      ],
+      "actual_rejection": "loop22 appendix1 fixed prior removal",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3117
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-021",
+      "case": "FXT-LINEAGE-MIGRATION-021",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix14 sourced geometry and angle"
+      ],
+      "actual_rejection": "loop22 appendix14 sourced geometry and angle",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3101
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-022",
+      "case": "FXT-LINEAGE-MIGRATION-022",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix14 sourced geometry and angle"
+      ],
+      "actual_rejection": "loop22 appendix14 sourced geometry and angle",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3105
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-023",
+      "case": "FXT-LINEAGE-MIGRATION-023",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 appendix14 sourced geometry and angle"
+      ],
+      "actual_rejection": "loop22 appendix14 sourced geometry and angle",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3322
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-024",
+      "case": "FXT-LINEAGE-MIGRATION-024",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 SBC tie randomization and PPC terminology"
+      ],
+      "actual_rejection": "loop22 SBC tie randomization and PPC terminology",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3341
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-025",
+      "case": "FXT-LINEAGE-MIGRATION-025",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop22 SBC tie randomization and PPC terminology"
+      ],
+      "actual_rejection": "loop22 SBC tie randomization and PPC terminology",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3038
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-026",
+      "case": "FXT-LINEAGE-MIGRATION-026",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix1 physical prior closure"
+      ],
+      "actual_rejection": "loop23 appendix1 physical prior closure",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3138
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-027",
+      "case": "FXT-LINEAGE-MIGRATION-027",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix1 physical prior closure"
+      ],
+      "actual_rejection": "loop23 appendix1 physical prior closure",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3401
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-028",
+      "case": "FXT-LINEAGE-MIGRATION-028",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix1 physical prior closure"
+      ],
+      "actual_rejection": "loop23 appendix1 physical prior closure",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3420
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-029",
+      "case": "FXT-LINEAGE-MIGRATION-029",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 PPC discrepancy and repetition separation"
+      ],
+      "actual_rejection": "loop23 PPC discrepancy and repetition separation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3383
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-030",
+      "case": "FXT-LINEAGE-MIGRATION-030",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 PPC discrepancy and repetition separation"
+      ],
+      "actual_rejection": "loop23 PPC discrepancy and repetition separation",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3412
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-031",
+      "case": "FXT-LINEAGE-MIGRATION-031",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix14 3D geometry and mechanism source contract"
+      ],
+      "actual_rejection": "loop23 appendix14 3D geometry and mechanism source contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3371
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-032",
+      "case": "FXT-LINEAGE-MIGRATION-032",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix14 3D geometry and mechanism source contract"
+      ],
+      "actual_rejection": "loop23 appendix14 3D geometry and mechanism source contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3631
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-033",
+      "case": "FXT-LINEAGE-MIGRATION-033",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop23 appendix14 3D geometry and mechanism source contract"
+      ],
+      "actual_rejection": "loop23 appendix14 3D geometry and mechanism source contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3412
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-034",
+      "case": "FXT-LINEAGE-MIGRATION-034",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix14 nondeterministic mechanism"
+      ],
+      "actual_rejection": "loop24 appendix14 nondeterministic mechanism",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3215
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-035",
+      "case": "FXT-LINEAGE-MIGRATION-035",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix14 nondeterministic mechanism"
+      ],
+      "actual_rejection": "loop24 appendix14 nondeterministic mechanism",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3055
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-036",
+      "case": "FXT-LINEAGE-MIGRATION-036",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix14 nondeterministic mechanism"
+      ],
+      "actual_rejection": "loop24 appendix14 nondeterministic mechanism",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3200
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-037",
+      "case": "FXT-LINEAGE-MIGRATION-037",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 appendix1 per-table source"
+      ],
+      "actual_rejection": "loop24 appendix1 per-table source",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3297
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-038",
+      "case": "FXT-LINEAGE-MIGRATION-038",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 intro unsupported quantities"
+      ],
+      "actual_rejection": "loop24 intro unsupported quantities",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3095
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-039",
+      "case": "FXT-LINEAGE-MIGRATION-039",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 intro unsupported quantities"
+      ],
+      "actual_rejection": "loop24 intro unsupported quantities",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3027
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-040",
+      "case": "FXT-LINEAGE-MIGRATION-040",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 BMA and joint information conditions"
+      ],
+      "actual_rejection": "loop24 BMA and joint information conditions",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3103
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-041",
+      "case": "FXT-LINEAGE-MIGRATION-041",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 BMA and joint information conditions"
+      ],
+      "actual_rejection": "loop24 BMA and joint information conditions",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3066
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-042",
+      "case": "FXT-LINEAGE-MIGRATION-042",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 risk-based test gate"
+      ],
+      "actual_rejection": "loop24 risk-based test gate",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3118
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-043",
+      "case": "FXT-LINEAGE-MIGRATION-043",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop24 risk-based test gate"
+      ],
+      "actual_rejection": "loop24 risk-based test gate",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3047
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-044",
+      "case": "FXT-LINEAGE-MIGRATION-044",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop25 fold and spectral evidence contract"
+      ],
+      "actual_rejection": "loop25 fold and spectral evidence contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3110
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-045",
+      "case": "FXT-LINEAGE-MIGRATION-045",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop25 fold and spectral evidence contract"
+      ],
+      "actual_rejection": "loop25 fold and spectral evidence contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3093
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-046",
+      "case": "FXT-LINEAGE-MIGRATION-046",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop25 fold and spectral evidence contract"
+      ],
+      "actual_rejection": "loop25 fold and spectral evidence contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3073
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-047",
+      "case": "FXT-LINEAGE-MIGRATION-047",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop25 point estimate and decision computability"
+      ],
+      "actual_rejection": "loop25 point estimate and decision computability",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3069
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-048",
+      "case": "FXT-LINEAGE-MIGRATION-048",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop25 point estimate and decision computability"
+      ],
+      "actual_rejection": "loop25 point estimate and decision computability",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3158
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-049",
+      "case": "FXT-LINEAGE-MIGRATION-049",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop25 smoothing and risk utility contract"
+      ],
+      "actual_rejection": "loop25 smoothing and risk utility contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3113
+    },
+    {
+      "fixture_id": "FXT-LINEAGE-MIGRATION-050",
+      "case": "FXT-LINEAGE-MIGRATION-050",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_rejections": [
+        "loop25 smoothing and risk utility contract"
+      ],
+      "actual_rejection": "loop25 smoothing and risk utility contract",
+      "success_criterion": "child rejects this fixture with one predeclared business assertion",
+      "matched": true,
+      "duration_ms": 3167
+    }
+  ],
+  "status": "Passed",
+  "completed_at_utc": "2026-07-31T05:33:42.4648614Z",
+  "output_sha256": "5175c12aeb50582f228bf7f2f1f9d7824243a9f7687f519419e6197cbad66daa",
+  "validator_exit": 0,
+  "pass_marker_count": 1
+}

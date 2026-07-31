@@ -16,6 +16,8 @@ $rootPath = Join-Path $root 'WP5-consistency-input-root.sha256'
 $rootAnchorPath = Join-Path $vroot 'WP5-consistency-root-anchor.sha256'
 $validatorSnapshot = $null
 $eventPath = $null
+$originalProcessTemp = [Environment]::GetEnvironmentVariable('TEMP',[EnvironmentVariableTarget]::Process)
+$temporaryTempOverride = $false
 
 function Get-Sha256([string]$Path) {
     (Get-FileHash -Algorithm SHA256 -LiteralPath $Path).Hash.ToLowerInvariant()
@@ -138,9 +140,14 @@ if ($hasExplicitFixtureSelection) {
 }
 if ($SmokeTest -and -not $hasExplicitFixtureSelection) { throw 'Smoke evidence requires a non-empty explicit fixture selection.' }
 
-$eventPath = Join-Path ([IO.Path]::GetTempPath()) ('wp5-selftest-events-' + [guid]::NewGuid().ToString('N') + '.ndjson')
-$validatorSnapshot = Join-Path ([IO.Path]::GetTempPath()) ('wp5-validator-snapshot-' + [guid]::NewGuid().ToString('N') + '.ps1')
+$portableTempRoot = [IO.Path]::GetTempPath()
+$eventPath = Join-Path $portableTempRoot ('wp5-selftest-events-' + [guid]::NewGuid().ToString('N') + '.ndjson')
+$validatorSnapshot = Join-Path $portableTempRoot ('wp5-validator-snapshot-' + [guid]::NewGuid().ToString('N') + '.ps1')
 try {
+    if ([string]::IsNullOrWhiteSpace($env:TEMP)) {
+        $env:TEMP = $portableTempRoot
+        $temporaryTempOverride = $true
+    }
     [IO.File]::WriteAllBytes($validatorSnapshot,[IO.File]::ReadAllBytes($validator))
     if ((Get-Sha256 $validatorSnapshot) -cne $before.validator_sha256) { throw 'Self-test validator snapshot mismatch.' }
     $env:WP5_SELFTEST_EVENT_PATH = $eventPath
@@ -152,6 +159,13 @@ try {
     $validatorExit = [int]$LASTEXITCODE
 } finally {
     Remove-Item Env:WP5_SELFTEST_EVENT_PATH -ErrorAction SilentlyContinue
+    if ($temporaryTempOverride) {
+        if ($null -eq $originalProcessTemp) {
+            Remove-Item Env:TEMP -ErrorAction SilentlyContinue
+        } else {
+            $env:TEMP = $originalProcessTemp
+        }
+    }
     if ($validatorSnapshot -and (Test-Path -LiteralPath $validatorSnapshot)) { Remove-Item -Force -LiteralPath $validatorSnapshot }
 }
 
