@@ -1,0 +1,10 @@
+GeoDeepBayes1.0 / Paper 01 package licence statement
+
+This package follows the repository's Proprietary licence declaration.
+Public access to the repository or a release archive does not grant a
+permissive open-source licence or additional reuse rights.
+
+Third-party software, bibliographic records, and public-data source records
+retain their respective licences, terms, and attribution requirements. This
+package does not redistribute vendor DLLs, licence-bound SDKs, or raw DO27
+input data.

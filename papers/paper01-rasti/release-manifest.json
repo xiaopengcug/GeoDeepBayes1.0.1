@@ -1,0 +1,191 @@
+{
+  "schema_version": "paper01-release-manifest/1.0",
+  "package_status": "release_candidate_pending_human_verification",
+  "members": [
+    {
+      "path": "HUMAN-VERIFICATION.md",
+      "bytes": 3022,
+      "sha256": "a87e2ba9a85931bf603848f64ef1ea2bf46cdc56c200ef25599cf2ad4d5dc992"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 494,
+      "sha256": "4b76bfad95e3ab31e2079a5d60a9bbe95a9ca6ff3838502848e86b3781b5bf81"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4101,
+      "sha256": "8c8d587a44aec9c53b04fe570e5b5b5aa5431cbcc66825d98c146197eb8e0b00"
+    },
+    {
+      "path": "RELEASE_NOTES_DRAFT.md",
+      "bytes": 1212,
+      "sha256": "cf07ab1c3984f353c81abc04e34e55715b5855a35de0fe168f2f584c570c8f6c"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/claim-intent-manifest-M-2026-08-23T12-58-50Z-a91c.json",
+      "bytes": 4696,
+      "sha256": "144ba7b5bfa88eb93937692c142470f32772b56013048b0f0eba6040d6798edf"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/revision-evidence-bundle-r2.json",
+      "bytes": 3953,
+      "sha256": "85a0ee8695f37be4d6661c9f3c9be144449dec1e9efa807cf4c3bceac349a6fb"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage2-revision/round2/manuscript-v1-integrity-rev2.md",
+      "bytes": 326022,
+      "sha256": "f927ad43821883e18412aa31df1a30969935b3c1120557921499423fad4251ca"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage2.5-integrity/integrity-pass-receipt-r2.json",
+      "bytes": 293,
+      "sha256": "1169a62d11c236f5ca3e9be78407bab4501b8d30154783ef485e47e1f530d8a1"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage3-review/phase2/manuscript-v1-integrity-rev2.block-manifest.json",
+      "bytes": 107615,
+      "sha256": "b496358aafccf6394fd5155b050debb92a732cdc6d01c19b86ed6e786cae5aa2"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage3-review/phase2/revision-roadmap-rasti.json",
+      "bytes": 34227,
+      "sha256": "558d403ee7494f13fdc7fe7ed73edb15a1a103981ea901430584900bb16e809c"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/authority/author-adjudication-r1.json",
+      "bytes": 6356,
+      "sha256": "5635a831a02729bd4fc6c76ac07009b2ff9e01e7af9bac93761c4425b52d3689"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/authority/claim-surface-manifest-r1.json",
+      "bytes": 4803,
+      "sha256": "9af225fafce24b0cee159c937c18584865fcfcb442e030213abd945bb531b9c6"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/authority/integrity-authorization-r2.json",
+      "bytes": 2890,
+      "sha256": "c60544f3f43c2c233ac210d3cc1d5b193c1487c78fff54aeb4f8e7f1ea4d2c33"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/integrity-correction-list-r2.json",
+      "bytes": 3390,
+      "sha256": "52220d86a6e93a9476bf140993ef42dc6320502e8c306bc30aaa6c88c1136064"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/integrity-patch-r2.apply-report.json",
+      "bytes": 10858,
+      "sha256": "2b69f61e51abe2b742318f3c4df4725d4e1d44806b5aba8c2d7e36d446515d69"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/integrity-patch-r2.json",
+      "bytes": 21149,
+      "sha256": "c4ec555ec3203657a97aab62c25c06b0720623e52d898cc7735a5420d54a7e92"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/manuscript-v2-rasti-major-revision.block-manifest.json",
+      "bytes": 108286,
+      "sha256": "0247b8120dd2332741d61375d53e89a5064e5d78a4543002371f4a5cc9a6fc6a"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/manuscript-v2-rasti-major-revision.md",
+      "bytes": 317923,
+      "sha256": "31d3c02c53f2bb5b25e8139cda07ca36ad36a0018457766d512926efce8f1c81"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/manuscript-v3-rasti-integrity-rev2.md",
+      "bytes": 308980,
+      "sha256": "59d8475d7e57506e0bb3756748a6c9ad3324684988b8d634294241a9935e3df9"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/revision-patch-r1.apply-report.json",
+      "bytes": 12311,
+      "sha256": "7c46f3f4d3ee5599ac972238820a0830a874bc17a78e0562a422647ca9713162"
+    },
+    {
+      "path": "evidence/revision-bundle-r2/stage4-revision/revision-patch-r1.json",
+      "bytes": 35430,
+      "sha256": "093e497f894b7e29821b7712458e1ac7c371fe68419457da21b8476219ec656a"
+    },
+    {
+      "path": "evidence/revision-evidence-bundle-r2.json",
+      "bytes": 3953,
+      "sha256": "85a0ee8695f37be4d6661c9f3c9be144449dec1e9efa807cf4c3bceac349a6fb"
+    },
+    {
+      "path": "evidence/verification-final/algorithm-replay.json",
+      "bytes": 2538,
+      "sha256": "7bf3aa2592815760c61e2e9688821f6b4eb5ca3c97eabfce2b8b5302e3e0fff3"
+    },
+    {
+      "path": "evidence/verification-final/joint-replay-summary.json",
+      "bytes": 232022,
+      "sha256": "2f6a664b72c4d06775f6d01e258e89621a6b535f37f097272df0d0f565811f20"
+    },
+    {
+      "path": "evidence/verification-final/m2-reconstruction-lineage.json",
+      "bytes": 40307,
+      "sha256": "dc6b00f04bdeed64d651e6b969ead027bc38ec79c479004c83677ded706945b1"
+    },
+    {
+      "path": "manuscript/manuscript-anchored.md",
+      "bytes": 309218,
+      "sha256": "c00757839ac3758682ab8761677ea48b854ddb7c2fcd3ec12c259959c12dbf09"
+    },
+    {
+      "path": "manuscript/manuscript-clean.md",
+      "bytes": 268472,
+      "sha256": "85590e6934893e7203971393de81299dfd147c9603124a6c60c0f3a4754e3eb3"
+    },
+    {
+      "path": "manuscript/response-to-reviewers-r1.md",
+      "bytes": 11238,
+      "sha256": "b3602a3816827c2e9ce23f09c2a9414f80c234d7a6c51d0270673f08dca726c7"
+    },
+    {
+      "path": "provenance/author-facts-authorization-r3.json",
+      "bytes": 776,
+      "sha256": "921a6c212fdef5328110dece075d6dd68420aeb32f5f2f6a3013609fe757e85f"
+    },
+    {
+      "path": "provenance/author-facts-patch-r3.apply-report.json",
+      "bytes": 2477,
+      "sha256": "ac8f1d1e895b6617644f9cb4e9c510ed611e6ed111eb62e6b11d6bfde4c288a5"
+    },
+    {
+      "path": "provenance/author-facts-patch-r3.json",
+      "bytes": 1887,
+      "sha256": "7e2ed24d5c44b92efeb1bd7bc0e49bec8d9d6a6bb162d5a368307a8f615535e9"
+    },
+    {
+      "path": "provenance/clean-render-report.json",
+      "bytes": 775,
+      "sha256": "5aa3740f6df92800c5a07cde46e6c4a966cf78aa98017f1c5d9949f965e2795a"
+    },
+    {
+      "path": "provenance/stage4-checkpoint-r2.md",
+      "bytes": 6221,
+      "sha256": "984f875e81f51893e60563c51a24b5bbc2aaa3c73228bc236e5e479aa882c4cf"
+    },
+    {
+      "path": "scripts/replay_evd_algo_diagnostics.py",
+      "bytes": 5730,
+      "sha256": "688d119c50cef35ab99f882829d85c4398fdc10df11e7154356054df64dbacb8"
+    },
+    {
+      "path": "scripts/replay_evd_joint_diagnostics.py",
+      "bytes": 6886,
+      "sha256": "43e048c7b3218138d168700a8c753f10dd4aff340188ef18348405ea360085ec"
+    },
+    {
+      "path": "scripts/replay_release.py",
+      "bytes": 6695,
+      "sha256": "d4ced24ec8a8637715f2f995610e60f74bf5121bef33c80e70a4625dd9d1a332"
+    },
+    {
+      "path": "scripts/verify_m2_reconstruction_lineage.py",
+      "bytes": 5476,
+      "sha256": "ea7d1aaec3c6a3e8a60536400dda576f38548f5a925c602248d6360bd3f7b8ca"
+    }
+  ]
+}

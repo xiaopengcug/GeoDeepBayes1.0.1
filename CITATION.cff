@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this research framework or its Paper 01 evidence package, please cite this release."
+title: "GeoDeepBayes1.0: Paper 01 RASTI evidence and software package"
+type: software
+version: "paper01-rasti-v1.0.0"
+authors:
+  - family-names: Li
+    given-names: Xiao Peng
+    orcid: "https://orcid.org/0009-0002-1814-9447"
+    affiliation: "Shandong Provincial Geological Survey Institute"
+  - family-names: Hu
+    given-names: Xue Ping
+    affiliation: "Shandong Provincial Geological Survey Institute"
+  - family-names: Dong
+    given-names: Jian
+    affiliation: "Shandong Provincial Geological Survey Institute"
+  - family-names: Chen
+    given-names: Lei
+    affiliation: "Shandong Provincial Geological Survey Institute"
+  - family-names: Ma
+    given-names: Li Xin
+    affiliation: "Shandong Provincial Geological Survey Institute"
+repository-code: "https://github.com/xiaopengcug/GeoDeepBayes1.0.1"
+keywords:
+  - Bayesian joint inversion
+  - geophysical data fusion
+  - uncertainty quantification
+  - reproducibility governance
+  - mineral exploration under cover

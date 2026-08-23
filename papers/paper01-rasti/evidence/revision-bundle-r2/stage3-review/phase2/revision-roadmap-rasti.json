@@ -1,0 +1,1088 @@
+{
+  "schema_version": "revision-roadmap/1.0",
+  "revision_round": 1,
+  "base_draft_sha256": "f927ad43821883e18412aa31df1a30969935b3c1120557921499423fad4251ca",
+  "block_manifest_sha256": "b496358aafccf6394fd5155b050debb92a732cdc6d01c19b86ed6e786cae5aa2",
+  "items": [
+    {
+      "id": "REV-EIC-1",
+      "source_refs": [
+        {
+          "seat": "EIC",
+          "channel": "finding",
+          "ordinal": 1,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "把带内部治理注记的生产源转换为简洁、可送审的 RASTI Research article。",
+      "reviewer": "EIC",
+      "sub_claim_ids": [
+        "SC-1",
+        "SC-2"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§8.4",
+        "quote": "a governance contribution whose motive is undisclosed is indistinguishable from ceremony"
+      },
+      "confidence": 5,
+      "competence_basis": "期刊适配与稿件结构评审",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "全稿内部注记清理以及 §8.4 治理叙述压缩"
+      },
+      "consequence_if_unaddressed": {
+        "code": "editorial_conformance_unmet",
+        "target": {
+          "kind": "manuscript",
+          "locator": "RASTI Research article 的科学叙事与送审清洁度"
+        }
+      },
+      "target_section": "全稿与 §8.4",
+      "suggested_action": "移除生产性 block/evidence 注记，把可审计细节移至 supplement，并压缩重复治理叙述。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "送审版本不含内部生产注记；主文能够从 Abstract、Methods、Results、Discussion 顺序定位 formulation、evidence ceiling 和 limitations。",
+      "proposed_targets": [
+        {
+          "block_id": "B0286",
+          "allowed_operations": [
+            "replace_block",
+            "delete_block"
+          ]
+        },
+        {
+          "block_id": "B0287",
+          "allowed_operations": [
+            "replace_block",
+            "delete_block"
+          ]
+        },
+        {
+          "block_id": "B0288",
+          "allowed_operations": [
+            "replace_block",
+            "delete_block"
+          ]
+        },
+        {
+          "block_id": "B0289",
+          "allowed_operations": [
+            "replace_block",
+            "delete_block"
+          ]
+        },
+        {
+          "block_id": "B0290",
+          "allowed_operations": [
+            "replace_block",
+            "delete_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-EIC-2",
+      "source_refs": [
+        {
+          "seat": "EIC",
+          "channel": "finding",
+          "ordinal": 2,
+          "subclaim_ordinal": 0
+        },
+        {
+          "seat": "R1",
+          "channel": "finding",
+          "ordinal": 1,
+          "subclaim_ordinal": 0
+        },
+        {
+          "seat": "R2",
+          "channel": "finding",
+          "ordinal": 3,
+          "subclaim_ordinal": 0
+        },
+        {
+          "seat": "DA",
+          "channel": "finding",
+          "ordinal": 1,
+          "subclaim_ordinal": 0
+        },
+        {
+          "seat": "DA",
+          "channel": "finding",
+          "ordinal": 4,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "统一选择 formulation/protocol 或 validated assembled technique 的文章身份，并让题名和贡献强度服从选择。",
+      "reviewer": "EIC; R1; R2; DA",
+      "sub_claim_ids": [
+        "SC-3",
+        "SC-4",
+        "SC-5"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "Abstract",
+        "quote": "not evidence of assembled fusion performance"
+      },
+      "confidence": 4,
+      "competence_basis": "geophysical methods 期刊贡献判断",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "题名、摘要、贡献段、限制和结论的主张级一致化"
+      },
+      "consequence_if_unaddressed": {
+        "code": "claim_scope_unsupported",
+        "target": {
+          "kind": "claim",
+          "locator": "assembled fusion、multi-scale demonstration 与技术显著性主张"
+        }
+      },
+      "target_section": "Title、Abstract、§1、§8.5、§9",
+      "suggested_action": "作者选择窄化为 formulation/protocol，或在新实验支持后保留 validated-technique 身份；任何路径都不得预设新结果。",
+      "consensus_level": "CONSENSUS-3",
+      "verification_criteria": "题名、摘要、贡献表和结论使用同一 evidence-tier；multi-scale 标为 design/specification；没有 gate-passing endpoint 时不出现 assembled-performance 含义。",
+      "proposed_targets": [
+        {
+          "block_id": "B0001",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0003",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0013",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0305",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0338",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0339",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0341",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ],
+      "corroborating_sources": [
+        {
+          "reviewer": "R1",
+          "severity": "major",
+          "evidence_anchor": {
+            "anchor_type": "text",
+            "locator": "§7.5",
+            "quote": "All 42 pilot runs failed the diagnostics hard gate."
+          },
+          "confidence": 5,
+          "competence_basis": "Bayesian computation 与 joint-inversion 验证设计"
+        },
+        {
+          "reviewer": "R2",
+          "severity": "major",
+          "evidence_anchor": {
+            "anchor_type": "text",
+            "locator": "§8.5",
+            "quote": "The multi-scale mechanism is not exercised"
+          },
+          "confidence": 5,
+          "competence_basis": "gravity–magnetic joint inversion"
+        },
+        {
+          "reviewer": "DA",
+          "severity": "major",
+          "evidence_anchor": {
+            "anchor_type": "text",
+            "locator": "§9",
+            "quote": "On the behaviour of the assembled framework this paper reports nothing"
+          },
+          "confidence": 5,
+          "competence_basis": "claim-evidence adversarial review"
+        }
+      ]
+    },
+    {
+      "id": "REV-EIC-3",
+      "source_refs": [
+        {
+          "seat": "EIC",
+          "channel": "finding",
+          "ordinal": 3,
+          "subclaim_ordinal": 0
+        },
+        {
+          "seat": "R3",
+          "channel": "finding",
+          "ordinal": 3,
+          "subclaim_ordinal": 0
+        },
+        {
+          "seat": "DA",
+          "channel": "finding",
+          "ordinal": 3,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "修正仓库事实并使审计材料具备外部可核查路径。",
+      "reviewer": "EIC; R3; DA",
+      "sub_claim_ids": [
+        "SC-6",
+        "SC-7",
+        "SC-8"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "Code and data availability",
+        "quote": "No public repository has been established at the time of writing."
+      },
+      "confidence": 5,
+      "competence_basis": "期刊数据可用性与提交合规",
+      "cost_scope": {
+        "kind": "other",
+        "surface_id": "external_artifacts",
+        "locator": "Data Availability Statement、GitHub 版本、evidence manifest 与外部 replay 入口"
+      },
+      "consequence_if_unaddressed": {
+        "code": "reporting_requirement_unmet",
+        "target": {
+          "kind": "section",
+          "locator": "Code and data availability"
+        }
+      },
+      "target_section": "§8.5 与 Code and data availability",
+      "suggested_action": "明确仓库已存在但本文材料尚未推送；提交前发布可引用版本或逐项说明限制，并区分内部审计与独立 replay。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "Data Availability Statement 与作者确认及可访问 remote 一致；每个支撑结论的代码/证据资产具有版本、hash、许可和访问说明。",
+      "proposed_targets": [
+        {
+          "block_id": "B0324",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0361",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0362",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ],
+      "corroborating_sources": [
+        {
+          "reviewer": "R3",
+          "severity": "major",
+          "evidence_anchor": {
+            "anchor_type": "text",
+            "locator": "§8.5",
+            "quote": "the separation is procedural and cryptographic rather than institutional"
+          },
+          "confidence": 5,
+          "competence_basis": "reproducible computational research"
+        },
+        {
+          "reviewer": "DA",
+          "severity": "major",
+          "evidence_anchor": {
+            "anchor_type": "text",
+            "locator": "§8.5",
+            "quote": "an intercepted defect bounds neither the number nor the severity of defects not intercepted"
+          },
+          "confidence": 5,
+          "competence_basis": "自证循环与独立性审查"
+        }
+      ]
+    },
+    {
+      "id": "REV-EIC-4",
+      "source_refs": [
+        {
+          "seat": "EIC",
+          "channel": "finding",
+          "ordinal": 4,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "据实完成 Funding 与 CRediT author-contributions 声明。",
+      "reviewer": "EIC",
+      "sub_claim_ids": [
+        "SC-9"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "minor",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "Declarations",
+        "quote": "Author contributions to be supplied in CRediT taxonomy."
+      },
+      "confidence": 5,
+      "competence_basis": "投稿完整性检查",
+      "cost_scope": {
+        "kind": "sentence",
+        "locator": "Declarations 中两个占位段"
+      },
+      "consequence_if_unaddressed": {
+        "code": "reporting_requirement_unmet",
+        "target": {
+          "kind": "section",
+          "locator": "Funding 与 Author contributions"
+        }
+      },
+      "target_section": "Declarations",
+      "suggested_action": "由对应作者提供真实 funding 和 CRediT 信息，不从项目记录推断。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "两个占位符均被完整声明替换，且与投稿系统字段一致。",
+      "proposed_targets": [
+        {
+          "block_id": "B0359",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0364",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R1-2",
+      "source_refs": [
+        {
+          "seat": "R1",
+          "channel": "finding",
+          "ordinal": 2,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "处理 same-kernel 与 nested misspecification 对验证外推的限制。",
+      "reviewer": "R1",
+      "sub_claim_ids": [
+        "SC-10"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§6.4",
+        "quote": "this is a same-kernel study, and the inverse-crime reservation is registered"
+      },
+      "confidence": 5,
+      "competence_basis": "synthetic inverse-problem validation",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "§6.4/§8.5 validation scope；新 validation arm 仅在作者选择更强主张时需要"
+      },
+      "consequence_if_unaddressed": {
+        "code": "evidence_gap_remains",
+        "target": {
+          "kind": "claim",
+          "locator": "一般 misspecification detection 与 field-like robustness"
+        }
+      },
+      "target_section": "§6.4 与 §8.5",
+      "suggested_action": "最低路径是把现有 arm 限定为 implementation baseline；较强路径是预注册 independent-forward 或 non-nested discrepancy arm。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "validation design 明确区分 implementation baseline 与 structural-error evidence；所有一般化表述只使用实际行使的 arms。",
+      "proposed_targets": [
+        {
+          "block_id": "B0203",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0305",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0306",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R1-3",
+      "source_refs": [
+        {
+          "seat": "R1",
+          "channel": "finding",
+          "ordinal": 3,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "冻结唯一的权重 operationalisation 或给出两种形式的受控比较。",
+      "reviewer": "R1",
+      "sub_claim_ids": [
+        "SC-11"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "equation",
+        "locator": "Eq. (3.9) and the additive-floor instantiation in §3.5"
+      },
+      "confidence": 5,
+      "competence_basis": "generalised Bayes 与 likelihood weighting",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "§3.5 权重定义与 joint-asset registration note"
+      },
+      "consequence_if_unaddressed": {
+        "code": "method_reproducibility_unresolved",
+        "target": {
+          "kind": "claim",
+          "locator": "robustness-weight endpoint 的唯一实现与解释"
+        }
+      },
+      "target_section": "§3.5",
+      "suggested_action": "完成 adjudication，固定规范公式、epsilon_w 规则和替代形式的证据边界。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "正文和注册资产引用同一规范定义；若保留两种形式，报告非等价性与预注册 sensitivity plan。",
+      "proposed_targets": [
+        {
+          "block_id": "B0112",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R1-4",
+      "source_refs": [
+        {
+          "seat": "R1",
+          "channel": "finding",
+          "ordinal": 4,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "消除 diagnostics contract 与 implementation 的分歧，并验证 non-finite fail-closed 行为。",
+      "reviewer": "R1",
+      "sub_claim_ids": [
+        "SC-12",
+        "SC-13"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§8.5",
+        "quote": "Under non-finite contamination the four-item gate fails open rather than closed."
+      },
+      "confidence": 5,
+      "competence_basis": "MCMC diagnostics 与 fail-closed validation",
+      "cost_scope": {
+        "kind": "re_analysis",
+        "locator": "diagnostics implementation、regression tests 与历史 replay"
+      },
+      "consequence_if_unaddressed": {
+        "code": "method_reproducibility_unresolved",
+        "target": {
+          "kind": "dataset",
+          "locator": "diagnostic contract 与 gate ledger"
+        }
+      },
+      "target_section": "§6.1 与 §8.5",
+      "suggested_action": "版本化修订 plotting position 和 non-finite policy，加入回归测试，并对既有 runs 重放核验。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "contract、implementation 和测试使用同一公式；non-finite 输入触发明确停止；重放报告保留 predecessor 和任何 verdict 变化。",
+      "proposed_targets": [
+        {
+          "block_id": "B0184",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0313",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0314",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R1-5",
+      "source_refs": [
+        {
+          "seat": "R1",
+          "channel": "finding",
+          "ordinal": 5,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "把 post-hoc batch reconstruction 与 runtime-generated evidence 明确分层。",
+      "reviewer": "R1",
+      "sub_claim_ids": [
+        "SC-14"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§7.5",
+        "quote": "The pilot driver did not run to completion"
+      },
+      "confidence": 4,
+      "competence_basis": "可复现计算实验与证据链",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "§7.5 pilot reconstruction provenance"
+      },
+      "consequence_if_unaddressed": {
+        "code": "reader_traceability_reduced",
+        "target": {
+          "kind": "dataset",
+          "locator": "joint pilot batch artifacts"
+        }
+      },
+      "target_section": "§7.5",
+      "suggested_action": "发布 reconstruction 输入 hashes、确定性脚本和字段 lineage；后续 pilot 由 driver 原生生成 batch artifacts。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "读者可从 sealed per-run artifacts 重建 gate ledger；重建设施和 runtime artifacts 使用不同 evidence status。",
+      "proposed_targets": [
+        {
+          "block_id": "B0255",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R1-6",
+      "source_refs": [
+        {
+          "seat": "R1",
+          "channel": "finding",
+          "ordinal": 6,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "补全 coverage interval 的数值、nominal-level 映射与计算方法。",
+      "reviewer": "R1",
+      "sub_claim_ids": [
+        "SC-15"
+      ],
+      "obligation_class": "should_fix",
+      "severity": "minor",
+      "evidence_anchor": {
+        "anchor_type": "absence",
+        "locator": "§7.2 coverage paragraph and Figure 5 caption",
+        "absence_scope": "numerical interval estimates and their construction",
+        "check_performed": "检查了 §7.2、Figure 5 caption、tables 和 appendices"
+      },
+      "confidence": 5,
+      "competence_basis": "统计报告与覆盖率验证",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "§7.2 与 Figure 5 caption"
+      },
+      "consequence_if_unaddressed": {
+        "code": "reporting_requirement_unmet",
+        "target": {
+          "kind": "figure",
+          "locator": "Figure 5 coverage statement"
+        }
+      },
+      "target_section": "§7.2 与 Figure 5",
+      "suggested_action": "报告 nominal level、hit count、interval method、interval，并保留 frequentist same-truth 非 SBC 边界。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "两个 coverage 点均具有可复算计数、nominal level、interval method 和区间；正文措辞与区间一致。",
+      "proposed_targets": [
+        {
+          "block_id": "B0238",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0239",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R2-1",
+      "source_refs": [
+        {
+          "seat": "R2",
+          "channel": "finding",
+          "ordinal": 1,
+          "subclaim_ordinal": 0
+        },
+        {
+          "seat": "DA",
+          "channel": "finding",
+          "ordinal": 2,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "用 full-text evidence 重建 nearest-neighbour matrix，或撤销其差异性决策作用。",
+      "reviewer": "R2; DA",
+      "sub_claim_ids": [
+        "SC-16"
+      ],
+      "obligation_class": "must_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "Appendix A.4",
+        "quote": "no full text was read"
+      },
+      "confidence": 5,
+      "competence_basis": "joint geophysical inversion 文献定位",
+      "cost_scope": {
+        "kind": "re_analysis",
+        "locator": "Table 5 与 Appendix A full-text recoding"
+      },
+      "consequence_if_unaddressed": {
+        "code": "acceptance_criterion_unmet",
+        "target": {
+          "kind": "table",
+          "locator": "nearest-neighbour coverage matrix"
+        }
+      },
+      "target_section": "§2.2、§2.3、§8.3、Appendix A",
+      "suggested_action": "获取并记录核心 comparators 的全文证据；无法核验的单元标为 unknown，随后重算差异性结论。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "每个非 unknown 单元具有全文页码/段落证据；Table 5、Appendix A 与贡献陈述由同一重算结果生成。",
+      "proposed_targets": [
+        {
+          "block_id": "B0031",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0032",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0379",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0381",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0382",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ],
+      "corroborating_sources": [
+        {
+          "reviewer": "DA",
+          "severity": "major",
+          "evidence_anchor": {
+            "anchor_type": "text",
+            "locator": "Appendix A.4",
+            "quote": "Every score in this table rests on title, abstract and metadata"
+          },
+          "confidence": 5,
+          "competence_basis": "替代解释与确认偏差审查"
+        }
+      ]
+    },
+    {
+      "id": "REV-R2-2",
+      "source_refs": [
+        {
+          "seat": "R2",
+          "channel": "finding",
+          "ordinal": 2,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "校准并尽可能补足中文文献覆盖缺口。",
+      "reviewer": "R2",
+      "sub_claim_ids": [
+        "SC-17"
+      ],
+      "obligation_class": "should_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§8.5",
+        "quote": "it leaves an acknowledged language-coverage gap"
+      },
+      "confidence": 5,
+      "competence_basis": "深部矿产勘查与综合地球物理",
+      "cost_scope": {
+        "kind": "re_analysis",
+        "locator": "中文数据库与引文链检索、全文核验"
+      },
+      "consequence_if_unaddressed": {
+        "code": "evidence_gap_remains",
+        "target": {
+          "kind": "section",
+          "locator": "bounded literature comparison"
+        }
+      },
+      "target_section": "§2 与 §8.5",
+      "suggested_action": "执行可复查中文搜索；仍无法核验的记录单列，并把贡献声明限定在已核验语料。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "检索式、数据库、日期、筛选和未核验记录可追踪；不存在把语言缺失编码为元素缺失的行。",
+      "proposed_targets": [
+        {
+          "block_id": "B0319",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0320",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R2-4",
+      "source_refs": [
+        {
+          "seat": "R2",
+          "channel": "finding",
+          "ordinal": 4,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "增加 method-to-latent mapping，连接九个 operator 与联合概率图。",
+      "reviewer": "R2",
+      "sub_claim_ids": [
+        "SC-18"
+      ],
+      "obligation_class": "should_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "table",
+        "locator": "Table 4 — all nine rows carry Synthetic-run verification and field_validated=false"
+      },
+      "confidence": 4,
+      "competence_basis": "多物理联合反演架构",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "Table 4 后的 method-to-latent mapping"
+      },
+      "consequence_if_unaddressed": {
+        "code": "interpretive_ambiguity_remains",
+        "target": {
+          "kind": "table",
+          "locator": "operator breadth 与 joint graph 的映射"
+        }
+      },
+      "target_section": "§3 与 §7.1",
+      "suggested_action": "列出每个 operator 的 units、support、共享/专有 nuisance、可用 coupling prior 和 evidence tier。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "九个 operator 均有唯一映射行；表内术语与 Eq. (3.1)、Table 1 和 Table 4 一致。",
+      "proposed_targets": [
+        {
+          "block_id": "B0232",
+          "allowed_operations": [
+            "insert_after"
+          ]
+        },
+        {
+          "block_id": "B0234",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R3-1",
+      "source_refs": [
+        {
+          "seat": "R3",
+          "channel": "finding",
+          "ordinal": 1,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "使 decision interface 的角色、输入、输出与升级路径可由实践读者解释。",
+      "reviewer": "R3",
+      "sub_claim_ids": [
+        "SC-19"
+      ],
+      "obligation_class": "should_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§5.5",
+        "quote": "The decision layer is specified and uncalibrated"
+      },
+      "confidence": 5,
+      "competence_basis": "uncertainty-to-decision interfaces",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "§5 workflow diagram 与 contract table"
+      },
+      "consequence_if_unaddressed": {
+        "code": "interpretive_ambiguity_remains",
+        "target": {
+          "kind": "section",
+          "locator": "Decision-Layer Interface Specification"
+        }
+      },
+      "target_section": "§5",
+      "suggested_action": "用明确标为非证据的 workflow 展示 decision owner、actions、loss inputs、quarantine 与 escalation。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "图示和正文均不含实测 decision result；每个接口字段有 owner、unit、status 和 downstream consumer。",
+      "proposed_targets": [
+        {
+          "block_id": "B0158",
+          "allowed_operations": [
+            "insert_after"
+          ]
+        },
+        {
+          "block_id": "B0159",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0173",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R3-2",
+      "source_refs": [
+        {
+          "seat": "R3",
+          "channel": "finding",
+          "ordinal": 2,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "报告环境基线并界定未测 compute envelope。",
+      "reviewer": "R3",
+      "sub_claim_ids": [
+        "SC-20"
+      ],
+      "obligation_class": "should_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§8.6",
+        "quote": "The compute envelope is unverified"
+      },
+      "confidence": 4,
+      "competence_basis": "research software transfer 与 operational feasibility",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "环境说明与 compute claim boundary"
+      },
+      "consequence_if_unaddressed": {
+        "code": "evidence_gap_remains",
+        "target": {
+          "kind": "claim",
+          "locator": "production-scale practicality"
+        }
+      },
+      "target_section": "§8.5、§8.6、Code availability",
+      "suggested_action": "给出当前硬件/软件环境并明确不作 scaling 主张；任何 benchmark 作为独立注册资产。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "环境基线可重建；runtime、memory 或 scaling 数值只在有注册 benchmark 时出现。",
+      "proposed_targets": [
+        {
+          "block_id": "B0297",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0333",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0361",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R3-4",
+      "source_refs": [
+        {
+          "seat": "R3",
+          "channel": "finding",
+          "ordinal": 4,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "提供外部 adopter 的最小输入、输出、units、environment 与 replay 契约。",
+      "reviewer": "R3",
+      "sub_claim_ids": [
+        "SC-21"
+      ],
+      "obligation_class": "should_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "absence",
+        "locator": "Methods and Code/Data Availability",
+        "absence_scope": "an external adopter workflow with inputs, outputs, units, environment, and replay steps",
+        "check_performed": "检查了 §§3–7、§8.5、Declarations 和 appendices"
+      },
+      "confidence": 5,
+      "competence_basis": "可复现软件与跨团队移交",
+      "cost_scope": {
+        "kind": "other",
+        "surface_id": "external_artifacts",
+        "locator": "supplement 中的 adopter checklist 与 clean-environment replay"
+      },
+      "consequence_if_unaddressed": {
+        "code": "method_reproducibility_unresolved",
+        "target": {
+          "kind": "manuscript",
+          "locator": "external replay entry point"
+        }
+      },
+      "target_section": "Methods supplement 与 Code availability",
+      "suggested_action": "增加 implementation-facing checklist 和最小 replay instructions，并注明支持平台与许可边界。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "新团队可从声明的 clean environment 执行一个 component asset，并获得与 manifest 对应的输出 hash/status。",
+      "proposed_targets": [
+        {
+          "block_id": "B0361",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        },
+        {
+          "block_id": "B0362",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REV-R3-5",
+      "source_refs": [
+        {
+          "seat": "R3",
+          "channel": "finding",
+          "ordinal": 5,
+          "subclaim_ordinal": 0
+        }
+      ],
+      "description": "增加 field-transfer risk register，保持 Field-validated tier 为空的事实。",
+      "reviewer": "R3",
+      "sub_claim_ids": [
+        "SC-22"
+      ],
+      "obligation_class": "should_fix",
+      "severity": "major",
+      "evidence_anchor": {
+        "anchor_type": "text",
+        "locator": "§8.6",
+        "quote": "that tier is empty"
+      },
+      "confidence": 4,
+      "competence_basis": "科学软件治理与应用转移",
+      "cost_scope": {
+        "kind": "section",
+        "locator": "§8.6 field-validation entry conditions"
+      },
+      "consequence_if_unaddressed": {
+        "code": "reader_traceability_reduced",
+        "target": {
+          "kind": "claim",
+          "locator": "deep-exploration field transfer"
+        }
+      },
+      "target_section": "§8.5 与 §8.6",
+      "suggested_action": "按 geology、survey、petrophysics、data governance 列出 field-tier entry conditions 和仍缺证据。",
+      "consensus_level": "SINGLE-VERIFIER",
+      "verification_criteria": "risk register 不包含现场有效性结论；每个风险对应证据缺口、进入条件和 planned evidence id。",
+      "proposed_targets": [
+        {
+          "block_id": "B0334",
+          "allowed_operations": [
+            "replace_block"
+          ]
+        }
+      ]
+    }
+  ],
+  "total_items": 16,
+  "obligation_counts": {
+    "must_fix": 9,
+    "should_fix": 7,
+    "consider": 0
+  },
+  "editorial_decision": "Major Revision",
+  "consensus_summary": "三名非 DA 评审一致认为 assembled endpoint 与 multi-scale evidence 尚未建立；其余问题多为有锚点的单席或双席发现，未出现互斥补救建议。",
+  "dissenting_opinions": [
+    "D3 上，R1 认为严格的 claim ceiling 保持了推理一致性，DA 认为 novelty 与 techniques-identity 的重要前提仍需处理；合同按 eligible-seat 最差值记录 warn。"
+  ]
+}

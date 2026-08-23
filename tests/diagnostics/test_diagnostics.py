@@ -10,6 +10,29 @@ from geodeepbayes.diagnostics import (
     tail_ess,
     monte_carlo_standard_error,
 )
+from geodeepbayes.diagnostics.rhat import _rank_normalize_2d
+
+
+def test_rank_normalization_uses_contract_blom_plotting_position():
+    """捕获 Blom plotting position 分母误写为 N-1/4 的回归。"""
+    values = np.array([[1.0, 2.0], [3.0, 4.0]])
+    expected = np.array([
+        [-1.0491313979639707, -0.2993069104656671],
+        [0.2993069104656671, 1.0491313979639707],
+    ])
+
+    np.testing.assert_allclose(
+        _rank_normalize_2d(values), expected, rtol=0.0, atol=1e-15)
+
+
+@pytest.mark.parametrize("bad_value", [np.nan, np.inf, -np.inf])
+def test_rank_rhat_rejects_nonfinite_input(bad_value):
+    """捕获 NaN/Inf 被静默送入聚合路径而未 fail-closed 的回归。"""
+    chains = np.zeros((4, 20))
+    chains[0, 0] = bad_value
+
+    with pytest.raises(ValueError, match="非有限"):
+        rank_normalized_split_rhat(chains)
 
 
 def test_iid_normal_rhat_close_to_one():

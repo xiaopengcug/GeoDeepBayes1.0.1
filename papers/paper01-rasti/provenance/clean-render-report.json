@@ -1,0 +1,21 @@
+{
+  "schema_version": "ars-clean-manuscript-render/1.0",
+  "source": {
+    "path": "stage4-revision/manuscript-v4-rasti-author-final.md",
+    "sha256": "c00757839ac3758682ab8761677ea48b854ddb7c2fcd3ec12c259959c12dbf09"
+  },
+  "output": {
+    "path": "stage4-revision/submission/manuscript-v4-rasti-release-candidate.md",
+    "sha256": "85590e6934893e7203971393de81299dfd147c9603124a6c60c0f3a4754e3eb3"
+  },
+  "removed": {
+    "block_marker_lines": 617,
+    "evidence_note_spans": 212
+  },
+  "semantic_edits": 0,
+  "status": "clean_release_candidate_pending_public_release_and_human_verification",
+  "remaining_submission_blockers": [
+    "immutable public release or explicit final availability decision",
+    "author-required human verification before formal release"
+  ]
+}

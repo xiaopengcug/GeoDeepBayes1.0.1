@@ -37,3 +37,9 @@ pwsh -NoProfile -File "_bmad-output/planning-artifacts/research/贝叶斯思想�
 ## 文档
 
 技术体系文档与审查/整改闭环见 `_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/`。
+
+## Paper 01 RASTI 发布候选
+
+论文 01 的稿件、修订证据、重放摘要、发布边界和人工核验清单见
+[`papers/paper01-rasti/`](papers/paper01-rasti/README.md)。正式 GitHub tag/release
+及 Zenodo DOI 在通讯作者完成人工核验并明确放行前保持暂停。

@@ -1,0 +1,465 @@
+{
+  "patch_format_version": "1.1",
+  "authorization_context": "review_roadmap",
+  "revision_round": 1,
+  "base_draft_hash": "f927ad438218",
+  "roadmap_sha256": "79fc5b93bdd61104269cb91ad0de4f59ca18540fc3a32e7bf40ae7e9f9445217",
+  "author_adjudication_sha256": "5635a831a02729bd4fc6c76ac07009b2ff9e01e7af9bac93761c4425b52d3689",
+  "author_decision_digest": "cdcf796228838b7e5bf0b246593969b95d18600dafd92accb71b43a2797b2c0f",
+  "claim_surface_manifest_sha256": "9af225fafce24b0cee159c937c18584865fcfcb442e030213abd945bb531b9c6",
+  "ops": [
+    {
+      "op": "replace_block",
+      "block_id": "B0001",
+      "old_hash": "1b11e80ce7fa",
+      "roadmap_item_ids": [
+        "REV-EIC-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "# An Auditable Bayesian Fusion Framework for Deep Mineral Exploration Under Cover: Formulation, Component-Level Synthetic Evidence, and a Failed Joint Pilot"
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0003",
+      "old_hash": "79f59b913579",
+      "roadmap_item_ids": [
+        "REV-EIC-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "Deep mineral exploration under cover requires evidence from geophysical methods that respond to different physical properties and may disagree. This paper specifies an auditable Bayesian fusion framework combining source-disciplined priors, a shared-error likelihood and pre-registered diagnostic governance over a multi-scale parameterisation. The assembled framework is not presented as a validated technique: the paper evaluates components separately. Nine forward operators pass a common synthetic protocol, a full-dimensional delayed-acceptance sampler satisfies its contract on a generic non-geophysical target, and reduced-order compatibility and open-data ingestion assets are reported with their registered limitations and failures. The gravity–magnetic joint synthetic pilot failed its diagnostics hard gate on every replicate, so its coupling endpoint has no valid evaluation point; the multi-scale mechanism was specified but not exercised. The contribution is therefore a formulation and protocol, component-level Synthetic-run evidence, and an auditable failed-pilot record. No assembled-performance, field-validity or production-scale claim is made."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0013",
+      "old_hash": "208f928019a9",
+      "roadmap_item_ids": [
+        "REV-EIC-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The paper makes four bounded contributions. First, it provides a formulation: an auditable probabilistic graph over nine geophysical method families with explicit shared-error structure, source-disciplined priors and multi-scale change-of-support. Second, it specifies distinct roles for per-method sensitivity weights and pair-level posterior-tension checks. Third, it reports component-level Synthetic-run evidence: per-method forward-operator verification, one algorithm-correctness MCMC study, one reduced-order compatibility exercise with mandatory failure co-disclosure, and one open-data ingestion audit. Fourth, it supplies governance infrastructure: a hash-bound evidence registry, a single diagnostic-threshold contract, failure co-disclosure and fail-closed gate-item admission. These contributions do not demonstrate the behaviour of the assembled framework, the multi-scale joint endpoint, field transfer or production-scale practicality."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0031",
+      "old_hash": "7a814c2d5588",
+      "roadmap_item_ids": [
+        "REV-R2-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "Table 5 is retained only as a discovery inventory of the registered nearest-neighbour set. Its former element scores were based on titles, abstracts and metadata and are therefore withdrawn from decision use. A cell may receive a non-`unknown` value only when a full-text passage, page or section is recorded for that element; no unverified or inaccessible record is encoded as absence. The inventory cannot establish priority, novelty or a missing combination, and no contribution claim in this paper depends on an element count."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0032",
+      "old_hash": "e296a9697df5",
+      "roadmap_item_ids": [
+        "REV-R2-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Table 5.** Discovery inventory of the registered nearest-neighbour set. The four disciplinary-element fields are `unknown` pending full-text, location-specific recoding; the table has no novelty or difference-making role."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0112",
+      "old_hash": "ea88e200aa28",
+      "roadmap_item_ids": [
+        "REV-R1-3"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "Equation (3.9) is the sole canonical weighting definition for this manuscript. The existing joint-pilot registration preserves a historical, non-canonical additive-floor form, $w_k=(\\mathrm{share}_k+\\epsilon_w)^\\alpha$, with $\\alpha=1.0$ and $\\epsilon_w=0.01$, as provenance rather than as an alternative definition: it is not algebraically equivalent to Eq. (3.9). In that asset the main posterior remains unweighted, $w_k\\equiv1$, and the historical weighted form appears only in the two endpoint-(ii) arms. No controlled comparison of the two parameterisations was run, so the pilot cannot support a sensitivity or robustness conclusion about the weight operationalisation. Any future weighted asset must cite Eq. (3.9), freeze its parameters and register a separate sensitivity design before execution."
+    },
+    {
+      "op": "insert_after",
+      "block_id": "B0158",
+      "old_hash": "cb221398a749",
+      "roadmap_item_ids": [
+        "REV-R3-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Specification-only workflow; no observed decision result.**\n\n| Stage | Owner | Required inputs | Output / consumer | Quarantine or escalation |\n|---|---|---|---|---|\n| Evidence admission | Method lead and data steward | Gate-passing posterior asset; units, provenance, licence and diagnostic-contract hash | Admitted evidence record / decision board | Any failed gate or missing contract field is quarantined |\n| Scenario definition | Designated exploration decision board | Frozen actions, scenarios, loss definitions and calibrated probabilities | Versioned action–scenario table / audit record | Uncalibrated scores remain descriptive and cannot rank actions |\n| Decision computation | Independent analyst appointed by the board | Admitted evidence and frozen action–loss table | Reproducible comparison or `no-decision` / board | Sensitivity conflict or unsupported extrapolation returns to method lead |\n| Approval and follow-up | Decision board | Comparison, limitations and dissent record | Approved action or `no-decision` / field-program owner | Field use requires independent validation and the EVD-FIELD-001 entry gate |"
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0159",
+      "old_hash": "a03db781cbb2",
+      "roadmap_item_ids": [
+        "REV-R3-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The framework terminates in a decision layer, but this section specifies its interface and workflow only. The workflow assigns ownership, inputs, quarantine rules, outputs and escalation paths so that a posterior cannot be converted silently into an operational recommendation. It reports no observed decision, calibrated utility, resource estimate or field outcome."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0173",
+      "old_hash": "486591b0bc2f",
+      "roadmap_item_ids": [
+        "REV-R3-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "No quantity defined in this section is reported as a result. No expected-information-gain or expected-value-of-sample-information number is stated, and no resource, reserve, tonnage or investment figure is stated or implied. Failed diagnostics, uncalibrated scores, and records missing units, provenance or licence terms remain quarantined and cannot enter an action comparison. The illustrative values in Appendix B are labelled \"synthetic placeholder, not evidence\". The interface is specified and uncalibrated; it was not exercised in this work."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0184",
+      "old_hash": "f2f946844522",
+      "roadmap_item_ids": [
+        "REV-R1-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "> **Gate-item admission.** A gate item is registered with a configuration in which it can fail. If no such construction can be exhibited, it is retained as disclosure rather than as a gate conjunct; failure to construct is not proof of impossibility. The archived construction records the criterion, threshold source, admissible domain and configuration because discriminating power is a property of both the criterion and that configuration. Non-finite input, a non-finite derived diagnostic, or a finite degenerate channel is outside the admissible passing domain and triggers a structured fail-closed stop; no aggregation may discard that channel. Each run records admitted-channel counts and the stop reason, and no endpoint is interpreted after a diagnostic stop."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0203",
+      "old_hash": "c21bee931359",
+      "roadmap_item_ids": [
+        "REV-R1-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Scene and observation design.** A three-dimensional $10\\times10\\times5$ tensor mesh with 50 m cells carries density contrast and susceptibility. Independently drawn scenes contain a $200\\times200\\times100$ m target block with its top between 50 and 100 m depth and a non-overlapping susceptibility-only decoy lens in the upper 50 m. Gravity and magnetic observations share one $6\\times6$ nominal station grid; the true positions include a shared latent geometry offset $\\xi_g$ with horizontal components over $\\pm15$ m and a vertical component over $\\pm3$ m, while inference sees only nominal positions. Noise follows the frozen 2% relative-plus-floor model. Generation and inference use the same WP8-verified operator pair. This is therefore an implementation baseline for the registered coupling and shared-nuisance path, not structural-error evidence: the same-kernel reservation applies to every statement from the asset, and no independent-forward or field-like discrepancy arm was run."
+    },
+    {
+      "op": "insert_after",
+      "block_id": "B0232",
+      "old_hash": "2bb9cd0744ad",
+      "roadmap_item_ids": [
+        "REV-R2-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Table 4a. Conservative mapping from verified method components to the joint-graph interface.**\n\n| Method | Observable and unit | Property support | Exercised shared nuisance / coupling | Evidence tier |\n|---|---|---|---|---|\n| Gravity | anomaly, mGal | 3-D cell density contrast, g cm^-3 | shared geometry $\\xi_g$ and cross-gradient only in failed gravity–magnetic pilot | Synthetic-run component |\n| Magnetic | total-field anomaly, nT | 3-D cell susceptibility, SI | shared geometry $\\xi_g$ and cross-gradient only in failed gravity–magnetic pilot | Synthetic-run component |\n| DC | voltage, V | 3-D cell log-conductivity, S m^-1 | none exercised jointly; specification-only | Synthetic-run component |\n| TDIP | secondary voltage, V | 3-D cell chargeability | none exercised jointly; specification-only | Synthetic-run component |\n| SIP/FDIP | complex voltage, V | Cole–Cole parameters on verified 1-D or 2-D/2.5-D variant | none exercised jointly; specification-only | Synthetic-run component |\n| TEM | vertical dB/dt, T s^-1 | 1-D layered log-conductivity, S m^-1 | none exercised jointly; 3-D path unverified | Synthetic-run component |\n| MT/AMT | impedance, V A^-1; tipper dimensionless in 3-D | layered or cell log-conductivity, S m^-1 | none exercised jointly; specification-only | Synthetic-run component |\n| CSAMT | Ex, V m^-1; Hy, A m^-1 | 3-D cell log-conductivity, S m^-1 | none exercised jointly; specification-only | Synthetic-run component |\n| WFEM | Ex/Ey, V m^-1 | 3-D cell log-conductivity, S m^-1 | none exercised jointly; specification-only | Synthetic-run component |\n\nPrivate noise parameters remain method-specific unless a named asset states otherwise. Petrophysical cross-property links remain Hypothesis-tier, and unexercised shared nuisance terms are `unknown` rather than inferred from the graph."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0234",
+      "old_hash": "bb1847be21dc",
+      "roadmap_item_ids": [
+        "REV-R2-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**What these matrices are, and what they are not.** Table 4 reports per-method breadth, while Table 4a maps each component conservatively into the joint-graph vocabulary. Each verification row remains Synthetic-run evidence for an operator in isolation; `field_validated` is false for all nine, TEM is limited to the verified one-dimensional layered path, and petrophysical priors remain Hypothesis-tier. Only the gravity–magnetic pilot exercised a shared geometry nuisance and cross-gradient coupling, and that pilot failed its diagnostics gate. Every other shared nuisance or cross-method coupling entry is specification-only or `unknown`, not an inferred joint capability."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0238",
+      "old_hash": "6ec8516ec198",
+      "roadmap_item_ids": [
+        "REV-R1-6"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Figure 5.** Convergence and effective-sample-size diagnostics for the algorithm-correctness study, together with frequentist same-truth coverage at nominal levels 0.90 and 0.95. Coverage counts are 358/400 and 378/400. Error bars are two-sided 95% Wilson score intervals without continuity correction: [0.861, 0.921] and [0.918, 0.963], respectively. This is not simulation-based calibration. Diagnostic thresholds are read from the bound contract at run time rather than redefined in the caption."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0239",
+      "old_hash": "879637277ef5",
+      "roadmap_item_ids": [
+        "REV-R1-6"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "A companion coverage study was run on the same target with 400 replications, giving hit rates of 0.895 and 0.945 at the two nominal levels. The first value is 358/400 at nominal coverage 0.90 and the second is 378/400 at nominal coverage 0.95. Two-sided 95% Wilson score intervals without continuity correction are [0.861, 0.921] and [0.918, 0.963], so each nominal value lies within its corresponding interval. The registered interpretation is statistically consistent with nominal, with point estimates slightly below. This is frequentist same-truth coverage, not simulation-based calibration or demonstrated calibration."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0255",
+      "old_hash": "9f35b9474217",
+      "roadmap_item_ids": [
+        "REV-R1-5"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**The pilot driver did not run to completion, and the evaluation layer is a deterministic post-hoc reconstruction rather than runtime-generated batch evidence.** The driver stopped before its multi-start and summary stages, so the pilot summary, run contract, batch-level run manifest and versioned evidence record were not emitted. Per-run metrics, raw chains and manifests remain available for all 42 runs. The published reconstruction script hashes each input and reproduces all 42 gate-ledger rows exactly from the per-run metrics (42/42 exact matches, no unbound run identifier); it also binds the predecessor ledger and aggregation hashes. These reconstructed records retain a distinct status and are not represented as artefacts emitted by the driver. A future pilot must generate its batch artefacts natively before any endpoint is evaluated."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0286",
+      "old_hash": "8aec18770205",
+      "roadmap_item_ids": [
+        "REV-EIC-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "### 8.4 Research-record motivation for the governance design"
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0287",
+      "old_hash": "744037ec70ea",
+      "roadmap_item_ids": [
+        "REV-EIC-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The governance apparatus in §6 was motivated by citation-identity and provenance defects found in the project's inherited reference material. Those defects were corrected or quarantined before use; unresolved records were excluded from evidential comparisons, and the manuscript's contribution statement does not depend on them. The detailed row-level audit, counting conventions and correction history are retained in the supplementary governance record rather than repeated in the scientific narrative."
+    },
+    {
+      "op": "delete_block",
+      "block_id": "B0288",
+      "old_hash": "5a5e17f49ffa",
+      "roadmap_item_ids": [
+        "REV-EIC-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "delete_block",
+      "block_id": "B0289",
+      "old_hash": "ee6c7f9a23fc",
+      "roadmap_item_ids": [
+        "REV-EIC-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "delete_block",
+      "block_id": "B0290",
+      "old_hash": "50c9d707a99f",
+      "roadmap_item_ids": [
+        "REV-EIC-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0297",
+      "old_hash": "49c375d1db17",
+      "roadmap_item_ids": [
+        "REV-R3-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The per-method evidence carries strict scope limits. The nine-method matrix is component breadth rather than joint capability; `field_validated=false` for all nine, and TEM is limited to the verified 1-D layered path. The DO-27 exercises are reduced-order and single-physics, petrophysical priors remain Hypothesis-tier, and the decision layer is specified but uncalibrated. The revision environment is reported only as a reproducibility baseline. No registered benchmark supports runtime, memory, acceleration, scaling or production-practicality claims."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0305",
+      "old_hash": "a869be4d727a",
+      "roadmap_item_ids": [
+        "REV-EIC-2",
+        "REV-R1-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The following boundaries travel with EVD-JOINT-001. The asset is an implementation baseline, not a general validation arm. The multi-scale mechanism is not exercised: change-of-support transfers a single property, whereas gravity and magnetics use different properties and any cross-property link would pass through Hypothesis-tier petrophysical latents. The surrogate-error term is absent, clock offset has no physical role for static potential fields, and gain is fixed. Generation and inference use the same operator pair, so the same-kernel reservation applies throughout. No assembled-performance, structural-misspecification or multi-scale-demonstration claim is licensed."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0306",
+      "old_hash": "1e3785877c1b",
+      "roadmap_item_ids": [
+        "REV-R1-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The misspecification endpoint addresses only one registered, known and nested injection that lies inside the well-specified arm's model class. It cannot support a general claim about detecting unstructured or field-like misspecification, and no independent-forward or non-nested discrepancy arm was added in this revision. The per-method scalar weight contains no pair-level information; pair-level detection belongs to tension diagnostics. Because the noise-scale channel can absorb part of the injection, even a directional response of the weight trajectory would not establish improved posterior robustness. A stronger claim requires a separately pre-registered validation asset."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0313",
+      "old_hash": "c954e0d55c4a",
+      "roadmap_item_ids": [
+        "REV-R1-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**The diagnostic implementation now fails closed on non-finite or degenerate channels.** Input arrays are rejected if any value is non-finite; non-finite derived diagnostics and finite zero-range channels produce a structured `Failed` stop; and aggregation no longer uses functions that silently discard non-finite entries. Regression tests cover NaN, positive and negative infinity, the exact plotting-position contract and finite constant channels. The revision-host selection completed with 24 tests passed and one slow test deselected. Endpoint interpretation remains prohibited after any diagnostic stop."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0314",
+      "old_hash": "330e571d62e9",
+      "roadmap_item_ids": [
+        "REV-R1-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**The rank-normalisation implementation has been aligned with its contract.** Both now use the Blom plotting position $(r-3/8)/(N+1/4)$; the former implementation's $N-1/4$ denominator has been removed. A hash-bound replay read all 65 historical raw-chain files without mutating them: all 65 retained the transition `Failed` to `Failed`, and all now carry the explicit `nonfinite_diagnostic` reason. Degenerate-channel counts were one in 57 files, two in 3 files and six in 5 files. The replay changes failure attribution, not any historical endpoint verdict, and it does not turn a failed pilot into an evaluation of coupling behaviour."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0319",
+      "old_hash": "1cc5cc59172e",
+      "roadmap_item_ids": [
+        "REV-R2-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The comparative positioning uses a targeted, verification-first literature search rather than an exhaustive systematic review. Later gap filling added Afonso (2026), and the Stage 4 Chinese-language audit identified verified deterministic cross-gradient studies and a directly relevant CSAMT–DC Bayesian application. Because recall remains unknown, the paper claims neither search completeness nor priority for the assembled conjunction. The former element-scoring matrix has been removed from decision use; contribution statements rest on the reported formulation and evidence assets, not on an absence count in the literature."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0320",
+      "old_hash": "f6f1874e54fe",
+      "roadmap_item_ids": [
+        "REV-R2-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The Chinese-language audit records its queries, date, identity checks and unresolved items. It corrects the 2020 gravity–magnetic–MT record to Yan Zhengwen et al., 63(2):736–752, DOI 10.6038/cjg2020M0355, and verifies related multi-geophysical cross-gradient work. A purported 2016 three-dimensional Bayesian MT–seismic record could not be independently bound and remains `unresolved`; it is neither cited nor treated as negative evidence. This targeted audit reduces a metadata error but does not close the language-coverage gap."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0324",
+      "old_hash": "03bab6009c2f",
+      "roadmap_item_ids": [
+        "REV-EIC-3"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "Three production limitations remain. First, blinding of the joint synthetic experiment used hashes and separated roles within one operator rather than institutionally independent parties. Second, a synthesis-phase process-integrity event was detected when reported deliverables were absent on disk; those adjudications were voided and rebuilt from verified inputs. Detection demonstrates that one control fired, not that all remaining records are correct. Third, a public GitHub repository exists at `https://github.com/xiaopengcug/GeoDeepBayes1.0.1`, but the paper-specific Stage 4 materials have not been pushed and no immutable public revision or archive identifier is yet claimed. AI involvement is disclosed separately in the Declarations."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0333",
+      "old_hash": "1f488b5423ff",
+      "roadmap_item_ids": [
+        "REV-R3-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Environment baseline, not compute evidence.** The revision host used Windows 10 Pro 10.0.19045 (64-bit), an Intel Core i7-8850H with 12 logical processors, 31.8 GiB RAM, Python 3.11.9, NumPy 1.26.4, SciPy 1.17.1, pytest 9.0.3 and SimPEG 0.25.2. These facts allow the local revision environment to be reconstructed but do not measure runtime, memory growth or scaling. Production-scale practicality remains open and requires a separately registered benchmark across state sizes."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0334",
+      "old_hash": "db6b11162caf",
+      "roadmap_item_ids": [
+        "REV-R3-5"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Field-transfer risk register.** The Field-validated tier remains empty and EVD-FIELD-001 remains `Planned`.\n\n| Risk domain | Current evidence gap | Entry evidence required for EVD-FIELD-001 |\n|---|---|---|\n| Geology | No independently held field target or structural truth is bound | Frozen geological hypotheses, target definition and blind or spatio-temporal holdout |\n| Survey | No field acquisition geometry, calibration or error audit has passed admission | Licensed observations, coordinate and unit audit, instrument/calibration records and survey-error model |\n| Petrophysics | Cross-property priors remain Hypothesis-tier | Traceable measurements, support/upscaling statement and held-out predictive check |\n| Data governance | No release-ready field licence and provenance chain is registered | Licence, consent/access conditions where applicable, immutable manifest, hashes and redistribution decision |\n\nNo field-validity conclusion follows from this register, and no amount of additional synthetic work promotes an asset into the Field-validated tier."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0338",
+      "old_hash": "a9fd0bab0f57",
+      "roadmap_item_ids": [
+        "REV-EIC-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**The formulation contribution** is an auditable probabilistic graph combining source-disciplined priors, a shared-error fusion likelihood and pre-registered diagnostic governance over a multi-scale parameterisation. The graph is a design and protocol; the paper neither claims novelty for multi-scale parameterisation nor reports the graph as exercised end to end."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0339",
+      "old_hash": "08852a3c4856",
+      "roadmap_item_ids": [
+        "REV-EIC-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**The evidence contribution is component-level and tier-bounded.** Nine forward operators pass a common synthetic protocol one at a time; a delayed-acceptance sampler meets its contract on a generic non-geophysical target; a published dataset is exercised as two reduced-order single-physics compatibility problems with its failure package retained; and two open-data holdings are ingested and hash-audited. These are isolated component statements. They do not establish assembled fusion, multi-scale endpoint, field-transfer or production-scale performance."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0341",
+      "old_hash": "3933255d9b5a",
+      "roadmap_item_ids": [
+        "REV-EIC-2"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**The paper reports no behaviour of the assembled framework.** The gravity–magnetic joint asset was designed, registered, implemented and piloted, but every pilot run failed the diagnostics hard gate. Its coupling endpoint therefore has no valid evaluation point. This is a measurement limitation, not evidence for or against the framework: no assembled-performance conclusion is drawn in either direction."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0359",
+      "old_hash": "8eeabf55bc3c",
+      "roadmap_item_ids": [
+        "REV-EIC-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "Funding information has not yet been supplied by the corresponding author. No funding source is inferred from project records; this declaration must be completed and reconciled with the submission system before submission."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0361",
+      "old_hash": "17f0f9ed3a52",
+      "roadmap_item_ids": [
+        "REV-EIC-3",
+        "REV-R3-2",
+        "REV-R3-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The framework is implemented in the `geodeepbayes` package. A public repository exists at `https://github.com/xiaopengcug/GeoDeepBayes1.0.1`, but the manuscript-specific Stage 4 revision, diagnostic replay and evidence bundle have not yet been pushed; no immutable public commit, tag or archive identifier is claimed here. The governance archive binds the diagnostic contract, evidence registry, per-evidence hashes, joint-pilot registration and failure records. The Supplement provides the observed Windows/Python environment, minimum input/output/unit contract, local test and replay commands, supported component boundaries and failure-escalation rules. A clean-environment independent replay has not been completed, and the reported environment is not a performance benchmark."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0362",
+      "old_hash": "dbdad2f7d619",
+      "roadmap_item_ids": [
+        "REV-EIC-3",
+        "REV-R3-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The manuscript reports Synthetic-run and data-ingestion evidence but no Field-validated result. Public-data source records and redistribution terms must travel with any released artefact; vendor DLLs and licence-bound SDKs are not distributed. The public GitHub remote is currently a discovery route rather than a citation-grade reproduction package for this paper because the paper-specific materials are not yet pushed and no immutable release identifier exists. Before submission, any released code, data manifests, replay scripts and expected statuses must be bound to an exact revision with licence and access statements; until then, external reproducibility is not claimed."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0364",
+      "old_hash": "0903c4117746",
+      "roadmap_item_ids": [
+        "REV-EIC-4"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "CRediT roles have not yet been supplied or confirmed by the authors. Contributions are not inferred from repository activity; the corresponding author must provide and approve the final taxonomy statement before submission."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0379",
+      "old_hash": "681d47fa040e",
+      "roadmap_item_ids": [
+        "REV-R2-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "The inventory separates bibliographic discovery from element adjudication. A non-`unknown` cell requires a full-text quotation or paraphrase with page, section or paragraph locator and an identity-verified source. No title, abstract, metadata record or inaccessible candidate is scored as absence. Rows may be recoded only by updating the evidence bundle and regenerating both Table 5 and this appendix; unresolved records remain outside any count."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0381",
+      "old_hash": "a96e06180d94",
+      "roadmap_item_ids": [
+        "REV-R2-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "**Table A.1. Full-text recoding queue for the registered nearest-neighbour inventory.** `unknown` means that no location-specific full-text evidence bundle was completed in this revision; it is not a negative score."
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0382",
+      "old_hash": "9e0572c8e08c",
+      "roadmap_item_ids": [
+        "REV-R2-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_text": "| Nearest neighbour | Auditable priors | Shared-error likelihood | Multi-scale | Pre-registered governance | Decision use |\n|---|---|---|---|---|---|\n| Bosch (1999) | unknown | unknown | unknown | unknown | none |\n| Bosch and McGaughey (2001) | unknown | unknown | unknown | unknown | none |\n| Afonso et al. (2013) | unknown | unknown | unknown | unknown | none |\n| Astic and Oldenburg (2019) | unknown | unknown | unknown | unknown | none |\n| Moorkamp et al. (2011) | unknown | unknown | unknown | unknown | none |\n| Hawkins and Sambridge (2015) | unknown | unknown | unknown | unknown | none |\n| Blatter et al. (2021) | unknown | unknown | unknown | unknown | none |\n| Alemie and Sacchi (2011) | unknown | unknown | unknown | unknown | none |\n| Miller and Dunson (2019) | unknown | unknown | unknown | unknown | none |\n| Jacob et al. (2017) | unknown | unknown | unknown | unknown | none |\n| Afonso (2026) | unknown | unknown | unknown | unknown | none |"
+    }
+  ],
+  "emitted_by": "ARS Stage 4 deterministic revision builder"
+}

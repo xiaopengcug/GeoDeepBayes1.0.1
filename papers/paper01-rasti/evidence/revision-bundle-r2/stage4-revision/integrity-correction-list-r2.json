@@ -1,0 +1,49 @@
+{
+  "schema_version": "integrity-correction-list/1.0",
+  "revision_round": 2,
+  "base_draft_sha256": "31d3c02c53f2bb5b25e8139cda07ca36ad36a0018457766d512926efce8f1c81",
+  "issues": [
+    {
+      "correction_id": "IL-SERIOUS-1",
+      "description": "Stage 4 已把 Table 5 caption 和 Appendix A 最终矩阵降级为 full-text recoding queue，但遗漏了主文实际评分表、由该表导出的差异性/新颖性论证、限制段和附录旧评分量规，导致同一稿件同时声称全部单元 unknown 又保留 ✓/◐/✗ 与元素计数。必须在不改变任何已登记定量 claim surface 的前提下，撤销这些残余评分的决策作用，并统一为 discovery inventory + location-specific full-text recoding protocol。",
+      "proposed_targets": [
+        {"block_id": "B0018", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0033", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0034", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0035", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0036", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0037", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0043", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0047", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0048", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0049", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0050", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0278", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0279", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0280", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0281", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0282", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0283", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0321", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0322", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0355", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0356", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0365", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0366", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0367", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0368", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0369", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0370", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0371", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0372", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0373", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0374", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0375", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0376", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0377", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0378", "allowed_operations": ["replace_block"]},
+        {"block_id": "B0380", "allowed_operations": ["replace_block"]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3076 @@
+{
+  "manifest_format_version": "1.0",
+  "base_draft_hash": "31d3c02c53f2",
+  "blocks": [
+    {
+      "block_id": "B0001",
+      "old_hash": "9e399ecaa247",
+      "first_line_excerpt": "# An Auditable Bayesian Fusion Framework for Deep Mineral Exploration Under Cov…"
+    },
+    {
+      "block_id": "B0002",
+      "old_hash": "266c21b810ae",
+      "first_line_excerpt": "## Abstract"
+    },
+    {
+      "block_id": "B0003",
+      "old_hash": "e30a8f7d25b4",
+      "first_line_excerpt": "Deep mineral exploration under cover requires evidence from geophysical methods…"
+    },
+    {
+      "block_id": "B0005",
+      "old_hash": "201ee7083885",
+      "first_line_excerpt": "**Keywords:** Bayesian joint inversion; multi-physics data fusion; uncertainty …"
+    },
+    {
+      "block_id": "B0006",
+      "old_hash": "18f8b993fceb",
+      "first_line_excerpt": "## 1 Introduction"
+    },
+    {
+      "block_id": "B0007",
+      "old_hash": "4a0b952378a7",
+      "first_line_excerpt": "**P1.** Most of the mineral deposits that remain to be found in mature terrains…"
+    },
+    {
+      "block_id": "B0008",
+      "old_hash": "5781b2ebb812",
+      "first_line_excerpt": "**P2.** The discipline's established answer is joint inversion: invert several …"
+    },
+    {
+      "block_id": "B0009",
+      "old_hash": "a37cc770d8d6",
+      "first_line_excerpt": "**P3.** The Bayesian formulation supplies the first of those: posed as inferenc…"
+    },
+    {
+      "block_id": "B0010",
+      "old_hash": "f27a35e50eb1",
+      "first_line_excerpt": "**P4.** Two further considerations shape the design, and both are matters of ev…"
+    },
+    {
+      "block_id": "B0011",
+      "old_hash": "33bfc1347232",
+      "first_line_excerpt": "Each ingredient of the framework has an established lineage. This paper integra…"
+    },
+    {
+      "block_id": "B0012",
+      "old_hash": "9896a3be15c8",
+      "first_line_excerpt": "The comparative positioning rests on a targeted, verification-first literature …"
+    },
+    {
+      "block_id": "B0013",
+      "old_hash": "3d7f14840b4e",
+      "first_line_excerpt": "The paper makes four bounded contributions. First, it provides a formulation: a…"
+    },
+    {
+      "block_id": "B0015",
+      "old_hash": "6d52755d9d12",
+      "first_line_excerpt": "Two boundaries apply to everything that follows. **All quantitative claims in t…"
+    },
+    {
+      "block_id": "B0016",
+      "old_hash": "85d1e1b11c0c",
+      "first_line_excerpt": "**P6.** §2 positions the framework against five comparison traditions, states t…"
+    },
+    {
+      "block_id": "B0017",
+      "old_hash": "e63587ce79cc",
+      "first_line_excerpt": "## 2 Related Work and Novelty Positioning"
+    },
+    {
+      "block_id": "B0018",
+      "old_hash": "dd23c7d9606d",
+      "first_line_excerpt": "This section positions the framework against the five comparison traditions use…"
+    },
+    {
+      "block_id": "B0019",
+      "old_hash": "a13e454b5444",
+      "first_line_excerpt": "### 2.1 Five comparison traditions"
+    },
+    {
+      "block_id": "B0020",
+      "old_hash": "beaf5bdd1e97",
+      "first_line_excerpt": "#### 2.1.1 Deterministic joint inversion: structural and petrophysical coupling"
+    },
+    {
+      "block_id": "B0021",
+      "old_hash": "d58348f0430d",
+      "first_line_excerpt": "Structural coupling runs from Vozoff and Jupp (1975) through the cooperative fo…"
+    },
+    {
+      "block_id": "B0022",
+      "old_hash": "ab7b55b19cab",
+      "first_line_excerpt": "#### 2.1.2 The Bayesian geophysical inversion lineage and its trans-dimensional…"
+    },
+    {
+      "block_id": "B0023",
+      "old_hash": "3ddb6a2355e6",
+      "first_line_excerpt": "The lineage runs from Tarantola and Valette (1982a, 1982b) and Backus and Gilbe…"
+    },
+    {
+      "block_id": "B0024",
+      "old_hash": "407a2b1c461a",
+      "first_line_excerpt": "#### 2.1.3 Multi-physics Bayesian fusion and its modular alternatives"
+    },
+    {
+      "block_id": "B0025",
+      "old_hash": "e10d3bc2b901",
+      "first_line_excerpt": "On the fusion side the tradition runs from Bosch (1999) through Bosch and McGau…"
+    },
+    {
+      "block_id": "B0026",
+      "old_hash": "a9d021e3fac9",
+      "first_line_excerpt": "#### 2.1.4 Bayesian experimental design and value of information"
+    },
+    {
+      "block_id": "B0027",
+      "old_hash": "a83a7a9d4e86",
+      "first_line_excerpt": "Design runs from Chaloner and Verdinelli (1995) through Nowak et al. (2010), Hu…"
+    },
+    {
+      "block_id": "B0028",
+      "old_hash": "68bfaf13bc16",
+      "first_line_excerpt": "#### 2.1.5 Generalised and robust Bayes, model discrepancy, and computational d…"
+    },
+    {
+      "block_id": "B0029",
+      "old_hash": "bf519e5609bf",
+      "first_line_excerpt": "This tradition supplies the normative source of nearly every wording constraint…"
+    },
+    {
+      "block_id": "B0030",
+      "old_hash": "979e454abe04",
+      "first_line_excerpt": "### 2.2 Nearest-neighbour coverage"
+    },
+    {
+      "block_id": "B0031",
+      "old_hash": "05bd80f08695",
+      "first_line_excerpt": "Table 5 is retained only as a discovery inventory of the registered nearest-nei…"
+    },
+    {
+      "block_id": "B0032",
+      "old_hash": "f671c2afc1aa",
+      "first_line_excerpt": "**Table 5.** Discovery inventory of the registered nearest-neighbour set. The f…"
+    },
+    {
+      "block_id": "B0033",
+      "old_hash": "b2cc73e9c321",
+      "first_line_excerpt": "| Nearest neighbour | (a) | (b) | (c) | (d) | Elements covered |"
+    },
+    {
+      "block_id": "B0034",
+      "old_hash": "59107354fd06",
+      "first_line_excerpt": "Two features of the table carry the argument. **No row reaches ✓ in column (a)*…"
+    },
+    {
+      "block_id": "B0035",
+      "old_hash": "6fa83b4035bd",
+      "first_line_excerpt": "Eight mechanism differentiators follow from the table and are stated once here …"
+    },
+    {
+      "block_id": "B0036",
+      "old_hash": "fd18d5d8a158",
+      "first_line_excerpt": "Three further contemporary entries update the nearest neighbour on individual a…"
+    },
+    {
+      "block_id": "B0037",
+      "old_hash": "646a14d04bcd",
+      "first_line_excerpt": "A targeted forward scan of the 2024-onward literature was run specifically agai…"
+    },
+    {
+      "block_id": "B0038",
+      "old_hash": "912a837a221e",
+      "first_line_excerpt": "### 2.3 Bounded contribution statement and search scope"
+    },
+    {
+      "block_id": "B0039",
+      "old_hash": "d9ad24380a71",
+      "first_line_excerpt": "> This paper specifies and audits the conjunction of source-disciplined priors,…"
+    },
+    {
+      "block_id": "B0040",
+      "old_hash": "1a09cde11605",
+      "first_line_excerpt": "> The multi-scale parameterisation used here follows an established lineage, fo…"
+    },
+    {
+      "block_id": "B0041",
+      "old_hash": "fe4ba7f394b9",
+      "first_line_excerpt": "> Within the shared-error fusion likelihood, the registered joint synthetic ass…"
+    },
+    {
+      "block_id": "B0042",
+      "old_hash": "c4f8d1eff367",
+      "first_line_excerpt": "⟦R-5 · [NCF] §1.1/§1.2/§1.3 逐字（三段须连排、不得拆散或调换次序）；[SYN] §3.3 条件 1 ①②③；受保护文本 [OUTL…"
+    },
+    {
+      "block_id": "B0043",
+      "old_hash": "a259ee625c4d",
+      "first_line_excerpt": "The third paragraph states the **design boundary of a registered asset**, not a…"
+    },
+    {
+      "block_id": "B0044",
+      "old_hash": "c77a164babe4",
+      "first_line_excerpt": "The comparison is bounded to the registered, verification-first search set and …"
+    },
+    {
+      "block_id": "B0045",
+      "old_hash": "940dacfecbc0",
+      "first_line_excerpt": "Chinese-language candidate records that could not be independently verified wer…"
+    },
+    {
+      "block_id": "B0046",
+      "old_hash": "c3bfd0087dd8",
+      "first_line_excerpt": "### 2.4 Comparison criterion, update rule, and current boundary"
+    },
+    {
+      "block_id": "B0047",
+      "old_hash": "c1f835d7ef52",
+      "first_line_excerpt": "Before the comparison was run, the project registered a four-part criterion for…"
+    },
+    {
+      "block_id": "B0048",
+      "old_hash": "af5de4c59372",
+      "first_line_excerpt": "The criterion contains no multi-scale conjunct because multi-scale parameterisa…"
+    },
+    {
+      "block_id": "B0049",
+      "old_hash": "874181b589e2",
+      "first_line_excerpt": "The criterion also required the usefulness of the combination to be supported e…"
+    },
+    {
+      "block_id": "B0050",
+      "old_hash": "d33545cc000a",
+      "first_line_excerpt": "The comparison remains updateable: a previously unresolved record that is later…"
+    },
+    {
+      "block_id": "B0051",
+      "old_hash": "18b2fbef1e73",
+      "first_line_excerpt": "## 3 The Fusion Framework: Formulation"
+    },
+    {
+      "block_id": "B0052",
+      "old_hash": "9c6caf0cdf96",
+      "first_line_excerpt": "Everything in this section is a **formulation claim**: it states what the frame…"
+    },
+    {
+      "block_id": "B0053",
+      "old_hash": "8eb0d49baaac",
+      "first_line_excerpt": "Figure 2 presents the paper's two-layer framework–governance architecture. This…"
+    },
+    {
+      "block_id": "B0054",
+      "old_hash": "c2ca6521678e",
+      "first_line_excerpt": "**Figure 2.** The framework of this paper has two layers, and the design of the…"
+    },
+    {
+      "block_id": "B0055",
+      "old_hash": "97aae7510c9a",
+      "first_line_excerpt": "### 3.1 A single probability graph"
+    },
+    {
+      "block_id": "B0056",
+      "old_hash": "f0ec96d30d8e",
+      "first_line_excerpt": "The framework conditions all inference on one joint decomposition. Writing $c$ …"
+    },
+    {
+      "block_id": "B0057",
+      "old_hash": "ddb144498e45",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0058",
+      "old_hash": "81be876952b6",
+      "first_line_excerpt": "Here $h$ collects the frozen configuration — discretisation, source–receiver ge…"
+    },
+    {
+      "block_id": "B0059",
+      "old_hash": "67ed421c704d",
+      "first_line_excerpt": "**Figure 1.** The joint decomposition of §3.1 as a directed graph. Variable nod…"
+    },
+    {
+      "block_id": "B0060",
+      "old_hash": "3b8ed80d288b",
+      "first_line_excerpt": "**Table 1.** Variable dictionary for the nodes of Eq. (3.1). *Parents* and *ent…"
+    },
+    {
+      "block_id": "B0061",
+      "old_hash": "c7e3430def30",
+      "first_line_excerpt": "| Symbol | Meaning | Support / dimension | Parents | Unique entry point |"
+    },
+    {
+      "block_id": "B0062",
+      "old_hash": "e296c637dcbe",
+      "first_line_excerpt": "*(a)* Trans-dimensional states live on $\\bigsqcup_c \\{c\\}\\times\\mathcal{Z}_c\\ti…"
+    },
+    {
+      "block_id": "B0063",
+      "old_hash": "081857f9deda",
+      "first_line_excerpt": "Two properties of this construction carry most of the framework's discipline. F…"
+    },
+    {
+      "block_id": "B0064",
+      "old_hash": "3dc4d3ee36a5",
+      "first_line_excerpt": "The formulation sits in the Bayesian inverse-problem tradition (Tarantola & Val…"
+    },
+    {
+      "block_id": "B0065",
+      "old_hash": "a6c2f138d931",
+      "first_line_excerpt": "Non-compact $\\mathcal{M}_c$ is permitted. A sufficient condition for a proper p…"
+    },
+    {
+      "block_id": "B0066",
+      "old_hash": "0be41b746202",
+      "first_line_excerpt": "Two inference paths are carried explicitly and must be labelled in any applicat…"
+    },
+    {
+      "block_id": "B0067",
+      "old_hash": "6b4791b8a7da",
+      "first_line_excerpt": "### 3.2 The observation layer and its shared-error structure"
+    },
+    {
+      "block_id": "B0068",
+      "old_hash": "33b3d4852700",
+      "first_line_excerpt": "The unified observation layer is"
+    },
+    {
+      "block_id": "B0069",
+      "old_hash": "acdfc9599256",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0070",
+      "old_hash": "ee00ea8d7a34",
+      "first_line_excerpt": "where $T_{h,k}$ is the **realisation contract** of method $k$: it fixes channel…"
+    },
+    {
+      "block_id": "B0071",
+      "old_hash": "94b2b1689d6a",
+      "first_line_excerpt": "The shared nuisance vector is strictly typed: $\\xi=(\\xi_g,\\xi_a,\\xi_t)$ contain…"
+    },
+    {
+      "block_id": "B0072",
+      "old_hash": "5e2339f1d1e0",
+      "first_line_excerpt": "Discrepancy and surrogate error are separated by construction and by data. Mode…"
+    },
+    {
+      "block_id": "B0073",
+      "old_hash": "477d138837db",
+      "first_line_excerpt": "**The conditional-independence product across methods is licensed, not assumed.…"
+    },
+    {
+      "block_id": "B0074",
+      "old_hash": "a059c4be82ae",
+      "first_line_excerpt": "This licensing condition is where the framework's architecture becomes visible …"
+    },
+    {
+      "block_id": "B0075",
+      "old_hash": "8f7b7df3799e",
+      "first_line_excerpt": "The observation layer is heavy-tailed and correlated. A single scalar mixing va…"
+    },
+    {
+      "block_id": "B0076",
+      "old_hash": "3ddc6eb5b2b3",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0077",
+      "old_hash": "b6dded20ec66",
+      "first_line_excerpt": "$\\Omega$ is the Student-$t$ scale matrix and **not** a marginal covariance: for…"
+    },
+    {
+      "block_id": "B0078",
+      "old_hash": "132d49a16bd2",
+      "first_line_excerpt": "Robustness to outlying observations has two separate lineages in geophysical in…"
+    },
+    {
+      "block_id": "B0079",
+      "old_hash": "bf9f3eb1c0a6",
+      "first_line_excerpt": "Cross-method correlation uses a **restricted single-common-mode construction**.…"
+    },
+    {
+      "block_id": "B0080",
+      "old_hash": "34eab22e215e",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0081",
+      "old_hash": "170fe51fad47",
+      "first_line_excerpt": "where $M_k,M_l$ are co-location or same-batch matching matrices mapping a share…"
+    },
+    {
+      "block_id": "B0082",
+      "old_hash": "211d9afc2acf",
+      "first_line_excerpt": "### 3.3 The auditable prior stack"
+    },
+    {
+      "block_id": "B0083",
+      "old_hash": "70161f47990e",
+      "first_line_excerpt": "Conditional on the lithology labels, the property prior is a three-layer produc…"
+    },
+    {
+      "block_id": "B0084",
+      "old_hash": "bc722dfe76ff",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0085",
+      "old_hash": "a8a45aa2ff41",
+      "first_line_excerpt": "The product form is used only where the three factors consume mutually exclusiv…"
+    },
+    {
+      "block_id": "B0086",
+      "old_hash": "a23c5b1d5656",
+      "first_line_excerpt": "What makes the stack **auditable** is the unique source-id rule that governs wh…"
+    },
+    {
+      "block_id": "B0087",
+      "old_hash": "f2265f5f0738",
+      "first_line_excerpt": "Boreholes enter through exactly one door. Lithological logs, wireline data and …"
+    },
+    {
+      "block_id": "B0088",
+      "old_hash": "57550906cb3c",
+      "first_line_excerpt": "**Structural coupling, $p_{\\rm str}$.** With registered property transforms $G_…"
+    },
+    {
+      "block_id": "B0089",
+      "old_hash": "931792e7f489",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0090",
+      "old_hash": "9304d409c130",
+      "first_line_excerpt": "The mechanism draws on a structural-coupling lineage that runs from the earlies…"
+    },
+    {
+      "block_id": "B0091",
+      "old_hash": "ce39e73a1383",
+      "first_line_excerpt": "**Petrophysical coupling, $p_{\\rm phy}$.** Coupling geophysical properties thro…"
+    },
+    {
+      "block_id": "B0092",
+      "old_hash": "f1be9dedb59c",
+      "first_line_excerpt": "**Interpretation-driven structure, $p_{\\rm geo}$.** This factor consumes `inter…"
+    },
+    {
+      "block_id": "B0093",
+      "old_hash": "314b05ff8921",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0094",
+      "old_hash": "cb2581d0a8fe",
+      "first_line_excerpt": "with $a_c,b_c>0$ and both components proper and normalised on a common support.…"
+    },
+    {
+      "block_id": "B0095",
+      "old_hash": "f08e892422c8",
+      "first_line_excerpt": "Three prior-discipline instruments are mandatory and all three are reported: **…"
+    },
+    {
+      "block_id": "B0096",
+      "old_hash": "d961752a028f",
+      "first_line_excerpt": "### 3.4 Multi-scale parameterisation"
+    },
+    {
+      "block_id": "B0097",
+      "old_hash": "a5f6e5f59cbe",
+      "first_line_excerpt": "Three nested scale mechanisms are carried, and all three are **parameterisation…"
+    },
+    {
+      "block_id": "B0098",
+      "old_hash": "6a81de2f8431",
+      "first_line_excerpt": "**Figure 3.** The multi-scale parameterisation: a depth-band organisation, per-…"
+    },
+    {
+      "block_id": "B0099",
+      "old_hash": "2ea18f8cdefd",
+      "first_line_excerpt": "*Depth-band organisation.* Shallow, intermediate, deep and regional-long-wavele…"
+    },
+    {
+      "block_id": "B0100",
+      "old_hash": "ffcd8d49c666",
+      "first_line_excerpt": "*Change-of-support coupling.* Scale transfer connects **the same property in th…"
+    },
+    {
+      "block_id": "B0101",
+      "old_hash": "1f1714ea6af8",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0102",
+      "old_hash": "4f478e36be0b",
+      "first_line_excerpt": "with $p(u_L\\mid\\Theta_{cs})$ proper. The operator, the variogram-structured res…"
+    },
+    {
+      "block_id": "B0103",
+      "old_hash": "a60aedf02ff1",
+      "first_line_excerpt": "*Per-scale reduced coordinates.* A proper orthogonal decomposition basis is bui…"
+    },
+    {
+      "block_id": "B0104",
+      "old_hash": "55bcea6a8d7a",
+      "first_line_excerpt": "Neither ingredient of this construction originates here. Organising geophysical…"
+    },
+    {
+      "block_id": "B0105",
+      "old_hash": "a44debb5d4cd",
+      "first_line_excerpt": "The \"multi-scale\" of the title refers to exactly these three parameterisation m…"
+    },
+    {
+      "block_id": "B0106",
+      "old_hash": "07a1d1d73c17",
+      "first_line_excerpt": "### 3.5 Robustness as a first-class component"
+    },
+    {
+      "block_id": "B0107",
+      "old_hash": "ed6d93497b3d",
+      "first_line_excerpt": "The framework registers a **generalized-Bayes sensitivity weighting** layer as …"
+    },
+    {
+      "block_id": "B0108",
+      "old_hash": "a2b2882c0e08",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0109",
+      "old_hash": "467e5df3623d",
+      "first_line_excerpt": "entering the weighted target"
+    },
+    {
+      "block_id": "B0110",
+      "old_hash": "5d9493053bf7",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0111",
+      "old_hash": "a45088924b6e",
+      "first_line_excerpt": "The exponent $\\alpha>0$, the regulariser $\\epsilon>0$, the whitening operator a…"
+    },
+    {
+      "block_id": "B0112",
+      "old_hash": "532196b6a8bc",
+      "first_line_excerpt": "Equation (3.9) is the sole canonical weighting definition for this manuscript. …"
+    },
+    {
+      "block_id": "B0113",
+      "old_hash": "425643925c34",
+      "first_line_excerpt": "Its position in the framework is deliberately narrow. It is **not** the default…"
+    },
+    {
+      "block_id": "B0114",
+      "old_hash": "872b0610f5ee",
+      "first_line_excerpt": "1. **The weight is a per-method scalar.** With `weight_shape = scalar_times_ide…"
+    },
+    {
+      "block_id": "B0115",
+      "old_hash": "b921e6b36455",
+      "first_line_excerpt": "The framework's claim is scoped accordingly: it offers **fusion with pre-regist…"
+    },
+    {
+      "block_id": "B0116",
+      "old_hash": "e3040e1544cb",
+      "first_line_excerpt": "Finally, the operational meaning of frozen whitening is stated explicitly becau…"
+    },
+    {
+      "block_id": "B0117",
+      "old_hash": "a3447cc4385f",
+      "first_line_excerpt": "## 4 Inference and Computation"
+    },
+    {
+      "block_id": "B0118",
+      "old_hash": "c7e16a95d73a",
+      "first_line_excerpt": "### 4.0 Components and their evidence tiers"
+    },
+    {
+      "block_id": "B0119",
+      "old_hash": "96e0e9f20941",
+      "first_line_excerpt": "The inference stack is presented as **designed and partially evidenced**. Table…"
+    },
+    {
+      "block_id": "B0120",
+      "old_hash": "e425c0e6209a",
+      "first_line_excerpt": "The inference route taken throughout is Markov chain Monte Carlo. Variational a…"
+    },
+    {
+      "block_id": "B0121",
+      "old_hash": "dec6ae838162",
+      "first_line_excerpt": "**Table 2.** Inference components, their role, and the evidence tier registered…"
+    },
+    {
+      "block_id": "B0122",
+      "old_hash": "87b29723221c",
+      "first_line_excerpt": "| Component | Role in the framework | Evidence tier |"
+    },
+    {
+      "block_id": "B0123",
+      "old_hash": "24f57314316c",
+      "first_line_excerpt": "### 4.1 MAP anchoring"
+    },
+    {
+      "block_id": "B0124",
+      "old_hash": "94c961b20c8d",
+      "first_line_excerpt": "Deterministic optimisation enters the framework as an *anchor generator*, not a…"
+    },
+    {
+      "block_id": "B0125",
+      "old_hash": "a0dbd37661e8",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0126",
+      "old_hash": "4a695ee5b463",
+      "first_line_excerpt": "whose minimiser supplies candidate initial states for the chains and centres fo…"
+    },
+    {
+      "block_id": "B0127",
+      "old_hash": "aaf42ba8f4c8",
+      "first_line_excerpt": "Two caveats travel with every use of this component and are reported. **No opti…"
+    },
+    {
+      "block_id": "B0128",
+      "old_hash": "e05d595b6835",
+      "first_line_excerpt": "### 4.2 Multi-scale reduced coordinates"
+    },
+    {
+      "block_id": "B0129",
+      "old_hash": "9783a4070d6c",
+      "first_line_excerpt": "Where reduced coordinates are used, the model is represented as $m\\approx m_0+\\…"
+    },
+    {
+      "block_id": "B0130",
+      "old_hash": "d49edb400846",
+      "first_line_excerpt": "The reduced posterior is defined with an explicit gate. With $T_r(\\alpha)=m_0+\\…"
+    },
+    {
+      "block_id": "B0131",
+      "old_hash": "bdb0bcd098a8",
+      "first_line_excerpt": "### 4.3 Delayed acceptance"
+    },
+    {
+      "block_id": "B0132",
+      "old_hash": "1a1fccb18dc1",
+      "first_line_excerpt": "Surrogates enter the framework only under correction. When a reduced-order, lea…"
+    },
+    {
+      "block_id": "B0133",
+      "old_hash": "2d0df1b90638",
+      "first_line_excerpt": "The two-stage pattern — a cheap coarse screen followed by a correction that res…"
+    },
+    {
+      "block_id": "B0134",
+      "old_hash": "e710f970ba86",
+      "first_line_excerpt": "Those works locate the lineage; they are not the provenance of what is implemen…"
+    },
+    {
+      "block_id": "B0135",
+      "old_hash": "03caa70b9917",
+      "first_line_excerpt": "This is the one component in this section with registered run evidence. A full-…"
+    },
+    {
+      "block_id": "B0136",
+      "old_hash": "5ab7e8928517",
+      "first_line_excerpt": "### 4.4 Parallel tempering"
+    },
+    {
+      "block_id": "B0137",
+      "old_hash": "4e7fadfb90dc",
+      "first_line_excerpt": "Where multimodality is expected, tempering uses a single, uniquely specified ta…"
+    },
+    {
+      "block_id": "B0138",
+      "old_hash": "41967ebc31d1",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0139",
+      "old_hash": "f600bbe118b5",
+      "first_line_excerpt": "in which $x$ is the complete state of Eq. (3.1) and every rung shares the same …"
+    },
+    {
+      "block_id": "B0140",
+      "old_hash": "ffb305c2b03f",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0141",
+      "old_hash": "902e3e0dd1c7",
+      "first_line_excerpt": "so that the intractable $Z_\\beta$ cancels. The computation is performed in the …"
+    },
+    {
+      "block_id": "B0142",
+      "old_hash": "4714d4e57240",
+      "first_line_excerpt": "The temperature ladder is a pre-registered candidate configuration; the framewo…"
+    },
+    {
+      "block_id": "B0143",
+      "old_hash": "718cfb1de1e3",
+      "first_line_excerpt": "### 4.5 Reversible-jump MCMC"
+    },
+    {
+      "block_id": "B0144",
+      "old_hash": "3523a641e387",
+      "first_line_excerpt": "Trans-dimensional inference is specified once, in Green's form, and no simplifi…"
+    },
+    {
+      "block_id": "B0145",
+      "old_hash": "7cb7308fc92b",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0146",
+      "old_hash": "e3f716f437fd",
+      "first_line_excerpt": "gives the acceptance probability"
+    },
+    {
+      "block_id": "B0147",
+      "old_hash": "82165ca63205",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0148",
+      "old_hash": "1569f8d57c21",
+      "first_line_excerpt": "Move probabilities must be renormalised at model boundaries where some moves ar…"
+    },
+    {
+      "block_id": "B0149",
+      "old_hash": "7dce1ad2e151",
+      "first_line_excerpt": "**This component is presented at design tier only.** No trans-dimensional run e…"
+    },
+    {
+      "block_id": "B0150",
+      "old_hash": "6cc0e76a0a82",
+      "first_line_excerpt": "### 4.6 The diagnostics contract"
+    },
+    {
+      "block_id": "B0151",
+      "old_hash": "ee4312e8bbe1",
+      "first_line_excerpt": "All acceptance criteria come from a single machine-readable source, `validation…"
+    },
+    {
+      "block_id": "B0152",
+      "old_hash": "063f7ba0b432",
+      "first_line_excerpt": "Three disciplines make the contract binding rather than advisory. First, it is …"
+    },
+    {
+      "block_id": "B0153",
+      "old_hash": "8d528897c4a1",
+      "first_line_excerpt": "Simulation-based calibration is specified as a validation instrument in Section…"
+    },
+    {
+      "block_id": "B0154",
+      "old_hash": "bd576ec8893e",
+      "first_line_excerpt": "### 4.7 Numerical safeguards and adaptation discipline"
+    },
+    {
+      "block_id": "B0155",
+      "old_hash": "a9f22cee6ca9",
+      "first_line_excerpt": "Forward operators are required to expose matrix-free directional derivatives. E…"
+    },
+    {
+      "block_id": "B0156",
+      "old_hash": "8d01689a1068",
+      "first_line_excerpt": "Normalisation is scale-aware and frozen. Gradients are normalised against a tas…"
+    },
+    {
+      "block_id": "B0157",
+      "old_hash": "77fc65c943e2",
+      "first_line_excerpt": "Adaptation is confined by contract. Proposal adaptation occurs **only inside a …"
+    },
+    {
+      "block_id": "B0158",
+      "old_hash": "cb221398a749",
+      "first_line_excerpt": "## 5 Decision-Layer Interface Specification"
+    },
+    {
+      "block_id": "B0646",
+      "old_hash": "cf04b8dad6db",
+      "first_line_excerpt": "**Specification-only workflow; no observed decision result.**"
+    },
+    {
+      "block_id": "B0647",
+      "old_hash": "e2d5e1c7b568",
+      "first_line_excerpt": "| Stage | Owner | Required inputs | Output / consumer | Quarantine or escalatio…"
+    },
+    {
+      "block_id": "B0159",
+      "old_hash": "9c94972c11a0",
+      "first_line_excerpt": "The framework terminates in a decision layer, but this section specifies its in…"
+    },
+    {
+      "block_id": "B0160",
+      "old_hash": "ca6275686a6e",
+      "first_line_excerpt": "### 5.1 Per-draw target-volume scenarios"
+    },
+    {
+      "block_id": "B0161",
+      "old_hash": "44c75bf87618",
+      "first_line_excerpt": "Within each complete joint posterior draw, the mineralisation indicator, voxel …"
+    },
+    {
+      "block_id": "B0162",
+      "old_hash": "103ae0717791",
+      "first_line_excerpt": "### 5.2 Calibrated event probabilities"
+    },
+    {
+      "block_id": "B0163",
+      "old_hash": "6361efd12078",
+      "first_line_excerpt": "An event probability — that a hole misses its target, for instance — requires a…"
+    },
+    {
+      "block_id": "B0164",
+      "old_hash": "7a28f03b03ba",
+      "first_line_excerpt": "### 5.3 Three information contracts, kept separate"
+    },
+    {
+      "block_id": "B0165",
+      "old_hash": "0796eed0f983",
+      "first_line_excerpt": "Information gain is recorded under exactly one of three types, separated by tim…"
+    },
+    {
+      "block_id": "B0166",
+      "old_hash": "ca13b4eeb27a",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0167",
+      "old_hash": "20f55502b56a",
+      "first_line_excerpt": "The first is a design quantity evaluated before $y$ is observed; the second is …"
+    },
+    {
+      "block_id": "B0168",
+      "old_hash": "ea0401ad7d16",
+      "first_line_excerpt": "### 5.4 Decision-theoretic contract"
+    },
+    {
+      "block_id": "B0169",
+      "old_hash": "ba32158f3d1a",
+      "first_line_excerpt": "Under a single state–action–cash-flow contract, cash flows are constructed per …"
+    },
+    {
+      "block_id": "B0170",
+      "old_hash": "c02f43270afa",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0171",
+      "old_hash": "b72cdfa96071",
+      "first_line_excerpt": "a mean–standard-deviation criterion in which $\\gamma$ carries whatever units ma…"
+    },
+    {
+      "block_id": "B0172",
+      "old_hash": "5d9dc7631d0f",
+      "first_line_excerpt": "### 5.5 Quarantine"
+    },
+    {
+      "block_id": "B0173",
+      "old_hash": "dd5d2435d0b5",
+      "first_line_excerpt": "No quantity defined in this section is reported as a result. No expected-inform…"
+    },
+    {
+      "block_id": "B0174",
+      "old_hash": "84649432132e",
+      "first_line_excerpt": "## 6 Validation Design and Registered Evidence"
+    },
+    {
+      "block_id": "B0175",
+      "old_hash": "83009048014d",
+      "first_line_excerpt": "This section states what would count as evidence in this work before any of it …"
+    },
+    {
+      "block_id": "B0176",
+      "old_hash": "66c2b2f00904",
+      "first_line_excerpt": "### 6.1 Evidence tiers and the registration regime"
+    },
+    {
+      "block_id": "B0177",
+      "old_hash": "975b1dff87e2",
+      "first_line_excerpt": "Every quantitative statement in this paper is bound to a row of a hash-bound ev…"
+    },
+    {
+      "block_id": "B0178",
+      "old_hash": "01f01711da58",
+      "first_line_excerpt": "Three disciplines make the registry binding rather than descriptive. Registrati…"
+    },
+    {
+      "block_id": "B0179",
+      "old_hash": "0ddc6cdbcc8d",
+      "first_line_excerpt": "**A gate item must be able to fail, and this has to be exhibited rather than as…"
+    },
+    {
+      "block_id": "B0180",
+      "old_hash": "e0b23fda7d31",
+      "first_line_excerpt": "That surrogate has a closed-form ceiling. For $M$ chains of $n$ post-warmup dra…"
+    },
+    {
+      "block_id": "B0181",
+      "old_hash": "b725f8d919c0",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0182",
+      "old_hash": "78f516bed5a3",
+      "first_line_excerpt": "and the bound is attained, not merely approached, at the configuration in which…"
+    },
+    {
+      "block_id": "B0183",
+      "old_hash": "8cab773ec27b",
+      "first_line_excerpt": "The correction is not that the gate misjudged anything. It never did: the item …"
+    },
+    {
+      "block_id": "B0184",
+      "old_hash": "e4ab63ed0b44",
+      "first_line_excerpt": "> **Gate-item admission.** A gate item is registered with a configuration in wh…"
+    },
+    {
+      "block_id": "B0185",
+      "old_hash": "71233b760385",
+      "first_line_excerpt": "Three properties of this rule are worth separating from the case that produced …"
+    },
+    {
+      "block_id": "B0186",
+      "old_hash": "9061500f0bcb",
+      "first_line_excerpt": "A related edge case concerns a channel that is exactly constant across draws an…"
+    },
+    {
+      "block_id": "B0188",
+      "old_hash": "8d9c22eaa58a",
+      "first_line_excerpt": "A numerical implementation may omit the channel or may return a near-unit value…"
+    },
+    {
+      "block_id": "B0189",
+      "old_hash": "5bcd33693152",
+      "first_line_excerpt": "The regime also has to say **when a pre-registered criterion may be amended at …"
+    },
+    {
+      "block_id": "B0190",
+      "old_hash": "2df7cf51df9e",
+      "first_line_excerpt": "### 6.2 The registered evidence this paper may use"
+    },
+    {
+      "block_id": "B0191",
+      "old_hash": "9c2cc5f4d926",
+      "first_line_excerpt": "Four assets are registered at a tier that permits quantitative statements, and …"
+    },
+    {
+      "block_id": "B0192",
+      "old_hash": "b103b50e2a30",
+      "first_line_excerpt": "**Table 3.** Registered evidence and the wording boundary attached to each row."
+    },
+    {
+      "block_id": "B0193",
+      "old_hash": "574118ddee8c",
+      "first_line_excerpt": "| Claim the paper can make | evidence_id | Tier | Allowed wording boundary |"
+    },
+    {
+      "block_id": "B0194",
+      "old_hash": "69d73dd2da07",
+      "first_line_excerpt": "Three of the four boundaries carry a mandatory co-disclosure or a mandatory neg…"
+    },
+    {
+      "block_id": "B0195",
+      "old_hash": "d62649123902",
+      "first_line_excerpt": "### 6.3 The pre-registered validation protocol"
+    },
+    {
+      "block_id": "B0196",
+      "old_hash": "68239a2ced79",
+      "first_line_excerpt": "What follows is the protocol the framework prescribes. **It is a design, not a …"
+    },
+    {
+      "block_id": "B0197",
+      "old_hash": "11d94d9d8ac6",
+      "first_line_excerpt": "**Forward-operator regression.** Each method is regressed against an independen…"
+    },
+    {
+      "block_id": "B0198",
+      "old_hash": "fff9c238842a",
+      "first_line_excerpt": "**The unit of statistical replication is the geological scene.** Independent sc…"
+    },
+    {
+      "block_id": "B0199",
+      "old_hash": "eaa14eb7bd7e",
+      "first_line_excerpt": "**Four instruments, four contracts, kept apart.** Simulation-based calibration …"
+    },
+    {
+      "block_id": "B0200",
+      "old_hash": "c087234b4fde",
+      "first_line_excerpt": "**Two adversarial scenarios are pre-registered rather than selected afterwards.…"
+    },
+    {
+      "block_id": "B0201",
+      "old_hash": "ccb9723d16e5",
+      "first_line_excerpt": "### 6.4 EVD-JOINT-001: pre-registered design and registration status"
+    },
+    {
+      "block_id": "B0202",
+      "old_hash": "ce3c98cc184c",
+      "first_line_excerpt": "The framework's one joint asset is a co-platform gravity–magnetic synthetic exp…"
+    },
+    {
+      "block_id": "B0203",
+      "old_hash": "cd349e55003d",
+      "first_line_excerpt": "**Scene and observation design.** A three-dimensional $10\\times10\\times5$ tenso…"
+    },
+    {
+      "block_id": "B0204",
+      "old_hash": "0c7ab61dbdbb",
+      "first_line_excerpt": "**Figure 4.** The registered scene and observation design of EVD-JOINT-001: the…"
+    },
+    {
+      "block_id": "B0205",
+      "old_hash": "14b29474cc7d",
+      "first_line_excerpt": "**State, priors and the coupling switch.** The state carries both property fiel…"
+    },
+    {
+      "block_id": "B0206",
+      "old_hash": "0b007b26948e",
+      "first_line_excerpt": "**Three endpoints, pre-registered in quantitative form.** Endpoint (i) compares…"
+    },
+    {
+      "block_id": "B0207",
+      "old_hash": "a627da7ecb17",
+      "first_line_excerpt": "**Table 6.** Pre-registered endpoint skeleton. Every threshold is fixed before …"
+    },
+    {
+      "block_id": "B0208",
+      "old_hash": "a5671427b09e",
+      "first_line_excerpt": "| Endpoint | Reported quantity | Minimum important difference | Decision rule |"
+    },
+    {
+      "block_id": "B0645",
+      "old_hash": "b6b6696d12ef",
+      "first_line_excerpt": "Endpoint (ii) is limited to the registered nested injection and is optimistic r…"
+    },
+    {
+      "block_id": "B0209",
+      "old_hash": "1a3c6aa8e06f",
+      "first_line_excerpt": "**The metric form of endpoint (i), and why both forms are disclosed.** Endpoint…"
+    },
+    {
+      "block_id": "B0210",
+      "old_hash": "523ff5b67fd3",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0211",
+      "old_hash": "00040e6eb292",
+      "first_line_excerpt": "|b+\\delta|-|b| \\;=\\; \\operatorname{sign}(b)\\,\\delta \\;+\\; 2\\max\\!\\bigl(0,\\ -\\op…"
+    },
+    {
+      "block_id": "B0212",
+      "old_hash": "f2b41f087e3e",
+      "first_line_excerpt": "\\tag{6.3}"
+    },
+    {
+      "block_id": "B0213",
+      "old_hash": "1ee13d270b5d",
+      "first_line_excerpt": "an identity whose first term depends only on the displacement and whose second …"
+    },
+    {
+      "block_id": "B0214",
+      "old_hash": "d6c3b199a4a0",
+      "first_line_excerpt": "**Blinding, failure discipline and diagnostics.** Blinding is enforced by hashe…"
+    },
+    {
+      "block_id": "B0215",
+      "old_hash": "a06064e63e25",
+      "first_line_excerpt": "**Registration status.** The following is the state of the asset as this paper …"
+    },
+    {
+      "block_id": "B0216",
+      "old_hash": "9fe7603914cb",
+      "first_line_excerpt": "Two of this section's own results bear on that outcome and are stated plainly, …"
+    },
+    {
+      "block_id": "B0217",
+      "old_hash": "bc7d9cc2548b",
+      "first_line_excerpt": "Under v1.3, the pre-registered co-platform gravity–magnetic synthetic scenes, o…"
+    },
+    {
+      "block_id": "B0218",
+      "old_hash": "e44e93cb2617",
+      "first_line_excerpt": "Execution is staged. ⟦V-9 · [PREREG-v1.3] §§10.1–10.2⟧ A Diagnostic-only attain…"
+    },
+    {
+      "block_id": "B0219",
+      "old_hash": "1996e7a20c47",
+      "first_line_excerpt": "The formal 42-run re-pilot includes the s00–s04 × λ ∈ {0, 1, 10, 100, 1000, 100…"
+    },
+    {
+      "block_id": "B0220",
+      "old_hash": "69c29462bf09",
+      "first_line_excerpt": "A run clears the convergence hard gate only if `rhat`, `bulk_ess`, `tail_ess`, …"
+    },
+    {
+      "block_id": "B0221",
+      "old_hash": "377176bed7a0",
+      "first_line_excerpt": "If any channel is excluded as non-finite (`n_channels_nonfinite > 0`), the sepa…"
+    },
+    {
+      "block_id": "B0222",
+      "old_hash": "79c3ef887f9d",
+      "first_line_excerpt": "For the analytic reason registered in preregistration Appendix E.1, `mode_visit…"
+    },
+    {
+      "block_id": "B0223",
+      "old_hash": "4dc57b02cf58",
+      "first_line_excerpt": "The run identifier, criteria, frozen input manifest, and `environment_hash` mus…"
+    },
+    {
+      "block_id": "B0224",
+      "old_hash": "1f74544b41be",
+      "first_line_excerpt": "EVD-JOINT-001 remains `Planned`; this paragraph records registered design oblig…"
+    },
+    {
+      "block_id": "B0226",
+      "old_hash": "8d0ecbf8061d",
+      "first_line_excerpt": "## 7 Results"
+    },
+    {
+      "block_id": "B0227",
+      "old_hash": "30a840e2fbaf",
+      "first_line_excerpt": "This section reports the registered evidence and nothing else. **Every quantita…"
+    },
+    {
+      "block_id": "B0228",
+      "old_hash": "ec97bc72ae38",
+      "first_line_excerpt": "The section is organised by evidence identifier rather than by theme, one subse…"
+    },
+    {
+      "block_id": "B0229",
+      "old_hash": "0d791abbf75c",
+      "first_line_excerpt": "**One asset is reported without results.** The joint synthetic experiment of §6…"
+    },
+    {
+      "block_id": "B0230",
+      "old_hash": "c7db4fbc3ec5",
+      "first_line_excerpt": "### 7.1 Per-method forward-operator verification (WP8)"
+    },
+    {
+      "block_id": "B0231",
+      "old_hash": "2be2b26f4f1d",
+      "first_line_excerpt": "The framework's forward operators were verified method by method against a pre-…"
+    },
+    {
+      "block_id": "B0232",
+      "old_hash": "2bb9cd0744ad",
+      "first_line_excerpt": "**Table 4.** Per-method synthetic verification. All nine methods carry all nine…"
+    },
+    {
+      "block_id": "B0648",
+      "old_hash": "a3e453b3f761",
+      "first_line_excerpt": "**Table 4a. Conservative mapping from verified method components to the joint-g…"
+    },
+    {
+      "block_id": "B0649",
+      "old_hash": "c958bad22298",
+      "first_line_excerpt": "| Method | Observable and unit | Property support | Exercised shared nuisance /…"
+    },
+    {
+      "block_id": "B0650",
+      "old_hash": "24e1ac9f3489",
+      "first_line_excerpt": "Private noise parameters remain method-specific unless a named asset states oth…"
+    },
+    {
+      "block_id": "B0233",
+      "old_hash": "7468dcf5df04",
+      "first_line_excerpt": "| Method family | Checks required | Recorded status | `field_validated` |"
+    },
+    {
+      "block_id": "B0234",
+      "old_hash": "1bc42b444df8",
+      "first_line_excerpt": "**What these matrices are, and what they are not.** Table 4 reports per-method …"
+    },
+    {
+      "block_id": "B0235",
+      "old_hash": "dc910907f808",
+      "first_line_excerpt": "**Mandatory co-disclosure.** Two facts are registered with this asset and are r…"
+    },
+    {
+      "block_id": "B0236",
+      "old_hash": "a380b0c59bb3",
+      "first_line_excerpt": "### 7.2 Algorithm-correctness study (EVD-ALGO-002)"
+    },
+    {
+      "block_id": "B0237",
+      "old_hash": "61626391d183",
+      "first_line_excerpt": "The delayed-acceptance sampler specified in §4.3 was exercised in full dimensio…"
+    },
+    {
+      "block_id": "B0238",
+      "old_hash": "10d8d3aef8b8",
+      "first_line_excerpt": "**Figure 5.** Convergence and effective-sample-size diagnostics for the algorit…"
+    },
+    {
+      "block_id": "B0239",
+      "old_hash": "fdae373cb5b0",
+      "first_line_excerpt": "A companion coverage study was run on the same target with 400 replications, gi…"
+    },
+    {
+      "block_id": "B0240",
+      "old_hash": "21127ee556a3",
+      "first_line_excerpt": "**What this asset does and does not support.** It supports two things: that the…"
+    },
+    {
+      "block_id": "B0241",
+      "old_hash": "d9f8ae22acb9",
+      "first_line_excerpt": "### 7.3 DO-27 modern-API compatibility runs, and the failure package retained w…"
+    },
+    {
+      "block_id": "B0242",
+      "old_hash": "b40655aff13e",
+      "first_line_excerpt": "The third registered asset is a compatibility exercise rather than a scientific…"
+    },
+    {
+      "block_id": "B0243",
+      "old_hash": "7dd06d7947f5",
+      "first_line_excerpt": "**The claim boundary is registered with the asset and is reproduced here becaus…"
+    },
+    {
+      "block_id": "B0244",
+      "old_hash": "98de78aa335c",
+      "first_line_excerpt": "**Mandatory co-disclosure: the v2 failure package.** An earlier run under a sup…"
+    },
+    {
+      "block_id": "B0245",
+      "old_hash": "3e6e76d58fc7",
+      "first_line_excerpt": "Two consequences of that disclosure are worth making explicit, because they are…"
+    },
+    {
+      "block_id": "B0246",
+      "old_hash": "6171d8a5591d",
+      "first_line_excerpt": "**Provenance of the sign-off.** The acceptance decision on this asset was taken…"
+    },
+    {
+      "block_id": "B0247",
+      "old_hash": "0ee951a4eb5a",
+      "first_line_excerpt": "### 7.4 Open-data ingestion and integrity audit (EVD-OPEN-001)"
+    },
+    {
+      "block_id": "B0248",
+      "old_hash": "cdc4882e7bf1",
+      "first_line_excerpt": "Two published open geophysical data holdings were ingested and audited for inte…"
+    },
+    {
+      "block_id": "B0249",
+      "old_hash": "276e91005510",
+      "first_line_excerpt": "**The boundary on this asset is one sentence and it is absolute.** This is a **…"
+    },
+    {
+      "block_id": "B0250",
+      "old_hash": "6c9980ac3dba",
+      "first_line_excerpt": "### 7.5 The joint synthetic asset: implementation, pilot outcome, and current s…"
+    },
+    {
+      "block_id": "B0251",
+      "old_hash": "c6f5754b4396",
+      "first_line_excerpt": "The joint synthetic asset is the one place in this work where the framework's c…"
+    },
+    {
+      "block_id": "B0252",
+      "old_hash": "229d4236cd0e",
+      "first_line_excerpt": "**Implementation and its test evidence.** The new code required by the design —…"
+    },
+    {
+      "block_id": "B0253",
+      "old_hash": "92f85a29ff62",
+      "first_line_excerpt": "**A defect the governance machinery caught.** A calibration probe returned a ca…"
+    },
+    {
+      "block_id": "B0254",
+      "old_hash": "313745351746",
+      "first_line_excerpt": "**The pilot returned a negative result, and it is registered as one.** All 42 p…"
+    },
+    {
+      "block_id": "B0255",
+      "old_hash": "4472e4ccccf3",
+      "first_line_excerpt": "**The pilot driver did not run to completion, and the evaluation layer is a det…"
+    },
+    {
+      "block_id": "B0256",
+      "old_hash": "ef7ae2691a30",
+      "first_line_excerpt": "**Some pilot evidence does not depend on the sampler, and it survives the gate …"
+    },
+    {
+      "block_id": "B0257",
+      "old_hash": "b78f01340f5d",
+      "first_line_excerpt": "**The coupling-strength selection rule returned an empty set, and the pre-commi…"
+    },
+    {
+      "block_id": "B0258",
+      "old_hash": "175ad4293f23",
+      "first_line_excerpt": "**One diagnostic question is suspended rather than answered.** An early-warning…"
+    },
+    {
+      "block_id": "B0259",
+      "old_hash": "2e3b02818813",
+      "first_line_excerpt": "**Status as of 22 August 2026.** The user ruled that the asset be redesigned an…"
+    },
+    {
+      "block_id": "B0261",
+      "old_hash": "6cfdabb88c02",
+      "first_line_excerpt": "## 8 Discussion"
+    },
+    {
+      "block_id": "B0262",
+      "old_hash": "93e6dda4f444",
+      "first_line_excerpt": "### 8.1 What the registered evidence supports, and what it does not"
+    },
+    {
+      "block_id": "B0263",
+      "old_hash": "55d0007e67d5",
+      "first_line_excerpt": "Section 7 reported what each registered asset returned. This section states wha…"
+    },
+    {
+      "block_id": "B0264",
+      "old_hash": "b0160d08174e",
+      "first_line_excerpt": "**The per-method verification matrix (WP8).** *It supports three things.* Each …"
+    },
+    {
+      "block_id": "B0265",
+      "old_hash": "6d4b681e3c67",
+      "first_line_excerpt": "**The algorithm-correctness study (EVD-ALGO-002).** *It supports two things.* T…"
+    },
+    {
+      "block_id": "B0266",
+      "old_hash": "4c342df6f061",
+      "first_line_excerpt": "**The DO-27 compatibility runs (EVD-SYNTH-001).** *It supports two things.* A p…"
+    },
+    {
+      "block_id": "B0267",
+      "old_hash": "eaa866cfef43",
+      "first_line_excerpt": "**The open-data ingestion audit (EVD-OPEN-001).** *It supports two things.* Two…"
+    },
+    {
+      "block_id": "B0268",
+      "old_hash": "21a04871786e",
+      "first_line_excerpt": "**The joint synthetic asset (EVD-JOINT-001).** This is the asset the paper's fu…"
+    },
+    {
+      "block_id": "B0269",
+      "old_hash": "1625a7cb3696",
+      "first_line_excerpt": "**The current state of the fusion evidence, stated without anticipation.** The …"
+    },
+    {
+      "block_id": "B0270",
+      "old_hash": "ebcaf01c422b",
+      "first_line_excerpt": "### 8.2 Detection over isolation: the architectural position and what it costs"
+    },
+    {
+      "block_id": "B0271",
+      "old_hash": "5d881b7c6896",
+      "first_line_excerpt": "When several physical methods are combined and any of them may be misspecified …"
+    },
+    {
+      "block_id": "B0272",
+      "old_hash": "eb1d4e6d63ac",
+      "first_line_excerpt": "**The alternatives are principled, and this paper does not treat them otherwise…"
+    },
+    {
+      "block_id": "B0273",
+      "old_hash": "ec0f742f5710",
+      "first_line_excerpt": "**The reason for the position is that the isolation decision has to be made bef…"
+    },
+    {
+      "block_id": "B0274",
+      "old_hash": "2ba06de30f56",
+      "first_line_excerpt": "**The instrumentation is two devices with two different jobs, and this matters …"
+    },
+    {
+      "block_id": "B0275",
+      "old_hash": "4a9bfd432794",
+      "first_line_excerpt": "**What the framework does not do is decide.** A cut is a rule that removes a da…"
+    },
+    {
+      "block_id": "B0276",
+      "old_hash": "55d5c745e229",
+      "first_line_excerpt": "**The cost of this position is real and it is the one Jacob et al. identify.** …"
+    },
+    {
+      "block_id": "B0277",
+      "old_hash": "33f670cbbd00",
+      "first_line_excerpt": "**One qualification travels with the weight instrument and is stated here rathe…"
+    },
+    {
+      "block_id": "B0278",
+      "old_hash": "b59458bb2965",
+      "first_line_excerpt": "### 8.3 The novelty argument, and the condition under which it falls back"
+    },
+    {
+      "block_id": "B0279",
+      "old_hash": "2b88c0b0240f",
+      "first_line_excerpt": "**The bounded contribution statement is given in §2.3 and is not restated here.…"
+    },
+    {
+      "block_id": "B0280",
+      "old_hash": "9fffdae6b1b7",
+      "first_line_excerpt": "**The first arm is a literature-need arm, and it is satisfied.** Each of the fo…"
+    },
+    {
+      "block_id": "B0281",
+      "old_hash": "b7bfde365f25",
+      "first_line_excerpt": "**Two of the four elements have no literature request behind them at all, and w…"
+    },
+    {
+      "block_id": "B0282",
+      "old_hash": "d56efbf9f2c8",
+      "first_line_excerpt": "**The nearest-neighbour space was probed adversarially, and it came back empty.…"
+    },
+    {
+      "block_id": "B0283",
+      "old_hash": "0fb4aa7e3ae0",
+      "first_line_excerpt": "**The strongest objection on record, and the reply.** An independent review put…"
+    },
+    {
+      "block_id": "B0284",
+      "old_hash": "80c1461c57af",
+      "first_line_excerpt": "**The second arm is not available, so the pre-committed evidence boundary appli…"
+    },
+    {
+      "block_id": "B0286",
+      "old_hash": "1865e6da96e0",
+      "first_line_excerpt": "### 8.4 Research-record motivation for the governance design"
+    },
+    {
+      "block_id": "B0287",
+      "old_hash": "07785b9ea3dc",
+      "first_line_excerpt": "The governance apparatus in §6 was motivated by citation-identity and provenanc…"
+    },
+    {
+      "block_id": "B0291",
+      "old_hash": "b242a766c8a7",
+      "first_line_excerpt": "**The boundary on all of the above is narrow and it is not negotiable.** The po…"
+    },
+    {
+      "block_id": "B0292",
+      "old_hash": "f18ee7d82941",
+      "first_line_excerpt": "**The bounded gap observation.** Within the geophysical-methods records examine…"
+    },
+    {
+      "block_id": "B0293",
+      "old_hash": "840e3cdf03d4",
+      "first_line_excerpt": "### 8.5 Limitations"
+    },
+    {
+      "block_id": "B0294",
+      "old_hash": "69d6d5afb640",
+      "first_line_excerpt": "This section is an inventory, and an inventory is only meaningful relative to a…"
+    },
+    {
+      "block_id": "B0295",
+      "old_hash": "4cbef2b8ba8c",
+      "first_line_excerpt": "#### The evidence ceiling"
+    },
+    {
+      "block_id": "B0296",
+      "old_hash": "4f10d2ba98ce",
+      "first_line_excerpt": "**All quantitative claims in this paper are bounded at the Synthetic-run tier, …"
+    },
+    {
+      "block_id": "B0297",
+      "old_hash": "e674c1b0486d",
+      "first_line_excerpt": "The per-method evidence carries strict scope limits. The nine-method matrix is …"
+    },
+    {
+      "block_id": "B0298",
+      "old_hash": "dc9a570163b1",
+      "first_line_excerpt": "Finally, a boundary on what the framework claims to do at all: **it does not cl…"
+    },
+    {
+      "block_id": "B0299",
+      "old_hash": "8af5449f9ac6",
+      "first_line_excerpt": "#### The three mandatory failure co-disclosures"
+    },
+    {
+      "block_id": "B0300",
+      "old_hash": "4e0b63ee94f9",
+      "first_line_excerpt": "These three are reproduced verbatim. Two of them are stated in full where their…"
+    },
+    {
+      "block_id": "B0301",
+      "old_hash": "c5a217e6f337",
+      "first_line_excerpt": "**Disclosure 1 — the DO-27 v2 failure package** (co-disclosure of EVD-SYNTH-001…"
+    },
+    {
+      "block_id": "B0302",
+      "old_hash": "c627f63dbcdc",
+      "first_line_excerpt": "**Disclosure 2 — WP8-0 formal field feasibility 6/9 and the completion-policy r…"
+    },
+    {
+      "block_id": "B0303",
+      "old_hash": "7c4a6252d4f3",
+      "first_line_excerpt": "**Disclosure 3 — the WP9 four-specialist re-review** (provenance of the governa…"
+    },
+    {
+      "block_id": "B0304",
+      "old_hash": "68d9789b7cb0",
+      "first_line_excerpt": "#### What the registered joint asset does and does not carry"
+    },
+    {
+      "block_id": "B0305",
+      "old_hash": "90462120a70e",
+      "first_line_excerpt": "The following boundaries travel with EVD-JOINT-001. The asset is an implementat…"
+    },
+    {
+      "block_id": "B0306",
+      "old_hash": "c87723481d91",
+      "first_line_excerpt": "The misspecification endpoint addresses only one registered, known and nested i…"
+    },
+    {
+      "block_id": "B0307",
+      "old_hash": "6fa142be5af9",
+      "first_line_excerpt": "#### What the instrument has not established about itself"
+    },
+    {
+      "block_id": "B0308",
+      "old_hash": "3b9f27dbde9d",
+      "first_line_excerpt": "This is the part of the inventory that concerns the validation apparatus rather…"
+    },
+    {
+      "block_id": "B0309",
+      "old_hash": "bb4ca5f1bb30",
+      "first_line_excerpt": "**The diagnostics hard gate has not been passed under any registered mechanism,…"
+    },
+    {
+      "block_id": "B0310",
+      "old_hash": "2b9f74bf9fd6",
+      "first_line_excerpt": "**The coupling endpoint's two-arm comparison has never been measured under gate…"
+    },
+    {
+      "block_id": "B0311",
+      "old_hash": "f6d9ec8bbf39",
+      "first_line_excerpt": "**For the coupling-direction parameter the design, in its present form, cannot …"
+    },
+    {
+      "block_id": "B0312",
+      "old_hash": "3100249c7aae",
+      "first_line_excerpt": "**The endpoint's decision quantity is a difference of absolute errors, and that…"
+    },
+    {
+      "block_id": "B0313",
+      "old_hash": "4ef77a811cb2",
+      "first_line_excerpt": "**The diagnostic implementation now fails closed on non-finite or degenerate ch…"
+    },
+    {
+      "block_id": "B0314",
+      "old_hash": "1f22eccec449",
+      "first_line_excerpt": "**The rank-normalisation implementation has been aligned with its contract.** B…"
+    },
+    {
+      "block_id": "B0315",
+      "old_hash": "4b51bfac006d",
+      "first_line_excerpt": "**The count of channels dropped from a criterion is a biased lower bound on the…"
+    },
+    {
+      "block_id": "B0316",
+      "old_hash": "2eb6d2e3634d",
+      "first_line_excerpt": "**The convergence statistic we report is aggregated over channels that include …"
+    },
+    {
+      "block_id": "B0317",
+      "old_hash": "11417c05ae0c",
+      "first_line_excerpt": "One further property of the gate — that one of its items could not fail under t…"
+    },
+    {
+      "block_id": "B0318",
+      "old_hash": "2dab3b432baa",
+      "first_line_excerpt": "#### The literature base"
+    },
+    {
+      "block_id": "B0319",
+      "old_hash": "4c3b7c1f9476",
+      "first_line_excerpt": "The comparative positioning uses a targeted, verification-first literature sear…"
+    },
+    {
+      "block_id": "B0320",
+      "old_hash": "738446deb7cc",
+      "first_line_excerpt": "The Chinese-language audit records its queries, date, identity checks and unres…"
+    },
+    {
+      "block_id": "B0321",
+      "old_hash": "3335d44647ce",
+      "first_line_excerpt": "One property of the comparison criterion itself works in this paper's favour an…"
+    },
+    {
+      "block_id": "B0322",
+      "old_hash": "6d1da9f55110",
+      "first_line_excerpt": "Three further properties of the comparison set are registered. **Every score in…"
+    },
+    {
+      "block_id": "B0323",
+      "old_hash": "2f0acb9e9232",
+      "first_line_excerpt": "#### Provenance of this work's own process"
+    },
+    {
+      "block_id": "B0324",
+      "old_hash": "a2de9fe8aa72",
+      "first_line_excerpt": "Three production limitations remain. First, blinding of the joint synthetic exp…"
+    },
+    {
+      "block_id": "B0325",
+      "old_hash": "c7f0de48caaf",
+      "first_line_excerpt": "Each of the artefacts underlying this paper carries its own register of items i…"
+    },
+    {
+      "block_id": "B0326",
+      "old_hash": "2d5a7db42552",
+      "first_line_excerpt": "#### Items still under adjudication at the cut-off"
+    },
+    {
+      "block_id": "B0327",
+      "old_hash": "a42f53b5833f",
+      "first_line_excerpt": "The following matters remained open on 22 August 2026 and are listed to make th…"
+    },
+    {
+      "block_id": "B0328",
+      "old_hash": "fc4dc135a0b8",
+      "first_line_excerpt": "### 8.6 Future work"
+    },
+    {
+      "block_id": "B0329",
+      "old_hash": "c6f7522e646b",
+      "first_line_excerpt": "Five pieces of work are registered as outstanding rather than left as aspiratio…"
+    },
+    {
+      "block_id": "B0330",
+      "old_hash": "5e2fcbf0cce3",
+      "first_line_excerpt": "**Paired weighted and unweighted arms.** The claim ceiling stated in §8.2 — tha…"
+    },
+    {
+      "block_id": "B0331",
+      "old_hash": "dab7f9bc9174",
+      "first_line_excerpt": "**The redesigned pilot, and the full campaign behind it.** The joint asset's pi…"
+    },
+    {
+      "block_id": "B0332",
+      "old_hash": "da30f49e90be",
+      "first_line_excerpt": "**A trans-dimensional run.** The framework specifies a model-dimension index an…"
+    },
+    {
+      "block_id": "B0333",
+      "old_hash": "e93175d38e95",
+      "first_line_excerpt": "**Environment baseline, not compute evidence.** The revision host used Windows …"
+    },
+    {
+      "block_id": "B0334",
+      "old_hash": "073cc1e915d3",
+      "first_line_excerpt": "**Field-transfer risk register.** The Field-validated tier remains empty and EV…"
+    },
+    {
+      "block_id": "B0651",
+      "old_hash": "2ca9bdc378d9",
+      "first_line_excerpt": "| Risk domain | Current evidence gap | Entry evidence required for EVD-FIELD-00…"
+    },
+    {
+      "block_id": "B0652",
+      "old_hash": "deb707073358",
+      "first_line_excerpt": "No field-validity conclusion follows from this register, and no amount of addit…"
+    },
+    {
+      "block_id": "B0335",
+      "old_hash": "5c7be0a22fd9",
+      "first_line_excerpt": "**These five are ordered by what they would change, not by difficulty.** The fi…"
+    },
+    {
+      "block_id": "B0336",
+      "old_hash": "fcc9bd2e1384",
+      "first_line_excerpt": "## 9 Conclusions"
+    },
+    {
+      "block_id": "B0337",
+      "old_hash": "0e2cd24417dc",
+      "first_line_excerpt": "This paper has set out a framework and the evidence that may be claimed for it,…"
+    },
+    {
+      "block_id": "B0338",
+      "old_hash": "4382eab40e8c",
+      "first_line_excerpt": "**The formulation contribution** is an auditable probabilistic graph combining …"
+    },
+    {
+      "block_id": "B0339",
+      "old_hash": "6a55c8d38ff1",
+      "first_line_excerpt": "**The evidence contribution is component-level and tier-bounded.** Nine forward…"
+    },
+    {
+      "block_id": "B0341",
+      "old_hash": "7ac6fbe5149c",
+      "first_line_excerpt": "**The paper reports no behaviour of the assembled framework.** The gravity–magn…"
+    },
+    {
+      "block_id": "B0342",
+      "old_hash": "41ac77c8559b",
+      "first_line_excerpt": "**The contribution of governance is the one this paper can most fully support, …"
+    },
+    {
+      "block_id": "B0343",
+      "old_hash": "bd0612b2e9cb",
+      "first_line_excerpt": "## Declarations"
+    },
+    {
+      "block_id": "B0344",
+      "old_hash": "d668eb6423f9",
+      "first_line_excerpt": "### AI-use disclosure"
+    },
+    {
+      "block_id": "B0345",
+      "old_hash": "1ed94d893be8",
+      "first_line_excerpt": "This study was produced by an AI-agent research pipeline. We disclose the scope…"
+    },
+    {
+      "block_id": "B0346",
+      "old_hash": "ea3762d01f63",
+      "first_line_excerpt": "**Stages executed by AI agents.** Scoping and the methodological blueprint (Pha…"
+    },
+    {
+      "block_id": "B0347",
+      "old_hash": "dfc7d1488201",
+      "first_line_excerpt": "**Two process deviations are disclosed rather than smoothed over.** The Phase 1…"
+    },
+    {
+      "block_id": "B0348",
+      "old_hash": "42e448dc0888",
+      "first_line_excerpt": "**Independent adversarial review.** Each Devil's Advocate checkpoint was a sepa…"
+    },
+    {
+      "block_id": "B0349",
+      "old_hash": "a26cb13e0d01",
+      "first_line_excerpt": "**Provenance of the governance evidence.** The WP7 sign-off was produced by thr…"
+    },
+    {
+      "block_id": "B0350",
+      "old_hash": "7a4b1e50b0eb",
+      "first_line_excerpt": "**Human oversight points.** Human decisions were taken at the following points …"
+    },
+    {
+      "block_id": "B0351",
+      "old_hash": "e8c862f4892b",
+      "first_line_excerpt": "**Policy conformance.** This disclosure is written to COPE guidance on AI use i…"
+    },
+    {
+      "block_id": "B0352",
+      "old_hash": "63b058d4189b",
+      "first_line_excerpt": "**No AI output is presented as human authorship.** Every action attributed to a…"
+    },
+    {
+      "block_id": "B0353",
+      "old_hash": "1c443d6c2eea",
+      "first_line_excerpt": "### Competing interests"
+    },
+    {
+      "block_id": "B0354",
+      "old_hash": "d3c114b65409",
+      "first_line_excerpt": "The authors declare the following structural interests. These interests are **n…"
+    },
+    {
+      "block_id": "B0355",
+      "old_hash": "47a14c10ba67",
+      "first_line_excerpt": "**Self-reference, in three respects.** (i) The authors are the producers of the…"
+    },
+    {
+      "block_id": "B0356",
+      "old_hash": "143cf53a3f11",
+      "first_line_excerpt": "**Countermeasures in place.** (1) Pre-registration of the experimental design w…"
+    },
+    {
+      "block_id": "B0357",
+      "old_hash": "39f0865f5548",
+      "first_line_excerpt": "**These mechanisms have intercepted defects in this work, not merely been decla…"
+    },
+    {
+      "block_id": "B0358",
+      "old_hash": "80b93f2d4756",
+      "first_line_excerpt": "### Funding"
+    },
+    {
+      "block_id": "B0359",
+      "old_hash": "295e9f2fe213",
+      "first_line_excerpt": "Funding information has not yet been supplied by the corresponding author. No f…"
+    },
+    {
+      "block_id": "B0360",
+      "old_hash": "f5867db619ff",
+      "first_line_excerpt": "### Code and data availability"
+    },
+    {
+      "block_id": "B0361",
+      "old_hash": "d919976831a5",
+      "first_line_excerpt": "The framework is implemented in the `geodeepbayes` package. A public repository…"
+    },
+    {
+      "block_id": "B0362",
+      "old_hash": "a9fdbf183c3b",
+      "first_line_excerpt": "The manuscript reports Synthetic-run and data-ingestion evidence but no Field-v…"
+    },
+    {
+      "block_id": "B0363",
+      "old_hash": "b7e02ee381b8",
+      "first_line_excerpt": "### Author contributions"
+    },
+    {
+      "block_id": "B0364",
+      "old_hash": "4189bddcef35",
+      "first_line_excerpt": "CRediT roles have not yet been supplied or confirmed by the authors. Contributi…"
+    },
+    {
+      "block_id": "B0365",
+      "old_hash": "7dec0f51d63e",
+      "first_line_excerpt": "## Appendix A. Nearest-neighbour scoring rubric and full coverage matrix"
+    },
+    {
+      "block_id": "B0366",
+      "old_hash": "0941658127b7",
+      "first_line_excerpt": "This appendix publishes the scoring rubric used in Table 5 so that a reader may…"
+    },
+    {
+      "block_id": "B0367",
+      "old_hash": "a80028c37a64",
+      "first_line_excerpt": "### A.1 The three grades"
+    },
+    {
+      "block_id": "B0368",
+      "old_hash": "0a56aa7c9fd6",
+      "first_line_excerpt": "- **✓** — the work is in the same paradigm **and** exhibits the substantive for…"
+    },
+    {
+      "block_id": "B0369",
+      "old_hash": "c12786be1626",
+      "first_line_excerpt": "⟦[SYN] §7-2(v) 三档定义逐字；[OUTLINE] §12 附录 A 行⟧"
+    },
+    {
+      "block_id": "B0370",
+      "old_hash": "d79d767dfc98",
+      "first_line_excerpt": "### A.2 The criterion for column (a)"
+    },
+    {
+      "block_id": "B0371",
+      "old_hash": "20f0ceacb15c",
+      "first_line_excerpt": "Column (a) is the one most open to dispute, so its criterion is stated explicit…"
+    },
+    {
+      "block_id": "B0372",
+      "old_hash": "fdb9d6780d0f",
+      "first_line_excerpt": "> **Does the prior bring substantive external information about subsurface phys…"
+    },
+    {
+      "block_id": "B0373",
+      "old_hash": "c368d7e43631",
+      "first_line_excerpt": "- **◐** — the prior carries information of that kind (**on the same axis as ele…"
+    },
+    {
+      "block_id": "B0374",
+      "old_hash": "53c90c70b1bd",
+      "first_line_excerpt": "**The decisive contrast — why the criterion cannot be \"does it have a prior\".**…"
+    },
+    {
+      "block_id": "B0375",
+      "old_hash": "43dca26ec8d6",
+      "first_line_excerpt": "### A.3 Wording discipline for ✗ cells"
+    },
+    {
+      "block_id": "B0376",
+      "old_hash": "1af15f354fe0",
+      "first_line_excerpt": "**A ✗ cell may not be written in the \"has X, lacks Y\" form.** That form is how …"
+    },
+    {
+      "block_id": "B0377",
+      "old_hash": "cf78a40ba721",
+      "first_line_excerpt": "**This rule applies to the whole table, not only to column (a).** The ◐ cells i…"
+    },
+    {
+      "block_id": "B0378",
+      "old_hash": "8f8ca9d740a6",
+      "first_line_excerpt": "### A.4 Evidence base and the conditions for re-scoring"
+    },
+    {
+      "block_id": "B0379",
+      "old_hash": "d7120ce1b86c",
+      "first_line_excerpt": "The inventory separates bibliographic discovery from element adjudication. A no…"
+    },
+    {
+      "block_id": "B0380",
+      "old_hash": "2d532abc53bf",
+      "first_line_excerpt": "### A.5 Full coverage matrix"
+    },
+    {
+      "block_id": "B0381",
+      "old_hash": "9651fffe8db2",
+      "first_line_excerpt": "**Table A.1. Full-text recoding queue for the registered nearest-neighbour inve…"
+    },
+    {
+      "block_id": "B0382",
+      "old_hash": "c8b5af234b15",
+      "first_line_excerpt": "| Nearest neighbour | Auditable priors | Shared-error likelihood | Multi-scale …"
+    },
+    {
+      "block_id": "B0383",
+      "old_hash": "9a92567a7232",
+      "first_line_excerpt": "⟦R-2 · [SYN] §3.2 表（十行）+ 2026-08-20 修订记录增列 Afonso 2026 行；(d) 单元格取 2026-08-21 核改…"
+    },
+    {
+      "block_id": "B0384",
+      "old_hash": "7e01e0126eb1",
+      "first_line_excerpt": "## Appendix B. Decision-layer numerical illustration"
+    },
+    {
+      "block_id": "B0385",
+      "old_hash": "2e985757c92e",
+      "first_line_excerpt": "Section 5 defers its numerical illustrations to this appendix. Every value prin…"
+    },
+    {
+      "block_id": "B0386",
+      "old_hash": "43a877388e3f",
+      "first_line_excerpt": "The illustrations are included because three of the interface's contracts are p…"
+    },
+    {
+      "block_id": "B0387",
+      "old_hash": "cccff072dfe5",
+      "first_line_excerpt": "### B.1 Why draws may not be broken apart"
+    },
+    {
+      "block_id": "B0388",
+      "old_hash": "8e6df565befb",
+      "first_line_excerpt": "Section 5.1 requires that every component of a per-draw total be taken from the…"
+    },
+    {
+      "block_id": "B0389",
+      "old_hash": "760153f78e51",
+      "first_line_excerpt": "**Table B.1.** Values are \"synthetic placeholder, not evidence\". Eleven per-dra…"
+    },
+    {
+      "block_id": "B0390",
+      "old_hash": "594ff9c61b53",
+      "first_line_excerpt": "| Draw | $a$ | $b$ | $Q=ab$ |"
+    },
+    {
+      "block_id": "B0391",
+      "old_hash": "a2ddb5340787",
+      "first_line_excerpt": "With eleven draws the order statistics are exact and no interpolation conventio…"
+    },
+    {
+      "block_id": "B0392",
+      "old_hash": "5fce60d983b7",
+      "first_line_excerpt": "Now reconstruct the same three summaries the way the specification forbids: tak…"
+    },
+    {
+      "block_id": "B0393",
+      "old_hash": "07fb7ea7b1ba",
+      "first_line_excerpt": "**Table B.2.** Values are \"synthetic placeholder, not evidence\". The two aggreg…"
+    },
+    {
+      "block_id": "B0394",
+      "old_hash": "6fcf44ed6eb5",
+      "first_line_excerpt": "| Summary | Quantile of per-draw totals (specified) | Product of marginal quant…"
+    },
+    {
+      "block_id": "B0395",
+      "old_hash": "b8e44ac0ae24",
+      "first_line_excerpt": "The specified interval spans a factor of about 1.17 from $P90$ to $P10$; the re…"
+    },
+    {
+      "block_id": "B0396",
+      "old_hash": "4065abd71b49",
+      "first_line_excerpt": "### B.2 A score is not a probability"
+    },
+    {
+      "block_id": "B0397",
+      "old_hash": "599b458d4a00",
+      "first_line_excerpt": "Section 5.2 reserves the word probability for an output produced under a frozen…"
+    },
+    {
+      "block_id": "B0398",
+      "old_hash": "452a8738749a",
+      "first_line_excerpt": "**Table B.3.** Values are \"synthetic placeholder, not evidence\". Uncalibrated s…"
+    },
+    {
+      "block_id": "B0399",
+      "old_hash": "15d0f4a119e5",
+      "first_line_excerpt": "| Target | Uncalibrated score | Observed frequency in band |"
+    },
+    {
+      "block_id": "B0400",
+      "old_hash": "882fe3240efe",
+      "first_line_excerpt": "The scores rank the five targets in the same order as the frequencies, and they…"
+    },
+    {
+      "block_id": "B0401",
+      "old_hash": "186967214fa3",
+      "first_line_excerpt": "### B.3 The information record, with its value slots empty"
+    },
+    {
+      "block_id": "B0402",
+      "old_hash": "9ed6b0aa98c9",
+      "first_line_excerpt": "Section 5.3 fixes what every information-gain record must declare. Table B.4 sh…"
+    },
+    {
+      "block_id": "B0403",
+      "old_hash": "52956c62bb85",
+      "first_line_excerpt": "**Table B.4.** Values are \"synthetic placeholder, not evidence\". Required field…"
+    },
+    {
+      "block_id": "B0404",
+      "old_hash": "666cb9e31377",
+      "first_line_excerpt": "| Field | Required entry | Value |"
+    },
+    {
+      "block_id": "B0405",
+      "old_hash": "1a6d8e98a028",
+      "first_line_excerpt": "Three such records are three different quantities even when they name the same …"
+    },
+    {
+      "block_id": "B0406",
+      "old_hash": "682243998e40",
+      "first_line_excerpt": "### B.4 Risk preference as an explicit input"
+    },
+    {
+      "block_id": "B0407",
+      "old_hash": "9df603a174c5",
+      "first_line_excerpt": "Section 5.4 makes risk preference an explicit frozen input through $\\mathrm{ENP…"
+    },
+    {
+      "block_id": "B0408",
+      "old_hash": "a4d58ca5e145",
+      "first_line_excerpt": "**Table B.5.** Values are \"synthetic placeholder, not evidence\". $\\mathrm{ENPV}…"
+    },
+    {
+      "block_id": "B0409",
+      "old_hash": "d68a99aff03d",
+      "first_line_excerpt": "| $\\gamma$ | A1 | A2 | Preferred |"
+    },
+    {
+      "block_id": "B0410",
+      "old_hash": "f822a840388a",
+      "first_line_excerpt": "The preferred action changes at $\\gamma=0.25$, and that indifference point is n…"
+    },
+    {
+      "block_id": "B0411",
+      "old_hash": "d68dca095b59",
+      "first_line_excerpt": "### B.5 What this appendix does not license"
+    },
+    {
+      "block_id": "B0412",
+      "old_hash": "e04727904a2c",
+      "first_line_excerpt": "Nothing in this appendix is exercised, calibrated or evidenced. The tables abov…"
+    },
+    {
+      "block_id": "B0413",
+      "old_hash": "2075bffbfe3b",
+      "first_line_excerpt": "## Appendix C. Literature search and verification protocol"
+    },
+    {
+      "block_id": "B0414",
+      "old_hash": "04c7a8d9415a",
+      "first_line_excerpt": "Every entry cited in this paper passed the protocol described here, and no clai…"
+    },
+    {
+      "block_id": "B0415",
+      "old_hash": "395a4c9396d3",
+      "first_line_excerpt": "### C.1 The four channels"
+    },
+    {
+      "block_id": "B0416",
+      "old_hash": "4d890508f870",
+      "first_line_excerpt": "Each candidate record was checked against four independent bibliographic servic…"
+    },
+    {
+      "block_id": "B0417",
+      "old_hash": "f58a74d5adcd",
+      "first_line_excerpt": "**Table C.1.** Verification channels and their roles."
+    },
+    {
+      "block_id": "B0418",
+      "old_hash": "efa1a7c7115a",
+      "first_line_excerpt": "| Channel | Role | Check applied |"
+    },
+    {
+      "block_id": "B0419",
+      "old_hash": "4ad0ccdac94a",
+      "first_line_excerpt": "A candidate passes only if all three substantive channels resolve it, if the th…"
+    },
+    {
+      "block_id": "B0420",
+      "old_hash": "59ba7ace4954",
+      "first_line_excerpt": "Two operational rules travel with the channels. First, where none of the four c…"
+    },
+    {
+      "block_id": "B0421",
+      "old_hash": "3a8bbf38b5a9",
+      "first_line_excerpt": "### C.2 The verdict vocabulary"
+    },
+    {
+      "block_id": "B0422",
+      "old_hash": "9a9589078a82",
+      "first_line_excerpt": "Three verdicts are used, and they are not degrees of confidence."
+    },
+    {
+      "block_id": "B0423",
+      "old_hash": "66c5eb7c7d31",
+      "first_line_excerpt": "- **VERIFIED** — the work exists and every declared field agrees with the regis…"
+    },
+    {
+      "block_id": "B0424",
+      "old_hash": "887ad1f876c9",
+      "first_line_excerpt": "Over these three sits one rule, applied without exception: **a record that has …"
+    },
+    {
+      "block_id": "B0425",
+      "old_hash": "6a061e533c13",
+      "first_line_excerpt": "The rule is deliberately costly. It excluded records that may be genuine but th…"
+    },
+    {
+      "block_id": "B0426",
+      "old_hash": "600365d86b4a",
+      "first_line_excerpt": "### C.3 Controls, and why an all-green result is not evidence"
+    },
+    {
+      "block_id": "B0427",
+      "old_hash": "c7d103397fa7",
+      "first_line_excerpt": "A verification pipeline that returns a pass for everything it is given may be w…"
+    },
+    {
+      "block_id": "B0428",
+      "old_hash": "77fd38b1a85e",
+      "first_line_excerpt": "**Table C.2.** Controls carried with each batch."
+    },
+    {
+      "block_id": "B0429",
+      "old_hash": "a7efd4c02501",
+      "first_line_excerpt": "| Control | Purpose | Expected outcome |"
+    },
+    {
+      "block_id": "B0430",
+      "old_hash": "6a041b62a746",
+      "first_line_excerpt": "The negative control is the one that carries the weight. Without it, a batch re…"
+    },
+    {
+      "block_id": "B0431",
+      "old_hash": "f699671af01e",
+      "first_line_excerpt": "### C.4 What the protocol returned"
+    },
+    {
+      "block_id": "B0432",
+      "old_hash": "e2ebf55ced99",
+      "first_line_excerpt": "Two verification agents, working independently of the search that produced the …"
+    },
+    {
+      "block_id": "B0433",
+      "old_hash": "75e30539075d",
+      "first_line_excerpt": "The mismatches were not scattered. They concentrated in the most recent additio…"
+    },
+    {
+      "block_id": "B0434",
+      "old_hash": "337a061acad6",
+      "first_line_excerpt": "Two verified counts describe the bibliographic-failure finding and are not inte…"
+    },
+    {
+      "block_id": "B0435",
+      "old_hash": "0f2fa0c3ed69",
+      "first_line_excerpt": "The pattern is consistent with a corpus-scale contamination phenomenon describe…"
+    },
+    {
+      "block_id": "B0436",
+      "old_hash": "8b61cce754b6",
+      "first_line_excerpt": "Entries retained in the registered search archive but not cited in the manuscri…"
+    },
+    {
+      "block_id": "B0437",
+      "old_hash": "1d6761d0d8fb",
+      "first_line_excerpt": "### C.5 The targeted forward scan"
+    },
+    {
+      "block_id": "B0438",
+      "old_hash": "2c2b03891207",
+      "first_line_excerpt": "The verified base was later extended twice under the same protocol, each extens…"
+    },
+    {
+      "block_id": "B0439",
+      "old_hash": "4dc727cebbc6",
+      "first_line_excerpt": "Three retrieval routes were planned — keyword search, forward-citation traversa…"
+    },
+    {
+      "block_id": "B0440",
+      "old_hash": "f45acd88ff29",
+      "first_line_excerpt": "This is reported rather than quietly repaired because it bears on how the scan'…"
+    },
+    {
+      "block_id": "B0441",
+      "old_hash": "1a6117d0346b",
+      "first_line_excerpt": "### C.6 Search-accounting boundary"
+    },
+    {
+      "block_id": "B0442",
+      "old_hash": "e6144021664e",
+      "first_line_excerpt": "The archive records 458 identified records, 23 duplicate or placeholder removal…"
+    },
+    {
+      "block_id": "B0446",
+      "old_hash": "d0727a57ac95",
+      "first_line_excerpt": "Of the 97, the 41 internal entries are those that survived verification or were…"
+    },
+    {
+      "block_id": "B0447",
+      "old_hash": "1ff1b18604dd",
+      "first_line_excerpt": "## Appendix D. Pre-registration summary and run-history ledger (EVD-JOINT-001)"
+    },
+    {
+      "block_id": "B0448",
+      "old_hash": "1f627908c542",
+      "first_line_excerpt": "### D.1 What this appendix is, and what it is not"
+    },
+    {
+      "block_id": "B0449",
+      "old_hash": "7f8a6a092f92",
+      "first_line_excerpt": "This appendix summarises the pre-registration governing the joint synthetic ass…"
+    },
+    {
+      "block_id": "B0450",
+      "old_hash": "cc48a7a181cf",
+      "first_line_excerpt": "**The archive discipline under which the ledger is kept.** Every run listed bel…"
+    },
+    {
+      "block_id": "B0451",
+      "old_hash": "07560076ee69",
+      "first_line_excerpt": "**Recording that a run happened is not reporting its result.** The redesign-rou…"
+    },
+    {
+      "block_id": "B0452",
+      "old_hash": "521bf1aee946",
+      "first_line_excerpt": "### D.2 The pre-registration, as at 22 August 2026"
+    },
+    {
+      "block_id": "B0453",
+      "old_hash": "4b0889fa7d6c",
+      "first_line_excerpt": "The design was frozen as **v1.1** before any run of the asset was executed, fol…"
+    },
+    {
+      "block_id": "B0454",
+      "old_hash": "27845217fcc0",
+      "first_line_excerpt": "**What a reader should take from the version history is its shape rather than i…"
+    },
+    {
+      "block_id": "B0455",
+      "old_hash": "954e27cfeae0",
+      "first_line_excerpt": "### D.3 Run-history ledger"
+    },
+    {
+      "block_id": "B0456",
+      "old_hash": "a4f533da3a6f",
+      "first_line_excerpt": "**Registered nodes** — the spine of the asset, reported in §6.4 and §7.5."
+    },
+    {
+      "block_id": "B0457",
+      "old_hash": "e777ff630035",
+      "first_line_excerpt": "| Node | Purpose | Executed | Conclusion type |"
+    },
+    {
+      "block_id": "B0458",
+      "old_hash": "e2614921d6f1",
+      "first_line_excerpt": "**Redesign-round nodes** — **diagnostic tier; not evidence; no reading from any…"
+    },
+    {
+      "block_id": "B0459",
+      "old_hash": "3f96784a53c8",
+      "first_line_excerpt": "| Node | Question it was posed to answer | Executed | Conclusion type |"
+    },
+    {
+      "block_id": "B0460",
+      "old_hash": "8a41e0a8cbcf",
+      "first_line_excerpt": "**The last row carries a state, not a blank, and the states are three rather th…"
+    },
+    {
+      "block_id": "B0461",
+      "old_hash": "d2d15072834e",
+      "first_line_excerpt": "### D.4 The ledger's own limits"
+    },
+    {
+      "block_id": "B0462",
+      "old_hash": "ccbb5c03856a",
+      "first_line_excerpt": "Four limits travel with this appendix. **The conclusion types are types, not su…"
+    },
+    {
+      "block_id": "B0463",
+      "old_hash": "392fe06d3079",
+      "first_line_excerpt": "**The cut-off is a date, and the state it describes moved within that date.** T…"
+    },
+    {
+      "block_id": "B0464",
+      "old_hash": "43c336e50665",
+      "first_line_excerpt": "**And the approval states recorded here rest on second-hand records.** Where a …"
+    },
+    {
+      "block_id": "B0465",
+      "old_hash": "71c553523a3e",
+      "first_line_excerpt": "## Appendix E. Notation and variable dictionary"
+    },
+    {
+      "block_id": "B0466",
+      "old_hash": "329e86c966bd",
+      "first_line_excerpt": "### E.1 Scope of this index"
+    },
+    {
+      "block_id": "B0467",
+      "old_hash": "18352782003d",
+      "first_line_excerpt": "This appendix is a symbol index for the whole paper. It lists each symbol, what…"
+    },
+    {
+      "block_id": "B0468",
+      "old_hash": "81d2e645ffb7",
+      "first_line_excerpt": "It does **not** duplicate Table 1. Table 1 is the variable dictionary for the n…"
+    },
+    {
+      "block_id": "B0469",
+      "old_hash": "08356e4f8306",
+      "first_line_excerpt": "No numerical value appears in this appendix. Frozen constants, thresholds and r…"
+    },
+    {
+      "block_id": "B0470",
+      "old_hash": "760582f2a959",
+      "first_line_excerpt": "### E.2 Symbols by role"
+    },
+    {
+      "block_id": "B0471",
+      "old_hash": "d2e193eaa4fd",
+      "first_line_excerpt": "**Table E.1.** Notation index. Section numbers give the defining occurrence."
+    },
+    {
+      "block_id": "B0472",
+      "old_hash": "d414fdef602a",
+      "first_line_excerpt": "| Symbol | Meaning | Defined in |"
+    },
+    {
+      "block_id": "B0473",
+      "old_hash": "b0052e170fc9",
+      "first_line_excerpt": "### E.3 Symbols carrying more than one meaning"
+    },
+    {
+      "block_id": "B0474",
+      "old_hash": "d78bd9d51b03",
+      "first_line_excerpt": "Eight symbols are reused. Each reuse is standard in its own literature, and non…"
+    },
+    {
+      "block_id": "B0475",
+      "old_hash": "f3d78b20ee71",
+      "first_line_excerpt": "**Table E.2.** Reused symbols and their disambiguation."
+    },
+    {
+      "block_id": "B0476",
+      "old_hash": "f18209097a41",
+      "first_line_excerpt": "| Symbol | Meanings and where each holds |"
+    },
+    {
+      "block_id": "B0477",
+      "old_hash": "950672fdf164",
+      "first_line_excerpt": "Two conventions apply throughout and are stated once. Subscript $k$ ranges over…"
+    },
+    {
+      "block_id": "B0478",
+      "old_hash": "d75623921622",
+      "first_line_excerpt": "## Appendix F. Analytic derivations"
+    },
+    {
+      "block_id": "B0479",
+      "old_hash": "cb472f6e50da",
+      "first_line_excerpt": "Every result in this appendix is a consequence of a definition. None of them re…"
+    },
+    {
+      "block_id": "B0480",
+      "old_hash": "e4d0139f90ac",
+      "first_line_excerpt": "### F.1 The attainable bound of a chain-mean dispersion criterion"
+    },
+    {
+      "block_id": "B0481",
+      "old_hash": "1844457d4b49",
+      "first_line_excerpt": "**Referenced from §6.1, Eq. (6.1).**"
+    },
+    {
+      "block_id": "B0482",
+      "old_hash": "045decdd9bc9",
+      "first_line_excerpt": "Consider a criterion of the form: *each chain's mean lies within $k$ pooled sta…"
+    },
+    {
+      "block_id": "B0483",
+      "old_hash": "48a162ba0006",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0484",
+      "old_hash": "6dfe01455f5d",
+      "first_line_excerpt": "be the sample variance over the flattened sample. The quantity the criterion th…"
+    },
+    {
+      "block_id": "B0485",
+      "old_hash": "4069119f64db",
+      "first_line_excerpt": "**Step 1 — the within-chain variance only enlarges the denominator.** Decompose…"
+    },
+    {
+      "block_id": "B0486",
+      "old_hash": "60a3c9c9fe38",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0487",
+      "old_hash": "0e0c9dcb4d51",
+      "first_line_excerpt": "where $W_i\\ge0$ is the (biased) within-chain variance. Since $W_i$ enters only …"
+    },
+    {
+      "block_id": "B0488",
+      "old_hash": "f639b2bbf1ff",
+      "first_line_excerpt": "**Step 2 — the worst spread of chain means.** Fix $d=\\max_i\\lvert\\bar{x}_i-\\bar…"
+    },
+    {
+      "block_id": "B0489",
+      "old_hash": "f3eb597319bb",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0490",
+      "old_hash": "b770eabd2049",
+      "first_line_excerpt": "**Step 3 — the bound.** Substituting (F.3) into (F.1) with $W_i\\equiv0$ gives $…"
+    },
+    {
+      "block_id": "B0491",
+      "old_hash": "85d4a79e7eff",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0492",
+      "old_hash": "208951dda71f",
+      "first_line_excerpt": "The bound is **attained**, not merely approached: the configuration of Steps 1–…"
+    },
+    {
+      "block_id": "B0493",
+      "old_hash": "a29a50ff4f83",
+      "first_line_excerpt": "**Step 4 — when the criterion can fail.** The criterion can fail for some data …"
+    },
+    {
+      "block_id": "B0494",
+      "old_hash": "83d127e5eaba",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0495",
+      "old_hash": "c9390da4840e",
+      "first_line_excerpt": "At $k=3$, write (F.5) as $(M-1)(Mn-1)>9nM$. For $M\\le10$ the left side is at mo…"
+    },
+    {
+      "block_id": "B0496",
+      "old_hash": "b1e44111f642",
+      "first_line_excerpt": "> **at $k=3$ the criterion is capable of failing if and only if $M\\ge11$, and t…"
+    },
+    {
+      "block_id": "B0497",
+      "old_hash": "fa9293156b9a",
+      "first_line_excerpt": "**Instantiation for this work.** The frozen configuration uses $k=3$ and $M=4$ …"
+    },
+    {
+      "block_id": "B0498",
+      "old_hash": "183976ef5b81",
+      "first_line_excerpt": "**Two caveats travel with this result.** First, the derivation assumes the valu…"
+    },
+    {
+      "block_id": "B0499",
+      "old_hash": "1c176612d09c",
+      "first_line_excerpt": "### F.2 An exact decomposition of a difference of absolute errors"
+    },
+    {
+      "block_id": "B0500",
+      "old_hash": "c386a3e7151d",
+      "first_line_excerpt": "**Referenced from §6.4, Eq. (6.3) and the paragraph following it.**"
+    },
+    {
+      "block_id": "B0501",
+      "old_hash": "1c05bc61eeb3",
+      "first_line_excerpt": "Let $b\\ne0$ be a signed error and $\\delta$ a displacement applied to it. Then"
+    },
+    {
+      "block_id": "B0502",
+      "old_hash": "cbc9f913f055",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0503",
+      "old_hash": "6753f8a5b9ff",
+      "first_line_excerpt": "**Proof.** Both sides are invariant under $(b,\\delta)\\mapsto(-b,-\\delta)$, so i…"
+    },
+    {
+      "block_id": "B0504",
+      "old_hash": "a1a9ed97970c",
+      "first_line_excerpt": "*Case 1: $b+\\delta\\ge0$*, equivalently $\\delta\\ge-b$. The left side is $(b+\\del…"
+    },
+    {
+      "block_id": "B0505",
+      "old_hash": "2936fa50c93a",
+      "first_line_excerpt": "*Case 2: $b+\\delta<0$*, equivalently $\\delta<-b$. The left side is $-(b+\\delta)…"
+    },
+    {
+      "block_id": "B0506",
+      "old_hash": "ec6d063d79ce",
+      "first_line_excerpt": "Because the case split is on the sign of $b$ and on whether $b+\\delta$ retains …"
+    },
+    {
+      "block_id": "B0507",
+      "old_hash": "77657c6b3be5",
+      "first_line_excerpt": "**Three consequences.**"
+    },
+    {
+      "block_id": "B0508",
+      "old_hash": "8369ffced7cb",
+      "first_line_excerpt": "**(a) The penalty term is non-negative and vanishes unless the error crosses ze…"
+    },
+    {
+      "block_id": "B0509",
+      "old_hash": "c8698ddb973d",
+      "first_line_excerpt": "**(b) A one-directional containment.** Since the penalty is non-negative, $\\lve…"
+    },
+    {
+      "block_id": "B0510",
+      "old_hash": "c1b8de60f417",
+      "first_line_excerpt": "**(c) The window in which the displacement reduces the absolute error.** Writin…"
+    },
+    {
+      "block_id": "B0511",
+      "old_hash": "9332b8d5503d",
+      "first_line_excerpt": "**(d) The degenerate point.** At $b=0$ the two forms carry no information and f…"
+    },
+    {
+      "block_id": "B0512",
+      "old_hash": "f65941b25cdc",
+      "first_line_excerpt": "### F.3 Exact cancellation of the reference value in a signed difference"
+    },
+    {
+      "block_id": "B0513",
+      "old_hash": "008f45f36a37",
+      "first_line_excerpt": "**Referenced from §6.4, the closing sentence of the Eq. (6.3) paragraph.**"
+    },
+    {
+      "block_id": "B0514",
+      "old_hash": "0a0c9b53b7c0",
+      "first_line_excerpt": "Let $\\theta$ be the held-out reference value of a functional and let $\\hat{\\mu}…"
+    },
+    {
+      "block_id": "B0515",
+      "old_hash": "559e1184bfad",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0516",
+      "old_hash": "6046d3f6fd62",
+      "first_line_excerpt": "The reference value cancels identically. The quantity is therefore reconstructi…"
+    },
+    {
+      "block_id": "B0517",
+      "old_hash": "2111713d0b0a",
+      "first_line_excerpt": "Two boundaries. The cancellation is *algebraic*; in floating-point arithmetic t…"
+    },
+    {
+      "block_id": "B0518",
+      "old_hash": "e8c10c5650a7",
+      "first_line_excerpt": "### F.4 Degenerate constant channels and split-$\\widehat{R}$"
+    },
+    {
+      "block_id": "B0519",
+      "old_hash": "8b66e4e97369",
+      "first_line_excerpt": "**Referenced from §6.1, Eq. (6.2).**"
+    },
+    {
+      "block_id": "B0520",
+      "old_hash": "05e27e7ba3ff",
+      "first_line_excerpt": "Call a channel exactly constant when every post-warmup draw in every chain has …"
+    },
+    {
+      "block_id": "B0521",
+      "old_hash": "35613944e9d4",
+      "first_line_excerpt": "$$"
+    },
+    {
+      "block_id": "B0522",
+      "old_hash": "0e83104da4ad",
+      "first_line_excerpt": "For an exactly constant channel, every $s_m^2=0$ and every sub-chain mean is id…"
+    },
+    {
+      "block_id": "B0531",
+      "old_hash": "76eea450a975",
+      "first_line_excerpt": "**Boundary.** Near-unit values observed for nominally frozen channels are imple…"
+    },
+    {
+      "block_id": "B0532",
+      "old_hash": "65b72d86eeeb",
+      "first_line_excerpt": "## References"
+    },
+    {
+      "block_id": "B0533",
+      "old_hash": "60ed22b6de8c",
+      "first_line_excerpt": "> **著录说明**：当前投稿参考文献表含 94 条经核验或校正后保留的条目，并逐条保留 [LIT:n] 映射与质量级。注册搜索基座曾含 111 条候选，但该…"
+    },
+    {
+      "block_id": "B0534",
+      "old_hash": "6edbe66b368d",
+      "first_line_excerpt": "Afonso, J. C. (2026). A multiscale MCMC approach to joint geophysical inversion…"
+    },
+    {
+      "block_id": "B0535",
+      "old_hash": "0ac5dc09faae",
+      "first_line_excerpt": "Afonso, J. C., Fullea, J., Griffin, W. L., Yang, Y., Jones, A. G., & Connolly, …"
+    },
+    {
+      "block_id": "B0536",
+      "old_hash": "5086c0a469e3",
+      "first_line_excerpt": "Alemie, W., & Sacchi, M. D. (2011). High-resolution three-term AVO inversion by…"
+    },
+    {
+      "block_id": "B0537",
+      "old_hash": "edb451c3a80f",
+      "first_line_excerpt": "Amaya, M., Meles, G., Marelli, S., & Linde, N. (2024). Multifidelity adaptive s…"
+    },
+    {
+      "block_id": "B0538",
+      "old_hash": "4ee48ec2bf30",
+      "first_line_excerpt": "Andrieu, C., & Thoms, J. (2008). A tutorial on adaptive MCMC. *Statistics and C…"
+    },
+    {
+      "block_id": "B0539",
+      "old_hash": "e93e7f57d739",
+      "first_line_excerpt": "Arabpour, A., Hamidzadeh Moghadam, R., & Emami Niri, M. (2025). Geophysical Bay…"
+    },
+    {
+      "block_id": "B0540",
+      "old_hash": "15772ef26426",
+      "first_line_excerpt": "Arendt, P. D., Apley, D. W., & Chen, W. (2012). Quantification of model uncerta…"
+    },
+    {
+      "block_id": "B0541",
+      "old_hash": "30e8795ff8df",
+      "first_line_excerpt": "Astic, T., & Oldenburg, D. W. (2019). A framework for petrophysically and geolo…"
+    },
+    {
+      "block_id": "B0542",
+      "old_hash": "5f07a3b65431",
+      "first_line_excerpt": "Backus, G. E., & Gilbert, J. F. (1967). Numerical applications of a formalism f…"
+    },
+    {
+      "block_id": "B0543",
+      "old_hash": "40742382d89e",
+      "first_line_excerpt": "Berkooz, G., Holmes, P., & Lumley, J. L. (1993). The proper orthogonal decompos…"
+    },
+    {
+      "block_id": "B0544",
+      "old_hash": "c79283c66990",
+      "first_line_excerpt": "Bissiri, P. G., Holmes, C. C., & Walker, S. G. (2016). A general framework for …"
+    },
+    {
+      "block_id": "B0545",
+      "old_hash": "3df3e8ffb921",
+      "first_line_excerpt": "Blatter, D., Ray, A., & Key, K. (2021). Two-dimensional Bayesian inversion of m…"
+    },
+    {
+      "block_id": "B0546",
+      "old_hash": "bb407d7443c9",
+      "first_line_excerpt": "Bodin, T., & Sambridge, M. (2009). Seismic tomography with the reversible jump …"
+    },
+    {
+      "block_id": "B0547",
+      "old_hash": "7a2c00d64359",
+      "first_line_excerpt": "Bosch, M. (1999). Lithologic tomography: From plural geophysical data to lithol…"
+    },
+    {
+      "block_id": "B0548",
+      "old_hash": "bc6c91487ce9",
+      "first_line_excerpt": "Bosch, M., & McGaughey, J. (2001). Joint inversion of gravity and magnetic data…"
+    },
+    {
+      "block_id": "B0549",
+      "old_hash": "053b449774f3",
+      "first_line_excerpt": "Bosch, M., Mukerji, T., & Gonzalez, E. F. (2010). Seismic inversion for reservo…"
+    },
+    {
+      "block_id": "B0550",
+      "old_hash": "72de6a9232fc",
+      "first_line_excerpt": "Bratvold, R. B., Bickel, J. E., & Lohne, H. P. (2009). Value of information in …"
+    },
+    {
+      "block_id": "B0551",
+      "old_hash": "6398113c7467",
+      "first_line_excerpt": "Brooks, S. P., Giudici, P., & Roberts, G. O. (2003). Efficient construction of …"
+    },
+    {
+      "block_id": "B0552",
+      "old_hash": "c0d509f821d6",
+      "first_line_excerpt": "Brossier, R., Operto, S., & Virieux, J. (2010). Which data residual norm for ro…"
+    },
+    {
+      "block_id": "B0553",
+      "old_hash": "f3c7ef2491e1",
+      "first_line_excerpt": "Brynjarsdóttir, J., & O'Hagan, A. (2014). Learning about physical parameters: T…"
+    },
+    {
+      "block_id": "B0554",
+      "old_hash": "30e55f94223c",
+      "first_line_excerpt": "Bunks, C., Saleck, F. M., Zaleski, S., & Chavent, G. (1995). Multiscale seismic…"
+    },
+    {
+      "block_id": "B0555",
+      "old_hash": "fadec641710b",
+      "first_line_excerpt": "Chaloner, K., & Verdinelli, I. (1995). Bayesian experimental design: A review. …"
+    },
+    {
+      "block_id": "B0556",
+      "old_hash": "970a8642f7ff",
+      "first_line_excerpt": "Cockett, R., Kang, S., Heagy, L. J., Pidlisecky, A., & Oldenburg, D. W. (2015).…"
+    },
+    {
+      "block_id": "B0557",
+      "old_hash": "ec2738e7ba54",
+      "first_line_excerpt": "Cook, S. R., Gelman, A., & Rubin, D. B. (2006). Validation of software for Baye…"
+    },
+    {
+      "block_id": "B0558",
+      "old_hash": "1517c09f382e",
+      "first_line_excerpt": "Cui, T., Detommaso, G., & Scheichl, R. (2024). Multilevel dimension-independent…"
+    },
+    {
+      "block_id": "B0559",
+      "old_hash": "563cd1891bb1",
+      "first_line_excerpt": "Cui, T., Fox, C., & O'Sullivan, M. J. (2011). Bayesian calibration of a large-s…"
+    },
+    {
+      "block_id": "B0561",
+      "old_hash": "cc220cf8e34d",
+      "first_line_excerpt": "Dentith, M., & Mudge, S. T. (2014). *Geophysics for the mineral exploration geo…"
+    },
+    {
+      "block_id": "B0562",
+      "old_hash": "905187817db7",
+      "first_line_excerpt": "Dentith, M., Yuan, H., Johnson, S., Murdie, R., & Piña-Varas, P. (2018). Applic…"
+    },
+    {
+      "block_id": "B0564",
+      "old_hash": "9fc6c042583c",
+      "first_line_excerpt": "Dodwell, T. J., Ketelsen, C., Scheichl, R., & Teckentrup, A. L. (2015). A hiera…"
+    },
+    {
+      "block_id": "B0565",
+      "old_hash": "a74f8d512521",
+      "first_line_excerpt": "Earl, D. J., & Deem, M. W. (2005). Parallel tempering: Theory, applications, an…"
+    },
+    {
+      "block_id": "B0566",
+      "old_hash": "e100f4876a4c",
+      "first_line_excerpt": "Egbert, G. D., & Booker, J. R. (1986). Robust estimation of geomagnetic transfe…"
+    },
+    {
+      "block_id": "B0567",
+      "old_hash": "deeca1d62198",
+      "first_line_excerpt": "Eidsvik, J., Mukerji, T., & Bhattacharjya, D. (2015). *Value of information in …"
+    },
+    {
+      "block_id": "B0568",
+      "old_hash": "be8b922a5939",
+      "first_line_excerpt": "Gallardo, L. A., & Meju, M. A. (2003). Characterization of heterogeneous near-s…"
+    },
+    {
+      "block_id": "B0569",
+      "old_hash": "cc6bcd782cd7",
+      "first_line_excerpt": "Gallardo, L. A., & Meju, M. A. (2004). Joint two-dimensional DC resistivity and…"
+    },
+    {
+      "block_id": "B0570",
+      "old_hash": "e93b949e24bb",
+      "first_line_excerpt": "Gallardo, L. A., & Meju, M. A. (2007). Joint two-dimensional cross-gradient ima…"
+    },
+    {
+      "block_id": "B0571",
+      "old_hash": "8939e373e731",
+      "first_line_excerpt": "Giraud, J., Pakyuz-Charrier, E., Jessell, M., Lindsay, M., Martin, R., & Ogarko…"
+    },
+    {
+      "block_id": "B0572",
+      "old_hash": "52b3dce40488",
+      "first_line_excerpt": "Goudie, R. J. B., Presanis, A. M., Lunn, D., De Angelis, D., & Wernisch, L. (20…"
+    },
+    {
+      "block_id": "B0573",
+      "old_hash": "c29fc6ed0e01",
+      "first_line_excerpt": "Grana, D., & Della Rossa, E. (2010). Probabilistic petrophysical-properties est…"
+    },
+    {
+      "block_id": "B0574",
+      "old_hash": "d104305faebd",
+      "first_line_excerpt": "Green, P. J. (1995). Reversible jump Markov chain Monte Carlo computation and B…"
+    },
+    {
+      "block_id": "B0576",
+      "old_hash": "f14027eeff15",
+      "first_line_excerpt": "Grünwald, P., & van Ommen, T. (2017). Inconsistency of Bayesian inference for m…"
+    },
+    {
+      "block_id": "B0577",
+      "old_hash": "3993d5913cf5",
+      "first_line_excerpt": "Guitton, A., & Symes, W. W. (2003). Robust inversion of seismic data using the …"
+    },
+    {
+      "block_id": "B0578",
+      "old_hash": "bebc5da3f621",
+      "first_line_excerpt": "Haario, H., Saksman, E., & Tamminen, J. (2001). An adaptive Metropolis algorith…"
+    },
+    {
+      "block_id": "B0579",
+      "old_hash": "d254cf22bdfe",
+      "first_line_excerpt": "Haber, E., & Oldenburg, D. (1997). Joint inversion: A structural approach. *Inv…"
+    },
+    {
+      "block_id": "B0581",
+      "old_hash": "d33f63e50f1d",
+      "first_line_excerpt": "Hastie, D. I., & Green, P. J. (2012). Model choice using reversible jump Markov…"
+    },
+    {
+      "block_id": "B0582",
+      "old_hash": "b4088dfa7387",
+      "first_line_excerpt": "Hawkins, R., & Sambridge, M. (2015). Geophysical imaging using trans-dimensiona…"
+    },
+    {
+      "block_id": "B0583",
+      "old_hash": "6ee3de92ceac",
+      "first_line_excerpt": "Howard, R. A. (1966). Information value theory. *IEEE Transactions on Systems S…"
+    },
+    {
+      "block_id": "B0585",
+      "old_hash": "b9103d5890fb",
+      "first_line_excerpt": "Huan, X., & Marzouk, Y. M. (2013). Simulation-based optimal Bayesian experiment…"
+    },
+    {
+      "block_id": "B0586",
+      "old_hash": "00f041935eca",
+      "first_line_excerpt": "Jacob, P. E., Murray, L. M., Holmes, C. C., & Robert, C. P. (2017). Better toge…"
+    },
+    {
+      "block_id": "B0587",
+      "old_hash": "a0191b5bfae7",
+      "first_line_excerpt": "Jiang, W., Duan, J., Doublier, M. P., Clark, A., Schofield, A., Brodie, R. C., …"
+    },
+    {
+      "block_id": "B0588",
+      "old_hash": "a79aebda2610",
+      "first_line_excerpt": "Kaipio, J. P., & Somersalo, E. (2005). *Statistical and computational inverse p…"
+    },
+    {
+      "block_id": "B0589",
+      "old_hash": "0fd1db99ac26",
+      "first_line_excerpt": "Kennedy, M. C., & O'Hagan, A. (2001). Bayesian calibration of computer models. …"
+    },
+    {
+      "block_id": "B0590",
+      "old_hash": "69527d373fee",
+      "first_line_excerpt": "Korsch, R. J., & Doublier, M. P. (2016). Major crustal boundaries of Australia,…"
+    },
+    {
+      "block_id": "B0591",
+      "old_hash": "79519f47f3b4",
+      "first_line_excerpt": "Lelièvre, P. G., Farquharson, C. G., & Hurich, C. A. (2012). Joint inversion of…"
+    },
+    {
+      "block_id": "B0593",
+      "old_hash": "cdc3b154b70d",
+      "first_line_excerpt": "Lieberman, C., Willcox, K., & Ghattas, O. (2010). Parameter and state model red…"
+    },
+    {
+      "block_id": "B0594",
+      "old_hash": "34f6f64f12ec",
+      "first_line_excerpt": "Lin, H., Guo, P., Saygin, E., Kennett, B. L. N., Qashqai, M. T., & Xing, L. (20…"
+    },
+    {
+      "block_id": "B0595",
+      "old_hash": "d856eeb5271b",
+      "first_line_excerpt": "Lin, W., & Zhdanov, M. S. (2018). Joint multinary inversion of gravity and magn…"
+    },
+    {
+      "block_id": "B0596",
+      "old_hash": "94ca439bca52",
+      "first_line_excerpt": "Lines, L. R., Schultz, A. K., & Treitel, S. (1988). Cooperative inversion of ge…"
+    },
+    {
+      "block_id": "B0600",
+      "old_hash": "18992f37bcc3",
+      "first_line_excerpt": "Lykkegaard, M. B., Dodwell, T. J., Fox, C., Mingas, G., & Scheichl, R. (2023). …"
+    },
+    {
+      "block_id": "B0601",
+      "old_hash": "dd658a27920f",
+      "first_line_excerpt": "Malehmir, A., Durrheim, R., Bellefleur, G., Urosevic, M., Juhlin, C., White, D.…"
+    },
+    {
+      "block_id": "B0602",
+      "old_hash": "f28d17616b5d",
+      "first_line_excerpt": "Malinverno, A. (2002). Parsimonious Bayesian Markov chain Monte Carlo inversion…"
+    },
+    {
+      "block_id": "B0603",
+      "old_hash": "b2a3441fa6db",
+      "first_line_excerpt": "Manassero, M. C., Özaydın, S., Afonso, J. C., Shea, J. J., Ezad, I. S., Kirkby,…"
+    },
+    {
+      "block_id": "B0604",
+      "old_hash": "24a618dc6051",
+      "first_line_excerpt": "Miller, J. W., & Dunson, D. B. (2019). Robust Bayesian inference via coarsening…"
+    },
+    {
+      "block_id": "B0605",
+      "old_hash": "8cdd09d23bb9",
+      "first_line_excerpt": "Minsley, B. J. (2011). A trans-dimensional Bayesian Markov chain Monte Carlo al…"
+    },
+    {
+      "block_id": "B0606",
+      "old_hash": "6d0190e20075",
+      "first_line_excerpt": "Modrák, M., Moon, A. H., Kim, S., Bürkner, P., Huurre, N., Faltejsková, K., Gel…"
+    },
+    {
+      "block_id": "B0607",
+      "old_hash": "0390ec2d6398",
+      "first_line_excerpt": "Moorkamp, M., Heincke, B., Jegen, M., Roberts, A. W., & Hobbs, R. W. (2011). A …"
+    },
+    {
+      "block_id": "B0608",
+      "old_hash": "5ecdf66e096f",
+      "first_line_excerpt": "Mosegaard, K., & Tarantola, A. (1995). Monte Carlo sampling of solutions to inv…"
+    },
+    {
+      "block_id": "B0609",
+      "old_hash": "7647d66a9081",
+      "first_line_excerpt": "National Academies of Sciences, Engineering, and Medicine. (2019). *Reproducibi…"
+    },
+    {
+      "block_id": "B0610",
+      "old_hash": "31972bd87b32",
+      "first_line_excerpt": "Nowak, W., de Barros, F. P. J., & Rubin, Y. (2010). Bayesian geostatistical des…"
+    },
+    {
+      "block_id": "B0611",
+      "old_hash": "f7197ab078f7",
+      "first_line_excerpt": "Peherstorfer, B., Willcox, K., & Gunzburger, M. (2018). Survey of multifidelity…"
+    },
+    {
+      "block_id": "B0613",
+      "old_hash": "904633bd295b",
+      "first_line_excerpt": "Poole, D., & Raftery, A. E. (2000). Inference for deterministic simulation mode…"
+    },
+    {
+      "block_id": "B0614",
+      "old_hash": "95548c1da375",
+      "first_line_excerpt": "Rainforth, T., Foster, A., Ivanova, D. R., & Bickford Smith, F. (2024). Modern …"
+    },
+    {
+      "block_id": "B0615",
+      "old_hash": "056b7f10db99",
+      "first_line_excerpt": "Roberts, G. O., & Rosenthal, J. S. (2007). Coupling and ergodicity of adaptive …"
+    },
+    {
+      "block_id": "B0616",
+      "old_hash": "c999cf273c0a",
+      "first_line_excerpt": "Rücker, C., Günther, T., & Wagner, F. M. (2017). pyGIMLi: An open-source librar…"
+    },
+    {
+      "block_id": "B0617",
+      "old_hash": "094c69f59e86",
+      "first_line_excerpt": "Ryan, E. G., Drovandi, C. C., McGree, J. M., & Pettitt, A. N. (2016). A review …"
+    },
+    {
+      "block_id": "B0618",
+      "old_hash": "1acc1bd7c4da",
+      "first_line_excerpt": "Sacchi, M. D., & Ulrych, T. J. (1995). High-resolution velocity gathers and off…"
+    },
+    {
+      "block_id": "B0620",
+      "old_hash": "711cb032df04",
+      "first_line_excerpt": "Sambridge, M. (2014). A Parallel Tempering algorithm for probabilistic sampling…"
+    },
+    {
+      "block_id": "B0621",
+      "old_hash": "847e39d809b0",
+      "first_line_excerpt": "Sambridge, M., Gallagher, K., Jackson, A., & Rickwood, P. (2006). Trans-dimensi…"
+    },
+    {
+      "block_id": "B0622",
+      "old_hash": "94baeab3c922",
+      "first_line_excerpt": "Sambridge, M., & Mosegaard, K. (2002). Monte Carlo methods in geophysical inver…"
+    },
+    {
+      "block_id": "B0623",
+      "old_hash": "bdf31f9f6c84",
+      "first_line_excerpt": "Sirovich, L. (1987). Turbulence and the dynamics of coherent structures. I. Coh…"
+    },
+    {
+      "block_id": "B0624",
+      "old_hash": "be003869fddd",
+      "first_line_excerpt": "Stodden, V., McNutt, M., Bailey, D. H., Deelman, E., Gil, Y., Hanson, B., Herou…"
+    },
+    {
+      "block_id": "B0625",
+      "old_hash": "100731bb2deb",
+      "first_line_excerpt": "Stuart, A. M. (2010). Inverse problems: A Bayesian perspective. *Acta Numerica,…"
+    },
+    {
+      "block_id": "B0626",
+      "old_hash": "ef8dcef85e88",
+      "first_line_excerpt": "Sun, J., & Li, Y. (2016). Joint inversion of multiple geophysical data using gu…"
+    },
+    {
+      "block_id": "B0627",
+      "old_hash": "8f5d340b6dd3",
+      "first_line_excerpt": "Talts, S., Betancourt, M., Simpson, D., Vehtari, A., & Gelman, A. (2018). Valid…"
+    },
+    {
+      "block_id": "B0628",
+      "old_hash": "849c98460b8c",
+      "first_line_excerpt": "Tarantola, A. (2005). *Inverse problem theory and methods for model parameter e…"
+    },
+    {
+      "block_id": "B0629",
+      "old_hash": "2e86e85d0082",
+      "first_line_excerpt": "Tarantola, A., & Valette, B. (1982a). Generalized nonlinear inverse problems so…"
+    },
+    {
+      "block_id": "B0630",
+      "old_hash": "d21bdbe67bc6",
+      "first_line_excerpt": "Tarantola, A., & Valette, B. (1982b). Inverse problems = quest for information.…"
+    },
+    {
+      "block_id": "B0631",
+      "old_hash": "ac272e9c193e",
+      "first_line_excerpt": "Vehtari, A., Gelman, A., Simpson, D., Carpenter, B., & Bürkner, P.-C. (2021). R…"
+    },
+    {
+      "block_id": "B0632",
+      "old_hash": "39eb5d167c9a",
+      "first_line_excerpt": "Villa, U., Petra, N., & Ghattas, O. (2021). hIPPYlib: An extensible software fr…"
+    },
+    {
+      "block_id": "B0633",
+      "old_hash": "5cdf6ae6e55b",
+      "first_line_excerpt": "Vousden, W. D., Farr, W. M., & Mandel, I. (2016). Dynamic temperature selection…"
+    },
+    {
+      "block_id": "B0634",
+      "old_hash": "78a056f3c43d",
+      "first_line_excerpt": "Vozoff, K., & Jupp, D. L. B. (1975). Joint inversion of geophysical data. *Geop…"
+    },
+    {
+      "block_id": "B0637",
+      "old_hash": "2e67605e2f58",
+      "first_line_excerpt": "Wang, X., Zhang, B., Lin, X., Xu, S., Yao, W., & Ye, R. (2016). Geochemical cha…"
+    },
+    {
+      "block_id": "B0639",
+      "old_hash": "0de0c613cd54",
+      "first_line_excerpt": "Wilkinson, M. D., Dumontier, M., & Aalbersberg, I. J. (2016). The FAIR Guiding …"
+    },
+    {
+      "block_id": "B0640",
+      "old_hash": "8ad429033e07",
+      "first_line_excerpt": "Wu, S., Sun, J., & Chen, J. (2025). Variational inference for geophysical Bayes…"
+    },
+    {
+      "block_id": "B0643",
+      "old_hash": "217c3bda0959",
+      "first_line_excerpt": "Zhang, X., & Curtis, A. (2021). Bayesian geophysical inversion using invertible…"
+    }
+  ]
+}

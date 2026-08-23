@@ -1,0 +1,43 @@
+{
+  "patch_format_version": "1.1",
+  "authorization_context": "author_supplied_facts",
+  "revision_round": 3,
+  "base_draft_hash": "59d8475d7e57",
+  "author_fact_source": "corresponding-author statement in the active ARS session",
+  "ops": [
+    {
+      "op": "replace_block",
+      "block_id": "B0001",
+      "old_hash": "9e399ecaa247",
+      "new_text": "# An Auditable Bayesian Fusion Framework for Deep Mineral Exploration Under Cover: Formulation, Component-Level Synthetic Evidence, and a Failed Joint Pilot\n\n**Li Xiao Peng¹\\***, **Hu Xue Ping¹**, **Dong Jian¹**, **Chen Lei¹**, and **Ma Li Xin¹**\n\n¹ Shandong Provincial Geological Survey Institute\n\n\\* Corresponding author: Li Xiao Peng, xiaopengcug@gmail.com; ORCID: https://orcid.org/0009-0002-1814-9447",
+      "roadmap_item_ids": [
+        "AUTHOR-FACTS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0359",
+      "old_hash": "295e9f2fe213",
+      "new_text": "This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.",
+      "roadmap_item_ids": [
+        "AUTHOR-FACTS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0364",
+      "old_hash": "4189bddcef35",
+      "new_text": "Li Xiao Peng: Writing – original draft, Conceptualization, Methodology, Software, Validation, and Formal analysis. Hu Xue Ping: Writing – review & editing. Dong Jian: Writing – review & editing. Chen Lei: Formal analysis. Ma Li Xin: Data curation.",
+      "roadmap_item_ids": [
+        "AUTHOR-FACTS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    }
+  ],
+  "emitted_by": "ARS Stage 4 author-facts patch builder"
+}

@@ -17,10 +17,16 @@ def _as_3d(chains):
     """统一为 (M, N, P)；若输入 2D 视为单参数 (M, N)→(M, N, 1)。"""
     a = np.asarray(chains, dtype=float)
     if a.ndim == 2:
-        return a[..., None]
+        a = a[..., None]
     elif a.ndim == 3:
-        return a
-    raise ValueError(f"chains 须为 2D 或 3D, 实际 ndim={a.ndim}")
+        pass
+    else:
+        raise ValueError(f"chains 须为 2D 或 3D, 实际 ndim={a.ndim}")
+    nonfinite_count = int(a.size - np.count_nonzero(np.isfinite(a)))
+    if nonfinite_count:
+        raise ValueError(
+            f"chains 含 {nonfinite_count} 个非有限值，诊断已按 fail-closed 中止")
+    return a
 
 
 def _split_chains_2d(x):
@@ -52,7 +58,7 @@ def _rank_normalize_2d(x):
     """rank-normalize 到标准正态分位数 (Vehtari 2021, 式 (3))。"""
     flat = x.ravel()
     ranks = stats.rankdata(flat, method="average")
-    z = stats.norm.ppf((ranks - 0.375) / (flat.size - 0.25))
+    z = stats.norm.ppf((ranks - 0.375) / (flat.size + 0.25))
     return z.reshape(x.shape)
 
 

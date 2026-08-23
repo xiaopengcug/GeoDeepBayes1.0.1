@@ -1,0 +1,43 @@
+{
+  "title": "GeoDeepBayes1.0: Paper 01 RASTI evidence and software package",
+  "upload_type": "software",
+  "description": "Release package for an auditable Bayesian fusion formulation with component-level synthetic evidence and a preserved failed gravity-magnetic joint pilot. No field validity, production-scale performance, or independent reproduction is claimed.",
+  "creators": [
+    {
+      "name": "Li, Xiao Peng",
+      "affiliation": "Shandong Provincial Geological Survey Institute",
+      "orcid": "0009-0002-1814-9447"
+    },
+    {
+      "name": "Hu, Xue Ping",
+      "affiliation": "Shandong Provincial Geological Survey Institute"
+    },
+    {
+      "name": "Dong, Jian",
+      "affiliation": "Shandong Provincial Geological Survey Institute"
+    },
+    {
+      "name": "Chen, Lei",
+      "affiliation": "Shandong Provincial Geological Survey Institute"
+    },
+    {
+      "name": "Ma, Li Xin",
+      "affiliation": "Shandong Provincial Geological Survey Institute"
+    }
+  ],
+  "keywords": [
+    "Bayesian joint inversion",
+    "geophysical data fusion",
+    "uncertainty quantification",
+    "reproducibility governance",
+    "mineral exploration under cover"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/xiaopengcug/GeoDeepBayes1.0.1",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "The repository is publicly accessible but retains its Proprietary licence declaration. The package records an author-managed clean-environment replay and does not claim independent reproduction."
+}

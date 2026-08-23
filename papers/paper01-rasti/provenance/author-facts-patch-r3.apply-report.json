@@ -1,0 +1,79 @@
+{
+  "report_format_version": "1.3",
+  "mode": "patch",
+  "base_path": "H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\papers\\paper01-multi-scale-physics-informed-bayesian-fusion\\stage4-revision\\manuscript-v3-rasti-integrity-rev2.md",
+  "output_path": "H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\papers\\paper01-multi-scale-physics-informed-bayesian-fusion\\stage4-revision\\manuscript-v4-rasti-author-final.md",
+  "base_draft_hash": "59d8475d7e57",
+  "output_draft_hash": "c00757839ac3",
+  "patch_digest": "7e2ed24d5c44b92efeb1bd7bc0e49bec8d9d6a6bb162d5a368307a8f615535e9",
+  "revision_round": 3,
+  "authorization_context": "author_supplied_facts",
+  "authorization_witness": {
+    "path": "H:\\GeoDeepBayes1.0.1\\_bmad-output\\planning-artifacts\\research\\papers\\paper01-multi-scale-physics-informed-bayesian-fusion\\stage4-revision\\authority\\author-facts-authorization-r3.json",
+    "sha256": "921a6c212fdef5328110dece075d6dd68420aeb32f5f2f6a3013609fe757e85f",
+    "author_event_id": "AUTHOR-EVENT-2026-08-23-author-facts-r3",
+    "formal_release_requires_later_human_verification": true
+  },
+  "ops_applied": [
+    {
+      "op_index": 0,
+      "op": "replace_block",
+      "block_id": "B0001",
+      "roadmap_item_ids": [
+        "AUTHOR-FACTS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_block_ids": [
+        "B0653",
+        "B0654",
+        "B0655"
+      ]
+    },
+    {
+      "op_index": 1,
+      "op": "replace_block",
+      "block_id": "B0359",
+      "roadmap_item_ids": [
+        "AUTHOR-FACTS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_block_ids": []
+    },
+    {
+      "op_index": 2,
+      "op": "replace_block",
+      "block_id": "B0364",
+      "roadmap_item_ids": [
+        "AUTHOR-FACTS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": [],
+      "new_block_ids": []
+    }
+  ],
+  "fresh_block_ids": [
+    "B0653",
+    "B0654",
+    "B0655"
+  ],
+  "pure_move_pairs": [],
+  "structural_flags": {
+    "heading_op_indexes": [
+      0
+    ],
+    "section_count_delta": 0,
+    "touched_ratio": 0.0049,
+    "touched_ratio_threshold": 0.6,
+    "touched_ratio_exceeded": false,
+    "any": true,
+    "acknowledged": true
+  },
+  "counters": {
+    "blocks_total": 614,
+    "blocks_touched": 3,
+    "blocks_preserved_byte_identical": 611,
+    "preserved_ratio": 0.9951
+  }
+}

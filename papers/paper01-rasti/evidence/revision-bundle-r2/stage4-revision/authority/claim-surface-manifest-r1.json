@@ -1,0 +1,89 @@
+{
+  "schema_version": "claim-surface-manifest/1.0",
+  "revision_round": 1,
+  "roadmap_sha256": "79fc5b93bdd61104269cb91ad0de4f59ca18540fc3a32e7bf40ae7e9f9445217",
+  "base_draft_sha256": "f927ad43821883e18412aa31df1a30969935b3c1120557921499423fad4251ca",
+  "claim_intent_sources": [
+    {
+      "scoped_manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+      "artifact": {
+        "path": "claim-intent-manifest-M-2026-08-23T12-58-50Z-a91c.json",
+        "sha256": "144ba7b5bfa88eb93937692c142470f32772b56013048b0f0eba6040d6798edf"
+      }
+    }
+  ],
+  "surfaces": [
+    {
+      "surface_id": "CLAIM-SURFACE-a91c-C-002-01",
+      "scoped_manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+      "claim_id": "C-002",
+      "block_id": "B0239",
+      "utf8_start": 147366,
+      "utf8_end": 147505,
+      "original_text": "A companion coverage study was run on the same target with 400 replications, giving hit rates of 0.895 and 0.945 at the two nominal levels.",
+      "original_text_sha256": "4fdae74a69c631fef8accd59ab004f90be92075b2d777ddb33395c7e1c46fcaa",
+      "intent_claim_text_sha256": "4fdae74a69c631fef8accd59ab004f90be92075b2d777ddb33395c7e1c46fcaa",
+      "current_rung": "empirical report: was run / giving"
+    },
+    {
+      "surface_id": "CLAIM-SURFACE-a91c-C-003-01",
+      "scoped_manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+      "claim_id": "C-003",
+      "block_id": "B0243",
+      "utf8_start": 149872,
+      "utf8_end": 150046,
+      "original_text": "The run demonstrates that the same-source DO-27 data can be read, forward-modelled, GCV-selected and LSQR-solved as two reduced-order single-physics problems on a modern API.",
+      "original_text_sha256": "7bbed3f73bcdebb663194ca15b2e256fc04dd98b91619e44b499b89de44a666d",
+      "intent_claim_text_sha256": "7bbed3f73bcdebb663194ca15b2e256fc04dd98b91619e44b499b89de44a666d",
+      "current_rung": "demonstrates"
+    },
+    {
+      "surface_id": "CLAIM-SURFACE-a91c-C-004-01",
+      "scoped_manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+      "claim_id": "C-004",
+      "block_id": "B0244",
+      "utf8_start": 151640,
+      "utf8_end": 151928,
+      "original_text": "The failure package is immutable; a low RMS is an overfitting warning rather than a success; magnetic model recovery FAILED; and EVD-SYNTH-001 is a modern-API reduced-order single-physics compatibility run — not PGI, not joint, not Bayesian, not a reproduction of the original notebook.",
+      "original_text_sha256": "132cb1638c5a5cd771909edf0b62978c9712061c5174b9fed4106242a0ff0b47",
+      "intent_claim_text_sha256": "132cb1638c5a5cd771909edf0b62978c9712061c5174b9fed4106242a0ff0b47",
+      "current_rung": "categorical bounded assertion"
+    },
+    {
+      "surface_id": "CLAIM-SURFACE-a91c-C-004-02",
+      "scoped_manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+      "claim_id": "C-004",
+      "block_id": "B0301",
+      "utf8_start": 192983,
+      "utf8_end": 193271,
+      "original_text": "The failure package is immutable; a low RMS is an overfitting warning rather than a success; magnetic model recovery FAILED; and EVD-SYNTH-001 is a modern-API reduced-order single-physics compatibility run — not PGI, not joint, not Bayesian, not a reproduction of the original notebook.",
+      "original_text_sha256": "132cb1638c5a5cd771909edf0b62978c9712061c5174b9fed4106242a0ff0b47",
+      "intent_claim_text_sha256": "132cb1638c5a5cd771909edf0b62978c9712061c5174b9fed4106242a0ff0b47",
+      "current_rung": "categorical bounded assertion"
+    },
+    {
+      "surface_id": "CLAIM-SURFACE-a91c-C-005-01",
+      "scoped_manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+      "claim_id": "C-005",
+      "block_id": "B0248",
+      "utf8_start": 153832,
+      "utf8_end": 154051,
+      "original_text": "Two published open geophysical data holdings were ingested and audited for integrity: a geophysics manifest of 184 files and a magnetotelluric manifest of 421 files, each checked for content hash and format conformance.",
+      "original_text_sha256": "a5872cf7c141ccab599e00affd64f84a0659a7e295592e379a81c55f92d76f42",
+      "intent_claim_text_sha256": "a5872cf7c141ccab599e00affd64f84a0659a7e295592e379a81c55f92d76f42",
+      "current_rung": "empirical report: were ingested and audited"
+    },
+    {
+      "surface_id": "CLAIM-SURFACE-a91c-C-006-01",
+      "scoped_manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+      "claim_id": "C-006",
+      "block_id": "B0254",
+      "utf8_start": 157206,
+      "utf8_end": 157257,
+      "original_text": "All 42 pilot runs failed the diagnostics hard gate.",
+      "original_text_sha256": "2bdd7119d7989d5159144df1a91ac754a81d14fb668dc2cc3efdad5b147340c5",
+      "intent_claim_text_sha256": "2bdd7119d7989d5159144df1a91ac754a81d14fb668dc2cc3efdad5b147340c5",
+      "current_rung": "empirical negative result: failed"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "author-facts-authorization/1.0",
+  "revision_round": 3,
+  "base_draft_sha256": "59d8475d7e57506e0bb3756748a6c9ad3324684988b8d634294241a9935e3df9",
+  "revision_patch_sha256": "7e2ed24d5c44b92efeb1bd7bc0e49bec8d9d6a6bb162d5a368307a8f615535e9",
+  "author_event_id": "AUTHOR-EVENT-2026-08-23-author-facts-r3",
+  "source": "explicit_session_user_message",
+  "decision": "authorize",
+  "correction_id": "AUTHOR-FACTS-1",
+  "authorized_targets": [
+    {"block_id": "B0001", "allowed_operations": ["replace_block"]},
+    {"block_id": "B0359", "allowed_operations": ["replace_block"]},
+    {"block_id": "B0364", "allowed_operations": ["replace_block"]}
+  ],
+  "structural_changes_acknowledged": true,
+  "formal_release_requires_later_human_verification": true
+}

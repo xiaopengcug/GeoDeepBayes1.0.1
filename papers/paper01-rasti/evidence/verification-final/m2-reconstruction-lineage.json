@@ -1,0 +1,735 @@
+{
+  "schema_version": "ars-stage4-rev-r1-5-lineage-audit-v1",
+  "generated_at_utc": "2026-08-23T21:25:37.203722+00:00",
+  "nature": "post-hoc additive audit; no historical artifact modified",
+  "pilot_root": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系-治理与验证档案/validation/joint/versions/evd-joint-001-v1-20260819/pilot",
+  "historical_evaluation": {
+    "gate_ledger_path": "evaluation/m2-gate-ledger.json",
+    "gate_ledger_sha256": "72ba8517364f1300cb810f7e5813ca26429fa4aa3ac0c261f04d08dcf516649f",
+    "aggregation_path": "evaluation/m2-posthoc-aggregation.json",
+    "aggregation_sha256": "6910b180e5778e2f8c38500d75a5558b9e052469f1902d73f3ab8878bfd3423f",
+    "runtime_generated": false
+  },
+  "summary": {
+    "run_count": 42,
+    "exact_match_count": 42,
+    "unbound_ledger_run_ids": [],
+    "all_rows_exact": true
+  },
+  "records": [
+    {
+      "run_id": "s00__lam-0__da",
+      "metrics_path": "runs/s00__lam-0__da/metrics.json",
+      "metrics_sha256": "268ef4de3508ec1b6f8cfa1469fcac68cf6c2acebb0a01ba08029990eccebd37",
+      "run_manifest_path": "runs/s00__lam-0__da/run-manifest.json",
+      "run_manifest_sha256": "c422f00ad12c738898a16e11a2cd3f2d6feb03131a7bee7ccac8df08944ef63f",
+      "raw_chains_path": "runs/s00__lam-0__da/raw-chains.npz",
+      "raw_chains_sha256": "4b15e2bc60584b6e01d8793156f52aca72e34000c959a34b9ab7e6247b68d031",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-10000__da",
+      "metrics_path": "runs/s00__lam-10000__da/metrics.json",
+      "metrics_sha256": "3cd301e421ec4c2ba9fc174112d4dbe2df704c8c70b3b2a589899a2ad87ebe60",
+      "run_manifest_path": "runs/s00__lam-10000__da/run-manifest.json",
+      "run_manifest_sha256": "955dfc65df845f27b55686a1180b1376749563f4d37bdcdfa52eee6843222cb6",
+      "raw_chains_path": "runs/s00__lam-10000__da/raw-chains.npz",
+      "raw_chains_sha256": "dc969816da6389c5f06354e9ddbfdbbaa48977556a2ff766dfd1cb20e8638528",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-1000__am",
+      "metrics_path": "runs/s00__lam-1000__am/metrics.json",
+      "metrics_sha256": "991ccc1854660f16148646aeb6f2cd0dff8e4e18b0302a5d6ec138e5baac77b8",
+      "run_manifest_path": "runs/s00__lam-1000__am/run-manifest.json",
+      "run_manifest_sha256": "a74a19fbb50c7e3cbe9cfbb9c3f19c9fc411cf1b6b8bdcf396dfb2e40f2e4f4d",
+      "raw_chains_path": "runs/s00__lam-1000__am/raw-chains.npz",
+      "raw_chains_sha256": "353357194b8b74ae701f4ef52cd309dba1c381e1a673fb8757158bd9bdef7fef",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-1000__da",
+      "metrics_path": "runs/s00__lam-1000__da/metrics.json",
+      "metrics_sha256": "c3a5a7b2ea0493330a19cb6724d01cb0eac4e892695ae3a89b388c2f0843050d",
+      "run_manifest_path": "runs/s00__lam-1000__da/run-manifest.json",
+      "run_manifest_sha256": "ca42bc4fd23f9fd29bdb1cf6335dcc9999261bb02cd142897760fdf3a36841c2",
+      "raw_chains_path": "runs/s00__lam-1000__da/raw-chains.npz",
+      "raw_chains_sha256": "f7d1dea983938777bfead5ec8c56a8a7c683742e11e82c4d203e2ba7d13a61dd",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-1000__w-xifrozen__da",
+      "metrics_path": "runs/s00__lam-1000__w-xifrozen__da/metrics.json",
+      "metrics_sha256": "11a86f27c59401a206363a0677f1037c244c651fd5c1c2c1eb06f6b0f278cb3d",
+      "run_manifest_path": "runs/s00__lam-1000__w-xifrozen__da/run-manifest.json",
+      "run_manifest_sha256": "176eea31718fe45404e8b4e9f1c7afc1271d797c5d1c068921fa9ecf83ca4eff",
+      "raw_chains_path": "runs/s00__lam-1000__w-xifrozen__da/raw-chains.npz",
+      "raw_chains_sha256": "d249e764f5d5f0cc2f8d067061f2f3e3a451b708fb636133e3db00128dd6d448",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-1000__w__da",
+      "metrics_path": "runs/s00__lam-1000__w__da/metrics.json",
+      "metrics_sha256": "d13a77ca1fb563b9daca08aece5fa39a297df807d8d43834142512ce68f64ce2",
+      "run_manifest_path": "runs/s00__lam-1000__w__da/run-manifest.json",
+      "run_manifest_sha256": "5fadf3be621d7369f1552439b0379a39a94861acf53f1d7b75584a0e18d8a052",
+      "raw_chains_path": "runs/s00__lam-1000__w__da/raw-chains.npz",
+      "raw_chains_sha256": "ff03dce84177000876553593e3d1636d435204438b379262985c67f5febb779b",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-100__da",
+      "metrics_path": "runs/s00__lam-100__da/metrics.json",
+      "metrics_sha256": "05070a95d13a50fec5a61c41980f1a760c1c4303ebc9f86d0d654fa56ae60bad",
+      "run_manifest_path": "runs/s00__lam-100__da/run-manifest.json",
+      "run_manifest_sha256": "46c4ba98f918cce8d593c859bba9a2c8ef8ac8c338ac5ccdd4c74ec735813222",
+      "raw_chains_path": "runs/s00__lam-100__da/raw-chains.npz",
+      "raw_chains_sha256": "0daf9b11cd0558643bea4bd919c54e52700b9904dcdeb7120f8aa20bd80fef11",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-10__da",
+      "metrics_path": "runs/s00__lam-10__da/metrics.json",
+      "metrics_sha256": "12618a949f6dcdf8ed91c2ba502f3232b5da5295ee936c2d5728a5be96762bac",
+      "run_manifest_path": "runs/s00__lam-10__da/run-manifest.json",
+      "run_manifest_sha256": "3b10cea74f13d2da9515abb703698bd2d006c470cd82e8b6305a1815b652ef87",
+      "raw_chains_path": "runs/s00__lam-10__da/raw-chains.npz",
+      "raw_chains_sha256": "eaf9968241b1154c194ea40940d0133a40fe429011ef9b0944d25ba798473366",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s00__lam-1__da",
+      "metrics_path": "runs/s00__lam-1__da/metrics.json",
+      "metrics_sha256": "3a6f42a44b2c0a65222a68e1a6aa65e59fe76eb1e2b53bee1876ed3b0b516f7c",
+      "run_manifest_path": "runs/s00__lam-1__da/run-manifest.json",
+      "run_manifest_sha256": "3c8f34427f51727ad7c3d5b98ea23fdefebadef0da5565b01842e80ef503def4",
+      "raw_chains_path": "runs/s00__lam-1__da/raw-chains.npz",
+      "raw_chains_sha256": "cf83af6a358bff48e179d2ba34f6b56931e072ee5831704a1b5afe7c6b8ddf34",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-0__da",
+      "metrics_path": "runs/s01__lam-0__da/metrics.json",
+      "metrics_sha256": "7c6d665b4daa4fe5a5667bc5c4c26867b0c7f5c7c8d292f1750d7983b5c07b80",
+      "run_manifest_path": "runs/s01__lam-0__da/run-manifest.json",
+      "run_manifest_sha256": "442032d4502f0e418c00c95e517edf0e7256ea016888ba02bd745ab741f7e29c",
+      "raw_chains_path": "runs/s01__lam-0__da/raw-chains.npz",
+      "raw_chains_sha256": "6d8fd52268a987f95791ed3edaa454c7ceee5260e9152c168727edd5cc77b37d",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-10000__da",
+      "metrics_path": "runs/s01__lam-10000__da/metrics.json",
+      "metrics_sha256": "9d5545b0ba1ad5f1ee8e3af945e21e6927e5deafeed43b144d71b0a1f7334a47",
+      "run_manifest_path": "runs/s01__lam-10000__da/run-manifest.json",
+      "run_manifest_sha256": "974c62a099aeef69cf824b453110f0f4c4c5b2b9a55c37c734bc41629106a80c",
+      "raw_chains_path": "runs/s01__lam-10000__da/raw-chains.npz",
+      "raw_chains_sha256": "fcbbd2652d3d471c771eddddee964c38df27a45dbff31d7ad3b07509fd77cd56",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-1000__am",
+      "metrics_path": "runs/s01__lam-1000__am/metrics.json",
+      "metrics_sha256": "398ca84f4295c508c69341a08d8552e44493aba4c37c9355095740c0e7734e98",
+      "run_manifest_path": "runs/s01__lam-1000__am/run-manifest.json",
+      "run_manifest_sha256": "873354f390585ee61dfe94853e2cbec5bdd4a4fa56f55dd0672a0f12e91784ac",
+      "raw_chains_path": "runs/s01__lam-1000__am/raw-chains.npz",
+      "raw_chains_sha256": "f0fbdd02466d75f0f8a6f71265d03080aca584e3e7999f48c1951efecfd7f930",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-1000__da",
+      "metrics_path": "runs/s01__lam-1000__da/metrics.json",
+      "metrics_sha256": "937ead1d4d23f5da95dab1bb7d17d0620156142b6898cc200fe6751ebcfae1f9",
+      "run_manifest_path": "runs/s01__lam-1000__da/run-manifest.json",
+      "run_manifest_sha256": "4cda82777ad2680642f60eecffa3fe2cc694e679662b68023ddfe04419b60416",
+      "raw_chains_path": "runs/s01__lam-1000__da/raw-chains.npz",
+      "raw_chains_sha256": "9b40111df4387eb5cc92c2a89ae843e628a43720bc98459965637c52254ff395",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-1000__w-xifrozen__da",
+      "metrics_path": "runs/s01__lam-1000__w-xifrozen__da/metrics.json",
+      "metrics_sha256": "fba4b184d1917caa889e90ea523ad0eb13e47326c2897dd9e5f0b35b2d0b994e",
+      "run_manifest_path": "runs/s01__lam-1000__w-xifrozen__da/run-manifest.json",
+      "run_manifest_sha256": "8d1e9779c0fcf7d65d26881882a3f5d64365f9f50749c6cf870479c210917e55",
+      "raw_chains_path": "runs/s01__lam-1000__w-xifrozen__da/raw-chains.npz",
+      "raw_chains_sha256": "99dbad52d35c95d91bb8b9bafeac588910d37e711017857b9ebc3ec112d8d8a3",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-1000__w__da",
+      "metrics_path": "runs/s01__lam-1000__w__da/metrics.json",
+      "metrics_sha256": "4b6e1ba42ebff14be01eb64926b483ee8391989bac1c2db8917de7d8928d0dc8",
+      "run_manifest_path": "runs/s01__lam-1000__w__da/run-manifest.json",
+      "run_manifest_sha256": "d3b13bca12e5bc98146159a2bff14d662165763f696e2b51c72f905e8d70e822",
+      "raw_chains_path": "runs/s01__lam-1000__w__da/raw-chains.npz",
+      "raw_chains_sha256": "e67735d8eb93e153877abc681423564954ad42d5ff7b4fe4f5c421fa4f484dea",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-100__da",
+      "metrics_path": "runs/s01__lam-100__da/metrics.json",
+      "metrics_sha256": "bdd9f9f78716f1b20a90e336564cd11241e2d2e440c6994c00a25bd516ed9b65",
+      "run_manifest_path": "runs/s01__lam-100__da/run-manifest.json",
+      "run_manifest_sha256": "ce34475e0faa3e73e3630530de9482f0b176820ddfe4d4ff755d86dbdb7315bc",
+      "raw_chains_path": "runs/s01__lam-100__da/raw-chains.npz",
+      "raw_chains_sha256": "5c1929f20bedfc34c1ea69ddc1460676eee5467cf9f6fe80bda49e23a7363369",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-10__da",
+      "metrics_path": "runs/s01__lam-10__da/metrics.json",
+      "metrics_sha256": "b554f7656ac6af4d288a6fed32af6bc8e1ac9eb50006bcc237cb4d07cb88cd0b",
+      "run_manifest_path": "runs/s01__lam-10__da/run-manifest.json",
+      "run_manifest_sha256": "3bab37ac630ae888c2e9a287bd317c849f675a14f3ed6604c561f2188ac46e73",
+      "raw_chains_path": "runs/s01__lam-10__da/raw-chains.npz",
+      "raw_chains_sha256": "6078efd020b3eaf9504c6134b5eb3bc556471a4d5c0cd0965887e57ea20745e5",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s01__lam-1__da",
+      "metrics_path": "runs/s01__lam-1__da/metrics.json",
+      "metrics_sha256": "2cae262f1cd90615a0c6a12dd039c87f8f2698c1d7ae866b329568d981515223",
+      "run_manifest_path": "runs/s01__lam-1__da/run-manifest.json",
+      "run_manifest_sha256": "ee82569c0ef390207be901611f70c4cb9d56cd4717c0e011c1662cac26415444",
+      "raw_chains_path": "runs/s01__lam-1__da/raw-chains.npz",
+      "raw_chains_sha256": "d1dab41bbc02359ac1225807e22aca6facc89af9ef94dd9672e107bdeb870470",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-0__da",
+      "metrics_path": "runs/s02__lam-0__da/metrics.json",
+      "metrics_sha256": "334b04724607426562d9f178a51241a55d859f4982364de7a9eb6a8c9663e9a8",
+      "run_manifest_path": "runs/s02__lam-0__da/run-manifest.json",
+      "run_manifest_sha256": "fe78a0cf88e8c57460c7dead47bd50b5a7bc7b380ce1a00452eec2f49bd302f0",
+      "raw_chains_path": "runs/s02__lam-0__da/raw-chains.npz",
+      "raw_chains_sha256": "55fe43b6b25575535751f2e8318e77dc812ede55a7eb818fb3f353fa449510b7",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-10000__da",
+      "metrics_path": "runs/s02__lam-10000__da/metrics.json",
+      "metrics_sha256": "09fad45c71608a4154807967493a2d37d06a4b2ba58de88bd85859d5d62027dc",
+      "run_manifest_path": "runs/s02__lam-10000__da/run-manifest.json",
+      "run_manifest_sha256": "2f4a24c80f37a8afc8046971c17934211e9f070a8ff994a13eed8e649323367a",
+      "raw_chains_path": "runs/s02__lam-10000__da/raw-chains.npz",
+      "raw_chains_sha256": "e3bf8b0e4efe5ca963e3516c3cb7af478073c40b266905150adf1dbd55649506",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-1000__da",
+      "metrics_path": "runs/s02__lam-1000__da/metrics.json",
+      "metrics_sha256": "1ed3a6647c1001258e76badb79a24c504f47ad97fb30f1b720a7a4ca0188c3b9",
+      "run_manifest_path": "runs/s02__lam-1000__da/run-manifest.json",
+      "run_manifest_sha256": "ae30b5d6d1640d7c027c601b9a1bde78c89a03d9823e426a354c3cb753bb8b6e",
+      "raw_chains_path": "runs/s02__lam-1000__da/raw-chains.npz",
+      "raw_chains_sha256": "f8583beeb25cc42fe0044cac8bb19c0938e908838e05bbd1e6e6c4984536c354",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-1000__w-xifrozen__da",
+      "metrics_path": "runs/s02__lam-1000__w-xifrozen__da/metrics.json",
+      "metrics_sha256": "2dba3b492235dfc665c492008761748d4a03802a1306305adbe766d1612f0ac2",
+      "run_manifest_path": "runs/s02__lam-1000__w-xifrozen__da/run-manifest.json",
+      "run_manifest_sha256": "f8d23c9f0084ae5312841b1c8d25211ec9c34055a6e361e092517983c6562eef",
+      "raw_chains_path": "runs/s02__lam-1000__w-xifrozen__da/raw-chains.npz",
+      "raw_chains_sha256": "97f5c57790e096df5052f629bda5545a78dfb78470fe1532b4af05e4dbe51f9e",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-1000__w__da",
+      "metrics_path": "runs/s02__lam-1000__w__da/metrics.json",
+      "metrics_sha256": "b89bcb2cc79c8d6333757236da9421d2f3a6ae201f31fb30e511c4d3748ddd33",
+      "run_manifest_path": "runs/s02__lam-1000__w__da/run-manifest.json",
+      "run_manifest_sha256": "bc37191eafc085df82dedf17377c1f19c89e6ce0ddbf09a432529a416569a8e2",
+      "raw_chains_path": "runs/s02__lam-1000__w__da/raw-chains.npz",
+      "raw_chains_sha256": "e90d35db9101453d9cef833b20471ccff62b8b146d27c0a04318c8c08e677a70",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-100__da",
+      "metrics_path": "runs/s02__lam-100__da/metrics.json",
+      "metrics_sha256": "7fd3a5baba9a9c6027cf64d582943d6efc8949e8000126ea32522355fab37d73",
+      "run_manifest_path": "runs/s02__lam-100__da/run-manifest.json",
+      "run_manifest_sha256": "c1147689d7f09e04b5d2ae768068380460fd6034d92f2013f3330ef4f9a7da04",
+      "raw_chains_path": "runs/s02__lam-100__da/raw-chains.npz",
+      "raw_chains_sha256": "a2c78c9556a0d4ea298e832cf6b05e9e065d6f48a7c230a3cff686916408f97b",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-10__da",
+      "metrics_path": "runs/s02__lam-10__da/metrics.json",
+      "metrics_sha256": "0f9bbd0b94dbf8fc2126e97fff159a92fef8b464ef4f16b5e6c58358da0cd5f5",
+      "run_manifest_path": "runs/s02__lam-10__da/run-manifest.json",
+      "run_manifest_sha256": "adf1346d36eece27138fbb569bd33cb0715560f8e672985afdffa08df1bc3f49",
+      "raw_chains_path": "runs/s02__lam-10__da/raw-chains.npz",
+      "raw_chains_sha256": "aec920f66121d9148e1534906f5e5ec33aa7fb36159f4a858ba5ba700bcd7dff",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s02__lam-1__da",
+      "metrics_path": "runs/s02__lam-1__da/metrics.json",
+      "metrics_sha256": "f301a615038a563c3c92d0a8c24836e9dff086c0fb906023fd50b3ada3becfd5",
+      "run_manifest_path": "runs/s02__lam-1__da/run-manifest.json",
+      "run_manifest_sha256": "715d23fb462c18da6917c584f63e89527a7bb26207bf61c2fe6570cdba66c9bb",
+      "raw_chains_path": "runs/s02__lam-1__da/raw-chains.npz",
+      "raw_chains_sha256": "643163f3fbf3bd8366e6dd8fbaa87d0a950986193c14207ce1f169becd158348",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-0__da",
+      "metrics_path": "runs/s03__lam-0__da/metrics.json",
+      "metrics_sha256": "e298c61f794c3fdfb9e2c54790559b20517fa2507ae53413c6efc66d8bfdc6f8",
+      "run_manifest_path": "runs/s03__lam-0__da/run-manifest.json",
+      "run_manifest_sha256": "7106972c2f5bcf80944284c09081c6a8d27274749b701d712e299c632981cf1c",
+      "raw_chains_path": "runs/s03__lam-0__da/raw-chains.npz",
+      "raw_chains_sha256": "34ca6fdbbec16c449b6a6a11e9cf223d35beb44c88512c42a644c61f3fb159f3",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-10000__da",
+      "metrics_path": "runs/s03__lam-10000__da/metrics.json",
+      "metrics_sha256": "277e4da0e03dfc786cb715c4e2fcbc0b6d0cd7797c2a5ca79fc7e3050ce0101a",
+      "run_manifest_path": "runs/s03__lam-10000__da/run-manifest.json",
+      "run_manifest_sha256": "19dc4348e99d1de833afeaa4f776c1d5b7d9a92697e27906c2fc90a203a508e1",
+      "raw_chains_path": "runs/s03__lam-10000__da/raw-chains.npz",
+      "raw_chains_sha256": "9fb0eecb412b1cef0db915c5ab5d5956e49587938a5e26b02803a40d8b3897aa",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-1000__da",
+      "metrics_path": "runs/s03__lam-1000__da/metrics.json",
+      "metrics_sha256": "bc0c3a71de9aa29e50a849a58036d869497750188ed0d3da0d107641e9a3c9be",
+      "run_manifest_path": "runs/s03__lam-1000__da/run-manifest.json",
+      "run_manifest_sha256": "1aaf216f2bf960c8c6b07398cd76fc5571be3b7e01a5e05658c845f42f2adf6a",
+      "raw_chains_path": "runs/s03__lam-1000__da/raw-chains.npz",
+      "raw_chains_sha256": "2a8a364e062a4dc8d5f6f0a7650b2f5eebd2a689e691f9690ccc1de935129e57",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-1000__w-xifrozen__da",
+      "metrics_path": "runs/s03__lam-1000__w-xifrozen__da/metrics.json",
+      "metrics_sha256": "5109e2f37b6978cf18d4238be4d4b1f2e20d90d4d31d48632787d1cc1d301314",
+      "run_manifest_path": "runs/s03__lam-1000__w-xifrozen__da/run-manifest.json",
+      "run_manifest_sha256": "c5217debb95025f297c2e76fffca1d3c826f98129482d685899714aaa340093a",
+      "raw_chains_path": "runs/s03__lam-1000__w-xifrozen__da/raw-chains.npz",
+      "raw_chains_sha256": "febefae94cf750476e4ad52a52b46037ab0a32893779f4a3fc931750df8ea108",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-1000__w__da",
+      "metrics_path": "runs/s03__lam-1000__w__da/metrics.json",
+      "metrics_sha256": "81a54c3282d0aebd2feeeac9cd061519fe33877c926281f4ca5da22c4d06b680",
+      "run_manifest_path": "runs/s03__lam-1000__w__da/run-manifest.json",
+      "run_manifest_sha256": "cf57c58904930638a205786c3d5bbb85746be72bd6887fde9016ee4eedc51e7c",
+      "raw_chains_path": "runs/s03__lam-1000__w__da/raw-chains.npz",
+      "raw_chains_sha256": "61e2a3d21c510b73e9b90a5fa9fab75001a1fc68cc6a98f79f0ef9fe5375fe7d",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-100__da",
+      "metrics_path": "runs/s03__lam-100__da/metrics.json",
+      "metrics_sha256": "0413ca2c7a73fbcc7121ebdca86727b1da1ae384206570bb8499c34c8ee0e447",
+      "run_manifest_path": "runs/s03__lam-100__da/run-manifest.json",
+      "run_manifest_sha256": "1164625c19764fc80bdff44dd69978c703f3670d160f362e81960625b9a762f1",
+      "raw_chains_path": "runs/s03__lam-100__da/raw-chains.npz",
+      "raw_chains_sha256": "fca7b142d5c3ea4df02a40e592d693e2b6755d78b70e7a10fe2896d1fb3fa091",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-10__da",
+      "metrics_path": "runs/s03__lam-10__da/metrics.json",
+      "metrics_sha256": "321b05083d490f021023082096a9eebb75d10690bdeaa30e0c13c238496dd556",
+      "run_manifest_path": "runs/s03__lam-10__da/run-manifest.json",
+      "run_manifest_sha256": "6e44fb22a707659c4eea2f29d83d527a97e1558be612b684caaf7e81712e4d85",
+      "raw_chains_path": "runs/s03__lam-10__da/raw-chains.npz",
+      "raw_chains_sha256": "1ec05846ae8264531df80bb6768fe5cc265da48cb7eeac3fde494153ae9be648",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s03__lam-1__da",
+      "metrics_path": "runs/s03__lam-1__da/metrics.json",
+      "metrics_sha256": "d8218c22f57de81e7aa43ee17843181ed7694d16bc712f1e4d2214e2e610c82b",
+      "run_manifest_path": "runs/s03__lam-1__da/run-manifest.json",
+      "run_manifest_sha256": "6662432fe47cdb76a922c9205c0e65dde4efdde06f9e13507fd77aa94d2317c2",
+      "raw_chains_path": "runs/s03__lam-1__da/raw-chains.npz",
+      "raw_chains_sha256": "896b9ff28b131cfa9ffdd25ab5446d08a33560e3e2aecfc24a6b48010e60e302",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-0__da",
+      "metrics_path": "runs/s04__lam-0__da/metrics.json",
+      "metrics_sha256": "33a807cf9830831377084ce71fcfab4ac18fc4e864b5402a9cf46add9185ef55",
+      "run_manifest_path": "runs/s04__lam-0__da/run-manifest.json",
+      "run_manifest_sha256": "77eefadb2f047c16d34b6a90f40339c51f399e301a3bfe18bc016ed7f0d86804",
+      "raw_chains_path": "runs/s04__lam-0__da/raw-chains.npz",
+      "raw_chains_sha256": "52a6f063819c59053a0ecb30412771f2296dde0fc8125caffada7659cecf0947",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-10000__da",
+      "metrics_path": "runs/s04__lam-10000__da/metrics.json",
+      "metrics_sha256": "9e102328535087920f4492a8e744b8a5c0a6d176e52a9d4c99a3bff714e1cd14",
+      "run_manifest_path": "runs/s04__lam-10000__da/run-manifest.json",
+      "run_manifest_sha256": "4df7ad90749636482b6ba9be841c088be46749614be3da11122a7d4b09fd1047",
+      "raw_chains_path": "runs/s04__lam-10000__da/raw-chains.npz",
+      "raw_chains_sha256": "d9c2d3d86b98795749eee02579589c590c694e10c2c9abb2d6bb199e6360f275",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-1000__da",
+      "metrics_path": "runs/s04__lam-1000__da/metrics.json",
+      "metrics_sha256": "ab2b138d774b8460b4742ae2fc463d27ffc886dd12f5e9da84968e1283fd8763",
+      "run_manifest_path": "runs/s04__lam-1000__da/run-manifest.json",
+      "run_manifest_sha256": "b8972c8542426bdb057af6795d95f181deae9b7d2c5b1deebc5636198f8a61a7",
+      "raw_chains_path": "runs/s04__lam-1000__da/raw-chains.npz",
+      "raw_chains_sha256": "1ad7fa61eb54318117da4f9ad3cec71c73df22b91770626bad6e33d8dfa6b02b",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-1000__w-xifrozen__da",
+      "metrics_path": "runs/s04__lam-1000__w-xifrozen__da/metrics.json",
+      "metrics_sha256": "76ff494ac379f4c15c0eb9f67848ffaaf41bc05eaea1bd986f8535abfabd8561",
+      "run_manifest_path": "runs/s04__lam-1000__w-xifrozen__da/run-manifest.json",
+      "run_manifest_sha256": "9d8b5375561c9135f22a3f25c209a998b86bd26e116e6a19fa45fa169f7ab5d1",
+      "raw_chains_path": "runs/s04__lam-1000__w-xifrozen__da/raw-chains.npz",
+      "raw_chains_sha256": "8feee26c9614e3a2c6480e910c94990776d7792a0fa0a5fd7f1acc4f466dc512",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-1000__w__da",
+      "metrics_path": "runs/s04__lam-1000__w__da/metrics.json",
+      "metrics_sha256": "903c037768cb37ddbbc3907ffc4de22eb0ef2c3c915b8a8f4973d7f286d93af8",
+      "run_manifest_path": "runs/s04__lam-1000__w__da/run-manifest.json",
+      "run_manifest_sha256": "18bded0b3aa3f6670c7a00584011892a5a8042c782aeae7cb6d0051137e798c6",
+      "raw_chains_path": "runs/s04__lam-1000__w__da/raw-chains.npz",
+      "raw_chains_sha256": "e402f3bb5d036318d156535b26ae81f99f626aa93b3626a279839dcd8572b113",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-100__da",
+      "metrics_path": "runs/s04__lam-100__da/metrics.json",
+      "metrics_sha256": "278211cdf0e9f9a08133ab7598b17a69a44933bbd4acda8447dbdeb1d12520e9",
+      "run_manifest_path": "runs/s04__lam-100__da/run-manifest.json",
+      "run_manifest_sha256": "8ea8fe2d820ac9f08437564b7a27a0358b0f10b267e0470176f20f69bd38701e",
+      "raw_chains_path": "runs/s04__lam-100__da/raw-chains.npz",
+      "raw_chains_sha256": "328b9ae16977e810836373a80400d0cf0df22b264dbad73b478d6e70872a413d",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-10__da",
+      "metrics_path": "runs/s04__lam-10__da/metrics.json",
+      "metrics_sha256": "e326e967a51cbd8a2ad34b7b8822e1f5c23e6f6158cdaec8fed7e0e305426be6",
+      "run_manifest_path": "runs/s04__lam-10__da/run-manifest.json",
+      "run_manifest_sha256": "506ec4f2948ef33537d6b8debb2b933f5ddfa288072612589b8c7e19166f364b",
+      "raw_chains_path": "runs/s04__lam-10__da/raw-chains.npz",
+      "raw_chains_sha256": "08b2d83a752bad5ef2a6fd45391d06b1c0b91381279fa7f2a2f184b7c108bfeb",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    },
+    {
+      "run_id": "s04__lam-1__da",
+      "metrics_path": "runs/s04__lam-1__da/metrics.json",
+      "metrics_sha256": "76655171ace1e7154b6aadf66c537d17f5d58dde6095d54b6e7ac70965efe356",
+      "run_manifest_path": "runs/s04__lam-1__da/run-manifest.json",
+      "run_manifest_sha256": "2665c21042f641561495bb6334fedfa374f6ea8a667fa4ba879b1d5187ac9a9f",
+      "raw_chains_path": "runs/s04__lam-1__da/raw-chains.npz",
+      "raw_chains_sha256": "32a1406ffde4782f4db66644c0fbd85758756cfb72727b781cad461209491fef",
+      "ledger_row_exact_match": true,
+      "field_lineage": {
+        "arm_and_run_identity": "metrics.json: arm, run_id, scenario_id, config.seed",
+        "diagnostics": "metrics.json: diagnostics.*",
+        "map": "metrics.json: map.{converged,log_density,n_outer}",
+        "adaptation": "metrics.json: adapt_log_chain0 and scales_final",
+        "timing": "metrics.json: timing_seconds"
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "manifest_version": "1.0",
+  "manifest_id": "M-2026-08-23T12:58:50Z-a91c",
+  "emitted_by": "draft_writer_agent",
+  "emitted_at": "2026-08-23T12:58:50Z",
+  "session_id": "paper01-mid-entry-integrity-revision-r1",
+  "claims": [
+    {
+      "claim_id": "C-001",
+      "claim_text": "The registered values are a maximum rank-normalised R-hat of 1.00374, a minimum bulk effective sample size of 2496, a minimum tail effective sample size of 1963, and a maximum relative Monte Carlo standard error of 0.0202.",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [],
+      "planned_experiment_ids": [
+        "EVD-ALGO-002"
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "NC-C001-1",
+          "rule": "不得外推到联合地球物理反演、现场数据、全尺度性能或任何生产能力。"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-002",
+      "claim_text": "A companion coverage study was run on the same target with 400 replications, giving hit rates of 0.895 and 0.945 at the two nominal levels.",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [],
+      "planned_experiment_ids": [
+        "EVD-ALGO-002"
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "NC-C002-1",
+          "rule": "必须称为 fixed-truth / same-truth 频率学覆盖率，不得称为 SBC 或 demonstrated calibration。"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-003",
+      "claim_text": "The run demonstrates that the same-source DO-27 data can be read, forward-modelled, GCV-selected and LSQR-solved as two reduced-order single-physics problems on a modern API.",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [],
+      "planned_experiment_ids": [
+        "EVD-SYNTH-001"
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "NC-C003-1",
+          "rule": "不得表述为 PGI、联合、贝叶斯、原 notebook 复现或模型恢复。"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-004",
+      "claim_text": "The failure package is immutable; a low RMS is an overfitting warning rather than a success; magnetic model recovery FAILED; and EVD-SYNTH-001 is a modern-API reduced-order single-physics compatibility run — not PGI, not joint, not Bayesian, not a reproduction of the original notebook.",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [],
+      "planned_experiment_ids": [
+        "EVD-SYNTH-001"
+      ]
+    },
+    {
+      "claim_id": "C-005",
+      "claim_text": "Two published open geophysical data holdings were ingested and audited for integrity: a geophysics manifest of 184 files and a magnetotelluric manifest of 421 files, each checked for content hash and format conformance.",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [],
+      "planned_experiment_ids": [
+        "EVD-OPEN-001"
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "NC-C005-1",
+          "rule": "仅支持数据治理与摄取完整性，不得升级为反演准确性或 Field-validated。"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-006",
+      "claim_text": "All 42 pilot runs failed the diagnostics hard gate.",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [],
+      "planned_experiment_ids": [
+        "EVD-JOINT-001"
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "NC-C006-1",
+          "rule": "gate-failing 读数不得支持任何端点方向、融合有效性或其反命题。"
+        }
+      ]
+    },
+    {
+      "claim_id": "C-007",
+      "claim_text": "EVD-JOINT-001 therefore remains registered as Planned.",
+      "intended_evidence_kind": "empirical",
+      "planned_refs": [],
+      "planned_experiment_ids": [
+        "EVD-JOINT-001"
+      ],
+      "negative_constraints": [
+        {
+          "constraint_id": "NC-C007-1",
+          "rule": "不得暗示已有 gate-passing posterior、完整 M4 运行或有效端点结果。"
+        }
+      ]
+    }
+  ],
+  "manifest_negative_constraints": [
+    {
+      "constraint_id": "MNC-1",
+      "rule": "任何 EVD 结果均不得超过其登记的 evidence tier 与 wording boundary。"
+    },
+    {
+      "constraint_id": "MNC-2",
+      "rule": "不得把 EVD-JOINT-001 的诊断门失败解释为模型、融合行为或相反结论。"
+    },
+    {
+      "constraint_id": "MNC-3",
+      "rule": "不得声称本研究含 Field-validated 证据。"
+    },
+    {
+      "constraint_id": "MNC-4",
+      "rule": "本 manifest 是 ARS mid-entry 修订中的迟发 provenance 重建，不得表述为原始散文生成前的预承诺。"
+    }
+  ]
+}

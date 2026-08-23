@@ -1,0 +1,406 @@
+{
+  "patch_format_version": "1.1",
+  "authorization_context": "integrity_correction",
+  "revision_round": 2,
+  "base_draft_hash": "31d3c02c53f2",
+  "issue_list_sha256": "52220d86a6e93a9476bf140993ef42dc6320502e8c306bc30aaa6c88c1136064",
+  "ops": [
+    {
+      "op": "replace_block",
+      "block_id": "B0018",
+      "old_hash": "dd23c7d9606d",
+      "new_text": "This section positions the formulation within five comparison traditions, states the bounded contribution and records the search limits. Comparators are retained as an identity-verified discovery set, not as an element-scored ranking. No absence, priority or distinctiveness claim is derived from a record without location-specific full-text evidence, and unresolved Chinese-language records remain outside any positive or negative count.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0033",
+      "old_hash": "b2cc73e9c321",
+      "new_text": "| Nearest neighbour | Auditable priors | Shared-error likelihood | Multi-scale | Pre-registered governance | Decision use |\n|---|---|---|---|---|---|\n| Bosch (1999) | unknown | unknown | unknown | unknown | none |\n| Bosch and McGaughey (2001) | unknown | unknown | unknown | unknown | none |\n| Afonso et al. (2013) | unknown | unknown | unknown | unknown | none |\n| Astic and Oldenburg (2019) | unknown | unknown | unknown | unknown | none |\n| Moorkamp et al. (2011) | unknown | unknown | unknown | unknown | none |\n| Hawkins and Sambridge (2015) | unknown | unknown | unknown | unknown | none |\n| Blatter et al. (2021) | unknown | unknown | unknown | unknown | none |\n| Alemie and Sacchi (2011) | unknown | unknown | unknown | unknown | none |\n| Miller and Dunson (2019) | unknown | unknown | unknown | unknown | none |\n| Jacob et al. (2017) | unknown | unknown | unknown | unknown | none |\n| Afonso (2026) | unknown | unknown | unknown | unknown | none |",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0034",
+      "old_hash": "59107354fd06",
+      "new_text": "No element count or score is computed from Table 5. `unknown` means that the present revision did not complete a location-specific full-text evidence bundle for that cell; it is not an absence finding. The table therefore carries no argument about a closest work, a maximum overlap or an unoccupied combination.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0035",
+      "old_hash": "6fa83b4035bd",
+      "new_text": "The earlier draft attached per-row mechanism differentiators to the element scores. Those differentiators are now treated as hypotheses for future full-text recoding rather than findings. A future comparison must bind each claimed contrast to an identity-verified full text and a page, section or paragraph locator before it can be used in the manuscript; until then, the reported contribution rests on the formulation and evidence assets themselves.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0036",
+      "old_hash": "fd18d5d8a158",
+      "new_text": "Amaya et al. (2024), Cui et al. (2024) and Lin et al. (2026) remain in the broader discovery record as contemporary candidates. This revision assigns none of them an element occupancy or nearest-neighbour rank because no location-specific full-text recoding bundle was completed.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0037",
+      "old_hash": "646a14d04bcd",
+      "new_text": "A targeted 2024-onward scan identified eleven bibliographically verified candidates and documented retrieval limitations across its search channels. It did not complete full-text element adjudication, so its former occupancy counts and claims of an empty combination are withdrawn. Enumeration volume, abstract screening and title-only records are discovery evidence, not negative evidence about what the full literature contains.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0043",
+      "old_hash": "a259ee625c4d",
+      "new_text": "The third paragraph states the design boundary of a registered asset, not a demonstration status. Its implementation and pilot outcome are reported in §6.4 and §7.5, and “implements and registers” must not be read as “has been demonstrated”. Each constituent has antecedents, and no element-level or conjunction-level priority is claimed. The framework's provenance discipline is presented as a design choice; the contribution does not depend on showing that prior literature failed to request or contain it.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0047",
+      "old_hash": "c1f835d7ef52",
+      "new_text": "Before the comparison was run, the project registered a four-part criterion concerning auditable priors, shared-error fusion, sensitivity-weighted diagnostics and pre-registered governance. The present paper records that historical criterion for provenance but does not apply it as a scoring or novelty rule because location-specific full-text evidence was not completed for the comparator cells.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0048",
+      "old_hash": "af5de4c59372",
+      "new_text": "The historical criterion contained no multi-scale conjunct because multi-scale parameterisation has an established design lineage. No current statement is made about whether any comparator meets that criterion: every Table 5 element cell remains `unknown` pending full-text recoding.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0049",
+      "old_hash": "874181b589e2",
+      "new_text": "The registered joint asset did not yield a valid coupling-increment endpoint because its pilot failed the diagnostics gate. Independently of any literature-comparison criterion, that absence limits this paper to formulation, component evidence and governance infrastructure. Literature references provide design context; they do not substitute for the missing endpoint or validate the usefulness of the assembled combination.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0050",
+      "old_hash": "d33545cc000a",
+      "new_text": "The discovery inventory remains updateable. A newly verified record may be added by identity, but an element cell changes from `unknown` only after a full-text evidence bundle records the relevant locator and adjudication. Both Table 5 and Appendix A must then be regenerated from the same bundle; unresolved or inaccessible records never enter a negative count.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0278",
+      "old_hash": "b59458bb2965",
+      "new_text": "### 8.3 Historical comparison criterion and the current evidence boundary",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0279",
+      "old_hash": "2b88c0b0240f",
+      "new_text": "Section 2.3 states the contribution boundary. This section records the historical two-arm comparison criterion and explains why neither the literature inventory nor the failed joint endpoint supports a stronger statement in the current revision.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0280",
+      "old_hash": "9fffdae6b1b7",
+      "new_text": "Several cited traditions motivate individual design choices: manual data-weight practice motivates explicit weight governance; misspecification research motivates discrepancy and down-weighting mechanisms; and reproducibility research motivates provenance and diagnostic controls. These citations provide context for the formulation. They are not used to assert that the assembled combination was requested by, absent from or distinctive within the literature.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0281",
+      "old_hash": "b7bfde365f25",
+      "new_text": "An earlier draft classified some elements as having no prior literature request and used later retrievals to adjust that classification. Those classifications are withdrawn from decision use because they were not supported by a complete full-text evidence bundle. The provenance history remains in the governance archive, while the manuscript makes no request-absence claim.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0282",
+      "old_hash": "d56efbf9f2c8",
+      "new_text": "Citation-identity defects in inherited project material motivated stronger verification controls, but they are not evidence that a neighbouring body of work is empty. Failed or fabricated candidate records reveal defects in those records only; they cannot support a literature-absence, closest-work or novelty conclusion.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0283",
+      "old_hash": "0fb4aa7e3ae0",
+      "new_text": "The former sensitivity argument about removing one comparator depended on the element-scored matrix and is therefore withdrawn. Individual architectural contrasts may be discussed only when bound to full-text evidence, and no such contrast is needed for the formulation and component-evidence contribution claimed here.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0321",
+      "old_hash": "3335d44647ce",
+      "new_text": "The historical comparison criterion was conjunctive and fixed before its original scoring exercise. That provenance fact is retained, but the current manuscript draws no conclusion from an absent matching row because the comparator cells have not undergone location-specific full-text recoding. A pre-registered quantifier does not compensate for an incomplete evidence base.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0322",
+      "old_hash": "6d1da9f55110",
+      "new_text": "The former nearest-neighbour scores were based on titles, abstracts and metadata and are withdrawn; all current element cells are `unknown`. The earlier English matrix was also a restricted translation of a Chinese table whose semantic-equivalence check was incomplete, retraction status was not verified entry by entry, and two candidates were preprints. These facts reinforce the decision to retain only an identity-verified discovery inventory until full-text recoding is completed.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0355",
+      "old_hash": "47a14c10ba67",
+      "new_text": "**Self-reference, in three respects.** (i) The authors produced the governance archive and the registered evidence assets used by this paper. (ii) The authors selected and interpreted the discovery inventory, so any future comparator adjudication requires transparent full-text locators and remains subject to independent re-scoring. (iii) The joint synthetic experiment was designed, implemented and adjudicated within one pipeline; no independent party replicated its endpoint.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0356",
+      "old_hash": "143cf53a3f11",
+      "new_text": "**Countermeasures in place.** The experimental design and failure boundary were pre-registered; generation and inference artefacts are hash-bound; failed runs are retained; and adversarial review occurred at three checkpoints. For literature comparison, unsupported ✓/◐/✗ scores and element counts have been withdrawn. Table 5 and Appendix A now expose `unknown` cells and the full-text evidence requirements for any future recoding rather than inviting readers to reproduce an under-supported score.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0365",
+      "old_hash": "7dec0f51d63e",
+      "new_text": "## Appendix A. Nearest-neighbour discovery inventory and full-text recoding protocol",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0366",
+      "old_hash": "0941658127b7",
+      "new_text": "This appendix records how an identity-verified candidate may be recoded from `unknown` using location-specific full-text evidence. It does not publish a current coverage score or rank. The protocol is included because the framework authors also selected the comparator inventory, and transparent evidence locators are required for independent reassessment.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0367",
+      "old_hash": "a80028c37a64",
+      "new_text": "### A.1 Status vocabulary",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0368",
+      "old_hash": "0a56aa7c9fd6",
+      "new_text": "- **unknown** — no identity-verified, location-specific full-text evidence bundle has adjudicated the cell.\n- **supported** — the full text explicitly exhibits the defined element, with a page, section or paragraph locator recorded.\n- **not supported in the reviewed full text** — a documented, prespecified full-text review assessed the element and found no qualifying construction; this is limited to that reviewed work and is not a literature-absence claim.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0369",
+      "old_hash": "c12786be1626",
+      "new_text": "Every current Table 5 element cell is `unknown`. The former ✓/◐/✗ grades and their counts are historical working records only and carry no manuscript decision role.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0370",
+      "old_hash": "d79d767dfc98",
+      "new_text": "### A.2 Full-text evidence requirement",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0371",
+      "old_hash": "20f0ceacb15c",
+      "new_text": "Each element is adjudicated separately. A record must identify the exact work, full-text version, evidence locator, element definition, adjudicator and date. Title, abstract, metadata, citation context and inability to obtain a full text cannot establish that an element is absent.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0372",
+      "old_hash": "fdb9d6780d0f",
+      "new_text": "> For each element, what exact full-text passage shows that the work does or does not implement the defined construction, and where is that passage located?",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0373",
+      "old_hash": "c368d7e43631",
+      "new_text": "The evidence bundle must preserve the quoted or faithfully paraphrased passage within copyright limits, its page/section/paragraph locator, the identity-verification record and the adjudication rationale. If any required field is missing, the cell remains `unknown`. Provenance discipline and physical-property content are recorded as separate fields rather than collapsed into a single grade.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0374",
+      "old_hash": "53c90c70b1bd",
+      "new_text": "The earlier draft's prior-content contrast and its claim that ten row scores were unchanged are withdrawn from the manuscript evidence. They may be reconsidered only through the full-text protocol above and cannot be recovered from the former marks themselves.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0375",
+      "old_hash": "43dca26ec8d6",
+      "new_text": "### A.3 Evidence-neutral wording discipline",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0376",
+      "old_hash": "1af15f354fe0",
+      "new_text": "A cell description must distinguish an observed full-text construction from an unreviewed possibility. Phrases such as “lacks”, “absent”, “none” or “off-axis” require a completed full-text adjudication and its locator; otherwise the only admissible status is `unknown`.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0377",
+      "old_hash": "cf78a40ba721",
+      "new_text": "This rule applies to all four element fields. It prevents incomplete retrieval, abstract silence or an inaccessible record from being rewritten as evidence of absence. It also prevents a mechanism description from silently becoming a rank or nearest-neighbour conclusion.",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0378",
+      "old_hash": "8f8ca9d740a6",
+      "new_text": "### A.4 Evidence bundle and regeneration rule",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    },
+    {
+      "op": "replace_block",
+      "block_id": "B0380",
+      "old_hash": "2d532abc53bf",
+      "new_text": "### A.5 Full-text recoding queue",
+      "roadmap_item_ids": [
+        "IL-SERIOUS-1"
+      ],
+      "claim_strength_changes": [],
+      "collateral_authorization_ids": []
+    }
+  ],
+  "emitted_by": "ARS Stage 4 integrity correction builder"
+}

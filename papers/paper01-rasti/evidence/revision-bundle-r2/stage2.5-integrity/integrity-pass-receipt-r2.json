@@ -1,0 +1,8 @@
+{
+  "schema_version": "integrity-pass-receipt/1.0",
+  "receipt_id": "INTEGRITY-PASS-paper01-stage25-r2",
+  "checked_draft_sha256": "f927ad43821883e18412aa31df1a30969935b3c1120557921499423fad4251ca",
+  "verdict": "PASS",
+  "open_issue_count": 0,
+  "issued_by": "integrity_verification_agent"
+}
