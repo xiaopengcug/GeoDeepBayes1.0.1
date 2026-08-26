@@ -87,7 +87,8 @@ class PODReducer:
                            rng=None):
         """二阶段延迟接受骨架。
 
-        1) 在 POD 低维空间由 ``proposal_draw(alpha)`` 提议；
+        1) 在 POD 低维空间由 ``proposal_draw(alpha)`` 提议；返回候选值，或
+           ``(候选值, log q(alpha|candidate)-log q(candidate|alpha))``；
         2) 以廉价 ``log_post_reduced(alpha)`` 做粗筛；
         3) 通过粗筛者再以 ``log_post_full(m_reconstructed)`` 做精确接受校正。
 
@@ -101,15 +102,24 @@ class PODReducer:
         lp_f_cur = float(log_post_full(m_cur))
         kept_alpha, kept_full, n2 = [], [], 0
         for _ in range(int(n_steps)):
-            a_prop = proposal_draw(alpha, rng)
+            proposal = proposal_draw(alpha, rng)
+            if isinstance(proposal, tuple):
+                a_prop, log_q_reverse_minus_forward = proposal
+            else:
+                a_prop, log_q_reverse_minus_forward = proposal, 0.0
+            a_prop = np.asarray(a_prop, dtype=float)
             lp_r_prop = float(log_post_reduced(a_prop))
             # 第一阶段（廉价）
-            if np.log(rng.random()) < (lp_r_prop - lp_r_cur):
+            if np.log(rng.random()) < (
+                lp_r_prop - lp_r_cur + float(log_q_reverse_minus_forward)
+            ):
                 m_prop = self.reconstruct(a_prop)
                 lp_f_prop = float(log_post_full(m_prop))
                 n2 += 1
-                # 第二阶段（精确）
-                if np.log(rng.random()) < (lp_f_prop - lp_f_cur):
+                # 第二阶段校正代理比率。注意：状态仍受限于POD子空间，
+                # 因而本方法不能支持“全维后验恢复”主张。
+                log_a2 = (lp_f_prop - lp_f_cur) - (lp_r_prop - lp_r_cur)
+                if np.log(rng.random()) < log_a2:
                     alpha, m_cur = a_prop, m_prop
                     lp_r_cur, lp_f_cur = lp_r_prop, lp_f_prop
             kept_alpha.append(alpha.copy())

@@ -1,0 +1,26 @@
+{
+  "schema_version": "ars-revision-bundle-refreeze/1.0",
+  "status": "passed",
+  "bundle": "papers/paper01-rasti/evidence/revision-bundle-r2/revision-evidence-bundle-r2.json",
+  "bundle_sha256_before": "85a0ee8695f37be4d6661c9f3c9be144449dec1e9efa807cf4c3bceac349a6fb",
+  "bundle_sha256_after": "ae19b8c55c8fad62d5aeb8f193a3bf0f1347f29b0012c950ffcf172025775540",
+  "links_verified": 19,
+  "links_updated": 2,
+  "reason": "CRLF-to-LF normalization changed bytes after the historical hashes were frozen; all links were recomputed from the distributed member bytes.",
+  "changes": [
+    {
+      "locator": "$.chain_start.integrity_pass_receipt",
+      "path": "stage2.5-integrity/integrity-pass-receipt-r2.json",
+      "previous_sha256": "d258e6af81c7861fdf61c5f18eaf384b818233f9e5fe564624d469adf66c41f7",
+      "current_sha256": "1169a62d11c236f5ca3e9be78407bab4501b8d30154783ef485e47e1f530d8a1"
+    },
+    {
+      "locator": "$.rounds[0].revision_roadmap",
+      "path": "stage3-review/phase2/revision-roadmap-rasti.json",
+      "previous_sha256": "79fc5b93bdd61104269cb91ad0de4f59ca18540fc3a32e7bf40ae7e9f9445217",
+      "current_sha256": "558d403ee7494f13fdc7fe7ed73edb15a1a103981ea901430584900bb16e809c"
+    }
+  ],
+  "redundant_outer_copy_removed": true,
+  "formal_release_status": "blocked_pending_human_verification"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "ars-authorized-patch-application/1.0",
+  "status": "applied_pending_human_verification",
+  "patch_sha256": "9487ebda98c7b1c2c29a9e27215592f211fdd5d44184594513d98600d2be0ca6",
+  "target": "papers/paper01-rasti/manuscript/manuscript-anchored.md",
+  "before_sha256": "c00757839ac3758682ab8761677ea48b854ddb7c2fcd3ec12c259959c12dbf09",
+  "after_sha256": "ef03aa58ee5e6fbaa3f21874ba6d2cb8728b43b3fba32d90d0f57df8b5df3361",
+  "operations_applied": 193,
+  "authorization": {
+    "all_listed_targets_and_operations_authorized": true,
+    "structural_changes_acknowledged": true,
+    "formal_release_separately_blocked_on_human_verification": true
+  },
+  "review_finding_ids": [
+    "RR55-04",
+    "RR55-05",
+    "RR55-06",
+    "RR55-11",
+    "RR55-12",
+    "RR55-13",
+    "RR55-14",
+    "RR55-15",
+    "RR55-16",
+    "RR55-28",
+    "RR55-29",
+    "RR55-30",
+    "RR55-31",
+    "RR55-32",
+    "RR55-33",
+    "RR55-34",
+    "RR55-35",
+    "RR55-36",
+    "RR55-37",
+    "RR55-42",
+    "RR55-43",
+    "RR55-44",
+    "RR55-45",
+    "RR55-47",
+    "RR55-49",
+    "RR55-50",
+    "RR55-51",
+    "RR55-55"
+  ],
+  "structural_operations": [
+    {
+      "operation": "rename_figure_family",
+      "from": "figures/figure-1-probabilistic-dag.{pdf,png,py}",
+      "to": "figures/figure-2-probabilistic-dag.{pdf,png,py}",
+      "status": "completed"
+    },
+    {
+      "operation": "rename_figure_family",
+      "from": "figures/figure-2-framework-governance.{pdf,png,py}",
+      "to": "figures/figure-1-framework-governance.{pdf,png,py}",
+      "status": "completed"
+    },
+    {
+      "operation": "regenerate_clean_render",
+      "source": "manuscript/manuscript-anchored.md",
+      "output": "manuscript/manuscript-clean.md",
+      "report": "provenance/clean-render-report.json",
+      "semantic_edits": 0,
+      "status": "completed"
+    }
+  ]
+}

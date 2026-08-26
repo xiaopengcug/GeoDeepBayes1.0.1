@@ -1,0 +1,118 @@
+{
+  "created": "2020-01-31T18:37:30.427599+00:00",
+  "modified": "2020-08-14T02:29:54.968089+00:00",
+  "id": 3633239,
+  "conceptrecid": "3571471",
+  "doi": "10.5281/zenodo.3633239",
+  "conceptdoi": "10.5281/zenodo.3571471",
+  "doi_url": "https://doi.org/10.5281/zenodo.3633239",
+  "metadata": {
+    "title": "simpeg-research/Astic-2020-JointInversion: Joint inversion of synthetic potential fields data based on the DO-27 kimberlite pipe",
+    "doi": "10.5281/zenodo.3633239",
+    "publication_date": "2020-01-31",
+    "description": "<p><strong>Summary</strong></p>\n\n<p>We present a framework for petrophysically and geologically guided inversion to perform multi-physics joint inversions. Petrophysical and geological information is included in a multi-dimensional Gaussian mixture model that regularizes the inverse problem. The inverse problem we construct consists of a suite of three cyclic optimizations over the geophysical, petrophysical and geological information. The two additional problems over the petrophysical and geological data are used as a coupling term. They correspond to updating the geophysical reference model and regularization weights. This guides the inverse problem towards reproducing the desired petrophysical and geological characteristics. The objective function that we define for the inverse problem is comprised of multiple data misfit terms: one for each geophysical survey and one for the petrophysical properties and geological information. Each of these misfit terms has its own target misfit value which we seek to fit in the inversion. Our framework is modular and extensible and this allows us to combine multiple geophysical methods in a joint inversion and to distribute open-source code and reproducible examples. To illustrate the gains made by multi-physics inversions, we apply our framework to jointly invert, in 3D, synthetic potential fields data based on the DO-$27$ kimberlite pipe case study (Northwest Territories, Canada). The pipe contains two distinct kimberlite facies embedded in a host rock. We show that inverting the datasets individually, even with petrophysical information, leads to a binary geologic model consisting of background or kimberlite. A joint inversion, with petrophysical information, can differentiate the two main kimberlite facies of the pipe.</p>\n\n<p>Contents</p>\n\n<ul>\n\t<li>\n\t<p><a href=\"/Geology_Surfaces\">Geology surfaces folder</a>: Geology surfaces built from drillholes</p>\n\t</li>\n\t<li>\n\t<p><a href=\"/Forward\">Forward folder</a>: Scripts to forward model the magnetic and gravity data from the geological surfaces</p>\n\t</li>\n\t<li>\n\t<p><a href=\"/L2_inversion\">L2 inversion folder</a>: Jupyter notebooks to run Tikhonov (L2) inversions and Sparse (Lp-Lq) inversion of the gravity and magnetic data.</p>\n\t</li>\n\t<li>\n\t<p><a href=\"/Petrophysics\">Petrophysics folder</a>: Jupyter notebook to build the GMM objects for all the PGI inversions.</p>\n\t</li>\n\t<li>\n\t<p><a href=\"/PGI_individual_inversion\">PGI individual inversion</a>: Jupyter notebooks to perform PGI inversions of the gravity and magnetic data individually, each with the PK and HK signature respectively.</p>\n\t</li>\n\t<li>\n\t<p><a href=\"/PGI_joint_inversion\">PGI joint inversion</a>: Jupyter notebook to perform the joint PGI inversion with full petrophysical knowledge</p>\n\t</li>\n\t<li>\n\t<p><a href=\"/PGI_Joint_no_petrophysical_means\">PGI Joint no petrophysical means</a>: Jupyter notebook to perform the joint PGI inversion without petrophysical knowledge</p>\n\t</li>\n</ul>\n\n<p>Usage</p>\n\n<p>Dependencies are specified in <a href=\"/requirements.txt\">requirements.txt</a></p>\n\n<pre><code>pip install -r requirements.txt\n</code></pre>\n\n<p>To run the notebooks locally, you will need to have python installed, preferably through <a href=\"https://www.anaconda.com/download/\">anaconda</a> .</p>\n\n<p>You can then clone this repository. From a command line, run</p>\n\n<pre><code>git clone https://github.com/simpeg-research/Astic-2020-JointInversion.git\n</code></pre>\n\n<p>Then <code>cd</code> into the <code>Astic-2020-JointInversion</code> directory:</p>\n\n<pre><code>cd Astic-2020-JointInversion\n</code></pre>\n\n<p>To setup your software environment, we recommend you use the provided conda environment</p>\n\n<pre><code>conda env create -f environment.yml\nconda activate pgijoint-environment\n</code></pre>\n\n<p>alternatively, you can install dependencies through pypi</p>\n\n<pre><code>pip install -r requirements.txt\n</code></pre>\n\n<p>You can then launch Jupyter</p>\n\n<pre><code>jupyter notebook\n</code></pre>\n\n<p>Jupyter will then launch in your web browser.</p>\n\n<p>Running the notebooks</p>\n\n<p>Each cell of code can be run with <code>shift + enter</code> or you can run the entire notebook by selecting <code>cell</code>, <code>Run All</code> in the toolbar.</p>\n\n<p>For more information on running Jupyter notebooks, see the <a href=\"https://jupyter.readthedocs.io/en/latest/\">Jupyter Documentation</a></p>\n\n<p>Issues</p>\n\n<p>Please <a href=\"https://github.com/simpeg-research/Astic-2020-JointInversion/issues\">make an issue</a> if you encounter any problems while trying to run the notebooks.</p>\n\n<p>Citations</p>\n\n<p>If you build upon or use these examples in your work, please cite:</p>\n\n<p>Astic, T., L. J. Heagy, and D. W. Oldenburg, 2020, Joint geophysical, petrophysical and geologic inversion using a dynamic Gaussian mixture model, submitted to Geophysical Journal International.</p>\n\n<p>Astic, T., and D. W. Oldenburg, 2019, A framework for petrophysically and geologically guided geophysical inversion using a dynamic Gaussian mixture model prior: Geophysical Journal International, 219, 1989-2012. <a href=\"https://doi.org/10.1093/gji/ggz389\">https://doi.org/10.1093/gji/ggz389</a></p>\n\n<p>Astic, T. and D. W. Oldenburg, 2018, Petrophysically guided geophysical inversion using a dynamic Gaussian mixture model prior. In SEG Technical Program Expanded Abstracts 2018 (pp. 2312-2316). <a href=\"https://doi.org/10.1190/segam2018-2995155.1\">https://doi.org/10.1190/segam2018-2995155.1</a></p>\n\n<pre><code>@article{AsticJoint,\nauthor = {Thibaut Astic and Lindey J. Heagy and Douglas W. Oldenburg},\ntitle = {Joint geophysical, petrophysical and geologic inversion using a dynamic Gaussian mixture model},\njournal = {Submitted to Geophysical Journal International},\nyear = {2020}\n}\n\n@article{ggz389,\nauthor = {Astic, Thibaut and Oldenburg, Douglas W},\ntitle = \"{A framework for petrophysically and geologically guided geophysical inversion using a dynamic Gaussian mixture model prior}\",\njournal = {Geophysical Journal International},\nvolume = {219},\nnumber = {3},\npages = {1989-2012},\nyear = {2019},\nmonth = {08},\nissn = {0956-540X},\ndoi = {10.1093/gji/ggz389},\nurl = {https://doi.org/10.1093/gji/ggz389},\neprint = {http://oup.prod.sis.lan/gji/article-pdf/219/3/1989/30144784/ggz389.pdf},\n}\n\n@inbook{Astic2018,\nauthor = {Thibaut Astic and Douglas W. Oldenburg},\ntitle = {Petrophysically guided geophysical inversion using a dynamic Gaussian mixture model prior},\nbooktitle = {SEG Technical Program Expanded Abstracts 2018},\nchapter = {},\npages = {2312-2316},\nyear = {2018},\ndoi = {10.1190/segam2018-2995155.1},\nURL = {https://library.seg.org/doi/abs/10.1190/segam2018-2995155.1},\neprint = {https://library.seg.org/doi/pdf/10.1190/segam2018-2995155.1}\n}\n</code></pre>\n\n<p>If you are using <a href=\"https://simpeg.xyz/\">&lt;tt&gt;`SimPEG`&lt;/tt&gt;</a>, please cite:</p>\n\n<p>Cockett, Rowan, Seogi Kang, Lindsey J. Heagy, Adam Pidlisecky, and Douglas W. Oldenburg. &quot;SimPEG: An Open Source Framework for Simulation and Gradient Based Parameter Estimation in Geophysical Applications&quot; Computers &amp; Geosciences, September 2015. <a href=\"https://doi.org/10.1016/j.cageo.2015.09.015\">https://doi.org/10.1016/j.cageo.2015.09.015</a>.</p>\n\n<pre><code>@article{Cockett2015,\nauthor = {Cockett, Rowan and Kang, Seogi and Heagy, Lindsey J. and Pidlisecky, Adam and Oldenburg, Douglas W.},\ndoi = {10.1016/j.cageo.2015.09.015},\nissn = {00983004},\njournal = {Computers and Geosciences},\nkeywords = {Electromagnetics,Geophysics,Inversion,Numerical modeling,Object-oriented programming,Sensitivities},\npages = {142--154},\npublisher = {Elsevier},\ntitle = {{SimPEG: An open source framework for simulation and gradient based parameter estimation in geophysical applications}},\nurl = {http://dx.doi.org/10.1016/j.cageo.2015.09.015},\nvolume = {85},\nyear = {2015}\n}\n</code></pre>\n\n<p>If you are using the Electromagnetics Simulations &amp; Inversions capabilities of <a href=\"https://simpeg.xyz/\">&lt;tt&gt;`SimPEG`&lt;/tt&gt;</a>, please cite:</p>\n\n<p>Lindsey J. Heagy, Rowan Cockett, Seogi Kang, Gudni K. Rosenkjaer, Douglas W. Oldenburg. &quot;A framework for simulation and inversion in electromagnetics&quot; Computers &amp; Geosciences, September 2017. <a href=\"https://doi.org/10.1016/j.cageo.2017.06.018\">https://doi.org/10.1016/j.cageo.2017.06.018</a></p>\n\n<pre><code>@article{heagy2017framework,\ntitle = {A framework for simulation and inversion in electromagnetics},\njournal = {Computers \\&amp; Geosciences},\nvolume = {107},\npages = {1-19},\nyear = {2017},\nissn = {0098-3004},\ndoi = {https://doi.org/10.1016/j.cageo.2017.06.018},\nurl = {http://www.sciencedirect.com/science/article/pii/S0098300416303946},\nauthor = {Lindsey J. Heagy and Rowan Cockett and Seogi Kang and Gudni K. Rosenkjaer and Douglas W. Oldenburg},\nkeywords = {Geophysics, Numerical modelling, Finite volume, Sensitivities, Object oriented}\n}\n</code></pre>\n\n<p>License</p>\n\n<p>These scripts and notebooks are licensed under the <a href=\"/LICENSE\">MIT License</a> which allows academic and commercial re-use and adaptation of this work.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Thibaut Astic",
+        "affiliation": "UBC",
+        "orcid": "0000-0003-1237-6315"
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/simpeg-research/Astic-2020-JointInversion/tree/1.0.0",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "version": "1.0.0",
+    "resource_type": {
+      "title": "Software",
+      "type": "software"
+    },
+    "license": {
+      "id": "other-open"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 1,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "3571471"
+          }
+        }
+      ]
+    }
+  },
+  "title": "simpeg-research/Astic-2020-JointInversion: Joint inversion of synthetic potential fields data based on the DO-27 kimberlite pipe",
+  "links": {
+    "self": "https://zenodo.org/api/records/3633239",
+    "self_html": "https://zenodo.org/records/3633239",
+    "preview_html": "https://zenodo.org/records/3633239?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.3633239",
+    "self_doi": "https://doi.org/10.5281/zenodo.3633239",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3633239",
+    "reserve_doi": "https://zenodo.org/api/records/3633239/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/3571471",
+    "parent_html": "https://zenodo.org/records/3571471",
+    "parent_doi": "https://doi.org/10.5281/zenodo.3571471",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.3571471",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:3633239/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:3633239/sequence/default",
+    "files": "https://zenodo.org/api/records/3633239/files",
+    "media_files": "https://zenodo.org/api/records/3633239/media-files",
+    "archive": "https://zenodo.org/api/records/3633239/files-archive",
+    "archive_media": "https://zenodo.org/api/records/3633239/media-files-archive",
+    "latest": "https://zenodo.org/api/records/3633239/versions/latest",
+    "latest_html": "https://zenodo.org/records/3633239/latest",
+    "versions": "https://zenodo.org/api/records/3633239/versions",
+    "draft": "https://zenodo.org/api/records/3633239/draft",
+    "access_links": "https://zenodo.org/api/records/3633239/access/links",
+    "access_grants": "https://zenodo.org/api/records/3633239/access/grants",
+    "access_users": "https://zenodo.org/api/records/3633239/access/users",
+    "access_request": "https://zenodo.org/api/records/3633239/access/request",
+    "access": "https://zenodo.org/api/records/3633239/access",
+    "communities": "https://zenodo.org/api/records/3633239/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/3633239/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/3633239/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/3633239/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/3633239/quota-increase",
+    "requests": "https://zenodo.org/api/records/3633239/requests"
+  },
+  "updated": "2020-08-14T02:29:54.968089+00:00",
+  "recid": "3633239",
+  "revision": 4,
+  "files": [
+    {
+      "id": "1904fa9d-da3e-46bf-acb8-ed88c7cd7cd7",
+      "key": "simpeg-research/Astic-2020-JointInversion-1.0.0.zip",
+      "size": 18956806,
+      "checksum": "md5:99ffb458c2a41fa3577f1edd8fa4a9a4",
+      "links": {
+        "self": "https://zenodo.org/api/records/3633239/files/simpeg-research/Astic-2020-JointInversion-1.0.0.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "60523"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 186,
+    "unique_downloads": 141,
+    "views": 1161,
+    "unique_views": 1110,
+    "version_downloads": 142,
+    "version_unique_downloads": 97,
+    "version_unique_views": 976,
+    "version_views": 1025
+  },
+  "state": "done",
+  "submitted": true
+}

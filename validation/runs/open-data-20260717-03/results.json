@@ -1,0 +1,219 @@
+{
+  "run_id": "open-data-20260717-03",
+  "started_at": "2026-07-17T06:39:23.557317+00:00",
+  "completed_at": "2026-07-17T06:39:28.382201+00:00",
+  "scope": "公开数据完整性、格式、数值与DO-27真值资产验证；不构成钻孔留出Field-validated证据。",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+    "executable": "C:\\Users\\xiaop\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "powershell": "C:\\Users\\xiaop\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\windowsapps\\microsoft.powershell_7.6.3.0_x64__8wekyb3d8bbwe\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules"
+  },
+  "integrity_summary": {
+    "primary_files": 184,
+    "mt_files": 421,
+    "local_integrity_failures": 0,
+    "upstream_size_discrepancies": 25
+  },
+  "selected_checks": {
+    "mountain_pass_magnetic": {
+      "path": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/open-data/magnetic/USGS_MountainPass_airborne_magnetic_2020/Magnetic_Data.csv",
+      "columns": [
+        "ALT_RADAR",
+        "Bearing",
+        "Date",
+        "DIURNAL",
+        "DIURNAL_CORR",
+        "DTM",
+        "Easting",
+        "FID",
+        "Flight",
+        "FX",
+        "FY",
+        "FZ",
+        "GPSZ",
+        "IGRF",
+        "Line",
+        "Latitude",
+        "Longitude",
+        "mag_comp",
+        "mag_diu",
+        "mag_lag",
+        "mag_raw",
+        "MAG_RMI",
+        "mag_tmi",
+        "Northing"
+      ],
+      "numeric_values": 1616520,
+      "non_finite": 0,
+      "minimum": -45241.452,
+      "maximum": 20161210.0,
+      "median": 14786.447,
+      "status": "passed"
+    },
+    "mountain_pass_gravity": {
+      "path": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/open-data/gravity/USGS_MountainPass_airborne_gravity_gradiometry_grids_2020/602202_Fourier_gD_2p67_final.gxf",
+      "header_keys": [
+        "DUMMY",
+        "GRID",
+        "MAP_DATUM_TRANSFORM",
+        "MAP_PROJECTION",
+        "POINTS",
+        "PTSEPARATION",
+        "ROTATION",
+        "ROWS",
+        "RWSEPARATION",
+        "SENSE",
+        "TITLE",
+        "TRANSFORM",
+        "UNIT_LENGTH",
+        "XORIGIN",
+        "YORIGIN",
+        "ZMAXIMUM",
+        "ZMINIMUM"
+      ],
+      "numeric_values": 2019815,
+      "non_finite": 0,
+      "status": "passed"
+    },
+    "mt_edi": {
+      "path": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/open-data/mt/USGS_SanAndreas_Parkfield_MT_EDI_1990/Magnetotelluric_Cross-Power_EDI.zip",
+      "entries": 90,
+      "matching_entries": 90,
+      "nonempty_entries": 90,
+      "required_tokens_found": true,
+      "sample_numeric_values": 1722,
+      "sample_non_finite": 0,
+      "first_matches": [
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_High_01.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_High_02.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_Low_01.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_Low_02.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_Low_03.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_Mid_01.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_Mid_02.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_Mid_03.edi",
+        "Site_06/USA-California-San_Andreas_Fault-Parkfield-1990-MT06-CP_Mid_04.edi",
+        "Site_07/USA-California-San_Andreas_Fault-Parkfield-1990-MT07-CP_High_01.edi"
+      ],
+      "status": "passed",
+      "bad_entry": null
+    },
+    "dc_ip": {
+      "path": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/open-data/dc_ip/USGS_LittleColoradoRiver_ERT_2019/MB2.5.zip",
+      "entries": 7,
+      "matching_entries": 4,
+      "nonempty_entries": 4,
+      "required_tokens_found": true,
+      "sample_numeric_values": 985,
+      "sample_non_finite": 0,
+      "first_matches": [
+        "MB2.5/Geophysics Data-GPS Coordinates_Line MB2.5.csv",
+        "MB2.5/MB2.5.cmd.txt",
+        "MB2.5/MB2.5_InvRes.dat",
+        "MB2.5/Read_Me_ERT_LCR_Leupp_2019.txt"
+      ],
+      "status": "passed",
+      "bad_entry": null
+    },
+    "tem": {
+      "path": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/open-data/tem/USGS_DineroTunnel_TEM_2023/2023_Dinero_Tunnel_TEM_inversion_results.zip",
+      "entries": 42,
+      "matching_entries": 42,
+      "nonempty_entries": 42,
+      "required_tokens_found": true,
+      "sample_numeric_values": 102,
+      "sample_non_finite": 0,
+      "first_matches": [
+        "project46_smooth_syn.xyz",
+        "project51_layered_dat.xyz",
+        "project51_layered_inv.xyz",
+        "project51_layered_syn.xyz",
+        "project51_smooth_dat.xyz",
+        "project51_smooth_inv.xyz",
+        "project51_smooth_syn.xyz",
+        "project52_layered_dat.xyz",
+        "project52_layered_inv.xyz",
+        "project52_layered_syn.xyz"
+      ],
+      "status": "passed",
+      "bad_entry": null
+    },
+    "csamt": {
+      "path": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/open-data/csamt/USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019/Station-GrandCanyonWest_PlainTankFlat.zip",
+      "entries": 10,
+      "matching_entries": 9,
+      "nonempty_entries": 9,
+      "required_tokens_found": true,
+      "sample_numeric_values": 240,
+      "sample_non_finite": 0,
+      "first_matches": [
+        "Station/A1.stn",
+        "Station/A2.stn",
+        "Station/PT1.stn",
+        "Station/PT2.stn",
+        "Station/PT3.stn",
+        "Station/QB1.stn",
+        "Station/QB2.stn",
+        "Station/QB3.stn",
+        "Station/WG.stn"
+      ],
+      "status": "passed",
+      "bad_entry": null
+    },
+    "wfem": {
+      "dataset": "Zenodo_BaotuSpring_WFEM_2025",
+      "files": 27,
+      "consistent_headers": true,
+      "failed_files": 0,
+      "status": "passed"
+    },
+    "do27": {
+      "dataset": "DO-27 synthetic gravity-magnetic joint inversion",
+      "archive": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/open-data/mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/simpeg-research_Astic-2020-JointInversion-1.0.0.zip",
+      "required_entries": 6,
+      "missing_entries": [],
+      "numeric_assets": {
+        "Forward/GRAV_noisydata.obs": {
+          "numeric_tokens": 4806,
+          "non_finite": 0,
+          "minimum": -2.025444,
+          "maximum": 7133900.0
+        },
+        "Forward/MAG_noisydata.obs": {
+          "numeric_tokens": 4812,
+          "non_finite": 0,
+          "minimum": -9.758163,
+          "maximum": 7133900.0
+        },
+        "Forward/mesh_inverse_ubc.msh": {
+          "numeric_tokens": 228,
+          "non_finite": 0,
+          "minimum": 10.0,
+          "maximum": 7132879.338713
+        },
+        "Forward/model_grav.den": {
+          "numeric_tokens": 393660,
+          "non_finite": 0,
+          "minimum": -100.0,
+          "maximum": 0.0
+        },
+        "Forward/model_mag.sus": {
+          "numeric_tokens": 393660,
+          "non_finite": 0,
+          "minimum": -100.0,
+          "maximum": 0.02
+        }
+      },
+      "asset_status": "passed",
+      "inversion_validation_status": "blocked",
+      "blocking_reason": "当前Python 3.11环境未安装simpeg/discretize；原始notebook版本兼容性尚未验证。",
+      "status": "passed"
+    }
+  },
+  "selected_failures": [],
+  "evidence_status": "Open-data-run",
+  "field_validated": false,
+  "synthetic_run": false,
+  "overall_status": "passed"
+}

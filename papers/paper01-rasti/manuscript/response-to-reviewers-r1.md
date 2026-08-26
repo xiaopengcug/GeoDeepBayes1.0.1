@@ -1,23 +1,25 @@
+# SIMULATED INTERNAL REVIEW RESPONSE — NOT JOURNAL CORRESPONDENCE
+
 # Response to the Editor and Reviewers — Major Revision, Round 1
 
 **Target journal:** *RAS Techniques and Instruments* (RASTI)
 **Manuscript:** *An Auditable Bayesian Fusion Framework for Deep Mineral Exploration Under Cover: Formulation, Component-Level Synthetic Evidence, and a Failed Joint Pilot*
 
-This is the Stage 4 working response. The scientific, governance and literature-comparison corrections described below have been applied through a two-round, hash-bound revision chain. The second round withdrew residual nearest-neighbour scores and score-dependent novelty arguments in favour of an identity-verified discovery inventory plus a location-specific full-text recoding protocol. Author-confirmed Funding, author-confirmed CRediT roles, and an immutable public release or final availability decision remain outstanding. Accordingly, this response is not yet an upload-ready cover letter.
+This is a simulated Stage 4 working response, not correspondence from RASTI. The scientific, governance and literature-comparison corrections described below have been applied through a hash-bound revision chain. Residual nearest-neighbour scores and score-dependent novelty arguments were withdrawn in favour of an identity-verified discovery inventory plus a location-specific full-text recoding protocol. The corresponding author has confirmed the Funding and CRediT statements. Formal release remains blocked until the new candidate commit passes the separate human-verification gate, so this response is not an upload-ready cover letter.
 
 ## Overall response
 
 We thank the Editor and Reviewers for identifying a mismatch between the original manuscript's framework-level framing and its component-level evidence. We chose the formulation/protocol route. The revised title, abstract, contribution statement, limitations and conclusion now consistently state that the manuscript reports a formulation, component-level Synthetic-run evidence and a failed joint pilot. It makes no claim of validated assembled fusion, exercised multi-scale behaviour, field validity or production-scale practicality.
 
-The diagnostics implementation was also corrected and replayed. Non-finite and degenerate channels now fail closed; the Blom plotting position is aligned with the contract; 24 selected regression tests pass; 65 historical joint-chain files preserve their source hashes and remain `Failed -> Failed`; and all 42 post-hoc gate-ledger rows are exactly reconstructible from hashed per-run inputs. The generic algorithm-correctness asset was separately replayed under the corrected formula, and its four conservatively rounded manuscript values are unchanged.
+The diagnostics implementation was also corrected and replayed. Non-finite and degenerate channels now fail closed; the Blom plotting position is aligned with the contract; the curated release suite reports 57 passing tests; 65 historical joint-chain files preserve their source hashes and remain `Failed -> Failed`; and all 42 post-hoc gate-ledger rows are exactly reconstructible from hashed per-run inputs. The generic algorithm-correctness asset was separately replayed under the corrected formula, and its four conservatively rounded manuscript values are unchanged.
 
 ## Editor / journal-fit comments
 
 ### REV-EIC-1 — Submission-facing narrative and production annotations
 
-**Response:** Addressed in the editorial view. Section 8.4 was compressed to a short scientific motivation for the governance design, and three repetitive internal-audit paragraphs were removed from the anchored revision. A deterministic final clean render removes 614 block markers and 212 ARS evidence-note spans without semantic edits. The underlying anchored manuscript remains available for audit.
+**Response:** Addressed in the editorial view. Section 8.4 was compressed to a short scientific motivation for the governance design, and three repetitive internal-audit paragraphs were removed from the anchored revision. A deterministic final clean render removes 617 block markers, 212 ARS evidence-note spans and 95 reference-pipeline notes without semantic edits. The underlying anchored manuscript remains available for audit.
 
-**Locations:** §8.4; `stage4-revision/submission/manuscript-v3-rasti-clean.md`; clean-render report.
+**Locations:** §8.4; `manuscript/manuscript-clean.md`; `provenance/clean-render-report.json`.
 
 ### REV-EIC-2 — Consistent article identity and claim strength
 
@@ -27,13 +29,13 @@ The diagnostics implementation was also corrected and replayed. Non-finite and d
 
 ### REV-EIC-3 — Repository fact and external audit route
 
-**Response:** Partially addressed, with the remaining dependency disclosed. The manuscript now states that a public repository exists at `https://github.com/xiaopengcug/GeoDeepBayes1.0.1`, while the paper-specific Stage 4 materials have not been pushed and no immutable public commit, tag or archive identifier is claimed. A local hash-bound replay bundle and adopter checklist have been produced. An immutable public release remains required before a citation-grade external replay claim can be made.
+**Response:** Addressed at release-candidate scope. The manuscript identifies the public repository at `https://github.com/xiaopengcug/GeoDeepBayes1.0.1`; the curated candidate contains the manuscript, evidence registry, replay bundle, figures, supplement and adopter checklist. The candidate branch may be pushed for inspection, but no formal tag, GitHub Release or DOI is claimed until human verification and explicit release authorization bind a full candidate commit SHA.
 
 **Locations:** §8.5; Code and data availability; reproducibility supplement; revision evidence bundle.
 
 ### REV-EIC-4 — Funding and CRediT declarations
 
-**Response:** Not closed. The repository does not provide reliable author-owned Funding or CRediT facts, and these statements have not been inferred from project activity. The manuscript now states the dependency explicitly. The corresponding author must supply and approve both declarations before submission.
+**Response:** Addressed from author-owned facts. The corresponding author confirmed that no specific grant was received and approved the CRediT allocation. Li Xiao Peng's `Writing – original draft` role is reconciled with the AI disclosure: AI tools assisted under his direction and review, he made substantive revisions, and he accepts responsibility for the manuscript; AI tools are not authors.
 
 **Locations:** Funding; Author contributions.
 
@@ -53,7 +55,7 @@ The diagnostics implementation was also corrected and replayed. Non-finite and d
 
 ### REV-R1-4 — Diagnostics contract, non-finite handling and replay
 
-**Response:** Addressed in code, tests and read-only replay. The rank-normalisation denominator now uses $(r-3/8)/(N+1/4)$. Non-finite inputs, non-finite derived diagnostics and finite zero-range channels fail closed with structured reasons; aggregation no longer discards them. The selected regression suite reports 24 passed and one slow test deselected. Read-only replay of 65 historical joint chain files preserved all source hashes and yielded `Failed -> Failed = 65`, with `nonfinite_diagnostic = 65`. Degenerate-channel counts were one in 57 files, two in 3 files and six in 5 files. A separate replay of EVD-ALGO-002 retained all four manuscript values after conservative rounding.
+**Response:** Addressed in code, tests and read-only replay. The rank-normalisation denominator now uses $(r-3/8)/(N+1/4)$. Non-finite inputs, non-finite derived diagnostics and finite zero-range channels fail closed with structured reasons; aggregation no longer discards them. The curated release suite reports 57 passing tests. Read-only replay of 65 historical joint chain files preserved all source hashes and yielded `Failed -> Failed = 65`, with `nonfinite_diagnostic = 65`. Degenerate-channel counts were one in 57 files, two in 3 files and six in 5 files. A separate replay of EVD-ALGO-002 retained all four manuscript values after conservative rounding.
 
 **Locations:** §6.1 and §8.5; diagnostic replay evidence under `stage4-revision/evidence/`.
 

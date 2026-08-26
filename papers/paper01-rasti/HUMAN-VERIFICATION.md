@@ -20,6 +20,8 @@ This checklist implements the corresponding author's requirement that the releas
 - [ ] No passage claims field validation, discovery performance, resource quantities, production-scale readiness, or independent reproduction.
 - [ ] The multi-scale mechanism remains described as specified but not exercised by a gate-passing assembled endpoint.
 - [ ] Table 5 and Appendix A retain `unknown` for unreviewed full-text element cells; no withdrawn novelty score reappears.
+- [ ] Alemie & Sacchi (2011) is described as a trivariate Cauchy prior, and the 42-run design is explicitly decomposed as 30 λ-grid, 2 adaptive-Metropolis, and 10 weighted runs.
+- [ ] Main-text Tables 1–5a, Figures 1–5, P1–P6, and Eqs. (6.1)–(6.2) appear in order; every figure opens and matches its caption.
 
 ## C. Package and replay
 
@@ -27,15 +29,19 @@ This checklist implements the corresponding author's requirement that the releas
 - [ ] The clean manuscript contains no `<!--block:...-->` markers or `⟦...⟧` ARS notes.
 - [ ] The anchored manuscript and provenance files are clearly separated from the clean editorial view.
 - [ ] The clean-environment commands in `README.md` pass on the candidate commit.
+- [ ] The published healthy-chain positive control passes through `src/geodeepbayes/benchmarks/joint_block.py`.
+- [ ] The DO-27 derived attachment hash, frozen Zenodo source record, MIT text, and provenance boundary all verify.
 - [ ] The replay is described as author-managed and does not claim independent reproduction.
-- [ ] Exclusion of raw historical chain arrays, vendor SDKs/DLLs, and raw DO27 input is acceptable and accurately disclosed.
+- [ ] The revision bundle verifies all 19 internal path/hash links, and no redundant outer bundle copy remains.
+- [ ] The high-confidence credential scan reports zero findings; no access token or private key is present in the candidate tree.
+- [ ] Inclusion of the synthetic algorithm `raw-chains.npz` and DO-27 derived `raw-numerics.npz`, and exclusion of the 65 historical joint-pilot chain arrays, vendor SDKs/DLLs, and original DO-27 archive are acceptable and accurately disclosed.
 
 ## D. GitHub and Zenodo preview
 
 - [ ] Proposed tag: `paper01-rasti-v1.0.0`.
 - [ ] GitHub release title and notes accurately state the failed joint pilot and evidence ceiling.
 - [ ] `CITATION.cff` creator names, order, affiliation, and ORCID are correct.
-- [ ] `.zenodo.json` title, creator order, affiliation, keywords, licence note, and non-independent-reproduction boundary are correct.
+- [ ] `.zenodo.json` title, creator order, affiliation, keywords, explicit `access_right: open`, `license: other-closed`, and non-independent-reproduction boundary are correct.
 - [ ] The repository remains enabled in the author's Zenodo GitHub integration.
 
 ## Author release decision

@@ -1,0 +1,194 @@
+{
+  "run_id": "open-data-20260717-03",
+  "evidence_id": "EVD-OPEN-001",
+  "status": "Open-data-run",
+  "started_at": "2026-07-17T06:39:23.557317+00:00",
+  "completed_at": "2026-07-17T06:39:28.382201+00:00",
+  "inputs": [
+    {
+      "path": "00_catalog/open_geophysics_data_manifest.json",
+      "sha256": "bf01cdfc0cc3e4e3826fd6ff002071687c3be91e46c0e16d78c68c1edc671743"
+    },
+    {
+      "path": "mt-dataset/00_catalog/mt_download_manifest.json",
+      "sha256": "18a6729a7d4e4a7d24fd7c91a5c968d11374d7bf7f4b895645658b55b0c9963c"
+    },
+    {
+      "path": "magnetic/USGS_MountainPass_airborne_magnetic_2020/Magnetic_Data.csv",
+      "sha256": "361245a2e779131e93f3d5aa5e9429b14d9d40199d108c1d21d1e2c7b6d72ad8"
+    },
+    {
+      "path": "gravity/USGS_MountainPass_airborne_gravity_gradiometry_grids_2020/602202_Fourier_gD_2p67_final.gxf",
+      "sha256": "043b20917707ab4d599125f25657e99fefadbef6ed1e95f3c224013fa3c9919c"
+    },
+    {
+      "path": "mt/USGS_SanAndreas_Parkfield_MT_EDI_1990/Magnetotelluric_Cross-Power_EDI.zip",
+      "sha256": "331055e9064ed80328aa8c19472836f87fd130c03959908e32e110e3c0d3b7c1"
+    },
+    {
+      "path": "dc_ip/USGS_LittleColoradoRiver_ERT_2019/MB2.5.zip",
+      "sha256": "bd55803b3cef0538a15315ceb1e512a0102293d2fd6a8db82a3287695c3bd258"
+    },
+    {
+      "path": "tem/USGS_DineroTunnel_TEM_2023/2023_Dinero_Tunnel_TEM_inversion_results.zip",
+      "sha256": "e1df1fa206029c7a3361264e09a890e996e3712e94ebe178efe1c393ee1bb4ce"
+    },
+    {
+      "path": "csamt/USGS_Hualapai_CSAMT_GrandCanyonWest_PlainTankFlat_2019/Station-GrandCanyonWest_PlainTankFlat.zip",
+      "sha256": "e22aaf87194ca2fd06e0bfc6c01ceadaefb75c169c350a313bb5cd010f5337ad"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/1 WFEM apparent resistivity of L1.dat",
+      "sha256": "48fddf5651293d90303a0a5ecaa4d9834c564400d4e4193cebf03cff4bb90235"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/10 WFEM apparent resistivity of W2.dat",
+      "sha256": "d2a57054b8010229246a45ac0d50788fc40772799b1f145f37ae90d8a432a695"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/11 WFEM apparent resistivity of W3.dat",
+      "sha256": "e5d40971fc06e37315471f8e80f10a6fe236b1f1fea91d16aedf88fbacb53b54"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/12 WFEM apparent resistivity of W4.dat",
+      "sha256": "9534ff73f5b0068914bf5af5b5e0c928bd329367e29e8677e8b2266166c2b883"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/13 WFEM apparent resistivity of W5.dat",
+      "sha256": "9046701a9c3653b776f3113027bf6d5bc1cb3cdd880726a96cdf499a6a37db0f"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/14 WFEM apparent resistivity of W6.dat",
+      "sha256": "625c6cdac8e4bac5d5818a6b550daa98c5ff1e4c6f364a9186a5eadbc5f0d3e0"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/15 WFEM apparent resistivity of W7.dat",
+      "sha256": "18bef7add9d17474ccc13825f9f9860ead64932f9cdb0e811caf5ea43b1d9e60"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/16 WFEM apparent resistivity of W8.dat",
+      "sha256": "b42fd43b28f71f924b89de883be42fdff142a3be89bf931240c5c333cbc6cef6"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/17 WFEM apparent resistivity of W9.dat",
+      "sha256": "2b05526dfa3ca1f7f9fbfa540d150b6624e571d4ca34798938cf35dfd58e3f53"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/18 WFEM apparent resistivity of W10.dat",
+      "sha256": "d9beeeae6f10a95473a45f9d00c829dbb5023c5a0c0d5baadbb9cefb9274c70c"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/19 WFEM apparent resistivity of W11.dat",
+      "sha256": "55a10ce68bf3028834df8d4463943ddede99506af9c0560a741e035090f3d6e6"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/2 WFEM apparent resistivity of L2.dat",
+      "sha256": "39c24bbc29a68bb2a1c44d457ddf02fcddb258dc9f0ab9b76b0a13dcba920c47"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/20 WFEM apparent resistivity of E1.dat",
+      "sha256": "236ece53b4cabeebf8d2c5a381fa1dc7cd0990354083a5086d37b51bb7c4705f"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/21 WFEM apparent resistivity of E2.dat",
+      "sha256": "0dd6c7646fffa89dda2567be7c69c9410d123c89f10dbff4ce22275311967bac"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/22 WFEM apparent resistivity of E3.dat",
+      "sha256": "db44666096d579797e2f1a8d7badefcabfa942d2a9db812498e7d15344eab835"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/23 WFEM apparent resistivity of E4.dat",
+      "sha256": "a6680d67c114876e69b29ca8d2540e8c0c6cae1472807f799129d6cc49ab8c11"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/24 WFEM apparent resistivity of E5.dat",
+      "sha256": "de15c828607fc5088e16fb8e12b0b0867f84cee791d81925b48b9a1cf731bc6b"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/25 WFEM apparent resistivity of E6.dat",
+      "sha256": "281e056c1fe1adb5bf7d87c08028d9cdb921a4b256b9f226efb13e13cf134a9f"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/26 WFEM apparent resistivity of E7.dat",
+      "sha256": "2c4a7ca117045484c49fd8215bb1e8aa5b76d6860355b50e20fa14640dd8ea30"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/27 WFEM apparent resistivity of E8.dat",
+      "sha256": "2dd05c8907014b960d6f8e3c4333fcd4a01f2a4b81244be17f3a0d6c0026947e"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/3 WFEM apparent resistivity of L3.dat",
+      "sha256": "7cc5d36b43cd05a71331bf1a12f7e494f6745593bf0eee8069bb0a947707cd6c"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/4 WFEM apparent resistivity of L4.dat",
+      "sha256": "25d8476e963a9d6ca76694d5d0b5eb95abdea6d91a9601640f50e2ecbb7584f6"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/5 WFEM apparent resistivity of L5.dat",
+      "sha256": "93500cfd8b651195848ce2b28df1598bd6b7e6356f281c3506ee1c6c1465d344"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/6 WFEM apparent resistivity of L6.dat",
+      "sha256": "2a84bed43f859a95dc2ca07821d49c22c30d2053c05d2b9e765cf5d6d905cc4e"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/7 WFEM apparent resistivity of L7.dat",
+      "sha256": "87650422d04c05c0d06830863a521fb30e8112b7747edf81ff045e052f1749d1"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/8 WFEM apparent resistivity of L8.dat",
+      "sha256": "401791a8b9fbafe5dbf360a3fac41d5c7fdb2bffcc4d6ca1b76411b8ef5d2689"
+    },
+    {
+      "path": "wfem/Zenodo_BaotuSpring_WFEM_2025/9 WFEM apparent resistivity of W1.dat",
+      "sha256": "057cf204e853463062a2a4e9a8cdcfae611112e4bf0e18f68fb844f646705ed7"
+    },
+    {
+      "path": "mining_geophysics/Zenodo_DO27_kimberlite_gravity_magnetic_joint_inversion_synthetic/simpeg-research_Astic-2020-JointInversion-1.0.0.zip",
+      "sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e"
+    }
+  ],
+  "script": {
+    "path": "validate_open_data.py",
+    "sha256": "c0db1b059bfce50e90f779bc6703b726324c1c7d5e570d99e240d0142f998d26"
+  },
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "powershell": "7+",
+    "python": "3.11.0"
+  },
+  "checks": [
+    {
+      "name": "manifest-local-integrity",
+      "status": "passed",
+      "detail": "0 local failures"
+    },
+    {
+      "name": "multi-format-open-data",
+      "status": "passed",
+      "detail": "8 selected checks passed"
+    },
+    {
+      "name": "do27-inversion-runtime",
+      "status": "blocked",
+      "detail": "当前Python 3.11环境未安装simpeg/discretize；原始notebook版本兼容性尚未验证。"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "runs/open-data-20260717-03/integrity.json",
+      "sha256": "13d1d984b3542231117dcdb5afe094300d7bc757d46daa9427c7ae9e02d0dbb8"
+    },
+    {
+      "path": "runs/open-data-20260717-03/results.json",
+      "sha256": "d8bfe2f0dc0592f8b5b51990b297d3cd19e6aa6771abe3bf0d8ff48d33052aa1"
+    }
+  ],
+  "approval": {
+    "owner": null,
+    "date": null,
+    "decision": "pending"
+  }
+}

@@ -180,9 +180,9 @@ def main(argv=None):
     p.add_argument("--output", default=None, help="run 输出目录")
     p.add_argument("--seed", type=int, default=20260717)
     args = p.parse_args(argv)
+    # 2026-08-02 文档治理：src 已随验证代码迁入治理档案，parents[3] 即档案根。
     out_dir = args.output or str(
-        Path(__file__).resolve().parents[3] / "_bmad-output" / "planning-artifacts" /
-        "research" / "贝叶斯思想与重磁电电磁深度融合技术体系" / "validation" /
+        Path(__file__).resolve().parents[3] / "validation" /
         "runs" / f"synthetic-block-{_dt.datetime.utcnow().strftime('%Y%m%d')}")
     m = run(out_dir, seed=args.seed)
     print(json.dumps(m, indent=2, ensure_ascii=False))

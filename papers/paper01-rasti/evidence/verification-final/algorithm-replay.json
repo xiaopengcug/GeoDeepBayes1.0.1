@@ -1,8 +1,8 @@
 {
   "schema_version": "ars-stage4-rev-r1-4-algo-diagnostic-replay-v1",
-  "generated_at_utc": "2026-08-23T21:25:37.908810+00:00",
+  "generated_at_utc": "2026-08-26T04:19:14.954421+00:00",
   "operation": "read-only historical replay; predecessor files preserved",
-  "source_root": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系-治理与验证档案/validation/wp7/versions/synthetic-block-v6-20260724",
+  "source_root": "H:/GeoDeepBayes-release-worktrees/paper01-rasti-release/validation/wp7/versions/synthetic-block-v6-20260724",
   "source_sha256_before": {
     "raw-chains.npz": "15d340931a0cbff92adb50a27ecf967cb05bc302d319e7cddcfd179d5c53e3b4",
     "metrics.json": "43f6e99ef01551f222fdf276f41843c402d5b9a633e7ce03533cd49b851d4199"
@@ -15,7 +15,7 @@
   "config_sha256": "69114b631eebe7a1014380949aa10ee9c801104397ffe0880a875a2dd8d2c7a8",
   "code_sha256": {
     "rhat.py": "2a4408976cf8cfca2fae67e76138dbbb439a9cb16709384bd97d798753d24523",
-    "ess.py": "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+    "ess.py": "111fc44474ad6a22f618b66e5e87ddbf79511b06714f266e9205e8b80fff5292",
     "mcse.py": "ecc6efabb7702a469bdd47d1b302525600796cf6f8d57477a30fb3b2b6c5d65f"
   },
   "recorded_diagnostics": {

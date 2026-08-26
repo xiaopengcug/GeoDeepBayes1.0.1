@@ -5,7 +5,101 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
+import os
+import re
+import tempfile
 from pathlib import Path
+from typing import Any
+
+
+PAPER_RELATIVE = Path("papers") / "paper01-rasti"
+MANIFEST_RELATIVE = PAPER_RELATIVE / "release-manifest.json"
+REPLAY_RESULT_RELATIVE = PAPER_RELATIVE / "replay-result.json"
+MANIFEST_EXCLUDED_PATHS = (
+    MANIFEST_RELATIVE.as_posix(),
+    REPLAY_RESULT_RELATIVE.as_posix(),
+)
+EXCLUDED_DIRECTORY_NAMES = {
+    ".codegraph",
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".uv-cache",
+    ".venv",
+    "__pycache__",
+}
+BLOCK_MARKER = re.compile(r"(?m)^<!--block:B[0-9]+-->\r?\n?")
+EVIDENCE_NOTE = re.compile(r"\s*⟦.*?⟧", re.DOTALL)
+REFERENCE_PIPELINE_NOTE = re.compile(
+    r"(?m)\s+(?:（[^`\r\n]*）)?`\[LIT:[^\r\n]*$"
+)
+REFERENCE_NOTE_HEADER = re.compile(r"(?m)^> \*\*著录说明\*\*[^\r\n]*(?:\r?\n)?")
+ANCHORED_BLOCK_RE = re.compile(
+    r"(?ms)^<!--block:(B\d+)-->\r?\n(.*?)(?=^<!--block:B\d+-->\r?\n|\Z)"
+)
+BLOCK_LEADING_BOLD = re.compile(r"^\*\*([^*\r\n]+)\*\*")
+CAPTION_OR_FRONT_MATTER = re.compile(
+    r"^\*\*(?:Table|Figure|Keywords|Li Xiao Peng)", re.IGNORECASE
+)
+ALLOWED_TRANSFORMATIONS = {
+    "block_marker_lines",
+    "evidence_note_spans",
+    "reference_pipeline_notes",
+}
+
+REQUIRED_RELEASE_MEMBERS = (
+    "papers/paper01-rasti/figures/figure-1-framework-governance.pdf",
+    "papers/paper01-rasti/figures/figure-1-framework-governance.png",
+    "papers/paper01-rasti/figures/figure-2-probabilistic-dag.pdf",
+    "papers/paper01-rasti/figures/figure-2-probabilistic-dag.png",
+    "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.pdf",
+    "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.png",
+    "papers/paper01-rasti/figures/figure-4-evd-joint-scene.pdf",
+    "papers/paper01-rasti/figures/figure-4-evd-joint-scene.png",
+    "papers/paper01-rasti/figures/figure-5-algo-diagnostics.pdf",
+    "papers/paper01-rasti/figures/figure-5-algo-diagnostics.png",
+    "papers/paper01-rasti/supplement/reproducibility-and-adoption-checklist-r1.md",
+    "papers/paper01-rasti/evidence/positive-control/joint-diagnostics-input.npz",
+    "papers/paper01-rasti/evidence/positive-control/joint-diagnostics-expected.json",
+    "src/geodeepbayes/benchmarks/joint_block.py",
+    "validation/wp2-toy/diagnostic-contract.json",
+    "validation/wp7/synthetic-v6-config.json",
+    "validation/wp8/evidence/feasibility-v1/wp8-synthetic-completion-v1.json",
+    "validation/wp7/versions/synthetic-block-v6-20260724/run-manifest.json",
+    "validation/wp7/versions/synthetic-block-v6-20260724/metrics.json",
+    "validation/wp7/versions/synthetic-block-v6-20260724/raw-chains.npz",
+    "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+    "validation/wp7/versions/do27-v4-20260724/PROVENANCE.md",
+    "validation/wp7/versions/do27-v4-20260724/raw-numerics.npz",
+    "validation/wp7/versions/do27-v4-20260724/source_record.zenodo.json",
+    "validation/wp7/versions/do27-v4-20260724/UPSTREAM-LICENSE-MIT.txt",
+    "validation/runs/open-data-20260717-03/run-manifest.json",
+)
+CREDENTIAL_PATTERNS = (
+    (
+        "named_token_or_key",
+        re.compile(
+            r"(?i)(?:ZENODO(?:_ACCESS)?_TOKEN|GITHUB_TOKEN|GH_TOKEN|"
+            r"OPENAI_API_KEY|S2_API_KEY|OPENALEX_API_KEY|API_KEY|ACCESS_TOKEN)"
+            r"\s*[:=]\s*[\"']?[A-Za-z0-9_./+\-=]{16,}"
+        ),
+    ),
+    ("github_classic_pat", re.compile(r"\bgh[pousr]_[A-Za-z0-9]{30,}\b")),
+    ("github_fine_grained_pat", re.compile(r"\bgithub_pat_[A-Za-z0-9_]{50,}\b")),
+    ("openai_key", re.compile(r"\bsk-[A-Za-z0-9_-]{20,}\b")),
+    ("aws_access_key", re.compile(r"\b(?:AKIA|ASIA)[A-Z0-9]{16}\b")),
+    ("slack_token", re.compile(r"\bxox[baprs]-[A-Za-z0-9-]{20,}\b")),
+    (
+        "private_key",
+        re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
+    ),
+    (
+        "bearer_credential",
+        re.compile(r"(?i)Authorization\s*[:=]\s*[\"']?Bearer\s+[A-Za-z0-9._~+\-/]{20,}"),
+    ),
+)
 
 
 class VerificationError(RuntimeError):
@@ -23,19 +117,50 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def build_manifest(root: Path) -> dict:
-    """确定性生成发布成员清单，不包含自引用或运行时输出。"""
-    root = Path(root).resolve()
-    excluded_names = {"release-manifest.json", "replay-result.json"}
-    members = []
-    for path in sorted(root.rglob("*"), key=lambda item: item.as_posix()):
-        relative = path.relative_to(root)
+def _repository_root(paper_root: Path) -> Path:
+    paper_root = Path(paper_root).resolve()
+    if paper_root.name != "paper01-rasti" or paper_root.parent.name != "papers":
+        raise VerificationError(
+            f"发布包根目录必须是 <repository>/papers/paper01-rasti：{paper_root}"
+        )
+    return paper_root.parents[1]
+
+
+def _resolve_within(root: Path, relative: str, label: str) -> Path:
+    candidate = (root / relative).resolve()
+    try:
+        candidate.relative_to(root.resolve())
+    except ValueError as exc:
+        raise VerificationError(f"{label}路径越界：{relative}") from exc
+    return candidate
+
+
+def _manifest_files(repository: Path) -> list[Path]:
+    repository = Path(repository).resolve()
+    members: list[Path] = []
+    for path in repository.rglob("*"):
         if not path.is_file():
             continue
-        if path.name in excluded_names or "__pycache__" in relative.parts:
+        relative = path.relative_to(repository)
+        if EXCLUDED_DIRECTORY_NAMES.intersection(relative.parts):
+            continue
+        if any(part.endswith(".egg-info") for part in relative.parts):
+            continue
+        if relative in {MANIFEST_RELATIVE, REPLAY_RESULT_RELATIVE}:
             continue
         if path.suffix in {".pyc", ".pyo"}:
             continue
+        members.append(path)
+    return sorted(members, key=lambda item: item.relative_to(repository).as_posix())
+
+
+def build_manifest(root: Path) -> dict:
+    """确定性生成候选树中除自引用清单与运行时输出外的成员清单。"""
+    root = Path(root).resolve()
+    repository = _repository_root(root)
+    members = []
+    for path in _manifest_files(repository):
+        relative = path.relative_to(repository)
         members.append(
             {
                 "path": relative.as_posix(),
@@ -44,7 +169,9 @@ def build_manifest(root: Path) -> dict:
             }
         )
     return {
-        "schema_version": "paper01-release-manifest/1.0",
+        "schema_version": "paper01-release-manifest/1.2",
+        "scope": "repository_tag_tree_excluding_declared_self_and_runtime_outputs",
+        "excluded_paths": list(MANIFEST_EXCLUDED_PATHS),
         "package_status": "release_candidate_pending_human_verification",
         "members": members,
     }
@@ -63,45 +190,102 @@ def write_manifest(root: Path) -> Path:
 
 
 def verify_manifest(root: Path) -> int:
-    """逐项重算 `release-manifest.json` 成员 SHA-256。"""
+    """按显式排除边界重算候选树成员集合、字节数和 SHA-256。"""
     root = Path(root).resolve()
+    repository = _repository_root(root)
     manifest = _read_json(root / "release-manifest.json")
-    if manifest.get("schema_version") != "paper01-release-manifest/1.0":
+    if manifest.get("schema_version") != "paper01-release-manifest/1.2":
         raise VerificationError("发布清单 schema_version 不受支持")
+    if (
+        manifest.get("scope")
+        != "repository_tag_tree_excluding_declared_self_and_runtime_outputs"
+        or manifest.get("excluded_paths") != list(MANIFEST_EXCLUDED_PATHS)
+    ):
+        raise VerificationError("发布清单未精确声明自引用与运行时输出排除边界")
     members = manifest.get("members")
     if not isinstance(members, list) or not members:
         raise VerificationError("发布清单没有成员")
 
     seen: set[str] = set()
+    declared: dict[str, dict[str, Any]] = {}
     for row in members:
         relative = row.get("path")
         expected = row.get("sha256")
-        if not isinstance(relative, str) or not isinstance(expected, str):
+        expected_bytes = row.get("bytes")
+        if (
+            not isinstance(relative, str)
+            or not isinstance(expected, str)
+            or not isinstance(expected_bytes, int)
+        ):
             raise VerificationError("发布清单成员字段不完整")
         if relative in seen:
             raise VerificationError(f"发布清单含重复路径：{relative}")
         seen.add(relative)
-        member = (root / relative).resolve()
-        try:
-            member.relative_to(root)
-        except ValueError as exc:
-            raise VerificationError(f"发布清单路径越界：{relative}") from exc
+        declared[relative] = row
+        member = _resolve_within(repository, relative, "发布清单")
         if not member.is_file():
             raise VerificationError(f"发布清单成员不存在：{relative}")
+        if member.stat().st_size != expected_bytes:
+            raise VerificationError(
+                f"发布清单成员字节数不一致：{relative}，"
+                f"expected={expected_bytes}，actual={member.stat().st_size}"
+            )
         actual = _sha256(member)
         if actual != expected:
             raise VerificationError(
                 f"发布清单成员 SHA-256 不一致：{relative}，expected={expected}，actual={actual}"
             )
+
+    actual_paths = {
+        path.relative_to(repository).as_posix() for path in _manifest_files(repository)
+    }
+    declared_paths = set(declared)
+    missing = sorted(declared_paths - actual_paths)
+    unlisted = sorted(actual_paths - declared_paths)
+    if missing or unlisted:
+        raise VerificationError(
+            "发布清单成员集合不一致："
+            f"缺失={missing or []}；未登记={unlisted or []}"
+        )
     return len(members)
 
 
 def verify_evidence(root: Path) -> dict[str, int]:
-    """验证 Stage 4 冻结摘要，不把摘要升级为原始链的独立重算。"""
+    """从记录层重算 Stage 4 冻结摘要，不重跑原始实验。"""
+    root = Path(root).resolve()
+    repository = _repository_root(root)
     verification = Path(root) / "evidence" / "verification-final"
     joint = _read_json(verification / "joint-replay-summary.json")
     algorithm = _read_json(verification / "algorithm-replay.json")
     m2 = _read_json(verification / "m2-reconstruction-lineage.json")
+
+    joint_records = joint.get("records")
+    if not isinstance(joint_records, list) or len(joint_records) != 65:
+        raise VerificationError("联合历史记录层必须恰含 65 条记录")
+    joint_paths = [row.get("source_relative_path") for row in joint_records]
+    if any(not isinstance(path, str) for path in joint_paths) or len(set(joint_paths)) != 65:
+        raise VerificationError("联合历史逐条记录的源路径必须完整且唯一")
+    record_transition_count = sum(
+        row.get("status_transition") == {"from": "Failed", "to": "Failed"}
+        for row in joint_records
+    )
+    record_stop_count = sum(
+        row.get("replayed_diagnostics", {}).get("diagnostic_stop_reason")
+        == "nonfinite_diagnostic"
+        for row in joint_records
+    )
+    record_integrity_count = sum(
+        row.get("source_integrity_preserved") is True for row in joint_records
+    )
+    if (
+        record_transition_count != 65
+        or record_stop_count != 65
+        or record_integrity_count != 65
+    ):
+        raise VerificationError(
+            "联合历史逐条记录层不满足 65 个 Failed->Failed、"
+            "nonfinite_diagnostic 与完整性保持"
+        )
 
     joint_sources = joint.get("source_count")
     joint_summary = joint.get("summary", {})
@@ -111,26 +295,106 @@ def verify_evidence(root: Path) -> dict[str, int]:
     stop_count = joint_summary.get("diagnostic_stop_reason_counts", {}).get(
         "nonfinite_diagnostic"
     )
-    if joint_sources != 65 or transition_count != 65:
+    if joint_sources != len(joint_records) or transition_count != record_transition_count:
         raise VerificationError(
             "联合历史状态必须保持 65 个 Failed->Failed 记录"
         )
-    if stop_count != 65 or joint_summary.get("all_source_integrity_preserved") is not True:
+    if (
+        stop_count != record_stop_count
+        or joint_summary.get("all_source_integrity_preserved")
+        is not (record_integrity_count == len(joint_records))
+    ):
         raise VerificationError("联合历史摘要的完整性或 fail-closed 原因不一致")
+
+    config_path = repository / "validation" / "wp7" / "synthetic-v6-config.json"
+    config = _read_json(config_path)
+    if algorithm.get("config_sha256") != _sha256(config_path):
+        raise VerificationError("算法阈值配置 SHA-256 与发布树文件不一致")
+    thresholds = config.get("thresholds", {})
+    replayed = algorithm.get("replayed_diagnostics", {})
+
+    def finite_number(value: object) -> bool:
+        return (
+            isinstance(value, (int, float))
+            and not isinstance(value, bool)
+            and math.isfinite(float(value))
+        )
+
+    threshold_inputs = {
+        "rhat": (replayed.get("max_rhat"), thresholds.get("max_rhat"), "max"),
+        "bulk_ess": (
+            replayed.get("min_bulk_ess"),
+            thresholds.get("min_bulk_ess"),
+            "min",
+        ),
+        "tail_ess": (
+            replayed.get("min_tail_ess"),
+            thresholds.get("min_tail_ess"),
+            "min",
+        ),
+        "relative_mcse": (
+            replayed.get("max_relative_mcse"),
+            thresholds.get("max_relative_mcse"),
+            "max",
+        ),
+    }
+    computed_checks: dict[str, bool] = {}
+    for name, (value, threshold, direction) in threshold_inputs.items():
+        if not finite_number(value) or not finite_number(threshold):
+            raise VerificationError(f"算法阈值重算输入非有限或缺失：{name}")
+        computed_checks[name] = (
+            float(value) <= float(threshold)
+            if direction == "max"
+            else float(value) >= float(threshold)
+        )
 
     checks = algorithm.get("threshold_checks", {})
     required_checks = ("rhat", "bulk_ess", "tail_ess", "relative_mcse")
-    if algorithm.get("all_four_thresholds_pass") is not True or not all(
-        checks.get(name) is True for name in required_checks
+    if checks != computed_checks:
+        changed = [name for name in required_checks if checks.get(name) != computed_checks[name]]
+        raise VerificationError(f"算法阈值布尔摘要与重算不一致：{changed}")
+    if (
+        algorithm.get("source_integrity_preserved") is not True
+        or algorithm.get("all_four_thresholds_pass") is not all(computed_checks.values())
+        or not all(computed_checks.values())
     ):
         raise VerificationError("算法组件的四项登记阈值未全部通过")
 
     m2_summary = m2.get("summary", {})
+    m2_records = m2.get("records")
+    if not isinstance(m2_records, list) or len(m2_records) != 42:
+        raise VerificationError("M2 逐条记录层必须恰含 42 条记录")
+    run_ids = [row.get("run_id") for row in m2_records]
+    if any(not isinstance(run_id, str) for run_id in run_ids) or len(set(run_ids)) != 42:
+        raise VerificationError("M2 逐条记录的 run_id 必须完整且唯一")
+    record_exact = sum(
+        row.get("ledger_row_exact_match") is True for row in m2_records
+    )
+    if record_exact != 42:
+        raise VerificationError("M2 逐条记录层未保持 42/42 精确匹配")
+
+    lambda_grid_pattern = re.compile(
+        r"^s0[0-4]__lam-(?:0|1|10|100|1000|10000)__da$"
+    )
+    am_pattern = re.compile(r"^s0[01]__lam-1000__am$")
+    weighted_pattern = re.compile(
+        r"^s0[0-4]__lam-1000__w(?:-xifrozen)?__da$"
+    )
+    decomposition = (
+        sum(bool(lambda_grid_pattern.fullmatch(run_id)) for run_id in run_ids),
+        sum(bool(am_pattern.fullmatch(run_id)) for run_id in run_ids),
+        sum(bool(weighted_pattern.fullmatch(run_id)) for run_id in run_ids),
+    )
+    if decomposition != (30, 2, 10):
+        raise VerificationError(
+            f"M2 的 42 条记录必须分解为 30 个 λ 网格、2 个 AM 和 10 个加权臂；实际={decomposition}"
+        )
+
     exact = m2_summary.get("exact_match_count")
     total = m2_summary.get("run_count")
     if (
-        exact != 42
-        or total != 42
+        exact != record_exact
+        or total != len(m2_records)
         or m2_summary.get("all_rows_exact") is not True
         or m2_summary.get("unbound_ledger_run_ids") != []
     ):
@@ -145,6 +409,444 @@ def verify_evidence(root: Path) -> dict[str, int]:
     }
 
 
+def _collect_hash_references(value: object, locator: str = "$") -> list[tuple[str, str, str]]:
+    references: list[tuple[str, str, str]] = []
+    if isinstance(value, dict):
+        path = value.get("path")
+        digest = value.get("sha256")
+        if isinstance(path, str) and isinstance(digest, str):
+            references.append((locator, path, digest))
+        for key, child in value.items():
+            references.extend(_collect_hash_references(child, f"{locator}.{key}"))
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            references.extend(_collect_hash_references(child, f"{locator}[{index}]"))
+    return references
+
+
+def verify_revision_bundle(root: Path) -> dict[str, int]:
+    """遍历并验证 revision-evidence bundle 的全部内部哈希链接。"""
+    root = Path(root).resolve()
+    bundle_root = root / "evidence" / "revision-bundle-r2"
+    bundle_path = bundle_root / "revision-evidence-bundle-r2.json"
+    bundle = _read_json(bundle_path)
+    if bundle.get("schema_version") != "revision-evidence-bundle/1.0":
+        raise VerificationError("revision evidence bundle schema_version 不受支持")
+    references = _collect_hash_references(bundle)
+    if not references:
+        raise VerificationError("revision evidence bundle 没有内部哈希链接")
+    for locator, relative, expected in references:
+        member = _resolve_within(bundle_root, relative, "证据束内部")
+        if not member.is_file():
+            raise VerificationError(f"证据束内部成员不存在：{locator} -> {relative}")
+        actual = _sha256(member)
+        if actual != expected:
+            raise VerificationError(
+                "证据束内部 SHA-256 不一致："
+                f"{locator} -> {relative}，expected={expected}，actual={actual}"
+            )
+    if not isinstance(bundle.get("rounds"), list):
+        raise VerificationError("revision evidence bundle 的 rounds 字段无效")
+    outer = root / "evidence" / "revision-evidence-bundle-r2.json"
+    if outer.exists():
+        raise VerificationError("revision evidence bundle 存在冗余外层副本")
+    refreeze_report = _read_json(
+        root / "provenance" / "revision-bundle-r2-refreeze-report.json"
+    )
+    changes = refreeze_report.get("changes")
+    if (
+        refreeze_report.get("schema_version")
+        != "ars-revision-bundle-refreeze/1.0"
+        or refreeze_report.get("status") != "passed"
+        or refreeze_report.get("bundle_sha256_after") != _sha256(bundle_path)
+        or refreeze_report.get("links_verified") != len(references)
+        or refreeze_report.get("links_updated") != 2
+        or refreeze_report.get("redundant_outer_copy_removed") is not True
+        or not isinstance(changes, list)
+        or len(changes) != 2
+    ):
+        raise VerificationError("revision bundle 重冻结报告与当前证据束不一致")
+    for change in changes:
+        relative = change.get("path")
+        current_sha256 = change.get("current_sha256")
+        if not isinstance(relative, str) or not isinstance(current_sha256, str):
+            raise VerificationError("revision bundle 重冻结变更记录字段不完整")
+        member = _resolve_within(bundle_root, relative, "重冻结报告")
+        if not member.is_file() or _sha256(member) != current_sha256:
+            raise VerificationError(f"revision bundle 重冻结成员漂移：{relative}")
+    return {"links_verified": len(references), "refreeze_report_verified": 1}
+
+
+def render_submission_text(anchored: str) -> str:
+    """仅执行登记过的非语义清洁变换。"""
+    clean = BLOCK_MARKER.sub("", anchored)
+    clean = EVIDENCE_NOTE.sub("", clean)
+    clean = REFERENCE_NOTE_HEADER.sub("", clean)
+    clean = REFERENCE_PIPELINE_NOTE.sub("", clean)
+    clean = re.sub(r"[ \t]+(?=\r?$)", "", clean, flags=re.MULTILINE)
+    clean = re.sub(r"(?:\r?\n){3,}", "\n\n", clean).strip() + "\n"
+    return clean
+
+
+def _atomic_write_bytes(path: Path, content: bytes) -> None:
+    """在同一目录落盘并原子替换，避免发布工件出现半写状态。"""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary_name = tempfile.mkstemp(
+        prefix=f".{path.name}.", suffix=".tmp", dir=path.parent
+    )
+    temporary_path = Path(temporary_name)
+    try:
+        with os.fdopen(descriptor, "wb") as stream:
+            stream.write(content)
+            stream.flush()
+            os.fsync(stream.fileno())
+        temporary_path.replace(path)
+    except BaseException:
+        temporary_path.unlink(missing_ok=True)
+        raise
+
+
+def write_submission_render(root: Path) -> tuple[Path, Path]:
+    """由 anchored 稿确定性重建 clean 稿及其哈希绑定报告。"""
+    root = Path(root).resolve()
+    anchored_path = root / "manuscript" / "manuscript-anchored.md"
+    clean_path = root / "manuscript" / "manuscript-clean.md"
+    report_path = root / "provenance" / "clean-render-report.json"
+    anchored_bytes = anchored_path.read_bytes()
+    try:
+        anchored = anchored_bytes.decode("utf-8")
+    except UnicodeDecodeError as exc:
+        raise VerificationError(f"anchored 稿不是 UTF-8：{exc}") from exc
+    clean_bytes = render_submission_text(anchored).encode("utf-8")
+    _atomic_write_bytes(clean_path, clean_bytes)
+    report = {
+        "schema_version": "ars-clean-manuscript-render/1.1",
+        "source": {
+            "path": "manuscript/manuscript-anchored.md",
+            "bytes": len(anchored_bytes),
+            "sha256": hashlib.sha256(anchored_bytes).hexdigest(),
+        },
+        "output": {
+            "path": "manuscript/manuscript-clean.md",
+            "bytes": len(clean_bytes),
+            "sha256": hashlib.sha256(clean_bytes).hexdigest(),
+        },
+        "removed": {
+            "block_marker_lines": len(BLOCK_MARKER.findall(anchored)),
+            "evidence_note_spans": len(EVIDENCE_NOTE.findall(anchored)),
+            "reference_pipeline_notes": (
+                len(REFERENCE_NOTE_HEADER.findall(anchored))
+                + len(REFERENCE_PIPELINE_NOTE.findall(anchored))
+            ),
+        },
+        "allowed_transformations": sorted(ALLOWED_TRANSFORMATIONS),
+        "semantic_edits": 0,
+        "status": "release_candidate_pending_human_verification",
+    }
+    _atomic_write_bytes(
+        report_path,
+        (json.dumps(report, ensure_ascii=False, indent=2) + "\n").encode("utf-8"),
+    )
+    return clean_path, report_path
+
+
+def verify_submission_render(root: Path) -> dict[str, int]:
+    """重做 anchored→clean 变换，拒绝报告与稿件共同漂移。"""
+    root = Path(root).resolve()
+    anchored_path = root / "manuscript" / "manuscript-anchored.md"
+    clean_path = root / "manuscript" / "manuscript-clean.md"
+    report = _read_json(root / "provenance" / "clean-render-report.json")
+    if report.get("schema_version") != "ars-clean-manuscript-render/1.1":
+        raise VerificationError("clean render report schema_version 不受支持")
+    if set(report.get("allowed_transformations", [])) != ALLOWED_TRANSFORMATIONS:
+        raise VerificationError("clean render report 的允许变换集合不完整")
+    if report.get("semantic_edits") != 0:
+        raise VerificationError("clean render report 声称发生语义编辑")
+    if report.get("source", {}).get("sha256") != _sha256(anchored_path):
+        raise VerificationError("clean render source SHA-256 不一致")
+    if report.get("output", {}).get("sha256") != _sha256(clean_path):
+        raise VerificationError("clean render output SHA-256 不一致")
+    expected = render_submission_text(anchored_path.read_text(encoding="utf-8"))
+    actual = clean_path.read_text(encoding="utf-8")
+    if actual != expected:
+        raise VerificationError("clean 稿不等于允许渲染结果，存在语义漂移")
+    return {
+        "anchored_bytes": anchored_path.stat().st_size,
+        "clean_bytes": clean_path.stat().st_size,
+    }
+
+
+def verify_manuscript_contract(root: Path) -> dict[str, Any]:
+    """验证 R4 的事实修复、编号顺序与可见正文文风上限。"""
+    root = Path(root).resolve()
+    anchored = (root / "manuscript" / "manuscript-anchored.md").read_text(
+        encoding="utf-8"
+    )
+    clean = (root / "manuscript" / "manuscript-clean.md").read_text(
+        encoding="utf-8"
+    )
+    table_order = re.findall(r"(?m)^\*\*Table ([1-9][0-9]*a?)\.", clean)
+    figure_order = re.findall(r"(?m)^\*\*Figure ([1-9][0-9]*)\.", clean)
+    paragraph_order = re.findall(r"(?m)^(?:\*\*)?P([1-6])\.", clean)
+    equation_six = re.findall(r"\\tag\{(6\.[0-9]+)\}", clean)
+    if table_order != ["1", "2", "3", "4", "5", "5a"]:
+        raise VerificationError(f"主文表号顺序错误：{table_order}")
+    if figure_order != ["1", "2", "3", "4", "5"]:
+        raise VerificationError(f"图号顺序错误：{figure_order}")
+    if paragraph_order != ["1", "2", "3", "4", "5", "6"]:
+        raise VerificationError(f"引言段号顺序错误：{paragraph_order}")
+    if equation_six != ["6.1", "6.2"]:
+        raise VerificationError(f"第 6 节方程号错误：{equation_six}")
+
+    required = (
+        "trivariate Cauchy prior on three AVO reflection coefficients",
+        "Two rows carry Synthetic-run support",
+        "all five pilot scenes",
+        "30 λ-grid runs",
+        "two adaptive-Metropolis arms",
+        "ten weighted arms",
+        "did not adjudicate that priority",
+        "Appendix D",
+        "item-by-item review",
+        "Li Xiao Peng made substantive revisions and accepts responsibility",
+        "author-managed clean-environment replay",
+        "independent-team replay has not been completed",
+        "| $K$ | number of methods | 3.2 |",
+    )
+    missing = [value for value in required if value not in clean]
+    if missing:
+        raise VerificationError(f"R4 必需修订缺失：{missing}")
+    forbidden = (
+        "correlated heavy-tailed likelihood within a single method",
+        "Only one row",
+        "all three scenario families",
+        "Table 6.",
+        "Table 4a.",
+        "Eq. (6.3)",
+        r"\tag{6.3}",
+        "Referenced from §6.1, Eq. (6.2)",
+        "generalized-Bayes",
+        "multiscale unstructured",
+        "preregistration Appendix",
+        "spatio-temporal holdout",
+        "have not been pushed",
+        "no immutable public commit",
+        "著录说明",
+        "[LIT:",
+        "依 team lead",
+    )
+    hits = [value for value in forbidden if value in clean]
+    if hits:
+        raise VerificationError(f"R4 禁止文本仍存在：{hits}")
+
+    visible_blocks: list[str] = []
+    block_leading_bold = 0
+    for match in ANCHORED_BLOCK_RE.finditer(anchored):
+        if int(match.group(1)[1:]) >= 533:
+            continue
+        visible = match.group(2).split("⟦", 1)[0]
+        visible_blocks.append(visible)
+        if BLOCK_LEADING_BOLD.match(visible) and not CAPTION_OR_FRONT_MATTER.match(
+            visible
+        ):
+            block_leading_bold += 1
+    corpus = "\n".join(visible_blocks)
+    style_metrics = {
+        "em_dash": corpus.count("—"),
+        "rather_than": len(re.findall(r"\brather than\b", corpus, re.IGNORECASE)),
+        "block_leading_bold": block_leading_bold,
+        "travel_with": len(re.findall(r"\btravels? with\b", corpus, re.IGNORECASE)),
+        "generalized_bayes": corpus.count("generalized-Bayes"),
+    }
+    expected_style = {
+        "em_dash": 101,
+        "rather_than": 56,
+        "block_leading_bold": 0,
+        "travel_with": 0,
+        "generalized_bayes": 0,
+    }
+    if style_metrics != expected_style:
+        raise VerificationError(
+            f"R4 可见正文文风指标漂移：expected={expected_style}，actual={style_metrics}"
+        )
+    patch_record = _read_json(
+        root / "provenance" / "release-manuscript-patch-r4-application.json"
+    )
+    structural_operations = patch_record.get("structural_operations")
+    authorization = patch_record.get("authorization", {})
+    if (
+        patch_record.get("schema_version")
+        != "ars-authorized-patch-application/1.0"
+        or patch_record.get("patch_sha256")
+        != "9487ebda98c7b1c2c29a9e27215592f211fdd5d44184594513d98600d2be0ca6"
+        or patch_record.get("after_sha256")
+        != _sha256(root / "manuscript" / "manuscript-anchored.md")
+        or patch_record.get("operations_applied") != 193
+        or not authorization.get("all_listed_targets_and_operations_authorized")
+        or not authorization.get("structural_changes_acknowledged")
+        or not authorization.get("formal_release_separately_blocked_on_human_verification")
+        or not isinstance(structural_operations, list)
+        or len(structural_operations) != 3
+        or any(row.get("status") != "completed" for row in structural_operations)
+    ):
+        raise VerificationError("R4 授权补丁应用记录与当前稿件或结构状态不一致")
+    return {
+        "table_order": table_order,
+        "figure_order": figure_order,
+        "paragraph_order": paragraph_order,
+        "section_6_equations": equation_six,
+        "required_repairs_verified": len(required),
+        "forbidden_regressions": len(hits),
+        "patch_record_verified": 1,
+        "style_metrics": style_metrics,
+    }
+
+
+def verify_submission_hygiene(root: Path) -> dict[str, int]:
+    """拒绝投稿稿件中的内部生产注记和未标记模拟评审材料。"""
+    root = Path(root).resolve()
+    clean_path = root / "manuscript" / "manuscript-clean.md"
+    response_path = root / "manuscript" / "response-to-reviewers-r1.md"
+    try:
+        clean = clean_path.read_text(encoding="utf-8")
+        response = response_path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        raise VerificationError(f"无法读取投稿稿件：{exc}") from exc
+    forbidden = ("著录说明", "[LIT:", "依 team lead", "team lead 裁定")
+    hits = [token for token in forbidden if token in clean]
+    if hits:
+        raise VerificationError(f"clean 稿仍含参考文献内部注记：{hits}")
+    response_header = response[:1000].upper()
+    if "SIMULATED" not in response_header or "INTERNAL" not in response_header:
+        raise VerificationError("response-to-reviewers 必须标注 SIMULATED INTERNAL 模拟评审")
+    return {"forbidden_note_hits": 0, "simulated_review_label": 1}
+
+
+def verify_zenodo_metadata(path: Path) -> dict[str, str]:
+    """锁定公开下载但不授予开放复用许可的 Zenodo 组合。"""
+    metadata = _read_json(Path(path))
+    access_right = metadata.get("access_right")
+    license_id = metadata.get("license")
+    if access_right != "open" or license_id != "other-closed":
+        raise VerificationError(
+            "Zenodo 元数据必须显式使用 access_right=open 与 license=other-closed"
+        )
+    return {"access_right": access_right, "license": license_id}
+
+
+def verify_do27_provenance(repository: Path) -> dict[str, str]:
+    """绑定 DO-27 派生数值、上游 Zenodo 记录及其 MIT 许可边界。"""
+    repository = Path(repository).resolve()
+    root = (
+        repository
+        / "validation"
+        / "wp7"
+        / "versions"
+        / "do27-v4-20260724"
+    )
+    source_record = _read_json(root / "source_record.zenodo.json")
+    doi = source_record.get("doi")
+    metadata = source_record.get("metadata", {})
+    if doi != "10.5281/zenodo.3633239":
+        raise VerificationError("DO-27 来源记录 DOI 不等于冻结版本 10.5281/zenodo.3633239")
+    if not isinstance(metadata, dict):
+        raise VerificationError("DO-27 来源记录缺少 metadata")
+    license_record = metadata.get("license", {})
+    description = metadata.get("description")
+    if (
+        not isinstance(license_record, dict)
+        or license_record.get("id") != "other-open"
+        or not isinstance(description, str)
+        or "mit license" not in description.lower()
+    ):
+        raise VerificationError("DO-27 Zenodo 来源记录未声明其上游 MIT License")
+
+    license_path = root / "UPSTREAM-LICENSE-MIT.txt"
+    try:
+        license_text = license_path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        raise VerificationError(f"无法读取 DO-27 上游许可证：{exc}") from exc
+    required_license_phrases = (
+        "MIT License",
+        "Permission is hereby granted, free of charge",
+    )
+    if any(phrase not in license_text for phrase in required_license_phrases):
+        raise VerificationError("DO-27 上游许可证文本不是所登记的 MIT License")
+
+    raw_path = root / "raw-numerics.npz"
+    provenance_path = root / "PROVENANCE.md"
+    if not raw_path.is_file():
+        raise VerificationError("DO-27 派生数值附件 raw-numerics.npz 不存在")
+    digest = _sha256(raw_path)
+    try:
+        provenance = provenance_path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        raise VerificationError(f"无法读取 DO-27 来源说明：{exc}") from exc
+    if doi not in provenance or digest not in provenance:
+        raise VerificationError("DO-27 来源说明未绑定冻结 DOI 与 raw-numerics SHA-256")
+    return {
+        "doi": doi,
+        "raw_numerics_sha256": digest,
+        "license": "MIT",
+    }
+
+
+def verify_release_shape(repository: Path) -> dict[str, int]:
+    """验证 DOI 候选是精选、读者可用且不含内部治理树的发布树。"""
+    repository = Path(repository).resolve()
+    internal = repository / "_bmad-output"
+    if internal.exists():
+        raise VerificationError("精选发布树不得包含 _bmad-output 内部治理工件")
+    transient = [
+        path.relative_to(repository).as_posix()
+        for path in repository.rglob(".run.lock")
+        if path.is_file()
+    ]
+    if transient:
+        raise VerificationError(f"精选发布树含瞬时 .run.lock：{transient}")
+    missing = [
+        relative
+        for relative in REQUIRED_RELEASE_MEMBERS
+        if not (repository / relative).is_file()
+    ]
+    if missing:
+        raise VerificationError(f"缺少发布必需成员：{missing}")
+    return {"required_members_verified": len(REQUIRED_RELEASE_MEMBERS)}
+
+
+def verify_no_credentials(repository: Path) -> dict[str, int]:
+    """扫描发布成员中的高置信访问令牌、密钥和私钥标记。"""
+    repository = Path(repository).resolve()
+    files_scanned = 0
+    bytes_scanned = 0
+    findings: list[dict[str, str]] = []
+    for path in _manifest_files(repository):
+        content = path.read_bytes()
+        if b"\x00" in content:
+            continue
+        try:
+            text = content.decode("utf-8")
+        except UnicodeDecodeError:
+            continue
+        files_scanned += 1
+        bytes_scanned += len(content)
+        for label, pattern in CREDENTIAL_PATTERNS:
+            if pattern.search(text):
+                findings.append(
+                    {
+                        "path": path.relative_to(repository).as_posix(),
+                        "pattern": label,
+                    }
+                )
+    if findings:
+        raise VerificationError(f"发布树发现高置信凭据模式：{findings}")
+    return {
+        "files_scanned": files_scanned,
+        "bytes_scanned": bytes_scanned,
+        "high_confidence_findings": 0,
+    }
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -154,12 +856,19 @@ def main(argv: list[str] | None = None) -> int:
         help="paper01-rasti 发布包根目录",
     )
     parser.add_argument(
+        "--write-clean",
+        action="store_true",
+        help="先由 anchored 稿重建 clean 稿及 clean-render-report.json",
+    )
+    parser.add_argument(
         "--write-manifest",
         action="store_true",
         help="先按当前候选成员重建 release-manifest.json",
     )
     args = parser.parse_args(argv)
     try:
+        if args.write_clean:
+            write_submission_render(args.root)
         if args.write_manifest:
             write_manifest(args.root)
         result = {
@@ -170,6 +879,18 @@ def main(argv: list[str] | None = None) -> int:
             ),
             "manifest_members_verified": verify_manifest(args.root),
             "evidence": verify_evidence(args.root),
+            "revision_bundle": verify_revision_bundle(args.root),
+            "submission_render": verify_submission_render(args.root),
+            "manuscript_contract": verify_manuscript_contract(args.root),
+            "submission_hygiene": verify_submission_hygiene(args.root),
+            "zenodo_metadata": verify_zenodo_metadata(
+                _repository_root(args.root) / ".zenodo.json"
+            ),
+            "do27_provenance": verify_do27_provenance(
+                _repository_root(args.root)
+            ),
+            "release_shape": verify_release_shape(_repository_root(args.root)),
+            "credential_scan": verify_no_credentials(_repository_root(args.root)),
         }
     except VerificationError as exc:
         print(json.dumps({"status": "failed", "error": str(exc)}, ensure_ascii=False))

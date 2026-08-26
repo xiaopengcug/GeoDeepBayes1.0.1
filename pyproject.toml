@@ -22,8 +22,8 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# dev: 测试与覆盖率（本次阶段启用）
-dev = ["pytest>=7", "pytest-cov>=4"]
+# dev: 测试、覆盖率与发布图件 PDF 验收
+dev = ["pytest>=7", "pytest-cov>=4", "pypdf>=5,<7"]
 # mcmc / gpu: 可选生态，当前环境尚未安装，属后续阶段
 mcmc = ["arviz>=0.16", "emcee>=3"]
 gpu = ["torch>=2.0"]

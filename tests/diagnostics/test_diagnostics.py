@@ -83,6 +83,14 @@ def test_batch_shape_3d():
     assert monte_carlo_standard_error(chains).shape == (3,)
 
 
+def test_tail_ess_fails_closed_when_only_upper_indicator_is_degenerate():
+    """捕获单侧 tail indicator 非有限时被 np.nanmin 静默忽略的回归。"""
+    chains = np.zeros((4, 200))
+    chains[:, -40:] = 1.0
+
+    assert np.isnan(tail_ess(chains))
+
+
 def test_mcse_decreases_with_more_draws():
     rng = np.random.default_rng(5)
     e_short = monte_carlo_standard_error(rng.standard_normal((4, 500)))

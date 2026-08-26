@@ -86,6 +86,6 @@ def tail_ess(chains):
         q05, q95 = np.quantile(sp, [0.05, 0.95])
         e05 = _ess_2d((sp <= q05).astype(float))
         e95 = _ess_2d((sp <= q95).astype(float))
-        out.append(np.nanmin([e05, e95]))
+        out.append(min(e05, e95) if np.isfinite(e05) and np.isfinite(e95) else np.nan)
     out = np.array(out)
     return out[0] if out.size == 1 else out

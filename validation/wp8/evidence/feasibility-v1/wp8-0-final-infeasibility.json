@@ -1,0 +1,82 @@
+{
+  "schema_version": "wp8-0-final-infeasibility-v1",
+  "status": "not_feasible_with_current_public_inputs",
+  "wp8_1_allowed": false,
+  "principle": "No missing uncertainty, geometry, independent cluster, or checksum is inferred or manufactured.",
+  "methods": {
+    "tdip": {
+      "public_search_result": "primary package supports contract and coverage candidate; CRPS power remains unresolved",
+      "evidence": "Reykjanes DOI 10.5281/zenodo.15488867 (concept DOI 10.5281/zenodo.15488866) contains 371 acquisition-date observations, of which 370 have paired normal/reciprocal files. Excluding exposed 2022-10-23 leaves 369 formal-eligible paired date observations; unpaired 2023-07-05 is excluded. The frozen observation split is train=79, buffer=17, calibration=50, test=223. Training-only parsing validates ABMN, potential/current, delay and 20 decay windows; robust N/R discrepancies support a heteroscedastic heavy-tailed error model and estimate a 17-day temporal correlation length. Power therefore uses non-overlapping 17-day blocks, not dates: the sealed test has far fewer than 223 effective clusters. Correlated dates, N/R files and windows cannot be replicated into clusters. Paired-CRPS power also cannot be established without two training inference methods.",
+      "minimum_external_input": [
+        "at least 223 genuinely independent acquisition-date/site clusters",
+        "ABMN coordinates and timing-window definitions",
+        "measured or processing-derived uncertainty with documented method",
+        "untouched station/date members for a buffered formal test"
+      ],
+      "possible_unblocker": "run both frozen inference methods on training dates to estimate paired-CRPS effect; keep calibration/test sealed"
+    },
+    "tem": {
+      "public_search_result": "outcome-blind USGS WalkTEM consortium candidate exists",
+      "evidence": "Metadata identifies Genesee Valley DOI 10.5066/P9VQOCRZ (120 locations), Mississippi Alluvial Plain DOI 10.5066/P965NBFT (two dense surveys and six transects), Manistee (49 raw USF), Shelter Island DOI 10.5066/P93X25UF (26 soundings), Dawson County DS581, Los Humeros DOI 10.5281/zenodo.3822280 and Illinois River Basin. Observation values remain unopened. Sounding totals are not independent clusters until stations, overlap and spatial correlation are resolved under a frozen common contract.",
+      "minimum_external_input": [
+        "frozen consortium membership/license and common observation contract",
+        "outcome-blind unique-station deduplication",
+        "spatial correlation length and buffered cross-survey split"
+      ],
+      "possible_unblocker": "complete metadata-only station inventory and freeze the split before endpoint access"
+    },
+    "sip_fdip": {
+      "public_search_result": "no qualified backup",
+      "evidence": "authoritative candidates are laboratory columns/specimens or two field profiles and do not establish 223 independent field clusters. Additional searches found only six clay types (Zenodo 6754562), one illite freeze-thaw study (14016513), two restricted sand-column cases/five channels (17165457), five Dryad rock specimens (10.5061/dryad.pt2624c), and 28 Moffat Shale specimens (GFZ 10.5880/fidgeo.2022.034). SIP-Archiv is a registered petrophysical material database, not a direct spatial field-cluster source.",
+      "minimum_external_input": [
+        "223 independent specimens, stations, or profiles justified as inference units",
+        "frequency, real/imaginary response and full uncertainty/covariance",
+        "unambiguous specimen/profile/station keys and geometry"
+      ],
+      "possible_unblocker": "multi-laboratory consortium export with common calibration and replicate-level covariance"
+    },
+    "csamt": {
+      "public_search_result": "large station pool found but provider granularity and source contract remain disqualifying",
+      "evidence": "A CC0 USGS GGT-30 transmitter + GDP32-II receiver consortium is frozen: Big Chino DOI 10.5066/P9KGKWNL (21 lines, 1159 unique station coordinates), Hualapai DOI 10.5066/P90KAJM4 (9 lines, 543), and Red Knoll DOI 10.5066/P9QF9PFR (2 lines, 141). Official station ZIPs prove 1843 coordinate-unique observations with zero exact cross-release duplicates. An outcome-blind 250 m candidate-cell split has 422 test cells, but this is not a correlation-adjusted cluster count. Central-directory-only inspection proves that available raw observations are packaged as one member per full survey line; all 32 station lines mix multiple candidate partitions. Opening training line members would therefore also open calibration/test observations. A line-level sealed split has an absolute upper bound of only 32 lines, below 223. Red Knoll's advertised raw ZIP currently returns HTTP 404. Reports document a 1 km source dipole and source-receiver distance ranges, but not per-acquisition transmitter endpoint coordinates. No formal gate changes.",
+      "minimum_external_input": [
+        "223 independent receiver/site clusters",
+        "finite transmitter endpoints, current and orientation",
+        "receiver coordinates, Ex/Hy components, frequencies and phase",
+        "source-receiver distance, near/transition/far-field classification and uncertainty"
+      ],
+      "possible_unblocker": "survey-contractor or instrument-vendor raw export plus transmitter GPS logs and processing covariance"
+    },
+    "wfem": {
+      "public_search_result": "no qualified backup",
+      "evidence": "the only exact geophysical repository result is the already audited Baotu Spring package with 27 lines and no complete source/receiver/phase/component/geometric-factor contract. GFZ/GIPP public metadata does not expose a qualifying large WFEM controlled-source collection. Yemaquan data are available only on reasonable request, Gonghe reports data availability as not applicable, and a 2025 Frontiers case requires an author request. None is a directly downloadable complete field package; paper tables/figures and synthetic libraries are not substitutes for field observations.",
+      "minimum_external_input": [
+        "223 independent lines or receiver clusters",
+        "source endpoints/current/orientation and receiver coordinates",
+        "complex electric/magnetic component and phase definitions",
+        "apparent-resistivity geometric factor and uncertainty"
+      ],
+      "possible_unblocker": "original acquisition team release of instrument-native files, geometry logs and processing specification"
+    },
+    "mt_amt": {
+      "public_search_result": "conditional candidate exists",
+      "evidence": "USArray TA provides 1104 station products, unrestricted citation-based reuse, impedance/tipper and error covariance metadata.",
+      "remaining_blocker": "raw integrity, geographic clusters, coverage count and training-only dimensionality are complete; formal 3-D solver/resource readiness and full cross-component covariance remain blocked",
+      "minimum_external_input": [
+        "verified 3-D MT solver and frozen field-scale resource budget",
+        "full EMTF residual/inverse-signal covariance export if cross-component covariance is required"
+      ]
+    }
+  },
+  "required_external_actions": [
+    "request signed integrity manifests from EarthScope for USArray TA",
+    "request native acquisition/QC exports from TDIP, CSAMT and WFEM data owners",
+    "establish a multi-site or multi-laboratory SIP data-sharing agreement",
+    "pre-register any new replacement before endpoint access"
+  ],
+  "candidate_search_guardrails": [
+    "all newly recorded GFZ, KTB and WFEM literature items are outcome-blind metadata candidates only",
+    "the Xingning CSAMT exception opened K1-K9 AVG observation endpoints; all nine are registered as exposed and limited to training/development",
+    "paper tables, paper figures and synthetic libraries must not replace required field observations",
+    "no gate status changes without a contract-complete, integrity-frozen and preregistered replacement"
+  ]
+}

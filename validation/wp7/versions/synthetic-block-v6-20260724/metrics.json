@@ -1,0 +1,191 @@
+{
+  "dimension": 48,
+  "pod_rank": 12,
+  "snapshot_sources": [
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "prior",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "multi_map",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "pilot",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout",
+    "holdout"
+  ],
+  "holdout_projection_error": 0.8157025502376684,
+  "max_rhat": 1.003739821507544,
+  "min_bulk_ess": 2496.461999015852,
+  "min_tail_ess": 1963.6080886746252,
+  "max_relative_mcse": 0.020122173198390787,
+  "mode_visits_per_chain": [
+    896,
+    869,
+    901,
+    876
+  ],
+  "failed_replicate_rate": 0.0,
+  "standardized_mean_rmse": 0.020687202481894807,
+  "stage1_accept_rate": 0.688125,
+  "stage2_accept_rate": 0.5778383287920072,
+  "ess_per_second": 472.4836313141999,
+  "predictive_coverage": {
+    "full": {
+      "0.9": {
+        "covered": 358,
+        "total": 400,
+        "rate": 0.895,
+        "wilson95": [
+          0.8611090149132419,
+          0.921376272562664
+        ]
+      },
+      "0.95": {
+        "covered": 378,
+        "total": 400,
+        "rate": 0.945,
+        "wilson95": [
+          0.9181325521920267,
+          0.9634015058504493
+        ]
+      }
+    },
+    "naive_pod": {
+      "0.9": {
+        "covered": 356,
+        "total": 400,
+        "rate": 0.89,
+        "wilson95": [
+          0.8555490895383555,
+          0.9170313208808931
+        ]
+      },
+      "0.95": {
+        "covered": 377,
+        "total": 400,
+        "rate": 0.9425,
+        "wilson95": [
+          0.9151991622718807,
+          0.9613824572422669
+        ]
+      }
+    },
+    "error_inflated_pod": {
+      "0.9": {
+        "covered": 357,
+        "total": 400,
+        "rate": 0.8925,
+        "wilson95": [
+          0.8583265694191717,
+          0.9192062795284055
+        ]
+      },
+      "0.95": {
+        "covered": 376,
+        "total": 400,
+        "rate": 0.94,
+        "wilson95": [
+          0.9122771510995438,
+          0.9593520298862752
+        ]
+      }
+    }
+  },
+  "checks": {
+    "rhat": true,
+    "bulk_ess": true,
+    "tail_ess": true,
+    "relative_mcse": true,
+    "mode_visits": true,
+    "failed_rate": true,
+    "mean_shift": true,
+    "coverage_90": true,
+    "coverage_95": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "paper01-joint-diagnostics-positive-control/1.0",
+  "generator": {
+    "seed": 20260825,
+    "channels_shape": [
+      4,
+      2000,
+      3
+    ],
+    "log_density_shape": [
+      4,
+      2000
+    ]
+  },
+  "input_sha256": "daae6441de9888fa4887c4410648b2fd4c0a8b43ed21b631abe22e05a527fa48",
+  "thresholds": {
+    "rank_normalized_split_rhat_max": 1.1,
+    "bulk_ess_min": 100.0,
+    "tail_ess_min": 100.0,
+    "relative_mcse_max": 0.2
+  },
+  "expected": {
+    "status": "Passed",
+    "checks": {
+      "rhat": true,
+      "bulk_ess": true,
+      "tail_ess": true,
+      "relative_mcse": true,
+      "mode_visits": true
+    },
+    "n_channels": 3,
+    "diagnostic_stop_reason": null
+  },
+  "scope": "instrument positive control only; not an experiment, independent reproduction, or geophysical validation"
+}

@@ -1,6 +1,8 @@
 {
   "title": "GeoDeepBayes1.0: Paper 01 RASTI evidence and software package",
   "upload_type": "software",
+  "access_right": "open",
+  "license": "other-closed",
   "description": "Release package for an auditable Bayesian fusion formulation with component-level synthetic evidence and a preserved failed gravity-magnetic joint pilot. No field validity, production-scale performance, or independent reproduction is claimed.",
   "creators": [
     {

@@ -12,7 +12,7 @@
     },
     "integrity_pass_receipt": {
       "path": "stage2.5-integrity/integrity-pass-receipt-r2.json",
-      "sha256": "d258e6af81c7861fdf61c5f18eaf384b818233f9e5fe564624d469adf66c41f7"
+      "sha256": "1169a62d11c236f5ca3e9be78407bab4501b8d30154783ef485e47e1f530d8a1"
     }
   },
   "rounds": [
@@ -29,7 +29,7 @@
       },
       "revision_roadmap": {
         "path": "stage3-review/phase2/revision-roadmap-rasti.json",
-        "sha256": "79fc5b93bdd61104269cb91ad0de4f59ca18540fc3a32e7bf40ae7e9f9445217"
+        "sha256": "558d403ee7494f13fdc7fe7ed73edb15a1a103981ea901430584900bb16e809c"
       },
       "claim_surface_manifest": {
         "path": "stage4-revision/authority/claim-surface-manifest-r1.json",

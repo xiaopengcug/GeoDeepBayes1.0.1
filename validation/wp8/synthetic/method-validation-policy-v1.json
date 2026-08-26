@@ -1,0 +1,41 @@
+{
+  "schema_version": "wp8-method-validation-policy-v1",
+  "required_checks": ["predict_reference_agreement", "misspecification_detection", "jvp_finite_difference", "jvp_jtp_adjoint", "taylor_remainder_order", "three_level_convergence", "method_adversarial_suite", "sbc_at_least_400", "within_method_5x5_performance"],
+  "reference_ids": {
+    "gravity": "geoana-gravity-prism-v1",
+    "magnetic": "geoana-magnetic-prism-v1",
+    "dc": "manual-homogeneous-halfspace-geometric-factor-v1",
+    "tdip": "independent-two-pulse-weight-shape-v1",
+    "sip_fdip": "manual-cole-cole-halfspace-v1",
+    "tem": "empymod-cross-filter-plus-halfspace-late-time-slope-sanity-v4",
+    "mt_amt": "analytic-mt-halfspace-impedance-v1",
+    "csamt": "geoana-uniform-wholespace-frequency-geometry-sanity-v3",
+    "wfem": "geoana-uniform-wholespace-frequency-geometry-sanity-v3"
+  },
+  "convergence_ids": {
+    "gravity": "uniform-prism-1-2-4-cells-per-axis-stability-v1",
+    "magnetic": "uniform-prism-1-2-4-cells-per-axis-stability-v1",
+    "dc": "20-10-5m-mesh-to-halfspace-v1",
+    "tdip": "20-10-5m-mesh-self-convergence-v1",
+    "sip_fdip": "9-33-129-log-frequency-qoi-v1",
+    "tem": "9-33-129-log-time-qoi-v1",
+    "mt_amt": "9-33-129-log-frequency-qoi-v1",
+    "csamt": "30-20-15m-mesh-self-convergence-v1",
+    "wfem": "30-20-15m-mesh-self-convergence-v1"
+  },
+  "adversarial_scenarios": {
+    "gravity": ["parameter_scaling", "parameter_sign_reversal", "receiver_geometry_perturbation", "wrong_model_shape", "wrong_data_shape"],
+    "magnetic": ["parameter_scaling", "parameter_sign_reversal", "receiver_geometry_perturbation", "wrong_model_shape", "wrong_data_shape"],
+    "dc": ["conductivity_doubling", "coincident_electrode", "zero_current", "wrong_model_shape", "wrong_data_shape"],
+    "tdip": ["zero_chargeability", "invalid_chargeability", "unsorted_times", "wrong_model_shape", "time_decay_nonzero"],
+    "sip_fdip": ["current_geometry_scaling", "frequency_coupling_perturbation", "frequency_order_contract", "coincident_electrode_contract", "homogeneous_model_rejects_spatial_parameter_vector"],
+    "tem": ["layer_conductivity_perturbation", "unsorted_times", "three_dimensional_diagnostic", "negative_loop_radius", "wrong_model_shape"],
+    "mt_amt": ["layer_conductivity_perturbation", "unsorted_frequencies", "two_dimensional_diagnostic", "three_dimensional_diagnostic", "wrong_model_shape"],
+    "csamt": ["near_transition_far", "finite_source_degeneracy", "source_endpoint_perturbation", "phase_component_index_contract", "receiver_topography_geometry_shape_contract"],
+    "wfem": ["near_transition_far", "finite_source_degeneracy", "source_endpoint_perturbation", "phase_component_index_contract", "receiver_topography_geometry_shape_contract"]
+  },
+  "sbc": {"repetitions_per_seed": 400, "seeds_per_method": 2, "posterior_draw_count": 99, "familywise_test_count": 27, "familywise_pvalue_threshold": 0.00037037037037037035},
+  "performance": {"warm_repetitions": 5, "max_setup_ns": 5000000000, "max_first_predict_ns": 5000000000, "max_warm_predict_ns": 2000000000, "max_within_method_median_scaling_ratio": 1000.0},
+  "status": "development-synthetic-ready-field-blocked",
+  "readiness_reason": "WP8-0 has not passed; this is a readiness matrix, not synthetic evidence"
+}

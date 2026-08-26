@@ -1,0 +1,168 @@
+{
+  "schema_version": "wp8-synthetic-completion-v1",
+  "status": "passed",
+  "validation_assertion": "synthetic_prediction_verified",
+  "field_validated": false,
+  "field_data_required": false,
+  "wp8_complete": true,
+  "wp9_start_allowed": true,
+  "formal_field_feasibility": {
+    "passed_methods": 6,
+    "total_methods": 9,
+    "wp8_1_allowed": false
+  },
+  "methods": [
+    {
+      "method": "gravity",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "magnetic",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "dc",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "tdip",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "sip_fdip",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "tem",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "mt_amt",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "csamt",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    },
+    {
+      "method": "wfem",
+      "status": "Synthetic-validated",
+      "required_checks": [
+        "predict_reference_agreement",
+        "misspecification_detection",
+        "jvp_finite_difference",
+        "jvp_jtp_adjoint",
+        "taylor_remainder_order",
+        "three_level_convergence",
+        "method_adversarial_suite",
+        "sbc_at_least_400",
+        "within_method_5x5_performance"
+      ],
+      "field_validated": false
+    }
+  ],
+  "bindings_sha256": {
+    "authorization": "03e1de96f36c73afa2aa4089cc021246e7bc98158f84d0c599247b4cf679408a",
+    "method_validation": "2de58711ed5ba94df7c9cc2f3ec6a2022e355a80177b681d8d0932be94a676bb",
+    "supplement_manifest": "d132f46c4ad3db39447b80f6f083ac322908895962684b886cbd60a21e2af66a",
+    "method_policy": "346603951998a4038781905a155a35f3822993bc036bcf7ae1b859b01ca179b5",
+    "synthetic_readiness": "814563ea0cc3b0054f3d6a4106cd032d3556a7be67b46e83cde1015146a904b0"
+  },
+  "errors": []
+}

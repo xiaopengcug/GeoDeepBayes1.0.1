@@ -1,0 +1,100 @@
+{
+  "run_id": "do27-v4-20260724",
+  "evidence_id": "EVD-SYNTH-001",
+  "status": "Synthetic-run",
+  "started_at": "2026-07-24T15:39:00.776054+00:00",
+  "completed_at": "2026-07-24T15:39:03.231495+00:00",
+  "inputs": [
+    {
+      "path": "simpeg-research_Astic-2020-JointInversion-1.0.0.zip",
+      "sha256": "c98d1abd655e2bb2656d1ce97347c4def9619012acabceeffc7192b83a19a80e"
+    },
+    {
+      "path": "Forward/mesh_inverse_ubc.msh",
+      "sha256": "901c32980d12173993cd20e43f4c343d4a3e07faef6b017cd17bd9140faa3adc"
+    },
+    {
+      "path": "Forward/model_grav.den",
+      "sha256": "737555f7fbda11925b499a77bff3145426ec40e8251489caadf7beaa629798e2"
+    },
+    {
+      "path": "Forward/model_mag.sus",
+      "sha256": "dff6c3273d9ee42df5d4256f0294383135c275f758ffadc3535a64703b22ef9f"
+    },
+    {
+      "path": "Forward/GRAV_noisydata.obs",
+      "sha256": "c63f64fcb4f488efd1247627ac1995b35ac9d72d3c496129856f3be1eddebb1b"
+    },
+    {
+      "path": "Forward/MAG_noisydata.obs",
+      "sha256": "62e014781f51656b68c3eaa2740edf0490a33473adfda83761f7c1cd42debd1b"
+    }
+  ],
+  "script": {
+    "path": "run_do27_validation.py",
+    "sha256": "0bd7998623fd1dcd4a4ae2c76b24e0347ea159bf9205faf0e007ea6bd532baae"
+  },
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "powershell": "7.6.3",
+    "python": "3.11.15"
+  },
+  "checks": [
+    {
+      "name": "dependency-import",
+      "status": "passed",
+      "detail": "simpeg 0.25.2, discretize 0.12.0"
+    },
+    {
+      "name": "do27-input-read",
+      "status": "passed",
+      "detail": "393660 cells, 961 observations/method"
+    },
+    {
+      "name": "gravity-forward-and-inverse",
+      "status": "passed",
+      "detail": "solver=True; data_fit=True; recovery=True; alpha=10.0"
+    },
+    {
+      "name": "magnetic-forward-and-inverse",
+      "status": "passed",
+      "detail": "solver=True; data_fit=True; recovery=False; alpha=1.0"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "do27-v4-20260724/metrics.json",
+      "sha256": "81fd40c7d37518599838174ecb6a756deecddc4e8be63d91df78cc454192f242"
+    },
+    {
+      "path": "do27-v4-20260724/raw-numerics.npz",
+      "sha256": "e5b866e84922bb428474a422743dbf4d8392d5dbe1b72cd76cabb5b589ad47b2"
+    },
+    {
+      "path": "do27-v4-20260724/environment.json",
+      "sha256": "7c664203d669d5e1d17b7b0895efad5badfffbf4d257d80a007376944b65ddb9"
+    },
+    {
+      "path": "do27-v4-20260724/config.json",
+      "sha256": "6ff7c1bd42f30fd8f3f714fd0f885cacd9437a5142c929c635f63c9745196a19"
+    },
+    {
+      "path": "do27-v4-20260724/stdout.json",
+      "sha256": "1d17658a8a6eca5c2d96cf3550fda2e5da96da54395fda221337b8ef9b9c48f1"
+    },
+    {
+      "path": "do27-v4-20260724/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "approval": {
+    "owner": "WP7三角色独立AI技术复核",
+    "date": "2026-07-24T16:06:33.053089+00:00",
+    "decision": "approved"
+  },
+  "validation_context": {
+    "truth_reference": "Forward/model_grav.den and Forward/model_mag.sus; coarse nearest-cell projection",
+    "drillhole_holdout": false,
+    "blind_release_record": null
+  }
+}
