@@ -309,8 +309,8 @@
     },
     {
       "path": "papers/paper01-rasti/provenance/validation-link-compatibility.json",
-      "bytes": 21713,
-      "sha256": "981d2b69b1d2cdb04b3ded80781b2dc5b812c7088c2816274d020c63edbf577d"
+      "bytes": 27785,
+      "sha256": "b7d83ef84a7227229381684dac35a87ccbb12e00371ce7185a12bfb94b489fa3"
     },
     {
       "path": "papers/paper01-rasti/scripts/build_validation_link_compatibility.py",
@@ -334,8 +334,8 @@
     },
     {
       "path": "papers/paper01-rasti/scripts/replay_release.py",
-      "bytes": 55017,
-      "sha256": "6ce869bf052c5c84c3ac7a4c38a17f70422c630f0b3c9442a44e56cec492cd60"
+      "bytes": 56865,
+      "sha256": "f7cbe493a0dcc8e5e1e571635e0f01967a4cb61f5d82aeb09eef4c4c27c0641e"
     },
     {
       "path": "papers/paper01-rasti/scripts/verify_m2_reconstruction_lineage.py",
@@ -654,8 +654,8 @@
     },
     {
       "path": "tests/paper01/test_release_replay.py",
-      "bytes": 30455,
-      "sha256": "0bd312b4bfa04d4a692d48c49fca0c1bcb3205e62c9443fdfc1cdf48118188f7"
+      "bytes": 39076,
+      "sha256": "858aed4bc8ebf2acfd026b54ad185ccee9cb370b3e7be148f3ec4e8df9e9e22a"
     },
     {
       "path": "tests/sampling/__init__.py",

@@ -5,6 +5,7 @@ import importlib.util
 import hashlib
 import json
 from pathlib import Path
+import shutil
 import sys
 
 import pytest
@@ -72,6 +73,8 @@ def _evidence_root(tmp_path: Path) -> Path:
         "min_bulk_ess": 400,
         "min_tail_ess": 400,
         "max_relative_mcse": 0.05,
+        "min_mode_visits_per_chain": None,
+        "max_failed_replicate_rate": None,
     }
     _write_json(
         config_path,
@@ -573,19 +576,29 @@ def test_verify_evidence_rejects_stale_joint_code_hash(tmp_path):
     """捕获联合重放摘要仍绑定旧诊断实现的回归。"""
     replay = _load_replay_module()
     root = _evidence_root(tmp_path)
-    repository = root.parents[1]
-    source = repository / "src" / "geodeepbayes" / "diagnostics" / "ess.py"
-    source.parent.mkdir(parents=True, exist_ok=True)
-    source.write_text("CURRENT = True\n", encoding="utf-8")
     joint_path = root / "evidence" / "verification-final" / "joint-replay-summary.json"
     joint = json.loads(joint_path.read_text(encoding="utf-8"))
-    joint["source_label"] = "historical/evd-joint-001-v1-20260819"
-    joint["code_and_contract_sha256"] = {
-        "ess.py": "0" * 64,
+    assert set(joint["code_and_contract_sha256"]) == {
+        "rhat.py", "ess.py", "mcse.py", "joint_block.py", "diagnostic-contract.json"
     }
+    joint["code_and_contract_sha256"]["ess.py"] = "0" * 64
     _write_json(joint_path, joint)
 
     with pytest.raises(replay.VerificationError, match="代码|ess.py|SHA-256"):
+        replay.verify_evidence(root)
+
+
+def test_verify_evidence_rejects_stale_algorithm_code_hash(tmp_path):
+    """捕获算法摘要保留完整代码键集、但单个诊断源码摘要陈旧。"""
+    replay = _load_replay_module()
+    root = _evidence_root(tmp_path)
+    algorithm_path = root / "evidence" / "verification-final" / "algorithm-replay.json"
+    algorithm = json.loads(algorithm_path.read_text(encoding="utf-8"))
+    assert set(algorithm["code_sha256"]) == {"rhat.py", "ess.py", "mcse.py"}
+    algorithm["code_sha256"]["rhat.py"] = "0" * 64
+    _write_json(algorithm_path, algorithm)
+
+    with pytest.raises(replay.VerificationError, match="算法重放.*rhat.py|代码 SHA-256"):
         replay.verify_evidence(root)
 
 
@@ -659,6 +672,207 @@ def test_validation_compatibility_rejects_unclassified_resolvable_mismatch(tmp_p
 
     with pytest.raises(replay.VerificationError, match="兼容|未分类|历史链接"):
         validator(repository)
+
+
+@pytest.mark.parametrize(
+    ("document", "key"),
+    (
+        ("config", "min_mode_visits_per_chain"),
+        ("contract", "required_mode_visits_per_chain"),
+    ),
+)
+def test_threshold_contract_rejects_missing_mapped_key(tmp_path, document, key):
+    """捕获映射两侧缺键被误当成显式 None 等值。"""
+    replay = _load_replay_module()
+    root = _evidence_root(tmp_path)
+    repository = root.parents[1]
+    path = (
+        repository / "validation" / "wp7" / "synthetic-v6-config.json"
+        if document == "config"
+        else repository / "validation" / "wp2-toy" / "diagnostic-contract.json"
+    )
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    del payload["thresholds"][key]
+    _write_json(path, payload)
+
+    with pytest.raises(replay.VerificationError, match="缺少|缺失|键"):
+        replay.verify_threshold_contract(repository)
+
+
+def test_collect_hash_references_supports_files_sha256_map():
+    """捕获 files_sha256 路径→摘要映射被历史链接扫描遗漏。"""
+    replay = _load_replay_module()
+    digest = "a" * 64
+
+    assert replay._collect_hash_references(
+        {"files_sha256": {"src/geodeepbayes/diagnostics/ess.py": digest}}
+    ) == [
+        (
+            '$.files_sha256["src/geodeepbayes/diagnostics/ess.py"]',
+            "src/geodeepbayes/diagnostics/ess.py",
+            digest,
+        )
+    ]
+
+
+def _valid_compatibility_repository(tmp_path: Path, replay) -> Path:
+    repository = tmp_path / "repository"
+    current = repository / "src" / "example.py"
+    current.parent.mkdir(parents=True)
+    current.write_bytes(b"VALUE = 1\n")
+    _write_json(
+        repository / "validation" / "record.json",
+        {
+            "member": {
+                "path": "src/example.py",
+                "sha256": hashlib.sha256(current.read_bytes()).hexdigest(),
+            }
+        },
+    )
+    replay.write_validation_link_compatibility(repository)
+    return repository
+
+
+@pytest.mark.parametrize("mutation", ("delete", "tamper"))
+def test_validation_compatibility_rejects_sidecar_entry_drift(tmp_path, mutation):
+    """有效侧车删除或篡改单条后，完整重算比较必须失败。"""
+    replay = _load_replay_module()
+    repository = _valid_compatibility_repository(tmp_path, replay)
+    sidecar_path = (
+        repository / PAPER_RELATIVE / "provenance" / "validation-link-compatibility.json"
+    )
+    assert replay.verify_validation_link_compatibility(repository) == {
+        "resolvable_links": 1,
+        "unclassified_mismatches": 0,
+    }
+    sidecar = json.loads(sidecar_path.read_text(encoding="utf-8"))
+    if mutation == "delete":
+        sidecar["entries"].pop()
+    else:
+        sidecar["entries"][0]["current_sha256"] = "0" * 64
+    _write_json(sidecar_path, sidecar)
+
+    with pytest.raises(replay.VerificationError, match="兼容侧车|历史链接"):
+        replay.verify_validation_link_compatibility(repository)
+
+
+def test_code_evolution_allowlist_binds_approved_current_sha256(tmp_path):
+    """历史摘要获准不代表未来任意当前字节都可继续放行。"""
+    replay = _load_replay_module()
+    repository = tmp_path / "repository"
+    current = repository / "src" / "geodeepbayes" / "diagnostics" / "ess.py"
+    current.parent.mkdir(parents=True)
+    shutil.copy2(REPOSITORY_ROOT / current.relative_to(repository), current)
+    _write_json(
+        repository / "validation" / "record.json",
+        {
+            "code": {
+                "path": "src/geodeepbayes/diagnostics/ess.py",
+                "sha256": "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+            }
+        },
+    )
+    payload = replay.build_validation_link_compatibility(repository)
+    assert payload["entries"][0]["classification"] == "historical_code_evolution"
+
+    current.write_text(current.read_text(encoding="utf-8") + "\n# drift\n", encoding="utf-8")
+    with pytest.raises(replay.VerificationError, match="未分类失配|current"):
+        replay.build_validation_link_compatibility(repository)
+
+
+def test_environment_evolution_allowlist_binds_authorized_uv_lock_transition(tmp_path):
+    """仅放行作者明确授权的 pypdf 发布验收锁文件演进。"""
+    replay = _load_replay_module()
+    repository = tmp_path / "repository"
+    current = repository / "uv.lock"
+    current.parent.mkdir(parents=True)
+    shutil.copy2(REPOSITORY_ROOT / "uv.lock", current)
+    _write_json(
+        repository / "validation" / "record.json",
+        {
+            "provenance_bindings": {
+                "files_sha256": {
+                    "uv.lock": "c71791cc6cda23ea4ba563821a4235261374e5268d8cfd9a595799c552834026"
+                }
+            }
+        },
+    )
+
+    payload = replay.build_validation_link_compatibility(repository)
+
+    assert payload["entries"][0]["classification"] == "historical_environment_evolution"
+    assert payload["entries"][0]["current_sha256"] == (
+        "819f311f710d9e9265858c4dd004060333b6360313598cf3e5b7a57ff05b7c6f"
+    )
+    assert "pypdf 6.16.2" in payload["entries"][0]["classification_reason"]
+
+    current.write_text(current.read_text(encoding="utf-8") + "\n# drift\n", encoding="utf-8")
+    with pytest.raises(replay.VerificationError, match="未分类失配|current"):
+        replay.build_validation_link_compatibility(repository)
+
+
+def test_verify_evidence_rejects_joint_degenerate_distribution_drift(tmp_path):
+    """捕获 57+3+5 退化通道分布发生单条漂移。"""
+    replay = _load_replay_module()
+    root = _evidence_root(tmp_path)
+    joint_path = root / "evidence" / "verification-final" / "joint-replay-summary.json"
+    joint = json.loads(joint_path.read_text(encoding="utf-8"))
+    joint["records"][0]["replayed_diagnostics"]["degenerate_channel_count"] = 2
+    _write_json(joint_path, joint)
+
+    with pytest.raises(replay.VerificationError, match=r"57\+3\+5|退化通道"):
+        replay.verify_evidence(root)
+
+
+def test_verify_evidence_rejects_conservative_value_drift(tmp_path):
+    """捕获算法四个保守报告值中任一值漂移。"""
+    replay = _load_replay_module()
+    root = _evidence_root(tmp_path)
+    path = root / "evidence" / "verification-final" / "algorithm-replay.json"
+    algorithm = json.loads(path.read_text(encoding="utf-8"))
+    algorithm["manuscript_conservative_values"]["min_tail_ess_floor_integer"] = 1964
+    _write_json(path, algorithm)
+
+    with pytest.raises(replay.VerificationError, match="保守报告值|漂移"):
+        replay.verify_evidence(root)
+
+
+def _copy_manuscript_contract_fixture(tmp_path: Path) -> Path:
+    source_root = REPLAY_PATH.parents[1]
+    root = tmp_path / "repository" / PAPER_RELATIVE
+    for relative in (
+        Path("manuscript/manuscript-anchored.md"),
+        Path("manuscript/manuscript-clean.md"),
+        Path("provenance/release-manuscript-patch-r4-application.json"),
+        Path("provenance/release-r5-patch-application.json"),
+    ):
+        target = root / relative
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source_root / relative, target)
+    return root
+
+
+@pytest.mark.parametrize(
+    ("field", "bad_value"),
+    (
+        ("after_manuscript_sha256", "0" * 64),
+        ("after_clean_sha256", "0" * 64),
+        ("historical_records_byte_preserved", False),
+        ("formal_release_locked", False),
+        ("requires_new_candidate_manual_review", False),
+    ),
+)
+def test_manuscript_contract_rejects_r5_record_drift(tmp_path, field, bad_value):
+    """R5 after-hash 与三项人工发布锁均必须逐项失败关闭。"""
+    replay = _load_replay_module()
+    root = _copy_manuscript_contract_fixture(tmp_path)
+    path = root / "provenance" / "release-r5-patch-application.json"
+    record = json.loads(path.read_text(encoding="utf-8"))
+    record[field] = bad_value
+    _write_json(path, record)
+
+    with pytest.raises(replay.VerificationError, match="R5.*发布锁|R5.*不一致"):
+        replay.verify_manuscript_contract(root)
 
 
 def test_figure2_rejects_each_missing_registered_parent_edge():

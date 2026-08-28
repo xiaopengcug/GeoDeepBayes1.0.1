@@ -206,10 +206,17 @@ def verify_threshold_contract(repository: Path) -> dict[str, int]:
         "min_mode_visits_per_chain": "required_mode_visits_per_chain",
         "max_failed_replicate_rate": "failed_replicate_rate_max",
     }
+    missing_config = [name for name in mappings if name not in config_thresholds]
+    missing_contract = [name for name in mappings.values() if name not in contract_thresholds]
+    if missing_config or missing_contract:
+        raise VerificationError(
+            "WP2/WP7 诊断阈值缺少显式映射键："
+            f"config={missing_config}，contract={missing_contract}"
+        )
     mismatches = {
-        config_name: (config_thresholds.get(config_name), contract_thresholds.get(contract_name))
+        config_name: (config_thresholds[config_name], contract_thresholds[contract_name])
         for config_name, contract_name in mappings.items()
-        if config_thresholds.get(config_name) != contract_thresholds.get(contract_name)
+        if config_thresholds[config_name] != contract_thresholds[contract_name]
     }
     if mismatches:
         raise VerificationError(f"WP2/WP7 诊断阈值不等值：{mismatches}")
@@ -581,6 +588,16 @@ def _collect_hash_references(value: object, locator: str = "$") -> list[tuple[st
         digest = value.get("sha256")
         if isinstance(path, str) and isinstance(digest, str):
             references.append((locator, path, digest))
+        files_sha256 = value.get("files_sha256")
+        if isinstance(files_sha256, dict):
+            for mapped_path in sorted(files_sha256):
+                mapped_digest = files_sha256[mapped_path]
+                if isinstance(mapped_path, str) and isinstance(mapped_digest, str):
+                    mapped_locator = (
+                        f"{locator}.files_sha256["
+                        f"{json.dumps(mapped_path, ensure_ascii=False)}]"
+                    )
+                    references.append((mapped_locator, mapped_path, mapped_digest))
         for key, child in value.items():
             references.extend(_collect_hash_references(child, f"{locator}.{key}"))
     elif isinstance(value, list):
@@ -593,10 +610,20 @@ HISTORICAL_CODE_EVOLUTION_ALLOWLIST = {
     (
         "src/geodeepbayes/diagnostics/ess.py",
         "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+        "111fc44474ad6a22f618b66e5e87ddbf79511b06714f266e9205e8b80fff5292",
     ),
     (
         "src/geodeepbayes/diagnostics/rhat.py",
         "bfe187a7507f3bd6e36bd9bbbee6ab1d5fff9c24879d8a2f2a8e47fe8c98010c",
+        "2a4408976cf8cfca2fae67e76138dbbb439a9cb16709384bd97d798753d24523",
+    ),
+}
+
+HISTORICAL_ENVIRONMENT_EVOLUTION_ALLOWLIST = {
+    (
+        "uv.lock",
+        "c71791cc6cda23ea4ba563821a4235261374e5268d8cfd9a595799c552834026",
+        "819f311f710d9e9265858c4dd004060333b6360313598cf3e5b7a57ff05b7c6f",
     ),
 }
 
@@ -659,9 +686,23 @@ def _build_validation_compatibility_entries(repository: Path) -> list[dict[str, 
             elif original_sha256 == _crlf_variant_sha256(current):
                 classification = "historical_eol_normalization"
                 reason = "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定"
-            elif (current_relative, original_sha256) in HISTORICAL_CODE_EVOLUTION_ALLOWLIST:
+            elif (
+                current_relative,
+                original_sha256,
+                current_sha256,
+            ) in HISTORICAL_CODE_EVOLUTION_ALLOWLIST:
                 classification = "historical_code_evolution"
                 reason = "显式 allowlist：诊断实现演进，历史记录保持不变"
+            elif (
+                current_relative,
+                original_sha256,
+                current_sha256,
+            ) in HISTORICAL_ENVIRONMENT_EVOLUTION_ALLOWLIST:
+                classification = "historical_environment_evolution"
+                reason = (
+                    "作者显式授权：加入 pypdf 6.16.2 dev 依赖用于发布图件 PDF 验收；"
+                    "历史证据记录保持不变"
+                )
             else:
                 raise VerificationError(
                     "可解析历史链接存在未分类失配："

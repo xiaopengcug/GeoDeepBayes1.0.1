@@ -2,10 +2,11 @@
   "schema_version": "paper01-validation-link-compatibility/1.0",
   "policy": "historical_records_byte_preserved_current_release_bytes_bound",
   "summary": {
-    "resolvable_links": 32,
+    "resolvable_links": 41,
     "classification_counts": {
-      "exact": 17,
+      "exact": 25,
       "historical_code_evolution": 2,
+      "historical_environment_evolution": 1,
       "historical_eol_normalization": 13
     }
   },
@@ -361,6 +362,105 @@
       "current_path": "src/geodeepbayes/benchmarks/synthetic_block_v2.py",
       "current_bytes": 10487,
       "current_sha256": "a481cbe271035d655e67f6a69092fd2869f37b73dd541e14f1499de630ffa5ce"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"src/geodeepbayes/forward/controlled_source.py\"]",
+      "original_path": "src/geodeepbayes/forward/controlled_source.py",
+      "original_sha256": "20829dc3e32c536918e5c47a694c334839f59ea5e4172fb13f932701138c067b",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/forward/controlled_source.py",
+      "current_bytes": 8764,
+      "current_sha256": "20829dc3e32c536918e5c47a694c334839f59ea5e4172fb13f932701138c067b"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"src/geodeepbayes/forward/em1d.py\"]",
+      "original_path": "src/geodeepbayes/forward/em1d.py",
+      "original_sha256": "3f48a277ad161b4eca4ed6e8e7403e87e3bc411c1bf2878354f6a022e2b61fce",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/forward/em1d.py",
+      "current_bytes": 8890,
+      "current_sha256": "3f48a277ad161b4eca4ed6e8e7403e87e3bc411c1bf2878354f6a022e2b61fce"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"src/geodeepbayes/forward/gravity.py\"]",
+      "original_path": "src/geodeepbayes/forward/gravity.py",
+      "original_sha256": "d3bc6483d149583f1df2d8da55f4353241dc167b0507d56adcce7d3c86e57513",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/forward/gravity.py",
+      "current_bytes": 4086,
+      "current_sha256": "d3bc6483d149583f1df2d8da55f4353241dc167b0507d56adcce7d3c86e57513"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"src/geodeepbayes/forward/magnetic.py\"]",
+      "original_path": "src/geodeepbayes/forward/magnetic.py",
+      "original_sha256": "f93de7f7909275a4395799f36ea8d055a11ff17200a72a391f0d2568c590802d",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/forward/magnetic.py",
+      "current_bytes": 4307,
+      "current_sha256": "f93de7f7909275a4395799f36ea8d055a11ff17200a72a391f0d2568c590802d"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"src/geodeepbayes/forward/static.py\"]",
+      "original_path": "src/geodeepbayes/forward/static.py",
+      "original_sha256": "cbd4b26eb2b699e6a2a38f4c97917e4391fc4b83080356ed1eeed67140015233",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/forward/static.py",
+      "current_bytes": 19274,
+      "current_sha256": "cbd4b26eb2b699e6a2a38f4c97917e4391fc4b83080356ed1eeed67140015233"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"src/geodeepbayes/validation/sbc.py\"]",
+      "original_path": "src/geodeepbayes/validation/sbc.py",
+      "original_sha256": "9d2b6806415b0c1423f7dd6ed9fab6c6ad629d57e8ba82a964d3425f03fda1cd",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/validation/sbc.py",
+      "current_bytes": 2682,
+      "current_sha256": "9d2b6806415b0c1423f7dd6ed9fab6c6ad629d57e8ba82a964d3425f03fda1cd"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"uv.lock\"]",
+      "original_path": "uv.lock",
+      "original_sha256": "c71791cc6cda23ea4ba563821a4235261374e5268d8cfd9a595799c552834026",
+      "classification": "historical_environment_evolution",
+      "classification_reason": "作者显式授权：加入 pypdf 6.16.2 dev 依赖用于发布图件 PDF 验收；历史证据记录保持不变",
+      "current_path": "uv.lock",
+      "current_bytes": 67030,
+      "current_sha256": "819f311f710d9e9265858c4dd004060333b6360313598cf3e5b7a57ff05b7c6f"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"validation/wp8/synthetic/method-validation-policy-v1.json\"]",
+      "original_path": "validation/wp8/synthetic/method-validation-policy-v1.json",
+      "original_sha256": "346603951998a4038781905a155a35f3822993bc036bcf7ae1b859b01ca179b5",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp8/synthetic/method-validation-policy-v1.json",
+      "current_bytes": 3281,
+      "current_sha256": "346603951998a4038781905a155a35f3822993bc036bcf7ae1b859b01ca179b5"
+    },
+    {
+      "record_path": "validation/wp8/evidence/feasibility-v1/wp8-1-method-synthetic-validation-v1.json",
+      "locator": "$.provenance_bindings.files_sha256[\"validation/wp8/validate_wp8.py\"]",
+      "original_path": "validation/wp8/validate_wp8.py",
+      "original_sha256": "4715f4b53bff1d647bf83cb0f916de9cf4c6a843cb9e8145e46ed3ad67b9c5eb",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp8/validate_wp8.py",
+      "current_bytes": 255301,
+      "current_sha256": "4715f4b53bff1d647bf83cb0f916de9cf4c6a843cb9e8145e46ed3ad67b9c5eb"
     }
   ]
 }
