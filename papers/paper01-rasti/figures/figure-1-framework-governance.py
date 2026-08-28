@@ -289,7 +289,7 @@ def build_design() -> DesignSpec:
     )
     styles = (
         StyleSpec("framework_node", "#E8F1F8", 2, "sharp_box", "solid", ""),
-        StyleSpec("governance_component", "#E9C46A", 1, "rounded_box", "dashed", ".."),
+        StyleSpec("governance_component", "#E9C46A", 1, "rounded_box", "dashed", ""),
     )
     return DesignSpec(nodes, edges, bands, styles, (TITLE_TEXT,))
 
@@ -431,7 +431,10 @@ def validate_design(design: DesignSpec) -> None:
         len({style.line_style for style in selected}) == len(selected),
         "线型编码未区分角色。",
     )
-    require(len({style.hatch for style in selected}) == len(selected), "纹理编码未区分角色。")
+    require(
+        all(not style.hatch for style in selected),
+        "文字节点下方禁止 hatch；角色区分由灰度、形状和线型共同承担。",
+    )
     luminance_by_rank = sorted(
         ((style.gray_rank, _hex_luminance(style.face_color)) for style in selected),
         key=lambda item: item[0],
@@ -615,6 +618,112 @@ def _collect_canvas_texts(ax) -> tuple[str, ...]:
     )
 
 
+def _inset_bbox(bbox, padding: float):
+    """返回向内收缩的显示坐标包围盒，避免只在边界相切被算作穿字。"""
+    from matplotlib.transforms import Bbox  # pylint: disable=import-outside-toplevel
+
+    require(
+        bbox.width > 2.0 * padding and bbox.height > 2.0 * padding,
+        "文字显示包围盒过小，无法执行连接线间隔检查。",
+    )
+    return Bbox.from_extents(
+        bbox.x0 + padding,
+        bbox.y0 + padding,
+        bbox.x1 - padding,
+        bbox.y1 - padding,
+    )
+
+
+def _validate_canvas_legibility(fig, design: DesignSpec) -> None:
+    """按真实 renderer 检查文字内含、无纹理底和连接线不穿字。"""
+    from matplotlib.text import Annotation  # pylint: disable=import-outside-toplevel
+
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    ax = fig.axes[0]
+    patches = {
+        patch.get_gid().split(":", 1)[1]: patch
+        for patch in ax.patches
+        if isinstance(patch.get_gid(), str) and patch.get_gid().startswith("node:")
+    }
+    labels = {
+        artist.get_gid().split(":", 1)[1]: artist
+        for artist in ax.texts
+        if isinstance(artist.get_gid(), str) and artist.get_gid().startswith("node:")
+    }
+    expected = {node.key for node in design.nodes}
+    require(set(patches) == expected, "画布节点 patch 集合与设计规格不一致。")
+    require(set(labels) == expected, "画布节点文字集合与设计规格不一致。")
+
+    for key in sorted(expected):
+        patch = patches[key]
+        label = labels[key]
+        require(not patch.get_hatch(), f"文字节点下方存在 hatch：{key}")
+        outer = patch.get_window_extent(renderer)
+        inner = label.get_window_extent(renderer)
+        clearance = 3.0
+        require(
+            outer.x0 + clearance <= inner.x0
+            and inner.x1 <= outer.x1 - clearance
+            and outer.y0 + clearance <= inner.y0
+            and inner.y1 <= outer.y1 - clearance,
+            f"节点文字越出形状或未保留清晰间隔：{key}",
+        )
+
+    readable_texts = [
+        artist
+        for artist in ax.texts
+        if artist.get_visible() and artist.get_text().strip()
+    ]
+    connectors = [
+        artist.arrow_patch
+        for artist in ax.texts
+        if isinstance(artist, Annotation) and artist.arrow_patch is not None
+    ]
+    for connector_index, connector in enumerate(connectors):
+        path = connector.get_path().transformed(connector.get_transform())
+        for artist in readable_texts:
+            gid = artist.get_gid()
+            if isinstance(gid, str) and gid.startswith("node:"):
+                backing = patches[gid.split(":", 1)[1]]
+                if connector.get_zorder() < backing.get_zorder():
+                    continue
+            backing = (
+                artist.get_bbox_patch()
+                if isinstance(artist, Annotation)
+                else None
+            )
+            text_bbox = (
+                backing.get_window_extent(renderer)
+                if backing is not None
+                else artist.get_window_extent(renderer)
+            )
+            interior = _inset_bbox(text_bbox, 2.0)
+            line_bbox = path.get_extents()
+            intersects = line_bbox.overlaps(interior) and path.intersects_bbox(
+                interior, filled=False
+            )
+            require(
+                not intersects,
+                f"连接线 {connector_index} 穿过文字：{artist.get_text()!r}；"
+                f"line={tuple(round(value, 1) for value in line_bbox.extents)}；"
+                f"text={tuple(round(value, 1) for value in interior.extents)}",
+            )
+
+    for text in (CITE_TEXT, RETURN_TEXT):
+        annotation = next(
+            artist
+            for artist in readable_texts
+            if isinstance(artist, Annotation) and artist.get_text().strip() == text
+        )
+        backing = annotation.get_bbox_patch()
+        require(backing is not None, f"连接线标签缺少不透明文字底：{text}")
+        require(
+            backing.get_facecolor()[3] >= 0.99,
+            f"连接线标签文字底不透明度不足：{text}",
+        )
+
+
 def _validate_canvas(fig, design: DesignSpec) -> None:
     """在真实画布对象上复跑文字纪律与 F2-2/F2-4 的方向与结构门。"""
     require(len(fig.axes) == 1, "禁双轴：整图必须只有单一 Axes。")
@@ -672,6 +781,7 @@ def _validate_canvas(fig, design: DesignSpec) -> None:
             matches[0].count("\n") == 1,
             f"F2-4：构件只许名称加一句功能（恰两行）：{name}",
         )
+    _validate_canvas_legibility(fig, design)
 
 
 def _configure_determinism() -> None:
@@ -702,7 +812,7 @@ def _draw_band(ax, band: BandSpec) -> None:
         ha="left",
         va="center",
         fontsize=10.5,
-        fontweight="semibold",
+        fontweight="bold",
         color=TEXT_COLOR,
         zorder=2,
     )
@@ -738,7 +848,8 @@ def _draw_node(ax, node: NodeSpec, style: StyleSpec) -> None:
     else:
         raise FigureDesignError(f"未知节点形状：{style.shape}")
     ax.add_patch(patch)
-    ax.text(
+    patch.set_gid(f"node:{node.key}")
+    label = ax.text(
         node.center_x,
         node.center_y,
         node.label,
@@ -749,6 +860,7 @@ def _draw_node(ax, node: NodeSpec, style: StyleSpec) -> None:
         linespacing=1.18,
         zorder=4,
     )
+    label.set_gid(f"node:{node.key}")
 
 
 def _edge_geometry(edge: EdgeSpec, nodes: dict[str, NodeSpec]):
@@ -777,16 +889,18 @@ def _edge_geometry(edge: EdgeSpec, nodes: dict[str, NodeSpec]):
         )
     if edge.relation == "must_cite":
         tail = (
-            source.center_x - 0.065,
+            source.center_x - source.width / 2.0 - 0.015,
             source.center_y - source.height / 2.0 - 0.02,
         )
         tip = (target.center_x + 0.04, target.center_y + target.height / 2.0)
-        return tail, tip, -0.15, {"ha": "left", "va": "top", "fontsize": 7.6}
+        return tail, tip, -0.15, {
+            "ha": "right",
+            "va": "top",
+            "fontsize": 7.6,
+            "bbox": {"facecolor": "white", "edgecolor": "none", "pad": 1.5},
+        }
     if edge.relation == "feeds_back":
-        tail = (
-            source.center_x + source.width / 2.0 + 0.015,
-            source.center_y,
-        )
+        tail = (source.center_x + source.width / 2.0 + 0.015, source.center_y)
         tip = (target.center_x + 0.04, target.center_y - target.height / 2.0)
         return (
             tail,
@@ -794,10 +908,9 @@ def _edge_geometry(edge: EdgeSpec, nodes: dict[str, NodeSpec]):
             0.12,
             {
                 "ha": "left",
-                "va": "bottom",
-                "rotation": 90,
-                "rotation_mode": "anchor",
+                "va": "center",
                 "fontsize": 7.6,
+                "bbox": {"facecolor": "white", "edgecolor": "none", "pad": 1.5},
             },
         )
     raise FigureDesignError(f"未知边类：{edge.relation}")
@@ -861,7 +974,7 @@ def render_figure(design: DesignSpec, validate: bool = True):
         ha="center",
         va="top",
         fontsize=15,
-        fontweight="semibold",
+        fontweight="bold",
         color=TEXT_COLOR,
     )
     for band in design.bands:
@@ -886,14 +999,15 @@ def save_outputs(fig) -> tuple[Path, Path]:
     """保存固定日期元数据的 PDF 与 PNG；仅由 main 的渲染路径调用。"""
     pdf_path, png_path = output_paths()
     os.environ["SOURCE_DATE_EPOCH"] = str(FIXED_SOURCE_DATE_EPOCH)
+    fixed_pdf_date = datetime.fromtimestamp(FIXED_SOURCE_DATE_EPOCH, tz=timezone.utc)
     fig.savefig(
         pdf_path,
         format="pdf",
         bbox_inches="tight",
         metadata={
             "Creator": "GeoDeepBayes paper figure",
-            "CreationDate": PDF_DATE_PIN,
-            "ModDate": PDF_DATE_PIN,
+            "CreationDate": fixed_pdf_date,
+            "ModDate": fixed_pdf_date,
         },
     )
     fig.savefig(
@@ -975,6 +1089,32 @@ def _mutator_blank_real_label(fig) -> None:
     target.set_text("")
 
 
+def _mutator_connector_through_text(fig) -> None:
+    """把 priors→posterior 真实连接线改为横穿 Priors 文字。"""
+    from matplotlib.text import Annotation  # pylint: disable=import-outside-toplevel
+
+    pure_arrows = [
+        artist
+        for artist in fig.axes[0].texts
+        if isinstance(artist, Annotation) and not artist.get_text().strip()
+    ]
+    target = min(
+        pure_arrows,
+        key=lambda artist: (
+            (float(artist.get_position()[0]) - 0.30) ** 2
+            + (float(artist.get_position()[1]) - 0.745) ** 2
+        ),
+    )
+    require(
+        abs(float(target.get_position()[0]) - 0.30) < 1e-9,
+        "priors→posterior 连接线定位失败，探针前置条件不成立。",
+    )
+    target.set_position((0.10, 0.745))
+    target.xy = (0.31, 0.745)
+    require(target.arrow_patch is not None, "连接线探针未取得真实箭头 patch。")
+    target.arrow_patch.set_zorder(5)
+
+
 def _expect_canvas_rejected(name: str, mutate: Callable) -> str:
     """要求画布级变异被真实画布门拒绝；变异步骤独立于期望步骤，不得互相吞错。"""
     design = build_design()
@@ -996,7 +1136,7 @@ def _expect_canvas_rejected(name: str, mutate: Callable) -> str:
 def selfcheck(verbose: bool = False) -> tuple[str, ...]:
     """纯内存静态门与五类变异探针；构建真实 Figure 但绝不保存任何输出。
 
-    探针清单（16 项 = 规格级 12 + 画布级 4）：
+    探针清单（18 项 = 规格级 13 + 画布级 5）：
     - F2-1 删构件 x4：PROBE_F2_1_DROP_COMPONENT:{key}（四个构件逐一删除）；
     - F2-1 加第五构件：PROBE_F2_1_FIFTH_COMPONENT；
     - F2-2 断回路：PROBE_F2_2_BREAK_LOOP（删回指边）；
@@ -1028,6 +1168,19 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
         "SOURCE_DATE_EPOCH 与 PDF 日期钉死值不一致。",
     )
     reports.append("DETERMINISM_PIN=PASS")
+
+    restored_texture = replace(
+        design,
+        styles=tuple(
+            replace(style, hatch="..")
+            if style.role == "governance_component"
+            else style
+            for style in design.styles
+        ),
+    )
+    reports.append(
+        _expect_rejected("PROBE_TEXT_TEXTURE_RESTORED", restored_texture)
+    )
 
     for key in GOVERNANCE_NODE_KEYS:
         reports.append(
@@ -1141,8 +1294,13 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
             "PROBE_REAL_ARTIST_EMPTY_TEXT", _mutator_blank_real_label
         )
     )
+    reports.append(
+        _expect_canvas_rejected(
+            "PROBE_CONNECTOR_THROUGH_TEXT", _mutator_connector_through_text
+        )
+    )
 
-    reports.append("STATIC_SELFCHECK=PASS probes=16")
+    reports.append("STATIC_SELFCHECK=PASS probes=18")
     result = tuple(reports)
     if verbose:
         for report in result:

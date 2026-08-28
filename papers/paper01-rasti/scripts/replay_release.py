@@ -932,12 +932,18 @@ def verify_submission_render(root: Path) -> dict[str, int]:
 
 
 def verify_manuscript_contract(root: Path) -> dict[str, Any]:
-    """验证 R4 的事实修复、编号顺序与可见正文文风上限。"""
+    """验证 R4–R6 的事实修复、编号顺序与可见正文文风上限。"""
     root = Path(root).resolve()
     anchored = (root / "manuscript" / "manuscript-anchored.md").read_text(
         encoding="utf-8"
     )
     clean = (root / "manuscript" / "manuscript-clean.md").read_text(
+        encoding="utf-8"
+    )
+    response = (root / "manuscript" / "response-to-reviewers-r1.md").read_text(
+        encoding="utf-8"
+    )
+    human_verification = (root / "HUMAN-VERIFICATION.md").read_text(
         encoding="utf-8"
     )
     table_order = re.findall(r"(?m)^\*\*Table ([1-9][0-9]*a?)\.", clean)
@@ -993,6 +999,44 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
     hits = [value for value in forbidden if value in clean]
     if hits:
         raise VerificationError(f"R4 禁止文本仍存在：{hits}")
+
+    if 'The "multi-scale" of the title refers' in clean:
+        raise VerificationError("R6 标题残留仍存在：multi-scale of the title")
+    if "joint-pilot registration and failure records" in clean:
+        raise VerificationError("R6 含混 failure records 措辞仍存在")
+    r6_required = (
+        (clean, "carried once in Table A.1"),
+        (clean, "All four boundaries carry a mandatory co-disclosure"),
+        (clean, "distinct planned redesign batch"),
+        (clean, "Appendix E.1 of the pre-registration document"),
+        (clean, "25 discrepancies between downloaded byte sizes and upstream metadata"),
+        (clean, "failure summaries and reconstructed gate ledger"),
+        (clean, "superseded DO-27 v2 failure package are excluded"),
+        (clean, "*Bayesian Analysis, 12*(4), 1069–1103."),
+        (clean, "*Geophysical Journal International, 215*(3), 1540–1557."),
+        (clean, "… Mons, B. (2016)."),
+        (response, "§2.2 text now points to Table A.1"),
+        (response, "Addressed with Table 5a, immediately following Table 5."),
+        (human_verification, "superseded DO-27 v2 failure package"),
+    )
+    r6_missing = [value for corpus, value in r6_required if value not in corpus]
+    if r6_missing:
+        raise VerificationError(f"R6 必需修订缺失：{r6_missing}")
+    if clean.count("**Table A.1.") != 1:
+        raise VerificationError("R6 Table A.1 必须恰保留一份")
+    if clean.count(
+        "| Nearest neighbour | Auditable priors | Shared-error likelihood |"
+    ) != 1:
+        raise VerificationError("R6 最近邻清单表必须恰保留一份")
+    r6_forbidden = (
+        (clean, "Three of the four boundaries carry"),
+        (response, "Table 5 now assigns every element cell"),
+        (response, "Addressed with Table 4a."),
+        (anchored, "Crossref 未返回卷期页"),
+    )
+    r6_hits = [value for corpus, value in r6_forbidden if value in corpus]
+    if r6_hits:
+        raise VerificationError(f"R6 禁止文本仍存在：{r6_hits}")
 
     visible_blocks: list[str] = []
     block_leading_bold = 0
@@ -1055,14 +1099,48 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         or r5_record.get("patch_sha256")
         != "dd71c7c147a066d65321432d51efd5fac50b581635343254031f4c35358c98c0"
         or r5_record.get("after_manuscript_sha256")
-        != _sha256(root / "manuscript" / "manuscript-anchored.md")
+        != "95570a979e39ffca75d5cfde21115d8f346b1469fb3de32852345f7d8f252b7e"
         or r5_record.get("after_clean_sha256")
-        != _sha256(root / "manuscript" / "manuscript-clean.md")
+        != "48a53ab7b97155461252adaa2459917d9c6fc028beb3c01c9fba71e28aa6702d"
         or r5_record.get("historical_records_byte_preserved") is not True
         or r5_record.get("formal_release_locked") is not True
         or r5_record.get("requires_new_candidate_manual_review") is not True
     ):
         raise VerificationError("R5 授权补丁应用记录与当前稿件或发布锁不一致")
+    r6_record = _read_json(root / "provenance" / "release-r6-patch-application.json")
+    if (
+        r6_record.get("schema_version") != "ars-release-r6-patch-application/1.0"
+        or r6_record.get("base_candidate")
+        != "a2050c8345dfc614c9acf67d48f2ee1b9b4071ff"
+        or r6_record.get("base_manuscript_sha256")
+        != "95570a979e39ffca75d5cfde21115d8f346b1469fb3de32852345f7d8f252b7e"
+        or r6_record.get("base_response_sha256")
+        != "3668ad1e72b3988823d4159a8472f0e1411f92b24842d7ab1758599b86892982"
+        or r6_record.get("base_human_verification_sha256")
+        != "7492066b97eee678b1a74a5c0a5a284b96917450e912ab12432f46956e2ff576"
+        or r6_record.get("patch_sha256")
+        != "94b2bc0702b10290fe46f006c75e94ae0a9ca768a3d6ce2a413af232e47cc847"
+        or r6_record.get("operation_counts")
+        != {
+            "manuscript_blocks": 12,
+            "text_replacements": 3,
+            "code_specs": 3,
+            "structural_operations": 4,
+        }
+        or r6_record.get("after_manuscript_sha256")
+        != _sha256(root / "manuscript" / "manuscript-anchored.md")
+        or r6_record.get("after_clean_sha256")
+        != _sha256(root / "manuscript" / "manuscript-clean.md")
+        or r6_record.get("after_response_sha256")
+        != _sha256(root / "manuscript" / "response-to-reviewers-r1.md")
+        or r6_record.get("after_human_verification_sha256")
+        != _sha256(root / "HUMAN-VERIFICATION.md")
+        or r6_record.get("historical_records_byte_preserved") is not True
+        or r6_record.get("formal_release_locked") is not True
+        or r6_record.get("requires_new_candidate_full_release_review") is not True
+        or r6_record.get("requires_new_full_sha_release_authorization") is not True
+    ):
+        raise VerificationError("R6 授权补丁应用记录与当前稿件或发布锁不一致")
     return {
         "table_order": table_order,
         "figure_order": figure_order,
@@ -1072,6 +1150,9 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         "forbidden_regressions": len(hits),
         "patch_record_verified": 1,
         "r5_patch_record_verified": 1,
+        "r6_repairs_verified": len(r6_required),
+        "r6_forbidden_regressions": len(r6_hits),
+        "r6_patch_record_verified": 1,
         "style_metrics": style_metrics,
     }
 

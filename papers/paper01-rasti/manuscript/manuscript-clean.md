@@ -62,21 +62,7 @@ This tradition supplies the normative source of nearly every wording constraint 
 
 The discovery inventory below is retained only as a discovery inventory of the registered nearest-neighbour set. Its former element scores were based on titles, abstracts and metadata and are therefore withdrawn from decision use. A cell may receive a non-`unknown` value only when a full-text passage, page or section is recorded for that element; no unverified or inaccessible record is encoded as absence. The inventory cannot establish priority, novelty or a missing combination, and no contribution claim in this paper depends on an element count.
 
-Discovery inventory of the registered nearest-neighbour set. The four disciplinary-element fields are `unknown` pending full-text, location-specific recoding; the table has no novelty or difference-making role.
-
-| Nearest neighbour | Auditable priors | Shared-error likelihood | Multi-scale | Pre-registered governance | Decision use |
-|---|---|---|---|---|---|
-| Bosch (1999) | unknown | unknown | unknown | unknown | none |
-| Bosch and McGaughey (2001) | unknown | unknown | unknown | unknown | none |
-| Afonso et al. (2013) | unknown | unknown | unknown | unknown | none |
-| Astic and Oldenburg (2019) | unknown | unknown | unknown | unknown | none |
-| Moorkamp et al. (2011) | unknown | unknown | unknown | unknown | none |
-| Hawkins and Sambridge (2015) | unknown | unknown | unknown | unknown | none |
-| Blatter et al. (2021) | unknown | unknown | unknown | unknown | none |
-| Alemie and Sacchi (2011) | unknown | unknown | unknown | unknown | none |
-| Miller and Dunson (2019) | unknown | unknown | unknown | unknown | none |
-| Jacob et al. (2017) | unknown | unknown | unknown | unknown | none |
-| Afonso (2026) | unknown | unknown | unknown | unknown | none |
+The registered nearest-neighbour discovery inventory and its location-specific full-text recoding queue are carried once in Table A.1. Every unreviewed disciplinary-element field remains `unknown`; the inventory has no novelty, ranking or difference-making role.
 
 No element count or score is computed from the discovery inventory. `unknown` means that the present revision did not complete a location-specific full-text evidence bundle for that cell; it is not an absence finding. The table therefore carries no argument about a closest work, a maximum overlap or an unoccupied combination.
 
@@ -274,7 +260,7 @@ with $p(u_L\mid\Theta_{cs})$ proper. The operator, the variogram-structured resi
 
 Neither ingredient of this construction originates here. Organising geophysical inversion by a hierarchy of frequency band and resolution goes back to Bunks et al. (1995), and multi-scale unstructured discretisation carried across methods within a joint inversion for mineral exploration appears in Lelièvre et al. (2012); the basis construction itself comes from the turbulence literature (Sirovich, 1987; Berkooz et al., 1993). What this framework contributes at this point is the depth-band per-scale organisation and the retraction discipline just stated — neither the multi-scale idea nor the decomposition.
 
-The "multi-scale" of the title refers to exactly these three parameterisation mechanisms.
+The "multi-scale" of this framework refers to exactly these three parameterisation mechanisms.
 
 ### 3.5 Robustness as a first-class component
 
@@ -490,7 +476,7 @@ $$
 \tag{6.1}
 $$
 
-and the bound is attained, not merely approached, at the configuration in which the within-chain variances vanish and the chain means are maximally spread. The limiting form $\sqrt{M-1}$ is a supremum that finite $n$ never reaches; the finite-$n$ value is the one that decides the question. With $k=3$ and $M=4$ (the frozen chain count of this work) the bound is $\sqrt{3}\approx1.7321$, which is $0.5774$ of the threshold, a constant margin of $1.7321\times$ that no data can consume. Setting $R^{*}(M,n)>k$ and clearing denominators gives $(M-1)(Mn-1)>k^{2}nM$, which at $k=3$ holds if and only if $M\ge11$, **and this threshold is independent of $n$**. The chain length is not a lever on it: at $M=4$, doubling the post-warmup length from $4000$ to $8000$ draws moves the bound from $1.731997$ to $1.732024$ (a change in the fifth decimal place, against a threshold of $3$) and no length whatever brings the two together. **The independence is exact, not asymptotic**: at $M=11$ the bound already exceeds the threshold at the shortest chain there is, $R^{*}(11,1)=3.0151>3$, so a system adopting a criterion of this form can settle the question once from its chain count alone and need not recheck it when the chain length changes. At $M=10$ the finite-$n$ bound is $2.99996<3$, so the item passes strictly and the conclusion does not turn on whether the comparison is written $\le$ or $<$. **The item therefore cannot fail in this configuration, and no property of the sampler, the target or the data can make it fail.** One qualification belongs with the result and is not a detail: the argument assumes the log-density values are finite. A single non-finite value makes the pooled standard deviation undefined, every comparison false, and the item fail — so the domain in which "cannot fail" holds is $M\le10$ *together with* finite inputs, and both conditions must be declared, not just the first. **The two conditions are not of the same kind, and the difference is the point taken up below**: the chain count decides whether the item can fail at all, whereas the finiteness of the inputs decides which way it fails.
+and the bound is attained, not merely approached, at the configuration in which the within-chain variances vanish and the chain means are maximally spread. The limiting form $\sqrt{M-1}$ is a supremum that finite $n$ never reaches; the finite-$n$ value is the one that decides the question. With $k=3$ and $M=4$ (the frozen chain count of this work) the bound is $\sqrt{3}\approx1.7321$, which is $0.5774$ of the threshold, a constant margin of $1.7321\times$ that no data can consume. Setting $R^{*}(M,n)>k$ and clearing denominators gives $(M-1)(Mn-1)>k^{2}nM$, which at $k=3$ holds if and only if $M\ge11$, **and this threshold is independent of $n$**. The chain length is not a lever on it: at $M=4$, doubling the post-warmup length from $4000$ to $8000$ draws moves the bound from $1.731997$ to $1.732024$ (a change in the fifth decimal place, against a threshold of $3$) and no length whatever brings the two together. **The independence is exact, not asymptotic**: at $M=11$ the bound already exceeds the threshold at the shortest chain there is, $R^{*}(11,1)=3.0151>3$, so a system adopting a criterion of this form can settle the question once from its chain count alone and need not recheck it when the chain length changes. At $M=10$ and the registered $n=4000$, the finite-$n$ bound is $2.99996<3$, so the item passes strictly and the conclusion does not turn on whether the comparison is written $\le$ or $<$. **The item therefore cannot fail in this configuration, and no property of the sampler, the target or the data can make it fail.** One qualification belongs with the result and is not a detail: the argument assumes the log-density values are finite. A single non-finite value makes the pooled standard deviation undefined, every comparison false, and the item fail — so the domain in which "cannot fail" holds is $M\le10$ *together with* finite inputs, and both conditions must be declared, not just the first. **The two conditions are not of the same kind, and the difference is the point taken up below**: the chain count decides whether the item can fail at all, whereas the finiteness of the inputs decides which way it fails.
 
 The correction is not that the gate misjudged anything. It never did: the item returned the right answer on every input it ever saw, and a reader auditing the runs would find nothing wrong, because there was nothing wrong to find. What was wrong was the impression — a conjunctive gate that reports five satisfied conditions invites the reading that five things were checked. **A defect of this kind is invisible to any pass/fail audit, precisely because the verdicts are correct.** The rule it forced us to write is the one we propose for reuse:
 
@@ -517,7 +503,7 @@ Four assets are registered at a tier that permits quantitative statements, and t
 | DO-27 reduced-order single-physics (gravity and magnetic) modern-API compatibility runs with GCV/LSQR | EVD-SYNTH-001 (`validation/wp7/versions/do27-v4-20260724`) | Synthetic-run (limited compatibility) | Mandatory co-disclosure: v2 failure package immutable; low RMS is an overfit warning; magnetic model recovery FAILED; not PGI, not joint, not Bayesian, not a notebook reproduction |
 | Open geophysical data ingestion and integrity audit (a 184-file geophysics manifest and a 421-file MT manifest, SHA-256 and format checks) | EVD-OPEN-001 (`validation/runs/open-data-20260717-03`) | Open-data-run | Data-governance boundary only; never upgrades to field validity |
 
-Three of the four boundaries carry a mandatory co-disclosure or a mandatory negation, and they are discharged where the corresponding evidence is reported; this section does not repeat them: the verbatim disclosure statements are in Sections 7.1 and 7.3 and are collected in Section 8.5. This section registers the obligation; it does not restate the statements, and it does not summarise them.
+All four boundaries carry a mandatory co-disclosure or mandatory negation, and each is discharged with its evidence in Sections 7.1–7.4; the failure co-disclosures are also collected in Section 8.5. This section registers the obligation; it does not restate the statements, and it does not summarise them.
 
 ### 6.3 The pre-registered validation protocol
 
@@ -576,13 +562,13 @@ Under v1.3, the pre-registered co-platform gravity–magnetic synthetic scenes, 
 
 Execution of v1.3 is staged. Appendix D records the predecessor diagnostic probes and failed v1.1 pilot that motivated this redesign; those entries do not constitute passage of the v1.3 attainability screen described here. A Diagnostic-only attainability screen uses the registered baseline as a scaling reference and evaluates pCN and MALA on s02 at $\lambda_{gm}=1000$ under the registered draw-scaling schedule; qualifying arms receive the conditional s00 pressure control, which neither enters scaling extrapolation nor overturns the s02 decision. R2 may begin only if the pre-registered screen is passed; otherwise, any dimensional reduction or gate/contract change must be escalated rather than introduced silently.
 
-The formal 42-run re-pilot comprises 30 $\lambda_{gm}$-grid runs (s00–s04 × $\lambda_{gm}\in\{0,1,10,100,1000,10000\}$), two adaptive-Metropolis arms, and ten weighted arms. Each run uses four chains, and `n_draws` follows the empirical R1 scaling slope.
+The formal 42-run v1.3 re-pilot is a distinct planned redesign batch; its run count deliberately mirrors the failed v1.1 pilot. It comprises 30 $\lambda_{gm}$-grid runs (s00–s04 × $\lambda_{gm}\in\{0,1,10,100,1000,10000\}$), two adaptive-Metropolis arms, and ten weighted arms. Each run uses four chains, and `n_draws` follows the empirical R1 scaling slope.
 
 A run clears the convergence hard gate only if `rhat`, `bulk_ess`, `tail_ess`, and `relative_mcse` jointly satisfy the registered contract on all 1,009 channels: 1,005 state parameters, F1–F3, and log density.
 
 If any channel is excluded as non-finite (`n_channels_nonfinite > 0`), the separate guard marks all four diagnostic readings unusable, bars their use in any decision, early-exit criterion, or scaling extrapolation, and requires fail-closed termination and escalation.
 
-For the analytic reason registered in pre-registration Appendix E.1, `mode_visits` remains a mandatory run-level disclosure, including its operational fields, the surrogate rationale, and the analytic upper-bound-to-threshold ratio at the registered chain count.
+For the analytic reason registered in Appendix E.1 of the pre-registration document, `mode_visits` remains a mandatory run-level disclosure, including its operational fields, the surrogate rationale, and the analytic upper-bound-to-threshold ratio at the registered chain count.
 
 The run identifier, criteria, frozen input manifest, and `environment_hash` must be frozen before execution so that their temporal precedence over run output is auditable and outcome-conditioned specification is prohibited.
 
@@ -660,7 +646,7 @@ Provenance of the sign-off. The acceptance decision on this asset was taken by t
 
 ### 7.4 Open-data ingestion and integrity audit (EVD-OPEN-001)
 
-Two published open geophysical data holdings were ingested and audited for integrity: a geophysics manifest of 184 files and a magnetotelluric manifest of 421 files, each checked for content hash and format conformance. The audit establishes that these holdings can be ingested reproducibly and that their contents match their recorded hashes.
+Two published open geophysical data holdings were ingested and audited for integrity: a geophysics manifest of 184 files and a magnetotelluric manifest of 421 files, each checked for content hash and format conformance. The audit establishes that these holdings can be ingested reproducibly and that their contents match their locally registered hashes. It also recorded 25 discrepancies between downloaded byte sizes and upstream metadata; those metadata-size discrepancies are distinct from local content-integrity failures, of which there were none.
 
 The boundary on this asset is one sentence and it is absolute. This is a **data-governance** result and nothing more: it states that files were read and verified, not that anything was inverted, recovered or located. It carries no implication about inversion accuracy, and **it never upgrades to field validity**. Its role here is as the empirical wing of the governance contribution — a claim about reproducible data handling, supported by an audit of exactly that, and by nothing wider.
 
@@ -883,7 +869,7 @@ This research received no specific grant from any funding agency in the public, 
 
 ### Code and data availability
 
-The framework is implemented in the `geodeepbayes` package at `https://github.com/xiaopengcug/GeoDeepBayes1.0.1`. The paper-specific materials are distributed as the curated release `paper01-rasti-v1.0.0`; its release record carries the full commit identifier and archive DOI. The release binds the diagnostic contract, evidence registry, per-evidence hashes, joint-pilot registration and failure records. The Supplement provides the observed Windows/Python environment, minimum input/output/unit contract, clean-environment test and replay commands, supported component boundaries and failure-escalation rules. The replay was author-managed; an independent-team replay has not been completed, and the reported environment is not a performance benchmark.
+The framework is implemented in the `geodeepbayes` package at `https://github.com/xiaopengcug/GeoDeepBayes1.0.1`. The paper-specific materials are distributed as the curated release `paper01-rasti-v1.0.0`; its release record carries the full commit identifier and archive DOI. The release binds the diagnostic contract, evidence registry, per-evidence hashes, joint-pilot registration, failure summaries and reconstructed gate ledger. The 65 historical joint-pilot chain arrays and the superseded DO-27 v2 failure package are excluded from the curated release and remain in the governance archive. The Supplement provides the observed Windows/Python environment, minimum input/output/unit contract, clean-environment test and replay commands, supported component boundaries and failure-escalation rules. The replay was author-managed; an independent-team replay has not been completed, and the reported environment is not a performance benchmark.
 
 The manuscript reports Synthetic-run and data-ingestion evidence but no Field-validated result. Public-data source records and redistribution terms must accompany every released artefact; vendor DLLs and licence-bound SDKs are not distributed. The curated GitHub release binds code, data manifests, replay scripts, expected statuses, licence and access statements to an exact revision. This availability supports inspection and author-managed replay; it does not establish independent reproduction.
 
@@ -1494,7 +1480,7 @@ Grana, D., & Della Rossa, E. (2010). Probabilistic petrophysical-properties esti
 
 Green, P. J. (1995). Reversible jump Markov chain Monte Carlo computation and Bayesian model determination. *Biometrika, 82*(4), 711–732. https://doi.org/10.1093/biomet/82.4.711
 
-Grünwald, P., & van Ommen, T. (2017). Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it. *Bayesian Analysis, 12*(4). https://doi.org/10.1214/17-BA1085
+Grünwald, P., & van Ommen, T. (2017). Inconsistency of Bayesian inference for misspecified linear models, and a proposal for repairing it. *Bayesian Analysis, 12*(4), 1069–1103. https://doi.org/10.1214/17-BA1085
 
 Guitton, A., & Symes, W. W. (2003). Robust inversion of seismic data using the Huber norm. *Geophysics, 68*(4), 1310–1319. https://doi.org/10.1190/1.1598124
 
@@ -1526,7 +1512,7 @@ Lieberman, C., Willcox, K., & Ghattas, O. (2010). Parameter and state model redu
 
 Lin, H., Guo, P., Saygin, E., Kennett, B. L. N., Qashqai, M. T., & Xing, L. (2026). Crustal heterogeneity and Moho uplift in the northern Gawler Craton from trans-dimensional Bayesian joint inversion of receiver functions and surface wave dispersion. *Geophysical Journal International, 247*(1). https://doi.org/10.1093/gji/ggag290
 
-Lin, W., & Zhdanov, M. S. (2018). Joint multinary inversion of gravity and magnetic data using Gramian constraints. *Geophysical Journal International*. https://doi.org/10.1093/gji/ggy351
+Lin, W., & Zhdanov, M. S. (2018). Joint multinary inversion of gravity and magnetic data using Gramian constraints. *Geophysical Journal International, 215*(3), 1540–1557. https://doi.org/10.1093/gji/ggy351
 
 Lines, L. R., Schultz, A. K., & Treitel, S. (1988). Cooperative inversion of geophysical data. *Geophysics, 53*(1), 8–20. https://doi.org/10.1190/1.1442403
 
@@ -1598,7 +1584,7 @@ Vozoff, K., & Jupp, D. L. B. (1975). Joint inversion of geophysical data. *Geoph
 
 Wang, X., Zhang, B., Lin, X., Xu, S., Yao, W., & Ye, R. (2016). Geochemical challenges of diverse regolith-covered terrains for mineral exploration in China. *Ore Geology Reviews, 73*, 417–431. https://doi.org/10.1016/j.oregeorev.2015.08.015
 
-Wilkinson, M. D., Dumontier, M., & Aalbersberg, I. J. (2016). The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data, 3*, 160018. https://doi.org/10.1038/sdata.2016.18
+Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Bonino da Silva Santos, L., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O., Edmunds, S., Evelo, C. T., Finkers, R., … Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data, 3*, 160018. https://doi.org/10.1038/sdata.2016.18
 
 Wu, S., Sun, J., & Chen, J. (2025). Variational inference for geophysical Bayesian inverse problems using normalizing flows: An unsupervised approach to electromagnetic data inversion. *Geophysical Journal International, 242*(3). https://doi.org/10.1093/gji/ggaf239
 

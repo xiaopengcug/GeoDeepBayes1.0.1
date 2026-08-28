@@ -163,7 +163,7 @@ def build_design() -> DesignSpec:
                 label=pod_label,
                 center_x=0.49,
                 center_y=center_y,
-                width=0.24,
+                width=0.26,
                 height=0.09,
             )
         )
@@ -177,10 +177,10 @@ def build_design() -> DesignSpec:
                 role="change_of_support",
                 scale=None,
                 label="Change-of-support\noperator",
-                center_x=0.74,
+                center_x=0.73,
                 center_y=0.51,
-                width=0.13,
-                height=0.18,
+                width=0.19,
+                height=0.25,
             ),
             NodeSpec(
                 key="observation_field",
@@ -204,9 +204,9 @@ def build_design() -> DesignSpec:
 
     styles = (
         StyleSpec("depth_band", "#E8F1F8", 4, "rectangle", "solid", ""),
-        StyleSpec("reduced_coordinates", "#E9C46A", 3, "hexagon", "dashed", "///"),
-        StyleSpec("change_of_support", "#79B791", 2, "diamond", "dashdot", "xx"),
-        StyleSpec("observation_support", "#9B7EAC", 1, "ellipse", "dotted", ".."),
+        StyleSpec("reduced_coordinates", "#E9C46A", 3, "hexagon", "dashed", ""),
+        StyleSpec("change_of_support", "#79B791", 2, "diamond", "dashdot", ""),
+        StyleSpec("observation_support", "#9B7EAC", 1, "ellipse", "dotted", ""),
     )
     fixed_texts = (
         TITLE_TEXT,
@@ -395,7 +395,10 @@ def validate_design(design: DesignSpec) -> None:
     require(len({style.gray_rank for style in selected}) == len(selected), "灰度顺序未区分角色。")
     require(len({style.shape for style in selected}) == len(selected), "形状编码未区分角色。")
     require(len({style.line_style for style in selected}) == len(selected), "线型编码未区分角色。")
-    require(len({style.hatch for style in selected}) == len(selected), "纹理编码未区分角色。")
+    require(
+        all(not style.hatch for style in selected),
+        "文字节点下方禁止 hatch；角色区分由灰度、形状和线型共同承担。",
+    )
 
     luminance_by_rank = sorted(
         ((style.gray_rank, _hex_luminance(style.face_color)) for style in selected),
@@ -432,6 +435,18 @@ def _expect_rejected(name: str, candidate: DesignSpec) -> str:
     except FigureDesignError:
         return f"{name}=PASS"
     raise FigureDesignError(f"失败关闭探针未拒绝变异体：{name}")
+
+
+def _expect_canvas_design_rejected(name: str, candidate: DesignSpec) -> str:
+    """要求只在真实排版后暴露的几何变异被画布门拒绝。"""
+    try:
+        fig = render_figure(candidate)
+    except FigureDesignError:
+        return f"{name}=PASS"
+    import matplotlib.pyplot as plt  # pylint: disable=import-outside-toplevel
+
+    plt.close(fig)
+    raise FigureDesignError(f"失败关闭探针未拒绝画布变异体：{name}")
 
 
 def _probe_real_artist_empty_text() -> str:
@@ -482,10 +497,38 @@ def _probe_real_artist_empty_text() -> str:
 
 
 def selfcheck(verbose: bool = False) -> tuple[str, ...]:
-    """做纯内存静态检查与失败构造；第 9 号探针在内存中构建真实 Figure 但绝不保存任何输出。"""
+    """做纯内存静态检查与失败构造；画布探针绝不保存任何输出。"""
     design = build_design()
     validate_design(design)
     reports = ["STATIC_BASE=PASS"]
+
+    restored_texture = replace(
+        design,
+        styles=tuple(
+            replace(style, hatch="///")
+            if style.role == "reduced_coordinates"
+            else style
+            for style in design.styles
+        ),
+    )
+    reports.append(
+        _expect_rejected("PROBE_TEXT_TEXTURE_RESTORED", restored_texture)
+    )
+
+    small_diamond = replace(
+        design,
+        nodes=tuple(
+            replace(node, width=0.13, height=0.18)
+            if node.key == "support_operator"
+            else node
+            for node in design.nodes
+        ),
+    )
+    reports.append(
+        _expect_canvas_design_rejected(
+            "PROBE_SUPPORT_DIAMOND_TOO_SMALL", small_diamond
+        )
+    )
 
     forbidden_edge = replace(
         design,
@@ -540,7 +583,7 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
     reports.append(_expect_rejected("PROBE_NUMERIC_VISIBLE_TEXT", numeric_text))
 
     reports.append(_probe_real_artist_empty_text())
-    reports.append("STATIC_SELFCHECK=PASS probes=9")
+    reports.append("STATIC_SELFCHECK=PASS probes=11")
     result = tuple(reports)
     if verbose:
         for report in result:
@@ -600,7 +643,8 @@ def _draw_node(ax, node: NodeSpec, style: StyleSpec) -> None:
         raise FigureDesignError(f"未知节点形状：{style.shape}")
 
     ax.add_patch(patch)
-    ax.text(
+    patch.set_gid(f"node:{node.key}")
+    label = ax.text(
         node.center_x,
         node.center_y,
         node.label,
@@ -611,6 +655,7 @@ def _draw_node(ax, node: NodeSpec, style: StyleSpec) -> None:
         linespacing=1.15,
         zorder=4,
     )
+    label.set_gid(f"node:{node.key}")
 
 
 def _draw_edges(ax, design: DesignSpec) -> None:
@@ -681,6 +726,67 @@ def _collect_canvas_texts(ax) -> tuple[str, ...]:
     )
 
 
+def _validate_canvas(fig, design: DesignSpec) -> None:
+    """按真实 renderer 检查文字完全内含且与纹理分离。"""
+    from matplotlib.text import Annotation  # pylint: disable=import-outside-toplevel
+
+    require(len(fig.axes) == 1, "禁双轴：整图必须只有单一 Axes。")
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    ax = fig.axes[0]
+    _validate_visible_texts(_collect_canvas_texts(ax))
+
+    patches = {
+        patch.get_gid().split(":", 1)[1]: patch
+        for patch in ax.patches
+        if isinstance(patch.get_gid(), str) and patch.get_gid().startswith("node:")
+    }
+    labels = {
+        artist.get_gid().split(":", 1)[1]: artist
+        for artist in ax.texts
+        if isinstance(artist.get_gid(), str) and artist.get_gid().startswith("node:")
+    }
+    expected = {node.key for node in design.nodes}
+    require(set(patches) == expected, "画布节点 patch 集合与设计规格不一致。")
+    require(set(labels) == expected, "画布节点文字集合与设计规格不一致。")
+
+    for key in sorted(expected):
+        patch = patches[key]
+        label = labels[key]
+        require(not patch.get_hatch(), f"文字节点下方存在 hatch：{key}")
+        require(
+            patch.get_facecolor()[3] >= 0.99,
+            f"文字节点缺少不透明底：{key}",
+        )
+        bbox = label.get_window_extent(renderer)
+        clearance = 3.0
+        corners = (
+            (bbox.x0 - clearance, bbox.y0 - clearance),
+            (bbox.x0 - clearance, bbox.y1 + clearance),
+            (bbox.x1 + clearance, bbox.y0 - clearance),
+            (bbox.x1 + clearance, bbox.y1 + clearance),
+        )
+        shape = patch.get_path().transformed(patch.get_transform())
+        require(
+            all(shape.contains_points(corners, radius=-2.0)),
+            f"节点文字越出形状或未保留清晰间隔：{key}；"
+            f"shape={tuple(round(value, 1) for value in shape.get_extents().extents)}；"
+            f"text={tuple(round(value, 1) for value in bbox.extents)}",
+        )
+
+    arrows = [
+        artist.arrow_patch
+        for artist in ax.texts
+        if isinstance(artist, Annotation) and artist.arrow_patch is not None
+    ]
+    require(len(arrows) == 10, f"真实连接线计数异常：{len(arrows)}（期望 10）。")
+    node_zorder = min(patch.get_zorder() for patch in patches.values())
+    require(
+        all(arrow.get_zorder() < node_zorder for arrow in arrows),
+        "连接线必须位于不透明文字节点下层，禁止穿字。",
+    )
+
+
 def render_figure(design: DesignSpec):
     """渲染已通过静态门的设计；本函数不会在 import 或 selfcheck 时调用。"""
     validate_design(design)
@@ -709,11 +815,11 @@ def render_figure(design: DesignSpec):
     ax.set_ylim(0.0, 1.0)
     ax.set_axis_off()
 
-    ax.text(0.5, 0.965, TITLE_TEXT, ha="center", va="top", fontsize=15, fontweight="semibold")
-    ax.text(0.17, 0.855, DEPTH_HEADING, ha="center", va="center", fontsize=10, fontweight="semibold")
-    ax.text(0.49, 0.855, POD_HEADING, ha="center", va="center", fontsize=10, fontweight="semibold")
-    ax.text(0.74, 0.855, TRANSFER_HEADING, ha="center", va="center", fontsize=10, fontweight="semibold")
-    ax.text(0.91, 0.855, OBSERVATION_HEADING, ha="center", va="center", fontsize=10, fontweight="semibold")
+    ax.text(0.5, 0.965, TITLE_TEXT, ha="center", va="top", fontsize=15, fontweight="bold")
+    ax.text(0.17, 0.855, DEPTH_HEADING, ha="center", va="center", fontsize=10, fontweight="bold")
+    ax.text(0.49, 0.855, POD_HEADING, ha="center", va="center", fontsize=10, fontweight="bold")
+    ax.text(0.73, 0.855, TRANSFER_HEADING, ha="center", va="center", fontsize=10, fontweight="bold")
+    ax.text(0.91, 0.855, OBSERVATION_HEADING, ha="center", va="center", fontsize=10, fontweight="bold")
 
     ax.annotate(
         "",
@@ -742,8 +848,11 @@ def render_figure(design: DesignSpec):
     ax.add_patch(boundary_box)
     ax.text(0.50, 0.1025, BOUNDARY_TEXT, ha="center", va="center", fontsize=9.3, color="#1F2933", zorder=4)
 
-    canvas_texts = _collect_canvas_texts(ax)
-    _validate_visible_texts(canvas_texts)
+    try:
+        _validate_canvas(fig, design)
+    except FigureDesignError:
+        plt.close(fig)
+        raise
     return fig
 
 

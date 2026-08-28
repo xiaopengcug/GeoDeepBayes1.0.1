@@ -54,8 +54,8 @@
     },
     {
       "path": "papers/paper01-rasti/HUMAN-VERIFICATION.md",
-      "bytes": 4063,
-      "sha256": "7492066b97eee678b1a74a5c0a5a284b96917450e912ab12432f46956e2ff576"
+      "bytes": 4100,
+      "sha256": "b08b92ee65d3511e299076a2cf43cabf9c0ab7b43edfd05795b77f90ae8dcdf2"
     },
     {
       "path": "papers/paper01-rasti/LICENSE.txt",
@@ -184,8 +184,8 @@
     },
     {
       "path": "papers/paper01-rasti/figures/figure-1-framework-governance.py",
-      "bytes": 40977,
-      "sha256": "622df9986e1e634564361af73c3f99ebaad807be1c044938540726897264e18c"
+      "bytes": 46968,
+      "sha256": "1b083fef1a26aaa975d02ec6017d689df9911294f2697fff3d810cd53ce86af0"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.py",
@@ -194,8 +194,8 @@
     },
     {
       "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.py",
-      "bytes": 27826,
-      "sha256": "8c91f250663142903fffb297851a602f4c9a141276d37f88c4d3a0e4177eb7a8"
+      "bytes": 31668,
+      "sha256": "cd23a2194d32bc19bb9f4b44d29c0bb5869d4e63db346e2220214c4c7a408d7a"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.py",
@@ -209,13 +209,13 @@
     },
     {
       "path": "papers/paper01-rasti/manuscript/figure-1-framework-governance.pdf",
-      "bytes": 39632,
-      "sha256": "71fb6af77e7c93555dbf09e76d6f6d9fa93c66e273b1f5ec5e86844289864fa0"
+      "bytes": 27880,
+      "sha256": "9201923c032184ece5a5a7974a95b7448187e38419c90a804ee14b41cadf3e44"
     },
     {
       "path": "papers/paper01-rasti/manuscript/figure-1-framework-governance.png",
-      "bytes": 403995,
-      "sha256": "f3db47ff822611b13ca569daa853547a6b9b7e6d1da4a6ef8c9c73ef28bff6cb"
+      "bytes": 350421,
+      "sha256": "ba31b25c01ccaf60178a1b4c22f3607f53c7a41b68e4b6d7a574873649241a5d"
     },
     {
       "path": "papers/paper01-rasti/manuscript/figure-2-probabilistic-dag.pdf",
@@ -229,13 +229,13 @@
     },
     {
       "path": "papers/paper01-rasti/manuscript/figure-3-multiscale-parameterisation.pdf",
-      "bytes": 34773,
-      "sha256": "2da7c907e1693e58fec86491584a9f33104ac87fe202b56330e50f4129629ade"
+      "bytes": 21767,
+      "sha256": "bf16b63335f9af1bb1dc20f0e4b83c267094a62188bda7101ee80e579541e1a5"
     },
     {
       "path": "papers/paper01-rasti/manuscript/figure-3-multiscale-parameterisation.png",
-      "bytes": 454423,
-      "sha256": "ac56724f416018fcead1b349f4d476838e666af19e03c88ed79ef05474d51f63"
+      "bytes": 410362,
+      "sha256": "9c34913aff07b4bb396e9fe264292a3dcc9f0db113d8b88ca44f6b972eb77c38"
     },
     {
       "path": "papers/paper01-rasti/manuscript/figure-4-evd-joint-scene.pdf",
@@ -259,18 +259,18 @@
     },
     {
       "path": "papers/paper01-rasti/manuscript/manuscript-anchored.md",
-      "bytes": 310408,
-      "sha256": "95570a979e39ffca75d5cfde21115d8f346b1469fb3de32852345f7d8f252b7e"
+      "bytes": 310193,
+      "sha256": "6339aa01a47f6b5da5f870f4ea1981bfeee9b136f1e60461631ae2f6ea7ec1c2"
     },
     {
       "path": "papers/paper01-rasti/manuscript/manuscript-clean.md",
-      "bytes": 261221,
-      "sha256": "48a53ab7b97155461252adaa2459917d9c6fc028beb3c01c9fba71e28aa6702d"
+      "bytes": 261050,
+      "sha256": "801cd2a692b8110877a9de07747494b37804f329542b579443c5d751b57923c7"
     },
     {
       "path": "papers/paper01-rasti/manuscript/response-to-reviewers-r1.md",
-      "bytes": 11427,
-      "sha256": "3668ad1e72b3988823d4159a8472f0e1411f92b24842d7ab1758599b86892982"
+      "bytes": 11503,
+      "sha256": "f8b555dda93be66913a10783e5ecb166af7f98811dd4c05f12686b7063ba9dce"
     },
     {
       "path": "papers/paper01-rasti/provenance/author-facts-authorization-r3.json",
@@ -290,7 +290,7 @@
     {
       "path": "papers/paper01-rasti/provenance/clean-render-report.json",
       "bytes": 716,
-      "sha256": "e021ff3164c5f4642f491c67aff7168a2b2a469ccca140d5c8a772ad1d664a1d"
+      "sha256": "ccd6bfbfba4a03678276c1664503238941733a521496213a87021f082a658988"
     },
     {
       "path": "papers/paper01-rasti/provenance/figure-colocation-author-decision.json",
@@ -306,6 +306,11 @@
       "path": "papers/paper01-rasti/provenance/release-r5-patch-application.json",
       "bytes": 846,
       "sha256": "d4372dbfa7e53ba3a931ad920abb623b532ead550e0fd150c61c208cca243960"
+    },
+    {
+      "path": "papers/paper01-rasti/provenance/release-r6-patch-application.json",
+      "bytes": 1283,
+      "sha256": "8ffdd7147e57a1ff7d1f7a70980a955f472011cf4aebc1127747663482782663"
     },
     {
       "path": "papers/paper01-rasti/provenance/revision-bundle-r2-refreeze-report.json",
@@ -339,8 +344,8 @@
     },
     {
       "path": "papers/paper01-rasti/scripts/replay_release.py",
-      "bytes": 57739,
-      "sha256": "b3fc58f5f93279c2438dee31c6be1267c7862d820fad03f02a255e2db5d87566"
+      "bytes": 62024,
+      "sha256": "c32037e0b9aa9943f045a64c4ab25c26f57201a7af635c212c62c985a1655781"
     },
     {
       "path": "papers/paper01-rasti/scripts/verify_m2_reconstruction_lineage.py",
@@ -659,8 +664,8 @@
     },
     {
       "path": "tests/paper01/test_release_replay.py",
-      "bytes": 39956,
-      "sha256": "ac1d2e45705d191148aad0b92169dc67f2ebea18bf711a232d4a1642217a4549"
+      "bytes": 44536,
+      "sha256": "86d1ea4cdf9a0bf6f7e50bc2c344a3e4406495b3bf07c3c673f3ca24552af6a0"
     },
     {
       "path": "tests/sampling/__init__.py",

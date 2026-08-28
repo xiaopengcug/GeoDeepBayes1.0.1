@@ -2,13 +2,13 @@
   "schema_version": "ars-clean-manuscript-render/1.1",
   "source": {
     "path": "manuscript/manuscript-anchored.md",
-    "bytes": 310408,
-    "sha256": "95570a979e39ffca75d5cfde21115d8f346b1469fb3de32852345f7d8f252b7e"
+    "bytes": 310193,
+    "sha256": "6339aa01a47f6b5da5f870f4ea1981bfeee9b136f1e60461631ae2f6ea7ec1c2"
   },
   "output": {
     "path": "manuscript/manuscript-clean.md",
-    "bytes": 261221,
-    "sha256": "48a53ab7b97155461252adaa2459917d9c6fc028beb3c01c9fba71e28aa6702d"
+    "bytes": 261050,
+    "sha256": "801cd2a692b8110877a9de07747494b37804f329542b579443c5d751b57923c7"
   },
   "removed": {
     "block_marker_lines": 617,

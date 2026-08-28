@@ -491,6 +491,17 @@ def test_current_release_manuscript_contract_covers_r4_repairs():
     }
 
 
+def test_current_release_manuscript_contract_covers_r6_repairs():
+    """R6 发布门必须覆盖重复表、事实边界和三条权威著录。"""
+    replay = _load_replay_module()
+
+    result = replay.verify_manuscript_contract(REPLAY_PATH.parents[1])
+
+    assert result["r6_repairs_verified"] == 13
+    assert result["r6_forbidden_regressions"] == 0
+    assert result["r6_patch_record_verified"] == 1
+
+
 def test_verify_submission_requires_simulated_review_label(tmp_path):
     """捕获内部模拟 response-to-reviewers 被误呈现为真实期刊往来的回归。"""
     replay = _load_replay_module()
@@ -864,13 +875,51 @@ def _copy_manuscript_contract_fixture(tmp_path: Path) -> Path:
     for relative in (
         Path("manuscript/manuscript-anchored.md"),
         Path("manuscript/manuscript-clean.md"),
+        Path("manuscript/response-to-reviewers-r1.md"),
+        Path("HUMAN-VERIFICATION.md"),
         Path("provenance/release-manuscript-patch-r4-application.json"),
         Path("provenance/release-r5-patch-application.json"),
     ):
         target = root / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source_root / relative, target)
+    r6_record = source_root / "provenance" / "release-r6-patch-application.json"
+    if r6_record.exists():
+        target = root / "provenance" / r6_record.name
+        shutil.copy2(r6_record, target)
     return root
+
+
+@pytest.mark.parametrize(
+    ("new_text", "stale_text", "message"),
+    (
+        (
+            'The "multi-scale" of this framework refers',
+            'The "multi-scale" of the title refers',
+            "标题残留",
+        ),
+        (
+            "joint-pilot registration, failure summaries and reconstructed gate ledger",
+            "joint-pilot registration and failure records",
+            "failure records|失败记录",
+        ),
+    ),
+)
+def test_manuscript_contract_rejects_r6_stale_wording(
+    tmp_path, new_text, stale_text, message
+):
+    """捕获 R4 指出的标题残留和含混 failure-record 措辞回归。"""
+    replay = _load_replay_module()
+    root = _copy_manuscript_contract_fixture(tmp_path)
+    anchored = root / "manuscript" / "manuscript-anchored.md"
+    content = anchored.read_text(encoding="utf-8")
+    if new_text in content:
+        content = content.replace(new_text, stale_text, 1)
+    anchored.write_text(content, encoding="utf-8", newline="\n")
+    replay.write_submission_render(root)
+
+    with pytest.raises(replay.VerificationError, match=message):
+        replay.verify_manuscript_contract(root)
 
 
 @pytest.mark.parametrize(
@@ -894,6 +943,73 @@ def test_manuscript_contract_rejects_r5_record_drift(tmp_path, field, bad_value)
 
     with pytest.raises(replay.VerificationError, match="R5.*发布锁|R5.*不一致"):
         replay.verify_manuscript_contract(root)
+
+
+@pytest.mark.parametrize(
+    ("field", "bad_value"),
+    (
+        ("after_manuscript_sha256", "0" * 64),
+        ("after_clean_sha256", "0" * 64),
+        ("after_response_sha256", "0" * 64),
+        ("after_human_verification_sha256", "0" * 64),
+        ("historical_records_byte_preserved", False),
+        ("formal_release_locked", False),
+        ("requires_new_candidate_full_release_review", False),
+        ("requires_new_full_sha_release_authorization", False),
+    ),
+)
+def test_manuscript_contract_rejects_r6_record_drift(tmp_path, field, bad_value):
+    """R6 after-hash 与人工发布锁任一漂移都必须失败关闭。"""
+    replay = _load_replay_module()
+    root = _copy_manuscript_contract_fixture(tmp_path)
+    path = root / "provenance" / "release-r6-patch-application.json"
+    record = json.loads(path.read_text(encoding="utf-8"))
+    record[field] = bad_value
+    _write_json(path, record)
+
+    with pytest.raises(replay.VerificationError, match="R6.*发布锁|R6.*不一致"):
+        replay.verify_manuscript_contract(root)
+
+
+def _assert_generator_is_byte_deterministic(figure) -> None:
+    """连续两次走真实渲染与保存路径，比较正文同目录的 PDF/PNG 字节。"""
+    import matplotlib.pyplot as plt
+
+    observed: list[tuple[bytes, bytes]] = []
+    for _ in range(2):
+        fig = figure.render_figure(figure.build_design())
+        try:
+            pdf_path, png_path = figure.save_outputs(fig)
+        finally:
+            plt.close(fig)
+        assert pdf_path.parent.name == "manuscript"
+        assert png_path.parent == pdf_path.parent
+        observed.append((pdf_path.read_bytes(), png_path.read_bytes()))
+    assert observed[0] == observed[1]
+
+
+def test_figure1_rejects_restored_texture_and_connector_through_text():
+    """Figure 1 的可读性门必须杀死恢复 hatch 与连线穿字变异。"""
+    path = REPLAY_PATH.parents[1] / "figures" / "figure-1-framework-governance.py"
+    figure = _load_path_module(path, "paper01_figure1_r6")
+
+    reports = figure.selfcheck()
+
+    assert "PROBE_TEXT_TEXTURE_RESTORED=PASS" in reports
+    assert "PROBE_CONNECTOR_THROUGH_TEXT=PASS" in reports
+    _assert_generator_is_byte_deterministic(figure)
+
+
+def test_figure3_rejects_restored_texture_and_small_support_diamond():
+    """Figure 3 的可读性门必须杀死恢复 hatch 与菱形缩小变异。"""
+    path = REPLAY_PATH.parents[1] / "figures" / "figure-3-multiscale-parameterisation.py"
+    figure = _load_path_module(path, "paper01_figure3_r6")
+
+    reports = figure.selfcheck()
+
+    assert "PROBE_TEXT_TEXTURE_RESTORED=PASS" in reports
+    assert "PROBE_SUPPORT_DIAMOND_TOO_SMALL=PASS" in reports
+    _assert_generator_is_byte_deterministic(figure)
 
 
 def test_figure2_rejects_each_missing_registered_parent_edge():

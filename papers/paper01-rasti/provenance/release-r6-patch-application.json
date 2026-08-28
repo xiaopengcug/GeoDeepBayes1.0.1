@@ -1,0 +1,23 @@
+{
+  "schema_version": "ars-release-r6-patch-application/1.0",
+  "base_candidate": "a2050c8345dfc614c9acf67d48f2ee1b9b4071ff",
+  "base_manuscript_sha256": "95570a979e39ffca75d5cfde21115d8f346b1469fb3de32852345f7d8f252b7e",
+  "base_response_sha256": "3668ad1e72b3988823d4159a8472f0e1411f92b24842d7ab1758599b86892982",
+  "base_human_verification_sha256": "7492066b97eee678b1a74a5c0a5a284b96917450e912ab12432f46956e2ff576",
+  "patch_sha256": "94b2bc0702b10290fe46f006c75e94ae0a9ca768a3d6ce2a413af232e47cc847",
+  "operation_counts": {
+    "manuscript_blocks": 12,
+    "text_replacements": 3,
+    "code_specs": 3,
+    "structural_operations": 4
+  },
+  "after_manuscript_sha256": "6339aa01a47f6b5da5f870f4ea1981bfeee9b136f1e60461631ae2f6ea7ec1c2",
+  "after_clean_sha256": "801cd2a692b8110877a9de07747494b37804f329542b579443c5d751b57923c7",
+  "after_response_sha256": "f8b555dda93be66913a10783e5ecb166af7f98811dd4c05f12686b7063ba9dce",
+  "after_human_verification_sha256": "b08b92ee65d3511e299076a2cf43cabf9c0ab7b43edfd05795b77f90ae8dcdf2",
+  "historical_records_byte_preserved": true,
+  "formal_release_locked": true,
+  "requires_new_candidate_full_release_review": true,
+  "requires_new_full_sha_release_authorization": true,
+  "status": "applied_pending_machine_and_human_verification"
+}

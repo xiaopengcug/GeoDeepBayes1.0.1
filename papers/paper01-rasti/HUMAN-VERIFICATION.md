@@ -34,7 +34,7 @@ This checklist implements the corresponding author's requirement that the releas
 - [ ] The replay is described as author-managed and does not claim independent reproduction.
 - [ ] The revision bundle verifies all 19 internal path/hash links, and no redundant outer bundle copy remains.
 - [ ] The high-confidence credential scan reports zero findings; no access token or private key is present in the candidate tree.
-- [ ] Inclusion of the synthetic algorithm `raw-chains.npz` and DO-27 derived `raw-numerics.npz`, and exclusion of the 65 historical joint-pilot chain arrays, vendor SDKs/DLLs, and original DO-27 archive are acceptable and accurately disclosed.
+- [ ] Inclusion of the synthetic algorithm `raw-chains.npz` and DO-27 derived `raw-numerics.npz`, and exclusion of the 65 historical joint-pilot chain arrays, superseded DO-27 v2 failure package, vendor SDKs/DLLs, and original DO-27 archive are acceptable and accurately disclosed.
 
 ## D. GitHub and Zenodo preview
 

@@ -75,7 +75,7 @@ The diagnostics implementation was also corrected and replayed. Non-finite and d
 
 ### REV-R2-1 — Full-text basis for the nearest-neighbour matrix
 
-**Response:** Addressed through an explicitly authorised integrity-correction round. A post-apply scan found that the original roadmap had omitted the main score table and several score-dependent paragraphs, leaving them inconsistent with the `unknown` policy. Integrity patch r2 replaced all 36 identified blocks with one discovery-inventory and location-specific full-text recoding protocol. Table 5 now assigns every element cell `unknown`, computes no score or rank, and supports no closest-work, empty-combination, absence, priority or distinctiveness conclusion. The patch preserved 578/614 blocks byte-identically, changed no registered quantitative claim surface, and passed the continuous revision-bundle replay.
+**Response:** Addressed through an explicitly authorised integrity-correction round. A post-apply scan found that the original roadmap had omitted the main score table and several score-dependent paragraphs, leaving them inconsistent with the `unknown` policy. Integrity patch r2 replaced all 36 identified blocks with one discovery-inventory and location-specific full-text recoding protocol. The §2.2 text now points to Table A.1, which assigns every unreviewed element cell `unknown`, computes no score or rank, and supports no closest-work, empty-combination, absence, priority or distinctiveness conclusion. The patch preserved 578/614 blocks byte-identically, changed no registered quantitative claim surface, and passed the continuous revision-bundle replay.
 
 **Locations:** §2.2–§2.4, §8.3, limitations, self-reference disclosure and Appendix A; `integrity-correction-list-r2.json`; `integrity-patch-r2.apply-report.json`.
 
@@ -87,7 +87,7 @@ The diagnostics implementation was also corrected and replayed. Non-finite and d
 
 ### REV-R2-4 — Mapping operators to the joint graph
 
-**Response:** Addressed with Table 4a. Each of the nine methods now has an observable and unit, property support, exercised/shared-latent status and evidence tier. Only gravity and magnetics exercised shared geometry and cross-gradient coupling in the failed joint pilot. Other shared nuisance and coupling combinations remain specification-only or `unknown`; petrophysical priors remain Hypothesis-tier.
+**Response:** Addressed with Table 5a, immediately following Table 5. Each of the nine methods now has an observable and unit, property support, exercised/shared-latent status and evidence tier. Only gravity and magnetics exercised shared geometry and cross-gradient coupling in the failed joint pilot. Other shared nuisance and coupling combinations remain specification-only or `unknown`; petrophysical priors remain Hypothesis-tier.
 
 **Location:** immediately after Table 4.
 
