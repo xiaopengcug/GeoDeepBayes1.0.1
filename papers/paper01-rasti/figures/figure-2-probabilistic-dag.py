@@ -179,7 +179,7 @@ def sha256_file(path: Path) -> str:
 def locate_paths() -> dict[str, Path]:
     """校验脚本文件名并明确解析同目录唯一输出路径。"""
     script_path = Path(__file__).resolve()
-    output_dir = script_path.parent
+    output_dir = script_path.parent.parent / "manuscript"
     require(output_dir.is_dir(), f"脚本输出目录不存在：{output_dir}")
     require(script_path.name == f"{OUTPUT_STEM}.py", "脚本文件名不符合冻结输出契约。")
     return {

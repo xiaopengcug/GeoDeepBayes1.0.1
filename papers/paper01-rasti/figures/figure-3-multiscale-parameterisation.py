@@ -748,8 +748,8 @@ def render_figure(design: DesignSpec):
 
 
 def output_paths() -> tuple[Path, Path]:
-    """将 PDF/PNG 最终路径固定在脚本自身目录。"""
-    output_dir = Path(__file__).resolve().parent
+    """将 PDF/PNG 固定到与论文正文相同的 manuscript 目录。"""
+    output_dir = Path(__file__).resolve().parent.parent / "manuscript"
     require(output_dir.is_dir(), f"脚本输出目录不存在：{output_dir}")
     return output_dir / f"{OUTPUT_STEM}.pdf", output_dir / f"{OUTPUT_STEM}.png"
 

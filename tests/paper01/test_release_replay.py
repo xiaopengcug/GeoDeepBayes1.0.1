@@ -545,7 +545,9 @@ def test_verify_submission_render_rejects_semantic_drift_with_updated_hashes(tmp
 
 def _write_release_figure_inventory(repository: Path) -> None:
     figures = repository / PAPER_RELATIVE / "figures"
+    manuscript = repository / PAPER_RELATIVE / "manuscript"
     figures.mkdir(parents=True, exist_ok=True)
+    manuscript.mkdir(parents=True, exist_ok=True)
     for number, stem in {
         1: "framework-governance",
         2: "probabilistic-dag",
@@ -553,23 +555,42 @@ def _write_release_figure_inventory(repository: Path) -> None:
         4: "evd-joint-scene",
         5: "algo-diagnostics",
     }.items():
-        for suffix in (".py", ".pdf", ".png"):
-            (figures / f"figure-{number}-{stem}{suffix}").write_bytes(b"asset\n")
+        (figures / f"figure-{number}-{stem}.py").write_bytes(b"generator\n")
+        for suffix in (".pdf", ".png"):
+            (manuscript / f"figure-{number}-{stem}{suffix}").write_bytes(b"asset\n")
 
 
 def test_figure_inventory_rejects_unreferenced_c1_family(tmp_path):
     """捕获 Figures 1–5 之外的图族逃逸精确清单门。"""
     replay = _load_replay_module()
     validator = getattr(replay, "verify_figure_inventory", None)
-    assert validator is not None, "重放器必须验证 Figures 1–5 的精确 py/pdf/png 集合"
+    assert validator is not None, "重放器必须验证正文同目录图像与集中生成器集合"
     repository = tmp_path / "repository"
     _write_release_figure_inventory(repository)
-    assert validator(repository) == {"figure_families": 5, "figure_members": 15}
+    assert validator(repository) == {
+        "figure_families": 5,
+        "figure_images": 10,
+        "figure_scripts": 5,
+    }
 
-    extra = repository / PAPER_RELATIVE / "figures" / "figure-c1-prisma-flow.py"
-    extra.write_text("print('withdrawn')\n", encoding="utf-8")
+    extra = repository / PAPER_RELATIVE / "manuscript" / "figure-c1-prisma-flow.png"
+    extra.write_bytes(b"withdrawn\n")
     with pytest.raises(replay.VerificationError, match="Figure|图件|额外|C1"):
         validator(repository)
+
+
+def test_figure_inventory_rejects_images_outside_manuscript_directory(tmp_path):
+    """正文图像只能与正文同目录，生成脚本仍集中在 figures。"""
+    replay = _load_replay_module()
+    repository = tmp_path / "repository"
+    _write_release_figure_inventory(repository)
+    manuscript = repository / PAPER_RELATIVE / "manuscript"
+    figures = repository / PAPER_RELATIVE / "figures"
+    misplaced = figures / "figure-1-framework-governance.png"
+    (manuscript / misplaced.name).replace(misplaced)
+
+    with pytest.raises(replay.VerificationError, match="正文|manuscript|缺失|额外"):
+        replay.verify_figure_inventory(repository)
 
 
 def test_verify_evidence_rejects_stale_joint_code_hash(tmp_path):

@@ -54,8 +54,8 @@
     },
     {
       "path": "papers/paper01-rasti/HUMAN-VERIFICATION.md",
-      "bytes": 3993,
-      "sha256": "1398addf3e3c36721a92fd418ccccfb3d44849ded62a98e14337ebd0b1616058"
+      "bytes": 4063,
+      "sha256": "7492066b97eee678b1a74a5c0a5a284b96917450e912ab12432f46956e2ff576"
     },
     {
       "path": "papers/paper01-rasti/LICENSE.txt",
@@ -64,13 +64,13 @@
     },
     {
       "path": "papers/paper01-rasti/README.md",
-      "bytes": 5803,
-      "sha256": "eb8278ca01a999a07df870921b0ad776c447883859732288a44066187a65b21d"
+      "bytes": 5910,
+      "sha256": "81f9008a45ff45a4ed3799a3e37741b3ea3e26b68dbaa527fcf33b2aa597120b"
     },
     {
       "path": "papers/paper01-rasti/RELEASE_NOTES_DRAFT.md",
-      "bytes": 2474,
-      "sha256": "34b790b02b1d0df5e14e076d2a27b1e25f10b7495ffc7b7e0e5af3903f4ccebb"
+      "bytes": 2517,
+      "sha256": "1273244ba64b32c5d6241e767b2870f7bb1059f1e84972ccb39e2b758b9fb8fa"
     },
     {
       "path": "papers/paper01-rasti/evidence/positive-control/joint-diagnostics-expected.json",
@@ -183,79 +183,79 @@
       "sha256": "d4cb8492d652f460ba16134dccb3861887106e15e83fea0c5abed4ba28e3a4ba"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-1-framework-governance.pdf",
+      "path": "papers/paper01-rasti/figures/figure-1-framework-governance.py",
+      "bytes": 40977,
+      "sha256": "622df9986e1e634564361af73c3f99ebaad807be1c044938540726897264e18c"
+    },
+    {
+      "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.py",
+      "bytes": 34776,
+      "sha256": "77ccfc5574bf898366738fd5b155b5187fb7c88bf69767f8d6dcbbe7d75aefb8"
+    },
+    {
+      "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.py",
+      "bytes": 27826,
+      "sha256": "8c91f250663142903fffb297851a602f4c9a141276d37f88c4d3a0e4177eb7a8"
+    },
+    {
+      "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.py",
+      "bytes": 33734,
+      "sha256": "ae9090a89481fa7640b361d8d61cfb5bcf4338e8e464411397ab3fbfa785e315"
+    },
+    {
+      "path": "papers/paper01-rasti/figures/figure-5-algo-diagnostics.py",
+      "bytes": 29324,
+      "sha256": "09337e595003e4c3d0e7eaed5ab73a63dceb7415b14e81e59b26d9cf0e1c76e8"
+    },
+    {
+      "path": "papers/paper01-rasti/manuscript/figure-1-framework-governance.pdf",
       "bytes": 39632,
       "sha256": "71fb6af77e7c93555dbf09e76d6f6d9fa93c66e273b1f5ec5e86844289864fa0"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-1-framework-governance.png",
+      "path": "papers/paper01-rasti/manuscript/figure-1-framework-governance.png",
       "bytes": 403995,
       "sha256": "f3db47ff822611b13ca569daa853547a6b9b7e6d1da4a6ef8c9c73ef28bff6cb"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-1-framework-governance.py",
-      "bytes": 40943,
-      "sha256": "6e3e9dec97de4b861911ebfd2d01735c2e710528e71350495577a52fb1da7127"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.pdf",
+      "path": "papers/paper01-rasti/manuscript/figure-2-probabilistic-dag.pdf",
       "bytes": 41394,
       "sha256": "62580e424b7fb08dbf26502c498633502f8acf0b42cdcc9aaf90c021a1e748c8"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.png",
+      "path": "papers/paper01-rasti/manuscript/figure-2-probabilistic-dag.png",
       "bytes": 404074,
       "sha256": "d780aa39c5383330555b45a6744966eb66e932b7b1e4382a20ce61539496a4ef"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.py",
-      "bytes": 34754,
-      "sha256": "0cd64a4fe79228d12d235a7ae498b924157c74951c3c07772b8678dc34b2cb14"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.pdf",
+      "path": "papers/paper01-rasti/manuscript/figure-3-multiscale-parameterisation.pdf",
       "bytes": 34773,
       "sha256": "2da7c907e1693e58fec86491584a9f33104ac87fe202b56330e50f4129629ade"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.png",
+      "path": "papers/paper01-rasti/manuscript/figure-3-multiscale-parameterisation.png",
       "bytes": 454423,
       "sha256": "ac56724f416018fcead1b349f4d476838e666af19e03c88ed79ef05474d51f63"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.py",
-      "bytes": 27792,
-      "sha256": "3e9e210dcc618aa7f52e61b2dafbf8d4d29edf53898fe27e5974fe61be0088a6"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.pdf",
+      "path": "papers/paper01-rasti/manuscript/figure-4-evd-joint-scene.pdf",
       "bytes": 72238,
       "sha256": "abaed11c6ae3856ec454bef48fe6206722b0f9a807891dd795110f44d15e169c"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.png",
+      "path": "papers/paper01-rasti/manuscript/figure-4-evd-joint-scene.png",
       "bytes": 188824,
       "sha256": "da008de437c589e9d55f4dbb172430f5c76e8314947a6b4dd24a5652bac27aab"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.py",
-      "bytes": 33712,
-      "sha256": "ee0b6d950668c59a07853ad2a596b3026a1c13d4fe12ea33eaabd354412e2ae6"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-5-algo-diagnostics.pdf",
+      "path": "papers/paper01-rasti/manuscript/figure-5-algo-diagnostics.pdf",
       "bytes": 35508,
       "sha256": "f0d3ae31083c89015f283ef483a3348032780f10bf085e34205099a22a861f8a"
     },
     {
-      "path": "papers/paper01-rasti/figures/figure-5-algo-diagnostics.png",
+      "path": "papers/paper01-rasti/manuscript/figure-5-algo-diagnostics.png",
       "bytes": 249038,
       "sha256": "0d280e5fe4b317d54500faea7b2bd9cd4970fcb9e1f90a8b3875479809e50cbc"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-5-algo-diagnostics.py",
-      "bytes": 29302,
-      "sha256": "43942504c5c3d81ca95eb199229bfd7d8ced11cce1903cd41da5c7ed41ffdd4e"
     },
     {
       "path": "papers/paper01-rasti/manuscript/manuscript-anchored.md",
@@ -291,6 +291,11 @@
       "path": "papers/paper01-rasti/provenance/clean-render-report.json",
       "bytes": 716,
       "sha256": "e021ff3164c5f4642f491c67aff7168a2b2a469ccca140d5c8a772ad1d664a1d"
+    },
+    {
+      "path": "papers/paper01-rasti/provenance/figure-colocation-author-decision.json",
+      "bytes": 1731,
+      "sha256": "6f682ec59035c054b885d5c5fea90521f4f13163f8f8cea9606ed9cdab8a52ec"
     },
     {
       "path": "papers/paper01-rasti/provenance/release-manuscript-patch-r4-application.json",
@@ -334,8 +339,8 @@
     },
     {
       "path": "papers/paper01-rasti/scripts/replay_release.py",
-      "bytes": 56865,
-      "sha256": "f7cbe493a0dcc8e5e1e571635e0f01967a4cb61f5d82aeb09eef4c4c27c0641e"
+      "bytes": 57739,
+      "sha256": "b3fc58f5f93279c2438dee31c6be1267c7862d820fad03f02a255e2db5d87566"
     },
     {
       "path": "papers/paper01-rasti/scripts/verify_m2_reconstruction_lineage.py",
@@ -654,8 +659,8 @@
     },
     {
       "path": "tests/paper01/test_release_replay.py",
-      "bytes": 39076,
-      "sha256": "858aed4bc8ebf2acfd026b54ad185ccee9cb370b3e7be148f3ec4e8df9e9e22a"
+      "bytes": 39956,
+      "sha256": "ac1d2e45705d191148aad0b92169dc67f2ebea18bf711a232d4a1642217a4549"
     },
     {
       "path": "tests/sampling/__init__.py",

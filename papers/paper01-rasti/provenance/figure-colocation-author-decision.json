@@ -1,0 +1,22 @@
+{
+  "schema_version": "paper01-figure-colocation-author-decision/1.0",
+  "decision": "place all published manuscript images beside the manuscript files",
+  "image_directory": "papers/paper01-rasti/manuscript",
+  "generator_directory": "papers/paper01-rasti/figures",
+  "published_images": [
+    {"path": "figure-1-framework-governance.pdf", "sha256": "71fb6af77e7c93555dbf09e76d6f6d9fa93c66e273b1f5ec5e86844289864fa0"},
+    {"path": "figure-1-framework-governance.png", "sha256": "f3db47ff822611b13ca569daa853547a6b9b7e6d1da4a6ef8c9c73ef28bff6cb"},
+    {"path": "figure-2-probabilistic-dag.pdf", "sha256": "62580e424b7fb08dbf26502c498633502f8acf0b42cdcc9aaf90c021a1e748c8"},
+    {"path": "figure-2-probabilistic-dag.png", "sha256": "d780aa39c5383330555b45a6744966eb66e932b7b1e4382a20ce61539496a4ef"},
+    {"path": "figure-3-multiscale-parameterisation.pdf", "sha256": "2da7c907e1693e58fec86491584a9f33104ac87fe202b56330e50f4129629ade"},
+    {"path": "figure-3-multiscale-parameterisation.png", "sha256": "ac56724f416018fcead1b349f4d476838e666af19e03c88ed79ef05474d51f63"},
+    {"path": "figure-4-evd-joint-scene.pdf", "sha256": "abaed11c6ae3856ec454bef48fe6206722b0f9a807891dd795110f44d15e169c"},
+    {"path": "figure-4-evd-joint-scene.png", "sha256": "da008de437c589e9d55f4dbb172430f5c76e8314947a6b4dd24a5652bac27aab"},
+    {"path": "figure-5-algo-diagnostics.pdf", "sha256": "f0d3ae31083c89015f283ef483a3348032780f10bf085e34205099a22a861f8a"},
+    {"path": "figure-5-algo-diagnostics.png", "sha256": "0d280e5fe4b317d54500faea7b2bd9cd4970fcb9e1f90a8b3875479809e50cbc"}
+  ],
+  "generator_scripts": 5,
+  "second_generation_byte_deterministic": true,
+  "formal_release_locked": true,
+  "requires_new_candidate_manual_review": true
+}

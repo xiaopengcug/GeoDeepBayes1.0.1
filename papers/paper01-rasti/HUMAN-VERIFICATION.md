@@ -21,7 +21,7 @@ This checklist implements the corresponding author's requirement that the releas
 - [ ] The multi-scale mechanism remains described as specified but not exercised by a gate-passing assembled endpoint.
 - [ ] The §2.2 discovery inventory and Table A.1 retain `unknown` for unreviewed full-text element cells; no withdrawn novelty score reappears.
 - [ ] Alemie & Sacchi (2011) is described as a trivariate Cauchy prior, and the 42-run design is explicitly decomposed as 30 λ-grid, 2 adaptive-Metropolis, and 10 weighted runs.
-- [ ] Main-text Tables 1–5a, Figures 1–5, P1–P6, and Eqs. (6.1)–(6.2) appear in order; every figure opens and matches its caption.
+- [ ] Main-text Tables 1–5a, Figures 1–5, P1–P6, and Eqs. (6.1)–(6.2) appear in order; every PDF/PNG under `manuscript/` opens and matches its caption, and no published image remains under `figures/`.
 
 ## C. Package and replay
 

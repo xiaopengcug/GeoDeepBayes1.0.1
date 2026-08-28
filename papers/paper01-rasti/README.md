@@ -14,7 +14,9 @@ It is prepared for submission to *RAS Techniques and Instruments* (RASTI). The p
 - `evidence/revision-bundle-r2/` — continuous Stage 2.5 → Stage 4 revision-authority bundle.
 - `evidence/verification-final/` — read-only replay summaries for the algorithm component, the 65 historical joint sources, and the 42-row M2 reconstruction-lineage audit.
 - `evidence/positive-control/` — deterministic healthy-chain input and expected output for the published joint-diagnostics instrument.
-- `figures/` and `supplement/` — exactly Figures 1–5, their repository-portable generators, and the reproducibility/adoption supplement cited by the manuscript; no unreferenced figure family is distributed.
+- `manuscript/` — clean/anchored正文、模拟回复，以及 Figures 1–5 的 PDF/PNG；全部论文图片与正文放在同一目录。
+- `figures/` — Figures 1–5 的 repository-portable `.py` 生成脚本；不存放发布图像。
+- `supplement/` — 正文引用的 reproducibility/adoption supplement。
 - `provenance/` — author-facts patch authorization and application records.
 - `scripts/replay_release.py` — fail-closed release-tree, provenance, clean-render, and registered-summary verifier; its manifest scope explicitly excludes the self-referential manifest and generated replay result.
 - the other files under `scripts/` are historical Stage 4 replay-source snapshots;

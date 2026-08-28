@@ -995,7 +995,7 @@ def main() -> int:
 
         run_negative_probes()
         validate_semantics(BASE_SCENE)
-        output_directory = Path(__file__).resolve().parent
+        output_directory = Path(__file__).resolve().parent.parent / "manuscript"
         pdf_path, png_path = render_and_publish(output_directory)
         validate_pdf_artifact(pdf_path)
         validate_png_artifact(png_path)

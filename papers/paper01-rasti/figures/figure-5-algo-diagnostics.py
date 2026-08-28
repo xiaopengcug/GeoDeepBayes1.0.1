@@ -72,7 +72,7 @@ def locate_paths() -> dict[str, Path]:
         "contract": repository_root / "validation" / "wp2-toy" / "diagnostic-contract.json",
         "diagnostics": repository_root / "src" / "geodeepbayes" / "diagnostics",
         "package_src": repository_root / "src",
-        "output_dir": script_path.parent,
+        "output_dir": script_path.parent.parent / "manuscript",
     }
 
 

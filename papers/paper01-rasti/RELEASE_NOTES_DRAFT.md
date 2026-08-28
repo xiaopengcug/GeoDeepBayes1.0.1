@@ -8,7 +8,7 @@ Archive DOI: `<assigned by Zenodo only after formal release>`
 Highlights:
 
 - publishes the clean and ARS-anchored manuscript views;
-- publishes all five cited figures and the reproducibility/adoption supplement;
+- publishes all five cited figure PDF/PNG pairs beside the manuscript files, plus the reproducibility/adoption supplement;
 - publishes the continuous revision-authority bundle and final replay summaries;
 - corrects the AVO Cauchy-prior classification, 42-run decomposition, evidence-tier wording, appendix guide, and equation/table/figure order;
 - reconciles the author-approved CRediT roles with the AI-use disclosure while retaining human responsibility;

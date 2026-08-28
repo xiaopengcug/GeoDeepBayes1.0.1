@@ -58,10 +58,9 @@ FIGURE_STEMS = (
     "figure-4-evd-joint-scene",
     "figure-5-algo-diagnostics",
 )
-EXPECTED_FIGURE_MEMBERS = frozenset(
-    f"{stem}{suffix}"
-    for stem in FIGURE_STEMS
-    for suffix in (".pdf", ".png", ".py")
+EXPECTED_FIGURE_SCRIPTS = frozenset(f"{stem}.py" for stem in FIGURE_STEMS)
+EXPECTED_FIGURE_IMAGES = frozenset(
+    f"{stem}{suffix}" for stem in FIGURE_STEMS for suffix in (".pdf", ".png")
 )
 DRIVE_ABSOLUTE_PATH = re.compile(r"^[A-Za-z]:[/\\]")
 JOINT_CODE_PATHS = {
@@ -78,16 +77,16 @@ ALGORITHM_CODE_PATHS = {
 }
 
 REQUIRED_RELEASE_MEMBERS = (
-    "papers/paper01-rasti/figures/figure-1-framework-governance.pdf",
-    "papers/paper01-rasti/figures/figure-1-framework-governance.png",
-    "papers/paper01-rasti/figures/figure-2-probabilistic-dag.pdf",
-    "papers/paper01-rasti/figures/figure-2-probabilistic-dag.png",
-    "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.pdf",
-    "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.png",
-    "papers/paper01-rasti/figures/figure-4-evd-joint-scene.pdf",
-    "papers/paper01-rasti/figures/figure-4-evd-joint-scene.png",
-    "papers/paper01-rasti/figures/figure-5-algo-diagnostics.pdf",
-    "papers/paper01-rasti/figures/figure-5-algo-diagnostics.png",
+    "papers/paper01-rasti/manuscript/figure-1-framework-governance.pdf",
+    "papers/paper01-rasti/manuscript/figure-1-framework-governance.png",
+    "papers/paper01-rasti/manuscript/figure-2-probabilistic-dag.pdf",
+    "papers/paper01-rasti/manuscript/figure-2-probabilistic-dag.png",
+    "papers/paper01-rasti/manuscript/figure-3-multiscale-parameterisation.pdf",
+    "papers/paper01-rasti/manuscript/figure-3-multiscale-parameterisation.png",
+    "papers/paper01-rasti/manuscript/figure-4-evd-joint-scene.pdf",
+    "papers/paper01-rasti/manuscript/figure-4-evd-joint-scene.png",
+    "papers/paper01-rasti/manuscript/figure-5-algo-diagnostics.pdf",
+    "papers/paper01-rasti/manuscript/figure-5-algo-diagnostics.png",
     "papers/paper01-rasti/supplement/reproducibility-and-adoption-checklist-r1.md",
     "papers/paper01-rasti/evidence/positive-control/joint-diagnostics-input.npz",
     "papers/paper01-rasti/evidence/positive-control/joint-diagnostics-expected.json",
@@ -1179,23 +1178,37 @@ def verify_do27_provenance(repository: Path) -> dict[str, str]:
 
 
 def verify_figure_inventory(repository: Path) -> dict[str, int]:
-    """只允许 Figures 1–5 各自唯一的生成器、PDF 和 PNG。"""
+    """正文目录只放 Figures 1–5 图像，figures 目录只放对应生成器。"""
     repository = Path(repository).resolve()
     figures = repository / PAPER_RELATIVE / "figures"
-    if not figures.is_dir():
-        raise VerificationError("图件目录不存在")
-    actual = {
+    manuscript = repository / PAPER_RELATIVE / "manuscript"
+    if not figures.is_dir() or not manuscript.is_dir():
+        raise VerificationError("图件生成器或正文目录不存在")
+    actual_scripts = {
         path.name
         for path in figures.iterdir()
         if path.is_file() and path.name.lower().startswith("figure-")
     }
-    missing = sorted(EXPECTED_FIGURE_MEMBERS - actual)
-    extra = sorted(actual - EXPECTED_FIGURE_MEMBERS)
-    if missing or extra:
+    actual_images = {
+        path.name
+        for path in manuscript.iterdir()
+        if path.is_file() and path.name.lower().startswith("figure-")
+    }
+    missing_scripts = sorted(EXPECTED_FIGURE_SCRIPTS - actual_scripts)
+    extra_scripts = sorted(actual_scripts - EXPECTED_FIGURE_SCRIPTS)
+    missing_images = sorted(EXPECTED_FIGURE_IMAGES - actual_images)
+    extra_images = sorted(actual_images - EXPECTED_FIGURE_IMAGES)
+    if missing_scripts or extra_scripts or missing_images or extra_images:
         raise VerificationError(
-            f"Figure 1–5 精确图件集合不一致：缺失={missing}；额外={extra}"
+            "Figure 1–5 正文同目录集合不一致："
+            f"生成器缺失={missing_scripts}；生成器额外={extra_scripts}；"
+            f"正文图像缺失={missing_images}；正文图像额外={extra_images}"
         )
-    return {"figure_families": len(FIGURE_STEMS), "figure_members": len(actual)}
+    return {
+        "figure_families": len(FIGURE_STEMS),
+        "figure_images": len(actual_images),
+        "figure_scripts": len(actual_scripts),
+    }
 
 
 def verify_figure5_source_binding(repository: Path) -> dict[str, int]:
@@ -1215,6 +1228,7 @@ def verify_figure5_source_binding(repository: Path) -> dict[str, int]:
         "contract": repository / "validation" / "wp2-toy" / "diagnostic-contract.json",
         "diagnostics": repository / "src" / "geodeepbayes" / "diagnostics",
         "package_src": repository / "src",
+        "output_dir": repository / PAPER_RELATIVE / "manuscript",
     }
     mismatches = {
         name: (paths.get(name), expected)
