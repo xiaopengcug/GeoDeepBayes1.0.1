@@ -119,6 +119,18 @@ def require(condition: bool, message: str) -> None:
         raise FigureDesignError(message)
 
 
+def _single_artist(candidates: Iterable, message: str):
+    """要求 artist 定位结果恰有一个。"""
+    materialized = tuple(candidates)
+    require(len(materialized) == 1, f"{message}：实际 {len(materialized)} 个。")
+    return materialized[0]
+
+
+def _edge_gid(edge: EdgeSpec) -> str:
+    """返回不依赖 artist 顺序的稳定边身份。"""
+    return f"edge:{edge.source}->{edge.target}:{edge.relation}"
+
+
 def build_design() -> DesignSpec:
     """构造并列深度带及其逐尺度 POD、变支撑和观测支撑。"""
     scale_rows = (
@@ -437,11 +449,17 @@ def _expect_rejected(name: str, candidate: DesignSpec) -> str:
     raise FigureDesignError(f"失败关闭探针未拒绝变异体：{name}")
 
 
-def _expect_canvas_design_rejected(name: str, candidate: DesignSpec) -> str:
+def _expect_canvas_design_rejected(
+    name: str, candidate: DesignSpec, expected_message: str
+) -> str:
     """要求只在真实排版后暴露的几何变异被画布门拒绝。"""
     try:
         fig = render_figure(candidate)
-    except FigureDesignError:
+    except FigureDesignError as exc:
+        require(
+            expected_message in str(exc),
+            f"{name} 因非预期原因失败：{exc}",
+        )
         return f"{name}=PASS"
     import matplotlib.pyplot as plt  # pylint: disable=import-outside-toplevel
 
@@ -474,12 +492,13 @@ def _probe_real_artist_empty_text() -> str:
         )
         _validate_visible_texts(_collect_canvas_texts(ax))
 
-        real_label = next(
-            text
-            for text in ax.texts
-            if text.get_visible()
-            and not isinstance(text, Annotation)
-            and text.get_text().strip()
+        real_label = _single_artist(
+            (
+                text
+                for text in ax.texts
+                if text.get_gid() == "node:band_shallow"
+            ),
+            "真实深度带标签定位失败",
         )
         real_label.set_text("")
         try:
@@ -494,6 +513,71 @@ def _probe_real_artist_empty_text() -> str:
         import matplotlib.pyplot as plt  # pylint: disable=import-outside-toplevel
 
         plt.close(fig)
+
+
+def _expect_canvas_rejected(name: str, mutate, expected_message: str) -> str:
+    """要求真实画布变异被指定门拒绝。"""
+    design = build_design()
+    fig = render_figure(design)
+    try:
+        mutate(fig)
+        try:
+            _validate_canvas(fig, design)
+        except FigureDesignError as exc:
+            require(
+                expected_message in str(exc),
+                f"{name} 因非预期原因失败：{exc}",
+            )
+            return f"{name}=PASS"
+    finally:
+        import matplotlib.pyplot as plt  # pylint: disable=import-outside-toplevel
+
+        plt.close(fig)
+    raise FigureDesignError(f"失败关闭探针未拒绝画布变异体：{name}")
+
+
+def _mutator_duplicate_node_gid(fig) -> None:
+    """把两个真实节点 patch 赋为同一 GID。"""
+    patches = [
+        patch
+        for patch in fig.axes[0].patches
+        if isinstance(patch.get_gid(), str) and patch.get_gid().startswith("node:")
+    ]
+    source = _single_artist(
+        (patch for patch in patches if patch.get_gid() == "node:band_shallow"),
+        "浅层带 patch 定位失败",
+    )
+    target = _single_artist(
+        (patch for patch in patches if patch.get_gid() == "node:pod_shallow"),
+        "浅层 POD patch 定位失败",
+    )
+    target.set_gid(source.get_gid())
+
+
+def _mutator_edge_identity(fig) -> None:
+    """漂移一条真实边的 Annotation GID，保留计数不变。"""
+    annotation = _single_artist(
+        (
+            artist
+            for artist in fig.axes[0].texts
+            if artist.get_gid() == "edge:band_shallow->pod_shallow:parameterises"
+        ),
+        "浅层参数化边定位失败",
+    )
+    annotation.set_gid("edge:unexpected")
+
+
+def _mutator_non_node_text_crossing(fig) -> None:
+    """把列标题移到浅层参数化连接线上。"""
+    heading = _single_artist(
+        (
+            artist
+            for artist in fig.axes[0].texts
+            if artist.get_text() == DEPTH_HEADING
+        ),
+        "深度带列标题定位失败",
+    )
+    heading.set_position((0.33, 0.72))
 
 
 def selfcheck(verbose: bool = False) -> tuple[str, ...]:
@@ -526,7 +610,9 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
     )
     reports.append(
         _expect_canvas_design_rejected(
-            "PROBE_SUPPORT_DIAMOND_TOO_SMALL", small_diamond
+            "PROBE_SUPPORT_DIAMOND_TOO_SMALL",
+            small_diamond,
+            "support_operator",
         )
     )
 
@@ -583,7 +669,28 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
     reports.append(_expect_rejected("PROBE_NUMERIC_VISIBLE_TEXT", numeric_text))
 
     reports.append(_probe_real_artist_empty_text())
-    reports.append("STATIC_SELFCHECK=PASS probes=11")
+    reports.append(
+        _expect_canvas_rejected(
+            "PROBE_DUPLICATE_NODE_GID",
+            _mutator_duplicate_node_gid,
+            "GID 重复",
+        )
+    )
+    reports.append(
+        _expect_canvas_rejected(
+            "PROBE_EDGE_IDENTITY",
+            _mutator_edge_identity,
+            "身份集合",
+        )
+    )
+    reports.append(
+        _expect_canvas_rejected(
+            "PROBE_NON_NODE_TEXT_CROSSING",
+            _mutator_non_node_text_crossing,
+            "穿过非节点文字",
+        )
+    )
+    reports.append("STATIC_SELFCHECK=PASS probes=14")
     result = tuple(reports)
     if verbose:
         for report in result:
@@ -685,7 +792,7 @@ def _draw_edges(ax, design: DesignSpec) -> None:
                 target.center_y + target_offsets[source.scale or "shallow"],
             )
             connection = "arc3,rad=0.08" if source.center_y >= target.center_y else "arc3,rad=-0.08"
-        ax.annotate(
+        annotation = ax.annotate(
             "",
             xy=end,
             xytext=start,
@@ -700,6 +807,10 @@ def _draw_edges(ax, design: DesignSpec) -> None:
             },
             zorder=2,
         )
+        gid = _edge_gid(edge)
+        annotation.set_gid(gid)
+        require(annotation.arrow_patch is not None, f"边缺少真实箭头 patch：{gid}")
+        annotation.arrow_patch.set_gid(gid)
 
 
 def _configure_determinism() -> datetime:
@@ -736,17 +847,23 @@ def _validate_canvas(fig, design: DesignSpec) -> None:
     ax = fig.axes[0]
     _validate_visible_texts(_collect_canvas_texts(ax))
 
-    patches = {
-        patch.get_gid().split(":", 1)[1]: patch
+    node_patches = [
+        patch
         for patch in ax.patches
         if isinstance(patch.get_gid(), str) and patch.get_gid().startswith("node:")
-    }
-    labels = {
-        artist.get_gid().split(":", 1)[1]: artist
+    ]
+    node_labels = [
+        artist
         for artist in ax.texts
         if isinstance(artist.get_gid(), str) and artist.get_gid().startswith("node:")
-    }
+    ]
     expected = {node.key for node in design.nodes}
+    patch_keys = [patch.get_gid().split(":", 1)[1] for patch in node_patches]
+    label_keys = [artist.get_gid().split(":", 1)[1] for artist in node_labels]
+    require(len(patch_keys) == len(set(patch_keys)), "画布节点 patch GID 重复。")
+    require(len(label_keys) == len(set(label_keys)), "画布节点文字 GID 重复。")
+    patches = dict(zip(patch_keys, node_patches, strict=True))
+    labels = dict(zip(label_keys, node_labels, strict=True))
     require(set(patches) == expected, "画布节点 patch 集合与设计规格不一致。")
     require(set(labels) == expected, "画布节点文字集合与设计规格不一致。")
 
@@ -774,17 +891,64 @@ def _validate_canvas(fig, design: DesignSpec) -> None:
             f"text={tuple(round(value, 1) for value in bbox.extents)}",
         )
 
-    arrows = [
-        artist.arrow_patch
+    edge_annotations = [
+        artist
         for artist in ax.texts
-        if isinstance(artist, Annotation) and artist.arrow_patch is not None
+        if isinstance(artist, Annotation)
+        and isinstance(artist.get_gid(), str)
+        and artist.get_gid().startswith("edge:")
     ]
-    require(len(arrows) == 10, f"真实连接线计数异常：{len(arrows)}（期望 10）。")
+    edge_gids = [artist.get_gid() for artist in edge_annotations]
+    expected_edge_gids = {_edge_gid(edge) for edge in design.edges} | {
+        "edge:depth_direction"
+    }
+    require(len(edge_gids) == len(set(edge_gids)), "真实连接线 GID 重复。")
+    require(set(edge_gids) == expected_edge_gids, "真实连接线身份集合与设计规格不一致。")
+    require(
+        all(
+            annotation.get_visible()
+            and annotation.arrow_patch is not None
+            and annotation.arrow_patch.get_visible()
+            and annotation.arrow_patch.get_gid() == annotation.get_gid()
+            for annotation in edge_annotations
+        ),
+        "真实连接线缺失、不可见或 Annotation/patch 身份不一致。",
+    )
     node_zorder = min(patch.get_zorder() for patch in patches.values())
     require(
-        all(arrow.get_zorder() < node_zorder for arrow in arrows),
+        all(
+            annotation.arrow_patch.get_zorder() < node_zorder
+            for annotation in edge_annotations
+        ),
         "连接线必须位于不透明文字节点下层，禁止穿字。",
     )
+
+    non_node_texts = [
+        artist
+        for artist in ax.texts
+        if artist.get_visible()
+        and artist.get_text().strip()
+        and not isinstance(artist, Annotation)
+        and not (
+            isinstance(artist.get_gid(), str)
+            and artist.get_gid().startswith("node:")
+        )
+    ]
+    for annotation in edge_annotations:
+        path = annotation.arrow_patch.get_path().transformed(
+            annotation.arrow_patch.get_transform()
+        )
+        line_bbox = path.get_extents()
+        for artist in non_node_texts:
+            bbox = artist.get_window_extent(renderer)
+            intersects = line_bbox.overlaps(bbox) and path.intersects_bbox(
+                bbox, filled=False
+            )
+            require(
+                not intersects,
+                f"连接线 {annotation.get_gid()} 穿过非节点文字："
+                f"{artist.get_text()!r}",
+            )
 
 
 def render_figure(design: DesignSpec):
@@ -821,12 +985,15 @@ def render_figure(design: DesignSpec):
     ax.text(0.73, 0.855, TRANSFER_HEADING, ha="center", va="center", fontsize=10, fontweight="bold")
     ax.text(0.91, 0.855, OBSERVATION_HEADING, ha="center", va="center", fontsize=10, fontweight="bold")
 
-    ax.annotate(
+    depth_arrow = ax.annotate(
         "",
         xy=(0.025, 0.255),
         xytext=(0.025, 0.775),
         arrowprops={"arrowstyle": "-|>", "color": "#334155", "linewidth": 1.4},
     )
+    depth_arrow.set_gid("edge:depth_direction")
+    require(depth_arrow.arrow_patch is not None, "深度方向箭头缺少真实 patch。")
+    depth_arrow.arrow_patch.set_gid("edge:depth_direction")
     ax.text(0.011, 0.515, DEPTH_ARROW_TEXT, rotation=90, ha="center", va="center", fontsize=8.5, color="#334155")
 
     styles = _style_map(design)

@@ -4,8 +4,10 @@ from __future__ import annotations
 import importlib.util
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
+import subprocess
 import sys
 
 import pytest
@@ -497,9 +499,14 @@ def test_current_release_manuscript_contract_covers_r6_repairs():
 
     result = replay.verify_manuscript_contract(REPLAY_PATH.parents[1])
 
-    assert result["r6_repairs_verified"] == 13
+    assert result["r6_repairs_verified"] == 14
     assert result["r6_forbidden_regressions"] == 0
     assert result["r6_patch_record_verified"] == 1
+    response = (
+        REPLAY_PATH.parents[1] / "manuscript" / "response-to-reviewers-r1.md"
+    ).read_text(encoding="utf-8")
+    assert "**Location:** immediately following Table 5." in response
+    assert "**Location:** immediately after Table 4." not in response
 
 
 def test_verify_submission_requires_simulated_review_label(tmp_path):
@@ -948,6 +955,13 @@ def test_manuscript_contract_rejects_r5_record_drift(tmp_path, field, bad_value)
 @pytest.mark.parametrize(
     ("field", "bad_value"),
     (
+        ("schema_version", "ars-release-r6-patch-application/0.0"),
+        ("base_candidate", "0" * 40),
+        ("base_manuscript_sha256", "0" * 64),
+        ("base_response_sha256", "0" * 64),
+        ("base_human_verification_sha256", "0" * 64),
+        ("patch_sha256", "0" * 64),
+        ("operation_counts", {}),
         ("after_manuscript_sha256", "0" * 64),
         ("after_clean_sha256", "0" * 64),
         ("after_response_sha256", "0" * 64),
@@ -956,6 +970,7 @@ def test_manuscript_contract_rejects_r5_record_drift(tmp_path, field, bad_value)
         ("formal_release_locked", False),
         ("requires_new_candidate_full_release_review", False),
         ("requires_new_full_sha_release_authorization", False),
+        ("status", "applied"),
     ),
 )
 def test_manuscript_contract_rejects_r6_record_drift(tmp_path, field, bad_value):
@@ -971,45 +986,192 @@ def test_manuscript_contract_rejects_r6_record_drift(tmp_path, field, bad_value)
         replay.verify_manuscript_contract(root)
 
 
-def _assert_generator_is_byte_deterministic(figure) -> None:
-    """连续两次走真实渲染与保存路径，比较正文同目录的 PDF/PNG 字节。"""
-    import matplotlib.pyplot as plt
+@pytest.mark.parametrize(
+    ("relative", "required"),
+    (
+        ("manuscript/manuscript-clean.md", "carried once in Table A.1"),
+        (
+            "manuscript/manuscript-clean.md",
+            "All four boundaries carry a mandatory co-disclosure",
+        ),
+        ("manuscript/manuscript-clean.md", "distinct planned redesign batch"),
+        (
+            "manuscript/manuscript-clean.md",
+            "Appendix E.1 of the pre-registration document",
+        ),
+        (
+            "manuscript/manuscript-clean.md",
+            "25 discrepancies between downloaded byte sizes and upstream metadata",
+        ),
+        (
+            "manuscript/manuscript-clean.md",
+            "failure summaries and reconstructed gate ledger",
+        ),
+        (
+            "manuscript/manuscript-clean.md",
+            "superseded DO-27 v2 failure package are excluded",
+        ),
+        (
+            "manuscript/manuscript-clean.md",
+            "*Bayesian Analysis, 12*(4), 1069–1103.",
+        ),
+        (
+            "manuscript/manuscript-clean.md",
+            "*Geophysical Journal International, 215*(3), 1540–1557.",
+        ),
+        ("manuscript/manuscript-clean.md", "… Mons, B. (2016)."),
+        (
+            "manuscript/response-to-reviewers-r1.md",
+            "§2.2 text now points to Table A.1",
+        ),
+        (
+            "manuscript/response-to-reviewers-r1.md",
+            "Addressed with Table 5a, immediately following Table 5.",
+        ),
+        (
+            "manuscript/response-to-reviewers-r1.md",
+            "**Location:** immediately following Table 5.",
+        ),
+        ("HUMAN-VERIFICATION.md", "superseded DO-27 v2 failure package"),
+    ),
+)
+def test_manuscript_contract_rejects_each_missing_r6_required_text(
+    tmp_path, relative, required
+):
+    """R6 的每一项授权必需文本都必须独立失败关闭。"""
+    replay = _load_replay_module()
+    root = _copy_manuscript_contract_fixture(tmp_path)
+    path = root / relative
+    content = path.read_text(encoding="utf-8")
+    assert required in content
+    path.write_text(content.replace(required, "", 1), encoding="utf-8", newline="\n")
 
+    with pytest.raises(replay.VerificationError, match="R6.*缺失"):
+        replay.verify_manuscript_contract(root)
+
+
+@pytest.mark.parametrize(
+    "duplicate",
+    (
+        "**Table A.1.** duplicate\n",
+        "| Nearest neighbour | Auditable priors | Shared-error likelihood | duplicate\n",
+    ),
+)
+def test_manuscript_contract_rejects_r6_duplicate_table_surface(tmp_path, duplicate):
+    """Table A.1 标题与最近邻表头任一重复都必须失败关闭。"""
+    replay = _load_replay_module()
+    root = _copy_manuscript_contract_fixture(tmp_path)
+    clean = root / "manuscript" / "manuscript-clean.md"
+    clean.write_text(
+        clean.read_text(encoding="utf-8") + duplicate,
+        encoding="utf-8",
+        newline="\n",
+    )
+
+    with pytest.raises(replay.VerificationError, match="Table A.1|最近邻清单表"):
+        replay.verify_manuscript_contract(root)
+
+
+def test_manuscript_contract_pins_r6_after_hashes_even_if_record_is_rewritten(tmp_path):
+    """产物和记录一起漂移也不得绕过固定 after-hash。"""
+    replay = _load_replay_module()
+    root = _copy_manuscript_contract_fixture(tmp_path)
+    human = root / "HUMAN-VERIFICATION.md"
+    human.write_text(
+        human.read_text(encoding="utf-8") + "\n附加漂移。\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+    record_path = root / "provenance" / "release-r6-patch-application.json"
+    record = json.loads(record_path.read_text(encoding="utf-8"))
+    record["after_human_verification_sha256"] = hashlib.sha256(
+        human.read_bytes()
+    ).hexdigest()
+    _write_json(record_path, record)
+
+    with pytest.raises(replay.VerificationError, match="R6.*不一致"):
+        replay.verify_manuscript_contract(root)
+
+
+def _assert_generator_is_byte_deterministic(tmp_path: Path, figure_path: Path) -> None:
+    """在两个独立进程/目录生成，并与只读批准资产逐字节比较。"""
+    stem = figure_path.stem
+    approved_dir = figure_path.parent.parent / "manuscript"
+    approved_paths = tuple(approved_dir / f"{stem}{suffix}" for suffix in (".pdf", ".png"))
+    approved_before = tuple(path.read_bytes() for path in approved_paths)
     observed: list[tuple[bytes, bytes]] = []
-    for _ in range(2):
-        fig = figure.render_figure(figure.build_design())
-        try:
-            pdf_path, png_path = figure.save_outputs(fig)
-        finally:
-            plt.close(fig)
-        assert pdf_path.parent.name == "manuscript"
-        assert png_path.parent == pdf_path.parent
-        observed.append((pdf_path.read_bytes(), png_path.read_bytes()))
-    assert observed[0] == observed[1]
+
+    for run_index in range(2):
+        isolated_paper = tmp_path / f"run-{run_index}" / "papers" / "paper01-rasti"
+        isolated_figures = isolated_paper / "figures"
+        isolated_manuscript = isolated_paper / "manuscript"
+        isolated_figures.mkdir(parents=True)
+        isolated_manuscript.mkdir(parents=True)
+        isolated_script = isolated_figures / figure_path.name
+        shutil.copy2(figure_path, isolated_script)
+        environment = os.environ.copy()
+        environment["SOURCE_DATE_EPOCH"] = "123456789"
+        completed = subprocess.run(
+            [sys.executable, str(isolated_script)],
+            cwd=REPOSITORY_ROOT,
+            env=environment,
+            check=False,
+            capture_output=True,
+        )
+        output = (completed.stdout + completed.stderr).decode(
+            "utf-8", errors="replace"
+        )
+        assert completed.returncode == 0, output
+        observed.append(
+            tuple(
+                (isolated_manuscript / f"{stem}{suffix}").read_bytes()
+                for suffix in (".pdf", ".png")
+            )
+        )
+
+    assert observed[0] == observed[1] == approved_before
+    assert tuple(path.read_bytes() for path in approved_paths) == approved_before
 
 
-def test_figure1_rejects_restored_texture_and_connector_through_text():
+def test_figure1_rejects_restored_texture_and_connector_through_text(tmp_path):
     """Figure 1 的可读性门必须杀死恢复 hatch 与连线穿字变异。"""
     path = REPLAY_PATH.parents[1] / "figures" / "figure-1-framework-governance.py"
     figure = _load_path_module(path, "paper01_figure1_r6")
 
-    reports = figure.selfcheck()
+    original_epoch = os.environ.get("SOURCE_DATE_EPOCH")
+    try:
+        reports = figure.selfcheck()
+        assert "PROBE_TEXT_TEXTURE_RESTORED=PASS" in reports
+        assert "PROBE_CONNECTOR_THROUGH_TEXT=PASS" in reports
+        assert "PROBE_DUPLICATE_NODE_GID=PASS" in reports
+        assert "PROBE_TRANSPARENT_NODE_BACKING=PASS" in reports
+        _assert_generator_is_byte_deterministic(tmp_path, path)
+    finally:
+        if original_epoch is None:
+            os.environ.pop("SOURCE_DATE_EPOCH", None)
+        else:
+            os.environ["SOURCE_DATE_EPOCH"] = original_epoch
 
-    assert "PROBE_TEXT_TEXTURE_RESTORED=PASS" in reports
-    assert "PROBE_CONNECTOR_THROUGH_TEXT=PASS" in reports
-    _assert_generator_is_byte_deterministic(figure)
 
-
-def test_figure3_rejects_restored_texture_and_small_support_diamond():
+def test_figure3_rejects_restored_texture_and_small_support_diamond(tmp_path):
     """Figure 3 的可读性门必须杀死恢复 hatch 与菱形缩小变异。"""
     path = REPLAY_PATH.parents[1] / "figures" / "figure-3-multiscale-parameterisation.py"
     figure = _load_path_module(path, "paper01_figure3_r6")
 
-    reports = figure.selfcheck()
-
-    assert "PROBE_TEXT_TEXTURE_RESTORED=PASS" in reports
-    assert "PROBE_SUPPORT_DIAMOND_TOO_SMALL=PASS" in reports
-    _assert_generator_is_byte_deterministic(figure)
+    original_epoch = os.environ.get("SOURCE_DATE_EPOCH")
+    try:
+        reports = figure.selfcheck()
+        assert "PROBE_TEXT_TEXTURE_RESTORED=PASS" in reports
+        assert "PROBE_SUPPORT_DIAMOND_TOO_SMALL=PASS" in reports
+        assert "PROBE_DUPLICATE_NODE_GID=PASS" in reports
+        assert "PROBE_EDGE_IDENTITY=PASS" in reports
+        assert "PROBE_NON_NODE_TEXT_CROSSING=PASS" in reports
+        _assert_generator_is_byte_deterministic(tmp_path, path)
+    finally:
+        if original_epoch is None:
+            os.environ.pop("SOURCE_DATE_EPOCH", None)
+        else:
+            os.environ["SOURCE_DATE_EPOCH"] = original_epoch
 
 
 def test_figure2_rejects_each_missing_registered_parent_edge():

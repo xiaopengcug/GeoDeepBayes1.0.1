@@ -13,7 +13,7 @@
   },
   "after_manuscript_sha256": "6339aa01a47f6b5da5f870f4ea1981bfeee9b136f1e60461631ae2f6ea7ec1c2",
   "after_clean_sha256": "801cd2a692b8110877a9de07747494b37804f329542b579443c5d751b57923c7",
-  "after_response_sha256": "f8b555dda93be66913a10783e5ecb166af7f98811dd4c05f12686b7063ba9dce",
+  "after_response_sha256": "26b619e6d7295cbf662251b751d2a84d6c4029ade954587ae27feee604b0c856",
   "after_human_verification_sha256": "b08b92ee65d3511e299076a2cf43cabf9c0ab7b43edfd05795b77f90ae8dcdf2",
   "historical_records_byte_preserved": true,
   "formal_release_locked": true,

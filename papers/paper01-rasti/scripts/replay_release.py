@@ -1017,6 +1017,7 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         (clean, "… Mons, B. (2016)."),
         (response, "§2.2 text now points to Table A.1"),
         (response, "Addressed with Table 5a, immediately following Table 5."),
+        (response, "**Location:** immediately following Table 5."),
         (human_verification, "superseded DO-27 v2 failure package"),
     )
     r6_missing = [value for corpus, value in r6_required if value not in corpus]
@@ -1032,6 +1033,7 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         (clean, "Three of the four boundaries carry"),
         (response, "Table 5 now assigns every element cell"),
         (response, "Addressed with Table 4a."),
+        (response, "**Location:** immediately after Table 4."),
         (anchored, "Crossref 未返回卷期页"),
     )
     r6_hits = [value for corpus, value in r6_forbidden if value in corpus]
@@ -1128,17 +1130,27 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
             "structural_operations": 4,
         }
         or r6_record.get("after_manuscript_sha256")
-        != _sha256(root / "manuscript" / "manuscript-anchored.md")
+        != "6339aa01a47f6b5da5f870f4ea1981bfeee9b136f1e60461631ae2f6ea7ec1c2"
         or r6_record.get("after_clean_sha256")
-        != _sha256(root / "manuscript" / "manuscript-clean.md")
+        != "801cd2a692b8110877a9de07747494b37804f329542b579443c5d751b57923c7"
         or r6_record.get("after_response_sha256")
-        != _sha256(root / "manuscript" / "response-to-reviewers-r1.md")
+        != "26b619e6d7295cbf662251b751d2a84d6c4029ade954587ae27feee604b0c856"
         or r6_record.get("after_human_verification_sha256")
-        != _sha256(root / "HUMAN-VERIFICATION.md")
+        != "b08b92ee65d3511e299076a2cf43cabf9c0ab7b43edfd05795b77f90ae8dcdf2"
+        or _sha256(root / "manuscript" / "manuscript-anchored.md")
+        != "6339aa01a47f6b5da5f870f4ea1981bfeee9b136f1e60461631ae2f6ea7ec1c2"
+        or _sha256(root / "manuscript" / "manuscript-clean.md")
+        != "801cd2a692b8110877a9de07747494b37804f329542b579443c5d751b57923c7"
+        or _sha256(root / "manuscript" / "response-to-reviewers-r1.md")
+        != "26b619e6d7295cbf662251b751d2a84d6c4029ade954587ae27feee604b0c856"
+        or _sha256(root / "HUMAN-VERIFICATION.md")
+        != "b08b92ee65d3511e299076a2cf43cabf9c0ab7b43edfd05795b77f90ae8dcdf2"
         or r6_record.get("historical_records_byte_preserved") is not True
         or r6_record.get("formal_release_locked") is not True
         or r6_record.get("requires_new_candidate_full_release_review") is not True
         or r6_record.get("requires_new_full_sha_release_authorization") is not True
+        or r6_record.get("status")
+        != "applied_pending_machine_and_human_verification"
     ):
         raise VerificationError("R6 授权补丁应用记录与当前稿件或发布锁不一致")
     return {

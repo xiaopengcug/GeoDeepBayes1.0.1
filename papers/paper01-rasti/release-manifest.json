@@ -184,8 +184,8 @@
     },
     {
       "path": "papers/paper01-rasti/figures/figure-1-framework-governance.py",
-      "bytes": 46968,
-      "sha256": "1b083fef1a26aaa975d02ec6017d689df9911294f2697fff3d810cd53ce86af0"
+      "bytes": 49892,
+      "sha256": "f6a4d534bffee0470fc9afb188411170efba8fb47a24483e1137e3e4f5d06e01"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.py",
@@ -194,8 +194,8 @@
     },
     {
       "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.py",
-      "bytes": 31668,
-      "sha256": "cd23a2194d32bc19bb9f4b44d29c0bb5869d4e63db346e2220214c4c7a408d7a"
+      "bytes": 37482,
+      "sha256": "96e3b026323b86d004ee70ac16b8d7aee7a2902f6afc62083600f09f128cba18"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.py",
@@ -269,8 +269,8 @@
     },
     {
       "path": "papers/paper01-rasti/manuscript/response-to-reviewers-r1.md",
-      "bytes": 11503,
-      "sha256": "f8b555dda93be66913a10783e5ecb166af7f98811dd4c05f12686b7063ba9dce"
+      "bytes": 11507,
+      "sha256": "26b619e6d7295cbf662251b751d2a84d6c4029ade954587ae27feee604b0c856"
     },
     {
       "path": "papers/paper01-rasti/provenance/author-facts-authorization-r3.json",
@@ -310,7 +310,7 @@
     {
       "path": "papers/paper01-rasti/provenance/release-r6-patch-application.json",
       "bytes": 1283,
-      "sha256": "8ffdd7147e57a1ff7d1f7a70980a955f472011cf4aebc1127747663482782663"
+      "sha256": "2dd8ad171260b6f7fd123ed4ff6c3cc061fd070e2749d40a67d5dd1c1fccf4ae"
     },
     {
       "path": "papers/paper01-rasti/provenance/revision-bundle-r2-refreeze-report.json",
@@ -344,8 +344,8 @@
     },
     {
       "path": "papers/paper01-rasti/scripts/replay_release.py",
-      "bytes": 62024,
-      "sha256": "c32037e0b9aa9943f045a64c4ab25c26f57201a7af635c212c62c985a1655781"
+      "bytes": 62875,
+      "sha256": "b809048586f3b3e68701618bdd6d56ab7ac6ababb4b919ff2d29aec1ae1da319"
     },
     {
       "path": "papers/paper01-rasti/scripts/verify_m2_reconstruction_lineage.py",
@@ -664,8 +664,8 @@
     },
     {
       "path": "tests/paper01/test_release_replay.py",
-      "bytes": 44536,
-      "sha256": "86d1ea4cdf9a0bf6f7e50bc2c344a3e4406495b3bf07c3c673f3ca24552af6a0"
+      "bytes": 50996,
+      "sha256": "34887f3223a254a7fccae12491e81e2a23c09e644087eca5d112da3b0b5651c8"
     },
     {
       "path": "tests/sampling/__init__.py",

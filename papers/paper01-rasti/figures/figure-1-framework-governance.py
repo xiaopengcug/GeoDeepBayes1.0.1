@@ -213,6 +213,18 @@ def require(condition: bool, message: str) -> None:
         raise FigureDesignError(message)
 
 
+def _single_artist(candidates: Iterable, message: str):
+    """要求 artist/规格定位结果恰有一个，禁止 StopIteration 逃逸。"""
+    materialized = tuple(candidates)
+    require(len(materialized) == 1, f"{message}：实际 {len(materialized)} 个。")
+    return materialized[0]
+
+
+def _edge_gid(edge: EdgeSpec) -> str:
+    """返回不依赖坐标或 artist 顺序的稳定边身份。"""
+    return f"edge:{edge.source}->{edge.target}:{edge.relation}"
+
+
 def build_design() -> DesignSpec:
     """构造框架-治理双层机制的冻结规格。"""
     nodes = (
@@ -641,17 +653,23 @@ def _validate_canvas_legibility(fig, design: DesignSpec) -> None:
     fig.canvas.draw()
     renderer = fig.canvas.get_renderer()
     ax = fig.axes[0]
-    patches = {
-        patch.get_gid().split(":", 1)[1]: patch
+    node_patches = [
+        patch
         for patch in ax.patches
         if isinstance(patch.get_gid(), str) and patch.get_gid().startswith("node:")
-    }
-    labels = {
-        artist.get_gid().split(":", 1)[1]: artist
+    ]
+    node_labels = [
+        artist
         for artist in ax.texts
         if isinstance(artist.get_gid(), str) and artist.get_gid().startswith("node:")
-    }
+    ]
     expected = {node.key for node in design.nodes}
+    patch_keys = [patch.get_gid().split(":", 1)[1] for patch in node_patches]
+    label_keys = [artist.get_gid().split(":", 1)[1] for artist in node_labels]
+    require(len(patch_keys) == len(set(patch_keys)), "画布节点 patch GID 重复。")
+    require(len(label_keys) == len(set(label_keys)), "画布节点文字 GID 重复。")
+    patches = dict(zip(patch_keys, node_patches, strict=True))
+    labels = dict(zip(label_keys, node_labels, strict=True))
     require(set(patches) == expected, "画布节点 patch 集合与设计规格不一致。")
     require(set(labels) == expected, "画布节点文字集合与设计规格不一致。")
 
@@ -659,14 +677,21 @@ def _validate_canvas_legibility(fig, design: DesignSpec) -> None:
         patch = patches[key]
         label = labels[key]
         require(not patch.get_hatch(), f"文字节点下方存在 hatch：{key}")
-        outer = patch.get_window_extent(renderer)
+        require(
+            patch.get_facecolor()[3] >= 0.99,
+            f"文字节点缺少不透明底：{key}",
+        )
         inner = label.get_window_extent(renderer)
         clearance = 3.0
+        corners = (
+            (inner.x0 - clearance, inner.y0 - clearance),
+            (inner.x0 - clearance, inner.y1 + clearance),
+            (inner.x1 + clearance, inner.y0 - clearance),
+            (inner.x1 + clearance, inner.y1 + clearance),
+        )
+        shape = patch.get_path().transformed(patch.get_transform())
         require(
-            outer.x0 + clearance <= inner.x0
-            and inner.x1 <= outer.x1 - clearance
-            and outer.y0 + clearance <= inner.y0
-            and inner.y1 <= outer.y1 - clearance,
+            all(shape.contains_points(corners, radius=-2.0)),
             f"节点文字越出形状或未保留清晰间隔：{key}",
         )
 
@@ -711,10 +736,14 @@ def _validate_canvas_legibility(fig, design: DesignSpec) -> None:
             )
 
     for text in (CITE_TEXT, RETURN_TEXT):
-        annotation = next(
-            artist
-            for artist in readable_texts
-            if isinstance(artist, Annotation) and artist.get_text().strip() == text
+        annotation = _single_artist(
+            (
+                artist
+                for artist in readable_texts
+                if isinstance(artist, Annotation)
+                and artist.get_text().strip() == text
+            ),
+            f"连接线标签定位失败：{text}",
         )
         backing = annotation.get_bbox_patch()
         require(backing is not None, f"连接线标签缺少不透明文字底：{text}")
@@ -921,7 +950,7 @@ def _draw_edges(ax, design: DesignSpec) -> None:
     nodes = {node.key: node for node in design.nodes}
     for edge in design.edges:
         tail, tip, rad, text_kwargs = _edge_geometry(edge, nodes)
-        ax.annotate(
+        annotation = ax.annotate(
             edge.label,
             xy=tip,
             xytext=tail,
@@ -938,6 +967,10 @@ def _draw_edges(ax, design: DesignSpec) -> None:
             zorder=2,
             **text_kwargs,
         )
+        gid = _edge_gid(edge)
+        annotation.set_gid(gid)
+        require(annotation.arrow_patch is not None, f"边缺少真实箭头 patch：{gid}")
+        annotation.arrow_patch.set_gid(gid)
 
 
 def render_figure(design: DesignSpec, validate: bool = True):
@@ -1039,12 +1072,15 @@ def _mutator_inject_evidence_id(fig) -> None:
     from matplotlib.text import Annotation  # pylint: disable=import-outside-toplevel
 
     ax = fig.axes[0]
-    target = next(
-        artist
-        for artist in ax.texts
-        if artist.get_visible()
-        and not isinstance(artist, Annotation)
-        and "Priors" in artist.get_text()
+    target = _single_artist(
+        (
+            artist
+            for artist in ax.texts
+            if artist.get_visible()
+            and not isinstance(artist, Annotation)
+            and "Priors" in artist.get_text()
+        ),
+        "Priors 真实标签定位失败",
     )
     target.set_text("evidence_id E-017")
 
@@ -1054,12 +1090,15 @@ def _mutator_expand_contract_artist(fig) -> None:
     from matplotlib.text import Annotation  # pylint: disable=import-outside-toplevel
 
     ax = fig.axes[0]
-    target = next(
-        artist
-        for artist in ax.texts
-        if artist.get_visible()
-        and not isinstance(artist, Annotation)
-        and "Pre-registered diagnostics contract" in artist.get_text()
+    target = _single_artist(
+        (
+            artist
+            for artist in ax.texts
+            if artist.get_visible()
+            and not isinstance(artist, Annotation)
+            and "Pre-registered diagnostics contract" in artist.get_text()
+        ),
+        "诊断契约真实标签定位失败",
     )
     target.set_text(target.get_text() + "\nConvergence criterion")
 
@@ -1079,12 +1118,15 @@ def _mutator_blank_real_label(fig) -> None:
         f"被豁免空文本 Annotation 计数异常：{len(exempted)}"
         f"（期望 {EXPECTED_PURE_ARROW_ANNOTATIONS}）。",
     )
-    target = next(
-        artist
-        for artist in ax.texts
-        if artist.get_visible()
-        and not isinstance(artist, Annotation)
-        and "Gate-item admission rule" in artist.get_text()
+    target = _single_artist(
+        (
+            artist
+            for artist in ax.texts
+            if artist.get_visible()
+            and not isinstance(artist, Annotation)
+            and "Gate-item admission rule" in artist.get_text()
+        ),
+        "准入规则真实标签定位失败",
     )
     target.set_text("")
 
@@ -1093,26 +1135,50 @@ def _mutator_connector_through_text(fig) -> None:
     """把 priors→posterior 真实连接线改为横穿 Priors 文字。"""
     from matplotlib.text import Annotation  # pylint: disable=import-outside-toplevel
 
-    pure_arrows = [
-        artist
-        for artist in fig.axes[0].texts
-        if isinstance(artist, Annotation) and not artist.get_text().strip()
-    ]
-    target = min(
-        pure_arrows,
-        key=lambda artist: (
-            (float(artist.get_position()[0]) - 0.30) ** 2
-            + (float(artist.get_position()[1]) - 0.745) ** 2
+    target = _single_artist(
+        (
+            artist
+            for artist in fig.axes[0].texts
+            if isinstance(artist, Annotation)
+            and artist.get_gid() == "edge:priors->joint_posterior:informs"
         ),
-    )
-    require(
-        abs(float(target.get_position()[0]) - 0.30) < 1e-9,
-        "priors→posterior 连接线定位失败，探针前置条件不成立。",
+        "priors→posterior 稳定边 GID 定位失败",
     )
     target.set_position((0.10, 0.745))
     target.xy = (0.31, 0.745)
     require(target.arrow_patch is not None, "连接线探针未取得真实箭头 patch。")
     target.arrow_patch.set_zorder(5)
+
+
+def _mutator_duplicate_node_gid(fig) -> None:
+    """把两个真实节点 patch 赋为同一 GID。"""
+    patches = [
+        patch
+        for patch in fig.axes[0].patches
+        if isinstance(patch.get_gid(), str) and patch.get_gid().startswith("node:")
+    ]
+    source = _single_artist(
+        (patch for patch in patches if patch.get_gid() == "node:evidence_registry"),
+        "证据注册表 patch 定位失败",
+    )
+    target = _single_artist(
+        (patch for patch in patches if patch.get_gid() == "node:admission_rule"),
+        "准入规则 patch 定位失败",
+    )
+    target.set_gid(source.get_gid())
+
+
+def _mutator_transparent_node_backing(fig) -> None:
+    """把低层连接线覆盖的真实节点底色改为透明。"""
+    patch = _single_artist(
+        (
+            candidate
+            for candidate in fig.axes[0].patches
+            if candidate.get_gid() == "node:evidence_registry"
+        ),
+        "证据注册表 patch 定位失败",
+    )
+    patch.set_alpha(0.0)
 
 
 def _expect_canvas_rejected(name: str, mutate: Callable) -> str:
@@ -1136,7 +1202,7 @@ def _expect_canvas_rejected(name: str, mutate: Callable) -> str:
 def selfcheck(verbose: bool = False) -> tuple[str, ...]:
     """纯内存静态门与五类变异探针；构建真实 Figure 但绝不保存任何输出。
 
-    探针清单（18 项 = 规格级 13 + 画布级 5）：
+    探针清单（20 项 = 规格级 13 + 画布级 7）：
     - F2-1 删构件 x4：PROBE_F2_1_DROP_COMPONENT:{key}（四个构件逐一删除）；
     - F2-1 加第五构件：PROBE_F2_1_FIFTH_COMPONENT；
     - F2-2 断回路：PROBE_F2_2_BREAK_LOOP（删回指边）；
@@ -1249,10 +1315,9 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
         )
     )
 
-    contract_label = next(
-        node.label
-        for node in design.nodes
-        if node.key == "diagnostics_contract"
+    contract_label = _single_artist(
+        (node.label for node in design.nodes if node.key == "diagnostics_contract"),
+        "诊断契约规格定位失败",
     )
     expanded_contract = _with_relabel(
         design,
@@ -1262,10 +1327,9 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
     )
     reports.append(_expect_rejected("PROBE_F2_4_EXPAND_CONTRACT", expanded_contract))
 
-    registry_label = next(
-        node.label
-        for node in design.nodes
-        if node.key == "evidence_registry"
+    registry_label = _single_artist(
+        (node.label for node in design.nodes if node.key == "evidence_registry"),
+        "证据注册表规格定位失败",
     )
     expanded_registry = _with_relabel(
         design,
@@ -1299,8 +1363,18 @@ def selfcheck(verbose: bool = False) -> tuple[str, ...]:
             "PROBE_CONNECTOR_THROUGH_TEXT", _mutator_connector_through_text
         )
     )
+    reports.append(
+        _expect_canvas_rejected(
+            "PROBE_DUPLICATE_NODE_GID", _mutator_duplicate_node_gid
+        )
+    )
+    reports.append(
+        _expect_canvas_rejected(
+            "PROBE_TRANSPARENT_NODE_BACKING", _mutator_transparent_node_backing
+        )
+    )
 
-    reports.append("STATIC_SELFCHECK=PASS probes=18")
+    reports.append("STATIC_SELFCHECK=PASS probes=20")
     result = tuple(reports)
     if verbose:
         for report in result:
