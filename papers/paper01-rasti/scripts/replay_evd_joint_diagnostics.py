@@ -103,6 +103,7 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--workers", type=int, default=2)
     parser.add_argument("--code-root", type=Path, required=True)
+    parser.add_argument("--source-label", required=True)
     args = parser.parse_args()
 
     source_root = args.source_root.resolve()
@@ -160,7 +161,7 @@ def main() -> int:
         "schema_version": "ars-stage4-rev-r1-4-diagnostic-replay-v1",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "operation": "read-only historical replay; predecessors preserved",
-        "source_root": source_root.as_posix(),
+        "source_label": args.source_label,
         "source_count": len(records),
         "workers": args.workers,
         "code_and_contract_sha256": {
@@ -178,6 +179,7 @@ def main() -> int:
     args.output.write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(json.dumps(result["summary"], ensure_ascii=False, indent=2))
     return 0

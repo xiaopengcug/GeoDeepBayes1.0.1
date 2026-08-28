@@ -25,7 +25,7 @@ The following baseline was observed on the revision host. It is descriptive, not
 | pytest | 9.0.3 |
 | SimPEG | 0.25.2 |
 
-No runtime, memory, speed-up, or scaling number is claimed. A production-scale compute envelope would require a separately registered benchmark asset.
+This historical revision-host snapshot differs from the clean release-replay environment locked by `.python-version` and `uv.lock` (Python 3.11.15, NumPy 2.4.6 and pytest 9.1.1). The locked files reproduce the released replay environment; the table records only the host on which revision work was observed. No runtime, memory, speed-up, or scaling number is claimed. A production-scale compute envelope would require a separately registered benchmark asset.
 
 ## 3. Repository and release state
 

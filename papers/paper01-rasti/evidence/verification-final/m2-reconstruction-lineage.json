@@ -1,8 +1,8 @@
 {
   "schema_version": "ars-stage4-rev-r1-5-lineage-audit-v1",
-  "generated_at_utc": "2026-08-23T21:25:37.203722+00:00",
+  "generated_at_utc": "2026-08-28T02:04:28.141462+00:00",
   "nature": "post-hoc additive audit; no historical artifact modified",
-  "pilot_root": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系-治理与验证档案/validation/joint/versions/evd-joint-001-v1-20260819/pilot",
+  "pilot_label": "historical/validation/joint/versions/evd-joint-001-v1-20260819/pilot",
   "historical_evaluation": {
     "gate_ledger_path": "evaluation/m2-gate-ledger.json",
     "gate_ledger_sha256": "72ba8517364f1300cb810f7e5813ca26429fa4aa3ac0c261f04d08dcf516649f",

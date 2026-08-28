@@ -1,5 +1,8 @@
 * text=auto
 .gitattributes text eol=lf
+.gitignore text eol=lf
+.python-version text eol=lf
+uv.lock text eol=lf
 *.py text eol=lf
 *.json text eol=lf
 *.md text eol=lf
@@ -10,3 +13,4 @@
 *.cff text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
+papers/paper01-rasti/RELEASE_NOTES_DRAFT.md whitespace=-blank-at-eol

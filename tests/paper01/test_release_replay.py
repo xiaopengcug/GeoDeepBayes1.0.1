@@ -5,13 +5,15 @@ import importlib.util
 import hashlib
 import json
 from pathlib import Path
+import sys
 
 import pytest
 
 
 PAPER_RELATIVE = Path("papers") / "paper01-rasti"
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 REPLAY_PATH = (
-    Path(__file__).resolve().parents[2]
+    REPOSITORY_ROOT
     / "papers"
     / "paper01-rasti"
     / "scripts"
@@ -23,6 +25,15 @@ def _load_replay_module():
     spec = importlib.util.spec_from_file_location("paper01_release_replay", REPLAY_PATH)
     assert spec is not None and spec.loader is not None
     module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def _load_path_module(path: Path, name: str):
+    spec = importlib.util.spec_from_file_location(name, path)
+    assert spec is not None and spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
     spec.loader.exec_module(module)
     return module
 
@@ -55,21 +66,63 @@ def _evidence_root(tmp_path: Path) -> Path:
     root = repository / PAPER_RELATIVE
     verification = root / "evidence" / "verification-final"
     config_path = repository / "validation" / "wp7" / "synthetic-v6-config.json"
+    contract_path = repository / "validation" / "wp2-toy" / "diagnostic-contract.json"
+    thresholds = {
+        "max_rhat": 1.01,
+        "min_bulk_ess": 400,
+        "min_tail_ess": 400,
+        "max_relative_mcse": 0.05,
+    }
     _write_json(
         config_path,
+        {"thresholds": thresholds},
+    )
+    _write_json(
+        contract_path,
         {
             "thresholds": {
-                "max_rhat": 1.01,
-                "min_bulk_ess": 400,
-                "min_tail_ess": 400,
-                "max_relative_mcse": 0.05,
+                "rank_normalized_split_rhat_max": 1.01,
+                "bulk_ess_min": 400,
+                "tail_ess_min": 400,
+                "relative_mcse_max": 0.05,
+                "required_mode_visits_per_chain": None,
+                "failed_replicate_rate_max": None,
             }
         },
     )
+    code_paths = {
+        "rhat.py": repository / "src" / "geodeepbayes" / "diagnostics" / "rhat.py",
+        "ess.py": repository / "src" / "geodeepbayes" / "diagnostics" / "ess.py",
+        "mcse.py": repository / "src" / "geodeepbayes" / "diagnostics" / "mcse.py",
+        "joint_block.py": repository / "src" / "geodeepbayes" / "benchmarks" / "joint_block.py",
+        "diagnostic-contract.json": contract_path,
+    }
+    for name, path in code_paths.items():
+        if not path.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(f"fixture {name}\n", encoding="utf-8")
+    code_hashes = {
+        name: hashlib.sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+        for name, path in code_paths.items()
+    }
+    algorithm_source = (
+        repository / "validation" / "wp7" / "versions" / "synthetic-block-v6-20260724"
+    )
+    raw_path = algorithm_source / "raw-chains.npz"
+    metrics_path = algorithm_source / "metrics.json"
+    raw_path.parent.mkdir(parents=True, exist_ok=True)
+    raw_path.write_bytes(b"fixture raw chains")
+    metrics_path.write_bytes(b'{"status":"Synthetic-run"}\n')
+    algorithm_source_hashes = {
+        path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+        for path in (raw_path, metrics_path)
+    }
     _write_json(
         verification / "joint-replay-summary.json",
         {
+            "source_label": "historical/evd-joint-001-v1-20260819",
             "source_count": 65,
+            "code_and_contract_sha256": code_hashes,
             "summary": {
                 "all_source_integrity_preserved": True,
                 "status_transition_counts": {"Failed->Failed": 65},
@@ -81,7 +134,10 @@ def _evidence_root(tmp_path: Path) -> Path:
                     "source_integrity_preserved": True,
                     "status_transition": {"from": "Failed", "to": "Failed"},
                     "replayed_diagnostics": {
-                        "diagnostic_stop_reason": "nonfinite_diagnostic"
+                        "diagnostic_stop_reason": "nonfinite_diagnostic",
+                        "degenerate_channel_count": (
+                            1 if index < 57 else 2 if index < 60 else 6
+                        ),
                     },
                 }
                 for index in range(65)
@@ -91,8 +147,14 @@ def _evidence_root(tmp_path: Path) -> Path:
     _write_json(
         verification / "algorithm-replay.json",
         {
+            "source_label": "validation/wp7/versions/synthetic-block-v6-20260724",
             "all_four_thresholds_pass": True,
             "config_sha256": hashlib.sha256(config_path.read_bytes()).hexdigest(),
+            "code_sha256": {
+                name: code_hashes[name] for name in ("rhat.py", "ess.py", "mcse.py")
+            },
+            "source_sha256_before": algorithm_source_hashes,
+            "source_sha256_after": algorithm_source_hashes,
             "threshold_checks": {
                 "rhat": True,
                 "bulk_ess": True,
@@ -100,6 +162,12 @@ def _evidence_root(tmp_path: Path) -> Path:
                 "relative_mcse": True,
             },
             "source_integrity_preserved": True,
+            "manuscript_conservative_values": {
+                "max_rhat_ceiling_5dp": 1.00374,
+                "min_bulk_ess_floor_integer": 2496,
+                "min_tail_ess_floor_integer": 1963,
+                "max_relative_mcse_ceiling_4dp": 0.0202,
+            },
             "replayed_diagnostics": {
                 "max_rhat": 1.003,
                 "min_bulk_ess": 500.0,
@@ -111,6 +179,7 @@ def _evidence_root(tmp_path: Path) -> Path:
     _write_json(
         verification / "m2-reconstruction-lineage.json",
         {
+            "pilot_label": "historical/evd-joint-001-v1-20260819/pilot",
             "summary": {
                 "run_count": 42,
                 "exact_match_count": 42,
@@ -469,3 +538,200 @@ def test_verify_submission_render_rejects_semantic_drift_with_updated_hashes(tmp
 
     with pytest.raises(replay.VerificationError, match="允许渲染|语义漂移"):
         validator(root)
+
+
+def _write_release_figure_inventory(repository: Path) -> None:
+    figures = repository / PAPER_RELATIVE / "figures"
+    figures.mkdir(parents=True, exist_ok=True)
+    for number, stem in {
+        1: "framework-governance",
+        2: "probabilistic-dag",
+        3: "multiscale-parameterisation",
+        4: "evd-joint-scene",
+        5: "algo-diagnostics",
+    }.items():
+        for suffix in (".py", ".pdf", ".png"):
+            (figures / f"figure-{number}-{stem}{suffix}").write_bytes(b"asset\n")
+
+
+def test_figure_inventory_rejects_unreferenced_c1_family(tmp_path):
+    """捕获 Figures 1–5 之外的图族逃逸精确清单门。"""
+    replay = _load_replay_module()
+    validator = getattr(replay, "verify_figure_inventory", None)
+    assert validator is not None, "重放器必须验证 Figures 1–5 的精确 py/pdf/png 集合"
+    repository = tmp_path / "repository"
+    _write_release_figure_inventory(repository)
+    assert validator(repository) == {"figure_families": 5, "figure_members": 15}
+
+    extra = repository / PAPER_RELATIVE / "figures" / "figure-c1-prisma-flow.py"
+    extra.write_text("print('withdrawn')\n", encoding="utf-8")
+    with pytest.raises(replay.VerificationError, match="Figure|图件|额外|C1"):
+        validator(repository)
+
+
+def test_verify_evidence_rejects_stale_joint_code_hash(tmp_path):
+    """捕获联合重放摘要仍绑定旧诊断实现的回归。"""
+    replay = _load_replay_module()
+    root = _evidence_root(tmp_path)
+    repository = root.parents[1]
+    source = repository / "src" / "geodeepbayes" / "diagnostics" / "ess.py"
+    source.parent.mkdir(parents=True, exist_ok=True)
+    source.write_text("CURRENT = True\n", encoding="utf-8")
+    joint_path = root / "evidence" / "verification-final" / "joint-replay-summary.json"
+    joint = json.loads(joint_path.read_text(encoding="utf-8"))
+    joint["source_label"] = "historical/evd-joint-001-v1-20260819"
+    joint["code_and_contract_sha256"] = {
+        "ess.py": "0" * 64,
+    }
+    _write_json(joint_path, joint)
+
+    with pytest.raises(replay.VerificationError, match="代码|ess.py|SHA-256"):
+        replay.verify_evidence(root)
+
+
+def test_verify_evidence_rejects_stale_algorithm_source_hash(tmp_path):
+    """捕获算法重放记录的 raw/metrics 当前字节绑定漂移。"""
+    replay = _load_replay_module()
+    root = _evidence_root(tmp_path)
+    repository = root.parents[1]
+    source_root = repository / "validation" / "wp7" / "versions" / "synthetic-block-v6-20260724"
+    raw = source_root / "raw-chains.npz"
+    metrics = source_root / "metrics.json"
+    raw.parent.mkdir(parents=True, exist_ok=True)
+    raw.write_bytes(b"raw")
+    metrics.write_bytes(b'{"status":"ok"}\n')
+    algorithm_path = root / "evidence" / "verification-final" / "algorithm-replay.json"
+    algorithm = json.loads(algorithm_path.read_text(encoding="utf-8"))
+    algorithm["source_label"] = "validation/wp7/versions/synthetic-block-v6-20260724"
+    algorithm["source_sha256_before"] = {
+        "raw-chains.npz": hashlib.sha256(raw.read_bytes()).hexdigest(),
+        "metrics.json": "0" * 64,
+    }
+    algorithm["source_sha256_after"] = dict(algorithm["source_sha256_before"])
+    _write_json(algorithm_path, algorithm)
+
+    with pytest.raises(replay.VerificationError, match="metrics.json|源.*SHA-256|字节"):
+        replay.verify_evidence(root)
+
+
+def test_verify_evidence_rejects_absolute_source_roots(tmp_path):
+    """捕获新重放工件泄漏本机盘符绝对路径。"""
+    replay = _load_replay_module()
+    root = _evidence_root(tmp_path)
+    joint_path = root / "evidence" / "verification-final" / "joint-replay-summary.json"
+    joint = json.loads(joint_path.read_text(encoding="utf-8"))
+    joint["source_root"] = "H:/private/historical-chains"
+    _write_json(joint_path, joint)
+
+    with pytest.raises(replay.VerificationError, match="绝对|source_root|盘符"):
+        replay.verify_evidence(root)
+
+
+def test_render_submission_rejects_unpaired_evidence_note_marker():
+    """捕获未闭合证据注记吞掉后续正文的回归。"""
+    replay = _load_replay_module()
+
+    with pytest.raises(replay.VerificationError, match="注记|配对|闭合"):
+        replay.render_submission_text("Visible claim. ⟦unclosed\nNext claim.\n")
+
+
+def test_validation_compatibility_rejects_unclassified_resolvable_mismatch(tmp_path):
+    """捕获可解析历史 path/hash 漂移未进入兼容侧车的回归。"""
+    replay = _load_replay_module()
+    validator = getattr(replay, "verify_validation_link_compatibility", None)
+    assert validator is not None, "重放器必须校验 validation 历史链接兼容侧车"
+    repository = tmp_path / "repository"
+    current = repository / "src" / "geodeepbayes" / "diagnostics" / "ess.py"
+    current.parent.mkdir(parents=True)
+    current.write_text("current\n", encoding="utf-8")
+    record = repository / "validation" / "wp7" / "record.json"
+    _write_json(
+        record,
+        {"code": {"path": "src/geodeepbayes/diagnostics/ess.py", "sha256": "0" * 64}},
+    )
+    _write_json(
+        repository / PAPER_RELATIVE / "provenance" / "validation-link-compatibility.json",
+        {
+            "schema_version": "paper01-validation-link-compatibility/1.0",
+            "entries": [],
+        },
+    )
+
+    with pytest.raises(replay.VerificationError, match="兼容|未分类|历史链接"):
+        validator(repository)
+
+
+def test_figure2_rejects_each_missing_registered_parent_edge():
+    """捕获 Figure 2 漏画 Eq. (3.1)/Table 1 任一注册父边。"""
+    path = REPLAY_PATH.parents[1] / "figures" / "figure-2-probabilistic-dag.py"
+    figure = _load_path_module(path, "paper01_figure2")
+    required = frozenset(
+        {
+            ("theta", "c"), ("theta", "z"), ("theta", "m"),
+            ("theta", "xi"), ("theta", "lambda"), ("theta", "delta"),
+            ("theta", "delta_surr"), ("c", "z"), ("c", "m"),
+            ("c", "xi"), ("c", "delta"), ("c", "delta_surr"),
+            ("c", "f_k"), ("z", "m"), ("z", "delta_surr"),
+            ("z", "f_k"), ("m", "delta_surr"), ("m", "f_k"),
+            ("xi", "delta_surr"), ("xi", "f_k"), ("lambda", "f_k"),
+            ("delta", "f_k"), ("delta_surr", "f_k"),
+            ("theta", "f_k"), ("f_k", "d_k"),
+        }
+    )
+    figure.validate_graph_spec(edges=required)
+    for edge in required:
+        with pytest.raises(figure.RenderError, match="边集合|拓扑"):
+            figure.validate_graph_spec(edges=required - {edge})
+
+
+def test_figure4_station_grid_is_exactly_six_by_six():
+    """捕获名义 36 站场景被缩成 6×3 示意网。"""
+    path = REPLAY_PATH.parents[1] / "figures" / "figure-4-evd-joint-scene.py"
+    figure = _load_path_module(path, "paper01_figure4")
+    validator = getattr(figure, "validate_station_grid", None)
+    assert validator is not None, "Figure 4 必须公开名义站网失败关闭校验"
+    assert validator(figure.STATION_GRID) == {"x_count": 6, "y_count": 6, "stations": 36}
+    with pytest.raises(figure.Figure4Error, match="36|6 × 6|站"):
+        validator(figure.STATION_GRID[:-1])
+
+
+def test_figure5_resolves_only_distributed_release_sources():
+    """捕获 Figure 5 再次解析到包外治理档案或旧诊断源码。"""
+    path = REPLAY_PATH.parents[1] / "figures" / "figure-5-algo-diagnostics.py"
+    figure = _load_path_module(path, "paper01_figure5")
+    paths = figure.locate_paths()
+
+    assert paths["repository_root"] == REPOSITORY_ROOT
+    assert paths["npz"].is_relative_to(REPOSITORY_ROOT / "validation" / "wp7")
+    assert paths["contract"].is_relative_to(REPOSITORY_ROOT / "validation" / "wp2-toy")
+    assert paths["diagnostics"] == REPOSITORY_ROOT / "src" / "geodeepbayes" / "diagnostics"
+    figure.check_diagnostic_source_hashes(paths["diagnostics"])
+
+
+def test_figure5_accepts_code_evolution_only_when_conservative_values_hold(tmp_path):
+    """捕获把允许的逐位演进误当漂移，或放过保守报告值漂移。"""
+    import numpy as np
+
+    path = REPLAY_PATH.parents[1] / "figures" / "figure-5-algo-diagnostics.py"
+    figure = _load_path_module(path, "paper01_figure5_values")
+    metrics = tmp_path / "metrics.json"
+    _write_json(
+        metrics,
+        {
+            "max_rhat": 1.003739821507544,
+            "min_bulk_ess": 2496.461999015852,
+            "min_tail_ess": 1963.6080886746252,
+            "max_relative_mcse": 0.020122173198390787,
+        },
+    )
+    arrays = {
+        "rhat": np.array([1.0037388341264455]),
+        "bulk_ess": np.array([2496.5476048670203]),
+        "tail_ess": np.array([1963.6080886746252]),
+        "relative_mcse": np.array([0.020122173198390787]),
+    }
+    assert figure.load_metrics_and_check_extrema(np, metrics, arrays)["max_rhat"] == 1.003739821507544
+
+    arrays["tail_ess"] = np.array([1962.9])
+    with pytest.raises(figure.ReproductionError, match="保守报告值|tail_ess"):
+        figure.load_metrics_and_check_extrema(np, metrics, arrays)

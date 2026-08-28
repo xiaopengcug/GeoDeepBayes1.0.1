@@ -27,6 +27,7 @@ FIGURE_SIZE_IN = (10.5, 5.4)
 PNG_DPI = 450
 OUTPUT_STEM = "figure-2-probabilistic-dag"
 INDEX_NOTATION = "k = 1 … K"
+LAMBDA_PARENT_LABEL = r"$\nu \subset \Theta$"
 CJK_PATTERN = re.compile(r"[㐀-䶿一-鿿豈-﫿]")
 DIGIT_PATTERN = re.compile(r"[0-9０-９]")
 
@@ -92,12 +93,22 @@ EDGES = frozenset(
         ("theta", "delta"),
         ("theta", "delta_surr"),
         ("c", "z"),
+        ("c", "m"),
+        ("c", "xi"),
+        ("c", "delta"),
+        ("c", "delta_surr"),
+        ("c", "f_k"),
         ("z", "m"),
+        ("z", "delta_surr"),
+        ("z", "f_k"),
+        ("m", "delta_surr"),
         ("m", "f_k"),
+        ("xi", "delta_surr"),
         ("xi", "f_k"),
         ("lambda", "f_k"),
         ("delta", "f_k"),
         ("delta_surr", "f_k"),
+        ("theta", "f_k"),
         ("f_k", "d_k"),
     }
 )
@@ -129,12 +140,22 @@ EXPECTED_EDGES = frozenset(
         ("theta", "delta"),
         ("theta", "delta_surr"),
         ("c", "z"),
+        ("c", "m"),
+        ("c", "xi"),
+        ("c", "delta"),
+        ("c", "delta_surr"),
+        ("c", "f_k"),
         ("z", "m"),
+        ("z", "delta_surr"),
+        ("z", "f_k"),
+        ("m", "delta_surr"),
         ("m", "f_k"),
+        ("xi", "delta_surr"),
         ("xi", "f_k"),
         ("lambda", "f_k"),
         ("delta", "f_k"),
         ("delta_surr", "f_k"),
+        ("theta", "f_k"),
         ("f_k", "d_k"),
     }
 )
@@ -184,7 +205,7 @@ def visible_texts(
             texts.extend([node.symbol, "observation\nfactor"])
         else:
             texts.extend([node.symbol, node.description])
-    texts.extend([active_plate.label, FOOTNOTE])
+    texts.extend([active_plate.label, LAMBDA_PARENT_LABEL, FOOTNOTE])
     return texts
 
 
@@ -226,6 +247,7 @@ def validate_graph_spec(
     require(counts["xi"] == 1, "共享系统误差 ξ 必须是唯一单节点。")
     require(active_edges == EXPECTED_EDGES, "DAG 边集合与冻结规格不一致。")
     require(("c", "z") in active_edges and ("z", "m") in active_edges, "主状态链必须为 c→z→m。")
+    require(len(active_edges) == 25, "DAG 必须恰含 25 条注册父边。")
     require(("xi", "f_k") in active_edges, "唯一 ξ 必须进入方法观测因子。")
     require(
         {("lambda", "f_k"), ("delta", "f_k"), ("delta_surr", "f_k")}.issubset(active_edges),
@@ -296,7 +318,7 @@ def expect_render_error(label: str, action) -> None:
 
 def run_negative_probes() -> None:
     """证明拓扑、形态、符号上界与图面文字门具有鉴别力。"""
-    for edge in (("xi", "f_k"), ("c", "z"), ("f_k", "d_k")):
+    for edge in sorted(EXPECTED_EDGES):
         expect_render_error(
             f"删除实际登记 {edge[0]}→{edge[1]}",
             lambda edge=edge: validate_drawn_topology(set(EXPECTED_EDGES - {edge})),
@@ -321,7 +343,7 @@ def run_negative_probes() -> None:
         "注入运行读数",
         lambda: validate_display_texts([*visible_texts(), "runtime: 42 seconds"]),
     )
-    print("[负向探针] ALL=PASS count=6")
+    print(f"[负向探针] ALL=PASS count={len(EXPECTED_EDGES) + 3}")
 
 
 def configure_determinism() -> None:
@@ -516,8 +538,44 @@ def draw_figure():
         linewidth=1.35,
     )
 
+    # 注册父集中的跨层依赖分别绘制；弧线避免把经过的节点误读为父节点。
+    for start, end, edge, curvature in (
+        ((2.70, 6.03), (7.10, 6.03), ("c", "m"), 0.34),
+        ((2.55, 5.98), (10.45, 5.98), ("c", "xi"), 0.27),
+        ((2.45, 5.95), (17.25, 7.08), ("c", "delta"), -0.18),
+        ((2.35, 5.91), (17.25, 6.15), ("c", "delta_surr"), -0.11),
+        ((6.10, 6.02), (17.25, 6.08), ("z", "delta_surr"), -0.08),
+        ((9.60, 6.04), (17.25, 6.04), ("m", "delta_surr"), -0.05),
+        ((13.20, 6.08), (17.25, 6.08), ("xi", "delta_surr"), -0.03),
+    ):
+        add_arrow(
+            ax,
+            start,
+            end,
+            semantic_edges=(edge,),
+            drawn_edges=drawn_edges,
+            linestyle=(0, (2.2, 2.2)),
+            linewidth=0.72,
+            connectionstyle=f"arc3,rad={curvature}",
+        )
+
     factor_center = (13.00, 3.72)
     factor_half = 0.67
+    for start, end, edge, curvature in (
+        ((2.70, 6.00), (12.33, 3.54), ("c", "f_k"), -0.14),
+        ((6.15, 6.00), (12.33, 3.68), ("z", "f_k"), -0.10),
+        ((10.50, 8.48), (13.00, 4.39), ("theta", "f_k"), 0.12),
+    ):
+        add_arrow(
+            ax,
+            start,
+            end,
+            semantic_edges=(edge,),
+            drawn_edges=drawn_edges,
+            linestyle=(0, (2.2, 2.2)),
+            linewidth=0.78,
+            connectionstyle=f"arc3,rad={curvature}",
+        )
     add_arrow(
         ax,
         (8.35, 6.03),
@@ -588,6 +646,16 @@ def draw_figure():
         fontsize=10.0,
         fontweight="semibold",
         color="#1d252d",
+        zorder=4,
+    )
+    ax.text(
+        15.20,
+        8.18,
+        LAMBDA_PARENT_LABEL,
+        ha="center",
+        va="center",
+        fontsize=7.2,
+        color="#394551",
         zorder=4,
     )
 

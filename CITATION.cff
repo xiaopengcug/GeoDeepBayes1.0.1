@@ -21,6 +21,7 @@ authors:
     given-names: Li Xin
     affiliation: "Shandong Provincial Geological Survey Institute"
 repository-code: "https://github.com/xiaopengcug/GeoDeepBayes1.0.1"
+license-url: "https://github.com/xiaopengcug/GeoDeepBayes1.0.1#access-and-licence"
 keywords:
   - Bayesian joint inversion
   - geophysical data fusion

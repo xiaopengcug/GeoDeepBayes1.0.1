@@ -2,6 +2,9 @@
 
 This release accompanies *An Auditable Bayesian Fusion Framework for Deep Mineral Exploration Under Cover: Formulation, Component-Level Synthetic Evidence, and a Failed Joint Pilot*.
 
+Candidate commit: `<full R5 candidate SHA inserted after the machine gate>`  
+Archive DOI: `<assigned by Zenodo only after formal release>`
+
 Highlights:
 
 - publishes the clean and ARS-anchored manuscript views;

@@ -10,10 +10,11 @@ It is prepared for submission to *RAS Techniques and Instruments* (RASTI). The p
 
 - `manuscript/manuscript-clean.md` — clean editorial view with author, affiliation, funding, and CRediT statements.
 - `manuscript/manuscript-anchored.md` — ARS block-anchored source carrying internal evidence notes.
+- `manuscript/response-to-reviewers-r1.md` — explicitly labelled simulated internal-review response retained as revision provenance, not journal correspondence.
 - `evidence/revision-bundle-r2/` — continuous Stage 2.5 → Stage 4 revision-authority bundle.
 - `evidence/verification-final/` — read-only replay summaries for the algorithm component, the 65 historical joint sources, and the 42-row M2 reconstruction-lineage audit.
 - `evidence/positive-control/` — deterministic healthy-chain input and expected output for the published joint-diagnostics instrument.
-- `figures/` and `supplement/` — all reader-facing figures and the reproducibility/adoption supplement cited by the manuscript.
+- `figures/` and `supplement/` — exactly Figures 1–5, their repository-portable generators, and the reproducibility/adoption supplement cited by the manuscript; no unreferenced figure family is distributed.
 - `provenance/` — author-facts patch authorization and application records.
 - `scripts/replay_release.py` — fail-closed release-tree, provenance, clean-render, and registered-summary verifier; its manifest scope explicitly excludes the self-referential manifest and generated replay result.
 - the other files under `scripts/` are historical Stage 4 replay-source snapshots;
@@ -69,4 +70,4 @@ Before the formal tag/release, the corresponding author must manually verify at 
 5. clean-environment replay output;
 6. GitHub release title/tag and Zenodo metadata preview.
 
-No DOI is claimed in the release-candidate branch. After explicit human approval, the formal GitHub release will trigger the enabled Zenodo integration; the resulting DOI will be recorded in the final manuscript and provenance package.
+No DOI is claimed in the release-candidate branch. After explicit human approval, the formal GitHub release may trigger the enabled Zenodo integration; the resulting DOI will be recorded in the release description and a camera-ready manuscript/provenance update. The present frozen candidate makes no DOI claim.

@@ -56,6 +56,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pilot-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--pilot-label", required=True)
     args = parser.parse_args()
 
     pilot = args.pilot_root.resolve()
@@ -98,7 +99,7 @@ def main() -> int:
         "schema_version": "ars-stage4-rev-r1-5-lineage-audit-v1",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "nature": "post-hoc additive audit; no historical artifact modified",
-        "pilot_root": pilot.as_posix(),
+        "pilot_label": args.pilot_label,
         "historical_evaluation": {
             "gate_ledger_path": ledger_path.relative_to(pilot).as_posix(),
             "gate_ledger_sha256": sha256(ledger_path),
@@ -122,6 +123,7 @@ def main() -> int:
     args.output.write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(json.dumps(result["summary"], ensure_ascii=False, indent=2))
     return 0 if result["summary"]["all_rows_exact"] else 1

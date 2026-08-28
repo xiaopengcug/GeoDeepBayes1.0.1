@@ -19,11 +19,10 @@ from geodeepbayes.diagnostics import (
 
 
 def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+    content = path.read_bytes()
+    if path.suffix.lower() in {".json", ".py", ".md", ".txt", ".yml", ".yaml"}:
+        content = content.replace(b"\r\n", b"\n")
+    return hashlib.sha256(content).hexdigest()
 
 
 def main() -> int:
@@ -32,6 +31,7 @@ def main() -> int:
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--code-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--source-label", required=True)
     args = parser.parse_args()
 
     source = args.source_root.resolve()
@@ -94,7 +94,7 @@ def main() -> int:
         "schema_version": "ars-stage4-rev-r1-4-algo-diagnostic-replay-v1",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "operation": "read-only historical replay; predecessor files preserved",
-        "source_root": source.as_posix(),
+        "source_label": args.source_label,
         "source_sha256_before": before,
         "source_sha256_after": after,
         "source_integrity_preserved": before == after,

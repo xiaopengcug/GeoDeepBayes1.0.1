@@ -3,12 +3,15 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import hashlib
+import importlib.util
 import json
 import math
 import os
 import re
 import tempfile
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -47,6 +50,31 @@ ALLOWED_TRANSFORMATIONS = {
     "block_marker_lines",
     "evidence_note_spans",
     "reference_pipeline_notes",
+}
+FIGURE_STEMS = (
+    "figure-1-framework-governance",
+    "figure-2-probabilistic-dag",
+    "figure-3-multiscale-parameterisation",
+    "figure-4-evd-joint-scene",
+    "figure-5-algo-diagnostics",
+)
+EXPECTED_FIGURE_MEMBERS = frozenset(
+    f"{stem}{suffix}"
+    for stem in FIGURE_STEMS
+    for suffix in (".pdf", ".png", ".py")
+)
+DRIVE_ABSOLUTE_PATH = re.compile(r"^[A-Za-z]:[/\\]")
+JOINT_CODE_PATHS = {
+    "rhat.py": Path("src/geodeepbayes/diagnostics/rhat.py"),
+    "ess.py": Path("src/geodeepbayes/diagnostics/ess.py"),
+    "mcse.py": Path("src/geodeepbayes/diagnostics/mcse.py"),
+    "joint_block.py": Path("src/geodeepbayes/benchmarks/joint_block.py"),
+    "diagnostic-contract.json": Path("validation/wp2-toy/diagnostic-contract.json"),
+}
+ALGORITHM_CODE_PATHS = {
+    name: relative
+    for name, relative in JOINT_CODE_PATHS.items()
+    if name in {"rhat.py", "ess.py", "mcse.py"}
 }
 
 REQUIRED_RELEASE_MEMBERS = (
@@ -115,6 +143,77 @@ def _read_json(path: Path) -> dict:
 
 def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _sha256_lf_normalized(path: Path) -> str:
+    """对文本按发布树 LF 字节计算哈希；二进制保持原字节。"""
+    content = path.read_bytes()
+    if path.suffix.lower() in {".json", ".md", ".py", ".txt", ".yml", ".yaml"}:
+        content = content.replace(b"\r\n", b"\n")
+    return hashlib.sha256(content).hexdigest()
+
+
+def _verify_stable_source_label(
+    payload: dict,
+    *,
+    label_field: str,
+    forbidden_field: str,
+) -> None:
+    """要求新生成工件仅携带稳定相对/历史标签。"""
+    if forbidden_field in payload:
+        raise VerificationError(f"重放工件不得包含本机绝对字段 {forbidden_field}")
+    label = payload.get(label_field)
+    if (
+        not isinstance(label, str)
+        or not label
+        or DRIVE_ABSOLUTE_PATH.match(label)
+        or label.startswith(("/", "\\"))
+        or ".." in Path(label).parts
+    ):
+        raise VerificationError(f"{label_field} 必须是稳定相对或历史标签，禁止盘符绝对路径")
+
+
+def _verify_hash_map(
+    repository: Path,
+    recorded: object,
+    expected_paths: dict[str, Path],
+    label: str,
+) -> None:
+    if not isinstance(recorded, dict) or set(recorded) != set(expected_paths):
+        raise VerificationError(f"{label}代码 SHA-256 字段集合不完整")
+    for name, relative in expected_paths.items():
+        path = repository / relative
+        actual = _sha256_lf_normalized(path)
+        if recorded.get(name) != actual:
+            raise VerificationError(
+                f"{label}代码 SHA-256 不一致：{name}，"
+                f"expected={recorded.get(name)}，actual={actual}"
+            )
+
+
+def verify_threshold_contract(repository: Path) -> dict[str, int]:
+    """锁定 WP2 合同与 WP7 算法配置的同名门槛等值。"""
+    repository = Path(repository).resolve()
+    contract = _read_json(repository / "validation" / "wp2-toy" / "diagnostic-contract.json")
+    config = _read_json(repository / "validation" / "wp7" / "synthetic-v6-config.json")
+    contract_thresholds = contract.get("thresholds", {})
+    config_thresholds = config.get("thresholds", {})
+    mappings = {
+        "max_rhat": "rank_normalized_split_rhat_max",
+        "min_bulk_ess": "bulk_ess_min",
+        "min_tail_ess": "tail_ess_min",
+        "max_relative_mcse": "relative_mcse_max",
+        "min_mode_visits_per_chain": "required_mode_visits_per_chain",
+        "max_failed_replicate_rate": "failed_replicate_rate_max",
+    }
+    mismatches = {
+        config_name: (config_thresholds.get(config_name), contract_thresholds.get(contract_name))
+        for config_name, contract_name in mappings.items()
+        if config_thresholds.get(config_name) != contract_thresholds.get(contract_name)
+    }
+    if mismatches:
+        raise VerificationError(f"WP2/WP7 诊断阈值不等值：{mismatches}")
+    return {"threshold_equalities_verified": len(mappings)}
 
 
 def _repository_root(paper_root: Path) -> Path:
@@ -259,6 +358,56 @@ def verify_evidence(root: Path) -> dict[str, int]:
     algorithm = _read_json(verification / "algorithm-replay.json")
     m2 = _read_json(verification / "m2-reconstruction-lineage.json")
 
+    _verify_stable_source_label(
+        joint,
+        label_field="source_label",
+        forbidden_field="source_root",
+    )
+    _verify_stable_source_label(
+        algorithm,
+        label_field="source_label",
+        forbidden_field="source_root",
+    )
+    _verify_stable_source_label(
+        m2,
+        label_field="pilot_label",
+        forbidden_field="pilot_root",
+    )
+    _verify_hash_map(
+        repository,
+        joint.get("code_and_contract_sha256"),
+        JOINT_CODE_PATHS,
+        "联合重放",
+    )
+    _verify_hash_map(
+        repository,
+        algorithm.get("code_sha256"),
+        ALGORITHM_CODE_PATHS,
+        "算法重放",
+    )
+    verify_threshold_contract(repository)
+
+    algorithm_source = (
+        repository
+        / "validation"
+        / "wp7"
+        / "versions"
+        / "synthetic-block-v6-20260724"
+    )
+    source_paths = {
+        name: algorithm_source / name for name in ("raw-chains.npz", "metrics.json")
+    }
+    actual_source_hashes = {
+        name: _sha256_lf_normalized(path) for name, path in source_paths.items()
+    }
+    source_before = algorithm.get("source_sha256_before")
+    source_after = algorithm.get("source_sha256_after")
+    if source_before != actual_source_hashes or source_after != actual_source_hashes:
+        raise VerificationError(
+            "算法重放源字节 SHA-256 不一致："
+            f"expected={actual_source_hashes}，before={source_before}，after={source_after}"
+        )
+
     joint_records = joint.get("records")
     if not isinstance(joint_records, list) or len(joint_records) != 65:
         raise VerificationError("联合历史记录层必须恰含 65 条记录")
@@ -277,6 +426,10 @@ def verify_evidence(root: Path) -> dict[str, int]:
     record_integrity_count = sum(
         row.get("source_integrity_preserved") is True for row in joint_records
     )
+    degenerate_counts = Counter(
+        row.get("replayed_diagnostics", {}).get("degenerate_channel_count")
+        for row in joint_records
+    )
     if (
         record_transition_count != 65
         or record_stop_count != 65
@@ -285,6 +438,10 @@ def verify_evidence(root: Path) -> dict[str, int]:
         raise VerificationError(
             "联合历史逐条记录层不满足 65 个 Failed->Failed、"
             "nonfinite_diagnostic 与完整性保持"
+        )
+    if degenerate_counts != Counter({1: 57, 2: 3, 6: 5}):
+        raise VerificationError(
+            f"联合历史退化通道分布必须保持 57+3+5；实际={dict(degenerate_counts)}"
         )
 
     joint_sources = joint.get("source_count")
@@ -359,6 +516,14 @@ def verify_evidence(root: Path) -> dict[str, int]:
         or not all(computed_checks.values())
     ):
         raise VerificationError("算法组件的四项登记阈值未全部通过")
+    expected_conservative_values = {
+        "max_rhat_ceiling_5dp": 1.00374,
+        "min_bulk_ess_floor_integer": 2496,
+        "min_tail_ess_floor_integer": 1963,
+        "max_relative_mcse_ceiling_4dp": 0.0202,
+    }
+    if algorithm.get("manuscript_conservative_values") != expected_conservative_values:
+        raise VerificationError("算法组件四个保守报告值发生漂移")
 
     m2_summary = m2.get("summary", {})
     m2_records = m2.get("records")
@@ -424,6 +589,153 @@ def _collect_hash_references(value: object, locator: str = "$") -> list[tuple[st
     return references
 
 
+HISTORICAL_CODE_EVOLUTION_ALLOWLIST = {
+    (
+        "src/geodeepbayes/diagnostics/ess.py",
+        "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+    ),
+    (
+        "src/geodeepbayes/diagnostics/rhat.py",
+        "bfe187a7507f3bd6e36bd9bbbee6ab1d5fff9c24879d8a2f2a8e47fe8c98010c",
+    ),
+}
+
+
+def _resolve_historical_member(repository: Path, record_path: Path, raw_path: str) -> Path | None:
+    """把旧治理根路径映射到精选发布树中的唯一现行成员。"""
+    normalized = raw_path.replace("\\", "/")
+    rooted = "/" + normalized.lstrip("/")
+    relative_candidates: list[str] = []
+    for marker in ("/src/", "/validation/"):
+        if marker in rooted:
+            relative_candidates.append(
+                f"{marker.strip('/')}/{rooted.split(marker, 1)[1]}"
+            )
+    relative_candidates.extend((normalized, f"validation/{normalized}"))
+    candidates = [repository / candidate for candidate in relative_candidates]
+    candidates.extend((record_path.parent / normalized, record_path.parent.parent / normalized))
+    existing = {candidate.resolve() for candidate in candidates if candidate.is_file()}
+    if not existing and normalized:
+        suffix = "/" + normalized.lstrip("/")
+        existing = {
+            candidate.resolve()
+            for candidate in repository.rglob(Path(normalized).name)
+            if candidate.is_file()
+            and ("/" + candidate.relative_to(repository).as_posix()).endswith(suffix)
+        }
+    if len(existing) > 1:
+        raise VerificationError(f"历史路径映射不唯一：{raw_path} -> {sorted(map(str, existing))}")
+    return next(iter(existing)) if existing else None
+
+
+def _crlf_variant_sha256(path: Path) -> str | None:
+    content = path.read_bytes()
+    if b"\x00" in content:
+        return None
+    try:
+        text = content.decode("utf-8")
+    except UnicodeDecodeError:
+        return None
+    lf = text.replace("\r\n", "\n").replace("\r", "\n")
+    return hashlib.sha256(lf.replace("\n", "\r\n").encode("utf-8")).hexdigest()
+
+
+def _build_validation_compatibility_entries(repository: Path) -> list[dict[str, Any]]:
+    repository = Path(repository).resolve()
+    validation_root = repository / "validation"
+    entries: list[dict[str, Any]] = []
+    for record_path in sorted(validation_root.rglob("*.json")):
+        record = _read_json(record_path)
+        record_relative = record_path.relative_to(repository).as_posix()
+        for locator, original_path, original_sha256 in _collect_hash_references(record):
+            current = _resolve_historical_member(repository, record_path, original_path)
+            if current is None:
+                continue
+            current_relative = current.relative_to(repository).as_posix()
+            current_sha256 = _sha256_lf_normalized(current)
+            if original_sha256 == current_sha256:
+                classification = "exact"
+                reason = "历史 SHA-256 与当前发布字节一致"
+            elif original_sha256 == _crlf_variant_sha256(current):
+                classification = "historical_eol_normalization"
+                reason = "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定"
+            elif (current_relative, original_sha256) in HISTORICAL_CODE_EVOLUTION_ALLOWLIST:
+                classification = "historical_code_evolution"
+                reason = "显式 allowlist：诊断实现演进，历史记录保持不变"
+            else:
+                raise VerificationError(
+                    "可解析历史链接存在未分类失配："
+                    f"{record_relative} {locator} -> {original_path}，"
+                    f"historical={original_sha256}，current={current_sha256}"
+                )
+            entries.append(
+                {
+                    "record_path": record_relative,
+                    "locator": locator,
+                    "original_path": original_path,
+                    "original_sha256": original_sha256,
+                    "classification": classification,
+                    "classification_reason": reason,
+                    "current_path": current_relative,
+                    "current_bytes": current.stat().st_size,
+                    "current_sha256": current_sha256,
+                }
+            )
+    return sorted(
+        entries,
+        key=lambda row: (
+            row["record_path"],
+            row["locator"],
+            row["original_path"],
+            row["original_sha256"],
+        ),
+    )
+
+
+def build_validation_link_compatibility(repository: Path) -> dict[str, Any]:
+    """建立历史 path/hash 到当前发布字节的只读分类侧车。"""
+    entries = _build_validation_compatibility_entries(repository)
+    counts: dict[str, int] = {}
+    for row in entries:
+        classification = row["classification"]
+        counts[classification] = counts.get(classification, 0) + 1
+    return {
+        "schema_version": "paper01-validation-link-compatibility/1.0",
+        "policy": "historical_records_byte_preserved_current_release_bytes_bound",
+        "summary": {
+            "resolvable_links": len(entries),
+            "classification_counts": dict(sorted(counts.items())),
+        },
+        "entries": entries,
+    }
+
+
+def write_validation_link_compatibility(repository: Path) -> Path:
+    repository = Path(repository).resolve()
+    target = repository / PAPER_RELATIVE / "provenance" / "validation-link-compatibility.json"
+    payload = build_validation_link_compatibility(repository)
+    _atomic_write_bytes(
+        target,
+        (json.dumps(payload, ensure_ascii=False, indent=2) + "\n").encode("utf-8"),
+    )
+    return target
+
+
+def verify_validation_link_compatibility(repository: Path) -> dict[str, int]:
+    """重算全部可解析历史链接并逐字段核对兼容侧车。"""
+    repository = Path(repository).resolve()
+    sidecar = _read_json(
+        repository / PAPER_RELATIVE / "provenance" / "validation-link-compatibility.json"
+    )
+    expected = build_validation_link_compatibility(repository)
+    if sidecar != expected:
+        raise VerificationError("validation 历史链接兼容侧车与当前可解析链接不一致")
+    return {
+        "resolvable_links": expected["summary"]["resolvable_links"],
+        "unclassified_mismatches": 0,
+    }
+
+
 def verify_revision_bundle(root: Path) -> dict[str, int]:
     """遍历并验证 revision-evidence bundle 的全部内部哈希链接。"""
     root = Path(root).resolve()
@@ -479,6 +791,9 @@ def verify_revision_bundle(root: Path) -> dict[str, int]:
 
 def render_submission_text(anchored: str) -> str:
     """仅执行登记过的非语义清洁变换。"""
+    without_notes = EVIDENCE_NOTE.sub("", anchored)
+    if "⟦" in without_notes or "⟧" in without_notes:
+        raise VerificationError("可见正文中的证据注记开启与闭合标记未配对")
     clean = BLOCK_MARKER.sub("", anchored)
     clean = EVIDENCE_NOTE.sub("", clean)
     clean = REFERENCE_NOTE_HEADER.sub("", clean)
@@ -599,10 +914,10 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         raise VerificationError(f"第 6 节方程号错误：{equation_six}")
 
     required = (
-        "trivariate Cauchy prior on three AVO reflection coefficients",
+        "Cauchy priors over reflectivity or AVO coefficients",
         "Two rows carry Synthetic-run support",
         "all five pilot scenes",
-        "30 λ-grid runs",
+        "30 $\\lambda_{gm}$-grid runs",
         "two adaptive-Metropolis arms",
         "ten weighted arms",
         "did not adjudicate that priority",
@@ -680,7 +995,7 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         or patch_record.get("patch_sha256")
         != "9487ebda98c7b1c2c29a9e27215592f211fdd5d44184594513d98600d2be0ca6"
         or patch_record.get("after_sha256")
-        != _sha256(root / "manuscript" / "manuscript-anchored.md")
+        != "ef03aa58ee5e6fbaa3f21874ba6d2cb8728b43b3fba32d90d0f57df8b5df3361"
         or patch_record.get("operations_applied") != 193
         or not authorization.get("all_listed_targets_and_operations_authorized")
         or not authorization.get("structural_changes_acknowledged")
@@ -690,6 +1005,24 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         or any(row.get("status") != "completed" for row in structural_operations)
     ):
         raise VerificationError("R4 授权补丁应用记录与当前稿件或结构状态不一致")
+    r5_record = _read_json(root / "provenance" / "release-r5-patch-application.json")
+    if (
+        r5_record.get("schema_version") != "ars-release-r5-patch-application/1.0"
+        or r5_record.get("base_candidate")
+        != "7a9d06f27a0a21b7ee93bb01091c5b853e164b95"
+        or r5_record.get("base_manuscript_sha256")
+        != "ef03aa58ee5e6fbaa3f21874ba6d2cb8728b43b3fba32d90d0f57df8b5df3361"
+        or r5_record.get("patch_sha256")
+        != "dd71c7c147a066d65321432d51efd5fac50b581635343254031f4c35358c98c0"
+        or r5_record.get("after_manuscript_sha256")
+        != _sha256(root / "manuscript" / "manuscript-anchored.md")
+        or r5_record.get("after_clean_sha256")
+        != _sha256(root / "manuscript" / "manuscript-clean.md")
+        or r5_record.get("historical_records_byte_preserved") is not True
+        or r5_record.get("formal_release_locked") is not True
+        or r5_record.get("requires_new_candidate_manual_review") is not True
+    ):
+        raise VerificationError("R5 授权补丁应用记录与当前稿件或发布锁不一致")
     return {
         "table_order": table_order,
         "figure_order": figure_order,
@@ -698,6 +1031,7 @@ def verify_manuscript_contract(root: Path) -> dict[str, Any]:
         "required_repairs_verified": len(required),
         "forbidden_regressions": len(hits),
         "patch_record_verified": 1,
+        "r5_patch_record_verified": 1,
         "style_metrics": style_metrics,
     }
 
@@ -732,6 +1066,18 @@ def verify_zenodo_metadata(path: Path) -> dict[str, str]:
             "Zenodo 元数据必须显式使用 access_right=open 与 license=other-closed"
         )
     return {"access_right": access_right, "license": license_id}
+
+
+def verify_citation_metadata(path: Path) -> dict[str, int]:
+    """要求 CFF 显式链接仓库的访问与许可边界。"""
+    try:
+        text = Path(path).read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        raise VerificationError(f"无法读取 CITATION.cff：{exc}") from exc
+    match = re.search(r'(?m)^license-url:\s*["\']?([^"\'\r\n]+)', text)
+    if match is None or "#access-and-licence" not in match.group(1):
+        raise VerificationError("CITATION.cff 缺少指向访问与许可边界的 license-url")
+    return {"license_url_verified": 1}
 
 
 def verify_do27_provenance(repository: Path) -> dict[str, str]:
@@ -791,6 +1137,58 @@ def verify_do27_provenance(repository: Path) -> dict[str, str]:
     }
 
 
+def verify_figure_inventory(repository: Path) -> dict[str, int]:
+    """只允许 Figures 1–5 各自唯一的生成器、PDF 和 PNG。"""
+    repository = Path(repository).resolve()
+    figures = repository / PAPER_RELATIVE / "figures"
+    if not figures.is_dir():
+        raise VerificationError("图件目录不存在")
+    actual = {
+        path.name
+        for path in figures.iterdir()
+        if path.is_file() and path.name.lower().startswith("figure-")
+    }
+    missing = sorted(EXPECTED_FIGURE_MEMBERS - actual)
+    extra = sorted(actual - EXPECTED_FIGURE_MEMBERS)
+    if missing or extra:
+        raise VerificationError(
+            f"Figure 1–5 精确图件集合不一致：缺失={missing}；额外={extra}"
+        )
+    return {"figure_families": len(FIGURE_STEMS), "figure_members": len(actual)}
+
+
+def verify_figure5_source_binding(repository: Path) -> dict[str, int]:
+    """执行 Figure 5 的树内路径解析与当前诊断源码哈希门。"""
+    repository = Path(repository).resolve()
+    script = repository / PAPER_RELATIVE / "figures" / "figure-5-algo-diagnostics.py"
+    spec = importlib.util.spec_from_file_location("paper01_release_figure5", script)
+    if spec is None or spec.loader is None:
+        raise VerificationError("无法加载 Figure 5 生成器")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    paths = module.locate_paths()
+    expected_paths = {
+        "repository_root": repository,
+        "run_root": repository / "validation" / "wp7" / "versions" / "synthetic-block-v6-20260724",
+        "contract": repository / "validation" / "wp2-toy" / "diagnostic-contract.json",
+        "diagnostics": repository / "src" / "geodeepbayes" / "diagnostics",
+        "package_src": repository / "src",
+    }
+    mismatches = {
+        name: (paths.get(name), expected)
+        for name, expected in expected_paths.items()
+        if paths.get(name) != expected
+    }
+    if mismatches:
+        raise VerificationError(f"Figure 5 未仅解析精选发布树路径：{mismatches}")
+    try:
+        module.check_diagnostic_source_hashes(paths["diagnostics"])
+    except Exception as exc:
+        raise VerificationError(f"Figure 5 当前源码钉值失败：{exc}") from exc
+    return {"portable_paths_verified": len(expected_paths), "source_pins_verified": 3}
+
+
 def verify_release_shape(repository: Path) -> dict[str, int]:
     """验证 DOI 候选是精选、读者可用且不含内部治理树的发布树。"""
     repository = Path(repository).resolve()
@@ -811,7 +1209,11 @@ def verify_release_shape(repository: Path) -> dict[str, int]:
     ]
     if missing:
         raise VerificationError(f"缺少发布必需成员：{missing}")
-    return {"required_members_verified": len(REQUIRED_RELEASE_MEMBERS)}
+    inventory = verify_figure_inventory(repository)
+    return {
+        "required_members_verified": len(REQUIRED_RELEASE_MEMBERS),
+        **inventory,
+    }
 
 
 def verify_no_credentials(repository: Path) -> dict[str, int]:
@@ -883,6 +1285,9 @@ def main(argv: list[str] | None = None) -> int:
             "submission_render": verify_submission_render(args.root),
             "manuscript_contract": verify_manuscript_contract(args.root),
             "submission_hygiene": verify_submission_hygiene(args.root),
+            "citation_metadata": verify_citation_metadata(
+                _repository_root(args.root) / "CITATION.cff"
+            ),
             "zenodo_metadata": verify_zenodo_metadata(
                 _repository_root(args.root) / ".zenodo.json"
             ),
@@ -890,6 +1295,12 @@ def main(argv: list[str] | None = None) -> int:
                 _repository_root(args.root)
             ),
             "release_shape": verify_release_shape(_repository_root(args.root)),
+            "figure5_source_binding": verify_figure5_source_binding(
+                _repository_root(args.root)
+            ),
+            "validation_link_compatibility": verify_validation_link_compatibility(
+                _repository_root(args.root)
+            ),
             "credential_scan": verify_no_credentials(_repository_root(args.root)),
         }
     except VerificationError as exc:

@@ -1,13 +1,13 @@
 {
   "schema_version": "ars-stage4-rev-r1-4-diagnostic-replay-v1",
-  "generated_at_utc": "2026-08-23T21:26:10.319259+00:00",
+  "generated_at_utc": "2026-08-28T02:04:27.475474+00:00",
   "operation": "read-only historical replay; predecessors preserved",
-  "source_root": "H:/GeoDeepBayes1.0.1/_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系-治理与验证档案/validation/joint/versions/evd-joint-001-v1-20260819",
+  "source_label": "historical/validation/joint/versions/evd-joint-001-v1-20260819",
   "source_count": 65,
   "workers": 2,
   "code_and_contract_sha256": {
     "rhat.py": "2a4408976cf8cfca2fae67e76138dbbb439a9cb16709384bd97d798753d24523",
-    "ess.py": "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+    "ess.py": "111fc44474ad6a22f618b66e5e87ddbf79511b06714f266e9205e8b80fff5292",
     "mcse.py": "ecc6efabb7702a469bdd47d1b302525600796cf6f8d57477a30fb3b2b6c5d65f",
     "joint_block.py": "d501d2a8419f210eef2b26335586b85a9d94b5b5d32b6aff7c7627785f159996",
     "diagnostic-contract.json": "0e29d1af2f0624a989fa8939c1e1cfeeb7e3b740c44f341281c0eeca0eea8cac"

@@ -9,11 +9,10 @@ import subprocess
 
 MAX_BYTES = 50 * 1024 * 1024
 FORBIDDEN_PARTS = (
+    "/_bmad-output/",
     "/open-data/",
     "/work/",
     "/source/",
-    "/versions/",
-    "/validation/runs/",
     "/output/",
     "/.venv",
     "/__pycache__/",
@@ -52,13 +51,16 @@ def validate(root: Path) -> list[str]:
     for relative in tracked_files(root):
         normalized = f"/{relative}"
         path = root / relative
+        if not path.is_file():
+            continue
+        if normalized == "/CLAUDE.md" or normalized.endswith("/.run.lock"):
+            failures.append(f"精选发布树禁止成员: {relative}")
+            continue
         wp1_manifest = normalized.endswith(
             "/validation/wp1-toy/output/manifest.json"
         )
         if any(part in normalized for part in FORBIDDEN_PARTS) and not wp1_manifest:
             failures.append(f"禁止纳入Git的路径: {relative}")
-            continue
-        if not path.is_file():
             continue
         if path.stat().st_size > MAX_BYTES:
             failures.append(f"文件超过50MiB: {relative}")

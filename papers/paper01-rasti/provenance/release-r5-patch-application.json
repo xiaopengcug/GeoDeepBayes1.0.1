@@ -1,0 +1,19 @@
+{
+  "schema_version": "ars-release-r5-patch-application/1.0",
+  "base_candidate": "7a9d06f27a0a21b7ee93bb01091c5b853e164b95",
+  "base_manuscript_sha256": "ef03aa58ee5e6fbaa3f21874ba6d2cb8728b43b3fba32d90d0f57df8b5df3361",
+  "patch_sha256": "dd71c7c147a066d65321432d51efd5fac50b581635343254031f4c35358c98c0",
+  "operation_counts": {
+    "manuscript_blocks": 16,
+    "text_replacements": 8,
+    "deletions": 4,
+    "code_specs": 12,
+    "structural_operations": 10
+  },
+  "after_manuscript_sha256": "95570a979e39ffca75d5cfde21115d8f346b1469fb3de32852345f7d8f252b7e",
+  "after_clean_sha256": "48a53ab7b97155461252adaa2459917d9c6fc028beb3c01c9fba71e28aa6702d",
+  "historical_records_byte_preserved": true,
+  "formal_release_locked": true,
+  "requires_new_candidate_manual_review": true,
+  "status": "applied_pending_machine_and_human_verification"
+}

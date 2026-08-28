@@ -1,4 +1,4 @@
-name: WP6 Engineering Gate
+name: Paper 01 Release Gate
 
 on:
   pull_request:
@@ -15,7 +15,6 @@ permissions:
 env:
   PYTHON_VERSION: "3.11.15"
   UV_VERSION: "0.11.29"
-  WP6_ROOT: "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系"
 
 jobs:
   required-gates:
@@ -54,102 +53,5 @@ jobs:
       - name: Run unit tests
         run: uv run --frozen pytest -q
 
-      - name: Run contract and governance self-test
-        shell: pwsh
-        run: |
-          & pwsh -NoProfile -File "$env:WP6_ROOT/validate-wp6.ps1" -SelfTest -SkipTests
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-
-      - name: Test Windows distinct-SID ACL isolation
-        if: runner.os == 'Windows'
-        shell: pwsh
-        run: |
-          & "$env:WP6_ROOT/validation/wp6-governance/test-worker-acl.ps1"
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-
-      - name: Test Linux distinct-UID isolation
-        if: runner.os == 'Linux'
-        shell: bash
-        run: bash "$WP6_ROOT/validation/wp6-governance/test-worker-uid.sh"
-
-  attest-evidence-root:
-    name: Attest final evidence root
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: required-gates
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: read
-      id-token: write
-
-    steps:
-      - name: Checkout final commit
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-
-      - name: Install pinned uv
-        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
-        with:
-          version: ${{ env.UV_VERSION }}
-
-      - name: Install pinned cosign
-        uses: sigstore/cosign-installer@ba7bc0a3fef59531c69a25acd34668d6d3fe6f22 # v4.1.0
-        with:
-          cosign-release: "v3.0.6"
-
-      - name: Install environment
-        run: |
-          uv python install "$PYTHON_VERSION"
-          uv sync --frozen --extra dev
-
-      - name: Build evidence root
-        run: |
-          uv run --frozen python "$WP6_ROOT/validation/wp6-governance/build_evidence_root.py" \
-            --project-root . \
-            --commit-sha "$GITHUB_SHA" \
-            --output "$WP6_ROOT/validation/wp6-governance/evidence-root.json"
-
-      - name: Sign and verify evidence root with Sigstore
-        env:
-          CERTIFICATE_IDENTITY: "https://github.com/${{ github.repository }}/.github/workflows/ci.yml@refs/heads/main"
-        run: |
-          cosign sign-blob --yes \
-            --bundle "$WP6_ROOT/validation/wp6-governance/evidence-root.sigstore.json" \
-            "$WP6_ROOT/validation/wp6-governance/evidence-root.json"
-          cosign verify-blob "$WP6_ROOT/validation/wp6-governance/evidence-root.json" \
-            --bundle "$WP6_ROOT/validation/wp6-governance/evidence-root.sigstore.json" \
-            --certificate-identity "$CERTIFICATE_IDENTITY" \
-            --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
-            2>&1 | tee attestation-verification.txt
-          uv run --frozen python "$WP6_ROOT/validation/wp6-governance/record_attestation.py" \
-            --commit-sha "$GITHUB_SHA" \
-            --repository "$GITHUB_REPOSITORY" \
-            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
-            --provider "sigstore-fulcio-rekor" \
-            --certificate-identity "$CERTIFICATE_IDENTITY" \
-            --bundle "$WP6_ROOT/validation/wp6-governance/evidence-root.sigstore.json" \
-            --verification-log "attestation-verification.txt" \
-            --output "$WP6_ROOT/validation/wp6-governance/attestation-verification.json"
-
-      - name: Enforce final WP6 release gate
-        run: |
-          uv run --frozen python "$WP6_ROOT/validation/wp6-governance/validate_wp6.py" --release
-
-      - name: Stage complete evidence bundle
-        run: |
-          mkdir -p wp6-evidence
-          cp "$WP6_ROOT/validation/wp6-governance/evidence-root.json" wp6-evidence/
-          cp "$WP6_ROOT/validation/wp6-governance/evidence-root.sigstore.json" wp6-evidence/
-          cp "$WP6_ROOT/validation/wp6-governance/attestation-verification.json" wp6-evidence/
-          cp attestation-verification.txt wp6-evidence/
-          test -s wp6-evidence/evidence-root.json
-          test -s wp6-evidence/evidence-root.sigstore.json
-          test -s wp6-evidence/attestation-verification.json
-          test -s wp6-evidence/attestation-verification.txt
-
-      - name: Upload evidence bundle
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: wp6-evidence-${{ github.sha }}
-          path: wp6-evidence/
-          if-no-files-found: error
-          retention-days: 90
+      - name: Replay Paper 01 release gate
+        run: uv run --frozen python papers/paper01-rasti/scripts/replay_release.py

@@ -50,6 +50,11 @@ STATION_GRID_BOUNDS: Final[tuple[float, float, float, float]] = (
     4.50,
     1.16,
 )
+STATION_X: Final[tuple[float, ...]] = (6.72, 7.62, 8.52, 9.42, 10.32, 11.22)
+STATION_Y: Final[tuple[float, ...]] = (4.08, 4.312, 4.544, 4.776, 5.008, 5.24)
+STATION_GRID: Final[tuple[tuple[float, float], ...]] = tuple(
+    (x_value, y_value) for y_value in STATION_Y for x_value in STATION_X
+)
 
 _FROZEN_TEXT_ITEMS: Final[tuple[tuple[str, str], ...]] = (
     ("title", "Joint model scene and observation design"),
@@ -179,6 +184,19 @@ def _point_in_bounds(
     )
 
 
+def validate_station_grid(
+    stations: tuple[tuple[float, float], ...],
+) -> dict[str, int]:
+    """要求名义站网恰为完整 6 × 6 笛卡尔积。"""
+    x_values = tuple(sorted({point[0] for point in stations}))
+    y_values = tuple(sorted({point[1] for point in stations}))
+    expected = {(x_value, y_value) for y_value in y_values for x_value in x_values}
+    require(len(x_values) == 6 and len(y_values) == 6, "名义站网必须为 6 × 6。")
+    require(len(stations) == 36, "名义站网必须恰含 36 个站。")
+    require(len(set(stations)) == 36 and set(stations) == expected, "36 站必须形成完整笛卡尔网。")
+    return {"x_count": 6, "y_count": 6, "stations": 36}
+
+
 def _selected_text(scene: SceneSemantics, role: str) -> str:
     """取指定文字角色的实际绘制文本；探针可通过覆盖值改写真实 artist。"""
     override = scene.text_overrides.get(role)
@@ -189,6 +207,7 @@ def _selected_text(scene: SceneSemantics, role: str) -> str:
 
 def validate_semantics(scene: SceneSemantics) -> None:
     """以失败关闭方式验证冻结文字、四元素和观测侧关系。"""
+    validate_station_grid(STATION_GRID)
     issues: list[str] = []
     try:
         if scene.elements != FROZEN_SEMANTIC_ELEMENTS:
@@ -518,8 +537,9 @@ def _draw_figure(
             "station_grid" in scene.elements
             and station_grid_text in scene.visible_texts
         ):
-            station_x = (6.72, 7.62, 8.52, 9.42, 10.32, 11.22)
-            station_y = (4.08, 4.66, 5.24)
+            validate_station_grid(STATION_GRID)
+            station_x = STATION_X
+            station_y = STATION_Y
             for y_value in station_y:
                 ax.plot(
                     [station_x[0], station_x[-1]],

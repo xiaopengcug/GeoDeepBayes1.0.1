@@ -1,0 +1,366 @@
+{
+  "schema_version": "paper01-validation-link-compatibility/1.0",
+  "policy": "historical_records_byte_preserved_current_release_bytes_bound",
+  "summary": {
+    "resolvable_links": 32,
+    "classification_counts": {
+      "exact": 17,
+      "historical_code_evolution": 2,
+      "historical_eol_normalization": 13
+    }
+  },
+  "entries": [
+    {
+      "record_path": "validation/runs/open-data-20260717-03/run-manifest.json",
+      "locator": "$.outputs[0]",
+      "original_path": "runs/open-data-20260717-03/integrity.json",
+      "original_sha256": "13d1d984b3542231117dcdb5afe094300d7bc757d46daa9427c7ae9e02d0dbb8",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/runs/open-data-20260717-03/integrity.json",
+      "current_bytes": 366460,
+      "current_sha256": "5af794227c98bb78b9899067f3d3805a56a699777997244740ac29d2f7b8e1e7"
+    },
+    {
+      "record_path": "validation/runs/open-data-20260717-03/run-manifest.json",
+      "locator": "$.outputs[1]",
+      "original_path": "runs/open-data-20260717-03/results.json",
+      "original_sha256": "d8bfe2f0dc0592f8b5b51990b297d3cd19e6aa6771abe3bf0d8ff48d33052aa1",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/runs/open-data-20260717-03/results.json",
+      "current_bytes": 7770,
+      "current_sha256": "ef2465bc34bc38d7cfe175c32042b5c595cf2585e07ae1dd1196e7239f312433"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[0]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/do27/run_do27_validation.py",
+      "original_sha256": "0bd7998623fd1dcd4a4ae2c76b24e0347ea159bf9205faf0e007ea6bd532baae",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/do27/run_do27_validation.py",
+      "current_bytes": 18982,
+      "current_sha256": "0bd7998623fd1dcd4a4ae2c76b24e0347ea159bf9205faf0e007ea6bd532baae"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.configs[0]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/do27-v4-config.json",
+      "original_sha256": "4df59f8240926ccd0da6e4c6a81ae8bce19436d58ee38472dc81dc71d5981b14",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/do27-v4-config.json",
+      "current_bytes": 1139,
+      "current_sha256": "4df59f8240926ccd0da6e4c6a81ae8bce19436d58ee38472dc81dc71d5981b14"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[0]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/config.json",
+      "original_sha256": "6ff7c1bd42f30fd8f3f714fd0f885cacd9437a5142c929c635f63c9745196a19",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/config.json",
+      "current_bytes": 881,
+      "current_sha256": "e0a395db0bd852e2fe42dc01d3900800f0dd557f916e15014718c065aac51af8"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[1]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/environment.json",
+      "original_sha256": "7c664203d669d5e1d17b7b0895efad5badfffbf4d257d80a007376944b65ddb9",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/environment.json",
+      "current_bytes": 1236,
+      "current_sha256": "b1b5cc7d648e69f5ff88f1dbd7047407ecf910d76d0cade793843c67d71aaf19"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[2]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/metrics.json",
+      "original_sha256": "81fd40c7d37518599838174ecb6a756deecddc4e8be63d91df78cc454192f242",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/metrics.json",
+      "current_bytes": 9922,
+      "current_sha256": "b340290b17626afff754de1fef4c31e4854dc1939db19d86a8ad565d177aea54"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[3]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/raw-numerics.npz",
+      "original_sha256": "e5b866e84922bb428474a422743dbf4d8392d5dbe1b72cd76cabb5b589ad47b2",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/raw-numerics.npz",
+      "current_bytes": 1106858,
+      "current_sha256": "e5b866e84922bb428474a422743dbf4d8392d5dbe1b72cd76cabb5b589ad47b2"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[4]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "original_sha256": "44972ff97cda32e498fc20258d571f32ed5f06efd4ba0c5707a1c667e5f2a0e5",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "current_bytes": 3144,
+      "current_sha256": "5971272b6fb8a19a4ff6e6488412fcd73d66476a18c5a08d093decd7097f9014"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[5]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/stderr.txt",
+      "current_bytes": 0,
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[6]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/do27-v4-20260724/stdout.json",
+      "original_sha256": "1d17658a8a6eca5c2d96cf3550fda2e5da96da54395fda221337b8ef9b9c48f1",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/stdout.json",
+      "current_bytes": 1370,
+      "current_sha256": "488ae729171ea1d9b99b1b379b282f888f3e5e7db0d728cad53669a8100a68fa"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "locator": "$.outputs[0]",
+      "original_path": "do27-v4-20260724/metrics.json",
+      "original_sha256": "81fd40c7d37518599838174ecb6a756deecddc4e8be63d91df78cc454192f242",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/metrics.json",
+      "current_bytes": 9922,
+      "current_sha256": "b340290b17626afff754de1fef4c31e4854dc1939db19d86a8ad565d177aea54"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "locator": "$.outputs[1]",
+      "original_path": "do27-v4-20260724/raw-numerics.npz",
+      "original_sha256": "e5b866e84922bb428474a422743dbf4d8392d5dbe1b72cd76cabb5b589ad47b2",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/raw-numerics.npz",
+      "current_bytes": 1106858,
+      "current_sha256": "e5b866e84922bb428474a422743dbf4d8392d5dbe1b72cd76cabb5b589ad47b2"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "locator": "$.outputs[2]",
+      "original_path": "do27-v4-20260724/environment.json",
+      "original_sha256": "7c664203d669d5e1d17b7b0895efad5badfffbf4d257d80a007376944b65ddb9",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/environment.json",
+      "current_bytes": 1236,
+      "current_sha256": "b1b5cc7d648e69f5ff88f1dbd7047407ecf910d76d0cade793843c67d71aaf19"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "locator": "$.outputs[3]",
+      "original_path": "do27-v4-20260724/config.json",
+      "original_sha256": "6ff7c1bd42f30fd8f3f714fd0f885cacd9437a5142c929c635f63c9745196a19",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/config.json",
+      "current_bytes": 881,
+      "current_sha256": "e0a395db0bd852e2fe42dc01d3900800f0dd557f916e15014718c065aac51af8"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "locator": "$.outputs[4]",
+      "original_path": "do27-v4-20260724/stdout.json",
+      "original_sha256": "1d17658a8a6eca5c2d96cf3550fda2e5da96da54395fda221337b8ef9b9c48f1",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/stdout.json",
+      "current_bytes": 1370,
+      "current_sha256": "488ae729171ea1d9b99b1b379b282f888f3e5e7db0d728cad53669a8100a68fa"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "locator": "$.outputs[5]",
+      "original_path": "do27-v4-20260724/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/versions/do27-v4-20260724/stderr.txt",
+      "current_bytes": 0,
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "record_path": "validation/wp7/versions/do27-v4-20260724/run-manifest.json",
+      "locator": "$.script",
+      "original_path": "run_do27_validation.py",
+      "original_sha256": "0bd7998623fd1dcd4a4ae2c76b24e0347ea159bf9205faf0e007ea6bd532baae",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/do27/run_do27_validation.py",
+      "current_bytes": 18982,
+      "current_sha256": "0bd7998623fd1dcd4a4ae2c76b24e0347ea159bf9205faf0e007ea6bd532baae"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[0]",
+      "original_path": "src/geodeepbayes/benchmarks/synthetic_block_v2.py",
+      "original_sha256": "a481cbe271035d655e67f6a69092fd2869f37b73dd541e14f1499de630ffa5ce",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/benchmarks/synthetic_block_v2.py",
+      "current_bytes": 10487,
+      "current_sha256": "a481cbe271035d655e67f6a69092fd2869f37b73dd541e14f1499de630ffa5ce"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[1]",
+      "original_path": "src/geodeepbayes/sampling/delayed_acceptance.py",
+      "original_sha256": "dd9482d046a368e3f97454b63f6e5a09c7735df9db71765267eeaab9a013f972",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/sampling/delayed_acceptance.py",
+      "current_bytes": 3920,
+      "current_sha256": "dd9482d046a368e3f97454b63f6e5a09c7735df9db71765267eeaab9a013f972"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[2]",
+      "original_path": "src/geodeepbayes/sampling/pod.py",
+      "original_sha256": "047e107b503e7d1c9f19057ba126a3f47d6e8bfad8894e12921829cb710fd34b",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/sampling/pod.py",
+      "current_bytes": 5776,
+      "current_sha256": "047e107b503e7d1c9f19057ba126a3f47d6e8bfad8894e12921829cb710fd34b"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[3]",
+      "original_path": "src/geodeepbayes/sampling/__init__.py",
+      "original_sha256": "a2ef20ce3508cc287babd74ebb17ed323ce80e3eb6f9e43b110e51ada11cd8e9",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/sampling/__init__.py",
+      "current_bytes": 374,
+      "current_sha256": "a2ef20ce3508cc287babd74ebb17ed323ce80e3eb6f9e43b110e51ada11cd8e9"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[4]",
+      "original_path": "src/geodeepbayes/diagnostics/__init__.py",
+      "original_sha256": "148ecb471d3fc938e6c1e3fa39283e2fb38e0fe36530b12b20c97579ccc317fb",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/diagnostics/__init__.py",
+      "current_bytes": 547,
+      "current_sha256": "148ecb471d3fc938e6c1e3fa39283e2fb38e0fe36530b12b20c97579ccc317fb"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[5]",
+      "original_path": "src/geodeepbayes/diagnostics/ess.py",
+      "original_sha256": "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+      "classification": "historical_code_evolution",
+      "classification_reason": "显式 allowlist：诊断实现演进，历史记录保持不变",
+      "current_path": "src/geodeepbayes/diagnostics/ess.py",
+      "current_bytes": 2865,
+      "current_sha256": "111fc44474ad6a22f618b66e5e87ddbf79511b06714f266e9205e8b80fff5292"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[6]",
+      "original_path": "src/geodeepbayes/diagnostics/mcse.py",
+      "original_sha256": "ecc6efabb7702a469bdd47d1b302525600796cf6f8d57477a30fb3b2b6c5d65f",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/diagnostics/mcse.py",
+      "current_bytes": 747,
+      "current_sha256": "ecc6efabb7702a469bdd47d1b302525600796cf6f8d57477a30fb3b2b6c5d65f"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.code.manifest[7]",
+      "original_path": "src/geodeepbayes/diagnostics/rhat.py",
+      "original_sha256": "bfe187a7507f3bd6e36bd9bbbee6ab1d5fff9c24879d8a2f2a8e47fe8c98010c",
+      "classification": "historical_code_evolution",
+      "classification_reason": "显式 allowlist：诊断实现演进，历史记录保持不变",
+      "current_path": "src/geodeepbayes/diagnostics/rhat.py",
+      "current_bytes": 3233,
+      "current_sha256": "2a4408976cf8cfca2fae67e76138dbbb439a9cb16709384bd97d798753d24523"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.configs[0]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/synthetic-v6-config.json",
+      "original_sha256": "69114b631eebe7a1014380949aa10ee9c801104397ffe0880a875a2dd8d2c7a8",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/synthetic-v6-config.json",
+      "current_bytes": 993,
+      "current_sha256": "69114b631eebe7a1014380949aa10ee9c801104397ffe0880a875a2dd8d2c7a8"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.inputs[0]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/synthetic-v6-config.json",
+      "original_sha256": "69114b631eebe7a1014380949aa10ee9c801104397ffe0880a875a2dd8d2c7a8",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/synthetic-v6-config.json",
+      "current_bytes": 993,
+      "current_sha256": "69114b631eebe7a1014380949aa10ee9c801104397ffe0880a875a2dd8d2c7a8"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[0]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/synthetic-block-v6-20260724/metrics.json",
+      "original_sha256": "43f6e99ef01551f222fdf276f41843c402d5b9a633e7ce03533cd49b851d4199",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/synthetic-block-v6-20260724/metrics.json",
+      "current_bytes": 3378,
+      "current_sha256": "df4952fb09aa2fa2a8713b83f732d4297566baf618b4387f3fc95a953d611c4d"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[1]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/synthetic-block-v6-20260724/raw-chains.npz",
+      "original_sha256": "15d340931a0cbff92adb50a27ecf967cb05bc302d319e7cddcfd179d5c53e3b4",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "validation/wp7/versions/synthetic-block-v6-20260724/raw-chains.npz",
+      "current_bytes": 3330470,
+      "current_sha256": "15d340931a0cbff92adb50a27ecf967cb05bc302d319e7cddcfd179d5c53e3b4"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/evidence-run-v2.json",
+      "locator": "$.outputs[2]",
+      "original_path": "_bmad-output/planning-artifacts/research/贝叶斯思想与重磁电电磁深度融合技术体系/validation/wp7/versions/synthetic-block-v6-20260724/run-manifest.json",
+      "original_sha256": "2969b0e74324d28958663acaa8a2babf273e214f4ab39caab1921cab2b3425bf",
+      "classification": "historical_eol_normalization",
+      "classification_reason": "历史 SHA-256 对应 CRLF，当前发布成员按 LF 固定",
+      "current_path": "validation/wp7/versions/synthetic-block-v6-20260724/run-manifest.json",
+      "current_bytes": 939,
+      "current_sha256": "a36a61a9798af1de39b34ddac3b4799db2163cf0f30b5a5b4a92d539b07a0ddf"
+    },
+    {
+      "record_path": "validation/wp7/versions/synthetic-block-v6-20260724/run-manifest.json",
+      "locator": "$.script",
+      "original_path": "H:/GeoDeepBayes1.0.1/src/geodeepbayes/benchmarks/synthetic_block_v2.py",
+      "original_sha256": "a481cbe271035d655e67f6a69092fd2869f37b73dd541e14f1499de630ffa5ce",
+      "classification": "exact",
+      "classification_reason": "历史 SHA-256 与当前发布字节一致",
+      "current_path": "src/geodeepbayes/benchmarks/synthetic_block_v2.py",
+      "current_bytes": 10487,
+      "current_sha256": "a481cbe271035d655e67f6a69092fd2869f37b73dd541e14f1499de630ffa5ce"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ This checklist implements the corresponding author's requirement that the releas
 - [ ] The gravity–magnetic joint pilot remains reported as diagnostics-gate `Failed` with no valid coupling endpoint.
 - [ ] No passage claims field validation, discovery performance, resource quantities, production-scale readiness, or independent reproduction.
 - [ ] The multi-scale mechanism remains described as specified but not exercised by a gate-passing assembled endpoint.
-- [ ] Table 5 and Appendix A retain `unknown` for unreviewed full-text element cells; no withdrawn novelty score reappears.
+- [ ] The §2.2 discovery inventory and Table A.1 retain `unknown` for unreviewed full-text element cells; no withdrawn novelty score reappears.
 - [ ] Alemie & Sacchi (2011) is described as a trivariate Cauchy prior, and the 42-run design is explicitly decomposed as 30 λ-grid, 2 adaptive-Metropolis, and 10 weighted runs.
 - [ ] Main-text Tables 1–5a, Figures 1–5, P1–P6, and Eqs. (6.1)–(6.2) appear in order; every figure opens and matches its caption.
 

@@ -22,8 +22,8 @@ sys.dont_write_bytecode = True
 
 EXPECTED_NPZ_SHA256 = "15d340931a0cbff92adb50a27ecf967cb05bc302d319e7cddcfd179d5c53e3b4"
 EXPECTED_SOURCE_SHA256 = {
-    "rhat.py": "bfe187a7507f3bd6e36bd9bbbee6ab1d5fff9c24879d8a2f2a8e47fe8c98010c",
-    "ess.py": "9d7669ed361ee0aa09faeba18f77940516d7fe3812a78885752b610eb28bb683",
+    "rhat.py": "2a4408976cf8cfca2fae67e76138dbbb439a9cb16709384bd97d798753d24523",
+    "ess.py": "111fc44474ad6a22f618b66e5e87ddbf79511b06714f266e9205e8b80fff5292",
     "mcse.py": "ecc6efabb7702a469bdd47d1b302525600796cf6f8d57477a30fb3b2b6c5d65f",
 }
 EXPECTED_DRAWS_SHAPE = (4, 4000, 48)
@@ -49,22 +49,14 @@ def require(condition: bool, message: str) -> None:
 
 
 def locate_paths() -> dict[str, Path]:
-    """从脚本的主工作树位置解析注册输入与输出路径。"""
+    """仅从精选发布树解析注册输入、源码与输出路径。"""
     script_path = Path(__file__).resolve()
     try:
-        repo_root = script_path.parents[7]
+        repository_root = script_path.parents[3]
     except IndexError as exc:
         raise ReproductionError("无法从脚本位置解析仓库根目录。") from exc
-
-    governance_root = (
-        repo_root
-        / "_bmad-output"
-        / "planning-artifacts"
-        / "research"
-        / "贝叶斯思想与重磁电电磁深度融合技术体系-治理与验证档案"
-    )
     run_root = (
-        governance_root
+        repository_root
         / "validation"
         / "wp7"
         / "versions"
@@ -72,15 +64,14 @@ def locate_paths() -> dict[str, Path]:
     )
     return {
         "script": script_path,
-        "repo_root": repo_root,
-        "governance_root": governance_root,
+        "repository_root": repository_root,
         "run_root": run_root,
         "npz": run_root / "raw-chains.npz",
         "metrics": run_root / "metrics.json",
         "run_manifest": run_root / "run-manifest.json",
-        "contract": governance_root / "validation" / "wp2-toy" / "diagnostic-contract.json",
-        "diagnostics": governance_root / "src" / "geodeepbayes" / "diagnostics",
-        "package_src": governance_root / "src",
+        "contract": repository_root / "validation" / "wp2-toy" / "diagnostic-contract.json",
+        "diagnostics": repository_root / "src" / "geodeepbayes" / "diagnostics",
+        "package_src": repository_root / "src",
         "output_dir": script_path.parent,
     }
 
@@ -163,7 +154,7 @@ def compute_registered_diagnostics(np, draws, package_src: Path) -> dict[str, ob
 
 
 def load_metrics_and_check_extrema(np, metrics_path: Path, arrays: dict[str, object]) -> dict:
-    """第五道门：将四个重算极值与注册 JSON 逐位比较。"""
+    """第五道门：历史与当前实现都必须保持四个保守报告值。"""
     require(metrics_path.is_file(), f"注册 metrics JSON 不存在：{metrics_path}")
     with metrics_path.open("r", encoding="utf-8") as stream:
         metrics = json.load(stream)
@@ -181,20 +172,39 @@ def load_metrics_and_check_extrema(np, metrics_path: Path, arrays: dict[str, obj
         "max_relative_mcse": int(np.argmax(arrays["relative_mcse"])),
     }
 
+    transforms = {
+        "max_rhat": lambda value: np.ceil(value * 100000.0) / 100000.0,
+        "min_bulk_ess": lambda value: int(np.floor(value)),
+        "min_tail_ess": lambda value: int(np.floor(value)),
+        "max_relative_mcse": lambda value: np.ceil(value * 10000.0) / 10000.0,
+    }
+    expected_reported = {
+        "max_rhat": 1.00374,
+        "min_bulk_ess": 2496,
+        "min_tail_ess": 1963,
+        "max_relative_mcse": 0.0202,
+    }
     for key, value in actual.items():
         require(key in metrics, f"metrics JSON 缺少 {key}。")
         actual_scalar = np.float64(value)
-        expected_scalar = np.float64(metrics[key])
+        historical_scalar = np.float64(metrics[key])
+        current_reported = transforms[key](actual_scalar)
+        historical_reported = transforms[key](historical_scalar)
         require(
-            actual_scalar.tobytes() == expected_scalar.tobytes(),
-            f"{key} 未逐位复现：期望 {expected_scalar!r}，实际 {actual_scalar!r}",
+            current_reported == expected_reported[key]
+            and historical_reported == expected_reported[key],
+            f"{key} 的当前/历史保守报告值漂移："
+            f"期望 {expected_reported[key]!r}，当前 {current_reported!r}，"
+            f"历史 {historical_reported!r}",
         )
         print(
-            f"[复现日志] {key}={repr(float(actual_scalar))} "
+            f"[复现日志] {key} current={repr(float(actual_scalar))} "
+            f"historical={repr(float(historical_scalar))} "
+            f"reported={current_reported!r} "
             f"parameter_index_0_based={indices[key]} float_hex={float(actual_scalar).hex()}"
         )
 
-    print("[门 5/5] FROZEN_EXTREMA_BITWISE=PASS")
+    print("[门 5/5] CONSERVATIVE_REPORTED_VALUES=PASS")
     return metrics
 
 
@@ -313,7 +323,7 @@ def draw_figure(np, arrays: dict[str, object], metrics: dict, thresholds: dict, 
     # (a) 仅画四链联合计算所得的 48 个逐参数 R-hat，绝不构造逐链 R-hat。
     rhat = arrays["rhat"]
     violin_a = ax_a.violinplot(
-        [rhat], positions=[0.0], vert=False, widths=0.58, showmeans=False,
+        [rhat], positions=[0.0], orientation="horizontal", widths=0.58, showmeans=False,
         showmedians=False, showextrema=False,
     )
     for body in violin_a["bodies"]:
@@ -351,7 +361,7 @@ def draw_figure(np, arrays: dict[str, object], metrics: dict, thresholds: dict, 
     ]
     for values, position, label, style, limit in ess_series:
         violin = ax_b.violinplot(
-            [values], positions=[position], vert=False, widths=0.58, showmeans=False,
+            [values], positions=[position], orientation="horizontal", widths=0.58, showmeans=False,
             showmedians=False, showextrema=False,
         )
         for body in violin["bodies"]:

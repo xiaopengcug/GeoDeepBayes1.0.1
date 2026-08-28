@@ -9,8 +9,8 @@
   "members": [
     {
       "path": ".gitattributes",
-      "bytes": 219,
-      "sha256": "23ae42dff907680990e2ee101db26ad671bb1fa56429b8a5f2024c3e512750d5"
+      "bytes": 359,
+      "sha256": "9827f27d3235e210860dcdceb75a49a7468a3605662f889cd639ad4846732572"
     },
     {
       "path": ".github/workflows/benchmark-ci.yml",
@@ -19,8 +19,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 5786,
-      "sha256": "cb463b7a9769de764475b26ee9d73e2041d0452691b72ba8d1eae22630c6fbcc"
+      "bytes": 1475,
+      "sha256": "419a823e3454597a21cd4d32cbfb6039eb5928f032b9a0794275fecc4e561459"
     },
     {
       "path": ".github/workflows/gpu-compatibility-ci.yml",
@@ -44,13 +44,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1100,
-      "sha256": "004fa1a6d170a56604e2f7860c599610d39a5747fe950765d4f48b007673360c"
-    },
-    {
-      "path": "CLAUDE.md",
-      "bytes": 6633,
-      "sha256": "91a58e084507881538c988d5ae18736034e9fc7e8928fe2bf7a75c5692ae377b"
+      "bytes": 1183,
+      "sha256": "d7a0a0cc035d3ab37522565c72215f3cb2ea35b57de9f2e2561c08aa8765931d"
     },
     {
       "path": "README.md",
@@ -59,8 +54,8 @@
     },
     {
       "path": "papers/paper01-rasti/HUMAN-VERIFICATION.md",
-      "bytes": 3972,
-      "sha256": "c155b9f4ce9665cb9de18bf0d6eddb0203f83c21a736339f48af7f2c2b8d9758"
+      "bytes": 3993,
+      "sha256": "1398addf3e3c36721a92fd418ccccfb3d44849ded62a98e14337ebd0b1616058"
     },
     {
       "path": "papers/paper01-rasti/LICENSE.txt",
@@ -69,13 +64,13 @@
     },
     {
       "path": "papers/paper01-rasti/README.md",
-      "bytes": 5483,
-      "sha256": "c082b7ad25e003f06be325c5d86fe1afb16336d9c5fa54bf5d4183b5198001c9"
+      "bytes": 5803,
+      "sha256": "eb8278ca01a999a07df870921b0ad776c447883859732288a44066187a65b21d"
     },
     {
       "path": "papers/paper01-rasti/RELEASE_NOTES_DRAFT.md",
-      "bytes": 2333,
-      "sha256": "8bdc17ccd72cea86e99193e6452ee8705a55e7c6bd2da4555217e056bc9b7f74"
+      "bytes": 2474,
+      "sha256": "34b790b02b1d0df5e14e076d2a27b1e25f10b7495ffc7b7e0e5af3903f4ccebb"
     },
     {
       "path": "papers/paper01-rasti/evidence/positive-control/joint-diagnostics-expected.json",
@@ -174,18 +169,18 @@
     },
     {
       "path": "papers/paper01-rasti/evidence/verification-final/algorithm-replay.json",
-      "bytes": 2452,
-      "sha256": "75d2ac59376c892bfdf6fcb5bde207980b1f5426940f0d0cebe90f66d4d25d80"
+      "bytes": 2397,
+      "sha256": "88223ad475dade66f78b93de36207b07f803302cbc4b397615a49a0b83428062"
     },
     {
       "path": "papers/paper01-rasti/evidence/verification-final/joint-replay-summary.json",
-      "bytes": 232022,
-      "sha256": "2f6a664b72c4d06775f6d01e258e89621a6b535f37f097272df0d0f565811f20"
+      "bytes": 231892,
+      "sha256": "d0b4791b4e642248b786f4d1ecbfd43aae7554b5965ca7f270f3b9cb01158997"
     },
     {
       "path": "papers/paper01-rasti/evidence/verification-final/m2-reconstruction-lineage.json",
-      "bytes": 40307,
-      "sha256": "dc6b00f04bdeed64d651e6b969ead027bc38ec79c479004c83677ded706945b1"
+      "bytes": 40177,
+      "sha256": "d4cb8492d652f460ba16134dccb3861887106e15e83fea0c5abed4ba28e3a4ba"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-1-framework-governance.pdf",
@@ -204,28 +199,28 @@
     },
     {
       "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.pdf",
-      "bytes": 40341,
-      "sha256": "14fa4b49a8f9120e1aed9a6fffe44085dd439cf33bc750f70004af058fcceeb6"
+      "bytes": 41394,
+      "sha256": "62580e424b7fb08dbf26502c498633502f8acf0b42cdcc9aaf90c021a1e748c8"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.png",
-      "bytes": 292709,
-      "sha256": "8bbcd302aae377cee6a6134d1e3368870aed5a2c4790dcb194d9ecaf3c52ffd6"
+      "bytes": 404074,
+      "sha256": "d780aa39c5383330555b45a6744966eb66e932b7b1e4382a20ce61539496a4ef"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-2-probabilistic-dag.py",
-      "bytes": 32538,
-      "sha256": "51c1a96170e21474412a240402aae8f445caf200aa3f1a4f5b49ae3b7df79888"
+      "bytes": 34754,
+      "sha256": "0cd64a4fe79228d12d235a7ae498b924157c74951c3c07772b8678dc34b2cb14"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.pdf",
-      "bytes": 33744,
-      "sha256": "e61673b9553369f22f85fecb8993e18953e77d69c9c97b5c1251519d64801ca9"
+      "bytes": 34773,
+      "sha256": "2da7c907e1693e58fec86491584a9f33104ac87fe202b56330e50f4129629ade"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.png",
-      "bytes": 491086,
-      "sha256": "3c66e1b7bc40711db97f6631b9f43bab70d2a2fc3d3bdd0248ebc16e91cfb337"
+      "bytes": 454423,
+      "sha256": "ac56724f416018fcead1b349f4d476838e666af19e03c88ed79ef05474d51f63"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-3-multiscale-parameterisation.py",
@@ -234,58 +229,43 @@
     },
     {
       "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.pdf",
-      "bytes": 59178,
-      "sha256": "c1b66943af9a94f73102d5a35a6d00d8ca798c89860478cace21f6148e4c4ee3"
+      "bytes": 72238,
+      "sha256": "abaed11c6ae3856ec454bef48fe6206722b0f9a807891dd795110f44d15e169c"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.png",
-      "bytes": 204998,
-      "sha256": "3adc4b8d3b6675d4e999013b76ebd24c6f8a8fdce50779d70a8882bf11a3d333"
+      "bytes": 188824,
+      "sha256": "da008de437c589e9d55f4dbb172430f5c76e8314947a6b4dd24a5652bac27aab"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-4-evd-joint-scene.py",
-      "bytes": 32667,
-      "sha256": "91ec2cb44d92d51fd45f6c44ca94bc216d1206c462cf20b9fb933f7034388635"
+      "bytes": 33712,
+      "sha256": "ee0b6d950668c59a07853ad2a596b3026a1c13d4fe12ea33eaabd354412e2ae6"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-5-algo-diagnostics.pdf",
-      "bytes": 28529,
-      "sha256": "4f45c848a6637feb85274692f69bcc0d59e29d77fecf4065eb21ddd3b7f18a10"
+      "bytes": 35508,
+      "sha256": "f0d3ae31083c89015f283ef483a3348032780f10bf085e34205099a22a861f8a"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-5-algo-diagnostics.png",
-      "bytes": 284227,
-      "sha256": "cfc389f0442375e0edf608dbaa2d76662b339a52d9efe681228e96fca427f567"
+      "bytes": 249038,
+      "sha256": "0d280e5fe4b317d54500faea7b2bd9cd4970fcb9e1f90a8b3875479809e50cbc"
     },
     {
       "path": "papers/paper01-rasti/figures/figure-5-algo-diagnostics.py",
-      "bytes": 28661,
-      "sha256": "2460e0f98ce2e5dedfa14920982ba928ff5698f738f49f8ed5ef58cf993bdf02"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-c1-prisma-flow.pdf",
-      "bytes": 31944,
-      "sha256": "968b9d45bdf82d0965fa718bc82b491cbe2f92703622a8578d712e1a5cd8cd97"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-c1-prisma-flow.png",
-      "bytes": 567942,
-      "sha256": "57f53087b7c3a3ab85f7d42d0c29dcea40f95a088e4f6b11914879352fef0c0e"
-    },
-    {
-      "path": "papers/paper01-rasti/figures/figure-c1-prisma-flow.py",
-      "bytes": 43718,
-      "sha256": "832f836da05279857cf1199424cee9e2455a9867aac646125ccb4327a7500689"
+      "bytes": 29302,
+      "sha256": "43942504c5c3d81ca95eb199229bfd7d8ced11cce1903cd41da5c7ed41ffdd4e"
     },
     {
       "path": "papers/paper01-rasti/manuscript/manuscript-anchored.md",
-      "bytes": 309302,
-      "sha256": "ef03aa58ee5e6fbaa3f21874ba6d2cb8728b43b3fba32d90d0f57df8b5df3361"
+      "bytes": 310408,
+      "sha256": "95570a979e39ffca75d5cfde21115d8f346b1469fb3de32852345f7d8f252b7e"
     },
     {
       "path": "papers/paper01-rasti/manuscript/manuscript-clean.md",
-      "bytes": 260115,
-      "sha256": "ca7d2e243f07cbf7faf50c36093d829b0aeb027c1e59eb62be7a27ee89aa25fd"
+      "bytes": 261221,
+      "sha256": "48a53ab7b97155461252adaa2459917d9c6fc028beb3c01c9fba71e28aa6702d"
     },
     {
       "path": "papers/paper01-rasti/manuscript/response-to-reviewers-r1.md",
@@ -310,7 +290,7 @@
     {
       "path": "papers/paper01-rasti/provenance/clean-render-report.json",
       "bytes": 716,
-      "sha256": "0b836463012dd59283b1d7ec2d37017855a9002b91bd67b357333a4ee14f2400"
+      "sha256": "e021ff3164c5f4642f491c67aff7168a2b2a469ccca140d5c8a772ad1d664a1d"
     },
     {
       "path": "papers/paper01-rasti/provenance/release-manuscript-patch-r4-application.json",
@@ -318,9 +298,24 @@
       "sha256": "c2083a2d91c84eacbf431d941480610a317964e3beeae6b47dbcc6c40f24be62"
     },
     {
+      "path": "papers/paper01-rasti/provenance/release-r5-patch-application.json",
+      "bytes": 846,
+      "sha256": "d4372dbfa7e53ba3a931ad920abb623b532ead550e0fd150c61c208cca243960"
+    },
+    {
       "path": "papers/paper01-rasti/provenance/revision-bundle-r2-refreeze-report.json",
       "bytes": 1324,
       "sha256": "f01b9fa029ebade12e84fe04f52df1d68e809135bcc03b414bfa7d82041c3865"
+    },
+    {
+      "path": "papers/paper01-rasti/provenance/validation-link-compatibility.json",
+      "bytes": 21713,
+      "sha256": "981d2b69b1d2cdb04b3ded80781b2dc5b812c7088c2816274d020c63edbf577d"
+    },
+    {
+      "path": "papers/paper01-rasti/scripts/build_validation_link_compatibility.py",
+      "bytes": 1066,
+      "sha256": "507fc46d9cea31a678a46ebcff3ef4a6d9f9c81fdeea5d1ddf596b7d980c5404"
     },
     {
       "path": "papers/paper01-rasti/scripts/generate_positive_control.py",
@@ -329,28 +324,28 @@
     },
     {
       "path": "papers/paper01-rasti/scripts/replay_evd_algo_diagnostics.py",
-      "bytes": 5730,
-      "sha256": "688d119c50cef35ab99f882829d85c4398fdc10df11e7154356054df64dbacb8"
+      "bytes": 5802,
+      "sha256": "e1f699338f2d636f8eb7dec4761e00f969569b560467aec7cd0759a0dc808286"
     },
     {
       "path": "papers/paper01-rasti/scripts/replay_evd_joint_diagnostics.py",
-      "bytes": 6886,
-      "sha256": "43e048c7b3218138d168700a8c753f10dd4aff340188ef18348405ea360085ec"
+      "bytes": 6961,
+      "sha256": "9f8f736959119bf18877a37f83773a4b52c5be264ccb2a02754ea5049787b6ee"
     },
     {
       "path": "papers/paper01-rasti/scripts/replay_release.py",
-      "bytes": 37820,
-      "sha256": "8a2d6d9ea0dca93191354f9d7e248cba3458988a4024aa46ffdcfe3202638c9d"
+      "bytes": 55017,
+      "sha256": "6ce869bf052c5c84c3ac7a4c38a17f70422c630f0b3c9442a44e56cec492cd60"
     },
     {
       "path": "papers/paper01-rasti/scripts/verify_m2_reconstruction_lineage.py",
-      "bytes": 5476,
-      "sha256": "ea7d1aaec3c6a3e8a60536400dda576f38548f5a925c602248d6360bd3f7b8ca"
+      "bytes": 5555,
+      "sha256": "ac94409cb98a29c239ab8926a74384ed1aac5d214e3e6199cbc2ef045d520668"
     },
     {
       "path": "papers/paper01-rasti/supplement/reproducibility-and-adoption-checklist-r1.md",
-      "bytes": 7379,
-      "sha256": "f099be0b3635dcb9611e32ba7aaf76d8a023862debb5392ce9600a61b04d4d4d"
+      "bytes": 7687,
+      "sha256": "23ed3ee7c74ec7f0054cf28a3ff3c81ff698b5dd67e01d58df4630ff87985823"
     },
     {
       "path": "pyproject.toml",
@@ -654,13 +649,13 @@
     },
     {
       "path": "tests/paper01/test_release_metadata.py",
-      "bytes": 5137,
-      "sha256": "65f9feb82382b80345764e701914f1e10394b4b0ada801f37773fd316544c936"
+      "bytes": 8552,
+      "sha256": "8759a54071638053240d5c05da6095dd79f0a8a06fc85d92c155cef119229d24"
     },
     {
       "path": "tests/paper01/test_release_replay.py",
-      "bytes": 18446,
-      "sha256": "1565d8ccb64cb59b47a3a86c888f7bbffce70ba07a271e58938ea43e5eed6f53"
+      "bytes": 30455,
+      "sha256": "0bd312b4bfa04d4a692d48c49fca0c1bcb3205e62c9443fdfc1cdf48118188f7"
     },
     {
       "path": "tests/sampling/__init__.py",
@@ -679,8 +674,8 @@
     },
     {
       "path": "tools/validate_repository_scope.py",
-      "bytes": 2929,
-      "sha256": "185e528ea4d3437c020d208b30ad8a44a8fbee73a830b1cab46b150f1d0b71ac"
+      "bytes": 3077,
+      "sha256": "99b294aede90f532f258ca53b051c9a5d885ac163a2cafe3c6174b07e87c0e7f"
     },
     {
       "path": "uv.lock",
